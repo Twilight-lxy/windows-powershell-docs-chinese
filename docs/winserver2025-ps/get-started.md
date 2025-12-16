@@ -1,16 +1,18 @@
 ---
-description: 使用本主题可帮助您通过 Windows PowerShell 管理 Windows 11 和 Windows Server 2025 的相关技术。  
+description: 使用本主题可帮助您通过 Windows PowerShell 管理 Windows 11 和 Windows Server 2025 的相关技术。
 ms.date: 05/15/2025
-title: Windows Server 2025 和 Windows 11 的 PowerShell 模块
+title:  Windows Server 2025 和 Windows 11 的 PowerShell 模块
 ---
-# Windows Server 2025 和 Windows 11 的 PowerShell 模块
 
-本主题列出了随 Windows Server 2025 和 Windows 11 提供的 Windows PowerShell 模块。列表中的 Windows PowerShell 模块支持自动化这些版本的 Windows 操作系统的各种功能，并提供了每个模块对应的 cmdlet 参考链接。这些模块使您能够使用 Windows PowerShell 来管理、维护、配置以及为 Windows Server 2025 和 Windows 11 开发新功能。.
+#  Windows Server 2025 和 Windows 11 的 PowerShell 模块
 
-下表还显示了每个模块的最新发布的帮助文档。这些帮助文档可以通过下面的链接获取，或者以可更新的帮助文件（Updatable Help files）的形式提供。可更新的帮助文件允许您将最新的帮助内容本地安装到您的计算机上。有关更多信息，请参阅[about_Updatable_Help](/powershell/module/microsoft.powershell.core/about/about_updatable_help).
+本主题列出了随 Windows Server 2025 和 Windows 11 提供的 Windows PowerShell 模块。列表中的 Windows PowerShell 模块支持自动化这些版本的 Windows 操作系统的各种功能，并提供了每个模块对应的 cmdlet 参考链接。这些模块使您能够使用 Windows PowerShell 来管理、维护、配置以及为 Windows Server 2025 和 Windows 11 开发新功能。
 
-| 模块名称                     | 网页版本的标题和链接                                                                       |
-| ---------------------------- | ------------------------------------------------------------------------------------------ |
+下表还显示了每个模块的最新发布的帮助文档。这些帮助文档可以通过下面的链接获取，或者以可更新的帮助文件（Updatable Help files）的形式提供。可更新的帮助文件允许您将最新的帮助内容本地安装到您的计算机上。有关更多信息，请参阅
+[about_Updatable_Help](/powershell/module/microsoft.powershell.core/about/about_updatable_help).
+
+|           模块名称           |                                 网页版本的标题和链接                                 |
+| ---------------------------- | --------------------------------------------------------------------------------------------- |
 | ActiveDirectory              | [Active Directory Domain Services Administration](/powershell/module/activedirectory)         |
 | ADCSAdministration           | [Active Directory Certificate Services Administration](/powershell/module/adcsadministration) |
 | ADCSDeployment               | [Active Directory Certificate Services Deployment](/powershell/module/adcsdeployment)         |

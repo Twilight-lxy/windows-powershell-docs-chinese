@@ -1,0 +1,26 @@
+msgid "## SYNOPSIS"
+msgstr "## 摘要"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "## INPUTS"
+msgstr "## 输入"
+
+msgid "## OUTPUTS"
+msgstr "## 输出"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

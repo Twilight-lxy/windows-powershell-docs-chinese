@@ -1,0 +1,77 @@
+msgid "This article lists the status of PowerShell 7 with Powershell modules published for other Microsoft products."
+msgstr "本文列出了PowerShell 7的状态以及为其他Microsoft产品发布的PowerShell模块。"
+
+msgid "PowerShell 7 module compatibility in Windows Server 2025"
+msgstr "PowerShell 7 模块在 Windows Server 2025中的兼容性"
+
+msgid "This article contains a list of PowerShell modules published by Microsoft. These modules provide\n"
+"management and support for various Microsoft products and services. They have been updated to work\n"
+"natively with PowerShell 7, or tested for compatibility with PowerShell 7. This list will be updated\n"
+"with new information as more modules are identified and tested."
+msgstr "本文列出了由微软发布的 PowerShell 模块。这些模块用于管理和支持微软的各种产品和服务。它们已经过更新，可以与 PowerShell 7 无缝配合使用；或者已经过兼容性测试，确保能够与 PowerShell 7 兼容。随着更多模块的被发现和测试，该列表将会持续更新，以包含最新的信息。"
+
+msgid "If you have information to share or issues with specific modules, please submit feedback in the\n"
+"Windows Feedback Hub. For more information, see"
+msgstr "如果您有需要分享的信息，或者对某些特定模块存在疑问，请通过 Windows Feedback Hub 提交反馈。如需了解更多信息，请参阅"
+
+msgid "## Windows management modules"
+msgstr "## Windows管理模块"
+
+msgid "The Windows management modules are installed in different ways, dependent on the Edition of Windows,\n"
+"and how the module was packaged for that Edition."
+msgstr "Windows的管理模块的安装方式因 Windows 的版本以及该模块针对相应版本的打包方式而有所不同。"
+
+msgid "On Windows Server, use the feature name with the [Install-WindowsFeature][05] cmdlet as an\n"
+"Administrator. For example:"
+msgstr "在 Windows Server 上，您需要以管理员身份使用 [Install-WindowsFeature][05] cmdlet 来安装相应的功能。例如："
+
+msgid "On Windows 10, the Windows management modules are made available as **Windows Optional Features** or\n"
+"**Windows Capabilities**. The following commands must be run from an elevated session using **Run as\n"
+"administrator**."
+msgstr "在 Windows 10 中，Windows 的管理模块被归类为 **Windows 可选功能（Windows Optional Features）**或**Windows 功能（Windows Capabilities）**。以下命令必须通过以管理员身份运行的 elevated 会话来执行。"
+
+msgid "For Windows Optional Features"
+msgstr "对于Windows可选功能"
+
+msgid "To get a list of Optional Features, run the following command:"
+msgstr "要获取可选功能的列表，请运行以下命令："
+
+msgid "To install the feature:"
+msgstr "要安装此功能："
+
+msgid "For more information see:"
+msgstr "有关更多信息，请参阅："
+
+msgid "For Windows Capabilities"
+msgstr "适用于Windows功能"
+
+msgid "To get a list of Windows Capabilities, run the following command:"
+msgstr "要获取 Windows 功能列表，请运行以下命令："
+
+msgid "Notice that the name of the capability package ends with `~~~~0.0.1.0`. You must use the full name\n"
+"  to install the capability:"
+msgstr "请注意：该功能包的名称以 `~~~~0.0.1.0` 结尾；因此，在安装该功能时必须使用其完整的名称。"
+
+msgid "For more information see:"
+msgstr "有关更多信息，请参阅:"
+
+msgid "Supported OS"
+msgstr "支持的操作系统"
+
+msgid "### Module list"
+msgstr "### 模块列表"
+
+msgid "Module name"
+msgstr "模块名称"
+
+msgid " Status "
+msgstr "状态"
+
+msgid "## Notes"
+msgstr "## 备注"
+
+msgid "This module has some minor compatibility issues with formatted output in PowerShell 7. For example,\n"
+"the `Get-WindowsFeature` cmdlet returns the proper object with all properties, but the default\n"
+"display formatting makes some properties appear to be empty. The actual values are available in the\n"
+"object properties using `Select-Object` or by direct member access."
+msgstr "该模块在 PowerShell 7 中存在一些与格式化输出相关的小问题。例如，`Get-WindowsFeature` cmdlet 可以返回包含所有属性的完整对象，但由于默认显示格式的原因，某些属性看起来是空的；实际上这些属性的值可以通过 `Select-Object` 或直接访问对象的成员来获取。"

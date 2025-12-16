@@ -1,0 +1,678 @@
+msgid "Use this topic to help manage Windows and Windows Server technologies with Windows PowerShell."
+msgstr "使用此主题可以通过 Windows PowerShell 来帮助管理 Windows 和 Windows Server 技术。"
+
+msgid "# Hyper-V Module"
+msgstr "# Hyper-V 模块"
+
+msgid "This reference provides cmdlet descriptions and syntax for all Hyper-V-specific cmdlets. It lists the cmdlets in alphabetical order based on the verb at the beginning of the cmdlet."
+msgstr "此参考文档提供了所有与 Hyper-V 相关的 cmdlet 的描述及语法信息。这些 cmdlet 按其名称开头所使用的动词（即命令操作词）的字母顺序进行排列。"
+
+msgid "Adds an assignable device to a specific virtual machine."
+msgstr "将可分配的设备添加到特定的虚拟机中。"
+
+msgid "Adds a DVD drive to a virtual machine."
+msgstr "将 DVD 驱动器添加到虚拟机中。"
+
+msgid "Adds a virtual Fibre Channel host bus adapter to a virtual machine."
+msgstr "向虚拟机添加一个虚拟光纤通道（Fibre Channel）主机总线适配器。"
+
+msgid "Adds a GPU partition adapter to a virtual machine."
+msgstr "向虚拟机添加一个GPU分区适配器。"
+
+msgid "Adds group members to a virtual machine group."
+msgstr "向虚拟机组中添加成员。"
+
+msgid "Adds a hard disk drive to a virtual machine."
+msgstr "向虚拟机添加硬盘驱动器。"
+
+msgid "Adds an assignable device to a virtual machine (VM) host."
+msgstr "向虚拟机主机添加可分配的设备。"
+
+msgid "Adds a network for virtual machine migration on one or more virtual machine hosts."
+msgstr "为虚拟机的迁移添加网络配置。"
+
+msgid "Adds a virtual network adapter to a virtual machine."
+msgstr "向虚拟机添加虚拟网络适配器。"
+
+msgid "Creates an ACL to apply to the traffic through a virtual machine network adapter."
+msgstr "创建用于控制通过该虚拟网络适配器传输的数据流量的访问控制列表（ACL）。"
+
+msgid "Creates an extended ACL for a virtual network adapter."
+msgstr "为虚拟网络适配器创建扩展的访问控制列表。"
+
+msgid "Adds a routing domain and virtual subnets to a virtual network adapter."
+msgstr "为虚拟网络适配器配置路由域及子网信息。"
+
+msgid "Adds a RemoteFX video adapter in a virtual machine."
+msgstr "向虚拟机添加远程FX（RemoteFX）视频适配器。"
+
+msgid "Adds a SCSI controller in a virtual machine."
+msgstr "向虚拟机添加SCSI控制器。"
+
+msgid "Adds a path to a storage resource pool."
+msgstr "为虚拟机配置存储路径。"
+
+msgid "Adds a virtual switch to an Ethernet resource pool."
+msgstr "向以太网资源池中添加虚拟交换机。"
+
+msgid "Adds a feature to a virtual network adapter."
+msgstr "为虚拟网络适配器添加扩展功能。"
+
+msgid "Adds a feature to a virtual switch."
+msgstr "为虚拟交换机添加扩展功能。"
+
+msgid "Adds members to a virtual switch team."
+msgstr "向虚拟交换机组中添加成员。"
+
+msgid "Creates a checkpoint of a virtual machine."
+msgstr "为虚拟机创建检查点（用于数据备份）。"
+
+msgid "Compares a virtual machine and a virtual machine host for compatibility, returning a compatibility report."
+msgstr "比较两台虚拟机之间的兼容性，并生成兼容性报告。"
+
+msgid "Completes a virtual machine's failover process on the Replica server."
+msgstr "完成虚拟机的故障转移操作（将数据复制到备用服务器）。"
+
+msgid "Connects a virtual network adapter to a virtual switch."
+msgstr "将虚拟网络适配器连接到虚拟交换机。"
+
+msgid "Associates a host bus adapter with a virtual storage area network (SAN)."
+msgstr "将主机总线适配器关联到虚拟存储区域网络（SAN）。"
+
+msgid "Converts the format, version type, and block size of a virtual hard disk file."
+msgstr "转换虚拟硬盘文件的格式、版本类型及块大小。"
+
+msgid "Copies a file to a virtual machine."
+msgstr "将文件复制到虚拟机中。"
+
+msgid "Debugs a virtual machine."
+msgstr "调试虚拟机。"
+
+msgid "Disables keyboard, video, and mouse for virtual machines."
+msgstr "禁用虚拟机的键盘、视频及鼠标功能。"
+
+msgid "Disables virtual machine eventing."
+msgstr "禁用虚拟机的事件通知机制。"
+
+msgid "Disables an integration service on a virtual machine."
+msgstr "禁用虚拟机的集成服务。"
+
+msgid "Disables migration on one or more virtual machine hosts."
+msgstr "禁止一台或多台虚拟机之间的数据迁移。"
+
+msgid "Disables one or more RemoteFX physical video adapters from use with RemoteFX-enabled virtual machines."
+msgstr "禁用在支持远程FX功能的虚拟机上使用物理视频适配器。"
+
+msgid "Disables collection of resource utilization data for a virtual machine or resource pool."
+msgstr "停止收集虚拟机的资源使用情况数据。"
+
+msgid "Disables one or more extensions on one or more virtual switches."
+msgstr "禁用一台或多台虚拟交换机上的扩展功能。"
+
+msgid "Disables TPM functionality on a virtual machine."
+msgstr "禁用虚拟机上的TPM功能。"
+
+msgid "Disconnects a virtual network adapter from a virtual switch or Ethernet resource pool."
+msgstr "断开虚拟网络适配器与虚拟交换机或以太网资源池的连接。"
+
+msgid "Removes a host bus adapter from a virtual storage area network (SAN)."
+msgstr "从虚拟存储区域网络（SAN）中移除主机总线适配器。"
+
+msgid "Dismounts a virtual hard disk."
+msgstr "卸载虚拟硬盘驱动器。"
+
+msgid "Dismounts a device from a virtual machine (VM) host."
+msgstr "从虚拟机主机上卸载设备。"
+
+msgid "Enables keyboard, video, and mouse for virtual machines."
+msgstr "重新启用虚拟机的键盘、视频及鼠标功能。"
+
+msgid "Enables virtual machine eventing."
+msgstr "重新启用虚拟机的事件通知机制。"
+
+msgid "Enables an integration service on a virtual machine."
+msgstr "重新启用虚拟机的集成服务。"
+
+msgid "Enables migration on one or more virtual machine hosts."
+msgstr "允许一台或多台虚拟机之间的数据迁移。"
+
+msgid "Enables one or more RemoteFX physical video adapters for use with RemoteFX-enabled virtual machines."
+msgstr "重新启用在支持远程FX功能的虚拟机上使用物理视频适配器。"
+
+msgid "Enables replication of a virtual machine."
+msgstr "启用虚拟机的复制功能。"
+
+msgid "Collects resource utilization data for a virtual machine or resource pool."
+msgstr "开始收集虚拟机或资源池的资源使用情况数据。"
+
+msgid "Enables one or more extensions on one or more switches."
+msgstr "为虚拟交换机添加扩展功能。"
+
+msgid "Enables TPM functionality on a virtual machine."
+msgstr "重新启用虚拟机上的TPM功能。"
+
+msgid "Exports a virtual machine to disk."
+msgstr "将虚拟机导出到磁盘文件中。"
+
+msgid "Exports a virtual machine checkpoint to disk."
+msgstr "将虚拟机的检查点导出到磁盘文件中。"
+
+msgid "Gets the virtual hard disk object associated with a virtual hard disk."
+msgstr "获取与虚拟硬盘相关的信息。"
+
+msgid "Gets information about a VHD set."
+msgstr "获取有关VHD集的信息。"
+
+msgid "Gets information about a checkpoint in a VHD set."
+msgstr "获取VHD集中的检查点信息。"
+
+msgid "Gets the virtual machines from one or more Hyper-V hosts."
+msgstr "从一台或多台Hyper-V主机中获取虚拟机信息。"
+
+msgid "Retrieves information about the assignable device from a specific virtual machine."
+msgstr "检索与特定虚拟机相关联的可分配设备的信息。"
+
+msgid "Gets the BIOS of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的BIOS信息。"
+
+msgid "Gets the COM ports of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的COM端口信息。"
+
+msgid "Gets entries showing users and the virtual machines to which they can connect on one or more Hyper-V hosts."
+msgstr "获取用户在多台Hyper-V主机上可连接的虚拟机列表。"
+
+msgid "Gets the DVD drives attached to a virtual machine or snapshot."
+msgstr "获取连接到虚拟机或快照的DVD驱动器信息。"
+
+msgid "Gets the Fibre Channel host bus adapters associated with one or more virtual machines."
+msgstr "获取与一台或多台虚拟机相关联的光纤通道主机总线适配器信息。"
+
+msgid "Gets the firmware configuration of a virtual machine."
+msgstr "获取虚拟机的固件配置信息。"
+
+msgid "Gets the floppy disk drives of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的软盘驱动器信息。"
+
+msgid "Gets the information of assigned GPU partitions to a virtual machine."
+msgstr "获取分配给虚拟机的GPU分区信息。"
+
+msgid "Gets virtual machine groups."
+msgstr "获取虚拟机组信息。"
+
+msgid "Gets the virtual hard disk drives attached to one or more virtual machines."
+msgstr "获取连接到一台或多台虚拟机的虚拟硬盘驱动器信息。"
+
+msgid "Gets a Hyper-V host."
+msgstr "获取Hyper-V主机信息。"
+
+msgid "Retrieves device information assigned to a virtual machine (VM) host."
+msgstr "检索分配给虚拟机主机的设备信息。"
+
+msgid "Gets virtual machine host clusters."
+msgstr "获取虚拟机主机集群信息。"
+
+msgid "Gets the host machine's partitionable GPU."
+msgstr "获取主机可配置的GPU信息。"
+
+msgid "Gets the NUMA topology of a virtual machine host."
+msgstr "获取虚拟机主机的NUMA（Non-Uniform Memory Access）节点信息。"
+
+msgid "Gets the status of the virtual machines on the non-uniform memory access (NUMA) nodes of a virtual machine host or hosts."
+msgstr "获取虚拟机主机上非统一内存访问（NUMA）节点的状态。"
+
+msgid "Returns a list of virtual machine configuration versions that are supported on a host."
+msgstr "返回主机支持的虚拟机配置版本列表。"
+
+msgid "Gets the IDE controllers of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的IDE控制器信息。"
+
+msgid "Gets the integration services of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的集成服务信息。"
+
+msgid "Retrieves a key protector for a virtual machine."
+msgstr "检索虚拟机的密钥保护器信息。"
+
+msgid "Gets the memory of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的内存信息。"
+
+msgid "Gets the networks added for migration to one or more virtual machine hosts."
+msgstr "获取用于一台或多台虚拟机迁移的网络信息。"
+
+msgid "Gets the virtual network adapters of a virtual machine, snapshot, management operating system, or of a virtual machine and management operating system."
+msgstr "获取虚拟机的虚拟网络适配器信息。"
+
+msgid "Gets the ACLs configured for a virtual machine network adapter."
+msgstr "获取应用于虚拟网络适配器的ACL（Access Control List）信息。"
+
+msgid "Gets extended ACLs configured for a virtual network adapter."
+msgstr "获取应用于虚拟网络适配器的扩展ACL信息。"
+
+msgid "Gets the IP address of a virtual network adapter configured to be used when a virtual machine fails over."
+msgstr "获取用于虚拟机故障转移的虚拟网络适配器IP地址。"
+
+msgid "Gets isolation settings for a virtual network adapter."
+msgstr "获取虚拟网络适配器的隔离设置信息。"
+
+msgid "Gets members of a routing domain."
+msgstr "获取路由域成员信息。"
+
+msgid "Gets the virtual LAN settings configured on a virtual network adapter."
+msgstr "获取应用于虚拟网络适配器的虚拟局域网（LAN）设置信息。"
+
+msgid "Gets the processor of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的处理器信息。"
+
+msgid "Gets the RemoteFX video adapter of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的RemoteFX视频适配器信息。"
+
+msgid "Gets the RemoteFX physical graphics adapters on one or more Hyper-V hosts."
+msgstr "获取一台或多台Hyper-V主机上的RemoteFX物理图形适配器信息。"
+
+msgid "Gets the replication settings for a virtual machine."
+msgstr "获取虚拟机的复制设置信息。"
+
+msgid "Gets the authorization entries of a Replica server."
+msgstr "获取副本服务器的授权配置信息。"
+
+msgid "Gets the replication and authentication settings of a Replica server."
+msgstr "获取副本服务器的复制和认证设置信息。"
+
+msgid "Gets the resource pools on one or more virtual machine hosts."
+msgstr "获取一台或多台虚拟主机上的资源池信息。"
+
+msgid "Gets the available virtual machine storage area networks on a Hyper-V host or hosts."
+msgstr "获取Hyper-V主机上可用的虚拟存储区域网络（SAN）信息。"
+
+msgid "Gets the SCSI controllers of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的SCSI控制器信息。"
+
+msgid "Gets security information about a virtual machine."
+msgstr "获取虚拟机的安全设置信息。"
+
+msgid "Gets the checkpoints associated with a virtual machine or checkpoint."
+msgstr "获取与虚拟机关联的检查点（snapshot）信息。"
+
+msgid "Gets the storage paths in a storage resource pool."
+msgstr "获取存储资源池中的路径信息。"
+
+msgid "Gets virtual switches from one or more virtual Hyper-V hosts."
+msgstr "获取一台或多台Hyper-V主机上的虚拟交换机信息。"
+
+msgid "Gets the extensions on one or more virtual switches."
+msgstr "获取应用于虚拟交换机的扩展功能信息。"
+
+msgid "Retrieves the status of a virtual switch extension feature applied to a virtual network adapter."
+msgstr "获取应用于虚拟网络适配器的扩展功能状态信息。"
+
+msgid "Gets the features configured on a virtual network adapter."
+msgstr "获取应用于虚拟网络适配器的功能配置信息。"
+
+msgid "Gets the status of a virtual switch extension feature applied on a virtual switch."
+msgstr "获取应用于虚拟交换机的功能状态信息。"
+
+msgid "Gets the features configured on a virtual switch."
+msgstr "获取虚拟交换机上配置的参数或功能信息。"
+
+msgid "Gets virtual switch teams from Hyper-V hosts."
+msgstr "获取Hyper-V主机上的虚拟交换机团队信息。"
+
+msgid "Gets the switch extensions installed on a virtual machine host."
+msgstr "获取虚拟机上安装的交换机扩展功能。"
+
+msgid "Gets the port-level features supported by virtual switch extensions on one or more Hyper-V hosts."
+msgstr "获取Hyper-V主机上的端口级扩展功能配置。"
+
+msgid "Gets the switch-level features on one or more Hyper-V hosts."
+msgstr "获取Hyper-V主机上的交换机高级功能配置。"
+
+msgid "Gets video settings for virtual machines."
+msgstr "获取虚拟机的视频设置信息。"
+
+msgid "Grants a user or users access to connect to a virtual machine or machines."
+msgstr "授权用户访问虚拟机。"
+
+msgid "Imports a virtual machine from a file."
+msgstr "从文件导入虚拟机。"
+
+msgid "Imports initial replication files for a Replica virtual machine to complete the initial replication when using external media as the source."
+msgstr "使用外部介质作为源，导入初始复制文件以完成虚拟机的初始化复制过程。"
+
+msgid "Reports resource utilization data for one or more virtual machines."
+msgstr "报告多个虚拟机的资源使用情况。"
+
+msgid "Gets replication statistics and information associated with a virtual machine."
+msgstr "获取与虚拟机相关的复制统计信息。"
+
+msgid "Reports resource utilization data for one or more resource pools."
+msgstr "报告多个资源池的资源使用情况。"
+
+msgid "Merges virtual hard disks."
+msgstr "合并虚拟硬盘文件。"
+
+msgid "Mounts one or more virtual hard disks."
+msgstr "挂载一个或多个虚拟硬盘。"
+
+msgid "Mounts a device to a virtual machine (VM) host."
+msgstr "将设备安装到虚拟机主机上。"
+
+msgid "Moves a virtual machine to a new Hyper-V host."
+msgstr "将虚拟机移动到新的Hyper-V主机上。"
+
+msgid "Moves the storage of a virtual machine."
+msgstr "调整虚拟机的存储配置。"
+
+msgid "Creates a virtual floppy disk."
+msgstr "创建一个新的虚拟软盘驱动器。"
+
+msgid "Creates one or more new virtual hard disks."
+msgstr "创建一个新的虚拟硬盘。"
+
+msgid "Creates a new virtual machine."
+msgstr "创建一个新的虚拟机。"
+
+msgid "Creates a virtual machine group."
+msgstr "创建一个新的虚拟机组。"
+
+msgid "Creates a new authorization entry that allows one or more primary servers to replicate data to a specified Replica server."
+msgstr "创建新的授权条目，允许一个或多个主服务器向指定的副本服务器复制数据。"
+
+msgid "Creates a resource pool."
+msgstr "创建一个新的资源池。"
+
+msgid "Creates a new virtual storage area network (SAN) on a Hyper-V host."
+msgstr "在Hyper-V主机上创建一个新的虚拟存储网络（SAN）。"
+
+msgid "Creates a new virtual switch on one or more virtual machine hosts."
+msgstr "创建一个新的虚拟交换机。"
+
+msgid "Optimizes the allocation of space used by virtual hard disk files, except for fixed virtual hard disks."
+msgstr "优化虚拟硬盘文件的空间使用情况（不包括固定类型的虚拟硬盘）。"
+
+msgid "Optimizes VHD set files."
+msgstr "优化VHD集文件的结构。"
+
+msgid "Removes a checkpoint from a VHD set file."
+msgstr "从VHD集合中删除检查点。"
+
+msgid "Deletes a virtual machine."
+msgstr "删除一个虚拟机。"
+
+msgid "Removes information about the assignable devices from a specific virtual machine."
+msgstr "移除与特定虚拟机关联的设备的配置信息。"
+
+msgid "Deletes a DVD drive from a virtual machine."
+msgstr "从虚拟机中删除DVD驱动器。"
+
+msgid "Removes a Fibre Channel host bus adapter from a virtual machine."
+msgstr "从虚拟机中移除Fibre Channel主机总线适配器。"
+
+msgid "Removes an assigned GPU partition from a virtual machine."
+msgstr "从虚拟机中移除已分配的GPU分区配置。"
+
+msgid "Removes a virtual machine group."
+msgstr "删除一个虚拟机组。"
+
+msgid "Removes members from a virtual machine group."
+msgstr "从虚拟机组中移除成员信息。"
+
+msgid "Deletes a hard disk drive from a virtual machine."
+msgstr "从虚拟机中删除硬盘驱动器。"
+
+msgid "Removes a device assigned to a virtual machine (VM) host."
+msgstr "移除与虚拟机主机关联的设备配置。"
+
+msgid "Removes a network from use with migration."
+msgstr "停止使用某个网络进行虚拟机迁移。"
+
+msgid "Removes one or more virtual network adapters from a virtual machine."
+msgstr "从虚拟机中移除虚拟网络适配器。"
+
+msgid "Removes an ACL applied to the traffic through a virtual network adapter."
+msgstr "删除应用于虚拟网络适配器的访问控制列表（ACL）配置。"
+
+msgid "Removes an extended ACL for a virtual network adapter."
+msgstr "移除虚拟网络适配器的扩展ACL配置。"
+
+msgid "Removes a routing domain from a virtual network adapter."
+msgstr "从虚拟网络适配器中删除路由域。"
+
+msgid "Removes a RemoteFX 3D video adapter from a virtual machine."
+msgstr "从虚拟机中移除 RemoteFX 3D 视频适配器。"
+
+msgid "Removes the replication relationship of a virtual machine."
+msgstr "删除虚拟机的复制关系（replication relationship）。"
+
+msgid "Removes an authorization entry from a Replica server."
+msgstr "从副本服务器（ Replica server）中删除相应的授权条目。"
+
+msgid "Deletes a resource pool from one or more virtual machine hosts."
+msgstr "从一个或多个虚拟机主机中删除资源池。"
+
+msgid "Removes a virtual storage area network (SAN) from a Hyper-V host."
+msgstr "从 Hyper-V 主机上移除虚拟存储区域网络（SAN）。"
+
+msgid "Deletes the saved state of a saved virtual machine."
+msgstr "删除已保存的虚拟机的状态信息。"
+
+msgid "Removes a SCSI controller from a virtual machine."
+msgstr "从虚拟机中移除 SCSI 控制器。"
+
+msgid "Deletes a virtual machine checkpoint."
+msgstr "删除虚拟机的快照。"
+
+msgid "Removes a path from a storage resource pool."
+msgstr "从存储资源池中删除指定的路径信息。"
+
+msgid "Deletes a virtual switch."
+msgstr "删除虚拟交换机（virtual switch）。"
+
+msgid "Removes a feature from a virtual network adapter."
+msgstr "从虚拟网络适配器中移除相关扩展端口功能（extension port feature）。"
+
+msgid "Removes a feature from a virtual switch."
+msgstr "从虚拟交换机中移除相关扩展功能（extension switch feature）。"
+
+msgid "Removes a member from a virtual machine switch team."
+msgstr "从虚拟交换机团队中移除某个成员。"
+
+msgid "Renames a virtual machine."
+msgstr "重命名虚拟机。"
+
+msgid "Renames virtual machine groups."
+msgstr "重命名虚拟机组。"
+
+msgid "Renames a virtual network adapter on a virtual machine or on the management operating system."
+msgstr "重命名虚拟网络适配器。"
+
+msgid "Renames a resource pool on one or more Hyper-V hosts."
+msgstr "重命名资源池。"
+
+msgid "Renames a virtual storage area network (SAN)."
+msgstr "重命名虚拟存储区域网络（SAN）。"
+
+msgid "Renames a virtual machine checkpoint."
+msgstr "重命名虚拟机检查点。"
+
+msgid "Renames a virtual switch."
+msgstr "重命名虚拟交换机。"
+
+msgid "Repairs one or more virtual machines."
+msgstr "修复一个或多个虚拟机。"
+
+msgid "Resets the replication statistics of a virtual machine."
+msgstr "重置虚拟机的复制统计信息。"
+
+msgid "Resets the resource utilization data collected by Hyper-V resource metering."
+msgstr "重置虚拟机的资源使用情况数据收集配置。"
+
+msgid "Resizes a virtual hard disk."
+msgstr "调整虚拟硬盘的大小。"
+
+msgid "Restarts a virtual machine."
+msgstr "重启虚拟机。"
+
+msgid "Restores a virtual machine checkpoint."
+msgstr "恢复虚拟机检查点。"
+
+msgid "Resumes a suspended (paused) virtual machine."
+msgstr "恢复暂停中的虚拟机。"
+
+msgid "Resumes a virtual machine replication that is in a state of Paused, Error, Resynchronization Required, or Suspended."
+msgstr "恢复处于“暂停”（Paused）、“错误”（Error）、“需要重新同步”（Resynchronization Required）或“已挂起”（Suspedended）状态的虚拟机复制操作。"
+
+msgid "Revokes access for one or more users to connect to a one or more virtual machines."
+msgstr "撤销用户对虚拟机的连接权限。"
+
+msgid "Saves a virtual machine."
+msgstr "保存虚拟机配置。"
+
+msgid "Sets properties associated with a virtual hard disk."
+msgstr "设置虚拟硬盘的属性。"
+
+msgid "Configures a virtual machine."
+msgstr "配置虚拟机的整体参数。"
+
+msgid "Configures the BIOS of a Generation 1 virtual machine."
+msgstr "配置虚拟机的BIOS信息。"
+
+msgid "Configures the COM port of a virtual machine."
+msgstr "配置虚拟机的COM端口。"
+
+msgid "Configures a virtual DVD drive."
+msgstr "配置虚拟DVD驱动器。"
+
+msgid "Configures a Fibre Channel host bus adapter on a virtual machine."
+msgstr "配置虚拟机的Fibre Channel主机总线适配器。"
+
+msgid "Sets the firmware configuration of a virtual machine."
+msgstr "设置虚拟机的固件配置。"
+
+msgid "Configures a virtual floppy disk drive."
+msgstr "配置虚拟机的软盘驱动器。"
+
+msgid "Assigns a partition of a GPU to a virtual machine."
+msgstr "为虚拟机分配GPU分区。"
+
+msgid "Configures a virtual hard disk."
+msgstr "配置虚拟硬盘驱动器。"
+
+msgid "Configures a Hyper-V host."
+msgstr "配置Hyper-V主机信息。"
+
+msgid "Configures a virtual machine host cluster."
+msgstr "配置虚拟机主机集群。"
+
+msgid "Configures a host partitionable GPU to the number of partitions supported by the manufacturer."
+msgstr "配置主机的可分区GPU资源，将主机上的可分区 GPU 分割成制造商支持的分区数量。"
+
+msgid "Configures a key protector for a virtual machine."
+msgstr "为虚拟机配置密钥保护机制。"
+
+msgid "Configures the memory of a virtual machine."
+msgstr "配置虚拟机的内存参数。"
+
+msgid "Sets the subnet, subnet mask, and/or priority of a migration network."
+msgstr "设置迁移网络的子网、子网掩码及优先级等属性。"
+
+msgid "Configures features of the virtual network adapter in a virtual machine or the management operating system."
+msgstr "配置虚拟机或管理操作系统中虚拟网络适配器的相关功能。"
+
+msgid "Configures the IP address of a virtual network adapter to be used when a virtual machine fails over."
+msgstr "设置虚拟机故障转移时使用的虚拟网络适配器IP地址。"
+
+msgid "Modifies isolation settings for a virtual network adapter."
+msgstr "修改虚拟网络适配器的隔离设置。"
+
+msgid "Sets virtual subnets on a routing domain."
+msgstr "将虚拟子网关联到相应的路由域中。"
+
+msgid "Configures the virtual LAN settings for the traffic through a virtual network adapter."
+msgstr "配置通过虚拟网络适配器传输的数据流的VLAN设置。"
+
+msgid "Configures one or more processors of a virtual machine."
+msgstr "配置虚拟机的一个或多个处理器。"
+
+msgid "Configures the RemoteFX 3D video adapter of a virtual machine."
+msgstr "配置虚拟机的RemoteFX 3D视频适配器。"
+
+msgid "Modifies the replication settings of a virtual machine."
+msgstr "修改虚拟机的复制设置。"
+
+msgid "Modifies an authorization entry on a Replica server."
+msgstr "修改副本服务器上的授权信息。"
+
+msgid "Configures a host as a Replica server."
+msgstr "将某台主机配置为副本服务器。"
+
+msgid "Sets the parent resource pool for a selected resource pool."
+msgstr "为选定的资源池指定其所属的父资源池。"
+
+msgid "Configures a virtual storage area network (SAN) on one or more Hyper-V hosts."
+msgstr "在一个或多个Hyper-V主机上配置虚拟存储区域网络（SAN）。"
+
+msgid "Configures security settings for a virtual machine."
+msgstr "配置虚拟机的安全设置。"
+
+msgid "Configures the security policy for a virtual machine."
+msgstr "配置虚拟机的安全策略。"
+
+msgid "Configures a virtual switch."
+msgstr "配置虚拟交换机的相关参数。"
+
+msgid "Configures a feature on a virtual network adapter."
+msgstr "配置虚拟网络适配器的扩展端口功能。"
+
+msgid "Configures a feature on a virtual switch."
+msgstr "配置虚拟交换机的扩展交换机相关功能。"
+
+msgid "Configures a virtual switch team."
+msgstr "配置虚拟交换机的工作组信息。"
+
+msgid "Configures video settings for virtual machines."
+msgstr "配置虚拟机的视频显示设置。"
+
+msgid "Starts a virtual machine."
+msgstr "启动虚拟机。"
+
+msgid "Starts failover on a virtual machine."
+msgstr "启动虚拟机的故障转移功能。"
+
+msgid "Starts replication of a virtual machine."
+msgstr "开始虚拟机的复制过程。"
+
+msgid "Starts tracing to a file."
+msgstr "启动对虚拟机操作的追踪记录（将日志写入文件）。"
+
+msgid "Shuts down, turns off, or saves a virtual machine."
+msgstr "关闭或保存虚拟机状态。"
+
+msgid "Stops failover of a virtual machine."
+msgstr "停止虚拟机的故障转移功能。"
+
+msgid "Stops an ongoing initial replication."
+msgstr "终止正在进行的初始复制操作。"
+
+msgid "Cancels an ongoing virtual machine resynchronization."
+msgstr "取消虚拟机的同步过程。"
+
+msgid "Stops tracing to file."
+msgstr "停止对虚拟机操作的追踪记录（停止将日志写入文件）。"
+
+msgid "Suspends, or pauses, a virtual machine."
+msgstr "暂停虚拟机的运行状态。"
+
+msgid "Suspends replication of a virtual machine."
+msgstr "暂停虚拟机的复制过程。"
+
+msgid "Tests a virtual hard disk for any problems that would make it unusable."
+msgstr "检测虚拟硬盘是否存在可能导致其无法使用的故障。"
+
+msgid "Tests connectivity between virtual machines."
+msgstr "测试虚拟机之间的网络连接是否正常。"
+
+msgid "Tests the connection between a primary server and a Replica server."
+msgstr "测试主服务器与副本服务器之间的连接是否正常。"
+
+msgid "Updates the version of virtual machines."
+msgstr "更新虚拟机的版本信息。"
+
