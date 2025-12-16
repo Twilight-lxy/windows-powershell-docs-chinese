@@ -1,0 +1,61 @@
+msgid "Assigns a device to a virtual machine."
+msgstr "将一台设备分配给虚拟机。"
+
+msgid "The `Add-VMAssignableDevice` cmdlet assigns a physical device to a specified virtual machine (VM).\n"
+"This is commonly used for tasks such as attaching GPUs or network adapters directly to a VM to\n"
+"enhance performance for specific applications or workloads. The device can be specified through its\n"
+"instance path, location path, or assignable device object."
+msgstr "`Add-VMAssignableDevice cmdlet` 用于将物理设备分配给指定的虚拟机（VM）。该命令常用于将 GPU 或网络适配器直接连接到虚拟机上，从而提升特定应用程序或工作负载的性能。设备的指定方式可以是通过其实例路径、位置路径，或是使用 assignable device object 来进行。"
+
+
+msgid "This example attaches a physical device, identified by its instance path, to the virtual machine\n"
+"named **MyVM**."
+msgstr "这个示例将一个物理设备（该设备的唯一标识是通过其实例路径来确定的）连接到名为 **MyVM** 的虚拟机上。"
+
+msgid "Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession)\n"
+"or [Get-CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr "该 cmdlet 可在远程会话或远程计算机上执行。您可以输入计算机的名称，或者提供一个会话对象，例如通过 [New-CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet 生成的会话对象。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid "Specifies one or more Hyper-V hosts on which the assignable devices are to be retrieved. NetBIOS\n"
+"names, IP addresses, and fully qualified domain names are allowed. The default is the local\n"
+"computer. Use localhost or a dot (`.`) to specify the local computer explicitly."
+msgstr "指定一个或多个用于检索可分配设备的 Hyper-V 主机。允许使用 NetBIOS 名称、IP 地址或完全 Qualified Domain Name（FQDN）。默认值为本地计算机；可以使用 localhost 或点号（`.`）来明确表示本地计算机。"
+
+msgid "Specifies one or more user accounts that have permission to perform this action. The default is the\n"
+"current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Represents the Device Instance path in the host machine."
+msgstr "表示主机上的设备实例路径。"
+
+msgid "Specifies the location path to the assignable device"
+msgstr "指定可分配设备的路径位置。"
+
+msgid "Returns an object for each process that the cmdlet started."
+msgstr "为每个由该 cmdlet 启动的进程返回一个对象。"
+
+msgid "Specifies the name of the resource pool to which the device is to be assigned."
+msgstr "指定要将设备分配到的资源池的名称。"
+
+msgid "Specifies the number of the virtual function (VF) of an SR-IOV-capable network adapter assigned to\n"
+"the virtual machine."
+msgstr "该参数用于指定分配给虚拟机的、支持 SR-IOV（Scalable I/O Virtualization）的网络适配器的虚拟函数（Virtual Function，简称 VF）的编号。"
+
+msgid "Specifies the virtual machine to which the device is to be assigned."
+msgstr "指定要将设备分配到的虚拟机。"
+
+msgid "Specifies the name of the virtual machine to which the device is to be assigned."
+msgstr "指定要将设备分配到的虚拟机的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，系统会提示用户确认是否要继续执行该操作。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "显示如果运行了某个命令行工具（cmdlet），将会发生什么。但实际上，这个命令行工具并未被真正执行。"
+
+msgid "This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see"
+msgstr "此 cmdlet 支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction 和 -WarningVariable。有关更多信息，请参阅"
