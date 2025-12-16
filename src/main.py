@@ -139,6 +139,9 @@ class Translator:
             po_file = po_file_tree.find_sub_file(input_sub_dir.root.name + ".po")
             if po_file is not None:
                 use_po_file_dict.update({po_file: dir_num + 1})
+            po_file = po_file_tree.find_sub_dir(input_sub_dir.root.name).find_sub_file(input_sub_dir.root.name + ".po")
+            if po_file is not None:
+                use_po_file_dict.update({po_file: dir_num + 1})     
             self.resolve_translate(
                 input_sub_dir,
                 po_sub_dir,
