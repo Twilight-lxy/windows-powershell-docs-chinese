@@ -10,7 +10,9 @@
 
 /translate 目录保存对应文件的 .po 翻译文件
 
-/src 目录保存应用 .po 文件对原始文件翻译的 python 脚本。
+/src 目录中：
+- main.py：应用 .po 文件对原始文件翻译
+- translate.py 调用openai翻译原始文件，生成 .po 文件
 
 # 时间线
 

@@ -1,2 +1,6 @@
 polib
 loguru
+python-frontmatter
+markdown
+beautifulsoup4
+openai
