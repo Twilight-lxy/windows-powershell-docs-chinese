@@ -1,4 +1,4 @@
-# windows powershell 文档中文翻译
+# windows powershell 中文文档
 
 基于 [windows-powershell-docs](https://github.com/MicrosoftDocs/windows-powershell-docs) 仓库（2025.12）中的 windows-powershell 文档翻译，大部分内容使用 hunyuan-mt-7b (Q4_K_M) 翻译。
 
