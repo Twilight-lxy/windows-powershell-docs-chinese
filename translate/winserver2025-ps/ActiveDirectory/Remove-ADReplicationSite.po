@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:13:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ADReplicationSite"
+msgstr "# 删除 AD 复制站点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Deletes the specified replication site object from Active Directory."
+msgstr "从 Active Directory 中删除指定的复制站点对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-ADReplicationSite** cmdlet deletes a specified replication site object from Active Directory.\n"
+"If domain controllers are no longer needed in a network location, you can remove them from a site and then delete the site object.\n"
+"Before deleting the site, you must remove all domain controllers from the site either by removing them entirely or by moving them to a new location."
+msgstr ""
+"**Remove-ADReplicationSite** cmdlet 用于从 Active Directory "
+"中删除指定的复制站点对象。如果某个网络位置不再需要域控制器，您可以先将这些域控制器从这个站点中移除，然后再删除该站点对象。在删除站点之前，必须确保所有域控制器都已被从该站点中移除——要么完全删除它们，要么将它们迁移到新的位置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a specified replication site"
+msgstr "### 示例 1：移除指定的复制站点"
+
+msgid "This command removes the site with name Europe."
+msgstr "这个命令会删除名为“Europe”的网站。"
+
+msgid "### Example 2: Get filtered replication sites and remove them"
+msgstr "### 示例 2：获取经过过滤的复制站点并删除它们"
+
+msgid ""
+"This command gets the sites that are for testing only and removes them."
+msgstr "这个命令会获取那些仅用于测试的网站，并将它们删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该cmdlet是从Windows PowerShell提供程序的Active "
+"Directory模块驱动器中运行的。如果该cmdlet是从这样的驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01\\User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为该参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 `PSCredential` 对象。之后，你可以将 "
+"`Credential` 参数设置为这个 `PSCredential` 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果执行该任务的代理程序没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory object by providing one of the following property values.\n"
+"The identifier in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory "
+"对象。括号中的标识符是该属性的轻量级目录访问协议（LDAP）显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"此cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，该cmdlet会返回一个无法终止执行的错误（即程序会持续运行而不会正常结束）。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为一个对象实例。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADReplicationSite](./Get-ADReplicationSite.md)"
+msgstr "[Get-ADReplicationSite](./Get-ADReplicationSite.md)"
+
+msgid "[New-ADReplicationSite](./New-ADReplicationSite.md)"
+msgstr "[New-ADReplicationSite](./New-ADReplicationSite.md)"
+
+msgid "[Set-ADReplicationSite](./Set-ADReplicationSite.md)"
+msgstr "[Set-ADReplicationSite](./Set-ADReplicationSite.md)"

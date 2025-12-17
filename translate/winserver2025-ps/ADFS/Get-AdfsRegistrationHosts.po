@@ -1,0 +1,80 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:03:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsRegistrationHosts"
+msgstr "# 获取 AdFS 注册主机信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"The Get-AdfsRegistrationHosts cmdlet is deprecated.\n"
+"Instead, use the Get-AdfsDeviceRegistrationUpnSuffix cmdlet."
+msgstr ""
+"`Get-AdfsRegistrationHosts` cmdlet 已被弃用。请改用 `Get-"
+"AdfsDeviceRegistrationUpnSuffix` cmdlet。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AdfsRegistrationHosts** cmdlet is deprecated in this release.\n"
+"Instead, use the Get-AdfsDeviceRegistrationUpnSuffix cmdlet."
+msgstr ""
+"`Get-AdfsRegistrationHosts` cmdlet 在此版本中已被弃用。请改用 `Get-"
+"AdfsDeviceRegistrationUpnSuffix` cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-AdfsRegistrationHosts](./Set-AdfsRegistrationHosts.md)"
+msgstr "[Set-AdfsRegistrationHosts](./Set-AdfsRegistrationHosts.md)"
+
+msgid ""
+"[Get-AdfsDeviceRegistrationUpnSuffix](./Get-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"[Get-AdfsDeviceRegistrationUpnSuffix](./Get-"
+"AdfsDeviceRegistrationUpnSuffix.md)"

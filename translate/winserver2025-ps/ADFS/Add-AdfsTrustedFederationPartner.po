@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:43:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AdfsTrustedFederationPartner"
+msgstr "# 添加 AdFS 可信赖的联邦合作伙伴"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds configuration settings for trusted federation partners in AD FS."
+msgstr "为 AD FS 中的可信联合合作伙伴添加配置设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-AdfsTrustedFederationPartner** cmdlet adds a federation partner "
+"that is trusted by this instance of Active Directory Federation Services (AD"
+" FS)."
+msgstr ""
+"`Add-AdfsTrustedFederationPartner` cmdlet 用于添加一个受此 Active Directory "
+"Federation Services (AD FS) 实例信任的联合伙伴。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the URI of the federation partner."
+msgstr "指定联盟合作伙伴的 URI（统一资源定位符）。"
+
+msgid "Specifies a name for the federation partner."
+msgstr "为联邦合作伙伴指定一个名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-AdfsTrustedFederationPartner](./Get-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"[Get-AdfsTrustedFederationPartner](./Get-AdfsTrustedFederationPartner.md)"
+
+msgid ""
+"[Remove-AdfsTrustedFederationPartner](./Remove-"
+"AdfsTrustedFederationPartner.md)"
+msgstr ""
+"[Remove-AdfsTrustedFederationPartner](./Remove-"
+"AdfsTrustedFederationPartner.md)"
+
+msgid ""
+"[Set-AdfsTrustedFederationPartner](./Set-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"[Set-AdfsTrustedFederationPartner](./Set-AdfsTrustedFederationPartner.md)"

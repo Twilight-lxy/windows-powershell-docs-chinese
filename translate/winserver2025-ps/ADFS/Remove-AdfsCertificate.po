@@ -1,0 +1,128 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:15:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AdfsCertificate"
+msgstr "# 删除 Adfs 证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes a certificate from AD FS."
+msgstr "从 AD FS 中删除证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### TargetCertificate (Default)"
+msgstr "### TargetCertificate（默认值）"
+
+msgid "### ByProperties"
+msgstr "### ByProperties"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-AdfsCertificate** cmdlet removes a certificate from Active "
+"Directory Federation Services (AD FS)."
+msgstr ""
+"`Remove-AdfsCertificate` cmdlet 用于从 Active Directory Federation Services (AD"
+" FS) 中删除证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a token-signing certificate"
+msgstr "### 示例 1：移除令牌签名证书"
+
+msgid "This command removes a token-signing certificate from AD FS."
+msgstr "此命令会从 AD FS 中删除用于令牌签名的证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the type of the certificate to remove.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要删除的证书的类型。此参数的可接受值为："
+
+msgid ""
+"Specifies the certificate to remove.\n"
+"This value is typically taken from the pipeline."
+msgstr "指定要删除的证书。该值通常来自处理流程（pipeline）。"
+
+msgid "Specifies the thumbprint of the certificate to remove."
+msgstr "指定要删除的证书的“指纹”（即用于唯一标识该证书的信息）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ServiceCertificate"
+msgstr "### MicrosoftIdentityServer POWERShell.Resources.ServiceCertificate"
+
+msgid ""
+"A ServiceCertificate object is received by the *TargetCertificate* "
+"parameter."
+msgstr "`*TargetCertificate*` 参数接收一个 `ServiceCertificate` 对象。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "A string object is received by the *Thumbprint* parameter."
+msgstr "*Thumbprint* 参数接收一个字符串对象作为参数值。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsCertificate](./Add-AdfsCertificate.md)"
+msgstr "[Add-AdfsCertificate](./Add-AdfsCertificate.md)"
+
+msgid "[Get-AdfsCertificate](./Get-AdfsCertificate.md)"
+msgstr "[Get-AdfsCertificate](./Get-AdfsCertificate.md)"
+
+msgid "[Set-AdfsCertificate](./Set-AdfsCertificate.md)"
+msgstr "[Set-AdfsCertificate](./Set-AdfsCertificate.md)"
+
+msgid "[Update-AdfsCertificate](./Update-AdfsCertificate.md)"
+msgstr "[更新 AdfsCertificate](./Update-AdfsCertificate.md)"

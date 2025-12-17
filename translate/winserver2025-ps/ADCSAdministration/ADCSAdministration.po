@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:12:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# ADCSAdministration Module"
+msgstr "# ADCS管理模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This topic contains the brief descriptions of the Windows PowerShell® "
+"cmdlets that are for use in administering the Active Directory Certificate "
+"Services (AD CS) certification authority (CA) role service. Each cmdlet in "
+"the table is linked to additional information about that cmdlet."
+msgstr ""
+"这个主题包含了用于管理 Active Directory 证书服务（AD CS）证书颁发机构（CA）角色服务的 Windows PowerShell® "
+"cmdlets 的简要描述。表格中的每个 cmdlet 都链接到了有关该 cmdlet 的更多详细信息。"
+
+msgid "## ADCSAdministration Cmdlets"
+msgstr "## ADCSAdministrationCmdlets"
+
+msgid ""
+"### [Add-CAAuthorityInformationAccess](./Add-"
+"CAAuthorityInformationAccess.md)"
+msgstr ""
+"### [Add-CAAuthorityInformationAccess](./Add-"
+"CAAuthorityInformationAccess.md)"
+
+msgid "Configures the AIA or OCSP for a certification authority."
+msgstr ""
+"为认证机构配置AIA（Automated Infrastructure Authorization）或OCSP（Online Certificate "
+"Status Protocol）。"
+
+msgid "### [Add-CACrlDistributionPoint](./Add-CACrlDistributionPoint.md)"
+msgstr "### [Add-CACrlDistributionPoint](./Add-CACrlDistributionPoint.md)"
+
+msgid ""
+"Adds a CRL distribution point URI where AD CS publishes certification "
+"revocations."
+msgstr "添加一个CRL（证书吊销列表）分发点URI，用于AD CS发布证书吊销信息。"
+
+msgid "### [Add-CATemplate](./Add-CATemplate.md)"
+msgstr "### [Add-CATemplate](./Add-CATemplate.md)"
+
+msgid "Adds a certificate template to the CA."
+msgstr "向证书颁发机构（CA）添加一个证书模板。"
+
+msgid "### [Backup-CARoleService](./Backup-CARoleService.md)"
+msgstr "### [Backup-CARoleService](./Backup-CARoleService.md)"
+
+msgid "Backs up the CA database and private key information."
+msgstr "备份CA数据库和私钥信息。"
+
+msgid ""
+"### [Confirm-CAAttestationIdentityKeyInfo](Confirm-"
+"CAAttestationIdentityKeyInfo.md)"
+msgstr ""
+"### [Confirm-CAAttestationIdentityKeyInfo](Confirm-"
+"CAAttestationIdentityKeyInfo.md)"
+
+msgid ""
+"Checks whether the local CA trusts secure hardware for identity key "
+"attestation."
+msgstr "检查本地证书颁发机构（CA）是否信任用于身份密钥认证的安全硬件。"
+
+msgid "### [Confirm-CAEndorsementKeyInfo](Confirm-CAEndorsementKeyInfo.md)"
+msgstr "### [Confirm-CAEndorsementKeyInfo](Confirm-CAEndorsementKeyInfo.md)"
+
+msgid ""
+"Checks whether the local CA trusts secure hardware for key attestation."
+msgstr "检查本地证书颁发机构（CA）是否信任用于密钥认证的安全硬件。"
+
+msgid ""
+"### [Get-CAAuthorityInformationAccess](./Get-"
+"CAAuthorityInformationAccess.md)"
+msgstr ""
+"### [Get-CAAuthorityInformationAccess](./Get-"
+"CAAuthorityInformationAccess.md)"
+
+msgid ""
+"Gets the AIA and OCSP URI information set on the AIA extension of the CA "
+"properties."
+msgstr "获取设置在证书颁发机构（CA）属性的“AIA”扩展部分中的AIA和OCSP URI信息。"
+
+msgid "### [Get-CACrlDistributionPoint](./Get-CACrlDistributionPoint.md)"
+msgstr "### [Get-CACrlDistributionPoint](./Get-CACrlDistributionPoint.md)"
+
+msgid "Gets all the locations set on the CDP extension of the CA properties."
+msgstr "获取设置在 CA 属性的 CDP 扩展中的所有位置信息。"
+
+msgid "### [Get-CATemplate](./Get-CATemplate.md)"
+msgstr "### [Get-CATemplate](./Get-CATemplate.md)"
+
+msgid "Gets the list of templates set on the CA for issuance of certificates."
+msgstr "获取在证书颁发机构（CA）上设置的用于生成证书的模板列表。"
+
+msgid ""
+"### [Remove-CAAuthorityInformationAccess](./Remove-"
+"CAAuthorityInformationAccess.md)"
+msgstr ""
+"### [Remove-CAAuthorityInformationAccess](./Remove-"
+"CAAuthorityInformationAccess.md)"
+
+msgid ""
+"Removes AIA or OCSP URI from the AIA extension set on the certification "
+"authority."
+msgstr "从证书颁发机构的AIA扩展集中移除AIA或OCSP URI。"
+
+msgid ""
+"### [Remove-CACrlDistributionPoint](./Remove-CACrlDistributionPoint.md)"
+msgstr ""
+"### [Remove-CACrlDistributionPoint](./Remove-CACrlDistributionPoint.md)"
+
+msgid "Removes the URI for the CRL distribution point (CDP) from the CA."
+msgstr "从证书颁发机构（CA）中删除CRL分发点（CDP）的URI。"
+
+msgid "### [Remove-CATemplate](./Remove-CATemplate.md)"
+msgstr "### [Remove-CATemplate](./Remove-CATemplate.md)"
+
+msgid ""
+"Removes the templates from the CA which were set for issuance of "
+"certificates."
+msgstr "从用于证书签发的认证机构（CA）中删除这些模板。"
+
+msgid "### [Restore-CARoleService](./Restore-CARoleService.md)"
+msgstr "### [ Restore-CARoleService](./Restore-CARoleService.md)"
+
+msgid "Restores the CA database and private key information."
+msgstr "恢复CA数据库和私钥信息。"

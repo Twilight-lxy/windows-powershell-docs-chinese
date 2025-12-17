@@ -1,0 +1,137 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:22:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Uninstall-AdcsEnrollmentPolicyWebService"
+msgstr "# 卸载 AdcsEnrollmentPolicyWebService"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Uninstalls the Certificate Enrollment Policy Web service."
+msgstr "卸载“证书注册策略”Web服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### UninstallSingleInstance (Default)"
+msgstr "### UninstallSingleInstance（默认设置）"
+
+msgid "### UninstallAll"
+msgstr "### UninstallAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Uninstall-AdcsEnrollmentPolicyWebService` cmdlet uninstalls the Certificate Enrollment Policy\n"
+"(CEP) Web Service."
+msgstr ""
+"`Uninstall-AdcsEnrollmentPolicyWebService` cmdlet 用于卸载证书注册策略（Certificate "
+"Enrollment Policy, CEP）Web服务。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Uninstall all configuration in the CEP Web Service"
+msgstr "### 示例 1：卸载 CEP Web Service 中的所有配置"
+
+msgid ""
+"This command uninstalls all configurations in the CEP Web Service without prompting for\n"
+"confirmation."
+msgstr "此命令会卸载 CEP Web 服务中的所有配置，而不会提示用户进行确认。"
+
+msgid "### Example 2: Uninstall an instance of the CEP Web Service"
+msgstr "### 示例 2：卸载 CEP Web 服务的实例"
+
+msgid ""
+"This command uninstalls the instance of CEP Web Service that is utilizing certificate authentication\n"
+"and is in key-based renewal mode without prompting for confirmation."
+msgstr "此命令会卸载使用证书认证机制且处于基于密钥的更新模式下的 CEP Web 服务实例，而不会提示用户进行确认。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet uninstall all instances of the CEP Web Service."
+msgstr "表示该cmdlet会卸载所有CEP Web Service的实例。"
+
+msgid ""
+"Specifies the authentication type for the CEP Web Service instance to be uninstalled when multiple\n"
+"instances are present."
+msgstr "当存在多个 CEP Web 服务实例时，该参数用于指定要卸载的实例的身份验证类型。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您确认是否要继续。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不会询问用户的确认。"
+
+msgid ""
+"Indicates that this cmdlet uninstalls the instance of the CEP Web Service running in key-based\n"
+"renewal mode. This parameter is optional. It is used to distinguish which instance of the CEP Web\n"
+"Service is to be uninstalled if there are multiple instances that use the same authentication type.\n"
+"If this option is not specified, the instance of the CEP Web Service that is using the defined\n"
+"AuthenticationType that is not enabled for KeyBasedRenewal mode is uninstalled."
+msgstr ""
+"表示该 cmdlet 会卸载正在基于密钥的更新模式下运行的 CEP Web Service "
+"实例。此参数是可选的，用于在存在多个使用相同身份验证类型的实例时区分需要卸载的具体 CEP Web Service "
+"实例。如果未指定此选项，则会卸载未启用 KeyBasedRenewal 模式的、且使用了所定义身份验证类型（AuthenticationType）的 "
+"CEP Web Service 实例。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.Management.Automation.SwitchParameter"
+
+msgid "### Microsoft.CertificateServices.Deployment.Common.AuthenticationType"
+msgstr ""
+"### Microsoft.CertificateServices.Deployment(Common AuthenticationType"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Deployment.Common.CEP.EnrollmentPolicyServiceResult"
+msgstr ""
+"### "
+"Microsoft.CertificateServices.Deployment(Common.CEP.EnrollmentPolicyServiceResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Install-AdcsEnrollmentPolicyWebService](./Install-"
+"AdcsEnrollmentPolicyWebService.md)"
+msgstr ""
+"[安装 AdcsEnrollmentPolicyWebService](./Install-"
+"AdcsEnrollmentPolicyWebService.md)"

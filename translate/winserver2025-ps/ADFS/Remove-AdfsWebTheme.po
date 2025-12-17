@@ -1,0 +1,126 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:21:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AdfsWebTheme"
+msgstr "# 移除 AdfsWebTheme"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a web theme."
+msgstr "移除一个网页主题。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-AdfsWebTheme** cmdlet removes an **AdfsWebTheme** object.\n"
+"Specify a web theme by name or by using the **Get-AdfsWebTheme** cmdlet."
+msgstr ""
+"`Remove-AdfsWebTheme` cmdlet 用于删除一个 `AdfsWebTheme` 对象。您可以通过名称或使用 `Get-"
+"AdfsWebTheme` cmdlet 来指定要删除的网页主题。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a named web theme"
+msgstr "### 示例 1：移除一个已命名的网页主题"
+
+msgid "This command removes the web theme named Theme01."
+msgstr "这个命令会删除名为“Theme01”的网页主题。"
+
+msgid "### Example 2: Remove a web theme by specifying a web theme object"
+msgstr "### 示例 2：通过指定一个 Web 主题对象来移除该 Web 主题"
+
+msgid ""
+"This command uses the **Get-AdfsWebTheme** cmdlet to get the web theme named Theme02, and then passes it to the current cmdlet by using the pipeline operator.\n"
+"The cmdlet removes that web theme."
+msgstr ""
+"该命令使用 **Get-AdfsWebTheme** cmdlet 来获取名为 Theme02 的网页主题，然后通过管道运算符将其传递给当前的 "
+"cmdlet。该 cmdlet 会删除这个网页主题。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a name.\n"
+"The cmdlet removes the theme that you specify by name."
+msgstr "指定一个名称。该cmdlet会删除按名称指定的主题。"
+
+msgid ""
+"Specifies an **AdfsWebTheme** object.\n"
+"The cmdlet removes the theme that you specify.\n"
+"To obtain an **AdfsWebTheme** object, use the **Get-AdfsWebTheme** cmdlet."
+msgstr ""
+"用于指定一个 **AdfsWebTheme** 对象。该 cmdlet 会删除您指定的主题。要获取一个 **AdfsWebTheme** 对象，请使用 "
+"**Get-AdfsWebTheme** cmdlet。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid ""
+"### System.String;Microsoft.IdentityServer.Management.Resources.AdfsWebTheme"
+msgstr ""
+"### System.String; Microsoft.IdentityServer.ManagementResources.AdfsWebTheme"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-AdfsWebTheme](./Export-AdfsWebTheme.md)"
+msgstr "[Export-AdfsWebTheme](./Export-AdfsWebTheme.md)"
+
+msgid "[Get-AdfsWebTheme](./Get-AdfsWebTheme.md)"
+msgstr "[Get-AdfsWebTheme](./Get-AdfsWebTheme.md)"
+
+msgid "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"
+msgstr "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"
+
+msgid "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"
+msgstr "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"

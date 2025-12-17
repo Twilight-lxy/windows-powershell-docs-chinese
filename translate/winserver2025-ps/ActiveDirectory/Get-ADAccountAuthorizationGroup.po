@@ -1,0 +1,192 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 12:44:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ADAccountAuthorizationGroup"
+msgstr "# Get-ADAccountAuthorizationGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the accounts token group information."
+msgstr "获取账户令牌组信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ADAccountAuthorizationGroup` cmdlet gets the security groups from the specified user,\n"
+"computer, or service accounts token. This cmdlet requires a global catalog to perform the group\n"
+"search. If the forest that contains the account doesn't have a global catalog, the cmdlet returns a\n"
+"non-terminating error."
+msgstr ""
+"`Get-ADAccountAuthorizationGroup` cmdlet 从指定的用户、计算机或服务账户令牌中获取安全组信息。该 cmdlet "
+"需要全局目录来执行组搜索。如果包含该账户的 Active Directory 林中没有全局目录，该 cmdlet 将返回一个无法终止的错误。"
+
+msgid ""
+"The **Identity** parameter specifies the user, computer, or service account. You can identify a\n"
+"user, computer, or service account object by its distinguished name, GUID, security identifier\n"
+"(SID), Security Account Manager (SAM) account name or user principal name. You can also set the\n"
+"**Identity** parameter to an account object variable, such as `$<localAccountObject>`, or pass an\n"
+"account object through the pipeline to the **Identity** parameter. For example, you can use the\n"
+"`Get-ADUser`, `Get-ADComputer`, `Get-ADServiceAccount` or `Search-ADAccount` cmdlets to retrieve an\n"
+"account object and then pass the object through the pipeline to the\n"
+"`Get-ADAccountAuthorizationGroup` cmdlet."
+msgstr ""
+"**Identity** 参数用于指定用户、计算机或服务账户。您可以通过该对象的唯一名称（distinguished "
+"name）、GUID、安全标识符（Security Identifier, SID）、安全账户管理器（Security Account Manager,"
+" SAM）账户名或用户主体名称来识别相应的用户、计算机或服务账户对象。您还可以将 **Identity** 参数设置为某个账户对象变量（例如 "
+"`$<localAccountObject>`），或者通过管道将该账户对象传递给 **Identity** 参数。例如，您可以使用 `Get-"
+"ADUser`、`Get-ADComputer`、`Get-ADServiceAccount` 或 `Search-ADAccount` cmdlet "
+"来检索一个账户对象，然后再将该对象通过管道传递给 `Get-ADAccountAuthorizationGroup` cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all security groups for a specified account"
+msgstr "### 示例 1：获取指定账户的所有安全组"
+
+msgid ""
+"This command returns all security groups for the specified account with **SamAccountName**\n"
+"`DavidCh`."
+msgstr "该命令会返回指定账户（其用户名为 `DavidCh`）的所有安全组信息。"
+
+msgid ""
+"### Example 2: Get all security groups for a specified account using a "
+"distinguished name"
+msgstr "### 示例 2：使用规范名称获取指定账户的所有安全组"
+
+msgid ""
+"This command returns all security groups for the specified account with **DistinguishedName**\n"
+"`CN=DavidCh,DC=AppNC` in the AD LDS instance `<Server>:50000`."
+msgstr ""
+"该命令会从 AD LDS 实例 `<Server>:50000` 中返回指定账户的所有安全组，这些安全组的 **DistinguishedName** "
+"为 `CN=DavidCh,DC=AppNC`。"
+
+msgid "### Example 3: Get a filtered list of security groups"
+msgstr "### 示例 3：获取过滤后的安全组列表"
+
+msgid ""
+"This command returns a filtered list of built-in security groups that do not have an empty or null\n"
+"setting for **objectClass**, such as **Everyone** or **Authenticated Users**."
+msgstr ""
+"该命令返回一个过滤后的内置安全组列表，这些安全组的 **objectClass** 设置不为空或为 null（例如 **Everyone** 或 "
+"**Authenticated Users**）。"
+
+msgid ""
+"> [!NOTE]\n"
+"> This type of filtering of groups in output can be useful when piping the output of this\n"
+"> cmdlet to be used as input to other Active Directory cmdlets."
+msgstr ""
+"> [!注意] > 当将此cmdlet的输出作为输入传递给其他Active Directory "
+"cmdlet时，这种对输出中的组进行过滤的方法会非常有用。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is `Negotiate`."
+msgstr "默认的身份验证方法是`Negotiate`。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the `Basic` "
+"authentication method."
+msgstr "对于“基本”（Basic）认证方法而言，需要建立安全的套接字层（Secure Sockets Layer，简称SSL）连接。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task. The default credentials are the\n"
+"credentials of the currently logged on user unless the cmdlet is run from an Active Directory module\n"
+"for Windows PowerShell provider drive. If the cmdlet is run from such a provider drive, the account\n"
+"associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果该 cmdlet 是从这样的驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as `User1` or `Domain01\\User01` or you can\n"
+"specify a **PSCredential** object. If you specify a user name for this parameter, the cmdlet prompts\n"
+"for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 `User1` 或 `Domain01\\User01`），或者可以指定一个 **PSCredential**"
+" 对象。如果您为该参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the `Get-Credential`\n"
+"cmdlet. You can then set the **Credential** parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"**Credential** 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform the task, Active\n"
+"Directory module for Windows PowerShell returns a terminating error."
+msgstr "如果执行任务的账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory account object by providing one of the following property values. The\n"
+"identifier in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the\n"
+"attribute. The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory "
+"账户对象。括号中的标识符是该属性的轻量级目录访问协议（LDAP）显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object. If two or more\n"
+"objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"该cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，该cmdlet会返回一个无法终止的错误（即程序会无限循环执行）。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set this parameter to an\n"
+"account object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将该参数设置为某个账户对象实例的值。"
+
+msgid "Derived types such as the following are also accepted:"
+msgstr "以下这类派生类型也是被接受的："
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADGroup"
+msgstr "### Microsoft.ActiveDirectory.Management.ADGroup"
+
+msgid ""
+"Returns group objects that represent the security groups for the account."
+msgstr "返回表示该账户所属安全组的信息对象。"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADComputer](./Get-ADComputer.md)"
+msgstr "[Get-ADComputer](./Get-ADComputer.md)"
+
+msgid "[Get-ADServiceAccount](./Get-ADServiceAccount.md)"
+msgstr "[Get-ADServiceAccount](./Get-ADServiceAccount.md)"
+
+msgid "[Get-ADUser](./Get-ADUser.md)"
+msgstr "[Get-ADUser](./Get-ADUser.md)"
+
+msgid "[Search-ADAccount](./Search-ADAccount.md)"
+msgstr "[Search-ADAccount](./Search-ADAccount.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理Cmdlets](./activedirectory.md)"

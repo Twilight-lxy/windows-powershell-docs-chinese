@@ -1,0 +1,137 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:50:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-AdfsLocalClaimsProviderTrust"
+msgstr "# 禁用 AdfsLocalClaimsProviderTrust"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables a local claims provider trust."
+msgstr "禁用对本地声明提供者的信任。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Disable-AdfsLocalClaimsProviderTrust** cmdlet disables a local claims "
+"provider trust."
+msgstr ""
+"`Disable-AdfsLocalClaimsProviderTrust` cmdlet "
+"用于禁用对本地声明提供者的信任（即停止使用该本地声明提供者进行身份验证或授权操作）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable a local claims provider trust"
+msgstr "### 示例 1：禁用对本地声明提供者的信任"
+
+msgid "This command disables a local claims provider trust named testldap."
+msgstr "此命令会禁用一个名为“test ldap”的本地声明提供者信任（local claims provider trust）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the local claims provider trust to disable.\n"
+"To obtain a **LocalClaimsProviderTrust** object, use the **Get-AdfsLocalClaimsProviderTrust** cmdlet."
+msgstr ""
+"用于指定要禁用的本地声明提供者信任关系（local claims provider trust）。若要获取一个 "
+"**LocalClaimsProviderTrust** 对象，可以使用 **Get-AdfsLocalClaimsProviderTrust** "
+"cmdlet。"
+
+msgid "Specifies the ID of the local claims provider trust to disable."
+msgstr "指定要禁用的本地声明提供者信任（local claims provider trust）的ID。"
+
+msgid "Specifies the name of the local claims provider trust to disable."
+msgstr "指定要禁用的本地声明提供程序信任关系的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsLocalClaimsProviderTrust](./Add-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Add-AdfsLocalClaimsProviderTrust](./Add-AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Enable-AdfsLocalClaimsProviderTrust](./Enable-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Enable-AdfsLocalClaimsProviderTrust](./Enable-"
+"AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Get-AdfsLocalClaimsProviderTrust](./Get-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Get-AdfsLocalClaimsProviderTrust](./Get-AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Remove-AdfsLocalClaimsProviderTrust](./Remove-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Remove-AdfsLocalClaimsProviderTrust](./Remove-"
+"AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Set-AdfsLocalClaimsProviderTrust](./Set-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Set-AdfsLocalClaimsProviderTrust](./Set-AdfsLocalClaimsProviderTrust.md)"

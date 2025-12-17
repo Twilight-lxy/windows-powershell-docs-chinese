@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:15:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-CAAuthorityInformationAccess"
+msgstr "# 获取 CA 权限信息访问权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets the AIA and OCSP URI information set on the AIA extension of the CA "
+"properties."
+msgstr "获取设置在证书颁发机构（CA）属性的“AIA”扩展中的AIA和OCSP URI信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-CAAuthorityInformationAccess** cmdlet gets the Authority "
+"Information Access (AIA) and Online Certificate Status Protocol (OCSP) URI "
+"information set on the AIA extension of the certification authority (CA) "
+"properties."
+msgstr ""
+"`Get-CAAuthorityInformationAccess` cmdlet 可以获取证书颁发机构（CA）属性中 AIA（Authority "
+"Information Access）扩展部分所设置的 AIA URI 信息以及 OCSP（Online Certificate Status "
+"Protocol）URI 信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get AIA and OCSP URI information set on the AIA extension of "
+"the CA properties"
+msgstr "### 示例 1：从证书颁发机构（CA）属性的 AIA 扩展中获取 AIA 和 OCSP URI 信息"
+
+msgid ""
+"This command gets the current AIA and OCSP settings information for the "
+"certification authority."
+msgstr ""
+"该命令用于获取当前认证机构的AIA（Autonomous Identity Authority）和OCSP（Online Certificate "
+"Status Protocol）设置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None."
+msgstr "### 没有（需要说明的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Administration.Commands.CA.AuthorityInformationAccess"
+msgstr ""
+"### Microsoft.CertificateServices ADMINistration "
+"Commands.CA.AuthorityInformationAccess"
+
+msgid ""
+"This cmdlet returns an array of Authority Information Access (AIA) **Microsoft.CertificateServices.Management.Cmdlets.CA.AuthorityInformationAccess** objects.\n"
+"Each object will contain URI and different Boolean properties as follows:"
+msgstr ""
+"此cmdlet返回一个由Authority Information "
+"Access（AIA）对象组成的数组，具体类型为`Microsoft.CertificateServices.Management "
+"Cmdlets.CA.AuthorityInformationAccess`。每个对象将包含一个URI以及以下布尔属性："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-CAAuthorityInformationAccess](./Add-CAAuthorityInformationAccess.md)"
+msgstr ""
+"[Add-CAAuthorityInformationAccess](./Add-CAAuthorityInformationAccess.md)"
+
+msgid ""
+"[Remove-CAAuthorityInformationAccess](./Remove-"
+"CAAuthorityInformationAccess.md)"
+msgstr ""
+"[Remove-CAAuthorityInformationAccess](./Remove-CA "
+"AuthorityInformationAccess.md)"

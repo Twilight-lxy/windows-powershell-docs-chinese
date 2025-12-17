@@ -1,0 +1,116 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:56:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-AdfsWebContent"
+msgstr "# 导出 AdFS Web 内容"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Exports properties of all web content objects in a specific locale to a "
+"specified file."
+msgstr "将所有网页内容对象在特定区域设置（locale）下的属性导出到指定的文件中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Export-AdfsWebContent** cmdlet exports properties of all web content objects in a specific locale, including global and relying party web contents, to a specified file.\n"
+"If you do not specify a locale, the cmdlet exports the web content of the invariant locale.\n"
+"The **Set-AdfsGlobalWebContent** and **Set-AdfsRelyingPartyWebContent** cmdlets add customized web content."
+msgstr ""
+"`Export-AdfsWebContent` cmdlet 可将特定区域设置（locale）下所有 Web 内容对象的属性（包括全局 Web "
+"内容和依赖方 Web 内容）导出到指定的文件中。如果未指定区域设置，该 cmdlet 会导出使用不变区域设置的 Web 内容。`Set-"
+"AdfsGlobalWebContent` 和 `Set-AdfsRelyingPartyWebContent` cmdlets 用于添加自定义的 "
+"Web 内容。"
+
+msgid ""
+"Use this cmdlet to implement localization of custom messages for the Active Directory Federation Services (AD FS) sign-in experience.\n"
+"Export the web content to a .resx file, localize the file, and then import the localized .resx file by using the **Import-AdfsWebContent** cmdlet."
+msgstr ""
+"使用此cmdlet来实现Active Directory Federation Services（AD "
+"FS）登录体验中自定义消息的本地化。将网页内容导出为.resx文件，对该文件进行本地化处理，然后使用**Import-AdfsWebContent** "
+"cmdlet导入本地化的.resx文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Export web content for the invariant locale"
+msgstr "### 示例 1：为不变的本地化设置导出网页内容"
+
+msgid ""
+"This command exports all the customized web content for the invariant locale"
+" to the specified file."
+msgstr "此命令会将所有为不变区域设置（invariant locale）定制的网页内容导出到指定的文件中。"
+
+msgid "### Example 2: Export web content for a specified locale"
+msgstr "### 示例 2：为指定的区域设置导出网页内容"
+
+msgid ""
+"This command exports all the customized web content for the en-us locale to "
+"the specified file."
+msgstr "该命令会将所有针对“en-us”语言环境的自定义网页内容导出到指定的文件中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a file path.\n"
+"The cmdlet exports properties of web content objects to the file that you specify."
+msgstr "指定一个文件路径。该cmdlet会将网页内容对象的属性导出到您指定的文件中。"
+
+msgid ""
+"Specifies a locale.\n"
+"The cmdlet exports properties of web content objects for the local that you specify."
+msgstr "用于指定一个区域设置（locale）。该cmdlet会输出与所指定的区域设置相关联的网页内容对象的属性信息。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并未运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Import-AdfsWebContent](./Import-AdfsWebContent.md)"
+msgstr "[Import-AdfsWebContent](./Import-AdfsWebContent.md)"

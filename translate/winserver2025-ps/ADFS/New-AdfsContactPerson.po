@@ -1,0 +1,110 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:11:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AdfsContactPerson"
+msgstr "# 新的 AdFS 联系人信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a contact person object."
+msgstr "创建一个联系人对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-AdfsContactPerson** cmdlet creates a contact person object in "
+"ADFS."
+msgstr "`New-AdfsContactPerson` cmdlet 用于在 ADFS 中创建一个联系人对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create and publish contact person object"
+msgstr "### 示例 1：创建并发布联系人对象"
+
+msgid ""
+"The first command creates a contact person who has the specified address, "
+"and then assigns it to the $CP variable."
+msgstr "第一个命令创建了一个具有指定地址的联系人，并将其赋值给 $CP 变量。"
+
+msgid ""
+"The second command uses the **Set-AdfsProperties** cmdlet to publish the "
+"contact person object to the Federation Service."
+msgstr ""
+"第二个命令使用 **Set-AdfsProperties** cmdlet 将联系人对象发布到联邦服务（Federation Service）中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the company name of the contact person."
+msgstr "指定联系人的公司名称。"
+
+msgid "Specifies an array of e-mail addresses of the contact person."
+msgstr "指定联系人的电子邮件地址数组。"
+
+msgid "Specifies the given name of the contact person."
+msgstr "指定联系人的姓名。"
+
+msgid "Specifies the surname, or last name, of the contact person."
+msgstr "指定联系人的姓氏。"
+
+msgid "Specifies an array of telephone numbers of the contact person."
+msgstr "指定联系人的电话号码数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ContactPerson"
+msgstr "### MicrosoftIdentityServer POWERShell.Resources.ContactPerson"
+
+msgid ""
+"This cmdlet generates a class structure that represents a contact person "
+"object in the Federation Service."
+msgstr "此cmdlet生成一个类结构，用于表示联邦服务中的联系人对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsProperties](./Get-AdfsProperties.md)"
+msgstr "[Get-AdfsProperties](./Get-AdfsProperties.md)"
+
+msgid "[Set-AdfsProperties](./Set-AdfsProperties.md)"
+msgstr "[Set-AdfsProperties](./Set-AdfsProperties.md)"

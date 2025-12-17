@@ -1,0 +1,120 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:15:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AdfsAuthenticationProviderWebContent"
+msgstr "# 删除 AdfsAuthenticationProviderWebContent"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Removes web content customization of the authentication provider in the user"
+" sign-in web pages from AD FS."
+msgstr "从 AD FS 的用户登录网页中移除了身份验证提供者的 Web 内容自定义功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierName (Default)"
+msgstr "### IdentifierName（默认值）"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-AdfsAuthenticationProviderWebContent** cmdlet removes web "
+"content customization of the authentication provider in the user sign-in web"
+" pages from the Active Directory Federation Services (AD FS) service."
+msgstr ""
+"`Remove-AdfsAuthenticationProviderWebContent` cmdlet 用于删除 Active Directory "
+"Federation Services (AD FS) 服务中用户登录网页上与身份验证提供程序相关的自定义网页内容。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove authentication provider web content"
+msgstr "### 示例 1：移除认证提供者的网页内容"
+
+msgid ""
+"This command removes the provider web content for the authentication "
+"provider named ContosoAuthenticationProvider."
+msgstr "此命令会删除名为 ContosoAuthenticationProvider 的身份验证提供程序的相关网页内容（即其 Web 内容）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a locale.\n"
+"The cmdlet removes the provider web content associated with the locale that you specify."
+msgstr "用于指定一个区域设置（locale）。该cmdlet会删除与您指定的区域设置相关联的提供程序网页内容。"
+
+msgid ""
+"Specifies a name.\n"
+"The cmdlet gets the provider web content associated with the name that you specify."
+msgstr "用于指定一个名称。该cmdlet会获取与您指定的名称关联的提供程序网页内容。"
+
+msgid ""
+"Specifies an **AdfsAuthenticationProviderWebContent** object that is used by"
+" the pipeline."
+msgstr "指定一个由管道使用的 **AdfsAuthenticationProviderWebContent** 对象。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-AdfsAuthenticationProviderWebContent](./Get-"
+"AdfsAuthenticationProviderWebContent.md)"
+msgstr ""
+"[Get-AdfsAuthenticationProviderWebContent](./Get-"
+"AdfsAuthenticationProviderWebContent.md)"
+
+msgid ""
+"[Set-AdfsAuthenticationProviderWebContent](./Set-"
+"AdfsAuthenticationProviderWebContent.md)"
+msgstr ""
+"[Set-AdfsAuthenticationProviderWebContent](./Set-"
+"AdfsAuthenticationProviderWebContent.md)"

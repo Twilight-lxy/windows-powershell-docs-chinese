@@ -1,0 +1,187 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:14:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ADReplicationSubnet"
+msgstr "# 移除 AD 复制子网"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Deletes the specified Active Directory replication subnet object from the "
+"directory."
+msgstr "从目录中删除指定的 Active Directory 复制子网对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-ADReplicationSubnet** cmdlet deletes the specified Active Directory replication subnet object from the directory.\n"
+"Subnet objects (class subnet) define network subnets in Active Directory.\n"
+"A network subnet is a segment of a TCP/IP network to which a set of logical IP addresses is assigned.\n"
+"Subnets group computers in a way that identifies their physical proximity on the network.\n"
+"Subnet objects in Active Directory are used to map computers to sites."
+msgstr ""
+"`Remove-ADReplicationSubnet` cmdlet 用于从 Active Directory 目录中删除指定的 Active "
+"Directory 复制子网对象。子网对象（属于 subnet 类）用于在 Active Directory 中定义网络子网。网络子网是 TCP/IP "
+"网络中的一个部分，一组逻辑 IP 地址被分配给这个子网。子网以某种方式对计算机进行分组，从而标识它们在网络中的物理位置。Active Directory"
+" 中的子网对象用于将计算机映射到相应的站点。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a specified subnet"
+msgstr "### 示例 1：删除指定的子网"
+
+msgid "This cmdlet removes the subnet identified as 10.0.0.0/25."
+msgstr "此cmdlet会删除标识为10.0.0.0/25的子网。"
+
+msgid "### Example 3: Remove a filtered list of subnets"
+msgstr "### 示例 3：移除过滤后的子网列表"
+
+msgid "This command gets all the subnets in Japan and removes them."
+msgstr "这个命令会获取日本所有的子网信息，然后将它们全部删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”（协商）。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Active Directory PowerShell "
+"提供程序驱动器中运行的；如果是从这样的驱动器中运行，则默认凭据将是与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01\\User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过脚本或使用 `Get-Credential` cmdlet 来创建一个 `PSCredential` 对象。之后，你可以将 "
+"`Credential` 参数设置为这个 `PSCredential` 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory PowerShell returns a terminating error."
+msgstr "如果执行任务的账户没有目录级别的权限，Active Directory PowerShell 会返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory object by providing one of the following property values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory 对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"该cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，该cmdlet会返回一个无法终止的错误（即程序会无限循环执行）。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为一个对象实例。"
+
+msgid ""
+"Specifies the AD DS instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following: AD LDS, AD DS, or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 AD DS 实例，为此需要提供一个相应的域名或目录服务器的值。该服务可以是以下类型中的任意一种：AD LDS、AD DS 或 Active"
+" Directory 快照实例。"
+
+msgid "Specify the AD DS instance in one of the following ways:"
+msgstr "以下列任意一种方式指定 AD DS 实例："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们在列表中的顺序："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADReplicationSubnet"
+msgstr "### 无或 Microsoft.ActiveDirectory.Management_ADReplicationSubnet"
+
+msgid "A subnet object is received by the *Identity* parameter."
+msgstr "子网对象是通过*Identity*参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADReplicationSubnet](./Get-ADReplicationSubnet.md)"
+msgstr "[Get-ADReplicationSubnet](./Get-ADReplicationSubnet.md)"
+
+msgid "[New-ADReplicationSubnet](./New-ADReplicationSubnet.md)"
+msgstr "[New-ADReplicationSubnet](./New-ADReplicationSubnet.md)"
+
+msgid "[Set-ADReplicationSubnet](./Set-ADReplicationSubnet.md)"
+msgstr "[Set-ADReplicationSubnet](./Set-ADReplicationSubnet.md)"

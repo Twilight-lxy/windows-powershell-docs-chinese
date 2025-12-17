@@ -1,0 +1,194 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:27:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADAccountExpiration"
+msgstr "# 设置 AD 账户过期时间"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the expiration date for an Active Directory account."
+msgstr "用于设置 Active Directory 账户的过期日期。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-ADAccountExpiration** cmdlet sets the expiration time for a user, computer, or service account.\n"
+"To specify an exact time, use the *DateTime* parameter.\n"
+"To specify a time period from the current time, use the *TimeSpan* parameter."
+msgstr ""
+"`Set-ADAccountExpiration` cmdlet 用于设置用户、计算机或服务账户的过期时间。要指定一个确切的时间，可以使用 "
+"`DateTime` 参数；要指定从当前时间开始的一个时间段，则使用 `TimeSpan` 参数。"
+
+msgid ""
+"The *Identity* parameter specifies the Active Directory account to modify."
+msgstr "`Identity` 参数指定了要修改的 Active Directory 账户。"
+
+msgid ""
+"You can identify an account by its distinguished name, GUID, security identifier (SID), or Security Accounts Manager (SAM) account name.\n"
+"You can also set the *Identity* parameter to an object variable such as `$<localADAccountObject>`, or you can pass an account object through the pipeline to the *Identity* parameter.\n"
+"For example, you can use the **Search-ADAccount** cmdlet to retrieve an account object and then pass the object through the pipeline to the Set-ADAccountExpiration cmdlet.\n"
+"Similarly, you can use **Get-ADUser**, **Get-ADComputer**, or **Get-ADServiceAccount** cmdlets to retrieve account objects that you can pass through the pipeline to this cmdlet."
+msgstr ""
+"您可以通过账户的独特名称、GUID、安全标识符（SID）或安全帐户管理器（SAM）账户名称来识别该账户。您还可以将 *Identity* "
+"参数设置为一个对象变量（例如 `$<localADAccountObject>`），或者通过管道将该账户对象传递给 *Identity* "
+"参数。例如，您可以使用 **Search-ADAccount** cmdlet 来检索一个账户对象，然后通过管道将该对象传递给 Set-"
+"ADAccountExpiration cmdlet。同样地，您也可以使用 **Get-ADUser**、**Get-ADComputer** 或 "
+"**Get-ADServiceAccount** cmdlets 来检索账户对象，并将这些对象通过管道传递给相应的 cmdlet。"
+
+msgid ""
+"For Active Directory Lightweight Directory Services (AD LDS) environments, "
+"the *Partition* parameter must be specified except in the following two "
+"conditions:"
+msgstr ""
+"对于使用 Active Directory 轻量级目录服务（AD LDS）的环境来说，必须指定 *Partition* 参数，以下两种情况除外："
+
+msgid ""
+" To specify a default naming context for an AD LDS environment, set the "
+"**msDS-defaultNamingContext** property of the Active Directory directory "
+"service agent (DSA) object (**nTDSDSA**) for the AD LDS instance."
+msgstr ""
+"要为 AD LDS 环境指定一个默认的命名上下文，请设置 AD LDS 实例的 Active Directory "
+"目录服务代理（DSA）对象（**nTDSDSA**）的 **msDS-defaultNamingContext** 属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the account expiration date for a specified user"
+msgstr "### 示例 1：为指定的用户设置账户到期日期"
+
+msgid ""
+"This command sets the account with SamAccountName PattiFu to expire on the "
+"18th of October, 2008."
+msgstr "该命令将名为PattiFu的账户设置为在2008年10月18日过期。"
+
+msgid ""
+"### Example 2: Set the account expiration date for all user accounts in a "
+"specified group"
+msgstr "### 示例 2：为指定组中的所有用户账户设置账户到期日期"
+
+msgid ""
+"This command sets the expiration date of all the user accounts who are a "
+"member of the group BO1Accounts to 60 days from now."
+msgstr "该命令将属于BO1Accounts组的所有用户账户的过期日期设置为从现在起60天后。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的身份验证方法。此参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本身份验证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您确认是否要继续。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该cmdlet是从Windows PowerShell的Active "
+"Directory模块提供程序驱动器中运行的。如果该cmdlet是从此类提供程序驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01\\User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，该 cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 `PSCredential` 对象。之后，你可以将该 "
+"`PSCredential` 对象设置为 `Credential` 参数的值。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr "如果执行任务的账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies the expiration time for the account by using a **DateTime** value.\n"
+"Time is assumed to be local time unless otherwise specified.\n"
+"When a time value is not specified, the time is assumed to 12:00:00 AM local time.\n"
+"When a date is not specified, the date is assumed to be the current date."
+msgstr ""
+"使用一个 **DateTime** 值来指定账户的过期时间。除非另有说明，否则时间默认为本地时间。当没有指定时间值时，时间被假设为当天的凌晨 "
+"12:00:00（本地时间）；当没有指定日期时，日期被假设为当前日期。"
+
+msgid ""
+"Specifies an Active Directory account object by providing one of the following property values.\n"
+"The identifier in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory "
+"账户对象。括号中的标识符是该属性的轻量级目录访问协议（LDAP）显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr "该cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，它会返回一个非终止性的错误（即无法继续执行的错误）。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an account object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为某个账户对象实例的值。"
+
+msgid "Derived types such as the following are also accepted:"
+msgstr "也接受以下这样的派生类型："
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-ADAccountExpiration](./Clear-ADAccountExpiration.md)"
+msgstr "[Clear-ADAccountExpiration](./Clear-ADAccountExpiration.md)"
+
+msgid "[Get-ADComputer](./Get-ADComputer.md)"
+msgstr "[Get-ADComputer](./Get-ADComputer.md)"
+
+msgid "[Get-ADServiceAccount](./Get-ADServiceAccount.md)"
+msgstr "[Get-ADServiceAccount](./Get-ADServiceAccount.md)"
+
+msgid "[Get-ADUser](./Get-ADUser.md)"
+msgstr "[Get-ADUser](./Get-ADUser.md)"
+
+msgid "[Search-ADAccount](./Search-ADAccount.md)"
+msgstr "[Search-ADAccount](./Search-ADAccount.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理Cmdlets](./activedirectory.md)"

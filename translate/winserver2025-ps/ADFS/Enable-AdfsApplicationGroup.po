@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:52:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-AdfsApplicationGroup"
+msgstr "# 启用 AdfsApplicationGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Enables an application group in AD FS."
+msgstr "在 AD FS 中启用一个应用程序组。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ApplicationGroupIdentifier (Default)"
+msgstr "### ApplicationGroupIdentifier（默认值）"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "### ApplicationGroupObject"
+msgstr "### ApplicationGroupObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Enable-AdfsApplicationGroup** cmdlet enables an application group in "
+"Active Directory Federation Services (AD FS)."
+msgstr ""
+"**Enable-AdfsApplicationGroup** cmdlet 可以在 Active Directory Federation "
+"Services (AD FS) 中启用一个应用程序组。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的该项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the target application group."
+msgstr "指定目标应用程序组。"
+
+msgid "Specifies the target application group identifier."
+msgstr "指定目标应用程序组标识符。"
+
+msgid "Specifies the target name."
+msgstr "指定目标名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上，这个 cmdlet 并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.ApplicationGroup"
+msgstr "### MicrosoftIdentityServer.Management.Resources.ApplicationGroup"
+
+msgid ""
+"ApplicationGroup objects are received by the *TargetApplicationGroup* "
+"parameter."
+msgstr "`ApplicationGroup` 对象是通过 `TargetApplicationGroup` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *TargetApplicationGroupIdentifier* and "
+"*TargetName* parameters."
+msgstr ""
+"`String` 对象通过 `TargetApplicationGroupIdentifier` 和 `TargetName` 参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.ApplicationGroup"
+msgstr "### Microsoft IdentityServer.Management.Resources.ApplicationGroup"
+
+msgid ""
+"Returns the disabled ApplicationGroup object when the PassThru parameter is "
+"specified. By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定 `PassThru` 参数时，该命令会返回一个被禁用的 `ApplicationGroup` 对象。默认情况下，此命令不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-AdfsApplicationGroup](./Disable-AdfsApplicationGroup.md)"
+msgstr "[禁用 AdfsApplicationGroup](./ Disable-AdfsApplicationGroup.md)"
+
+msgid "[Get-AdfsApplicationGroup](./Get-AdfsApplicationGroup.md)"
+msgstr "[Get-AdfsApplicationGroup](./Get-AdfsApplicationGroup.md)"
+
+msgid "[New-AdfsApplicationGroup](./New-AdfsApplicationGroup.md)"
+msgstr "[New-AdfsApplicationGroup](./New-AdfsApplicationGroup.md)"
+
+msgid "[Remove-AdfsApplicationGroup](./Remove-AdfsApplicationGroup.md)"
+msgstr "[Remove-AdfsApplicationGroup](./Remove-AdfsApplicationGroup.md)"
+
+msgid "[Set-AdfsApplicationGroup](./Set-AdfsApplicationGroup.md)"
+msgstr "[Set-AdfsApplicationGroup](./Set-AdfsApplicationGroup.md)"

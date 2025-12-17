@@ -1,0 +1,126 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:36:49 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AdfsClaimsProviderTrustsGroup"
+msgstr "# 添加 AdfsClaimsProviderTrustsGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Creates a claims provider trust group based on metadata that contains "
+"multiple entities."
+msgstr "根据包含多个实体的元数据创建一个声明提供者信任组（claims provider trust group）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### MetadataFile"
+msgstr "### MetadataFile"
+
+msgid "### MetadataUrl"
+msgstr "### MetadataUrl"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-AdfsClaimsProviderTrustsGroup** cmdlet creates a claims provider "
+"trust group based on metadata that contains multiple entities."
+msgstr "`Add-AdfsClaimsProviderTrustsGroup` cmdlet 根据包含多个实体的元数据来创建一个声明提供者信任组。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a trust group by metadata URL"
+msgstr "### 示例 1：通过元数据 URL 添加信任组"
+
+msgid "This command specifies a metadata URL to add a trust group"
+msgstr "此命令指定了一个元数据URL，用于添加信任组。"
+
+msgid "### Example 2: Add a trust group by metadata file"
+msgstr "### 示例 2：通过元数据文件添加一个信任组"
+
+msgid "This command specifies a metadata file to add a trust group."
+msgstr "此命令指定一个元数据文件，用于添加信任组。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Indicates whether automatic updates are enabled."
+msgstr "表示是否启用了自动更新功能。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the file path and name of a metadata file on the local file "
+"system."
+msgstr "指定本地文件系统中元数据文件的路径和名称。"
+
+msgid "Specifies the URL of a metadata file available on the public Internet."
+msgstr "指定一个在公共互联网上可获取的元数据文件的URL。"
+
+msgid "Indicates whether monitoring is enabled."
+msgstr "表示是否启用了监控功能。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的情景。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-AdfsClaimsProviderTrustsGroup](./Get-AdfsClaimsProviderTrustsGroup.md)"
+msgstr ""
+"[Get-AdfsClaimsProviderTrustsGroup](./Get-AdfsClaimsProviderTrustsGroup.md)"
+
+msgid ""
+"[Remove-AdfsClaimsProviderTrustsGroup](./Remove-"
+"AdfsClaimsProviderTrustsGroup.md)"
+msgstr ""
+"[Remove-AdfsClaimsProviderTrustsGroup](./Remove-"
+"AdfsClaimsProviderTrustsGroup.md)"

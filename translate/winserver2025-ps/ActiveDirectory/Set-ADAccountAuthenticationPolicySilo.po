@@ -1,0 +1,134 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:25:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADAccountAuthenticationPolicySilo"
+msgstr "# 设置 AD 账户身份验证策略（Set-ADAccountAuthenticationPolicySilo）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Modifies the authentication policy or authentication policy silo of an "
+"account."
+msgstr "修改某个账户的身份验证策略或身份验证策略设置（即与该账户相关的身份验证规则）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-ADAccountAuthenticationPolicySilo** cmdlet modifies the authentication policy or authentication policy silo of an account.\n"
+"This cmdlet assigns authentication policy silo objects and authentication policy object to an Active Directory Domain Services account.\n"
+"In order for the account to belong to an authentication policy silo, you must use the **Grant-ADAuthenticationPolicySiloAccess** cmdlet to grant access to the object."
+msgstr ""
+"`Set-ADAccountAuthenticationPolicySilo` cmdlet "
+"用于修改某个账户的认证策略或认证策略组（authentication policy silo）。该 cmdlet "
+"会将认证策略组对象（authentication policy silo objects）以及相应的认证策略对象（authentication "
+"policy objects）分配给 Active Directory 域服务账户。为了让该账户能够属于某个认证策略组，您需要使用 `Grant-"
+"ADAuthenticationPolicySiloAccess` cmdlet 来授予其访问这些对象的权限。"
+
+msgid ""
+"The *Identity* parameter specifies the Active Directory Domain Services authentication policy to modify.\n"
+"You can identify an authentication policy by its distinguished name, GUID or name.\n"
+"You can also use the *Identity* parameter to specify a variable that contains an authentication policy object, or you can use the pipeline operator to pass an authentication policy object to the *Identity* parameter."
+msgstr ""
+"`Identity` 参数用于指定要修改的 Active Directory 域服务（AD DS）身份验证策略。您可以通过该策略的唯一名称、GUID "
+"或名称来识别它。此外，您还可以使用 `Identity` "
+"参数来指定一个包含身份验证策略对象的变量，或者利用管道运算符将身份验证策略对象直接传递给该参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Assign an authentication policy silo and authentication "
+"policy"
+msgstr "### 示例 1：分配一个认证策略库（authentication policy silo）和一个具体的认证策略"
+
+msgid ""
+"This example assigns the authentication policy silo named "
+"AuthenticationPolicySilo01 and the authentication policy named "
+"AuthenticationPolicy01 to the user account named User01."
+msgstr ""
+"这个示例将名为 AuthenticationPolicySilo01 的认证策略以及名为 AuthenticationPolicy01 "
+"的认证策略分配给名为 User01 的用户账户。"
+
+msgid ""
+"### Example 2: Assign an authentication policy silo and authentication "
+"policy by using a filter"
+msgstr ""
+"#### 示例 2：通过使用过滤器来分配不同的身份验证策略  \n"
+"\n"
+"在这个示例中，我们使用了两个不同的身份验证策略（`auth_policy_silo` 和 `auth_policy`），并分别将它们应用于不同的用户或系统组件。具体来说："
+
+msgid ""
+"This example first uses the **Get-ADComputer** cmdlet to get all computer accounts that match the filter specified by the Filter parameter.\n"
+"The output of this command is passed to **Set-ADAccountAuthenticationPolicySilo** to assign the authentication policy silo named AuthenticationPolicySilo02 and the authentication policy named AuthenticationPolicy02 to them."
+msgstr ""
+"这个示例首先使用 **Get-ADComputer** cmdlet 来获取所有符合由 `Filter` "
+"参数指定的过滤条件的计算机账户。该命令的输出结果会被传递给 **Set-"
+"ADAccountAuthenticationPolicySilo**，以便将这些计算机账户分配给名为 "
+"`AuthenticationPolicySilo02` 的身份验证策略以及名为 `AuthenticationPolicy02` "
+"的另一项身份验证策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an Active Directory Domain Services authentication policy object.\n"
+"Specify the authentication policy object in one of the following formats:"
+msgstr "用于指定一个 Active Directory 域服务（AD DS）身份验证策略对象。请使用以下格式之一来指定该身份验证策略对象："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADAccount"
+msgstr "### Microsoft.ActiveDirectory.Management.ADAccount"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Grant-ADAuthenticationPolicySiloAccess](./Grant-"
+"ADAuthenticationPolicySiloAccess.md)"
+msgstr ""
+"[Grant-ADAuthenticationPolicySiloAccess](./Grant-"
+"ADAuthenticationPolicySiloAccess.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理Cmdlets](./activedirectory.md)"

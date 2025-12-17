@@ -1,0 +1,95 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:55:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-AdfsDeploymentSQLScript"
+msgstr "# Export-AdfsDeploymentSQLScript"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Generates SQL scripts to create the AD FS database and to grant permissions."
+msgstr "生成SQL脚本，用于创建AD FS数据库并授予相应的权限。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Export-AdfsDeploymentSQLScript** cmdlet generates the SQL scripts that"
+" you can use separately to create the Active Directory Federation Services "
+"(AD FS) database and to grant permissions."
+msgstr ""
+"`Export-AdfsDeploymentSQLScript` cmdlet 用于生成 SQL 脚本，您可以分别使用这些脚本来创建 Active "
+"Directory Federation Services (AD FS) 数据库以及授予相应的权限。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Export SQL deployment scripts"
+msgstr "#### 示例 1：导出 SQL 部署脚本"
+
+msgid ""
+"This command exports SQL deployment scripts for AD FS installation on behalf"
+" of the specified AD FS service account."
+msgstr "此命令代表指定的 AD FS 服务账户导出用于 AD FS 安装的 SQL 部署脚本。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the folder in which the cmdlet saves the generated SQL scripts."
+msgstr "指定cmdlet将生成的SQL脚本保存到的文件夹。"
+
+msgid ""
+"Specifies the name of the Active Directory® Domain Services account under which the AD FS service runs.\n"
+"All nodes in the farm must use the same service account."
+msgstr ""
+"指定运行 AD FS 服务的 Active Directory® 域服务账户的名称。该集群中的所有节点必须使用相同的 서비스 계정（service "
+"account）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

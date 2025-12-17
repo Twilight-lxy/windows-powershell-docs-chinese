@@ -1,0 +1,142 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:21:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-AdcsWebEnrollment"
+msgstr "# 安装 AdcsWebEnrollment"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Installs the Certification Authority Web Enrollment."
+msgstr "安装证书颁发机构（CA）的Web注册功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Install-AdcsWebEnrollment` cmdlet performs initial installation and configuration of the\n"
+"Certification Authority (CA) Web Enrollment role service. To remove the Web Enrollment role service\n"
+"use the `Uninstall-AdcsWebEnrollment` cmdlet."
+msgstr ""
+"`Install-AdcsWebEnrollment` cmdlet 用于初始化安装和配置证书颁发机构（CA）的 Web Enrollment "
+"角色服务。若要删除该 Web Enrollment 角色服务，请使用 `Uninstall-AdcsWebEnrollment` cmdlet。"
+
+msgid ""
+"You can import the cmdlet by running the following commands from Windows "
+"PowerShell:"
+msgstr "您可以通过在 Windows PowerShell 中运行以下命令来导入该 cmdlet："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Install the Web Enrollment role service to a CA with "
+"confirmation"
+msgstr "### 示例 1：将“Web Enrollment”角色服务安装到具有确认功能的证书颁发机构（CA）上"
+
+msgid ""
+"This command installs the Web Enrollment role service to a CA specified by\n"
+"`<CAComputerName>\\<CACommonName>`. Replace the computer name of the CA for `<CAComputerName>` and\n"
+"replace the CA common name for `<CACommonName>` when running the command."
+msgstr ""
+"此命令会将“Web Enrollment”角色服务安装到由 `<CAComputerName>\\<CACommonName>` "
+"指定的证书颁发机构（CA）上。在运行该命令时，请将 `<CAComputerName>` 替换为实际的 CA 机器名称，将 "
+"`<CACommonName>` 替换为对应的 CA 公共名称。"
+
+msgid ""
+"### Example 1: Install the Web Enrollment role service to a CA without "
+"confirmation"
+msgstr "### 示例 1：在没有确认的情况下将“Web Enrollment”角色服务安装到证书颁发机构（CA）上"
+
+msgid ""
+"This command installs the Web Enrollment role service to a CA specified by\n"
+"`<CAComputerName>\\<CACommonName>` without requiring user confirmation. Replace the computer name of\n"
+"the CA for `<CAComputerName>` and replace the CA common name for `<CACommonName>` when running the\n"
+"command."
+msgstr ""
+"该命令会将“Web Enrollment”角色服务安装到由 `<CAComputerName>\\<CACommonName>` "
+"指定的证书颁发机构（CA）上，无需用户确认。运行命令时，请将 `<CAComputerName>` 替换为实际的 CA 电脑名称，并将 "
+"`<CACommonName>` 替换为对应的 CA 公共名称。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the CA config parameter string.\n"
+"Do not specify this if there is a local CA installed."
+msgstr "指定CA配置参数字符串。如果已经安装了本地CA，请不要指定此参数。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies a **PSCredential** object for the CA Web Enrollment. To obtain a credential object, use the\n"
+"`Get-Credential` cmdlet. For more information, type `Get-Help Get-Credential`. If the Web Enrollment\n"
+"service is configured to use Standalone CA, then an account that is a member of the local\n"
+"Administrators on the CA is required. If the Web Enrollment service is configured to use an\n"
+"Enterprise CA, then an account that is a member of Domain Admins is required."
+msgstr ""
+"指定一个用于 CA（证书颁发机构）Web 注册的 **PSCredential** 对象。要获取该凭据对象，请使用 `Get-Credential` "
+"cmdlet。有关更多信息，请输入 `Get-Help Get-Credential`。如果 Web 注册服务配置为使用独立的 CA，则需要一个属于本地"
+" Administrators 组的账户；如果 Web 注册服务配置为使用企业级 CA（Enterprise CA），则需要一个属于 Domain "
+"Admins 组的账户。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而无需请求用户确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Management.Automation.PSCredential"
+msgstr "### System.Management.Automation.PSCredential"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.CertificateServices.Deployment.Common.WEP.WebEnrollmentResult"
+msgstr ""
+"### Microsoft.CertificateServices.Deployment(Common.WEP.WebEnrollmentResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Uninstall-AdcsWebEnrollment](./Uninstall-AdcsWebEnrollment.md)"
+msgstr "[卸载 AdcsWebEnrollment](./Uninstall-AdcsWebEnrollment.md)"
+
+msgid "[Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936)"
+msgstr "[Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936)"

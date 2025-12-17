@@ -1,0 +1,152 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:14:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Backup-CARoleService"
+msgstr "# 备份-CARoleService"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Backs up the CA database and private key information."
+msgstr "备份CA数据库和私钥信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Key"
+msgstr "### 关键点"
+
+msgid "### Database"
+msgstr "### 数据库"
+
+msgid "### All"
+msgstr "### 全部"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Backup-CARoleService** cmdlet backs up the certification authority "
+"(CA) database and private key information to a specified path."
+msgstr "`Backup-CARoleService` cmdlet 将证书颁发机构（CA）的数据库和私钥信息备份到指定的路径。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Back up the CA database and private key information"
+msgstr "#### 示例 1：备份 CA 数据库和私钥信息"
+
+msgid ""
+"This command exports the CA database and private key information to the "
+"specified path."
+msgstr "此命令将CA数据库和私钥信息导出到指定的路径。"
+
+msgid "### Example 2: Back up the CA database only"
+msgstr "#### 示例 2：仅备份 CA 数据库"
+
+msgid ""
+"This command exports the CA database to the specified path.\n"
+"The command does not back up the CA private key information."
+msgstr "此命令将CA数据库导出到指定的路径。该命令不会备份CA私钥信息。"
+
+msgid "### Example 3: Back up the CA key only"
+msgstr "### 示例 3：仅备份 CA 密钥"
+
+msgid ""
+"This command exports the CA private key information to the specified path.\n"
+"The command does not back up the CA database."
+msgstr "此命令将CA私钥信息导出到指定的路径。该命令不会备份CA数据库。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet backs up only the certification authority "
+"database."
+msgstr "表示该cmdlet仅备份证书颁发机构（CA）数据库。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而无需请求用户确认。"
+
+msgid "Indicates that the cmdlet performs incremental database back up."
+msgstr "表示该cmdlet执行增量数据库备份操作。"
+
+msgid "Indicates that the cmdlet does not truncate database logs."
+msgstr "表示该cmdlet不会截断数据库日志。"
+
+msgid ""
+"Indicates that the cmdlet backs up only the CA private key and certificate."
+msgstr "表示该cmdlet仅备份CA私钥和证书。"
+
+msgid ""
+"Specifies a password, as a secure string, to protect private key and certificate information.\n"
+"To obtain a secure string, use the [ConvertTo-SecureString](https://go.microsoft.com/fwlink/?LinkID=113291) cmdlet.\n"
+"For more information, type `Get-Help ConvertTo-SecureString`."
+msgstr ""
+"指定一个密码（以安全字符串的形式），用于保护私钥和证书信息。要生成一个安全字符串，请使用 [ConvertTo-"
+"SecureString](https://go.microsoft.com/fwlink/?LinkID=113291) "
+"cmdlet。有关更多信息，可以输入 `Get-Help ConvertTo-SecureString`。"
+
+msgid ""
+"Specifies the directory to which the cmdlet backs up the CA database and private key.\n"
+"If you back up the database, the cmdlet creates a new subdirectory named Database that contains the database backup.\n"
+"If you back up the private key, the cmdlet writes the private key to a .p12 file in the Database subdirectory in the path that you specify."
+msgstr ""
+"指定该 cmdlet 将 CA 数据库和私钥备份到的目录。如果备份数据库，cmdlet 会创建一个名为 “Database” "
+"的新子目录来存放数据库备份文件；如果备份私钥，cmdlet 会将私钥写入到您指定的路径中 “Database” 子目录下的 .p12 文件中。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.ManagementAutomation.SwitchParameter"
+
+msgid "### System.Security.SecureString"
+msgstr "### System.Security.SecureString"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Void"
+msgstr "### SystemVoid"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[ConvertTo-SecureString](https://go.microsoft.com/fwlink/?LinkID=113291)"
+msgstr ""
+"[ConvertTo-SecureString](https://go.microsoft.com/fwlink/?LinkID=113291)"
+
+msgid "[Restore-CARoleService](./Restore-CARoleService.md)"
+msgstr "[Restore-CARoleService](./Restore-CARoleService.md)"

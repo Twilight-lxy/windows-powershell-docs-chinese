@@ -1,0 +1,612 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 12:28:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"The Active Directory module for Windows PowerShell is a PowerShell module "
+"that consolidates a group of cmdlets. You can use these cmdlets to manage "
+"your Active Directory domains, Active Directory Lightweight Directory "
+"Services (AD LDS) configuration sets, and Active Directory Database Mounting"
+" Tool instances in a single, self-contained package."
+msgstr ""
+"Windows PowerShell 的 Active Directory 模块是一个 PowerShell 模块，它将一组 cmdlet "
+"集合在一起。你可以使用这些 cmdlet 在一个独立的包中管理你的 Active Directory 域、Active Directory "
+"轻量级目录服务（AD LDS）配置集以及 Active Directory 数据库挂载工具实例。"
+
+msgid ""
+"If you don't have the Active Directory module installed on your machine, you"
+" need to download the correct Remote Server Administration Tools (RSAT) "
+"package for your OS.  If you're running Windows 7, you will also need to run"
+" the `import-module ActiveDirectory` command from an elevated PowerShell "
+"prompt. For more detail, see [RSAT for Windows operating "
+"systems](https://support.microsoft.com/help/2693643/remote-server-"
+"administration-tools-rsat-for-windows-operating-systems). Starting with "
+"Windows 10 October 2018 Update, RSAT is included as a set of Features on "
+"Demand right from Windows 10. Now, instead of downloading an RSAT package "
+"you can just go to Manage optional features in Settings and click Add a "
+"feature to see the list of available RSAT tools. Select and install the "
+"specific RSAT tools you need. To see installation progress, click the Back "
+"button to view status on the Manage optional features page."
+msgstr ""
+"如果你的机器上没有安装Active Directory模块，你需要下载适用于你所使用操作系统的远程服务器管理工具（Remote Server "
+"Administration Tools，简称RSAT）软件包。如果你使用的是Windows "
+"7系统，还需要在具有管理员权限的PowerShell提示符下执行`import-module "
+"ActiveDirectory`命令。详情请参阅[适用于Windows操作系统的RSAT](https://support.microsoft.com/help/2693643/remote-"
+"server-administration-tools-rsat-for-windows-operating-systems)文档。从Windows "
+"10 2018年10月更新版本开始，RSAT作为“按需功能”（Features on Demand）的一部分直接内置在Windows "
+"10系统中了。因此，你现在无需再下载RSAT软件包，只需进入“设置”（Settings），选择“管理可选功能”（Manage optional "
+"features），然后点击“添加功能”（Add a "
+"feature）即可查看可用的RSAT工具列表。选中所需的具体RSAT工具后进行安装；若想查看安装进度，可以点击“返回”（Back）按钮，在“管理可选功能”页面上查看安装状态。"
+
+msgid ""
+"If you want to use this module in PowerShell 7, see [PowerShell 7 module "
+"compatibility](/powershell/scripting/whats-new/module-compatibility)."
+msgstr ""
+"如果你想在 PowerShell 7 中使用这个模块，请参阅 [PowerShell 7 "
+"模块兼容性](/powershell/scripting/whats-new.module-compatibility)。"
+
+msgid ""
+"Adds central access rules to a central access policy in Active Directory."
+msgstr "将中央访问规则添加到 Active Directory 中的中央访问策略中。"
+
+msgid "Adds one or more service accounts to an Active Directory computer."
+msgstr "将一个或多个服务帐户添加到 Active Directory 计算机上。"
+
+msgid ""
+"Adds users, computers, and groups to the allowed or denied list of a read-"
+"only domain controller password replication policy."
+msgstr "将用户、计算机和组添加到只读域控制器密码复制策略的允许列表或拒绝列表中。"
+
+msgid ""
+"Applies a fine-grained password policy to one or more users and groups."
+msgstr "将细粒度的密码策略应用于一个或多个用户和组。"
+
+msgid "Adds one or more members to an Active Directory group."
+msgstr "向一个 Active Directory 组中添加一个或多个成员。"
+
+msgid "Adds a member to one or more Active Directory groups."
+msgstr "将一个成员添加到一个或多个 Active Directory 组中。"
+
+msgid ""
+"Adds one or more resource properties to a resource property list in Active "
+"Directory."
+msgstr "将一个或多个资源属性添加到 Active Directory 中的资源属性列表中。"
+
+msgid "Clears the expiration date for an Active Directory account."
+msgstr "清除 Active Directory 账户的过期日期。"
+
+msgid ""
+"Removes a claims transformation from being applied to one or more cross-"
+"forest trust relationships in Active Directory."
+msgstr "移除对 Active Directory 中一个或多个跨林信任关系应用的声明转换（claims transformation）。"
+
+msgid ""
+"Completes the migration process of a service account to a delegated managed "
+"service account."
+msgstr "完成将服务账户迁移到委托管理的服务账户的过程。"
+
+msgid "Disables an Active Directory account."
+msgstr "禁用一个 Active Directory 账户。"
+
+msgid "Disables an Active Directory optional feature."
+msgstr "禁用 Active Directory 的一个可选功能。"
+
+msgid "Enables an Active Directory account."
+msgstr "启用一个 Active Directory 账户。"
+
+msgid "Enables an Active Directory optional feature."
+msgstr "启用 Active Directory 的一个可选功能。"
+
+msgid "Gets the accounts token group information."
+msgstr "获取账户令牌组信息。"
+
+msgid ""
+"Gets the resultant password replication policy for an Active Directory "
+"account."
+msgstr "获取与Active Directory账户相关的密码复制策略信息。"
+
+msgid ""
+"Gets one or more Active Directory Domain Services authentication policies."
+msgstr "获取一个或多个 Active Directory 域服务身份验证策略。"
+
+msgid ""
+"Gets one or more Active Directory Domain Services authentication policy "
+"silos."
+msgstr "获取一个或多个 Active Directory 域服务（AD DS）身份验证策略孤岛（即各自独立、互不关联的身份验证策略集合）。"
+
+msgid "Retrieves central access policies from Active Directory."
+msgstr "从 Active Directory 中检索中央访问策略。"
+
+msgid "Retrieves central access rules from Active Directory."
+msgstr "从 Active Directory 中检索中央访问规则。"
+
+msgid ""
+"Returns one or more Active Directory claim transform objects based on a "
+"specified filter."
+msgstr "根据指定的筛选条件返回一个或多个 Active Directory 主张转换对象（Claim Transform Object）。"
+
+msgid "Returns a claim type from Active Directory."
+msgstr "从 Active Directory 返回一个声明类型（claim type）。"
+
+msgid "Gets one or more Active Directory computers."
+msgstr "获取一台或多台 Active Directory 服务器。"
+
+msgid "Gets the service accounts hosted by a computer."
+msgstr "获取由某台计算机托管的服务账户信息。"
+
+msgid ""
+"Gets a list of installed programs and services present on this domain "
+"controller that are not in the default or user defined inclusion list."
+msgstr "获取该域控制器上已安装的程序和服务的列表，这些程序和服务不在默认的或用户自定义的包含列表中。"
+
+msgid "Gets the default password policy for an Active Directory domain."
+msgstr "获取 Active Directory 域的默认密码策略。"
+
+msgid "Gets an Active Directory domain."
+msgstr "获取一个 Active Directory 域名。"
+
+msgid ""
+"Gets one or more Active Directory domain controllers based on discoverable "
+"services criteria, search parameters or by providing a domain controller "
+"identifier, such as the NetBIOS name."
+msgstr "根据可发现的服务标准、搜索参数，或通过提供域控制器标识符（如NetBIOS名称），获取一个或多个Active Directory域控制器。"
+
+msgid ""
+"Gets the members of the allowed list or denied list of a read-only domain "
+"controller's password replication policy."
+msgstr "获取只读域控制器密码复制策略中允许列表（allowed list）或拒绝列表（denied list）的成员信息。"
+
+msgid ""
+"Gets the Active Directory accounts that are authenticated by a read-only "
+"domain controller or that are in the revealed list of the domain controller."
+msgstr "获取那些由只读域控制器进行身份验证的 Active Directory 账户，或者那些在域控制器的公开列表中的账户。"
+
+msgid "Gets one or more Active Directory fine-grained password policies."
+msgstr "获取一个或多个 Active Directory 细粒化的密码策略。"
+
+msgid ""
+"Gets the users and groups to which a fine-grained password policy is "
+"applied."
+msgstr "获取适用细粒度密码策略的用户和组。"
+
+msgid "Gets an Active Directory forest."
+msgstr "获取一个 Active Directory 林（Active Directory forest）。"
+
+msgid "Gets one or more Active Directory groups."
+msgstr "获取一个或多个 Active Directory 组。"
+
+msgid "Gets the members of an Active Directory group."
+msgstr "获取Active Directory组的成员信息。"
+
+msgid "Gets one or more Active Directory objects."
+msgstr "获取一个或多个 Active Directory 对象。"
+
+msgid "Gets one or more Active Directory optional features."
+msgstr "获取一个或多个 Active Directory 可选功能。"
+
+msgid "Gets one or more Active Directory organizational units."
+msgstr "获取一个或多个 Active Directory 组织单元。"
+
+msgid ""
+"Gets the Active Directory groups that have a specified user, computer, "
+"group, or service account."
+msgstr "获取包含指定用户、计算机、组或服务账户的 Active Directory 组。"
+
+msgid ""
+"Gets the replication metadata for one or more Active Directory replication "
+"partners."
+msgstr "获取一个或多个 Active Directory 复制伙伴的复制元数据。"
+
+msgid ""
+"Returns a specific Active Directory replication connection or a set of AD "
+"replication connection objects based on a specified filter."
+msgstr "根据指定的过滤器返回一个特定的 Active Directory 复制连接对象，或者一组 Active Directory 复制连接对象。"
+
+msgid ""
+"Returns a collection of data describing an Active Directory replication "
+"failure."
+msgstr "返回一个数据集合，用于描述 Active Directory 复制失败的情况。"
+
+msgid ""
+"Returns the replication metadata for a set of one or more replication "
+"partners."
+msgstr "返回一组一个或多个复制伙伴的复制元数据。"
+
+msgid "Returns the contents of the replication queue for a specified server."
+msgstr "返回指定服务器的复制队列中的内容。"
+
+msgid ""
+"Returns a specific Active Directory replication site or a set of replication"
+" site objects based on a specified filter."
+msgstr "根据指定的过滤器返回一个特定的 Active Directory 复制站点或一组复制站点对象。"
+
+msgid ""
+"Returns a specific Active Directory site link or a set of site links based "
+"on a specified filter."
+msgstr "根据指定的过滤器返回一个特定的 Active Directory 站点链接或一组站点链接。"
+
+msgid ""
+"Gets a specific Active Directory site link bridge or a set of site link "
+"bridge objects based on a specified filter."
+msgstr "根据指定的筛选条件获取特定的 Active Directory 站点链接桥（site link bridge）或一组站点链接桥对象。"
+
+msgid "Gets one or more Active Directory subnets."
+msgstr "获取一个或多个 Active Directory 子网。"
+
+msgid ""
+"Displays the highest Update Sequence Number (USN) for the specified domain "
+"controller."
+msgstr "显示指定域控制器的最高更新序列号（Update Sequence Number，简称 USN）。"
+
+msgid "Gets one or more resource properties."
+msgstr "获取一个或多个资源属性。"
+
+msgid "Gets resource property lists from Active Directory."
+msgstr "从 Active Directory 中获取资源属性列表。"
+
+msgid "Gets a resource property value type from Active Directory."
+msgstr "从 Active Directory 中获取资源属性的值类型。"
+
+msgid "Gets the root of a directory server information tree."
+msgstr "获取目录服务器信息树的根节点。"
+
+msgid ""
+"Gets one or more Active Directory managed service accounts or group managed "
+"service accounts."
+msgstr "获取一个或多个由 Active Directory 管理的服务账户或由组管理的服务账户。"
+
+msgid "Gets all trusted domain objects in the directory."
+msgstr "获取目录中所有受信任的域对象。"
+
+msgid "Gets one or more Active Directory users."
+msgstr "获取一个或多个 Active Directory 用户。"
+
+msgid "Gets the resultant password policy for a user."
+msgstr "获取用户的最终密码策略。"
+
+msgid "Grants permission to join an authentication policy silo."
+msgstr "允许加入某个身份验证策略组（即“认证策略孤岛”）。"
+
+msgid ""
+"Installs an Active Directory managed service account on a computer or caches"
+" a group managed service account on a computer."
+msgstr "在计算机上安装一个由 Active Directory 管理的服务账户，或在计算机上缓存一个组管理服务账户。"
+
+msgid "Moves a directory server in Active Directory to a new site."
+msgstr "将 Active Directory 中的目录服务器移动到新的站点。"
+
+msgid "Moves operation master roles to an Active Directory directory server."
+msgstr "将操作主节点的角色迁移到Active Directory目录服务器上。"
+
+msgid ""
+"Moves an Active Directory object or a container of objects to a different "
+"container or domain."
+msgstr "将一个 Active Directory 对象或对象容器移动到另一个容器或域中。"
+
+msgid ""
+"Creates an Active Directory Domain Services authentication policy object."
+msgstr "创建一个 Active Directory 域服务身份验证策略对象。"
+
+msgid ""
+"Creates an Active Directory Domain Services authentication policy silo "
+"object."
+msgstr "创建一个 Active Directory 域服务（AD DS）身份验证策略对象。"
+
+msgid ""
+"Creates a new central access policy in Active Directory containing a set of "
+"central access rules."
+msgstr "在 Active Directory 中创建一个新的中央访问策略，其中包含一组中央访问规则。"
+
+msgid "Creates a central access rule in Active Directory."
+msgstr "在 Active Directory 中创建一条中央访问规则。"
+
+msgid "Creates a new claim transformation policy object in Active Directory."
+msgstr "在 Active Directory 中创建一个新的声明转换策略对象。"
+
+msgid "Creates a new claim type in Active Directory."
+msgstr "在 Active Directory 中创建一个新的声明类型（claim type）。"
+
+msgid "Creates a new Active Directory computer object."
+msgstr "创建一个新的 Active Directory 计算机对象。"
+
+msgid ""
+"Performs prerequisite checks for cloning a domain controller and generates a"
+" clone configuration file if all checks succeed."
+msgstr "执行克隆域控制器所需的预检查；如果所有检查都通过，则生成克隆配置文件。"
+
+msgid "Creates a new Active Directory fine-grained password policy."
+msgstr "创建一个新的 Active Directory 细粒度密码策略。"
+
+msgid "Creates an Active Directory group."
+msgstr "创建一个 Active Directory 组。"
+
+msgid "Creates an Active Directory object."
+msgstr "创建一个 Active Directory 对象。"
+
+msgid "Creates an Active Directory organizational unit."
+msgstr "创建一个 Active Directory 组织单位。"
+
+msgid "Creates an Active Directory replication site in the directory."
+msgstr "在目录中创建一个 Active Directory 复制站点。"
+
+msgid "Creates a new Active Directory site link for in managing replication."
+msgstr "创建一个新的 Active Directory 站点链接，以便管理复制过程。"
+
+msgid "Creates a site link bridge in Active Directory for replication."
+msgstr "在 Active Directory 中创建一个站点链接桥以用于复制。"
+
+msgid "Creates an Active Directory replication subnet object."
+msgstr "创建一个 Active Directory 复制子网对象。"
+
+msgid "Creates a resource property in Active Directory."
+msgstr "在 Active Directory 中创建一个资源属性。"
+
+msgid "Creates a resource property list in Active Directory."
+msgstr "在 Active Directory 中创建一个资源属性列表。"
+
+msgid ""
+"Creates a new Active Directory managed service account or group managed "
+"service account object."
+msgstr "创建一个新的 Active Directory 管理服务账户或组管理服务账户对象。"
+
+msgid "Creates an Active Directory user."
+msgstr "创建一个 Active Directory 用户。"
+
+msgid ""
+"Removes an Active Directory Domain Services authentication policy object."
+msgstr "删除一个 Active Directory 域服务（Domain Services）的身份验证策略对象。"
+
+msgid ""
+"Removes an Active Directory Domain Services authentication policy silo "
+"object."
+msgstr "删除一个 Active Directory 域服务（AD DS）身份验证策略对象。"
+
+msgid "Removes a central access policy from Active Directory."
+msgstr "从 Active Directory 中删除一条中央访问策略。"
+
+msgid ""
+"Removes central access rules from a central access policy in Active "
+"Directory."
+msgstr "从 Active Directory 中的中央访问策略中删除中央访问规则。"
+
+msgid "Removes a central access rule from Active Directory."
+msgstr "从 Active Directory 中删除一条中央访问规则。"
+
+msgid "Removes a claim transformation policy object from Active Directory."
+msgstr "从 Active Directory 中删除一个声明转换策略对象。"
+
+msgid "Removes a claim type from Active Directory."
+msgstr "从 Active Directory 中删除某种索赔类型。"
+
+msgid "Removes an Active Directory computer."
+msgstr "删除一台 Active Directory 电脑。"
+
+msgid "Removes one or more service accounts from a computer."
+msgstr "从计算机中删除一个或多个服务账户。"
+
+msgid ""
+"Removes users, computers, and groups from the allowed or denied list of a "
+"read-only domain controller password replication policy."
+msgstr "从只读域控制器的密码复制策略的允许列表或拒绝列表中移除用户、计算机和组。"
+
+msgid "Removes an Active Directory fine-grained password policy."
+msgstr "删除一个 Active Directory 的细粒度密码策略。"
+
+msgid "Removes one or more users from a fine-grained password policy."
+msgstr "从一个细粒度的密码策略中移除一个或多个用户。"
+
+msgid "Removes an Active Directory group."
+msgstr "删除一个Active Directory组。"
+
+msgid "Removes one or more members from an Active Directory group."
+msgstr "从 Active Directory 组中删除一个或多个成员。"
+
+msgid "Removes an Active Directory object."
+msgstr "删除一个Active Directory对象。"
+
+msgid "Removes an Active Directory organizational unit."
+msgstr "删除一个 Active Directory 组织单位。"
+
+msgid "Removes a member from one or more Active Directory groups."
+msgstr "将某个成员从一个或多个Active Directory组中移除。"
+
+msgid "Deletes the specified replication site object from Active Directory."
+msgstr "从 Active Directory 中删除指定的复制站点对象。"
+
+msgid "Deletes an Active Directory site link used to manage replication."
+msgstr "删除用于管理复制的 Active Directory 站点链接。"
+
+msgid "Deletes a replication site link bridge from Active Directory."
+msgstr "从 Active Directory 中删除复制站点链接桥（replication site link bridge）。"
+
+msgid ""
+"Deletes the specified Active Directory replication subnet object from the "
+"directory."
+msgstr "从目录中删除指定的 Active Directory 复制子网对象。"
+
+msgid "Removes a resource property from Active Directory."
+msgstr "从 Active Directory 中删除某个资源属性。"
+
+msgid "Removes one or more resource property lists from Active Directory."
+msgstr "从 Active Directory 中删除一个或多个资源属性列表。"
+
+msgid ""
+"Removes one or more resource properties from a resource property list in "
+"Active Directory."
+msgstr "从 Active Directory 中的资源属性列表中删除一个或多个资源属性。"
+
+msgid ""
+"Removes an Active Directory managed service account or group managed service"
+" account object."
+msgstr "删除一个由 Active Directory 管理的服务账户对象或组管理的服务账户对象。"
+
+msgid "Removes an Active Directory user."
+msgstr "删除一个 Active Directory 用户。"
+
+msgid "Changes the name of an Active Directory object."
+msgstr "更改Active Directory对象的名称。"
+
+msgid ""
+"Resets and unlinks the delegated managed service account from the user "
+"account."
+msgstr "将委托管理的服务账户与用户账户解绑（即重置关联关系并断开链接）。"
+
+msgid "Resets the password for a standalone managed service account."
+msgstr "重置独立管理服务账户的密码。"
+
+msgid "Restores an Active Directory object."
+msgstr "恢复一个 Active Directory 对象。"
+
+msgid ""
+"Revokes membership in an authentication policy silo for the specified "
+"account."
+msgstr "撤销指定账户在某个身份验证策略组（即“认证策略孤岛”）中的成员资格。"
+
+msgid "Gets Active Directory user, computer, or service accounts."
+msgstr "获取 Active Directory 中的用户、计算机或服务账户信息。"
+
+msgid ""
+"Modifies the authentication policy or authentication policy silo of an "
+"account."
+msgstr "修改某个账户的身份验证策略或身份验证策略配置（即该账户所使用的身份验证规则集合）。"
+
+msgid ""
+"Modifies user account control (UAC) values for an Active Directory account."
+msgstr "修改Active Directory账户的用户账户控制（UAC）设置。"
+
+msgid "Sets the expiration date for an Active Directory account."
+msgstr "设置 Active Directory 账户的过期日期。"
+
+msgid "Modifies the password of an Active Directory account."
+msgstr "修改Active Directory账户的密码。"
+
+msgid ""
+"Modifies an Active Directory Domain Services authentication policy object."
+msgstr "修改 Active Directory 域服务（AD DS）中的身份验证策略对象。"
+
+msgid ""
+"Modifies an Active Directory Domain Services authentication policy silo "
+"object."
+msgstr "修改一个 Active Directory 域服务（AD DS）身份验证策略相关对象。"
+
+msgid "Modifies a central access policy in Active Directory."
+msgstr "修改 Active Directory 中的核心访问策略。"
+
+msgid "Modifies a central access rule in Active Directory."
+msgstr "修改 Active Directory 中的一条核心访问规则。"
+
+msgid ""
+"Applies a claims transformation to one or more cross-forest trust "
+"relationships in Active Directory."
+msgstr ""
+"将声明转换（claims transformation）应用到一个或多个Active Directory中的跨林信任关系（cross-forest "
+"trust relationships）上。"
+
+msgid ""
+"Sets the properties of a claims transformation policy in Active Directory."
+msgstr "用于设置 Active Directory 中声明转换策略（claims transformation policy）的属性。"
+
+msgid "Modify a claim type in Active Directory."
+msgstr "修改 Active Directory 中的一种声明类型（claim type）。"
+
+msgid "Modifies an Active Directory computer object."
+msgstr "修改一个 Active Directory 计算机对象。"
+
+msgid "Modifies the default password policy for an Active Directory domain."
+msgstr "修改Active Directory域的默认密码策略。"
+
+msgid "Modifies an Active Directory domain."
+msgstr "修改一个Active Directory域。"
+
+msgid "Sets the domain mode for an Active Directory domain."
+msgstr "用于设置 Active Directory 域的域模式。"
+
+msgid "Modifies an Active Directory fine-grained password policy."
+msgstr "修改 Active Directory 的细粒度密码策略。"
+
+msgid "Modifies an Active Directory forest."
+msgstr "修改一个 Active Directory 林（即多个域组成的集合）。"
+
+msgid "Sets the forest mode for an Active Directory forest."
+msgstr "为Active Directory林设置森林模式（forest mode）。"
+
+msgid "Modifies an Active Directory group."
+msgstr "修改一个 Active Directory 组。"
+
+msgid "Modifies an Active Directory object."
+msgstr "修改一个Active Directory对象。"
+
+msgid "Modifies an Active Directory organizational unit."
+msgstr "修改一个 Active Directory 组织单元。"
+
+msgid "Sets properties on Active Directory replication connections."
+msgstr "设置 Active Directory 复制连接的属性。"
+
+msgid "Sets the replication properties for an Active Directory site."
+msgstr "设置 Active Directory 站点的复制属性。"
+
+msgid "Sets the properties for an Active Directory site link."
+msgstr "用于设置 Active Directory 站点链接的属性。"
+
+msgid ""
+"Sets the properties of a replication site link bridge in Active Directory."
+msgstr "用于设置 Active Directory 中复制站点链接桥的属性。"
+
+msgid "Sets the properties of an Active Directory replication subnet object."
+msgstr "用于设置 Active Directory 复制子网对象的属性。"
+
+msgid "Modifies a resource property in Active Directory."
+msgstr "修改 Active Directory 中的资源属性。"
+
+msgid "Modifies a resource property list in Active Directory."
+msgstr "修改 Active Directory 中的资源属性列表。"
+
+msgid ""
+"Modifies an Active Directory managed service account or group managed "
+"service account object."
+msgstr "修改一个由 Active Directory 管理的服务账户对象或组管理的服务账户对象。"
+
+msgid "Modifies an Active Directory user."
+msgstr "修改一个 Active Directory 用户的信息。"
+
+msgid ""
+"Displays the Edit Access Control Conditions window update or create security"
+" descriptor definition language (SDDL) security descriptors."
+msgstr "显示“编辑访问控制条件”窗口，用于更新或创建安全描述符定义语言（SDDL）所定义的安全描述符。"
+
+msgid ""
+"Starts the migration of a user account to a delegated managed service "
+"account."
+msgstr "开始将用户账户迁移到委托管理的服务账户。"
+
+msgid ""
+"Replicates a single object between any two domain controllers that have "
+"partitions in common."
+msgstr "在任意两个具有相同分区的域控制器之间复制单个对象。"
+
+msgid "Tests a managed service account from a computer."
+msgstr "从计算机上测试一个托管服务账户。"
+
+msgid ""
+"Reverts the migration phase of delegated managed service account to a user "
+"account."
+msgstr "将委托管理的托管服务账户的迁移状态恢复到用户账户的状态。"
+
+msgid ""
+"Uninstalls an Active Directory managed service account from a computer or "
+"removes a cached group managed service account from a computer."
+msgstr "从计算机上卸载由 Active Directory 管理的服务账户，或从计算机中删除缓存中的组管理服务账户。"
+
+msgid "Unlocks an Active Directory account."
+msgstr "解锁一个 Active Directory 账户。"

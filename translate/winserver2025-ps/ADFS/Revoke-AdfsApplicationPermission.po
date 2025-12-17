@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:22:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Revoke-AdfsApplicationPermission"
+msgstr "# 撤销 AdFS 应用程序权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Revokes permission for an application."
+msgstr "撤销对某个应用程序的访问权限。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identifier (Default)"
+msgstr "### 标识符（默认值）"
+
+msgid "### RoleIdentifier"
+msgstr "### RoleIdentifier"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Revoke-AdfsApplicationPermission** cmdlet revokes permission for an "
+"application in Active Directory Federation Services (AD FS)."
+msgstr ""
+"`Revoke-AdfsApplicationPermission` cmdlet 用于撤销 Active Directory Federation "
+"Services (AD FS) 中应用程序的权限。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an **OAuthPermission** object."
+msgstr "指定一个 **OAuthPermission** 对象。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.OAuthPermission"
+msgstr "### Microsoft_identityServer.Management Resources.OAuthPermission"
+
+msgid "OAuthPermission objects are received by the *InputObject* parameter."
+msgstr "`OAuthPermission` 对象是通过 `InputObject` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *TargetClientRoleIdentifier*, "
+"*TargetIdentifier*, and *TargetServerRoleIdentifier* parameters."
+msgstr ""
+"字符串对象通过 *TargetClientRoleIdentifier*、*TargetIdentifier* 和 "
+"*TargetServerRoleIdentifier* 参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsApplicationPermission](./Get-AdfsApplicationPermission.md)"
+msgstr "[Get-AdfsApplicationPermission](./Get-AdfsApplicationPermission.md)"
+
+msgid ""
+"[Grant-AdfsApplicationPermission](./Grant-AdfsApplicationPermission.md)"
+msgstr ""
+"[Grant-AdfsApplicationPermission](./Grant-AdfsApplicationPermission.md)"
+
+msgid "[Set-AdfsApplicationPermission](./Set-AdfsApplicationPermission.md)"
+msgstr "[Set-AdfsApplicationPermission](./Set-AdfsApplicationPermission.md)"

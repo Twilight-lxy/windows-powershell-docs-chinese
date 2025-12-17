@@ -1,0 +1,108 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:07:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-AdfsAuthenticationProviderConfigurationData"
+msgstr "# 导入 AdfsAuthenticationProviderConfigurationData"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Imports the custom configuration for an authentication provider."
+msgstr "导入用于身份验证提供者的自定义配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Import-AdfsAuthenticationProviderConfigurationData** cmdlet imports custom configuration for an authentication provider from a file.\n"
+"Before you use this cmdlet, verify that the external authentication provider supports a custom configuration."
+msgstr ""
+"`Import-AdfsAuthenticationProviderConfigurationData` cmdlet "
+"用于从文件中导入身份验证提供者的自定义配置。在使用此 cmdlet 之前，请确保外部身份验证提供者支持自定义配置。"
+
+msgid ""
+"Use this cmdlet when the information specific to the authentication provider changes after you initially register the authentication provider.\n"
+"In some situations, the security key to access the authentication service can change and you must update the information in the Active Directory Federation Services (AD FS) configuration store for the authentication provider to function correctly."
+msgstr ""
+"在您初次注册身份验证提供者之后，如果与该身份验证提供者相关的信息发生变化，请使用此 "
+"cmdlet。在某些情况下，用于访问身份验证服务的安全密钥可能会更改，因此必须更新 Active Directory Federation "
+"Services (AD FS) 配置存储中的相关信息，以确保身份验证提供者能够正常运行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import authentication provider configuration data"
+msgstr "### 示例 1：导入身份验证提供程序配置数据"
+
+msgid ""
+"This command imports the authentication provider configuration data.\n"
+"This command also overwrites existing configuration data for the specified authentication provider with the data from the file."
+msgstr "此命令用于导入认证提供者的配置数据。同时，该命令还会用文件中的数据覆盖指定认证提供者现有的配置数据。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a file path.\n"
+"The cmdlet imports the configuration data from a file that you specify."
+msgstr "指定一个文件路径。该 cmdlet 会从您指定的文件中导入配置数据。"
+
+msgid "Specifies the name of the authentication provider to import."
+msgstr "指定要导入的身份验证提供者的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Export-AdfsAuthenticationProviderConfigurationData](./Export-"
+"AdfsAuthenticationProviderConfigurationData.md)"
+msgstr ""
+"[Export-AdfsAuthenticationProviderConfigurationData](./Export-"
+"AdfsAuthenticationProviderConfigurationData.md)"

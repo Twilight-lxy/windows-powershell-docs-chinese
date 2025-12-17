@@ -1,0 +1,97 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:58:06 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsAuthenticationProviderWebContent"
+msgstr "# 获取 AdfsAuthenticationProviderWebContent 的内容"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Retrieves web content objects for authentication providers."
+msgstr "为身份验证提供程序检索网页内容对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsAuthenticationProviderWebContent** cmdlet retrieves web content objects for all authentication providers, or a specified authentication provider in a locale.\n"
+"Specify an authentication provider by its name.\n"
+"If you do not supply an authentication provider name, the cmdlet retrieves all authentication provider web content objects.\n"
+"If you do not specify the locale, the cmdlet retrieves web content for all locales.\n"
+"The cmdlet does not return any information if you do not use the Set-AdfsAuthenticationProviderWebContent cmdlet to customize the authentication provider web content."
+msgstr ""
+"`Get-AdfsAuthenticationProviderWebContent` 这个 cmdlet "
+"可以检索所有身份验证提供程序的网页内容对象，或者特定身份验证提供程序在指定区域设置（locale）下的网页内容。您可以通过名称来指定身份验证提供程序；如果不提供身份验证提供程序的名称，该"
+" cmdlet 会检索所有身份验证提供程序的网页内容对象。如果您没有指定区域设置，它将检索所有区域的网页内容。另外，如果您没有使用 `Set-"
+"AdfsAuthenticationProviderWebContent` cmdlet 来自定义身份验证提供程序的网页内容，那么这个 cmdlet "
+"将不会返回任何信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a locale.\n"
+"The cmdlet gets the provider web content associated for the locale that you specify."
+msgstr ""
+"用于指定一个区域设置（locale）。该cmdlet会获取与您指定的区域设置相关联的提供者网络内容（provider web content）。"
+
+msgid ""
+"Specifies a array of names.\n"
+"The cmdlet gets the provider web content associated for the names that you specify."
+msgstr "指定一个名称数组。此 cmdlet 会获取与您指定的名称关联的提供程序网页内容。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Remove-AdfsAuthenticationProviderWebContent](./Remove-"
+"AdfsAuthenticationProviderWebContent.md)"
+msgstr ""
+"[Remove-AdfsAuthenticationProviderWebContent](./Remove-"
+"AdfsAuthenticationProviderWebContent.md)"
+
+msgid ""
+"[Set-AdfsAuthenticationProviderWebContent](./Set-"
+"AdfsAuthenticationProviderWebContent.md)"
+msgstr ""
+"[Set-AdfsAuthenticationProviderWebContent](./Set-"
+"AdfsAuthenticationProviderWebContent.md)"

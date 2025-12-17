@@ -1,0 +1,81 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:56:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsAccessControlPolicy"
+msgstr "# Get-AdfsAccessControlPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets an AD FS access control policy."
+msgstr "获取一个 AD FS 访问控制策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsAccessControlPolicy** cmdlet gets an Active Directory "
+"Federation Services (AD FS) access control policy."
+msgstr ""
+"`Get-AdfsAccessControlPolicy` cmdlet 用于获取 Active Directory Federation "
+"Services (AD FS) 的访问控制策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an array of IDs."
+msgstr "指定一个ID数组。"
+
+msgid "Specifies an array of policy names."
+msgstr "指定一个策略名称数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-AdfsAccessControlPolicy](./New-AdfsAccessControlPolicy.md)"
+msgstr "[新 AdfsAccessControlPolicy](./New-AdfsAccessControlPolicy.md)"
+
+msgid "[Remove-AdfsAccessControlPolicy](./Remove-AdfsAccessControlPolicy.md)"
+msgstr "[Remove-AdfsAccessControlPolicy](./Remove-AdfsAccessControlPolicy.md)"
+
+msgid "[Set-AdfsAccessControlPolicy](./Set-AdfsAccessControlPolicy.md)"
+msgstr "[Set-AdfsAccessControlPolicy](./Set-AdfsAccessControlPolicy.md)"

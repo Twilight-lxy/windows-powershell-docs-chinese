@@ -1,0 +1,166 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:45:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-AdfsClaimsProviderTrust"
+msgstr "# 更新 AdfsClaimsProviderTrust"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Updates the claims provider trust from federation metadata."
+msgstr "根据联邦元数据更新对声明提供者的信任关系。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "### TokenSigningCertificates"
+msgstr "### TokenSigningCertificates"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Update-AdfsClaimsProviderTrust** cmdlet updates the claims provider "
+"trust from federation metadata."
+msgstr "`Update-AdfsClaimsProviderTrust` cmdlet 根据联合元数据更新声明提供者的信任关系设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a UNC file path to a file that contains the federation metadata "
+"information for the claims provider."
+msgstr "指定一个UNC文件路径，该文件包含用于声明提供者的联合元数据信息。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the token-signing certificate of the claims provider trust to "
+"update."
+msgstr ""
+"指定需要更新的声明提供者信任（claims provider trust）中的令牌签名证书（token-signing certificate）。"
+
+msgid ""
+"Specifies the claims provider trust to update.\n"
+"This value is typically taken from the pipeline."
+msgstr "指定要更新的声明提供者信任关系（claim provider trust）。该值通常来自处理流程（pipeline）。"
+
+msgid "Specifies the identifier of the claims provider trust to update."
+msgstr "指定要更新的声明提供者信任关系的标识符。"
+
+msgid "Specifies the name of the claims provider trust to update."
+msgstr "指定要更新的声明提供者信任（claims provider trust）的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid ""
+"### "
+"System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate2"
+msgstr ""
+"### "
+"System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate2"
+
+msgid ""
+"X509Certificate2 objects are received by the *TargetCertificate* parameter."
+msgstr "`X509Certificate2` 对象是通过 `*TargetCertificate*` 参数接收到的。"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimsProviderTrust"
+msgstr "### MicrosoftIdentityServer.PowerShell.ResourcesClaimsProviderTrust"
+
+msgid ""
+"ClaimsProviderTrust objects are received by the *TargetClaimsProviderTrust* "
+"parameter."
+msgstr "`ClaimsProviderTrust` 对象是通过 `*TargetClaimsProviderTrust*` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *TargetIdentifier* and *TargetName* "
+"parameters."
+msgstr "字符串对象通过*TargetIdentifier*和*TargetName*参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimsProviderTrust"
+msgstr "### MicrosoftIdentityServer.PowShell.ResourcesClaimsProviderTrust"
+
+msgid ""
+"Returns the updated ClaimsProviderTrust object when the *PassThru* parameter"
+" is specified. By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定 *PassThru* 参数时，该命令会返回更新后的 ClaimsProviderTrust 对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsClaimsProviderTrust](./Add-AdfsClaimsProviderTrust.md)"
+msgstr "[Add-AdfsClaimsProviderTrust](./Add-AdfsClaimsProviderTrust.md)"
+
+msgid ""
+"[Disable-AdfsClaimsProviderTrust](./Disable-AdfsClaimsProviderTrust.md)"
+msgstr "[禁用 AdfsClaimsProviderTrust](./Disable-AdfsClaimsProviderTrust.md)"
+
+msgid "[Enable-AdfsClaimsProviderTrust](./Enable-AdfsClaimsProviderTrust.md)"
+msgstr "[Enable-AdfsClaimsProviderTrust](./Enable-AdfsClaimsProviderTrust.md)"
+
+msgid "[Get-AdfsClaimsProviderTrust](./Get-AdfsClaimsProviderTrust.md)"
+msgstr "[Get-AdfsClaimsProviderTrust](./Get-AdfsClaimsProviderTrust.md)"
+
+msgid "[Remove-AdfsClaimsProviderTrust](./Remove-AdfsClaimsProviderTrust.md)"
+msgstr "[Remove-AdfsClaimsProviderTrust](./Remove-AdfsClaimsProviderTrust.md)"
+
+msgid "[Set-AdfsClaimsProviderTrust](./Set-AdfsClaimsProviderTrust.md)"
+msgstr "[Set-AdfsClaimsProviderTrust](./Set-AdfsClaimsProviderTrust.md)"

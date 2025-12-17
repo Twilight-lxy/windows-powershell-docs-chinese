@@ -1,0 +1,240 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:42:59 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADDomainMode"
+msgstr "# Set-ADDomainMode"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the domain mode for an Active Directory domain."
+msgstr "用于设置 Active Directory 域的域模式。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Set-ADDomainMode` cmdlet sets the domain mode for a domain. You specify the domain mode by\n"
+"setting the **DomainMode** parameter."
+msgstr "`Set-ADDomainMode` cmdlet 用于设置域的域模式。您可以通过设置 **DomainMode** 参数来指定域模式。"
+
+msgid ""
+"The **Identity** parameter specifies the Active Directory domain to modify. You can identify a\n"
+"domain by its distinguished name, GUID, security identifier (SID), DNS domain name, or NetBIOS\n"
+"name. You can also set the **Identity** parameter to a domain object variable such as\n"
+"`$<localADDomainObject>`, or you can pass a domain object through the pipeline to the **Identity**\n"
+"parameter. For example, you can use the `Get-ADDomain` cmdlet to retrieve a domain object and then\n"
+"pass the object through the pipeline operator to the `Set-ADDomainMode` cmdlet."
+msgstr ""
+"**Identity** 参数用于指定要修改的 Active Directory 域。您可以通过该域的唯一名称（Distinguished "
+"Name）、GUID、安全标识符（Security Identifier, SID）、DNS 域名或 NetBIOS 名称来识别该域。您还可以将 "
+"**Identity** 参数设置为某个域对象变量（例如 `$<localADDomainObject>`），或者通过管道将该域对象传递给 "
+"**Identity** 参数。例如，您可以使用 `Get-ADDomain` cmdlet 获取一个域对象，然后通过管道操作符将该对象传递给 "
+"`Set-ADDomainMode` cmdlet。"
+
+msgid ""
+"The `Set-ADDomainMode` cmdlet always prompts for permission unless you "
+"specify **Confirm:$False**."
+msgstr ""
+"`Set-ADDomainMode` cmdlet 在执行时会始终提示用户是否需要授权（即是否允许操作），除非你明确指定了 "
+"`Confirm:$False`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Set the domain mode of a specified user to Windows2003Domain"
+msgstr "### 示例 1：将指定用户的域模式设置为 Windows2003Domain"
+
+msgid ""
+"This command sets the **DomainMode** property of the `user01.com` domain to "
+"`Windows2003Domain`."
+msgstr "此命令将 `user01.com` 域的 **DomainMode** 属性设置为 `Windows2003Domain`。"
+
+msgid ""
+"### Example 2: Set the domain mode of the current user's domain to "
+"Windows2003Domain"
+msgstr "### 示例 2：将当前用户所在域的域模式设置为 Windows2003Domain"
+
+msgid ""
+"This example sets the **DomainMode** of the current logged on user's domain to Windows2003Domain.\n"
+"The set operation targets the PrimaryDC FSMO to apply the update."
+msgstr ""
+"这个示例将当前登录用户的域的 **DomainMode** 设置为 Windows2003Domain。设置操作的目标是主域控制器（PrimaryDC "
+"FSMO），以便应用该更新。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use. The acceptable values for this "
+"parameter are:"
+msgstr "指定要使用的身份验证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本身份验证方法需要使用安全套接字层（SSL）连接。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task. The default credentials are the\n"
+"credentials of the currently logged on user unless the cmdlet is run from an Active Directory\n"
+"module for Windows PowerShell provider drive. If the cmdlet is run from such a provider drive, the\n"
+"account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果是从这样的驱动器中运行 cmdlet，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as `User1` or `Domain01\\User01` or you can\n"
+"specify a **PSCredential** object. If you specify a user name for this parameter, the cmdlet\n"
+"prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 `User1` 或 `Domain01/User01`），或者可以指定一个 **PSCredential** "
+"对象。如果您为该参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the `Get-Credential`\n"
+"cmdlet. You can then set the **Credential** parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将这个 "
+"**Credential** 对象设置到相应的参数中。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform the task, Active\n"
+"Directory module for Windows PowerShell returns a terminating error."
+msgstr ""
+"如果执行该任务的代理组件没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies the domain functional level of the first domain in the creation of a new forest.\n"
+"Supported values for this parameter can be either a valid integer or a corresponding enumerated\n"
+"string value. For example, to set the domain mode level to Windows Server 2008 R2, you can specify\n"
+"either a value of **4** or **Windows2008R2Domain**."
+msgstr ""
+"指定在创建新的森林时第一个域的域名功能级别。此参数支持的值可以是有效的整数，也可以是相应的枚举字符串值。例如，要将域模式级别设置为 Windows "
+"Server 2008 R2，您可以指定值 **4** 或 **Windows2008R2Domain**。"
+
+msgid "The following are the currently supported values:"
+msgstr "以下是当前支持的值："
+
+msgid ""
+"The domain functional level cannot be lower than the forest functional level, but it can be higher.\n"
+"The functional level can be increased, and also decreased as long as no feature that requires that\n"
+"functional level is in use, such as the Active Directory Recycle Bin. The default is automatically\n"
+"computed and set."
+msgstr ""
+"域的功能级别不能低于森林的功能级别，但可以高于森林的功能级别。功能级别是可以提升的，也可以降低的，前提是不要使用任何依赖于该功能级别的组件或功能（例如 "
+"Active Directory 回收站）。默认情况下，功能级别会由系统自动计算并设置。"
+
+msgid ""
+"Specifies an Active Directory domain object by providing one of the following property values. The\n"
+"identifier in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the\n"
+"attribute. All values are for the domainDNS object that represents the domain. The acceptable\n"
+"values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory "
+"域对象。括号中的标识符是该属性的轻型目录访问协议（LDAP）显示名称。所有值都适用于表示该域的 domainDNS 对象。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr "此cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，该cmdlet会返回一个无法终止的错误信息。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set this parameter to a\n"
+"domain object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将该参数设置为某个域对象（domain object）的实例。"
+
+msgid ""
+"Returns an object representing the item with which you are working. By default, this cmdlet does\n"
+"not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the Active Directory Domain Services instance to connect to, by providing one of the\n"
+"following values for a corresponding domain name or directory server. The service may be any of the\n"
+"following: Active Directory Lightweight Domain Services, Active Directory Domain Services or Active\n"
+"Directory snapshot instance."
+msgstr ""
+"指定要连接的 Active Directory 域服务实例，为此需要提供相应的域名或目录服务器的相关值。该服务可以是以下类型之一：Active "
+"Directory 轻量级域服务（Active Directory Lightweight Domain Services）、Active "
+"Directory 域服务（Active Directory Domain Services），或者 Active Directory "
+"快照实例（Active Directory Snapshot Instance）。"
+
+msgid ""
+"Specify the Active Directory Domain Services instance in one of the "
+"following ways:"
+msgstr "以下是指定 Active Directory 域服务实例的几种方式："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following methods in the order\n"
+"that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们的排列顺序："
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADDomain"
+msgstr "### Microsoft ActiveDirectory.Management.AddDomain"
+
+msgid "A domain object is received by the **Identity** parameter."
+msgstr "领域对象是通过 **Identity** 参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADDomain"
+msgstr "没有相关设置，或者使用了 `Microsoft.ActiveDirectory.Management ADDomain` 类。"
+
+msgid ""
+"This cmdlet returns the modified domain object when the **PassThru** parameter is specified. By\n"
+"default, this cmdlet does not generate any output."
+msgstr "当指定 `PassThru` 参数时，此 cmdlet 会返回修改后的域对象。默认情况下，该 cmdlet 不生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADDomain](Get-ADDomain.md)"
+msgstr "[Get-ADDomain](Get-ADDomain.md)"

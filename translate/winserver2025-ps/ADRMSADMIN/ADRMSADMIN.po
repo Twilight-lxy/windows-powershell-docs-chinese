@@ -1,0 +1,181 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:47:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# ADRMSADMIN Module"
+msgstr "# ADRMSADMIN 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This topic contains brief descriptions of the Windows PowerShell cmdlets "
+"that are for use in administering Active Directory Rights Management "
+"Services (AD RMS) in Windows Server. Each cmdlet in the table is linked to "
+"additional information about that cmdlet. These cmdlets give you the ability"
+" to administer an AD RMS cluster using PowerShell."
+msgstr ""
+"这个主题简要介绍了用于在 Windows Server 中管理 Active Directory 权限管理服务（AD RMS）的 Windows "
+"PowerShell cmdlet。表格中的每个 cmdlet 都链接到了有关该 cmdlet 的更多信息。这些 cmdlet 使您能够使用 "
+"PowerShell 来管理 AD RMS 集群。"
+
+msgid "## ADRMSADMIN Cmdlets"
+msgstr "## ADRMSADMINCmdlets"
+
+msgid ""
+"### [Export-RmsReportDefinitionLanguage](./Export-"
+"RmsReportDefinitionLanguage.md)"
+msgstr ""
+"### [Export-RmsReportDefinitionLanguage](./Export-"
+"RmsReportDefinitionLanguage.md)"
+
+msgid "Exports all report definition (.rdl) files."
+msgstr "导出所有报告定义文件（.rdl格式）。"
+
+msgid "### [Export-RmsTPD](./Export-RmsTPD.md)"
+msgstr "### [Export-RmsTPD](./Export-RmsTPD.md)"
+
+msgid "Exports a TPD in AD RMS."
+msgstr "将TPD导出到AD RMS中。"
+
+msgid "### [Export-RmsTUD](./Export-RmsTUD.md)"
+msgstr "### [Export-RmsTUD](./Export-RmsTUD.md)"
+
+msgid "Exports a TUD."
+msgstr "导出一个TUD文件。"
+
+msgid "### [Get-RmsCertChain](./Get-RmsCertChain.md)"
+msgstr "### [Get-RmsCertChain](./Get-RmsCertChain.md)"
+
+msgid ""
+"Generates a report about the certificate chain of a particular user request "
+"for the AD RMS cluster."
+msgstr "生成一份关于特定用户请求的证书链的报告，该报告针对的是AD RMS集群。"
+
+msgid "### [Get-RmsCertInfo](./Get-RmsCertInfo.md)"
+msgstr "### [Get-RmsCertInfo](./Get-RmsCertInfo.md)"
+
+msgid ""
+"Generates a report about a certificate used in a user request for the AD RMS"
+" cluster."
+msgstr "生成一份关于在用户请求中使用的证书的报告，该证书用于AD RMS集群。"
+
+msgid "### [Get-RmsChildCert](./Get-RmsChildCert.md)"
+msgstr "### [Get-RmsChildCert](./Get-RmsChildCert.md)"
+
+msgid ""
+"Returns all child certificates from a parent certificate used in a user "
+"request for the AD RMS cluster."
+msgstr "从用于用户请求的父证书中返回所有子证书（这些父证书是AD RMS集群的一部分）。"
+
+msgid "### [Get-RmsEncryptedIL](./Get-RmsEncryptedIL.md)"
+msgstr "### [Get-RmsEncryptedIL](./Get-RmsEncryptedIL.md)"
+
+msgid ""
+"Returns use-license information from an issuance license used in a user "
+"request for the Active Directory Rights Management Services (AD RMS) "
+"cluster."
+msgstr "从用户请求中使用的发行许可证中返回与 Active Directory 权限管理服务（AD RMS）集群相关的使用许可信息。"
+
+msgid "### [Get-RmsRequestInfo](./Get-RmsRequestInfo.md)"
+msgstr "### [Get-RmsRequestInfo](./Get-RmsRequestInfo.md)"
+
+msgid ""
+"Generates a report about a particular user request for the AD RMS cluster."
+msgstr "为AD RMS集群中的特定用户请求生成一份报告。"
+
+msgid "### [Get-RmsSvcAccount](./Get-RmsSvcAccount.md)"
+msgstr "### [Get-RmsSvcAccount](./Get-RmsSvcAccount.md)"
+
+msgid ""
+"Gets service account credentials for an Active Directory Rights Management "
+"Services (AD RMS) cluster."
+msgstr "获取用于 Active Directory 权限管理服务（AD RMS）集群的服务账户凭据。"
+
+msgid "### [Get-RmsSystemHealthReport](./Get-RmsSystemHealthReport.md)"
+msgstr "### [Get-RmsSystemHealthReport](./Get-RmsSystemHealthReport.md)"
+
+msgid ""
+"Generates a system health report of the Active Directory Rights Management "
+"Services (AD RMS) cluster."
+msgstr "生成Active Directory Rights Management Services（AD RMS）集群的系统健康报告。"
+
+msgid "### [Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"
+msgstr "### [Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"
+
+msgid "Generates a user requests statistical report for the AD RMS cluster."
+msgstr "生成 AD RMS 集群的用户请求统计报告。"
+
+msgid "### [Import-RmsTPD](./Import-RmsTPD.md)"
+msgstr "### [Import-RmsTPD](./Import-RmsTPD.md)"
+
+msgid "Imports a TPD from a file in AD RMS."
+msgstr "从 AD RMS 中的文件导入一个 TPD（传输保护数据）。"
+
+msgid "### [Import-RmsTUD](./Import-RmsTUD.md)"
+msgstr "### [Import-RmsTUD](./Import-RmsTUD.md)"
+
+msgid ""
+"Imports a TUD from a file in AD RMS or specifies to trust Microsoft account "
+"IDs."
+msgstr "从 AD RMS 文件中导入 TUD（信任声明），或指定要信任的 Microsoft 账户 ID。"
+
+msgid "### [Initialize-RmsCryptoMode2](./Initialize-RmsCryptoMode2.md)"
+msgstr "### [Initialize-RmsCryptoMode2](./Initialize-RmsCryptoMode2.md)"
+
+msgid "Prepares an AD RMS server for transitioning to Cryptographic Mode 2."
+msgstr "为AD RMS服务器过渡到加密模式2做好准备。"
+
+msgid "### [Install-RmsMfgEnrollment](./Install-RmsMfgEnrollment.md)"
+msgstr "### [Install-RmsMfgEnrollment](./Install-RmsMfgEnrollment.md)"
+
+msgid "Enrolls an AD RMS server with Microsoft Federation Gateway."
+msgstr "将一台 AD RMS 服务器注册到 Microsoft Federation Gateway 中。"
+
+msgid "### [Install-RmsMfgSupport](./Install-RmsMfgSupport.md)"
+msgstr "### [Install-RmsMfgSupport](./Install-RmsMfgSupport.md)"
+
+msgid "Adds Microsoft Federation Gateway support to an AD RMS server."
+msgstr "为AD RMS服务器添加对Microsoft Federation Gateway的支持。"
+
+msgid "### [Set-RmsSvcAccount](./Set-RmsSvcAccount.md)"
+msgstr "### [Set-RmsSvcAccount](./Set-RmsSvcAccount.md)"
+
+msgid "Sets the service account for an AD RMS cluster."
+msgstr "为AD RMS集群设置服务账户。"
+
+msgid "### [Uninstall-RmsMfgEnrollment](./Uninstall-RmsMfgEnrollment.md)"
+msgstr "### [Uninstall-RmsMfgEnrollment](./Uninstall-RmsMfgEnrollment.md)"
+
+msgid ""
+"Terminates the enrollment of an AD RMS server with the Microsoft Federation "
+"Gateway."
+msgstr "终止将 AD RMS 服务器与 Microsoft Federation Gateway 配置为联盟环境的操作。"
+
+msgid "### [Uninstall-RmsMfgSupport](./Uninstall-RmsMfgSupport.md)"
+msgstr "### [卸载RmsMfgSupport](./Uninstall-RmsMfgSupport.md)"
+
+msgid "Removes Microsoft Federation Gateway support from an AD RMS server."
+msgstr "从AD RMS服务器中移除对Microsoft Federation Gateway的支持。"
+
+msgid "### [Update-RmsCluster](./Update-RmsCluster.md)"
+msgstr "### [Update-RmsCluster](./Update-RmsCluster.md)"
+
+msgid "Updates the AD RMS cluster information."
+msgstr "更新AD RMS集群的信息。"
+
+msgid "### [Update-RmsMfgEnrollment](./Update-RmsMfgEnrollment.md)"
+msgstr "### [更新RMS制造商注册信息](./Update-RmsMfgEnrollment.md)"
+
+msgid ""
+"Updates enrollment information for an AD RMS server enrolled with the "
+"Microsoft Federation Gateway service."
+msgstr "更新已注册到 Microsoft Federation Gateway 服务的 AD RMS 服务器的注册信息。"

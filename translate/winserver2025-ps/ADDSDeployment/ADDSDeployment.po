@@ -1,0 +1,111 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:24:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# ADDSDeployment Module"
+msgstr "# ADDSDeployment 模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid ""
+"The following contains the names and a brief description of each "
+"ADDSDeployment cmdlet."
+msgstr "以下内容列出了每个 `ADDSDeployment` cmdlet 的名称及其简要描述。"
+
+msgid "## ADDSDeployment Cmdlets"
+msgstr "## ADDSDeploymentCmdlets"
+
+msgid ""
+"### [Add-ADDSReadOnlyDomainControllerAccount](./Add-"
+"ADDSReadOnlyDomainControllerAccount.md)"
+msgstr ""
+"### [Add-ADDSReadOnlyDomainControllerAccount](./Add-"
+"ADDSReadOnlyDomainControllerAccount.md)"
+
+msgid ""
+"Creates a RODC account that can be used to install an RODC in Active "
+"Directory."
+msgstr "创建一个 RODC（域控制器操作主节点）账户，该账户可用于在 Active Directory 中安装 RODC。"
+
+msgid "### [Install-ADDSDomain](./Install-ADDSDomain.md)"
+msgstr "### [安装-添加AD域](./Install-ADDSDomain.md)"
+
+msgid "Installs an Active Directory domain configuration."
+msgstr "安装Active Directory域配置。"
+
+msgid "### [Install-ADDSDomainController](./Install-ADDSDomainController.md)"
+msgstr "### [安装-ADDSDomainController](./Install-ADDSDomainController.md)"
+
+msgid "Installs a domain controller in Active Directory."
+msgstr "在 Active Directory 中安装一个域控制器。"
+
+msgid "### [Install-ADDSForest](./Install-ADDSForest.md)"
+msgstr "### [安装 AD DS 林](./Install-ADDSForest.md)"
+
+msgid "Installs an Active Directory forest configuration."
+msgstr "安装Active Directory森林配置。"
+
+msgid ""
+"### [Test-ADDSDomainControllerInstallation](./Test-"
+"ADDSDomainControllerInstallation.md)"
+msgstr ""
+"### [Test-ADDSDomainControllerInstallation](./Test-"
+"ADDSDomainControllerInstallation.md)"
+
+msgid ""
+"Runs the prerequisites (only) for installing a domain controller in Active "
+"Directory."
+msgstr "仅运行安装 Active Directory 中域控制器所需的先决条件（prerequisites）。"
+
+msgid ""
+"### [Test-ADDSDomainControllerUninstallation](./Test-"
+"ADDSDomainControllerUninstallation.md)"
+msgstr ""
+"### [Test-ADDSDomainControllerUninstallation](./Test-"
+"ADDSDomainControllerUninstallation.md)"
+
+msgid ""
+"Runs the prerequisites for uninstalling a domain controller in Active "
+"Directory."
+msgstr "运行用于卸载 Active Directory 中域控制器所需的先决条件程序。"
+
+msgid "### [Test-ADDSDomainInstallation](./Test-ADDSDomainInstallation.md)"
+msgstr "### [Test-ADDSDomainInstallation](./Test-ADDSDomainInstallation.md)"
+
+msgid ""
+"Runs the prerequisites for installing a new Active Directory domain "
+"configuration."
+msgstr "运行安装新的 Active Directory 域配置所需的先决条件程序。"
+
+msgid "### [Test-ADDSForestInstallation](./Test-ADDSForestInstallation.md)"
+msgstr "### [Test-ADDSForestInstallation](./Test-ADDSForestInstallation.md)"
+
+msgid ""
+"Runs the prerequisites for installing a new forest in Active Directory."
+msgstr "运行安装Active Directory新林所需的先决条件程序。"
+
+msgid ""
+"### [Test-ADDSReadOnlyDomainControllerAccountCreation](./Test-"
+"ADDSReadOnlyDomainControllerAccountCreation.md)"
+msgstr ""
+"### [测试 AD DS 仅读域控制器账户创建功能](./Test-"
+"ADDSReadOnlyDomainControllerAccountCreation.md)"
+
+msgid "Runs the prerequisites for adding a RODC account."
+msgstr "运行用于添加 RODC 账户所需的先决条件程序。"
+
+msgid ""
+"### [Uninstall-ADDSDomainController](./Uninstall-ADDSDomainController.md)"
+msgstr "### [卸载-ADDSDomainController](./Uninstall-ADDSDomainController.md)"
+
+msgid "Uninstalls a domain controller in Active Directory."
+msgstr "在 Active Directory 中卸载一个域控制器。"

@@ -1,0 +1,185 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:13:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ADReplicationSiteLink"
+msgstr "# 删除 AD 复制站点链接"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Deletes an Active Directory site link used to manage replication."
+msgstr "删除用于管理复制的 Active Directory 站点链接。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-ADReplicationSiteLink** cmdlet removes a site link object used to manage replication traffic between two sites in your Active Directory installation.\n"
+"For more information on site links, see [Creating a Site Link Design](https://go.microsoft.com/fwlink/?LinkId=221870) in the TechNet Library: http://go.microsoft.com/fwlink/?LinkId=221870."
+msgstr ""
+"**Remove-ADReplicationSiteLink** cmdlet 用于删除用于管理 Active Directory "
+"安装中两个站点之间复制流量的站点链接对象。有关站点链接的更多信息，请参阅 TechNet 文库中的 "
+"[创建站点链接设计](https://go.microsoft.com/fwlink/?LinkId=221870)：http://go.microsoft.com/fwlink/?LinkId=221870。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a replication site link"
+msgstr "### 示例 1：删除复制站点链接"
+
+msgid "This command removes the site link with the name Europe-Asia."
+msgstr "这个命令会删除名称为“Europe-Asia”的站点链接。"
+
+msgid ""
+"### Example 2: Get a filtered list of replication site links and remove them"
+msgstr "### 示例 2：获取经过过滤的复制站点链接列表并删除这些链接"
+
+msgid ""
+"This command gets the site links that include NorthAmerica and removes them."
+msgstr "这个命令会获取包含“NorthAmerica”这个词的网站链接，并将它们删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的身份验证方法。此参数的可接受值为："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果该 cmdlet 是从此类驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01/User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"*Credential* 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果执行任务的账号没有目录级别的权限，Windows PowerShell 的 Active Directory "
+"模块会返回一个终止错误（即程序异常退出）。"
+
+msgid ""
+"Specifies an Active Directory object by providing one of the following property values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory 对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr "该cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，cmdlet会返回一个无法终止的错误信息。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道（pipeline）来获取相应的对象，或者你可以将该参数设置为一个对象的实例。"
+
+msgid ""
+"Specifies the AD DS instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following: AD LDS, AD DS, or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 AD DS 实例，请为相应的域名或目录服务器提供以下值之一。该服务可以是以下类型中的任意一种：AD LDS、AD DS 或 Active "
+"Directory 快照实例。"
+
+msgid "Specify the AD DS instance in one of the following ways:"
+msgstr "以下列方式之一指定 AD DS 实例："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们在列表中的顺序："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADReplicationSiteLink"
+msgstr "### 无值或 Microsoft ActiveDirectory.Management.AdReplicationSiteLink"
+
+msgid "A site link object is received by the *Identity* parameter."
+msgstr "站点链接对象是通过“Identity”参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADReplicationSiteLink](./Get-ADReplicationSiteLink.md)"
+msgstr "[Get-ADReplicationSiteLink](./Get-ADReplicationSiteLink.md)"
+
+msgid "[New-ADReplicationSiteLink](./New-ADReplicationSiteLink.md)"
+msgstr "[New-ADReplicationSiteLink](./New-ADReplicationSiteLink.md)"
+
+msgid "[Set-ADReplicationSiteLink](./Set-ADReplicationSiteLink.md)"
+msgstr "[Set-ADReplicationSiteLink](./Set-ADReplicationSiteLink.md)"

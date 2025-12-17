@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:19:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AdfsRelyingPartyTrust"
+msgstr "# 移除依赖 AdFS 的主体信任（Remove-AdfsRelyingPartyTrust）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a relying party trust from the Federation Service."
+msgstr "从联邦服务中移除一个依赖方信任（relying party trust）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-AdfsRelyingPartyTrust** cmdlet removes a relying party trust "
+"from the Federation Service."
+msgstr ""
+"**Remove-AdfsRelyingPartyTrust** cmdlet 用于从联合服务（Federation "
+"Service）中删除依赖方信任关系（relying party trust）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a relying party trust"
+msgstr "### 示例 1：移除依赖方信任（Removing a Relying Party Trust）"
+
+msgid "This command removes the relying party trust named FabrikamApp."
+msgstr "该命令删除了名为“FabrikamApp”的依赖方信任关系。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the identifier of the relying party trust to remove."
+msgstr "指定要删除的依赖方信任（relying party trust）的标识符。"
+
+msgid "Specifies the name of the relying party trust to remove."
+msgstr "指定要删除的依赖方信任（relying party trust）的名称。"
+
+msgid ""
+"Specifies a **RelyingPartyTrust** object.\n"
+"The cmdlet removes the relying party trust that you specify.\n"
+"To obtain a **RelyingPartyTrust** object, use the **Get-AdfsRelyingPartyTrust** cmdlet."
+msgstr ""
+"用于指定一个 **RelyingPartyTrust** 对象。该 cmdlet 会删除您指定的依赖方信任关系。若要获取一个 "
+"**RelyingPartyTrust** 对象，可以使用 **Get-AdfsRelyingPartyTrust** cmdlet。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前会提示您确认是否要继续执行。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *TargetIdentifier* and *TargetName* "
+"parameters."
+msgstr "字符串对象通过*TargetIdentifier*和*TargetName*参数被接收。"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.RelyingPartyTrust"
+msgstr "### Microsoft.IdentityServer.PowerShell.Resources.RelyingPartyTrust"
+
+msgid ""
+"RelyingPartytrust objects are received by the *TargetRelyingParty* "
+"parameter."
+msgstr "`RelyingPartyTrust` 对象是通过 `TargetRelyingParty` 参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.RelyingPartyTrust"
+msgstr "### Microsoft IdentityServer.PowerShell.Resources.RelyingPartyTrust"
+
+msgid ""
+"Returns the removed RelyingPartyTrust object when the *PassThru* parameter "
+"is specified. By default, this cmdlet does not generate any output."
+msgstr "当指定*PassThru*参数时，会返回被移除的RelyingPartyTrust对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsRelyingPartyTrust](./Add-AdfsRelyingPartyTrust.md)"
+msgstr "[Add-AdfsRelyingPartyTrust](./Add-AdfsRelyingPartyTrust.md)"
+
+msgid "[Disable-AdfsRelyingPartyTrust](./Disable-AdfsRelyingPartyTrust.md)"
+msgstr "[禁用 AdfsRelyingPartyTrust](./ Disable-AdfsRelyingPartyTrust.md)"
+
+msgid "[Enable-AdfsRelyingPartyTrust](./Enable-AdfsRelyingPartyTrust.md)"
+msgstr "[Enable-AdfsRelyingPartyTrust](./Enable-AdfsRelyingPartyTrust.md)"
+
+msgid "[Get-AdfsRelyingPartyTrust](./Get-AdfsRelyingPartyTrust.md)"
+msgstr "[Get-AdfsRelyingPartyTrust](./Get-AdfsRelyingPartyTrust.md)"
+
+msgid "[Set-AdfsRelyingPartyTrust](./Set-AdfsRelyingPartyTrust.md)"
+msgstr "[Set-AdfsRelyingPartyTrust](./Set-AdfsRelyingPartyTrust.md)"
+
+msgid "[Update-AdfsRelyingPartyTrust](./Update-AdfsRelyingPartyTrust.md)"
+msgstr "[更新：AdfsRelyingPartyTrust](./Update-AdfsRelyingPartyTrust.md)"

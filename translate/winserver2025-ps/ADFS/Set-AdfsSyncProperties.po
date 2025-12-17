@@ -1,0 +1,124 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:40:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsSyncProperties"
+msgstr "# 设置 AdfsSyncProperties 属性"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Modifies the frequency of synchronization for the AD FS configuration "
+"database and which server is primary in the farm."
+msgstr "修改 AD FS 配置数据库的同步频率，以及确定服务器群中哪台服务器作为主服务器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-ADFSSyncProperties** cmdlet modifies the frequency of synchronization for the Active Directory Federation Services (AD FS) configuration database.\n"
+"The cmdlet also specifies which federation server is the primary server in the federation server farm."
+msgstr ""
+"`Set-ADFSSyncProperties` 这个 cmdlet 用于修改 Active Directory Federation Services"
+" (AD FS) 配置数据库的同步频率。此外，该 cmdlet 还可以指定联邦服务器组中的哪台服务器是主服务器。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify the poll duration for a farm"
+msgstr "### 示例 1：修改某个农场的投票时长"
+
+msgid ""
+"This command modifies the database synchronization to 3600 seconds.\n"
+"The command makes the change to the primary federation server."
+msgstr "该命令将数据库同步间隔修改为3600秒。这一更改会应用于主联邦服务器。"
+
+msgid "### Example 2: Change a server from secondary to primary"
+msgstr "### 示例 2：将一台服务器从辅助角色切换到主要角色"
+
+msgid ""
+"This command changes an AD FS server in a WID farm from secondary to "
+"primary."
+msgstr ""
+"此命令会将WID（Windows Identity Foundation）集群中的一台AD FS（Active Directory Federation"
+" Services）服务器从辅助服务器切换为主服务器。"
+
+msgid "### Example 3: Change a primary server to a secondary server"
+msgstr "### 示例 3：将主服务器更改为从服务器"
+
+msgid ""
+"This command changes a primary AD FS server in a WID farm to a secondary server.\n"
+"Note: The primary server must be accessible via HTTP on port 80 from the secondary server."
+msgstr ""
+"此命令会将 WID（Windows Integrated Domain）环境中的某个主 AD FS（Active Directory "
+"Federation Services）服务器更改为从属服务器。注意：从属服务器必须能够通过 HTTP 协议在端口 80 上访问该主服务器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies how often, in seconds, the AD FS configuration database "
+"synchronizes with the primary federation server."
+msgstr "指定 AD FS 配置数据库与主联合服务器同步的频率（以秒为单位）。"
+
+msgid ""
+"Specifies the name of the primary federation server in a federation server farm.\n"
+"Modify settings for the Federation Service on the primary federation server."
+msgstr "指定联邦服务器群中的主要联邦服务器的名称。请修改该主要联邦服务器上的 Federation Service 的相关设置。"
+
+msgid ""
+"Specifies the primary computer port.\n"
+"The primary computer in the federation server farm uses the TCP port that you specify.\n"
+"Modify settings for the Federation Service on the primary federation server."
+msgstr ""
+"指定主要的计算机端口。联邦服务器群中的主要计算机将使用您指定的TCP端口。请修改主联邦服务器上的Federation Service相关设置。"
+
+msgid ""
+"Specifies the role for this federation server.\n"
+"The acceptable values for this parameter are: primary and secondary."
+msgstr "指定该联邦服务器的角色。此参数的可接受值为：primary（主服务器）和secondary（从服务器）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsSyncProperties](./Get-AdfsSyncProperties.md)"
+msgstr "[Get-AdfsSyncProperties](./Get-AdfsSyncProperties.md)"

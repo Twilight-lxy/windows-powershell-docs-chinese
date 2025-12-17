@@ -1,0 +1,92 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:32:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADCentralAccessPolicy"
+msgstr "# 设置 ADCentralAccessPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies a central access policy in Active Directory."
+msgstr "修改 Active Directory 中的核心访问策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identity"
+msgstr "### 身份"
+
+msgid "### Instance"
+msgstr "### 实例"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-ADCentralAccessPolicy** cmdlet can be used to modify a central "
+"access policy in Active Directory."
+msgstr "`Set-ADCentralAccessPolicy` cmdlet 可用于修改 Active Directory 中的中央访问策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update a specified central access policy's description"
+msgstr "### 示例 1：更新指定的中央访问策略的描述"
+
+msgid ""
+"This command updates the central access policy named Finance Policy to "
+"include the description For the Finance Department."
+msgstr "此命令会更新名为“Finance Policy”的中央访问策略，为其添加描述“适用于财务部门”。"
+
+msgid ""
+"### Example 2: Get an existing central access policy and then update its "
+"description"
+msgstr "### 示例 2：获取现有的中央访问策略，然后更新其描述"
+
+msgid ""
+"This command gets the central access policy named Finance Policy, and then "
+"sets its description to For the Finance Department."
+msgstr "这个命令获取名为“Finance Policy”的中央访问策略，然后将其描述设置为“适用于财务部门”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies values to add to an object property.\n"
+"Use this parameter to add one or more values to a property that cannot be modified using a cmdlet parameter.\n"
+"To modify an object property, you must use the Lightweight Directory Access Protocol (LDAP) display name.\n"
+"You can specify multiple values to a property by specifying a comma-separated list of values and more than one property by separating them using a semicolon..\n"
+"The format for this parameter is:"
+msgstr ""
+"用于指定要添加到对象属性中的值。使用此参数可以为无法通过 cmdlet "
+"参数修改的属性添加一个或多个值。若要修改对象属性，必须使用轻量级目录访问协议（LDAP）显示名称。您可以通过提供一个用逗号分隔的值列表来为某个属性指定多个值；如果要为多个属性指定值，则需要使用分号将它们分开。该参数的格式如下："
+
+msgid ""
+"`-Add @{Attribute1LDAPDisplayName=value1, value2, ...;   "
+"Attribute2LDAPDisplayName=value1, value2, ...; "
+"AttributeNLDAPDisplayName=value1, value2, ...}`"
+msgstr ""
+"帮我将以下Markdown格式的内容转换为中文：  \n"
+"\n"
+"`-Add @{Attribute1LDAPDisplayName=value1, value2, ...; Attribute2LDAPDisplayName=value1, value2, ...; AttributeNLDAPDisplayName=value1, value2, ...}`"
+
+msgid ""
+"When you use the *Add*, *Remove*, *Replace*, and *Clear* parameters "
+"together, the operations is performed in the following order:"
+msgstr ""
+"当你同时使用“添加”（Add）、“删除”（Remove）、“替换”（Replace）和“清除”（Clear）这些参数时，操作的执行顺序如下："
+
+msgid ""
+"When you use the *Add*, *Remove*, *Replace*, and *Clear* parameters "
+"together, the operations are performed in the following order:"
+msgstr ""
+"当你同时使用“添加”（Add）、“删除”（Remove）、“替换”（Replace）和“清除”（Clear）这些参数时，操作会按照以下顺序进行："

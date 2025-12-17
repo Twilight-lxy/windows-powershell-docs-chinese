@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:23:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsAlternateTlsClientBinding"
+msgstr "# 设置 AdfsAlternateTlsClientBinding"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Configures an existing AD FS deployment to use the same port for both device"
+" certificate and client certificate authentication."
+msgstr "配置现有的 AD FS 部署，使其在设备证书认证和客户端证书认证过程中使用相同的端口。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AdfsAlternateTlsClientBinding** cmdlet configures an existing AD FS deployment to use the same port (443) for both device certificate and client certificate authentication (client TLS).\n"
+"The cmdlet creates an endpoint for user certificate authentication on `certauth`.\\<federation service name\\>, such as `certauth.contoso.com`."
+msgstr ""
+"`Set-AdfsAlternateTlsClientBinding` cmdlet 用于配置现有的 AD FS（Active Directory "
+"Federation Services）部署，使其在设备证书认证和客户端证书认证（即客户端 TLS 连接）过程中使用相同的端口（443）。该 "
+"cmdlet 会在 `certauth.\\<federation service name\\>`（例如 "
+"`certauth.contoso.com`）上创建一个用于用户证书认证的端点。"
+
+msgid ""
+"To change the deployment back to one in which user certificate "
+"authentication uses a non-standard port, use the Set-AdfsSslCertificate "
+"cmdlet with a new certificate that does not contain a Subject Alternative "
+"Name (SAN) for `certauth`.\\<federation service name\\>."
+msgstr ""
+"要将部署方式改回使用非标准端口的用户证书认证的方式，请使用 `Set-AdfsSslCertificate` "
+"cmdlet，并使用一个新的证书。该新证书不应包含用于 `<federation service name>`. 的“Subject "
+"Alternative Name (SAN)”字段。"
+
+msgid ""
+"The **Install-AdfsFarm** cmdlet configures client TLS on port 49443 if the "
+"SSL certificate does not contain a Subject Alternative Name (SAN) for "
+"`certauth`.\\<federation service name\\>, such as `certauth.contoso.com`."
+msgstr ""
+"如果 SSL 证书中没有包含用于 `<federation service name>`（例如 `certauth.contoso.com`）的 "
+"“Subject Alternative Name”（SAN），则 **Install-AdfsFarm** cmdlet 会配置客户端在端口 "
+"49443 上使用 TLS 协议进行通信。"
+
+msgid ""
+"Use **Set-AdfsAlternateTlsClientBinding** with a new certificate that contains the SAN entry.\n"
+"It will configure AD FS to use port 443 for client TLS."
+msgstr ""
+"使用 `Set-AdfsAlternateTlsClientBinding` 命令，并搭配一个包含 SAN（Subject Alternative "
+"Name）字段的新证书。该命令会配置 Active Directory Federation Services (AD FS) 使用端口 443 "
+"进行客户端与服务器之间的 TLS 通信。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Configure a deployment"
+msgstr "#### 示例 1：配置一个部署"
+
+msgid ""
+"This command configures a deployment to use the same port for device certificate authentication and user certificate authentication.\n"
+"In this example, the certificate that has the specified thumbprint contains a SAN for certauth.contoso.com."
+msgstr ""
+"此命令配置了一个部署方案，使得设备证书认证和用户证书认证使用相同的端口。在这个例子中，具有指定指纹的证书包含一个用于 "
+"certauth.contoso.com 的 SAN（Subject Alternative Name）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不会询问用户的确认。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-AdfsSslCertificate](./Set-AdfsSslCertificate.md)"
+msgstr "[Set-AdfsSslCertificate](./Set-AdfsSslCertificate.md)"

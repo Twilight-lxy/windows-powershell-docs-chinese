@@ -79,7 +79,7 @@ class MarkdownParser:
                 for li in node.find_all("li", recursive=False):
                     li_raw = str(li)
                     li_text = li.get_text(" ", strip=True)
-                    li_md = self._find_md_raw_for("li", li_text)
+                    li_md = self._get_next_block_for("li", li_text)
                     self.elems.append(("li", "list_item", li_text, li_raw, li_md))
             else:
                 self.elems.append((tag, "paragraph", text, raw, md_raw))
@@ -311,6 +311,8 @@ def main():
         if node.type in can_translate_type:
             text = node.md_raw
             if text.startswith("### -"):
+                continue
+            if "```" in text:
                 continue
         input_text = text.replace("\n", " ")
         prampt["messages"][1][

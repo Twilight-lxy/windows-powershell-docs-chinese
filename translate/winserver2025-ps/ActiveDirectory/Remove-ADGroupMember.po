@@ -1,0 +1,245 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:08:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ADGroupMember"
+msgstr "# 移除AD组成员"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes one or more members from an Active Directory group."
+msgstr "从一个Active Directory组中移除一个或多个成员。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-ADGroupMember** cmdlet removes one or more users, groups, "
+"service accounts, or computers from an Active Directory group."
+msgstr ""
+"`Remove-ADGroupMember` cmdlet 可以将一个或多个用户、组、服务账户或计算机从 Active Directory 组中移除。"
+
+msgid ""
+"The *Identity* parameter specifies the Active Directory group that contains the members to remove.\n"
+"You can identify a group by its distinguished name, GUID, security identifier, or Security Account Manager (SAM) account name.\n"
+"You can also specify a group object variable, such as `$<localGroupObject>`, or pass a group object through the pipeline to the *Identity* parameter.\n"
+"For example, you can use the **Get-ADGroup** cmdlet to retrieve a group object and then pass the object through the pipeline to the Remove-ADGroupMember cmdlet."
+msgstr ""
+"`Identity` 参数用于指定包含需要删除的成员的 Active Directory 组。您可以通过该组的唯一名称（Distinguished "
+"Name）、GUID、安全标识符或安全账户管理器（Security Account Manager, "
+"SAM）帐户名称来识别该组。此外，您还可以指定一个组对象变量（例如 `$<localGroupObject>`），或者通过管道将某个组对象传递给 "
+"`Identity` 参数。例如，您可以使用 **Get-ADGroup** cmdlet 来获取一个组对象，然后将该对象通过管道传递给 "
+"`Remove-ADGroupMember` cmdlet。"
+
+msgid ""
+"The *Members* parameter specifies the users, computers and groups to remove from the group specified by the *Identity* parameter.\n"
+"You can identify a user, computer or group by its distinguished name, GUID, security identifier, or SAM account name.\n"
+"You can also specify user, computer, and group object variables, such as `$<localUserObject>`.\n"
+"If you are specifying more than one new member, use a comma-separated list.\n"
+"You cannot pass user, computer, or group objects through the pipeline to this cmdlet.\n"
+"To remove user, computer, or group objects from a group by using the pipeline, use the Remove-ADPrincipalGroupMembership cmdlet."
+msgstr ""
+"`Members` 参数用于指定要从由 `Identity` 参数指定的组中删除的用户、计算机和组。您可以通过它们的唯一名称（Distinguished"
+" Name）、GUID、安全标识符（Security Identifier）或 SAM "
+"账户名来识别用户、计算机或组。您还可以指定用户、计算机和组对象变量，例如 "
+"`$<localUserObject>`。如果您要指定多个新成员，请使用逗号分隔的列表。无法通过管道将用户、计算机或组对象传递给此 "
+"cmdlet。要通过管道从组中删除用户、计算机或组对象，请使用 `Remove-ADPrincipalGroupMembership` cmdlet。"
+
+msgid ""
+"For Active Directory Lightweight Directory Services (AD LDS) environments, "
+"the *Partition* parameter must be specified except in the following two "
+"conditions:"
+msgstr "对于 Active Directory 轻量级目录服务（AD LDS）环境，必须指定 *Partition* 参数，以下两种情况除外："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a member from a group"
+msgstr "### 示例 1：从组中移除成员"
+
+msgid ""
+"This command removes the user with the SAM account name DavidChew from the "
+"group DocumentReaders."
+msgstr "此命令会将使用SAM账户名称“DavidChew”的用户从“DocumentReaders”组中移除。"
+
+msgid "### Example 2: Remove multiple members from a group"
+msgstr "### 示例 2：从组中删除多个成员"
+
+msgid ""
+"This command removes the users with SAM account name administrator and "
+"DavidChew from the group DocumentReaders."
+msgstr "这个命令会将用户名为“administrator”和“DavidChew”的用户从“DocumentReaders”组中移除。"
+
+msgid "### Example 3: Remove a distinguished user from a group"
+msgstr "### 示例 3：将一位具有特殊权限的用户从组中移除"
+
+msgid ""
+"This command removes the user with the distinguished name "
+"CN=GlenJohn,DC=AppNC from the group AccessControl on an AD LDS instance "
+"using the pipeline."
+msgstr "此命令使用管道将具有独特名称“CN=GlenJohn,DC=AppNC”的用户从AD LDS实例中的AccessControl组中删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果该 cmdlet 是从这样的驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01/User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，该 cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，可以将 "
+"*Credential* 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果该执行任务的账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Group membership updates use permissive modify by default. This suppresses an error when removing a member that is not member of the group.\n"
+"When this parameter is used, an error \"The specified account name is not a member of the group\" is returned."
+msgstr ""
+"组成员信息的更新默认采用“允许修改”（permissive "
+"modify）的权限设置。这种设置可以避免在尝试删除实际上并不属于该组的成员时出现错误。当使用这个参数时，系统会返回一个错误信息：“指定的账户名称不属于该组”。"
+
+msgid ""
+"This parameter is available in Windows Server 2019 with the September 2020 "
+"Updates."
+msgstr "此参数在安装了2020年9月更新的Windows Server 2019系统中可用。"
+
+msgid ""
+"Specifies an Active Directory group object by providing one of the following values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr "通过提供以下值之一来指定一个 Active Directory 组对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"此cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，该cmdlet会返回一个无法终止的错误（即程序会持续运行而不会停止）。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将该参数设置为一个对象实例。"
+
+msgid ""
+"Specifies an array of user, group, and computer objects in a comma-separated list to remove from a group.\n"
+"To identify each object, use one of the following property values.\n"
+"Note: The identifier in parentheses is the LDAP display name.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"指定一个由用户、组和计算机对象组成的数组（这些对象以逗号分隔的列表形式提供），以便从某个组中移除这些对象。要识别每个对象，请使用以下属性值之一。注意：括号中的标识符是LDAP显示名称。此参数的可接受值为："
+
+msgid "You can also provide objects to this parameter directly."
+msgstr "您也可以直接将对象传递给这个参数。"
+
+msgid "The following examples show how to specify this parameter."
+msgstr "以下示例展示了如何指定这个参数。"
+
+msgid ""
+"This example specifies a user and group to remove by specifying the "
+"distinguished name and the SAM account name properties."
+msgstr "这个示例通过指定用户的唯一名称（Distinguished Name）和SAM账户名称属性来指定要删除的用户和组。"
+
+msgid ""
+"`-Members \"CN=SaraDavis,CN=employees,CN=Users,DC=contoso,DC=com\", "
+"\"saradavisreports\"`"
+msgstr ""
+"```\n"
+"-Members \"CN=SaraDavis,CN=employees,CN=Users,DC=contoso,DC=com\", \"saradavisreports\"\n"
+"```"
+
+msgid ""
+"This example specifies a user and a group object that are defined in the "
+"current Windows PowerShell session as input for the parameter."
+msgstr "这个示例指定了一个用户和一个组对象，这两个对象是在当前的 Windows PowerShell 会话中定义的，并作为参数的输入值。"
+
+msgid "`-Members $userObject, $GroupObject`"
+msgstr "`-成员：$userObject、$GroupObject`"
+
+msgid ""
+"The objects specified for this parameter are processed as **Microsoft.ActiveDirectory.Management.ADPrincipal** objects.\n"
+"Derived types, such as the following, are also received by this parameter."
+msgstr ""
+"此参数指定的对象会被处理为 **Microsoft ActiveDirectory.Management.ADPrincipal** "
+"对象。此外，该参数还会接收各种派生类型（例如以下所示的类型）。"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADGroup"
+msgstr "### 无或 Microsoft.ActiveDirectory.Management_ADGroup"
+
+msgid ""
+"Returns the modified group object when the *PassThru* parameter is specified.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "当指定 *PassThru* 参数时，会返回修改后的组对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ADGroupMember](./Add-ADGroupMember.md)"
+msgstr "[Add-ADGroupMember](./Add-ADGroupMember.md)"
+
+msgid "[Add-ADPrincipalGroupMembership](./Add-ADPrincipalGroupMembership.md)"
+msgstr "[Add-ADPrincipalGroupMembership](./Add-ADPrincipalGroupMembership.md)"
+
+msgid "[Get-ADGroup](./Get-ADGroup.md)"
+msgstr "[Get-ADGroup](./Get-ADGroup.md)"
+
+msgid "[Get-ADGroupMember](./Get-ADGroupMember.md)"
+msgstr "[Get-ADGroupMember](./Get-ADGroupMember.md)"
+
+msgid "[Get-ADPrincipalGroupMembership](./Get-ADPrincipalGroupMembership.md)"
+msgstr "[Get-ADPrincipalGroupMembership](./Get-ADPrincipalGroupMembership.md)"
+
+msgid ""
+"[Remove-ADPrincipalGroupMembership](./Remove-ADPrincipalGroupMembership.md)"
+msgstr ""
+"[Remove-ADPrincipalGroupMembership](./Remove-ADPrincipalGroupMembership.md)"

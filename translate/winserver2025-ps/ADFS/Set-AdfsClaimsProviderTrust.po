@@ -1,0 +1,208 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:27:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsClaimsProviderTrust"
+msgstr "# 设置 AdfsClaimsProviderTrust"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the properties of a claims provider trust."
+msgstr "设置 claims provider 信任关系的相关属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "### TokenSigningCertificates"
+msgstr "### TokenSigningCertificates"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AdfsClaimsProviderTrust** cmdlet configures the trust relationship"
+" with a claims provider."
+msgstr ""
+"`Set-AdfsClaimsProviderTrust` cmdlet 用于配置与声明提供者（claims provider）之间的信任关系。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable auto-update for a claims provider trust"
+msgstr "#### 示例 1：为某个声明提供者（claims provider）的信任关系启用自动更新功能"
+
+msgid ""
+"This command enables auto-update for the claims provider trust named "
+"Fabrikam claims provider."
+msgstr "此命令可为名为“Fabrikam Claims Provider”的声明提供者信任配置自动更新功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the claim acceptance transform rules for accepting claims from this claims provider.\n"
+"These rules determine the information that is accepted from the partner represented by the claims provider trust."
+msgstr "指定了用于接受来自该索赔提供者的索赔的规则集。这些规则决定了从由该索赔提供者所代表的合作伙伴那里可以接收哪些信息。"
+
+msgid ""
+"Specifies a file that contains the claim acceptance transform rules for "
+"accepting claims from this claims provider."
+msgstr "指定一个文件，该文件包含用于接受来自此索赔提供者的索赔的规则（即索赔处理流程）。"
+
+msgid ""
+"Indicates whether the Security Assertion Markup Language (SAML) parameter *AllowCreate* is sent in SAML requests to the claims provider.\n"
+"The default value is True."
+msgstr ""
+"该参数用于指示在发送给声明提供者的 SAML 请求中是否包含“Security Assertion Markup Language (SAML)”中的 "
+"*AllowCreate* 参数。默认值为 True。"
+
+msgid ""
+"Specifies the LDAP name of the attribute that you want to use for login."
+msgstr "指定用于登录的属性的 LDAP 名称。"
+
+msgid ""
+"Indicates whether changes to the federation metadata by the *MetadataURL* parameter apply automatically to the configuration of the trust relationship.\n"
+"If this parameter has a value of $True, partner claims, certificates, and endpoints are updated automatically."
+msgstr ""
+"该参数用于指示：通过 *MetadataURL* 对联邦元数据进行更改后，这些更改是否会自动应用到信任关系的配置中。如果该参数的值为 "
+"$True，则合作伙伴的信息、证书和终端将会被自动更新。"
+
+msgid ""
+"Note: When auto-update is enabled, fields that can be overwritten by "
+"metadata become read only."
+msgstr "注意：当自动更新功能启用时，那些可能被元数据覆盖的字段将变为只读状态。"
+
+msgid "Specifies an array of claims that are offered by this claims provider."
+msgstr "指定此声明提供者所提供的声明数组（claims）。"
+
+msgid ""
+"Indicates whether the relying party requires that the **NameID** claim be encrypted.\n"
+"This setting applies to SAML logout requests."
+msgstr "该设置用于指示依赖方是否要求对 **NameID** 主张进行加密。此配置适用于 SAML 登出请求。"
+
+msgid ""
+"Specifies the certificate to be used for encrypting a **NameID** to this claims provider in SAML logout requests.\n"
+"Encrypting the **NameID** is optional."
+msgstr "指定用于在 SAML 注销请求中将 **NameID** 加密并发送给此声明提供者的证书。对 **NameID** 进行加密是可选的。"
+
+msgid ""
+"Specifies the type of validation that occurs for the encryption certificate before it is used for encrypting claims.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定在加密证书用于加密声明之前所进行的验证类型。该参数的可接受值如下："
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Input Data）"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimDescription"
+msgstr "### Microsoft IdentityServer.PowerShell.Resources.ClaimDescription"
+
+msgid "ClaimDescription objects are received by the *ClaimOffered* parameter."
+msgstr "`ClaimDescription` 对象是通过 `ClaimOffered` 参数接收到的。"
+
+msgid ""
+"### "
+"System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate2"
+msgstr ""
+"### System.Security "
+"cryptography.X509Certificates.X509Certificate.X509Certificate2"
+
+msgid ""
+"X509Certificate2 objects are received by the *TargetCertificate* parameter."
+msgstr "`X509Certificate2` 对象是通过 `TargetCertificate` 参数接收到的。"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimsProviderTrust"
+msgstr "### MicrosoftIdentityServer.PowerShell.ResourcesClaimsProviderTrust"
+
+msgid ""
+"ClaimsProviderTrust objects are received by the *TargetClaimsProviderTrust* "
+"parameter."
+msgstr "`ClaimsProviderTrust` 对象是通过 `*TargetClaimsProviderTrust*` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *AcceptanceTransformRules*, "
+"*SamlEndpoint*, *TargetIdentifier*, and *TargetName* parameters."
+msgstr ""
+"`String` 对象被传递给 `AcceptanceTransformRules`、`SamlEndpoint`、`TargetIdentifier`"
+" 和 `TargetName` 这些参数。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimsProviderTrust"
+msgstr "### Microsoft IdentityServer.PowShellResourcesClaimsProviderTrust"
+
+msgid ""
+"Returns the changed ClaimsProviderTrust object when the *PassThru* parameter"
+" is specified. By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定 *PassThru* 参数时，该命令会返回一个经过修改的 ClaimsProviderTrust 对象。默认情况下，此 cmdlet "
+"不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsClaimsProviderTrust](./Add-AdfsClaimsProviderTrust.md)"
+msgstr "[Add-AdfsClaimsProviderTrust](./Add-AdfsClaimsProviderTrust.md)"
+
+msgid ""
+"[Disable-AdfsClaimsProviderTrust](./Disable-AdfsClaimsProviderTrust.md)"
+msgstr "[禁用 AdfsClaimsProviderTrust](./ Disable-AdfsClaimsProviderTrust.md)"
+
+msgid "[Enable-AdfsClaimsProviderTrust](./Enable-AdfsClaimsProviderTrust.md)"
+msgstr "[Enable-AdfsClaimsProviderTrust](./Enable-AdfsClaimsProviderTrust.md)"
+
+msgid "[Get-AdfsClaimsProviderTrust](./Get-AdfsClaimsProviderTrust.md)"
+msgstr "[Get-AdfsClaimsProviderTrust](./Get-AdfsClaimsProviderTrust.md)"
+
+msgid "[Remove-AdfsClaimsProviderTrust](./Remove-AdfsClaimsProviderTrust.md)"
+msgstr "[Remove-AdfsClaimsProviderTrust](./Remove-AdfsClaimsProviderTrust.md)"
+
+msgid "[Update-AdfsClaimsProviderTrust](./Update-AdfsClaimsProviderTrust.md)"
+msgstr "[更新 AdfsClaimsProviderTrust](./Update-AdfsClaimsProviderTrust.md)"

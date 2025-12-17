@@ -1,0 +1,226 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:38:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AdfsLocalClaimsProviderTrust"
+msgstr "# 添加 AdfsLocalClaimsProviderTrust"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a local claims provider trust."
+msgstr "创建一个本地的Claims Provider信任（即用于处理身份验证和授权请求的本地服务）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-AdfsLocalClaimsProviderTrust** cmdlet creates a local claims provider trust.\n"
+"This trust is based on a Lightweight Directory Access Protocol (LDAP) v3 compliant directory other than the Active Directory domain of which the Active Directory Federation Services (AD FS) server is a member.\n"
+"This includes other, untrusted, Active Directory forests or domains, Active Directory Lightweight Directory Services directories, and non-Active Directory LDAP directories."
+msgstr ""
+"`Add-AdfsLocalClaimsProviderTrust` cmdlet "
+"用于创建一个本地声明提供者信任关系。该信任关系基于符合轻量级目录访问协议（LDAP）v3标准的目录，而非 Active Directory "
+"Federation Services (AD FS) 服务器所属的 Active Directory 域。这些目录可以包括其他不受信任的 Active"
+" Directory 林或域、Active Directory 轻量级目录服务（LDAP）目录，以及非 Active Directory 的 LDAP "
+"目录。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create an LDAP local claims provider trust"
+msgstr "### 示例 1：创建一个 LDAP 本地声明提供者信任关系"
+
+msgid ""
+"The first command prompts you for a user name and password by using the **Get-Credential** cmdlet.\n"
+"The command stores the results in the $Credential variable."
+msgstr ""
+"第一个命令使用 **Get-Credential** cmdlet 来提示用户输入用户名和密码。该命令将结果存储在 `$Credential` 变量中。"
+
+msgid ""
+"The second command creates an LDAP connection by using the **New-AdfsLdapServerConnection** cmdlet.\n"
+"DomainContoller03.contoso.com is the fully qualified domain name of a domain controller in the other forest.\n"
+"The command stores the result in the $LdapConn variable."
+msgstr ""
+"第二个命令使用 **New-AdfsLdapServerConnection** cmdlet 创建一个 LDAP "
+"连接。DomainController03.contoso.com 是另一个林中域控制器的完全限定域名（FQDN）。该命令将连接结果存储在 "
+"$LdapConn 变量中。"
+
+msgid ""
+"The third command creates a mapping of an LDAP directory attribute to a "
+"claim type by using the **New-AdfsLdapAttributeToClaimMapping** cmdlet."
+msgstr ""
+"第三个命令使用 **New-AdfsLdapAttributeToClaimMapping** cmdlet 来创建一个映射关系：将 LDAP "
+"目录属性与某种声明类型（claim type）关联起来。"
+
+msgid ""
+"The final command creates an LDAP claims provider trust to authenticate "
+"users in another, untrusted Active Directory forest."
+msgstr "最后一个命令创建了一个LDAP声明提供者信任关系，用于在另一个不受信任的Active Directory林中验证用户身份。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the set of claim rules to configure on the local claims provider trust.\n"
+"These rules determine the information that is accepted from the partner represented by the local claims provider trust."
+msgstr ""
+"指定了一组需要在本地声明提供者信任（local claims provider "
+"trust）上配置的声明规则。这些规则决定了从由本地声明提供者信任所代表的合作伙伴那里接收哪些信息。"
+
+msgid ""
+"Specifies the full path of a file that contains the set of claim rules to "
+"configure on the local claims provider trust."
+msgstr "指定一个文件的完整路径，该文件包含了一组用于配置本地声明提供者信任关系的声明规则。"
+
+msgid ""
+"Specifies the LDAP attribute to which the user name that the user enters isl"
+" be matched to find the correct user account in the LDAP directory."
+msgstr "指定一个LDAP属性，用户输入的用户名将与之进行匹配，以便在LDAP目录中找到正确的用户账户。"
+
+msgid "Specifies the claim type of the anchor claim in AD FS."
+msgstr "指定 AD FS 中锚定声明（anchor claim）的声明类型。"
+
+msgid "Indicates whether the trust is enabled."
+msgstr "表示是否启用了信任功能。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies the ID, as a URI, of the claims provider trust."
+msgstr "指定声明提供者信任关系的ID（以URI的形式表示）。"
+
+msgid ""
+"Specifies a mapping of LDAP directory attributes to claim types.\n"
+"Each mapping causes an AD FS claim with the corresponding claim type and LDAP attribute value to be available for AD FS processing rules.\n"
+"To obtain a mapping, use the **New-AdfsLdapAttributeToClaimMapping** cmdlet."
+msgstr ""
+"用于指定 LDAP 目录属性与声明类型之间的映射关系。每一种映射都会生成一个 AD FS 声明，该声明具有相应的声明类型和 LDAP 属性值，可供 AD"
+" FS 处理规则使用。要获取这种映射关系，请使用 **New-AdfsLdapAttributeToClaimMapping** cmdlet。"
+
+msgid ""
+"Specifies the authentication method the local claims provider trust uses.\n"
+"In Windows Server 2016, the only supported method is Basic (username/password)."
+msgstr "指定本地声明提供者所使用的身份验证方法。在 Windows Server 2016 中，唯一支持的身份验证方法是基本认证（用户名/密码）。"
+
+msgid ""
+"Specifies an array of LDAP server connections that the claims provider trust uses.\n"
+"To obtain an **LdapServerConnection** object, use the **New-AdfsLdapServerConnection** cmdlet."
+msgstr ""
+"指定一组LDAP服务器连接信息，这些连接信息将被声明提供者（claim "
+"provider）所信任并使用。要获取一个**LdapServerConnection**对象，请使用**New-"
+"AdfsLdapServerConnection** cmdlet。"
+
+msgid "Specifies a name for the local claims provider trust."
+msgstr "为本地声明提供程序信任关系指定一个名称。"
+
+msgid "Specifies notes."
+msgstr "用于指定注释内容。"
+
+msgid ""
+"Specifies an array of organizational account suffixes that administrator can"
+" configure for the claims provider trust for a Home Realm Discovery (HRD) "
+"scenario."
+msgstr ""
+"指定一组组织账户后缀，管理员可以为这些后缀配置相应的信任设置，以便在“家庭领域发现”（Home Realm Discovery, "
+"HRD）场景中使用这些后缀与身份提供者进行交互。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不生成任何输出。"
+
+msgid ""
+"Specifies the type of the claims provider trust.\n"
+"The acceptable values for this parameter are: ActiveDirectory and LDAP."
+msgstr "指定声明提供者信任的类型。此参数的可接受值为：ActiveDirectory 和 LDAP。"
+
+msgid "Specifies a user container."
+msgstr "指定一个用户容器。"
+
+msgid "Specifies a user object class."
+msgstr "指定一个用户对象类。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Disable-AdfsLocalClaimsProviderTrust](./Disable-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Disable-AdfsLocalClaimsProviderTrust](./Disable-"
+"AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Enable-AdfsLocalClaimsProviderTrust](./Enable-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Enable-AdfsLocalClaimsProviderTrust](./Enable-"
+"AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Get-AdfsLocalClaimsProviderTrust](./Get-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Get-AdfsLocalClaimsProviderTrust](./Get-AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[New-AdfsLdapAttributeToClaimMapping](./New-"
+"AdfsLdapAttributeToClaimMapping.md)"
+msgstr ""
+"[New-AdfsLdapAttributeToClaimMapping](./New-AdfsLdapAttributeToClaim "
+"Mapping.md)"
+
+msgid ""
+"[Remove-AdfsLocalClaimsProviderTrust](./Remove-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Remove-AdfsLocalClaimsProviderTrust](./Remove-"
+"AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Set-AdfsLocalClaimsProviderTrust](./Set-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Set-AdfsLocalClaimsProviderTrust](./Set-AdfsLocalClaimsProviderTrust.md)"

@@ -1,0 +1,125 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:47:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Uninstall-ADRMS"
+msgstr "# 卸载 ADRMS"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes configuration for an existing deployment of AD RMS Server."
+msgstr "删除现有 AD RMS 服务器部署的配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Uninstall-ADRMS** cmdlet removes configuration for the Active Directory Rights Management Services (AD RMS) server role and, if appropriate, role services that were installed with AD RMS.\n"
+"To remove configuration for Identity Federation Support only, specify the *ADFSOnly* parameter."
+msgstr ""
+"`Uninstall-ADRMS` cmdlet 用于删除 Active Directory Rights Management Services "
+"(AD RMS) 服务器角色的相关配置，以及随 AD RMS 安装的角色服务（如果适用的话）。如果仅需要删除与身份联合支持（Identity "
+"Federation Support）相关的配置，请指定 `ADFSOnly` 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove the AD RMS configuration"
+msgstr "### 示例 1：删除 AD RMS 配置"
+
+msgid ""
+"This command removes the AD RMS configuration on this computer.\n"
+"For more information on using this cmdlet, see [Using Windows PowerShell with AD RMS](https://go.microsoft.com/fwlink/?LinkId=136806)."
+msgstr ""
+"此命令会删除该计算机上的 AD RMS 配置。有关如何使用此 cmdlet 的更多信息，请参阅 [使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)。"
+
+msgid "### Example 2: removes the Identity Federation Support configuration"
+msgstr "### 示例 2：移除身份联合（Identity Federation）支持配置"
+
+msgid ""
+"This command removes the Identity Federation Support configuration on this "
+"computer."
+msgstr "此命令会删除该计算机上的身份联合（Identity Federation）支持配置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Removes configuration support for Active Directory Federated Services (AD "
+"FS) from this computer, but does not otherwise change the AD RMS "
+"configuration."
+msgstr ""
+"从这台计算机上移除对 Active Directory Federation Services (AD FS) 的配置支持，但不会更改 AD RMS "
+"的其他配置设置。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies user credentials to use for the configuration process.\n"
+"If this parameter is specified, you will be prompted to enter credentials.\n"
+"This parameter operates in a similar manner to the RunAs command."
+msgstr "指定用于配置过程的用户凭据。如果指定了此参数，系统会提示您输入凭据。该参数的用法类似于“RunAs”命令。"
+
+msgid ""
+"Forces completion of the command by overriding restrictions that would "
+"prevent it from succeeding (so long as a the changes made do not compromise "
+"security)."
+msgstr "通过覆盖那些会阻止命令成功执行的限制来强制完成该命令（只要所做的更改不会危及安全性）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### SwitchParameter"
+msgstr "### SwitchParameter"
+
+msgid "### PSCredential"
+msgstr "### PSCredential"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Install-ADRMS](./Install-ADRMS.md)"
+msgstr "[安装 ADRMS](./Install-ADRMS.md)"
+
+msgid "[Update-ADRMS](./Update-ADRMS.md)"
+msgstr "[更新-ADRMS](./Update-ADRMS.md)"

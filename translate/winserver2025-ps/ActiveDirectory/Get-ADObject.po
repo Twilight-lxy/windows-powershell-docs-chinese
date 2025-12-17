@@ -1,0 +1,303 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:05:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ADObject"
+msgstr "# Get-ADObject"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets one or more Active Directory objects."
+msgstr "获取一个或多个Active Directory对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Filter (Default)"
+msgstr "### 过滤器（默认设置）"
+
+msgid "### Identity"
+msgstr "### 身份"
+
+msgid "### LdapFilter"
+msgstr "### LdapFilter"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-ADObject** cmdlet gets an Active Directory object or performs a "
+"search to get multiple objects."
+msgstr "`Get-ADObject` cmdlet 可以获取一个 Active Directory 对象，或者执行搜索来获取多个对象。"
+
+msgid ""
+"The *Identity* parameter specifies the Active Directory object to get.\n"
+"You can identify the object to get by its distinguished name or GUID.\n"
+"You can also set the parameter to an Active Directory object variable, such as `$<localADObject>` or pass an object through the pipeline to the *Identity* parameter."
+msgstr ""
+"`Identity` 参数用于指定要获取的 Active Directory 对象。您可以通过该对象的唯一名称（Distinguished "
+"Name）或全局唯一标识符（GUID）来识别目标对象。此外，您还可以将这个参数设置为一个 Active Directory 对象变量（例如 "
+"`$<localADObject>`），或者通过管道将某个对象传递给 `Identity` 参数。"
+
+msgid ""
+"To search for and get more than one object, use the *Filter* or *LDAPFilter* parameters.\n"
+"The *Filter* parameter uses the PowerShell Expression Language to write query strings for Active Directory.\n"
+"PowerShell Expression Language syntax provides rich type conversion support for value types received by the *Filter* parameter.\n"
+"For more information about the *Filter* parameter syntax, type `Get-Help about_ActiveDirectory_Filter`.\n"
+"If you have existing Lightweight Directory Access Protocol (LDAP) query strings, you can use the *LDAPFilter* parameter."
+msgstr ""
+"要搜索并获取多个对象，请使用 *Filter* 或 *LDAPFilter* 参数。*Filter* 参数使用 PowerShell 表达式语言来为 "
+"Active Directory 编写查询字符串。PowerShell 表达式语言的语法为 *Filter* "
+"参数接收的值类型提供了丰富的类型转换支持。有关 *Filter* 参数语法的更多信息，请输入 `Get-Help "
+"about_ActiveDirectory_Filter`。如果您已有现有的轻量级目录访问协议（LDAP）查询字符串，可以使用 *LDAPFilter*"
+" 参数。"
+
+msgid ""
+"This cmdlet gets a default set of Active Directory object properties.\n"
+"To get additional properties use the *Properties* parameter.\n"
+"For more information about the how to determine the properties for computer objects, see the *Properties* parameter description."
+msgstr ""
+"这个cmdlet可以获取Active "
+"Directory对象的一组默认属性。如果要获取更多属性，可以使用*Properties*参数。有关如何确定计算机对象的属性的更多信息，请参阅*Properties*参数的描述。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the sites for a domain using LDAP filter syntax"
+msgstr "### 示例 1：使用 LDAP 过滤语法获取某个域名的网站列表"
+
+msgid ""
+"This command displays a list of sites for Fabrikam using the LDAP filter "
+"syntax."
+msgstr "该命令使用LDAP过滤语法显示Fabrikam公司的站点列表。"
+
+msgid "### Example 2: Get the sites from the configuration naming context"
+msgstr "### 示例 2：从配置命名上下文中获取站点信息"
+
+msgid ""
+"This command gets the **Site** objects from the configuration naming context"
+" and displays a list of **siteObjectBL** properties."
+msgstr "这个命令从配置命名上下文中获取**Site**对象，并显示**siteObjectBL**属性的列表。"
+
+msgid "### Example 3: Get all objects with a specified attribute"
+msgstr "### 示例 3：获取具有指定属性的所有对象"
+
+msgid ""
+"This command gets all the objects, including the deleted ones, whose **whenChanged** attribute is greater than the specified date.\n"
+"Note that both deleted and non-deleted (and non-recycled) objects matching the filter are returned."
+msgstr ""
+"这个命令会获取所有对象（包括已被删除的对象），这些对象的 `whenChanged` "
+"属性值大于指定的日期。请注意，符合过滤条件的对象无论是否已被删除或未被回收，都会被返回出来。"
+
+msgid "### Example 4: Get deleted objects with a specified attribute"
+msgstr "#### 示例 4：获取具有指定属性的已删除对象"
+
+msgid ""
+"This example gets all the deleted objects, whose **whenChanged** attribute is greater than the specified date.\n"
+"The clause `name -ne \"Deleted Objects\"` ensures that the Deleted Objects Container is not returned.\n"
+"This example only returns objects that can be restored."
+msgstr ""
+"这个示例会获取所有被删除的对象，这些对象的`whenChanged`属性大于指定的日期。`name -ne \"Deleted "
+"Objects\"`这条子句确保不会返回“已删除对象”容器（即包含被删除对象的集合）。该示例仅返回那些可以被恢复的对象。"
+
+msgid ""
+"### Example 5: Get specified objects that were deleted after a specified "
+"date"
+msgstr "### 示例 5：获取在指定日期之后被删除的特定对象"
+
+msgid ""
+"This example gets all the deleted objects whose **whenChanged** attribute is"
+" greater than the specified date and at the time of deletion were the "
+"children of the specified organizational unit."
+msgstr "这个示例会获取所有被删除的对象，这些对象的 `whenChanged` 属性值大于指定的日期，并且在被删除时是指定组织单位的子对象。"
+
+msgid ""
+"### Example 6: Get information for a specified object of an LDS instance"
+msgstr "#### 示例 6：获取 LDS 实例中指定对象的信息"
+
+msgid ""
+"This command gets the information of the **domainDNS** object of an LDS "
+"instance."
+msgstr "这个命令用于获取LDS实例中**domainDNS**对象的相关信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的认证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果该 cmdlet 是从此类提供程序驱动器中运行的，则使用与该驱动器关联的账户作为默认凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01/User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过脚本或使用 `Get-Credential` cmdlet 来创建一个 `PSCredential` 对象。之后，你可以将 "
+"`Credential` 参数设置为这个 `PSCredential` 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果该执行任务的账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies a query string that retrieves Active Directory objects.\n"
+"This string uses the PowerShell Expression Language syntax.\n"
+"The PowerShell Expression Language syntax provides rich type-conversion support for value types received by the *Filter* parameter.\n"
+"The syntax uses an in-order representation, which means that the operator is placed between the operand and the value.\n"
+"For more information about the *Filter* parameter, type `Get-Help about_ActiveDirectory_Filter`."
+msgstr ""
+"指定一个用于检索 Active Directory 对象的查询字符串。该字符串使用 PowerShell 表达式语言（PowerShell "
+"Expression Language）的语法。PowerShell 表达式语言为 *Filter* "
+"参数接收到的值类型提供了丰富的类型转换支持。其语法采用“按顺序排列”的方式，即运算符位于操作数和值之间。有关 *Filter* 参数的更多信息，请输入 "
+"`Get-Help about_ActiveDirectory_filter`。"
+
+msgid "Syntax:"
+msgstr "语法："
+
+msgid ""
+"The following syntax uses Backus-Naur form to show how to use the PowerShell"
+" Expression Language for this parameter."
+msgstr "以下语法使用了巴克斯-诺尔（Backus-Naur）形式来说明如何使用 PowerShell 表达式语言来处理这个参数。"
+
+msgid "\\<filter\\>  ::= \"{\" \\<FilterComponentList\\> \"}\""
+msgstr "<filter> ::= \"{\" <FilterComponentList> \"}\""
+
+msgid ""
+"\\<FilterComponentList\\> ::= \\<FilterComponent\\> | \\<FilterComponent\\> "
+"\\<JoinOperator\\> \\<FilterComponent\\> | \\<NotOperator\\>  "
+"\\<FilterComponent\\>"
+msgstr ""
+"\\<FilterComponentList\\> ::= \\<FilterComponent\\> | \\<FilterComponent\\> "
+"\\<JoinOperator\\> \\<FilterComponent\\> | \\<NotOperator\\> "
+"\\<FilterComponent\\>"
+
+msgid ""
+"\\<FilterComponent\\> ::= \\<attr\\> \\<FilterOperator\\> \\<value\\> | "
+"\"(\" \\<FilterComponent\\> \")\""
+msgstr ""
+"<FilterComponent> ::= <attr> <FilterOperator> <value> | "
+"(\"<FilterComponent>)\""
+
+msgid ""
+"\\<FilterOperator\\> ::= \"-eq\" | \"-le\" | \"-ge\" | \"-ne\" | \"-lt\" | "
+"\"-gt\"| \"-approx\" | \"-bor\" | \"-band\" | \"-recursivematch\" | "
+"\"-like\" | \"-notlike\""
+msgstr ""
+"\\<FilterOperator\\> ::= \"-eq\" | \"-le\" | \"-ge\" | \"-ne\" | \"-lt\" | "
+"\"-gt\" | \"-approx\" | \"-bor\" | \"-band\" | \"-recursivematch\" | "
+"\"-like\" | \"-notlike\""
+
+msgid "\\<JoinOperator\\> ::= \"-and\" | \"-or\""
+msgstr "<JoinOperator> ::= \"-and\" | \"-or\""
+
+msgid "\\<NotOperator\\> ::= \"-not\""
+msgstr "\\<NotOperator\\> ::= \"-not\""
+
+msgid "\\<attr\\> ::= \\<PropertyName\\> | \\<LDAPDisplayName of the attribute\\>"
+msgstr "\\<attr\\> ::= \\<PropertyName\\> | \\<该属性的 LDAP 显示名称\\>"
+
+msgid ""
+"\\<value\\>::= \\<compare this value with an \\<attr\\> by using the "
+"specified \\<FilterOperator\\>\\>"
+msgstr "<value>::= <使用指定的<FilterOperator>将此值与<attr>进行比较>"
+
+msgid ""
+"For a list of supported types for \\<value\\>, type `Get-Help "
+"about_ActiveDirectory_ObjectModel`."
+msgstr ""
+"要查看 `<value>` 支持的数据类型列表，请输入 `Get-Help about_ActiveDirectory_ObjectModel`。"
+
+msgid ""
+"Note: PowerShell wildcards other than *, such as ?, are not supported by the"
+" *Filter* syntax."
+msgstr "注意：PowerShell中的通配符（除了*之外的其他符号，例如?）不支持*Filter*语法。"
+
+msgid ""
+"Note: To query using LDAP query strings, use the *LDAPFilter* parameter."
+msgstr "注意：要使用 LDAP 查询字符串进行查询，请使用 *LDAPFilter* 参数。"
+
+msgid ""
+"Specifies an Active Directory object by providing one of the following property values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory 对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"此cmdlet会在默认的命名上下文或分区中搜索该对象。如果找到两个或多个对象，该cmdlet会返回一个非终止性错误（即不会停止执行的错误）。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为一个对象实例。"
+
+msgid "Derived types, such as the following, are also accepted:"
+msgstr "也接受派生类型，例如以下这些类型："
+
+msgid "`Get-ADObject`\\<object\\>`-Properties ALL | Get-Member`"
+msgstr "`Get-ADObject `<对象>` -Properties ALL | Get-Member`"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Move-ADObject](./Move-ADObject.md)"
+msgstr "[Move-ADObject](./Move-ADObject.md)"
+
+msgid "[New-ADObject](./New-ADObject.md)"
+msgstr "[New-ADObject](./New-ADObject.md)"
+
+msgid "[Remove-ADObject](./Remove-ADObject.md)"
+msgstr "[Remove-ADObject](./Remove-ADObject.md)"
+
+msgid "[Rename-ADObject](./Rename-ADObject.md)"
+msgstr "[重命名 AD 对象](./Rename-ADObject.md)"
+
+msgid "[Restore-ADObject](./Restore-ADObject.md)"
+msgstr "[恢复AD对象](./Restore-ADObject.md)"
+
+msgid "[Set-ADObject](./Set-ADObject.md)"
+msgstr "[Set-ADObject](./Set-ADObject.md)"
+
+msgid "[Sync-ADObject](./Sync-ADObject.md)"
+msgstr "[Sync-ADObject](./Sync-ADObject.md)"

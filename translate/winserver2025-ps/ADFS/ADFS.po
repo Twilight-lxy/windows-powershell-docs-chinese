@@ -1,0 +1,1355 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:45:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# ADFS Module"
+msgstr "# ADFS 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides command-line reference documentation for the IT "
+"professional of the Windows PowerShell cmdlets that you can use to deploy "
+"and administer Active Directory Federation Services (AD FS) in Windows "
+"Server."
+msgstr ""
+"本参考文档为IT专业人员提供了Windows PowerShell命令行的使用说明。通过这些命令行工具，您可以部署和管理Windows "
+"Server中的Active Directory Federation Services（AD FS）。"
+
+msgid "## ADFS Cmdlets"
+msgstr "## ADFSCmdlets"
+
+msgid "### [Add-AdfsAttributeStore](Add-AdfsAttributeStore.md)"
+msgstr "### [Add-AdfsAttributeStore](Add-AdfsAttributeStore.md)"
+
+msgid "Adds an attribute store to the Federation Service."
+msgstr "向联邦服务（Federation Service）添加一个属性存储（attribute store）。"
+
+msgid "### [Add-AdfsCertificate](Add-AdfsCertificate.md)"
+msgstr "### [添加 AdFS 证书](Add-AdfsCertificate.md)"
+
+msgid ""
+"Adds a new certificate to AD FS for signing, decrypting, or securing "
+"communications."
+msgstr "向 AD FS 添加新的证书，用于签名、解密或保护通信安全。"
+
+msgid "### [Add-AdfsClaimDescription](Add-AdfsClaimDescription.md)"
+msgstr "### [Add-AdfsClaimDescription](Add-AdfsClaimDescription.md)"
+
+msgid "Adds a claim description to the Federation Service."
+msgstr "向联邦服务添加一个声明描述（claim description）。"
+
+msgid "### [Add-AdfsClaimsProviderTrust](Add-AdfsClaimsProviderTrust.md)"
+msgstr "### [Add-AdfsClaimsProviderTrust](Add-AdfsClaimsProviderTrust.md)"
+
+msgid "Adds a new claims provider trust to the Federation Service."
+msgstr "向联邦服务（Federation Service）添加一个新的声明提供者信任关系（claims provider trust）。"
+
+msgid ""
+"### [Add-AdfsClaimsProviderTrustsGroup](Add-"
+"AdfsClaimsProviderTrustsGroup.md)"
+msgstr ""
+"### [Add-AdfsClaimsProviderTrustsGroup](Add-"
+"AdfsClaimsProviderTrustsGroup.md)"
+
+msgid ""
+"Creates a claims provider trust group based on metadata that contains "
+"multiple entities."
+msgstr "根据包含多个实体的元数据创建一个声明提供者信任组（claims provider trust group）。"
+
+msgid "### [Add-AdfsClient](Add-AdfsClient.md)"
+msgstr "### [Add-AdfsClient](Add-AdfsClient.md)"
+
+msgid "Registers an OAuth 2.0 client with AD FS."
+msgstr "将一个 OAuth 2.0 客户端注册到 AD FS（Active Directory Federation Services）中。"
+
+msgid ""
+"### [Add-AdfsDeviceRegistrationUpnSuffix](Add-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"### [Add-AdfsDeviceRegistrationUpnSuffix](Add-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+
+msgid "Adds a custom UPN suffix."
+msgstr "添加一个自定义的 UPN 后缀。"
+
+msgid "### [Add-AdfsFarmNode](Add-AdfsFarmNode.md)"
+msgstr "### [Add-AdfsFarmNode](Add-AdfsFarmNode.md)"
+
+msgid "Adds this computer to an existing federation server farm."
+msgstr "将这台计算机添加到现有的联合服务器群中。"
+
+msgid ""
+"### [Add-AdfsLocalClaimsProviderTrust](Add-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"### [Add-AdfsLocalClaimsProviderTrust](Add-AdfsLocalClaimsProviderTrust.md)"
+
+msgid "Creates a local claims provider trust."
+msgstr "创建一个本地的声明提供者信任（claims provider trust）。"
+
+msgid ""
+"### [Add-AdfsNativeClientApplication](Add-AdfsNativeClientApplication.md)"
+msgstr ""
+"### [Add-AdfsNativeClientApplication](Add-AdfsNativeClientApplication.md)"
+
+msgid "Adds a native client application role to an application in AD FS."
+msgstr ""
+"在 Active Directory Federation Services (AD FS) 中为某个应用程序添加一个本机客户端应用程序角色。"
+
+msgid ""
+"### [Add-AdfsNonClaimsAwareRelyingPartyTrust](Add-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"### [Add-AdfsNonClaimsAwareRelyingPartyTrust](Add-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"Adds a relying party trust that represents a non-claims-aware web "
+"application or service to the Federation Service."
+msgstr ""
+"向联邦服务添加一个依赖方信任（relaying party trust），该信任代表一个不支持处理身份验证请求（claims）的Web应用程序或服务。"
+
+msgid "### [Add-AdfsRelyingPartyTrust](Add-AdfsRelyingPartyTrust.md)"
+msgstr "### [Add-AdfsRelyingPartyTrust](Add-AdfsRelyingPartyTrust.md)"
+
+msgid "Adds a new relying party trust to the Federation Service."
+msgstr "向联邦服务（Federation Service）添加一个新的依赖方信任（relying party trust）。"
+
+msgid ""
+"### [Add-AdfsRelyingPartyTrustsGroup](Add-AdfsRelyingPartyTrustsGroup.md)"
+msgstr ""
+"### [Add-AdfsRelyingPartyTrustsGroup](Add-AdfsRelyingPartyTrustsGroup.md)"
+
+msgid "Creates a relying party trusts group."
+msgstr "创建一个依赖方信任组（relying party trusts group）。"
+
+msgid "### [Add-AdfsScopeDescription](Add-AdfsScopeDescription.md)"
+msgstr "### [Add-AdfsScopeDescription](Add-AdfsScopeDescription.md)"
+
+msgid "Adds a scope description in AD FS."
+msgstr "在 Active Directory Federation Services (AD FS) 中添加范围描述。"
+
+msgid "### [Add-AdfsServerApplication](Add-AdfsServerApplication.md)"
+msgstr "### [Add-AdfsServerApplication](Add-AdfsServerApplication.md)"
+
+msgid "Adds a server application role to an application in AD FS."
+msgstr "将一个服务器应用程序角色添加到 AD FS 中的应用程序中。"
+
+msgid ""
+"### [Add-AdfsTrustedFederationPartner](Add-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"### [Add-AdfsTrustedFederationPartner](Add-AdfsTrustedFederationPartner.md)"
+
+msgid "Adds configuration settings for trusted federation partners in AD FS."
+msgstr "为 AD FS 中的可信联盟合作伙伴添加配置设置。"
+
+msgid "### [Add-AdfsWebApiApplication](Add-AdfsWebApiApplication.md)"
+msgstr "### [Add-AdfsWebApiApplication](Add-AdfsWebApiApplication.md)"
+
+msgid "Adds a Web API application role to an application in AD FS."
+msgstr "将一个Web API应用程序角色添加到AD FS中的应用程序中。"
+
+msgid ""
+"### [Add-AdfsWebApplicationProxyRelyingPartyTrust](Add-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"### [Add-AdfsWebApplicationProxyRelyingPartyTrust](Add-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid "Adds a relying party trust for the Web Application Proxy."
+msgstr "为Web应用程序代理添加一个依赖方信任（relying party trust）。"
+
+msgid "### [Disable-AdfsApplicationGroup](Disable-AdfsApplicationGroup.md)"
+msgstr "### [ Disable-AdfsApplicationGroup](Disable-AdfsApplicationGroup.md)"
+
+msgid "Disables an application group."
+msgstr "禁用一个应用程序组。"
+
+msgid ""
+"### [Disable-AdfsCertificateAuthority](Disable-AdfsCertificateAuthority.md)"
+msgstr ""
+"### [ Disable-AdfsCertificateAuthority](Disable-AdfsCertificateAuthority.md)"
+
+msgid "Disables a certificate authority."
+msgstr "禁用一个证书颁发机构（CA）。"
+
+msgid ""
+"### [Disable-AdfsClaimsProviderTrust](Disable-AdfsClaimsProviderTrust.md)"
+msgstr "### [禁用 AdfsClaimsProviderTrust](Disable-AdfsClaimsProviderTrust.md)"
+
+msgid "Disables a claims provider trust in the Federation Service."
+msgstr "禁用联邦服务中对某个声明提供者（claims provider）的信任。"
+
+msgid "### [Disable-AdfsClient](Disable-AdfsClient.md)"
+msgstr "### [ Disable-AdfsClient](Disable-AdfsClient.md)"
+
+msgid "Disables an OAuth 2.0 client that is currently registered with AD FS."
+msgstr "禁用当前已注册到 AD FS 的 OAuth 2.0 客户端。"
+
+msgid ""
+"### [Disable-AdfsDeviceRegistration](Disable-AdfsDeviceRegistration.md)"
+msgstr "### [禁用 AdfsDeviceRegistration 功能](Disable-AdfsDeviceRegistration.md)"
+
+msgid "Marks the Device Registration Service as disabled on an AD FS server."
+msgstr "将设备注册服务标记为在 AD FS 服务器上处于禁用状态。"
+
+msgid "### [Disable-AdfsEndpoint](Disable-AdfsEndpoint.md)"
+msgstr "### [ Disable-AdfsEndpoint](Disable-AdfsEndpoint.md)"
+
+msgid "Disables an endpoint of AD FS."
+msgstr "禁用 AD FS 的某个终端点（endpoint）。"
+
+msgid ""
+"### [Disable-AdfsLocalClaimsProviderTrust](Disable-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"### [禁用 AdfsLocalClaimsProviderTrust](Disable-"
+"AdfsLocalClaimsProviderTrust.md)"
+
+msgid "Disables a local claims provider trust."
+msgstr "禁用本地声明提供者的信任机制。"
+
+msgid ""
+"### [Disable-AdfsNonClaimsAwareRelyingPartyTrust](Disable-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"### [禁用 AdfsNonClaims Aware Relying Party Trust]( Disable-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"Disables a relying party trust for a non-claims-aware web application or "
+"service from the Federation Service."
+msgstr ""
+"对于那些不支持“声明处理”（claim handling）功能的Web应用程序或服务，该功能会禁用联邦服务（Federation "
+"Service）所提供的依赖方信任（relying party trust）机制。"
+
+msgid "### [Disable-AdfsRelyingPartyTrust](Disable-AdfsRelyingPartyTrust.md)"
+msgstr "### [禁用 AdfsRelyingPartyTrust]( Disable-AdfsRelyingPartyTrust.md)"
+
+msgid "Disables a relying party trust of the Federation Service."
+msgstr "禁用联邦服务的依赖方信任（relying party trust）。"
+
+msgid ""
+"### [Disable-AdfsWebApplicationProxyRelyingPartyTrust](Disable-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"### [禁用 AdfsWebApplicationProxy 依赖方信任](Disable-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid "Disables the relying party trust for the Web Application Proxy."
+msgstr "禁用对 Web 应用程序代理的依赖方信任（relaying party trust）。"
+
+msgid "### [Enable-AdfsApplicationGroup](Enable-AdfsApplicationGroup.md)"
+msgstr "### [Enable-AdfsApplicationGroup](Enable-AdfsApplicationGroup.md)"
+
+msgid "Enables an application group in AD FS."
+msgstr "在 Active Directory Federation Services (AD FS) 中启用一个应用程序组。"
+
+msgid ""
+"### [Enable-AdfsClaimsProviderTrust](Enable-AdfsClaimsProviderTrust.md)"
+msgstr ""
+"### [Enable-AdfsClaimsProviderTrust](Enable-AdfsClaimsProviderTrust.md)"
+
+msgid "Enables a claims provider trust in the Federation Service."
+msgstr "使声明提供者（claims provider）能够信任联邦服务（Federation Service）。"
+
+msgid "### [Enable-AdfsClient](Enable-AdfsClient.md)"
+msgstr "### [Enable-AdfsClient](Enable-AdfsClient.md)"
+
+msgid "Enables the use of an OAuth 2.0 client registration by AD FS."
+msgstr ""
+"允许通过 Active Directory Federation Services (AD FS) 使用 OAuth 2.0 客户端注册功能。"
+
+msgid "### [Enable-AdfsDeviceRegistration](Enable-AdfsDeviceRegistration.md)"
+msgstr "### [Enable-AdfsDeviceRegistration](Enable-AdfsDeviceRegistration.md)"
+
+msgid "This cmdlet has been deprecated."
+msgstr "此cmdlet已被弃用。"
+
+msgid "### [Enable-AdfsEndpoint](Enable-AdfsEndpoint.md)"
+msgstr "### [Enable-AdfsEndpoint](Enable-AdfsEndpoint.md)"
+
+msgid "Enables an endpoint in AD FS."
+msgstr "启用 AD FS 中的一个端点。"
+
+msgid ""
+"### [Enable-AdfsLocalClaimsProviderTrust](Enable-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"### [Enable-AdfsLocalClaimsProviderTrust](Enable-"
+"AdfsLocalClaimsProviderTrust.md)"
+
+msgid "Enables a local claims provider trust."
+msgstr "启用对本地索赔提供者的信任机制。"
+
+msgid ""
+"### [Enable-AdfsNonClaimsAwareRelyingPartyTrust](Enable-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"### [Enable-AdfsNonClaimsAwareRelyingPartyTrust](Enable-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"Enables a relying party trust for a non-claims-aware web application or "
+"service from the Federation Service."
+msgstr "该功能使依赖方能够信任来自联邦服务的、不支持索赔处理（即不识别或处理用户提出的索赔请求）的Web应用程序或服务。"
+
+msgid "### [Enable-AdfsRelyingPartyTrust](Enable-AdfsRelyingPartyTrust.md)"
+msgstr "### [Enable-AdfsRelyingPartyTrust](Enable-AdfsRelyingPartyTrust.md)"
+
+msgid "Enables a relying party trust of the Federation Service."
+msgstr "使依赖方能够信任联邦服务（Federation Service）。"
+
+msgid ""
+"### [Enable-AdfsWebApplicationProxyRelyingPartyTrust](Enable-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"### [Enable-AdfsWebApplicationProxyRelyingPartyTrust](Enable-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid "Enables the relying party trust object for the Web Application Proxy."
+msgstr "启用Web应用程序代理的可信赖方信任对象。"
+
+msgid ""
+"### [Export-AdfsAuthenticationProviderConfigurationData](Export-"
+"AdfsAuthenticationProviderConfigurationData.md)"
+msgstr ""
+"### [Export-AdfsAuthenticationProviderConfigurationData](Export-"
+"AdfsAuthenticationProviderConfigurationData.md)"
+
+msgid ""
+"Returns a file containing the tenant ID for which the AD FS farm is "
+"configured for Azure MFA, as well as the well-known client ID for Azure MFA."
+msgstr ""
+"返回一个文件，其中包含用于配置AD FS农场以支持Azure Multi-Factor Authentication（MFA）的租户ID，以及Azure"
+" MFA所使用的通用客户端ID。"
+
+msgid ""
+"### [Export-AdfsDeploymentSQLScript](Export-AdfsDeploymentSQLScript.md)"
+msgstr ""
+"### [Export-AdfsDeploymentSQLScript](Export-AdfsDeploymentSQLScript.md)"
+
+msgid ""
+"Generates SQL scripts to create the AD FS database and to grant permissions."
+msgstr "生成SQL脚本，用于创建AD FS数据库并授予相应的权限。"
+
+msgid "### [Export-AdfsWebContent](Export-AdfsWebContent.md)"
+msgstr "### [Export-AdfsWebContent](Export-AdfsWebContent.md)"
+
+msgid ""
+"Exports properties of all web content objects in a specific locale to a "
+"specified file."
+msgstr "将所有网页内容对象在特定区域设置（locale）下的属性导出到指定的文件中。"
+
+msgid "### [Export-AdfsWebTheme](Export-AdfsWebTheme.md)"
+msgstr "### [Export-AdfsWebTheme](Export-AdfsWebTheme.md)"
+
+msgid "Exports a web theme to a folder."
+msgstr "将一个网页主题导出到一个文件夹中。"
+
+msgid "### [Get-AdfsAccessControlPolicy](Get-AdfsAccessControlPolicy.md)"
+msgstr "### [Get-AdfsAccessControlPolicy](Get-AdfsAccessControlPolicy.md)"
+
+msgid "Gets an AD FS access control policy."
+msgstr "获取一个 AD FS 访问控制策略。"
+
+msgid ""
+"### [Get-AdfsAdditionalAuthenticationRule](Get-"
+"AdfsAdditionalAuthenticationRule.md)"
+msgstr ""
+"### [Get-AdfsAdditionalAuthenticationRule](Get-"
+"AdfsAdditionalAuthenticationRule.md)"
+
+msgid ""
+"Retrieves the global rules that trigger additional authentication providers "
+"to be invoked."
+msgstr "检索会触发其他身份验证提供者被调用的全局规则。"
+
+msgid "### [Get-AdfsApplicationGroup](Get-AdfsApplicationGroup.md)"
+msgstr "### [Get-AdfsApplicationGroup](Get-AdfsApplicationGroup.md)"
+
+msgid "Gets an application group."
+msgstr "获取一个应用程序组。"
+
+msgid "### [Get-AdfsApplicationPermission](Get-AdfsApplicationPermission.md)"
+msgstr "### [Get-AdfsApplicationPermission](Get-AdfsApplicationPermission.md)"
+
+msgid "Gets permission for an application."
+msgstr "获取应用程序使用的权限。"
+
+msgid "### [Get-AdfsAttributeStore](Get-AdfsAttributeStore.md)"
+msgstr "### [Get-AdfsAttributeStore](Get-AdfsAttributeStore.md)"
+
+msgid "Gets the attribute stores of the Federation Service."
+msgstr "获取联邦服务的属性存储信息。"
+
+msgid ""
+"### [Get-AdfsAuthenticationProvider](Get-AdfsAuthenticationProvider.md)"
+msgstr ""
+"### [Get-AdfsAuthenticationProvider](Get-AdfsAuthenticationProvider.md)"
+
+msgid "Gets a list of all authentication providers in AD FS."
+msgstr "获取 AD FS 中所有身份验证提供程序的列表。"
+
+msgid ""
+"### [Get-AdfsAuthenticationProviderWebContent](Get-"
+"AdfsAuthenticationProviderWebContent.md)"
+msgstr ""
+"### [Get-AdfsAuthenticationProviderWebContent](Get-"
+"AdfsAuthenticationProviderWebContent.md)"
+
+msgid "Retrieves web content objects for authentication providers."
+msgstr "为身份验证提供者检索网页内容对象。"
+
+msgid "### [Get-AdfsAzureMfaConfigured](Get-AdfsAzureMfaConfigured.md)"
+msgstr "### [Get-AdfsAzureMfaConfigured](Get-AdfsAzureMfaConfigured.md)"
+
+msgid "Gets whether Azure MFA is enabled."
+msgstr "用于获取是否启用了Azure多因素身份验证（MFA）。"
+
+msgid "### [Get-AdfsCertificate](Get-AdfsCertificate.md)"
+msgstr "### [Get-AdfsCertificate](Get-AdfsCertificate.md)"
+
+msgid "Retrieves the certificates from AD FS."
+msgstr "从 AD FS 中检索证书。"
+
+msgid "### [Get-AdfsCertificateAuthority](Get-AdfsCertificateAuthority.md)"
+msgstr "### [Get-AdfsCertificateAuthority](Get-AdfsCertificateAuthority.md)"
+
+msgid "Gets a certificate authority."
+msgstr "获取一个证书颁发机构（Certificate Authority）。"
+
+msgid "### [Get-AdfsClaimDescription](Get-AdfsClaimDescription.md)"
+msgstr "### [Get-AdfsClaimDescription](Get-AdfsClaimDescription.md)"
+
+msgid "Gets claim descriptions from the Federation Service."
+msgstr "从联邦服务（Federation Service）获取索赔描述。"
+
+msgid "### [Get-AdfsClaimsProviderTrust](Get-AdfsClaimsProviderTrust.md)"
+msgstr "### [Get-AdfsClaimsProviderTrust](Get-AdfsClaimsProviderTrust.md)"
+
+msgid "Gets the claims provider trusts in the Federation Service."
+msgstr "获取联邦服务中使用的声明提供者信任关系（claims provider trusts）。"
+
+msgid ""
+"### [Get-AdfsClaimsProviderTrustsGroup](Get-"
+"AdfsClaimsProviderTrustsGroup.md)"
+msgstr ""
+"### [Get-AdfsClaimsProviderTrustsGroup](Get-"
+"AdfsClaimsProviderTrustsGroup.md)"
+
+msgid "Gets an AD FS claims provider trust group."
+msgstr "获取一个 AD FS 主张提供者信任组。"
+
+msgid "### [Get-AdfsClient](Get-AdfsClient.md)"
+msgstr "### [Get-AdfsClient](Get-AdfsClient.md)"
+
+msgid "Retrieves registration information for an OAuth 2.0 client."
+msgstr "检索 OAuth 2.0 客户端的注册信息。"
+
+msgid "### [Get-AdfsDeviceRegistration](Get-AdfsDeviceRegistration.md)"
+msgstr "### [Get-AdfsDeviceRegistration](Get-AdfsDeviceRegistration.md)"
+
+msgid "Gets the administrative polices of the Device Registration Service."
+msgstr "获取设备注册服务的管理策略信息。"
+
+msgid ""
+"### [Get-AdfsDeviceRegistrationUpnSuffix](Get-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"### [Get-AdfsDeviceRegistrationUpnSuffix](Get-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+
+msgid "Gets the UPN suffixes that can be used with device registration."
+msgstr "获取可用于设备注册的 UPN 后缀。"
+
+msgid "### [Get-AdfsEndpoint](Get-AdfsEndpoint.md)"
+msgstr "### [Get-AdfsEndpoint](Get-AdfsEndpoint.md)"
+
+msgid "Retrieves an endpoint in AD FS."
+msgstr "从 AD FS 中检索一个端点。"
+
+msgid "### [Get-AdfsFarmInformation](Get-AdfsFarmInformation.md)"
+msgstr "### [Get-AdfsFarmInformation](Get-AdfsFarmInformation.md)"
+
+msgid "Gets AD FS behavior level and farm node information."
+msgstr "获取 AD FS 行为级别和农场节点信息。"
+
+msgid ""
+"### [Get-AdfsGlobalAuthenticationPolicy](Get-"
+"AdfsGlobalAuthenticationPolicy.md)"
+msgstr ""
+"### [Get-AdfsGlobalAuthenticationPolicy](Get-"
+"AdfsGlobalAuthenticationPolicy.md)"
+
+msgid "Displays the AD FS global policy."
+msgstr "显示 AD FS 全局策略。"
+
+msgid "### [Get-AdfsGlobalWebContent](Get-AdfsGlobalWebContent.md)"
+msgstr "### [Get-AdfsGlobalWebContent](Get-AdfsGlobalWebContent.md)"
+
+msgid "Gets global web content objects."
+msgstr "获取全局网页内容对象。"
+
+msgid ""
+"### [Get-AdfsLocalClaimsProviderTrust](Get-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"### [Get-AdfsLocalClaimsProviderTrust](Get-AdfsLocalClaimsProviderTrust.md)"
+
+msgid "Gets local claims provider trusts."
+msgstr "获取本地的声明提供者信任关系（即本地声明提供者被信任的程度）。"
+
+msgid ""
+"### [Get-AdfsNativeClientApplication](Get-AdfsNativeClientApplication.md)"
+msgstr ""
+"### [Get-AdfsNativeClientApplication](Get-AdfsNativeClientApplication.md)"
+
+msgid "Gets native client application roles from an application in AD FS."
+msgstr "从 AD FS 中的应用程序获取本机客户端应用程序的角色信息。"
+
+msgid ""
+"### [Get-AdfsNonClaimsAwareRelyingPartyTrust](Get-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"### [Get-AdfsNonClaimsAwareRelyingPartyTrust](Get-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"Gets the properties of a relying party trust for a non-claims-aware web "
+"application or service."
+msgstr "为不支持声明处理（claims-aware）的Web应用程序或服务获取依赖方信任（relying party trust）的相关属性。"
+
+msgid "### [Get-AdfsProperties](Get-AdfsProperties.md)"
+msgstr "### [Get-AdfsProperties](Get-AdfsProperties.md)"
+
+msgid "Gets all the associated properties for the AD FS service."
+msgstr "获取与 AD FS 服务相关的所有属性。"
+
+msgid "### [Get-AdfsRegistrationHosts](Get-AdfsRegistrationHosts.md)"
+msgstr "### [Get-AdfsRegistrationHosts](Get-AdfsRegistrationHosts.md)"
+
+msgid ""
+"The Get-AdfsRegistrationHosts cmdlet is deprecated.\n"
+"Instead, use the Get-AdfsDeviceRegistrationUpnSuffix cmdlet."
+msgstr ""
+"`Get-AdfsRegistrationHosts` cmdlet 已被弃用。请使用 `Get-"
+"AdfsDeviceRegistrationUpnSuffix` cmdlet 代替它。"
+
+msgid "### [Get-AdfsRelyingPartyTrust](Get-AdfsRelyingPartyTrust.md)"
+msgstr "### [Get-AdfsRelyingPartyTrust](Get-AdfsRelyingPartyTrust.md)"
+
+msgid "Gets the relying party trusts of the Federation Service."
+msgstr "获取联邦服务的依赖方信任信息。"
+
+msgid ""
+"### [Get-AdfsRelyingPartyTrustsGroup](Get-AdfsRelyingPartyTrustsGroup.md)"
+msgstr ""
+"### [Get-AdfsRelyingPartyTrustsGroup](Get-AdfsRelyingPartyTrustsGroup.md)"
+
+msgid "Gets a relying party trust group."
+msgstr "获取一个依赖方信任组。"
+
+msgid ""
+"### [Get-AdfsRelyingPartyWebContent](Get-AdfsRelyingPartyWebContent.md)"
+msgstr ""
+"### [Get-AdfsRelyingPartyWebContent](Get-AdfsRelyingPartyWebContent.md)"
+
+msgid "Gets web content objects for relying parties."
+msgstr "为依赖方获取网页内容对象。"
+
+msgid "### [Get-AdfsRelyingPartyWebTheme](Get-AdfsRelyingPartyWebTheme.md)"
+msgstr "### [Get-AdfsRelyingPartyWebTheme](Get-AdfsRelyingPartyWebTheme.md)"
+
+msgid "Gets properties of web themes applied to relying party trusts."
+msgstr "获取应用于依赖方信任（relying party trusts）的网页主题的相关属性。"
+
+msgid "### [Get-AdfsScopeDescription](Get-AdfsScopeDescription.md)"
+msgstr "### [Get-AdfsScopeDescription](Get-AdfsScopeDescription.md)"
+
+msgid "Gets a description for a scope in AD FS."
+msgstr "获取 AD FS 中某个作用域（scope）的描述信息。"
+
+msgid "### [Get-AdfsServerApplication](Get-AdfsServerApplication.md)"
+msgstr "### [Get-AdfsServerApplication](Get-AdfsServerApplication.md)"
+
+msgid ""
+"Gets configuration settings for a server application role for an application"
+" in AD FS."
+msgstr "获取用于 AD FS 中某个应用程序的服务器应用角色的配置设置。"
+
+msgid "### [Get-AdfsSslCertificate](Get-AdfsSslCertificate.md)"
+msgstr "### [Get-AdfsSslCertificate](Get-AdfsSslCertificate.md)"
+
+msgid ""
+"Gets the host name, port, and certificate hash for SSL bindings configured "
+"for AD FS and the device registration service."
+msgstr "获取为 AD FS 和设备注册服务配置的 SSL 绑定的主机名、端口以及证书哈希值。"
+
+msgid "### [Get-AdfsSyncProperties](Get-AdfsSyncProperties.md)"
+msgstr "### [Get-AdfsSyncProperties](Get-AdfsSyncProperties.md)"
+
+msgid "Gets synchronization properties the configuration database of AD FS."
+msgstr "从 AD FS 的配置数据库中获取同步属性。"
+
+msgid ""
+"### [Get-AdfsTrustedFederationPartner](Get-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"### [Get-AdfsTrustedFederationPartner](Get-AdfsTrustedFederationPartner.md)"
+
+msgid "Gets a trusted federation partner in AD FS."
+msgstr "在 Active Directory Federation Services (AD FS) 中找到一个可信赖的联盟合作伙伴。"
+
+msgid "### [Get-AdfsWebApiApplication](Get-AdfsWebApiApplication.md)"
+msgstr "### [Get-AdfsWebApiApplication](Get-AdfsWebApiApplication.md)"
+
+msgid "Gets Web API application roles in AD FS."
+msgstr "在 AD FS 中获取 Web API 应用程序角色。"
+
+msgid ""
+"### [Get-AdfsWebApplicationProxyRelyingPartyTrust](Get-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"### [Get-AdfsWebApplicationProxyRelyingPartyTrust](Get-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid "Gets the relying party trust object for the Web Application Proxy."
+msgstr "获取用于 Web 应用程序代理的依赖方信任对象。"
+
+msgid "### [Get-AdfsWebConfig](Get-AdfsWebConfig.md)"
+msgstr "### [Get-AdfsWebConfig](Get-AdfsWebConfig.md)"
+
+msgid "Gets AD FS web customization configuration settings."
+msgstr "获取 AD FS Web 定制配置设置。"
+
+msgid "### [Get-AdfsWebTheme](Get-AdfsWebTheme.md)"
+msgstr "### [Get-AdfsWebTheme](Get-AdfsWebTheme.md)"
+
+msgid "Gets web themes."
+msgstr "可以获取网页主题（web themes）。"
+
+msgid ""
+"### [Grant-AdfsApplicationPermission](Grant-AdfsApplicationPermission.md)"
+msgstr ""
+"### [Grant-AdfsApplicationPermission](Grant-AdfsApplicationPermission.md)"
+
+msgid "Grants application permission."
+msgstr "允许申请补助金（或拨款等）。"
+
+msgid ""
+"### [Import-AdfsAuthenticationProviderConfigurationData](Import-"
+"AdfsAuthenticationProviderConfigurationData.md)"
+msgstr ""
+"### [Import-AdfsAuthenticationProviderConfigurationData](Import-"
+"AdfsAuthenticationProviderConfigurationData.md)"
+
+msgid "Imports the custom configuration for an authentication provider."
+msgstr "导入用于身份验证提供者的自定义配置。"
+
+msgid "### [Import-AdfsWebContent](Import-AdfsWebContent.md)"
+msgstr "### [Import-AdfsWebContent](Import-AdfsWebContent.md)"
+
+msgid ""
+"Imports properties from a resource file into global and relying party web "
+"content objects."
+msgstr "从资源文件中导入属性，并将其添加到全局对象以及依赖方的网页内容对象中。"
+
+msgid ""
+"### [Initialize-ADDeviceRegistration](Initialize-ADDeviceRegistration.md)"
+msgstr ""
+"### [Initialize-ADDeviceRegistration]( Initialize-ADDeviceRegistration.md)"
+
+msgid ""
+"Initializes the Device Registration Service configuration in the Active "
+"Directory forest."
+msgstr "在 Active Directory 林中初始化设备注册服务（Device Registration Service）的配置。"
+
+msgid "### [Install-AdfsFarm](Install-AdfsFarm.md)"
+msgstr "### [安装 AdfsFarm](Install-AdfsFarm.md)"
+
+msgid "Creates the first node of a new federation server farm."
+msgstr "创建一个新的联邦服务器群组中的第一个节点。"
+
+msgid ""
+"### [Invoke-AdfsFarmBehaviorLevelRaise](Invoke-"
+"AdfsFarmBehaviorLevelRaise.md)"
+msgstr ""
+"### [Invoke-AdfsFarmBehaviorLevelRaise](Invoke-"
+"AdfsFarmBehaviorLevelRaise.md)"
+
+msgid "Raises the behavior level of a farm."
+msgstr "提升农场的整体管理水平和运营效率。"
+
+msgid "### [New-AdfsAccessControlPolicy](New-AdfsAccessControlPolicy.md)"
+msgstr "### [新 AdfsAccessControlPolicy](New-AdfsAccessControlPolicy.md)"
+
+msgid "Creates an AD FS access control policy."
+msgstr "创建一个 AD FS 访问控制策略。"
+
+msgid "### [New-AdfsApplicationGroup](New-AdfsApplicationGroup.md)"
+msgstr "### [New-AdfsApplicationGroup](New-AdfsApplicationGroup.md)"
+
+msgid "Creates an application group."
+msgstr "创建一个应用程序组。"
+
+msgid ""
+"### [New-AdfsAzureMfaTenantCertificate](New-"
+"AdfsAzureMfaTenantCertificate.md)"
+msgstr ""
+"### [New-AdfsAzureMfaTenantCertificate](New-"
+"AdfsAzureMfaTenantCertificate.md)"
+
+msgid ""
+"Creates a certificate for the AD FS farm to use to connect to Azure MFA, or "
+"returns the currently configured certificate."
+msgstr "为 AD FS 农场创建一个证书，以便用于连接到 Azure MFA；或者返回当前配置的证书。"
+
+msgid "### [New-AdfsClaimRuleSet](New-AdfsClaimRuleSet.md)"
+msgstr "### [New-AdfsClaimRuleSet](New-AdfsClaimRuleSet.md)"
+
+msgid "Creates a set of claim rules."
+msgstr "创建一组声明规则。"
+
+msgid "### [New-AdfsContactPerson](New-AdfsContactPerson.md)"
+msgstr "### [New-AdfsContactPerson](New-AdfsContactPerson.md)"
+
+msgid "Creates a contact person object."
+msgstr "创建一个联系人对象。"
+
+msgid ""
+"### [New-AdfsLdapAttributeToClaimMapping](New-"
+"AdfsLdapAttributeToClaimMapping.md)"
+msgstr ""
+"### [New-AdfsLdapAttributeToClaimMapping](New-"
+"AdfsLdapAttributeToClaimMapping.md)"
+
+msgid ""
+"Creates a mapping between an attribute of an LDAP folder and an AD FS claim "
+"type."
+msgstr "创建一个映射关系，将LDAP文件夹中的属性与AD FS声明类型关联起来。"
+
+msgid "### [New-AdfsLdapServerConnection](New-AdfsLdapServerConnection.md)"
+msgstr "### [New-AdfsLdapServerConnection](New-AdfsLdapServerConnection.md)"
+
+msgid "Creates a connection object."
+msgstr "创建一个连接对象。"
+
+msgid "### [New-AdfsOrganization](New-AdfsOrganization.md)"
+msgstr "### [New-AdfsOrganization](New-AdfsOrganization.md)"
+
+msgid "Creates a new organization information object."
+msgstr "创建一个新的组织信息对象。"
+
+msgid "### [New-AdfsSamlEndpoint](New-AdfsSamlEndpoint.md)"
+msgstr "### [New-AdfsSamlEndpoint](New-AdfsSamlEndpoint.md)"
+
+msgid "Creates a SAML protocol endpoint object."
+msgstr "创建一个SAML协议端点对象。"
+
+msgid "### [New-AdfsWebTheme](New-AdfsWebTheme.md)"
+msgstr "### [New-AdfsWebTheme](New-AdfsWebTheme.md)"
+
+msgid "Creates an AD FS web theme."
+msgstr "创建一个 AD FS 网页主题。"
+
+msgid "### [Publish-SslCertificate](Publish-SslCertificate.md)"
+msgstr "### [Publish-SslCertificate](Publish-SslCertificate.md)"
+
+msgid ""
+"The Publish-SslCertificate cmdlet is deprecated.\n"
+"Instead, use the Set-AdfsSslCertificate cmdlet."
+msgstr ""
+"`Publish-SslCertificate` cmdlet 已被弃用。请使用 `Set-AdfsSslCertificate` cmdlet "
+"代替它。"
+
+msgid ""
+"### [Register-AdfsAuthenticationProvider](Register-"
+"AdfsAuthenticationProvider.md)"
+msgstr ""
+"### [注册 AdfsAuthenticationProvider](Register-AdfsAuthenticationProvider.md)"
+
+msgid "Registers an external authentication provider in AD FS."
+msgstr "在 AD FS 中注册一个外部身份验证提供程序。"
+
+msgid ""
+"### [Remove-AdfsAccessControlPolicy](Remove-AdfsAccessControlPolicy.md)"
+msgstr ""
+"### [Remove-AdfsAccessControlPolicy](Remove-AdfsAccessControlPolicy.md)"
+
+msgid "Removes an AD FS access control policy."
+msgstr "删除一个 AD FS 访问控制策略。"
+
+msgid "### [Remove-AdfsApplicationGroup](Remove-AdfsApplicationGroup.md)"
+msgstr "### [Remove-AdfsApplicationGroup](Remove-AdfsApplicationGroup.md)"
+
+msgid "Removes an application group."
+msgstr "删除一个应用程序组。"
+
+msgid "### [Remove-AdfsAttributeStore](Remove-AdfsAttributeStore.md)"
+msgstr "### [Remove-AdfsAttributeStore](Remove-AdfsAttributeStore.md)"
+
+msgid "Removes an attribute store from the Federation Service."
+msgstr "从联邦服务中删除一个属性存储（attribute store）。"
+
+msgid ""
+"### [Remove-AdfsAuthenticationProviderWebContent](Remove-"
+"AdfsAuthenticationProviderWebContent.md)"
+msgstr ""
+"### [Remove-AdfsAuthenticationProviderWebContent](Remove-"
+"AdfsAuthenticationProviderWebContent.md)"
+
+msgid ""
+"Removes web content customization of the authentication provider in the user"
+" sign-in web pages from AD FS."
+msgstr ""
+"从 Active Directory Federation Services (AD FS) 的用户登录网页中移除了身份验证提供者的 Web "
+"内容自定义功能。"
+
+msgid "### [Remove-AdfsCertificate](Remove-AdfsCertificate.md)"
+msgstr "### [Remove-AdfsCertificate](Remove-AdfsCertificate.md)"
+
+msgid "Removes a certificate from AD FS."
+msgstr "从 AD FS 中删除证书。"
+
+msgid "### [Remove-AdfsClaimDescription](Remove-AdfsClaimDescription.md)"
+msgstr "### [Remove-AdfsClaimDescription](Remove-AdfsClaimDescription.md)"
+
+msgid "Removes a claim description from the Federation Service."
+msgstr "从联邦服务中删除一个索赔描述。"
+
+msgid ""
+"### [Remove-AdfsClaimsProviderTrust](Remove-AdfsClaimsProviderTrust.md)"
+msgstr ""
+"### [Remove-AdfsClaimsProviderTrust](Remove-AdfsClaimsProviderTrust.md)"
+
+msgid "Removes a claims provider trust from the Federation Service."
+msgstr "从联合服务（Federation Service）中移除某个声明提供者（claims provider）的信任关系。"
+
+msgid ""
+"### [Remove-AdfsClaimsProviderTrustsGroup](Remove-"
+"AdfsClaimsProviderTrustsGroup.md)"
+msgstr ""
+"### [Remove-AdfsClaimsProviderTrustsGroup](Remove-"
+"AdfsClaimsProviderTrustsGroup.md)"
+
+msgid "Removes an AD FS claims provider trust group."
+msgstr "删除一个 AD FS 主张提供者信任组。"
+
+msgid "### [Remove-AdfsClient](Remove-AdfsClient.md)"
+msgstr "### [Remove-AdfsClient](Remove-AdfsClient.md)"
+
+msgid ""
+"Deletes registration information for an OAuth 2.0 client that is currently "
+"registered with AD FS."
+msgstr "删除当前在 AD FS 中注册的 OAuth 2.0 客户端的注册信息。"
+
+msgid ""
+"### [Remove-AdfsDeviceRegistrationUpnSuffix](Remove-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"### [Remove-AdfsDeviceRegistrationUpnSuffix](Remove-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+
+msgid "Removes a custom UPN suffix."
+msgstr "删除自定义的UPN后缀。"
+
+msgid "### [Remove-AdfsFarmNode](Remove-AdfsFarmNode.md)"
+msgstr "### [Remove-AdfsFarmNode](Remove-AdfsFarmNode.md)"
+
+msgid ""
+"The Remove-AdfsFarmNode cmdlet is deprecated.\n"
+"Instead, use the Uninstall-WindowsFeature cmdlet."
+msgstr ""
+"`Remove-AdfsFarmNode` cmdlet 已被弃用。请改用 `Uninstall-WindowsFeature` cmdlet。"
+
+msgid "### [Remove-AdfsGlobalWebContent](Remove-AdfsGlobalWebContent.md)"
+msgstr "### [Remove-AdfsGlobalWebContent](Remove-AdfsGlobalWebContent.md)"
+
+msgid "Removes a global web content object."
+msgstr "删除一个全局性的网页内容对象。"
+
+msgid ""
+"### [Remove-AdfsLocalClaimsProviderTrust](Remove-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"### [Remove-AdfsLocalClaimsProviderTrust](Remove-"
+"AdfsLocalClaimsProviderTrust.md)"
+
+msgid "Removes a local claims provider trust."
+msgstr "移除对某个本地声明提供者的信任。"
+
+msgid ""
+"### [Remove-AdfsNativeClientApplication](Remove-"
+"AdfsNativeClientApplication.md)"
+msgstr ""
+"### [Remove-AdfsNativeClientApplication](Remove-"
+"AdfsNativeClientApplication.md)"
+
+msgid "Removes a native client application role from an application in AD FS."
+msgstr "从 AD FS 中的应用程序中移除一个本机客户端应用程序角色。"
+
+msgid ""
+"### [Remove-AdfsNonClaimsAwareRelyingPartyTrust](Remove-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"### [Remove-AdfsNonClaimsAwareRelyingPartyTrust](Remove-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"Removes a relying party trust for a non-claims-aware web application or "
+"service from the Federation Service."
+msgstr "将一个不支持声明处理的Web应用程序或服务的依赖方信任信息从联邦服务（Federation Service）中删除。"
+
+msgid "### [Remove-AdfsRelyingPartyTrust](Remove-AdfsRelyingPartyTrust.md)"
+msgstr "### [Remove-AdfsRelyingPartyTrust](Remove-AdfsRelyingPartyTrust.md)"
+
+msgid "Removes a relying party trust from the Federation Service."
+msgstr "从联合服务（Federation Service）中移除某个依赖方信任关系（relying party trust）。"
+
+msgid ""
+"### [Remove-AdfsRelyingPartyTrustsGroup](Remove-"
+"AdfsRelyingPartyTrustsGroup.md)"
+msgstr ""
+"### [Remove-AdfsRelyingPartyTrustsGroup](Remove-"
+"AdfsRelyingPartyTrustsGroup.md)"
+
+msgid "Removes a relying party trusts group."
+msgstr "删除一个依赖方信任组（relying party trusts group）。"
+
+msgid ""
+"### [Remove-AdfsRelyingPartyWebContent](Remove-"
+"AdfsRelyingPartyWebContent.md)"
+msgstr ""
+"### [Remove-AdfsRelyingPartyWebContent](Remove-"
+"AdfsRelyingPartyWebContent.md)"
+
+msgid "Removes a relying party web content object."
+msgstr "删除一个依赖方（relying party）的网页内容对象。"
+
+msgid ""
+"### [Remove-AdfsRelyingPartyWebTheme](Remove-AdfsRelyingPartyWebTheme.md)"
+msgstr ""
+"### [Remove-AdfsRelyingPartyWebTheme](Remove-AdfsRelyingPartyWebTheme.md)"
+
+msgid "Removes a web theme to a relying party."
+msgstr "将一个网络主题从依赖该主题的第三方系统中移除。"
+
+msgid "### [Remove-AdfsScopeDescription](Remove-AdfsScopeDescription.md)"
+msgstr "### [Remove-AdfsScopeDescription](Remove-AdfsScopeDescription.md)"
+
+msgid "Removes a scope description in AD FS."
+msgstr ""
+"删除 Active Directory Federation Services (AD FS) 中的范围描述（scope description）。"
+
+msgid "### [Remove-AdfsServerApplication](Remove-AdfsServerApplication.md)"
+msgstr "### [Remove-AdfsServerApplication](Remove-AdfsServerApplication.md)"
+
+msgid "Removes a server application role from an application in AD FS."
+msgstr "从 Active Directory Federation Services (AD FS) 中的应用程序中移除一个服务器应用程序角色。"
+
+msgid ""
+"### [Remove-AdfsTrustedFederationPartner](Remove-"
+"AdfsTrustedFederationPartner.md)"
+msgstr ""
+"### [Remove-AdfsTrustedFederationPartner](Remove-"
+"AdfsTrustedFederationPartner.md)"
+
+msgid "Removes a trusted federation partner in AD FS."
+msgstr "从 Active Directory Federation Services (AD FS) 中移除一个受信任的联盟合作伙伴。"
+
+msgid "### [Remove-AdfsWebApiApplication](Remove-AdfsWebApiApplication.md)"
+msgstr "### [Remove-AdfsWebApiApplication](Remove-AdfsWebApiApplication.md)"
+
+msgid "Removes a Web API application role from an application in AD FS."
+msgstr "从 AD FS 中的应用程序中移除一个 Web API 应用程序角色。"
+
+msgid ""
+"### [Remove-AdfsWebApplicationProxyRelyingPartyTrust](Remove-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"### [Remove-AdfsWebApplicationProxyRelyingPartyTrust](Remove-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid "Removes the relying party trust object for the Web Application Proxy."
+msgstr "移除了用于 Web 应用程序代理的依赖方信任对象（relying party trust object）。"
+
+msgid "### [Remove-AdfsWebTheme](Remove-AdfsWebTheme.md)"
+msgstr "### [Remove-AdfsWebTheme](Remove-AdfsWebTheme.md)"
+
+msgid "Removes a web theme."
+msgstr "删除一个网页主题。"
+
+msgid "### [Restore-AdfsFarmBehaviorLevel](Restore-AdfsFarmBehaviorLevel.md)"
+msgstr "### [Restore-AdfsFarmBehaviorLevel](Restore-AdfsFarmBehaviorLevel.md)"
+
+msgid "Restores the farm to a previous behavior level."
+msgstr "将农场恢复到之前的运行状态（即之前的行为模式）。"
+
+msgid ""
+"### [Revoke-AdfsApplicationPermission](Revoke-AdfsApplicationPermission.md)"
+msgstr ""
+"### [Revoke-AdfsApplicationPermission](Revoke-AdfsApplicationPermission.md)"
+
+msgid "Revokes permission for an application."
+msgstr "撤销对某个应用程序的访问权限。"
+
+msgid "### [Revoke-AdfsProxyTrust](Revoke-AdfsProxyTrust.md)"
+msgstr "### [撤销 AdfsProxyTrust 的信任关系](Revoke-AdfsProxyTrust.md)"
+
+msgid ""
+"Revokes trust for all federation server proxies configured for the "
+"Federation Service."
+msgstr ""
+"撤销对所有为联邦服务（Federation Service）配置的联邦服务器代理（federation server proxies）的信任。"
+
+msgid "### [Set-AdfsAccessControlPolicy](Set-AdfsAccessControlPolicy.md)"
+msgstr "### [Set-AdfsAccessControlPolicy](Set-AdfsAccessControlPolicy.md)"
+
+msgid "Modifies an AD FS access control policy."
+msgstr "修改 AD FS 访问控制策略。"
+
+msgid ""
+"### [Set-AdfsAdditionalAuthenticationRule](Set-"
+"AdfsAdditionalAuthenticationRule.md)"
+msgstr ""
+"### [Set-AdfsAdditionalAuthenticationRule](Set-"
+"AdfsAdditionalAuthenticationRule.md)"
+
+msgid ""
+"Sets the global rules that provide the trigger for additional authentication"
+" providers to be invoked."
+msgstr "设置了全局规则，这些规则用于触发其他身份验证提供者的调用。"
+
+msgid ""
+"### [Set-AdfsAlternateTlsClientBinding](Set-"
+"AdfsAlternateTlsClientBinding.md)"
+msgstr ""
+"### [Set-AdfsAlternateTlsClientBinding](Set-"
+"AdfsAlternateTlsClientBinding.md)"
+
+msgid ""
+"Configures an existing AD FS deployment to use the same port for both device"
+" certificate and client certificate authentication."
+msgstr "配置现有的 AD FS 部署，使其在设备证书认证和客户端证书认证过程中使用相同的端口。"
+
+msgid "### [Set-AdfsApplicationGroup](Set-AdfsApplicationGroup.md)"
+msgstr "### [Set-AdfsApplicationGroup](Set-AdfsApplicationGroup.md)"
+
+msgid "Modifies an application group."
+msgstr "修改应用程序组。"
+
+msgid "### [Set-AdfsApplicationPermission](Set-AdfsApplicationPermission.md)"
+msgstr "### [Set-AdfsApplicationPermission](Set-AdfsApplicationPermission.md)"
+
+msgid "Modifies application permissions."
+msgstr "修改应用程序的权限设置。"
+
+msgid "### [Set-AdfsAttributeStore](Set-AdfsAttributeStore.md)"
+msgstr "### [Set-AdfsAttributeStore](Set-AdfsAttributeStore.md)"
+
+msgid "Modifies properties of an attribute store."
+msgstr "修改属性存储（attribute store）的属性。"
+
+msgid ""
+"### [Set-AdfsAuthenticationProviderWebContent](Set-"
+"AdfsAuthenticationProviderWebContent.md)"
+msgstr ""
+"### [Set-AdfsAuthenticationProviderWebContent](Set-"
+"AdfsAuthenticationProviderWebContent.md)"
+
+msgid "Modifies a display name and description."
+msgstr "修改显示名称和描述内容。"
+
+msgid "### [Set-AdfsAzureMfaTenant](Set-AdfsAzureMfaTenant.md)"
+msgstr "### [Set-AdfsAzureMfaTenant](Set-AdfsAzureMfaTenant.md)"
+
+msgid "Enables an AD FS farm to use MFA."
+msgstr "使 AD FS 站点群能够使用多因素身份验证（MFA）。"
+
+msgid "### [Set-AdfsCertificate](Set-AdfsCertificate.md)"
+msgstr "### [Set-AdfsCertificate](Set-AdfsCertificate.md)"
+
+msgid ""
+"Sets the properties of an existing certificate that AD FS uses to sign, "
+"decrypt, or secure communications."
+msgstr ""
+"用于设置现有证书的属性，这些属性被 Active Directory Federation Services (AD FS) "
+"用来签名、解密或保护通信安全。"
+
+msgid "### [Set-AdfsCertificateAuthority](Set-AdfsCertificateAuthority.md)"
+msgstr "### [Set-AdfsCertificateAuthority](Set-AdfsCertificate Authority.md)"
+
+msgid "Modifies a certificate authority."
+msgstr "修改证书颁发机构（CA）。"
+
+msgid "### [Set-AdfsCertSharingContainer](Set-AdfsCertSharingContainer.md)"
+msgstr "### [Set-AdfsCertSharingContainer](Set-AdfsCertSharingContainer.md)"
+
+msgid ""
+"Sets the account that is used for sharing managed certificates in a "
+"federation server farm."
+msgstr "设置用于在联邦服务器群中共享托管证书的账户。"
+
+msgid "### [Set-AdfsClaimDescription](Set-AdfsClaimDescription.md)"
+msgstr "### [Set-AdfsClaimDescription](Set-AdfsClaimDescription.md)"
+
+msgid "Modifies the properties of a claim description."
+msgstr "修改索赔描述的属性。"
+
+msgid "### [Set-AdfsClaimsProviderTrust](Set-AdfsClaimsProviderTrust.md)"
+msgstr "### [Set-AdfsClaimsProviderTrust](Set-AdfsClaimsProviderTrust.md)"
+
+msgid "Sets the properties of a claims provider trust."
+msgstr "设置声明提供者信任（claims provider trust）的属性。"
+
+msgid "### [Set-AdfsClient](Set-AdfsClient.md)"
+msgstr "### [Set-AdfsClient](Set-AdfsClient.md)"
+
+msgid ""
+"Modifies registration settings for an OAuth 2.0 client registered with AD "
+"FS."
+msgstr "修改在 AD FS 中注册的 OAuth 2.0 客户端的注册设置。"
+
+msgid "### [Set-AdfsDeviceRegistration](Set-AdfsDeviceRegistration.md)"
+msgstr "### [Set-AdfsDeviceRegistration](Set-AdfsDeviceRegistration.md)"
+
+msgid ""
+"Configures the administrative policies for the Device Registration Service."
+msgstr "配置设备注册服务的管理策略。"
+
+msgid ""
+"### [Set-AdfsDeviceRegistrationUpnSuffix](Set-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"### [Set-AdfsDeviceRegistrationUpnSuffix](Set-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+
+msgid "Sets the list of UPN suffixes."
+msgstr "设置 UPN 后缀的列表。"
+
+msgid "### [Set-AdfsEndpoint](Set-AdfsEndpoint.md)"
+msgstr "### [Set-AdfsEndpoint](Set-AdfsEndpoint.md)"
+
+msgid "Sets the endpoint on a Web Application Proxy."
+msgstr "将端点设置在一个Web应用程序代理上。"
+
+msgid "### [Set-AdfsFarmInformation](Set-AdfsFarmInformation.md)"
+msgstr "### [Set-AdfsFarmInformation](Set-AdfsFarmInformation.md)"
+
+msgid "Removes a stale or offline farm node from the farm information table."
+msgstr "从农场信息表中移除不再可用或已离线的农场节点。"
+
+msgid ""
+"### [Set-AdfsGlobalAuthenticationPolicy](Set-"
+"AdfsGlobalAuthenticationPolicy.md)"
+msgstr ""
+"### [Set-AdfsGlobalAuthenticationPolicy](Set-"
+"AdfsGlobalAuthenticationPolicy.md)"
+
+msgid "Modifies the AD FS global policy."
+msgstr "修改 AD FS 全局策略。"
+
+msgid "### [Set-AdfsGlobalWebContent](Set-AdfsGlobalWebContent.md)"
+msgstr "### [Set-AdfsGlobalWebContent](Set-AdfsGlobalWebContent.md)"
+
+msgid "Sets properties for global web content objects."
+msgstr "为全局网页内容对象设置属性。"
+
+msgid ""
+"### [Set-AdfsLocalClaimsProviderTrust](Set-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"### [Set-AdfsLocalClaimsProviderTrust](Set-AdfsLocalClaimsProviderTrust.md)"
+
+msgid "Modifies a local claims provider trust."
+msgstr "修改本地声明提供者（claims provider）的信任设置。"
+
+msgid ""
+"### [Set-AdfsNativeClientApplication](Set-AdfsNativeClientApplication.md)"
+msgstr ""
+"### [Set-AdfsNativeClientApplication](Set-AdfsNativeClientApplication.md)"
+
+msgid ""
+"Modifies configuration settings for a server native client application role "
+"of an application in AD FS."
+msgstr "修改应用程序在 AD FS 中作为服务器原生客户端应用程序角色时的配置设置。"
+
+msgid ""
+"### [Set-AdfsNonClaimsAwareRelyingPartyTrust](Set-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"### [Set-AdfsNonClaimsAwareRelyingPartyTrust](Set-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"Sets the properties of a relying party trust for a non-claims-aware web "
+"application or service."
+msgstr "为不支持声明处理（claims-aware）的Web应用程序或服务设置依赖方信任（relying party trust）的相关属性。"
+
+msgid "### [Set-AdfsProperties](Set-AdfsProperties.md)"
+msgstr "### [Set-AdfsProperties](Set-AdfsProperties.md)"
+
+msgid "Sets the properties that control global behaviors in AD FS."
+msgstr "设置用于控制 Active Directory Federation Services (AD FS) 中全局行为的属性。"
+
+msgid "### [Set-AdfsRegistrationHosts](Set-AdfsRegistrationHosts.md)"
+msgstr "### [Set-AdfsRegistrationHosts](Set-AdfsRegistrationHosts.md)"
+
+msgid ""
+"The Set-AdfsRegistrationHosts cmdlet is deprecated.\n"
+"Instead, use the **Set-AdfsDeviceRegistrationUpnSuffix** cmdlet."
+msgstr ""
+"`Set-AdfsRegistrationHosts` cmdlet 已经被弃用。请使用 `Set-"
+"AdfsDeviceRegistrationUpnSuffix` cmdlet 代替它。"
+
+msgid "### [Set-AdfsRelyingPartyTrust](Set-AdfsRelyingPartyTrust.md)"
+msgstr "### [Set-AdfsRelyingPartyTrust](Set-AdfsRelyingPartyTrust.md)"
+
+msgid "Sets the properties of a relying party trust."
+msgstr "设置依赖方信任（relying party trust）的属性。"
+
+msgid ""
+"### [Set-AdfsRelyingPartyWebContent](Set-AdfsRelyingPartyWebContent.md)"
+msgstr ""
+"### [Set-AdfsRelyingPartyWebContent](Set-AdfsRelyingPartyWebContent.md)"
+
+msgid "Sets properties for the relying party web content objects."
+msgstr "为依赖方（relying party）的网页内容对象设置相关属性。"
+
+msgid "### [Set-AdfsRelyingPartyWebTheme](Set-AdfsRelyingPartyWebTheme.md)"
+msgstr "### [Set-AdfsRelyingPartyWebTheme](Set-AdfsRelyingPartyWebTheme.md)"
+
+msgid "Applies a web theme to a relying party."
+msgstr "将一个网页主题应用于依赖方（即使用该主题的网站或应用程序）。"
+
+msgid "### [Set-AdfsScopeDescription](Set-AdfsScopeDescription.md)"
+msgstr "### [Set-AdfsScopeDescription](Set-AdfsScopeDescription.md)"
+
+msgid "Modifies a scope description in AD FS."
+msgstr ""
+"修改 Active Directory Federation Services (AD FS) 中的作用域描述（scope description）。"
+
+msgid "### [Set-AdfsServerApplication](Set-AdfsServerApplication.md)"
+msgstr "### [Set-AdfsServerApplication](Set-AdfsServerApplication.md)"
+
+msgid ""
+"Modifies configuration settings for a server application role of an "
+"application in AD FS."
+msgstr "修改应用程序在 Active Directory Federation Services (AD FS) 中的服务器应用角色的配置设置。"
+
+msgid "### [Set-AdfsSslCertificate](Set-AdfsSslCertificate.md)"
+msgstr "### [Set-AdfsSslCertificate](Set-AdfsSslCertificate.md)"
+
+msgid "Sets an SSL certificate for HTTPS bindings for AD FS."
+msgstr "为 AD FS 的 HTTPS 绑定设置 SSL 证书。"
+
+msgid "### [Set-AdfsSyncProperties](Set-AdfsSyncProperties.md)"
+msgstr "### [Set-AdfsSyncProperties](Set-AdfsSyncProperties.md)"
+
+msgid ""
+"Modifies the frequency of synchronization for the AD FS configuration "
+"database and which server is primary in the farm."
+msgstr "修改 AD FS 配置数据库的同步频率，以及确定服务器群中的主服务器。"
+
+msgid ""
+"### [Set-AdfsTrustedFederationPartner](Set-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"### [Set-AdfsTrustedFederationPartner](Set-AdfsTrustedFederationPartner.md)"
+
+msgid ""
+"Modifies configuration settings for trusted federation partners in AD FS."
+msgstr "修改 Active Directory Federation Services (AD FS) 中受信任的联合合作伙伴的配置设置。"
+
+msgid "### [Set-AdfsWebApiApplication](Set-AdfsWebApiApplication.md)"
+msgstr "### [Set-AdfsWebApiApplication](Set-AdfsWebApiApplication.md)"
+
+msgid "Modifies configuration settings for a Web API application in AD FS."
+msgstr "修改 AD FS 中 Web API 应用程序的配置设置。"
+
+msgid ""
+"### [Set-AdfsWebApplicationProxyRelyingPartyTrust](Set-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"### [Set-AdfsWebApplicationProxyRelyingPartyTrust](Set-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid ""
+"Modifies properties of the relying party trust object for the Web "
+"Application Proxy."
+msgstr "修改用于 Web 应用程序代理的依赖方信任对象的属性。"
+
+msgid "### [Set-AdfsWebConfig](Set-AdfsWebConfig.md)"
+msgstr "### [Set-AdfsWebConfig](Set-AdfsWebConfig.md)"
+
+msgid "Modifies web customization configuration settings."
+msgstr "修改网页自定义配置设置。"
+
+msgid "### [Set-AdfsWebTheme](Set-AdfsWebTheme.md)"
+msgstr "### [Set-AdfsWebTheme](Set-AdfsWebTheme.md)"
+
+msgid "Modifies properties of a web theme."
+msgstr "修改网页主题的属性。"
+
+msgid ""
+"### [Test-AdfsFarmBehaviorLevelRaise](Test-AdfsFarmBehaviorLevelRaise.md)"
+msgstr ""
+"### [Test-AdfsFarmBehaviorLevelRaise](Test-AdfsFarmBehaviorLevelRaise.md)"
+
+msgid "Tests whether you can raise the behavior level of a farm."
+msgstr "测试你是否能够提升农场的运营效率（即提高农场的“行为水平”）。"
+
+msgid ""
+"### [Test-AdfsFarmBehaviorLevelRestore](Test-"
+"AdfsFarmBehaviorLevelRestore.md)"
+msgstr ""
+"### [Test-AdfsFarmBehaviorLevelRestore](Test-"
+"AdfsFarmBehaviorLevelRestore.md)"
+
+msgid ""
+"Tests whether you can restore an AD FS farm to a previous behavior level."
+msgstr "测试是否可以将 Active Directory Federation Services（AD FS）集群恢复到之前的运行状态。"
+
+msgid "### [Test-AdfsFarmInstallation](Test-AdfsFarmInstallation.md)"
+msgstr "### [Test-AdfsFarmInstallation](Test-AdfsFarmInstallation.md)"
+
+msgid "Runs prerequisite checks for installing a new federation server farm."
+msgstr "运行安装新的联合服务器群所需的先决条件检查。"
+
+msgid "### [Test-AdfsFarmJoin](Test-AdfsFarmJoin.md)"
+msgstr "### [Test-AdfsFarmJoin](Test-AdfsFarmJoin.md)"
+
+msgid ""
+"Runs prerequisite checks for adding the server computer to a federation "
+"server farm."
+msgstr "在将服务器计算机添加到联合服务器群之前，会运行必要的检查。"
+
+msgid ""
+"### [Unregister-AdfsAuthenticationProvider](Unregister-"
+"AdfsAuthenticationProvider.md)"
+msgstr ""
+"### [Unregister-AdfsAuthenticationProvider](Unregister-"
+"AdfsAuthenticationProvider.md)"
+
+msgid "Deletes an external authentication provider from AD FS."
+msgstr "从 AD FS 中删除外部身份验证提供程序。"
+
+msgid "### [Update-AdfsCertificate](Update-AdfsCertificate.md)"
+msgstr "### [更新 AdfsCertificate](Update-AdfsCertificate.md)"
+
+msgid "Updates the certificates of AD FS."
+msgstr "更新 AD FS 的证书。"
+
+msgid ""
+"### [Update-AdfsClaimsProviderTrust](Update-AdfsClaimsProviderTrust.md)"
+msgstr "### [更新 AdfsClaimsProviderTrust](Update-AdfsClaimsProviderTrust.md)"
+
+msgid "Updates the claims provider trust from federation metadata."
+msgstr "根据联盟元数据更新对声明提供者的信任关系。"
+
+msgid "### [Update-AdfsRelyingPartyTrust](Update-AdfsRelyingPartyTrust.md)"
+msgstr "### [Update-AdfsRelyingPartyTrust](Update-AdfsRelyingPartyTrust.md)"
+
+msgid "Updates the relying party trust from federation metadata."
+msgstr "根据联盟元数据更新依赖方的信任关系。"

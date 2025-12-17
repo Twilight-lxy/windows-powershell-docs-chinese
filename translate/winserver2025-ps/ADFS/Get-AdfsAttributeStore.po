@@ -1,0 +1,92 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:57:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsAttributeStore"
+msgstr "# Get-AdfsAttributeStore"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the attribute stores of the Federation Service."
+msgstr "获取联邦服务的属性存储信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsAttributeStore** cmdlet gets an attribute store of the Federation Service.\n"
+"If you do not specify any parameters, the cmdlet gets all attribute stores of the Federation Service."
+msgstr ""
+"`Get-AdfsAttributeStore` cmdlet 用于获取联邦服务的属性存储信息。如果您不指定任何参数，该 cmdlet "
+"将获取联邦服务的所有属性存储信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an array of names of attribute stores that this cmdlet gets."
+msgstr "指定一个属性存储名称数组，该cmdlet将从这些存储中获取数据。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "A string object is received by the *Name* parameter."
+msgstr "*Name* 参数接收的是一个字符串对象。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.AttributeStore"
+msgstr "### MicrosoftIdentityServer.Management.Resources.AttributeStore"
+
+msgid ""
+"Returns one or more AttributeStore objects that represent the attribute "
+"stores of the Federation Service."
+msgstr "返回一个或多个 `AttributeStore` 对象，这些对象代表了联邦服务的属性存储机制。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsAttributeStore](./Add-AdfsAttributeStore.md)"
+msgstr "[添加 AdFS 属性存储](./Add-AdfsAttributeStore.md)"
+
+msgid "[Remove-AdfsAttributeStore](./Remove-AdfsAttributeStore.md)"
+msgstr "[Remove-AdfsAttributeStore](./Remove-AdfsAttributeStore.md)"
+
+msgid "[Set-AdfsAttributeStore](./Set-AdfsAttributeStore.md)"
+msgstr "[Set-AdfsAttributeStore](./Set-AdfsAttributeStore.md)"

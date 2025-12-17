@@ -1,0 +1,100 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:20:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AdfsRelyingPartyWebTheme"
+msgstr "# 移除依赖 AdFS 的 Party Web 主题"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes a web theme to a relying party."
+msgstr "将某个网页主题从依赖该主题的第三方系统中移除。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-AdfsRelyingPartyWebTheme** cmdlet removes a web theme for a "
+"relying party."
+msgstr "`Remove-AdfsRelyingPartyWebTheme` cmdlet 用于删除依赖方的网页主题。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a web theme"
+msgstr "#### 示例 1：移除网页主题"
+
+msgid ""
+"This command removes the relying party web theme for the relying party named"
+" urn:app1."
+msgstr "此命令会删除名为 urn:app1 的依赖方的 Web 主题。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the target relying party for which to remove the web "
+"theme."
+msgstr "指定要为其删除网页主题的目标依赖方的名称。"
+
+msgid "Specifies the target relying party for which to remove the web theme."
+msgstr "指定要为其删除网页主题的目标依赖方（relying party）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsRelyingPartyWebTheme](./Get-AdfsRelyingPartyWebTheme.md)"
+msgstr "[Get-AdfsRelyingPartyWebTheme](./Get-AdfsRelyingPartyWebTheme.md)"
+
+msgid "[Set-AdfsRelyingPartyWebTheme](./Set-AdfsRelyingPartyWebTheme.md)"
+msgstr "[Set-AdfsRelyingPartyWebTheme](./Set-AdfsRelyingPartyWebTheme.md)"

@@ -1,0 +1,281 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 12:48:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ADCentralAccessPolicy"
+msgstr "# Get-ADCentralAccessPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Retrieves central access policies from Active Directory."
+msgstr "从 Active Directory 中检索中央访问策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Filter (Default)"
+msgstr "### 过滤器（默认设置）"
+
+msgid "### Identity"
+msgstr "### 身份证明"
+
+msgid "### LdapFilter"
+msgstr "### LdapFilter"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-ADCentralAccessPolicy` cmdlet retrieves central access policies "
+"from Active Directory."
+msgstr "`Get-ADCentralAccessPolicy` cmdlet 用于从 Active Directory 中检索中央访问策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a list off all central access policies"
+msgstr "### 示例 1：获取所有中央访问策略的列表"
+
+msgid "This command retrieves a list of all central access policies."
+msgstr "此命令用于检索所有中央访问策略的列表。"
+
+msgid ""
+"### Example 2: Get a list of specific central access policies using a filter"
+msgstr "### 示例 2：使用过滤器获取特定的中央访问策略列表"
+
+msgid ""
+"This command gets the central access policies that have the central access rule\n"
+"`Finance Documents Rule` as its members."
+msgstr "这个命令用于获取那些以“Finance Documents Rule”为中心访问规则作为其成员的中心访问策略。"
+
+msgid ""
+"### Example 3: Get information for a central access policy for a specific "
+"Active Directory object"
+msgstr "### 示例 3：获取特定 Active Directory 对象的中心访问策略的相关信息"
+
+msgid ""
+"This command gets information for a central access policy named `Finance "
+"Policy`."
+msgstr "这个命令用于获取名为“Finance Policy”的中央访问策略的相关信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is `Negotiate`."
+msgstr "默认的认证方法是`Negotiate`。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the `Basic` "
+"authentication method."
+msgstr "对于“基本”（Basic）身份验证方法而言，需要建立安全套接字层（Secure Sockets Layer，简称SSL）连接。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task. The default credentials are the\n"
+"credentials of the currently logged on user unless the cmdlet is run from an Active Directory module\n"
+"for Windows PowerShell provider drive. If the cmdlet is run from such a provider drive, the account\n"
+"associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该cmdlet是从Windows PowerShell提供程序的Active "
+"Directory模块驱动器中运行的。如果该cmdlet是从这样的驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as `User1` or `Domain01\\User01` or you can\n"
+"specify a **PSCredential** object. If you specify a user name for this parameter, the cmdlet prompts\n"
+"for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 `User1` 或 `Domain01/User01`），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the `Get-Credential`\n"
+"cmdlet. You can then set the **Credential** parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"**Credential** 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform the task, Active\n"
+"Directory module for Windows PowerShell returns a terminating error."
+msgstr "如果执行任务的账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies a query string that retrieves Active Directory Domain Services objects. This string uses\n"
+"the Windows PowerShell expression language syntax. The Windows PowerShell expression language syntax\n"
+"provides rich type-conversion support for value types received by the **Filter** parameter."
+msgstr ""
+"指定一个用于检索 Active Directory 域服务对象的查询字符串。该字符串使用 Windows PowerShell "
+"表达式语言语法。Windows PowerShell 表达式语言语法为 **Filter** 参数接收的值类型提供了强大的类型转换支持。"
+
+msgid "Specify the **Filter** parameter in one of the following formats:"
+msgstr "请以以下格式之一指定 **Filter** 参数："
+
+msgid ""
+"Windows PowerShell wildcards other than `*`, such as `?`, are not supported by the **Filter**\n"
+"syntax."
+msgstr "在 Windows PowerShell 中，除了 `*` 之外的通配符（例如 `?`）不支持 `Filter` 语法。"
+
+msgid "Valid filter operators are:"
+msgstr "有效的过滤操作符包括："
+
+msgid ""
+" `-eq`, `-le`, `-ge`, `-ne`, `-lt`, `-gt`, `-approx`, `-bor`, `-band`, `-recursivematch`, `-like`,\n"
+" `-notlike`"
+msgstr ""
+"`-eq`, `-le`, `-ge`, `-ne`, `-lt`, `-gt`, `-approx`, `-bor`, `-band`, "
+"`-recursivematch`, `-like`, `-notlike`"
+
+msgid "Valid join operators are:"
+msgstr "有效的连接操作符有："
+
+msgid "`-and`, `-or`"
+msgstr "`-and`, `-or`"
+
+msgid "The not operator is `-not`."
+msgstr "“not”运算符是“-not”。"
+
+msgid ""
+"For a list of supported types for values, see `about_ActiveDirectory_ObjectModel`. For more\n"
+"information about the **Filter** parameter, see `about_ActiveDirectory_Filter`."
+msgstr ""
+"有关支持的值类型的列表，请参阅`about_ActiveDirectory_ObjectModel`。有关**Filter**参数的更多信息，请参阅`about_ActiveDirectory_filter`。"
+
+msgid ""
+"Specifies an Active Directory object by providing one of the following property values. The\n"
+"identifier in parentheses is the LDAP display name for the attribute.The acceptable values for this\n"
+"parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory 对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"Specifies a filter using the LDAP search filter syntax defined in RFC2254 to filter Active Directory\n"
+"Domain Services objects."
+msgstr "使用RFC2254中定义的LDAP搜索过滤器语法来指定一个过滤器，以便过滤Active Directory域服务对象。"
+
+msgid ""
+"Specifies the properties of the output object to get from the server. Use this parameter to get\n"
+"properties that are not included in the default set."
+msgstr "指定从服务器获取的输出对象的属性。使用此参数可以获取默认集合中未包含的属性。"
+
+msgid ""
+"Specify the properties to get as a comma separated list of names. To display\n"
+"all of the properties that are set on the object, specify an asterisk (`*`) wildcard."
+msgstr "请以逗号分隔的形式列出需要获取的属性名称。如果要显示对象上设置的所有属性，请使用通配符星号（`*`）。"
+
+msgid ""
+"To specify an individual extended property, use the name of the property. For properties that are\n"
+"not default or extended properties, you must specify the LDAP display name of the attribute."
+msgstr "要指定某个特定的扩展属性，请使用该属性的名称。对于非默认属性或扩展属性而言，必须指定该属性的LDAP显示名称。"
+
+msgid ""
+"Specifies the number of objects to include in one page for an Active Directory Domain Services\n"
+"query. The default value is `256` objects per page."
+msgstr "指定在 Active Directory 域服务查询中每页显示的对象数量。默认值为每页显示 256 个对象。"
+
+msgid ""
+"Specifies the maximum number of objects to return for an Active Directory Domain Services query. If\n"
+"you want to get all of the objects, set this parameter to `$null`. You can use Ctrl+C to stop the\n"
+"query and the return of objects."
+msgstr ""
+"该参数用于指定 Active Directory 域服务查询返回的对象的最大数量。如果您希望获取所有对象，请将此参数设置为 `$null`。您可以使用 "
+"Ctrl+C 来停止查询及对象的返回过程。"
+
+msgid "The default value is `$null`."
+msgstr "默认值是 `$null`。"
+
+msgid ""
+"Specifies the Active Directory Domain Services instance to connect to, by providing one of the\n"
+"following values for a corresponding domain name or directory server. The service may be any of the\n"
+"following: Active Directory Lightweight Domain Services, Active Directory Domain Services or Active\n"
+"Directory snapshot instance."
+msgstr ""
+"指定要连接的 Active Directory 域服务实例，为此需提供相应的域名或目录服务器的其中一个值。该服务可以是以下类型之一：Active "
+"Directory 轻量级域服务（Active Directory Lightweight Domain Services）、Active "
+"Directory 域服务（Active Directory Domain Services）或 Active Directory "
+"快照实例（Active Directory Snapshot Instance）。"
+
+msgid ""
+"Specify the Active Directory Domain Services instance in one of the "
+"following ways:"
+msgstr "以下列任意一种方式指定 Active Directory 域服务实例："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following methods in the order that\n"
+"they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们的列出的顺序："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADCentralAccessPolicy"
+msgstr "### 无值或 Microsoft.ActiveDirectory.Management.ADCentralAccessPolicy"
+
+msgid ""
+"An **ADCentralAccessPolicy** object is received by the **Identity** "
+"parameter."
+msgstr "`Identity` 参数接收一个 `ADCentralAccessPolicy` 对象。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADCentralAccessPolicy"
+msgstr "### Microsoft ActiveDirectory.Management.ADCentralAccessPolicy"
+
+msgid "This cmdlet returns one or more **ADCentralAccessPolicy** objects."
+msgstr "此cmdlet返回一个或多个**ADCentralAccessPolicy**对象。"
+
+msgid ""
+"The cmdlet returns a default set of **ADCentralAccessPolicy** property\n"
+"values. To retrieve additional **ADCentralAccessPolicy** properties, use the **Properties**\n"
+"parameter of the cmdlet."
+msgstr ""
+"该cmdlet返回一组默认的**ADCentralAccessPolicy**属性值。若要检索额外的**ADCentralAccessPolicy**属性，请使用cmdlet的**Properties**参数。"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-ADCentralAccessPolicy](./New-ADCentralAccessPolicy.md)"
+msgstr "[New-ADCentralAccessPolicy](./New-ADCentralAccessPolicy.md)"
+
+msgid "[Remove-ADCentralAccessPolicy](./Remove-ADCentralAccessPolicy.md)"
+msgstr "[Remove-ADCentralAccessPolicy](./Remove-ADCentralAccessPolicy.md)"
+
+msgid "[Set-ADCentralAccessPolicy](./Set-ADCentralAccessPolicy.md)"
+msgstr "[Set-ADCentralAccessPolicy](./Set-ADCentralAccessPolicy.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理Cmdlets](./activedirectory.md)"

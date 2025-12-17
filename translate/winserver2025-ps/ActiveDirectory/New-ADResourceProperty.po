@@ -1,0 +1,347 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:52:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-ADResourceProperty"
+msgstr "# 新AD资源属性"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a resource property in Active Directory."
+msgstr "在 Active Directory 中创建一个资源属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-ADResourceProperty** cmdlet creates a resource property in the "
+"directory."
+msgstr "`New-ADResourceProperty` cmdlet 用于在指定目录中创建一个新的资源属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a resource property"
+msgstr "### 示例 1：创建一个资源属性"
+
+msgid ""
+"This command creates a resource property with the display name Authors.\n"
+"The resource property enables the names of multiple authors to be specified."
+msgstr "此命令创建了一个资源属性，其显示名称为“Authors”。该资源属性允许指定多位作者的姓名。"
+
+msgid "### Example 2: Create a resource property to include suggested values"
+msgstr "### 示例 2：创建一个资源属性以包含建议的值"
+
+msgid ""
+"This command creates a new resource property with display name Country.\n"
+"The suggested values are set to US and JP.\n"
+"Applications using this resource property would allow their users to specify one of the suggested values as this resource property's value."
+msgstr ""
+"此命令创建了一个新的资源属性，其显示名称为“Country”（国家）。建议使用的值分别为“US”（美国）和“JP”（日本）。使用该资源属性的应用程序将允许用户从中选择一个建议的值作为该资源属性的实际值。"
+
+msgid "### Example 3: Create a resource property with shared values"
+msgstr "### 示例 3：创建一个具有共享值的资源属性"
+
+msgid ""
+"This command creates a reference resource property with the display name Country.\n"
+"It uses an existing claim type named Country for its suggested values.\n"
+"This enables the resource property to be always valid for comparisons with the referenced claim type in a central access rule."
+msgstr ""
+"此命令创建了一个参考资源属性，其显示名称为“Country”（国家）。它使用了一个名为“Country”的现有声明类型作为该属性的建议值。这样一来，在中央访问规则中，该资源属性就可以始终与相应的声明类型进行有效比较了。"
+
+msgid "### Example 4: Create a multivalued text resource property"
+msgstr "### 示例 4：创建一个多值文本资源属性"
+
+msgid ""
+"This command creates a resource property with the display name Authors, and "
+"sets its ID to Authors_60DB20331638."
+msgstr "该命令创建了一个资源属性，其显示名称为“Authors”，并将其ID设置为“Authors_60DB20331638”。"
+
+msgid ""
+"The ID should only be set manually in a multi-forest environment where the same resource property must work across forests.\n"
+"By default, **New-ADResourceProperty** generates the ID automatically.\n"
+"For resource properties to be considered identical across forests, their ID must be the same."
+msgstr ""
+"在多森林环境中，只有当相同的资源属性需要在所有森林中都正常工作时，才应手动设置该资源的ID。默认情况下，`New-"
+"ADResourceProperty`会自动生成ID。为了让资源属性在所有森林中被视为相同，它们的ID必须是相同的。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the resource types to which this resource property is applied."
+msgstr "指定了该资源属性所适用的资源类型。"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值为："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的认证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Active Directory PowerShell "
+"提供程序驱动器运行的。如果该 cmdlet 是从此类提供程序驱动器运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01\\User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为该参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 `PSCredential` 对象。之后，你可以将 "
+"`Credential` 参数设置为这个 `PSCredential` 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果执行该任务的代理账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies a description of the object.\n"
+"This parameter sets the value of the **Description** property for the object.\n"
+"The LDAP Display Name (**ldapDisplayName**) for this property is description."
+msgstr ""
+"指定对象的描述信息。该参数用于设置对象의 **Description** 属性的值。此属性的 LDAP "
+"显示名称（**ldapDisplayName**）即为 “description”。"
+
+msgid ""
+"Specifies the display name of the resource property.\n"
+"The display name of the resource property must be unique."
+msgstr "指定资源属性的显示名称。资源属性的显示名称必须是唯一的。"
+
+msgid ""
+"The display name of a resource property can be used as an identity in other Active Directory cmdlets.\n"
+"For example, if the display name of a resource property is Country, then you can type `Get-ADResourceProperty -Identity \"Country\"` to get the resource property."
+msgstr ""
+"资源属性的显示名称可以在其他 Active Directory cmdlet 中用作标识。例如，如果某个资源属性的显示名称是 "
+"“Country”，那么你可以输入 `Get-ADResourceProperty -Identity \"Country\"` 来获取该资源属性。"
+
+msgid "Indicates whether the resource property is enabled."
+msgstr "表示资源属性是否已启用。"
+
+msgid ""
+"Specifies the resource property ID.\n"
+"This is an optional parameter.\n"
+"By default, New-ADResourceProperty generates the ID automatically."
+msgstr "指定资源属性的ID。这是一个可选参数。默认情况下，New-ADResourceProperty会自动生成该ID。"
+
+msgid ""
+"The ID should only be set manually in a multi-forest environment where the same resource properties need to work across forests.\n"
+"For resource properties to be considered identical across forests, their ID must be the same."
+msgstr ""
+"在多森林环境中，只有当需要让相同的资源属性在各个森林中都能正常使用时，才应手动设置资源的ID。为了使这些资源属性在各个森林中被视为相同，它们的ID必须是一致的。"
+
+msgid "To specify the ID, the ID string must conform to the following format:"
+msgstr "要指定ID，该ID字符串必须符合以下格式："
+
+msgid ""
+"Specifies an instance of a resource property object to use as a template for"
+" a new resource property object."
+msgstr "指定一个资源属性对象的实例，用作新资源属性对象的模板。"
+
+msgid ""
+"You can use an instance of an existing resource property object as a "
+"template or you can construct a new resource property object by using the "
+"Windows PowerShell command line or by using a script."
+msgstr "你可以使用现有资源属性对象的实例作为模板，或者通过使用 Windows PowerShell 命令行或脚本来创建一个新的资源属性对象。"
+
+msgid ""
+"Method 1: Use an existing resource property object as a template for a new object.\n"
+"To retrieve an instance of an existing resource property object, use a cmdlet such as **Get-ADResourceProperty**.\n"
+"Then provide this object to the *Instance* parameter of the **New-ADResourceProperty** cmdlet to create a new resource property object.\n"
+"You can override property values of the new object by setting the appropriate parameters."
+msgstr ""
+"方法 1：使用现有的资源属性对象作为新对象的模板。要获取现有资源属性对象的实例，可以使用诸如 **Get-ADResourceProperty** "
+"这样的 cmdlet。然后将该对象传递给 **New-ADResourceProperty** cmdlet 的 *Instance* "
+"参数，以创建一个新的资源属性对象。您可以通过设置相应的参数来覆盖新对象的属性值。"
+
+msgid ""
+"Method 2: Create a new **ADResourceProperty** and set the property values by using the Windows PowerShell command line interface.\n"
+"Then pass this object to the *Instance* parameter of the **New-ADResourceProperty** cmdlet to create the new resource property object."
+msgstr ""
+"方法 2：创建一个新的 **ADResourceProperty**，并通过使用 Windows PowerShell "
+"命令行界面来设置属性值。然后将这个对象传递给 **New-ADResourceProperty** cmdlet 的 *Instance* "
+"参数，以创建新的资源属性对象。"
+
+msgid ""
+"Note: Specified attributes are not validated, so attempting to set "
+"attributes that do not exist or cannot be set raises an error."
+msgstr "注意：指定的属性不会被进行验证；因此，如果尝试设置不存在或无法设置的属性，将会引发错误。"
+
+msgid ""
+"Indicates whether the resource property is secure.\n"
+"Only secure resource properties can be used for authorization decisions or used within central access rules.\n"
+"Unsecured resource properties cannot be used for these purposes."
+msgstr "表示资源属性是否安全。只有安全的资源属性才能用于授权决策或中央访问规则中；不安全的资源属性不能用于这些目的。"
+
+msgid ""
+"Specifies object attribute values for attributes that are not represented by cmdlet parameters.\n"
+"You can set one or more parameters at the same time with this parameter.\n"
+"If an attribute takes more than one value, you can assign multiple values.\n"
+"To identify an attribute, specify the LDAPDisplayName (**ldapDisplayName**) defined for it in the Active Directory schema."
+msgstr ""
+"用于为那些不是由cmdlet参数表示的属性指定对象属性值。你可以使用此参数同时设置一个或多个参数。如果某个属性支持多个值，你可以为其分配多个值。要识别某个属性，请指定在Active"
+" Directory架构中为其定义的LDAPDisplayName（**ldapDisplayName**）。"
+
+msgid "To specify a single value for an attribute:"
+msgstr "要为某个属性指定一个单一的值："
+
+msgid "`-OtherAttributes @{'AttributeLDAPDisplayName'=value}`"
+msgstr "`-其他属性 @{'AttributeLDAPDisplayName'=值}'`"
+
+msgid "To specify multiple values for an attribute"
+msgstr "要为某个属性指定多个值"
+
+msgid "`-OtherAttributes @{'AttributeLDAPDisplayName'=value1,value2,...}`"
+msgstr "`-其他属性 @{'AttributeLDAPDisplayName'=value1, value2, ...}`"
+
+msgid ""
+"You can specify values for more than one attribute by using semicolons to separate attributes.\n"
+"The following syntax shows how to set values for multiple attributes:"
+msgstr "你可以使用分号（;）来分隔多个属性，从而为这些属性指定值。以下语法展示了如何为多个属性设置值："
+
+msgid ""
+"`-OtherAttributes @{'Attribute1LDAPDisplayName'=value; "
+"'Attribute2LDAPDisplayName'=value1,value2;...}`"
+msgstr ""
+"`-其他属性 @{'Attribute1LDAPDisplayName'=值; "
+"'Attribute2LDAPDisplayName'=值1,值2;...}`"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies whether to prevent the object from being deleted.\n"
+"When this property is set to true, you cannot delete the corresponding object without changing the value of the property.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定是否阻止对象被删除。当此属性设置为 `true` 时，如果不更改该属性的值，则无法删除相应的对象。此参数的可接受值为："
+
+msgid ""
+"Specifies the value type for a resource property.\n"
+"When a resource property is passed to a resource manager (for example, File Server), the resource manager leverages the resource property value type to determine how to handle the resource property."
+msgstr "指定资源属性的值类型。当资源属性被传递给资源管理器（例如文件服务器）时，资源管理器会利用该资源属性的值类型来确定如何处理该属性。"
+
+msgid ""
+"You can use the Get-ADResourcePropertyValueType cmdlet to get the list of "
+"resource property value types."
+msgstr "你可以使用 `Get-ADResourceProperty ValueType` cmdlet 来获取资源属性值类型的列表。"
+
+msgid ""
+"Below is a list of the built-in resource property value types available in "
+"Active Directory:"
+msgstr "以下是Active Directory中可用的内置资源属性值类型列表："
+
+msgid ""
+"Specifies the AD DS instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following: AD LDS, AD DS, or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 AD DS 实例，为此需提供相应的域名或目录服务器的其中一个值。该服务可以是以下类型中的任意一种：AD LDS、AD DS 或 "
+"Active Directory 快照实例。"
+
+msgid "Specify the AD DS instance in one of the following ways:"
+msgstr "请通过以下方式之一指定 AD DS 实例："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，确定顺序按照列出的顺序进行："
+
+msgid ""
+"Specifies a reference resource property.\n"
+"Reference resource properties do not provide their own suggested values, but rather use the suggested values from the claim type object specified in this parameter.\n"
+"This enables the resource property to always remain valid for use in comparisons to its referred claim type within a central access rule."
+msgstr ""
+"用于指定引用资源属性。引用资源属性本身不提供推荐的默认值，而是使用该参数中指定的声明类型对象所提供的推荐值。这样一来，该资源属性在中央访问规则中与所引用的声明类型进行比较时，始终能够保持有效性。"
+
+msgid ""
+"Specifies one or more suggested values for the resource property.\n"
+"An application may choose to present this list of suggested values for the user to choose from.\n"
+"When **RestrictValues** is set to $True, the application should restrict the user to pick values from this list only."
+msgstr ""
+"为资源属性指定一个或多个建议值。应用程序可以选择向用户展示这份建议值列表供其选择。当 **RestrictValues** 被设置为 `$True` "
+"时，应用程序应限制用户只能从该列表中选取值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADResourceProperty"
+msgstr "### 无值或 Microsoft.ActiveDirectory.Management.ADResourceProperty"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADResourceProperty"
+msgstr "### 无或 Microsoft.ActiveDirectory.Management.ADResourceProperty"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADResourceProperty](./Get-ADResourceProperty.md)"
+msgstr "[Get-ADResourceProperty](./Get-ADResourceProperty.md)"
+
+msgid "[Remove-ADResourceProperty](./Remove-ADResourceProperty.md)"
+msgstr "[Remove-ADResourceProperty](./Remove-ADResourceProperty.md)"
+
+msgid "[Set-ADResourceProperty](./Set-ADResourceProperty.md)"
+msgstr "[Set-ADResourceProperty](./Set-ADResourceProperty.md)"

@@ -1,0 +1,290 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:35:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsRelyingPartyTrust"
+msgstr "# 设置 AdfsRelyingPartyTrust"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the properties of a relying party trust."
+msgstr "设置依赖方信任（relying party trust）的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AdfsRelyingPartyTrust** cmdlet configures the trust relationship "
+"with a specified relying party object."
+msgstr "`Set-AdfsRelyingPartyTrust` cmdlet 用于配置与指定的依赖方对象之间的信任关系。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the name and identifier for a relying party trust"
+msgstr "### 示例 1：为依赖方信任（relying party trust）设置名称和标识符"
+
+msgid ""
+"This command sets the name and identifier for the specified relying party "
+"trust."
+msgstr "此命令为指定的依赖方信任（relying party trust）设置名称和标识符。"
+
+msgid "### Example 2: Set the target identifier for a relying party trust"
+msgstr "### 示例 2：为依赖方信任设置目标标识符"
+
+msgid ""
+"This command sets the target identifier for the specified relying party "
+"trust."
+msgstr "此命令为指定的依赖方信任关系设置目标标识符。"
+
+msgid "### Example 3: Assign a policy that uses parameters"
+msgstr "### 示例 3：分配一个使用参数的策略"
+
+msgid "This command assigns a policy that uses parameters."
+msgstr "此命令分配了一个使用参数的策略。"
+
+msgid ""
+"For more information about access control policy parameters, see [Active "
+"Directory Federation Services](https://technet.microsoft.com/windows-server-"
+"docs/identity/active-directory-federation-services) "
+"(https://technet.microsoft.com/windows-server-docs/identity/active-"
+"directory-federation-services) on TechNet."
+msgstr ""
+"有关访问控制策略参数的更多信息，请参阅 TechNet 上的 [Active Directory Federation "
+"Services](https://technet.microsoft.com/windows-server-docs/identity/active-"
+"directory-federation-services)。"
+
+msgid "### Example 4: Un-assign a policy template"
+msgstr "### 示例 4：取消分配策略模板"
+
+msgid "This command un-assigns a policy template."
+msgstr "此命令用于取消对某个策略模板的关联（即不再将该模板应用于任何对象）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of an access control policy."
+msgstr "指定访问控制策略的名称。"
+
+msgid ""
+"Specifies the additional authorization rules to require additional authentication based on user, device and location attributes after the completion of the first step of authentication.\n"
+"Note: These rules must only be configured after there is at least one authentication provider enabled for additional authentication."
+msgstr ""
+"指定额外的授权规则，以便在完成第一步身份验证后，根据用户、设备和位置属性要求进行进一步的身份验证。注意：这些规则必须仅在至少启用了一个用于额外身份验证的身份提供者之后才能进行配置。"
+
+msgid ""
+"Specifies a file that contains the additional authentication rules to "
+"require additional authentication when a user is attempting to access this "
+"relying party."
+msgstr "指定一个文件，该文件包含额外的身份验证规则。当用户尝试访问此依赖方时，这些规则将要求进行额外的身份验证。"
+
+msgid ""
+"Specifies an array of alternate return addresses for the application.\n"
+"This is typically used when the application wants to indicate to AD FS what the return URL should be on successful token generation.\n"
+"AD FS requires that all acceptable URLs are entered as trusted information by the administrator."
+msgstr ""
+"指定一组用于应用程序的备用返回地址。这通常在应用程序需要告知 AD FS 成功生成令牌后应使用的返回 URL 时使用。AD FS "
+"要求管理员将所有可接受的 URL 都作为受信任的信息输入。"
+
+msgid ""
+"Specifies allowed client types.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定允许的客户端类型。该参数的可接受值为："
+
+msgid "Indicates to always require authentication."
+msgstr "表示始终需要身份验证。"
+
+msgid ""
+"Indicates whether changes to the federation metadata by the *MetadataURL* parameter apply automatically to the configuration of the trust relationship.\n"
+"If this parameter has a value of $True, partner claims, certificates, and endpoints are updated automatically."
+msgstr ""
+"该参数用于指示：通过 `MetadataURL` 对联盟元数据进行修改后，这些更改是否会自动应用于信任关系的配置。如果该参数的值为 "
+"`$True`，则合作伙伴的主张、证书和终端会自动更新。"
+
+msgid ""
+"Note: When auto-update is enabled, fields that can be overwritten by "
+"metadata become read only."
+msgstr "注意：当启用自动更新功能时，那些可能被元数据覆盖的字段将变为只读状态。"
+
+msgid "Specifies an array of claims that this relying party accepts."
+msgstr "指定一个该依赖方所接受的声明（claims）数组。"
+
+msgid "Specifies an array of claims provider names."
+msgstr "指定一个包含声明提供者名称的数组。"
+
+msgid ""
+"Specifies the delegation authorization rules for issuing claims to this "
+"relying party."
+msgstr "规定了向该依赖方发放声明（claims）时的授权规则。"
+
+msgid ""
+"Specifies a file that contains the delegation authorization rules for "
+"issuing claims to this relying party."
+msgstr "指定一个文件，其中包含用于向该依赖方颁发声明的授权规则。"
+
+msgid ""
+"Indicates whether the JSON Web Token (JWT) format should be used to issue a token on a WS-Federation request.\n"
+"By default, SAML tokens are issued over WS-Federation."
+msgstr ""
+"该属性用于指示是否应使用 JSON Web Token（JWT）格式来在 WS-Federation 请求中生成令牌。默认情况下，SAML 令牌是通过 "
+"WS-Federation 发行的。"
+
+msgid ""
+"Indicates whether the claims that are sent to the relying party should be "
+"encrypted."
+msgstr "用于指示发送给依赖方的声明是否应该被加密。"
+
+msgid ""
+"Indicates whether the relying party requires that the **NameID** claim be "
+"encrypted."
+msgstr "表示依赖方是否要求对 **NameID** 主张进行加密。"
+
+msgid ""
+"Specifies the certificate to be used for encrypting claims that are issued to this relying party.\n"
+"Encrypting claims is optional."
+msgstr "指定用于加密发送给该依赖方的声明的证书。对声明进行加密是可选的。"
+
+msgid ""
+"Specifies the type of validation that occurs for the encryption certificate before it is used for encrypting claims to the relying party.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定在加密证书用于向依赖方发送声明之前对其进行验证的类型。此参数的可接受值包括："
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *AccessControlPolicyName*, "
+"*AdditionalAuthenticationRules*, *DelegationAuthorizationRules*, "
+"*ImpersonationAuthorizationRules*, *IssuanceAuthorizationRules*, "
+"*IssuanceTransformRules*, *TargetIdentifier*, and *TargetName* parameters."
+msgstr ""
+"字符串对象会被传递给 "
+"*AccessControlPolicyName*、*AdditionalAuthenticationRules*、*DelegationAuthorizationRules*、*ImpersonationAuthorizationRules*、*IssuanceAuthorizationRules*、*IssuanceTransformRules*、*TargetIdentifier*"
+" 和 *TargetName* 这些参数。"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "Objects are received by the *AccessControlPolicyParameters* parameter."
+msgstr "对象是通过 *AccessControlPolicyParameters* 参数接收的。"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.ManagementAutomation.SwitchParameter"
+
+msgid ""
+"SwitchParameter objects are received by the *AlwaysRequireAuthentication* "
+"and *RequestMFAFromClaimsProviders* parameters."
+msgstr ""
+"`SwitchParameter` 对象会被 `AlwaysRequireAuthentication` 和 "
+"`RequestMFAFromClaimsProviders` 参数接收。"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimDescription"
+msgstr "### Microsoft.IdentityServer.PowerShell.Resources.ClaimDescription"
+
+msgid ""
+"ClaimDescription Objects are received by the *ClaimAccepted* parameter."
+msgstr "`ClaimDescription` 对象是通过 `ClaimAccepted` 参数接收到的。"
+
+msgid "### System.Security.Cryptography.X509Certificates.X509Certificate2"
+msgstr "### System.Security Cryptography.X509Certificates.X509Certificate2"
+
+msgid ""
+"X509Certificate2 objects are received by the *RequestSigningCertificate* "
+"parameter."
+msgstr "`X509Certificate2` 对象是通过 `RequestSigningCertificate` 参数接收到的。"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.SamlEndpoint"
+msgstr "### Microsoft IdentityServer.PowerShell.Resources.SamlEndpoint"
+
+msgid "SamlEndpoint objects are received by the *SamlEndpoint* parameter."
+msgstr "`SamlEndpoint` 对象是通过 `SamlEndpoint` 参数接收到的。"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.RelyingPartyTrust"
+msgstr "### Microsoft.IdentityServer POWERShell.Resources.RelyingPartyTrust"
+
+msgid ""
+"RelyingPartyTrust objects are received by the *TargetRelyingParty* "
+"parameter."
+msgstr "`RelyingPartyTrust` 对象是通过 `TargetRelyingParty` 参数接收的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.RelyingPartyTrust"
+msgstr "### Microsoft.IdentityServer.PowerShellResources.RelyingPartyTrust"
+
+msgid ""
+"Returns the updated RelyingPartyTrust object when the *PassThru* parameter "
+"is specified. By default, this cmdlet does not generate any output."
+msgstr "当指定*PassThru*参数时，该命令会返回更新后的RelyingPartyTrust对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsRelyingPartyTrust](./Add-AdfsRelyingPartyTrust.md)"
+msgstr "[Add-AdfsRelyingPartyTrust](./Add-AdfsRelyingPartyTrust.md)"
+
+msgid "[Disable-AdfsRelyingPartyTrust](./Disable-AdfsRelyingPartyTrust.md)"
+msgstr "[禁用依赖 ADFS 的信任关系](./ Disable-AdfsRelyingPartyTrust.md)"
+
+msgid "[Enable-AdfsRelyingPartyTrust](./Enable-AdfsRelyingPartyTrust.md)"
+msgstr "[Enable-AdfsRelyingPartyTrust](./Enable-AdfsRelyingPartyTrust.md)"
+
+msgid "[Get-AdfsRelyingPartyTrust](./Get-AdfsRelyingPartyTrust.md)"
+msgstr "[Get-AdfsRelyingPartyTrust](./Get-AdfsRelyingPartyTrust.md)"
+
+msgid "[Remove-AdfsRelyingPartyTrust](./Remove-AdfsRelyingPartyTrust.md)"
+msgstr "[Remove-AdfsRelyingPartyTrust](./Remove-AdfsRelyingPartyTrust.md)"
+
+msgid "[Update-AdfsRelyingPartyTrust](./Update-AdfsRelyingPartyTrust.md)"
+msgstr "[更新-AdfsRelyingPartyTrust](./Update-AdfsRelyingPartyTrust.md)"

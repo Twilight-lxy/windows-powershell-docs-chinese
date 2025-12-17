@@ -1,0 +1,204 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 12:36:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ADPrincipalGroupMembership"
+msgstr "# 添加 ADPrincipalGroup 成员资格"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a member to one or more Active Directory groups."
+msgstr "将一个成员添加到一个或多个Active Directory组中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-ADPrincipalGroupMembership` cmdlet adds a user, group, service account, or computer as a\n"
+"new member to one or more Active Directory groups."
+msgstr ""
+"`Add-ADPrincipalGroup Membership` cmdlet 可以将用户、组、服务账户或计算机添加为一个或多个 Active "
+"Directory 组的新成员。"
+
+msgid ""
+"The **Identity** parameter specifies the new user, computer, or group to add. You can identify the\n"
+"user, group, or computer by its distinguished name, GUID, security identifier (SID), or Security\n"
+"Account Manager (SAM) account name. You can also specify a user, group, or computer object variable,\n"
+"such as `$<localGroupObject>`, or pass an object through the pipeline to the **Identity** parameter.\n"
+"For example, you can use the `Get-ADGroup` cmdlet to get a group object and then pass the object\n"
+"through the pipeline to the `Add-ADPrincipalGroupMembership` cmdlet. Similarly, you can use\n"
+"`Get-ADUser` or `Get-ADComputer` to get user and computer objects to pass through the pipeline."
+msgstr ""
+"**Identity** 参数用于指定要添加的新用户、计算机或组。您可以通过该对象的可识别名称（distinguished "
+"name）、GUID、安全标识符（Security Identifier, SID）或安全账户管理器（Security Account Manager,"
+" SAM）帐户名称来识别该用户、组或计算机。您还可以指定一个用户/组/计算机对象变量（例如 "
+"`$<localGroupObject>`），或者通过管道将某个对象传递给 **Identity** 参数。例如，您可以使用 `Get-ADGroup`"
+" cmdlet 获取一个组对象，然后将该对象通过管道传递给 `Add-ADPrincipalGroupMembership` "
+"cmdlet；同样地，您也可以使用 `Get-ADUser` 或 `Get-ADComputer` 来获取用户或计算机对象，并将其通过管道进行传递。"
+
+msgid ""
+"This cmdlet collects all of the user, computer and group objects from the pipeline, and then adds\n"
+"these objects to the specified group by using one Active Directory operation."
+msgstr "这个cmdlet会从管道中收集所有的用户、计算机和组对象，然后通过一次Active Directory操作将这些对象添加到指定的组中。"
+
+msgid ""
+"The **MemberOf** parameter specifies the groups that receive the new member. You can identify a\n"
+"group by its distinguished name, GUID, SID, or SAM account name. You can also specify group object\n"
+"variable, such as `$<localGroupObject>`. To specify more than one group, use a comma-separated list.\n"
+"You cannot pass group objects through the pipeline to the **MemberOf** parameter. To add to a group\n"
+"by passing the group through the pipeline, use the **Add-ADGroupMember** cmdlet."
+msgstr ""
+"`MemberOf` 参数用于指定接收新成员的组。您可以通过组的唯一名称、GUID、SID 或 SAM 账户名来识别该组，也可以使用组对象变量（例如 "
+"`$<localGroupObject>`）。如果要指定多个组，请使用逗号分隔的列表。需要注意的是，不能将组对象直接通过管道传递给 `MemberOf`"
+" 参数；如果需要通过管道将某个组添加到其他组中，应使用 `Add-ADGroupMember` cmdlet 来完成这一操作。"
+
+msgid ""
+"For Active Directory Lightweight Directory Services (AD LDS) environments, the **Partition**\n"
+"parameter must be specified except in the following two conditions:"
+msgstr ""
+"对于 Active Directory 轻量级目录服务（AD LDS）环境，除非满足以下两种情况，否则必须指定 **Partition** 参数："
+
+msgid ""
+"To specify a default naming context for an AD LDS environment, set the **msDS-defaultNamingContext**\n"
+"property of the Active Directory directory service agent object (nTDSDSA) for the AD LDS instance."
+msgstr ""
+"要为 AD LDS 环境指定一个默认的命名上下文，请设置该 AD LDS 实例的 Active Directory 目录服务代理对象（nTDSDSA）的"
+" **msDS-defaultNamingContext** 属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a member to a group"
+msgstr "#### 示例 1：向组中添加成员"
+
+msgid ""
+"This command adds the user with SAM account name `SQLAdmin1` to the group "
+"`DlgtdAdminsPSOGroup`."
+msgstr "该命令将用户名为 `SQLAdmin1` 的用户添加到名为 `DlgtdAdminsPSOGroup` 的组中。"
+
+msgid "### Example 2: Add filtered users to a group"
+msgstr "### 示例 2：将过滤后的用户添加到某个组中"
+
+msgid ""
+"This command gets all users with `SvcAccount` in their name and adds them to the group\n"
+"`SvcAccPSOGroup`."
+msgstr "这个命令会找到所有名字中包含“SvcAccount”的用户，并将他们添加到名为“SvcAccPSOGroup”的组中。"
+
+msgid "### Example 3: Add filtered users to a distinguished name group"
+msgstr "### 示例 3：将筛选后的用户添加到某个特殊名称组（distinguished name group）中"
+
+msgid ""
+"This command adds all employees in `Branch1` in the AD LDS instance `localhost:60000` whose title is\n"
+"`Account Lead` to the group with the distinguished name `CN=AccountLeads,OU=AccountDeptOU,DC=AppNC`."
+msgstr ""
+"此命令将所有位于 `Branch1` 中、在 AD LDS 实例 `localhost:60000` 上工作且职位为 “Account Lead” "
+"的员工添加到名为 `CN=AccountLeads,OU=AccountDeptOU,DC=AppNC` 的组中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use. The acceptable values for this "
+"parameter are:"
+msgstr "指定要使用的身份验证方法。此参数的可接受值包括："
+
+msgid "The default authentication method is `Negotiate`."
+msgstr "默认的认证方法是 `Negotiate`（协商）。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the `Basic` "
+"authentication method."
+msgstr "对于“基本”（Basic）认证方法来说，需要使用安全套接字层（Secure Sockets Layer，简称SSL）进行连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task. The default credentials are the\n"
+"credentials of the currently logged on user unless the cmdlet is run from an Active Directory module\n"
+"for Windows PowerShell provider drive. If the cmdlet is run from such a provider drive, the account\n"
+"associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果是从此类驱动器中运行 cmdlet，则默认使用与该驱动器关联的帐户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as `User1` or `Domain01\\User01` or you can\n"
+"specify a **PSCredential** object. If you specify a user name for this parameter, the cmdlet prompts\n"
+"for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 `User1` 或 `Domain01/User01`），或者可以指定一个 **PSCredential** "
+"对象。如果您为该参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the `Get-Credential`\n"
+"cmdlet. You can then set the **Credential** parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，可以将这个 "
+"**Credential** 对象设置为相应的参数。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform the task, Active\n"
+"Directory module for Windows PowerShell returns a terminating error."
+msgstr ""
+"如果执行该任务的账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory principal object by providing one of the following property values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute. The acceptable values for\n"
+"this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory 主体对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADPrincipal"
+msgstr "### 无值或 `Microsoft.ActiveDirectory.Management.ADPrincipal`"
+
+msgid ""
+"Returns a principal object that represents the modified user, computer or group object when the\n"
+"**PassThru** parameter is specified. By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定 **PassThru** 参数时，该命令会返回一个表示已修改的用户、计算机或组对象的主体对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ADGroupMember](./Add-ADGroupMember.md)"
+msgstr "[Add-ADGroupMember](./Add-ADGroupMember.md)"
+
+msgid "[Get-ADComputer](./Get-ADComputer.md)"
+msgstr "[Get-ADComputer](./Get-ADComputer.md)"
+
+msgid "[Get-ADGroup](./Get-ADGroup.md)"
+msgstr "[Get-ADGroup](./Get-ADGroup.md)"
+
+msgid "[Get-ADGroupMember](./Get-ADGroupMember.md)"
+msgstr "[Get-ADGroupMember](./Get-ADGroupMember.md)"
+
+msgid "[Get-ADPrincipalGroupMembership](./Get-ADPrincipalGroupMembership.md)"
+msgstr "[Get-ADPrincipalGroupMembership](./Get-ADPrincipalGroupMembership.md)"
+
+msgid "[Get-ADUser](./Get-ADUser.md)"
+msgstr "[Get-ADUser](./Get-ADUser.md)"
+
+msgid "[Remove-ADGroupMember](./Remove-ADGroupMember.md)"
+msgstr "[Remove-ADGroupMember](./Remove-ADGroupMember.md)"
+
+msgid ""
+"[Remove-ADPrincipalGroupMembership](./Remove-ADPrincipalGroupMembership.md)"
+msgstr ""
+"[Remove-ADPrincipalGroupMembership](./Remove-ADPrincipalGroupMembership.md)"

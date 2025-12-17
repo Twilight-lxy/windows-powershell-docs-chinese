@@ -1,0 +1,167 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:42:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AdfsRelyingPartyTrustsGroup"
+msgstr "# 添加 AdfsRelyingPartyTrustsGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a relying party trusts group."
+msgstr "创建一个依赖方信任组（relying party trusts group）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### MetadataFile"
+msgstr "### MetadataFile"
+
+msgid "### MetadataUrl"
+msgstr "### MetadataUrl"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-AdfsRelyingPartyTrustsGroup** cmdlet creates a relying party "
+"trusts group based on metadata that contains multiple entities."
+msgstr "`Add-AdfsRelyingPartyTrustsGroup` cmdlet 根据包含多个实体的元数据创建一个依赖方信任组。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of an access control policy."
+msgstr "指定访问控制策略的名称。"
+
+msgid "Specifies the parameters of an access control policy."
+msgstr "指定访问控制策略的参数。"
+
+msgid ""
+"Specifies additional authentication rules for the relying party trusts "
+"group."
+msgstr "为依赖方信任组指定额外的身份验证规则。"
+
+msgid ""
+"Specifies a file that contains additional authentication rules for the "
+"relying party trusts group."
+msgstr "指定一个文件，该文件包含用于依赖方信任组的额外身份验证规则。"
+
+msgid "Specifies whether automatic updates are enabled."
+msgstr "指定是否启用自动更新功能。"
+
+msgid ""
+"Specifies delegation authorization rules for the relying party trusts group."
+msgstr "为依赖方信任组指定授权规则（即关于如何进行委托操作的规则）。"
+
+msgid ""
+"Specifies a file that contains delegation authorization rules for the "
+"relying party trusts group."
+msgstr "指定一个文件，该文件包含用于依赖方信任组的委托授权规则。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不需要用户确认。"
+
+msgid ""
+"Specifies impersonation authorization rules for the relying party trusts "
+"group."
+msgstr "为依赖方信任组指定模拟（impersonation）授权规则。"
+
+msgid ""
+"Specifies a file that contains impersonation authorization rules for the "
+"relying party trusts group."
+msgstr "指定一个文件，该文件包含用于依赖方信任组的模拟授权规则。"
+
+msgid ""
+"Specifies issuance authorization rules for the relying party trusts group."
+msgstr "为依赖方信任组指定发行授权规则。"
+
+msgid ""
+"Specifies a file that contains issuance authorization rules for the relying "
+"party trusts group."
+msgstr "指定一个文件，该文件包含用于依赖方信任组的发行授权规则。"
+
+msgid "Specifies issuance transform rules for the relying party trusts group."
+msgstr "为依赖方信任组指定发行转换规则。"
+
+msgid ""
+"Specifies a file that contains issuance transform rules for the relying "
+"party trusts group."
+msgstr "指定一个文件，该文件包含用于依赖方信任组的发行转换规则。"
+
+msgid ""
+"Specifies a file that contains federation metadata for the relying party "
+"trusts group."
+msgstr ""
+"指定一个文件，该文件包含依赖方信任组（relying party trusts group）的联合身份验证（federation "
+"authentication）元数据。"
+
+msgid ""
+"Specifies the URL of federation metadata for the relying party trusts group."
+msgstr "指定用于依赖方信任组的联合元数据（federation metadata）的URL。"
+
+msgid "Indicates whether monitoring is enabled."
+msgstr "表示是否启用了监控功能。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不生成任何输出。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-AdfsRelyingPartyTrustsGroup](./Get-AdfsRelyingPartyTrustsGroup.md)"
+msgstr ""
+"[Get-AdfsRelyingPartyTrustsGroup](./Get-AdfsRelyingPartyTrustsGroup.md)"
+
+msgid ""
+"[Remove-AdfsRelyingPartyTrustsGroup](./Remove-"
+"AdfsRelyingPartyTrustsGroup.md)"
+msgstr ""
+"[Remove-AdfsRelyingPartyTrustsGroup](./Remove-"
+"AdfsRelyingPartyTrustsGroup.md)"

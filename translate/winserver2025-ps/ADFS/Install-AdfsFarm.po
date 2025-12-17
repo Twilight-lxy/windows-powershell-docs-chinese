@@ -1,0 +1,247 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:08:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-AdfsFarm"
+msgstr "# 安装 AdfsFarm"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates the first node of a new federation server farm."
+msgstr "创建一个新的联邦服务器群的第一个节点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ADFSFarmCreateLocalDatabase (Default)"
+msgstr "### ADFSFarmCreateLocalDatabase（默认值）"
+
+msgid "### ADFSFarmCreateLocalDatabaseDisableAutoCertRollover"
+msgstr "### ADFSFarmCreateLocalDatabase DisableAutoCertRollover"
+
+msgid "### ADFSFarmCreateSharedDatabaseDisableAutoCertRollover"
+msgstr "### ADFSFarmCreateSharedDatabaseDisableAutoCertRollover"
+
+msgid "### AdfsFarmCreateLocalDatabaseDisableAutoCertRolloverGmsa"
+msgstr "### AdfsFarmCreateLocalDatabaseDisableAutoCertRolloverGmsa"
+
+msgid "### AdfsFarmCreateSharedDatabaseDisableAutoCertRolloverGmsa"
+msgstr "### AdfsFarmCreateSharedDatabaseDisableAutoCertRolloverGmsa"
+
+msgid "### ADFSFarmCreateSharedDatabase"
+msgstr "### ADFSFarmCreateSharedDatabase"
+
+msgid "### AdfsFarmCreateLocalDatabaseGmsa"
+msgstr "### AdfsFarmCreateLocalDatabaseGmsa"
+
+msgid "### AdfsFarmCreateSharedDatabaseGmsa"
+msgstr "### AdfsFarmCreateSharedDatabaseGmsa"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Install-AdfsFarm** cmdlet creates the first node of a new federation "
+"server farm."
+msgstr "`Install-AdfsFarm` cmdlet 用于创建新的联合服务器群中的第一个节点。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Create the first node in a federation server farm using WID "
+"on the local server"
+msgstr "### 示例 1：在本地服务器上使用 WID 创建联邦服务器群中的第一个节点"
+
+msgid ""
+"Creates the first node in a federation server farm that uses the Windows "
+"Internal Database (WID) on the local server computer."
+msgstr "在联邦服务器群中创建第一个节点，该节点使用本地服务器计算机上的 Windows 内部数据库（WID）。"
+
+msgid ""
+"In this example, a certificate thumbprint value is supplied for the *CertificateThumbprint* parameter.\n"
+"This certificate will be used as the SSL certificate and the service communications certificate.\n"
+"Automatically generated, self-signed certificates will be used for the token signing and token decryption certificates."
+msgstr ""
+"在这个例子中，为 *CertificateThumbprint* 参数提供了一个证书指纹值。该证书将用作 SSL "
+"证书以及服务通信证书。用于令牌签名和令牌解密的证书将是自动生成的、带有自我签名的证书。"
+
+msgid ""
+"To specify certificates for token signing and token decryption, specify "
+"thumbprint values for the *SigningCertificateThumbprint* and "
+"*DecryptionCertificateThumbprint* parameters."
+msgstr ""
+"要指定用于令牌签名和令牌解密的证书，请为 *SigningCertificateThumbprint* 和 "
+"*DecryptionCertificateThumbprint* 参数提供相应的指纹值。"
+
+msgid ""
+"### Example 2: Create the first node in a federation server farm using a "
+"group Managed Services Account"
+msgstr "### 示例 2：使用组托管服务账户在联合服务器群中创建第一个节点"
+
+msgid ""
+"This example creates the first node in a federation server farm that uses a group Managed Service Account as the service account.\n"
+"In this example, a certificate thumbprint value is supplied for the *CertificateThumbprint* parameter.\n"
+"This certificate will be used as the SSL certificate and the service communications certificate.\n"
+"Automatically generated, self-signed certificates will be used for the token signing and token decryption certificates.\n"
+"To specify certificates for token signing and token decryption, specify thumbprint values for the *SigningCertificateThumbprint* and *DecryptionCertificateThumbprint* parameters."
+msgstr ""
+"这个示例创建了一个联邦服务器群组中的第一个节点，该群组使用一个由组管理的服务账户（Group Managed Service "
+"Account）作为服务账户。在此示例中，为 *CertificateThumbprint* 参数提供了一个证书指纹值。该证书将用作 SSL "
+"证书以及服务通信证书。系统会自动生成自签名证书，这些证书将用于令牌签名和令牌解密过程。如果要指定用于令牌签名和令牌解密的证书，请分别为 "
+"*SigningCertificateThumbprint* 和 *DecryptionCertificateThumbprint* "
+"参数提供相应的证书指纹值。"
+
+msgid ""
+"### Example 3: Create the first node in a federation server farm that uses "
+"SQL Server on a remote computer"
+msgstr "### 示例 3：在联邦服务器集群中创建第一个节点，该集群使用远程计算机上的 SQL Server"
+
+msgid ""
+"Creates the first node in a federation server farm that uses a Microsoft SQL"
+" Server database on a remote computer named SQLHost."
+msgstr "在联邦服务器群中创建第一个节点，该节点使用位于名为 SQLHost 的远程计算机上的 Microsoft SQL Server 数据库。"
+
+msgid ""
+"In this example, a certificate thumbprint value is supplied for the *CertificateThumbprint* parameter.\n"
+"This certificate will be used as the SSL certificate and the service communications certificate.\n"
+"Automatically generated, self-signed certificates will be used for the token signing and token decryption certificates."
+msgstr ""
+"在这个例子中，为 *CertificateThumbprint* 参数提供了一个证书指纹值。该证书将用作 SSL "
+"证书以及服务通信证书。用于令牌签名和令牌解密的证书将是自动生成的、自我签名的证书。"
+
+msgid ""
+"To specify certificates for token signing and token decryption, specify "
+"thumbprint values for the *SigningCertificateThumbprint* and "
+"*DecryptionCertificateThumbprint* parameters."
+msgstr ""
+"要指定用于令牌签名和令牌解密的证书，请为 *SigningCertificateThumbprint* 和 "
+"*DecryptionCertificateThumbprint* 参数提供相应的指纹值。"
+
+msgid ""
+"### Example 4: Overwrite an AD FS configuration and create the first node in"
+" a federation server farm"
+msgstr "### 示例 4：覆盖 AD FS 配置，并在联合服务器群中创建第一个节点"
+
+msgid ""
+"Overwrites an existing AD FS configuration database and creates the first "
+"node in a federation server farm that uses a Microsoft SQL server database "
+"on a remote computer named SQLHost."
+msgstr ""
+"此操作会覆盖现有的 AD FS 配置数据库，并在名为 SQLHost 的远程计算机上创建第一个使用 Microsoft SQL Server "
+"数据库的联邦服务器群节点。"
+
+msgid ""
+"In this example, certificate thumbprint values are specified for the token "
+"signing certificate and for the token encryption certificate using the "
+"*SigningCertificateThumbprint* and *DecryptionCertificateThumbprint* "
+"parameters respectively."
+msgstr ""
+"在这个例子中，分别使用 *SigningCertificateThumbprint* 和 "
+"*DecryptionCertificateThumbprint* 参数为令牌签名证书和令牌加密证书指定了证书指纹值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the certificate thumbprint of a digital public key X.509 "
+"certificate of a user account that has permission to perform this action."
+msgstr "指定具有执行此操作权限的用户账户所使用的数字公钥（X.509证书）的证书指纹。"
+
+msgid "Specifies a **PSCredential** object."
+msgstr "指定一个 **PSCredential** 对象。"
+
+msgid ""
+"Specifies the value of the certificate thumbprint of the certificate that should be used for token decryption.\n"
+"If this parameter is used, the automatic certificate rollover feature will be disabled, and a token signing certificate must also be specified using the *SigningCertificateThumbprint* parameter.\n"
+"This value should match the thumbprint of a valid certificate in the Local Computer certificate store."
+msgstr ""
+"指定用于令牌解密的证书的指纹值。如果使用了此参数，则将禁用自动证书轮换功能，并且还必须使用 *SigningCertificateThumbprint*"
+" 参数来指定一个用于签名令牌的证书。该值应与本地计算机证书存储中有效证书的指纹相匹配。"
+
+msgid "Specifies a display name."
+msgstr "指定一个显示名称。"
+
+msgid "Specifies a Federation Service name."
+msgstr "指定一个联邦服务的名称。"
+
+msgid ""
+"Specifies the Group Managed Service Account under which the Active Directory"
+" Federation Services (AD FS) service runs."
+msgstr ""
+"指定用于运行 Active Directory Federation Services (AD FS) 服务的组托管服务账户（Group Managed"
+" Service Account）。"
+
+msgid ""
+"Overwrites an existing AD FS configuration database with a new database."
+msgstr "用一个新的数据库替换现有的 AD FS 配置数据库。"
+
+msgid ""
+"Specifies the Active Directory account under which the AD FS service runs."
+msgstr "指定用于运行 AD FS 服务的 Active Directory 账户。"
+
+msgid ""
+"Specifies the value of the certificate thumbprint of the certificate that should be used for token signing.\n"
+"If this parameter is used, the automatic certificate rollover feature will be disabled, and a token decryption certificate must also be specified using the *DecryptionCertificateThumbprint* parameter.\n"
+"This value should match the thumbprint of a valid certificate in the Local Computer certificate store."
+msgstr ""
+"指定用于令牌签名的证书的摘要（thumbprint）值。如果使用了此参数，自动证书更新功能将被禁用，并且还需要使用 "
+"*DecryptionCertificateThumbprint* "
+"参数来指定一个用于解密令牌的证书。该值应与“本地计算机”证书存储中有效证书的摘要相匹配。"
+
+msgid ""
+"Specifies the SQL Server database that will store the AD FS configuration settings.\n"
+"If not specified, the AD FS installer uses the Windows Internal Database to store configuration settings."
+msgstr ""
+"指定用于存储 AD FS 配置设置的 SQL Server 数据库。如果未指定，则 AD FS 安装程序会使用 Windows "
+"内部数据库来存储配置设置。"
+
+msgid "Specifies an SSL port."
+msgstr "指定一个 SSL 端口。"
+
+msgid "Specifies a TLS client port."
+msgstr "指定一个TLS客户端端口。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并未运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

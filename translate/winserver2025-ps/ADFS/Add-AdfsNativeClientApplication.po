@@ -1,0 +1,197 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:39:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AdfsNativeClientApplication"
+msgstr "# 添加 AdfsNativeClient 应用程序"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a native client application role to an application in AD FS."
+msgstr "在 AD FS 中为某个应用程序添加一个本机客户端应用程序角色。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ApplicationGroupIdentifier (Default)"
+msgstr "### ApplicationGroupIdentifier（默认值）"
+
+msgid "### ApplicationGroupObject"
+msgstr "### ApplicationGroupObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-AdfsNativeClientApplication** cmdlet adds a native client "
+"application role to an application in Active Directory Federation Services "
+"(AD FS)."
+msgstr ""
+"`Add-AdfsNativeClientApplication` cmdlet 用于在 Active Directory Federation "
+"Services (AD FS) 中为某个应用程序添加一个“原生客户端应用程序”角色。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an application group."
+msgstr "指定一个应用程序组。"
+
+msgid "Specifies the ID of an application group."
+msgstr "指定一个应用程序组的ID。"
+
+msgid "Specifies a description."
+msgstr "指定一个描述信息。"
+
+msgid "Specifies an identifier."
+msgstr "指定一个标识符。"
+
+msgid ""
+"Specifies the logout URI for the OAuth 2.0 client to register with the AD "
+"FS. When AD FS initiates a logout it redirects the client's user-agent to "
+"this URI by rendering this URI in an iframe. The value of this parameter "
+"must be an absolute URI, may include a query component, and must not include"
+" a fragment component. This parameter is available with the Windows Update "
+"KB4038801 installed."
+msgstr ""
+"指定 OAuth 2.0 客户端用于向 AD FS 注册的登出（logout）URI。当 AD FS 启动登出流程时，它会通过在一个 iframe "
+"中显示该 URI 来将客户端用户的用户代理（user-agent）重定向到此 URI。此参数的值必须是一个绝对 URI，可以包含查询参数（query "
+"component），但不允许包含片段参数（fragment component）。只有在安装了 Windows Update KB4038801 "
+"后，此参数才可用。"
+
+msgid "Specifies a name."
+msgstr "指定一个名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您当前正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies an array of redirection URIs for the OAuth 2.0 client to register with AD FS.\n"
+"The redirection URI is specified by the OAuth 2.0 client when it requests authorization to access a resource in ADFS."
+msgstr ""
+"用于指定一组重定向URI，供OAuth 2.0客户端注册到AD FS（Active Directory Federation "
+"Services）中。当OAuth 2.0客户端请求访问AD FS中的资源时，需要提供这些重定向URI以完成授权过程。"
+
+msgid ""
+"The redirection URI specified by the client must already be registered with AD FS.\n"
+"It must correspond to the client identifier for that OAuth 2.0 client.\n"
+"If the client ID and redirection URI correspond to a pre-registered OAuth 2.0 client and the resource owner authorized access by providing their credentials, ADFS delivers the authorization code or access token by redirecting the client's user-agent back to this redirection URI."
+msgstr ""
+"客户端指定的重定向URI必须已经注册在AD FS中，并且该URI必须与该OAuth "
+"2.0客户端的标识符相对应。如果客户端ID和重定向URI对应于一个预先注册的OAuth 2.0客户端，并且资源所有者通过提供自己的凭据授权访问，那么AD"
+" FS会通过将客户端用户的用户代理（user-agent）重定向到这个重定向URI来提供授权代码或访问令牌。"
+
+msgid ""
+"The value of this parameter must match exactly the redirection URI that is specified by the OAuth 2.0 client when requesting authorization.\n"
+"This includes trailing slashes '/', if they are required.\n"
+"We recommended the use of more secure schemes such as https in a redirection URI."
+msgstr ""
+"这个参数的值必须与OAuth "
+"2.0客户端在请求授权时指定的重定向URI完全匹配。这包括末尾的斜杠（/），如果需要的话。我们建议在重定向URI中使用更安全的协议，例如https。"
+
+msgid ""
+"For Windows Store applications that authenticate by using the Windows Web Authentication Broker, use the `ms-app://` scheme for a redirection URI.\n"
+"If you are developing a Windows Store application, obtain the redirection URI for your application by using the following code fragment:"
+msgstr ""
+"对于那些使用 Windows Web Authentication Broker 进行身份验证的 Windows 应用程序，应使用 `ms-"
+"app://` 方案作为重定向 URI。如果您正在开发一个 Windows 应用程序，请通过以下代码片段来获取该应用程序的重定向 URI："
+
+msgid ""
+"`Uri redirectURI = "
+"Windows.Security.Authentication.Web.WebAuthenticationBroker.GetCurrentApplicationCallbackUri();`"
+msgstr ""
+"`Uri redirectURI = Windows.Security "
+"Authentication.Web.WebAuthenticationBrokerGetCurrentApplicationCallbackUri();`"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.ApplicationGroup"
+msgstr "### MicrosoftIdentityServer.Management.Resources.ApplicationGroup"
+
+msgid ""
+"ApplicationGroup objects are received by the *ApplicationGroup* parameter."
+msgstr "`ApplicationGroup` 对象是通过 `ApplicationGroup` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *ApplicationGroupIdentifier*, "
+"*Description*, *Identifier*, *Name*, and *RedirectUri* parameters."
+msgstr ""
+"`String` 对象通过 `ApplicationGroupIdentifier`、`Description`、`Identifier`、`Name`"
+" 和 `RedirectUri` 参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.IdentityServer.Management.Resources.NativeClientApplication"
+msgstr ""
+"### MicrosoftIdentityServerManagement.Resources.NativeClientApplication"
+
+msgid ""
+"Returns the new NativeClientApplication object when the *PassThru* parameter"
+" is specified. By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定*PassThru*参数时，会返回一个新的NativeClientApplication对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-AdfsNativeClientApplication](./Get-AdfsNativeClientApplication.md)"
+msgstr ""
+"[Get-AdfsNativeClientApplication](./Get-AdfsNativeClientApplication.md)"
+
+msgid ""
+"[Remove-AdfsNativeClientApplication](./Remove-"
+"AdfsNativeClientApplication.md)"
+msgstr ""
+"[Remove-AdfsNativeClientApplication](./Remove-"
+"AdfsNativeClientApplication.md)"
+
+msgid ""
+"[Set-AdfsNativeClientApplication](./Set-AdfsNativeClientApplication.md)"
+msgstr ""
+"[Set-AdfsNativeClientApplication](./Set-AdfsNativeClientApplication.md)"

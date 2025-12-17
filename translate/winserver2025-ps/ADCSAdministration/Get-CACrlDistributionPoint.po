@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:15:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-CACrlDistributionPoint"
+msgstr "# 获取 CACRL 分发点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets all the locations set on the CDP extension of the CA properties."
+msgstr "获取CA属性中CDP扩展所设置的所有位置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-CACRLDistributionPoint** cmdlet gets all the locations set on the "
+"CRL distribution point (CDP) extension of the certification authority (CA) "
+"properties."
+msgstr ""
+"`Get-CACRLDistributionPoint` cmdlet 可以获取证书颁发机构（CA）属性中与 CRL "
+"分发点（CDP）扩展相关设置的所有信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get a CA certificate revocation list distribution point "
+"object"
+msgstr "### 示例 1：获取 CA 证书撤销列表分发点对象"
+
+msgid ""
+"This command gets a CA certificate revocation list (CRL) distribution point "
+"(CDP) type object, which contains the settings information and uniform "
+"resource indicator (URI) that correspond to the CDP for the current CA."
+msgstr "该命令获取一个CA证书吊销列表（CRL）分发点（CDP）类型对象，其中包含与当前CA对应的配置信息以及统一资源标识符（URI）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### none"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Administration.Commands.CA.CrlDistributionPoint"
+msgstr ""
+"### "
+"Microsoft.CertificateServices.AdministrationCommands.CA.CrlDistributionPoint"
+
+msgid ""
+"This cmdlet returns an array of **Microsoft.CertificateServices.Management.Cmdlets.CA.CrlDistributionPoint** objects.\n"
+"Each object contains URI and different Boolean properties as follows:"
+msgstr ""
+"此cmdlet返回一个由`Microsoft.CertificateServices.Management "
+"Cmdlets.CA.CrlDistributionPoint`对象组成的数组。每个对象包含一个URI以及以下不同的布尔属性："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-CACrlDistributionPoint](./Add-CACrlDistributionPoint.md)"
+msgstr "[Add-CACrlDistributionPoint](./Add-CACrlDistributionPoint.md)"
+
+msgid "[Remove-CACrlDistributionPoint](./Remove-CACrlDistributionPoint.md)"
+msgstr "[Remove-CACrlDistributionPoint](./Remove-CACrlDistributionPoint.md)"

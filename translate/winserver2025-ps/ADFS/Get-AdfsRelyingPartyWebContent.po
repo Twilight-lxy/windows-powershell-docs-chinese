@@ -1,0 +1,128 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:04:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsRelyingPartyWebContent"
+msgstr "# 获取 AdfsRelyingPartyWebContent 的内容"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets web content objects for relying parties."
+msgstr "为依赖方获取网页内容对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsRelyingPartyWebContent** cmdlet gets web content objects for relying parties.\n"
+"Specify a relying party by name.\n"
+"If you do not specify a name, the cmdlet gets all relying party web content objects.\n"
+"If you do not specify a locale, the cmdlet gets web content for all locales."
+msgstr ""
+"`Get-AdfsRelyingPartyWebContent` 这个 cmdlet "
+"可以获取依赖方的网页内容对象。你需要通过名称来指定具体的依赖方；如果未指定名称，该 cmdlet "
+"会获取所有依赖方的网页内容对象。另外，如果你没有指定区域设置（locale），它将获取适用于所有区域的网页内容。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all web content objects"
+msgstr "### 示例 1：获取所有网页内容对象"
+
+msgid ""
+"This command gets web content objects for all relying parties and locales."
+msgstr "这个命令会获取所有依赖方和地区的网页内容对象。"
+
+msgid "### Example 2: Get web content objects for a specified relying party"
+msgstr "### 示例 2：获取指定依赖方的网页内容对象"
+
+msgid ""
+"This command gets web content objects for the relying party named "
+"RelyingParty01 for all locales."
+msgstr "这个命令会为名为“RelyingParty01”的依赖方获取所有语言环境（locales）下的网页内容对象。"
+
+msgid ""
+"### Example 3: Get the web content object for a specified relying party and "
+"locale"
+msgstr "### 示例 3：获取指定依赖方和区域的网页内容对象"
+
+msgid ""
+"This command gets web content objects for the relying party named "
+"RelyingParty01 for the specified locale."
+msgstr "此命令会为名为“RelyingParty01”的依赖方获取指定语言环境（locale）下的网页内容对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a locale.\n"
+"The cmdlet gets relying party web content for the locale that you specify."
+msgstr "用于指定一个区域设置（locale）。该 cmdlet 会获取与你指定的区域设置相对应的相关方网站内容（web content）。"
+
+msgid "Specifies an array of names of relying parties."
+msgstr "指定一个依赖方名称数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.IdentityServer.Management.Resources.AdfsRelyingPartyWebContent"
+msgstr ""
+"### Microsoft.IdentityServerManagement.Resources.AdfsRelyingPartyWebContent"
+
+msgid ""
+"### "
+"Microsoft.IdentityServer.Management.Resources.AdfsRelyingPartyWebContent[]"
+msgstr ""
+"### MicrosoftIdentityServer.ManagementResources.AdfsRelyingPartyWebContent[]"
+
+msgid ""
+"This cmdlet generates a **System.IdentityServer.Management.Resources.AdfsRelyingPartyWebContent**\n"
+"object that represents web content of a relying party, or an array of such objects. The object\n"
+"includes the following properties:"
+msgstr ""
+"此cmdlet生成一个**System.IdentityServer.ManagementResources.AdfsRelyingPartyWebContent**对象，该对象表示依赖方的网页内容；或者生成这样一个对象的数组。该对象包含以下属性："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Remove-AdfsRelyingPartyWebContent](./Remove-AdfsRelyingPartyWebContent.md)"
+msgstr ""
+"[Remove-AdfsRelyingPartyWebContent](./Remove-AdfsRelyingPartyWebContent.md)"
+
+msgid "[Set-AdfsRelyingPartyWebContent](./Set-AdfsRelyingPartyWebContent.md)"
+msgstr "[Set-AdfsRelyingPartyWebContent](./Set-AdfsRelyingPartyWebContent.md)"

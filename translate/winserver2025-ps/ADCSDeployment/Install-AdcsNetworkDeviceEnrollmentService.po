@@ -1,0 +1,255 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:20:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-AdcsNetworkDeviceEnrollmentService"
+msgstr "# 安装 AdcsNetworkDeviceEnrollmentService"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Installs the NDES role service."
+msgstr "安装NDES角色服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DefaultParameterSet (Default)"
+msgstr "### DefaultParameterSet（默认值）"
+
+msgid "### ServiceAccountParameterSet"
+msgstr "### ServiceAccountParameterSet"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Install-AdcsNetworkDeviceEnrollmentService` cmdlet performs the configuration of the Network\n"
+"Device Enrollment Service (NDES) role service."
+msgstr ""
+"`Install-AdcsNetworkDeviceEnrollmentService` cmdlet 用于配置网络设备注册服务（Network "
+"Device Enrollment Service，简称 NDES）的角色服务。"
+
+msgid ""
+"To remove the NDES role service, use the `Uninstall-"
+"AdcsNetworkDeviceEnrollmentService` cmdlet."
+msgstr ""
+"要删除 NDES 角色服务，请使用 `Uninstall-AdcsNetworkDeviceEnrollmentService` cmdlet。"
+
+msgid ""
+"You can import the cmdlet by running the following commands from Windows "
+"PowerShell:"
+msgstr "你可以通过在 Windows PowerShell 中运行以下命令来导入该 cmdlet："
+
+msgid ""
+"Int is equivalent to Int32 in the [.NET "
+"Framework](https://msdn.microsoft.com/en-us/library/ya5y69ds.aspx)."
+msgstr ""
+"在[.NET Framework]中，`Int`等同于`Int32`（参见：https://msdn.microsoft.com/en-"
+"us/library/ya5y69ds.aspx）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Display the default NDES settings"
+msgstr "### 示例 1：显示默认的 NDES 设置"
+
+msgid ""
+"This command displays the default NDES settings that will be configured if "
+"it is installed."
+msgstr "这个命令会显示默认的NDES设置信息；如果NDES被安装的话，这些设置将会被应用到系统中。"
+
+msgid ""
+"### Example 2: Display the default NDES settings using a service account "
+"name and password"
+msgstr "### 示例 2：使用服务账户名称和密码显示默认的 NDES 设置"
+
+msgid ""
+"This command displays the default settings when NDES is using a service account without making any\n"
+"changes to the configuration. This command uses the service account named `CONTOSO\\svcNDES` that\n"
+"is a member of the local computer's `IIS_USRS` group."
+msgstr ""
+"此命令用于在 NDES 使用服务账户时显示默认设置，而不会对配置进行任何修改。该命令使用名为 `CONTOSO\\svcNDES` "
+"的服务账户，该账户是本地计算机 `IIS_USRS` 组的成员。"
+
+msgid "### Example 3: Install NDES using the application pool identity"
+msgstr "### 示例 3：使用应用程序池身份安装 NDES"
+
+msgid ""
+"This command installs NDES using the application pool identity to use a remote CA as specified by\n"
+"the CA computer `<CAComputerName>\\<CACommonName>`. Substitute the appropriate CA computer name and\n"
+"common name for `<CAComputerName>` and `<CACommonName>`."
+msgstr ""
+"此命令使用应用程序池的身份来安装 NDES，并利用由 CA 服务器 `<CAComputerName>\\<CACommonName>` 指定的远程 "
+"CA（证书颁发机构）进行身份验证。请将 `<CAComputerName>` 和 `<CACommonName>` 替换为实际的 CA "
+"服务器名称和通用名称。"
+
+msgid "### Example 4: Install NDES using a specific service account"
+msgstr "### 示例 4：使用特定的服务账户安装 NDES"
+
+msgid ""
+"This command installs the NDES using a service account named `CONTOSO\\svcNDES` that is a member of\n"
+"the local computer's `IIS_USRS` group. The command also specifies several non-default parameters."
+msgstr ""
+"该命令使用一个名为 `CONTOSO\\svcNDES` 的服务账户来安装 NDES，该账户是本地计算机上的 `IIS_USRS` "
+"组的成员。此外，该命令还指定了几个非默认参数。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates the identity that the Network Device Enrollment Service (NDES) uses when communicating\n"
+"with the certification authority (CA). This parameter is only valid when NDES is using\n"
+"a remote CA. If the CA is local, the application pool identity account cannot be used."
+msgstr ""
+"该参数表示网络设备注册服务（Network Device Enrollment Service，简称NDES）在与证书颁发机构（Certificate "
+"Authority，简称CA）通信时所使用的身份信息。只有当NDES使用远程CA时，此参数才有效；如果CA是本地的，则无法使用应用程序池的身份账户。"
+
+msgid ""
+"Specifies the remote certification authority (CA) that the Network Device Enrollment Service uses. This\n"
+"parameter is mandatory when used within the **ApplicationPoolIdentity** parameter. Do not use this\n"
+"parameter when a local CA is installed."
+msgstr ""
+"指定网络设备注册服务（Network Device Enrollment Service）所使用的远程证书颁发机构（CA）。当该参数与 "
+"**ApplicationPoolIdentity** 参数一起使用时，它是必需的。如果已安装了本地证书颁发机构，则请不要使用此参数。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies a **PSCredential** object that this cmdlet uses to connect to the NDES role service. To\n"
+"obtain a credential object, use the `Get-Credential` cmdlet. For more information, type\n"
+"`Get-Help Get-Credential`. The NDES must be installed on a server that is a member of an Active\n"
+"Directory Domain Services (AD DS) domain. If NDES is configured to use a Standalone CA, then an\n"
+"account that is a member of the local Administrators on the CA is required. If NDES is installed to\n"
+"use an Enterprise CA, then using an account that is a member of Domain Admins group is required."
+msgstr ""
+"指定一个 `PSCredential` 对象，该对象用于此 cmdlet 连接到 NDES 角色服务。要获取凭据对象，请使用 `Get-"
+"Credential` cmdlet。有关更多信息，请输入 `Get-Help Get-Credential`。NDES 必须安装在属于 Active "
+"Directory 域服务 (AD DS) 域的服务器上。如果 NDES 配置为使用独立 CA（Standalone CA），则需要使用属于该 CA "
+"的本地管理员组 (Local Administrators) 的账户；如果 NDES 配置为使用企业级 CA (Enterprise "
+"CA)，则需要使用属于域管理员组 (Domain Admins) 的账户。"
+
+msgid ""
+"Specifies the encryption key length.\n"
+"This option is not valid if you use existing keys during installation."
+msgstr "指定加密密钥的长度。如果您在安装过程中使用现有的密钥，则此选项无效。"
+
+msgid ""
+"Specifies the name of the encryption provider, such as the name of cryptographic service provider\n"
+"(CSP)."
+msgstr "指定加密提供商的名称，例如加密服务提供商（CSP）的名称。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不会询问用户确认。"
+
+msgid "Specifies the city of the registration authority."
+msgstr "指定注册机构所在的城市。"
+
+msgid ""
+"Specifies the organization or company that the registration authority "
+"represents."
+msgstr "指定注册机构所代表的组织或公司。"
+
+msgid "Specifies the country/region of the registration authority."
+msgstr "指定注册机构所在的国家/地区。"
+
+msgid "Specifies the department of the registration authority."
+msgstr "指明了注册机构的所属部门。"
+
+msgid "Specifies the email address of the registration authority."
+msgstr "指定注册机构的电子邮件地址。"
+
+msgid "Specifies the name of the NDES registration authority."
+msgstr "指定 NDES 注册机构的名称。"
+
+msgid ""
+"Specifies the state or province (geographical political boundary), if applicable, of the\n"
+"registration authority."
+msgstr "指定注册机构所处的州或省（即地理政治边界），如适用的话。"
+
+msgid ""
+"Specifies the name of the account that is used by the Network Device "
+"Enrollment Service."
+msgstr "指定网络设备注册服务（Network Device Enrollment Service）所使用的账户名称。"
+
+msgid ""
+"Specifies the password of the service account that is used by the Network "
+"Device Enrollment Service."
+msgstr "指定网络设备注册服务（Network Device Enrollment Service）所使用的服务账户的密码。"
+
+msgid "Specifies the signing key length."
+msgstr "指定签名密钥的长度。"
+
+msgid "Specifies the name of the signing device."
+msgstr "指定签名设备的名称。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.ManagementAutomation.SwitchParameter"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Security.SecureString"
+msgstr "### System.Security.SecureString"
+
+msgid "### System.Int32"
+msgstr "### System.Int32"
+
+msgid "### System.Management.Automation.PSCredential"
+msgstr "### System.Management.Automation.PSCredential"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Deployment.Common.NDES.NetworkDeviceEnrollmentServiceResult"
+msgstr ""
+"### "
+"Microsoft.CertificateServices.Deployment.Common.NDES.NetworkDeviceEnrollmentServiceResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Uninstall-AdcsNetworkDeviceEnrollmentService](./Uninstall-"
+"AdcsNetworkDeviceEnrollmentService.md)"
+msgstr ""
+"[卸载 AdcsNetworkDeviceEnrollmentService](./Uninstall-"
+"AdcsNetworkDeviceEnrollmentService.md)"
+
+msgid "[Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936)"
+msgstr ""
+"[使用 Get-Credential 命令获取凭据](https://go.microsoft.com/fwlink/?LinkID=293936)"

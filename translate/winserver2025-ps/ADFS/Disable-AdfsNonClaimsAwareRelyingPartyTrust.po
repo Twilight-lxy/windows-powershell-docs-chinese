@@ -1,0 +1,178 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:50:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-AdfsNonClaimsAwareRelyingPartyTrust"
+msgstr "# 禁用 AdfsNonClaims Aware Relying Party Trust 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Disables a relying party trust for a non-claims-aware web application or "
+"service from the Federation Service."
+msgstr ""
+"对于那些不支持索赔处理（claims-aware）的 Web 应用程序或服务，该功能会禁用联邦服务（Federation "
+"Service）所提供的依赖方信任机制（relying party trust）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierName (Default)"
+msgstr "### IdentifierName（默认值）"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Disable-AdfsNonClaimsAwareRelyingPartyTrust** cmdlet disables a relying party trust for a non-claims-aware web application or service from the Federation Service.\n"
+"When you disable a relying party trust, no authentication is allowed.\n"
+"Non-claims-aware relying party trusts for applications that are published through the Web Application Proxy that are disabled prevent clients from reaching the application."
+msgstr ""
+"`Disable-AdfsNonClaimsAwareRelyingPartyTrust` cmdlet 用于禁用联邦服务（Federation "
+"Service）中针对那些不支持“非声明性认证”（non-claims-aware）功能的 Web "
+"应用程序或服务的依赖方信任关系。一旦依赖方信任关系被禁用，该应用程序将无法接收任何身份验证请求。对于通过 Web 应用程序代理（Web "
+"Application Proxy）发布的、且其依赖方信任关系已被禁用的应用程序而言，这将导致客户端无法正常访问这些应用程序。"
+
+msgid ""
+"A non-claims aware relying party trust is a relying party trust for web applications or services that do not rely directly on Active Directory Federation Services (AD FS) to issue tokens, but instead rely on a third party that accesses such tokens and transforms them into what applications understand.\n"
+"A non-claims-aware relying party trust is useful for defining authentication and authorization policies for web applications and services that do not rely on AD FS tokens.\n"
+"The Web Application Proxy requests such tokens for pre-authentication to web applications or services that have corresponding non-claims-aware relying party trusts for requests that come from outside the network through the proxy."
+msgstr ""
+"“非声明感知型依赖方信任”（non-claims-aware relying party "
+"trust）是一种适用于Web应用程序或服务的信任机制。这类应用程序或服务并不直接依赖Active Directory Federation "
+"Services (AD FS)来生成令牌，而是通过第三方来获取这些令牌，并将其转换为应用程序能够识别的格式。对于那些不使用AD "
+"FS令牌的Web应用程序和服务而言，这种信任机制有助于定义相应的身份验证和授权策略。Web Application "
+"Proxy会为来自网络外部的请求请求这些令牌，以便在代理服务器对这些请求进行预身份验证处理之后，将它们传递给目标Web应用程序或服务。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable a relying party trust by using a name"
+msgstr "### 示例 1：通过使用名称来禁用依赖方信任"
+
+msgid ""
+"This command disables the expense report relying party trust named "
+"ExpenseReport."
+msgstr "此命令将禁用名为“ExpenseReport”的费用报告依赖方信任（dependency trust）。"
+
+msgid ""
+"### Example 2: Disable a report relying party trust by using an identifier"
+msgstr "### 示例 2：使用标识符禁用报告依赖方的信任关系"
+
+msgid ""
+"This command disables the expense report relying party trust that has the "
+"identifier https://Contosoexpense."
+msgstr "此命令会禁用依赖方信任（party trust）功能，该功能的标识符为 https://Contosoexpense。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the identifier of the non-claims-aware relying party trust to "
+"disable."
+msgstr ""
+"指定要禁用的、不支持“非声明性依赖方信任”（non-claims-aware relying party trust）机制的依赖方信任的标识符。"
+
+msgid ""
+"Specifies the name of the non-claims-aware relying party trust to disable."
+msgstr "指定要禁用的、不支持“Claims Awareness”（声明感知）功能的依赖方信任关系的名称。"
+
+msgid ""
+"Specifies a **NonClaimsAwareRelyingPartyTrust** object.\n"
+"The cmdlet disables the non-claims-aware relying party trust that you specify.\n"
+"To obtain a **NonClaimsAwareRelyingPartyTrust**, use the **Get-AdfsNonClaimsAwareRelyingPartyTrust** cmdlet."
+msgstr ""
+"用于指定一个 **NonClaimsAwareRelyingPartyTrust** 对象。该 cmdlet "
+"会禁用您所指定的、不具备“非声明感知”（non-claims-aware）功能的依赖方信任关系。若要获取一个 "
+"**NonClaimsAwareRelyingPartyTrust** 对象，请使用 **Get-"
+"AdfsNonClaimsAwareRelyingPartyTrust** cmdlet。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsNonClaimsAwareRelyingPartyTrust](./Add-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"[添加 AdfsNonClaimsAwareRelyingPartyTrust](./Add-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"[Enable-AdfsNonClaimsAwareRelyingPartyTrust](./Enable-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"[Enable-AdfsNonClaimsAwareRelyingPartyTrust](./Enable-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"[Get-AdfsNonClaimsAwareRelyingPartyTrust](./Get-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"[Get-AdfsNonClaimsAwareRelyingPartyTrust](./Get-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"[Remove-AdfsNonClaimsAwareRelyingPartyTrust](./Remove-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"[Remove-AdfsNonClaimsAwareRelyingPartyTrust](./Remove-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+
+msgid ""
+"[Set-AdfsNonClaimsAwareRelyingPartyTrust](./Set-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"
+msgstr ""
+"[Set-AdfsNonClaimsAwareRelyingPartyTrust](./Set-"
+"AdfsNonClaimsAwareRelyingPartyTrust.md)"

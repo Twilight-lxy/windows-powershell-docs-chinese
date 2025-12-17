@@ -1,0 +1,163 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:32:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-ADDSReadOnlyDomainControllerAccountCreation"
+msgstr "# 测试 AD DS 是否支持只读域控制器的账户创建功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Runs the prerequisites for adding a RODC account."
+msgstr "运行用于添加 RODC 账户的先决条件所需的相关命令/脚本等。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Test-ADDSReadOnlyDomainControllerAccountCreation` cmdlet runs the prerequisite checks which\n"
+"would be performed if you were to add a read-only domain controller (RODC) account in Active\n"
+"Directory using the `Add-ADDSReadOnlyDomainControllerAccount` cmdlet. It differs from using the\n"
+"**WhatIf** parameter with the `Add-ADDSReadOnlyDomainControllerAccount` cmdlet in that instead of\n"
+"summarizing the changes that would occur during the account creation process, this cmdlet actually\n"
+"tests whether those changes are possible given the current environment."
+msgstr ""
+"`Test-ADDSReadOnlyDomainControllerAccountCreation` 这个 cmdlet "
+"会执行一些前提检查，这些检查类似于在使用 `Add-ADDSReadOnlyDomainControllerAccount` cmdlet "
+"添加只读域控制器（RODC）账户时需要进行的检查。它与使用 `Add-ADDSReadOnlyDomainControllerAccount` "
+"cmdlet 时的 **WhatIf** 参数有所不同：该 cmdlet "
+"并不会仅仅总结账户创建过程中将会发生的变化，而是实际测试在当前环境下这些变化是否可行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test adding an RODC account to confirm it is possible"
+msgstr "### 示例 1：测试添加一个 RODC 账户以确认其是否可行"
+
+msgid ""
+"This command runs the prerequisites for adding an RODC account to the `corp.contoso.com` domain that\n"
+"would use the North America site as the source site for the replication source domain controller."
+msgstr ""
+"此命令会运行将 RODC 账户添加到 `corp.contoso.com` 域所需的预备步骤。该账户会将北美站点作为复制源域控制器的源站点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the names of user accounts, group accounts, and computer accounts whose passwords can be\n"
+"replicated to this RODC. Use `None` if you want to keep the value empty. By default, only the\n"
+"Allowed RODC Password Replication Group is allowed, and it is originally created empty."
+msgstr ""
+"指定可以将其密码复制到此RODC的用户账户、组账户和计算机账户的名称。如果希望该值保持为空，请使用`None`。默认情况下，仅允许“允许的RODC密码复制组”（Allowed"
+" RODC Password Replication Group）进行密码复制操作，且该组最初是空状态创建的。"
+
+msgid ""
+"Specifies the user name and password that corresponds to the account used to install the domain\n"
+"controller. Use the `Get-Credential` cmdlet to prompt the user to supply a password."
+msgstr "指定用于安装域控制器的账户对应的用户名和密码。可以使用 `Get-Credential` cmdlet 来提示用户输入密码。"
+
+msgid ""
+"Specifies the name of the user or group that installs and administer the "
+"RODC."
+msgstr "指定安装和管理 RODC 的用户或组的名称。"
+
+msgid ""
+"Specifies the names of user accounts, group accounts, and computer accounts whose passwords are not\n"
+"to be replicated to this RODC. Use `None` if you do not want to deny the replication of credentials\n"
+"of any users or computers. By default, Administrators, Server Operators, Backup Operators, Account\n"
+"Operators, and the Denied RODC Password Replication Group are denied. By default, the Denied RODC\n"
+"Password Replication Group includes Cert Publishers, Domain Admins, Enterprise Admins, Enterprise\n"
+"Domain Controllers, Enterprise Read-Only Domain Controllers, Group Policy Creator Owners, the\n"
+"krbtgt account, and Schema Admins."
+msgstr ""
+"指定那些用户名、组名以及计算机账户的名称，这些账户的密码将不会被复制到该 RODC（Replicated Operating Domain "
+"Controller）中。如果您不想拒绝任何用户或计算机的凭证复制，请使用 "
+"`None`。默认情况下，Administrators（管理员）、Server Operators（服务器操作员）、Backup "
+"Operators（备份操作员）、Account Operators（帐户操作员）以及 “Denied RODC Password "
+"Replication Group” 组的成员被禁止访问该功能。此外，“ Denied RODC Password Replication Group”"
+" 还包括 Cert Publishers（证书发布者）、Domain Admins（域管理员）、Enterprise "
+"Admins（企业管理员）、Enterprise Domain Controllers（企业域控制器）、Enterprise Read-Only "
+"Domain Controllers（企业只读域控制器）、Group Policy Creator Owners（组策略创建者所有者）、krbtgt "
+"账户以及 Schema Admins（架构管理员）。"
+
+msgid "Specifies the name of the RODC account that this cmdlet creates."
+msgstr "指定此cmdlet创建的RODC账户的名称。"
+
+msgid ""
+"Specifies the domain name for the user name for the operation. This parameter is required. You\n"
+"should specify the forest where you plan to install the domain controller or create an RODC account."
+msgstr "指定用于操作的用户名称的域名。此参数是必需的。您应该指明计划安装域控制器或创建RODC账户的森林（domain forest）。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Indicates that the cmdlet installs the DNS Server service. The default is automatically computed\n"
+"based on the environment."
+msgstr "表示该cmdlet用于安装DNS服务器服务。默认设置会根据环境自动计算得出。"
+
+msgid "Indicates that the RODC is not a global catalog server."
+msgstr "表示该 RODC（Root Domain Controller）不是全局目录服务器。"
+
+msgid ""
+"Specifies the name of the fully writable domain controller to use in the creation of the RODC\n"
+"account in Active Directory."
+msgstr "指定用于在 Active Directory 中创建 RODC 账户的全可写域控制器的名称。"
+
+msgid ""
+"Specifies the name of an existing site where you can place the new domain controller. The default\n"
+"value depends on the type of installation. For a new forest, the default is\n"
+"`Default-First-Site-Name`. For all other installations, the default is the site that is associated\n"
+"with the subnet that includes the IP address of this server. If no such site exists, the default is\n"
+"the site of the replication source domain controller."
+msgstr ""
+"指定一个现有站点名称，您可以在该站点上放置新的域控制器。默认值取决于安装类型：对于新创建的森林（domain tree），默认值为 `Default-"
+"First-Site-Name`；对于其他所有类型的安装，默认值是与包含该服务器 IP "
+"地址的子网关联的站点。如果不存在这样的站点，则默认值为复制源域控制器的所在站点。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-ADDSReadOnlyDomainControllerAccount](./Add-"
+"ADDSReadOnlyDomainControllerAccount.md)"
+msgstr ""
+"[Add-ADDSReadOnlyDomainControllerAccount](./Add-"
+"ADDSReadOnlyDomainControllerAccount.md)"
+
+msgid "[Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936)"
+msgstr "[Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936)"

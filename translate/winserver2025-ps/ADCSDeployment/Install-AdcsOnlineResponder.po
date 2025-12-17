@@ -1,0 +1,127 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:21:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-AdcsOnlineResponder"
+msgstr "# 安装 AdcsOnlineResponder"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Installs the Online Responder service."
+msgstr "安装在线响应器服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Install-AdcsOnlineResponder` cmdlet installs the Online Responder service, which provides\n"
+"Online Certificate Status Protocol (OSCP) services. To remove the role service, use the\n"
+"`Uninstall-AdcsOnlineResponder` cmdlet."
+msgstr ""
+"`Install-AdcsOnlineResponder` cmdlet 用于安装在线响应器（Online "
+"Responder）服务，该服务提供在线证书状态协议（OSCP）相关功能。若要卸载此角色服务，请使用 `Uninstall-"
+"AdcsOnlineResponder` cmdlet。"
+
+msgid ""
+"You can import the cmdlet by running the following commands from Windows "
+"PowerShell:"
+msgstr "您可以通过在 Windows PowerShell 中运行以下命令来导入该 cmdlet："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Install the Online Responder role service"
+msgstr "### 示例 1：安装“在线响应程序”角色服务"
+
+msgid "This command installs the Online Responder role service."
+msgstr "此命令用于安装“在线响应程序”（Online Responder）角色服务。"
+
+msgid ""
+"### Example 2: Force the installation of the Online Responder role service"
+msgstr "### 示例 2：强制安装“在线响应程序”角色服务"
+
+msgid ""
+"This command forces the installation of the Online Responder role service."
+msgstr "此命令会强制安装“在线响应程序”角色服务。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Specifies a **PSCredential** object for the Online Responder service. To obtain a credential object,\n"
+"use the `Get-Credential` cmdlet. For more information, type `Get-Help Get-Credential`. You can\n"
+"install the Online Responder role service only on servers that are members of Active Directory\n"
+"Domain Services (AD DS) domains. If you are installing an online responder configured to use a\n"
+"standalone certification authority (CA), then an account that is a member of the local\n"
+"Administrators group of the target server is required. If you are installing an online responder to\n"
+"target an Enterprise CA, then an account that is a member of the Domain Admins group is required."
+msgstr ""
+"为在线响应器服务指定一个 **PSCredential** 对象。要获取该凭据对象，请使用 `Get-Credential` "
+"cmdlet。有关更多信息，请输入 `Get-Help Get-Credential`。您只能在属于 Active Directory 域服务 (AD "
+"DS) 域的服务器上安装在线响应器角色服务。如果您要安装的在线响应器配置为使用独立的证书颁发机构 (CA)，则需要目标服务器上的本地 "
+"Administrators 组成员账户；如果您要安装的在线响应器用于连接到企业级证书颁发机构 (Enterprise CA)，则需要目标服务器上的 "
+"Domain Admins 组成员账户。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。不过实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.Management.Automation.PSCredential"
+msgstr "### System.Management Automation.PSCredential"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Deployment.Common.OCSP.OnlineResponderResult"
+msgstr ""
+"### Microsoft.CertificateServices.Deployment "
+"COMMON.OCSP.OnlineResponderResult"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Uninstall-AdcsOnlineResponder](./Uninstall-AdcsOnlineResponder.md)"
+msgstr "[卸载 AdcsOnlineResponder](./Uninstall-AdcsOnlineResponder.md)"
+
+msgid "[Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936)"
+msgstr "[获取凭据](https://go.microsoft.com/fwlink/?LinkID=293936)"

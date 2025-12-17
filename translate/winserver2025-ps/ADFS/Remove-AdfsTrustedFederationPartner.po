@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:21:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AdfsTrustedFederationPartner"
+msgstr "# 删除 AdfsTrustedFederationPartner"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes a trusted federation partner in AD FS."
+msgstr "从 Active Directory Federation Services (AD FS) 中移除一个受信任的联盟合作伙伴。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### FederationPartnerHostName"
+msgstr "### FederationPartnerHostName"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-AdfsTrustedFederationPartner** cmdlet removes a federation "
+"partner that is trusted by this instance of Active Directory Federation "
+"Services (AD FS)."
+msgstr ""
+"`Remove-AdfsTrustedFederationPartner` cmdlet 用于移除被该 Active Directory "
+"Federation Services (AD FS) 实例信任的联合伙伴。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies a federation partner to remove."
+msgstr "指定一个需要移除的联盟伙伴。"
+
+msgid "Specifies the URI of a federation partner to remove."
+msgstr "指定要删除的联合伙伴（federation partner）的 URI。"
+
+msgid "Specifies the name of a federation partner to remove."
+msgstr "指定要移除的联盟合作伙伴的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsTrustedFederationPartner](./Add-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"[Add-AdfsTrustedFederationPartner](./Add-AdfsTrustedFederationPartner.md)"
+
+msgid ""
+"[Get-AdfsTrustedFederationPartner](./Get-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"[Get-AdfsTrustedFederationPartner](./Get-AdfsTrustedFederationPartner.md)"
+
+msgid ""
+"[Set-AdfsTrustedFederationPartner](./Set-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"[Set-AdfsTrustedFederationPartner](./Set-AdfsTrustedFederationPartner.md)"

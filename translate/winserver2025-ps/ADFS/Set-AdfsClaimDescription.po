@@ -1,0 +1,183 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:26:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsClaimDescription"
+msgstr "# 设置 AdfsClaimDescription"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies the properties of a claim description."
+msgstr "修改索赔描述的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "### ShortName"
+msgstr "### 简称（ShortName）"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AdfsClaimDescription** cmdlet modifies properties on a Active "
+"Directory Federation Services (AD FS) claim description."
+msgstr ""
+"`Set-AdfsClaimDescription` cmdlet 用于修改 Active Directory Federation Services "
+"(AD FS) 声明描述中的属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Change the name of a claim description"
+msgstr "### 示例 1：修改索赔描述的名称"
+
+msgid ""
+"This command changes the name of the claim description named Role to "
+"RoleDesc."
+msgstr "这个命令将名为“Role”的索赔描述名称更改为“RoleDesc”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the claim type URI of the claim."
+msgstr "指定该声明的声明类型 URI（Uniform Resource Identifier）。"
+
+msgid ""
+"Indicates whether the claim is published in federation metadata as a claim "
+"that is accepted by the Federation Service."
+msgstr "该字段用于指示声明是否作为被联邦服务（Federation Service）接受的声明，而被发布在联合体的元数据中。"
+
+msgid ""
+"Indicates whether the claim is published in federation metadata as a claim "
+"that is offered by the Federation Service."
+msgstr "该字段用于指示该声明是否作为联邦服务提供的声明被发布在联邦元数据中。"
+
+msgid ""
+"Indicates whether the claim is published in federation metadata as a claim "
+"that is required by the Federation Service."
+msgstr "该字段用于指示声明是否已作为联邦服务所要求的声明被发布在联邦元数据中。"
+
+msgid "Specifies the friendly name of the claim to modify."
+msgstr "指定要修改的声明的友好名称（即易于理解的名称）。"
+
+msgid ""
+"Specifies text that describes the purpose of the claim description.\n"
+"The cmdlet adds the notes to the claim description."
+msgstr "用于指定描述索赔描述用途的文本。该cmdlet会将这些注释添加到索赔描述中。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的该项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the unique short name identifier for the claim description that is"
+" used for issuing and consuming JWT tokens."
+msgstr "指定用于生成和消费 JWT 令牌的声明描述的唯一简短名称标识符。"
+
+msgid ""
+"Specifies a **ClaimDescription** object.\n"
+"The cmdlet modifies the **ClaimDescription** object that you specify.\n"
+"To obtain a claim description, use the **Get-AdfsClaimDescription** cmdlet."
+msgstr ""
+"用于指定一个 **ClaimDescription** 对象。此 cmdlet 会修改您所指定的 **ClaimDescription** "
+"对象。若要获取某个声明的描述信息，可以使用 **Get-AdfsClaimDescription** cmdlet。"
+
+msgid "Specifies the claim type of the claim description to modify."
+msgstr "指定要修改的声明描述中的声明类型。"
+
+msgid "Specifies the friendly name of the claim description to modify."
+msgstr "指定要修改的声明描述的友好名称（即用户易于理解的名称）。"
+
+msgid ""
+"Specifies the short name identifier that AD FS uses to lookup an existing "
+"claim description."
+msgstr "指定 AD FS 用于查找现有声明描述的简短名称标识符。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimDescription"
+msgstr "### MicrosoftIdentityServer.PowerShell.Resources.ClaimDescription"
+
+msgid ""
+"A ClaimDescription object is received by the *TargetClaimDescription* "
+"parameter."
+msgstr "`TargetClaimDescription` 参数接收一个 `ClaimDescription` 对象。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *TargetClaimType*, *TargetName*, and "
+"*TargetShortName* parameters."
+msgstr "字符串对象通过 *TargetClaimType*、*TargetName* 和 *TargetShortName* 参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimDescription"
+msgstr "### Microsoft IdentityServer.PowerShell.Resources.ClaimDescription"
+
+msgid ""
+"Returns the updated ClaimDescription object when the *PassThru* parameter is"
+" specified. By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定 *PassThru* 参数时，该命令会返回更新后的 ClaimDescription 对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsClaimDescription](./Add-AdfsClaimDescription.md)"
+msgstr "[Add-AdfsClaimDescription](./Add-AdfsClaimDescription.md)"
+
+msgid "[Get-AdfsClaimDescription](./Get-AdfsClaimDescription.md)"
+msgstr "[Get-AdfsClaimDescription](./Get-AdfsClaimDescription.md)"
+
+msgid "[Remove-AdfsClaimDescription](./Remove-AdfsClaimDescription.md)"
+msgstr "[Remove-AdfsClaimDescription](./Remove-AdfsClaimDescription.md)"

@@ -1,0 +1,123 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:15:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Confirm-CAEndorsementKeyInfo"
+msgstr "# 确认 CA 认证密钥信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Checks whether the local CA trusts secure hardware for key attestation."
+msgstr "检查本地证书颁发机构（CA）是否信任用于密钥认证的安全硬件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### PublicKeyHash"
+msgstr "### PublicKeyHash"
+
+msgid "### Certificate"
+msgstr "### 证书"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Confirm-CAEndorsementKeyInfo** cmdlet checks whether the local certification authority (CA) trusts secure hardware, such as a Trusted Platform Module (TPM), for key attestation.\n"
+"The cmdlet checks the endorsement key or certificate.\n"
+"An endorsement key is permanently embedded in the security hardware.\n"
+"The public portion of the endorsement key helps to recognize genuine security hardware."
+msgstr ""
+"`Confirm-CAEndorsementKeyInfo` 这个 cmdlet "
+"用于检查本地证书颁发机构（CA）是否信任用于密钥认证的安全硬件（例如受信任的平台模块（TPM））。该 cmdlet "
+"会验证相应的授权密钥或证书。授权密钥是永久嵌入到安全硬件中的；其公开部分有助于识别真正的安全硬件设备。"
+
+msgid ""
+"This cmdlet verifies whether the endorsement public certificate connects by means of a certificate chain to an anchor that the CA trusts for key attestation.\n"
+"Specify an X509 certificate by using the *Certificate* parameter."
+msgstr ""
+"此cmdlet用于验证该背书公共证书是否通过证书链与CA（证书颁发机构）信任的锚点相连，从而实现密钥认证。请使用*Certificate*参数指定一个X509证书。"
+
+msgid ""
+"This cmdlet checks whether the endorsement public key exists as a file in a folder configured at the local CA for key attestation.\n"
+"Specify the public key by using the *PublicKeyHash* parameter."
+msgstr "此cmdlet用于检查在本地CA配置的文件夹中，是否存在用于密钥认证的签名公钥文件。请使用 PublicKeyHash参数来指定该公钥。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Check an endorsement certificate"
+msgstr "### 示例 1：检查背书证书"
+
+msgid ""
+"This command checks whether the endorsement certificate Contoso87.cer connects, by means of a certificate chain, to a trusted anchor.\n"
+"This example returns a value of $True."
+msgstr ""
+"此命令用于检查签名证书 Contoso87.cer 是否能够通过证书链连接到某个受信任的根证书（即“可信锚点”）。在本示例中，返回的值为 $True。"
+
+msgid "### Example 2: Check an endorsement key"
+msgstr "### 示例 2：检查背书密钥"
+
+msgid ""
+"The command checks for the endorsement public certificate specified as an SHA-256 hash code.\n"
+"This example returns a value of $False.\n"
+"Therefore, the CA does not have this public key."
+msgstr ""
+"该命令用于检查作为 SHA-256 哈希码指定的签名证书。在这个示例中，返回的值是 $False$，因此该证书颁发机构（CA）并不拥有这个公钥。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an X509 public key certificate issued to secure hardware."
+msgstr "指定用于保护硬件的 X509 公钥证书。"
+
+msgid ""
+"Specifies an endorsement public key of the secure hardware, as the result of the SHA-256 hash algorithm.\n"
+"This is a 64 character hexadecimal string."
+msgstr "指定安全硬件的签名公钥，该公钥是通过SHA-256哈希算法计算得出的。这是一个由64个字符组成的十六进制字符串。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Security.Cryptography.X509Certificates.X509Certificate2"
+msgstr "### System.Security.Cryptography.X509Certificates.X509Certificate2"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Boolean"
+msgstr "### System(Boolean)"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

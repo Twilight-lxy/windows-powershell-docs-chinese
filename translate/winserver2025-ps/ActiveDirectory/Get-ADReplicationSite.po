@@ -1,0 +1,303 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:15:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ADReplicationSite"
+msgstr "# 获取 AD 复制站点信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Returns a specific Active Directory replication site or a set of replication"
+" site objects based on a specified filter."
+msgstr "根据指定的过滤器返回一个特定的 Active Directory 复制站点或一组复制站点对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identity (Default)"
+msgstr "### 身份信息（默认值）"
+
+msgid "### Filter"
+msgstr "### 过滤器"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-ADReplicationSite** cmdlet returns a specific Active Directory replication site or a set of replication site objects based on a specified filter.\n"
+"Sites are used in Active Directory to either enable clients to discover network resources (published shares, domain controllers) close to the physical location of a client computer or to reduce network traffic over wide area network (WAN) links.\n"
+"Sites can also be used to optimize replication between domain controllers."
+msgstr ""
+"`Get-ADReplicationSite` cmdlet 根据指定的筛选条件返回一个特定的 Active Directory "
+"复制站点或一组复制站点对象。在 Active Directory "
+"中，复制站点的作用是：使客户端能够发现位于其计算机物理位置附近的网络资源（已发布的共享资源、域控制器），或者减少通过广域网 (WAN) "
+"链路传输的数据量。此外，复制站点还可以用于优化域控制器之间的数据复制过程。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all replication sites"
+msgstr "#### 示例 1：获取所有复制站点"
+
+msgid "This command gets all Active Directory Replication sites."
+msgstr "这个命令可以获取所有活动目录（Active Directory）复制站点（Replication sites）的信息。"
+
+msgid "### Example 2: Get replication sites by flag"
+msgstr "### 示例 2：根据标志获取复制站点"
+
+msgid ""
+"This command gets all sites that have the WindowsServer2003KCCBehaviorEnabled flag turned on.\n"
+"The *Properties* parameter must be set because the **WindowsServer2003KCCSiteLinkBridgingEnabled** property is not retrieved by default."
+msgstr ""
+"这个命令会获取所有启用了 `WindowsServer2003KCCBehaviorEnabled` 标志的网站。必须设置 `*Properties*`"
+" 参数，因为默认情况下系统不会检索 `**WindowsServer2003KCCSiteLinkBridgingEnabled**` 属性。"
+
+msgid "### Example 3: Get replication sites by name"
+msgstr "### 示例 3：通过名称获取复制站点"
+
+msgid "This command gets the site with name NorthAmerica."
+msgstr "这个命令用于获取名为“NorthAmerica”的网站。"
+
+msgid "### Example 4: Get replication sites by name and property"
+msgstr "### 示例 4：通过名称和属性获取复制站点"
+
+msgid ""
+"This command gets the **AutomaticInterSiteTopologyGenerationEnabled** "
+"property of the site with name NorthAmerica."
+msgstr ""
+"这个命令用于获取名为“NorthAmerica”的站点的**AutomaticInterSiteTopologyGenerationEnabled**属性值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果该 cmdlet 是从这样的驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01/User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，该 cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"您也可以通过脚本或使用 `Get-Credential` cmdlet 来创建一个 `PSCredential` 对象。之后，可以将 "
+"`Credential` 参数设置为该 `PSCredential` 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果执行该任务的账户没有目录级别的权限，Windows PowerShell的Active Directory模块会返回一个终止错误（即程序异常退出）。"
+
+msgid ""
+"Specifies a query string that retrieves Active Directory objects.\n"
+"This string uses the PowerShell Expression Language syntax.\n"
+"The PowerShell Expression Language syntax provides rich type-conversion support for value types received by the *Filter* parameter.\n"
+"The syntax uses an in-order representation, which means that the operator is placed between the operand and the value.\n"
+"For more information about the *Filter* parameter, type `Get-Help about_ActiveDirectory_Filter`."
+msgstr ""
+"指定一个用于检索 Active Directory 对象的查询字符串。该字符串使用 PowerShell 表达式语言（PowerShell "
+"Expression Language）的语法。PowerShell 表达式语言为 *Filter* "
+"参数接收到的值类型提供了强大的类型转换支持。其语法采用“按顺序排列”的表示方式，即运算符被放在操作数和值之间。有关 *Filter* "
+"参数的更多信息，请输入 `Get-Help about_ActiveDirectory_Filter` 命令。"
+
+msgid "Syntax:"
+msgstr "语法："
+
+msgid ""
+"The following syntax uses Backus-Naur form to show how to use the PowerShell"
+" Expression Language for this parameter."
+msgstr "以下语法采用了巴克斯-诺尔（Backus-Naur）形式来说明如何使用 PowerShell 表达式语言来处理这个参数。"
+
+msgid "\\<filter\\>  ::= \"{\" \\<FilterComponentList\\> \"}\""
+msgstr "\\<filter\\>  ::= \"{\" \\<FilterComponentList\\> \"}\""
+
+msgid ""
+"\\<FilterComponentList\\> ::= \\<FilterComponent\\> | \\<FilterComponent\\> "
+"\\<JoinOperator\\> \\<FilterComponent\\> | \\<NotOperator\\>  "
+"\\<FilterComponent\\>"
+msgstr ""
+"\\<FilterComponentList\\> ::= \\<FilterComponent\\> | \\<FilterComponent\\> "
+"\\<JoinOperator\\> \\<FilterComponent\\> | \\<NotOperator\\> "
+"\\<FilterComponent\\>"
+
+msgid ""
+"\\<FilterComponent\\> ::= \\<attr\\> \\<FilterOperator\\> \\<value\\> | "
+"\"(\" \\<FilterComponent\\> \")\""
+msgstr ""
+"<FilterComponent> ::= <attr> <FilterOperator> <value> | "
+"(\"<FilterComponent>)\""
+
+msgid ""
+"\\<FilterOperator\\> ::= \"-eq\" | \"-le\" | \"-ge\" | \"-ne\" | \"-lt\" | "
+"\"-gt\"| \"-approx\" | \"-bor\" | \"-band\" | \"-recursivematch\" | "
+"\"-like\" | \"-notlike\""
+msgstr ""
+"\\<FilterOperator\\> ::= \"-eq\" | \"-le\" | \"-ge\" | \"-ne\" | \"-lt\" | "
+"\"-gt\" | \"-approx\" | \"-bor\" | \"-band\" | \"-recursivematch\" | "
+"\"-like\" | \"-notlike\""
+
+msgid "\\<JoinOperator\\> ::= \"-and\" | \"-or\""
+msgstr "<JoinOperator> ::= \"-and\" | \"-or\""
+
+msgid "\\<NotOperator\\> ::= \"-not\""
+msgstr "\\<NotOperator\\> ::= \"-not\""
+
+msgid "\\<attr\\> ::= \\<PropertyName\\> | \\<LDAPDisplayName of the attribute\\>"
+msgstr "\\<attr\\> ::= \\<PropertyName\\> | \\<LDAPAttributeName\\>"
+
+msgid ""
+"\\<value\\>::= \\<compare this value with an \\<attr\\> by using the "
+"specified \\<FilterOperator\\>\\>"
+msgstr "<value>::= <使用指定的<FilterOperator>将此值与<attr>进行比较>"
+
+msgid ""
+"For a list of supported types for \\<value\\>, type `Get-Help "
+"about_ActiveDirectory_ObjectModel`."
+msgstr ""
+"要查看 `<value>` 支持的数据类型列表，请输入 `Get-Help about_ActiveDirectory_ObjectModel`。"
+
+msgid ""
+"Note: PowerShell wildcards other than *, such as ?, are not supported by the"
+" *Filter* syntax."
+msgstr "注意：PowerShell 中的通配符（除了 * 之外，例如 ?）不支持 *Filter* 语法。"
+
+msgid ""
+"Note: To query using LDAP query strings, use the *LDAPFilter* parameter."
+msgstr "注意：要使用 LDAP 查询字符串进行查询，请使用 *LDAPFilter* 参数。"
+
+msgid ""
+"Specifies an Active Directory object by providing one of the following property values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory 对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"该cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，它会返回一个非终止性的错误（即无法继续执行后续操作的错误）。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为一个对象实例。"
+
+msgid ""
+"Specifies the properties of the output object to retrieve from the server.\n"
+"Use this parameter to retrieve properties that are not included in the default set."
+msgstr "指定从服务器检索的输出对象的属性。使用此参数可以获取默认集合中未包含的属性。"
+
+msgid ""
+"Specify properties for this parameter as a comma-separated list of names.\n"
+"To display all of the attributes that are set on the object, specify * (asterisk)."
+msgstr "为该参数指定属性，可以使用逗号分隔的名称列表。如果要显示对象上设置的所有属性，请使用星号（*）。"
+
+msgid ""
+"To specify an individual extended property, use the name of the property.\n"
+"For properties that are not default or extended properties, you must specify the LDAP display name of the attribute."
+msgstr "要指定某个特定的扩展属性，请使用该属性的名称。对于非默认属性或扩展属性，必须指定该属性的 LDAP 显示名称。"
+
+msgid ""
+"To retrieve properties and display them for an object, you can use the Get-*"
+" cmdlet associated with the object and pass the output to the **Get-Member**"
+" cmdlet."
+msgstr ""
+"要检索对象的属性并将其显示出来，你可以使用与该对象关联的 `Get-*` cmdlet，并将输出结果传递给 `Get-Member` cmdlet。"
+
+msgid ""
+"Specifies the Active Directory Domain Services instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following: Active Directory Lightweight Domain Services, Active Directory Domain Services or Active Directory Snapshot instance."
+msgstr ""
+"指定要连接的 Active Directory 域服务实例，为此需要提供相应的域名或目录服务器的值之一。该服务可以是以下类型中的任意一种：Active "
+"Directory 轻量级域服务（Active Directory Lightweight Domain Services）、Active "
+"Directory 域服务（Active Directory Domain Services）或 Active Directory "
+"快照实例（Active Directory Snapshot instance）。"
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for the *Server* parameter is determined by one of the "
+"following methods in the order that they are listed:"
+msgstr "*Server* 参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们在列表中的顺序："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Input Data）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADReplicationSite"
+msgstr ""
+"没有相关设置，或者使用了 `Microsoft ActiveDirectory.Management.ADReplicationSite` 类。"
+
+msgid "A site object is received by the *Identity* parameter."
+msgstr "一个站点对象是通过*Identity*参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADReplicationSite"
+msgstr "### Microsoft.ActiveDirectory.Management_ADReplicationSite"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-ADReplicationSite](./New-ADReplicationSite.md)"
+msgstr "[New-ADReplicationSite](./New-ADReplicationSite.md)"
+
+msgid "[Remove-ADReplicationSite](./Remove-ADReplicationSite.md)"
+msgstr "[Remove-ADReplicationSite](./Remove-ADReplicationSite.md)"
+
+msgid "[Set-ADReplicationSite](./Set-ADReplicationSite.md)"
+msgstr "[Set-ADReplicationSite](./Set-ADReplicationSite.md)"

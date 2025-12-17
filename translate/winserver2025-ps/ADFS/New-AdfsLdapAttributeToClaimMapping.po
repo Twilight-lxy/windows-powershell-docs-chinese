@@ -1,0 +1,102 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:11:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AdfsLdapAttributeToClaimMapping"
+msgstr "# 新的 AdfsLdapAttributeToClaimMapping 映射关系"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Creates a mapping between an attribute of an LDAP folder and an AD FS claim "
+"type."
+msgstr ""
+"创建一个映射关系，将LDAP文件夹中的属性与AD FS（Active Directory Federation Services）声明类型关联起来。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-AdfsLdapAttributeToClaimMapping** cmdlet creates a mapping between an attribute of the Lightweight Directory Access Protocol (LDAP) folder and an Active Directory Federation Services (AD FS) claim type.\n"
+"Mappings make it possible for LDAP attributes to be available for claim rule processing in AD FS."
+msgstr ""
+"`New-AdfsLdapAttributeToClaimMapping` cmdlet "
+"可以在轻量级目录访问协议（LDAP）文件夹的属性与活动目录联合服务（AD FS）的声明类型之间建立映射关系。这种映射使得 LDAP 属性能够在 AD "
+"FS 中被用于声明规则的处理过程。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a mapping of an LDAP directory attribute"
+msgstr "### 示例 1：创建一个 LDAP 目录属性的映射关系"
+
+msgid ""
+"This command creates a mapping of an LDAP directory attribute to a claim type.\n"
+"The command stores the mapping in the $DisplayName variable for use with other cmdlets."
+msgstr ""
+"此命令创建了一个将LDAP目录属性与声明类型（claim type）关联起来的映射关系。该命令会将这种映射关系存储在 `$DisplayName` "
+"变量中，以便在其他cmdlet中使用。"
+
+msgid ""
+"To see this cmdlet as part of creating an LDAP local claims provider trust, "
+"see the **Add-AdfsLocalClaimsProviderTrust** cmdlet."
+msgstr ""
+"要了解此 cmdlet 是如何用于创建 LDAP 本地声明提供者信任关系的，请参阅 **Add-"
+"AdfsLocalClaimsProviderTrust** cmdlet。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the claim type to assign to the AD FS claim that contains the LDAP"
+" attribute value."
+msgstr "指定要分配给包含 LDAP 属性值的 AD FS 主张（claim）的主张类型。"
+
+msgid ""
+"Specifies the attribute in the LDAP folder to which the claim type is "
+"mapped."
+msgstr "指定LDAP文件夹中用于映射声明类型的属性。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsLocalClaimsProviderTrust](./Add-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Add-AdfsLocalClaimsProviderTrust](./Add-AdfsLocalClaimsProviderTrust.md)"

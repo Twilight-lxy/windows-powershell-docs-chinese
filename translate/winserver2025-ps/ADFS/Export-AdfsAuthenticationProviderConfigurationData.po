@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:55:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-AdfsAuthenticationProviderConfigurationData"
+msgstr "# 导出 AdfsAuthenticationProviderConfigurationData 数据"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Returns a file containing the tenant ID for which the AD FS farm is "
+"configured for Azure MFA, as well as the well-known client ID for Azure MFA."
+msgstr "返回一个文件，其中包含用于配置AD FS农场以支持Azure MFA的租户ID，以及知名的Azure MFA客户端ID。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Export-AdfsAuthenticationProviderConfigurationData** cmdlet returns a "
+"file containing the tenant ID for which the Active Directory Federation "
+"Services (AD FS) farm is configured for Azure MFA, as well as the well-known"
+" client ID for Azure MFA."
+msgstr ""
+"`Export-AdfsAuthenticationProviderConfigurationData` cmdlet 会返回一个文件，其中包含用于配置"
+" Active Directory Federation Services (AD FS) 农场以支持 Azure MFA 的租户 ID，以及 "
+"Azure MFA 所使用的客户端 ID。"
+
+msgid ""
+"Before you use this cmdlet, verify that the external authentication provider"
+" supports a custom configuration."
+msgstr "在使用此cmdlet之前，请确认外部身份验证提供程序支持自定义配置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Export configuration data"
+msgstr "### 示例 1：导出配置数据"
+
+msgid ""
+"This command exports configuration data for the authentication provider "
+"named ContosoExternalAuthProvider to the file C:\\share\\test.txt."
+msgstr ""
+"该命令将名为 ContosoExternalAuthProvider 的身份验证提供者的配置数据导出到文件 C:\\share\\test.txt 中。"
+
+msgid "### Example 2: Determine which certificate Azure MFA is using"
+msgstr "### 示例 2：确定 Azure MFA 使用的是哪种证书"
+
+msgid ""
+"This command determines which certificate Azure MFA is using, after AD FS is"
+" configured for Azure MFA."
+msgstr "在为 Azure MFA 配置了 AD FS 之后，此命令用于确定 Azure MFA 使用的是哪张证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the path and filename of the text file to which the configuration "
+"will be output."
+msgstr "指定用于输出配置信息的文本文件的路径和文件名。"
+
+msgid ""
+"Specifies the name of the authentication provider to export, for example, "
+"AzureMfaAuthentication."
+msgstr "指定要导出的身份验证提供者的名称，例如 AzureMfaAuthentication。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Import-AdfsAuthenticationProviderConfigurationData](./Import-"
+"AdfsAuthenticationProviderConfigurationData.md)"
+msgstr ""
+"[Import-AdfsAuthenticationProviderConfigurationData](./Import-"
+"AdfsAuthenticationProviderConfigurationData.md)"

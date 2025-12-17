@@ -1,0 +1,187 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:43:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AdfsServerApplication"
+msgstr "# 添加 AdFS 服务器应用程序"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a server application role to an application in AD FS."
+msgstr "将一个服务器应用程序角色添加到 Active Directory Federation Services (AD FS) 中的应用程序中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ApplicationGroupIdentifier (Default)"
+msgstr "### ApplicationGroupIdentifier（默认值）"
+
+msgid "### ApplicationGroupObject"
+msgstr "### ApplicationGroupObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-AdfsServerApplication** cmdlet adds a server application role to "
+"an application in Active Directory Federation Services (AD FS)."
+msgstr ""
+"`Add-AdfsServerApplication` cmdlet 可以将服务器应用程序角色添加到 Active Directory "
+"Federation Services (AD FS) 中的某个应用程序中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the Active Directory account that corresponds to the confidential client that is registered.\n"
+"The only client authentication method available for use with Active Directory accounts is Windows Integrated Authentication (WIA)."
+msgstr ""
+"指定与已注册的机密客户端对应的 Active Directory 账户。对于 Active Directory 账户而言，唯一可用的客户端身份验证方法是"
+" Windows 集成身份验证（Windows Integrated Authentication，简称 WIA）。"
+
+msgid "Specifies an application group."
+msgstr "指定一个应用程序组。"
+
+msgid "Specifies an application group ID."
+msgstr "指定一个应用程序组ID。"
+
+msgid "Specifies a description."
+msgstr "指定一个描述信息。"
+
+msgid "Indicates that this cmdlet generates a secret value for the client."
+msgstr "表示此cmdlet会为客户生成一个秘密值。"
+
+msgid "Specifies an ID."
+msgstr "指定一个ID。"
+
+msgid "Specifies a file that contains a JSON Web Token (JWT)."
+msgstr "指定一个包含 JSON Web Token（JWT）的文件。"
+
+msgid "Specifies the URI of a JWT."
+msgstr "指定一个 JWT 的 URI。"
+
+msgid ""
+"Specifies an array of signing certificates for JWT.\n"
+"This public certificate is used to validate signatures for JWTs issued by this client for authenticating itself against AD FS by using the private key JWT client authentication method."
+msgstr ""
+"用于指定JWT签名证书的数组。该公钥证书用于验证由本客户端发布的JWT签名，以便通过使用私钥的JWT客户端认证方法在AD FS中进行身份验证。"
+
+msgid ""
+"Specifies revocation checks to perform to validate signatures for JWTs sent by confidential clients.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定需要对由机密客户端发送的 JWT 签名执行的撤销检查（revocation checks）。该参数的可接受值包括："
+
+msgid ""
+"Specifies the logout URI for the OAuth 2.0 client to register with the AD "
+"FS. When AD FS initiates a logout it redirects the client's user-agent to "
+"this URI by rendering this URI in an iframe. The value of this parameter "
+"must be an absolute URI, may include a query component, and must not include"
+" a fragment component. This parameter is available with the Windows Update "
+"KB4038801 installed."
+msgstr ""
+"指定 OAuth 2.0 客户端用于向 AD FS 注册的登出（logout）URI。当 AD FS 启动登出流程时，它会通过在一个 iframe "
+"中显示该 URI 来将客户端用户的用户代理重定向到此 URI。此参数的值必须是一个绝对 URI，可以包含查询组件，但不允许包含片段组件。只有在安装了 "
+"Windows 更新 KB4038801 之后，才能使用此参数。"
+
+msgid "Specifies a name."
+msgstr "指定一个名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies an array of redirection URIs for the OAuth 2.0 client to register with AD FS.\n"
+"The redirection URI is specified by the OAuth 2.0 client when it requests authorization to access a resource in ADFS."
+msgstr ""
+"指定一组用于OAuth 2.0客户端在AD FS中注册的重定向URL。当OAuth 2.0客户端请求访问AD FS中的资源时，需要提供这些重定向URL。"
+
+msgid ""
+"The redirection URI specified by the client must already be registered with AD FS.\n"
+"It must correspond to the client identifier for that OAuth 2.0 client.\n"
+"If the client ID and redirection URI correspond to a pre-registered OAuth 2.0 client and the resource owner authorized access by providing their credentials, ADFS delivers the authorization code or access token by redirecting the client's user-agent back to this redirection URI."
+msgstr ""
+"客户端指定的重定向 URI 必须已经注册在 AD FS（Active Directory Federation Services）中，并且必须与该 "
+"OAuth 2.0 客户端的标识符相匹配。如果客户端 ID 和重定向 URI 对应于一个预先注册的 OAuth 2.0 "
+"客户端，并且资源所有者通过提供自己的凭据授权了访问权限，那么 AD FS 会通过将客户端的用户代理（user-agent）重定向到该重定向 URI "
+"来颁发授权码或访问令牌。"
+
+msgid ""
+"The value of this parameter must match exactly the redirection URI that is specified by the OAuth 2.0 client when requesting authorization.\n"
+"This includes trailing slashes '/', if they are required.\n"
+"We recommended the use of more secure schemes such as https in a redirection URI."
+msgstr ""
+"此参数的值必须与OAuth "
+"2.0客户端在请求授权时指定的重定向URI完全匹配。如果需要的话，还包括末尾的斜杠（/）。我们建议在重定向URI中使用更安全的协议，例如https。"
+
+msgid ""
+"For Windows Store applications that authenticate by using the Windows Web Authentication Broker, use the `ms-app://` scheme for a redirection URI.\n"
+"If you are developing a Windows Store application, obtain the redirection URI for your application by using the following code fragment:"
+msgstr ""
+"对于使用 Windows Web Authentication Broker 进行身份验证的 Windows 应用程序，请使用 `ms-app://` "
+"方案作为重定向 URI。如果您正在开发 Windows 应用程序，可以通过以下代码片段获取应用程序的重定向 URI："
+
+msgid ""
+"`Uri redirectURI = "
+"Windows.Security.Authentication.Web.WebAuthenticationBroker.GetCurrentApplicationCallbackUri();`"
+msgstr ""
+"```csharp\n"
+"Uri redirectURI = Windows.Security Authentication.Web.WebAuthenticationBroker.GetCurrentApplicationCallbackUri();\n"
+"```"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsServerApplication](./Get-AdfsServerApplication.md)"
+msgstr "[Get-AdfsServerApplication](./Get-AdfsServerApplication.md)"
+
+msgid "[Remove-AdfsServerApplication](./Remove-AdfsServerApplication.md)"
+msgstr "[Remove-AdfsServerApplication](./Remove-AdfsServerApplication.md)"
+
+msgid "[Set-AdfsServerApplication](./Set-AdfsServerApplication.md)"
+msgstr "[Set-AdfsServerApplication](./Set-AdfsServerApplication.md)"

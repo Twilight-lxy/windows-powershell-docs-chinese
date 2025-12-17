@@ -1,0 +1,296 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:18:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-AdcsCertificationAuthority"
+msgstr "# 安装 AdcsCertificationAuthority"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Performs installation and configuration of the Active Directory Certificate Services (AD CS)\n"
+"Certification Authority (CA) role service."
+msgstr "负责安装和配置 Active Directory 证书服务（AD CS）中的“认证机构”（CA）角色服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### NewKeyParameterSet (Default)"
+msgstr "### NewKeyParameterSet（默认值）"
+
+msgid "### ExistingCertificateParameterSet"
+msgstr "### ExistingCertificateParameterSet"
+
+msgid "### ExistingKeyParameterSet"
+msgstr "### ExistingKeyParameterSet"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Install-AdcsCertificationAuthority` cmdlet performs installation and configuration of the\n"
+"Active Directory Certificate Services (AD CS) Certification Authority (CA) role service. To remove\n"
+"the certification authority role service use the `Uninstall-AdcsCertificationAuthority` cmdlet."
+msgstr ""
+"`Install-AdcsCertificationAuthority` cmdlet 用于安装和配置 Active Directory 证书服务（AD"
+" CS）中的认证机构（CA）角色服务。要删除该认证机构角色服务，请使用 `Uninstall-AdcsCertificationAuthority` "
+"cmdlet。"
+
+msgid ""
+"You can import the cmdlet by running the following commands from Windows "
+"PowerShell:"
+msgstr "您可以通过在 Windows PowerShell 中运行以下命令来导入该 cmdlet："
+
+msgid ""
+"**Int** is equivalent to **Int32** in the\n"
+"[.NET Framework](/dotnet/csharp/language-reference/builtin-types/built-in-types)."
+msgstr ""
+"在 [.NET Framework](/dotnet/csharp/language-reference/builtin-types/built-in-"
+"types)中，`Int` 相当于 `Int32`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Install a new Standalone Root CA with default settings"
+msgstr "#### 示例 1：安装一个新的独立根证书颁发机构（Root CA），并使用默认设置"
+
+msgid "This command installs a new Standalone Root CA with default settings."
+msgstr "此命令会安装一个新的独立根证书颁发机构（Root CA），并使用默认设置。"
+
+msgid ""
+"### Example 2: Install a new Enterprise Root CA using a specific provider "
+"and key length"
+msgstr "### 示例 2：使用特定的提供商和密钥长度安装新的企业根证书颁发机构（Enterprise Root CA）"
+
+msgid ""
+"This command installs a new Enterprise Root CA using the provider named ECDSA_P256 Microsoft\n"
+"Software Key Storage Provider, key length of 256, and the hash algorithm named SHA 256."
+msgstr ""
+"此命令使用名为“ECDSA_P256 Microsoft Software Key Storage "
+"Provider”的提供者来安装一个新的企业根证书颁发机构（Enterprise Root "
+"CA），该提供者的密钥长度为256位，使用的哈希算法为SHA-256。"
+
+msgid ""
+"### Example 3: Install a new Enterprise Root CA using a specific provider "
+"and a validity period"
+msgstr "### 示例 3：使用特定的提供商和有效期来安装新的企业根证书颁发机构（Enterprise Root CA）"
+
+msgid ""
+"This command installs a new Enterprise Root CA using the RSA algorithm using the provider named\n"
+"Microsoft Software Key Storage Provider, a key length of 2048, a hash algorithm named SHA 1, and\n"
+"validity period of three years."
+msgstr ""
+"此命令使用名为“Microsoft Software Key Storage "
+"Provider”的提供者，安装一个新的企业级根证书颁发机构（Enterprise Root "
+"CA）。该证书采用RSA算法进行加密，密钥长度为2048位，哈希算法为SHA-1，有效期为三年。"
+
+msgid ""
+"### Example 4: Install a new Enterprise Subordinate CA using a parent CA"
+msgstr "### 示例 4：使用上级证书颁发机构（CA）安装新的企业级从属证书颁发机构"
+
+msgid ""
+"This command installs a new Enterprise subordinate CA, the parent CA is `SERVER75` in the CORP domain\n"
+"of Contoso.com."
+msgstr ""
+"此命令用于安装一个新的企业级从属CA（Certificate "
+"Authority，证书颁发机构）。该从属CA的父CA是`SERVER75`，位于Contoso.com公司的CORP域名域内。"
+
+msgid ""
+"### Example 5: Install a new Enterprise Subordinate CA using an existing "
+"certificate"
+msgstr "### 示例 5：使用现有的证书安装一个新的企业级从属CA（Certificate Authority）"
+
+msgid ""
+"This command installs an Enterprise Subordinate CA using an existing certificate from a PFX/P12 file\n"
+"that is located on the local `C:\\Cert` folder named `SERVER80-CA.p12`."
+msgstr ""
+"此命令使用一个来自PFX/P12文件的现有证书来安装企业级从属CA（Enterprise Subordinate "
+"CA）。该证书位于本地`C:\\Cert`文件夹中，文件名为`SERVER80-CA.p12`。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet enables prompting when the private key is accessed. This is not required\n"
+"for any of the Microsoft default providers. For enhanced security components, such as a hardware\n"
+"security module (HSM), review the enhanced security component vendor documentation."
+msgstr ""
+"这表示该cmdlet在访问私钥时启用提示功能。对于Microsoft的所有默认提供程序来说，这一功能都不是必需的。对于增强型安全组件（如硬件安全模块（HSM）），请查阅相关供应商提供的文档以获取更多信息。"
+
+msgid "Specifies the certification authority common name."
+msgstr "指定认证机构的通用名称。"
+
+msgid "Specifies the certification authority distinguished name suffix."
+msgstr "指定认证机构的可分辨名称后缀。"
+
+msgid ""
+"Specifies the type of certification authority that this cmdlet installs.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定此 cmdlet 安装的证书颁发机构的类型。该参数的可接受值包括："
+
+msgid ""
+"Specifies the file name of certification authority PKCS #12 formatted "
+"certificate file."
+msgstr "指定证书颁发机构（CA）生成的PKCS #12格式证书文件的文件名。"
+
+msgid "Specifies the password for certification authority certificate file."
+msgstr "指定用于认证机构证书文件的密码。"
+
+msgid ""
+"Specifies the thumbprint or serial number of certification authority "
+"certificate."
+msgstr "指定证书颁发机构证书的指纹（thumbprint）或序列号（serial number）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies a **PSCredential** object for the connection to AD DS. To obtain a credential object, use\n"
+"the `Get-Credential` cmdlet. For more information, type `Get-Help Get-Credential`. To install an\n"
+"enterprise certification authority, the computer must be joined to an AD DS domain and a user\n"
+"account that is a member of the Enterprise Admin group is required. To install a standalone\n"
+"certification authority, the computer can be in a workgroup or AD DS domain. If the computer is in a\n"
+"workgroup, a user account that is a member of Administrators is required. If the computer is in an\n"
+"AD DS domain, a user account that is a member of Domain Admins is required."
+msgstr ""
+"用于指定一个 **PSCredential** 对象，以便连接到 Active Directory Domain Services (AD DS)。要获取该凭据对象，请使用 `Get-Credential` cmdlet。有关更多信息，请输入 `Get-Help Get-Credential`。  \n"
+"\n"
+"- 要安装企业级证书颁发机构（Enterprise Certification Authority），计算机必须加入 AD DS 域，并且需要一个属于 “Enterprise Admin” 组的用户账户。  \n"
+"- 要安装独立的证书颁发机构，计算机可以处于工作组或 AD DS 域中；如果计算机位于工作组中，则需要一个属于 “Administrators” 组的用户账户；如果计算机位于 AD DS 域中，则需要一个属于 “Domain Admins” 组的用户账户。"
+
+msgid ""
+"Specifies the name of the cryptographic service provider (CSP) or key storage provider (KSP) that is\n"
+"used to generate or store the private key for the CA."
+msgstr "指定用于生成或存储证书颁发机构（CA）私钥的加密服务提供商（CSP）或密钥存储提供商（KSP）的名称。"
+
+msgid "Specifies the folder location of the certification authority database."
+msgstr "指定证书颁发机构数据库所在的文件夹位置。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不需要用户确认。"
+
+msgid ""
+"Specifies the signature hash algorithm used by the certification authority."
+msgstr "指定证书颁发机构使用的签名哈希算法。"
+
+msgid ""
+"Indicates that the cmdlet allows Unicode characters in the certification "
+"authority name string."
+msgstr "表示该cmdlet允许在证书颁发机构名称字符串中使用Unicode字符。"
+
+msgid "Specifies the name of an existing private key container."
+msgstr "指定一个现有私有密钥容器的名称。"
+
+msgid "Specifies the bit length for new certification authority key."
+msgstr "指定新证书颁发机构（CA）密钥的位长度。"
+
+msgid ""
+"Specifies the folder location of the certification authority database log."
+msgstr "指定证书颁发机构数据库日志的文件夹位置。"
+
+msgid "Specifies the folder location for the certificate request file."
+msgstr "指定证书请求文件的文件夹位置。"
+
+msgid ""
+"Indicates that the cmdlet overwrites the computer object in the Active Directory Domain Service\n"
+"domain with the same computer name."
+msgstr "表示该cmdlet会用具有相同计算机名称的对象来覆盖Active Directory域服务（AD DS）域中的相应计算机对象。"
+
+msgid ""
+"Indicates that the cmdlet overwrites the existing certification authority "
+"database."
+msgstr "表示该cmdlet会覆盖现有的证书颁发机构数据库。"
+
+msgid ""
+"Indicates that the cmdlet overwrites the existing key container with the "
+"same name."
+msgstr "表示该cmdlet会用具有相同名称的新键容器覆盖现有的键容器。"
+
+msgid ""
+"Specifies the configuration string of the parent certification authority "
+"that will certify this CA."
+msgstr "指定用于认证此证书颁发机构（CA）的父证书颁发机构的配置字符串。"
+
+msgid ""
+"Specifies the validity period of the certification authority (CA) certificate in hours, days, weeks,\n"
+"months, or years. If this is a subordinate CA, do not use this parameter, because the validity period\n"
+"is determined by the parent CA."
+msgstr ""
+"指定证书颁发机构（CA）证书的有效期，单位可以是小时、天、周、月或年。如果这是一个从属的CA（即由上级CA管理的CA），则不要使用此参数，因为其有效期由上级CA决定。"
+
+msgid ""
+"Specifies the validity period of the CA certificate. If this is a subordinate CA, do not specify\n"
+"this parameter because the validity period is determined by the parent CA."
+msgstr "指定CA证书的有效期。如果这是一个从属CA，则不要设置此参数，因为其有效期由父CA决定。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, `-ErrorVariable`,\n"
+"`-InformationAction`, `-InformationVariable`, `-OutVariable`, `-OutBuffer`, `-PipelineVariable`,\n"
+"`-Verbose`, `-WarningAction`, and `-WarningVariable`. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.ManagementAutomation.SwitchParameter"
+
+msgid "### System.Security.SecureString"
+msgstr "### System.Security.SecureString"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### Microsoft.CertificateServices.Deployment.Common.CA.ValidityPeriod"
+msgstr "### Microsoft.CertificateServices.Deployment(Common.CA ValidityPeriod"
+
+msgid "### System.Int32"
+msgstr "### System.Int32"
+
+msgid "### Microsoft.CertificateServices.Deployment.Common.CA.CAType"
+msgstr "### Microsoft.CertificateServices.Deployment.Common.CA.CAType"
+
+msgid "### System.Management.Automation.PSCredential"
+msgstr "### System.Management.Automation.PSCredential"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Deployment.Common.CA.CertificationAuthoritySetupResult"
+msgstr ""
+"### "
+"Microsoft.CertificateServices.Deployment(Common.CA.CertificationAuthoritySetupResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Uninstall-AdcsCertificationAuthority](./Uninstall-"
+"AdcsCertificationAuthority.md)"
+msgstr ""
+"[卸载 AdcsCertificationAuthority](./Uninstall-AdcsCertificationAuthority.md)"

@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:23:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsAccessControlPolicy"
+msgstr "# 设置 AdfsAccessControlPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies an AD FS access control policy."
+msgstr "修改 AD FS 访问控制策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AdfsAccessControlPolicy** cmdlet modifies an Active Directory "
+"Federation Services (AD FS) access control policy."
+msgstr ""
+"`Set-AdfsAccessControlPolicy` cmdlet 用于修改 Active Directory Federation "
+"Services (AD FS) 的访问控制策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a description for the policy."
+msgstr "为该策略指定一个描述。"
+
+msgid "Specifies an ID for the policy."
+msgstr "为该策略指定一个ID。"
+
+msgid "Specifies a name for the policy."
+msgstr "为该策略指定一个名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不生成任何输出。"
+
+msgid "Specifies metadata for the policy."
+msgstr "为策略指定元数据。"
+
+msgid "Specifies the metadata file for the policy."
+msgstr "指定用于该策略的元数据文件。"
+
+msgid "Specifies the ID of the target."
+msgstr "指定目标的ID。"
+
+msgid "Specifies the target name."
+msgstr "指定目标名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsAccessControlPolicy](./Get-AdfsAccessControlPolicy.md)"
+msgstr "[Get-AdfsAccessControlPolicy](./Get-AdfsAccessControlPolicy.md)"
+
+msgid "[New-AdfsAccessControlPolicy](./New-AdfsAccessControlPolicy.md)"
+msgstr "[New-AdfsAccessControlPolicy](./New-AdfsAccessControlPolicy.md)"
+
+msgid "[Remove-AdfsAccessControlPolicy](./Remove-AdfsAccessControlPolicy.md)"
+msgstr "[Remove-AdfsAccessControlPolicy](./Remove-AdfsAccessControlPolicy.md)"

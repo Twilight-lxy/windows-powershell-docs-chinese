@@ -1,0 +1,149 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:09:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Invoke-AdfsFarmBehaviorLevelRaise"
+msgstr "# 调用 Invoke-AdfsFarmBehaviorLevelRaise 命令"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Raises the behavior level of a farm."
+msgstr "提升农场的整体管理水平（或运营水平）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### AdfsUpgradeServiceAccount (Default)"
+msgstr "### AdfsUpgradeServiceAccount（默认值）"
+
+msgid "### AdfsUpgradeGmsaAccount"
+msgstr "### AdfsUpgradeGmsaAccount"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Invoke-AdfsFarmBehaviorLevelRaise** cmdlet raises the behavior level "
+"of an Active Directory Federation Services (AD FS) farm to enable the new "
+"features that are available in later versions of the Windows operating "
+"system."
+msgstr ""
+"`Invoke-AdfsFarmBehaviorLevelRaise` cmdlet 用于提升 Active Directory Federation "
+"Services (AD FS) 农场的行为级别，从而启用 Windows 操作系统后续版本中提供的新功能。"
+
+msgid ""
+"To raise the behavior level of a farm that uses SQL Server as the policy "
+"database, specify the *Credential* parameter."
+msgstr "要提高使用 SQL Server 作为策略数据库的农场的运行水平，请指定 *Credential* 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Raise the farm behavior level"
+msgstr "#### 示例 1：提升农场行为等级"
+
+msgid ""
+"This command raises the farm behavior level from Windows Server 2012 R2 to the Windows Server 2016 level.\n"
+"The command applies to the latest version available on your forest.\n"
+"You not have to specify the level."
+msgstr ""
+"该命令会将农场行为级别从 Windows Server 2012 R2 升级到 Windows Server 2016 "
+"的级别。此命令适用于您所在林中可用的最新版本；无需指定具体的级别。"
+
+msgid ""
+"### Example 2: Raise the farm behavior level for a farm that uses SQL Server"
+msgstr "### 示例 2：提升使用 SQL Server 的农场的农场行为等级"
+
+msgid ""
+"The first command prompts you for user name and password by using the **Get-Credential** cmdlet.\n"
+"The command stores the credentials in the $Credentials variable."
+msgstr ""
+"第一个命令使用 **Get-Credential** cmdlet 来提示用户输入用户名和密码。该命令将凭据存储在 $Credentials 变量中。"
+
+msgid ""
+"The second command raises the farm behavior level from Windows Server 2012 R2 to the Windows Server 2016 level.\n"
+"The cmdlet specifies the necessary credentials stored in $Credentials."
+msgstr ""
+"第二个命令将农场行为级别从 Windows Server 2012 R2 升级到 Windows Server 2016 水平。该 cmdlet "
+"指定了存储在 `$Credentials` 变量中的必要凭据。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies credentials necessary to run this cmdlet for an AD FS farm that uses SQL Server as the policy database.\n"
+"The credentials provided must be an administrator on each AD FS server.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet."
+msgstr ""
+"用于指定运行此cmdlet所需的凭据信息，该cmdlet适用于使用SQL Server作为策略数据库的AD FS（Active Directory "
+"Federation Services）集群。提供的凭据必须具有每台AD "
+"FS服务器的管理员权限。若需获取一个**PSCredential**对象，请使用**Get-Credential** cmdlet。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需询问用户的确认。"
+
+msgid "Specifies the ID of a group Managed Service Account."
+msgstr "指定一个组托管服务账户（Group Managed Service Account）的ID。"
+
+msgid "Specifies an array of members."
+msgstr "指定一个成员数组。"
+
+msgid "Specifies credentials for a service account."
+msgstr "指定服务账户的凭据信息。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您确认是否要继续执行。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Restore-AdfsFarmBehaviorLevel](./Restore-AdfsFarmBehaviorLevel.md)"
+msgstr "[ Restore-AdfsFarmBehaviorLevel](./Restore-AdfsFarmBehaviorLevel.md)"
+
+msgid ""
+"[Test-AdfsFarmBehaviorLevelRaise](./Test-AdfsFarmBehaviorLevelRaise.md)"
+msgstr ""
+"[Test-AdfsFarmBehaviorLevelRaise](./Test-AdfsFarmBehaviorLevelRaise.md)"
+
+msgid ""
+"[Test-AdfsFarmBehaviorLevelRestore](./Test-AdfsFarmBehaviorLevelRestore.md)"
+msgstr ""
+"[Test-AdfsFarmBehaviorLevelRestore](./Test-AdfsFarmBehaviorLevelRestore.md)"

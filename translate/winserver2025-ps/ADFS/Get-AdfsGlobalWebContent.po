@@ -1,0 +1,109 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:01:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsGlobalWebContent"
+msgstr "# 获取 AdfsGlobalWeb 内容"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets global web content objects."
+msgstr "获取全局网页内容对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsGlobalWebContent** cmdlet gets all global web content objects or the global web content object that corresponds to the locale that you specify.\n"
+"If you do not specify the *Locale* parameter, the cmdlet gets global web content objects for all locales."
+msgstr ""
+"`Get-AdfsGlobalWebContent` cmdlet 可以获取所有的全局 Web "
+"内容对象，或者获取与您指定的区域设置（locale）相对应的全局 Web 内容对象。如果您没有指定 `Locale` 参数，该 cmdlet "
+"会获取所有区域设置下的全局 Web 内容对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get global web content for all locales"
+msgstr "#### 示例 1：获取所有地区的全球网页内容"
+
+msgid "This command gets the global web content for all locales."
+msgstr "这个命令可以获取所有地区（locales）的全局网页内容。"
+
+msgid "### Example 2: Get the global web content for a locale"
+msgstr "### 示例 2：获取特定地区的全局网页内容"
+
+msgid ""
+"This command gets the global web content for the en-us locale.\n"
+"If you did not specify a locale when you modified properties of the global web content by using the **Set-AdfsGlobalWebContent** cmdlet, the cmdlet returns no additional information."
+msgstr ""
+"此命令会获取与英文（en-us）语言环境相关的全局网页内容。如果您在使用 **Set-AdfsGlobalWebContent** cmdlet "
+"修改全局网页内容的属性时没有指定任何语言环境，那么该 cmdlet 将不会返回任何额外信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of locales.\n"
+"The cmdlet gets the global web content associated with the locales that you specify."
+msgstr "指定一个本地化设置（locale）数组。该cmdlet会获取与您指定的这些本地化设置相关联的全球网页内容。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.IdentityServer.Management.Resources.AdfsGlobalWebContent;Microsoft.IdentityServer.Management.Resources.AdfsGlobalWebContent[]"
+msgstr ""
+"### MicrosoftIdentityServer.Management.Resources.AdfsGlobalWebContent; "
+"MicrosoftIdentityServer.ManagementResources.AdfsGlobalWebContent[]"
+
+msgid ""
+"This cmdlet generates a **System.IdentityServer.Management.Resources.AdfsGlobalWebContent** object that represents global web content.\n"
+"The object includes the following properties:"
+msgstr ""
+"这个 cmdlet 生成一个 "
+"**SystemIdentityServer.ManagementResources.AdfsGlobalWebContent** "
+"对象，该对象表示全局网页内容。该对象包含以下属性："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-AdfsGlobalWebContent](./Set-AdfsGlobalWebContent.md)"
+msgstr "[Set-AdfsGlobalWebContent](./Set-AdfsGlobalWebContent.md)"
+
+msgid "[Remove-AdfsGlobalWebContent](./Remove-AdfsGlobalWebContent.md)"
+msgstr "[Remove-AdfsGlobalWebContent](./Remove-AdfsGlobalWebContent.md)"

@@ -1,0 +1,114 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:53:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-AdfsDeviceRegistration"
+msgstr "# 启用 AdFS 设备注册功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "This cmdlet has been deprecated."
+msgstr "此cmdlet已被弃用。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"This cmdlet has been deprecated for AD FS 2016.\n"
+"For more information, see [Configure On-Premises Conditional Access using registered devices](/windows-server/identity/ad-fs/operations/configure-device-based-conditional-access-on-premises)."
+msgstr ""
+"此cmdlet在AD FS 2016中已被弃用。有关更多信息，请参阅[使用已注册的设备配置本地条件访问](/windows-"
+"server/identity/ad-fs/operations/configure-device-based-conditional-access-"
+"on-premises)。"
+
+msgid ""
+"The **Enable-AdfsDeviceRegistration** cmdlet configures a server in an Active Directory Federation Services (AD FS) farm to host the Device Registration Service.\n"
+"To completely enable the Device Registration Service, you must run this command on each AD FS server in your AD FS farm.\n"
+"You must run the **Initialize-ADDeviceRegistration** cmdlet before you run this cmdlet."
+msgstr ""
+"**Enable-AdfsDeviceRegistration** cmdlet 用于配置 Active Directory Federation "
+"Services (AD FS) 群集中的某台服务器，以托管设备注册服务（Device Registration "
+"Service）。要完全启用该设备注册服务，必须在 AD FS 群集中的每台服务器上运行此命令。在运行此命令之前，必须先执行 **Initialize-"
+"ADDeviceRegistration** cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable the device registration service"
+msgstr "### 示例 1：启用设备注册服务"
+
+msgid ""
+"This command enables the Device Registration Service on the AD FS server.\n"
+"Note that you must perform this action on every AD FS server in the farm."
+msgstr "此命令可在AD FS服务器上启用设备注册服务。请注意，您必须对场中的每台AD FS服务器都执行此操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a **PSCredential** object."
+msgstr "指定一个 **PSCredential** 对象。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-AdfsDeviceRegistration](./Disable-AdfsDeviceRegistration.md)"
+msgstr ""
+"[ Disable-AdfsDeviceRegistration](./Disable-AdfsDeviceRegistration.md)"
+
+msgid "[Get-AdfsDeviceRegistration](./Get-AdfsDeviceRegistration.md)"
+msgstr "[Get-AdfsDeviceRegistration](./Get-AdfsDeviceRegistration.md)"
+
+msgid ""
+"[Initialize-ADDeviceRegistration](./Initialize-ADDeviceRegistration.md)"
+msgstr ""
+"[Initialize-ADDeviceRegistration](./Initialize-ADDeviceRegistration.md)"
+
+msgid "[Set-AdfsDeviceRegistration](./Set-AdfsDeviceRegistration.md)"
+msgstr "[Set-AdfsDeviceRegistration](./Set-AdfsDeviceRegistration.md)"

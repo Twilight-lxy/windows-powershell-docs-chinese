@@ -1,0 +1,267 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:02:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ADForest"
+msgstr "# Get-ADForest"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets an Active Directory forest."
+msgstr "获取一个 Active Directory 林（即多个域组成的集合）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Current (Default)"
+msgstr "### 当前设置（默认值）"
+
+msgid "### Identity"
+msgstr "### 身份"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-ADForest** cmdlet gets the specified Active Directory forest.\n"
+"You can specify the forest by setting the *Identity* or *Current* parameters."
+msgstr ""
+"`Get-ADForest` cmdlet 可以获取指定的 Active Directory 林（forest）。你可以通过设置 `Identity` "
+"或 `Current` 参数来指定所需的 Active Directory 林。"
+
+msgid ""
+"The *Identity* parameter specifies the Active Directory forest to get.\n"
+"You can identify a forest by its fully qualified domain name (FQDN), DNS host name, or NetBIOS name.\n"
+"You can also set the parameter to a forest object variable, such as `$<localForestObject>`, or you can pass a forest object through the pipeline to the *Identity* parameter."
+msgstr ""
+"`Identity` 参数用于指定要获取的 Active Directory 林（forest）。您可以通过其完全限定域名（FQDN）、DNS 主机名或"
+" NetBIOS 名来识别该林。您还可以将此参数设置为一个林对象变量（例如 "
+"`$<localForestObject>`），或者通过管道将一个林对象传递给 `Identity` 参数。"
+
+msgid ""
+"To get the forest of the local computer or current logged on user, set the *Current* parameter to LocalComputer or LoggedOnUser.\n"
+"When you set the *Current*parameter, you do not need to set the *Identity* parameter."
+msgstr ""
+"要获取本地计算机或当前登录用户的详细信息，请将 *Current* 参数设置为 LocalComputer 或 LoggedOnUser。当您设置了 "
+"*Current* 参数后，就无需再设置 *Identity* 参数了。"
+
+msgid ""
+"When the *Current* parameter is set to LocalComputer or LoggedOnUser, the "
+"cmdlet uses the *Server* and *Credential* parameter values to determine the "
+"domain and the credentials to use to identify the domain of the forest "
+"according to the following rules:"
+msgstr ""
+"当 *Current* 参数被设置为 LocalComputer 或 LoggedOnUser 时，该 cmdlet 会使用 *Server* 和 "
+"*Credential* 参数的值来确定域名以及用于识别该域的凭据。具体规则如下："
+
+msgid ""
+"The domain is set to the domain of the LocalComputer or LoggedOnUser and a server is located in this domain.\n"
+"The credentials of the current logged on user are used to get the domain."
+msgstr ""
+"该域名被设置为 LocalComputer 或 LoggedOnUser 的所属域，并且有一台服务器位于这个域中。当前登录用户的凭据被用来获取该域名。"
+
+msgid ""
+"The domain is set to the domain of the specified server and the cmdlet checks to make sure that the server is in the domain of the LocalComputer or LoggedOnUser.\n"
+"Then the credentials of the current logged on user are used to get the domain.\n"
+"An error is returned when the server is not in the domain of the LocalComputer or LoggedOnUser."
+msgstr ""
+"该域名被设置为指定服务器所属的域名，然后该cmdlet会检查该服务器是否属于LocalComputer或LoggedOnUser所在的域。接着，使用当前登录用户的凭据来获取相应的域名信息。如果该服务器不属于LocalComputer或LoggedOnUser所在的域，则会返回错误信息。"
+
+msgid ""
+"The domain is set to the domain of the LocalComputer or LoggedOnUser and a server is located in this domain.\n"
+"Then the credentials specified by the *Credential* parameter are used to get the domain."
+msgstr ""
+"该域名被设置为 LocalComputer 或LoggedOnUser 的所属域，并且有一个服务器位于这个域中。然后，使用 *Credential* "
+"参数指定的凭据来获取该域名。"
+
+msgid ""
+"The domain is set to the domain of the specified server and the cmdlet checks to make sure that the server is in the domain of the LocalComputer or LoggedOnUser.\n"
+"Then the credentials specified by the *Credential* parameter are used to get the domain.\n"
+"An error is returned when the server is not in the domain of the LocalComputer or LoggedOnUser."
+msgstr ""
+"该域名被设置为指定服务器所属的域名称，然后cmdlet会检查该服务器是否属于LocalComputer或LoggedOnUser所在的域。接着，使用由*Credential*参数指定的凭据来获取该域名。如果该服务器不属于LocalComputer或LoggedOnUser所在的域，则会返回错误信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get information for a domain forest"
+msgstr "### 示例 1：获取域森林的相关信息"
+
+msgid "This command gets information for the Fabrikam.com forest."
+msgstr "这个命令用于获取Fabrikam.com森林（即该网络环境）的相关信息。"
+
+msgid "### Example 2: Get information for a local computer forest"
+msgstr "### 示例 2：获取本地计算机群组的信息"
+
+msgid ""
+"This command gets the information for the current local computer's forest."
+msgstr "这个命令可以获取当前本地计算机所属的森林（forest）的相关信息。"
+
+msgid "### Example 3: Get information for the current user's forest"
+msgstr "### 示例 3：获取当前用户所管理的森林的相关信息"
+
+msgid ""
+"This command gets the forest information of the currently logged on user."
+msgstr "这个命令可以获取当前登录用户的森林（forest）相关信息。"
+
+msgid "### Example 4: Get information for the current user's forest"
+msgstr "### 示例 4：获取当前用户所在森林的信息"
+
+msgid ""
+"This command gets the forest information of the currently logged on user."
+msgstr "这个命令可以获取当前登录用户的森林（forest）相关信息。"
+
+msgid ""
+"### Example 5: Get all of the domain controllers for all domains in a forest"
+msgstr "### 示例 5：获取林中所有域的所有域控制器"
+
+msgid ""
+"This command gets all the domain controllers for all domains in a forest."
+msgstr "这个命令可以获取整个林中所有域的所有域控制器信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的身份验证方法。此参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该cmdlet是从Windows PowerShell提供程序的Active "
+"Directory模块驱动器中运行的。如果该cmdlet是从此类驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name such as User1 or Domain01\\User01, or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01\\User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 `PSCredential` 对象。之后，你可以将 "
+"`Credential` 参数设置为这个 `PSCredential` 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果执行该任务的代理程序没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies whether to return the domain of the local computer or the current logged on user.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定是返回本地计算机的域名还是当前登录用户的身份信息。该参数的可接受值包括："
+
+msgid ""
+"Specifies an Active Directory forest object by providing one of the following attribute values.\n"
+"The identifier in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory "
+"林对象。括号中的标识符是该属性的轻量级目录访问协议（LDAP）显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr "该cmdlet会在默认的命名上下文或分区中搜索目标对象。如果找到两个或多个对象，它将返回一个无法终止的错误信息。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to a forest object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为一个森林对象（forest object）的实例。"
+
+msgid ""
+"Specifies the Active Directory Domain Services (AD DS) instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following: Active Directory Lightweight Directory Services (AD LDS), AD DS, or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 Active Directory 域服务（AD "
+"DS）实例，为此提供相应的域名或目录服务器之一。该服务可以是以下类型中的任意一种：Active Directory 轻量级目录服务（AD LDS）、AD"
+" DS 或 Active Directory 快照实例。"
+
+msgid "Specify the AD DS instance in one of the following ways:"
+msgstr "以下是几种指定 AD DS 实例的方法："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们的排列顺序："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADForest"
+msgstr "### 无，或使用 `Microsoft ActiveDirectory.Management.ADForest`"
+
+msgid "A forest object is received by the *Identity* parameter."
+msgstr "一个森林对象通过*Identity*参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADForest"
+msgstr "### Microsoft ActiveDirectory.Management.ADForest"
+
+msgid "Returns one or more forest objects."
+msgstr "返回一个或多个森林对象（forest objects）。"
+
+msgid ""
+"This cmdlet returns all of the properties of the forest.\n"
+"To view all of the properties for an **ADForest** object, use the following command and replace \\<forest\\> with a forest identifier such as a DNS host name."
+msgstr ""
+"此cmdlet会返回森林（forest）的所有属性。要查看某个**ADForest**对象的所有属性，请使用以下命令，并将\\<forest\\>替换为相应的森林标识符（例如DNS主机名）。"
+
+msgid "`Get-ADForest`\\<forest\\>`| Get-Member`"
+msgstr "`Get-ADForest `<forest>` | Get-Member`"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-ADForest](./Set-ADForest.md)"
+msgstr "[Set-ADForest](./Set-ADForest.md)"

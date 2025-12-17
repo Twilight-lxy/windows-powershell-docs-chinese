@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:57:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsAuthenticationProvider"
+msgstr "# Get-AdfsAuthenticationProvider"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets a list of all authentication providers in AD FS."
+msgstr "获取 AD FS 中所有身份验证提供程序的列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AdfsAuthenticationProvider** cmdlet gets a list of all authentication providers currently registered in Active Directory Federation Services (AD FS).\n"
+"The read-only list includes built-in and external authentication providers and associated properties."
+msgstr ""
+"`Get-AdfsAuthenticationProvider` cmdlet 可以获取当前在 Active Directory Federation "
+"Services (AD FS) 中注册的所有身份验证提供程序的列表。这个只读列表包括内置的身份验证提供程序和外部身份验证提供程序，以及相关的属性信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all registered authentication providers"
+msgstr "#### 示例 1：获取所有已注册的身份验证提供者"
+
+msgid ""
+"This command gets all authentication providers currently registered in AD "
+"FS."
+msgstr "该命令可以获取当前在 AD FS 中注册的所有身份验证提供程序。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of an authentication provider to retrieve from AD FS."
+msgstr "指定要从 Active Directory Federation Services (AD FS) 中检索的认证提供程序的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Register-AdfsAuthenticationProvider](./Register-"
+"AdfsAuthenticationProvider.md)"
+msgstr ""
+"[注册 AdfsAuthenticationProvider](./Register-AdfsAuthenticationProvider.md)"
+
+msgid ""
+"[Unregister-AdfsAuthenticationProvider](./Unregister-"
+"AdfsAuthenticationProvider.md)"
+msgstr ""
+"[Unregister-AdfsAuthenticationProvider](./Unregister-"
+"AdfsAuthenticationProvider.md)"

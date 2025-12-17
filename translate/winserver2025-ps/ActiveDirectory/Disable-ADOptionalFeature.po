@@ -1,0 +1,217 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 12:41:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-ADOptionalFeature"
+msgstr "# 禁用可选的广告功能（Disable-ADOptionalFeature）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Disables an Active Directory optional feature."
+msgstr "禁用 Active Directory 的一个可选功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Disable-ADOptionalFeature` disables an Active Directory optional feature that is associated\n"
+"with a particular domain mode or forest mode."
+msgstr ""
+"` Disable-ADOptionalFeature` 命令用于禁用与特定域模式或林模式相关联的 Active Directory 可选功能。"
+
+msgid ""
+"The **Identity** parameter specifies the Active Directory optional feature that you want to disable.\n"
+"You can identify an optional feature by its distinguished name, feature GUID, or object GUID. You\n"
+"can also set the parameter to an optional feature object variable, such as\n"
+"`$<localOptionalFeatureObject>` or you can pass an optional feature object through the pipeline to\n"
+"the **Identity** parameter. For example, you can use the `Get-ADOptionalFeature` cmdlet to retrieve\n"
+"an optional feature object and then pass the object through the pipeline to the\n"
+"`Disable-ADOptionalFeature` cmdlet."
+msgstr ""
+"**Identity** 参数用于指定您想要禁用的 Active Directory 可选功能。您可以通过该功能的唯一名称（distinguished "
+"name）、功能 GUID 或对象 GUID 来识别它。此外，您还可以将此参数设置为某个可选功能对象变量（例如 "
+"`$<localOptionalFeatureObject>`），或者通过管道将该可选功能对象传递给 **Identity** 参数。例如，您可以使用 "
+"`Get-ADOptionalFeature` cmdlet 获取一个可选功能对象，然后通过管道将其传递给 `Disable-"
+"ADOptionalFeature` cmdlet。"
+
+msgid ""
+"The **Scope** parameter specifies the scope at which the optional feature is"
+" disabled."
+msgstr "`Scope` 参数指定了该可选功能被禁用的范围。"
+
+msgid ""
+"The **Target** parameter specifies the domain or forest on which the optional feature is disabled.\n"
+"You can identify the domain or forest by its fully-qualified domain name (FQDN), NetBIOS name, or\n"
+"the distinguished name of the domain naming context."
+msgstr ""
+"`Target` 参数用于指定要禁用该可选功能的域或林。您可以通过其完全限定域名（FQDN）、NetBIOS "
+"名称或域命名上下文的区分名称来识别该域或林。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable a feature for a NetBIOS target"
+msgstr "#### 示例 1：禁用 NetBIOS 目标的某个功能"
+
+msgid ""
+"This command disables the optional feature named `Feature 1` for the forest that has the NetBIOS\n"
+"name `fabrikam`. This operation should be performed against the domain controller that holds the\n"
+"domain naming master flexible single master operations (FSMO) role."
+msgstr ""
+"此命令将禁用名为“Feature "
+"1”的可选功能，该功能适用于NetBIOS名称为“fabrikam”的森林（即网络环境）。此操作应在拥有域命名主控器（Flexible Single "
+"Master Operations, FSMO）角色的域控制器上执行。"
+
+msgid "### Example 2: Disable a feature by distinguished name"
+msgstr "#### 示例 2：通过唯一名称禁用某个功能"
+
+msgid ""
+"This command disables the optional feature that has the distinguished name\n"
+"`CN=Feature 1,CN=Optional Features,CN=Directory Service,CN=Windows NT,CN=Services,CN=Configuration,DC=fabrikam,DC=com`,\n"
+"for the forest named `fabrikam.com`. This operation should be performed against the domain\n"
+"controller that holds the domain naming master FSMO role."
+msgstr ""
+"此命令将禁用名为 `CN=Feature 1,CN=Optional Features,CN=Directory Service,CN=Windows "
+"NT,CN=Services,CN=Configuration,DC=fabrikam,DC=com` 的可选功能，该功能适用于名为 "
+"`fabrikam.com` 的森林。此操作应在拥有域命名主 FSMO 角色的域控制器上执行。"
+
+msgid "### Example 3: Disable a feature by GUID"
+msgstr "### 示例 3：通过 GUID 禁用某个功能"
+
+msgid ""
+"This command disables the optional feature that has the GUID `54ec6e43-75a8-445b-aa7b-346a1e096659`\n"
+"for the domain with the distinguished name `DC=ntdev,DC=fabrikam,DC=com`. This operation should be\n"
+"performed against the domain controller that holds the domain naming naming master FSMO role."
+msgstr ""
+"此命令将禁用一个可选功能。该功能的 GUID 为 `54ec6e43-75a8-445b-aa7b-346a1e096659`，且适用于域名 "
+"`DC=ntdev,DC=fabrikam,DC=com`。此操作需要在持有域命名主 FSMO 角色的域控制器上执行。"
+
+msgid "### Example 4: Disable a feature for an AD LDS instance"
+msgstr "### 示例 4：禁用 AD LDS 实例的某个功能"
+
+msgid ""
+"This command disables the optional feature `Feature 1` for the Active Directory Lightweight\n"
+"Directory Services (AD LDS) instance that has the distinguished name\n"
+"`CN=Configuration,CN={0241853A-6BBF-48AA-8AE0-9C35D0C91B7B}`. This operation should be performed\n"
+"against the AD LDS instance that holds the domain naming master FSMO role."
+msgstr ""
+"此命令将禁用具有 distinguished name "
+"`CN=Configuration,CN={0241853A-6BBF-48AA-8AE0-9C35D0C91B7B}` 的 Active "
+"Directory Lightweight Directory Services (AD LDS) 实例中的可选功能“Feature "
+"1”。该操作应针对持有域命名主 FSMO 角色的 AD LDS 实例进行。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is `Negotiate`."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the `Basic` "
+"authentication method."
+msgstr "基本（Basic）认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task. The default credentials are the\n"
+"credentials of the currently logged on user unless the cmdlet is run from an Active Directory module\n"
+"for Windows PowerShell provider drive. If the cmdlet is run from such a provider drive, the account\n"
+"associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果该 cmdlet 是从这样的驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as `User1` or `Domain01\\User01` or you can\n"
+"specify a **PSCredential** object. If you specify a user name for this parameter, the cmdlet prompts\n"
+"for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 `User1` 或 `Domain01\\User01`），或者可以指定一个 **PSCredential**"
+" 对象。如果您为该参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the `Get-Credential`\n"
+"cmdlet. You can then set the **Credential** parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，可以将该 "
+"**Credential** 对象设置为相应的参数值。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform the task, Active\n"
+"Directory module for Windows PowerShell returns a terminating error."
+msgstr ""
+"如果该执行任务的账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory optional feature object by providing one of the following values. The\n"
+"identifier in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the\n"
+"attribute. The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下值之一来指定一个 Active Directory "
+"可选功能对象。括号中的标识符是该属性的轻量级目录访问协议（LDAP）显示名称。此参数的可接受值为："
+
+msgid "`-Target \"DC=corp,DC=Fabrikam,DC=com\"`"
+msgstr "`-Target \"DC=corp,DC=Fabrikam,DC=com\"`"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADOptionalFeature"
+msgstr "### Microsoft ActiveDirectory.Management.AdOptionalFeature"
+
+msgid "An optional feature object is received by the **Identity** parameter."
+msgstr "**Identity** 参数接收一个可选的功能对象。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-ADOptionalFeature](./Enable-ADOptionalFeature.md)"
+msgstr "[Enable-ADOptionalFeature](./Enable-ADOptionalFeature.md)"
+
+msgid "[Get-ADOptionalFeature](./Get-ADOptionalFeature.md)"
+msgstr "[Get-ADOptionalFeature](./Get-ADOptionalFeature.md)"

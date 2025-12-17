@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:57:06 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADReplicationSubnet"
+msgstr "# Set-ADReplicationSubnet"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the properties of an Active Directory replication subnet object."
+msgstr "用于设置 Active Directory 复制子网对象的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identity"
+msgstr "### 身份"
+
+msgid "### Instance"
+msgstr "### 实例"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-ADReplicationSubnet** cmdlet sets the properties of an Active Directory replication subnet object.\n"
+"Subnet objects (class subnet) define network subnets in Active Directory.\n"
+"A network subnet is a segment of a TCP/IP network to which a set of logical IP addresses is assigned.\n"
+"Subnets group computers in a way that identifies their physical proximity on the network.\n"
+"Subnet objects in Active Directory are used to map computers to sites."
+msgstr ""
+"`Set-ADReplicationSubnet` cmdlet 用于设置 Active Directory 复制子网对象的属性。子网对象（属于 "
+"`subnet` 类）用于在 Active Directory 中定义网络子网。网络子网是指 TCP/IP 网络中的一个部分，该部分被分配了一组逻辑 "
+"IP 地址。子网通过某种方式对计算机进行分组，从而标识它们在网络中的物理位置。Active Directory 中的子网对象用于将计算机与站点关联起来。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set a specified replication subnet"
+msgstr "#### 示例 1：设置指定的复制子网"
+
+msgid ""
+"This command sets the properties of the replication subnet identified as "
+"10.0.0.12/22."
+msgstr "此命令设置了标识为 10.0.0.12/22 的复制子网的属性。"
+
+msgid "### Example 2: Set a filtered list of replication subnets"
+msgstr "### 示例 2：设置一个经过筛选的复制子网列表"
+
+msgid ""
+"This command gets all of the replication subnets that are in Japan, and sets"
+" Asia as their associated site."
+msgstr "这个命令会获取所有位于日本的复制子网，并将“亚洲”设置为这些子网的关联站点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies values to add to an object property.\n"
+"Use this parameter to add one or more values to a property that cannot be modified using a cmdlet parameter.\n"
+"To modify an object property, you must use the LDAP display name.\n"
+"You can specify multiple values to a property by specifying a comma-separated list of values and more than one property by separating them using a semicolon.\n"
+"The format for this parameter is:"
+msgstr ""
+"用于指定要添加到对象属性中的值。该参数可用于向无法通过 cmdlet 参数修改的属性中添加一个或多个值。若要修改对象属性，必须使用 LDAP "
+"显示名称。可以通过提供用逗号分隔的值列表来为某个属性指定多个值；若需要为多个属性分别设置值，则可以使用分号进行分隔。此参数的格式如下："
+
+msgid ""
+"`-Add @{Attribute1LDAPDisplayName=value1, value2, ...;   "
+"Attribute2LDAPDisplayName=value1, value2, ...; "
+"AttributeNLDAPDisplayName=value1, value2, ...}`"
+msgstr ""
+"`-添加 @{Attribute1LDAPDisplayName=value1, value2, ...; "
+"Attribute2LDAPDisplayName=value1, value2, ...; "
+"AttributeNLDAPDisplayName=value1, value2, ...}`"
+
+msgid ""
+"When you use the **Add**, **Remove**, **Replace** and **Clear** parameters "
+"together, the operations will be performed in the following order:"
+msgstr ""
+"当你同时使用 **添加**（Add）、**删除**（Remove）、**替换**（Replace）和 "
+"**清除**（Clear）这些参数时，操作的执行顺序如下："
+
+msgid ""
+"When you use the **Add**, **Remove**, **Replace**, and **Clear** parameters "
+"together, the operations will be performed in the following order:"
+msgstr ""
+"当你同时使用 **Add**（添加）、**Remove**（删除）、**Replace**（替换）和 "
+"**Clear**（清除）这些参数时，操作将按照以下顺序执行："

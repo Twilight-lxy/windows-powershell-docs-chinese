@@ -1,0 +1,231 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:25:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADAccountControl"
+msgstr "# Set-ADAccountControl"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Modifies user account control (UAC) values for an Active Directory account."
+msgstr "修改 Active Directory 账户的用户账户控制（UAC）设置值。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-ADAccountControl** cmdlet modifies the user account control (UAC) values for an Active Directory user or computer account.\n"
+"UAC values are represented by cmdlet parameters.\n"
+"For example, set the *PasswordNeverExpires* parameter to change whether an account password could expire and to modify the **ADS_UF_DONT_EXPIRE_PASSWD** UAC value."
+msgstr ""
+"`Set-ADAccountControl` cmdlet 可以修改 Active Directory "
+"用户或计算机账户的用户账户控制（UAC）设置。UAC 设置通过 cmdlet 参数来表示。例如，可以通过设置 "
+"`PasswordNeverExpires` 参数来决定账户密码是否可以过期，并从而修改相应的 "
+"**ADS_UF_DONT_EXPIRE_PASSWD** UAC 值。"
+
+msgid ""
+"The *Identity* parameter specifies the Active Directory account to modify."
+msgstr "*Identity* 参数指定了要修改的 Active Directory 账户。"
+
+msgid ""
+"You can identify an account by its distinguished name, GUID, security identifier (SID), or security accounts manager (SAM) account name.\n"
+"You can also set the *Identity* parameter to an object variable such as `$<localADAccountObject>`, or you can pass an account object through the pipeline to the *Identity* parameter.\n"
+"For example, you can use the **Search-ADAccount** cmdlet to retrieve an account object and then pass the object through the pipeline to the **Set-ADAccountControl** cmdlet.\n"
+"Similarly, you can use **Get-ADUser**, **Get-ADComputer**, or **Get-ADServiceAccount** cmdlets to retrieve account objects that you can pass through the pipeline to this cmdlet."
+msgstr ""
+"您可以通过账户的独特名称、GUID（全局唯一标识符）、安全标识符（SID）或安全账户管理器（SAM）账户名称来识别该账户。您还可以将“Identity”参数设置为某个对象变量（例如"
+" `$<localADAccountObject>`），或者通过管道将一个账户对象传递给“Identity”参数。例如，您可以使用 **Search-"
+"ADAccount** cmdlet 来检索一个账户对象，然后将该对象通过管道传递给 **Set-ADAccountControl** "
+"cmdlet。同样地，您也可以使用 **Get-ADUser**、**Get-ADComputer** 或 **Get-"
+"ADServiceAccount** cmdlets 来检索账户对象，并将这些对象通过管道传递给相应的 cmdlet。"
+
+msgid ""
+"For Active Directory Lightweight Directory Services (AD LDS) environments, "
+"the *Partition* parameter must be specified except in the following two "
+"conditions:"
+msgstr "对于 Active Directory 轻量级目录服务（AD LDS）环境来说，必须指定 *Partition* 参数，以下两种情况除外："
+
+msgid ""
+"To specify a default naming context for an AD LDS environment, set the "
+"**msDS-defaultNamingContext** property of the Active Directory directory "
+"service agent (DSA) object (**nTDSDSA**) for the AD LDS instance."
+msgstr ""
+"要为 AD LDS 环境指定一个默认的命名上下文，请设置该 AD LDS 实例对应的 Active Directory "
+"目录服务代理（DSA）对象（**nTDSDSA**）的 **msDS-defaultNamingContext** 属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Require that a user use a password to logon"
+msgstr "### 示例 1：要求用户使用密码登录"
+
+msgid ""
+"This command sets the flag on userAccountControl to make sure that a "
+"password is required for logon."
+msgstr "此命令将 userAccountControl 标志设置为“需要密码才能登录”。"
+
+msgid "### Example 2: Disable change password on a user account"
+msgstr "### 示例 2：禁用用户账户的密码更改功能"
+
+msgid ""
+"This command sets the security descriptor of the user to make sure they "
+"cannot change their own password."
+msgstr "这个命令设置了用户的安全描述符，以确保他们无法更改自己的密码。"
+
+msgid "### Example 3: Disable delegation on a user account"
+msgstr "### 示例 3：禁用用户账户的委托功能"
+
+msgid ""
+"This command sets the flag on userAccountControl to make sure that the "
+"account cannot be delegated."
+msgstr "此命令将 userAccountControl 的标志设置为“true”，以确保该账户无法被委托给其他人使用。"
+
+msgid ""
+"### Example 4: Set a user account to be trusted to authenticate for "
+"delegation"
+msgstr "#### 示例 4：将一个用户账户设置为受信任的账户，以便进行委托身份验证"
+
+msgid ""
+"This command sets the flag on userAccountControl to make sure that the "
+"account is now trusted to authenticate for delegation."
+msgstr ""
+"此命令将 userAccountControl 的标志设置为“已启用”，以确保该账户现在可以被信任用于身份验证和授权（即 delegations）。"
+
+msgid "### Example 5: Set a specified computer to be trusted for delegation"
+msgstr "### 示例 5：将指定的计算机设置为可信任的代理服务器"
+
+msgid "This command sets specified computer to be trusted for delegation."
+msgstr "此命令将指定的计算机设置为可信赖的代理服务器（即允许其接受其他计算机的委托操作）。"
+
+msgid "### Example 6: Set a user password to never expire"
+msgstr "### 示例 6：设置一个永远不会过期的用户密码"
+
+msgid "This command sets the password of the user to never expire."
+msgstr "该命令将用户的密码设置为“永不过期”。"
+
+msgid "### Example 7: Set a user account to require a home directory"
+msgstr "### 示例 7：设置用户账户必须拥有主目录"
+
+msgid "This command sets the user account to require a Home Directory."
+msgstr "此命令将用户账户设置为需要使用“主目录”（Home Directory）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates whether the security context of the user is delegated to a service.\n"
+"When this parameter is set to true, the security context of the account is not delegated to a service even when the service account is set as trusted for Kerberos delegation.\n"
+"This parameter sets the **AccountNotDelegated** property for an Active Directory account.\n"
+"This parameter also sets the **ADS_UF_NOT_DELEGATED** flag of the Active Directory UAC attribute."
+msgstr ""
+"该参数用于指示用户的安全上下文是否被委托给某个服务。当此参数设置为 `true` 时，即使服务账户已被配置为支持 Kerberos "
+"委托功能，用户的账户安全上下文也不会被委托给该服务。此参数会为 Active Directory 账户设置 `AccountNotDelegated` "
+"属性，并同时修改 Active Directory UAC（用户帐户控制）属性中的 `ADS_UF_NOT_DELEGATED` 标志。"
+
+msgid ""
+"Indicates whether reversible password encryption is allowed for the account.\n"
+"This parameter sets the **AllowReversiblePasswordEncryption** property of the account.\n"
+"This parameter also sets the **ADS_UF_ENCRYPTED_TEXT_PASSWORD_ALLOWED** flag of the Active Directory UAC attribute."
+msgstr ""
+"该参数用于指示是否允许对该账户使用可逆的密码加密功能。它设置了账户的 **AllowReversiblePassword Encryption** "
+"属性，同时也修改了 Active Directory 用户帐户控制（UAC）属性中的 "
+"**ADS_UF_ENCRYPTED_TEXT_PASSWORD_ALLOWED** 标志。"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本身份验证方法需要使用安全套接字层（SSL）连接。"
+
+msgid ""
+"Indicates whether an account can change its password.\n"
+"To disallow password change by the account set this to $True.\n"
+"This parameter changes the Boolean value of the **CannotChangePassword** property of an account."
+msgstr ""
+"该参数用于指示账户是否可以更改密码。如果希望禁止账户更改密码，请将其设置为 `$True`。此操作会修改账户的 "
+"`CannotChangePassword` 属性的布尔值。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果该 cmdlet 是从这样的驱动器中运行的，则默认凭据将是与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01\\User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"*Credential* 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果执行该任务的代理程序没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Indicates whether Kerberos pre-authentication is required to logon using the user or computer account.\n"
+"This parameter sets the **ADS_UF_DONT_REQUIRE_PREAUTH** flag of the Active Directory UAC attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"该参数用于指示使用用户账户或计算机账户登录时是否需要Kerberos预认证。它设置了Active Directory "
+"UAC属性中的**ADS_UF_DONT_require_PREAUTH**标志。此参数的可接受值包括："
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADComputer](./Get-ADComputer.md)"
+msgstr "[Get-ADComputer](./Get-ADComputer.md)"
+
+msgid "[Get-ADServiceAccount](./Get-ADServiceAccount.md)"
+msgstr "[Get-ADServiceAccount](./Get-ADServiceAccount.md)"
+
+msgid "[Get-ADUser](./Get-ADUser.md)"
+msgstr "[Get-ADUser](./Get-ADUser.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理cmdlet](./activedirectory.md)"

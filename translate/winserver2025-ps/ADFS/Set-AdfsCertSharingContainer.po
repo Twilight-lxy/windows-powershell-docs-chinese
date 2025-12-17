@@ -1,0 +1,91 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:26:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsCertSharingContainer"
+msgstr "# 设置 AdfsCertSharingContainer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Sets the account that is used for sharing managed certificates in a "
+"federation server farm."
+msgstr "设置用于在联邦服务器群中共享托管证书的账户。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AdfsCertSharingContainer** cmdlet sets the service account that is"
+" used for sharing the private keys of certificates that Active Directory "
+"Federation Services (AD FS) 2.0 generates and manages."
+msgstr ""
+"`Set-AdfsCertSharingContainer` cmdlet 用于设置用于共享 Active Directory Federation "
+"Services (AD FS) 2.0 生成和管理的证书的私钥的服务账户。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a credential object.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet."
+msgstr "用于指定一个凭据对象。要获取一个 **PSCredential** 对象，请使用 **Get-Credential** cmdlet。"
+
+msgid "Specifies the service account to use for sharing private keys."
+msgstr "指定用于共享私钥的服务账户。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,203 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:12:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AdfsWebTheme"
+msgstr "# 新 AdfsWeb 主题"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Creates an AD FS web theme."
+msgstr "创建一个 AD FS 网页主题。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-AdfsWebTheme** cmdlet creates an Active Directory Federation Services (AD FS) web theme.\n"
+"You can create an empty **AdfsWebTheme** object, or you can create an **AdfsWebTheme** object that is based on an existing theme.\n"
+"If you start with an existing theme, the cmdlet copies its properties to the new object.\n"
+"You can also specify properties for the AD FS web theme."
+msgstr ""
+"`New-AdfsWebTheme` cmdlet 用于创建 Active Directory Federation Services (AD FS) "
+"网页主题。您可以创建一个空的 `AdfsWebTheme` 对象，或者基于现有主题来创建一个新的 `AdfsWebTheme` "
+"对象。如果使用现有主题作为起点，该 cmdlet 会将其属性复制到新对象中；同时，您也可以为 AD FS 网页主题指定额外的属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a theme"
+msgstr "#### 示例 1：创建一个主题"
+
+msgid ""
+"This command creates a theme named Theme01 that offers a customized sign-in experience.\n"
+"The command uses standard Windows PowerShell® syntax to create hash tables.\n"
+"For more information, type `Get-Help about_Hash_Tables`.\n"
+"The command specifies an additional file resource, an illustration image, a logo, and a cascading style sheet.\n"
+"The command specifies no value for **Locale** for any of these parameters, and, therefore, the illustration, logo, and style sheet all use the invariant locale."
+msgstr ""
+"此命令创建了一个名为“Theme01”的主题，该主题提供了自定义的登录体验。该命令使用标准的 Windows PowerShell® "
+"语法来创建哈希表。有关更多信息，请输入 `Get-Help "
+"about_Hash_Tables`。该命令还指定了一个额外的文件资源、一张插图图片、一个徽标以及一个层叠样式表。对于这些参数中的任何一个，该命令都没有为"
+" **Locale** 参数指定值；因此，插图、徽标和样式表都使用不变的本地化设置（即不进行任何本地化处理）。"
+
+msgid "### Example 2: Copy a theme"
+msgstr "### 示例 2：复制一个主题"
+
+msgid ""
+"This command creates a theme named Theme02 and copies the existing theme, named Default, into the new theme.\n"
+"You can modify the new theme by using the **Export-AdfsWebTheme** or **Set-AdfsWebTheme** cmdlet."
+msgstr ""
+"这个命令会创建一个名为“Theme02”的主题，并将现有的默认主题复制到新的主题中。你可以使用 `Export-AdfsWebTheme` 或 "
+"`Set-AdfsWebTheme` cmdlet 来修改新主题。"
+
+msgid "### Example 3: Create and modify a theme"
+msgstr "### 示例 3：创建和修改主题"
+
+msgid ""
+"This command creates a theme named Theme03, based on an existing theme named Default.\n"
+"The command specifies an additional file resource, an illustration image, a logo, and a cascading style sheet.\n"
+"The cmdlet specifies a value of en-us for **Locale** for the illustration, logo, and style sheet."
+msgstr ""
+"这个命令基于一个名为“Default”的现有主题，创建了一个名为“Theme03”的新主题。该命令指定了额外的文件资源（包括一张插图图片、一个徽标以及一个层叠样式表）。对于这些资源（插图、徽标和样式表），cmdlet将**Locale**属性的值设置为“en-"
+"us”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of **Hashtable** objects that specify additional file resources by using two string keys: **Uri** and **Path**.\n"
+"For more information, type `Get-Help about_Hash_Tables`.\n"
+"**Uri** is the relative Uniform Resource Identifier (URI) string for a resource.\n"
+"The URI always begins with /adfs/portal/.\n"
+"**Path** is the file path of a resource.\n"
+"If you do not specify the path, the cmdlet removes the file resource that corresponds to the specified URI."
+msgstr ""
+"该参数用于指定一个 `Hashtable` 对象数组，这些对象通过两个字符串键（`Uri` 和 `Path`）来标识额外的文件资源。有关更多详细信息，请输入 `Get-Help about_Hash_Tables`。  \n"
+"- `Uri` 是资源的相对统一资源标识符（URI）字符串；所有 URI 都以 `/adfs/portal/` 开头。  \n"
+"- `Path` 是资源的文件路径；如果未指定路径，该 cmdlet 会删除与指定 URI 对应的文件资源。"
+
+msgid ""
+"Specify this parameter to make resources, such as images, available to "
+"cascading style sheets or JavaScript applications."
+msgstr "指定此参数，以便资源（如图片）可以被级联样式表或JavaScript应用程序使用。"
+
+msgid ""
+"Specifies an array of **Hashtable** objects that specify illustrations by using two string keys: **Locale** and **Path**.\n"
+"**Locale** is a **CultureInfo** object.\n"
+"**Path** is a file path.\n"
+"If you do not specify a locale, **Locale** refers to the invariant locale."
+msgstr ""
+"指定一个由 **Hashtable** 对象组成的数组，这些对象通过两个字符串键（**Locale** 和 "
+"**Path**）来标识相应的插图。其中，**Locale** 是一个 **CultureInfo** 对象，**Path** "
+"是文件路径。如果未指定区域设置（locale），则 **Locale** 会使用不变的默认区域设置（invariant locale）。"
+
+msgid ""
+"Specifies an array of **Hashtable** objects that specify logos by using two string keys: **Locale** and **Path**.\n"
+"**Locale** is a **CultureInfo** object.\n"
+"**Path** is a file path.\n"
+"If you do not specify a locale, **Locale** refers to the invariant locale.\n"
+"If you do not specify a path, the cmdlet removes the file content that corresponds to the specified locale."
+msgstr ""
+"指定一个包含 **Hashtable** 对象的数组，这些对象使用两个字符串键（**Locale** 和 "
+"**Path**）来标识相应的日志文件。其中，**Locale** 是一个 **CultureInfo** 对象，而 **Path** "
+"是文件的路径。如果不指定 **Locale**，则系统会使用默认的不变区域设置（invariant locale）。如果不指定 **Path**，该 "
+"cmdlet 会删除与该区域设置对应的文件内容。"
+
+msgid ""
+"Specifies a name.\n"
+"The cmdlet assigns the name that you specify to the new theme."
+msgstr "指定一个名称。该cmdlet会将您指定的名称分配给新的主题。"
+
+msgid ""
+"Specify this parameter to make resources, such as images, available to "
+"cascading style sheets or JavaScript applications."
+msgstr "指定此参数，以便将资源（如图片）提供给层叠样式表或JavaScript应用程序使用。"
+
+msgid "Specifies a file path to a right-to-left (RTL) style sheet."
+msgstr "指定一个指向从右到左（RTL）样式表的文件路径。"
+
+msgid ""
+"Specifies the name of an existing theme.\n"
+"The cmdlet uses the theme that you specify as the basis for the new theme."
+msgstr "用于指定一个现有主题的名称。该cmdlet会以您指定的主题为基础来创建新的主题。"
+
+msgid ""
+"Specifies an array of **Hashtable** objects that specify style sheets by using two string keys: **Locale** and **Path**.\n"
+"**Locale** is a **CultureInfo** object for a style sheet.\n"
+"**Path** is a file path of the style sheet.\n"
+"If you do not specify a locale, **Locale** refers to the invariant locale.\n"
+"If you do not specify a path, the cmdlet removes the file content that corresponds to the specified locale."
+msgstr ""
+"该参数指定一个 **Hashtable** 对象数组，这些对象通过两个字符串键（**Locale** 和 "
+"**Path**）来标识样式表。其中，**Locale** 是对应样式表的 **CultureInfo** 对象；**Path** "
+"则是样式表的文件路径。如果未指定 **Locale**，则使用默认的不变区域设置（invariant locale）；如果未指定文件路径，该 "
+"cmdlet 会删除与该区域设置对应的样式表内容。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的情景。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.AdfsWebTheme"
+msgstr "### MicrosoftIdentityServer.Management.Resources.AdfsWebTheme"
+
+msgid ""
+"This cmdlet generates a web customization object, **System.IdentityServer.Management.Resources.AdfsWebTheme**.\n"
+"This object includes the following properties:"
+msgstr ""
+"此cmdlet生成一个Web自定义对象，即**SystemIdentityServer.Management.Resources.AdfsWebTheme**。该对象包含以下属性："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-AdfsWebTheme](./Export-AdfsWebTheme.md)"
+msgstr "[Export-AdfsWebTheme](./Export-AdfsWebTheme.md)"
+
+msgid "[Get-AdfsWebTheme](./Get-AdfsWebTheme.md)"
+msgstr "[Get-AdfsWebTheme](./Get-AdfsWebTheme.md)"
+
+msgid "[Remove-AdfsWebTheme](./Remove-AdfsWebTheme.md)"
+msgstr "[Remove-AdfsWebTheme](./Remove-AdfsWebTheme.md)"
+
+msgid "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"
+msgstr "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"

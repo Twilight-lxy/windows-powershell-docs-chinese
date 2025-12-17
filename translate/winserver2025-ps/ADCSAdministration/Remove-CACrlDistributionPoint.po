@@ -1,0 +1,163 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:16:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-CACrlDistributionPoint"
+msgstr "# 移除CACRL分发点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes the URI for the CRL distribution point (CDP) from the CA."
+msgstr "从证书颁发机构（CA）中删除CRL分发点（CDP）的URI。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-CACRLDistributionPoint** cmdlet removes the uniform resource "
+"identifier (URI) for the certificate revocation list (CRL) distribution "
+"point from the certification authority (CA)."
+msgstr ""
+"`Remove-CACRLDistributionPoint` cmdlet "
+"用于从证书颁发机构（CA）中删除证书吊销列表（CRL）分发点的统一资源标识符（URI）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Remove all URIs for all distribution points for the specified"
+" URI"
+msgstr "### 示例 1：删除指定 URI 的所有分发点的所有 URI"
+
+msgid ""
+"This command removes all URIs for all distribution points that contain the "
+"specified URI value `http://corp.contoso.com/rootca.crl`."
+msgstr "此命令会删除所有分发点中包含指定 URI 值 `http://corp.contoso.com/rootca.crl` 的 URI。"
+
+msgid ""
+"### Example 2: Remove the URIs for all distribution points for the CDP "
+"extension of issued certificates"
+msgstr "### 示例 2：移除已颁发证书的 CDP 扩展功能中所有分发点的 URI"
+
+msgid ""
+"This command removes only the URIs that are set to a value of "
+"`http://corp.contoso.com/rootca.crl` and for which the *AddToCertificateCdp*"
+" parameter is set."
+msgstr ""
+"该命令仅会删除那些被设置为 `http://corp.contoso.com/rootca.crl` 的 URI，并且这些 URI 的 "
+"`AddToCertificateCdp` 参数也被设置了。"
+
+msgid ""
+"### Example 3: Remove the URIs for all distribution points for the CDP and "
+"IDP extensions of issued certificates"
+msgstr ""
+"### 示例 3：移除已颁发证书的 CDP（Certificate Distribution Point）和 IDP（Identity "
+"Distribution Point）扩展类型的所有分发点的 URI"
+
+msgid ""
+"This command removes only the URIs that are unique to the URI named "
+"`http://www.contoso.com/pki/orca.crl` and the combination of flags that are "
+"set or included with the *AddToCertificateCdp* and *AddToCrlIdp* parameters."
+msgstr ""
+"这个命令仅删除那些属于 `http://www.contoso.com/pki/orca.crl` 这一 URI 的唯一 URL，以及与 "
+"*AddToCertificateCdp* 和 *AddToCrlIdp* 参数一起设置或包含的标志组合。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet removes the CDP extension of issued certificates."
+msgstr "表示该cmdlet会删除已颁发证书中的CDP扩展名。"
+
+msgid "Indicates that the cmdlet removes the CRL."
+msgstr "表示该cmdlet会删除CRL（证书撤销列表）。"
+
+msgid ""
+"Indicates that the cmdlet removes the IDP extension of issued certificates."
+msgstr "表示该cmdlet会删除已颁发证书中的IDP扩展部分。"
+
+msgid "Indicates that the cmdlet removes the most recent CRL."
+msgstr "表示该cmdlet会删除最新的CRL（证书吊销列表）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Indicates that the cmdlet removes the delta CRL."
+msgstr "表示该cmdlet会删除差分CRL（Delta CRL）。"
+
+msgid "Indicates that the cmdlet removes the base CRL."
+msgstr "表示该cmdlet会删除基本的CRL（Certification Revocation List，证书吊销列表）。"
+
+msgid ""
+"Specifies the uniform resource identifier (URI) for the distribution point location of the certificate revocation list (CRL).\n"
+"This is the location from where status information about certificate revocation has been retrieved and/or the location the CRL was published."
+msgstr "指定证书吊销列表（CRL）的分布点的统一资源标识符（URI）。这是用于获取证书吊销状态信息的位置，或者说是发布CRL的位置。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.ManagementAutomation.SwitchParameter"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Administration.Commands.CA.CrlDistributionPointResult"
+msgstr ""
+"### Microsoft.CertificateServicesAdministration "
+"Commands.CA.CrlDistributionPointResult"
+
+msgid ""
+"This cmdlet returns a property named RestartCA, which when set to True "
+"indicates that the CA service (certsvc) needs to be restarted."
+msgstr "这个cmdlet返回一个名为“RestartCA”的属性，当该属性被设置为True时，表示需要重新启动CA服务（certsvc）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-CACrlDistributionPoint](./Add-CACrlDistributionPoint.md)"
+msgstr "[Add-CACrlDistributionPoint](./Add-CACrlDistributionPoint.md)"
+
+msgid "[Get-CACrlDistributionPoint](./Get-CACrlDistributionPoint.md)"
+msgstr "[Get-CACrlDistributionPoint](./Get-CACrlDistributionPoint.md)"

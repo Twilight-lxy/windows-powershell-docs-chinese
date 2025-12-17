@@ -1,0 +1,143 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:06:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsWebApiApplication"
+msgstr "# 获取 AdfsWebApi 应用程序"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets Web API application roles in AD FS."
+msgstr "在 AD FS 中获取 Web API 应用程序角色。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identifier (Default)"
+msgstr "### 标识符（默认值）"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "### PrefixIdentifier"
+msgstr "### PrefixIdentifier"
+
+msgid "### ApplicationObject"
+msgstr "### ApplicationObject"
+
+msgid "### ApplicationGroupIdentifier"
+msgstr "### ApplicationGroupIdentifier"
+
+msgid "### ApplicationGroupObject"
+msgstr "### ApplicationGroupObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsWebApiApplication** cmdlet gets Web API application roles in "
+"Active Directory Federation Services (AD FS)."
+msgstr ""
+"`Get-AdfsWebApiApplication` cmdlet 可以获取 Active Directory Federation Services"
+" (AD FS) 中的 Web API 应用程序角色。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a Web API application to get."
+msgstr "指定一个要获取的 Web API 应用程序。"
+
+msgid "Specifies an application group for which to get Web API applications."
+msgstr "指定一个应用程序组，以便从中获取Web API应用程序。"
+
+msgid ""
+"Specifies the ID of an application group for which to get Web API "
+"applications."
+msgstr "指定用于获取 Web API 应用程序的应用程序组的 ID。"
+
+msgid "Specifies an ID of a Web API application to get."
+msgstr "指定一个要获取的 Web API 应用程序的 ID。"
+
+msgid "Specifies an array of names of Web API applications to get."
+msgstr "指定一个要获取的 Web API 应用程序名称数组。"
+
+msgid "Specifies the prefix identifier of Web API applications to get."
+msgstr "用于指定要获取的 Web API 应用程序的前缀标识符。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.WebApiApplication"
+msgstr "### Microsoft.IdentityServer.ManagementResources.WebApiApplication"
+
+msgid "WebApiApplication objects are received by the *Application* parameter."
+msgstr "`WebApiApplication` 对象是通过 `Application` 参数接收到的。"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.ApplicationGroup"
+msgstr "### MicrosoftIdentityServer.ManagementResources.ApplicationGroup"
+
+msgid ""
+"ApplicationGroup objects are received by the *ApplicationGroup* parameter."
+msgstr "`ApplicationGroup` 对象是通过 `ApplicationGroup` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *ApplicationGroupIdentifier*, "
+"*Identifier*, and *Name* parameters."
+msgstr "字符串对象通过 *ApplicationGroupIdentifier*、*Identifier* 和 *Name* 参数接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.WebApiApplication"
+msgstr "### MicrosoftIdentityServer.Management.Resources.WebApiApplication"
+
+msgid ""
+"Returns one or more WebApiApplication objects that represent the web API "
+"applications of the Federation Service."
+msgstr ""
+"返回一个或多个 WebApiApplication 对象，这些对象代表联邦服务（Federation Service）中的 Web API 应用程序。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsWebApiApplication](./Add-AdfsWebApiApplication.md)"
+msgstr "[Add-AdfsWebApiApplication](./Add-AdfsWebApiApplication.md)"
+
+msgid "[Remove-AdfsWebApiApplication](./Remove-AdfsWebApiApplication.md)"
+msgstr "[Remove-AdfsWebApiApplication](./Remove-AdfsWebApiApplication.md)"
+
+msgid "[Set-AdfsWebApiApplication](./Set-AdfsWebApiApplication.md)"
+msgstr "[Set-AdfsWebApiApplication](./Set-AdfsWebApiApplication.md)"

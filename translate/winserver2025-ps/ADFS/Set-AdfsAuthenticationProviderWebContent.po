@@ -1,0 +1,143 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:25:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsAuthenticationProviderWebContent"
+msgstr "# 设置 AdfsAuthenticationProviderWebContent"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies a display name and description."
+msgstr "修改显示名称和描述信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierName (Default)"
+msgstr "### IdentifierName（默认值）"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AdfsAuthenticationProviderWebContent** cmdlet modifies a display name and description.\n"
+"Use this cmdlet to customize the name of the authentication provider to a user friendly and intuitive name.\n"
+"You can choose to specify a locale, or use an empty string for the *Locale* parameter to specify an invariant locale."
+msgstr ""
+"`Set-AdfsAuthenticationProviderWebContent` cmdlet 用于修改认证提供者的显示名称和描述。使用此 "
+"cmdlet 可以将认证提供者的名称自定义为更易于用户理解和使用的名称。您可以选择指定一个区域设置（locale），或者将 *Locale* "
+"参数设置为空字符串，以确保名称在所有系统中都保持不变。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify the authentication provider web content"
+msgstr "### 示例 1：修改认证提供者的网页内容"
+
+msgid ""
+"This command modifies the display name and description for the "
+"authentication provider that the user sees in the Active Directory "
+"Federation Services (AD FS) logon pages."
+msgstr ""
+"此命令会修改用户在使用 Active Directory Federation Services (AD FS) "
+"登录页面时所看到的身份验证提供者的显示名称和描述信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a description.\n"
+"The cmdlet modifies the provider web content with the description that you specify."
+msgstr "指定一个描述性信息。该cmdlet会根据您提供的描述来修改提供者（provider）的网页内容。"
+
+msgid ""
+"Specifies a display name.\n"
+"The cmdlet modifies the provider web content with the display name that you specify."
+msgstr "指定一个显示名称。该cmdlet会根据您指定的显示名称来修改提供者（provider）的网页内容。"
+
+msgid ""
+"Specifies a locale.\n"
+"The cmdlet modifies the provider web content associated with the locale that you specify."
+msgstr "用于指定一个区域设置（locale）。该cmdlet会修改与你所指定的区域设置相关联的提供者网页内容。"
+
+msgid ""
+"Specifies the name of the authentication provider whose web content is being modified.\n"
+"To find a list of available authentication providers, run the command `Get-AdfsAuthenticationProvider`.\n"
+"Each returned provider has a **Name** property, and that value can be used with this parameter."
+msgstr ""
+"指定正在修改其网页内容的身份验证提供者的名称。要查找可用的身份验证提供者列表，请运行 `Get-AdfsAuthenticationProvider` "
+"命令。每个返回的提供者都有一个 **Name** 属性，可以使用该属性值作为此参数的值。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不生成任何输出。"
+
+msgid ""
+"Specifies an **AdfsAuthenticationProviderWebContent** object that is used by"
+" the pipeline."
+msgstr "指定一个由流水线使用的 **AdfsAuthenticationProviderWebContent** 对象。"
+
+msgid "Specifies an error message for a user not provisioned result."
+msgstr "为未为用户分配资源的情况指定一条错误消息。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-AdfsAuthenticationProviderWebContent](./Get-"
+"AdfsAuthenticationProviderWebContent.md)"
+msgstr ""
+"[Get-AdfsAuthenticationProviderWebContent](./Get-"
+"AdfsAuthenticationProviderWebContent.md)"
+
+msgid ""
+"[Remove-AdfsAuthenticationProviderWebContent](./Remove-"
+"AdfsAuthenticationProviderWebContent.md)"
+msgstr ""
+"[Remove-AdfsAuthenticationProviderWebContent](./Remove-"
+"AdfsAuthenticationProviderWebContent.md)"

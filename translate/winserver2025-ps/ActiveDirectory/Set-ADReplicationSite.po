@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:53:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADReplicationSite"
+msgstr "# Set-ADReplicationSite"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the replication properties for an Active Directory site."
+msgstr "设置 Active Directory 站点的复制属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### Identity"
+msgstr "### 身份"
+
+msgid "### Instance"
+msgstr "### 实例"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-ADReplicationSite** cmdlet is used to set the properties for an Active Directory site that is being used for replication.\n"
+"Sites are used in Active Directory to either enable clients to discover network resources (published shares, domain controllers) close to the physical location of a client computer or to reduce network traffic over wide area network (WAN) links.\n"
+"Sites can also be used to optimize replication between domain controllers."
+msgstr ""
+"**Set-ADReplicationSite** cmdlet 用于设置用于复制的 Active Directory 站点的属性。在 Active "
+"Directory 中，站点可用于使客户端能够发现位于其计算机物理位置附近的网络资源（已发布的共享资源、域控制器），或者减少通过广域网 (WAN) "
+"链路传输的数据流量。站点还可以用于优化域控制器之间的复制过程。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the replication site to prevent connections"
+msgstr "### 示例 1：设置复制站点以防止连接"
+
+msgid ""
+"The command sets the properties of the site with name NorthAmerica to "
+"prevent its intersite topology generator (ISTG) at corp-DC02 from generating"
+" connections for intersite replication."
+msgstr "该命令设置了名为“NorthAmerica”的站点的属性，以防止位于corp-DC02的站点间拓扑生成器（ISTG）为站点间复制生成连接。"
+
+msgid ""
+"### Example 2: Set replication start times for a filtered list of sites"
+msgstr "### 示例 2：为筛选后的站点列表设置复制开始时间"
+
+msgid ""
+"This command returns all the sites in the directory and sets the "
+"**ScheduleHashingEnabled** property to spread replication start times "
+"randomly across the entire schedule interval rather than just the first "
+"quarter of the interval."
+msgstr ""
+"此命令会返回目录中的所有站点，并将 **ScheduleHashingEnabled** "
+"属性设置为“随机分布复制开始时间”，从而使整个调度间隔内的复制开始时间均匀分布，而不仅仅是在该间隔的第一个季度内。"
+
+msgid "### Example 3: Set the replication schedule for a site"
+msgstr "### 示例 3：为某个站点设置复制计划"
+
+msgid ""
+"This example sets the daily replication schedule of the site with name Asia."
+msgstr "这个例子设置了名为“Asia”的站点的每日复制计划。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies values to add to an object property.\n"
+"Use this parameter to add one or more values to a property that cannot be modified using a cmdlet parameter.\n"
+"To modify an object property, you must use the LDAP display name.\n"
+"You can specify multiple values to a property by specifying a comma-separated list of values and more than one property by separating them using a semicolon.\n"
+"The format for this parameter is:"
+msgstr ""
+"用于指定要添加到对象属性中的值。使用此参数可以为无法通过 cmdlet 参数修改的属性添加一个或多个值。若要修改对象属性，必须使用 LDAP "
+"显示名称。可以通过指定用逗号分隔的值列表来为单个属性设置多个值；如果需要为多个属性设置值，则可以使用分号进行分隔。该参数的格式如下："
+
+msgid ""
+"`-Add @{Attribute1LDAPDisplayName=value1, value2, ...;   "
+"Attribute2LDAPDisplayName=value1, value2, ...; "
+"AttributeNLDAPDisplayName=value1, value2, ...}`"
+msgstr ""
+"帮我将以下Markdown内容转换为中文：  \n"
+"\n"
+"```json\n"
+"\"-添加:@{Attribute1LDAPDisplayName=value1, value2, ...; Attribute2LDAPDisplayName=value1, value2, ...; AttributeNLDAPDisplayName=value1, value2, ...}\"\n"
+"```"
+
+msgid ""
+"When you use the *Add*, *Remove*, *Replace*, and *Clear* parameters "
+"together, the operations are performed in the following order:"
+msgstr ""
+"当你同时使用“添加”（Add）、“删除”（Remove）、“替换”（Replace）和“清除”（Clear）这些参数时，操作的执行顺序如下："

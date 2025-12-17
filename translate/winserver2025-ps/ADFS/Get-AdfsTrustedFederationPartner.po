@@ -1,0 +1,96 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:06:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsTrustedFederationPartner"
+msgstr "# Get-AdfsTrustedFederationPartner"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets a trusted federation partner in AD FS."
+msgstr "在 Active Directory Federation Services (AD FS) 中找到一个值得信赖的联合伙伴。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### FederationPartnerHostName"
+msgstr "### FederationPartnerHostName"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsTrustedFederationPartner** cmdlet gets federation partners "
+"that are trusted by this instance of Active Directory Federation Services "
+"(AD FS)."
+msgstr ""
+"`Get-AdfsTrustedFederationPartner` cmdlet 可以获取受此 Active Directory Federation"
+" Services (AD FS) 实例信任的联合伙伴信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an array of URIs of federation partners to get."
+msgstr "指定一个包含联合合作伙伴 URI 的数组，以便获取这些合作伙伴的相关信息。"
+
+msgid "Specifies an array of names of federation partners to get."
+msgstr "指定一个联邦合作伙伴名称数组，用于获取相关信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsTrustedFederationPartner](./Add-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"[Add-AdfsTrustedFederationPartner](./Add-AdfsTrustedFederationPartner.md)"
+
+msgid ""
+"[Remove-AdfsTrustedFederationPartner](./Remove-"
+"AdfsTrustedFederationPartner.md)"
+msgstr ""
+"[Remove-AdfsTrustedFederationPartner](./Remove-"
+"AdfsTrustedFederationPartner.md)"
+
+msgid ""
+"[Set-AdfsTrustedFederationPartner](./Set-AdfsTrustedFederationPartner.md)"
+msgstr ""
+"[Set-AdfsTrustedFederationPartner](./Set-AdfsTrustedFederationPartner.md)"

@@ -1,0 +1,48 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:46:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# ADRMS Module"
+msgstr "# ADRMS模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This topic contains brief descriptions of the Windows PowerShell cmdlets "
+"used to deploy in Windows Server 2012. Each cmdlet in the table is linked to"
+" additional information about that cmdlet. These cmdlets allow you to "
+"install, upgrade, or remove a cluster using Windows PowerShell."
+msgstr ""
+"这个主题简要介绍了用于在 Windows Server 2012 中进行部署的 Windows PowerShell "
+"cmdlet（命令脚本）。表格中的每个 cmdlet 都链接到了关于该 cmdlet 的更多详细信息。这些 cmdlet 可以帮助您使用 Windows"
+" PowerShell 安装、升级或卸载集群。"
+
+msgid "## ADRMS Cmdlets"
+msgstr "## ADRMS 命令行插件（Cmdlets）"
+
+msgid "### [Install-ADRMS](./Install-ADRMS.md)"
+msgstr "### [安装 ADRMS](./Install-ADRMS.md)"
+
+msgid "Configures a new deployment of AD RMS Server."
+msgstr "配置新的 AD RMS 服务器部署。"
+
+msgid "### [Uninstall-ADRMS](./Uninstall-ADRMS.md)"
+msgstr "### [卸载 ADRMS](./Uninstall-ADRMS.md)"
+
+msgid "Removes configuration for an existing deployment of AD RMS Server."
+msgstr "删除现有 AD RMS 服务器部署的配置信息。"
+
+msgid "### [Update-ADRMS](./Update-ADRMS.md)"
+msgstr "### [更新-ADRMS](./Update-ADRMS.md)"
+
+msgid "Updates an existing deployment of AD RMS Server."
+msgstr "更新现有的 AD RMS 服务器部署。"

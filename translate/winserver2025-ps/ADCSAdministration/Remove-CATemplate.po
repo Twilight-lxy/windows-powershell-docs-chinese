@@ -1,0 +1,127 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:17:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-CATemplate"
+msgstr "# 移除 CAT 模板"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Removes the templates from the CA which were set for issuance of "
+"certificates."
+msgstr "从用于证书发放的CA（证书颁发机构）中删除这些模板。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Default (Default)"
+msgstr "### 默认设置（Default）"
+
+msgid "### AllTemplates"
+msgstr "### AllTemplates"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-CATemplate** cmdlet removes the templates from the "
+"certification authority (CA) which were set for issuance of certificates."
+msgstr "`Remove-CATemplate` cmdlet 用于删除证书颁发机构（CA）中用于生成证书的模板。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove all templates on the CA"
+msgstr "### 示例 1：删除证书颁发机构（CA）上的所有模板"
+
+msgid ""
+"This command removes all the templates on the CA set for certificates "
+"issuance are removed."
+msgstr "此命令会删除CA（证书颁发机构）集合中用于证书签发的所有模板。"
+
+msgid "### Example 2: Remove a specific CA"
+msgstr "### 示例 2：移除特定的根证书颁发机构（CA）"
+
+msgid ""
+"This command removes the template named EFS on the CA that is set for "
+"certificate issuance is removed."
+msgstr "此命令会删除CA（证书颁发机构）上名为“EFS”的模板。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet removes all certificate templates on the CA that are available for certificate issuance.\n"
+"A common task administrative task is to remove all the default templates that are currently added for issuance.\n"
+"This allows the administrator to add only the templates that should be available for certificate issuance in the given scenario."
+msgstr ""
+"表示该 cmdlet "
+"会删除证书颁发机构（CA）中所有可用于证书颁发的证书模板。一个常见的管理任务是删除当前添加的所有默认模板，这样管理员就可以只保留在该特定场景下确实需要用于证书颁发的模板了。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the name of an individual certificate template from the CA that is available for certificate issuance that this cmdlet removes.\n"
+"You need to use the certificate template name and not the certificate template display name.\n"
+"For instance, the certificate template display name of Basic EFS is assigned the template name EFS."
+msgstr ""
+"指定来自证书颁发机构（CA）的某个可用于证书发放的证书模板的名称。此cmdlet将删除该证书模板。您需要使用证书模板的名称，而不是其显示名称。例如，“Basic"
+" EFS”证书模板的显示名称为“EFS”，但其实际模板名称应为其他名称。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-CATemplate](./Add-CATemplate.md)"
+msgstr "[Add-CATemplate](./Add-CATemplate.md)"
+
+msgid "[Get-CATemplate](./Get-CATemplate.md)"
+msgstr "[Get-CATemplate](./Get-CATemplate.md)"

@@ -1,0 +1,176 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:19:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-AdcsEnrollmentPolicyWebService"
+msgstr "# 安装 AdcsEnrollmentPolicyWebService"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Performs the configuration of Certificate Enrollment Policy Web Service."
+msgstr "执行证书注册策略（Certificate Enrollment Policy）Web服务的配置工作。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Install-AdcsEnrollmentPolicyWebService` cmdlet performs the configuration of Certificate\n"
+"Enrollment Policy Web Service. It is also used to create and configure additional instances of the\n"
+"service within an existing installation. To remove the certification authority (CA) role service use\n"
+"the `Uninstall-AdcsEnrollmentPolicyWebService` cmdlet."
+msgstr ""
+"`Install-AdcsEnrollmentPolicyWebService` cmdlet 用于配置证书注册策略 Web "
+"服务（Certificate Enrollment Policy Web "
+"Service）。它还可以在现有安装环境中创建和配置该服务的更多实例。若要删除证书颁发机构（CA）角色服务，请使用 `Uninstall-"
+"AdcsEnrollmentPolicyWebService` cmdlet。"
+
+msgid ""
+"You can import the cmdlet by running the following commands from Windows "
+"PowerShell:"
+msgstr "你可以通过在 Windows PowerShell 中运行以下命令来导入该 cmdlet："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Install the Certificate Enrollment Policy Web Service using "
+"Kerberos"
+msgstr "### 示例 1：使用 Kerberos 安装证书注册策略 Web 服务"
+
+msgid ""
+"This command installs the Certificate Enrollment Policy Web Service using Kerberos for\n"
+"authentication. For information on obtaining a certificate thumbprint using Windows PowerShell, see\n"
+"[Certificate Provider](https://go.microsoft.com/fwlink/?LinkId=225044)."
+msgstr ""
+"此命令使用 Kerberos 进行身份验证来安装“证书注册策略Web服务”。有关如何使用 Windows PowerShell "
+"获取证书摘要的信息，请参阅[证书提供程序](https://go.microsoft.com/fwlink/?LinkId=225044)。"
+
+msgid ""
+"### Example 2: Install the Certificate Enrollment Policy Web Service "
+"specifying a username and password"
+msgstr "### 示例 2：安装证书注册策略 Web 服务，并指定用户名和密码"
+
+msgid ""
+"This command installs the Certificate Enrollment Policy Web Service specifying that a username and\n"
+"password is used for authentication."
+msgstr "该命令用于安装“证书注册策略Web服务”，并指定使用用户名和密码进行身份验证。"
+
+msgid ""
+"### Example 3: Install the Certificate Enrollment Policy Web Service "
+"specifying a username and password for Key-Based Renewal"
+msgstr "### 示例 3：安装证书注册策略Web服务，并指定基于密钥的续期的用户名和密码"
+
+msgid ""
+"This command installs the Certificate Enrollment Policy Web Service specifying that a username and\n"
+"password is used for authentication and configures the service for Key-Based Renewal of the\n"
+"certificate."
+msgstr "此命令用于安装“证书注册策略Web服务”，该服务规定使用用户名和密码进行身份验证，并配置证书的基于密钥的续期功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication type used by the Certificate Enrollment Policy Web Service.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定证书注册策略Web服务所使用的认证类型。该参数的可接受值为："
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行。"
+
+msgid ""
+"Specifies the credentials for installing the Enrollment Policy Web Service. To obtain a credential\n"
+"object, use the `Get-Credential` cmdlet. For more information, type `Get-Help Get-Credential`. The\n"
+"Enrollment Policy Web Service must be installed on a server that is a member of an Active Directory\n"
+"Domain Services (AD DS) domain. You must use an account that is a member of Domain Admins group to\n"
+"install this service."
+msgstr ""
+"指定用于安装“注册策略Web服务”（Enrollment Policy Web Service）的凭据。要获取凭据对象，请使用`Get-"
+"Credential` cmdlet。有关更多信息，请输入`Get-Help Get-"
+"Credential`。该“注册策略Web服务”必须安装在属于Active Directory Domain Services (AD "
+"DS)域的服务器上。安装此服务时，必须使用属于“Domain Admins”组的帐户。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Indicates that this cmdlet configures the Certificate Enrollment Policy Web Service to operate in\n"
+"key-based renewal mode. Key-based renewal allows certificate clients to renew their certificates\n"
+"using the key of their existing certificate for authentication. When in key-based renewal mode, the\n"
+"service will only return certificate templates that are set for key based renewal."
+msgstr ""
+"这表示该cmdlet配置了“证书注册策略Web服务”，使其以基于密钥的更新模式运行。基于密钥的更新允许证书客户端使用其现有证书的密钥来进行身份验证，从而续签证书。在基于密钥的更新模式下，该服务只会返回那些设置为支持基于密钥更新的证书模板。"
+
+msgid ""
+"Specifies the thumbprint of the certificate used by Internet Information Service (IIS) to enable\n"
+"support for required Secure Sockets Layer/Transport Layer Security (SSL/TLS)."
+msgstr ""
+"用于指定 Internet Information Service (IIS) "
+"所使用的证书的“指纹”（即该证书的唯一标识信息），以便支持所需的安全套接字层/传输层安全协议 (SSL/TLS)。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### Microsoft.CertificateServices.Deployment.Common.AuthenticationType"
+msgstr "### Microsoft.CertificateServices.Deployment.CommonAuthenticationType"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.ManagementAutomation.SwitchParameter"
+
+msgid "### System.Management.Automation.PSCredential"
+msgstr "### System.Management.Automation.PSCredential"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Deployment.Common.CEP.EnrollmentPolicyServiceResult"
+msgstr ""
+"### Microsoft.CertificateServices.Deployment "
+"COMMON.CEP.EnrollmentPolicyServiceResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Uninstall-AdcsEnrollmentPolicyWebService](./Uninstall-"
+"AdcsEnrollmentPolicyWebService.md)"
+msgstr ""
+"[卸载 AdcsEnrollmentPolicyWebService](./Uninstall-"
+"AdcsEnrollmentPolicyWebService.md)"

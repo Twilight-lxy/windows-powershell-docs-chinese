@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:55:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-AdfsWebApplicationProxyRelyingPartyTrust"
+msgstr "# 启用 AdfsWebApplicationProxy 依赖方信任"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables the relying party trust object for the Web Application Proxy."
+msgstr "启用Web应用程序代理的依赖方信任对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-AdfsWebApplicationProxyRelyingPartyTrust** cmdlet enables the relying party trust object for the web application proxy.\n"
+"Use this cmdlet if you have temporarily disabled all external access by using the **Disable-AdfsWebApplicationProxyRelyingPartyTrust** cmdlet."
+msgstr ""
+"`Enable-AdfsWebApplicationProxyRelyingPartyTrust` 这个 cmdlet 用于启用 Web "
+"应用程序代理的依赖方信任对象。如果您之前使用 `Disable-AdfsWebApplicationProxyRelyingPartyTrust` "
+"cmdlet 暂时禁用了所有外部访问，那么就可以使用这个 cmdlet 来重新启用这些功能。"
+
+msgid ""
+"The Web Application Proxy relying party trust is useful to manage global network access from outside the corporate network.\n"
+"By setting authentication and authorization policies, an administrator can restrict access to internal web applications and services that have been published through the Web Application Proxy."
+msgstr ""
+"Web应用程序代理（Web Application "
+"Proxy）所依赖的信任机制有助于管理来自企业外部网络的全球网络访问。通过设置身份验证和授权策略，管理员可以限制对通过该Web应用程序代理发布的内部Web应用程序和服务的访问。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Enable relying party trust for the web application proxy"
+msgstr "### 示例 1：为 Web 应用程序代理启用依赖方信任"
+
+msgid ""
+"This command enables the relying party trust object for the web application "
+"proxy."
+msgstr "此命令用于启用Web应用程序代理的依赖方信任对象（trust object）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。不过实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsWebApplicationProxyRelyingPartyTrust](./Add-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"[添加 AdfsWebApplicationProxyRelyingPartyTrust](./Add-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid ""
+"[Disable-AdfsWebApplicationProxyRelyingPartyTrust](./Disable-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"[禁用 AdfsWebApplicationProxy 依赖方信任](./Disable-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid ""
+"[Get-AdfsWebApplicationProxyRelyingPartyTrust](./Get-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"[Get-AdfsWebApplicationProxyRelyingPartyTrust](./Get-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid ""
+"[Remove-AdfsWebApplicationProxyRelyingPartyTrust](./Remove-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"[Remove-AdfsWebApplicationProxyRelyingPartyTrust](./Remove-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+
+msgid ""
+"[Set-AdfsWebApplicationProxyRelyingPartyTrust](./Set-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"
+msgstr ""
+"[Set-AdfsWebApplicationProxyRelyingPartyTrust](./Set-"
+"AdfsWebApplicationProxyRelyingPartyTrust.md)"

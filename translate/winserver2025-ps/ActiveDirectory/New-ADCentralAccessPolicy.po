@@ -1,0 +1,279 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:34:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-ADCentralAccessPolicy"
+msgstr "# New-ADCentralAccessPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Creates a new central access policy in Active Directory containing a set of "
+"central access rules."
+msgstr "在 Active Directory 中创建一个新的中央访问策略，其中包含一组中央访问规则。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-ADCentralAccessPolicy** cmdlet creates a new central access policy in Active Directory.\n"
+"A central access policy in Active Directory contains a set of central access rules."
+msgstr ""
+"`New-ADCentralAccessPolicy` cmdlet 用于在 Active Directory 中创建一个新的中央访问策略。Active"
+" Directory 中的中央访问策略包含一组中央访问规则。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Create a central access policy with a resource condition"
+msgstr "### 示例 1：创建一个包含资源条件的中心访问策略"
+
+msgid ""
+"This command creates a central access rule named Finance Documents Rule with a new resource condition.\n"
+"The resource condition scopes the resources to ones containing the value Finance in their Department resource property."
+msgstr ""
+"这个命令创建了一条名为“Finance Documents "
+"Rule”的中央访问规则，并添加了一个新的资源条件。该资源条件的作用范围是那些在“Department”资源属性中包含“Finance”字样的资源。"
+
+msgid ""
+"### Example 2: Create a central access policy with a resource condition and "
+"new permissions"
+msgstr "### 示例 2：创建一个包含资源条件和新权限的中央访问策略"
+
+msgid ""
+"This command creates a central access rule named Finance Documents Rule with"
+" a new resource condition and new permissions."
+msgstr "此命令创建了一条名为“Finance Documents Rule”的中央访问规则，该规则具有新的资源条件和新的权限设置。"
+
+msgid ""
+"The new rule specifies that documents should only be read by members of the Finance department.\n"
+"Members of the Finance department should only be able to access documents in their own country/region.\n"
+"Only Finance Administrators should have write access.\n"
+"The rule allows an exception for members of the FinanceException group.\n"
+"This group will have read access."
+msgstr ""
+"新规则规定，文档只能由财务部门的成员阅读。财务部门的成员仅能访问自己所在国家/地区的文档。只有财务管理员才具有写入文档的权限。不过，对于属于“FinanceException”组的成员，该规则允许例外处理——这些成员拥有读取文档的权限。"
+
+msgid "Targeting:"
+msgstr "目标定位："
+
+msgid "Access rules:"
+msgstr "访问规则："
+
+msgid ""
+"### Example 3: Create a central access policy using properties from an "
+"existing Active Directory object"
+msgstr "### 示例 3：使用现有 Active Directory 对象的属性来创建一个中央访问策略"
+
+msgid ""
+"This command creates a central access policy named Human Resources Policy "
+"using the property values from Finance Policy, and set the description to "
+"For the Human Resources Department."
+msgstr "此命令使用“财务政策”中的属性值创建一个名为“人力资源政策”的中央访问策略，并将描述设置为“用于人力资源部门”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本身份验证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果是从这样的驱动器中运行 cmdlet，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01/User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，该 cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过使用脚本或 `Get-Credential` cmdlet 来创建一个 `PSCredential` 对象。之后，你可以将 "
+"`Credential` 参数设置为这个 `PSCredential` 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果执行该任务的代理（agent）没有目录级别的权限，Windows PowerShell的Active "
+"Directory模块会返回一个终止错误（terminating error）。"
+
+msgid ""
+"Specifies a description of the object.\n"
+"This parameter sets the value of the **Description** property for the object.\n"
+"The Lightweight Directory Access Protocol (LDAP) display name (**ldapDisplayName**) for this property is description."
+msgstr ""
+"用于指定对象的描述信息。此参数用于设置对象对应的 `Description` 属性的值。在轻量级目录访问协议（LDAP）中，该属性的显示名称为 "
+"`ldapDisplayName`，其值为 “description”。"
+
+msgid ""
+"Specifies an instance of an Active Directory object to use as a template for"
+" a new Active Directory object."
+msgstr "指定一个 Active Directory 对象的实例，用作新建 Active Directory 对象的模板。"
+
+msgid ""
+"You can use an instance of an existing Active Directory object as a template"
+" or you can construct a new Active Directory object by using the Windows "
+"PowerShell command line or by using a script."
+msgstr ""
+"你可以使用现有的 Active Directory 对象实例作为模板，或者通过使用 Windows PowerShell 命令行或脚本来创建一个新的 "
+"Active Directory 对象。"
+
+msgid ""
+"Method 1: Use an existing Active Directory object as a template for a new object.\n"
+"To retrieve an instance of an existing Active Directory object, use a cmdlet such as **Get-ADObject**.\n"
+"Then provide this object to the Instance parameter of the New-ADObject cmdlet to create a new Active Directory object.\n"
+"You can override property values of the new object by setting the appropriate parameters."
+msgstr ""
+"方法 1：使用现有的 Active Directory 对象作为新对象的模板。要检索现有 Active Directory 对象的实例，可以使用诸如 "
+"**Get-ADObject** 这样的 cmdlet。然后将该对象传递给 New-ADObject cmdlet 的 Instance "
+"参数，以创建一个新的 Active Directory 对象。您可以通过设置适当的参数来覆盖新对象的属性值。"
+
+msgid ""
+"Method 2: Create a new **ADObject** and set the property values by using the Windows PowerShell command line interface.\n"
+"Then pass this object to the *Instance* parameter of the **New-ADObject** cmdlet to create the new Active Directory object."
+msgstr ""
+"方法 2：创建一个新的 **ADObject**，并使用 Windows PowerShell 命令行界面设置其属性值。然后将该对象传递给 **New-"
+"ADObject** cmdlet 的 *Instance* 参数，以创建新的 Active Directory 对象。"
+
+msgid ""
+"Note: Specified attributes are not validated, so attempting to set "
+"attributes that do not exist or cannot be set will raise an error."
+msgstr "注意：指定的属性不会被进行验证；因此，尝试设置不存在或无法设置的属性会引发错误。"
+
+msgid ""
+"Specifies the name of the object.\n"
+"This parameter sets the **Name** property of the Active Directory object.\n"
+"The Lightweight Directory Access Protocol (LDAP) display name (**ldapDisplayName**) of this property is name."
+msgstr ""
+"用于指定对象的名称。此参数会设置 Active Directory 对象的 **Name** "
+"属性。该属性的轻量级目录访问协议（LDAP）显示名称（**ldapDisplayName**）即为该对象的实际名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies whether to prevent the object from being deleted.\n"
+"When this property is set to true, you cannot delete the corresponding object without changing the value of the property.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定是否阻止对象被删除。当此属性设置为 `true` 时，如果不更改该属性的值，则无法删除相应的对象。此参数的允许取值为："
+
+msgid ""
+"Specifies the Active Directory Domain Services instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following:  Active Directory Lightweight Domain Services, Active Directory Domain Services or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 Active Directory 域服务实例，为此需提供相应的域名或目录服务器的值之一。该服务可以是以下类型中的任意一种：Active "
+"Directory 轻量级域服务（Active Directory Lightweight Domain Services）、Active "
+"Directory 域服务（Active Directory Domain Services）或 Active Directory "
+"快照实例（Active Directory Snapshot Instance）。"
+
+msgid ""
+"Specify the Active Directory Domain Services instance in one of the "
+"following ways:"
+msgstr "以下是指定 Active Directory 域服务实例的几种方法："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们在列表中的顺序："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADCentralAccessPolicy"
+msgstr "### 无值或 Microsoft.ActiveDirectory.Management.ADCentralAccessPolicy"
+
+msgid ""
+"An Active Directory object that is a template for the new object is received"
+" by the *Instance* parameter."
+msgstr "通过*Instance*参数接收到一个Active Directory对象，该对象是新对象的模板。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADCentralAccessPolicy"
+msgstr "### 无值或 Microsoft.ActiveDirectory.Management.ADCentralAccessPolicy"
+
+msgid ""
+"Returns the new central access policy object when the *PassThru* parameter is specified.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "当指定*PassThru*参数时，会返回新的中央访问策略对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADCentralAccessPolicy](./Get-ADCentralAccessPolicy.md)"
+msgstr "[Get-ADCentralAccessPolicy](./Get-ADCentralAccessPolicy.md)"
+
+msgid "[Remove-ADCentralAccessPolicy](./Remove-ADCentralAccessPolicy.md)"
+msgstr "[Remove-ADCentralAccessPolicy](./Remove-ADCentralAccessPolicy.md)"
+
+msgid "[Set-ADCentralAccessPolicy](./Set-ADCentralAccessPolicy.md)"
+msgstr "[Set-ADCentralAccessPolicy](./Set-ADCentralAccessPolicy.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理Cmdlets](./activedirectory.md)"

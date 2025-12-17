@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:59:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADResourcePropertyList"
+msgstr "# Set-ADResourcePropertyList"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies a resource property list in Active Directory."
+msgstr "修改 Active Directory 中的资源属性列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identity"
+msgstr "### 身份"
+
+msgid "### Instance"
+msgstr "### 实例"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-ADResourcePropertyList** cmdlet can be used to modify a resource "
+"property list in Active Directory."
+msgstr "`Set-ADResourcePropertyList` cmdlet 可用于修改 Active Directory 中的资源属性列表。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify a resource property list"
+msgstr "### 示例 1：修改资源属性列表"
+
+msgid ""
+"This command sets the resource property list named Corporate Resource "
+"Property List with the description For corporate documents."
+msgstr "此命令设置了一个名为“Corporate Resource Property List”的资源属性列表，其描述为：“用于企业文档。”"
+
+msgid "### Example 2: Get a resource property list and modify it"
+msgstr "### 示例 2：获取资源属性列表并对其进行修改"
+
+msgid ""
+"This command gets the resource property list named Corporate Resource "
+"Property List and then sets its description."
+msgstr "这个命令会获取名为“Corporate Resource Property List”的资源属性列表，然后设置其描述信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies values to add to an object property.\n"
+"Use this parameter to add one or more values to a property that cannot be modified using a cmdlet parameter.\n"
+"To modify an object property, you must use the Lightweight Directory Access Protocol (LDAP) display name.\n"
+"You can specify multiple values to a property by specifying a comma-separated list of values and more than one property by separating them using a semicolon.\n"
+"The format for this parameter is:"
+msgstr ""
+"用于指定要添加到对象属性中的值。使用此参数，可以为无法通过 cmdlet "
+"参数修改的属性添加一个或多个值。若要修改对象属性，必须使用轻量级目录访问协议（LDAP）显示名称。可以通过提供用逗号分隔的值列表来为单个属性指定多个值；如果需要为多个属性分别指定值，则可以使用分号进行分隔。该参数的格式如下："
+
+msgid ""
+"`-Add @{Attribute1LDAPDisplayName=value1, value2, ...;   "
+"Attribute2LDAPDisplayName=value1, value2, ...; "
+"AttributeNLDAPDisplayName=value1, value2, ...}`"
+msgstr ""
+"`-添加 @{Attribute1LDAPDisplayName=value1, value2, ...; "
+"Attribute2LDAPDisplayName=value1, value2, ...; "
+"AttributeNLDAPDisplayName=value1, value2, ...}`"
+
+msgid ""
+"When you use the *Add*, *Remove*, *Replace*, and *Clear* parameters "
+"together, the operations will be performed in the following order:"
+msgstr ""
+"当你同时使用“添加”（Add）、“删除”（Remove）、“替换”（Replace）和“清除”（Clear）这些参数时，操作将按照以下顺序执行："
+
+msgid ""
+"When you use the *Add*, *Remove*, *Replace*, and *Clear* parameters "
+"together, the operations will be performed in the following order:"
+msgstr ""
+"当你同时使用“添加”（Add）、“删除”（Remove）、“替换”（Replace）和“清除”（Clear）这四个参数时，这些操作将按照以下顺序执行："

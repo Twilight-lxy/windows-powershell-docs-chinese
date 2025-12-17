@@ -1,0 +1,129 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:50:06 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-AdfsEndpoint"
+msgstr "# 禁用 AdfsEndpoint"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Disables an endpoint of AD FS."
+msgstr "禁用 AD FS 的一个端点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Address"
+msgstr "### 地址"
+
+msgid "### TargetObject"
+msgstr "### TargetObject"
+
+msgid "### FullUrl"
+msgstr "### FullUrl"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Disable-AdfsEndpoint** cmdlet disables an endpoint of Active Directory"
+" Federation Services (AD FS)."
+msgstr ""
+"`Disable-AdfsEndpoint` 这个 cmdlet 用于禁用 Active Directory Federation Services "
+"(AD FS) 的某个终端点。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable an endpoint"
+msgstr "#### 示例 1：禁用一个端点"
+
+msgid ""
+"This command disables the WS-Trust 1.3 endpoint on the current federation "
+"server."
+msgstr "此命令会禁用当前联合服务器上的 WS-Trust 1.3 终端。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个对象，该对象表示您正在操作的项。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the address path of the endpoint.\n"
+"The cmdlet disables the endpoint that you specify.\n"
+"An example of such a path is /adfs/portal/updatepassword."
+msgstr ""
+"指定端点的地址路径。该 cmdlet 会禁用您指定的端点。例如，这样的路径可以是 `/adfs/portal/updatepassword`。"
+
+msgid ""
+"Specifies the endpoint to disable.\n"
+"This value is typically taken from the pipeline."
+msgstr "指定要禁用的端点。该值通常来自管道（pipeline）。"
+
+msgid "Specifies the full URL of the endpoint to disable."
+msgstr "指定要禁用的端点的完整URL。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.Endpoint"
+msgstr "### MicrosoftIdentityServer.PowerShell.Resources Endpoint"
+
+msgid "A class that represents an endpoint for the Federation Service."
+msgstr "一个用于表示联邦服务（Federation Service）端点的类。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-AdfsEndpoint](./Enable-AdfsEndpoint.md)"
+msgstr "[Enable-AdfsEndpoint](./Enable-AdfsEndpoint.md)"
+
+msgid "[Get-AdfsEndpoint](./Get-AdfsEndpoint.md)"
+msgstr "[Get-AdfsEndpoint](./Get-AdfsEndpoint.md)"
+
+msgid "[Set-AdfsEndpoint](./Set-AdfsEndpoint.md)"
+msgstr "[Set-AdfsEndpoint](./Set-AdfsEndpoint.md)"

@@ -1,0 +1,84 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:01:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsGlobalAuthenticationPolicy"
+msgstr "# Get-AdfsGlobalAuthenticationPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Displays the AD FS global policy."
+msgstr "显示 AD FS 全局策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsGlobalAuthenticationPolicy** cmdlet displays the global "
+"authentication policy, which includes the providers currently allowed as "
+"additional providers in the **AdditionalAuthenticationProvider** property."
+msgstr ""
+"`Get-AdfsGlobalAuthenticationPolicy` cmdlet "
+"显示全局身份验证策略，该策略包括当前被允许作为额外提供者（additional providers）的提供者信息，这些提供者的详细信息存储在 "
+"`AdditionalAuthenticationProvider` 属性中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Display the global authentication policy"
+msgstr "### 示例 1：显示全局认证策略"
+
+msgid "This command displays the global authentication policy."
+msgstr "该命令用于显示全局身份验证策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Set-AdfsGlobalAuthenticationPolicy](./Set-"
+"AdfsGlobalAuthenticationPolicy.md)"
+msgstr ""
+"[Set-AdfsGlobalAuthenticationPolicy](./Set-"
+"AdfsGlobalAuthenticationPolicy.md)"

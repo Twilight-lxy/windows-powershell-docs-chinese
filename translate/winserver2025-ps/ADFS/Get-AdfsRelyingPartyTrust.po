@@ -1,0 +1,156 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:03:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsRelyingPartyTrust"
+msgstr "# Get-AdfsRelyingPartyTrust"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the relying party trusts of the Federation Service."
+msgstr "获取联邦服务的依赖方信任信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### RelyingPartyName (Default)"
+msgstr "### RelyingPartyName（默认值）"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### PrefixIdentifier"
+msgstr "### PrefixIdentifier"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsRelyingPartyTrust** cmdlet gets the relying party trusts of the Federation Service.\n"
+"You can use this cmdlet with no parameters to get all relying party trust objects."
+msgstr ""
+"`Get-AdfsRelyingPartyTrust` cmdlet 可以获取联邦服务（Federation "
+"Service）的依赖方信任关系信息。您可以不带任何参数使用此 cmdlet 来获取所有的依赖方信任对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get property settings for a relying party trust by using a "
+"name"
+msgstr "### 示例 1：通过名称获取依赖方信任的属性设置"
+
+msgid ""
+"This command gets the property settings for the relying party trust named "
+"FabrikamApp."
+msgstr "这个命令用于获取名为“FabrikamApp”的依赖方信任（relying party trust）的属性设置。"
+
+msgid ""
+"### Example 2: Get property settings for a relying party trust by using an "
+"identifier"
+msgstr "### 示例 2：使用标识符获取依赖方信任的属性设置"
+
+msgid ""
+"This command gets the property settings for a relying party trust that has "
+"the identifier `https://FabrikamApp.CentralServer.org`."
+msgstr ""
+"此命令用于获取标识符为 `https://FabrikamApp.CentralServer.org` 的依赖方信任（relying party "
+"trust）的属性设置。"
+
+msgid ""
+"### Example 3: Get property settings for an updated relying party trust"
+msgstr "### 示例 3：获取已更新的依赖方信任关系的属性设置"
+
+msgid ""
+"This command gets the property settings for relying party trusts that have "
+"been updated in the last 24 hours."
+msgstr "此命令用于获取在过去 24 小时内已更新的依赖方信任（relying party trusts）的属性设置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of unique identifiers of the relying party trust to get."
+msgstr "指定一个包含依赖方信任标识符的唯一标识符数组以供获取。"
+
+msgid "Specifies the display name of the relying party trust to get."
+msgstr "指定要获取的依赖方信任（relying party trust）的显示名称。"
+
+msgid ""
+"Specifies a prefix identifier of the relying party trust to get.\n"
+"The Federation Service uses prefix matching to support wildcard-type filtering and perform matches based on a specific prefix URL.\n"
+"The Federation Service performs matches by using string data type evaluation.\n"
+"Matches are not case-sensitive."
+msgstr ""
+"指定要获取的依赖方信任的前缀标识符。联合服务（Federation "
+"Service）使用前缀匹配来支持通配符类型的过滤，并根据特定的前缀URL进行匹配操作。该服务通过字符串数据类型的评估来进行匹配；匹配时不区分大小写。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *Identifier*, *Name*, and "
+"*PrefixIdentifier* parameters."
+msgstr "字符串对象通过 *Identifier*、*Name* 和 *PrefixIdentifier* 参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.RelyingPartyTrust"
+msgstr "### Microsoft.IdentityServer.PowerShellResources.RelyingPartyTrust"
+
+msgid ""
+"Returns one or more RelyingPartyTrust objects that represent the relying "
+"party trust resources for the Federation Service."
+msgstr "返回一个或多个 RelyingPartyTrust 对象，这些对象代表联合服务（Federation Service）的依赖方信任资源。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsRelyingPartyTrust](./Add-AdfsRelyingPartyTrust.md)"
+msgstr "[Add-AdfsRelyingPartyTrust](./Add-AdfsRelyingPartyTrust.md)"
+
+msgid "[Disable-AdfsRelyingPartyTrust](./Disable-AdfsRelyingPartyTrust.md)"
+msgstr "[禁用 AdfsRelyingPartyTrust 功能](./Disable-AdfsRelyingPartyTrust.md)"
+
+msgid "[Enable-AdfsRelyingPartyTrust](./Enable-AdfsRelyingPartyTrust.md)"
+msgstr "[ Enable-AdfsRelyingPartyTrust](./Enable-AdfsRelyingPartyTrust.md)"
+
+msgid "[Remove-AdfsRelyingPartyTrust](./Remove-AdfsRelyingPartyTrust.md)"
+msgstr "[Remove-AdfsRelyingPartyTrust](./Remove-AdfsRelyingPartyTrust.md)"
+
+msgid "[Set-AdfsRelyingPartyTrust](./Set-AdfsRelyingPartyTrust.md)"
+msgstr "[Set-AdfsRelyingPartyTrust](./Set-AdfsRelyingPartyTrust.md)"
+
+msgid "[Update-AdfsRelyingPartyTrust](./Update-AdfsRelyingPartyTrust.md)"
+msgstr "[更新：AdfsRelyingPartyTrust](./Update-AdfsRelyingPartyTrust.md)"

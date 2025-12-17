@@ -1,0 +1,114 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:07:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsWebTheme"
+msgstr "# Get-AdfsWebTheme"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets web themes."
+msgstr "可以获取网页主题（即用于设计网站的视觉样式和元素）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AdfsWebTheme** cmdlet gets **AdfsWebTheme** objects.\n"
+"Specify a web theme by name.\n"
+"If you do not specify a name, the cmdlet gets all the **AdfsWebTheme** objects."
+msgstr ""
+"`Get-AdfsWebTheme` cmdlet 用于获取 `AdfsWebTheme` 对象。可以通过名称来指定一个网页主题；如果未指定名称，该 "
+"cmdlet 将获取所有 `AdfsWebTheme` 对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all web themes"
+msgstr "### 示例 1：获取所有网页主题"
+
+msgid ""
+"This command gets all the available web themes in Active Directory "
+"Federation Services (AD FS)."
+msgstr "这个命令可以获取 Active Directory Federation Services (AD FS) 中所有可用的 Web 主题。"
+
+msgid "### Example 2: Get a named web theme"
+msgstr "### 示例 2：获取一个已命名的网页主题"
+
+msgid "This command gets the theme named Theme01."
+msgstr "这个命令用于获取名为“Theme01”的主题。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a name.\n"
+"The cmdlet gets the web theme that has the name that you specify."
+msgstr "指定一个名称。该cmdlet会获取具有您所指定名称的网页主题。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.IdentityServer.Management.Resources.AdfsWebTheme;Microsoft.IdentityServer.Management.Resources.AdfsWebTheme[]"
+msgstr ""
+"### Microsoft.IdentityServer.ManagementResources.AdfsWebTheme; "
+"Microsoft_identityServer.ManagementResources.AdfsWebTheme[]"
+
+msgid ""
+"This cmdlet generates a web customization object, **System.IdentityServer.Management.Resources.AdfsWebTheme**, or an array of these objects.\n"
+"This object includes the following properties:"
+msgstr ""
+"此cmdlet生成一个Web自定义对象**SystemIdentityServer.Management.Resources.AdfsWebTheme**，或者这些对象的数组。该对象包含以下属性："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-AdfsWebTheme](./Export-AdfsWebTheme.md)"
+msgstr "[Export-AdfsWebTheme](./Export-AdfsWebTheme.md)"
+
+msgid "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"
+msgstr "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"
+
+msgid "[Remove-AdfsWebTheme](./Remove-AdfsWebTheme.md)"
+msgstr "[Remove-AdfsWebTheme](./Remove-AdfsWebTheme.md)"
+
+msgid "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"
+msgstr "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"

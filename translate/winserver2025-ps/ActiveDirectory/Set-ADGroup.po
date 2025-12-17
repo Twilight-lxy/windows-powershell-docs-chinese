@@ -1,0 +1,123 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:47:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADGroup"
+msgstr "# Set-ADGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies an Active Directory group."
+msgstr "修改一个 Active Directory 组。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identity"
+msgstr "### 身份"
+
+msgid "### Instance"
+msgstr "### 实例"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-ADGroup** cmdlet modifies the properties of an Active Directory group.\n"
+"You can modify commonly used property values by using the cmdlet parameters.\n"
+"Property values that are not associated with cmdlet parameters can be modified by using the *Add*, *Replace*, *Clear*, and *Remove* parameters."
+msgstr ""
+"`Set-ADGroup` cmdlet 用于修改 Active Directory 组的属性。您可以使用该 cmdlet "
+"的参数来修改常用的属性值。那些未与 cmdlet 参数关联的属性值，则可以通过使用 `Add`、`Replace`、`Clear` 和 `Remove`"
+" 参数来进行修改。"
+
+msgid ""
+"The *Identity* parameter specifies the Active Directory group to modify.\n"
+"You can identify a group by its distinguished name, GUID, security identifier, or Security Account Manager (SAM) account name.\n"
+"You can also set the *Identity* parameter to an object variable such as `$<localGroupObject>`, or you can pass a group object through the pipeline to the *Identity* parameter.\n"
+"For example, you can use the **Get-ADGroup** cmdlet to get a group object and then pass the object through the pipeline to the **Set-ADGroup** cmdlet."
+msgstr ""
+"`Identity` 参数用于指定要修改的 Active Directory 组。您可以通过该组的唯一名称（Distinguished "
+"Name）、GUID、安全标识符（Security Identifier）或安全账户管理器（SAM）帐户名称来识别该组。您也可以将 `Identity`"
+" 参数设置为某个对象变量（例如 `$<localGroupObject>`），或者通过管道将一个组对象传递给 `Identity` "
+"参数。例如，您可以使用 **Get-ADGroup** cmdlet 获取一个组对象，然后将该对象通过管道传递给 **Set-ADGroup** "
+"cmdlet。"
+
+msgid ""
+"The *Instance* parameter provides a way to update a group object by applying the changes made to a copy of the object.\n"
+"When you set the *Instance* parameter to a copy of an Active Directory group object that has been modified, the **Set-ADGroup** cmdlet makes the same changes to the original group object.\n"
+"To get a copy of the object to modify, use the **Get-ADGroup** cmdlet.\n"
+"The *Identity* parameter is not allowed when you use the *Instance* parameter.\n"
+"For more information about the *Instance* parameter, see the *Instance* parameter description."
+msgstr ""
+"`Instance` 参数提供了一种通过将更改应用到对象副本上来更新组对象的方法。当你将 `Instance` 参数设置为已修改的 Active "
+"Directory 组对象的副本时，`Set-ADGroup` cmdlet 会将对原始组对象进行相同的更改。要获取用于修改的对象副本，请使用 "
+"`Get-ADGroup` cmdlet。在使用 `Instance` 参数时，不允许同时使用 `Identity` 参数。有关 `Instance` "
+"参数的更多信息，请参阅其相关说明。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set a property for a group"
+msgstr "### 示例 1：为某个组设置属性"
+
+msgid ""
+"This command sets the **Description** property of the group named "
+"AccessControl to Access Group on an Active Directory Application Mode (ADAM)"
+" instance."
+msgstr ""
+"此命令将名为“AccessControl”的组的“Description”属性设置为“Access Group”，适用于Active "
+"Directory应用程序模式（ADAM）实例。"
+
+msgid "### Example 2: Set the description for filtered groups"
+msgstr "### 示例 2：为过滤后的组设置描述"
+
+msgid ""
+"This command modifies the **Description** property on all groups that have a"
+" name that starts with Access by using the pipeline operator."
+msgstr "该命令使用管道运算符（pipeline operator）修改所有名称以“Access”开头的组的**Description**属性。"
+
+msgid "### Example 3: Set a property by specifying an instance"
+msgstr "### 示例 3：通过指定一个实例来设置属性"
+
+msgid ""
+"This example sets the **Description** property on the AccessControl group by"
+" using the *Instance* parameter."
+msgstr "这个示例通过使用 *Instance* 参数来设置 AccessControl 组的 **Description** 属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies values to add to an object property.\n"
+"Use this parameter to add one or more values to a property that cannot be modified using a cmdlet parameter.\n"
+"To modify an object property, you must use the Lightweight Directory Access Protocol (LDAP) display name.\n"
+"You can specify multiple values to a property by specifying a comma-separated list of values and more than one property by separating them using a semicolon.\n"
+"The format for this parameter is:"
+msgstr ""
+"用于指定要添加到对象属性中的值。使用此参数可以为无法通过 cmdlet "
+"参数修改的属性添加一个或多个值。若要修改对象属性，必须使用轻量级目录访问协议（LDAP）显示名称。您可以通过提供用逗号分隔的值列表来为某个属性指定多个值；如果需要为多个属性分别设置值，则可以使用分号进行分隔。该参数的格式如下："
+
+msgid ""
+"`-Add @{Attribute1LDAPDisplayName=value1, value2, ...;   "
+"Attribute2LDAPDisplayName=value1, value2, ...; "
+"AttributeNLDAPDisplayName=value1, value2, ...}`"
+msgstr ""
+"帮我将以下Markdown内容转换为中文：  \n"
+"\n"
+"`-Add @{Attribute1LDAPDisplayName=value1, value2, ...; Attribute2LDAPDisplayName=value1, value2, ...; AttributeNLDAPDisplayName=value1, value2, ...}`"
+
+msgid ""
+"When you use the *Add*, *Replace*, *Clear*, and *Remove* parameters "
+"together, the operations are performed in the following order:"
+msgstr ""
+"当你同时使用“添加”（Add）、“替换”（Replace）、“清除”（Clear）和“删除”（Remove）这些参数时，操作的执行顺序如下："

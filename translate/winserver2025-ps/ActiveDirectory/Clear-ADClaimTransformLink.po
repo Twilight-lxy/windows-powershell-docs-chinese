@@ -1,0 +1,220 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 12:39:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-ADClaimTransformLink"
+msgstr "# Clear-ADClaimTransformLink"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Removes a claims transformation from being applied to one or more cross-forest trust relationships\n"
+"in Active Directory."
+msgstr "删除对 Active Directory 中一个或多个跨林信任关系应用的声明转换（claims transformation）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Clear-ADClaimTransformLink` cmdlet removes a claims transformation from being applied to one or\n"
+"more cross-forest trust relationships in Active Directory."
+msgstr ""
+"`Clear-ADClaimTransformLink` cmdlet 用于取消对 Active Directory "
+"中一个或多个跨林信任关系应用的声明转换（claims transformation）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a specified policy from a trust relationship"
+msgstr "### 示例 1：从信任关系中删除指定的策略"
+
+msgid ""
+"This command removes the policy named `DenyAllPolicy` from the "
+"`corp.contoso.com` trust."
+msgstr "此命令会从 `corp.contoso.com` 的信任关系中删除名为 `DenyAllPolicy` 的策略。"
+
+msgid ""
+"### Example 2: Remove all policies that are applied to a trusted forest"
+msgstr "### 示例 2：移除所有应用于受信任森林（trusted forest）的政策"
+
+msgid ""
+"This command removes any policies that are applied to where this forest acts as the trusted forest\n"
+"in the `corp.contoso.com` trust. Effectively, this cmdlet removes any policies that are applied to\n"
+"claims flowing out of this forest towards it trust partner."
+msgstr ""
+"此命令会删除所有应用于该林作为 `corp.contoso.com` 信任关系中受信任方的情况的策略。实际上，这个 cmdlet "
+"会移除所有应用于从该林流向其信任伙伴的所有声明（claims）的策略。"
+
+msgid ""
+"### Example 3: Remove a claim transformation policy from being applied to "
+"the trust relationship"
+msgstr "### 示例 3：取消将某个理赔处理政策应用于信托关系"
+
+msgid ""
+"This command removes DenyAllPolicy that is applied to where this forest acts as the trusted domain\n"
+"in the `corp.contoso.com` trust. Effectively, this cmdlet removes `DenyAllPolicy` from applying to\n"
+"claims coming into this from its trust partner."
+msgstr ""
+"此命令会移除应用于该森林（在 `corp.contoso.com` 的信任关系中充当受信任域）的 `DenyAllPolicy` 策略。实际上，这个 "
+"cmdlet 会阻止 `DenyAllPolicy` 策略对来自其信任伙伴的所有身份验证请求（claims）生效。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use. The acceptable values for this "
+"parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is `Negotiate`."
+msgstr "默认的身份验证方法是`Negotiate`（协商）。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the `Basic` "
+"authentication method."
+msgstr "对于“基本”（Basic）身份验证方法来说，需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task. The default credentials are the\n"
+"credentials of the currently logged on user unless the cmdlet is run from an Active Directory module\n"
+"for Windows PowerShell provider drive. If the cmdlet is run from such a provider drive, the account\n"
+"associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果该 cmdlet 是从这样的驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as `User1` or `Domain01\\User01` or you can\n"
+"specify a **PSCredential** object. If you specify a user name for this parameter, the cmdlet prompts\n"
+"for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 `User1` 或 `Domain01\\User01`），或者可以指定一个 **PSCredential**"
+" 对象。如果您为此参数指定了一个用户名，该 cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the `Get-Credential`\n"
+"cmdlet. You can then set the **Credential** parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"**Credential** 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform the task, Active\n"
+"Directory module for Windows PowerShell returns a terminating error."
+msgstr ""
+"如果该执行任务的账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory trust object by providing one of the following values. The identifier\n"
+"in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下值之一来指定一个 Active Directory "
+"信任对象。括号中的标识符是该属性的轻量级目录访问协议（LDAP）显示名称。此参数的可接受值为："
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set this parameter to an\n"
+"object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将该参数设置为一个对象实例。"
+
+msgid ""
+"Returns an object representing the item with which you're working. By default, this cmdlet doesn't\n"
+"generate any output."
+msgstr "返回一个表示您正在操作的该项的对象。默认情况下，此 cmdlet 不生成任何输出。"
+
+msgid ""
+"Removes the specified claim transformation policy from being applied to the "
+"trust relationship."
+msgstr "将指定的声明转换策略从应用于信任关系的配置中移除。"
+
+msgid ""
+"Specifies the Active Directory Domain Services instance to connect to, by providing one of the\n"
+"following values for a corresponding domain name or directory server. The service may be any of the\n"
+"following: Active Directory Lightweight Domain Services, Active Directory Domain Services or Active\n"
+"Directory snapshot instance."
+msgstr ""
+"指定要连接的 Active Directory 域服务实例，为此需提供相应的域名或目录服务器的其中一个值。该服务可以是以下类型之一：Active "
+"Directory 轻量级域服务（Active Directory Lightweight Domain Services）、Active "
+"Directory 域服务（Active Directory Domain Services）或 Active Directory "
+"快照实例（Active Directory Snapshot Instance）。"
+
+msgid ""
+"Specify the Active Directory Domain Services instance in one of the "
+"following ways:"
+msgstr "以下列方式之一指定 Active Directory 域服务实例："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following methods in the order that\n"
+"they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们的排列顺序："
+
+msgid ""
+"Specifies the role of the current forest in the trust relationship specified by the **Identity**\n"
+"parameter. The allowable values for this parameter are as follows:"
+msgstr "指定当前森林在由 **Identity** 参数指定的信任关系中的角色。该参数允许的值如下："
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADTrust"
+msgstr "### Microsoft.ActiveDirectory.Management.ADTrust"
+
+msgid ""
+"An account object (**Microsoft.ActiveDirectory.Management.ADTrust**) is received by the **Identity**\n"
+"parameter."
+msgstr ""
+"`Identity` 参数接收了一个账户对象（类型为 `Microsoft.ActiveDirectory.Management.ADTrust`）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-ADClaimTransformLink](./Set-ADClaimTransformLink.md)"
+msgstr "[Set-ADClaimTransformLink](./Set-ADClaimTransformLink.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理Cmdlets](./activedirectory.md)"

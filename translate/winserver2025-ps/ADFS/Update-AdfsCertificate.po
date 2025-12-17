@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:45:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-AdfsCertificate"
+msgstr "# 更新 AdFS 证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Updates the certificates of AD FS."
+msgstr "更新 AD FS 的证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Update-AdfsCertificate** cmdlet creates new certificates for Active Directory Federation Services (AD FS).\n"
+"When automatic certificate rollover is enabled and AD FS is managing the certificates that are used for signing, this update cmdlet can be used to initiate a rollover."
+msgstr ""
+"`Update-AdfsCertificate` 这个 cmdlet 用于为 Active Directory Federation Services "
+"(AD FS) 创建新的证书。当自动证书更新功能被启用，并且 AD FS 负责管理用于签名操作的证书时，就可以使用这个更新 cmdlet "
+"来启动证书的更新过程。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update a token-signing certificate"
+msgstr "### 示例 1：更新令牌签名证书"
+
+msgid "This command updates the token-signing certificate."
+msgstr "这个命令用于更新令牌签名证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the type of certificate to rollover.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要滚动的证书类型。该参数的可接受值包括："
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Indicates that the certificate rollover should happen immediately.\n"
+"An urgent rollover removes older certificates immediately.\n"
+"It might result in a service outage as trusts update to use the new certificates."
+msgstr "表示证书更新应立即进行。紧急更新会立即移除旧证书；由于系统需要更新信任关系以使用新证书，这可能会导致服务中断。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ServiceCertificate"
+msgstr "### Microsoft.IdentityServer.PowerShell.Resources.ServiceCertificate"
+
+msgid ""
+"Returns the updated ServiceCertificate object when the *PassThru* parameter "
+"is specified. By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定 *PassThru* 参数时，该命令会返回更新后的 ServiceCertificate 对象。默认情况下，此 cmdlet 不会产生任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsCertificate](./Add-AdfsCertificate.md)"
+msgstr "[Add-AdfsCertificate](./Add-AdfsCertificate.md)"
+
+msgid "[Get-AdfsCertificate](./Get-AdfsCertificate.md)"
+msgstr "[Get-AdfsCertificate](./Get-AdfsCertificate.md)"
+
+msgid "[Remove-AdfsCertificate](./Remove-AdfsCertificate.md)"
+msgstr "[Remove-AdfsCertificate](./Remove-AdfsCertificate.md)"
+
+msgid "[Set-AdfsCertificate](./Set-AdfsCertificate.md)"
+msgstr "[Set-AdfsCertificate](./Set-AdfsCertificate.md)"

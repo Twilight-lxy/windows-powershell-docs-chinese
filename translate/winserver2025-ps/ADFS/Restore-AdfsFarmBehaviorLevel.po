@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:22:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Restore-AdfsFarmBehaviorLevel"
+msgstr "# 恢复 AdFS 农场行为级别（Restore-AdfsFarmBehaviorLevel）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Restores the farm to a previous behavior level."
+msgstr "将农场恢复到之前的行为状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Restore-AdfsFarmBehaviorLevel** cmdlet restores an Active Directory "
+"Federation Services (AD FS) farm to the behavior level previous to a recent "
+"raise."
+msgstr ""
+"`Restore-AdfsFarmBehaviorLevel` cmdlet 可将 Active Directory Federation "
+"Services (AD FS) 农场恢复到最近一次调整之前的行为级别。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies credentials necessary to run this cmdlet for an AD FS farm that uses SQL Server as the policy database.\n"
+"The credentials provided must be an administrator on each AD FS server.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet."
+msgstr ""
+"用于指定在将 SQL Server 作为策略数据库的 AD FS 架构中运行此 cmdlet 所需的凭据。提供的凭据必须具有每台 AD FS "
+"服务器的管理员权限。要获取一个 **PSCredential** 对象，请使用 **Get-Credential** cmdlet。"
+
+msgid "Specifies the farm behavior."
+msgstr "指定农场（或服务器群）的行为模式。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies an array of members."
+msgstr "指定一个成员数组。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您确认是否要继续执行。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Invoke-AdfsFarmBehaviorLevelRaise](./Invoke-AdfsFarmBehaviorLevelRaise.md)"
+msgstr ""
+"[Invoke-AdfsFarmBehaviorLevelRaise](./Invoke-AdfsFarmBehaviorLevelRaise.md)"
+
+msgid ""
+"[Test-AdfsFarmBehaviorLevelRaise](./Test-AdfsFarmBehaviorLevelRaise.md)"
+msgstr "[测试-AdfsFarmBehaviorLevelRaise](./Test-AdfsFarmBehaviorLevelRaise.md)"
+
+msgid ""
+"[Test-AdfsFarmBehaviorLevelRestore](./Test-AdfsFarmBehaviorLevelRestore.md)"
+msgstr ""
+"[Test-AdfsFarmBehaviorLevelRestore](./Test-AdfsFarmBehaviorLevelRestore.md)"

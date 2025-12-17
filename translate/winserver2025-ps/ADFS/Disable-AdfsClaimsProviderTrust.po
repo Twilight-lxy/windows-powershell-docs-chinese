@@ -1,0 +1,173 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:49:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-AdfsClaimsProviderTrust"
+msgstr "# 禁用 AdfsClaimsProviderTrust"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables a claims provider trust in the Federation Service."
+msgstr "禁用联邦服务中对某个声明提供者的信任（即不再信任该声明提供者）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "### TokenSigningCertificates"
+msgstr "### TokenSigningCertificates"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Disable-AdfsClaimsProviderTrust** cmdlet disables a claims provider trust in the Federation Service.\n"
+"When disabled all tokens issued by this claims provider are not accepted by the AD FS service."
+msgstr ""
+"`Disable-AdfsClaimsProviderTrust` cmdlet 用于禁用联邦服务（Federation "
+"Service）中的某个声明提供者（claims provider）的信任关系。一旦被禁用，该声明提供者发出的所有令牌都将不会被 AD FS 服务接受。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable a claims provider trust"
+msgstr "#### 示例 1：禁用某个声明提供者（claims provider）的信任关系"
+
+msgid ""
+"This command disables the claims provider trust named Fabrikam claims "
+"provider."
+msgstr "此命令将名为“Fabrikam claims provider”的声明提供者信任设置为禁用状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the token-signing certificate of the claims provider trust to "
+"disable."
+msgstr "指定要禁用的声明提供者信任（claims provider trust）所使用的令牌签名证书。"
+
+msgid ""
+"Specifies a **ClaimsProviderTrust** object.\n"
+"The cmdlet enables the claims provider trust that you specify.\n"
+"To obtain a **ClaimsProviderTrust** object, use the **Get-AdfsClaimsProviderTrust** cmdlet."
+msgstr ""
+"用于指定一个 **ClaimsProviderTrust** 对象。该cmdlet可启用您所指定的声明提供者信任关系。若要获取一个 "
+"**ClaimsProviderTrust** 对象，请使用 **Get-AdfsClaimsProviderTrust** cmdlet。"
+
+msgid "Specifies the identifier of the claims provider trust to disable."
+msgstr "指定要禁用的声明提供者信任（claims provider trust）的标识符。"
+
+msgid "Specifies the name of the claims provider trust to disable."
+msgstr "指定要禁用的声明提供者信任（claims provider trust）的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"System.Security.Cryptography.X509Certificates.X509Certificate.X509Certificate2"
+msgstr ""
+"### System.security "
+"cryptography.X509Certificates.X509Certificate.X509Certificate2"
+
+msgid ""
+"X509Certificate2 objects are received by the *TargetCertificate* parameter."
+msgstr "`X509Certificate2` 对象是通过 `TargetCertificate` 参数接收到的。"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimsProviderTrust"
+msgstr "### Microsoft_identityServer.PowerShell.Resources ClaimsProviderTrust"
+
+msgid ""
+"ClaimsProviderTrust objects are received by the *TargetClaimsProviderTrust* "
+"parameter."
+msgstr "`ClaimsProviderTrust` 对象是通过 `TargetClaimsProviderTrust` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *TargetIdentifier* and *TargetName* "
+"parameters."
+msgstr "字符串对象通过 *TargetIdentifier* 和 *TargetName* 参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimsProviderTrust"
+msgstr "### MicrosoftIdentityServer.PowerShellResourcesClaimsProviderTrust"
+
+msgid ""
+"Returns the disabled ClaimsProviderTrust object when the *PassThru* "
+"parameter is specified. By default, this cmdlet does not generate any "
+"output."
+msgstr ""
+"当指定*PassThru*参数时，会返回一个被禁用的ClaimsProviderTrust对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsClaimsProviderTrust](./Add-AdfsClaimsProviderTrust.md)"
+msgstr "[添加 AdfsClaimsProviderTrust](./Add-AdfsClaimsProviderTrust.md)"
+
+msgid "[Enable-AdfsClaimsProviderTrust](./Enable-AdfsClaimsProviderTrust.md)"
+msgstr "[Enable-AdfsClaimsProviderTrust](./Enable-AdfsClaimsProviderTrust.md)"
+
+msgid "[Get-AdfsClaimsProviderTrust](./Get-AdfsClaimsProviderTrust.md)"
+msgstr "[Get-AdfsClaimsProviderTrust](./Get-AdfsClaimsProviderTrust.md)"
+
+msgid "[Remove-AdfsClaimsProviderTrust](./Remove-AdfsClaimsProviderTrust.md)"
+msgstr "[Remove-AdfsClaimsProviderTrust](./Remove-AdfsClaimsProviderTrust.md)"
+
+msgid "[Set-AdfsClaimsProviderTrust](./Set-AdfsClaimsProviderTrust.md)"
+msgstr "[Set-AdfsClaimsProviderTrust](./Set-AdfsClaimsProviderTrust.md)"
+
+msgid "[Update-AdfsClaimsProviderTrust](./Update-AdfsClaimsProviderTrust.md)"
+msgstr "[更新 AdfsClaimsProviderTrust](./Update-AdfsClaimsProviderTrust.md)"

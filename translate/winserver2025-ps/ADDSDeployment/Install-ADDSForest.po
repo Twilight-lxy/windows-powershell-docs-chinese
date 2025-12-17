@@ -1,0 +1,148 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:27:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-ADDSForest"
+msgstr "# 安装 AD DS 林（Install-ADDSForest）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a new Active Directory forest."
+msgstr "创建一个新的 Active Directory 林（即一个包含多个域的系统架构）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Install-ADDSForest` cmdlet installs an Active Directory forest "
+"configuration."
+msgstr "`Install-ADDSForest` cmdlet 用于安装 Active Directory 林配置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Install a new forest"
+msgstr "#### 示例 1：安装一个新的森林（森林在这里指的是一个虚拟化的网络环境或计算资源池）"
+
+msgid ""
+"This command installs a new forest named `corp.contoso.com`, causes the user to be prompted to provide\n"
+"and confirm the Directory Services Restore Mode (DSRM) password and specifies a DNS server should\n"
+"also be installed during the forest installation process."
+msgstr ""
+"此命令会安装一个名为 `corp.contoso.com` 的新林（forest），系统会提示用户输入并确认目录服务恢复模式（Directory "
+"Services Restore Mode，简称 DSRM）的密码，并指定在安装新林的过程中同时需要安装 DNS 服务器。"
+
+msgid "### Example 2: Install a new forest and a DNS delegation"
+msgstr "### 示例 2：安装一个新的林（forest）并设置 DNS 委派（DNS delegation）"
+
+msgid ""
+"This command installs a new forest named `corp.contoso.com`, creates a DNS delegation in the\n"
+"`contoso.com` domain, sets domain functional level to Windows Server 2008 R2 and sets forest\n"
+"functional level to Windows Server 2008, installs the Active Directory database and SYSVOL on the\n"
+"`D:\\` drive, installs the log files on the `E:\\` drive and has the server automatically restart\n"
+"after AD DS installation is complete and prompts the user to provide and confirm the DSRM password."
+msgstr ""
+"此命令会安装一个名为 `corp.contoso.com` 的新森林（即新的 Active Directory 域），在 `contoso.com` "
+"域中创建 DNS 委派设置，将域的功能级别设置为 Windows Server 2008 R2，并将整个森林的功能级别也设置为 Windows "
+"Server 2008。同时，该命令还会在 `D:\\` 驱动器上安装 Active Directory 数据库和 SYSVOL 文件系统，在 "
+"`E:\\` 驱动器上存放日志文件。在 Active Directory 域服务 (AD DS) 安装完成后，服务器会自动重启，并提示用户输入并确认 "
+"DSRM 密码。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Indicates that this cmdlet creates a DNS delegation that references the new DNS server that you\n"
+"install along with the domain controller. Valid for Active Directory-integrated DNS only. The\n"
+"default is computed automatically based on the environment."
+msgstr ""
+"表示此cmdlet会创建一个DNS委派关系，该关系引用与您一起安装的新的DNS服务器以及域控制器。仅适用于集成到Active "
+"Directory中的DNS系统。默认值会根据环境自动计算得出。"
+
+msgid ""
+"Specifies the fully qualified, non-Universal Naming Convention (UNC) path to a directory on a fixed\n"
+"disk of the local computer that contains the domain database, for instance, `C:\\Databases\\NTDS`. The\n"
+"default is `%SYSTEMROOT%\\NTDS`."
+msgstr ""
+"指定本地计算机固定磁盘上包含域数据库的目录的完全限定路径（该路径不遵循通用命名规范（UNC）），例如 "
+"`C:\\Databases\\NTDS`。默认值为 `%SYSTEMROOT%\\NTDS`。"
+
+msgid ""
+"Specifies the user name and password for creating DNS delegation. This parameter is skipped if the\n"
+"value for the **CreateDnsDelegation** parameter is either specified or computed to be `$false`."
+msgstr ""
+"指定用于创建 DNS 委托的用户名称和密码。如果 **CreateDnsDelegation** 参数的值已被指定，或者计算结果为 "
+"`$false`，则此参数将被忽略。"
+
+msgid ""
+"Specifies the domain functional level of the first domain in the creation of a new forest.\n"
+"Supported values for this parameter can be either a valid integer or a corresponding enumerated\n"
+"string value. For instance, to set the domain mode level to Windows Server 2008 R2, you can specify\n"
+"either a value of `4` or `Win2008R2`."
+msgstr ""
+"指定在新森林创建过程中第一个域的域功能级别。此参数支持的值可以是有效的整数，也可以是相应的枚举字符串值。例如，要将域模式级别设置为 Windows "
+"Server 2008 R2，您可以指定值 `4` 或 `Win2008R2`。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "该参数的可接受值为："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[AD DS Simplified "
+"Administration](https://go.microsoft.com/fwlink/?LinkID=237244)"
+msgstr "[简化AD DS管理](https://go.microsoft.com/fwlink/?LinkID=237244)"
+
+msgid "[Install-ADDSDomain](./Install-ADDSDomain.md)"
+msgstr "[Install-ADDSDomain](./Install-ADDSDomain.md)"
+
+msgid "[Test-ADDSForestInstallation](./Test-ADDSForestInstallation.md)"
+msgstr "[测试-ADDS森林安装](./Test-ADDSForestInstallation.md)"
+
+msgid ""
+"[ConvertTo-SecureString](https://go.microsoft.com/fwlink/p/?LinkId=113291)"
+msgstr ""
+"[ConvertTo-SecureString](https://go.microsoft.com/fwlink/p/?LinkId=113291)"

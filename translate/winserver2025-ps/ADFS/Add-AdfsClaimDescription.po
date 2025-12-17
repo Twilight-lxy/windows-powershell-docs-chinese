@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:35:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AdfsClaimDescription"
+msgstr "# 添加 AdfsClaimDescription"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a claim description to the Federation Service."
+msgstr "向联邦服务添加一个声明描述（claim description）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-AdfsClaimDescription** cmdlet adds a claim description to the "
+"Federation Service."
+msgstr ""
+"`Add-AdfsClaimDescription` cmdlet 用于向联合服务（Federation Service）添加一个声明描述（claim "
+"description）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a claim description"
+msgstr "### 示例 1：添加索赔描述"
+
+msgid ""
+"This command adds the claim description named Role for a custom claim that "
+"has the specified claim type."
+msgstr "此命令为具有指定声明类型的自定义声明添加一个名为“Role”的声明描述。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the claim type URN or URI of the claim.\n"
+"All claim descriptions must include a valid URN or URI."
+msgstr "指定声明的类型（即声明的URN或URI）。所有声明描述都必须包含一个有效的URN或URI。"
+
+msgid ""
+"Indicates whether the claim is published in federation metadata as a claim "
+"that the Federation Service accepts."
+msgstr "该字段用于指示该声明是否被发布在联邦元数据中，并被视为联邦服务所接受的声明类型。"
+
+msgid ""
+"Indicates whether the claim is published in federation metadata as a claim "
+"that the Federation Service offers."
+msgstr "该字段用于指示该声明是否作为联邦服务所提供的功能之一，被发布在联邦服务的元数据中。"
+
+msgid ""
+"Indicates whether the claim is published in federation metadata as a claim "
+"that the Federation Service requires."
+msgstr "用于指示该声明是否作为联邦服务所要求的声明被发布在联邦元数据中。"
+
+msgid "Specifies a friendly name for the claim description to add."
+msgstr "指定一个友好的名称，用于添加到声明描述中。"
+
+msgid ""
+"Specifies text that describes the purpose of the claim description.\n"
+"The cmdlet adds the notes to the claim description."
+msgstr "用于指定描述该声明用途的文本。此cmdlet会将这些说明添加到声明描述中。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies a short name."
+msgstr "指定一个简短的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.ClaimDescription"
+msgstr "### Microsoft.IdentityServer.ManagementResources.ClaimDescription"
+
+msgid ""
+"Returns the new ClaimDescription object when the *PassThru* parameter is "
+"specified. By default, this cmdlet does not generate any output."
+msgstr "当指定了*PassThru*参数时，会返回一个新的ClaimDescription对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsClaimDescription](./Get-AdfsClaimDescription.md)"
+msgstr "[Get-AdfsClaimDescription](./Get-AdfsClaimDescription.md)"
+
+msgid "[Remove-AdfsClaimDescription](./Remove-AdfsClaimDescription.md)"
+msgstr "[Remove-AdfsClaimDescription](./Remove-AdfsClaimDescription.md)"
+
+msgid "[Set-AdfsClaimDescription](./Set-AdfsClaimDescription.md)"
+msgstr "[Set-AdfsClaimDescription](./Set-AdfsClaimDescription.md)"

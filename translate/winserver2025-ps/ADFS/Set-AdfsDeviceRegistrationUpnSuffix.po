@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:30:06 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsDeviceRegistrationUpnSuffix"
+msgstr "# 设置 AdFS 设备注册 UPN 后缀"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the list of UPN suffixes."
+msgstr "用于设置 UPN 后缀的列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AdfsDeviceRegistrationUpnSuffix** cmdlet sets the list of user principal name (UPN) suffixes that you can use when you register a device with Active Directory Federation Services (AD FS).\n"
+"The cmdlet discovers the UPN suffixes that are in use in the organization and configures the Secure Sockets Layer (SSL) bindings that correspond to the UPN suffix."
+msgstr ""
+"`Set-AdfsDeviceRegistrationUpnSuffix` 这个cmdlet用于设置在将设备注册到Active Directory "
+"Federation Services（AD "
+"FS）时可以使用的用户主体名称（UPN）后缀列表。该cmdlet会检测组织中正在使用的UPN后缀，并配置与这些UPN后缀对应的Secure "
+"Sockets Layer（SSL）绑定信息。"
+
+msgid ""
+"Any discovered UPN suffix must have a corresponding registration name in the SSL certificate for AD FS; for example, `enterpriseregistration.`upn suffix.\n"
+"You can also use a wildcard SSL certificate that covers all possible registration names.\n"
+"This cmdlet does not affect the custom UPN suffixes that you set manually by running the **Add-AdfsDeviceRegistrationUpnSuffix** cmdlet."
+msgstr ""
+"任何被发现的 UPN 后缀都必须在 AD FS 的 SSL 证书中具有对应的注册名称；例如，`enterpriseregistration.upn` "
+"后缀。您也可以使用一个通配符 SSL 证书来覆盖所有可能的注册名称。此 cmdlet 不会影响您通过运行 **Add-"
+"AdfsDeviceRegistrationUpnSuffix** cmdlet 手动设置的自定义 UPN 后缀。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the list of UPN suffixes"
+msgstr "### 示例 1：设置 UPN 后缀列表"
+
+msgid ""
+"This command sets the list of UPN suffixes that you can use when you "
+"register a device."
+msgstr "此命令设置了在注册设备时可以使用的UPN后缀列表。"
+
+msgid "### Example 2: Set the list of UPN suffixes without confirming"
+msgstr "### 示例 2：在不进行确认的情况下设置 UPN 后缀列表"
+
+msgid ""
+"This command sets the list of UPN suffixes without prompting you for "
+"confirmation."
+msgstr "此命令会直接设置 UPN 后缀列表，而不会询问您是否确认。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需用户确认。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.ManagementAutomation.SwitchParameter"
+
+msgid "SwitchParameter objects are received by the *Force* parameter."
+msgstr "`SwitchParameter` 对象是通过 `Force` 参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsDeviceRegistrationUpnSuffix](./Add-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"[Add-AdfsDeviceRegistrationUpnSuffix](./Add-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+
+msgid ""
+"[Get-AdfsDeviceRegistrationUpnSuffix](./Get-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"[Get-AdfsDeviceRegistrationUpnSuffix](./Get-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+
+msgid ""
+"[Remove-AdfsDeviceRegistrationUpnSuffix](./Remove-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"[Remove-AdfsDeviceRegistrationUpnSuffix](./Remove-"
+"AdfsDeviceRegistrationUpnSuffix.md)"

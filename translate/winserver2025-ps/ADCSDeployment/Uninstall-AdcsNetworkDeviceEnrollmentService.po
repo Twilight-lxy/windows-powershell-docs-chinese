@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:23:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Uninstall-AdcsNetworkDeviceEnrollmentService"
+msgstr "# 卸载 AdcsNetworkDeviceEnrollmentService"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Uninstalls the NDES role service."
+msgstr "卸载NDES角色服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Uninstall-AdcsNetworkDeviceEnrollmentService` cmdlet uninstalls the Network Device Enrollment\n"
+"Service (NDES) role service."
+msgstr ""
+"`Uninstall-AdcsNetworkDeviceEnrollmentService` cmdlet 用于卸载网络设备注册服务（Network "
+"Device Enrollment Service，简称 NDES）角色服务。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Uninstall the NDES role service"
+msgstr "### 示例 1：卸载 NDES 角色服务"
+
+msgid ""
+"This command uninstalls the NDES role service and does not prompt for user "
+"input."
+msgstr "此命令会卸载NDES角色服务，并且不会要求用户输入任何信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Deployment.Common.NDES.NetworkDeviceEnrollmentServiceResult"
+msgstr ""
+"### "
+"Microsoft.CertificateServices.Deployment.Common.NDES.NetworkDeviceEnrollmentServiceResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Install-AdcsNetworkDeviceEnrollmentService](./Install-"
+"AdcsNetworkDeviceEnrollmentService.md)"
+msgstr ""
+"[安装 AdcsNetworkDeviceEnrollmentService](./Install-"
+"AdcsNetworkDeviceEnrollmentService.md)"

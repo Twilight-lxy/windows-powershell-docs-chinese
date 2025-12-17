@@ -1,0 +1,135 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:11:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AdfsClaimRuleSet"
+msgstr "# 新的 AdfsClaimRuleSet"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a set of claim rules."
+msgstr "创建一组声明规则（claim rules）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### FromParams"
+msgstr "### FromParams"
+
+msgid "### FromFile"
+msgstr "### FromFile"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-AdfsClaimRuleSet** cmdlet creates a set of claim rules in Active "
+"Directory Federation Services (AD FS) 2.0."
+msgstr ""
+"`New-AdfsClaimRuleSet` cmdlet 在 Active Directory Federation Services (AD FS)"
+" 2.0 中创建一组声明规则。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a claim rule set by using a text file"
+msgstr "### 示例 1：使用文本文件创建一个声明规则集"
+
+msgid ""
+"The first command creates a claim rule set by using a text file, and then "
+"stores it in the $RuleSet variable."
+msgstr "第一个命令通过使用一个文本文件来创建一个声明规则集（claim rule set），然后将其存储在 `$RuleSet` 变量中。"
+
+msgid ""
+"The second command uses the **Set-AdfsRelyingPartyTrust** cmdlet to assign the rule set stored in $RuleSet to a relying party trust.\n"
+"The command refers to the **ClaimsRuleString** property of the object stored in $RuleSet."
+msgstr ""
+"第二个命令使用了 **Set-AdfsRelyingPartyTrust** cmdlet，将存储在 `$RuleSet` "
+"中的规则集分配给一个依赖方信任（relying party trust）。该命令引用了存储在 `$RuleSet` 中的对象的 "
+"**ClaimsRuleString** 属性。"
+
+msgid "### Example 2: Create a claim rule set by using an inline rule"
+msgstr "### 示例 2：使用内联规则创建声明规则集"
+
+msgid ""
+"The first command creates a claim rule set by using an inline AD FS 2.0 "
+"claims language rule, and then stores it in the $RuleSet variable."
+msgstr "第一个命令使用内联的 AD FS 2.0 声明语言规则来创建一个声明规则集，然后将其存储在 `$RuleSet` 变量中。"
+
+msgid ""
+"The second command uses **Set-AdfsRelyingPartyTrust** to assign the rule set stored in $RuleSet to a relying party trust.\n"
+"The command refers to the **ClaimsRuleString** property of the object stored in $RuleSet."
+msgstr ""
+"第二个命令使用 `Set-AdfsRelyingPartyTrust` 将存储在 `$RuleSet` "
+"中的规则集分配给一个依赖方信任关系（relying party trust）。该命令引用了存储在 `$RuleSet` 中的对象的 "
+"`ClaimsRuleString` 属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an array of individual rules in this rule set."
+msgstr "在这个规则集中，指定了一组单独的规则。"
+
+msgid ""
+"Specifies the serialized policy text that is created by the collection of "
+"rules in the rule set."
+msgstr "指定由规则集中的所有规则共同生成的序列化策略文本。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ClaimRuleSet"
+msgstr "### MicrosoftIdentityServer.PowerShellResources.ClaimRuleSet"
+
+msgid ""
+"This cmdlet generates a class structure that represents a set of AD FS 2.0 "
+"claim rules."
+msgstr "这个cmdlet生成一个类结构，用于表示一组AD FS 2.0声明规则。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsClaimsProviderTrust](./Get-AdfsClaimsProviderTrust.md)"
+msgstr "[Get-AdfsClaimsProviderTrust](./Get-AdfsClaimsProviderTrust.md)"
+
+msgid "[Set-AdfsClaimsProviderTrust](./Set-AdfsClaimsProviderTrust.md)"
+msgstr "[Set-AdfsClaimsProviderTrust](./Set-AdfsClaimsProviderTrust.md)"
+
+msgid "[Update-AdfsClaimsProviderTrust](./Update-AdfsClaimsProviderTrust.md)"
+msgstr "[更新 AdfsClaimsProviderTrust](./Update-AdfsClaimsProviderTrust.md)"
+
+msgid "[Set-AdfsRelyingPartyTrust](./Set-AdfsRelyingPartyTrust.md)"
+msgstr "[Set-AdfsRelyingPartyTrust](./Set-AdfsRelyingPartyTrust.md)"

@@ -1,0 +1,157 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:32:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsLocalClaimsProviderTrust"
+msgstr "# 设置 AdfsLocalClaimsProviderTrust"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies a local claims provider trust."
+msgstr "修改本地声明提供者（claims provider）的信任设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AdfsLocalClaimsProviderTrust** cmdlet modifies a local claims provider trust.\n"
+"For more information, see the **Add-AdfsLocalClaimsProviderTrust** cmdlet."
+msgstr ""
+"`Set-AdfsLocalClaimsProviderTrust` cmdlet 用于修改本地声明提供者的信任关系。有关更多信息，请参阅 `Add-"
+"AdfsLocalClaimsProviderTrust` cmdlet 的文档。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the set of claim rules to configure on the local claims provider trust.\n"
+"These rules determine the information that is accepted from the partner represented by the local claims provider trust."
+msgstr "指定了一组需要在本地声明提供者信任关系中配置的声明规则。这些规则决定了从由本地声明提供者信任关系所代表的合作伙伴那里接收的信息内容。"
+
+msgid ""
+"Specifies the full path of a file that contains the set of claim rules to "
+"configure on the local claims provider trust."
+msgstr "指定一个文件的完整路径，该文件包含了用于配置本地声明提供者信任机制的声明规则集。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies a name for the local claims provider trust."
+msgstr "为本地声明提供者信任关系指定一个名称。"
+
+msgid "Specifies notes."
+msgstr "用于指定注释信息。"
+
+msgid ""
+"Specifies an array of organizational account suffixes that administrator can"
+" configure for the claims provider trust for a Home Realm Discovery (HRD) "
+"scenario."
+msgstr ""
+"指定一组组织账户后缀，管理员可以为这些后缀配置信任设置，以便在“家庭领域发现”（Home Realm Discovery，简称 "
+"HRD）场景中使用这些后缀与身份验证提供者进行交互。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the local claims provider trust to modify.\n"
+"To obtain a **LocalClaimsProviderTrust** object, use the **Get-AdfsLocalClaimsProviderTrust** cmdlet."
+msgstr ""
+"用于指定需要修改的本地claims提供者信任关系。要获取一个**LocalClaimsProviderTrust**对象，可以使用**Get-"
+"AdfsLocalClaimsProviderTrust** cmdlet。"
+
+msgid "Specifies the ID of the local claims provider trust to modify."
+msgstr "指定要修改的本地声明提供者信任关系的ID。"
+
+msgid "Specifies the name of the local claims provider trust to modify."
+msgstr "指定要修改的本地声明提供者信任关系的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsLocalClaimsProviderTrust](./Add-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Add-AdfsLocalClaimsProviderTrust](./Add-AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Disable-AdfsLocalClaimsProviderTrust](./Disable-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[禁用 AdfsLocalClaimsProviderTrust](./Disable-AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Enable-AdfsLocalClaimsProviderTrust](./Enable-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Enable-AdfsLocalClaimsProviderTrust](./Enable-"
+"AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Get-AdfsLocalClaimsProviderTrust](./Get-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Get-AdfsLocalClaimsProviderTrust](./Get-AdfsLocalClaimsProviderTrust.md)"
+
+msgid ""
+"[Remove-AdfsLocalClaimsProviderTrust](./Remove-"
+"AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Remove-AdfsLocalClaimsProviderTrust](./Remove-"
+"AdfsLocalClaimsProviderTrust.md)"

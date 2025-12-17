@@ -1,0 +1,110 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:58:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsCertificate"
+msgstr "# 获取 Adfs 证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Retrieves the certificates from AD FS."
+msgstr "从 AD FS 中检索证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByType (Default)"
+msgstr "### 按类型（默认值）"
+
+msgid "### ByReference"
+msgstr "### ByReference"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AdfsCertificate** cmdlet retrieves the certificates that Active "
+"Directory Federation Services (AD FS) uses for token signing, token "
+"decrypting, card signing, and securing service communications."
+msgstr ""
+"`Get-AdfsCertificate` cmdlet 可以检索 Active Directory Federation Services (AD "
+"FS) 用于令牌签名、令牌解密、卡片签名以及保护服务通信的证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the token-signing certificates"
+msgstr "### 示例 1：获取令牌签名证书"
+
+msgid "This command retrieves the token-signing certificates for AD FS."
+msgstr "此命令用于检索用于 AD FS（Active Directory Federation Services）的令牌签名证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the type of the certificate to retrieve.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要检索的证书类型。该参数的可接受值包括："
+
+msgid "Specifies the thumbprint of the certificate to retrieve."
+msgstr "指定要检索的证书的“指纹”（即用于唯一标识该证书的信息）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ServiceCertificate"
+msgstr "### MicrosoftIdentityServer.PowerShell.Resources.ServiceCertificate"
+
+msgid ""
+"Returns one or more ServiceCertificate objects that represent the "
+"certificate objects for AD FS."
+msgstr "返回一个或多个 ServiceCertificate 对象，这些对象代表了 AD FS 的证书信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsCertificate](./Add-AdfsCertificate.md)"
+msgstr "[Add-AdfsCertificate](./Add-AdfsCertificate.md)"
+
+msgid "[Remove-AdfsCertificate](./Remove-AdfsCertificate.md)"
+msgstr "[Remove-AdfsCertificate](./Remove-AdfsCertificate.md)"
+
+msgid "[Set-AdfsCertificate](./Set-AdfsCertificate.md)"
+msgstr "[Set-AdfsCertificate](./Set-AdfsCertificate.md)"
+
+msgid "[Update-AdfsCertificate](./Update-AdfsCertificate.md)"
+msgstr "[更新 AdfsCertificate](./Update-AdfsCertificate.md)"

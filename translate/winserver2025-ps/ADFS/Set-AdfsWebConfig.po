@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:42:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsWebConfig"
+msgstr "# 设置 AdfsWebConfig"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Modifies web customization configuration settings."
+msgstr "修改网页自定义配置设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Set-AdfsWebConfig` cmdlet modifies web customization configuration settings. These settings\n"
+"impact any protocol that Active Directory Federation Services (AD FS) supports where a web browser\n"
+"facilitates token requests for home realm discovery (HRD) and authentication."
+msgstr ""
+"`Set-AdfsWebConfig` cmdlet 用于修改 Web 定制配置设置。这些设置会影响 Active Directory "
+"Federation Services (AD FS) 支持的任何协议，在这些协议中，Web 浏览器会帮助发送令牌请求以进行 home realm "
+"discovery (HRD) 和身份验证操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set customization configuration properties"
+msgstr "#### 示例 1：设置自定义配置属性"
+
+msgid ""
+"This command sets properties in the web customization configuration "
+"settings."
+msgstr "此命令用于设置网页自定义配置中的相关属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of a web theme to be set as the active web theme in the web customization\n"
+"configuration. To create a web theme, use the `New-AdfsWebTheme` cmdlet."
+msgstr ""
+"指定一个网页主题的名称，以便将其设置为网页自定义配置中的活动网页主题。要创建一个网页主题，请使用 `New-AdfsWebTheme` cmdlet。"
+
+msgid ""
+"Specifies the Uniform Resource Identifier (URI) of the Common Domain Cookie "
+"(CDC) reader."
+msgstr "指定公共域名Cookie（CDC）读取器的统一资源标识符（URI）。"
+
+msgid "Specifies the URI of the CDC writer."
+msgstr "指定CDC写入器的URI。"
+
+msgid "Indicates whether to enable the context cookie."
+msgstr "表示是否启用上下文cookie。"
+
+msgid ""
+"Indicates whether to enable the HRD cookie. If you specify a value of `$false`, when AD FS has more\n"
+"than one claims provider trust enabled, end users must select the home realm in every application\n"
+"request."
+msgstr ""
+"该参数用于指示是否启用 HRD（Human Resource Development）相关 cookie。如果您指定值为 `$false`，则当 AD "
+"FS 启用了多个身份验证提供者时，最终用户必须在每次应用程序请求中手动选择所属的域（home realm）。"
+
+msgid "Specifies the lifetime, in days, of an HRD cookie."
+msgstr "指定 HRD cookie 的生命周期（以天为单位）。"
+
+msgid ""
+"Returns an object representing the item with which you are working. By default, this cmdlet does not\n"
+"generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的情景。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "By default, this cmdlet doesn't return any output."
+msgstr "默认情况下，此cmdlet不会返回任何输出。"
+
+msgid "### AdfsWebConfig"
+msgstr "### AdfsWebConfig"
+
+msgid ""
+"When you use the **PassThru** parameter, this cmdlet returns an **AdfsWebConfig** object that\n"
+"represents the modified configuration settings."
+msgstr ""
+"当你使用 **PassThru** 参数时，此 cmdlet 会返回一个 **AdfsWebConfig** 对象，该对象表示修改后的配置设置。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsWebConfig](./Get-AdfsWebConfig.md)"
+msgstr "[Get-AdfsWebConfig](./Get-AdfsWebConfig.md)"
+
+msgid "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"
+msgstr "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"

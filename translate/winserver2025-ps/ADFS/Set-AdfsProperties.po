@@ -1,0 +1,99 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:34:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsProperties"
+msgstr "# 设置 Adfs 属性"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the properties that control global behaviors in AD FS."
+msgstr "设置用于控制 Active Directory Federation Services (AD FS) 中全局行为的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AdfsProperties** cmdlet sets the properties that control global "
+"behaviors in Active Directory Federation Services (AD FS)."
+msgstr ""
+"`Set-AdfsProperties` cmdlet 用于设置控制 Active Directory Federation Services (AD "
+"FS) 中全局行为的属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the ADFS properties"
+msgstr "#### 示例 1：设置 ADFS 属性"
+
+msgid ""
+"The first command creates a **TimsSpan** object and stores the result in the"
+" variable named $Timespan."
+msgstr "第一个命令创建了一个 **TimsSpan** 对象，并将结果存储在名为 `$Timespan` 的变量中。"
+
+msgid ""
+"The second command sets an extranet lockout algorithm with a threshold of 4 max bad password attempts before lockout.\n"
+"The command also sets the observation window for the value stored in the $Timespan variable."
+msgstr ""
+"第二个命令设置了一个外部网络（extranet）的锁定机制，该机制规定：在用户连续输入4次错误的密码后，系统将立即对其账户进行锁定。此外，这个命令还设置了用于存储在$Timespan变量中的值的观察窗口（observation"
+" window）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of identifiers that are acceptable names for the "
+"Federation Service when it checks the audience for claims that it receives "
+"from another claims provider."
+msgstr ""
+"指定一个标识符数组，这些标识符可以作为联邦服务（Federation Service）在验证从其他声明提供者（claims "
+"provider）收到的声明时所使用的名称。"
+
+msgid "This parameter is deprecated."
+msgstr "这个参数已经过时了（即不再被推荐使用）。"
+
+msgid "Indicates that local administrator service administration is allowed."
+msgstr "表示允许进行本地管理员服务的相关管理操作。"
+
+msgid "Indicates that system service administration is allowed."
+msgstr "表示允许进行系统服务管理操作。"
+
+msgid ""
+"Specifies the connection string to use for the database that maintains the "
+"artifacts that the artifact resolution service uses."
+msgstr "指定用于连接数据库的连接字符串，该数据库保存着工件解析服务所使用的各种工件信息。"
+
+msgid ""
+"Specifies an array of audit levels.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定一个审计级别的数组。该参数的可接受值为："
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsProperties](./Get-AdfsProperties.md)"
+msgstr "[Get-AdfsProperties](./Get-AdfsProperties.md)"

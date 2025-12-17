@@ -1,0 +1,141 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:24:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsApplicationPermission"
+msgstr "# 设置 AdfsApplicationPermission"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies application permissions."
+msgstr "修改应用程序的权限。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identifier (Default)"
+msgstr "### 标识符（默认值）"
+
+msgid "### IdentifierAddScope"
+msgstr "### IdentifierAddScope"
+
+msgid "### IdentifierRemoveScope"
+msgstr "### IdentifierRemoveScope"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "### InputObjectAddScope"
+msgstr "### InputObjectAddScope"
+
+msgid "### InputObjectRemoveScope"
+msgstr "### InputObjectRemoveScope"
+
+msgid "### RoleIdentifier"
+msgstr "### RoleIdentifier"
+
+msgid "### RoleIdentifierAddScope"
+msgstr "### RoleIdentifierAddScope"
+
+msgid "### RoleIdentifierRemoveScope"
+msgstr "### RoleIdentifierRemoveScope"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AdfsApplicationPermission** cmdlet modifies application "
+"permissions."
+msgstr "`Set-AdfsApplicationPermission` cmdlet 用于修改应用程序的权限设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a description."
+msgstr "指定一个描述。"
+
+msgid "Specifies an **OAuthPermission** object."
+msgstr "指定一个 **OAuthPermission** 对象。"
+
+msgid "Specifies the identifier of the target."
+msgstr "指定目标的标识符。"
+
+msgid "Specifies the identifier of the target server role."
+msgstr "指定目标服务器角色的标识符。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *AddScope*, *Description*, *RemoveScope*,"
+" *ScopeNames*, *TargetClientRoleIdentifier*, *TargetIdentifier*, and "
+"*TargetServerRoleIdentifier* parameters."
+msgstr ""
+"`AddScope`、`Description`、`RemoveScope`、`ScopeNames`、`TargetClientRoleIdentifier`、`TargetIdentifier`"
+" 和 `TargetServerRoleIdentifier` 这些参数接收的是字符串对象。"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.OAuthPermission"
+msgstr "### Microsoft.IdentityServer.Management.Resources.OAuthPermission"
+
+msgid "OAuthPermission objects are received by the *InputObject* parameter."
+msgstr "`OAuthPermission` 对象是通过 `InputObject` 参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsApplicationPermission](./Get-AdfsApplicationPermission.md)"
+msgstr "[Get-AdfsApplicationPermission](./Get-AdfsApplicationPermission.md)"
+
+msgid ""
+"[Grant-AdfsApplicationPermission](./Grant-AdfsApplicationPermission.md)"
+msgstr ""
+"[Grant-AdfsApplicationPermission](./Grant-AdfsApplicationPermission.md)"
+
+msgid ""
+"[Revoke-AdfsApplicationPermission](./Revoke-AdfsApplicationPermission.md)"
+msgstr ""
+"[Revoke-AdfsApplicationPermission](./Revoke-AdfsApplicationPermission.md)"

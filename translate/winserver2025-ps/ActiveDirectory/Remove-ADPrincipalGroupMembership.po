@@ -1,0 +1,187 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:12:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ADPrincipalGroupMembership"
+msgstr "# 移除 AD 主组成员身份"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a member from one or more Active Directory groups."
+msgstr "将某个成员从一个或多个 Active Directory 组中移除。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-ADPrincipalGroupMembership** cmdlet removes a user, group, "
+"computer, service account, or any other account object from one or more "
+"Active Directory groups."
+msgstr ""
+"`Remove-ADPrincipalGroupMembership` cmdlet 可以将用户、组、计算机、服务账户或任何其他账户对象从一个或多个 "
+"Active Directory 组中删除。"
+
+msgid ""
+"The *Identity* parameter specifies the user, group, or computer to remove.\n"
+"You can identify the user, group, or computer by its distinguished name, GUID, security identifier (SID), or Security Account Manager (SAM) account name.\n"
+"You can also specify a user, group, or computer object variable, such as `$<localGroupObject>`, or pass an object through the pipeline to the *Identity* parameter.\n"
+"For example, you can use the **Get-ADUser** cmdlet to get a user object and then pass the object through the pipeline to the **Remove-ADPrincipalGroupMembership** cmdlet.\n"
+"Similarly, you can use Get-ADGroup or Get-ADComputer to get group, service account, and computer objects to pass through the pipeline."
+msgstr ""
+"`Identity` 参数用于指定要删除的用户、组或计算机。您可以通过其唯一名称（Distinguished "
+"Name）、全局唯一标识符（GUID）、安全标识符（Security Identifier，SID）或安全账户管理器（Security Account "
+"Manager，SAM）帐户名称来识别该用户、组或计算机。此外，您还可以指定一个用户/组/计算机对象变量（例如 "
+"`$<localGroupObject>`），或将某个对象通过管道传递给 `Identity` 参数。例如，您可以使用 `Get-ADUser` "
+"cmdlet 获取用户对象，然后将该对象通过管道传递给 `Remove-ADPrincipalGroupMembership` "
+"cmdlet；同样地，您也可以使用 `Get-ADGroup` 或 `Get-ADComputer` "
+"来获取组、服务帐户或计算机对象，并将它们通过管道传递。"
+
+msgid ""
+"This cmdlet collects all of the user, computer, service account, and group "
+"objects from the pipeline, and then removes these objects from the specified"
+" group by using one Active Directory operation."
+msgstr ""
+"此cmdlet会从管道中收集所有的用户、计算机、服务账户和组对象，然后通过一次Active Directory操作将这些对象从指定的组中删除。"
+
+msgid ""
+"The *MemberOf* parameter specifies the groups that you want to remove the member from.\n"
+"You can identify a group by its distinguished name, GUID, security identifier, or SAM account name.\n"
+"You can also specify group object variable, such as `$<localGroupObject>`.\n"
+"To specify more than one group, use a comma-separated list.\n"
+"You cannot pass group objects through the pipeline to the MemberOf parameter.\n"
+"To remove a member from groups that are passed through the pipeline, use Remove-ADGroupMember cmdlet."
+msgstr ""
+"`memberOf` 参数用于指定您希望从中移除成员的组。您可以通过组的唯一名称、GUID、安全标识符或 SAM "
+"账户名称来识别该组。您也可以指定组对象变量（例如 "
+"`$<localGroupObject>`）。如果要指定多个组，请使用逗号分隔的列表。需要注意的是，无法将组对象直接通过管道传递给 `memberOf`"
+" 参数。要从通过管道传递过来的组中移除成员，请使用 `Remove-ADGroupMember` cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a user from a group"
+msgstr "### 示例 1：将用户从组中移除"
+
+msgid ""
+"This command removes the user David Chew from the Administrators group."
+msgstr "此命令会将用户David Chew从“Administrators”组中删除。"
+
+msgid "### Example 2: Remove a user from a distinguished name group"
+msgstr "### 示例 2：将用户从特定名称组中移除"
+
+msgid ""
+"This command retrieves the user with the distinguished name "
+"CN=DavidChew,DC=AppNC and removes it from the group with the distinguished "
+"name CN=AccessControl,DC=AppNC by using the pipeline operator."
+msgstr ""
+"该命令使用管道运算符（pipeline operator）来查找具有唯一名称 CN=DavidChew,DC=AppNC 的用户，并将其从名为 "
+"CN=AccessControl,DC=AppNC 的组中移除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。此参数的可接受值为："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的认证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本身份验证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Active Directory PowerShell "
+"提供程序驱动器运行的；在这种情况下，默认凭据将是与该驱动器关联的用户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01/User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为该参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过使用脚本或 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"*Credential* 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory PowerShell returns a terminating error."
+msgstr "如果执行任务的代理凭据没有目录级别的权限，Active Directory PowerShell 将返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory principal object by providing one of the following property values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory 主体对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADPrincipal"
+msgstr "### 无值或 Microsoft.ActiveDirectory.Management_ADPrincipal"
+
+msgid ""
+"Returns a principal object that represents the modified user, computer or group object when the *PassThru* parameter is specified.\n"
+"By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定 *PassThru* 参数时，该 cmdlet 会返回一个表示已修改的用户、计算机或组对象的主对象。默认情况下，此 cmdlet "
+"不会产生任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ADGroupMember](./Add-ADGroupMember.md)"
+msgstr "[Add-ADGroupMember](./Add-ADGroupMember.md)"
+
+msgid "[Add-ADPrincipalGroupMembership](./Add-ADPrincipalGroupMembership.md)"
+msgstr ""
+"[Add-ADPrincipalGroup Membership](./Add-ADPrincipalGroupMembership.md)"
+
+msgid "[Get-ADComputer](./Get-ADComputer.md)"
+msgstr "[Get-ADComputer](./Get-ADComputer.md)"
+
+msgid "[Get-ADGroup](./Get-ADGroup.md)"
+msgstr "[Get-ADGroup](./Get-ADGroup.md)"
+
+msgid "[Get-ADGroupMember](./Get-ADGroupMember.md)"
+msgstr "[Get-ADGroupMember](./Get-ADGroupMember.md)"
+
+msgid "[Get-ADPrincipalGroupMembership](./Get-ADPrincipalGroupMembership.md)"
+msgstr "[Get-ADPrincipalGroupMembership](./Get-ADPrincipalGroupMembership.md)"
+
+msgid "[Get-ADServiceAccount](./Get-ADServiceAccount.md)"
+msgstr "[Get-ADServiceAccount](./Get-ADServiceAccount.md)"
+
+msgid "[Get-ADUser](./Get-ADUser.md)"
+msgstr "[Get-ADUser](./Get-ADUser.md)"
+
+msgid "[Remove-ADGroupMember](./Remove-ADGroupMember.md)"
+msgstr "[Remove-ADGroupMember](./Remove-ADGroupMember.md)"

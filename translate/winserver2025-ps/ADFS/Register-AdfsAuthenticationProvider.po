@@ -1,0 +1,114 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:13:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Register-AdfsAuthenticationProvider"
+msgstr "# 注册 AdfsAuthenticationProvider"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Registers an external authentication provider in AD FS."
+msgstr "在 AD FS 中注册一个外部身份验证提供程序。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Register-AdfsAuthenticationProvider** cmdlet registers an external authentication provider as a provider in Active Directory Federation Services (AD FS).\n"
+"Use the **Get-AdfsAuthenticationProvider** cmdlet to get a list of registered authentication providers."
+msgstr ""
+"`Register-AdfsAuthenticationProvider` cmdlet 将外部身份验证提供程序注册为 Active Directory"
+" Federation Services (AD FS) 中的提供程序。可以使用 `Get-AdfsAuthenticationProvider` "
+"cmdlet 来获取已注册的身份验证提供程序列表。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Register an authentication provider"
+msgstr "### 示例 1：注册一个身份验证提供者"
+
+msgid ""
+"The first command creates a variable named $TypeName that contains the "
+"configuration data for an external provider."
+msgstr "第一个命令创建了一个名为 `$TypeName` 的变量，该变量包含了外部提供者的配置数据。"
+
+msgid ""
+"The second command registers the authentication provider by using the data "
+"stored in the $TypeName variable."
+msgstr "第二个命令使用存储在 `$TypeName` 变量中的数据来注册身份验证提供者。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the fully qualified file path of a file that contains "
+"authentication provider configuration data."
+msgstr "指定包含身份验证提供程序配置数据的文件的完整路径。"
+
+msgid ""
+"You can also upload the file to the Active Directory Federation Services (AD FS) configuration store and make it available to the authentication provider.\n"
+"Use this method if you want to provide additional information that pertains to a specific customer when you initialize the authentication provider.\n"
+"Any usage of this method is specific to the vendor that supplies the authentication provider."
+msgstr ""
+"您还可以将文件上传到 Active Directory Federation Services (AD FS) "
+"的配置存储中，以便身份验证提供商可以使用该文件。如果您在初始化身份验证提供商时需要提供与特定客户相关的额外信息，请使用此方法。任何对该方法的使用都取决于提供该身份验证提供商的供应商。"
+
+msgid "Specifies the name of an authentication provider to register in AD FS."
+msgstr "指定要在 AD FS 中注册的身份验证提供程序的名称。"
+
+msgid ""
+"Specifies the fully qualified type of the authentication provider assembly "
+"on the federation server."
+msgstr "指定联合服务器上身份验证提供程序程序集的完全限定类型。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsAuthenticationProvider](./Get-AdfsAuthenticationProvider.md)"
+msgstr "[Get-AdfsAuthenticationProvider](./Get-AdfsAuthenticationProvider.md)"
+
+msgid ""
+"[Unregister-AdfsAuthenticationProvider](./Unregister-"
+"AdfsAuthenticationProvider.md)"
+msgstr ""
+"[Unregister-AdfsAuthenticationProvider](./Unregister-"
+"AdfsAuthenticationProvider.md)"

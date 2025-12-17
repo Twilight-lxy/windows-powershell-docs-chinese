@@ -1,0 +1,119 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:43:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-AdfsFarmBehaviorLevelRaise"
+msgstr "# 测试 AdfsFarm 行为级别提升（Test-AdfsFarmBehaviorLevelRaise）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Tests whether you can raise the behavior level of a farm."
+msgstr "测试你是否能够提升农场的行为水平（即农场内动物或植物的行为表现）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### AdfsUpgradeServiceAccount (Default)"
+msgstr "### AdfsUpgradeServiceAccount（默认值）"
+
+msgid "### AdfsUpgradeGmsaAccount"
+msgstr "### AdfsUpgradeGmsaAccount"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Test-AdfsFarmBehaviorLevelRaise** cmdlet tests whether the **Invoke-"
+"AdfsFarmBehaviorLevelRaise** cmdlet can raise the behavior level of an "
+"Active Directory Federation Services (AD FS) farm to enable the new features"
+" that are available in later versions of the Windows operating system."
+msgstr ""
+"`Test-AdfsFarmBehaviorLevelRaise` cmdlet 用于测试 `Invoke-"
+"AdfsFarmBehaviorLevelRaise` cmdlet 是否能够提升 Active Directory Federation "
+"Services (AD FS) 农场的行为级别，从而启用 Windows 操作系统后续版本中提供的新功能。"
+
+msgid ""
+"To test raising the behavior level of a farm that uses SQL Server as the "
+"policy database, specify the *Credential* parameter."
+msgstr "要测试使用 SQL Server 作为策略数据库的农场的“行为级别”（即农场的安全或管理设置），请指定 *Credential* 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test raising the farm behavior level"
+msgstr "#### 示例 1：测试提升农场行为等级的功能"
+
+msgid "This command tests whether you can raise the farm behavior level."
+msgstr "这个命令用于测试你是否能够提升农场行为等级（farm behavior level）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies credentials necessary to run this cmdlet for an AD FS farm that uses SQL Server as the policy database.\n"
+"The credentials provided must be an administrator on each AD FS server.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet."
+msgstr ""
+"用于指定在将 SQL Server 作为策略数据库的 AD FS 农场中运行此 cmdlet 所需的凭据。提供的凭据必须是每台 AD FS "
+"服务器上的管理员权限。要获取一个 **PSCredential** 对象，请使用 **Get-Credential** cmdlet。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies the ID of a group Managed Service Account."
+msgstr "指定一个组托管服务账户（Group Managed Service Account）的ID。"
+
+msgid "Specifies an array of members."
+msgstr "指定一个成员数组。"
+
+msgid "Specifies credentials for a service account."
+msgstr "指定服务账户的凭据信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Invoke-AdfsFarmBehaviorLevelRaise](./Invoke-AdfsFarmBehaviorLevelRaise.md)"
+msgstr ""
+"[Invoke-AdfsFarmBehaviorLevelRaise](./Invoke-AdfsFarmBehaviorLevelRaise.md)"
+
+msgid "[Restore-AdfsFarmBehaviorLevel](./Restore-AdfsFarmBehaviorLevel.md)"
+msgstr "[Restore-AdfsFarmBehaviorLevel](./Restore-AdfsFarmBehaviorLevel.md)"
+
+msgid ""
+"[Test-AdfsFarmBehaviorLevelRestore](./Test-AdfsFarmBehaviorLevelRestore.md)"
+msgstr ""
+"[Test-AdfsFarmBehaviorLevelRestore](./Test-AdfsFarmBehaviorLevelRestore.md)"

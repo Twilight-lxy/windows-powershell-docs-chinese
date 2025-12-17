@@ -1,0 +1,162 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:31:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsGlobalAuthenticationPolicy"
+msgstr "# 设置 AdfsGlobalAuthenticationPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Modifies the AD FS global policy."
+msgstr "修改 AD FS 全局策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AdfsGlobalAuthenticationPolicy** cmdlet modifies the Active Directory Federation Services (AD FS) global policy.\n"
+"You can also use the cmdlet to enable an external provider in the global policy."
+msgstr ""
+"`Set-AdfsGlobalAuthenticationPolicy` 这个 cmdlet 用于修改 Active Directory "
+"Federation Services (AD FS) 的全局策略。您还可以使用该 cmdlet 在全局策略中启用外部提供者。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the primary extranet authentication policy"
+msgstr "### 示例 1：设置主要的外联网身份验证策略"
+
+msgid ""
+"This command sets the primary extranet authentication policy to forms-based or certificate-based authentication.\n"
+"In this case, the user is provided a choice when the user logs on to an application protected by AD FS from the extranet."
+msgstr ""
+"此命令将主要的外网身份验证策略设置为基于表单的身份验证或基于证书的身份验证。在这种情况下，当用户从外网登录到由 AD FS "
+"保护的应用程序时，系统会提供相应的身份验证方式供用户选择。"
+
+msgid "### Example 2: Enable an additional authentication provider"
+msgstr "### 示例 2：启用额外的身份验证提供者"
+
+msgid ""
+"This command enables the provider named A1ExternalAuthProvider as an additional authentication provider in the global policy.\n"
+"Note that the value provided for the *AdditionalAuthenticationProvider* parameter corresponds to the value you provide for the *Name* parameter in the **Register-AdfsAuthenticationProvider** cmdlet, and to the **Name** property in the output from the **Get-AdfsAuthenticationProvider** cmdlet."
+msgstr ""
+"此命令将名为 A1ExternalAuthProvider "
+"的提供程序设置为全局策略中的另一个身份验证提供程序。请注意，*AdditionalAuthenticationProvider* 参数所设置的值应与在 "
+"**Register-AdfsAuthenticationProvider** cmdlet 中为 *Name* 参数提供的值相匹配，同时也应与 "
+"**Get-AdfsAuthenticationProvider** cmdlet 输出结果中的 **Name** 属性相匹配。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of names of external authentication providers to add to "
+"the global policy."
+msgstr "指定一个外部身份验证提供者的名称数组，以便将其添加到全局策略中。"
+
+msgid ""
+"Specifying this parameter configures an external authentication provider, for second stage authentication, in the global policy.\n"
+"This is the first step in creating an AD FS policy that invokes an external authentication provider for multifactor authentication."
+msgstr ""
+"指定此参数会在全局策略中配置一个用于第二阶段身份验证的外部认证提供者。这是创建一个能够调用外部认证提供者以实现多因素身份验证的 AD FS "
+"策略的第一步。"
+
+msgid ""
+"Allows the use of device authentication as the primary type for domain-"
+"joined devices."
+msgstr "允许将设备身份验证作为已加入域的设备的主要认证方式。"
+
+msgid "Specifies the client authentication method."
+msgstr "指定客户端身份验证方法。"
+
+msgid ""
+"Specifies whether device authentication is enabled for the global policy."
+msgstr "指定是否为全局策略启用设备身份验证功能。"
+
+msgid "Specifies the device authentication method."
+msgstr "指定设备认证方法。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies an array of names of authentication providers for the primary "
+"extranet to add to the global policy."
+msgstr "指定一个包含身份验证提供者名称的数组，这些提供者将用于主外部网络，并添加到全局策略中。"
+
+msgid ""
+"Specifies an array of names of authentication providers for the primary "
+"intranet to add to the global policy."
+msgstr "指定一组用于主内网的认证提供程序名称，以便将其添加到全局策略中。"
+
+msgid ""
+"Specifies whether fallback to Integrated Windows Authentication is enabled "
+"on the intranet."
+msgstr "指定是否在内部网中启用回退到集成Windows身份验证的功能。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-AdfsGlobalAuthenticationPolicy](./Get-"
+"AdfsGlobalAuthenticationPolicy.md)"
+msgstr ""
+"[Get-AdfsGlobalAuthenticationPolicy](./Get-"
+"AdfsGlobalAuthenticationPolicy.md)"
+
+msgid ""
+"[Register-AdfsAuthenticationProvider](./Register-"
+"AdfsAuthenticationProvider.md)"
+msgstr ""
+"[注册 AdfsAuthenticationProvider](./Register-AdfsAuthenticationProvider.md)"
+
+msgid "[Get-AdfsAuthenticationProvider](./Get-AdfsAuthenticationProvider.md)"
+msgstr "[Get-AdfsAuthenticationProvider](./Get-AdfsAuthenticationProvider.md)"

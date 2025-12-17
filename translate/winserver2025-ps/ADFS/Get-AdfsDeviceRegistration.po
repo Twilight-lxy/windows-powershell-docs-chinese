@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:00:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsDeviceRegistration"
+msgstr "# 获取 Adfs 设备注册信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the administrative polices of the Device Registration Service."
+msgstr "获取设备注册服务的管理策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AdfsDeviceRegistration** cmdlet gets the administrative polices "
+"that are used by the Device Registration Service in Active Directory "
+"Federation Services (AD FS)."
+msgstr ""
+"**Get-AdfsDeviceRegistration** cmdlet 用于获取 Active Directory Federation "
+"Services (AD FS) 中的设备注册服务所使用的管理策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get settings of the Device Registration Service"
+msgstr "### 示例 1：获取设备注册服务的设置信息"
+
+msgid ""
+"This command gets the current settings for the Device Registration Service "
+"in AD FS."
+msgstr "此命令用于获取 Active Directory Federation Services (AD FS) 中设备注册服务的当前设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### DeviceRegistrationServiceObject"
+msgstr "### DeviceRegistrationServiceObject"
+
+msgid ""
+"This cmdlet generates a **DeviceRegistrationServiceObject** object that represents the Device Registration Service.\n"
+"The object includes the following properties:"
+msgstr ""
+"此 cmdlet 生成一个 **DeviceRegistrationServiceObject** 对象，该对象表示设备注册服务。该对象包含以下属性："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-AdfsDeviceRegistration](./Disable-AdfsDeviceRegistration.md)"
+msgstr ""
+"[ Disable-AdfsDeviceRegistration](./Disable-AdfsDeviceRegistration.md)"
+
+msgid "[Enable-AdfsDeviceRegistration](./Enable-AdfsDeviceRegistration.md)"
+msgstr "[ Enable-AdfsDeviceRegistration](./Enable-AdfsDeviceRegistration.md)"
+
+msgid "[Set-AdfsDeviceRegistration](./Set-AdfsDeviceRegistration.md)"
+msgstr "[Set-AdfsDeviceRegistration](./Set-AdfsDeviceRegistration.md)"

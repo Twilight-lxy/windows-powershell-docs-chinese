@@ -1,0 +1,83 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:06:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsWebConfig"
+msgstr "# Get-AdfsWebConfig"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets AD FS web customization configuration settings."
+msgstr "获取 AD FS 网页自定义配置设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsWebConfig** cmdlet gets Active Directory Federation Services "
+"(AD FS) web customization configuration settings."
+msgstr ""
+"`Get-AdfsWebConfig` cmdlet 用于获取 Active Directory Federation Services (AD FS)"
+" 的 Web 自定义配置设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get configuration settings"
+msgstr "#### 示例 1：获取配置设置"
+
+msgid "This command gets the web customization configuration settings."
+msgstr "这个命令用于获取网页自定义配置设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.AdfsWebConfig"
+msgstr "### Microsoft.IdentityServer.Management.Resources.AdfsWebConfig"
+
+msgid ""
+"This cmdlet generates an **AdfsWebConfig** object that represents AD FS web customization configuration settings.\n"
+"This object contains the following properties:"
+msgstr "此cmdlet生成一个**AdfsWebConfig**对象，该对象表示AD FS Web自定义配置设置。该对象包含以下属性："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-AdfsWebConfig](./Set-AdfsWebConfig.md)"
+msgstr "[Set-AdfsWebConfig](./Set-AdfsWebConfig.md)"

@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:30:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Move-ADDirectoryServerOperationMasterRole"
+msgstr "# 移动 AD 目录服务器操作主角色"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Moves operation master roles to an Active Directory directory server."
+msgstr "将操作主控角色的功能转移到 Active Directory 目录服务器上。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Move-ADDirectoryServerOperationMasterRole** cmdlet moves one or more operation master roles to a directory server.\n"
+"You can move operation master roles to a directory server in a different domain if the credentials are the same in both domains."
+msgstr ""
+"`Move-ADDirectoryServerOperationMasterRole` cmdlet 可以将一个或多个操作主角色（operation "
+"master roles）移动到目录服务器上。如果两个域中的凭据相同，你也可以将这些操作主角色移动到属于不同域的目录服务器上。"
+
+msgid ""
+"The *Identity* parameter specifies the directory server that receives the roles.\n"
+"You can specify a directory server object by one of the following values:"
+msgstr "`Identity` 参数用于指定接收角色的目录服务器。您可以通过以下值之一来指定目录服务器对象："
+
+msgid ""
+"Specifies the Active Directory Domain Services instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following:  Active Directory Lightweight Domain Services, Active Directory Domain Services or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 Active Directory 域服务实例，为此需提供相应的域名或目录服务器的其中一个值。该服务可以是以下类型之一：Active "
+"Directory 轻量级域服务（Active Directory Lightweight Domain Services）、Active "
+"Directory 域服务（Active Directory Domain Services）或 Active Directory "
+"快照实例（Active Directory Snapshot Instance）。"
+
+msgid ""
+"Specify the Active Directory Domain Services instance in one of the "
+"following ways:"
+msgstr "以下是指定 Active Directory 域服务实例的几种方式："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们的排列顺序："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADDirectoryServer"
+msgstr "### Microsoft.ActiveDirectory.Management.AddDirectoryServer"
+
+msgid "A directory server object is received by the *Identity* parameter."
+msgstr "目录服务器对象是通过*Identity*参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADDirectoryServer"
+msgstr "### 无值或 Microsoft.ActiveDirectory.Management ADDirectoryServer"
+
+msgid ""
+"Returns the modified directory server object when the *PassThru* parameter is specified.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "当指定*PassThru*参数时，此命令会返回修改后的目录服务器对象。默认情况下，该命令不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Move-ADDirectoryServer](./Move-ADDirectoryServer.md)"
+msgstr "[Move-ADDirectoryServer](./Move-ADDirectoryServer.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理命令集](./activedirectory.md)"

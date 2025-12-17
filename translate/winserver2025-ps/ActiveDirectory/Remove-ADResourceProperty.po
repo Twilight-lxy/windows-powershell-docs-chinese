@@ -1,0 +1,163 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:15:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ADResourceProperty"
+msgstr "# 删除 AD 资源属性"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a resource property from Active Directory."
+msgstr "从 Active Directory 中删除某个资源属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-ADResourceProperty** cmdlet removes a resource property from "
+"Active Directory."
+msgstr "`Remove-ADResourceProperty` cmdlet 用于从 Active Directory 中删除某个资源属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a resource property"
+msgstr "#### 示例 1：删除资源属性"
+
+msgid "This command removes the specified resource property."
+msgstr "这个命令会删除指定的资源属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值如下："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的认证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本身份验证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Active Directory PowerShell "
+"提供程序驱动器运行的。如果是从这样的驱动器运行 cmdlet，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01\\User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为该参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"*Credential* 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory PowerShell returns a terminating error."
+msgstr "如果执行该任务的账户没有目录级别的权限，Active Directory PowerShell 将返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory object by providing one of the following property values.\n"
+"The identifier in parentheses is the LDAP display name for the resource property.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory 对象。括号中的标识符是该资源属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道（pipeline）来获取该对象，或者你可以将这个参数设置为一个对象实例。"
+
+msgid ""
+"Specifies the AD DS instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following: AD LDS, AD DS, or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 AD DS 实例，为此提供以下对应的域名或目录服务器值之一。该服务可以是以下类型中的任意一种：AD LDS、AD DS 或 Active "
+"Directory 快照实例。"
+
+msgid "Specify the AD DS instance in one of the following ways:"
+msgstr "以下是指定 AD DS 实例的几种方式："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，确定顺序按照它们在列表中的排列顺序进行："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADResourceProperty"
+msgstr "### 无值或 Microsoft.ActiveDirectory.Management.ADResourceProperty"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADResourceProperty](./Get-ADResourceProperty.md)"
+msgstr "[Get-ADResourceProperty](./Get-ADResourceProperty.md)"
+
+msgid "[New-ADResourceProperty](./New-ADResourceProperty.md)"
+msgstr "[New-ADResourceProperty](./New-ADResourceProperty.md)"
+
+msgid "[Set-ADResourceProperty](./Set-ADResourceProperty.md)"
+msgstr "[Set-ADResourceProperty](./Set-ADResourceProperty.md)"

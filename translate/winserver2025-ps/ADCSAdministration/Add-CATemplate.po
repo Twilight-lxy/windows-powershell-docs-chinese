@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:14:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-CATemplate"
+msgstr "# 添加-CATemplate"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a certificate template to the CA."
+msgstr "向证书颁发机构（CA）添加一个证书模板。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-CATemplate** cmdlet adds a certificate template to the certificate"
+" authority (CA) for issuing."
+msgstr "`Add-CATemplate` cmdlet 可以将证书模板添加到证书颁发机构（CA）中，以便后续用于颁发证书。"
+
+msgid ""
+"A certificate template is a preconfigured list of certificate settings that allows users and computers to enroll for certificates without having to create complex certificate requests.\n"
+"Certificate templates allow for the customization of a certificate that can be issued by the CA.\n"
+"The template defines items such as the cryptographic types, validity and renewal periods, and certificate purposes."
+msgstr ""
+"证书模板是一份预先配置好的证书设置列表，它让用户和计算机能够在无需创建复杂证书申请的情况下轻松办理证书的申领流程。通过使用证书模板，可以定制由证书颁发机构（CA）颁发的证书内容。该模板定义了诸如加密类型、有效期限及续期规则、以及证书用途等关键参数。"
+
+msgid ""
+"The certificate templates are stored in Active Directory Domain Services (AD DS).\n"
+"Many default certificate templates are added to AD DS when the CA role service is installed.\n"
+"This cmdlet does not allow you to create new templates or duplicate existing templates."
+msgstr ""
+"证书模板存储在 Active Directory 域服务（AD DS）中。当安装了 CA 角色服务时，许多默认的证书模板会被添加到 AD DS 中。此 "
+"cmdlet 不允许您创建新的模板或复制现有的模板。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a CA template"
+msgstr "### 示例 1：添加一个 CA 模板"
+
+msgid "This command adds a CA template with the template name EFS."
+msgstr "此命令添加了一个名为“EFS”的CA模板。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不需要用户确认。"
+
+msgid ""
+"Specifies the name of a certificate template name.\n"
+"This name must always be the template name, short name without spaces, and not the template display name.\n"
+"For example, the certificate template with the template display name of Exchange Enrollment Agent (Offline request) must be specified by its template name, which is EnrollmentAgentOffline."
+msgstr ""
+"指定证书模板的名称。该名称必须始终是模板本身的名称（即不带空格的简称），而不是模板的显示名称。例如，模板显示名为“Exchange Enrollment"
+" Agent (Offline request)”的证书模板，应使用其实际的模板名称“EnrollmentAgentOffline”来标识。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"There is only one parameter for this cmdlet, *Name*, and it can only accept "
+"a single template each time specified by name as a string."
+msgstr "这个cmdlet只有一个参数，即*Name*（名称），并且每次只能通过字符串形式指定一个模板。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-CATemplate](./Get-CATemplate.md)"
+msgstr "[Get-CATemplate](./Get-CATemplate.md)"
+
+msgid "[Remove-CATemplate](./Remove-CATemplate.md)"
+msgstr "[Remove-CATemplate](./Remove-CATemplate.md)"

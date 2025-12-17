@@ -1,0 +1,170 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:38:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsRelyingPartyWebTheme"
+msgstr "# 设置 AdfsRelyingPartyWebTheme"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Applies a web theme to a relying party."
+msgstr "将一个网页主题应用于依赖方（即使用该主题的网站或应用程序）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierName (Default)"
+msgstr "### IdentifierName（默认值）"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AdfsRelyingPartyWebTheme** cmdlet applies a web theme to a relying party.\n"
+"A web theme includes logo, illustration, stylesheets, and custom onload.js files."
+msgstr ""
+"`Set-AdfsRelyingPartyWebTheme` cmdlet 用于将一个网页主题应用于依赖方（relying "
+"party）。该网页主题包含徽标、插图、样式表以及自定义的 `onload.js` 文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Create a custom theme and assign it to the Office 365 relying"
+" party trust"
+msgstr "### 示例 1：创建一个自定义主题，并将其分配给依赖 Office 365 的第三方信任方"
+
+msgid ""
+"The first command creates an AD FS web theme by using the **New-AdfsWebTheme** cmdlet.\n"
+"The theme is named Office365Theme."
+msgstr ""
+"第一个命令使用 `New-AdfsWebTheme` cmdlet 创建了一个 AD FS 网页主题，该主题的名称为 Office365Theme。"
+
+msgid ""
+"The second command modifies Office365Theme by using the **Set-AdfsWebTheme**"
+" cmdlet."
+msgstr "第二个命令使用 **Set-AdfsWebTheme** cmdlet 来修改 Office365Theme。"
+
+msgid ""
+"The final command assigns the custom theme to the Office 365 relying party "
+"trust."
+msgstr "最后一条命令将自定义主题应用于 Office 365 的依赖方信任设置中。"
+
+msgid ""
+"### Example 2: Create an advanced per application custom theme and assign it"
+" to a relying party"
+msgstr "### 示例 2：为每个应用程序创建一个高级的自定义主题，并将其分配给依赖方"
+
+msgid ""
+"The first command creates a theme as a copy of the default global theme in "
+"AD FS by using **New-AdfsWebTheme**."
+msgstr ""
+"第一个命令使用 `New-AdfsWebTheme` 创建一个主题，该主题是 Active Directory Federation Services "
+"(AD FS) 中默认全局主题的副本。"
+
+msgid ""
+"The second command exports the theme for customization by using the "
+"**Export-AdfsWebTheme** cmdlet."
+msgstr "第二个命令使用 **Export-AdfsWebTheme** cmdlet 将主题导出以便进行自定义。"
+
+msgid ""
+"The third command customizes the theme by specifying files by using **Set-"
+"AdfsWebTheme**."
+msgstr "第三个命令通过使用 `Set-AdfsWebTheme` 来指定文件，从而自定义主题。"
+
+msgid "The final command applies the customized theme to a relying party."
+msgstr "最后一条命令将自定义的主题应用到依赖方（relying party）上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an illustration as a hash table."
+msgstr "将一幅插图表示为一个哈希表。"
+
+msgid "Specifies a logo as a hash table."
+msgstr "通过哈希表的形式指定一个标志（logo）。"
+
+msgid "Specifies the path of an onload script."
+msgstr "指定一个加载脚本（onload script）的路径。"
+
+msgid "Specifies the path of the RTL style sheet."
+msgstr "指定 RTL 样式表的路径。"
+
+msgid "Specifies the name of the source relying party."
+msgstr "指定依赖方的名称（即提供信息的来源方）。"
+
+msgid "Specifies the name of the source web theme."
+msgstr "指定源网页主题的名称。"
+
+msgid "Specifies a style sheet as a hash table."
+msgstr "将样式表指定为一个哈希表（hash table）。"
+
+msgid "Specifies the name of the target relying party."
+msgstr "指定目标依赖方的名称。"
+
+msgid "Specifies the name of the target web theme."
+msgstr "指定目标网页主题的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-AdfsWebTheme](./Export-AdfsWebTheme.md)"
+msgstr "[Export-AdfsWebTheme](./Export-AdfsWebTheme.md)"
+
+msgid "[Get-AdfsRelyingPartyWebTheme](./Get-AdfsRelyingPartyWebTheme.md)"
+msgstr "[Get-AdfsRelyingPartyWebTheme](./Get-AdfsRelyingPartyWebTheme.md)"
+
+msgid "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"
+msgstr "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"
+
+msgid ""
+"[Remove-AdfsRelyingPartyWebTheme](./Remove-AdfsRelyingPartyWebTheme.md)"
+msgstr ""
+"[Remove-AdfsRelyingPartyWebTheme](./Remove-AdfsRelyingPartyWebTheme.md)"
+
+msgid "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"
+msgstr "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"

@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:14:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Checks whether the local CA trusts secure hardware for identity key "
+"attestation."
+msgstr "检查本地证书颁发机构（CA）是否信任用于身份密钥认证的安全硬件。"
+
+msgid "# Confirm-CAAttestationIdentityKeyInfo"
+msgstr "# 确认 CA 证书身份验证密钥信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Checks whether the local CA trusts secure hardware for identity key "
+"attestation."
+msgstr "检查本地证书颁发机构（CA）是否信任用于身份密钥验证的安全硬件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### PublicKeyHash"
+msgstr "### PublicKeyHash"
+
+msgid "### Certificate"
+msgstr "### 证书"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Confirm-CAAttestationIdentityKeyInfo** cmdlet checks whether the local"
+" certification authority (CA) trusts secure hardware, such as a Trusted "
+"Platform Module (TPM), for identity key attestation. The Attestation "
+"Identity Key (AIK) replaces the Endorsement Key as an identity for the TPM. "
+"An Attestation Identity Key is permanently embedded in the security "
+"hardware. The public portion of the key helps to recognize genuine security "
+"hardware."
+msgstr ""
+"`Confirm-CAAttestationIdentityKeyInfo` cmdlet "
+"用于检查本地证书颁发机构（CA）是否信任安全硬件（如受信任的平台模块（TPM））来执行身份密钥的认证。认证身份密钥（AIK，Attestation "
+"Identity Key）取代了传统的“认可密钥”（Endorsement Key），成为 TPM "
+"的身份标识。该密钥被永久性地嵌入到安全硬件中；其公钥部分有助于识别真正的安全硬件设备。"
+
+msgid ""
+"This cmdlet verifies whether the AIK public certificate connects through a "
+"certificate chain to an anchor that the CA trusts. Specify an X509 "
+"certificate by using the **Certificate** parameter."
+msgstr ""
+"此cmdlet用于验证AIK公钥证书是否通过证书链连接到CA（证书颁发机构）所信任的根证书。请使用**Certificate**参数指定一个X509证书。"
+
+msgid ""
+"This cmdlet checks whether the AIK public key exists as a file in a folder "
+"configured at the local CA for key attestation. Specify the public key by "
+"using the **PublicKeyHash** parameter."
+msgstr ""
+"此cmdlet用于检查AIK公钥是否作为文件存在于本地CA（证书颁发机构）配置的文件夹中，该文件夹用于密钥验证。请使用**PublicKeyHash**参数来指定公钥。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Check certificate"
+msgstr "### 示例 1：检查证书"
+
+msgid ""
+"This command checks whether the certificate `Contoso87.cer` connects, by using a certificate chain, to a trusted anchor.\n"
+"This example returns a value of `$True`."
+msgstr ""
+"此命令通过使用证书链来检查`Contoso87.cer`证书是否能够连接到某个受信任的根证书（即“可信锚点”）。在这个例子中，返回的结果是`$True`。"
+
+msgid "### Example 2: Check a key"
+msgstr "### 示例 2：检查一个键"
+
+msgid ""
+"The command checks for the public certificate specified as an SHA-256 hash code.\n"
+"This example returns a value of `$False`.\n"
+"The CA does not have this public key."
+msgstr ""
+"该命令用于检查以 SHA-256 哈希码形式指定的公共证书。在这个示例中，返回的值是 `$False`，说明该证书颁发机构（CA）并不拥有这个公共密钥。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an X509 public key certificate issued to secure hardware."
+msgstr "用于指定一份为保护硬件而颁发的 X509 公钥证书。"
+
+msgid ""
+"Specifies an Attestation Identity Key (AIK) public key of the secure hardware, as the result of the SHA-256 hash algorithm.\n"
+"This value is a 64 character hexadecimal string."
+msgstr ""
+"指定安全硬件生成的证明身份密钥（Attestation Identity "
+"Key，简称AIK）的公钥，该公钥是通过SHA-256哈希算法计算得到的。该值是一个64个字符的十六进制字符串。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Security.Cryptography.X509Certificates.X509Certificate2"
+msgstr "### System.security.Cryptography.X509Certificates.X509Certificate2"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Boolean"
+msgstr "### SystemBoolean"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Confirm-CAEndorsementKeyInfo](Confirm-CAEndorsementKeyInfo.md)"
+msgstr "[确认-CAEndorsementKeyInfo](Confirm-CAEndorsementKeyInfo.md)"
+
+msgid ""
+"[Add-CAAuthorityInformationAccess](Add-CAAuthorityInformationAccess.md)"
+msgstr ""
+"[Add-CAAuthorityInformationAccess](Add-CAAuthorityInformationAccess.md)"
+
+msgid "[Add-CACrlDistributionPoint](Add-CACrlDistributionPoint.md)"
+msgstr "[Add-CACrlDistributionPoint](Add-CACrlDistributionPoint.md)"
+
+msgid "[Backup-CARoleService](Backup-CARoleService.md)"
+msgstr "[Backup-CARoleService](Backup-CARoleService.md)"
+
+msgid "[Confirm-CAEndorsementKeyInfo](Confirm-CAEndorsementKeyInfo.md)"
+msgstr "[Confirm-CAEndorsementKeyInfo](Confirm-CAEndorsementKeyInfo.md)"

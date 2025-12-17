@@ -1,0 +1,139 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:22:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Uninstall-AdcsEnrollmentWebService"
+msgstr "# 卸载 AdcsEnrollmentWebService"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Uninstalls the Certificate Enrollment Web service or individual instances of"
+" it."
+msgstr "卸载“Certificate Enrollment Web服务”或其各个单独实例。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### UninstallSingleInstance (Default)"
+msgstr "### UninstallSingleInstance（默认选项）"
+
+msgid "### UninstallAll"
+msgstr "### UninstallAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Uninstall-AdcsEnrollmentWebService` cmdlet uninstalls the Certificate Enrollment Web Service\n"
+"either entirely removing all instances of it or partially by removing individual instances."
+msgstr ""
+"`Uninstall-AdcsEnrollmentWebService` cmdlet 可以卸载证书注册 Web "
+"服务：要么完全删除所有相关实例，要么仅删除部分实例。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Uninstall all Enrollment Web Service role services"
+msgstr "### 示例 1：卸载所有与“Enrollment Web Service”相关的角色服务"
+
+msgid ""
+"This command uninstalls all the Enrollment Web Service role services without prompting for\n"
+"confirmation."
+msgstr "此命令会卸载所有“Enrollment Web Service”相关的角色服务，而不会提示用户进行确认。"
+
+msgid ""
+"### Example 2: Uninstall an Enrollment Web Service role service using the "
+"specified CA"
+msgstr "### 示例 2：使用指定的 CA 卸载 Enrollment Web Service 角色服务"
+
+msgid ""
+"This command uninstalls the Certificate Enrollment Web Service using the CA specified by the\n"
+"configuration named `APP1.corp.contoso.com\\corp-APP1-CA`. The CA configuration is the CA Computer\n"
+"Name and CA common name separated by a backslash. The authentication type in use is Certificate."
+msgstr ""
+"此命令使用名为 `APP1.corp.contoso.com\\corp-APP1-CA` "
+"的配置文件中指定的证书颁发机构（CA）来卸载“证书注册Web服务”。该CA配置文件包含证书颁发机构的计算机名称和通用名称，两者之间用反斜杠分隔。所使用的身份验证类型是“证书”（Certificate）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet removes all Certificate Enrollment Web Service "
+"instances."
+msgstr "表示此cmdlet会删除所有证书注册Web服务实例。"
+
+msgid ""
+"Specifies the authentication type of the of enrollment services instance to "
+"be uninstalled."
+msgstr "指定要卸载的注册服务实例的身份验证类型。"
+
+msgid ""
+"Specifies the configuration string of the certification authority (CA) for which this cmdlet\n"
+"uninstalls enrollment services. This parameter is used to identify which instance of the Certificate\n"
+"Enrollment Web Service is to be uninstalled when multiple are present."
+msgstr "指定用于卸载注册服务的证书颁发机构（CA）的配置字符串。当存在多个证书注册Web服务实例时，此参数用于确定要卸载哪个具体的实例。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上该cmdlet并未被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### Microsoft.CertificateServices.Deployment.Common.AuthenticationType"
+msgstr "### Microsoft.CertificateServices.Deployment COMMONAuthenticationType"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.Management.Automation.SwitchParameter"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Deployment.Common.CES.EnrollmentServiceResult"
+msgstr ""
+"### Microsoft.CertificateServices.Deployment "
+"COMMON.CES.EnrollmentServiceResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Install-AdcsEnrollmentWebService](./Install-AdcsEnrollmentWebService.md)"
+msgstr "[安装 AdcsEnrollmentWebService](./Install-AdcsEnrollmentWebService.md)"

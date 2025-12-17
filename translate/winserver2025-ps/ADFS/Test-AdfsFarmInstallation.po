@@ -1,0 +1,210 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:43:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-AdfsFarmInstallation"
+msgstr "# 测试 AdfsFarm 的安装过程"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Runs prerequisite checks for installing a new federation server farm."
+msgstr "运行安装新的联邦服务器集群所需的先决条件检查。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### ADFSFarmCreateLocalDatabase (Default)"
+msgstr "### ADFSFarmCreateLocalDatabase（默认值）"
+
+msgid "### ADFSFarmCreateLocalDatabaseDisableAutoCertRollover"
+msgstr "### ADFSFarmCreateLocalDatabaseDisableAutoCertRollover"
+
+msgid "### ADFSFarmCreateSharedDatabaseDisableAutoCertRollover"
+msgstr "### ADFSFarmCreateSharedDatabase DisableAutoCertRollover"
+
+msgid "### AdfsFarmCreateLocalDatabaseDisableAutoCertRolloverGmsa"
+msgstr "### AdfsFarmCreateLocalDatabase DisableAutoCertRolloverGmsa"
+
+msgid "### AdfsFarmCreateSharedDatabaseDisableAutoCertRolloverGmsa"
+msgstr "### AdfsFarmCreateSharedDatabaseDisableAutoCertRolloverGmsa"
+
+msgid "### ADFSFarmCreateSharedDatabase"
+msgstr "### ADFSFarmCreateSharedDatabase"
+
+msgid "### AdfsFarmCreateLocalDatabaseGmsa"
+msgstr "### AdfsFarmCreateLocalDatabaseGmsa"
+
+msgid "### AdfsFarmCreateSharedDatabaseGmsa"
+msgstr "### AdfsFarmCreateSharedDatabaseGmsa"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Test-AdfsFarmInstallation** cmdlet performs the checks that you must "
+"complete before you run the Install-AdfsFarm cmdlet to install a new "
+"federation server farm."
+msgstr ""
+"`Test-AdfsFarmInstallation` 这个 cmdlet 会执行一些检查，这些检查是在你运行 `Install-AdfsFarm` "
+"cmdlet 以安装新的联合服务器场之前必须完成的。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test the creation of a node in a federation server farm"
+msgstr "### 示例 1：测试在联邦服务器群中创建节点的功能"
+
+msgid ""
+"The first command uses the **Get-Credential** cmdlet to create a credential object for the Active Directory account under which the AD FS service runs.\n"
+"The command stores the credential object in the $Cred variable."
+msgstr ""
+"第一个命令使用 **Get-Credential** cmdlet 为运行 AD FS 服务的 Active Directory "
+"账户创建一个凭据对象。该命令将凭据对象存储在 `$Cred` 变量中。"
+
+msgid ""
+"The second command tests the creation the first node in a federation server farm that uses the Windows Internal Database on the local server computer.\n"
+"The command specifies a thumbprint of the certificate.\n"
+"AD FS uses this certificate as the SSL certificate and the service communications certificate.\n"
+"The command uses automatically generated, self-signed certificates for the token signing and token decryption certificates.\n"
+"The command specifies the credentials stored in $Cred for the Active Directory account under which the AD FS service runs."
+msgstr ""
+"第二条命令用于测试在联邦服务器集群中创建第一个节点的过程，该集群使用本地服务器计算机上的 Windows "
+"内部数据库。该命令指定了证书的“指纹”（即证书的唯一标识符）。AD FS 使用该证书作为 SSL "
+"证书以及服务通信证书。对于令牌签名和令牌解密操作，系统会自动生成自签名证书。此外，该命令还指定了存储在 `$Cred` "
+"文件中的凭据信息，这些凭据用于运行 AD FS 服务的 Active Directory 账户。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies admin configuration."
+msgstr "指定管理员配置信息。"
+
+msgid ""
+"Specifies the value of the thumbprint of the certificate that the Secure Sockets Layer (SSL) binding of the default website uses in Internet Information Services (IIS).\n"
+"This value must match the thumbprint of a valid certificate in the certificate store of the local computer."
+msgstr ""
+"指定默认网站的安全套接字层（SSL）绑定在Internet Information "
+"Services（IIS）中使用的证书指纹值。该值必须与本地计算机证书存储库中有效证书的指纹相匹配。"
+
+msgid ""
+"Specifies a **PSCredential** object based on a user name and password.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet.\n"
+"For more information, type `Get-Help Get-Credential`."
+msgstr ""
+"指定一个基于用户名和密码的 **PSCredential** 对象。要获取一个 **PSCredential** 对象，请使用 **Get-"
+"Credential** cmdlet。有关更多信息，输入 `Get-Help Get-Credential`。"
+
+msgid ""
+"Specifies the value of the thumbprint of the certificate that Active Directory Federation Services (AD FS) uses for token decryption.\n"
+"If you specify this parameter, AD FS disables automatic certificate rollover, and you must specify a token signing certificate by specifying the **SigningCertificateThumbprint** parameter.\n"
+"This value must match the thumbprint of a valid certificate in the certificate store of the local computer."
+msgstr ""
+"该参数用于指定证书的“指纹”值，Active Directory Federation Services (AD FS) "
+"使用该指纹值来进行令牌解密。如果您指定了此参数，AD FS 将禁用自动证书更新功能，并且您必须通过设置 "
+"**SigningCertificateThumbprint** "
+"参数来指定一个用于签署令牌的证书。该值必须与本地计算机证书存储中有效证书的“指纹”相匹配。"
+
+msgid ""
+"Specifies the display name of the Federation Service.\n"
+"The name of the Federation Service appears by default in sign-in pages."
+msgstr "指定联邦服务的显示名称。该名称默认会出现在登录页面上。"
+
+msgid ""
+"Specifies the Domain Name System (DNS) name of the Federation Service.\n"
+"This value must match the subject name of the certificate that you configure on the SSL binding in IIS."
+msgstr "指定联邦服务的域名系统（DNS）名称。该值必须与你在 IIS 的 SSL 绑定中配置的证书的主题名称相匹配。"
+
+msgid ""
+"Specifies the name of the group Managed Service Account that the AD FS "
+"service uses as the logon identity for the AD FS Windows service."
+msgstr ""
+"指定 AD FS 服务所使用的组托管服务帐户（Group Managed Service Account）的名称，该帐户将作为 AD FS "
+"Windows 服务的登录身份。"
+
+msgid ""
+"Indicates that the AD FS service removes an existing AD FS configuration "
+"database and overwrites it with a new database."
+msgstr "表示 AD FS 服务会删除现有的 AD FS 配置数据库，并用一个新的数据库替换它。"
+
+msgid ""
+"Specifies a **PSCredential** object based on a user name and password for the service account in Active Directory® Domain Services under which the AD FS service runs.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet.\n"
+"For more information, type `Get-Help Get-Credential`."
+msgstr ""
+"该命令用于根据用户名和密码创建一个 **PSCredential** 对象，该对象对应于运行 AD FS 服务的 Active Directory® "
+"域服务中的服务账户。要获取一个 **PSCredential** 对象，可以使用 **Get-Credential** "
+"cmdlet。有关更多信息，请输入 `Get-Help Get-Credential`。"
+
+msgid ""
+"Specifies the value of the thumbprint of the certificate that the AD FS service uses for token signing.\n"
+"If you specify this parameter, AD FS disables automatic certificate rollover, and you must also specify a token decryption certificate by using the **DecryptionCertificateThumbprint** parameter.\n"
+"This value must match the thumbprint of a valid certificate in the certificate store of the local computer."
+msgstr ""
+"指定 AD FS 服务用于令牌签名的证书的指纹值。如果您指定了此参数，AD FS 将禁用自动证书更新功能，并且还需要使用 "
+"**DecryptionCertificateThumbprint** 参数来指定一个令牌解密证书。该值必须与本地计算机证书存储中有效证书的指纹相匹配。"
+
+msgid ""
+"Specifies the Microsoft SQL Server database that stores the AD FS configuration settings.\n"
+"If you do not specify this parameter, the AD FS installer uses the Windows Internal Database to store configuration settings."
+msgstr ""
+"指定用于存储 AD FS 配置设置的 Microsoft SQL Server 数据库。如果未指定此参数，则 AD FS 安装程序会使用 Windows"
+" 内部数据库来存储配置设置。"
+
+msgid ""
+"Specifies the value of the port number of the SSL binding that the AD FS "
+"website uses."
+msgstr "指定 AD FS 网站使用的 SSL 绑定的端口号的值。"
+
+msgid ""
+"Specifies the port number that the AD FS service uses for Transport Layer Security (TLS) authentication for the user certificate client.\n"
+"The default value is 49443."
+msgstr "指定 AD FS 服务用于用户证书客户端传输层安全（TLS）认证的端口号。默认值为 49443。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936)"
+msgstr ""
+"[使用 Get-Credential 命令获取凭据](https://go.microsoft.com/fwlink/?LinkID=293936)"
+
+msgid "[Install-AdfsFarm](./Install-AdfsFarm.md)"
+msgstr "[安装 AdfsFarm](./Install-AdfsFarm.md)"
+
+msgid "[Test-AdfsFarmJoin](./Test-AdfsFarmJoin.md)"
+msgstr "[Test-AdfsFarmJoin](./Test-AdfsFarmJoin.md)"

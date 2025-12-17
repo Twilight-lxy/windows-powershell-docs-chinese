@@ -1,0 +1,175 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:56:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-ADUser"
+msgstr "# 新用户（ADUser）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates an Active Directory user."
+msgstr "创建一个 Active Directory 用户。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `New-ADUser` cmdlet creates an Active Directory user. You can set commonly used user property\n"
+"values by using the cmdlet parameters."
+msgstr ""
+"`New-ADUser` cmdlet 可用于创建 Active Directory 用户。您可以通过使用该 cmdlet "
+"的参数来设置常用的用户属性值。"
+
+msgid ""
+"You can set property values that are not associated with cmdlet parameters by using the\n"
+"**OtherAttributes** parameter. When using this parameter, be sure to place single quotes around the\n"
+"attribute name."
+msgstr ""
+"您可以使用 **OtherAttributes** 参数来设置与 cmdlet 参数无关的属性值。使用此参数时，请确保在属性名称周围加上单引号。"
+
+msgid "You must specify the **SamAccountName** parameter to create a user."
+msgstr "你必须指定 **SamAccountName** 参数才能创建用户。"
+
+msgid ""
+"You can use the `New-ADUser` cmdlet to create different types of user accounts such as iNetOrgPerson\n"
+"accounts. To do this in Active Directory Domain Services (AD DS), set the **Type** parameter to the\n"
+"Lightweight Directory Access Protocol (LDAP) display name for the type of account you want to\n"
+"create. This type can be any class in the Active Directory schema that is a subclass of user and\n"
+"that has an object category of person."
+msgstr ""
+"您可以使用 `New-ADUser` cmdlet 来创建不同类型的用户账户，例如 iNetOrgPerson 账户。在 Active "
+"Directory 域服务 (AD DS) 中执行此操作时，请将 **Type** 参数设置为所需的账户类型的轻量级目录访问协议 (LDAP) "
+"显示名称。该类型可以是 Active Directory 架构中的任何类，只要它是用户的子类，并且具有 “person” 对象类别即可。"
+
+msgid ""
+"The **Path** parameter specifies the container or organizational unit (OU) for the new user. When\n"
+"you do not specify the **Path** parameter, the cmdlet creates a user object in the default container\n"
+"for user objects in the domain."
+msgstr ""
+"`Path` 参数用于指定新用户的容器或组织单位（OU）。如果您不指定 `Path` 参数，该cmdlet将在域中用户对象的默认容器内创建一个用户对象。"
+
+msgid ""
+"The following methods explain different ways to create an object by using "
+"this cmdlet."
+msgstr "以下方法介绍了使用此cmdlet创建对象的不同方式。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a user with an imported certificate"
+msgstr "### 示例 1：使用导入的证书创建用户"
+
+msgid ""
+"This command creates a user named `ChewDavid` with a certificate imported "
+"from the file `Export.cer`."
+msgstr "这个命令会创建一个名为 `ChewDavid` 的用户，并使用从文件 `Export.cer` 中导入的证书。"
+
+msgid "### Example 2: Create a user and set properties"
+msgstr "### 示例 2：创建用户并设置属性"
+
+msgid ""
+"This command creates a new user named ChewDavid and sets the **title** and **mail** properties on\n"
+"the new object."
+msgstr "该命令创建一个名为“ChewDavid”的新用户，并为新用户设置**title**（标题）和**mail**（电子邮件地址）属性。"
+
+msgid "### Example 3: Create an inetOrgPerson user"
+msgstr "### 示例 3：创建一个 inetOrgPerson 用户"
+
+msgid ""
+"This command creates an **inetOrgPerson**-class user named ChewDavid on an "
+"AD LDS instance."
+msgstr "此命令会在 AD LDS 实例上创建一个名为 ChewDavid 的用户，该用户的类型为 **inetOrgPerson**。"
+
+msgid "### Example 4: Create a user and set password"
+msgstr "### 示例 4：创建用户并设置密码"
+
+msgid ""
+"This command creates a new user named ChewDavid and sets the account "
+"password."
+msgstr "这个命令创建了一个名为ChewDavid的新用户，并设置了该用户的账户密码。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the expiration date for an account. This parameter sets the **AccountExpirationDate**\n"
+"property of an account object. The LDAP display name (**ldapDisplayName**) for this property is\n"
+"`accountExpires`. Use the **DateTime** syntax when you specify this parameter. Time is assumed to be\n"
+"local time unless otherwise specified. When a time value is not specified, the time is assumed to\n"
+"12:00:00 AM local time. When a date is not specified, the date is assumed to be the current date."
+msgstr ""
+"用于指定账户的过期日期。此参数用于设置账户对象的 `AccountExpirationDate` 属性。该属性在 LDAP "
+"显示名称（`ldapDisplayName`）中显示为 `accountExpires`。在指定此参数时，请使用 `DateTime` "
+"语法。除非另有说明，否则时间默认为本地时间。如果未指定时间值，则时间默认为当天的凌晨 12:00:00；如果未指定日期，则日期默认为当前日期。"
+
+msgid ""
+"Indicates whether the security context of the user is delegated to a service. When this parameter is\n"
+"set to `$true`, the security context of the account is not delegated to a service even when the\n"
+"service account is set as trusted for Kerberos delegation. This parameter sets the\n"
+"**AccountNotDelegated** property for an Active Directory account. This parameter also sets the\n"
+"**ADS_UF_NOT_DELEGATED** flag of the Active Directory User Account Control (UAC) attribute."
+msgstr ""
+"该参数用于指示用户的安全上下文是否被委托给某个服务。当该参数设置为 `$true` 时，即使服务账户已被设置为允许 Kerberos "
+"委托的受信任账户，该账户的安全上下文也不会被委托给该服务。此参数会为 Active Directory 账户设置 "
+"**AccountNotDelegated** 属性，并同时修改 Active Directory 用户帐户控制 (UAC) 属性中的 "
+"**ADS_UF_NOT_DELEGATED** 标志。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid ""
+"A user object that is a template for the new user object is received by the "
+"**Instance** parameter."
+msgstr "通过 `Instance` 参数接收到一个用户对象，该对象是新用户对象的模板。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "By default, this cmdlet does not generate any output."
+msgstr "默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADUser"
+msgstr "### Microsoft.ActiveDirectory.Management.ADUser"
+
+msgid ""
+"Returns the new user object when the **PassThru** parameter is specified."
+msgstr "当指定了 **PassThru** 参数时，会返回新的用户对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADUser](./Get-ADUser.md)"
+msgstr "[Get-ADUser](./Get-ADUser.md)"
+
+msgid "[Remove-ADUser](./Remove-ADUser.md)"
+msgstr "[Remove-ADUser](./Remove-ADUser.md)"
+
+msgid "[Set-ADUser](./Set-ADUser.md)"
+msgstr "[Set-ADUser](./Set-ADUser.md)"
+
+msgid "[Set-ADAccountPassword](./Set-ADAccountPassword.md)"
+msgstr "[Set-ADAccountPassword](./Set-ADAccountPassword.md)"

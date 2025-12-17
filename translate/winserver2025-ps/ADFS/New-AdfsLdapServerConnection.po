@@ -1,0 +1,122 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:12:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AdfsLdapServerConnection"
+msgstr "# 新的 AdfsLdapServer 连接"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a connection object."
+msgstr "创建一个连接对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-AdfsLdapServerConnection** cmdlet creates a connection object that represents the Lightweight Directory Access Protocol (LDAP) folder that serves as a claims provider trust.\n"
+"A connection object includes host name, port, and authentication credentials."
+msgstr ""
+"`New-AdfsLdapServerConnection` cmdlet "
+"创建一个连接对象，该对象代表用于充当声明提供者信任的轻量级目录访问协议（LDAP）文件夹。连接对象包含主机名、端口和身份验证凭据。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create an LDAP connection"
+msgstr "### 示例 1：创建一个 LDAP 连接"
+
+msgid ""
+"The first command prompts you for a user name and password by using the **Get-Credential** cmdlet.\n"
+"The command stores the results in the $Credential variable."
+msgstr ""
+"第一个命令使用 `Get-Credential` cmdlet 来提示用户输入用户名和密码，并将结果存储在 `$Credential` 变量中。"
+
+msgid ""
+"The second command creates an LDAP connection.\n"
+"DomainContoller03.contoso.com is the fully qualified domain name of a domain controller in the other forest.\n"
+"The command stores the result in the $LdapConn variable."
+msgstr ""
+"第二个命令用于创建一个LDAP连接。DomainController03.contoso.com是另一个森林（forest）中某个域控制器的完全限定域名（fully"
+" qualified domain name）。该命令将连接结果存储在$LdapConn变量中。"
+
+msgid ""
+"To see this cmdlet as part of creating an LDAP local claims provider trust, "
+"see the **Add-AdfsLocalClaimsProviderTrust** cmdlet."
+msgstr ""
+"要了解此 cmdlet 是如何用于创建 LDAP 本地声明提供程序信任关系的，请参阅 **Add-"
+"AdfsLocalClaimsProviderTrust** cmdlet。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method the local claims provider trust uses.\n"
+"In Windows Server 2016, the only supported method is Basic (username/password)."
+msgstr "指定本地声明提供者所信任的身份验证方法。在 Windows Server 2016 中，唯一支持的方法是基本身份验证（用户名/密码）。"
+
+msgid ""
+"Specifies the credentials to use for the connection to the LDAP host.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet."
+msgstr ""
+"指定用于连接 LDAP 主机的凭据。要获取一个 **PSCredential** 对象，请使用 **Get-Credential** cmdlet。"
+
+msgid ""
+"Specifies the fully qualified domain name of the server that hosts the LDAP "
+"folder to which Active Directory Federation Services (AD FS) connects for "
+"authentication requests."
+msgstr ""
+"指定托管LDAP文件夹的服务器的完全限定域名。Active Directory Federation Services（AD "
+"FS）会连接到该服务器以发送身份验证请求。"
+
+msgid "Specifies the port that AD FS uses to connect to the LDAP host."
+msgstr "指定 AD FS 用于连接到 LDAP 主机的端口。"
+
+msgid ""
+"Specifies SSL setting of the connection.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定连接的 SSL 设置。该参数的可接受值为："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsLocalClaimsProviderTrust](./Add-AdfsLocalClaimsProviderTrust.md)"
+msgstr ""
+"[Add-AdfsLocalClaimsProviderTrust](./Add-AdfsLocalClaimsProviderTrust.md)"

@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:12:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AdfsOrganization"
+msgstr "# 新的 AdFS 组织"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a new organization information object."
+msgstr "创建一个新的组织信息对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-AdfsOrganization** cmdlet creates an information object for an "
+"organization in Active Directory Federation Services (AD FS) 2.0."
+msgstr ""
+"`New-AdfsOrganization` cmdlet 用于为 Active Directory Federation Services (AD "
+"FS) 2.0 中的一个组织创建一个信息对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a new organization"
+msgstr "### 示例 1：创建一个新的组织"
+
+msgid "This command adds a new organization named Fabrikam in the AD FS."
+msgstr "此命令会在 AD FS 中添加一个名为 Fabrikam 的新组织。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the display name of the organization."
+msgstr "指定组织的显示名称。"
+
+msgid "Specifies the name of the organization."
+msgstr "指定组织的名称。"
+
+msgid "Specifies the URL of the organization."
+msgstr "指定该组织的网址。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.Organization"
+msgstr "### Microsoft.IdentityServer.PowerShell.ResourcesOrganization"
+
+msgid ""
+"This cmdlet generates a class structure that represents the organization "
+"object for the AD FS."
+msgstr "此cmdlet生成一个类结构，用于表示AD FS中的组织对象。"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsProperties](./Get-AdfsProperties.md)"
+msgstr "[Get-AdfsProperties](./Get-AdfsProperties.md)"
+
+msgid "[Set-AdfsProperties](./Set-AdfsProperties.md)"
+msgstr "[Set-AdfsProperties](./Set-AdfsProperties.md)"

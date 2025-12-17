@@ -1,0 +1,175 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:28:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Grant-ADAuthenticationPolicySiloAccess"
+msgstr "# 授予 Grant-ADAuthenticationPolicySiloAccess 权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Grants permission to join an authentication policy silo."
+msgstr "允许加入某个认证策略（即Authentication Policy）的管理框架/系统。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Grant-ADAuthenticationPolicySiloAccess** cmdlet grants permission to "
+"an account to join an authentication policy silo in Active Directory® Domain"
+" Services."
+msgstr ""
+"`Grant-ADAuthenticationPolicySiloAccess` cmdlet 为某个账户授予权限，使其能够加入 Active "
+"Directory® 域服务中的身份验证策略隔离（authentication policy silo）系统。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Grant access to an authentication policy silo to a user "
+"account"
+msgstr "#### 示例 1：将访问权限授予某个用户账户，使其能够使用特定的身份验证策略"
+
+msgid ""
+"This command grants access to the authentication policy silo named "
+"AuthenticationPolicySilo01 to the user account named User01."
+msgstr "该命令允许用户账户“User01”访问名为“AuthenticationPolicySilo01”的身份验证策略存储库。"
+
+msgid ""
+"### Example 2: grant access to an authentication policy silo for filter "
+"matches"
+msgstr "### 示例 2：为符合条件的过滤器请求授予访问权限（该权限仅针对特定的身份验证策略）"
+
+msgid ""
+"This example first uses the **Get-ADComputer** cmdlet to get a list of computers that match the filter specified by the Filter parameter.\n"
+"The output is then passed to the **Grant-ADAuthenticationPolicySiloAccess** cmdlet to grant access to the authentication policy silo named AuthenticationPolicySilo02."
+msgstr ""
+"这个示例首先使用 **Get-ADComputer** cmdlet 来获取符合由 `Filter` "
+"参数指定的筛选条件的计算机列表。然后，将该输出结果传递给 **Grant-ADAuthenticationPolicySiloAccess** "
+"cmdlet，以授予对名为 “AuthenticationPolicySilo02” 的身份验证策略存储库的访问权限。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the account to which to grant access to the authentication policy silo.\n"
+"Specify the account in one of the following formats:"
+msgstr ""
+"指定要授予访问权限的账户，以便该账户能够使用认证策略（即Authentication Policy Silo）。请按照以下格式之一来指定账户："
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过数据流（pipeline）来获取相应的对象，或者你可以将这个参数设置为某个对象的实例。"
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If the cmdlet finds two or more objects, the cmdlet returns a non-terminating error."
+msgstr "该cmdlet会在默认的命名上下文或分区中搜索目标对象。如果找到两个或多个对象，它将返回一个无法终止的错误（即操作会无限循环下去）。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the Active Directory Domain Services instance to which to connect, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following:  Active Directory Lightweight Domain Services, Active Directory Domain Services or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 Active Directory 域服务实例，为此需提供相应的域名或目录服务器的值之一。该服务可以是以下类型中的任意一种：Active "
+"Directory 轻量级域服务（Active Directory Lightweight Domain Services）、Active "
+"Directory 域服务（Active Directory Domain Services）或 Active Directory "
+"快照实例（Active Directory Snapshot Instance）。"
+
+msgid ""
+"Specify the Active Directory Domain Services instance in one of the "
+"following ways:"
+msgstr "以下是指定 Active Directory 域服务实例的几种方式之一："
+
+msgid ""
+"Domain name values:\n"
+"- A Fully qualified domain name\n"
+"- A NetBIOS name"
+msgstr ""
+"域名值：  \n"
+"- 一个完全限定的域名（Fully Qualified Domain Name）  \n"
+"- 一个NetBIOS名称"
+
+msgid ""
+"Directory server values:\n"
+"- A Fully qualified directory server name\n"
+"- A NetBIOS name\n"
+"- A Fully qualified directory server name and port"
+msgstr ""
+"目录服务器相关设置：  \n"
+"- 完整的目录服务器名称  \n"
+"- NetBIOS名称  \n"
+"- 完整的目录服务器名称及端口号"
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们的排列顺序："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADAccount"
+msgstr "### Microsoft.ActiveDirectory.Management.ADAccount"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADAuthenticationPolicySilo"
+msgstr "### Microsoft.ActiveDirectory.Management_ADAuthenticationPolicySilo"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Revoke-ADAuthenticationPolicySiloAccess](./Revoke-"
+"ADAuthenticationPolicySiloAccess.md)"
+msgstr ""
+"[Revoke-ADAuthenticationPolicySiloAccess](./Revoke-"
+"ADAuthenticationPolicySiloAccess.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理Cmdlet](./activedirectory.md)"

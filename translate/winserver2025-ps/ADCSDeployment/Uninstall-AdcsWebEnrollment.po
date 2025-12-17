@@ -1,0 +1,93 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:23:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Uninstall-AdcsWebEnrollment"
+msgstr "# 卸载 AdcsWebEnrollment"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Uninstalls the CA Web Enrollment role service."
+msgstr "卸载CA Web Enrollment角色服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Uninstall-AdcsWebEnrollment` cmdlet removes the Certification Authority (CA) Web Enrollment\n"
+"role service."
+msgstr "`Uninstall-AdcsWebEnrollment` cmdlet 用于删除证书颁发机构（CA）的 Web 注册角色服务。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Uninstall the CA Web Enrollment role service"
+msgstr "#### 示例 1：卸载 CA Web Enrollment 角色服务"
+
+msgid ""
+"This command uninstalls the CA Web Enrollment role service without requiring"
+" confirmation."
+msgstr "此命令会卸载“CA Web Enrollment”角色服务，且无需用户确认。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.CertificateServices.Deployment.Common.WEP.WebEnrollmentResult"
+msgstr ""
+"### Microsoft.CertificateServices.Deployment(Common.WEP.WebEnrollmentResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Install-AdcsWebEnrollment](./Install-AdcsWebEnrollment.md)"
+msgstr "[Install-AdcsWebEnrollment](./Install-AdcsWebEnrollment.md)"

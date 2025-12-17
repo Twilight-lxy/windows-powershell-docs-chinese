@@ -1,0 +1,264 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:11:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ADOrganizationalUnit"
+msgstr "# 删除 AD 组织单元"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes an Active Directory organizational unit."
+msgstr "删除一个 Active Directory 组织单位。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-ADOrganizationalUnit** cmdlet removes an Active Directory "
+"organizational unit (OU)."
+msgstr ""
+"`Remove-ADOrganizationalUnit` cmdlet 用于删除 Active Directory "
+"中的组织单元（Organizational Unit，简称 OU）。"
+
+msgid ""
+"The *Identity* parameter specifies the organizational unit to remove.\n"
+"You can identify an organizational unit by its distinguished name or GUID.\n"
+"You can also set the parameter to an organizational unit object variable, such as `$<localOrganizationUnitObject>` or you can pass an object through the pipeline to the *Identity* parameter.\n"
+"For example, you can use the **Get-ADOrganizationalUnit** cmdlet to retrieve the object and then pass the object through the pipeline to the Remove-ADOrganizationalUnit cmdlet."
+msgstr ""
+"`Identity` 参数用于指定要删除的组织单位。您可以通过该组织单位的唯一名称（Distinguished Name）或 GUID "
+"来识别它。您也可以将该参数设置为一个组织单位对象变量（例如 "
+"`$<localOrganizationUnitObject>`），或者通过管道将某个对象传递给 `Identity` 参数。例如，可以使用 `Get-"
+"ADOrganizationalUnit` cmdlet 获取该组织单位对象，然后再通过管道将其传递给 `Remove-"
+"ADOrganizationalUnit` cmdlet。"
+
+msgid ""
+"If the object you want to remove has child objects, you must specify the "
+"*Recursive* parameter."
+msgstr "如果你想要删除的对象有子对象，就必须指定*递归*参数。"
+
+msgid ""
+"If the **ProtectedFromAccidentalDeletion** property of the organizational "
+"unit object is set to true, the cmdlet returns a terminating error."
+msgstr ""
+"如果组织单位对象（organization unit object）的 `ProtectedFromAccidentalDeletion` 属性被设置为"
+" `true`，那么该 cmdlet 会返回一个终止错误（terminating error）。"
+
+msgid ""
+"For AD LDS environments, the *Partition* parameter must be specified except "
+"in the following two conditions:"
+msgstr "对于 AD LDS 环境而言，必须指定 *Partition* 参数，以下两种情况除外："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove an OU and its children"
+msgstr "### 示例 1：移除一个组织单元（OU）及其下属对象"
+
+msgid ""
+"This command removes an OU and all of its children.\n"
+"If the OU is protected from deletion, then the OU and its children are not deleted.\n"
+"If the OU is not protected but any of the children are, then the OU and its children are deleted."
+msgstr ""
+"此命令会删除一个组织单元（OU）及其所有的子对象。如果该组织单元被设置为不可删除，则该组织单元及其子对象不会被删除；如果该组织单元本身没有被设置为不可删除，但其中的某个子对象被设置了不可删除属性，则该组织单元及其子对象会被删除。"
+
+msgid "### Example 2: Remove on OU by its GUID"
+msgstr "### 示例 2：根据组织单元（OU）的 GUID 删除该组织单元"
+
+msgid ""
+"This command removes an OU that is specified by its objectGUID and "
+"suppresses the confirmation prompt."
+msgstr "这个命令会根据对象GUID来删除指定的组织单元（OU），并且会跳过确认提示。"
+
+msgid "### Example 3: Remove a specified OU"
+msgstr "### 示例 3：删除指定的组织单元（OU）"
+
+msgid "This command removes the Accounting OU."
+msgstr "这个命令会删除“会计”（Accounting）组织单元（OU）。"
+
+msgid "### Example 4: Remove an OU from an AD LDS instance"
+msgstr "### 示例 4：从 AD LDS 实例中删除一个组织单元（OU）"
+
+msgid "This command removes an OU from an AD LDS instance."
+msgstr "此命令用于从 AD LDS 实例中删除一个组织单元（OU）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本身份验证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该cmdlet是从Active Directory "
+"PowerShell提供程序驱动器运行的；如果是从此类驱动器运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01\\User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，该cmdlet会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 `PSCredential` 对象。之后，你可以将 "
+"`Credential` 参数设置为这个 `PSCredential` 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory PowerShell returns a terminating error."
+msgstr "如果执行任务的代理凭据没有目录级别的权限，Active Directory PowerShell 将返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory group object by providing one of the following values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr "通过提供以下值之一来指定一个 Active Directory 组对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"-A distinguished name\n"
+"-A GUID (objectGUID)"
+msgstr ""
+"- 一个著名的名称  \n"
+"- 一个 GUID（objectGUID）"
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr "该cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，该cmdlet会返回一个表示搜索未完成的错误信息。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为一个对象实例。"
+
+msgid ""
+"Specifies the distinguished name of an Active Directory partition.\n"
+"The distinguished name must be one of the naming contexts on the current directory server.\n"
+"The cmdlet searches this partition to find the object defined by the *Identity* parameter."
+msgstr ""
+"指定一个 Active Directory 分区的唯一名称（distinguished name）。该唯一名称必须是当前目录服务器上的命名上下文之一。此"
+" cmdlet 会在此分区中搜索由 *Identity* 参数定义的对象。"
+
+msgid ""
+"In many cases, a default value is used for the *Identity* parameter if no value is specified.\n"
+"The rules for determining the default value are given below.\n"
+"Note that rules listed first are evaluated first and once a default value can be determined, no further rules are evaluated."
+msgstr ""
+"在许多情况下，如果未指定任何值，则会为*Identity*参数使用一个默认值。确定默认值的规则如下所示。请注意，首先列出的规则会被优先评估；一旦确定了默认值，就不会再继续评估其他规则了。"
+
+msgid ""
+"In Active Directory Domain Services (AD DS) environments, a default value "
+"for *Partition* is set in the following cases:"
+msgstr "在 Active Directory 域服务（AD DS）环境中，以下情况下会为“分区”（Partition）设置默认值："
+
+msgid ""
+"Indicates that this cmdlet removes the OU and any child items it contains.\n"
+"You must specify this parameter to remove an OU that is not empty."
+msgstr "表示此cmdlet将删除该组织单元（OU）及其包含的所有子项。如果要删除一个非空的OU，则必须指定此参数。"
+
+msgid ""
+"Note: Specifying this parameter removes all child objects of an OU that are "
+"marked with **ProtectedFromAccidentalDeletion**."
+msgstr "注意：指定此参数会移除组织单元（OU）中所有被标记为 **ProtectedFromAccidentalDeletion** 的子对象。"
+
+msgid ""
+"Specifies the AD DS instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following: AD LDS, AD DS, or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 AD DS 实例，为此请提供相应的域名或目录服务器之一。该服务可以是以下类型中的任意一种：AD LDS、AD DS 或 Active "
+"Directory 快照实例。"
+
+msgid "Specify the AD DS instance in one of the following ways:"
+msgstr "以下是指定 AD DS 实例的几种方式："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "该参数的默认值是通过以下方法之一确定的，确定顺序按照列出的顺序进行："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADOrganizationalUnit"
+msgstr ""
+"没有相关对象，或者使用了 `Microsoft.ActiveDirectory.Management.ADOrganizationalUnit` 类。"
+
+msgid ""
+"An **ADOrganizationalUnit** object is received by the *Identity* parameter."
+msgstr "一个 `ADOrganizationalUnit` 对象通过 `Identity` 参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADOrganizationalUnit](./Get-ADOrganizationalUnit.md)"
+msgstr "[Get-ADOrganizationalUnit](./Get-ADOrganizationalUnit.md)"
+
+msgid "[New-ADOrganizationalUnit](./New-ADOrganizationalUnit.md)"
+msgstr "[New-ADOrganizationalUnit](./New-ADOrganizationalUnit.md)"
+
+msgid "[Set-ADOrganizationalUnit](./Set-ADOrganizationalUnit.md)"
+msgstr "[Set-ADOrganizationalUnit](./Set-ADOrganizationalUnit.md)"

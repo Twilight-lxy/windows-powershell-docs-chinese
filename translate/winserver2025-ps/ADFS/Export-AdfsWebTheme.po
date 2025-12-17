@@ -1,0 +1,127 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:56:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-AdfsWebTheme"
+msgstr "# 导出 AdFSWebTheme 主题"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Exports a web theme to a folder."
+msgstr "将一个网页主题导出到一个文件夹中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "### RelyingPartyName"
+msgstr "### RelyingPartyName"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Export-AdfsWebTheme** cmdlet exports a web theme object to a folder.\n"
+"The cmdlet creates necessary folders that correspond to the web theme settings.\n"
+"Use this cmdlet to create web themes based on existing themes, such as the default theme available with Active Directory Federation Services (AD FS)."
+msgstr ""
+"`Export-AdfsWebTheme` cmdlet 将一个 Web 主题对象导出到一个文件夹中。该 cmdlet 会创建与 Web "
+"主题设置相对应所需的文件夹。您可以使用此 cmdlet 根据现有的主题（例如 Active Directory Federation Services "
+"(AD FS) 提供的默认主题）来创建新的 Web 主题。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Export a web theme"
+msgstr "#### 示例 1：导出一个网页主题"
+
+msgid ""
+"This command exports a web theme named Theme01 to the folder C:\\WebTheme.\n"
+"The command places all files, including cascading style sheets, JavaScript files, and images, in folders in the specified folder."
+msgstr ""
+"这个命令会将一个名为“Theme01”的网页主题导出到C:\\WebTheme文件夹中。该命令会将所有文件（包括层叠样式表、JavaScript文件和图片）放入指定文件夹中的相应子文件夹中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the path of a folder.\n"
+"The cmdlet exports the web theme to the folder that you specify."
+msgstr "指定一个文件夹的路径。该cmdlet会将网页主题导出到您指定的文件夹中。"
+
+msgid ""
+"Specifies a name.\n"
+"The cmdlet exports the web theme that has the name that you specify."
+msgstr "用于指定一个名称。该 cmdlet 会导出具有你所指定名称的网页主题。"
+
+msgid "Specifies the name of the relying party."
+msgstr "指定依赖方的名称。"
+
+msgid ""
+"Specifies an **AdfsWebTheme** object.\n"
+"The cmdlet exports the theme that you specify.\n"
+"To obtain an **AdfsWebTheme** object, use the **Get-AdfsWebTheme** cmdlet."
+msgstr ""
+"用于指定一个 **AdfsWebTheme** 对象。该 cmdlet 会导出您所指定的主题。若要获取一个 **AdfsWebTheme** "
+"对象，可以使用 **Get-AdfsWebTheme** cmdlet。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该 cmdlet 被运行时会发生什么情况。但实际上，这个 cmdlet 并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsWebTheme](./Get-AdfsWebTheme.md)"
+msgstr "[Get-AdfsWebTheme](./Get-AdfsWebTheme.md)"
+
+msgid "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"
+msgstr "[New-AdfsWebTheme](./New-AdfsWebTheme.md)"
+
+msgid "[Remove-AdfsWebTheme](./Remove-AdfsWebTheme.md)"
+msgstr "[Remove-AdfsWebTheme](./Remove-AdfsWebTheme.md)"
+
+msgid "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"
+msgstr "[Set-AdfsWebTheme](./Set-AdfsWebTheme.md)"

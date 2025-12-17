@@ -1,0 +1,310 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:21:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Restore-ADObject"
+msgstr "# 恢复 AD 对象"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Restores an Active Directory object."
+msgstr "恢复一个 Active Directory 对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Restore-ADObject** cmdlet restores a deleted Active Directory object."
+msgstr "`Restore-ADObject` cmdlet 可以恢复已删除的 Active Directory 对象。"
+
+msgid ""
+"The *NewName* parameter specifies the new name for the restored object.\n"
+"If the *NewName* parameter is not specified, the value of the Active Directory attribute with an Lightweight Directory Access Protocol (LDAP) display name of msDS-lastKnownRDN is used.\n"
+"The *TargetPath* parameter specifies the new location for the restored object.\n"
+"If the *TargetPath* is not specified, the value of the Active Directory attribute with an LDAP display name of lastKnownParent is used."
+msgstr ""
+"`NewName` 参数用于指定恢复对象的新名称。如果未指定 `NewName` 参数，则会使用具有轻型目录访问协议（LDAP）显示名 `msDS-"
+"lastKnownRDN` 的 Active Directory 属性的值。`TargetPath` 参数用于指定恢复对象的新位置；如果未指定 "
+"`TargetPath`，则会使用具有 LDAP 显示名 `lastKnownParent` 的 Active Directory 属性的值。"
+
+msgid ""
+"The *Identity* parameter specifies the Active Directory object to restore.\n"
+"You can identify an object by its distinguished name or GUID.\n"
+"You can also set the *Identity* parameter to an object variable such as `$<localObject>`, or you can pass an object through the pipeline to the *Identity* parameter.\n"
+"For example, you can use the **Get-ADObject** cmdlet to get a deleted object by specifying the *IncludeDeletedObjects* parameter.\n"
+"You can then pass the object through the pipeline to the Restore-ADObject cmdlet."
+msgstr ""
+"`Identity` 参数用于指定要恢复的 Active Directory 对象。您可以通过该对象的唯一名称（Distinguished Name）或"
+" GUID 来标识它。您也可以将 `Identity` 参数设置为某个对象变量（例如 `$<localObject>`），或者通过管道将该对象传递给 "
+"`Identity` 参数。例如，您可以使用 **Get-ADObject** cmdlet 并指定 `IncludeDeletedObjects` "
+"参数来获取被删除的对象，然后再将该对象通过管道传递给 `Restore-ADObject` cmdlet 进行恢复操作。"
+
+msgid ""
+"Note: You can get the distinguished names of deleted objects by using the "
+"**Get-ADObject** cmdlet with the *IncludeDeletedObjects* parameter "
+"specified."
+msgstr ""
+"注意：您可以使用带有 *IncludeDeletedObjects* 参数的 **Get-ADObject** cmdlet 来获取已删除对象的名称。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Restore an object and set attributes for the deleted object"
+msgstr "#### 示例 1：恢复一个被删除的对象，并为其设置属性"
+
+msgid ""
+"This command restores the **ADObject** while setting the **msDS-"
+"LastKnownRDN** attribute of the deleted object to the *NewName* parameter "
+"and setting the lastKnownRDN to the *TargetPath* parameter."
+msgstr ""
+"此命令会恢复该**ADObject**，同时将已删除对象的**msDS-"
+"LastKnownRDN**属性设置为*NewName*参数，并将该对象的最后已知RDN地址设置为*TargetPath*参数。"
+
+msgid "### Example 2: Restore an object by distinguished name"
+msgstr "### 示例 2：通过唯一名称恢复对象"
+
+msgid ""
+"This command restores the **ADObject** while setting the **msDS-"
+"LastKnownRDN** attribute of the deleted object to *NewName* parameter and "
+"setting the lastKnownRDN to the *TargetPath* parameter."
+msgstr ""
+"该命令会恢复被删除的 **ADObject**，同时将已删除对象的 **msDS-LastKnownRDN** 属性设置为 *NewName* "
+"参数，并将该对象的最后已知 RDN 值设置为 *TargetPath* 参数。"
+
+msgid "### Example 3: Restore an object from a filtered list of users"
+msgstr "#### 示例 3：从过滤后的用户列表中恢复一个对象"
+
+msgid ""
+"This command finds a deleted user whose SAM account name is pattifuller and "
+"restores it."
+msgstr "此命令会找到一个被删除的用户（其SAM账户名称为“pattifuller”），并恢复该用户的账户。"
+
+msgid "### Example 4: Restore an object by its GUID"
+msgstr "### 示例 4：通过对象的 GUID 恢复该对象"
+
+msgid "This command restores an AD LDS object using ObjectGUID."
+msgstr "此命令使用 ObjectGUID 恢复一个 AD LDS 对象。"
+
+msgid "### Example 5: Restore an object by its msds-LastKnownRDN attribute"
+msgstr "### 示例 5：通过对象的 `msds-LastKnownRDN` 属性来恢复该对象"
+
+msgid ""
+"This command restores an AD LDS object using the **msds-LastKnownRDN** "
+"attribute."
+msgstr "此命令使用 **msds-LastKnownRDN** 属性来恢复一个 AD LDS 对象。"
+
+msgid ""
+"### Example 6: Restore deleted Configuration objects in a certain date/time "
+"range"
+msgstr "### 示例 6：在指定的日期/时间范围内恢复被删除的配置对象"
+
+msgid ""
+"This command restores deleted configuration objects in a certain date/time "
+"range. This will be Helpful if you know when these objects were deleted."
+msgstr "此命令可以恢复在特定日期/时间范围内被删除的配置对象。如果您知道这些对象是什么时候被删除的，那么这个命令会非常有用。"
+
+msgid "### Example 7: Restore all deleted Configuration objects"
+msgstr "### 示例 7：恢复所有被删除的配置对象"
+
+msgid "This command restores all deleted configuration objects."
+msgstr "此命令会恢复所有被删除的配置对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值为："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您确认是否要继续。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Active Directory PowerShell "
+"提供程序驱动器运行的；如果是从这样的驱动器运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01/User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，该 cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过使用脚本或 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"*Credential* 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果执行该任务的账号没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory group object by providing one of the following values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr "通过提供以下值之一来指定一个 Active Directory 组对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr "该cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，它将返回一个无法终止的错误信息。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道来获取该对象，或者你可以将该参数设置为某个对象的实例。"
+
+msgid ""
+"Specifies the new name of the object.\n"
+"This parameter sets the **Name** property of the Active Directory object.\n"
+"The LDAP display name (**ldapDisplayName**) of this property is name."
+msgstr ""
+"指定对象的新名称。此参数用于设置 Active Directory 对象的 **Name** 属性。该属性的 LDAP "
+"显示名称（**ldapDisplayName**）即为新指定的名称。"
+
+msgid ""
+"Specifies the distinguished name of an Active Directory partition.\n"
+"The distinguished name must be one of the naming contexts on the current directory server.\n"
+"The cmdlet searches this partition to find the object defined by the *Identity* parameter."
+msgstr ""
+"指定一个 Active Directory 分区的唯一名称（distinguished "
+"name）。该唯一名称必须是当前目录服务器上所支持的命名上下文之一。此 cmdlet 会在该分区中查找由 *Identity* 参数定义的对象。"
+
+msgid ""
+"In many cases, a default value is used for the *Partition* parameter if no value is specified.\n"
+"The rules for determining the default value are given below.\n"
+"Note that rules listed first are evaluated first and once a default value can be determined, no further rules are evaluated."
+msgstr ""
+"在许多情况下，如果未指定值，则会使用默认值作为*Partition*参数的值。确定默认值的规则如下所示。请注意，首先列出的规则会被优先评估；一旦确定了默认值，后续的规则将不再被评估。"
+
+msgid ""
+"In Active Directory Domain Services (AD DS) environments, a default value "
+"for *Partition* is set in the following cases:"
+msgstr "在 Active Directory 域服务（AD DS）环境中，以下情况下会为“分区”（Partition）设置默认值："
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您当前正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the AD DS instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following: AD LDS, AD DS, or Active Directory snapshot instance."
+msgstr ""
+"指定要连接的 AD DS 实例，为此需要提供相应的域名或目录服务器的相关值。该服务可以是以下类型中的任意一种：AD LDS、AD DS 或 Active"
+" Directory 快照实例。"
+
+msgid "Specify the AD DS instance in one of the following ways:"
+msgstr "以下列方式之一指定 AD DS 实例："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following "
+"methods in the order that they are listed:"
+msgstr "此参数的默认值是根据以下方法之一确定的，具体采用哪种方法取决于它们的列出顺序："
+
+msgid ""
+"Specifies the new location for the object.\n"
+"This location must be the path to a container or organizational unit."
+msgstr "指定对象的新位置。该位置必须是容器或组织单位的路径。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADObject"
+msgstr "### 无或 Microsoft.ActiveDirectory.Management_ADObject"
+
+msgid "An Active Directory object is received by the *Identity* parameter."
+msgstr "*Identity* 参数接收到了一个 Active Directory 对象。"
+
+msgid "Derived types, such as the following are also accepted:"
+msgstr "也接受派生类型，例如以下这些："
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADObject"
+msgstr "### 无或 Microsoft.ActiveDirectory.Management.ADObject"
+
+msgid ""
+"Returns the restored object when the *PassThru* parameter is specified.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "当指定 *PassThru* 参数时，会返回恢复后的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADObject](./Get-ADObject.md)"
+msgstr "[Get-ADObject](./Get-ADObject.md)"
+
+msgid "[Move-ADObject](./Move-ADObject.md)"
+msgstr "[Move-ADObject](./Move-ADObject.md)"
+
+msgid "[New-ADObject](./New-ADObject.md)"
+msgstr "[New-ADObject](./New-ADObject.md)"
+
+msgid "[Remove-ADObject](./Remove-ADObject.md)"
+msgstr "[Remove-ADObject](./Remove-ADObject.md)"
+
+msgid "[Rename-ADObject](./Rename-ADObject.md)"
+msgstr "[重命名 AD 对象](./Rename-ADObject.md)"
+
+msgid "[Set-ADObject](./Set-ADObject.md)"
+msgstr "[Set-ADObject](./Set-ADObject.md)"

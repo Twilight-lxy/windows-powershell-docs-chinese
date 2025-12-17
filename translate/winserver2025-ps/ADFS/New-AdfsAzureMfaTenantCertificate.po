@@ -1,0 +1,124 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:10:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AdfsAzureMfaTenantCertificate"
+msgstr "# 新的 AdfsAzureMfaTenantCertificate"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Creates a certificate for the AD FS farm to use to connect to Azure MFA, or "
+"returns the currently configured certificate."
+msgstr "为 AD FS 架构创建一个用于连接 Azure MFA 的证书，或者返回当前配置的证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-AdfsAzureMfaTenantCertificate** cmdlet creates a certificate for "
+"an Active Directory Federation Services (AD FS) farm to use to connect to "
+"Azure Multi-Factor Authentication (MFA), or returns the currently configured"
+" certificate."
+msgstr ""
+"`New-AdfsAzureMfaTenantCertificate` cmdlet 用于为 Active Directory Federation "
+"Services (AD FS) 群集创建证书，以便该集群能够连接到 Azure 多因素身份验证 (MFA)；或者返回当前已配置的证书。"
+
+msgid ""
+"The cmdlet looks in the local machine My store for a certificate with Issuer"
+" and Subject equal to:"
+msgstr "该cmdlet会在本地机器“我的商店”中查找证书，要求其发行者（Issuer）和主题（Subject）满足以下条件："
+
+msgid "If it does not find one, it generates it."
+msgstr "如果找不到相应的内容，它就会生成新的内容。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Create a certificate and enable Azure MFA on an AD FS farm"
+msgstr "### 示例 1：创建证书并在 AD FS 架构上启用 Azure 多因素身份验证（MFA）"
+
+msgid ""
+"These commands create a certificate for Azure MFA, register the certificate "
+"in a tenant, and enable Azure MFA on an AD FS farm."
+msgstr "这些命令会为 Azure MFA 创建一个证书，将该证书注册到某个租户账户中，并在 AD FS 系统上启用 Azure MFA 功能。"
+
+msgid "### Example 2: Determine which certificate Azure MFA is using"
+msgstr "### 示例 2：确定 Azure MFA 使用的是哪种证书"
+
+msgid ""
+"After AD FS has been configured for Azure MFA, this command determines which"
+" certificate Azure MFA is using and when it expires."
+msgstr "在为 Azure MFA 配置了 AD FS 之后，此命令可以确定 Azure MFA 使用的是哪张证书以及该证书的过期时间。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Renew certificate. Do not use if the certificate has already expired. In "
+"this scenario, the existing expired certificate is replaced with a new "
+"certificate."
+msgstr "更新证书。如果证书已经过期，请不要使用该功能。在这种情况下，现有的过期证书将被替换为一张新证书。"
+
+msgid ""
+"Specifies the GUID representation of the Microsoft Entra tenant ID.\n"
+"This can be found in the URL bar of the Microsoft Entra admin center, as in this example: `https://manage.windowsazure.com/contoso.onmicrosoft.com#Workspaces/ActiveDirectoryExtension/Directory/<tenantID_GUID>/directoryQuickStart`"
+msgstr ""
+"指定 Microsoft Entra 租户 ID 的 GUID 表示形式。您可以在 Microsoft Entra 管理中心的地址栏中找到该 "
+"ID，例如：`https://manage.windowsazure.com/contoso.onmicrosoft.com#Workspaces/ActiveDirectoryExtension/Directory/<tenantID_GUID>/directoryQuickStart`"
+
+msgid ""
+"Alternatively, you can use the **Login-AzureRmAccount** cmdlet to get the "
+"tenant ID."
+msgstr "或者，您可以使用 **Login-AzureRmAccount** cmdlet 来获取租户 ID。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的情景。但实际上，该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-AdfsAzureMfaTenant](./Set-AdfsAzureMfaTenant.md)"
+msgstr "[Set-AdfsAzureMfaTenant](./Set-AdfsAzureMfaTenant.md)"

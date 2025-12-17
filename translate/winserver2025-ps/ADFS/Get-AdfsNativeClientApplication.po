@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:02:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsNativeClientApplication"
+msgstr "# 获取 AdfsNativeClient 应用程序"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets native client application roles from an application in AD FS."
+msgstr "从 AD FS 中的应用程序中获取本地的客户端应用程序角色。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identifier (Default)"
+msgstr "### 标识符（默认值）"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "### ApplicationObject"
+msgstr "### ApplicationObject"
+
+msgid "### ApplicationGroupIdentifier"
+msgstr "### ApplicationGroupIdentifier"
+
+msgid "### ApplicationGroupObject"
+msgstr "### ApplicationGroupObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AdfsNativeClientApplication** cmdlet gets native client "
+"application roles from an application in Active Directory Federation "
+"Services (AD FS)."
+msgstr ""
+"`Get-AdfsNativeClientApplication` cmdlet 用于从 Active Directory Federation "
+"Services (AD FS) 中的应用程序中获取原生客户端应用程序角色。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the native client application to get."
+msgstr "指定要获取的原生客户端应用程序。"
+
+msgid ""
+"Specifies the application group from which to get native client "
+"applications."
+msgstr "指定用于获取原生客户端应用程序的应用程序组。"
+
+msgid ""
+"Specifies the ID of the application group from which to get native client "
+"applications."
+msgstr "指定用于获取原生客户端应用程序的应用程序组的ID。"
+
+msgid "Specifies an array of IDs of native client applications get."
+msgstr "指定一个数组，其中包含需要获取的原生客户端应用程序的ID。"
+
+msgid "Specifies an array of names of native client applications get."
+msgstr "指定一个包含原生客户端应用程序名称的数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### Microsoft.IdentityServer.Management.Resources.NativeClientApplication"
+msgstr ""
+"### Microsoft IdentityServer.Management.Resources.NativeClientApplication"
+
+msgid ""
+"NativeClientApplication objects are received by the *Application* parameter."
+msgstr "`NativeClientApplication` 对象是通过 `Application` 参数接收到的。"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.ApplicationGroup"
+msgstr "### Microsoft IdentityServer.Management.Resources.ApplicationGroup"
+
+msgid ""
+"ApplicationGroup objects are received by the *ApplicationGroup* parameter."
+msgstr "`ApplicationGroup` 对象是通过 `ApplicationGroup` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "String objects are received by the *Identifier* and *Name* parameters."
+msgstr "字符串对象通过 *Identifier*（标识符）和 *Name*（名称）参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.IdentityServer.Management.Resources.NativeClientApplication"
+msgstr ""
+"### MicrosoftIdentityServer.Management.Resources.NativeClientApplication"
+
+msgid ""
+"Returns one or more NativeClientApplication objects that represent the "
+"native client application resources for the Federation Service."
+msgstr "返回一个或多个 NativeClientApplication 对象，这些对象表示联邦服务的本机客户端应用程序资源。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsNativeClientApplication](./Add-AdfsNativeClientApplication.md)"
+msgstr ""
+"[Add-AdfsNativeClientApplication](./Add-AdfsNativeClientApplication.md)"
+
+msgid ""
+"[Remove-AdfsNativeClientApplication](./Remove-"
+"AdfsNativeClientApplication.md)"
+msgstr ""
+"[Remove-AdfsNativeClientApplication](./Remove-"
+"AdfsNativeClientApplication.md)"
+
+msgid ""
+"[Set-AdfsNativeClientApplication](./Set-AdfsNativeClientApplication.md)"
+msgstr ""
+"[Set-AdfsNativeClientApplication](./Set-AdfsNativeClientApplication.md)"

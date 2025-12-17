@@ -1,0 +1,156 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:46:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-AdfsRelyingPartyTrust"
+msgstr "# 更新：依赖于 ADFS 的当事方信任关系（Update: AdfsRelyingPartyTrust）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Updates the relying party trust from federation metadata."
+msgstr "根据联邦元数据更新依赖方的信任信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Update-AdfsRelyingPartyTrust** cmdlet updates the relying party trust from the federation metadata that is available at the federation metadata URL.\n"
+"The cmdlet updates claims, endpoints, and certificates."
+msgstr ""
+"`Update-AdfsRelyingPartyTrust` cmdlet 会根据联邦元数据 URL 提供的联邦元数据来更新依赖方的信任设置。该 "
+"cmdlet 会修改声明（claims）、端点（endpoints）以及证书（certificates）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update a relying party trust"
+msgstr "### 示例 1：更新依赖方信任关系"
+
+msgid "This command updates the relying party trust named FabrikamApp."
+msgstr "此命令会更新名为“FabrikamApp”的依赖方信任设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a file path in UNC format.\n"
+"The file that you specify contains the federation metadata for the relying party application."
+msgstr "以 UNC 格式指定一个文件路径。您指定的文件包含了依赖方应用程序的联合身份验证（federation）元数据。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the identifier of the relying party trust to update."
+msgstr "指定需要更新的依赖方信任（relying party trust）的标识符。"
+
+msgid "Specifies the name of the relying party trust to update."
+msgstr "指定要更新的依赖方信任（relying party trust）的名称。"
+
+msgid ""
+"Specifies a **RelyingPartyTrust** object.\n"
+"The cmdlet updates the relying party trust that you specify.\n"
+"To obtain a **RelyingPartyTrust** object, use the **Get-AdfsRelyingPartyTrust** cmdlet."
+msgstr ""
+"用于指定一个 **RelyingPartyTrust** 对象。该 cmdlet 会更新您指定的依赖方信任关系。若要获取一个 "
+"**RelyingPartyTrust** 对象，请使用 **Get-AdfsRelyingPartyTrust** cmdlet。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *TargetIdentifier* and *TargetName* "
+"parameters."
+msgstr "字符串对象通过 *TargetIdentifier* 和 *TargetName* 参数被接收。"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.RelyingPartyTrust"
+msgstr "### Microsoft.IdentityServer.PowShell.Resources.RelyingPartyTrust"
+
+msgid ""
+"RelyingPartytrust objects are received by the *TargetRelyingParty* "
+"parameter."
+msgstr "`RelyingPartyTrust` 对象是通过 `TargetRelyingParty` 参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.RelyingPartyTrust"
+msgstr "### Microsoft IdentityServer.PowerShellResources.RelyingPartyTrust"
+
+msgid ""
+"Returns the updated RelyingPartyTrust object when the *PassThru* parameter "
+"is specified. By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定 *PassThru* 参数时，会返回更新后的 RelyingPartyTrust 对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsRelyingPartyTrust](./Add-AdfsRelyingPartyTrust.md)"
+msgstr "[添加 AdfsRelyingPartyTrust](./Add-AdfsRelyingPartyTrust.md)"
+
+msgid "[Disable-AdfsRelyingPartyTrust](./Disable-AdfsRelyingPartyTrust.md)"
+msgstr "[禁用 AdfsRelyingPartyTrust 功能](./Disable-AdfsRelyingPartyTrust.md)"
+
+msgid "[Enable-AdfsRelyingPartyTrust](./Enable-AdfsRelyingPartyTrust.md)"
+msgstr "[Enable-AdfsRelyingPartyTrust](./Enable-AdfsRelyingPartyTrust.md)"
+
+msgid "[Get-AdfsRelyingPartyTrust](./Get-AdfsRelyingPartyTrust.md)"
+msgstr "[Get-AdfsRelyingPartyTrust](./Get-AdfsRelyingPartyTrust.md)"
+
+msgid "[Remove-AdfsRelyingPartyTrust](./Remove-AdfsRelyingPartyTrust.md)"
+msgstr "[Remove-AdfsRelyingPartyTrust](./Remove-AdfsRelyingPartyTrust.md)"
+
+msgid "[Set-AdfsRelyingPartyTrust](./Set-AdfsRelyingPartyTrust.md)"
+msgstr "[Set-AdfsRelyingPartyTrust](./Set-AdfsRelyingPartyTrust.md)"

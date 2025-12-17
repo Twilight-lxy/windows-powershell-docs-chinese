@@ -1,0 +1,134 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:34:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AdfsCertificate"
+msgstr "# 添加 AdFS 证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Adds a new certificate to AD FS for signing, decrypting, or securing "
+"communications."
+msgstr "向 AD FS 添加新的证书，用于签名、解密或保护通信安全。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-AdfsCertificate** cmdlet adds a new certificate to Active "
+"Directory Federation Services (AD FS) for token signing, token decrypting, "
+"card signing, or securing communications."
+msgstr ""
+"`Add-AdfsCertificate` cmdlet 用于向 Active Directory Federation Services (AD "
+"FS) 添加新的证书，这些证书可用于令牌签名、令牌解密、卡片签名或保护通信安全。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a token-signing certificate"
+msgstr "### 示例 1：添加一个令牌签名证书"
+
+msgid ""
+"This command adds a token-signing certificate with the thumbprint "
+"`fedd995b45e633d4ef30fcbc8f3a48b627e9a28b`."
+msgstr ""
+"此命令添加了一个用于令牌签名的证书，其指纹（thumbprint）为`fedd995b45e633d4ef30fcbc8f3a48b627e9a28b`。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the type and purpose of the certificate.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定证书的类型和用途。该参数的可接受值如下："
+
+msgid ""
+"Indicates that the certificate is primary or not.\n"
+"Primary token-signing certificates are used to digitally sign outgoing claims.\n"
+"Primary token-encrypting certificates are published in federation metadata for use by trusted claims providers.\n"
+"Service communications certificates are always primary certificates."
+msgstr ""
+"该标记用于指示证书是否为“主要证书”。主要的令牌签名证书用于对发出的声明进行数字签名；主要的令牌加密证书会发布在联盟元数据中，供可信的声明提供者使用。服务通信证书始终属于主要证书。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the thumbprint of the certificate to use."
+msgstr "指定要使用的证书的“指纹”（即用于唯一标识该证书的信息）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, "
+"`-ErrorVariable`, `-InformationAction`, `-InformationVariable`, "
+"`-OutVariable`, `-OutBuffer`, `-PipelineVariable`, `-Verbose`, "
+"`-WarningAction`, and `-WarningVariable`. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "A string object is received by the *Thumbprint* parameter."
+msgstr "*Thumbprint* 参数接收一个字符串对象作为参数。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.PowerShell.Resources.ServiceCertificate"
+msgstr "### Microsoft.IdentityServer POWERShell.Resources.ServiceCertificate"
+
+msgid ""
+"Returns the new ServiceCertificate object when the *PassThru* parameter is "
+"specified. By default, this cmdlet does not generate any output."
+msgstr ""
+"当指定*PassThru*参数时，该命令会返回一个新的ServiceCertificate对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsCertificate](./Get-AdfsCertificate.md)"
+msgstr "[Get-AdfsCertificate](./Get-AdfsCertificate.md)"
+
+msgid "[Remove-AdfsCertificate](./Remove-AdfsCertificate.md)"
+msgstr "[Remove-AdfsCertificate](./Remove-AdfsCertificate.md)"
+
+msgid "[Set-AdfsCertificate](./Set-AdfsCertificate.md)"
+msgstr "[Set-AdfsCertificate](./Set-AdfsCertificate.md)"
+
+msgid "[Update-AdfsCertificate](./Update-AdfsCertificate.md)"
+msgstr "[更新 AdfsCertificate](./Update-AdfsCertificate.md)"

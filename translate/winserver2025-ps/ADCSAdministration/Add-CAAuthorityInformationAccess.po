@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:12:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-CAAuthorityInformationAccess"
+msgstr "# 添加CA权限信息访问功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Configures the AIA or OCSP for a certification authority."
+msgstr ""
+"为认证机构配置AIA（Authority Information Access）或OCSP（Online Certificate Status "
+"Protocol）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### AddAsInputObject"
+msgstr "### AddAsInputObject"
+
+msgid "### AddAsOCSP"
+msgstr "### 将其添加为OCSP证书（AddAsOCSP）"
+
+msgid "### AddAsAIA"
+msgstr "### AddAsAIA"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-CAAuthorityInformationAccess** cmdlet configures the uniform resource identifier (URI) for the Authority Information Access (AIA) or Online Certificate Status Protocol (OCSP) for a certification authority (CA).\n"
+"An AIA URI should specify either an AIA extension or an OCSP extension, but not both."
+msgstr ""
+"`Add-CAAuthorityInformationAccess` cmdlet "
+"用于配置证书颁发机构（CA）的权威信息访问（AIA）或在线证书状态协议（OCSP）的统一资源标识符（URI）。AIA URI 应该指定 AIA 扩展或 "
+"OCSP 扩展中的一个，但不能同时指定两者。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add AIA to the specified authority"
+msgstr "### 示例 1：将 AIA 添加到指定的授权机构中"
+
+msgid ""
+"This command adds Authority Information Access (AIA) for the specified "
+"certification authority to 'http://ca1.corp.contoso.com/pki'."
+msgstr ""
+"此命令为指定的认证机构在‘http://ca1.corp.contoso.com/pki’上添加权威信息访问（Authority Information"
+" Access，简称AIA）功能。"
+
+msgid "### Example 2: Add AIA for OCSP"
+msgstr "#### 示例 2：为 OCSP 添加 AIA（认证机构信息）"
+
+msgid ""
+"This command adds AIA for OCSP pointing to "
+"`http://www.corp.contoso.com/ocsp`."
+msgstr "此命令为 OCSP 添加了 AIA（认证机构信息），指向 `http://www.corp.contoso.com/ocsp`。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates the cmdlet adds the URI to the AIA extension of the issued "
+"certificate."
+msgstr "表示该cmdlet会将URI添加到已发行证书的AIA（Application Identity Authentication）扩展字段中。"
+
+msgid ""
+"Indicates that the cmdlet adds the URI to the Online Responder OCSP "
+"extension of the issued certificate."
+msgstr "表示该 cmdlet 会将 URI 添加到已发行证书的在线响应器（Online Responder）OCSP 扩展字段中。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不需要用户确认。"
+
+msgid "Specifies the input object that is used in a pipeline command."
+msgstr "指定在管道命令中使用的输入对象。"
+
+msgid ""
+"Specifies a link, as a URI, for the AIA or Online Responder OCSP location."
+msgstr "指定一个链接（以 URI 的形式），用于指向 AIA 或在线响应器 OCSP 的位置。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Administration.Commands.CA.AuthorityInformationAccess"
+msgstr ""
+"### Microsoft.CertificateServices ADMINistration "
+"Commands.CA.AuthorityInformationAccess"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.Management.Automation.SwitchParameter"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.CertificateServices.Administration.Commands.CA.AuthorityInformationAccessResult"
+msgstr ""
+"### Microsoft.CertificateServices ADMINISTRATION "
+"Commands.CA.AuthorityInformationAccessResult"
+
+msgid ""
+"The cmdlet returns a Boolean type property named Restart, which, by default,"
+" is set to $True."
+msgstr "该cmdlet返回一个名为“Restart”的布尔类型属性，默认值为$True。"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-CAAuthorityInformationAccess](./Get-CAAuthorityInformationAccess.md)"
+msgstr ""
+"[Get-CAAuthorityInformationAccess](./Get-CAAuthorityInformationAccess.md)"
+
+msgid ""
+"[Remove-CAAuthorityInformationAccess](./Remove-"
+"CAAuthorityInformationAccess.md)"
+msgstr ""
+"[Remove-CAAuthorityInformationAccess](./Remove-"
+"CAAuthorityInformationAccess.md)"

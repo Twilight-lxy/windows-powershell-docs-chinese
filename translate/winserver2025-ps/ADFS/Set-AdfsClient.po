@@ -1,0 +1,242 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:28:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AdfsClient"
+msgstr "# Set-AdfsClient"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Modifies registration settings for an OAuth 2.0 client registered with AD "
+"FS."
+msgstr "修改通过 AD FS 注册的 OAuth 2.0 客户端的注册设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### ClientId"
+msgstr "### ClientId"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AdfsClient** cmdlet modifies registration settings for an OAuth 2.0 client registered with Active Directory Federation Services (AD FS).\n"
+"Use this cmdlet to modify the settings, including the client identifier, redirection URI, name, or description of the OAuth 2.0 client.\n"
+"You can also use this cmdlet to register additional redirection URIs for the OAuth 2.0 client."
+msgstr ""
+"`Set-AdfsClient` cmdlet 用于修改在 Active Directory Federation Services (AD FS) "
+"中注册的 OAuth 2.0 客户端的注册设置。您可以使用此 cmdlet 来更改客户端标识符、重定向 URI、名称或描述等设置，还可以为该 OAuth"
+" 2.0 客户端注册额外的重定向 URI。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify the redirection URI"
+msgstr "### 示例 1：修改重定向 URI"
+
+msgid ""
+"This command changes the redirection URI for the OAuth 2.0 client currently "
+"registered with AD FS with the name Payroll Application."
+msgstr "此命令会更改当前在 AD FS 中注册的名为“Payroll Application”的 OAuth 2.0 客户端的重定向 URI。"
+
+msgid "### Example 2:  Rename an OAuth 2.0 client"
+msgstr "### 示例 2：重命名一个 OAuth 2.0 客户端"
+
+msgid ""
+"This command renames the OAuth 2.0 client currently registered with AD FS "
+"with the name Payroll Application."
+msgstr "此命令将当前在 AD FS 中注册的 OAuth 2.0 客户端的名称更改为“Payroll Application”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an Active Directory user principal name."
+msgstr "指定一个 Active Directory 用户主体名称（User Principal Name）。"
+
+msgid ""
+"Specifies a string.\n"
+"The cmdlet modifies the OAuth 2.0 client registration information with the identifier that you specify."
+msgstr "指定一个字符串。该cmdlet会使用您指定的标识符来修改OAuth 2.0客户端的注册信息。"
+
+msgid ""
+"Specifies a description.\n"
+"The cmdlet modifies the OAuth 2.0 client registration information with the description that you specify."
+msgstr "指定一个描述性文字。该cmdlet会根据您提供的描述来修改OAuth 2.0客户端注册信息。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "该参数的可接受值为："
+
+msgid ""
+"Specifies the logout URI for the OAuth 2.0 client to register with the AD "
+"FS. When AD FS initiates a logout it redirects the client's user-agent to "
+"this URI by rendering this URI in an iframe. The value of this parameter "
+"must be an absolute URI, may include a query component, and must not include"
+" a fragment component. This parameter is available with the Windows Update "
+"KB4038801 installed."
+msgstr ""
+"指定 OAuth 2.0 客户端用于向 AD FS 注册的登出（logout）URI。当 AD FS 启动登出流程时，它会通过在一个 iframe "
+"中显示该 URI 来将客户端用户的用户代理（user-agent）重定向到该 URI。此参数的值必须是一个绝对 URI，可以包含查询组件（query "
+"component），但不允许包含片段组件（fragment component）。只有在安装了 Windows Update KB4038801 "
+"之后，此参数才可用。"
+
+msgid ""
+"Specifies a name.\n"
+"The cmdlet modifies the OAuth 2.0 client registration information with the name that you specify."
+msgstr "用于指定一个名称。该cmdlet会根据您指定的名称来修改OAuth 2.0客户端注册信息。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies one or more redirection URIs.\n"
+"The cmdlet modifies the OAuth 2.0 client registration information with the redirection URIs that you specify."
+msgstr "指定一个或多个重定向 URI。此 cmdlet 会根据您指定的重定向 URI 来修改 OAuth 2.0 客户端注册信息。"
+
+msgid ""
+"The OAuth 2.0 client uses the redirection URI when the client requests authorization to access a resource secured by AD FS.\n"
+"You may register multiple redirection URIs for a single client identifier.\n"
+"The redirection URI must be a valid URI."
+msgstr ""
+"OAuth 2.0 客户端在请求访问由 AD FS 保护的资源时，会使用重定向 URI。您可以为一个客户端标识符注册多个重定向 URI。重定向 URI "
+"必须是一个有效的 URI。"
+
+msgid ""
+"The redirection URI specified by the client must already be registered with  AD FS and must correspond to the client identifier for that OAuth 2.0 client, in order for the client to be authorized to access the resource.\n"
+"If the client ID and redirection URI correspond to a pre-registered OAuth 2.0 client and the resource owner authorized access by providing their credentials,  AD FS will deliver the authorization code or access token by redirecting the client's user-agent back to this redirection URI."
+msgstr ""
+"客户端指定的重定向 URI必须已经注册在 AD FS（Active Directory Federation Services）中，并且必须与该 "
+"OAuth 2.0 客户端的标识符相对应，这样才能授权该客户端访问相应的资源。如果客户端 ID 和重定向 URI 对应于一个预先注册的 OAuth "
+"2.0 客户端，并且资源所有者通过提供自己的凭据来授权访问权限，那么 AD FS 将通过将客户端的用户代理（user-agent）重定向到这个重定向 "
+"URI 来提供授权代码或访问令牌。"
+
+msgid ""
+"Ensure that the value of the RedirectUri parameter matches exactly the redirection URI that will be specified by the OAuth 2.0 client when requesting authorization, including trailing slashes (/), if required.\n"
+"Use more secure schemes, such as https, when you specify a redirection URI."
+msgstr ""
+"请确保 `RedirectUri` 参数的值与 OAuth 2.0 客户端在请求授权时指定的重定向 URI 完全匹配（包括末尾的斜杠 "
+"`/`，如果需要的话）。在指定重定向 URI 时，请使用更安全的协议，例如 https。"
+
+msgid ""
+"For Windows Store applications that authenticate using the Windows Web Authentication Broker, use the 'ms-app://' scheme when registering a redirect URI.\n"
+"For example, ms-app://s-1-15-2-1101140336-4090662585-1905587327-262951538-2732256205-1306401843-4235927180/ is a redirect URI for a Windows Store application.\n"
+"If you are developing a Windows Store application, you can obtain the redirect URI for your application using the following code fragment:"
+msgstr ""
+"对于使用 Windows Web Authentication Broker 进行身份验证的 Windows 应用程序，在注册重定向 URI 时，请使用"
+" ‘ms-app:/’ 方案。例如，`ms-"
+"app://s-1-15-2-1101140336-4090662585-1905587327-262951538-2732256205-1306401843-4235927180/`"
+" 是一个 Windows 应用程序的重定向 URI。如果您正在开发 Windows 应用程序，可以使用以下代码片段来获取应用程序的重定向 URI："
+
+msgid ""
+"`Uri redirectURI = "
+"Windows.Security.Authentication.Web.WebAuthenticationBroker.GetCurrentApplicationCallbackUri();`"
+msgstr ""
+"```csharp\n"
+"Uri redirectURI = Windows.Security Authentication.Web.WebAuthenticationBrokerGetCurrentApplicationCallbackUri();\n"
+"```"
+
+msgid "Specifies the registered OAuth 2.0 client to modify."
+msgstr "指定要修改的已注册的OAuth 2.0客户端。"
+
+msgid ""
+"Specifies the client identifier for the registered OAuth 2.0 client to "
+"modify."
+msgstr "指定要修改的已注册 OAuth 2.0 客户端的客户端标识符。"
+
+msgid "Specifies the name of the registered OAuth 2.0 client to modify."
+msgstr "指定要修改的已注册的 OAuth 2.0 客户端的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.AdfsClient"
+msgstr "### MicrosoftIdentityServer.Management.Resources.AdfsClient"
+
+msgid "AdfsClient objects are received by the *TargetClient* parameter."
+msgstr "`AdfsClient` 对象是通过 `*TargetClient*` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *ClientId*, *Description*, *Name*, "
+"*RedirectUri*, *TargetClientId*, and *TargetName* parameters."
+msgstr ""
+"字符串对象通过 *ClientId*、*Description*、*Name*、*RedirectUri*、*TargetClientId* 和 "
+"*TargetName* 这些参数被接收。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.AdfsClient"
+msgstr "### MicrosoftIdentityServer.Management.Resources.AdfsClient"
+
+msgid ""
+"Returns the updated AdfsClient object when the *PassThru* parameter is "
+"specified. By default, this cmdlet does not generate any output."
+msgstr "当指定*PassThru*参数时，该命令会返回更新后的AdfsClient对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsClient](./Add-AdfsClient.md)"
+msgstr "[Add-AdfsClient](./Add-AdfsClient.md)"
+
+msgid "[Disable-AdfsClient](./Disable-AdfsClient.md)"
+msgstr "[ Disable-AdfsClient](./Disable-AdfsClient.md)"
+
+msgid "[Enable-AdfsClient](./Enable-AdfsClient.md)"
+msgstr "[Enable-AdfsClient](./Enable-AdfsClient.md)"
+
+msgid "[Get-AdfsClient](./Get-AdfsClient.md)"
+msgstr "[Get-AdfsClient](./Get-AdfsClient.md)"
+
+msgid "[Remove-AdfsClient](./Remove-AdfsClient.md)"
+msgstr "[Remove-AdfsClient](./Remove-AdfsClient.md)"

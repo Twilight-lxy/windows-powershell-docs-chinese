@@ -1,0 +1,119 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:17:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AdfsGlobalWebContent"
+msgstr "# 移除 AdfsGlobalWebContent"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes a global web content object."
+msgstr "删除一个全局性的网页内容对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### IdentifierName (Default)"
+msgstr "### IdentifierName（默认值）"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-AdfsGlobalWebContent** cmdlet removes a global web content object that corresponds to a locale.\n"
+"If you do not specify the *Locale* parameter, the cmdlet removes the global web content object of the invariant locale.\n"
+"Active Directory Federation Services (AD FS) reverts to its default values when you remove all the global web content objects."
+msgstr ""
+"`Remove-AdfsGlobalWebContent` cmdlet 用于删除与某个区域设置（locale）相对应的全局网页内容对象。如果您不指定 "
+"`Locale` 参数，该 cmdlet 将删除与默认区域设置相关的全局网页内容对象。当所有全局网页内容对象都被删除后，Active Directory"
+" Federation Services (AD FS) 会恢复到其默认配置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove the global web content for the invariant locale"
+msgstr "### 示例 1：移除与不变区域设置（invariant locale）相关的全局网页内容"
+
+msgid ""
+"This command removes the global web content object that corresponds to the "
+"invariant locale."
+msgstr "此命令会删除与不变区域设置（invariant locale）相对应的全局网页内容对象。"
+
+msgid "### Example 2: Remove the global web content for a locale"
+msgstr "### 示例 2：移除特定语言环境下的全局网页内容"
+
+msgid ""
+"This command removes the global web content object that corresponds to en-us"
+" locale."
+msgstr "此命令会删除与“en-us”区域设置相对应的全局Web内容对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a locale.\n"
+"The cmdlet removes the global web content that corresponds to the locale that you specify."
+msgstr "用于指定一个区域设置（locale）。该cmdlet会删除与该区域设置相对应的全局网页内容。"
+
+msgid ""
+"Specifies the **AdfsGlobalWebContent** object to remove.\n"
+"To obtain an **AdfsGlobalWebContent** object, use the **Get-AdfsGlobalWebContent** cmdlet."
+msgstr ""
+"指定要删除的 **AdfsGlobalWebContent** 对象。若要获取一个 **AdfsGlobalWebContent** 对象，请使用 "
+"**Get-AdfsGlobalWebContent** cmdlet。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsGlobalWebContent](./Get-AdfsGlobalWebContent.md)"
+msgstr "[Get-AdfsGlobalWebContent](./Get-AdfsGlobalWebContent.md)"
+
+msgid "[Set-AdfsGlobalWebContent](./Set-AdfsGlobalWebContent.md)"
+msgstr "[Set-AdfsGlobalWebContent](./Set-AdfsGlobalWebContent.md)"
+
+msgid "[Remove-AdfsGlobalWebContent](./Remove-AdfsGlobalWebContent.md)"
+msgstr "[Remove-AdfsGlobalWebContent](./Remove-AdfsGlobalWebContent.md)"

@@ -1,0 +1,283 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:10:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Describes the syntax and behavior of the search filter supported by the "
+"Active Directory module for Windows PowerShell."
+msgstr "描述了 Windows PowerShell 的 Active Directory 模块所支持的搜索过滤器的的语法及其行为。"
+
+msgid "# about_ActiveDirectory_Filter"
+msgstr "# 关于 ActiveDirectoryFilter"
+
+msgid "## SHORT DESCRIPTION"
+msgstr "## 简要描述"
+
+msgid ""
+"Describes the syntax and behavior of the search filter supported by the Active\n"
+"Directory module for Windows PowerShell."
+msgstr "描述了 Windows PowerShell 中 Active Directory 模块支持的搜索过滤器的语法和行为。"
+
+msgid "## LONG DESCRIPTION"
+msgstr "## 详细描述"
+
+msgid ""
+"Most get-AD* Active Directory module cmdlets use the Filter parameter to search\n"
+"for objects. The Filter parameter has been implemented to replace the function\n"
+"of the LDAP Filter and adds support for PowerShell variables, rich data types,\n"
+"improved error checking and an Active Directory extended form of the PowerShell\n"
+"Expression Language."
+msgstr ""
+"大多数用于操作 Active Directory 的 get-AD* 模块 cmdlet 都使用 Filter 参数来搜索对象。Filter "
+"参数的实现目的是替代 LDAP 过滤器的功能，并增加了对 PowerShell 变量、丰富数据类型的支持，改进了错误检查机制，同时还采用了扩展版的 "
+"PowerShell 表达式语言（Active Directory Extended Form of PowerShell Expression "
+"Language）。"
+
+msgid ""
+"  The LDAP filter syntax is supported through the **LDAPFilter** parameter. You\n"
+"  will find LDAP filter examples along with the new Active Directory module\n"
+"  filter examples in the Filter Examples section of this topic."
+msgstr ""
+"通过 `LDAPFilter` 参数可以支持 LDAP 过滤语法。您可以在本主题的“过滤示例”部分找到 LDAP 过滤器的示例，以及新的 Active "
+"Directory 模块中的过滤器示例。"
+
+msgid ""
+"  The breadth and depth of your filter-driven search can be modified by two\n"
+"  Active Directory module cmdlet parameters: **SearchBase** and **SearchScope**."
+msgstr ""
+"您通过过滤器驱动的搜索的范围和深度可以通过两个 Active Directory 模块cmdlet参数来修改：**SearchBase** 和 "
+"**SearchScope**。"
+
+msgid ""
+"  When within the context of the Active Directory provider, if the\n"
+"  **Searchbase** parameter is not specified, **SearchBase** will default to the\n"
+"  current path. When not running under the Active Directory provider, the\n"
+"  **SearchBase** will default to the server's **DefaultNamingContext**."
+msgstr ""
+"在 Active Directory 提供者的上下文中，如果未指定 **SearchBase** 参数，**SearchBase** "
+"将默认为当前路径。当不在 Active Directory 提供者下运行时，**SearchBase** 将默认为服务器的 "
+"**DefaultNamingContext**。"
+
+msgid ""
+"  The **SearchScope** parameter defaults to the value `Subtree`, of the\n"
+"  enumerated type **ADSearchScope**."
+msgstr "`SearchScope` 参数的默认值为 `Subtree`，该值属于枚举类型 `ADSearchScope`。"
+
+msgid ""
+"  For more information, see the **SearchBase** and **SearchScope** parameter\n"
+"  descriptions on any `Get-AD*` cmdlet."
+msgstr ""
+"有关更多信息，请参阅任何 `Get-AD*` cmdlet 中的 **SearchBase** 和 **SearchScope** 参数描述。"
+
+msgid ""
+"  The behavior of the Active Directory module when returning results of a\n"
+"  search is modified by two cmdlet parameters: **ResultPageSize** and\n"
+"  **ResultSetSize**."
+msgstr ""
+"Active Directory模块在返回搜索结果时的行为会受到两个cmdlet参数的影响：**ResultPageSize** 和 "
+"**ResultSetSize**。"
+
+msgid "  **ResultSetSize** controls the maximum number of returned objects."
+msgstr "`ResultSetSize` 控制返回的对象的最大数量。"
+
+msgid ""
+"  **ResultPageSize** specifies the maximum number of objects for each returned\n"
+"  page of information."
+msgstr "`ResultPageSize` 指定了每页返回的信息中对象的最大数量。"
+
+msgid ""
+"  See the **ResultPageSize** and **ResultSetSize** parameter descriptions on\n"
+"  any `Get-AD*` cmdlet for more information."
+msgstr ""
+"有关更多信息，请参阅任何 `Get-AD*` cmdlet 中的 **ResultPageSize** 和 **ResultSetSize** "
+"参数描述。"
+
+msgid ""
+"  The following statements specify timeout conditions within the Active\n"
+"  Directory module and describe what can be done about a timeout them."
+msgstr "以下语句指定了 Active Directory 模块中的超时条件，并描述了针对这些超时情况可以采取的措施。"
+
+msgid ""
+"  The default Active Directory module timeout for all operations is 2\n"
+"  minutes."
+msgstr "所有操作的默认Active Directory模块超时时间为2分钟。"
+
+msgid ""
+"  For search operation, the Active Directory module uses paging control\n"
+"  with a 2-minute timeout for each page search."
+msgstr "对于搜索操作，Active Directory模块使用分页控制机制，并且每次页面搜索的超时时间为2分钟。"
+
+msgid ""
+"  > [!NOTE]\n"
+"  > Because a search may involve multiple server page requests the overall\n"
+"  > search time may exceed 2 minutes."
+msgstr "> [!注意] > 由于搜索过程可能涉及多次向服务器发起页面请求，因此整个搜索时间可能会超过2分钟。"
+
+msgid "  A **TimeoutException** error indicates that a timeout has occurred."
+msgstr "一个 **TimeoutException** 错误表示发生了超时现象。"
+
+msgid ""
+"  For a search operation, you can choose to use a smaller page size, set with\n"
+"  the **ResultPageSize** parameter, if you are getting a **TimeoutException**\n"
+"  error."
+msgstr ""
+"在进行搜索操作时，如果您遇到了 **TimeoutException** 错误，可以选择使用更小的页面大小。您可以通过设置 "
+"**ResultPageSize** 参数来调整页面大小。"
+
+msgid ""
+"  If after trying these changes you are still getting a **TimeoutException**\n"
+"  error, consider optimizing your filter using the guidance in the\n"
+"  Optimizing Filters section of this topic."
+msgstr "如果尝试了这些更改后仍然出现 **TimeoutException** 错误，请参考本主题中“优化过滤器”部分的指导来优化您的过滤器。"
+
+msgid ""
+"  You can enhance the search filter behavior by using these guidelines."
+msgstr "你可以按照这些指导原则来改进搜索过滤器的功能。"
+
+msgid ""
+"  For a full description of filter syntax and usage, see the Filter Syntax\n"
+"  section of this topic."
+msgstr "有关过滤器语法和用法的完整描述，请参阅本主题中的“过滤器语法”部分。"
+
+msgid "## Filter Examples"
+msgstr "## 过滤器示例"
+
+msgid ""
+"The following section shows many examples of filter use in common queries."
+msgstr "以下部分展示了在常见查询中如何使用过滤器的许多示例。"
+
+msgid "### Example 1 - Get all entries:"
+msgstr "### 示例 1 - 获取所有条目："
+
+msgid ""
+"### Example 2 - Get entries containing \"bob\" somewhere in the common name"
+msgstr "### 示例 2 - 获取在常用名称中包含“bob”的条目"
+
+msgid ""
+"### Example 3 - Get entries with a bad password count greater than five"
+msgstr "### 示例 3 - 获取密码错误次数超过五次的条目"
+
+msgid "### Example 4 - Get all users with an e-mail attribute"
+msgstr "### 示例 4 – 获取所有具有电子邮件属性的用户"
+
+msgid "-or-"
+msgstr "或者"
+
+msgid ""
+"### Example 5 - Get all user entries with an e-mail attribute and a surname "
+"equal to \"smith\":"
+msgstr "### 示例 5 - 获取所有具有电子邮件属性（email）且姓氏（surname）等于“smith”的用户记录："
+
+msgid "-or-"
+msgstr "或者"
+
+msgid ""
+"### Example 6 - Get all user entries with a common name that starts with "
+"\"andy\" and users with a common name of \"steve\" or \"margaret\""
+msgstr ""
+"### 示例 6 – 获取所有名字以 “andy” 开头且具有相同名称的用户记录，以及名字为 “steve” 或 “margaret”的用户记录"
+
+msgid ""
+"This example demonstrates a more complex logic and the use of precedence\n"
+"control via parenthesis."
+msgstr "这个示例展示了更复杂的逻辑，并说明了如何通过括号来实现优先级控制。"
+
+msgid "### Example 7 - Get all entries without an e-mail attribute"
+msgstr "### 示例 7 – 获取所有没有电子邮件属性的条目"
+
+msgid "-or-"
+msgstr "或者"
+
+msgid "### Example 8 - Get all users who did not logon since January 1, 2007"
+msgstr "### 示例 8 - 获取所有自 2007 年 1 月 1 日以来未登录过的用户"
+
+msgid "### Example 9 - Get all users who have logged on in the last 5 days"
+msgstr "### 示例 9 - 获取在过去 5 天内登录过的所有用户"
+
+msgid ""
+"The following example query string searches for group objects that have the\n"
+"ADS_GROUP_TYPE_SECURITY_ENABLED flag set. Be aware that the decimal value of\n"
+"ADS_GROUP_TYPE_SECURITY_ENABLED (0x80000000 = 2147483648) is used for the\n"
+"comparison value."
+msgstr ""
+"以下示例查询字符串用于搜索那些设置了 `ADS_GROUP_TYPE_security_ENABLED` 标志的组对象。请注意，用于比较的值是 "
+"`ADS_GROUP_TYPE SECURITYEnabled` 的十进制表示（0x80000000 = 2147483648）。"
+
+msgid "### Example 11 - Search the ancestry of an object"
+msgstr "### 示例 11 – 查找某个对象的起源信息"
+
+msgid ""
+"The LDAP_MATCHING_RULE_IN_CHAIN is a matching rule OID that is designed to\n"
+"provide a method to look up the ancestry of an object. Many applications using\n"
+"Active Directory and AD LDS usually work with hierarchical data, which is\n"
+"ordered by parent-child relationships. Previously, applications performed\n"
+"transitive group expansion to figure out group membership, which used a lot of\n"
+"network bandwidth. Applications made multiple round-trips to figure out if an\n"
+"object fell \"in the chain\" if a link were traversed through to the end."
+msgstr ""
+"`LDAP_MATCHING_RULE_INCHAIN` 是一个用于匹配的规则 OID（Object "
+"Identifier），其设计目的是提供一种方法来查找某个对象的“祖先”关系（即该对象所属的层级结构）。许多使用 Active Directory 和 "
+"AD LDS 的应用程序通常处理的是具有父子关系的层次化数据。在过去，这些应用程序会通过执行“传递性组扩展”（transitive group "
+"expansion）操作来确定对象的组成员身份，这一过程会消耗大量网络带宽。为了判断某个对象是否属于某个组，应用程序需要多次进行网络请求（往返通信），以确认是否能够沿着层级链一直访问到该组的根节点。"
+
+msgid ""
+"An example of such a query is one designed to check if a user, \"user1\" is a\n"
+"member of group \"group1\". \"user1\" may not be a direct member of group1. It\n"
+"could be a member of some other group, which is a member of \"group1\"."
+msgstr ""
+"这样一个查询的例子是用来检查用户“user1”是否属于组“group1”。用户“user1”可能不是组“group1”的直接成员，它可能是某个其他组的成员，而那个其他组又是组“group1”的成员。"
+
+msgid ""
+"You would set the base to the user DN and the scope to base, and use the "
+"query:"
+msgstr ""
+"您可以将基础（base）设置为用户的 DN（Distinguished Name），范围（scope）也设置为“base”，然后使用以下查询："
+
+msgid "## Filter Syntax"
+msgstr "## 过滤器语法"
+
+msgid ""
+"The following syntax descriptions use Backus-Naur form to show the PowerShell\n"
+"Expression Language for the Filter parameter."
+msgstr "以下语法描述使用了巴克斯-诺尔（Backus-Naur）形式来展示用于 `Filter` 参数的 PowerShell 表达式语言。"
+
+msgid "## Supported Operators"
+msgstr "## 支持的操作符"
+
+msgid "The following table shows frequently used search filter operators."
+msgstr "下表展示了常用的搜索过滤器操作符。"
+
+msgid ""
+"> [!NOTE]\n"
+"> PowerShell wildcards, other than \"*\", such as \"?\" are not supported by the\n"
+"> **Filter** parameter syntax."
+msgstr "> [!注意] > 除了“*”之外，PowerShell中的通配符（如“?”）不支持**Filter**参数语法。"
+
+msgid "### Operator Precedence"
+msgstr "### 运算符优先级"
+
+msgid ""
+"The following listing shows the precedence of operators for filters from\n"
+"highest to lowest."
+msgstr "以下列表显示了过滤器中运算符的优先级，从高到低排列。"
+
+msgid "### Special Characters"
+msgstr "### 特殊字符"
+
+msgid ""
+"The following escape sequence should be used for specifying special characters\n"
+"in AD Filter STRING data, that is, data enclosed in double or single quotes."
+msgstr "在 AD 过滤器字符串数据中（即被双引号或单引号括起来的数据），应使用以下转义序列来表示特殊字符。"
+
+msgid "### LDAP Special Characters"
+msgstr "### LDAP特殊字符"
+
+msgid ""
+"ADFilter parser will automatically convert all the below characters found in\n"
+"STRING data, that is data enclosed in \" \" or ' ' to their LDAP escape sequence.\n"
+"End users need not know about these LDAP escape sequence."
+msgstr ""
+"ADFilter解析器会自动将STRING数据中出现的所有以下字符（即用“”或‘’括起来的数据）转换为其LDAP转义序列。最终用户无需了解这些LDAP转义序列。"

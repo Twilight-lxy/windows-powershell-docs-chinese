@@ -1,0 +1,220 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:31:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Move-ADObject"
+msgstr "# 移动 AD 对象"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Moves an Active Directory object or a container of objects to a different "
+"container or domain."
+msgstr "将一个 Active Directory 对象或其对象容器移动到另一个容器或域中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Move-ADObject** cmdlet moves an object or a container of objects from "
+"one container to another or from one domain to another within the same "
+"forest."
+msgstr ""
+"`Move-ADObject` cmdlet "
+"可以将一个对象或包含多个对象的容器从一个容器移动到另一个容器，或者在同一林（forest）内的不同域之间进行移动。"
+
+msgid ""
+"When an object is moved between domains, both the source DC and the target "
+"DC need to be the RID Master of their domains. If a different DC is being "
+"used, you will receive the following error:"
+msgstr "当一个对象在不同的域之间移动时，源DC和目标DC都需要成为各自所在域的RID Master。如果使用了其他DC，将会出现以下错误："
+
+msgid ""
+"move-adobject : The requested operation could not be performed because the "
+"directory service is not the master for that type of operation"
+msgstr "`move-adobject`：无法执行所请求的操作，因为目录服务不是该类型操作的主管（即不具备执行该操作所需的权限或状态）。"
+
+msgid ""
+"The *Identity* parameter specifies the Active Directory object or container to move.\n"
+"You can identify an object or container by its distinguished name or GUID.\n"
+"You can also set the *Identity* parameter to an object variable such as `$<localObject>`, or you can pass an object through the pipeline to the *Identity* parameter.\n"
+"For example, you can use the **Get-ADObject** cmdlet to retrieve an object and then pass the object through the pipeline to the Move-ADObject cmdlet.\n"
+"You can also use the **Get-ADGroup**, **Get-ADUser**, **Get-ADComputer**, **Get-ADServiceAccount**, **Get-ADOrganizationalUnit**, and **Get-ADFineGrainedPasswordPolicy** cmdlets to get an object that you can pass through the pipeline to this cmdlet."
+msgstr ""
+"`Identity` 参数用于指定要移动的 Active Directory 对象或容器。您可以通过该对象或容器的唯一名称（distinguished "
+"name）或 GUID 来识别它。此外，您还可以将 `Identity` 参数设置为一个对象变量（例如 "
+"`$<localObject>`），或者通过管道将某个对象传递给 `Identity` 参数。例如，您可以使用 **Get-ADObject** "
+"cmdlet 获取一个对象，然后将该对象通过管道传递给 `Move-ADObject` cmdlet。同时，您也可以使用 **Get-"
+"ADGroup**、**Get-ADUser**、**Get-ADComputer**、**Get-ADServiceAccount**、**Get-"
+"ADOrganizationalUnit** 和 **Get-ADFineGrainedPasswordPolicy** cmdlets "
+"来获取对象，并将这些对象通过管道传递给 `Move-ADObject` cmdlet。"
+
+msgid ""
+"The *TargetPath* parameter must be specified.\n"
+"This parameter identifies the new location for the object or container."
+msgstr "必须指定 *TargetPath* 参数。该参数用于确定对象或容器的新位置。"
+
+msgid ""
+"The cmdlet also moves the password when a user or computer object is moved "
+"across domains within a forest."
+msgstr "当用户或计算机对象在森林内的不同域之间移动时，该cmdlet也会同时更新相应的密码。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Move an OU to a new location"
+msgstr "### 示例 1：将一个组织单元（OU）移动到新的位置"
+
+msgid ""
+"This command moves the organizational unit (OU) ManagedGroups to a new location.\n"
+"The OU ManagedGroups must not be protected from accidental deletion for the successful move."
+msgstr ""
+"该命令将名为“ManagedGroups”的组织单元（Organizational Unit, "
+"OU）移动到新的位置。为了成功完成迁移，必须确保这个名为“ManagedGroups”的组织单元不会被设置为防止意外删除的状态。"
+
+msgid "### Example 2: Move an object to a new location"
+msgstr "### 示例 2：将一个对象移动到新的位置"
+
+msgid ""
+"This command moves the object identified by the specified GUID to the new "
+"location."
+msgstr "此命令将由指定 GUID 标识的对象移动到新位置。"
+
+msgid "### Example 3: Move an object to a location specified by GUID"
+msgstr "### 示例 3：将对象移动到由 GUID 指定的位置"
+
+msgid ""
+"This command moves an object to a new location.\n"
+"Both the object and the target path are specified using GUIDs."
+msgstr "此命令将一个对象移动到新的位置。对象和目标路径都是使用 GUID（全局唯一标识符）来指定的。"
+
+msgid "### Example 4: Move an object specified by distinguished name"
+msgstr "### 示例 4：移动通过唯一名称指定的对象"
+
+msgid ""
+"This command moves an object with the distinguished name CN=Peter "
+"Bankov,OU=Accounting,DC=Fabrikam,DC=com to a different domain."
+msgstr ""
+"这个命令会将一个对象移动到另一个域中。该对象的唯一名称为：CN=Peter Bankov, OU=Accounting, DC=Fabrikam, "
+"DC=com。"
+
+msgid "### Example 5: Move an object in an AD LDS instance"
+msgstr "### 示例 5：在 AD LDS 实例中移动对象"
+
+msgid "This command moves an object to a new location in an AD LDS instance."
+msgstr "此命令将一个对象移动到 AD LDS 实例中的新位置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的身份验证方法。该参数的可接受值为："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果是从这样的驱动器中运行该 cmdlet，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01/User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，该 cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"*Credential* 参数设置为这个 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, the Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果该执行任务的账号没有目录级别的权限，那么用于 Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory object by providing one of the following property values.\n"
+"The identifier in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory "
+"对象。括号中的标识符是该属性的轻量级目录访问协议（LDAP）显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"该cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，该cmdlet会返回一个非终止性的错误（即无法继续执行的错误）。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为一个对象实例。"
+
+msgid "Derived types, such as the following, are also accepted:"
+msgstr "也接受派生类型，例如以下这些："
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADObject](./Get-ADObject.md)"
+msgstr "[Get-ADObject](./Get-ADObject.md)"
+
+msgid "[New-ADObject](./New-ADObject.md)"
+msgstr "[New-ADObject](./New-ADObject.md)"
+
+msgid "[Remove-ADObject](./Remove-ADObject.md)"
+msgstr "[Remove-ADObject](./Remove-ADObject.md)"
+
+msgid "[Rename-ADObject](./Rename-ADObject.md)"
+msgstr "[重命名 AD 对象](./Rename-ADObject.md)"
+
+msgid "[Restore-ADObject](./Restore-ADObject.md)"
+msgstr "[恢复AD对象](./Restore-ADObject.md)"
+
+msgid "[Set-ADObject](./Set-ADObject.md)"
+msgstr "[Set-ADObject](./Set-ADObject.md)"
+
+msgid "[Sync-ADObject](./Sync-ADObject.md)"
+msgstr "[Sync-ADObject](./Sync-ADObject.md)"

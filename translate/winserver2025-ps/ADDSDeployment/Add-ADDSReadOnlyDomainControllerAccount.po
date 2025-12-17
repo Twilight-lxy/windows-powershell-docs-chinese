@@ -1,0 +1,179 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:23:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ADDSReadOnlyDomainControllerAccount"
+msgstr "# 添加 AD DS 仅读域控制器账户"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Creates a RODC account that can be used to install an RODC in Active "
+"Directory."
+msgstr ""
+"创建一个 RODC（Replica Operating Domain Controller）账户，该账户可用于在 Active Directory "
+"中安装 RODC。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Add-ADDSReadOnlyDomainControllerAccount` cmdlet creates a read-only domain controller (RODC)\n"
+"account that can be used to install an RODC in Active Directory."
+msgstr ""
+"`Add-ADDSReadOnlyDomainControllerAccount` cmdlet "
+"用于创建一个只读域控制器（RODC）账户，该账户可用于在 Active Directory 中安装 RODC。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a RODC account"
+msgstr "### 示例 1：添加一个 RODC 账户"
+
+msgid ""
+"This command adds a RODC account to the `corp.contoso.com` domain using the North America site as the\n"
+"source site for the replication source domain controller."
+msgstr "此命令使用北美站点作为复制源域控制器的源站点，将一个RODC账户添加到`corp.contoso.com`域名中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of user accounts, group accounts, and computer accounts whose passwords can be\n"
+"replicated to this RODC. Use None if you want to keep the value empty. By default, only the Allowed\n"
+"RODC Password Replication Group is allowed, and it is originally created empty."
+msgstr ""
+"指定一个用户账户、组账户和计算机账户的数组，这些账户的密码可以复制到这个RODC（Replicated Operations Domain "
+"Controller）中。如果希望该数组为空，请使用“None”。默认情况下，只有“Allowed RODC Password Replication "
+"Group”（允许的RODC密码复制组）是可用的，而该组最初是创建时为空的。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Specifies the user name and password that corresponds to the account used to install the domain\n"
+"controller. Specify the `Get-Credential` cmdlet when using this parameter to prompt the user to\n"
+"supply a password."
+msgstr "指定用于安装域控制器的账户的用户名和密码。在使用此参数时，请使用 `Get-Credential` cmdlet 来提示用户输入密码。"
+
+msgid ""
+"Specifies the name of the user or group that installs and administers the "
+"RODC."
+msgstr "指定安装和管理 RODC 的用户或组的名称。"
+
+msgid ""
+"Specifies the names of user accounts, group accounts, and computer accounts whose passwords are not\n"
+"to be replicated to this RODC. Use None if you do not want to deny the replication of credentials of\n"
+"any users or computers. By default, Administrators, Server Operators, Backup Operators, Account\n"
+"Operators, and the Denied RODC Password Replication Group are denied. By default, the Denied RODC\n"
+"Password Replication Group includes Cert Publishers, Domain Admins, Enterprise Admins, Enterprise\n"
+"Domain Controllers, Enterprise Read-Only Domain Controllers, Group Policy Creator Owners, the krbtgt\n"
+"account, and Schema Admins."
+msgstr ""
+"指定那些用户账户、组账户和计算机账户的名称，这些账户的密码将不会被复制到这个 RODC（Replicated Operations Domain "
+"Controller）中。如果您不希望拒绝任何用户或计算机的凭据复制，请使用“None”。默认情况下，管理员（Administrators）、服务器操作员（Server"
+" Operators）、备份操作员（Backup Operators）、账户操作员（Account Operators）以及“Denied RODC "
+"Password Replication Group”组会被禁止访问该功能。这个“Denied RODC Password Replication "
+"Group”组包括证书发布者（Cert Publishers）、域管理员（Domain Admins）、企业级管理员（Enterprise "
+"Admins）、企业级只读域控制器（Enterprise Read-Only Domain Controllers）、组策略创建者所有者（Group "
+"Policy Creator Owners）、krbtgt 账户以及架构管理员（Schema Admins）。"
+
+msgid "Specifies the name of the RODC account that this cmdlet creates."
+msgstr "指定此cmdlet创建的RODC账户的名称。"
+
+msgid ""
+"Specifies the domain name for the user name for the operation. This parameter is required. It also\n"
+"helps to specify the forest where you plan to install the domain controller or create an RODC\n"
+"account."
+msgstr "指定用于操作的用户名的域名。此参数是必需的。它还有助于确定您计划安装域控制器或创建RODC账户的森林（domain tree）。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Indicates that the cmdlet installs the DNS Server service. If no value is provided, the default\n"
+"behavior is to automatically compute DNS configuration behavior based upon the existing environment."
+msgstr "表示该 cmdlet 用于安装 DNS 服务器服务。如果未提供任何值，默认行为将根据现有环境自动计算 DNS 配置设置。"
+
+msgid ""
+"Indicates that the cmdlet does not set the RODC as a global catalog server."
+msgstr "这表示该 cmdlet 不会将 RODC 设置为全局目录服务器。"
+
+msgid ""
+"Specifies the name of the domain controller to be used as the source for "
+"replicating to this RODC."
+msgstr "指定要用作复制到此RODC的源的域控制器的名称。"
+
+msgid ""
+"Specifies the name of an existing site where you can place the new domain "
+"controller."
+msgstr "指定一个现有站点的名称，在该站点上可以放置新的域控制器。"
+
+msgid ""
+"Indicates that the cmdlet executes only a base set of validations. This behavior is equivalent to\n"
+"the validations that were performed when using `Dcpromo.exe` in earlier versions of Windows Server\n"
+"to add a domain controller. When this switch parameter is set, it specifies that additional\n"
+"preliminary checks should be bypassed. For more information on the scope of these additional\n"
+"preliminary checks that the **ADDSDeployment** module performs by default when using Windows Server\n"
+"2012, refer to the table in the section ADPrep and Prerequisite Checking Architecture in\n"
+"[AD DS Simplified Administration](https://go.microsoft.com/fwlink/?LinkID=237244)."
+msgstr ""
+"该参数表示 cmdlet 仅执行一组基本的验证操作。这种行为相当于在早期版本的 Windows Server 中使用 `Dcpromo.exe` "
+"添加域控制器时所执行的验证过程。当设置此开关参数时，它表示应跳过一些额外的初步检查。有关 **ADDSDeployment** 模块在使用 "
+"Windows Server 2012 时默认执行的这些额外初步检查的详细信息，请参阅 [AD DS "
+"简化管理](https://go.microsoft.com/fwlink/?LinkID=237244) 中“ADPrep "
+"和先决条件检查架构”部分中的表格。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[AD DS Simplified "
+"Administration](https://go.microsoft.com/fwlink/?LinkID=237244)"
+msgstr "[简化 AD DS 管理](https://go.microsoft.com/fwlink/?LinkID=237244)"
+
+msgid "[Install-ADDSDomainController](./Install-ADDSDomainController.md)"
+msgstr "[安装 ADDSDomainController](./Install-ADDSDomainController.md)"
+
+msgid "[Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936)"
+msgstr "[获取凭据](https://go.microsoft.com/fwlink/?LinkID=293936)"

@@ -1,0 +1,144 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:49:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-AdfsClient"
+msgstr "# 禁用 AdfsClient"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Disables an OAuth 2.0 client that is currently registered with AD FS."
+msgstr "禁用当前已在 AD FS 中注册的 OAuth 2.0 客户端。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### ClientId"
+msgstr "### ClientId"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Disable-AdfsClient** cmdlet disables an OAuth 2.0 client that is currently registered with Active Directory Federation Services (AD FS).\n"
+"After you disable the client, AD FS no longer authorizes requests to access resources from that OAuth 2.0 client."
+msgstr ""
+"`Disable-AdfsClient` cmdlet 用于禁用当前已在 Active Directory Federation Services "
+"(AD FS) 中注册的 OAuth 2.0 客户端。禁用该客户端后，AD FS 将不再授权来自该 OAuth 2.0 客户端的资源访问请求。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable an OAuth 2.0 client"
+msgstr "### 示例 1：禁用一个 OAuth 2.0 客户端"
+
+msgid ""
+"This command disables the OAuth 2.0 client that is currently registered with"
+" AD FS."
+msgstr "此命令将禁用当前在 AD FS 中注册的 OAuth 2.0 客户端。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the registered OAuth 2.0 client to disable."
+msgstr "指定要禁用的已注册的 OAuth 2.0 客户端。"
+
+msgid ""
+"Specifies the client identifier of the registered OAuth 2.0 client to "
+"disable."
+msgstr "指定要禁用的已注册 OAuth 2.0 客户端的标识符。"
+
+msgid "Specifies the name of the registered OAuth 2.0 client to disable."
+msgstr "指定要禁用的已注册的 OAuth 2.0 客户端的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.AdfsClient"
+msgstr "### Microsoft.IdentityServer.ManagementResources.AdfsClient"
+
+msgid "AdfsClient objects are received by the *TargetClient* parameter."
+msgstr "`AdfsClient` 对象是通过 `*TargetClient` 参数接收到的。"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"String objects are received by the *TargetClientId* and *TargetName* "
+"parameters."
+msgstr "字符串对象是通过*TargetClientId*和*TargetName*参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.IdentityServer.Management.Resources.AdfsClient"
+msgstr "### MicrosoftIdentityServer.Management.Resources.AdfsClient"
+
+msgid ""
+"Returns the disabled AdfsClient object when the *PassThru* parameter is "
+"specified. By default, this cmdlet does not generate any output."
+msgstr "当指定*PassThru*参数时，该命令会返回一个处于禁用状态的AdfsClient对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsClient](./Add-AdfsClient.md)"
+msgstr "[Add-AdfsClient](./Add-AdfsClient.md)"
+
+msgid "[Enable-AdfsClient](./Enable-AdfsClient.md)"
+msgstr "[Enable-AdfsClient](./Enable-AdfsClient.md)"
+
+msgid "[Get-AdfsClient](./Get-AdfsClient.md)"
+msgstr "[Get-AdfsClient](./Get-AdfsClient.md)"
+
+msgid "[Remove-AdfsClient](./Remove-AdfsClient.md)"
+msgstr "[Remove-AdfsClient](./Remove-AdfsClient.md)"
+
+msgid "[Set-AdfsClient](./Set-AdfsClient.md)"
+msgstr "[Set-AdfsClient](./Set-AdfsClient.md)"

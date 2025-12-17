@@ -1,0 +1,92 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:22:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Revoke-AdfsProxyTrust"
+msgstr "# 撤销 AdfsProxyTrust 的信任关系"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Revokes trust for all federation server proxies configured for the "
+"Federation Service."
+msgstr ""
+"撤销对所有为联邦服务（Federation Service）配置的联邦服务器代理（federation server proxies）的信任。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Revoke-AdfsProxyTrust** cmdlet revokes trust for all federation server proxies by resetting the trust ID for the Federation Service.\n"
+"Use this cmdlet for lockdown purposes in the event of an attack or confirmed possible threat to your deployment.\n"
+"The cmdlet effectively revokes trust to all configured proxies immediately."
+msgstr ""
+"`Revoke-AdfsProxyTrust` 这个 cmdlet 通过重置 Federation Service 的信任 ID "
+"来撤销对所有联合服务器代理的信任。在发生攻击或确认存在威胁您的部署环境的情况下，可以使用此 cmdlet 实现安全封锁（即限制某些功能的访问）。该 "
+"cmdlet 会立即撤销对所有已配置代理的信任。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Revoke trust"
+msgstr "### 示例 1：撤销信任"
+
+msgid ""
+"This command revokes all trust between the current federation server and any"
+" of its configured federation server proxies."
+msgstr "此命令将撤销当前联邦服务器与其配置的所有联邦服务器代理之间的所有信任关系。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

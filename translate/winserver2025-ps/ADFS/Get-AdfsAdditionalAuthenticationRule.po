@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:56:55 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsAdditionalAuthenticationRule"
+msgstr "# 获取 Adfs 额外身份验证规则"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Retrieves the global rules that trigger additional authentication providers "
+"to be invoked."
+msgstr "检索用于触发调用其他身份验证提供程序的全局规则。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsAdditionalAuthenticationRule** cmdlet retrieves the global rules that govern all applications that trigger additional authentication providers to be invoked.\n"
+"When the claim engine evaluates the additional authentication rules and determines that multiple factor authentication is required, the user is prompted to perform additional authentication.\n"
+"Use this rule only when all your applications are capable of performing web based credential collection through Active Directory Federation Services (AD FS).\n"
+"Applications that use protocols like WS-Trust will fail to obtain a security token if the trigger is true as a result of evaluation of the rules."
+msgstr ""
+"**Get-AdfsAdditionalAuthenticationRule** cmdlet "
+"用于检索那些管理所有需要调用额外身份验证提供程序的应用程序的全局规则。当声明引擎评估这些额外身份验证规则并确定需要进行多因素身份验证时，系统会提示用户完成额外的身份验证过程。只有当您的所有应用程序都能通过"
+" Active Directory Federation Services (AD FS) 实现基于 Web "
+"的凭据收集时，才应使用此规则。如果由于规则的评估结果导致触发条件为真，那么使用 WS-Trust 等协议的应用程序将无法获取安全令牌。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Retrieve the global additional authentication rules"
+msgstr "### 示例 1：获取全局额外的身份验证规则"
+
+msgid ""
+"This command retrieves the global additional authentication rules configured for AD FS.\n"
+"The output of the command shows that multiple factor authentication is required for all extranet access and all devices that are not joined to a workplace."
+msgstr ""
+"此命令用于检索为 AD FS 配置的全局附加身份验证规则。命令的输出显示，所有外部网络访问以及所有未连接到工作场所的设备都需要进行多因素身份验证。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Set-AdfsAdditionalAuthenticationRule](./Set-"
+"AdfsAdditionalAuthenticationRule.md)"
+msgstr ""
+"[Set-AdfsAdditionalAuthenticationRule](./Set-"
+"AdfsAdditionalAuthenticationRule.md)"

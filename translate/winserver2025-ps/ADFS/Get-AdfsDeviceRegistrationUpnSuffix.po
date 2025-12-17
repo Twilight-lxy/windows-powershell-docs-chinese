@@ -1,0 +1,110 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:00:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AdfsDeviceRegistrationUpnSuffix"
+msgstr "# 获取 Adfs 设备注册的唯一标识符后缀（UPN Suffix）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the UPN suffixes that can be used with device registration."
+msgstr "获取可用于设备注册的 UPN 后缀。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AdfsDeviceRegistrationUpnSuffix** cmdlet gets all of the user principal name (UPN) suffixes that you can use when you register a device with Active Directory Federation Services (AD FS).\n"
+"The cmdlet returns a list of UPN suffixes and indicates whether a UPN suffix was discovered or manually configured by the administrator, and if the server has a valid SSL binding configured for the UPN suffix."
+msgstr ""
+"`Get-AdfsDeviceRegistrationUpnSuffix` 这个 cmdlet 可以获取所有可用于在 Active Directory "
+"Federation Services (AD FS) 中注册设备的用户主体名称（UPN）后缀。该 cmdlet 会返回一个包含 UPN "
+"后缀的列表，并说明这些后缀是自动检测到的还是由管理员手动配置的，同时还会显示服务器是否为该 UPN 后缀配置了有效的 SSL 绑定。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get the UPN suffixes for the device registration service"
+msgstr "### 示例 1：获取设备注册服务的 UPN 后缀"
+
+msgid ""
+"This command gets information on the UPN suffixes that are accepted by the "
+"Device Registration Service in AD FS."
+msgstr "此命令用于获取AD FS中的设备注册服务所接受的UPN后缀的相关信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.IdentityServer.Management.Commands.GetAdfsDeviceRegistrationUpnSuffix+DrsBinding"
+msgstr ""
+"### "
+"MicrosoftIdentityServer.ManagementCommands.GetAdfsDeviceRegistrationUpnSuffix+DrsBinding"
+
+msgid ""
+"Returns one or more DrsBinding objects that represent the device "
+"registration service UPN suffix resources for the Federation Service."
+msgstr ""
+"返回一个或多个 `DrsBinding` 对象，这些对象表示联邦服务（Federation Service）的设备注册服务（UPN）后缀资源。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-AdfsDeviceRegistrationUpnSuffix](./Add-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"[Add-AdfsDeviceRegistrationUpnSuffix](./Add-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+
+msgid ""
+"[Remove-AdfsDeviceRegistrationUpnSuffix](./Remove-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"[Remove-AdfsDeviceRegistrationUpnSuffix](./Remove-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+
+msgid ""
+"[Set-AdfsDeviceRegistrationUpnSuffix](./Set-"
+"AdfsDeviceRegistrationUpnSuffix.md)"
+msgstr ""
+"[Set-AdfsDeviceRegistrationUpnSuffix](./Set-"
+"AdfsDeviceRegistrationUpnSuffix.md)"

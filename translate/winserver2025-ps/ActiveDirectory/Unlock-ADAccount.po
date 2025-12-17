@@ -1,0 +1,193 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:08:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Unlock-ADAccount"
+msgstr "# 解锁 AD 账户"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Unlocks an Active Directory account."
+msgstr "解锁一个 Active Directory 账户。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Unlock-ADAccount** cmdlet restores Active Directory Domain Services (AD DS) access for an account that is locked.\n"
+"AD DS access is suspended or locked for an account when the number of incorrect password entries exceeds the maximum number allowed by the account password policy."
+msgstr ""
+"`Unlock-ADAccount` cmdlet 可以恢复被锁定的账户对 Active Directory 域服务（AD "
+"DS）的访问权限。当账户输入错误密码的次数超过密码策略允许的最大次数时，该账户的对 AD DS 的访问权限会被暂停或锁定。"
+
+msgid ""
+"the *Identity* parameter specifies the Active Directory account to unlock.\n"
+"You can identify an account by its distinguished name, GUID, security identifier (SID) or Security Accounts Manager (SAM) account name.\n"
+"You can also set the *Identity* parameter to an account object variable such as `$<localADAccountObject>`, or you can pass an object through the pipeline to the *Identity* parameter.\n"
+"For example, you can use the **Search-ADAccount** cmdlet to get an account object and then pass the object through the pipeline to the Unlock-ADAccount cmdlet to unlock the account.\n"
+"Similarly, you can use **Get-ADUser** and **Get-ADComputer** to get objects to pass through the pipeline."
+msgstr ""
+"`Identity` 参数用于指定要解锁的 Active Directory 账户。您可以通过该账户的唯一名称（Distinguished Name）、"
+" GUID、安全标识符（Security Identifier，SID）或安全帐户管理器（Security Accounts "
+"Manager，SAM）账户名称来识别该账户。您还可以将 `Identity` 参数设置为某个账户对象变量（例如 "
+"`$<localADAccountObject>`），或者通过管道将某个对象传递给 `Identity` 参数。例如，可以使用 **Search-"
+"ADAccount** cmdlet 获取一个账户对象，然后通过管道将该对象传递给 `Unlock-ADAccount` cmdlet "
+"以解锁该账户；同样地，您也可以使用 **Get-ADUser** 和 **Get-ADComputer** 来获取所需对象并通过管道进行后续操作。"
+
+msgid ""
+"For Active Directory Lightweight Directory Services (AD LDS) environments, "
+"the *Partition* parameter must be specified except when:"
+msgstr "对于 Active Directory 轻量级目录服务（AD LDS）环境而言，必须指定 *Partition* 参数，除非满足以下情况："
+
+msgid ""
+"To specify a default naming context for an AD LDS environment, set the "
+"**msDS-defaultNamingContext** property of the Active Directory directory "
+"service agent object (**nTDSDSA**) for the AD LDS instance."
+msgstr ""
+"要为 AD LDS 环境指定一个默认的命名上下文，请设置 AD LDS 实例的 Active Directory "
+"目录服务代理对象（**nTDSDSA**）的 **msDS-defaultNamingContext** 属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Unlock an Active Directory account"
+msgstr "#### 示例 1：解锁一个 Active Directory 账户"
+
+msgid "This command unlocks the account with the SAM account name PattiFu."
+msgstr "此命令会使用名为 PattiFu 的 SAM 账户名来解锁该账户。"
+
+msgid ""
+"### Example 2: Unlock an Active Directory account using a distinguished name"
+msgstr "### 示例 2：使用istinguished名称解锁Active Directory账户"
+
+msgid ""
+"This command unlocks the account with the distinguished name CN=Patti "
+"Fuller,OU=Finance,OU=UserAccounts,DC=FABRIKAM,DC=COM."
+msgstr ""
+"该命令用于解锁名为“CN=Patti Fuller, OU=Finance, OU/UserAccounts, DC=FABRIKAM, "
+"DC=COM”的账户。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的认证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory module for Windows PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该cmdlet是从Windows PowerShell提供程序的Active "
+"Directory模块驱动器中运行的。如果该cmdlet是从这样的驱动器中运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01/User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，该 cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the [Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936) cmdlet.\n"
+"You can then set the **Credential** parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 [Get-"
+"Credential](https://go.microsoft.com/fwlink/?LinkID=293936) cmdlet 来创建一个 "
+"**PSCredential** 对象。之后，你可以将该 **Credential** 对象设置为相应的参数。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory module for Windows PowerShell returns a "
+"terminating error."
+msgstr ""
+"如果执行该任务的代理组件没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies an Active Directory account object by providing one of the following property values.\n"
+"The identifier in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory "
+"账户对象。括号中的标识符是该属性的轻量级目录访问协议（LDAP）显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"该 cmdlet 会在默认的命名上下文或分区中搜索以找到相应的对象。如果找到两个或多个对象，该 cmdlet 会返回一个无法终止的错误信息。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an account object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将该参数设置为一个账户对象实例。"
+
+msgid "Derived types such as the following are also accepted:"
+msgstr "也接受以下这样的派生类型："
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-ADAccountExpiration](./Clear-ADAccountExpiration.md)"
+msgstr "[Clear-ADAccountExpiration](./Clear-ADAccountExpiration.md)"
+
+msgid "[Disable-ADAccount](./Disable-ADAccount.md)"
+msgstr "[禁用 AD 账户](./Disable-ADAccount.md)"
+
+msgid "[Enable-ADAccount](./Enable-ADAccount.md)"
+msgstr "[Enable-ADAccount](./Enable-ADAccount.md)"
+
+msgid ""
+"[Get-ADAccountAuthorizationGroup](./Get-ADAccountAuthorizationGroup.md)"
+msgstr ""
+"[Get-ADAccountAuthorizationGroup](./Get-ADAccountAuthorizationGroup.md)"
+
+msgid "[Search-ADAccount](./Search-ADAccount.md)"
+msgstr "[Search-ADAccount](./Search-ADAccount.md)"
+
+msgid "[Set-ADAccountControl](./Set-ADAccountControl.md)"
+msgstr "[Set-ADAccountControl](./Set-ADAccountControl.md)"
+
+msgid "[Set-ADAccountExpiration](./Set-ADAccountExpiration.md)"
+msgstr "[Set-ADAccountExpiration](./Set-ADAccountExpiration.md)"
+
+msgid "[Set-ADAccountPassword](./Set-ADAccountPassword.md)"
+msgstr "[Set-ADAccountPassword](./Set-ADAccountPassword.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell中的AD DS管理cmdlet](./activedirectory.md)"

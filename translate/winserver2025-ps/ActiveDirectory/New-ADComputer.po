@@ -1,0 +1,184 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:38:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-ADComputer"
+msgstr "# 新的AD计算机"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Creates a new Active Directory computer object."
+msgstr "创建一个新的 Active Directory 计算机对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-ADComputer** cmdlet creates a new Active Directory computer object.\n"
+"This cmdlet does not join a computer to a domain.\n"
+"You can set commonly used computer property values by using the cmdlet parameters.\n"
+"Property values that are not associated with cmdlet parameters can be modified by using the *OtherAttributes* parameter."
+msgstr ""
+"`New-ADComputer` cmdlet 用于创建一个新的 Active Directory 计算机对象。该 cmdlet "
+"不会将计算机加入域中。您可以使用 cmdlet 参数来设置常用的计算机属性值；未与 cmdlet 参数关联的属性值可以通过 "
+"`OtherAttributes` 参数进行修改。"
+
+msgid ""
+"You can use this cmdlet to provision a computer account before the computer is added to the domain.\n"
+"These pre-created computer objects can be used with offline domain join, unsecure domain join, and RODC domain join scenarios."
+msgstr ""
+"您可以使用此cmdlet在计算机加入域之前为其创建一个账户。这些预先创建的计算机对象可用于离线加入域、不安全方式加入域以及通过RODC（远程操作系统目录）加入域的场景中。"
+
+msgid ""
+"The *Path* parameter specifies the container or organizational unit (OU) for the new computer.\n"
+"When you do not specify the *Path* parameter, the cmdlet creates a computer account in the default container for computer objects in the domain."
+msgstr ""
+"`Path` 参数用于指定新计算机的容器或组织单位（OU）。如果不指定 `Path` 参数，该 cmdlet "
+"会在域中计算机对象的默认容器内创建一个计算机账户。"
+
+msgid ""
+"The following methods explain different ways to create an object by using "
+"this cmdlet."
+msgstr "以下方法介绍了使用该cmdlet创建对象的不同方式。"
+
+msgid ""
+"Method 1: Use the **New-ADComputer** cmdlet, specify the required "
+"parameters, and set any additional property values by using the cmdlet "
+"parameters."
+msgstr "方法1：使用 `New-ADComputer` cmdlet，指定所需的参数，并通过该 cmdlet 的参数来设置任何额外的属性值。"
+
+msgid ""
+"Method 2: Use a template to create the new object.\n"
+"To do this, create a new computer object or retrieve a copy of an existing computer object and set the *Instance* parameter to this object.\n"
+"The object provided to the *Instance* parameter is used as a template for the new object.\n"
+"You can override property values from the template by setting cmdlet parameters."
+msgstr ""
+"方法 2：使用模板来创建新的对象。为此，可以创建一个新的计算机对象或获取现有计算机对象的副本，并将 *Instance* 参数设置为该对象。提供给 "
+"*Instance* 参数的对象将被用作新对象的模板。您可以通过设置 cmdlet 参数来覆盖模板中的属性值。"
+
+msgid ""
+"Method 3: Use the Import-Csv cmdlet with the Add-ADComputerServiceAccount cmdlet to create multiple Active Directory computer objects.\n"
+"To do this, use the **Import-Csv** cmdlet to create the custom objects from a comma-separated value (CSV) file that contains a list of object properties.\n"
+"Then pass these objects to the **New-ADComputer** cmdlet by using the pipeline operator to create the computer objects."
+msgstr ""
+"方法 3：使用 `Import-Csv` cmdlet 与 `Add-ADComputerServiceAccount` cmdlet 来创建多个 "
+"Active Directory 计算机对象。具体操作如下：首先使用 `Import-Csv` cmdlet "
+"从包含对象属性列表的逗号分隔值（CSV）文件中导入这些自定义对象；然后通过管道运算符将这些对象传递给 `New-ADComputer` "
+"cmdlet，从而生成相应的计算机对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a new computer account in an organization unit"
+msgstr "### 示例 1：在组织单元中创建一个新的计算机账户"
+
+msgid ""
+"This command creates a new computer account in the OU "
+"OU=ApplicationServers,OU=ComputerAccounts,OU=Managed,DC=USER02,DC=COM."
+msgstr ""
+"此命令在以下组织单元（OU）中创建一个新的计算机账户：  \n"
+"OU=ApplicationServers, OU=ComputerAccounts, OU=Managed, DC=USER02, DC=COM。"
+
+msgid ""
+"### Example 2: Create a new computer account under an organization unit in a"
+" specified region"
+msgstr "### 示例 2：在指定区域内的某个组织单元下创建一个新的计算机账户"
+
+msgid ""
+"This command creates a new computer account under a particular OU, which is "
+"enabled and located in Redmond, WA."
+msgstr "此命令会在某个特定的组织单元（OU）下创建一个新的计算机账户，该账户已被启用，并位于华盛顿州的雷德蒙德市。"
+
+msgid "### Example 3: Create a new computer account from a template"
+msgstr "### 示例 3：根据模板创建一个新的计算机账户"
+
+msgid "This example creates a new computer account from a template object."
+msgstr "这个示例从一个模板对象创建一个新的计算机账户。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the expiration date for an account.\n"
+"This parameter sets the **AccountExpirationDate** property of an account object.\n"
+"The Lightweight Directory Access Protocol (LDAP) display name (**ldapDisplayName**) for this property is accountExpires."
+msgstr ""
+"用于指定账户的过期日期。此参数会设置账户对象的 **AccountExpirationDate** "
+"属性。该属性在轻量级目录访问协议（LDAP）中的显示名称（**ldapDisplayName**）为 “accountExpires”。"
+
+msgid ""
+"Use the **DateTime** syntax when you specify this parameter.\n"
+"Time is assumed to be local time unless otherwise specified.\n"
+"When a time value is not specified, the time is assumed to 12:00:00 AM local time.\n"
+"When a date is not specified, the date is assumed to be the current date."
+msgstr ""
+"在指定此参数时，请使用 **DateTime** 语法。除非另有说明，否则时间默认为当地时间。当未指定时间值时，时间被假设为当天的凌晨 "
+"12:00:00（当地时间）。当未指定日期时，日期被假定为当前日期。"
+
+msgid ""
+"Specifies whether the security context of the user is delegated to a service.\n"
+"When this parameter is set to true, the security context of the account is not delegated to a service even when the service account is set as trusted for Kerberos delegation.\n"
+"This parameter sets the **AccountNotDelegated** property for an Active Directory account.\n"
+"This parameter also sets the **ADS_UF_NOT_DELEGATED** flag of the Active Directory User Account Control (UAC) attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"该参数用于指定是否将用户的安全上下文委托给某个服务。当此参数设置为 `true` 时，即使该服务账户被设置为支持 Kerberos "
+"委托的受信任账户，用户的身份验证信息也不会被委托给该服务。此参数会为 Active Directory 账户设置 "
+"`AccountNotDelegated` 属性，并同时修改 Active Directory 用户帐户控制（UAC）属性中的 "
+"`ADS_UF_NOT_DELEGATED` 标志。该参数的可接受取值包括："
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADComputer"
+msgstr "### 无值或 Microsoft.ActiveDirectory.Management.ADComputer"
+
+msgid ""
+"Returns the new computer object when the *PassThru* parameter is specified.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "当指定*PassThru*参数时，会返回一个新的计算机对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ADComputerServiceAccount](./Add-ADComputerServiceAccount.md)"
+msgstr "[Add-ADComputerServiceAccount](./Add-ADComputerServiceAccount.md)"
+
+msgid "[Get-ADComputer](./Get-ADComputer.md)"
+msgstr "[Get-ADComputer](./Get-ADComputer.md)"
+
+msgid "[Get-ADComputerServiceAccount](./Get-ADComputerServiceAccount.md)"
+msgstr "[Get-ADComputerServiceAccount](./Get-ADComputerServiceAccount.md)"
+
+msgid "[Remove-ADComputer](./Remove-ADComputer.md)"
+msgstr "[Remove-ADComputer](./Remove-ADComputer.md)"
+
+msgid ""
+"[Remove-ADComputerServiceAccount](./Remove-ADComputerServiceAccount.md)"
+msgstr ""
+"[Remove-ADComputerServiceAccount](./Remove-ADComputerServiceAccount.md)"
+
+msgid "[Set-ADComputer](./Set-ADComputer.md)"
+msgstr "[Set-ADComputer](./Set-ADComputer.md)"
+
+msgid "[Set-ADAccountPassword](./Set-ADAccountPassword.md)"
+msgstr "[Set-ADAccountPassword](./Set-ADAccountPassword.md)"
+
+msgid "[New-ADUser](./New-ADUser.md)"
+msgstr "[New-ADUser](./New-ADUser.md)"
+
+msgid ""
+"[AD DS Administration Cmdlets in Windows PowerShell](./activedirectory.md)"
+msgstr "[Windows PowerShell 中的 AD DS 管理 cmdlet](./activedirectory.md)"

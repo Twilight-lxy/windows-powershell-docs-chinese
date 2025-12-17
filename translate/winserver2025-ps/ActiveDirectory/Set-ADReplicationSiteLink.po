@@ -1,0 +1,108 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:55:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADReplicationSiteLink"
+msgstr "# 设置 ADReplicationSiteLink"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the properties for an Active Directory site link."
+msgstr "用于设置 Active Directory 站点链接的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Identity"
+msgstr "### 身份"
+
+msgid "### Instance"
+msgstr "### 实例"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-ADReplicationSiteLink** cmdlet sets properties on an Active Directory site link.\n"
+"A site link connects two or more sites.\n"
+"Replication site links reflect the administrative policy for how sites interconnect and the methods used to transfer replication traffic.\n"
+"You must connect sites with site links so that domain controllers at each site can replicate Active Directory changes."
+msgstr ""
+"`Set-ADReplicationSiteLink` cmdlet 用于设置 Active Directory "
+"站点链接的属性。站点链接用于连接两个或多个站点。复制站点链接决定了站点之间的交互方式以及用于传输复制数据流量的方法。必须使用站点链接来连接各个站点，以便每个站点的域控制器能够相互复制"
+" Active Directory 的更改信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add and remove sites from a replication site link"
+msgstr "### 示例 1：向复制站点链接中添加和删除站点"
+
+msgid ""
+"This command adds the site Asia2 to the replication site link Europe-Asia, "
+"and removes the site Asia."
+msgstr "此命令将 Asia2 站点添加到复制站点链接 Europe-Asia 中，并移除 Asia 站点。"
+
+msgid "### Example 2: Set a property on filtered sites"
+msgstr "### 示例 2：为经过过滤的网站设置某个属性"
+
+msgid ""
+"This command gets all the site links in the directory with replication "
+"frequency greater than or equal to 60 minutes, and then sets the **Cost** "
+"property on these site link objects to 200."
+msgstr "这个命令会获取目录中所有复制频率大于或等于60分钟的站点链接，然后将这些站点链接对象的**Cost**属性设置为200。"
+
+msgid ""
+"### Example 3: Set the daily replication schedule for a replication site "
+"link"
+msgstr "### 示例 3：为复制站点链接设置每日复制计划"
+
+msgid ""
+"This command sets the daily replication schedule of the site link with name "
+"NorthAmerica-SouthAmerica."
+msgstr "此命令用于设置名为“NorthAmerica-SouthAmerica”的站点链接的每日复制计划。"
+
+msgid "### Example 4: Enable change notification for a replication site link"
+msgstr "### 示例 4：为复制站点链接启用变更通知功能"
+
+msgid ""
+"This command enables change notification on the site link with the name "
+"Europe-Asia."
+msgstr "此命令会为名为“Europe-Asia”的站点链接启用变更通知功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies values to add to an object property.\n"
+"Use this parameter to add one or more values to a property that cannot be modified using a cmdlet parameter.\n"
+"To modify an object property, you must use the Lightweight Directory Access Protocol (LDAP) display name.\n"
+"You can specify multiple values to a property by specifying a comma-separated list of values and more than one property by separating them using a semicolon.\n"
+"The format for this parameter is:"
+msgstr ""
+"用于指定要添加到对象属性中的值。此参数可用于向无法通过 cmdlet "
+"参数修改的属性中添加一个或多个值。若要修改对象属性，必须使用轻型目录访问协议（LDAP）显示名称。可以通过提供一个用逗号分隔的值列表来为某个属性指定多个值；如果需要为多个属性分别设置值，则可以使用分号进行分隔。该参数的格式如下："
+
+msgid ""
+"`-Add @{Attribute1LDAPDisplayName=value1, value2, ...;   "
+"Attribute2LDAPDisplayName=value1, value2, ...; "
+"AttributeNLDAPDisplayName=value1, value2, ...}`"
+msgstr ""
+"`- 添加 @{Attribute1LDAPDisplayName=value1, value2, ...; "
+"Attribute2LDAPDisplayName=value1, value2, ...; "
+"AttributeNLDAPDisplayName=value1, value2, ...}`"
+
+msgid ""
+"When you use the *Add*, *Remove*, *Replace*, and *Clear* parameters "
+"together, the operations will be performed in the following order:"
+msgstr ""
+"当你同时使用“添加”（Add）、“删除”（Remove）、“替换”（Replace）和“清除”（Clear）这些参数时，操作的执行顺序如下："

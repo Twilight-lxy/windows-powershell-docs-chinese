@@ -1,0 +1,87 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 15:34:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AdfsAttributeStore"
+msgstr "# 添加 AdFS Attribute Store"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds an attribute store to the Federation Service."
+msgstr "向联邦服务（Federation Service）添加一个属性存储（attribute store）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Predefined"
+msgstr "### 预定义的"
+
+msgid "### Custom"
+msgstr "### 自定义"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-AdfsAttributeStore** cmdlet adds an attribute store to the "
+"Federation Service."
+msgstr ""
+"`Add-AdfsAttributeStore` cmdlet 用于向联邦服务（Federation "
+"Service）添加一个属性存储（attribute store）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a SQL type attribute store"
+msgstr "### 示例 1：添加一个用于存储 SQL 类型属性的结构"
+
+msgid "This command adds a SQL-based attribute store named LocalSqlStore."
+msgstr "这个命令添加了一个基于 SQL 的属性存储，名为 LocalSqlStore。"
+
+msgid "### Example 2: Add a custom attribute store"
+msgstr "### 示例 2：添加一个自定义属性存储"
+
+msgid "This command adds a custom attribute store named MyCustomStore."
+msgstr "这个命令添加了一个名为“MyCustomStore”的自定义属性存储。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the initialization parameters of the attribute store, such as a "
+"connection string."
+msgstr "指定属性存储的初始化参数，例如连接字符串。"
+
+msgid "Specifies the friendly name of this attribute store."
+msgstr "指定此属性存储的友好名称（即易于理解的名称）。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the type of attribute store to add.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要添加的属性存储类型。该参数的可接受值包括："
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsAttributeStore](./Get-AdfsAttributeStore.md)"
+msgstr "[Get-AdfsAttributeStore](./Get-AdfsAttributeStore.md)"
+
+msgid "[Set-AdfsAttributeStore](./Set-AdfsAttributeStore.md)"
+msgstr "[Set-AdfsAttributeStore](./Set-AdfsAttributeStore.md)"
+
+msgid "[Remove-AdfsAttributeStore](./Remove-AdfsAttributeStore.md)"
+msgstr "[Remove-AdfsAttributeStore](./Remove-AdfsAttributeStore.md)"

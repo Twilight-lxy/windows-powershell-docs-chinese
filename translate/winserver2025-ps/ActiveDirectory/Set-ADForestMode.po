@@ -1,0 +1,213 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 14:46:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ADForestMode"
+msgstr "# 设置 AD 森林模式（Set-ADForestMode）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the forest mode for an Active Directory forest."
+msgstr "设置 Active Directory 林的森林模式（forest mode）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Set-ADForestMode` cmdlet sets the forest mode for an Active Directory forest. You specify the\n"
+"forest mode by setting the **ForestMode** parameter."
+msgstr ""
+"`Set-ADForestMode` cmdlet 用于设置 Active Directory 林的森林模式。您可以通过设置 "
+"**ForestMode** 参数来指定森林模式。"
+
+msgid ""
+"The **Identity** parameter specifies the Active Directory forest to modify. You can identify a\n"
+"forest by its fully qualified domain name (FQDN), GUID, DNS host name, or NetBIOS name. You can\n"
+"also specify the forest by passing a forest object through the pipeline. For example, you can use\n"
+"the `Get-ADForest` cmdlet to retrieve a forest object and then pass the object through the\n"
+"pipeline to the `Set-ADForestMode` cmdlet."
+msgstr ""
+"`Identity` 参数用于指定要修改的 Active Directory 林。您可以通过其完全限定域名（FQDN）、GUID、DNS 主机名或 "
+"NetBIOS 名来识别一个林。也可以通过将林对象传递到管道中来指定该林。例如，您可以使用 `Get-ADForest` cmdlet "
+"获取一个林对象，然后将该对象通过管道传递给 `Set-ADForestMode` cmdlet。"
+
+msgid "`Set-ADForestMode` prompts for confirmation by default."
+msgstr "`Set-ADForestMode` 默认会提示用户进行确认。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the forest mode for a forest"
+msgstr "#### 示例 1：为某片森林设置“森林模式”"
+
+msgid ""
+"This command sets the **ForestMode** to `Windows2003Forest` in the forest "
+"`fabrikam.com`."
+msgstr "此命令将森林 `fabrikam.com` 中的 **ForestMode** 设置为 `Windows2003Forest`。"
+
+msgid "### Example 2: Set the forest mode for the current user"
+msgstr "### 示例 2：为当前用户设置森林模式"
+
+msgid ""
+"This example sets the forest mode of the current user's forest. The set operation targets the\n"
+"schema master flexible single master operation (FSMO) role to apply the update."
+msgstr ""
+"这个示例用于设置当前用户的森林（forest）模式。设置操作针对的是“架构主节点灵活单主操作”（Flexible Single Master "
+"Operation, FSMO）角色，以便应用相应的更新。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use. The acceptable values for this "
+"parameter are:"
+msgstr "指定要使用的认证方法。该参数的可接受值包括："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的认证方法是“Negotiate”。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本认证方法需要使用安全套接字层（SSL）连接。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task. The default credentials are the\n"
+"credentials of the currently logged on user unless the cmdlet is run from an Active Directory\n"
+"module for Windows PowerShell provider drive. If the cmdlet is run from such a provider drive, the\n"
+"account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该 cmdlet 是从 Windows PowerShell 提供程序的 "
+"Active Directory 模块驱动器中运行的。如果是从这样的驱动器中运行 cmdlet，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as `User1` or `Domain01\\User01` or you\n"
+"can specify a **PSCredential** object. If you specify a user name for this parameter, the cmdlet\n"
+"prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 `User1` 或 `Domain01/User01`），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，该 cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the `Get-Credential`\n"
+"cmdlet. You can then set the **Credential** parameter to the **PSCredential** object."
+msgstr ""
+"您也可以通过脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，可以将这个 "
+"**Credential** 对象设置为相应的参数。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform the task, Active\n"
+"Directory module for Windows PowerShell returns a terminating error."
+msgstr ""
+"如果执行该任务的账户没有目录级别的权限，Windows PowerShell 的 Active Directory 模块会返回一个终止错误。"
+
+msgid ""
+"Specifies the forest mode for an Active Directory forest. The acceptable values for this parameter\n"
+"are:"
+msgstr "用于指定 Active Directory 林的林模式（forest mode）。该参数的可接受值为："
+
+msgid "The values are listed in order of functionality from least to most."
+msgstr "这些数值是按照功能从弱到强的顺序排列的。"
+
+msgid ""
+"Specifies an Active Directory forest object by providing one of the following attribute values. The\n"
+"identifier in parentheses is the Lightweight Directory Access Protocol (LDAP) display name for the\n"
+"attribute. The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory "
+"林对象。括号中的标识符是该属性的轻型目录访问协议（LDAP）显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object. If two or more\n"
+"objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"该cmdlet会在默认的命名上下文或分区中搜索相应的对象。如果找到两个或多个对象，该cmdlet会返回一个无法终止（即持续出现的）错误信息。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set this parameter to a\n"
+"forest object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为某个 Forest 对象的实例。"
+
+msgid ""
+"Returns an object representing the item with which you are working. By default, this cmdlet does\n"
+"not generate any output."
+msgstr "返回一个表示您正在操作的该项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the Active Directory Domain Services (AD DS) instance to connect to, by providing one of\n"
+"the following values for a corresponding domain name or directory server. The service may be any of\n"
+"the following:"
+msgstr ""
+"指定要连接的 Active Directory 域服务（AD "
+"DS）实例，为此需要提供相应的域名或目录服务器的其中一个值。该服务可以是以下类型中的任意一种："
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for this parameter is determined by one of the following methods in the order\n"
+"that they are listed:"
+msgstr "此参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们的排列顺序："
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前会提示您确认是否要执行该操作。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADForest"
+msgstr "### 无或 Microsoft.ActiveDirectory.Management.ADForest"
+
+msgid "You can pipe a forest object to the **Identity** parameter."
+msgstr "你可以将一个森林对象（forest object）传递给 **Identity** 参数。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADForest"
+msgstr "### 无或使用 MicrosoftActiveDirectory.Management.ADForest"
+
+msgid ""
+"This cmdlet returns the modified forest object when the **PassThru** parameter is specified. By\n"
+"default, this cmdlet does not generate any output."
+msgstr ""
+"当指定 **PassThru** 参数时，此 cmdlet 会返回修改后的森林对象（forest object）。默认情况下，该 cmdlet "
+"不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ADForest](Get-ADForest.md)"
+msgstr "[Get-ADForest](Get-ADForest.md)"

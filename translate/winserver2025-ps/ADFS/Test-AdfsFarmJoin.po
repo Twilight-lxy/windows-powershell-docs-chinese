@@ -1,0 +1,191 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:44:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-AdfsFarmJoin"
+msgstr "# 测试 AdFSFarmJoin 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Runs prerequisite checks for adding the server computer to a federation "
+"server farm."
+msgstr "在将服务器计算机添加到联邦服务器群之前，会运行相应的先决条件检查。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### AdfsFarmJoinWidGmsa (Default)"
+msgstr "### AdfsFarmJoinWidGmsa（默认值）"
+
+msgid "### ADFSFarmJoinWidSvcAcct"
+msgstr "### ADFSFarmJoinWidSvcAcct"
+
+msgid "### ADFSFarmJoinSqlSvcAcct"
+msgstr "### ADFSFarmJoinSqlSvcAcct"
+
+msgid "### AdfsFarmJoinSqlGmsa"
+msgstr "### AdfsFarmJoinSqlGmsa"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Test-AdfsFarmJoin** cmdlet performs the checks that you must complete "
+"before you run the **Add-AdfsFarmNode** cmdlet to add the local server "
+"computer to an existing federation server farm."
+msgstr ""
+"`Test-AdfsFarmJoin` cmdlet 用于执行在运行 `Add-AdfsFarmNode` cmdlet "
+"之前必须完成的所有检查，以便将本地服务器计算机添加到现有的联合服务器农场中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Test a server computer as a node in an existing federation "
+"server farm"
+msgstr "### 示例 1：测试一台服务器计算机作为现有联合服务器群中的节点"
+
+msgid ""
+"The first command uses the **Get-Credential** cmdlet to create a credential object for the Active Directory account under which the AD FS service runs.\n"
+"The command stores the credential object in the $FScred variable."
+msgstr ""
+"第一个命令使用 **Get-Credential** cmdlet 为运行 AD FS 服务的 Active Directory "
+"账户创建一个凭据对象。该命令将凭据对象存储在 `$FScred` 变量中。"
+
+msgid ""
+"The second command tests the joining of the local server computer as a node in an existing federation server farm that uses a SQL Server database that is installed on a computer named SQLHost.\n"
+"The command specifies the credentials that are stored in the $FScred variable for the Active Directory account under which the AD FS service runs."
+msgstr ""
+"第二个命令用于测试将本地服务器计算机作为节点加入到现有的联合服务器群中。该联合服务器群使用安装在名为SQLHost的计算机上的SQL "
+"Server数据库。命令指定了存储在$FScred变量中的凭据信息，这些凭据对应于运行AD FS服务的Active Directory账户。"
+
+msgid ""
+"### Example 2: Test the overwrites of an existing AD FS configuration "
+"database"
+msgstr "### 示例 2：测试对现有 AD FS 配置数据库的覆盖操作"
+
+msgid ""
+"The first command uses the **Get-Credential** cmdlet to create a credential object for the Active Directory account under which the AD FS service runs.\n"
+"The command stores the credential object in the $FScred variable."
+msgstr ""
+"第一个命令使用了**Get-Credential** cmdlet来为运行AD FS服务的Active "
+"Directory帐户创建一个凭证对象。该命令将凭证对象存储在$FScred变量中。"
+
+msgid ""
+"The second command tests the overwrites of an existing AD FS configuration database and tests the joining of the local server computer as a node in an existing federation server farm that uses the Windows Internal Database.\n"
+"The primary node of the farm is installed on a computer named PrimaryWIDHost.\n"
+"The command specifies the credentials that are stored in $FScred for the Active Directory account under which the AD FS service runs."
+msgstr ""
+"第二个命令用于测试对现有 AD FS 配置数据库的覆盖操作，以及将本地服务器计算机作为节点加入到一个使用 Windows "
+"内部数据库的现有联合服务器群中。该联合服务器群的主节点安装在名为 PrimaryWIDHost 的计算机上。该命令指定了存储在 $FScred "
+"中的凭据信息，这些凭据用于运行 AD FS 服务的 Active Directory 账户。"
+
+msgid ""
+"The *CertificateThumbprint* parameter must specify the thumbprint of a certificate that is currently installed in the certificate store of the local computer.\n"
+"The certificate must be the same certificate that is used as the service communications certificate on the primary node."
+msgstr ""
+"*CertificateThumbprint* 参数必须指定当前安装在本地计算机证书存储中的证书的指纹。该证书必须与主节点上用于服务通信的证书相同。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the value of the certificate thumbprint of the certificate that the Secure Sockets Layer (SSL) binding of the default website uses in Internet Information Services (IIS).\n"
+"This value must match the thumbprint of a valid certificate in the certificate store of the local computer."
+msgstr ""
+"指定用于 Internet Information Services (IIS) 中默认网站的安全套接字层 (SSL) "
+"绑定的证书的指纹值。该值必须与本地计算机证书存储中有效证书的指纹相匹配。"
+
+msgid ""
+"Specifies a **PSCredential** object based on a user name and password.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet.\n"
+"For more information, type `Get-Help Get-Credential`."
+msgstr ""
+"指定一个基于用户名和密码的 **PSCredential** 对象。要获取一个 **PSCredential** 对象，请使用 **Get-"
+"Credential** cmdlet。有关更多信息，输入 `Get-Help Get-Credential`。"
+
+msgid "Specifies farm behavior."
+msgstr "指定农场的行为（即农场在运行过程中的各种操作或策略）。"
+
+msgid ""
+"Specifies the name of the group Managed Service Account that the Active "
+"Directory Federation Services (AD FS) service uses as the logon identity for"
+" the AD FS service."
+msgstr ""
+"指定由 Active Directory Federation Services (AD FS) 服务使用的组托管服务帐户（Group Managed "
+"Service Account）的名称，该账户将作为 AD FS 服务的登录身份。"
+
+msgid ""
+"Specifies the name of the primary federation server in a federation server farm.\n"
+"The cmdlet checks the federation server farm that has the primary federation server that you specify."
+msgstr "用于指定联邦服务器群中的主联邦服务器的名称。该cmdlet会检查是否存在您所指定的那台主联邦服务器的联邦服务器群。"
+
+msgid ""
+"Specifies the primary computer port.\n"
+"The computer uses the HTTP port that you specify to connect with the primary computer in order to synchronize configuration settings.\n"
+"Specify a value of 80 for this parameter, or specify an alternative value if the HTTP port on the primary computer is not 80.\n"
+"If you do not specify this parameter, the cmdlet assigns the default port value of 443."
+msgstr ""
+"指定主计算机的端口。计算机将使用您指定的HTTP端口与主计算机连接，以同步配置设置。请为该参数指定值80；如果主计算机的HTTP端口不是80，则可以指定其他数值。如果您不指定此参数，cmdlet会自动使用默认端口值443。"
+
+msgid ""
+"Specifies a **PSCredential** object based on a user name and password for the service account in Active Directory® Domain Services under which the AD FS service runs.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet.\n"
+"For more information, type `Get-Help Get-Credential`."
+msgstr ""
+"指定一个基于用户名和密码的 **PSCredential** 对象，该对象用于 Active Directory® Domain Services "
+"中的服务账户（AD FS 服务即在该服务账户下运行）。要获取一个 **PSCredential** 对象，请使用 **Get-Credential** "
+"cmdlet。有关更多信息，请键入 `Get-Help Get-Credential`。"
+
+msgid ""
+"Specifies the Microsoft SQL Server database that will store the AD FS configuration settings.\n"
+"If you do not specify this parameter, AD FS uses the Windows Internal Database to store configuration settings."
+msgstr ""
+"指定用于存储 AD FS 配置设置的 Microsoft SQL Server 数据库。如果您不指定此参数，AD FS 将使用 Windows "
+"内部数据库来存储配置设置。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AdfsFarmNode](./Add-AdfsFarmNode.md)"
+msgstr "[Add-AdfsFarmNode](./Add-AdfsFarmNode.md)"
+
+msgid "[Test-AdfsFarmInstallation](./Test-AdfsFarmInstallation.md)"
+msgstr "[Test-AdfsFarmInstallation](./Test-AdfsFarmInstallation.md)"

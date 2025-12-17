@@ -1,0 +1,296 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 13:18:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ADReplicationSubnet"
+msgstr "# Get-ADReplicationSubnet"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets one or more Active Directory subnets."
+msgstr "获取一个或多个 Active Directory 子网。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Filter (Default)"
+msgstr "### 过滤器（默认设置）"
+
+msgid "### Identity"
+msgstr "### 身份证明"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-ADReplicationSubnet** cmdlet gets a specific Active Directory subnet or a set of subnets based on a specified filter.\n"
+"Subnet objects (class subnet) define network subnets in Active Directory.\n"
+"A network subnet is a segment of a TCP/IP network to which a set of logical IP addresses is assigned.\n"
+"Subnets group computers in a way that identifies their physical proximity on the network.\n"
+"Subnet objects in Active Directory are used to map computers to sites."
+msgstr ""
+"**Get-ADReplicationSubnet** cmdlet 可根据指定的过滤器获取某个特定的 Active Directory "
+"子网或一组子网。子网对象（类 subnet）用于在 Active Directory 中定义网络子网。网络子网是指 TCP/IP "
+"网络中的一个部分，该部分被分配了一组逻辑 IP 地址。子网通过某种方式对计算机进行分组，从而标识它们在网络中的物理位置。Active Directory"
+" 中的子网对象用于将计算机映射到相应的站点上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all subnets"
+msgstr "### 示例 1：获取所有子网"
+
+msgid "This command gets all of the subnets."
+msgstr "这个命令可以获取所有的子网信息。"
+
+msgid "### Example 2: Get subnets in a specified location"
+msgstr "### 示例 2：获取指定区域内的子网"
+
+msgid "This command gets all the subnets in Japan."
+msgstr "这个命令可以获取日本所有的子网信息。"
+
+msgid "### Example 3: Get subnets with a specified name"
+msgstr "### 示例 3：获取具有指定名称的子网"
+
+msgid "This command gets the subnet with name 10.0.0.0/25."
+msgstr "这个命令用于获取名称为“10.0.0.0/25”的子网。"
+
+msgid "### Example 4: Get the properties of a specified subnet"
+msgstr "### 示例 4：获取指定子网的属性"
+
+msgid ""
+"This command gets all of the properties of the subnet identified as "
+"10.0.0.0/25."
+msgstr "这个命令会获取被标识为 10.0.0.0/25 的子网的所有属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication method to use.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要使用的身份验证方法。该参数的可接受值为："
+
+msgid "The default authentication method is Negotiate."
+msgstr "默认的身份验证方法是“Negotiate”（协商）。"
+
+msgid ""
+"A Secure Sockets Layer (SSL) connection is required for the Basic "
+"authentication method."
+msgstr "基本身份验证方法需要使用安全套接字层（SSL）连接。"
+
+msgid ""
+"Specifies the user account credentials to use to perform this task.\n"
+"The default credentials are the credentials of the currently logged on user unless the cmdlet is run from an Active Directory PowerShell provider drive.\n"
+"If the cmdlet is run from such a provider drive, the account associated with the drive is the default."
+msgstr ""
+"指定用于执行此任务的用户账户凭据。默认凭据是当前登录用户的凭据，除非该cmdlet是从Active Directory "
+"PowerShell提供程序驱动器运行的。如果该cmdlet是从此类提供程序驱动器运行的，则默认使用与该驱动器关联的账户的凭据。"
+
+msgid ""
+"To specify this parameter, you can type a user name, such as User1 or Domain01\\User01 or you can specify a **PSCredential** object.\n"
+"If you specify a user name for this parameter, the cmdlet prompts for a password."
+msgstr ""
+"要指定此参数，您可以输入一个用户名（例如 User1 或 Domain01>User01），或者可以指定一个 **PSCredential** "
+"对象。如果您为此参数指定了一个用户名，cmdlet 会提示您输入密码。"
+
+msgid ""
+"You can also create a **PSCredential** object by using a script or by using the **Get-Credential** cmdlet.\n"
+"You can then set the *Credential* parameter to the **PSCredential** object."
+msgstr ""
+"你也可以通过编写脚本或使用 `Get-Credential` cmdlet 来创建一个 **PSCredential** 对象。之后，你可以将 "
+"*Credential* 参数设置为该 **PSCredential** 对象。"
+
+msgid ""
+"If the acting credentials do not have directory-level permission to perform "
+"the task, Active Directory PowerShell returns a terminating error."
+msgstr ""
+"如果执行任务的代理（agent）没有目录级别的权限，Active Directory PowerShell 会返回一个终止错误（terminating "
+"error）。"
+
+msgid ""
+"Specifies a query string that retrieves Active Directory objects.\n"
+"This string uses the PowerShell Expression Language syntax.\n"
+"The PowerShell Expression Language syntax provides rich type-conversion support for value types received by the *Filter* parameter.\n"
+"The syntax uses an in-order representation, which means that the operator is placed between the operand and the value.\n"
+"For more information about the *Filter* parameter, type `Get-Help about_ActiveDirectory_Filter`."
+msgstr ""
+"指定一个用于检索 Active Directory 对象的查询字符串。该字符串使用 PowerShell 表达式语言（PowerShell "
+"Expression Language）的语法。PowerShell 表达式语言为 *Filter* "
+"参数接收到的值类型提供了丰富的类型转换支持。其语法采用“按顺序排列”的表示方式，即运算符位于操作数和值之间。有关 *Filter* "
+"参数的更多信息，请输入 `Get-Help about_ActiveDirectory_Filter` 命令查看帮助文档。"
+
+msgid "Syntax:"
+msgstr "语法："
+
+msgid ""
+"The following syntax uses Backus-Naur form to show how to use the PowerShell"
+" Expression Language for this parameter."
+msgstr "以下语法使用了巴克斯-诺尔（Backus-Naur）形式来说明如何使用 PowerShell 表达式语言来处理这个参数。"
+
+msgid "\\<filter\\>  ::= \"{\" \\<FilterComponentList\\> \"}\""
+msgstr "<filter> ::= \"{\" <FilterComponentList> \"}\""
+
+msgid ""
+"\\<FilterComponentList\\> ::= \\<FilterComponent\\> | \\<FilterComponent\\> "
+"\\<JoinOperator\\> \\<FilterComponent\\> | \\<NotOperator\\>  "
+"\\<FilterComponent\\>"
+msgstr ""
+"\\<FilterComponentList\\> ::= \\<FilterComponent\\> | \\<FilterComponent\\> "
+"\\<JoinOperator\\> \\<FilterComponent\\> | \\<NotOperator\\> "
+"\\<FilterComponent\\>"
+
+msgid ""
+"\\<FilterComponent\\> ::= \\<attr\\> \\<FilterOperator\\> \\<value\\> | "
+"\"(\" \\<FilterComponent\\> \")\""
+msgstr ""
+"\\<FilterComponent\\> ::= \\<attr\\> \\<FilterOperator\\> \\<value\\> | "
+"\"(\" \\<FilterComponent\\> )\""
+
+msgid ""
+"\\<FilterOperator\\> ::= \"-eq\" | \"-le\" | \"-ge\" | \"-ne\" | \"-lt\" | "
+"\"-gt\"| \"-approx\" | \"-bor\" | \"-band\" | \"-recursivematch\" | "
+"\"-like\" | \"-notlike\""
+msgstr ""
+"<FilterOperator> ::= \"-eq\" | \"-le\" | \"-ge\" | \"-ne\" | \"-lt\" | "
+"\"-gt\" | \"-approx\" | \"-bor\" | \"-band\" | \"-recursivematch\" | "
+"\"-like\" | \"-notlike\""
+
+msgid "\\<JoinOperator\\> ::= \"-and\" | \"-or\""
+msgstr "\\<JoinOperator\\> ::= \"-and\" | \"-or\""
+
+msgid "\\<NotOperator\\> ::= \"-not\""
+msgstr "\\<NotOperator\\> ::= \"-not\""
+
+msgid "\\<attr\\> ::= \\<PropertyName\\> | \\<LDAPDisplayName of the attribute\\>"
+msgstr "<attr> ::= <PropertyName> | <LDAPDisplayName of the attribute>"
+
+msgid ""
+"\\<value\\>::= \\<compare this value with an \\<attr\\> by using the "
+"specified \\<FilterOperator\\>\\>"
+msgstr "<value>::= <使用指定的<FilterOperator>将此值与<attr>进行比较>"
+
+msgid ""
+"For a list of supported types for \\<value\\>, see "
+"about_ActiveDirectory_ObjectModel."
+msgstr "有关 `<value>` 所支持类型的列表，请参阅 `about_ActiveDirectory_ObjectModel`。"
+
+msgid ""
+"Note: PowerShell wildcards other than *, such as ?, are not supported by the"
+" *Filter* syntax."
+msgstr "注意：PowerShell中的通配符（除了*之外，例如?）不支持*Filter*语法。"
+
+msgid ""
+"Note: To query using LDAP query strings, use the *LDAPFilter* parameter."
+msgstr "注意：要使用 LDAP 查询字符串进行查询，请使用 *LDAPFilter* 参数。"
+
+msgid ""
+"Specifies an Active Directory object by providing one of the following property values.\n"
+"The identifier in parentheses is the LDAP display name for the attribute.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"通过提供以下属性值之一来指定一个 Active Directory 对象。括号中的标识符是该属性的 LDAP 显示名称。此参数的可接受值为："
+
+msgid ""
+"The cmdlet searches the default naming context or partition to find the object.\n"
+"If two or more objects are found, the cmdlet returns a non-terminating error."
+msgstr ""
+"该cmdlet会在默认的命名上下文或分区中搜索目标对象。如果找到两个或多个对象，cmdlet会返回一个非终止性的错误（即无法继续执行的错误）。"
+
+msgid ""
+"This parameter can also get this object through the pipeline or you can set "
+"this parameter to an object instance."
+msgstr "这个参数也可以通过管道获取该对象，或者你可以将这个参数设置为一个对象实例。"
+
+msgid ""
+"Specifies the properties of the output object to retrieve from the server.\n"
+"Use this parameter to retrieve properties that are not included in the default set."
+msgstr "指定从服务器检索的输出对象的属性。使用此参数可以获取默认集合中未包含的属性。"
+
+msgid ""
+"Specify properties for this parameter as a comma-separated list of names.\n"
+"To display all of the attributes that are set on the object, specify * (asterisk)."
+msgstr "为此参数指定属性，可以使用逗号分隔的名称列表。如果要显示对象上设置的所有属性，请使用星号（*）。"
+
+msgid ""
+"To specify an individual extended property, use the name of the property.\n"
+"For properties that are not default or extended properties, you must specify the LDAP display name of the attribute."
+msgstr "要指定某个特定的扩展属性，请使用该属性的名称。对于非默认属性或扩展属性，您必须指定该属性的 LDAP 显示名称。"
+
+msgid ""
+"To retrieve properties and display them for an object, you can use the Get-*"
+" cmdlet associated with the object and pass the output to the **Get-Member**"
+" cmdlet."
+msgstr ""
+"要检索对象的属性并将其显示出来，你可以使用与该对象关联的 `Get-*` cmdlet，并将输出结果传递给 `Get-Member` cmdlet。"
+
+msgid ""
+"Specifies the Active Directory Domain Services instance to connect to, by providing one of the following values for a corresponding domain name or directory server.\n"
+"The service may be any of the following:  Active Directory Lightweight Domain Services, Active Directory Domain Services or Active Directory Snapshot instance."
+msgstr ""
+"用于指定要连接的 Active Directory 域服务实例，需为相应的域名或目录服务器提供以下值之一。该服务可以是以下类型中的任意一种：Active"
+" Directory 轻量级域服务（Active Directory Lightweight Domain Services）、Active "
+"Directory 域服务（Active Directory Domain Services）或 Active Directory "
+"快照实例（Active Directory Snapshot instance）。"
+
+msgid "Domain name values:"
+msgstr "域名值："
+
+msgid ""
+"The default value for the *Server* parameter is determined by one of the "
+"following methods in the order that they are listed:"
+msgstr "*Server* 参数的默认值是通过以下方法之一确定的，具体采用哪种方法取决于它们在列表中的排列顺序："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None or Microsoft.ActiveDirectory.Management.ADReplicationSubnet"
+msgstr "### 无值或 Microsoft ActiveDirectory.Management.ADReplicationSubnet"
+
+msgid "A subnet object is received by the *Identity* parameter."
+msgstr "子网对象是通过 *Identity* 参数接收到的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ActiveDirectory.Management.ADReplicationSubnet"
+msgstr "### Microsoft.ActiveDirectory.Management_ADReplicationSubnet"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-ADReplicationSubnet](./New-ADReplicationSubnet.md)"
+msgstr "[New-ADReplicationSubnet](./New-ADReplicationSubnet.md)"
+
+msgid "[Remove-ADReplicationSubnet](./Remove-ADReplicationSubnet.md)"
+msgstr "[Remove-ADReplicationSubnet](./Remove-ADReplicationSubnet.md)"
+
+msgid "[Set-ADReplicationSubnet](./Set-ADReplicationSubnet.md)"
+msgstr "[Set-ADReplicationSubnet](./Set-ADReplicationSubnet.md)"

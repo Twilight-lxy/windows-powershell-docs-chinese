@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 16:14:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AdfsAccessControlPolicy"
+msgstr "# 删除 AdfsAccessControlPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes an AD FS access control policy."
+msgstr "删除一个 AD FS 访问控制策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifierName"
+msgstr "### IdentifierName"
+
+msgid "### Identifier"
+msgstr "### 标识符"
+
+msgid "### IdentifierObject"
+msgstr "### IdentifierObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-AdfsAccessControlPolicy** cmdlet removes an Active Directory "
+"Federation Services (AD FS) access control policy."
+msgstr ""
+"`Remove-AdfsAccessControlPolicy` cmdlet 用于删除 Active Directory Federation "
+"Services (AD FS) 的访问控制策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the access control policy to remove."
+msgstr "指定要删除的访问控制策略。"
+
+msgid "Specifies a target ID."
+msgstr "指定一个目标ID。"
+
+msgid "Specifies the name of the target."
+msgstr "指定目标对象的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AdfsAccessControlPolicy](./Get-AdfsAccessControlPolicy.md)"
+msgstr "[Get-AdfsAccessControlPolicy](./Get-AdfsAccessControlPolicy.md)"
+
+msgid "[New-AdfsAccessControlPolicy](./New-AdfsAccessControlPolicy.md)"
+msgstr "[New-AdfsAccessControlPolicy](./New-AdfsAccessControlPolicy.md)"
+
+msgid "[Set-AdfsAccessControlPolicy](./Set-AdfsAccessControlPolicy.md)"
+msgstr "[Set-AdfsAccessControlPolicy](./Set-AdfsAccessControlPolicy.md)"
