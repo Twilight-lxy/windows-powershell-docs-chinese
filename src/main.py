@@ -3,6 +3,7 @@ from pathlib import Path
 import time
 import polib
 from loguru import logger
+import shutil
 
 
 class FileTree:
@@ -71,12 +72,8 @@ class Translator:
         self.input_dir = input_dir
         logger.info(f"使用的输入目录: {self.input_dir}")
         if output_dir.exists():
-            suffix = time.strftime("_%Y%m%d_%H%M%S", time.localtime())
-            output_dir = output_dir.with_name(output_dir.name + suffix)
-            logger.warning(f"输出目录已存在, 将使用新的输出目录: {output_dir}")
-            if output_dir.exists():
-                logger.error(f"输出目录已存在: {output_dir}")
-                exit(1)
+            shutil.rmtree(output_dir)
+            logger.warning(f"输出目录已存在, 已删除原有内容: {output_dir}")
         self.output_dir = output_dir
         os.makedirs(self.output_dir)
         logger.info(f"使用的输出目录: {self.output_dir}")
