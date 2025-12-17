@@ -7,10 +7,10 @@ online version: https://learn.microsoft.com/powershell/module/hyper-v/add-vmassi
 schema: 2.0.0
 title: Add-VMAssignableDevice
 ---
+
 # Add-VMAssignableDevice
 
 ## 摘要
-
 将可分配的设备添加到特定的虚拟机中。
 
 ## 语法

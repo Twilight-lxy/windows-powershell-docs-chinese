@@ -1,3 +1,10 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 10:59:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
 msgid "Use this topic to help manage Windows 11 and Windows Server 2025 technologies with Windows PowerShell."
 msgstr "使用本主题可帮助您通过 Windows PowerShell 管理 Windows 11 和 Windows Server 2025 的相关技术。"
 

@@ -1,3 +1,10 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 10:59:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
 msgid "This article lists the status of PowerShell 7 with Powershell modules published for other Microsoft products."
 msgstr "本文列出了PowerShell 7的状态以及为其他Microsoft产品发布的PowerShell模块。"
 

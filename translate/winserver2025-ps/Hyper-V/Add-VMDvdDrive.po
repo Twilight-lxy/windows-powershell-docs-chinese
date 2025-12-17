@@ -1,0 +1,177 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 10:59:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-VMDvdDrive"
+msgstr "# Add-VMDvdDrive"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a DVD drive to a virtual machine."
+msgstr "向虚拟机添加一个DVD驱动器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMDriveController"
+msgstr "### VMDriveController"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **Add-VMDvdDrive** cmdlet adds a DVD drive to a virtual machine."
+msgstr "`Add-VMDvdDrive` cmdlet 可以将 DVD 驱动器添加到虚拟机中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example adds a virtual DVD drive using file D:\\ISOs\\disc1.iso to "
+"virtual machine Test."
+msgstr "这个例子通过使用文件 D:\\ISOs\\disc1.iso 为虚拟机 Test 添加了一个虚拟 DVD 驱动器。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example adds a virtual DVD drive using controller number 1 to virtual "
+"machine Test."
+msgstr "这个示例为虚拟机Test添加了一个虚拟DVD驱动器，使用的是控制器编号1。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example adds virtual DVD drives using the IDE controllers from virtual "
+"machine Test."
+msgstr "这个示例使用了虚拟机“Test”中的IDE控制器来添加虚拟DVD驱动器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies that no error is to be thrown if the specified path is not verified as accessible by the cluster.\n"
+"This parameter is applicable to clustered virtual machines."
+msgstr "指定如果集群无法验证指定的路径是否可访问，则不会抛出任何错误。此参数适用于集群化的虚拟机。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-v hosts on which the DVD drive is to be added.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"请指定一个或多个用于安装DVD驱动器的Hyper-"
+"V主机。可以使用NetBIOS名称、IP地址或完全合格的域名来进行标识。默认值是本地计算机；若需明确指定本地计算机，可使用“localhost”或点（.）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the number of the location on the controller at which the DVD drive is to be added.\n"
+"If not specified, the number of the first available location on the controller is used."
+msgstr "指定控制器上用于安装DVD驱动器的位置编号。如果未指定，则会使用控制器上第一个可用位置的编号。"
+
+msgid ""
+"Specifies the number of the controller to which the DVD drive is to be added.\n"
+"If not specified, the first IDE controller on which the specified **ControllerLocation** is available is used."
+msgstr "指定要将DVD驱动器添加到的控制器的编号。如果未指定，则会使用第一个支持该**ControllerLocation**的IDE控制器。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Passes the added **Microsoft.HyperV.PowerShell.DvdDrive** through to the "
+"pipeline."
+msgstr "将新增的 `Microsoft.HyperV.PowShell.DvdDrive` 对象传递给后续处理流程（即管道）。"
+
+msgid ""
+"Specifies the full path to the virtual hard disk file or physical hard disk "
+"volume for the added DVD drive."
+msgstr "指定用于新增DVD驱动器的虚拟硬盘文件或物理硬盘卷的完整路径。"
+
+msgid ""
+"Specifies the friendly name of the ISO resource pool to which this DVD drive"
+" is to be associated."
+msgstr "指定该DVD驱动器所要关联的ISO资源池的友好名称。"
+
+msgid "Specifies the virtual machine to which the DVD drive is to be added."
+msgstr "指定要添加DVD驱动器的虚拟机。"
+
+msgid "Specifies the drive controller to which the DVD drive is to be added."
+msgstr "指定要将DVD驱动器添加到的硬盘控制器。"
+
+msgid ""
+"Specifies the name of the virtual machine to which the DVD drive is to be "
+"added."
+msgstr "指定要添加DVD驱动器的虚拟机的名称。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.HyperV.PowerShell.VMDriveController[]"
+msgstr "### Microsoft.HyperV.PowerShell.VMDriveController[]"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine[]"
+msgstr "### Microsoft.HyperV POWERShell.VirtualMachine[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.DvdDrive"
+msgstr "### Microsoft.HyperV.PowerShell.DvdDrive"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

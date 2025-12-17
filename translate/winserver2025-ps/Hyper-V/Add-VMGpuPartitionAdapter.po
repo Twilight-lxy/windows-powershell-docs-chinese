@@ -1,0 +1,209 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-17 11:41:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "Adds a GPU partition adapter to a virtual machine."
+msgstr "向虚拟机添加一个 GPU 分区适配器。"
+
+msgid "# Add-VMGpuPartitionAdapter"
+msgstr "# 添加 VMGpuPartitionAdapter"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a GPU partition adapter to a virtual machine."
+msgstr "向虚拟机添加一个GPU分区适配器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-VMGpuPartitionAdapter` cmdlet adds a GPU partition adapter to a virtual machine. With no\n"
+"parameter, it assigns a full partition from an assignable GPU to a VM."
+msgstr ""
+"`Add-VMGpuPartitionAdapter` 这个 cmdlet 用于向虚拟机添加一个 GPU 分区适配器。如果不指定任何参数，它会将可用 "
+"GPU 中的一个完整分区分配给该虚拟机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example assigns a partition to a specific VM object."
+msgstr "这个示例将一个分区分配给特定的虚拟机对象。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example assigns a partition from a specific GPU to a VM where the instance path is the GPU\n"
+"device ID name on the host."
+msgstr "这个示例将某个特定GPU上的分区分配给一个虚拟机（VM），其中该虚拟机的实例路径对应于主机上该GPU设备的ID名称。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession)\n"
+"or [Get-CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者输入一个会话对象（例如 `[New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession)` 或 `[Get-"
+"CimSession](/powershell/module/cimcmdlets/get-cimsession)` cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts from which virtual machines are to be retrieved. NetBIOS names,\n"
+"IP addresses, and fully qualified domain names are allowable. The default is the local computer.\n"
+"Use localhost or a dot (`.`) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于获取虚拟机的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名进行选择。默认值是本地计算机。可以使用 "
+"`localhost` 或点（`.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action. The default is the\n"
+"current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Represents the Device Instance path of a GPU in the host. This value can be obtained from the\n"
+"\"Name\" property of the command `Get-VMHostPartitionableGpu`."
+msgstr ""
+"表示主机中GPU的设备实例路径。该值可以通过执行`Get-VMHostPartitionableGpu`命令并查看其“Name”属性来获取。"
+
+msgid ""
+"The maximum number of compute assigned by the host GPU. This is defined by the manufacturer's\n"
+"driver."
+msgstr "主机GPU所能分配的最大计算资源数量。这一数值由制造商提供的驱动程序来定义。"
+
+msgid ""
+"The maximum number of decoders assigned by the host GPU. This is defined by the manufacturer's\n"
+"driver."
+msgstr "主机GPU可以分配的最大解码器数量。这一数值由制造商提供的驱动程序来定义。"
+
+msgid ""
+"The maximum number of encoders assigned by the host GPU. This is defined by the manufacturer's\n"
+"driver."
+msgstr "主机GPU可分配的最大编码器数量。该数量由制造商提供的驱动程序进行定义。"
+
+msgid ""
+"The maximum VRAM in bytes supported by the host GPU. This is defined by the "
+"manufacturer's driver."
+msgstr "主机GPU支持的最大VRAM容量（以字节为单位）。该数值由制造商提供的驱动程序进行定义。"
+
+msgid ""
+"The minimum number of compute assigned by the host GPU. This is defined by the manufacturer's\n"
+"driver."
+msgstr "主机GPU分配的最少计算资源数量。该数值由制造商提供的驱动程序进行定义。"
+
+msgid ""
+"The minimum number of decoders assigned by the host GPU. This is defined by the manufacturer's\n"
+"driver."
+msgstr "主机GPU分配的解码器最小数量。该数量由制造商的驱动程序确定。"
+
+msgid ""
+"The minimum number of encoders assigned by the host GPU. This is defined by the manufacturer's\n"
+"driver."
+msgstr "主机GPU分配的编码器数量的最小值。该数值由制造商提供的驱动程序确定。"
+
+msgid ""
+"The minimum VRAM in bytes supported by the host GPU. This is defined by the "
+"manufacturer's driver."
+msgstr "主机GPU支持的最低VRAM容量（以字节为单位）。该数值由制造商提供的驱动程序确定。"
+
+msgid ""
+"The optimal number of compute assigned by the host GPU. This is defined by the manufacturer's\n"
+"driver."
+msgstr "主机GPU分配的最佳计算资源数量由制造商提供的驱动程序来决定。"
+
+msgid ""
+"The optimal number of decoders assigned by the host GPU. This is defined by the manufacturer's\n"
+"driver."
+msgstr "主机GPU分配的解码器的最佳数量由制造商提供的驱动程序来决定。"
+
+msgid ""
+"The optimal number of encoders assigned by the host GPU. This is defined by the manufacturer's\n"
+"driver."
+msgstr "主机GPU分配的最佳编码器数量由制造商的驱动程序确定。"
+
+msgid ""
+"The optimal VRAM in bytes supported by the host GPU. This is defined by the "
+"manufacturer's driver."
+msgstr "主机GPU支持的最大VRAM容量（以字节为单位）。该数值由制造商提供的驱动程序进行定义。"
+
+msgid "Returns an object for each process that the cmdlet started."
+msgstr "对于cmdlet启动的每个进程，都会返回一个对象。"
+
+msgid ""
+"Specifies the virtual machine on which the network adapter is to be added."
+msgstr "指定要添加网络适配器的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine on which the network adapter is to"
+" be added."
+msgstr "指定要添加网络适配器的虚拟机的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine[]"
+msgstr "### Microsoft.HyperV.PowerShell VirtualMachine[]"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMGpuPartitionAdapter"
+msgstr "### Microsoft.HyperV POWERShell.VMGpuPartitionAdapter"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VMGpuPartitionAdapter](get-vmgpupartitionadapter.md)"
+msgstr "[Get-VMGpuPartitionAdapter](get-vmgpupartitionadapter.md)"
+
+msgid "[Remove-VMGpuPartitionAdapter](remove-vmgpupartitionadapter.md)"
+msgstr "[Remove-VMGpuPartitionAdapter](remove-vmgpupartitionadapter.md)"
+
+msgid "[Set-VMGpuPartitionAdapter](set-vmgpupartitionadapter.md)"
+msgstr "[Set-VMGpuPartitionAdapter](set-vmgpupartitionadapter.md)"
