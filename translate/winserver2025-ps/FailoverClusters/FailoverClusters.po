@@ -1,0 +1,983 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:54:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# FailoverClusters Module"
+msgstr "# FailoverClusters 模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all failover cluster-specific cmdlets. It\n"
+"lists the cmdlets in alphabetical order based on the verb at the beginning of the cmdlet. If these\n"
+"cmdlets aren't available in your PowerShell session, you may need to add the\n"
+"`Failover Cluster Module for Windows PowerShell` Feature, using the following PowerShell command:"
+msgstr ""
+"本参考资料提供了所有与故障转移集群相关的 cmdlet 的描述和语法。这些 cmdlet 按其开头命令动词的字母顺序进行排列。如果你的 "
+"PowerShell 会话中没有这些 cmdlet，你可能需要使用以下 PowerShell 命令来添加 “Failover Cluster "
+"Module for Windows PowerShell” 功能："
+
+msgid "## FailoverClusters Cmdlets"
+msgstr "## FailoverClustersCmdlets"
+
+msgid "### [Add-ClusterCheckpoint](Add-ClusterCheckpoint.md)"
+msgstr "### [添加集群检查点](Add-ClusterCheckpoint.md)"
+
+msgid ""
+"Adds a cryptographic key checkpoint or registry checkpoint for a resource."
+msgstr "为某个资源添加一个加密密钥检查点或注册表检查点。"
+
+msgid "### [Add-ClusterDisk](Add-ClusterDisk.md)"
+msgstr "### [Add-ClusterDisk](Add-ClusterDisk.md)"
+
+msgid "Makes a new disk available for use in a failover cluster."
+msgstr "为故障转移集群创建一个可用的新磁盘。"
+
+msgid "### [Add-ClusterExcludedAdapter](Add-ClusterExcludedAdapter.md)"
+msgstr "### [Add-ClusterExcludedAdapter](Add-ClusterExcludedAdapter.md)"
+
+msgid "Adds a network adapter to the list of excluded adapters."
+msgstr "将一个网络适配器添加到被排除的适配器列表中。"
+
+msgid "### [Add-ClusterFileServerRole](Add-ClusterFileServerRole.md)"
+msgstr "### [Add-ClusterFileServerRole](Add-ClusterFileServerRole.md)"
+
+msgid "Creates a clustered file server resource group."
+msgstr "创建一个集群文件服务器资源组。"
+
+msgid ""
+"### [Add-ClusterGenericApplicationRole](Add-"
+"ClusterGenericApplicationRole.md)"
+msgstr "### [添加集群通用应用程序角色](Add-ClusterGenericApplicationRole.md)"
+
+msgid ""
+"Configures high availability for an application that wasn't originally designed to run in a failover\n"
+"cluster."
+msgstr "为原本并未设计用于在故障转移集群中运行的应用程序配置高可用性。"
+
+msgid "### [Add-ClusterGenericScriptRole](Add-ClusterGenericScriptRole.md)"
+msgstr "### [Add-ClusterGenericScriptRole](Add-ClusterGenericScriptRole.md)"
+
+msgid ""
+"Configures an application controlled by a script that runs in Windows Script Host, within a failover\n"
+"cluster."
+msgstr ""
+"配置一个由脚本控制的应用程序，该脚本在 Windows 脚本宿主（Windows Script "
+"Host）中运行，并且属于一个故障转移集群（failover cluster）的一部分。"
+
+msgid "### [Add-ClusterGenericServiceRole](Add-ClusterGenericServiceRole.md)"
+msgstr "### [Add-ClusterGenericServiceRole](Add-ClusterGenericServiceRole.md)"
+
+msgid ""
+"Configures high availability for a service that wasn't originally designed to run in a failover\n"
+"cluster."
+msgstr "为一项最初并未被设计为在故障转移集群中运行的服务配置高可用性。"
+
+msgid "### [Add-ClusterGroup](Add-ClusterGroup.md)"
+msgstr "### [添加集群组](Add-ClusterGroup.md)"
+
+msgid ""
+"Adds an empty resource group to the failover cluster configuration, in preparation for adding\n"
+"clustered resources to the group."
+msgstr "向故障转移集群配置中添加一个空的资源组，为后续向该组中添加集群化资源做准备。"
+
+msgid "### [Add-ClusterGroupSetDependency](Add-ClusterGroupSetDependency.md)"
+msgstr "### [Add-ClusterGroupSetDependency](Add-ClusterGroupSetDependency.md)"
+
+msgid "Adds a dependency to a cluster set."
+msgstr "向集群集添加一个依赖项。"
+
+msgid ""
+"### [Add-ClusterGroupToAffinityRule](Add-ClusterGroupToAffinityRule.md)"
+msgstr "### [将集群组添加到亲和性规则中](Add-ClusterGroupToAffinityRule.md)"
+
+msgid "Adds a cluster group to an affinity rule."
+msgstr "将一个集群组添加到亲和规则中。"
+
+msgid "### [Add-ClusterGroupToSet](Add-ClusterGroupToSet.md)"
+msgstr "### [将集群组添加到集合中](Add-ClusterGroupToSet.md)"
+
+msgid "Adds a group to a set."
+msgstr "将一个组添加到集合中。"
+
+msgid ""
+"### [Add-ClusteriSCSITargetServerRole](Add-ClusteriSCSITargetServerRole.md)"
+msgstr ""
+"### [Add-ClusteriSCSITargetServerRole](Add-ClusteriSCSITargetServerRole.md)"
+
+msgid "Creates a highly available iSCSI Target server."
+msgstr "创建一个高可用性的 iSCSI 目标服务器。"
+
+msgid "### [Add-ClusterNode](Add-ClusterNode.md)"
+msgstr "### [添加集群节点](Add-ClusterNode.md)"
+
+msgid "Adds a node (server) to a failover cluster."
+msgstr "向故障转移集群中添加一个节点（服务器）。"
+
+msgid "### [Add-ClusterResource](Add-ClusterResource.md)"
+msgstr "### [Add-ClusterResource](Add-ClusterResource.md)"
+
+msgid ""
+"Adds a resource to a clustered role, or resource group, in a failover "
+"cluster."
+msgstr "将资源添加到故障转移集群中的集群角色或资源组中。"
+
+msgid "### [Add-ClusterResourceDependency](Add-ClusterResourceDependency.md)"
+msgstr "### [添加集群资源依赖关系](Add-ClusterResourceDependency.md)"
+
+msgid ""
+"Adds a resource to the list of resources on which a particular resource depends, using AND as the\n"
+"connector, within a failover cluster."
+msgstr "在故障转移集群中，将一个资源添加到另一个特定资源所依赖的资源列表中，使用“AND”作为连接符。"
+
+msgid "### [Add-ClusterResourceType](Add-ClusterResourceType.md)"
+msgstr "### [Add-ClusterResourceType](Add-ClusterResourceType.md)"
+
+msgid ""
+"Adds a resource type to a failover cluster, and specifies information such as the dynamic-link\n"
+"library (DLL) to use with that resource type."
+msgstr "向故障转移集群添加一种资源类型，并指定与该资源类型相关联的信息（例如要使用的动态链接库（DLL））。"
+
+msgid ""
+"### [Add-ClusterScaleOutFileServerRole](Add-"
+"ClusterScaleOutFileServerRole.md)"
+msgstr ""
+"### [Add-ClusterScaleOutFileServerRole](Add-"
+"ClusterScaleOutFileServerRole.md)"
+
+msgid "Creates a clustered file server for scale-out application data."
+msgstr "创建一个集群化的文件服务器，用于扩展应用程序数据存储容量。"
+
+msgid "### [Add-ClusterSharedVolume](Add-ClusterSharedVolume.md)"
+msgstr "### [Add-ClusterSharedVolume](Add-ClusterSharedVolume.md)"
+
+msgid ""
+"Makes a volume available in Cluster Shared Volumes in a failover cluster."
+msgstr "在故障转移集群中，将某个卷设置为可用状态，并将其添加到集群共享卷（Cluster Shared Volumes）中。"
+
+msgid ""
+"### [Add-ClusterSharedVolumeToAffinityRule](Add-"
+"ClusterSharedVolumeToAffinityRule.md)"
+msgstr "### [将集群共享卷添加到亲和性规则中](Add-ClusterSharedVolumeToAffinityRule.md)"
+
+msgid "Adds a Cluster Shared Volume (CSV) to an existing affinity rule."
+msgstr "将一个集群共享卷（Cluster Shared Volume，简称 CSV）添加到现有的亲和性规则中。"
+
+msgid "### [Add-ClusterVirtualMachineRole](Add-ClusterVirtualMachineRole.md)"
+msgstr "### [添加集群虚拟机角色](Add-ClusterVirtualMachineRole.md)"
+
+msgid ""
+"Creates a clustered virtual machine, that is, a virtual machine that can be failed over if necessary\n"
+"to a different server in the failover cluster."
+msgstr "创建一个集群化的虚拟机，即这种虚拟机在需要时可以切换到故障转移集群中的另一台服务器上继续运行。"
+
+msgid "### [Add-ClusterVMMonitoredItem](Add-ClusterVMMonitoredItem.md)"
+msgstr "### [Add-ClusterVMMonitoredItem](Add-ClusterVMMonitoredItem.md)"
+
+msgid ""
+"Configures monitoring for a service or an Event Tracing for Windows (ETW) event so that it is\n"
+"monitored on a virtual machine."
+msgstr ""
+"配置对某个服务的监控机制，或者针对 Windows 事件跟踪（Event Tracing, "
+"ETW）事件的监控设置，以便在虚拟机上对这些服务或事件进行监控。"
+
+msgid "### [Add-WorkgroupClusterNode](Add-WorkgroupClusterNode.md)"
+msgstr "### [Add-WorkgroupClusterNode](Add-WorkgroupClusterNode.md)"
+
+msgid "Adds a node to a workgroup cluster."
+msgstr "向工作组集群中添加一个节点。"
+
+msgid "### [Block-ClusterAccess](Block-ClusterAccess.md)"
+msgstr "### [Block-ClusterAccess](Block-ClusterAccess.md)"
+
+msgid ""
+"Prevents the specified user or users from accessing a failover cluster."
+msgstr "阻止指定的用户访问故障转移集群。"
+
+msgid "### [Clear-ClusterDiskReservation](Clear-ClusterDiskReservation.md)"
+msgstr "### [Clear-ClusterDiskReservation](Clear-ClusterDiskReservation.md)"
+
+msgid "Clears the persistent reservation on a disk in a failover cluster."
+msgstr "清除故障转移集群中磁盘上的永久性保留信息（即那些不会被自动删除的数据）。"
+
+msgid "### [Clear-ClusterNode](Clear-ClusterNode.md)"
+msgstr "### [Clear-ClusterNode](Clear-ClusterNode.md)"
+
+msgid ""
+"Clears the cluster configuration from a node that was evicted from a "
+"failover cluster."
+msgstr "从被从故障转移集群中移除的节点清除集群配置信息。"
+
+msgid "### [Disable-AccelNetManagement](Disable-AccelNetManagement.md)"
+msgstr "### [ Disable-AccelNetManagement](Disable-AccelNetManagement.md)"
+
+msgid "Disables Accelerated Networking Management cluster-wide."
+msgstr "在集群范围内禁用加速网络管理功能。"
+
+msgid "### [Disable-AccelNetVM](Disable-AccelNetVM.md)"
+msgstr "### [禁用AccelNetVM](Disable-AccelNetVM.md)"
+
+msgid "Disables Accelerated Networking on a VM."
+msgstr "禁用虚拟机上的加速网络功能（Accelerated Networking）。"
+
+msgid ""
+"### [Disable-ClusterStorageSpacesDirect](Disable-"
+"ClusterStorageSpacesDirect.md)"
+msgstr ""
+"### [禁用-ClusterStorageSpacesDirect]( Disable-ClusterStorageSpacesDirect.md)"
+
+msgid "Disables S2D."
+msgstr "禁用S2D功能。"
+
+msgid "### [Enable-AccelNetManagement](Enable-AccelNetManagement.md)"
+msgstr "### [Enable-AccelNetManagement](Enable-AccelNetManagement.md)"
+
+msgid "Enables Accelerated Networking Management cluster-wide."
+msgstr "在整个集群范围内启用加速网络管理功能。"
+
+msgid "### [Enable-AccelNetVM](Enable-AccelNetVM.md)"
+msgstr "### [Enable-AccelNetVM](Enable-AccelNetVM.md)"
+
+msgid "Enables Accelerated Networking on a VM."
+msgstr "在虚拟机上启用加速网络功能。"
+
+msgid ""
+"### [Enable-ClusterStorageSpacesDirect](Enable-"
+"ClusterStorageSpacesDirect.md)"
+msgstr ""
+"### [Enable-ClusterStorageSpacesDirect](Enable-"
+"ClusterStorageSpacesDirect.md)"
+
+msgid "Enables Storage Spaces Direct on a Fail-Over Cluster."
+msgstr "在故障转移集群上启用“Storage Spaces Direct”功能。"
+
+msgid "### [Get-AccelNetManagement](Get-AccelNetManagement.md)"
+msgstr "### [Get-AccelNetManagement](Get-AccelNetManagement.md)"
+
+msgid "Gets the intent enabled for Accelerated Networking Management."
+msgstr "启用加速网络管理（Accelerated Networking Management）相关的功能/设置。"
+
+msgid "### [Get-AccelNetManagementPreReq](Get-AccelNetManagementPreReq.md)"
+msgstr "### [Get-AccelNetManagementPreReq](Get-AccelNetManagementPreReq.md)"
+
+msgid "Informs the user if the cluster nodes support Accelerated Networking."
+msgstr "向用户提示集群节点是否支持加速网络（Accelerated Networking）功能。"
+
+msgid "### [Get-AccelNetVM](Get-AccelNetVM.md)"
+msgstr "### [Get-AccelNetVM](Get-AccelNetVM.md)"
+
+msgid "Gets VMs with Accelerated Networking."
+msgstr "获取配备了加速网络功能的虚拟机（VMs）。"
+
+msgid "### [Get-Cluster](Get-Cluster.md)"
+msgstr "### [Get-Cluster](Get-Cluster.md)"
+
+msgid ""
+"Gets information about one or more failover clusters in a given domain."
+msgstr "获取关于给定域中的一个或多个故障转移集群的信息。"
+
+msgid "### [Get-ClusterAccess](Get-ClusterAccess.md)"
+msgstr "### [Get-ClusterAccess](Get-ClusterAccess.md)"
+
+msgid ""
+"Gets information about permissions that control access to a failover "
+"cluster."
+msgstr "获取有关控制对故障转移集群访问权限的信息。"
+
+msgid "### [Get-ClusterAffinityRule](Get-ClusterAffinityRule.md)"
+msgstr "### [Get-ClusterAffinityRule](Get-ClusterAffinityRule.md)"
+
+msgid "This cmdlet is used to display the given rule and what type it is."
+msgstr "此cmdlet用于显示给定的规则及其类型。"
+
+msgid "### [Get-ClusterAvailableDisk](Get-ClusterAvailableDisk.md)"
+msgstr "### [Get-ClusterAvailableDisk](Get-ClusterAvailableDisk.md)"
+
+msgid ""
+"Gets information about the disks that can support Failover Clustering and are visible to all nodes,\n"
+"but aren't yet part of the set of clustered disks."
+msgstr ""
+"获取有关可以支持故障转移集群（Failover Clustering）的磁盘的信息，这些磁盘对所有节点都是可见的，但尚未成为集群磁盘集的一部分。"
+
+msgid "### [Get-ClusterCheckpoint](Get-ClusterCheckpoint.md)"
+msgstr "### [Get-ClusterCheckpoint](Get-ClusterCheckpoint.md)"
+
+msgid ""
+"Retrieves a cryptographic key checkpoint or registry checkpoint for a "
+"resource."
+msgstr "检索资源的加密密钥检查点或注册表检查点。"
+
+msgid "### [Get-ClusterCredential](Get-ClusterCredential.md)"
+msgstr "### [Get-ClusterCredential](Get-ClusterCredential.md)"
+
+msgid "Retrieves the credentials for a specified node in a failover cluster."
+msgstr "检索故障转移集群中指定节点的凭据信息。"
+
+msgid "### [Get-ClusterDiagnosticInfo](Get-ClusterDiagnosticInfo.md)"
+msgstr "### [Get-ClusterDiagnosticInfo](Get-ClusterDiagnosticInfo.md)"
+
+msgid ""
+"Gets diagnostics for a cluster a cluster that contains VMs and produces a zip file containing the\n"
+"data."
+msgstr "获取包含虚拟机（VM）的集群的诊断信息，并生成一个包含这些数据的压缩文件（zip文件）。"
+
+msgid "### [Get-ClusterExcludedAdapter](Get-ClusterExcludedAdapter.md)"
+msgstr "### [Get-ClusterExcludedAdapter](Get-ClusterExcludedAdapter.md)"
+
+msgid "Retrieves a network adapter from the list of excluded adapters."
+msgstr "从被排除的适配器列表中检索一个网络适配器。"
+
+msgid "### [Get-ClusterFaultDomain](Get-ClusterFaultDomain.md)"
+msgstr "### [Get-ClusterFaultDomain](Get-ClusterFaultDomain.md)"
+
+msgid "Gets the cluster fault domains in a cluster."
+msgstr "获取集群中的故障域信息。"
+
+msgid "### [Get-ClusterFaultDomainXML](Get-ClusterFaultDomainXML.md)"
+msgstr "### [Get-ClusterFaultDomainXML](Get-ClusterFaultDomainXML.md)"
+
+msgid "Gets the fault domain as an XML string."
+msgstr "以XML字符串的形式获取故障域信息。"
+
+msgid "### [Get-ClusterGroup](Get-ClusterGroup.md)"
+msgstr "### [Get-ClusterGroup](Get-ClusterGroup.md)"
+
+msgid ""
+"Gets information about one or more clustered roles (resource groups) in a "
+"failover cluster."
+msgstr "获取关于故障转移集群中一个或多个聚类角色（资源组）的信息。"
+
+msgid "### [Get-ClusterGroupSet](Get-ClusterGroupSet.md)"
+msgstr "### [Get-ClusterGroupSet](Get-ClusterGroupSet.md)"
+
+msgid "Gets the group sets in the cluster."
+msgstr "获取集群中的组集（group sets）。"
+
+msgid "### [Get-ClusterGroupSetDependency](Get-ClusterGroupSetDependency.md)"
+msgstr "### [Get-ClusterGroupSetDependency](Get-ClusterGroupSetDependency.md)"
+
+msgid "Gets the cluster group sets based on dependency relationships."
+msgstr "根据依赖关系获取集群组集合。"
+
+msgid "### [Get-ClusterLog](Get-ClusterLog.md)"
+msgstr "### [Get-ClusterLog](Get-ClusterLog.md)"
+
+msgid ""
+"Creates a log file for all nodes, or a specific a node, in a failover "
+"cluster."
+msgstr "为故障转移集群中的所有节点或特定节点创建一个日志文件。"
+
+msgid "### [Get-ClusterNetwork](Get-ClusterNetwork.md)"
+msgstr "### [Get-ClusterNetwork](Get-ClusterNetwork.md)"
+
+msgid "Gets information about one or more networks in a failover cluster."
+msgstr "获取关于故障转移集群中一个或多个网络的信息。"
+
+msgid "### [Get-ClusterNetworkInterface](Get-ClusterNetworkInterface.md)"
+msgstr "### [Get-ClusterNetworkInterface](Get-ClusterNetworkInterface.md)"
+
+msgid ""
+"Gets information about one or more network adapters in a failover cluster."
+msgstr "获取关于故障转移集群中一个或多个网络适配器的信息。"
+
+msgid "### [Get-ClusterNode](Get-ClusterNode.md)"
+msgstr "### [Get-ClusterNode](Get-ClusterNode.md)"
+
+msgid ""
+"Gets information about one or more nodes, or servers, in a failover cluster."
+msgstr "获取关于故障转移集群中的一个或多个节点或服务器的信息。"
+
+msgid "### [Get-ClusterOwnerNode](Get-ClusterOwnerNode.md)"
+msgstr "### [Get-ClusterOwnerNode](Get-ClusterOwnerNode.md)"
+
+msgid ""
+"Gets information about which nodes can own a resource in a failover cluster or information about the\n"
+"order of preference among owner nodes for a clustered role."
+msgstr "获取关于在故障转移集群中哪些节点可以拥有某个资源的信息，或者关于拥有该资源的节点之间的优先级顺序的信息。"
+
+msgid "### [Get-ClusterParameter](Get-ClusterParameter.md)"
+msgstr "### [Get-ClusterParameter](Get-ClusterParameter.md)"
+
+msgid ""
+"Gets detailed information about an object in a failover cluster, such as a "
+"cluster resource."
+msgstr "获取关于故障转移集群中某个对象（例如集群资源）的详细信息。"
+
+msgid "### [Get-ClusterQuorum](Get-ClusterQuorum.md)"
+msgstr "### [Get-ClusterQuorum](Get-ClusterQuorum.md)"
+
+msgid "Gets information about the quorum configuration of a failover cluster."
+msgstr "获取有关故障转移集群的法定人数（quorum）配置的信息。"
+
+msgid "### [Get-ClusterResource](Get-ClusterResource.md)"
+msgstr "### [Get-ClusterResource](Get-ClusterResource.md)"
+
+msgid "Gets information about one or more resources in a failover cluster."
+msgstr "获取关于故障转移集群中一个或多个资源的信息。"
+
+msgid "### [Get-ClusterResourceDependency](Get-ClusterResourceDependency.md)"
+msgstr "### [Get-ClusterResourceDependency](Get-ClusterResourceDependency.md)"
+
+msgid ""
+"Gets information about the dependencies that have been configured between clustered resources in a\n"
+"failover cluster."
+msgstr "获取有关故障转移集群中已配置的、用于连接集群资源的依赖项的信息。"
+
+msgid ""
+"### [Get-ClusterResourceDependencyReport](Get-"
+"ClusterResourceDependencyReport.md)"
+msgstr ""
+"### [Get-ClusterResourceDependencyReport](Get-"
+"ClusterResourceDependencyReport.md)"
+
+msgid ""
+"Generates a report that lists the dependencies between resources in a "
+"failover cluster."
+msgstr "生成一份报告，列出故障转移集群中各资源之间的依赖关系。"
+
+msgid "### [Get-ClusterResourceType](Get-ClusterResourceType.md)"
+msgstr "### [Get-ClusterResourceType](Get-ClusterResourceType.md)"
+
+msgid ""
+"Gets information about one or more resource types in a failover cluster."
+msgstr "获取关于故障转移集群中一种或多种资源类型的信息。"
+
+msgid "### [Get-ClusterSharedVolume](Get-ClusterSharedVolume.md)"
+msgstr "### [Get-ClusterSharedVolume](Get-ClusterSharedVolume.md)"
+
+msgid "Gets information about Cluster Shared Volumes in a failover cluster."
+msgstr "获取关于故障转移集群中集群共享卷（Cluster Shared Volumes）的信息。"
+
+msgid "### [Get-ClusterSharedVolumeState](Get-ClusterSharedVolumeState.md)"
+msgstr "### [Get-ClusterSharedVolumeState](Get-ClusterSharedVolumeState.md)"
+
+msgid "Gets the state of Cluster Shared Volumes in a cluster."
+msgstr "获取集群中Cluster Shared Volumes（群集共享卷）的状态。"
+
+msgid ""
+"### [Get-ClusterStorageSpacesDirect](Get-ClusterStorageSpacesDirect.md)"
+msgstr ""
+"### [Get-ClusterStorageSpacesDirect](Get-ClusterStorageSpacesDirect.md)"
+
+msgid "Gets the S2D settings from a cluster."
+msgstr "从集群中获取S2D设置。"
+
+msgid "### [Get-ClusterVMMonitoredItem](Get-ClusterVMMonitoredItem.md)"
+msgstr "### [Get-ClusterVMMonitoredItem](Get-ClusterVMMonitoredItem.md)"
+
+msgid ""
+"Gets the list of services and events currently being monitored in the "
+"virtual machine."
+msgstr "获取虚拟机中当前正在被监控的服务和事件的列表。"
+
+msgid ""
+"### [Get-VMAdaptersConnectedToEnabledIntentSwitch](Get-"
+"VMAdaptersConnectedToEnabledIntentSwitch.md)"
+msgstr ""
+"### [Get-VMAdaptersConnectedToEnabledIntentSwitch](Get-"
+"VMAdaptersConnectedToEnabledIntentSwitch.md)"
+
+msgid ""
+"Gets the adapters on the VM that are connected to the enabled intent switch."
+msgstr "获取连接到已启用意图切换器的虚拟机（VM）上的适配器。"
+
+msgid "### [Grant-ClusterAccess](Grant-ClusterAccess.md)"
+msgstr "### [Grant-ClusterAccess](Grant-ClusterAccess.md)"
+
+msgid ""
+"Grants access to a failover cluster, either full access or read-only access."
+msgstr "允许访问故障转移集群，可以是全权限访问，也可以是只读访问。"
+
+msgid "### [Move-ClusterGroup](Move-ClusterGroup.md)"
+msgstr "### [Move-ClusterGroup](Move-ClusterGroup.md)"
+
+msgid ""
+"Moves a clustered role (a resource group) from one node to another in a "
+"failover cluster."
+msgstr "将一个集群角色（即一个资源组）从故障转移集群中的一个节点移动到另一个节点。"
+
+msgid "### [Move-ClusterResource](Move-ClusterResource.md)"
+msgstr "### [Move-ClusterResource](Move-ClusterResource.md)"
+
+msgid ""
+"Moves a clustered resource from one clustered role to another within a "
+"failover cluster."
+msgstr "将一个集群资源从一个集群角色移动到另一个集群角色，该操作发生在故障转移集群内部。"
+
+msgid "### [Move-ClusterSharedVolume](Move-ClusterSharedVolume.md)"
+msgstr "### [Move-ClusterSharedVolume](Move-ClusterSharedVolume.md)"
+
+msgid ""
+"Moves a Cluster Shared Volume (CSV) to ownership by a different node in a "
+"failover cluster."
+msgstr "在故障转移集群中，将一个集群共享卷（Cluster Shared Volume，简称 CSV）的所有权转移到另一个节点上。"
+
+msgid ""
+"### [Move-ClusterVirtualMachineRole](Move-ClusterVirtualMachineRole.md)"
+msgstr ""
+"### [Move-ClusterVirtualMachineRole](Move-ClusterVirtualMachineRole.md)"
+
+msgid ""
+"Moves the ownership of a clustered virtual machine to a different node."
+msgstr "将集群虚拟机的所有权转移到另一个节点上。"
+
+msgid "### [New-Cluster](New-Cluster.md)"
+msgstr "### [新集群](New-Cluster.md)"
+
+msgid "Creates a new failover cluster."
+msgstr "创建一个新的故障转移集群。"
+
+msgid "### [New-ClusterAffinityRule](New-ClusterAffinityRule.md)"
+msgstr "### [New-ClusterAffinityRule](New-ClusterAffinityRule.md)"
+
+msgid "Creates new affinity rules."
+msgstr "创建新的亲和性规则。"
+
+msgid "### [New-ClusterFaultDomain](New-ClusterFaultDomain.md)"
+msgstr "### [New-ClusterFaultDomain](New-ClusterFaultDomain.md)"
+
+msgid "Creates a fault domain in the cluster."
+msgstr "在集群中创建一个故障域。"
+
+msgid "### [New-ClusterGroupSet](New-ClusterGroupSet.md)"
+msgstr "### [New-ClusterGroupSet](New-ClusterGroupSet.md)"
+
+msgid "Create a names set of groups in the cluster."
+msgstr "在集群中创建一组名称对应的组（groups）。"
+
+msgid "### [New-ClusterNameAccount](New-ClusterNameAccount.md)"
+msgstr "### [New-ClusterNameAccount](New-ClusterNameAccount.md)"
+
+msgid "Creates a cluster name account in Active Directory Domain Services."
+msgstr "在 Active Directory 域服务中创建一个用于管理集群名称的账户。"
+
+msgid "### [New-WorkgroupCluster](New-WorkgroupCluster.md)"
+msgstr "### [New-WorkgroupCluster](New-WorkgroupCluster.md)"
+
+msgid "Creates a new workgroup cluster."
+msgstr "创建一个新的工作组集群。"
+
+msgid "### [Remove-Cluster](Remove-Cluster.md)"
+msgstr "### [Remove-Cluster](Remove-Cluster.md)"
+
+msgid "Destroys an existing failover cluster."
+msgstr "会销毁现有的故障转移集群。"
+
+msgid "### [Remove-ClusterAccess](Remove-ClusterAccess.md)"
+msgstr "### [Remove-ClusterAccess](Remove-ClusterAccess.md)"
+
+msgid "Removes a user from the access list on the cluster."
+msgstr "从集群的访问列表中移除某个用户。"
+
+msgid "### [Remove-ClusterAffinityRule](Remove-ClusterAffinityRule.md)"
+msgstr "### [Remove-ClusterAffinityRule](Remove-ClusterAffinityRule.md)"
+
+msgid "Removes a specified affinity rule."
+msgstr "删除指定的亲和性规则。"
+
+msgid "### [Remove-ClusterCheckpoint](Remove-ClusterCheckpoint.md)"
+msgstr "### [Remove-ClusterCheckpoint](Remove-ClusterCheckpoint.md)"
+
+msgid ""
+"Removes a cryptographic key checkpoint or registry checkpoint for a "
+"resource."
+msgstr "删除某个资源的加密密钥检查点或注册表检查点。"
+
+msgid "### [Remove-ClusterExcludedAdapter](Remove-ClusterExcludedAdapter.md)"
+msgstr "### [Remove-ClusterExcludedAdapter](Remove-ClusterExcludedAdapter.md)"
+
+msgid "Removes a network adapter from the list of excluded adapters."
+msgstr "从被排除的适配器列表中移除一个网络适配器。"
+
+msgid "### [Remove-ClusterFaultDomain](Remove-ClusterFaultDomain.md)"
+msgstr "### [Remove-ClusterFaultDomain](Remove-ClusterFaultDomain.md)"
+
+msgid "Removes a fault domain."
+msgstr "删除一个故障域。"
+
+msgid "### [Remove-ClusterGroup](Remove-ClusterGroup.md)"
+msgstr "### [Remove-ClusterGroup](Remove-ClusterGroup.md)"
+
+msgid ""
+"Removes a clustered role, also called a resource group, from a failover "
+"cluster."
+msgstr "从故障转移集群中删除一个聚类角色（也称为资源组）。"
+
+msgid ""
+"### [Remove-ClusterGroupFromAffinityRule](Remove-"
+"ClusterGroupFromAffinityRule.md)"
+msgstr "### [从亲和性规则中移除集群组](Remove-ClusterGroupFromAffinityRule.md)"
+
+msgid "Removes a cluster group from an affinity rule."
+msgstr "从一个亲和性规则中删除一个集群组。"
+
+msgid "### [Remove-ClusterGroupFromSet](Remove-ClusterGroupFromSet.md)"
+msgstr "### [Remove-ClusterGroupFromSet](Remove-ClusterGroupFromSet.md)"
+
+msgid "Removes a group from a set."
+msgstr "从一个集合中移除一个组。"
+
+msgid "### [Remove-ClusterGroupSet](Remove-ClusterGroupSet.md)"
+msgstr "### [Remove-ClusterGroupSet](Remove-ClusterGroupSet.md)"
+
+msgid "Removes a group set from the cluster."
+msgstr "从集群中删除一组（group set）。"
+
+msgid ""
+"### [Remove-ClusterGroupSetDependency](Remove-ClusterGroupSetDependency.md)"
+msgstr ""
+"### [Remove-ClusterGroupSetDependency](Remove-ClusterGroupSetDependency.md)"
+
+msgid "Removes a dependency from a group set."
+msgstr "从一个组集中移除一个依赖项。"
+
+msgid "### [Remove-ClusterNode](Remove-ClusterNode.md)"
+msgstr "### [Remove-ClusterNode](Remove-ClusterNode.md)"
+
+msgid "Removes a node from a failover cluster."
+msgstr "从一个故障转移集群中删除一个节点。"
+
+msgid "### [Remove-ClusterResource](Remove-ClusterResource.md)"
+msgstr "### [Remove-ClusterResource](Remove-ClusterResource.md)"
+
+msgid "Removes a clustered resource from the failover cluster."
+msgstr "从故障转移集群中移除一个已聚类的资源。"
+
+msgid ""
+"### [Remove-ClusterResourceDependency](Remove-ClusterResourceDependency.md)"
+msgstr ""
+"### [Remove-ClusterResourceDependency](Remove-ClusterResourceDependency.md)"
+
+msgid ""
+"Removes a dependency between two resources in a clustered role within a "
+"failover cluster."
+msgstr "在故障转移集群中，移除集群角色内两个资源之间的依赖关系。"
+
+msgid "### [Remove-ClusterResourceType](Remove-ClusterResourceType.md)"
+msgstr "### [Remove-ClusterResourceType](Remove-ClusterResourceType.md)"
+
+msgid "Removes a resource type from a failover cluster."
+msgstr "从故障转移集群中删除某种资源类型。"
+
+msgid "### [Remove-ClusterSharedVolume](Remove-ClusterSharedVolume.md)"
+msgstr "### [Remove-ClusterSharedVolume](Remove-ClusterSharedVolume.md)"
+
+msgid ""
+"Removes a volume from the Cluster Shared Volumes in a failover cluster, and places it in Available\n"
+"Storage in the cluster."
+msgstr "从故障转移集群中的集群共享卷中删除某个卷，并将其放入该集群的可用存储空间中。"
+
+msgid ""
+"### [Remove-ClusterSharedVolumeFromAffinityRule](Remove-"
+"ClusterSharedVolumeFromAffinityRule.md)"
+msgstr "### [从亲和性规则中移除集群共享卷](Remove-ClusterSharedVolumeFromAffinityRule.md)"
+
+msgid "Remove a cluster shared volume from an affinity rule."
+msgstr "将某个集群共享卷从关联规则中移除。"
+
+msgid "### [Remove-ClusterVMMonitoredItem](Remove-ClusterVMMonitoredItem.md)"
+msgstr "### [Remove-ClusterVMMonitoredItem](Remove-ClusterVMMonitoredItem.md)"
+
+msgid "## SYNTAX ## SYNOPSIS"
+msgstr "## 语法 ## 概述"
+
+msgid "### [Remove-WorkgroupCluster](Remove-WorkgroupCluster.md)"
+msgstr "### [Remove-WorkgroupCluster](Remove-WorkgroupCluster.md)"
+
+msgid "Removes a workgroup cluster."
+msgstr "删除一个工作组集群。"
+
+msgid "### [Remove-WorkgroupClusterNode](Remove-WorkgroupClusterNode.md)"
+msgstr "### [Remove-WorkgroupClusterNode](Remove-WorkgroupClusterNode.md)"
+
+msgid "Removes a node from a workgroup cluster."
+msgstr "从一个工作组集群中删除一个节点。"
+
+msgid "### [Repair-ClusterNameAccount](Repair-ClusterNameAccount.md)"
+msgstr "### [Repair-ClusterNameAccount](Repair-ClusterNameAccount.md)"
+
+msgid ""
+"Repairs the Cluster Name Account and ensures that the cluster continues to "
+"function properly."
+msgstr "修复集群名称相关的账户问题，并确保集群能够继续正常运行。"
+
+msgid ""
+"### [Repair-ClusterStorageSpacesDirect](Repair-"
+"ClusterStorageSpacesDirect.md)"
+msgstr ""
+"### [Repair-ClusterStorageSpacesDirect](Repair-"
+"ClusterStorageSpacesDirect.md)"
+
+msgid "Repairs disks in a Storage Spaces Direct (S2D) system."
+msgstr "修复存储空间直接（Storage Spaces Direct, S2D）系统中的磁盘问题。"
+
+msgid "### [Reset-ClusterVMMonitoredState](Reset-ClusterVMMonitoredState.md)"
+msgstr "### [Reset-ClusterVMMonitoredState](Reset-ClusterVMMonitoredState.md)"
+
+msgid ""
+"Resets the Application Critical state of a virtual machine, so that the virtual machine is no longer\n"
+"marked as being in a critical state in the cluster."
+msgstr "将虚拟机的应用程序关键状态重置为正常状态，从而使该虚拟机在集群中不再被标记为处于关键状态。"
+
+msgid "### [Resume-ClusterNode](Resume-ClusterNode.md)"
+msgstr "### [Resume-ClusterNode]( Resume-ClusterNode.md)"
+
+msgid ""
+"Resumes a node from the paused state or brings back drained workloads to the"
+" node or both."
+msgstr "将节点从暂停状态恢复过来，或者将之前被“消耗”（即无法正常运行）的工作负载重新分配回该节点，或者同时执行这两项操作。"
+
+msgid "### [Resume-ClusterResource](Resume-ClusterResource.md)"
+msgstr "### [Resume-ClusterResource]( Resume-ClusterResource.md)"
+
+msgid ""
+"Turns off maintenance for a disk resource or Cluster Shared Volume within a "
+"failover cluster."
+msgstr "在故障转移集群中，会关闭对某个磁盘资源或集群共享卷（Cluster Shared Volume）的维护操作。"
+
+msgid "### [Set-AccelNetManagement](Set-AccelNetManagement.md)"
+msgstr "### [Set-AccelNetManagement](Set-AccelNetManagement.md)"
+
+msgid "Sets Accelerated Networking Management cluster-wide."
+msgstr "在整个集群范围内设置加速网络管理功能。"
+
+msgid "### [Set-AccelNetVM](Set-AccelNetVM.md)"
+msgstr "### [Set-AccelNetVM](Set-AccelNetVM.md)"
+
+msgid "Sets Accelerated Networking on a VM."
+msgstr "在虚拟机上启用加速网络功能（Accelerated Networking）。"
+
+msgid "### [Set-ClusterAffinityRule](Set-ClusterAffinityRule.md)"
+msgstr "### [Set-ClusterAffinityRule](Set-ClusterAffinityRule.md)"
+
+msgid "Enable or disable an affinity rule, and update the rule type."
+msgstr "启用或禁用亲和性规则，并更新规则类型。"
+
+msgid "### [Set-ClusterExcludedAdapter](Set-ClusterExcludedAdapter.md)"
+msgstr "### [Set-ClusterExcludedAdapter](Set-ClusterExcludedAdapter.md)"
+
+msgid "Sets a network adapter to the list of excluded adapters."
+msgstr "将某个网络适配器添加到被排除的适配器列表中。"
+
+msgid "### [Set-ClusterFaultDomain](Set-ClusterFaultDomain.md)"
+msgstr "### [Set-ClusterFaultDomain](Set-ClusterFaultDomain.md)"
+
+msgid "Update an existing cluster fault domain."
+msgstr "更新现有的集群故障域（cluster fault domain）。"
+
+msgid "### [Set-ClusterFaultDomainXML](Set-ClusterFaultDomainXML.md)"
+msgstr "### [Set-ClusterFaultDomainXML](Set-ClusterFaultDomainXML.md)"
+
+msgid "Sets the cluster fault domain using XML."
+msgstr "使用XML设置集群故障域。"
+
+msgid "### [Set-ClusterGroupSet](Set-ClusterGroupSet.md)"
+msgstr "### [Set-ClusterGroupSet](Set-ClusterGroupSet.md)"
+
+msgid "Updates a cluster group set."
+msgstr "更新集群组集合。"
+
+msgid "### [Set-ClusterLog](Set-ClusterLog.md)"
+msgstr "### [Set-ClusterLog](Set-ClusterLog.md)"
+
+msgid "Sets the size and level of detail for the cluster log."
+msgstr "设置集群日志的大小和详细程度级别。"
+
+msgid "### [Set-ClusterOwnerNode](Set-ClusterOwnerNode.md)"
+msgstr "### [Set-ClusterOwnerNode](Set-ClusterOwnerNode.md)"
+
+msgid ""
+"Specifies which nodes can own a resource in a failover cluster or specifies "
+"the order of preference among owner nodes for a clustered role, or resource "
+"group."
+msgstr "指定在故障转移集群中哪些节点可以拥有资源；或者为集群角色或资源组确定各拥有节点之间的优先顺序。"
+
+msgid "### [Set-ClusterParameter](Set-ClusterParameter.md)"
+msgstr "### [Set-ClusterParameter](Set-ClusterParameter.md)"
+
+msgid ""
+"Controls specific properties of an object in a failover cluster, such as a "
+"resource, a group, or a network."
+msgstr "用于控制故障转移集群中对象的特定属性，例如资源、组或网络。"
+
+msgid "### [Set-ClusterQuorum](Set-ClusterQuorum.md)"
+msgstr "### [Set-ClusterQuorum](Set-ClusterQuorum.md)"
+
+msgid "Configures quorum options for a failover cluster."
+msgstr "为故障转移集群配置法定人数（quorum）选项。"
+
+msgid "### [Set-ClusterResourceDependency](Set-ClusterResourceDependency.md)"
+msgstr "### [Set-ClusterResourceDependency](Set-ClusterResourceDependency.md)"
+
+msgid ""
+"Specifies the resources that a particular resource depends on within a "
+"failover cluster."
+msgstr "指定了在故障转移集群中某个特定资源所依赖的其他资源。"
+
+msgid ""
+"### [Set-ClusterStorageSpacesDirect](Set-ClusterStorageSpacesDirect.md)"
+msgstr ""
+"### [Set-ClusterStorageSpacesDirect](Set-ClusterStorageSpacesDirect.md)"
+
+msgid "Sets S2D cache parameters."
+msgstr "设置S2D缓存参数。"
+
+msgid ""
+"### [Set-ClusterStorageSpacesDirectDisk](Set-"
+"ClusterStorageSpacesDirectDisk.md)"
+msgstr ""
+"### [Set-ClusterStorageSpacesDirectDisk](Set-"
+"ClusterStorageSpacesDirectDisk.md)"
+
+msgid ""
+"Configures the system to enable S2D to claim or not claim specific physical "
+"disks."
+msgstr "配置系统以决定S2D是否可以申请或放弃特定的物理磁盘。"
+
+msgid ""
+"### [Set-WorkgroupClusterRemotingConfiguration](Set-"
+"WorkgroupClusterRemotingConfiguration.md)"
+msgstr ""
+"### [Set-WorkgroupClusterRemotingConfiguration](Set-"
+"WorkgroupClusterRemotingConfiguration.md)"
+
+msgid ""
+"Configures the remote management settings for a failover cluster that is "
+"part of a workgroup."
+msgstr "配置作为工作组一部分的故障转移集群的远程管理设置。"
+
+msgid "### [Start-Cluster](Start-Cluster.md)"
+msgstr "### [启动集群](Start-Cluster.md)"
+
+msgid ""
+"Starts the Cluster service on all nodes of the cluster on which it isn't yet"
+" started."
+msgstr "在集群中所有尚未启动该服务的节点上，启动该服务。"
+
+msgid "### [Start-ClusterGroup](Start-ClusterGroup.md)"
+msgstr "### [Start-ClusterGroup](Start-ClusterGroup.md)"
+
+msgid ""
+"Starts one or more clustered roles, also known as resource groups, on a "
+"failover cluster."
+msgstr "在故障转移集群上启动一个或多个集群角色（也称为资源组）。"
+
+msgid "### [Start-ClusterNode](Start-ClusterNode.md)"
+msgstr "### [Start-ClusterNode](Start-ClusterNode.md)"
+
+msgid "Starts the Cluster service on a node in a failover cluster."
+msgstr "在故障转移集群中的一个节点上启动Cluster服务。"
+
+msgid "### [Start-ClusterResource](Start-ClusterResource.md)"
+msgstr "### [Start-ClusterResource](Start-ClusterResource.md)"
+
+msgid "Brings a resource online in a failover cluster."
+msgstr "在故障转移集群中，将某个资源在线化（即使其能够正常使用）。"
+
+msgid "### [Stop-Cluster](Stop-Cluster.md)"
+msgstr "### [停止集群](Stop-Cluster.md)"
+
+msgid ""
+"Stops the Cluster service on all nodes in a failover cluster, which will "
+"stop all services and applications configured in the cluster."
+msgstr "在故障转移集群中，该操作会停止所有节点上的Cluster服务，从而导致集群中配置的所有服务和应用程序也一并终止运行。"
+
+msgid "### [Stop-ClusterGroup](Stop-ClusterGroup.md)"
+msgstr "### [Stop-ClusterGroup](Stop-ClusterGroup.md)"
+
+msgid "Stops one or more clustered roles on a failover cluster."
+msgstr "在故障转移集群中，停止一个或多个集群角色（clustered role）的运行。"
+
+msgid "### [Stop-ClusterNode](Stop-ClusterNode.md)"
+msgstr "### [Stop-ClusterNode](Stop-ClusterNode.md)"
+
+msgid "Stops the Cluster service on a node in a failover cluster."
+msgstr "在故障转移集群中，停止某个节点上的Cluster服务。"
+
+msgid "### [Stop-ClusterResource](Stop-ClusterResource.md)"
+msgstr "### [Stop-ClusterResource](Stop-ClusterResource.md)"
+
+msgid "Takes a resource offline in a failover cluster."
+msgstr "在故障转移集群中，将某个资源置于离线状态。"
+
+msgid "### [Suspend-ClusterNode](Suspend-ClusterNode.md)"
+msgstr "### [Suspend-ClusterNode](Suspend-ClusterNode.md)"
+
+msgid ""
+"Suspends activity on a failover cluster node, that is, pauses the node."
+msgstr "暂停故障转移集群节点上的活动，即让该节点处于休眠状态。"
+
+msgid "### [Suspend-ClusterResource](Suspend-ClusterResource.md)"
+msgstr "### [Suspend-ClusterResource](Suspend-ClusterResource.md)"
+
+msgid ""
+"Turns on maintenance for a disk resource or CSV so that you can run a disk "
+"maintenance tool without triggering failover."
+msgstr "启用磁盘资源或CSV文件的维护模式，这样就可以运行磁盘维护工具而不会触发故障转移（failover）机制。"
+
+msgid "### [Test-Cluster](Test-Cluster.md)"
+msgstr "### [测试集群](Test-Cluster.md)"
+
+msgid "Runs validation tests for failover cluster hardware and settings."
+msgstr "运行验证测试，以检查故障转移集群的硬件和配置是否正常。"
+
+msgid "### [Test-ClusterResourceFailure](Test-ClusterResourceFailure.md)"
+msgstr "### [Test-ClusterResourceFailure](Test-ClusterResourceFailure.md)"
+
+msgid "Simulates a failure of a cluster resource."
+msgstr "模拟集群资源的故障。"
+
+msgid "### [Test-WorkgroupCluster](Test-WorkgroupCluster.md)"
+msgstr "### [Test-WorkgroupCluster](Test-WorkgroupCluster.md)"
+
+msgid "Tests the configuration of a workgroup cluster."
+msgstr "测试工作组集群的配置。"
+
+msgid "### [Test-WorkgroupClusterRemoting](Test-WorkgroupClusterRemoting.md)"
+msgstr "### [Test-WorkgroupClusterRemoting](Test-WorkgroupClusterRemoting.md)"
+
+msgid "Tests if remoting is configured on all nodes."
+msgstr "测试所有节点上是否都配置了远程连接功能。"
+
+msgid "### [Update-ClusterFunctionalLevel](Update-ClusterFunctionalLevel.md)"
+msgstr "### [更新集群功能级别](Update-ClusterFunctionalLevel.md)"
+
+msgid "Updates the functional level of a mixed-version cluster."
+msgstr "更新混合版本集群的功能级别。"
+
+msgid "### [Update-ClusterIPResource](Update-ClusterIPResource.md)"
+msgstr "### [更新-ClusterIP资源](Update-ClusterIPResource.md)"
+
+msgid ""
+"Renews or releases the DHCP lease for an IP address resource in a failover "
+"cluster."
+msgstr "在故障转移集群中，续订或释放某个IP地址资源的DHCP租约。"
+
+msgid ""
+"### [Update-ClusterNetworkNameResource](Update-"
+"ClusterNetworkNameResource.md)"
+msgstr "### [更新集群网络名称资源](Update-ClusterNetworkNameResource.md)"
+
+msgid ""
+"Registers existing Network Name resources with a DNS server in a way that "
+"doesn't interrupt cluster availability."
+msgstr "将现有的网络名称资源注册到DNS服务器上，同时不会影响集群的正常运行（即不会中断集群的服务可用性）。"
+
+msgid ""
+"### [Update-ClusterVirtualMachineConfiguration](Update-"
+"ClusterVirtualMachineConfiguration.md)"
+msgstr "### [更新集群虚拟机配置](Update-ClusterVirtualMachineConfiguration.md)"
+
+msgid ""
+"Refreshes the configuration of a clustered virtual machine within a failover"
+" cluster."
+msgstr "刷新故障转移集群中集群化虚拟机的配置。"

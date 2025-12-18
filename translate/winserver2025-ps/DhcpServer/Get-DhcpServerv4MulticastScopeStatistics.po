@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:23:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DhcpServerv4MulticastScopeStatistics"
+msgstr "# 获取 DHCP Server v4 多播范围统计信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets multicast scope statistics."
+msgstr "获取多播范围统计信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DhcpServerv4MulticastScopeStatistics** cmdlet gets multicast scope statistics.\n"
+"If you do not specify the *Name* parameter, the cmdlet gets statistics for all multicast scopes on the Dynamic Host Configuration Protocol (DHCP) server."
+msgstr ""
+"`Get-DhcpServerv4MulticastScopeStatistics` 这个 cmdlet 用于获取多播范围的统计信息。如果您没有指定 "
+"`Name` 参数，该 cmdlet 将获取动态主机配置协议（DHCP）服务器上所有多播范围的统计信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get multicast scope statistics by using a name"
+msgstr "### 示例 1：通过名称获取多播范围统计信息"
+
+msgid ""
+"This command returns the statistics for the multicast scope named "
+"Multicast_AudioConference on the DHCP server named DhcpServer01.Contoso.com."
+msgstr ""
+"此命令会返回名为DhcpServer01.Contoso.com的DHCP服务器上、名为Multicast_AudioConference的多播范围内的统计信息。"
+
+msgid "### Example 2: Get statistics for all multicast scopes"
+msgstr "### 示例 2：获取所有多播作用域的统计信息"
+
+msgid ""
+"This command returns the statistics for all the multicast scopes on the DHCP"
+" server named DhcpServer01.Contoso.com."
+msgstr "该命令会返回名为DhcpServer01.Contoso.com的DHCP服务器上所有多播范围的统计信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用此参数来执行需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理作业，请使用`*-Job`系列的cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies the DNS name or IP address of the target computer that runs the "
+"DHCP Server service."
+msgstr "指定运行 DHCP 服务器服务的目标计算机的 DNS 名称或 IP 地址。"
+
+msgid "Specifies an array of names of multicast scopes."
+msgstr "指定一个多播作用域名称数组。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令行脚本（cmdlet）的最大操作数量。如果省略此参数或输入值为 `0`，那么 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM 命令行脚本的数量来计算出一个最优的并发限制。这个并发限制仅适用于当前的命令行脚本，而不适用于整个会话或整个计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#DhcpServerv4MulticastScopeStatistics[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#DhcpServerv4MulticastScopeStatistics[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DhcpServerv4MulticastScope](./Get-DhcpServerv4MulticastScope.md)"
+msgstr "[Get-DhcpServerv4MulticastScope](./Get-DhcpServerv4MulticastScope.md)"

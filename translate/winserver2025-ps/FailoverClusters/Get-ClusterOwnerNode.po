@@ -1,0 +1,129 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:02:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterOwnerNode"
+msgstr "# Get-ClusterOwnerNode"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets information about which nodes can own a resource in a failover cluster or information about the\n"
+"order of preference among owner nodes for a clustered role."
+msgstr "获取关于在故障转移集群中哪些节点可以拥有某个资源的信息，或者关于负责执行特定集群角色的节点之间的优先级顺序的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterOwnerNode` cmdlet gets information about which nodes can own a resource in a\n"
+"failover cluster or information about the order of preference among owner nodes for a clustered\n"
+"role."
+msgstr ""
+"`Get-ClusterOwnerNode` cmdlet "
+"可以获取关于在故障转移集群中哪些节点可以拥有某资源的信息，或者关于拥有该资源的节点之间的优先级顺序的信息。"
+
+msgid ""
+"Settings that control the possible or preferred owners affect the way the cluster responds to the\n"
+"failure of a resource or a clustered role."
+msgstr "用于控制资源所有者或集群角色所有者的设置，会影响到集群在资源或集群角色发生故障时的响应方式。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example lists the possible owners for the cluster named `Cluster Disk "
+"1` in the local cluster."
+msgstr "这个示例列出了本地集群中名为“Cluster Disk 1”的集群的可能所有者。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example lists the preferred owners for the clustered file server, or resource group, called\n"
+"`cluster1FS12` on the local cluster."
+msgstr "这个示例列出了在本地集群中名为 `cluster1FS12` 的集群文件服务器或资源组的首选所有者。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid ""
+"Specifies the name of the cluster group for which owner nodes are "
+"enumerated."
+msgstr "指定用于枚举所有者节点的集群组的名称。"
+
+msgid ""
+"Specifies the cluster group or cluster resource on which to enumerate owner "
+"nodes."
+msgstr "指定要枚举所有者节点的集群组或集群资源。"
+
+msgid ""
+"Specifies the name of the cluster resource for which owner nodes are "
+"enumerated."
+msgstr "指定要枚举所有者节点的集群资源的名称。"
+
+msgid ""
+"Specifies the name of the cluster resource type for which owner nodes are "
+"enumerated."
+msgstr "指定用于枚举所有者节点的集群资源类型的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### MicrosoftFailoverClusters.PowerShell_clusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterGroup"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResourceType"
+msgstr "### MicrosoftFailoverClusters.PowerShell_CLUSTERResourceType"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterOwnerNodeList"
+msgstr "### MicrosoftFailoverClusters.PowerShell ClusterOwnerNodeList"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-ClusterOwnerNode](./Set-ClusterOwnerNode.md)"
+msgstr "[Set-ClusterOwnerNode](./Set-ClusterOwnerNode.md)"

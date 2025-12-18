@@ -1,0 +1,178 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:59:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppLockerPolicy"
+msgstr "# 获取 AppLocker 策略"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the local, the effective, or a domain AppLocker policy."
+msgstr "获取本地、生效的或域级别的 AppLocker 策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### LocalPolicy (Default)"
+msgstr "### LocalPolicy（默认值）"
+
+msgid "### DomainPolicy"
+msgstr "### DomainPolicy"
+
+msgid "### EffectivePolicy"
+msgstr "### EffectivePolicy"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AppLockerPolicy** cmdlet retrieves the AppLocker policy from the "
+"local Group Policy Object (GPO), a specified GPO, or the GP-deployed "
+"effective policy on the computer."
+msgstr ""
+"`Get-AppLockerPolicy` cmdlet 从本地组策略对象（GPO）、指定的 GPO 或计算机上部署的有效组策略中检索 "
+"AppLocker 策略。"
+
+msgid ""
+"By default, the output is an **AppLockerPolicy** object.\n"
+"If the *Xml* parameter is used, then the output will be the AppLocker policy as an XML-formatted string."
+msgstr ""
+"默认情况下，输出结果是一个 **AppLockerPolicy** 对象。如果使用了 *Xml* 参数，那么输出结果将以 XML 格式的字符串形式呈现该"
+" AppLocker 策略。"
+
+msgid ""
+"Note that the Get-AppLockerPolicy cmdlet only functions with policies "
+"deployed via GP. It does not have any knowledge of the AppLocker CSP, so it "
+"will return incorrect data if the policy in place has been applied via the "
+"CSP."
+msgstr ""
+"请注意，Get-AppLockerPolicy cmdlet 仅适用于通过 Group Policy (GP) 部署的 AppLocker 策略。该 "
+"cmdlet 不了解 AppLocker Cloud Service Provider (CSP) 的工作原理；因此，如果实际应用的策略是通过 CSP "
+"部署的，它将返回错误的数据。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get an AppLocker policy"
+msgstr "### 示例 1：获取 AppLocker 策略"
+
+msgid ""
+"This example gets the local AppLocker policy as an **AppLockerPolicy** "
+"object."
+msgstr "这个示例将本地的 AppLocker 策略获取为一个 **AppLockerPolicy** 对象。"
+
+msgid "### Example 2: Get the AppLocker policy for a GPO"
+msgstr "### 示例 2：获取某个 GPO 的 AppLocker 策略"
+
+msgid ""
+"This example gets the AppLocker policy of the unique GPO specified by the "
+"LDAP path as an **AppLockerPolicy** object."
+msgstr "这个示例将通过 LDAP 路径指定的唯一 GPO 的 AppLocker 策略获取为一个 **AppLockerPolicy** 对象。"
+
+msgid "### Example 3: Get the effective policy"
+msgstr "#### 示例 3：获取生效的政策"
+
+msgid ""
+"This example gets the effective policy on the computer, and then sends it in"
+" XML-format to the specified file on an existing path."
+msgstr "这个示例会获取计算机上的有效策略，然后将其以XML格式发送到指定路径下的文件中。"
+
+msgid "### Example 4: Get and test an AppLocker policy"
+msgstr "### 示例 4：获取并测试 AppLocker 策略"
+
+msgid ""
+"This example gets the local AppLocker policy on the computer, and then tests"
+" the policy using the **Test-AppLockerPolicy** cmdlet to test whether the "
+".exe files in C:\\Windows\\System32 will be allowed to run by the Everyone "
+"group."
+msgstr ""
+"这个示例会获取计算机上的本地 AppLocker 策略，然后使用 **Test-AppLockerPolicy** cmdlet "
+"来测试该策略：具体来说，它会检查 C:\\Windows\\System32 目录中的 .exe 文件是否会被 “Everyone” 组允许运行。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Gets the AppLocker policy from the GPO specified by the path given in the "
+"*Ldap* parameter."
+msgstr "从由*Ldap*参数中指定的路径所对应的GPO（组策略对象）中获取AppLocker策略。"
+
+msgid ""
+"Gets the effective AppLocker policy on the local computer.\n"
+"The effective policy is the merge of the local AppLocker policy and any applied AppLocker domain policies on the local computer."
+msgstr ""
+"获取本地计算机上有效的AppLocker策略。该有效策略是本地AppLocker策略与本地计算机上应用的任何AppLocker域策略的合并结果。"
+
+msgid "Specifies the LDAP path of the GPO and must specify a unique GPO."
+msgstr "指定 GPO 的 LDAP 路径，并且必须指定一个唯一的 GPO。"
+
+msgid "Gets the AppLocker policy from the local GPO."
+msgstr "从本地的组策略对象（GPO）中获取 AppLocker 策略。"
+
+msgid ""
+"Specifies that the AppLocker policy be output as an XML-formatted string."
+msgstr "指定将 AppLocker 策略输出为 XML 格式的字符串。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.AppLockerPolicy"
+msgstr ""
+"### "
+"Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.AppLockerPolicy"
+
+msgid "**AppLockerPolicy**"
+msgstr "**AppLockerPolicy**"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AppLockerFileInformation](./Get-AppLockerFileInformation.md)"
+msgstr "[Get-AppLockerFileInformation](./Get-AppLockerFileInformation.md)"
+
+msgid "[New-AppLockerPolicy](./New-AppLockerPolicy.md)"
+msgstr "[New-AppLockerPolicy](./New-AppLockerPolicy.md)"
+
+msgid "[Set-AppLockerPolicy](./Set-AppLockerPolicy.md)"
+msgstr "[Set-AppLockerPolicy](./Set-AppLockerPolicy.md)"
+
+msgid "[Test-AppLockerPolicy](./Test-AppLockerPolicy.md)"
+msgstr "[测试-AppLockerPolicy](./Test-AppLockerPolicy.md)"

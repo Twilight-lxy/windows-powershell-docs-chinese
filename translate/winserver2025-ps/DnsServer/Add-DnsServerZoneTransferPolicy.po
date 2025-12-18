@@ -1,0 +1,431 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 13:27:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-DnsServerZoneTransferPolicy"
+msgstr "# Add-DnsServerZoneTransferPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a zone transfer policy to a DNS server."
+msgstr "向DNS服务器添加一个区域传输策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Server (Default)"
+msgstr "### 服务器（默认设置）"
+
+msgid "### Zone"
+msgstr "### 区域（Zone）"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-DnsServerZoneTransferPolicy** cmdlet adds a zone transfer policy to a Domain Name System (DNS) server.\n"
+"A policy determines zone transfers based on criteria that you specify in the policy."
+msgstr ""
+"`Add-DnsServerZoneTransferPolicy` cmdlet "
+"用于向域名系统（DNS）服务器添加区域传输策略。该策略会根据您在策略中指定的标准来决定区域传输的方式。"
+
+msgid "A policy consists of criteria and action."
+msgstr "一项政策由标准（criteria）和行动（action）两部分组成。"
+
+msgid ""
+"The criteria are a logical combination of client subnet, server interface IP"
+" address, fully qualified domain name (FQDN), Internet Protocol (IPv4/IPv6),"
+" transport protocol (UDP/TCP), time of day, and query type."
+msgstr ""
+"这些标准是客户端子网、服务器接口IP地址、完全限定域名（FQDN）、互联网协议（IPv4/IPv6）、传输协议（UDP/TCP）、时间以及查询类型等元素的逻辑组合。"
+
+msgid "Specify criteria in the following format:"
+msgstr "请按照以下格式指定标准："
+
+msgid ""
+"operator, value01, value02, .\n"
+". .\n"
+", operator, value03, value04, .\n"
+". ."
+msgstr "运算符，值01，值02，……，运算符，值03，值04，……"
+
+msgid ""
+"The operator is either EQ or NE.\n"
+"You can specify no more than one of each operator in a criterion."
+msgstr "运算符只能是“EQ”（等于）或“NE”（不等于）。在一条规则中，每种运算符最多只能使用一次。"
+
+msgid ""
+"The policy treats values that follow the EQ operator as multiple assertions which are logically combined (OR'd).\n"
+"The policy treats values that follow the NE operator as multiple assertions which are logically differenced (AND'd)."
+msgstr ""
+"该策略将紧跟在“EQ”操作符之后的值视为多个断言，并对这些断言进行逻辑组合（使用“OR”运算）。同样，该策略也将紧跟在“NE”操作符之后的值视为多个断言，并对这些断言进行逻辑区分（使用“AND”运算）。"
+
+msgid ""
+"This cmdlet combines multiple criteria by using the value of the *Condition* parameter as the logical operator.\n"
+"This parameter takes one of the following values:"
+msgstr "此cmdlet通过使用*Condition*参数的值作为逻辑运算符来结合多个条件。该参数可以取以下值之一："
+
+msgid ""
+"If a query meets the criteria of a policy, the action is the response that the policy requires.\n"
+"You can specify DENY or IGNORE."
+msgstr "如果某个查询符合某项策略的标准，那么该策略所要求的响应动作就会被执行。你可以选择“DENY”（拒绝）或“IGNORE”（忽略）。"
+
+msgid ""
+"You can create policies for zone transfer at either the server level or the zone level.\n"
+"Server level policies apply on every zone transfer query that occurs on the DNS server.\n"
+"Zone level policies apply only on the queries on a zone hosted on the DNS server.\n"
+"The most common use for zone level policies is to implement blocked or safe lists."
+msgstr ""
+"你可以在服务器级别或区域级别创建用于区域传输的策略。服务器级别的策略会应用于DNS服务器上发生的所有区域传输请求；而区域级别的策略仅适用于针对该DNS服务器上托管的区域所发出的请求。区域级别策略最常见的用途是实现“阻止列表”或“安全列表”的功能。"
+
+msgid ""
+"Zone level policies apply to the zone in which you create them.\n"
+"You cannot create a zone level policy without a zone.\n"
+"If you remove a zone, that removal deletes the associated zone level policies."
+msgstr ""
+"区域级别策略适用于您创建它们的那个区域。在没有区域的情况下，您无法创建区域级别策略。如果您删除了一个区域，那么与该区域关联的所有区域级别策略也会被一并删除。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a server level zone transfer policy"
+msgstr "### 示例 1：创建服务器级别的区域传输策略"
+
+msgid ""
+"The first command creates a client subnet named AllowedSubnet by using the **Add-DnsServerClientSubnet** cmdlet.\n"
+"That subnet includes the specified IP subnet."
+msgstr ""
+"第一个命令使用 **Add-DnsServerClientSubnet** cmdlet 创建了一个名为 AllowedSubnet "
+"的客户端子网。该子网包含了指定的 IP 子网地址。"
+
+msgid ""
+"The second command creates a zone transfer policy that disallows all customers that do not belong to the AllowedSubnet subnet.\n"
+"This policy is a server level policy, and, so, it applies on all the zones on the server."
+msgstr ""
+"第二个命令创建了一个区域传输策略，该策略禁止所有不属于 AllowedSubnet "
+"子网的客户进行访问。这是一个服务器级别的策略，因此它会应用于服务器上的所有区域。"
+
+msgid "### Example 2: Disallow zone transfers by server interface"
+msgstr "### 示例 2：通过服务器接口禁止区域转移"
+
+msgid ""
+"This command creates a zone transfer policy that disallows all zone transfer"
+" queries that do not arrive  on server interface 10.0.0.33."
+msgstr "此命令创建了一个区域传输策略，该策略禁止所有未通过服务器接口 10.0.0.33 到达的区域传输请求。"
+
+msgid "### Example 3: Create a zone level zone transfer policy"
+msgstr "### 示例 3：创建区域级别的区域传输策略"
+
+msgid ""
+"This command creates a zone level zone transfer policy for contoso.com."
+msgstr "此命令为 contoso.com 创建了一个区域级别的区域传输策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the action to take if a zone transfer matches this policy.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定当区域传输符合此策略时应执行的操作。该参数的可接受值为："
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业 (About "
+"Jobs)](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。请输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the client subnet criterion.\n"
+"For more information, see **Add-DnsServerClientSubnet**.\n"
+"Specify a criterion in the following format:"
+msgstr "指定客户端子网的标准。有关更多信息，请参阅 **Add-DnsServerClientSubnet**。按照以下格式指定标准："
+
+msgid ""
+"operator, value01, value02, .\n"
+". .\n"
+", operator, value03, value04, .\n"
+". ."
+msgstr "操作符，值01，值02，……，操作符，值03，值04，……"
+
+msgid ""
+"The operator is either EQ or NE.\n"
+"You can specify no more than one of each operator in a criterion."
+msgstr "运算符只能是“EQ”（等于）或“NE”（不等于）。在一条规则中，每种运算符最多只能使用一次。"
+
+msgid ""
+"The policy treats values that follow the EQ operator as multiple assertions which are logically combined (OR'd).\n"
+"The policy treats values that follow the NE operator as multiple assertions which are logically differenced (AND'd).\n"
+"The criterion is satisfied if the subnet of the zone transfer matches one of the EQ values and does not match any of the NE values."
+msgstr ""
+"该策略将遵循“EQ”（Equal to）操作符的值视为多个断言，并对这些断言进行逻辑组合（使用“OR”运算）。同样，遵循“NE”（Not Equal "
+"to）操作符的值也被视为多个断言，并对这些断言进行逻辑区分（使用“AND”运算）。当区域传输的子网与某个“EQ”值相匹配，但与任何“NE”值都不匹配时，该准则就得到了满足。"
+
+msgid "Example criterion: `\"EQ,NorthAmerica,Asia,NE,Europe\"`"
+msgstr "示例标准：`\"EQ,NorthAmerica,Asia,NE,Europe\"`"
+
+msgid ""
+"Specifies a remote DNS server.\n"
+"You can specify an IP address or any value that resolves to an IP address, such as an FQDN, host name, or NETBIOS name."
+msgstr ""
+"指定一个远程DNS服务器。您可以指定一个IP地址，或者任何能够解析为IP地址的值，例如完全 qualified domain "
+"name（FQDN）、主机名或NETBIOS名称。"
+
+msgid ""
+"Specifies how the policy treats multiple criteria.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定策略如何处理多个标准。该参数的可接受值如下："
+
+msgid "The default value is AND."
+msgstr "默认值是“AND”。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Indicates that this cmdlet disables the policy.\n"
+"If you do not specify this parameter, the cmdlet creates the policy and enables it."
+msgstr "表示此 cmdlet 会禁用该策略。如果您不指定此参数，cmdlet 会创建该策略并启用它。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此 cmdlet 的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传递给此 cmdlet。"
+
+msgid ""
+"Specifies the Internet Protocol criterion.\n"
+"Valid values are: IPv4 and IPv6.\n"
+"Specify a criterion in the following format:"
+msgstr "指定互联网协议（IP协议）的相关标准。有效的值有：IPv4 和 IPv6。请按照以下格式来指定相应的标准："
+
+msgid ""
+"operator, value01, value02, .\n"
+". .\n"
+", operator, value03, value04, .\n"
+". ."
+msgstr "操作符，值01，值02，……，操作符，值03，值04，……"
+
+msgid ""
+"The operator is either EQ or NE.\n"
+"You can specify no more than one of each operator in a criterion."
+msgstr "运算符只能是“EQ”（等于）或“NE”（不等于）。在一个条件中，每种运算符最多只能使用一次。"
+
+msgid ""
+"The policy treats values that follow the EQ operator as multiple assertions which are logically combined (OR'd).\n"
+"The policy treats values that follow the NE operator as multiple assertions which are logically differenced (AND'd).\n"
+"The criterion is satisfied if the IP address of the zone transfer matches one of the EQ values and does not match any of the NE values."
+msgstr ""
+"该策略将遵循“EQ”（等于）运算符的值视为多个断言，并将这些断言在逻辑上进行组合（使用“OR”操作）。同样地，该策略也将遵循“NE”（不等于）运算符的值视为多个断言，并在这些断言之间进行逻辑比较（使用“AND”操作）。只有当区域传输的IP地址与某个“EQ”值匹配，但不与任何“NE”值匹配时，才满足该条件。"
+
+msgid "Example criteria: `\"EQ,IPv4\"` and `\"EQ,IPv6\"`"
+msgstr "示例标准：`\"EQ,IPv4\"` 和 `\"EQ,IPv6\"`"
+
+msgid "Specifies a name for the new policy."
+msgstr "为新策略指定一个名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the precedence of the policy.\n"
+"Higher integer values have lower precedence.\n"
+"By default, this cmdlet adds a new policy as the lowest precedence."
+msgstr "用于指定策略的优先级。整数值越大，优先级越低。默认情况下，此cmdlet添加的新策略具有最低的优先级。"
+
+msgid ""
+"Specifies the IP address of the server interface on which the DNS server listens.\n"
+"Specify a criterion in the following format:"
+msgstr "指定DNS服务器监听的服务器接口的IP地址。请按照以下格式提供相应的信息："
+
+msgid ""
+"operator, value01, value02, .\n"
+". .\n"
+", operator, value03, value04, .\n"
+". ."
+msgstr "操作符，值01，值02，……，操作符，值03，值04，……"
+
+msgid ""
+"The operator is either EQ or NE.\n"
+"You can specify no more than one of each operator in the criterion."
+msgstr "运算符可以是“EQ”（等于）或“NE”（不等于）。在条件中，每种运算符最多只能指定一个。"
+
+msgid ""
+"The policy treats values the follow the EQ operator as multiple assertions which are logically combined (OR'd).\n"
+"The policy treats values that follow the NE operator as multiple assertions which are logically differenced (AND'd).\n"
+"The criterion is satisfied if the IP address of the interface matches one of the EQ values and does not match any of the NE values."
+msgstr ""
+"该策略将遵循“EQ”运算符的值视为多个断言，并将这些断言在逻辑上进行组合（使用“OR”操作）。同样地，该策略也将遵循“NE”运算符的值视为多个断言，并在这些断言之间进行逻辑判断（使用“AND”操作）。当接口的IP地址与某个“EQ”值匹配，但与任何“NE”值都不匹配时，则认为该标准得到了满足。"
+
+msgid "Example criteria: `\"EQ,10.0.0.1\"` and `\"NE,192.168.1.1\"`"
+msgstr "示例标准：`\"EQ,10.0.0.1\"` 和 `\"NE,192.168.1.1\"`"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Specifies the time of day criterion.\n"
+"Specify a criterion in the following format:"
+msgstr "用于指定一天中的时间条件。请按照以下格式来指定条件："
+
+msgid ""
+"operator, value01, value02, .\n"
+". .\n"
+", operator, value03, value04, .\n"
+". ."
+msgstr "操作符，值01，值02，……，操作符，值03，值04，……"
+
+msgid ""
+"The operator is either EQ or NE.\n"
+"You can specify no more than one of each operator in the criterion."
+msgstr "运算符只能是“EQ”（等于）或“NE”（不等于）。在条件中，每个类型的运算符最多只能指定一个。"
+
+msgid ""
+"The policy treats values the follow the EQ operator as multiple assertions which are logically combined (OR'd).\n"
+"The policy treats values that follow the NE operator as multiple assertions which are logically differenced (AND'd).\n"
+"The criterion is satisfied if the time of day of the zone transfer matches one of the EQ values and does not match any of the NE values."
+msgstr ""
+"该策略将使用“EQ”运算符的值视为多个相互逻辑组合（通过“OR”连接）的断言；同时，也将使用“NE”运算符的值视为多个相互逻辑区分（通过“AND”连接）的断言。当区域转移发生的时间与某个“EQ”值匹配，但与任何“NE”值都不匹配时，该条件就被认为是满足的。"
+
+msgid "Example criterion: `\"EQ,10:00-12:00,22:00-23:00\"`"
+msgstr "示例标准：`\"EQ,10:00-12:00,22:00-23:00\"`"
+
+msgid ""
+"Specifies the transport protocol criterion.\n"
+"Valid values are: TCP and UDP.\n"
+"Specify a criterion in the following format:"
+msgstr "指定传输协议的标准。有效值有：TCP 和 UDP。请按照以下格式指定标准："
+
+msgid ""
+"operator, value01, value02, .\n"
+". .\n"
+", operator, value03, value04, .\n"
+". ."
+msgstr "操作符，值01，值02，……，操作符，值03，值04，……"
+
+msgid ""
+"The operator is either EQ or NE.\n"
+"You can specify no more than one of each operator in the string."
+msgstr "运算符只能是 EQ（等于）或 NE（不等于）。在字符串中，每种运算符最多只能使用一次。"
+
+msgid ""
+"The policy treats values the follow the EQ operator as multiple assertions which are logically combined (OR'd).\n"
+"The policy treats values that follow the NE operator as multiple assertions which are logically differenced (AND'd).\n"
+"The criterion is satisfied if the transport protocol of the zone transfer matches one of the EQ values and does not match any of the NE values."
+msgstr ""
+"该策略将使用“EQ”运算符的值视为多个断言，并将这些断言在逻辑上进行组合（即使用“OR”操作）。同样，该策略也将使用“NE”运算符的值视为多个断言，并在这些断言之间进行逻辑上的区分（即使用“AND”操作）。当区域传输的协议与某个“EQ”值匹配，但与任何“NE”值都不匹配时，则认为该条件得到满足。"
+
+msgid "Example criterion: `\"EQ,TCP,NE,UDP\"`"
+msgstr "示例标准：`\"EQ,TCP,NE,UDP\"`"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid ""
+"Specifies the name of a DNS zone on which this cmdlet creates a zone level policy.\n"
+"The zone must exist on the DNS server."
+msgstr "指定一个DNS区域的名称，该cmdlet将在该区域上创建区域级别的策略。该区域必须存在于DNS服务器上。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance#DnsServerPolicy"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance#DnsServerPolicy"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-DnsServerZoneTransferPolicy](./Get-DnsServerZoneTransferPolicy.md)"
+msgstr ""
+"[Get-DnsServerZoneTransferPolicy](./Get-DnsServerZoneTransferPolicy.md)"
+
+msgid ""
+"[Remove-DnsServerZoneTransferPolicy](./Remove-"
+"DnsServerZoneTransferPolicy.md)"
+msgstr ""
+"[Remove-DnsServerZoneTransferPolicy](./Remove-"
+"DnsServerZoneTransferPolicy.md)"
+
+msgid ""
+"[Set-DnsServerZoneTransferPolicy](./Set-DnsServerZoneTransferPolicy.md)"
+msgstr ""
+"[Set-DnsServerZoneTransferPolicy](./Set-DnsServerZoneTransferPolicy.md)"
+
+msgid "[Start-DnsServerZoneTransfer](./Start-DnsServerZoneTransfer.md)"
+msgstr "[Start-DnsServerZoneTransfer](./Start-DnsServerZoneTransfer.md)"
+
+msgid "[Add-DnsServerClientSubnet](./Add-DnsServerClientSubnet.md)"
+msgstr "[Add-DnsServerClientSubnet](./Add-DnsServerClientSubnet.md)"
+
+msgid ""
+"[Add-DnsServerQueryResolutionPolicy](./Add-"
+"DnsServerQueryResolutionPolicy.md)"
+msgstr ""
+"[Add-DnsServerQueryResolutionPolicy](./Add-"
+"DnsServerQueryResolutionPolicy.md)"

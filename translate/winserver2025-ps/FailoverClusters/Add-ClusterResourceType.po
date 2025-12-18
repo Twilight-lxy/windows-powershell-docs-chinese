@@ -1,0 +1,129 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:48:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ClusterResourceType"
+msgstr "# 添加集群资源类型"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Adds a resource type to a failover cluster, and specifies information such as the dynamic-link\n"
+"library (DLL) to use with that resource type."
+msgstr "向故障转移集群添加一种资源类型，并指定与该资源类型相关联的信息（例如要使用的动态链接库（DLL））。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-ClusterResourceType` cmdlet adds a resource type to a failover cluster, and specifies\n"
+"information such as the dynamic-link library (DLL) to use with that resource type."
+msgstr ""
+"`Add-ClusterResourceType` cmdlet "
+"可以将一种资源类型添加到故障转移集群中，并指定与该资源类型相关联的信息，例如要使用的动态链接库（DLL）。"
+
+msgid ""
+"The failover cluster software provides Resource DLL files for the most common types of resources.\n"
+"Using the application programming interface (API) provided in the Microsoft Platform Software\n"
+"Development Kit (SDK), other vendors can add support for other resource types."
+msgstr ""
+"故障转移集群软件为最常见的资源类型提供了相应的资源DLL文件。通过使用微软平台软件开发工具包（Microsoft Platform Software "
+"Development Kit，简称SDK）中提供的应用程序编程接口（Application Programming "
+"Interface，API），其他供应商也可以为其他类型的资源添加支持功能。"
+
+msgid ""
+"> [!NOTE]\n"
+"> This cmdlet cannot be run remotely without Credential Security Service Provider (CredSSP)\n"
+"> authentication on the server computer."
+msgstr "> [!注意] > 如果服务器计算机上没有启用凭据安全服务提供程序（CredSSP）的身份验证机制，就无法远程运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example creates `ResType3` on the local cluster using `res3.dll` located on the provided\n"
+"resource DLL file path `C:\\`."
+msgstr "这个示例使用位于提供资源DLL文件路径`C:\\`下的`res3.dll`，在本地集群上创建了`ResType3`。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example creates `ResType4` on the local cluster using `res4.dll` located on the provided\n"
+"resource DLL file path `C:\\`. The display name of the resource type is `Resource Type 4`."
+msgstr ""
+"这个示例使用位于指定资源DLL文件路径（`C:\\`）下的`res4.dll`，在本地集群上创建了`ResType4`。该资源类型的显示名称为“Resource"
+" Type 4”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群的名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Specifies the display name for the resource type."
+msgstr "指定资源类型的显示名称。"
+
+msgid "Specifies the DLL file path for the resource type."
+msgstr "指定资源类型的DLL文件路径。"
+
+msgid "Specifies the cluster on which to register the new resource type."
+msgstr "指定用于注册新资源类型的集群。"
+
+msgid "Specifies the name of the cluster resource type to register."
+msgstr "指定要注册的集群资源类型的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell.Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResourceType"
+msgstr "### MicrosoftFailoverClusters.PowShellClusterResourceType"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterResourceType](./Get-ClusterResourceType.md)"
+msgstr "[Get-ClusterResourceType](./Get-ClusterResourceType.md)"
+
+msgid "[Remove-ClusterResourceType](./Remove-ClusterResourceType.md)"
+msgstr "[Remove-ClusterResourceType](./Remove-ClusterResourceType.md)"

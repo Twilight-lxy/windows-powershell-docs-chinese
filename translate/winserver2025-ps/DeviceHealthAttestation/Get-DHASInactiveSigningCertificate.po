@@ -1,0 +1,82 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:15:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DHASInactiveSigningCertificate"
+msgstr "# 获取不活动的DHAS签名证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the inactive signing certificate."
+msgstr "获取未使用的签名证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-DHASInactiveSigningCertificate** cmdlet gets the inactive signing "
+"certificate thumbprint for the Device Health Attestation service."
+msgstr ""
+"`Get-DHASInactiveSigningCertificate` cmdlet 可用于获取设备健康验证（Device Health "
+"Attestation）服务中处于非活动状态的签名证书的指纹信息。"
+
+msgid "You must have administrator rights to run this cmdlet."
+msgstr "你必须具有管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the inactive signing certificate"
+msgstr "### 示例 1：获取无效的签名证书"
+
+msgid "This example gets the inactive signing certificate thumbprint."
+msgstr "这个示例用于获取无效签名证书的指纹（即该证书的哈希值）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Remove-DHASInactiveSigningCertificate](./Remove-"
+"DHASInactiveSigningCertificate.md)"
+msgstr ""
+"[Remove-DHASInactiveSigningCertificate](./Remove-"
+"DHASInactiveSigningCertificate.md)"

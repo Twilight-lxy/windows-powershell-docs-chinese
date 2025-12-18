@@ -1,0 +1,168 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:19:55 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Repair-ClusterStorageSpacesDirect"
+msgstr "# 修复直接访问集群存储空间的问题"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Repairs disks in a Storage Spaces Direct (S2D) system."
+msgstr "修复Storage Spaces Direct（S2D）系统中的磁盘。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DefaultParameterSet (Default)"
+msgstr "### DefaultParameterSet（默认值）"
+
+msgid "### SkipDiskRecoverySet"
+msgstr "### SkipDiskRecoverySet"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Repair-ClusterStorageSpacesDirect` cmdlet repairs Storage Spaces Direct"
+" (S2D) disks."
+msgstr ""
+"`Repair-ClusterStorageSpacesDirect` cmdlet 用于修复 Storage Spaces Direct (S2D) "
+"磁盘。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Repair S2D on all nodes"
+msgstr "### 示例 1：修复所有节点上的 S2D 系统"
+
+msgid "This command repairs S2D on all nodes without user confirmation."
+msgstr "此命令会在所有节点上修复S2D问题，而无需用户确认。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)\n"
+"or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。请输入一个计算机名称或会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Indicates that this cmdlet disables storage maintenance mode. You can use this parameter to clean\n"
+"the storage maintenance mode setting on physical disks."
+msgstr "表示此 cmdlet 会禁用存储维护模式。您可以使用该参数来清除物理磁盘上的存储维护模式设置。"
+
+msgid ""
+"Specifies a node on which the cmdlet performs the operation. If you don't specify a value, all\n"
+"nodes are used."
+msgstr "指定一个节点，cmdlet将在该节点上执行操作。如果您不指定值，则会使用所有节点。"
+
+msgid ""
+"Indicates that this cmdlet recovers physical disks that are unbound. This parameter can be used when\n"
+"disks are reported to be in a lost communication state. When this parameter is specified, S2D\n"
+"attempts to reestablish the binding between disks in slow and fast tiers, making disks accessible\n"
+"again."
+msgstr ""
+"表示此 cmdlet 可恢复未绑定的物理磁盘。当有磁盘被报告处于“通信中断”状态时，可以使用该参数。指定此参数后，S2D "
+"会尝试重新建立慢速层和快速层之间的磁盘绑定关系，从而使这些磁盘再次可访问。"
+
+msgid ""
+"Indicates that this cmdlet recovers disks so they can be reevaluated to be claimed when repairing\n"
+"Storage Spaces Direct."
+msgstr "表示此 cmdlet 可恢复磁盘，以便在修复 Storage Spaces Direct 时重新评估是否可以将其回收使用。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前正在运行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Disable-ClusterStorageSpacesDirect](./Disable-"
+"ClusterStorageSpacesDirect.md)"
+msgstr ""
+"[ Disable-ClusterStorageSpacesDirect](./Disable-"
+"ClusterStorageSpacesDirect.md)"
+
+msgid ""
+"[Enable-ClusterStorageSpacesDirect](./Enable-ClusterStorageSpacesDirect.md)"
+msgstr ""
+"[Enable-ClusterStorageSpacesDirect](./Enable-ClusterStorageSpacesDirect.md)"
+
+msgid "[Get-ClusterStorageSpacesDirect](./Get-ClusterStorageSpacesDirect.md)"
+msgstr "[Get-ClusterStorageSpacesDirect](./Get-ClusterStorageSpacesDirect.md)"
+
+msgid "[Set-ClusterStorageSpacesDirect](./Set-ClusterStorageSpacesDirect.md)"
+msgstr "[Set-ClusterStorageSpacesDirect](./Set-ClusterStorageSpacesDirect.md)"

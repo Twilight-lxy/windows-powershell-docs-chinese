@@ -1,0 +1,122 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:31:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# BackupToAAD-BitLockerKeyProtector"
+msgstr "# 备份到AAD-BitLocker密钥保护器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Saves a key protector for a BitLocker volume in Microsoft Entra ID."
+msgstr "在 Microsoft Entra ID 中为 BitLocker 卷保存一个密钥保护器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **BackupToAAD-BitLockerKeyProtector** cmdlet saves a recovery password "
+"key protector for a volume protected by BitLocker Drive Encryption to "
+"Microsoft Entra ID. Specify a key to be saved by ID."
+msgstr ""
+"`BackupToAAD-BitLockerKeyProtector` cmdlet 用于将受 BitLocker "
+"驱动器加密保护的卷的恢复密码密钥保护器保存到 Microsoft Entra ID。需要通过 ID 指定要保存的密钥。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example saves a key protector for a specified BitLocker volume."
+msgstr "这个示例为指定的 BitLocker 卷保存了一个密钥保护器。"
+
+msgid ""
+"The first command uses **Get-BitLockerVolume** to obtain a BitLocker volume "
+"and store it in the $BLV variable."
+msgstr ""
+"第一个命令使用 **Get-BitLockerVolume** 来获取一个 BitLocker 加密卷，并将其存储在 `$BLV` 变量中。"
+
+msgid ""
+"The second command backs up the key protector for the BitLocker volume "
+"specified by the MountPoint parameter. The command specifies the key "
+"protector by using its ID, contained in the BitLocker object stored in $BLV."
+" "
+msgstr ""
+"第二个命令用于备份由 `MountPoint` 参数指定的 BitLocker 卷的密钥保护器。该命令通过使用密钥保护器的 ID 来定位它，这个 ID "
+"存储在 `$BLV` 中的 BitLocker 对象中。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This command saves a key protector for a specified BitLocker volume to "
+"Microsoft Entra ID. The command specifies the key protector by using its ID."
+msgstr ""
+"此命令将指定的 BitLocker 卷对应的密钥保护器保存到 Microsoft Entra ID 中。该命令通过使用密钥保护器的 ID 来指定它。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"The **KeyProtector** attribute contains an array of key protectors "
+"associated to the volume. This command uses standard array syntax to index "
+"the KeyProtector object. The key protector that corresponds to the recovery "
+"password key protector can be identified by using the KeyProtectorType "
+"attribute in the KeyProtector object."
+msgstr ""
+"`KeyProtector` 属性包含一组与卷关联的密钥保护器。该命令使用标准的数组语法来索引 `KeyProtector` 对象。可以通过 "
+"`KeyProtector` 对象中的 `KeyProtectorType` 属性来识别对应于恢复密码密钥保护器的那个密钥保护器。"
+
+msgid "The volume to be used by **KeyProtector**."
+msgstr "**KeyProtector** 将使用的卷空间大小。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

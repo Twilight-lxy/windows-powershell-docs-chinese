@@ -1,0 +1,88 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:14:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DHASCertificateChainPolicy"
+msgstr "# 获取DHASCertificateChainPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the certificate chain policy."
+msgstr "获取证书链策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-DHASCertificateChainPolicy** cmdlet gets the certificate chain policy enforced by the Device Health Attestation service.\n"
+"The certificate chain policy specifies parameters for certificate chain verification and revocation behavior."
+msgstr ""
+"`Get-DHASCertificateChainPolicy` cmdlet 可以获取设备健康验证（Device Health "
+"Attestation）服务所实施的证书链策略。该证书链策略规定了用于证书链验证和撤销行为的相关参数。"
+
+msgid "You must have administrator rights to run this cmdlet."
+msgstr "你必须具有管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the certificate chain policy"
+msgstr "### 示例 1：获取证书链策略"
+
+msgid ""
+"This command gets the current certificate chain policy for the Device Health"
+" Attestation service."
+msgstr "此命令用于获取设备健康证明（Device Health Attestation）服务当前的证书链策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CertificateChainPolicy"
+msgstr "### CertificateChainPolicy"
+
+msgid ""
+"The **CertificateChainPolicy** object that this cmdlet returns has the "
+"following members:"
+msgstr "此cmdlet返回的**CertificateChainPolicy**对象具有以下成员："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-DHASCertificateChainPolicy](./Set-DHASCertificateChainPolicy.md)"
+msgstr "[Set-DHASCertificateChainPolicy](./Set-DHASCertificateChainPolicy.md)"

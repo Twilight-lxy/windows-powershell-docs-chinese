@@ -1,0 +1,356 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:17:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "Adds a signed app package to a user account."
+msgstr "将一个已签名的应用程序包添加到用户账户中。"
+
+msgid "# Add-AppxPackage"
+msgstr "# 添加 AppxPackage 文件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a signed app package to a user account."
+msgstr "将一个已签名的应用程序包添加到用户账户中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### AddSet (Default)"
+msgstr "### AddSet（默认值）"
+
+msgid "### AddByAppInstallerSet"
+msgstr "### AddByAppInstallerSet"
+
+msgid "### RegisterSet"
+msgstr "### RegisterSet"
+
+msgid "### UpdateSet"
+msgstr "### UpdateSet"
+
+msgid "### StageSet"
+msgstr "### StageSet"
+
+msgid "### RegisterByPackageFullNameSet"
+msgstr "### RegisterByPackageFullNameSet"
+
+msgid "### RegisterByPackageFamilyNameSet"
+msgstr "### RegisterByPackageFamilyNameSet"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Add-AppxPackage` cmdlet adds a signed app package to a user account. An app package has an\n"
+"`.msix` or `.appx` filename extension. Use the **DependencyPath** parameter to add all other\n"
+"packages required for the installation of the app package."
+msgstr ""
+"`Add-AppxPackage` cmdlet 可将已签名的应用包添加到用户账户中。应用包的文件扩展名为 `.msix` 或 `.appx`。可以使用"
+" **DependencyPath** 参数来添加安装该应用包所需的所有其他包。"
+
+msgid ""
+"You can use the **Register** parameter to install from a folder of unpackaged files during\n"
+"development of Windows Store apps."
+msgstr "在开发Windows商店应用程序时，您可以使用`Register`参数从未打包的文件文件夹中安装这些文件。"
+
+msgid ""
+"To update an already installed package, the new package must have the same "
+"package family name."
+msgstr "要更新已安装的软件包，新软件包必须具有相同的软件包系列名称（package family name）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add an app package"
+msgstr "### 示例 1：添加一个应用包"
+
+msgid "This command adds an app package that the package contains."
+msgstr "这个命令会添加一个应用程序包及其所包含的内容。"
+
+msgid ""
+"### Example 2: Update an app, but defer registration until the app has "
+"closed"
+msgstr "### 示例 2：更新应用程序，但将注册操作推迟到应用程序关闭之后再进行"
+
+msgid ""
+"This command will register an update to an existing app, but won't do so until the next launch of\n"
+"the app."
+msgstr "这条命令会注册对现有应用的更新，但直到应用下次启动时，更新才会真正生效。"
+
+msgid "### Example 3: Add a disabled app package in development mode"
+msgstr "#### 示例 3：在开发模式下添加一个被禁用的应用程序包"
+
+msgid ""
+"This command gets the full path of the package manifest file of an installed Windows Store app, and\n"
+"then registers that package. You can use **DisableDevelopmentMode** to register an application\n"
+"that's staged by the **StagePackageAsync** API, has been disabled, or has become corrupted during\n"
+"testing."
+msgstr ""
+"该命令用于获取已安装的 Windows Store 应用程序的包清单文件（package manifest "
+"file）的完整路径，然后注册该包。你可以使用 **DisableDevelopmentMode** 来注册那些通过 "
+"**StagePackageAsync** API 进行处理的、已被禁用的，或在测试过程中损坏的应用程序。"
+
+msgid "### Example 4: Add an app along with its optional packages"
+msgstr "### 示例 4：添加一个应用程序及其可选的包"
+
+msgid ""
+"This command adds an app package along with its optional packages. It's an atomic operation, which\n"
+"means that if the app or its optional packages fail to install, the deployment operation will be\n"
+"aborted"
+msgstr ""
+"此命令会添加一个应用程序包及其可选的附加包。这是一个原子操作（即整个过程是不可分割的），这意味着如果应用程序或其可选包的安装失败，那么部署操作将会被终止。"
+
+msgid "### Example 5: Install only the required section of a streaming app"
+msgstr "### 示例 5：仅安装流媒体应用程序中所需的部分"
+
+msgid ""
+"This command adds an app package but only installs the required section of a streaming app. Calling\n"
+"this command again without the **RequiredContentGroupOnly** parameter proceeds to install the rest\n"
+"of the application in the order defined by the `AppxContentGroupMap.xml`"
+msgstr ""
+"此命令用于添加一个应用程序包，但仅安装流媒体应用程序中所需的组件。如果再次调用该命令时不使用 `RequiredContentGroupOnly` "
+"参数，则会按照 `AppxContentGroupMap.xml` 中定义的顺序安装应用程序的其余部分。"
+
+msgid "### Example 6: Install an app using the App Installer file"
+msgstr "### 示例 6：使用应用安装程序文件来安装应用程序"
+
+msgid ""
+"This command adds an app package as outlined in the App Installer file with all update settings\n"
+"specified within the App Installer file, if any."
+msgstr "此命令会根据“App Installer”文件中的说明添加一个应用程序包，并应用该文件中指定的所有更新设置（如果有的话）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Allows adding an unsigned package."
+msgstr "允许添加一个未签名的软件包。"
+
+msgid ""
+"Runs an appinstaller file and allows the user to install all the defined packages with a single\n"
+"click. For more information, see\n"
+"[Create an App Installer file manually](/windows/msix/app-installer/how-to-create-appinstaller-file)."
+msgstr ""
+"运行一个应用程序安装程序文件，让用户只需点击一下即可安装所有已定义的软件包。有关更多信息，请参阅[手动创建应用程序安装程序文件](/windows/msix/app-"
+"installer/how-to-create-app installer-file)。"
+
+msgid ""
+"Specifies that the app won't register for a user if currently in use. The app will update on the\n"
+"next launch."
+msgstr "该设置表明：如果应用程序当前正在使用中，则不会为用户进行注册操作。下次启动应用程序时，系统会自动更新相关配置。"
+
+msgid ""
+"Specifies the dependency package full name or dependency package bundle full"
+" name to be registered."
+msgstr "指定要注册的依赖包的全名或依赖包捆绑包的全名。"
+
+msgid ""
+"Specifies an array of file paths of dependency packages that are required for the installation of\n"
+"the app package. The app package has an `.msix`, `.appx`, `.msixbundle`, or `.appxbundle` filename\n"
+"extension. You can specify the paths to more than one dependency package. If a package is already\n"
+"installed for a user, you can skip adding it to the DependencyPath."
+msgstr ""
+"指定一个包含依赖包文件路径的数组，这些依赖包是安装应用程序包所必需的。应用程序包的文件扩展名为 "
+"`.msix`、`.appx`、`.msixbundle` 或 "
+"`.appxbundle`。您可以指定多个依赖包的路径。如果某个依赖包已经安装在用户设备上，则可以不需要将其添加到 `DependencyPath` "
+"中。"
+
+msgid ""
+"Indicates that this cmdlet registers an existing app package installation that has been disabled,\n"
+"didn't register, or has become corrupted. Use the current parameter to specify that the manifest is\n"
+"from an existing installation, and not from a collection of files in development mode. You can also\n"
+"use this parameter to register an application that the\n"
+"[Package Manager API](https://go.microsoft.com/fwlink/?LinkId=245447) has staged. Use the\n"
+"**Register** parameter to specify the location of the app package manifest `.xml` file from the\n"
+"installation location."
+msgstr ""
+"该参数表示此 cmdlet "
+"用于注册一个已禁用的、未成功注册的或已损坏的应用程序包安装。使用该参数可指定应用程序清单文件来自现有的安装实例，而非处于开发模式下的文件集合。您还可以利用该参数来注册通过"
+" [Package Manager API](https://go.microsoft.com/fwlink/?LinkId=245447) "
+"提供的应用程序。请使用 **Register** 参数指定应用程序包清单文件（`.xml` 格式）在安装路径中的位置。"
+
+msgid ""
+"URI path of an external disk location outside of the MSIX package where the package manifest can\n"
+"reference application content."
+msgstr "MSIX包之外的外部磁盘位置的URI路径；该位置用于存储应用程序内容，且包清单（package manifest）可以引用这些内容。"
+
+msgid ""
+"Specifies an array of optional packages that must be installed along with the app package. It's an\n"
+"atomic operation, which means that if the app or its optional packages fail to install, the\n"
+"deployment operation will be aborted."
+msgstr ""
+"指定了一组可选的包，这些包必须与应用程序包一起安装。这是一个原子操作（即不可分割的操作）：如果应用程序或其可选包的安装失败，那么部署操作将会被终止。"
+
+msgid ""
+"Indicates that this cmdlet forces all active processes associated with the package or its\n"
+"dependencies to shut down. If you specify this parameter, don't specify the\n"
+"**ForceTargetApplicationShutdown** parameter."
+msgstr ""
+"该参数表示此 cmdlet 会强制关闭与包或其依赖项关联的所有正在运行的进程。如果您指定了此参数，请不要同时指定 "
+"**ForceTargetApplication Shutdown** 参数。"
+
+msgid ""
+"Indicates that this cmdlet forces all active processes associated with the package to shut down. If\n"
+"you specify this parameter, don't specify the **ForceApplicationShutdown** parameter."
+msgstr ""
+"表示此cmdlet会强制与该软件包关联的所有正在运行的进程关闭。如果您指定了此参数，则不要同时指定**ForceApplicationShutdown**参数。"
+
+msgid ""
+"This parameter is used to force a specific version of a package to be staged or registered,\n"
+"regardless of whether a higher version is already staged or registered."
+msgstr "这个参数用于强制将某个包的特定版本进行暂存或注册，无论是否已经有更高版本的该包被暂存或注册过。"
+
+msgid ""
+"Indicates that this cmdlet forces the deployment of all resource packages specified from a bundle\n"
+"argument. This overrides the resource applicability check of the deployment engine and forces\n"
+"staging of all resource packages, registration of all resource packages, or staging and registration\n"
+"of all resource packages. This parameter can only be used when specifying a resource bundle or\n"
+"resource bundle manifest."
+msgstr ""
+"表示该 cmdlet "
+"强制部署从包参数中指定的所有资源包。这会覆盖部署引擎对资源适用性的检查，强制执行所有资源包的暂存（staging）操作、注册操作，或同时执行这两项操作。此参数只能在指定资源包或资源包清单时使用。"
+
+msgid ""
+"This parameter is used to prevent missing referenced packages to be "
+"downloaded."
+msgstr "这个参数用于防止遗漏需要下载的引用包。"
+
+msgid "Specifies the main package full name or bundle full name to register."
+msgstr "指定要注册的主要包的全名或捆绑包的全名。"
+
+msgid ""
+"Specifies the PackageFamilyName of the optional packages that are in a related set that need to be\n"
+"installed along with the app. Unlike the external packages flag, you don't need to pass in a path\n"
+"to the optional packages. It's an atomic operation, which means that if the app or its optional\n"
+"packages fail to install, the deployment operation will be aborted."
+msgstr ""
+"指定与应用程序一起需要安装的相关可选包的 `PackageFamilyName`。与 `externalPackages` "
+"标志不同，您无需提供这些可选包的路径。这是一个原子操作（即整个过程是不可分割的）：如果应用程序或其可选包无法安装，则部署操作将会被终止。"
+
+msgid ""
+"Specifies the path to the app package file. An app package has an `.msix`, `.appx`, `.msixbundle`,\n"
+"or `.appxbundle` filename extension."
+msgstr ""
+"指定应用程序包文件的路径。应用程序包的文件扩展名可以是`.msix`、`.appx`、`.msixbundle`或`.appxbundle`。"
+
+msgid ""
+"Indicates that this cmdlet registers an application in development mode. You can use development\n"
+"mode to install applications from a folder of unpackaged files. You can use the current parameter\n"
+"to test your Windows Store apps before you deploy them as app packages. To register an existing app\n"
+"package installation, you must specify the **DisableDevelopmentMode** parameter and the\n"
+"**Register** parameter. To specify dependency packages, use the **DependencyPath** parameter and\n"
+"the **DisableDevelopmentMode** parameter."
+msgstr ""
+"该 cmdlet "
+"表示以开发模式注册一个应用程序。您可以使用开发模式从未压缩的文件文件夹中安装应用程序；在将应用程序部署为应用包之前，也可以通过这种方式对其进行测试。要注册已存在的应用程序包，请必须同时指定"
+" `DisableDevelopmentMode` 参数和 `Register` 参数。如果要指定依赖包，则需要使用 `DependencyPath` "
+"参数以及 `DisableDevelopmentMode` 参数。"
+
+msgid ""
+"Specifies the parameter -MainPackage that defines the family name or full "
+"name to be registered."
+msgstr "指定参数 `-MainPackage`，该参数用于定义要注册的家族名称或全名。"
+
+msgid ""
+"This is an optional element that's used to specify the other optional packages that are specified\n"
+"in the main app package. These packages won't be installed as part of the deployment operation."
+msgstr "这是一个可选元素，用于指定在主应用程序包中指定的其他可选软件包。这些软件包不会作为部署操作的一部分被安装。"
+
+msgid ""
+"Specifies that only the required content group that's specified in the `AppxContentGroupMap.xml`\n"
+"must be installed. At this point the app can be launched. Calling `Add-AppxPackage` and specifying\n"
+"the path to the app triggers the rest of the app to be installed in the order defined in the\n"
+"`AppxContentGroupMap.xml`."
+msgstr ""
+"该设置表示只需安装《AppxContentGroupMap.xml》中指定的所需内容组即可。完成这些步骤后，应用程序就可以启动了。调用`Add-"
+"AppxPackage`命令并指定应用程序的路径时，系统会按照《AppxContentGroupMap.xml》中定义的顺序安装应用程序的其余部分。"
+
+msgid ""
+"In case of a failed deployment, if this switch is set to `$true`, files that have been created on\n"
+"the target machine during the installation process aren't removed."
+msgstr "在部署失败的情况下，如果将此开关设置为 `$true`，则在安装过程中在目标机器上创建的文件将不会被删除。"
+
+msgid "Stages a package to the system without registering it."
+msgstr "将一个软件包部署到系统中，但不对其进行注册。"
+
+msgid ""
+"Defines the stub behavior for an app package that's being added or staged. The acceptable values\n"
+"for this parameter are:"
+msgstr "定义了正在被添加或暂存的应用包的“stub”（占位）行为。该参数的可接受值为："
+
+msgid ""
+"Specifies that the package being added is a dependency package update. A dependency package is\n"
+"removed from the user account when the parent app is removed. If you don't use this parameter, the\n"
+"package being added is a primary package and isn't removed from the user account if the parent app\n"
+"is removed. To update an already installed package, the new package must have the same package\n"
+"family name."
+msgstr ""
+"该参数表示要添加的包是一个依赖包更新。当父应用程序被删除时，相应的依赖包也会从用户账户中移除。如果不使用此参数，则所添加的包将作为主包处理；即使父应用程序被删除，该主包也不会从用户账户中移除。如果要更新已安装的包，新包必须具有与旧包相同的包家族名称。"
+
+msgid ""
+"Specifies the **AppxVolume** object to stage the package in. The volume also specifies the default\n"
+"location for user **AppData**."
+msgstr "指定用于放置该包的 **AppxVolume** 对象。此卷同时也指定了用户 **AppData** 的默认存储位置。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### System.IO.FileInfo"
+msgstr "### System.IO.FileInfo"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Package Manager API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+msgstr "[包管理器 API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+
+msgid ""
+"[How to Add and Remove Apps](https://go.microsoft.com/fwlink/?LinkID=231020)"
+msgstr "[如何添加和删除应用程序](https://go.microsoft.com/fwlink/?LinkID=231020)"
+
+msgid "[Get-AppxPackage](./Get-AppxPackage.md)"
+msgstr "[Get-AppxPackage](./Get-AppxPackage.md)"
+
+msgid "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+msgstr "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+
+msgid "[Move-AppxPackage](./Move-AppxPackage.md)"
+msgstr "[Move-AppxPackage](./Move-AppxPackage.md)"
+
+msgid "[Remove-AppxPackage](./Remove-AppxPackage.md)"
+msgstr "[Remove-AppxPackage](./Remove-AppxPackage.md)"

@@ -1,0 +1,156 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:36:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Unlock-BitLocker"
+msgstr "# 解锁 BitLocker"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Restores access to data on a BitLocker volume."
+msgstr "恢复对使用 BitLocker 加密技术保护的卷中数据的访问权限。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### OnlyPasswordParameterSet"
+msgstr "### OnlyPasswordParameterSet"
+
+msgid "### OnlyRecoveryPasswordParameterSet"
+msgstr "### OnlyRecoveryPasswordParameterSet"
+
+msgid "### OnlyRecoveryKeyParameterSet"
+msgstr "### OnlyRecoveryKeyParameterSet"
+
+msgid "### OnlyAdAccountOrGroupParameterSet"
+msgstr "### 只能使用 `AdAccount` 或 `Group` 作为参数"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Unlock-BitLocker** cmdlet restores access to encrypted data on a volume that uses BitLocker Drive Encryption.\n"
+"You can use the **Lock-BitLocker** cmdlet to prevent access."
+msgstr ""
+"` Unlock-BitLocker ` cmdlet 可以恢复对使用 BitLocker 驱动加密技术的卷上加密数据的访问权限。而 ` Lock-"
+"BitLocker ` cmdlet 则可用于阻止对这些数据的访问。"
+
+msgid ""
+"In order to restore access, provide one of the following key protectors for "
+"the volume:"
+msgstr "为了恢复访问权限，请为该卷提供以下保护措施之一："
+
+msgid "This example unlocks a specified BitLocker volume by using a password."
+msgstr "这个示例通过使用密码来解锁指定的 BitLocker 卷。"
+
+msgid ""
+"The first command uses the **ConvertTo-SecureString** cmdlet to create a secure string that contains a password and saves it in the $SecureString variable.\n"
+"For more information about the **ConvertTo-SecureString** cmdlet, type `Get-Help ConvertTo-SecureString`."
+msgstr ""
+"第一个命令使用了 **ConvertTo-SecureString** cmdlet 来创建一个包含密码的安全字符串，并将其保存在 "
+"`$SecureString` 变量中。有关 **ConvertTo-SecureString** cmdlet 的更多信息，可以输入 `Get-"
+"Help ConvertTo-SecureString` 命令查看。"
+
+msgid ""
+"The second command unlocks the specified BitLocker volume by using the "
+"password saved in the $SecureString variable."
+msgstr "第二个命令使用存储在 $SecureString 变量中的密码来解锁指定的 BitLocker 卷。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that BitLocker requires account credentials to unlock the volume.\n"
+"In order to use this parameter, the account for the current user must be a key protector for the volume."
+msgstr "表示 BitLocker 需要账户凭据来解锁卷。为了使用此参数，当前用户的账户必须是该卷的密钥保护者（key protector）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Specifies an array of drive letters or BitLocker volume objects.\n"
+"The cmdlet unlocks the volumes specified.\n"
+"To obtain a BitLocker volume object, use the **Get-BitLockerVolume** cmdlet."
+msgstr ""
+"指定一个由驱动器字母或 BitLocker 卷对象组成的数组。此 cmdlet 会解锁所指定的卷。若要获取 BitLocker 卷对象，请使用 "
+"**Get-BitLockerVolume** cmdlet。"
+
+msgid ""
+"Specifies a secure string that contains a password.\n"
+"The password specified acts as a protector for the volume encryption key."
+msgstr "指定一个包含密码的安全字符串。所指定的密码用于保护卷加密密钥。"
+
+msgid ""
+"Specifies the path to a folder where recovery keys are stored.\n"
+"The key stored in the specified path, if found, acts as a protector for the volume encryption."
+msgstr "指定存储恢复密钥的文件夹路径。如果找到了存储在该路径下的密钥，该密钥将用于保护卷的加密状态。"
+
+msgid ""
+"Specifies a recovery password.\n"
+"The password specified acts as a protector for the volume encryption key."
+msgstr "指定一个恢复密码。该密码用于保护卷加密密钥的安全。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### BitLockerVolume[], String[]"
+msgstr "### BitLockerVolume[], String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### BitLockerVolume[]"
+msgstr "### BitLockerVolume[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-BitLocker](./Disable-BitLocker.md)"
+msgstr "[禁用 BitLocker](./Disable-BitLocker.md)"
+
+msgid "[Enable-BitLocker](./Enable-BitLocker.md)"
+msgstr "[Enable-BitLocker](./Enable-BitLocker.md)"
+
+msgid "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+msgstr "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+
+msgid "[Lock-BitLocker](./Lock-BitLocker.md)"
+msgstr "[Lock-BitLocker](./Lock-BitLocker.md)"
+
+msgid "[Resume-BitLocker](./Resume-BitLocker.md)"
+msgstr "[Resume-BitLocker](./Resume-BitLocker.md)"
+
+msgid "[Suspend-BitLocker](./Suspend-BitLocker.md)"
+msgstr "[暂停BitLocker功能](./Suspend-BitLocker.md)"

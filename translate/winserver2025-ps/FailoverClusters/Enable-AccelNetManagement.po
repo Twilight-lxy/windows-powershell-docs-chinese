@@ -1,0 +1,107 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:53:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-AccelNetManagement"
+msgstr "# 启用AccelNet管理功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables Accelerated Networking Management cluster-wide."
+msgstr "在整个集群范围内启用加速网络管理功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"Enables AccelNet Management cluster-wide. Also sets the number of nodes to reserve and enables the\n"
+"provided intent for AccelNet Management."
+msgstr ""
+"该设置可全局启用 AccelNet Management 功能；同时还会指定需要预留的节点数量，并实现 AccelNet Management "
+"所要求的各项功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example enables the `MyIntent` intent for Accelerated Networking Management and reserves `25`\n"
+"percent of the nodes for that purpose. If the command is successful, it will return `$true`. If\n"
+"there is an error, it will return `$false`."
+msgstr ""
+"这个示例用于启用用于加速网络管理的`MyIntent`意图，并为此目的预留了25%的节点资源。如果命令执行成功，它将返回 "
+"`$true`；如果出现错误，则会返回 `$false`。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"The intent name to be used for Accelerated Networking Management. This "
+"parameter is required."
+msgstr "用于加速网络管理的意图名称。此参数是必需的。"
+
+msgid ""
+"This value must be an integer greater than or equal to **0** and less than "
+"or equal to **99**."
+msgstr "这个值必须是一个大于或等于 0 且小于或等于 99 的整数。"
+
+msgid ""
+"The percentage of cluster nodes that can be down simultaneously while still maintaining enough\n"
+"virtual functions for each VM chosen for Accelerated Networking Management."
+msgstr "在同时保持每个被选用于加速网络管理的虚拟机所需的足够虚拟函数的情况下，可以宕机的集群节点所占的百分比。"
+
+msgid ""
+"If this parameter is left blank, a default of **50%** will be assigned."
+msgstr "如果此参数留空，则会默认设置为 **50%**。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-AccelNetManagement](disable-accelnetmanagement.md)"
+msgstr "[禁用AccelerNet管理功能](disable-accelnetmanagement.md)"
+
+msgid "[Get-AccelNetManagement](get-accelnetmanagement.md)"
+msgstr "[Get-AccelNetManagement](get-accelnetmanagement.md)"
+
+msgid "[Get-AccelNetManagementPreReq](get-accelnetmanagementprereq.md)"
+msgstr "[获取AccelerNet管理前置要求](get-accelnetmanagementprereq.md)"
+
+msgid "[Set-AccelNetManagement](set-accelnetmanagement.md)"
+msgstr "[Set-AccelNetManagement](set-accelnetmanagement.md)"

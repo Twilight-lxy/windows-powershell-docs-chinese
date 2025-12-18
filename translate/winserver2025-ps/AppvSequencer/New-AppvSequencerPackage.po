@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:16:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AppvSequencerPackage"
+msgstr "# New-AppvSequencerPackage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a new App-V package."
+msgstr "创建一个新的App-V包。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByInstallerFullLoad (Default)"
+msgstr "### 使用 ByInstallerFullLoad（默认设置）"
+
+msgid "### ByPackageAcceleratorInstallMedia"
+msgstr "### ByPackageAcceleratorInstallMedia"
+
+msgid "### ByPackageAcceleratorInstalledFiles"
+msgstr "### ByPackageAcceleratorInstalledFiles"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-AppvSequencerPackage** cmdlet creates a new Microsoft Application Virtualization (App-V) package, either using an installer, an App-V accelerator, or an accelerator with an installed application.\n"
+"The cmdlet accepts a template file, as well as the option to force the package to be fully streamed to the computer before running the package."
+msgstr ""
+"`New-AppvSequencerPackage` cmdlet 可用于创建一个新的 Microsoft 应用虚拟化 (App-V) 包。该 "
+"cmdlet 可以使用安装程序、App-V "
+"加速器，或者带有已安装应用程序的加速器来生成新包。此外，它还接受一个模板文件，并提供了在运行包之前强制将整个包内容流式传输到目标计算机的选项。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a package"
+msgstr "#### 示例 1：创建一个包"
+
+msgid "This command creates a package for the application MyApp."
+msgstr "这个命令为名为“MyApp”的应用程序创建了一个软件包。"
+
+msgid "### Example 2: Create a package that must be fully downloaded"
+msgstr "### 示例 2：创建一个需要完整下载的包"
+
+msgid ""
+"This command creates a package that must be fully downloaded for the "
+"application MyApp."
+msgstr "此命令创建了一个软件包，需要将该软件包完全下载后才能使用名为“MyApp”的应用程序。"
+
+msgid "### Example 3: Create a package using a pre-generated accelerator"
+msgstr "### 示例 3：使用预生成的加速器创建一个包"
+
+msgid ""
+"This command creates a new package MyApp using a pre-generated package "
+"accelerator."
+msgstr "这个命令使用预先生成的安装包加速器来创建一个新的名为“MyApp”的安装包。"
+
+msgid "### Example 4: Create a package using a template file"
+msgstr "### 示例 4：使用模板文件创建一个软件包"
+
+msgid "This command creates a new MyApp package using a template file."
+msgstr "这个命令使用模板文件创建一个新的MyApp软件包。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the path to the accelerator file for this package.\n"
+"If the accelerator is not signed or is not accepted by the Sequencer, an error is returned."
+msgstr "指定该软件包对应的加速器文件的路径。如果加速器文件未经过签名，或者无法被Sequencer识别/接受，系统会返回错误信息。"
+
+msgid ""
+"Indicates that the package is required to be fully downloaded before being "
+"launched."
+msgstr "表示在启动该软件包之前，必须先将其完整下载下来。"
+
+msgid ""
+"Specifies the location of the already installed files used to create a new "
+"App-V package with the aid of an App-V Accelerator."
+msgstr "指定已安装文件的位置，这些文件将用于借助 App-V Accelerator 创建一个新的 App-V 包。"
+
+msgid ""
+"Specifies a collection of MSIs, setup executables, or other executables "
+"needed to be run to create the App-V package."
+msgstr "指定一组MSI文件、安装程序或其他需要运行的可执行文件，这些文件用于创建App-V包。"
+
+msgid ""
+"Specifies an array of Installer Command-Line Options as parameter values, "
+"such as /quiet, /passive, or /norestart."
+msgstr "将一组安装程序命令行选项作为参数值指定，例如 `/quiet`、`/passive` 或 `/norestart`。"
+
+msgid ""
+"Specifies the location of the installation media that the Sequencer points "
+"to and generates an accelerator."
+msgstr "指定序列器所指向的安装介质的位置，并生成相应的加速器文件。"
+
+msgid ""
+"Specifies the name of the App-V package.\n"
+"This is also the name of all files outputted by the sequencing process."
+msgstr "指定App-V包的名称。这也是序列化过程生成的所有文件的名称。"
+
+msgid "Specifies the folder where the package is saved."
+msgstr "指定保存该软件包的文件夹位置。"
+
+msgid ""
+"Specifies the location where the application is being installed.\n"
+"This must be a path on the local computer."
+msgstr "指定应用程序的安装位置。该路径必须位于本地计算机上。"
+
+msgid ""
+"Specifies the path to the App-V package template file to be used for this "
+"package."
+msgstr "指定用于此软件包的 App-V 包模板文件的路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Expand-AppvSequencerPackage](./Expand-AppvSequencerPackage.md)"
+msgstr "[Expand-AppvSequencerPackage](./Expand-AppvSequencerPackage.md)"
+
+msgid "[New-AppvPackageAccelerator](./New-AppvPackageAccelerator.md)"
+msgstr "[New-AppvPackageAccelerator](./New-AppvPackageAccelerator.md)"
+
+msgid "[Update-AppvSequencerPackage](./Update-AppvSequencerPackage.md)"
+msgstr "[更新 AppvSequencerPackage](./Update-AppvSequencerPackage.md)"

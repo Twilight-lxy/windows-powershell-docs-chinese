@@ -1,0 +1,241 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:39:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Invoke-DhcpServerv4FailoverReplication"
+msgstr "# 调用 DHCPServerv4FailoverReplication"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Replicates scope configuration between failover partner DHCP server "
+"services."
+msgstr "在故障转移伙伴（DHCP服务器服务）之间复制作用域配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### ScopeId"
+msgstr "### ScopeId"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Invoke-DhcpServerv4FailoverReplication** cmdlet replicates scope "
+"configuration between failover partner Dynamic Host Configuration Protocol "
+"(DHCP) server services."
+msgstr ""
+"`Invoke-DhcpServerv4FailoverReplication` cmdlet 可以在故障转移伙伴（即使用动态主机配置协议 [DHCP]"
+" 的服务器服务）之间复制作用域配置信息。"
+
+msgid ""
+"If you specify the *ScopeId* parameter, if the scope is part of a failover relationship, the scope configuration for the specified scopes is replicated to the failover partner DHCP server service.\n"
+"The scope configuration includes all scope properties, reservations, scope option values, and policies."
+msgstr ""
+"如果您指定了 *ScopeId* 参数，并且该范围属于某个故障转移关系（failover "
+"relationship）的一部分，那么指定范围内的配置信息将会被复制到故障转移对应的 DHCP "
+"服务器上。这些配置信息包括所有的范围属性、预留项（reservations）、范围选项值（scope option "
+"values）以及相关策略（policies）。"
+
+msgid ""
+"If you specify the *Name* parameter, the configuration for all of the scopes"
+" which are part of the failover relationship is replicated to the partner "
+"DHCP server service."
+msgstr "如果您指定了“名称”参数，则与故障转移关系相关的所有范围的配置信息都会被复制到合作伙伴的DHCP服务器服务中。"
+
+msgid ""
+"If you specify no parameters, the configuration for all of the failover "
+"scopes on the DHCP server service will be replicated to the respective "
+"partner DHCP server services."
+msgstr "如果您不指定任何参数，DHCP服务器服务上所有故障转移范围的配置将会被复制到相应的合作伙伴DHCP服务器服务中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Replicate configuration of scopes for a failover relationship"
+msgstr "#### 示例 1：复制用于故障转移关系的作用域配置"
+
+msgid ""
+"This example replicates the configuration of all scopes which are part of "
+"the failover relationship named SFO-SIN-Failover on the DHCP server service "
+"that runs on the computer named dhcpserver.contoso.com to the partner DHCP "
+"server service."
+msgstr ""
+"这个示例将名为“SFO-SIN-"
+"Failover”的故障转移关系中涉及的所有范围的配置，从运行在计算机dhcpserver.contoso.com上的DHCP服务器服务复制到对应的合作伙伴DHCP服务器服务。"
+
+msgid ""
+"### Example 2: Replicate configuration of scopes for failover relationships "
+"for a server"
+msgstr "### 示例 2：复制服务器故障转移关系中作用域（scopes）的配置"
+
+msgid ""
+"This example replicates all of the failover scopes on the DHCP server "
+"service that runs on the computer named dhcpserver.contoso.com to one or "
+"more respective partner DHCP server services based on one or more failover "
+"relationships in which the DHCP server services are included."
+msgstr ""
+"这个示例将根据一个或多个包含DHCP服务器服务的故障转移关系，将运行在名为dhcpserver.contoso.com的计算机上的DHCP服务器服务中的所有故障转移设置复制到一个或多个相应的合作伙伴DHCP服务器服务上。"
+
+msgid "### Example 3: Replicate configuration of scopes"
+msgstr "### 示例 3：复制作用域（scopes）的配置"
+
+msgid ""
+"This example replicates the configuration of the scopes 10.10.10.0 and "
+"10.20.20.0 to the respective partner computers that runs the DHCP server "
+"services of the failover relationships in which the scopes are included."
+msgstr ""
+"这个示例将作用域 10.10.10.0 和 10.20.20.0 的配置复制到相应的合作伙伴计算机上，这些计算机运行着包含这些作用域的故障转移关系中的 "
+"DHCP 服务器服务。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用此参数来执行耗时较长的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理作业，请使用`*-Job`系列的cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the DHCP server service."
+msgstr "指定运行 DHCP 服务器服务的目标计算机的 DNS 名称、IPv4 地址或 IPv6 地址。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需询问用户确认。"
+
+msgid ""
+"Specifies the name of the failover relationship.\n"
+"All scopes for one or more specified relationships are replicated to the partner DHCP server service."
+msgstr "指定故障转移关系的名称。一个或多个指定关系的所有配置信息都会被复制到合作伙伴的 DHCP 服务器服务上。"
+
+msgid ""
+"Specifies the scope identifier (ID), in IPv4 address format, whose "
+"configuration are replicated."
+msgstr "指定配置被复制的范围标识符（ID），该标识符采用 IPv4 地址格式表示。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大并发操作数量。如果省略此参数或输入值为`0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 数量来计算该 cmdlet 的最佳限制值。该限制仅适用于当前执行的 cmdlet，而不影响整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Failover"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Failover"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径指定了底层 WMI 对象的命名空间和类名。"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径指定了底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DhcpServerv4Failover](./Add-DhcpServerv4Failover.md)"
+msgstr "[Add-DhcpServerv4Failover](./Add-DhcpServerv4Failover.md)"
+
+msgid "[Add-DhcpServerv4FailoverScope](./Add-DhcpServerv4FailoverScope.md)"
+msgstr "[Add-DhcpServerv4FailoverScope](./Add-DhcpServerv4FailoverScope.md)"
+
+msgid "[Get-DhcpServerv4Failover](./Get-DhcpServerv4Failover.md)"
+msgstr "[Get-DhcpServerv4Failover](./Get-DhcpServerv4Failover.md)"
+
+msgid "[Remove-DhcpServerv4Failover](./Remove-DhcpServerv4Failover.md)"
+msgstr "[Remove-DhcpServerv4Failover](./Remove-DhcpServerv4Failover.md)"
+
+msgid ""
+"[Remove-DhcpServerv4FailoverScope](./Remove-DhcpServerv4FailoverScope.md)"
+msgstr ""
+"[Remove-DhcpServerv4FailoverScope](./Remove-DhcpServerv4FailoverScope.md)"
+
+msgid "[Set-DhcpServerv4Failover](./Set-DhcpServerv4Failover.md)"
+msgstr "[Set-DhcpServerv4Failover](./Set-DhcpServerv4Failover.md)"

@@ -1,0 +1,133 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:16:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ClusterResourceDependency"
+msgstr "# 移除集群资源依赖关系"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Removes a dependency between two resources in a clustered role within a "
+"failover cluster."
+msgstr "在故障转移集群中，删除集群角色内两个资源之间的依赖关系。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Remove-ClusterResourceDependency` cmdlet removes a dependency between two resources in a\n"
+"clustered role within a failover cluster."
+msgstr ""
+"`Remove-ClusterResourceDependency` cmdlet 用于删除故障转移集群中某个集群角色内两个资源之间的依赖关系。"
+
+msgid ""
+"A dependent resource is brought online after the resources on which it depends. Likewise, a\n"
+"dependent resource is taken offline before the resources on which it depends. If no dependency is\n"
+"configured between clustered resources, then the order in which they are brought online or taken\n"
+"offline might vary."
+msgstr ""
+"一个依赖资源会在其所依赖的资源上线之后再上线；同样，一个依赖资源也会在其所依赖的资源下线之前先下线。如果集群资源之间没有配置任何依赖关系，那么它们上线或下线的顺序可能会有所不同。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example removes the dependency between cluster resource `cluster1FS` and the resource named\n"
+"`IP Address 2001:4898:9:2:: (3)`."
+msgstr ""
+"这个示例消除了集群资源 `cluster1FS` 与名为 `IP Address 2001:4898:9:2:: (3)` 的资源之间的依赖关系。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example removes the dependency between the cluster resource named `cluster1FS` and the resource\n"
+"named `IP Address 2001:4898:9:2:: (3)`. This example uses splatting to pass parameter values from\n"
+"the `$Parameters` variable to the command. Learn more about\n"
+"[Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)."
+msgstr ""
+"这个示例消除了名为 `cluster1FS` 的集群资源与名为 `IP Address 2001:4898:9:2:: (3)` "
+"的资源之间的依赖关系。该示例使用了“Splatting”技术，将 `$Parameters` 变量中的参数值传递给相应的命令。有关 "
+"[Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)"
+" 的更多信息，请参阅相关文档。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies the cluster resource from which to remove the dependency."
+msgstr "指定要从中移除依赖关系的集群资源。"
+
+msgid "Specifies the cluster resource on which to remove a dependency."
+msgstr "指定要从中删除依赖关系的集群资源。"
+
+msgid ""
+"Specifies the name of the cluster resource from which to remove the "
+"dependency."
+msgstr "指定要从中移除依赖关系的集群资源的名称。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft_failoverClusters.PowerShellClusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters PowerShell ClusterResource"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterResourceDependency](./Add-ClusterResourceDependency.md)"
+msgstr "[Add-ClusterResourceDependency](./Add-ClusterResourceDependency.md)"
+
+msgid "[Get-ClusterResourceDependency](./Get-ClusterResourceDependency.md)"
+msgstr "[Get-ClusterResourceDependency](./Get-ClusterResourceDependency.md)"
+
+msgid "[Set-ClusterResourceDependency](./Set-ClusterResourceDependency.md)"
+msgstr "[Set-ClusterResourceDependency](./Set-ClusterResourceDependency.md)"

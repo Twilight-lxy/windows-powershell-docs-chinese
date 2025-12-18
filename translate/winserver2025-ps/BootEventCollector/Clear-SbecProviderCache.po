@@ -1,0 +1,78 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:47:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-SbecProviderCache"
+msgstr "# 清除 Clear-SbecProviderCache 的缓存"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Clears the provider cache."
+msgstr "清除供应商缓存。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **Clear-SbecProviderCache** cmdlet clears the provider cache."
+msgstr "`Clear-SbecProviderCache` cmdlet 用于清除提供程序缓存。"
+
+msgid ""
+"The next time you run the **Get-SbecTraceProviders** cmdlet, the cmdlet re-"
+"reads the providers from the operating system and re-populates the cache."
+msgstr ""
+"下次您运行 `Get-SbecTraceProviders` cmdlet 时，该 cmdlet "
+"会从操作系统重新读取这些提供者（providers），并更新缓存中的信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None."
+msgstr "### 没有（需要特别说明的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecTraceProviders](./Get-SbecTraceProviders.md)"
+msgstr "[Get-SbecTraceProviders](./Get-SbecTraceProviders.md)"

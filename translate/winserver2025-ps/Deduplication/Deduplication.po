@@ -1,0 +1,128 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:45:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Deduplication Module"
+msgstr "# 去重模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Windows Server Data\n"
+"Deduplication-specific cmdlets. It lists the cmdlets in alphabetical order based on the verb at the\n"
+"beginning of the cmdlet."
+msgstr ""
+"此参考资料提供了所有与 Windows Server 数据去重功能相关的 cmdlet 的描述和语法。这些 cmdlet "
+"按照其开头所使用的动词（即命令的操作类型）的字母顺序进行排列。"
+
+msgid "## Deduplication Cmdlets"
+msgstr "## 去重 cmdlet（Deduplication Cmdlets）"
+
+msgid "### [Disable-DedupVolume](./Disable-DedupVolume.md)"
+msgstr "### [Disable-DedupVolume](./ Disable-DedupVolume.md)"
+
+msgid "Disables data deduplication activity on one or more volumes."
+msgstr "禁用一个或多个卷上的数据去重操作。"
+
+msgid "### [Enable-DedupVolume](./Enable-DedupVolume.md)"
+msgstr "### [Enable-DedupVolume](./Enable-DedupVolume.md)"
+
+msgid "Enables data deduplication on one or more volumes."
+msgstr "支持在一个或多个卷上执行数据去重操作。"
+
+msgid "### [Expand-DedupFile](./Expand-DedupFile.md)"
+msgstr "### [Expand-DedupFile](./Expand-DedupFile.md)"
+
+msgid "Expands an optimized file into its original location."
+msgstr "将一个已优化的文件恢复到其原始位置。"
+
+msgid "### [Get-DedupJob](./Get-DedupJob.md)"
+msgstr "### [Get-DedupJob](./Get-DedupJob.md)"
+
+msgid ""
+"Returns status and information for currently running or queued deduplication"
+" jobs."
+msgstr "返回当前正在运行或排队中的去重作业的状态和信息。"
+
+msgid "### [Get-DedupMetadata](./Get-DedupMetadata.md)"
+msgstr "### [Get-DedupMetadata](./Get-DedupMetadata.md)"
+
+msgid "Returns metadata for volumes that have data deduplication metadata."
+msgstr "返回具有数据去重元数据的卷的元数据。"
+
+msgid "### [Get-DedupSchedule](./Get-DedupSchedule.md)"
+msgstr "### [Get-DedupSchedule](./Get-DedupSchedule.md)"
+
+msgid "Returns the deduplication job schedule defined on the computer."
+msgstr "返回在计算机上定义的去重作业计划。"
+
+msgid "### [Get-DedupStatus](./Get-DedupStatus.md)"
+msgstr "### [Get-DedupStatus](./Get-DedupStatus.md)"
+
+msgid ""
+"Returns deduplication status for volumes that have data deduplication "
+"metadata."
+msgstr "返回具有数据去重元数据的卷的去重状态。"
+
+msgid "### [Get-DedupVolume](./Get-DedupVolume.md)"
+msgstr "### [Get-DedupVolume](./Get-DedupVolume.md)"
+
+msgid "Returns deduplication volumes that have data deduplication metadata."
+msgstr "返回具有数据去重元数据的去重卷（deduplication volumes）。"
+
+msgid "### [Measure-DedupFileMetadata](./Measure-DedupFileMetadata.md)"
+msgstr "### [Measure-DedupFileMetadata](./Measure-DedupFileMetadata.md)"
+
+msgid "Measures potential disk space on a volume."
+msgstr "用于测量卷上的潜在磁盘空间大小。"
+
+msgid "### [New-DedupSchedule](./New-DedupSchedule.md)"
+msgstr "### [New-DedupSchedule](./New-DedupSchedule.md)"
+
+msgid "Creates a data deduplication schedule."
+msgstr "创建一个数据去重计划。"
+
+msgid "### [Remove-DedupSchedule](./Remove-DedupSchedule.md)"
+msgstr "### [Remove-DedupSchedule](./Remove-DedupSchedule.md)"
+
+msgid "Deletes a deduplication schedule."
+msgstr "删除一个去重计划。"
+
+msgid "### [Set-DedupSchedule](./Set-DedupSchedule.md)"
+msgstr "### [Set-DedupSchedule](./Set-DedupSchedule.md)"
+
+msgid "Changes configuration settings for data deduplication schedules."
+msgstr "更改数据去重计划的配置设置。"
+
+msgid "### [Set-DedupVolume](./Set-DedupVolume.md)"
+msgstr "### [Set-DedupVolume](./Set-DedupVolume.md)"
+
+msgid "Changes data deduplication settings on one or more volumes."
+msgstr "更改一个或多个卷上的数据去重设置。"
+
+msgid "### [Start-DedupJob](./Start-DedupJob.md)"
+msgstr "### [Start-DedupJob](./Start-DedupJob.md)"
+
+msgid "Starts a data deduplication job."
+msgstr "启动一个数据去重任务。"
+
+msgid "### [Stop-DedupJob](./Stop-DedupJob.md)"
+msgstr "### [Stop-DedupJob](./Stop-DedupJob.md)"
+
+msgid "Cancels one or more specified data deduplication jobs."
+msgstr "取消一个或多个指定的数据去重作业。"
+
+msgid "### [Update-DedupStatus](./Update-DedupStatus.md)"
+msgstr "### [Update-DedupStatus](./Update-DedupStatus.md)"
+
+msgid "Scans volumes for fresh data deduplication savings."
+msgstr "扫描各个卷以查找可用于数据去重处理的新数据，从而节省成本。"

@@ -1,0 +1,96 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:26:49 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AssignedAccess"
+msgstr "# 获取分配的访问权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the current configuration for assigned access."
+msgstr "获取当前分配的访问权限的相关配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AssignedAccess** cmdlet gets the current configuration for "
+"assigned access, including the user name, user SID, app friendly name, and "
+"app ID."
+msgstr ""
+"`Get-AssignedAccess` cmdlet 可获取当前关于分配访问权限的配置信息，包括用户名、用户 SID（Security "
+"Identifier）、应用程序友好名称以及应用程序 ID。"
+
+msgid ""
+"Assigned Access cmdlets are supported on Windows 10 and Windows 11 client "
+"operating systems only."
+msgstr "“Assigned Access” cmdlets 仅支持在 Windows 10 和 Windows 11 客户端操作系统上使用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the configuration for assigned access"
+msgstr "### 示例 1：获取已分配访问权限的配置信息"
+
+msgid "This command gets the current configuration for assigned access."
+msgstr "此命令用于获取当前分配的访问权限配置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您无法将输入数据通过管道传递给此cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "This cmdlet does not generate any output."
+msgstr "此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-AssignedAccess](./Clear-AssignedAccess.md)"
+msgstr "[Clear-AssignedAccess](./Clear-AssignedAccess.md)"
+
+msgid "[Set-AssignedAccess](./Set-AssignedAccess.md)"
+msgstr "[Set-AssignedAccess](./Set-AssignedAccess.md)"

@@ -1,0 +1,160 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:03:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-SbecConfig"
+msgstr "# Test-SbecConfig"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Validates a configuration."
+msgstr "验证配置的有效性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Test-SbecConfig** cmdlet validates a configuration for the Setup and "
+"Boot Event Collector."
+msgstr ""
+"`Test-SbecConfig` cmdlet 用于验证与设置和启动事件收集器（Setup and Boot Event "
+"Collector）相关的配置是否正确。"
+
+msgid ""
+"This cmdlet checks a configuration for validity without applying it.\n"
+"This is similar to running the command `bevtcol.exe -checkOnly`, except that **Test-SbecConfig** uses the running service to perform the validation."
+msgstr ""
+"这个cmdlet用于检查配置的有效性，而不会实际应用该配置。它的功能类似于运行`bevtcol.exe -checkOnly`命令，只不过`Test-"
+"SbecConfig`会利用正在运行的服务来进行验证。"
+
+msgid ""
+"The values that **Test-SbecConfig** returns are a subset of those returned "
+"by **Set-SbecActiveConfig**, because **Test-SbecConfig** does not apply the "
+"configuration."
+msgstr ""
+"**Test-SbecConfig** 返回的值是 **Set-SbecActiveConfig** 返回值的一个子集，因为 **Test-"
+"SbecConfig** 并不会实际应用该配置。"
+
+msgid "You must have the Builtin Administrator privilege to run this command."
+msgstr "您必须具有内置管理员权限才能运行此命令。"
+
+msgid "This cmdlet is also available using the alias **Validate-SbecConfig**."
+msgstr "这个cmdlet也可以使用别名**Validate-SbecConfig**来调用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Validate a configuration"
+msgstr "#### 示例 1：验证配置"
+
+msgid ""
+"This command validates the configuration in $NewConfig, and then stores the results in the $res variable.\n"
+"Because the *Continue* parameter is specified, the command does not throw an error if any errors occur."
+msgstr ""
+"这个命令会验证 `$NewConfig` 中的配置内容，然后将结果存储在 `$res` 变量中。由于指定了 “*Continue*” "
+"参数，因此即使出现错误，该命令也不会抛出异常。"
+
+msgid "### Example 2: Validate a configuration using the pipeline"
+msgstr "### 示例 2：使用流水线验证配置"
+
+msgid ""
+"This command validates the configuration from a file.\n"
+"Format-List prints all the returned information without reducing it."
+msgstr "这个命令用于验证文件中的配置信息。Format-List 会打印出所有返回的信息，而不会对信息进行任何压缩或处理。"
+
+msgid "### Example 3: Validate a configuration and throw on error"
+msgstr "### 示例 3：验证配置并在发现错误时抛出异常"
+
+msgid "Validate the configuration from a file and throw on error."
+msgstr "从文件中验证配置内容，如果发现错误则抛出异常。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行该cmdlet。可以输入一个会话对象（例如**New-CimSession**或**Get-CimSession** "
+"cmdlet的输出结果），或者这些对象的数组。默认情况下，该cmdlet会在本地计算机上运行。有关更多信息，请参阅“About_CimSession”。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on MSDN."
+msgstr ""
+"指定您想要在其上执行操作的计算机的名称。您可以分别为每台计算机指定一个完全合格的域名（FQDN）、NetBIOS 名称或 IP "
+"地址。有关更多信息，请参阅 MSDN 上的 [Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid ""
+"Specifies the configuration to validate.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定需要验证的配置。该参数的可接受值包括："
+
+msgid ""
+"Indicates that this operation will not throw an exception if a failure occurs.\n"
+"Instead the caller should examine the output of the cmdlet for the error information."
+msgstr "表示如果操作失败，该操作不会抛出异常。相反，调用者应该查看cmdlet的输出以获取错误信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### string[]"
+msgstr "### string[]"
+
+msgid "The text of the configuration, same as in the *Content* parameter."
+msgstr "配置文本与*Content*参数中的内容相同。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### hash table"
+msgstr "### 哈希表"
+
+msgid "The hash table includes the following elements:"
+msgstr "哈希表包含以下元素："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecActiveConfig](./Get-SbecActiveConfig.md)"
+msgstr "[Get-SbecActiveConfig](./Get-SbecActiveConfig.md)"
+
+msgid "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+msgstr "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+
+msgid "[Test-SbecActiveConfig](./Test-SbecActiveConfig.md)"
+msgstr "[Test-SbecActiveConfig](./Test-SbecActiveConfig.md)"

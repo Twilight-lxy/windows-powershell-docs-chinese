@@ -1,0 +1,135 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:52:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-ClusterNode"
+msgstr "# 清除集群节点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Clears the cluster configuration from a node that was evicted from a "
+"failover cluster."
+msgstr "从被从故障转移集群中移除的节点上清除集群配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Clear-ClusterNode` cmdlet clears the cluster configuration from a node that was evicted from\n"
+"a failover cluster. This cmdlet helps ensure that the failover cluster configuration has been\n"
+"completely removed from a node that was evicted."
+msgstr ""
+"`Clear-ClusterNode` cmdlet 用于清除从故障转移集群中被移除的节点上的集群配置信息。该 cmdlet "
+"可确保被移除的节点上的所有故障转移集群配置都已完全删除。"
+
+msgid ""
+"> [!NOTE]\n"
+"> This cmdlet cannot be run remotely without Credential Security Service Provider (CredSSP)\n"
+"> authentication on the server computer."
+msgstr "> [注意] > 该cmdlet无法在没有服务器计算机上的凭据安全服务提供者（CredSSP）身份验证的情况下远程运行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example removes cluster configuration information from the node named `node4` without asking for\n"
+"user confirmation."
+msgstr "这个示例会从名为 `node4` 的节点中删除集群配置信息，而无需请求用户确认。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example removes cluster configuration information from the local node after prompting for\n"
+"confirmation."
+msgstr "这个示例在提示用户确认后，会从本地节点中删除集群配置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Runs the cmdlet without prompting for confirmation. By default the cmdlet will ask for confirmation\n"
+"from the user before proceeding."
+msgstr "该cmdlet会在不提示用户确认的情况下直接执行操作。默认情况下，该cmdlet在执行前会要求用户进行确认。"
+
+msgid ""
+"Specifies the cluster node from which to clear cluster the configuration "
+"information."
+msgstr "指定用于清除集群配置信息的集群节点。"
+
+msgid ""
+"Specifies the name of the cluster node for which to clear the cluster "
+"configuration."
+msgstr "指定要清除集群配置的集群节点的名称。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If the value `0` is specified, then the call is initiated and\n"
+"the cmdlet returns without waiting."
+msgstr ""
+"指定等待该cmdlet完成所需的时间（以秒为单位）。如果未指定**Wait**参数，那么cmdlet会一直等待直到完成；如果指定值为`0`，则命令会被立即执行，且cmdlet会在不等待的情况下返回结果。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。不过实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### Microsoft FailoverClusters.PowerShell-clusterNode"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterNode](./Add-ClusterNode.md)"
+msgstr "[添加集群节点](./Add-ClusterNode.md)"
+
+msgid "[Get-ClusterNode](./Get-ClusterNode.md)"
+msgstr "[Get-ClusterNode](./Get-ClusterNode.md)"
+
+msgid "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+msgstr "[Remove-ClusterNode](./Remove-ClusterNode.md)"

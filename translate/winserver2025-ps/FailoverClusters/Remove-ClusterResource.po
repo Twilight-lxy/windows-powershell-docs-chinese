@@ -1,0 +1,130 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:16:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ClusterResource"
+msgstr "# 移除集群资源"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a clustered resource from the failover cluster."
+msgstr "从故障转移集群中移除一个已聚类的资源。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Remove-ClusterResource` cmdlet removes a clustered resource from the failover cluster. Before\n"
+"removing a resource, be sure to review whether any other resource is dependent on that resource."
+msgstr ""
+"`Remove-ClusterResource` cmdlet "
+"用于将集群资源从故障转移集群中删除。在删除某个资源之前，请务必检查是否有其他资源依赖于该资源。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example prompts the user for confirmation and then deletes the cluster named `Cluster Disk 4`\n"
+"from the local cluster."
+msgstr "这个示例会提示用户进行确认，然后从本地集群中删除名为“Cluster Disk 4”的集群。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example deletes the cluster named `Cluster Disk 5` from the local cluster without prompting for\n"
+"confirmation."
+msgstr "这个示例会从本地集群中删除名为“Cluster Disk 5”的集群，而不会提示用户进行确认。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此 cmdlet 的集群的名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Runs the cmdlet without prompting for confirmation. By default the cmdlet will ask for confirmation\n"
+"from the user before proceeding."
+msgstr "直接运行该cmdlet，而不会提示用户进行确认。默认情况下，该cmdlet在执行前会先询问用户的确认意见。"
+
+msgid "Specifies the cluster resource to remove."
+msgstr "指定要删除的集群资源。"
+
+msgid "Specifies the name of the cluster resource to remove."
+msgstr "指定要删除的集群资源的名称。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterResource](./Add-ClusterResource.md)"
+msgstr "[Add-ClusterResource](./Add-ClusterResource.md)"
+
+msgid "[Get-ClusterResource](./Get-ClusterResource.md)"
+msgstr "[Get-ClusterResource](./Get-ClusterResource.md)"
+
+msgid "[Move-ClusterResource](./Move-ClusterResource.md)"
+msgstr "[Move-ClusterResource](./Move-ClusterResource.md)"
+
+msgid "[Resume-ClusterResource](./Resume-ClusterResource.md)"
+msgstr "[ Resume-ClusterResource](./Resume-ClusterResource.md)"
+
+msgid "[Start-ClusterResource](./Start-ClusterResource.md)"
+msgstr "[开始创建集群资源](./Start-ClusterResource.md)"
+
+msgid "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+msgstr "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+
+msgid "[Suspend-ClusterResource](./Suspend-ClusterResource.md)"
+msgstr "[暂停集群资源](./Suspend-ClusterResource.md)"

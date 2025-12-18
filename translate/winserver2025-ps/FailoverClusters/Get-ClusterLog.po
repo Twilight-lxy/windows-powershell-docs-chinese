@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:01:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterLog"
+msgstr "# 获取集群日志"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Creates a log file for all nodes, or a specific a node, in a failover "
+"cluster."
+msgstr "在故障转移集群中，为所有节点或某个特定节点创建一个日志文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-ClusterLog` cmdlet creates a log file for all nodes, or a specific a node, in a failover\n"
+"cluster."
+msgstr "`Get-ClusterLog` cmdlet 为故障转移集群中的所有节点或某个特定节点创建一个日志文件。"
+
+msgid ""
+"When creating a log file for the cluster, you can specify the timespan that you want logged\n"
+"information for in addition to providing a destination for the created logs."
+msgstr "在为集群创建日志文件时，除了指定日志文件的目标存储位置外，您还可以指定希望记录信息的时间范围。"
+
+msgid ""
+"Note: This cmdlet cannot be run remotely without Credential Security Service Provider (CredSSP)\n"
+"authentication on the server computer."
+msgstr "注意：如果没有服务器计算机上的凭据安全服务提供程序（CredSSP）身份验证功能，此cmdlet无法远程运行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a log file for the local cluster"
+msgstr "### 示例 1：为本地集群创建一个日志文件"
+
+msgid ""
+"This command creates a log file for the local cluster in the cluster reports folder\n"
+"`C:\\Windows\\Cluster\\Reports` on each node of the cluster."
+msgstr "此命令会在集群的每个节点上的 `C:\\Windows\\Cluster\\Reports` 文件夹中为本地集群创建一个日志文件。"
+
+msgid "### Example 2: Create log files for each node and save them locally"
+msgstr "### 示例 2：为每个节点创建日志文件，并将其保存在本地"
+
+msgid ""
+"This command creates a log file for each node of the local cluster, and copies all logs to the local\n"
+"folder."
+msgstr "该命令会为本地集群中的每个节点创建一个日志文件，并将所有日志复制到指定的本地文件夹中。"
+
+msgid ""
+"### Example 3: Create a log file for the local cluster for previous five "
+"minutes"
+msgstr "### 示例 3：为本地集群创建一个日志文件，记录过去五分钟内的数据"
+
+msgid ""
+"This command creates a log file for the local cluster in the cluster reports folder\n"
+"`C:\\Windows\\Cluster\\Reports` on each node of the cluster. The log covers the last 5 minutes."
+msgstr ""
+"该命令会在集群的每个节点上的 `C:\\Windows\\Cluster\\Reports` 文件夹中为本地集群创建一个日志文件。该日志记录了过去 5 "
+"分钟内的所有事件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies the location to which to copy one or more cluster logs. To copy to the current folder, use\n"
+"`.` for this parameter input. Default location is `C:\\Windows\\Cluster\\Reports`."
+msgstr ""
+"指定要将一个或多个集群日志复制到的位置。如果想将日志复制到当前文件夹中，可以使用`.`作为该参数的输入值。默认位置是 "
+"`C:\\Windows\\Cluster\\Reports`。"
+
+msgid ""
+"Indicates that the cmdlet also logs the health information of the cluster."
+msgstr "表示该cmdlet还会记录集群的健康状况信息。"
+
+msgid "Specifies the cluster from which to generate cluster logs."
+msgstr "指定用于生成集群日志的集群。"
+
+msgid ""
+"Specifies the name of the cluster node for which to generate the cluster "
+"log."
+msgstr "指定要生成集群日志的集群节点名称。"
+
+msgid ""
+"Indicates that the cmdlet doesn't add additional cluster state information "
+"to the cluster logs."
+msgstr "表示该 cmdlet 不会向集群日志中添加额外的集群状态信息。"
+
+msgid ""
+"Specifies the time span in minutes for which to generate the cluster log."
+msgstr "指定用于生成集群日志的时间跨度（以分钟为单位）。"
+
+msgid ""
+"Specifies that the time stamp for each cluster log entry uses local time. By default, the timestamp\n"
+"uses Greenwich Mean Time (GMT)."
+msgstr "指定每个集群日志条目的时间戳使用本地时间。默认情况下，时间戳使用格林尼治标准时间（GMT）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters PowerShell Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.IO.FileInfo"
+msgstr "### System.IO.FileInfo"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-ClusterLog](./Set-ClusterLog.md)"
+msgstr "[Set-ClusterLog](./Set-ClusterLog.md)"

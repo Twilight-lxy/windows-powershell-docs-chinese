@@ -1,0 +1,127 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:16:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# DirectAccessClientComponents Module"
+msgstr "# DirectAccessClientComponents 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all DirectAccess Client\n"
+"Components-specific cmdlets. It lists the cmdlets in alphabetical order based on the verb at the\n"
+"beginning of the cmdlet."
+msgstr ""
+"此参考资料提供了所有特定于 DirectAccess 客户端组件的 cmdlet 的描述和语法信息。这些 cmdlet "
+"按照其命令开头所使用的动词（即命令的行为）的字母顺序进行排列。"
+
+msgid "## DirectAccessClientComponents Cmdlets"
+msgstr "## DirectAccessClientComponentsCmdlets"
+
+msgid ""
+"### [Disable-DAManualEntryPointSelection](./Disable-"
+"DAManualEntryPointSelection.md)"
+msgstr ""
+"### [ Disable-DAManualEntryPointSelection](./Disable-"
+"DAManualEntryPointSelection.md)"
+
+msgid ""
+"Disables a manually selected DirectAccess site, and reverts the selection to"
+" the default."
+msgstr "禁用手动选择的 DirectAccess 站点，并将选择恢复为默认设置。"
+
+msgid ""
+"### [Enable-DAManualEntryPointSelection](./Enable-"
+"DAManualEntryPointSelection.md)"
+msgstr ""
+"### [Enable-DAManualEntryPointSelection](./Enable-"
+"DAManualEntryPointSelection.md)"
+
+msgid ""
+"Allows a user to manually choose which DirectAccess entry point to use for "
+"connectivity."
+msgstr "允许用户手动选择用于连接的 DirectAccess 入口点。"
+
+msgid ""
+"### [Get-DAClientExperienceConfiguration](./Get-"
+"DAClientExperienceConfiguration.md)"
+msgstr ""
+"### [Get-DAClientExperienceConfiguration](./Get-"
+"DAClientExperienceConfiguration.md)"
+
+msgid "Gets the configuration for the DirectAccess client user experience."
+msgstr "获取与 DirectAccess 客户端用户体验相关的配置信息。"
+
+msgid "### [Get-DAEntryPointTableItem](./Get-DAEntryPointTableItem.md)"
+msgstr "### [Get-DAEntryPointTableItem](./Get-DA EntryPointTableItem.md)"
+
+msgid ""
+"Gets the list of entry points that have been configured for DirectAccess."
+msgstr "获取已为 DirectAccess 配置的所有入口点的列表。"
+
+msgid "### [New-DAEntryPointTableItem](./New-DAEntryPointTableItem.md)"
+msgstr "### [New-DAEntryPointTableItem](./New-DAEntryPointTableItem.md)"
+
+msgid "Configures a new entry point for multisite DirectAccess."
+msgstr "为多站点DirectAccess配置一个新的入口点。"
+
+msgid "### [Remove-DAEntryPointTableItem](./Remove-DAEntryPointTableItem.md)"
+msgstr "### [Remove-DAEntryPointTableItem](./Remove-DAEntryPointTableItem.md)"
+
+msgid ""
+"Removes a DirectAccess entry point from the specified configuration store."
+msgstr "从指定的配置存储中删除一个 DirectAccess 入口点。"
+
+msgid "### [Rename-DAEntryPointTableItem](./Rename-DAEntryPointTableItem.md)"
+msgstr "### [Rename-DAEntryPointTableItem](./Rename-DAEntryPointTableItem.md)"
+
+msgid "Renames a DirectAccess entry point."
+msgstr "重命名一个 DirectAccess 入口点。"
+
+msgid ""
+"### [Reset-DAClientExperienceConfiguration](./Reset-"
+"DAClientExperienceConfiguration.md)"
+msgstr ""
+"### [Reset-DAClientExperienceConfiguration](./Reset-"
+"DAClientExperienceConfiguration.md)"
+
+msgid ""
+"Restores the specified DirectAccess client configuration to the defaults."
+msgstr "将指定的DirectAccess客户端配置恢复为默认值。"
+
+msgid "### [Reset-DAEntryPointTableItem](./Reset-DAEntryPointTableItem.md)"
+msgstr "### [Reset-DAEntryPointTableItem](./Reset-DAEntryPointTableItem.md)"
+
+msgid ""
+"Resets the specified DirectAccess entry point configuration to the default "
+"configuration."
+msgstr "将指定的 DirectAccess 入口点配置重置为默认配置。"
+
+msgid ""
+"### [Set-DAClientExperienceConfiguration](./Set-"
+"DAClientExperienceConfiguration.md)"
+msgstr ""
+"### [Set-DAClientExperienceConfiguration](./Set-"
+"DAClientExperienceConfiguration.md)"
+
+msgid ""
+"Modifies the configuration of the specified DirectAccess client user "
+"experience."
+msgstr "修改指定 DirectAccess 客户端用户体验的配置。"
+
+msgid "### [Set-DAEntryPointTableItem](./Set-DAEntryPointTableItem.md)"
+msgstr "### [Set-DAEntryPointTableItem](./Set-DAEntryPointTableItem.md)"
+
+msgid ""
+"Modifies the configuration of a DirectAccess entry point stored in a Group "
+"Policy object."
+msgstr "修改存储在组策略对象中的 DirectAccess 入口点的配置。"

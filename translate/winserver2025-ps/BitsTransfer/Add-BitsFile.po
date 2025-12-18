@@ -1,0 +1,238 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:37:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-BitsFile"
+msgstr "# Add-BitsFile"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds one or more files to an existing BITS transfer job."
+msgstr "将一个或多个文件添加到现有的BITS传输作业中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-BitsFile** cmdlet adds files to a Background Intelligent Transfer Service (BITS) transfer job.\n"
+"You can specify the files to add to the BITS transfer job by name at the command prompt or in a comma-separated value (CSV) file."
+msgstr ""
+"`Add-BitsFile` cmdlet "
+"可将文件添加到后台智能传输服务（BITS）的传输任务中。您可以通过命令提示符或逗号分隔值（CSV）文件来指定要添加到 BITS 传输任务中的文件名称。"
+
+msgid ""
+"Important: An upload job can contain only one file.\n"
+"To upload more than one file, use the **Import-Csv** cmdlet, and pipe the output to the **Add-BitsFile** cmdlet.\n"
+"For more information, see example 3 in this Help topic.\n"
+"Or, use a cabinet file (.cab) or a compressed file (.zip)."
+msgstr ""
+"重要提示：一个上传作业只能包含一个文件。如果您需要上传多个文件，请使用 `Import-Csv` cmdlet，并将输出结果传递给 `Add-"
+"BitsFile` cmdlet。有关更多信息，请参阅本帮助主题中的示例 3。或者，您也可以使用 Cabinet "
+"文件（.cab）或压缩文件（.zip）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Append a file to the transfer queue of an existing BITS "
+"transfer job"
+msgstr "### 示例 1：将一个文件添加到现有的 BITS 数据传输任务的传输队列中"
+
+msgid ""
+"This command appends a file to the transfer queue of an existing BITS "
+"transfer job."
+msgstr "此命令会将一个文件添加到现有BITS传输任务的传输队列中。"
+
+msgid ""
+"In this example, the output of the **Get-BitsTransfer** cmdlet is a **BitsJob** object that is identified by its unique job ID.\n"
+"The command pipes the job ID to the **Add-BitsFile** cmdlet.\n"
+"The local and remote names of the file are in the parameters."
+msgstr ""
+"在这个例子中，`Get-BitsTransfer` cmdlet 的输出是一个 `BitsJob` 对象，该对象通过其唯一的作业 ID "
+"进行标识。该命令将作业 ID 传递给 `Add-BitsFile` cmdlet。文件的本地名称和远程名称作为参数传递给了 `Add-BitsFile`"
+" cmdlet。"
+
+msgid ""
+"### Example 2: Append a set of files to the transfer queue of an existing "
+"BITS transfer job"
+msgstr "### 示例 2：将一组文件添加到现有的 BITS 传输作业的传输队列中"
+
+msgid ""
+"This command appends a set of files to the transfer queue of an existing "
+"BITS transfer job."
+msgstr "该命令将一组文件添加到现有BITS传输作业的传输队列中。"
+
+msgid ""
+"The first command retrieves the BITS transfer job that is identified by the job ID and then stores it in the $b variable.\n"
+"The second command uses the *BitsJob* parameter to pass the **BitsJob** object that is stored in the $b variable to **Add-BitsFile**."
+msgstr ""
+"第一个命令根据作业ID检索对应的BITS传输任务，并将其存储在$b$变量中。第二个命令使用*BitsJob*参数，将存储在$b$变量中的**BitsJob**对象传递给**Add-"
+"BitsFile**函数。"
+
+msgid ""
+"The server file names are paired with the corresponding client file names."
+msgstr "服务器文件名与相应的客户端文件名是配对在一起的。"
+
+msgid ""
+"### Example 3: Add a set of files to the transfer queue of a new BITS "
+"transfer job"
+msgstr "### 示例 3：将一组文件添加到新的 BITS（Binary Transfer Service）传输任务的传输队列中"
+
+msgid ""
+"This example adds a set of files to the transfer queue of a new BITS "
+"transfer job."
+msgstr "这个示例将一组文件添加到新的BITS传输任务的传输队列中。"
+
+msgid ""
+"The first command creates a new BitsJob object and then stores it in the "
+"$Bits variable."
+msgstr "第一个命令创建了一个新的 BitsJob 对象，然后将其存储在 $Bits 变量中。"
+
+msgid ""
+"The second command uses the **Import-CSV** cmdlet to import a text file that contains a list of files to be transferred.\n"
+"The text file is converted to an array of objects (one per line) and passed through the pipeline to the **Add-BitsFile** cmdlet.\n"
+"The *BitsJob* parameter is used to pass the **BitsJob** object (the transfer job) that is stored in the $Bits variable to the **Add-BitsFile** cmdlet. These array of objects, adds BITS transfer job for each of the file to be downloaded and then transfers them concurrently to the client. This command also updates the transfer job with the list of files to be transferred."
+msgstr ""
+"第二个命令使用了 **Import-CSV** cmdlet "
+"来导入一个包含待传输文件列表的文本文件。该文本文件会被转换成一个对象数组（每行对应一个对象），然后通过管道传递给 **Add-BitsFile** "
+"cmdlet。通过使用 *BitsJob* 参数，可以将存储在 $Bits 变量中的 **BitsJob** 对象（即传输任务）传递给 **Add-"
+"BitsFile** cmdlet。这些对象数组表示每个待下载文件的 BITS "
+"传输任务，随后这些文件会被同时传输到客户端。此外，该命令还会使用待传输的文件列表更新传输任务的信息。"
+
+msgid ""
+"The third command passes the **BitsJob** object that is stored in the $Bits variable to the **Resume-BitsTransfer** cmdlet.\n"
+"The BITS transfer job is restarted, and the files that are specified in the Filelist.txt file are transferred from the source to the destination."
+msgstr ""
+"第三个命令将存储在 `$Bits` 变量中的 `BitsJob` 对象传递给 `Resume-BitsTransfer` cmdlet。BITS "
+"数据传输任务会重新启动，然后 `Filelist.txt` 文件中指定的文件会被从源位置传输到目标位置。"
+
+msgid ""
+"The `Import-CSV filelist.txt` element of the second command imports a text file that contains the list of files to be transferred.\n"
+"Each line of this file specifies a file to be transferred, in the `<Source>,<Destination>` format.\n"
+"The text file is converted to an array of objects, one per line, and passed through the pipeline.\n"
+"In this example, the array of objects is passed to the `Add-BitsFile` cmdlet."
+msgstr ""
+"第二个命令中的 `Import-CSV filelist.txt` 元素用于导入一个文本文件，该文件包含了需要传输的文件列表。文件中的每一行都使用 "
+"`<Source>,<Destination>` "
+"的格式来指定一个待传输的文件。这个文本文件会被转换成一个对象数组（每行对应一个对象），然后传递给后续的处理流程。在这个例子中，这个对象数组被传递给了 "
+"`Add-BitsFile` cmdlet。"
+
+msgid ""
+"The contents of the Filelist.txt file resemble the following information:"
+msgstr "Filelist.txt 文件的内容类似于以下信息："
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the BITS transfer jobs to which you want to add files.\n"
+"You can pipe a value to this parameter from other cmdlets that return **BitsJob** objects, such as **Get-BitsTransfer**."
+msgstr ""
+"指定您想要向其中添加文件的 BITS 传输作业。您可以從返回 **BitsJob** 对象的其他 cmdlet（例如 **Get-"
+"BitsTransfer**）中将该参数的值通过管道传递过来。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the destination location and the names of the files that you want to transfer.\n"
+"The destination names are paired with the corresponding source file names.\n"
+"For instance, the first file name specified in the *Source* parameter corresponds to the first file name in the *Destination* parameter, and the second file name in the *Source*  parameter corresponds to the second file name in the *Destination* parameter.\n"
+"The *Source* and *Destination* parameters must have the same number of elements; otherwise, the command produces an error."
+msgstr ""
+"指定目标位置以及您想要传输的文件的名称。目标文件名与相应的源文件名一一对应。例如，*Source* 参数中指定的第一个文件名对应于 "
+"*Destination* 参数中的第一个文件名，*Source* 参数中的第二个文件名对应于 *Destination* "
+"参数中的第二个文件名。*Source* 和 *Destination* 参数必须具有相同数量的元素；否则，该命令会生成错误。"
+
+msgid ""
+"Specifies the source location and the names of the files that you want to transfer.\n"
+"The source file names are paired with the corresponding destination file names.\n"
+"For instance, the first file name specified in the *Source* parameter corresponds to the first file name in the *Destination* parameter, and the second file name in the *Source* parameter corresponds to the second file name in the *Destination* parameter.\n"
+"The *Source* and *Destination* parameters must have the same number of elements; otherwise, the command produces an error.\n"
+"You can use standard wildcard characters such as the asterisk (*) and the question mark (?), or you can use a range operator such as \"\\[a-r\\]\"."
+msgstr ""
+"指定您想要传输的文件的源位置和文件名称。源文件名称与相应的目标文件名称一一对应。例如，*Source* 参数中指定的第一个文件名称与 "
+"*Destination* 参数中的第一个文件名称相对应，*Source* 参数中的第二个文件名称与 *Destination* "
+"参数中的第二个文件名称相对应。*Source* 和 *Destination* "
+"参数必须具有相同数量的元素；否则，该命令会生成错误。您可以使用标准的通配符（如星号 * 和问号 ?），或者使用范围操作符（如 \\[a-r\\]）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+msgstr "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+
+msgid ""
+"This cmdlet accepts one or more **BitsJob** objects as input that populates "
+"the *BitsJob* parameter."
+msgstr "此cmdlet接受一个或多个**BitsJob**对象作为输入，并将这些对象填充到*BitsJob*参数中。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+msgstr "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+
+msgid ""
+"This cmdlet generates the **BitsJob** objects that are associated with the "
+"BITS transfer jobs to which the files were added."
+msgstr "此cmdlet会生成与BITS传输作业相关联的**BitsJob**对象，这些文件就是添加到这些传输作业中的。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+msgstr "[Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+
+msgid "[Get-BitsTransfer](./Get-BitsTransfer.md)"
+msgstr "[Get-BitsTransfer](./Get-BitsTransfer.md)"
+
+msgid "[Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+msgstr "[Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+
+msgid "[Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+msgstr "[ Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+
+msgid "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+msgstr "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+
+msgid "[Start-BitsTransfer](./Start-BitsTransfer.md)"
+msgstr "[开始比特传输](./Start-BitsTransfer.md)"
+
+msgid "[Suspend-BitsTransfer](./Suspend-BitsTransfer.md)"
+msgstr "[Pause-BitsTransfer](./Suspend-BitsTransfer.md)"

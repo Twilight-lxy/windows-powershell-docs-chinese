@@ -1,0 +1,143 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:22:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ClusterExcludedAdapter"
+msgstr "# Set-ClusterExcludedAdapter"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets a network adapter to the list of excluded adapters."
+msgstr "将某个网络适配器添加到被排除的适配器列表中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Set-ClusterExcludedAdapter` cmdlet configures a network adapter in a list of network adapters\n"
+"that should be excluded from use by the Failover Cluster. By default, the cluster will use all\n"
+"available network adapters, but in some cases you may want to reserve certain adapters as backup or\n"
+"management, such as Dell iDRAC or HPE iLO."
+msgstr ""
+"`Set-ClusterExcludedAdapter` cmdlet 用于配置应从故障转移集群（Failover "
+"Cluster）的使用中排除的网络适配器。默认情况下，集群会使用所有可用的网络适配器，但在某些情况下，您可能需要将某些适配器预留出来用于备份或管理用途，例如"
+" Dell iDRAC 或 HPE iLO。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example sets the list of excluded network adapters for the cluster. After running this\n"
+"command, the cluster will no longer use `Node-1-FL1` or `Node-1-FL2` for cluster communications,\n"
+"ensuring that they are available for management or backup purposes."
+msgstr ""
+"这个示例用于设置集群中需要排除的网络适配器列表。运行此命令后，集群将不再使用“Node-1-FL1”或“Node-1-FL2”进行通信，从而确保这些网络适配器可以用于管理或备份等目的。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes."
+msgstr "该cmdlet会立即返回一个表示该作业的对象，随后会显示命令提示符。在该作业完成之前，您可以继续在当前会话中工作。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](/powershell/module/microsoft.powershell.core/about/about_jobs)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[about_Jobs](/powershell/module/microsoft.powershell.core/about/about_jobs)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession)\n"
+"or [Get-CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 `[New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession)` 或 `[Get-"
+"CimSession](/powershell/module/cimcmdlets/get-cimsession)` cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the type of exclusion to remove from the cluster. Acceptable "
+"values are:"
+msgstr "指定要从集群中移除的排除类型的名称。允许的值有："
+
+msgid ""
+"Specifies the value to use for the exclusion. The value of this parameter depends on the value of\n"
+"the `-ExclusionType` parameter."
+msgstr "指定用于排除的值。该参数的值取决于 `-ExclusionType` 参数的值。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then PowerShell calculates an optimum\n"
+"throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值为 `0`，PowerShell 会根据计算机上正在运行的 CIM "
+"cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前执行的 cmdlet，而不适用于整个会话或整个计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterExcludedAdapter](add-clusterexcludedadapter.md)"
+msgstr "[Add-ClusterExcludedAdapter](add-clusterexcludedadapter.md)"
+
+msgid "[Get-ClusterExcludedAdapter](get-clusterexcludedadapter.md)"
+msgstr "[Get-ClusterExcludedAdapter](get-clusterexcludedadapter.md)"
+
+msgid "[Remove-ClusterExcludedAdapter](remove-clusterexcludedadapter.md)"
+msgstr "[Remove-ClusterExcludedAdapter](remove-clusterexcludedadapter.md)"
+
+msgid "[Repair-ClusterNameAccount](repair-clusternameaccount.md)"
+msgstr "[Repair-ClusterNameAccount](repair-clusternameaccount.md)"

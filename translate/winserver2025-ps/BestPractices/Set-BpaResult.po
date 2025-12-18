@@ -1,0 +1,144 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:29:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-BpaResult"
+msgstr "# Set-BpaResult"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Excludes or includes existing results of a BPA scan to display only the "
+"specified scan results."
+msgstr "可以选择排除或包含BPA扫描的现有结果，从而仅显示指定的扫描结果。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-BPAResult** cmdlet excludes or includes existing results of a Best Practices Analyzer (BPA) scan to display only the specified scan results.\n"
+"The action specified in this cmdlet (such as **Exclude**) determines how the existing results of a BPA scan are updated.\n"
+"This cmdlet is typically applied after using the **Get-BpaResult** cmdlet to return a collection of scan results.\n"
+"Filters can be applied to results returned by the **Get-BpaResult** cmdlet, and then pipe the filtered collection of results to this cmdlet, specifying either to include or exclude filtered scan results."
+msgstr ""
+"`Set-BPAResult` 这个 cmdlet 可以排除或包含 Best Practices Analyzer (BPA) "
+"扫描的现有结果，从而仅显示指定的扫描结果。该 cmdlet 中指定的操作（例如 `Exclude`）决定了如何更新 BPA 扫描的现有结果。通常在使用 "
+"`Get-BpaResult` cmdlet 获取扫描结果集之后，才会应用这个 cmdlet。可以对 `Get-BpaResult` "
+"返回的结果进行过滤，然后将过滤后的结果集通过管道传递给 `Set-BPAResult` cmdlet，并指定是包含这些过滤后的结果还是排除它们。"
+
+msgid ""
+"This will update the results in the result file with the specified result collection with the action specified.\n"
+"The administrator would generally need to call the **Get-BpaResult** cmdlet before this to get the result collection, apply some filters and pipe the collection to this cmdlet specifying the action (exclusion or inclusion)."
+msgstr ""
+"这将使用指定的结果集合和指定的操作来更新结果文件中的内容。通常情况下，管理员需要先调用 **Get-BpaResult** cmdlet "
+"来获取结果集合，然后应用一些筛选条件，并将该集合通过管道传递给此 cmdlet，同时指定所需的操作（排除或包含）。"
+
+msgid ""
+"If this cmdlet is canceled before the results are written to a file, then the operation is canceled and the results file is not modified.\n"
+"If cancellation occurs after the results file has been modified, then the actions of the cmdlet are carried out, and the cmdlet cannot be canceled."
+msgstr ""
+"如果此 cmdlet 在结果被写入文件之前被取消，那么操作将会被终止，并且结果文件不会被修改。如果在结果文件已经被修改之后才发生取消操作，那么 "
+"cmdlet 的相应操作仍会继续执行，此时该 cmdlet 无法再被取消。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Exclude filtered results from a BPA scan"
+msgstr "### 示例 1：从 BPA 扫描中排除过滤后的结果"
+
+msgid ""
+"### Example 2: Use a variable to exclude filtered results from a BPA scan"
+msgstr "### 示例 2：使用变量从 BPA 扫描结果中排除被过滤的数据"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Removes any BPA scan results that are specified by a filter added to this cmdlet.\n"
+"The Exclude action applies to all results returned by this cmdlet.\n"
+"To exclude results by using this parameter, add the value `$True` following the parameter, as shown:`-Exclude $True`"
+msgstr ""
+"此命令会移除通过添加到该 cmdlet 中的过滤器所指定的所有 BPA（ Bisphenol A，双酚 A）扫描结果。` Exclude` 操作适用于该"
+" cmdlet 返回的所有结果。要使用此参数排除某些结果，请在参数后添加 `$True`，例如：`-Exclude $True`"
+
+msgid ""
+"Specifies the location where the report should be stored.\n"
+"The **Invoke-BpaModel** cmdlet provides an option to store the results either in the default reports repository location referred by ReportsRoot registry key or in a custom location supplied as input to this parameter."
+msgstr ""
+"指定报告应存储的位置。`Invoke-BpaModel` cmdlet 提供了一个选项，可以将结果存储在由 `ReportsRoot` "
+"注册表键引用的默认报告存储位置中，或者存储在作为该参数输入的自定义位置中。"
+
+msgid ""
+"Specifies the result collection to be updated in the result file returned by this cmdlet.\n"
+"This parameter is typically used to specify a filtered subset of scan results that has already been stored in a variable; the variable name is provided as the valid value for this parameter.\n"
+"This is the result collection which needs to be updated in the result file.\n"
+"For example, if a variable named $allPerformance is created to store all the Performance category results for a BPA scan of all roles on a computer, and to exclude those Performance results from the complete collection of scan results, add the following parameter to this cmdlet: `-Results $allPerformance`"
+msgstr ""
+"指定需要在此cmdlet返回的结果文件中更新的结果集合。此参数通常用于指代已经存储在变量中的经过过滤的扫描结果子集；该变量的名称即为该参数的有效值。这就是需要在结果文件中更新的结果集合。例如，如果创建了一个名为"
+" `$allPerformance` "
+"的变量来存储对计算机上所有角色进行的BPA扫描的所有“性能”类别的结果，并希望将这些“性能”结果从完整的扫描结果集合中排除出去，那么可以在此cmdlet中添加以下参数：`-Results"
+" $allPerformance`"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid ""
+"### "
+"System.Collections.Generic.List<Microsoft.BestPractices.CoreInterface.Result>"
+msgstr ""
+"### "
+"System.Collections.Generic.List<Microsoft.BestPractices.CoreInterface.Result>"
+
+msgid "The input object specified by the *Results* parameter."
+msgstr "由*Results*参数指定的输入对象。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-BpaModel](./Get-BpaModel.md)"
+msgstr "[Get-BpaModel](./Get-BpaModel.md)"
+
+msgid "[Get-BpaResult](./Get-BpaResult.md)"
+msgstr "[Get-BpaResult](./Get-BpaResult.md)"
+
+msgid "[Invoke-BpaModel](./Invoke-BpaModel.md)"
+msgstr "[Invoke-BpaModel](./ Invoke-BpaModel.md)"
+
+msgid "[Where-Object](https://go.microsoft.com/fwlink/?LinkID=113423)"
+msgstr "[Where-对象](https://go.microsoft.com/fwlink/?LinkID=113423)"

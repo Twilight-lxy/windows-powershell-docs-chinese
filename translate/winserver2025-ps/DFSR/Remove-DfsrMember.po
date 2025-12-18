@@ -1,0 +1,132 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:44:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-DfsrMember"
+msgstr "# 移除DFSR成员"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes computers from a replication group."
+msgstr "从复制组中移除计算机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-DfsrMember** cmdlet removes member computers from a replication group.\n"
+"Members of a replication group host replicated folders.\n"
+"If you remove a member from its replication group, Distributed File System (DFS) Replication stops replication on that member.\n"
+"This cmdlet does not delete the contents of replicated folders or their private data.\n"
+"Use the Add-DfsrMember to add member computers to a group."
+msgstr ""
+"`Remove-DfsrMember` cmdlet "
+"用于将成员计算机从复制组中移除。复制组的成员会托管被复制的文件夹。如果您将某个成员从其复制组中移除，分布式文件系统（DFS）的复制功能将在该成员上停止复制操作。此"
+" cmdlet 不会删除被复制文件夹的内容或其私有数据。要向复制组中添加成员计算机，请使用 `Add-DfsrMember` cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a member from a group"
+msgstr "#### 示例 1：从群组中移除一名成员"
+
+msgid ""
+"This command removes the member computer named SRV02 from the River Branch Office replication group.\n"
+"Because this example does not include the *Force* parameter, the command prompts you for confirmation."
+msgstr ""
+"此命令会将名为 SRV02 的成员计算机从 River 分支办公室的复制组中移除。由于该示例中没有使用 *Force* "
+"参数，因此系统会提示您进行确认操作。"
+
+msgid "### Example 2: Remove all members from a group"
+msgstr "### 示例 2：从组中删除所有成员"
+
+msgid ""
+"This command removes all the member computers from the replication group named RG07.\n"
+"Because the command includes the *Force* parameter, it removes the members without prompting for confirmation."
+msgstr "此命令会将所有成员计算机从名为RG07的复制组中移除。由于该命令包含了“Force”参数，因此会在不提示确认的情况下直接执行移除操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of names of member computers.\n"
+"The cmdlet removes these members from the replication group.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个成员计算机的名称数组。此cmdlet会将这些成员从复制组中删除。你可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用当前用户的域。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不需要用户确认。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DfsrMember](./Add-DfsrMember.md)"
+msgstr "[Add-DfsrMember](./Add-DfsrMember.md)"
+
+msgid "[Get-DfsrMember](./Get-DfsrMember.md)"
+msgstr "[Get-DfsrMember](./Get-DfsrMember.md)"
+
+msgid "[Set-DfsrMember](./Set-DfsrMember.md)"
+msgstr "[Set-DfsrMember](./Set-DfsrMember.md)"

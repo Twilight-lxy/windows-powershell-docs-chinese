@@ -1,0 +1,104 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:54:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-RmsMfgSupport"
+msgstr "# 安装 RmsMfgSupport"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds Microsoft Federation Gateway support to an AD RMS server."
+msgstr "为AD RMS服务器添加对Microsoft Federation Gateway的支持。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Install-RmsMfgSupport** cmdlet adds Microsoft Federation Gateway "
+"support to an Active Directory Rights Management Services (AD RMS) server."
+msgstr ""
+"`Install-RmsMfgSupport` 这个 cmdlet 为 Active Directory 权限管理服务（AD RMS）服务器添加了对 "
+"Microsoft Federation Gateway 的支持。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add Microsoft Federation Gateway support"
+msgstr "### 示例 1：添加对 Microsoft Federation Gateway 的支持"
+
+msgid ""
+"This command adds Microsoft Federation Gateway support to an AD RMS server."
+msgstr "此命令为 AD RMS 服务器添加对 Microsoft Federation Gateway 的支持。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the uniform resource locator (URL) for the AD RMS server to use to connect to the Microsoft Federation Gateway.\n"
+"If this parameter is not specified, AD RMS connects to the Microsoft Federation Gateway using the default value."
+msgstr ""
+"指定 AD RMS 服务器用于连接 Microsoft Federation Gateway 的统一资源定位符（URL）。如果未指定此参数，AD RMS"
+" 将使用默认值连接到 Microsoft Federation Gateway。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需询问用户的确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[如何将 Windows PowerShell 与 AD RMS "
+"配合使用](https://go.microsoft.com/fwlink/?LinkId=136806)"

@@ -1,0 +1,129 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:48:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ClusterResource"
+msgstr "# 添加集群资源"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Adds a resource to a clustered role, or resource group, in a failover "
+"cluster."
+msgstr "将一个资源添加到故障转移集群中的集群角色或资源组中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-ClusterResource` cmdlet adds a resource to a clustered role, or resource group, in a\n"
+"failover cluster. Before adding the resource, obtain the resource type and the name of the group to\n"
+"which to add the resource."
+msgstr ""
+"`Add-ClusterResource` cmdlet "
+"可将资源添加到故障转移集群中的群集角色或资源组中。在添加资源之前，需要先获取资源的类型以及要将其添加到的组的名称。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example creates a new IP Address resource called `resource1` on the local cluster. The cmdlet\n"
+"configures the resource as part of the clustered role, or resource group, called `ClusterSrv1`."
+msgstr ""
+"这个示例在本地集群上创建了一个名为 `resource1` 的新 IP 地址资源。该 cmdlet 将此资源配置为名为 `ClusterSrv1` "
+"的集群角色或资源组的一部分。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies the name of the clustered role where the new resource is added."
+msgstr "指定新资源将被添加到的集群角色的名称。"
+
+msgid "Specifies the clustered role where the new resource is added."
+msgstr "指定新资源将被添加到的集群角色。"
+
+msgid "Specifies the name of the cluster resource to create."
+msgstr "指定要创建的集群资源的名称。"
+
+msgid ""
+"Specifies the name of the cluster resource type for the new cluster "
+"resource."
+msgstr "为新集群资源指定集群资源类型的名称。"
+
+msgid ""
+"Specifies that the new resource should run in a separate resource monitor."
+msgstr "指定新的资源应在单独的资源监控器中运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShell ClusterGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### MicrosoftFailoverClusters.PowerShell-clusterResource"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterResource](./Get-ClusterResource.md)"
+msgstr "[Get-ClusterResource](./Get-ClusterResource.md)"
+
+msgid "[Move-ClusterResource](./Move-ClusterResource.md)"
+msgstr "[Move-ClusterResource](./Move-ClusterResource.md)"
+
+msgid "[Remove-ClusterResource](./Remove-ClusterResource.md)"
+msgstr "[Remove-ClusterResource](./Remove-ClusterResource.md)"
+
+msgid "[Resume-ClusterResource](./Resume-ClusterResource.md)"
+msgstr "[Resume-ClusterResource](./Resume-ClusterResource.md)"
+
+msgid "[Start-ClusterResource](./Start-ClusterResource.md)"
+msgstr "[开始集群资源设置](./Start-ClusterResource.md)"
+
+msgid "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+msgstr "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+
+msgid "[Suspend-ClusterResource](./Suspend-ClusterResource.md)"
+msgstr "[暂停集群资源](./Suspend-ClusterResource.md)"

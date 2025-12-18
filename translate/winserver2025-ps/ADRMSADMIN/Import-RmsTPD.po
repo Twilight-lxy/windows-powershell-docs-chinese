@@ -1,0 +1,154 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:52:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-RmsTPD"
+msgstr "# 导入 RMS-TPD"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Imports a TPD from a file in AD RMS."
+msgstr "从 AD RMS 中的文件导入一个 TPD（Template Protection Document）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Import-RmsTPD** cmdlet imports a trusted publishing domain (TPD) from "
+"a file in Active Directory Rights Management Services (AD RMS)."
+msgstr ""
+"**Import-RmsTPD** cmdlet 从 Active Directory 权限管理服务（AD "
+"RMS）中的文件导入一个受信任的发布域（TPD）。"
+
+msgid ""
+"To perform the import, specify the *DisplayName*, *SourceFile* and "
+"*Password* parameters, and then set the *Path* parameter to the AD RMS "
+"provider drive path `<PSDrive>:\\TrustPolicy\\TrustedPublishingDomain` where"
+" `<PSDrive>` is the provider drive ID."
+msgstr ""
+"要执行导入操作，需要指定 *DisplayName*、*SourceFile* 和 *Password* 参数，然后将 *Path* 参数设置为 AD "
+"RMS 提供程序的驱动器路径 `<PSDrive>:\\TrustPolicy\\TrustedPublishingDomain`，其中 "
+"`<PSDrive>` 是提供程序驱动器的 ID。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import a TPD and assign it a name"
+msgstr "### 示例 1：导入一个 TPD 并为其指定名称"
+
+msgid ""
+"This command imports the TPD information stored in the specified file and assigns the name Fabrikam to the TPD.\n"
+"Because the *Password* parameter is not specified, the **Import-RmsTPD** cmdlet prompts for the domain password."
+msgstr ""
+"此命令导入存储在指定文件中的 TPD 信息，并将 “Fabrikam” 这个名称分配给该 TPD。由于没有指定 “Password” 参数，因此 "
+"**Import-RmsTPD** cmdlet 会提示用户输入域密码。"
+
+msgid "### Example 2: Read a password and use it to import a TPD"
+msgstr "### 示例 2：读取密码并使用该密码导入 TPD 文件"
+
+msgid ""
+"This command uses the **Read-Host** cmdlet to prompt the user for a password"
+" and then stores the password in a variable that is passed to the **Import-"
+"RmsTPD** cmdlet."
+msgstr ""
+"该命令使用 **Read-Host** cmdlet 来提示用户输入密码，然后将密码存储在一个变量中，该变量会被传递给 **Import-"
+"RmsTPD** cmdlet。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the name that will be used to identify the domain being imported."
+msgstr "指定用于识别所导入域的名称。"
+
+msgid ""
+"Overrides restrictions that prevent the command from succeeding, just so the"
+" changes do not compromise security."
+msgstr "绕过那些会阻止命令成功的限制措施，只是为了确保所做的更改不会危及安全性。"
+
+msgid ""
+"Passes the object created by this cmdlet through the pipeline.\n"
+"By default, this cmdlet does not pass any objects through the pipeline."
+msgstr "将该cmdlet创建的对象传递到管道中。默认情况下，该cmdlet不会向管道中传递任何对象。"
+
+msgid ""
+"Specifies a password as a **SecureString** object.\n"
+"To create a **SecureString** object that contains a password, use the Read-Host cmdlet and specify the *AsSecureString* parameter."
+msgstr ""
+"将密码指定为一个 **SecureString** 对象。要创建一个包含密码的 **SecureString** 对象，可以使用 Read-Host "
+"cmdlet 并指定 *AsSecureString* 参数。"
+
+msgid ""
+"Specifies a provider drive and path or relative path on the current drive.\n"
+"Use a dot (.) to specify the current location.\n"
+"This parameter does not accept wildcards and has no default value."
+msgstr "指定一个提供程序驱动器及其路径，或者是当前驱动器上的相对路径。可以使用点（.）来表示当前位置。此参数不支持通配符，且没有默认值。"
+
+msgid ""
+"Specifies the path to the file that contains the domain information to "
+"import."
+msgstr "指定包含要导入的域名信息的文件的路径。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.RightsManagementServices.PowerShell.TrustedPublishingDomainImportedItem"
+msgstr ""
+"### "
+"Microsoft.RightsManagementServices.PowerShell.TrustedPublishingDomainImportedItem"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+
+msgid "[Export-RmsTPD](./Export-RmsTPD.md)"
+msgstr "[Export-RmsTPD](./Export-RmsTPD.md)"

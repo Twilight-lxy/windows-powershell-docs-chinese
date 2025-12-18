@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:57:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterAccess"
+msgstr "# 获取集群访问权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets information about permissions that control access to a failover "
+"cluster."
+msgstr "获取有关控制对故障转移集群访问权限的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterAccess` cmdlet gets information about permissions that control access to a\n"
+"failover cluster."
+msgstr "`Get-ClusterAccess` cmdlet 可以获取有关控制对故障转移集群访问权限的信息。"
+
+msgid ""
+"A cluster can allow full access or read-only access. Read-only access limits the user to Windows\n"
+"PowerShell cmdlets that provide information about the cluster."
+msgstr ""
+"一个集群可以允许用户进行完全访问或仅限读取访问。仅限读取访问权限的用户只能使用 Windows PowerShell 中的那些能够提供关于集群信息的 "
+"cmdlet（命令行工具）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example lists the level of permissions that have been assigned to users of this cluster,\n"
+"including users who are blocked from access."
+msgstr "这个示例列出了分配给该集群用户的权限级别，其中包括那些被阻止访问的用户。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the cluster on which to enumerate cluster access details."
+msgstr "指定用于枚举集群访问详细信息的集群。"
+
+msgid "Specifies the user for which to get cluster access."
+msgstr "指定要获取集群访问权限的用户。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowShell-cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterAccessRule"
+msgstr "### MicrosoftFailoverClusters.PowerShell_clusterAccessRule"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Block-ClusterAccess](./Block-ClusterAccess.md)"
+msgstr "[Block-ClusterAccess](./Block-ClusterAccess.md)"
+
+msgid "[Grant-ClusterAccess](./Grant-ClusterAccess.md)"
+msgstr "[Grant-ClusterAccess](./Grant-ClusterAccess.md)"
+
+msgid "[Remove-ClusterAccess](./Remove-ClusterAccess.md)"
+msgstr "[Remove-ClusterAccess](./Remove-ClusterAccess.md)"

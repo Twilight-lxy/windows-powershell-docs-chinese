@@ -1,0 +1,153 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:40:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-NetQosFlowControl"
+msgstr "# Get-NetQosFlowControl"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the priority-based flow control settings."
+msgstr "获取基于优先级的流量控制设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByIfAlias (Default)"
+msgstr "### 由 IfAlias 提供（默认设置）"
+
+msgid "### ByIfIndex"
+msgstr "### 作者：ByIfIndex"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-NetQosFlowControl** cmdlet gets the priority-based flow control "
+"(PFC) settings programmed in Windows Server® 2012 and later."
+msgstr ""
+"`Get-NetQosFlowControl` cmdlet 可用于获取在 Windows Server® 2012 "
+"及更高版本中配置的基于优先级的流量控制（PFC，Priority-Based Flow Control）设置。"
+
+msgid ""
+"For more information about PFC, see the **Enable-NetQosFlowControl** cmdlet."
+msgstr "有关 PFC 的更多信息，请参阅 **Enable-NetQosFlowControl** cmdlet。"
+
+msgid "PFC is part of the IEEE data center bridging (DCB) standard."
+msgstr "PFC 是 IEEE 数据中心桥接（DCB）标准的一部分。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Display flow control settings"
+msgstr "### 示例 1：显示流控设置"
+
+msgid "This command displays flow control settings."
+msgstr "这个命令用于显示流控制设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetQosFlowControlSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetQosFlowControlSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object.\n"
+"This cmdlet returns a **MSFT_NetQosFlowControlSettingData** object that contains the flow control settings per priority."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"Management Instrumentation (WMI) 对象。井号（#）后面的路径表示底层 WMI 对象的命名空间和类名。该 cmdlet "
+"返回一个 **MSFT_NetQosFlowControlSettingData** 对象，其中包含每个优先级的流量控制设置信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-NetQosFlowControl](./Enable-NetQosFlowControl.md)"
+msgstr "[Enable-NetQosFlowControl](./Enable-NetQosFlowControl.md)"
+
+msgid "[Disable-NetQosFlowControl](./Disable-NetQosFlowControl.md)"
+msgstr "[禁用NetQosFlowControl](./Disable-NetQosFlowControl.md)"
+
+msgid "[Set-NetQosDcbxSetting](./Set-NetQosDcbxSetting.md)"
+msgstr "[Set-NetQosDcbxSetting](./Set-NetQosDcbxSetting.md)"
+
+msgid "[Set-NetQosFlowControl](./Set-NetQosFlowControl.md)"
+msgstr "[Set-NetQosFlowControl](./Set-NetQosFlowControl.md)"

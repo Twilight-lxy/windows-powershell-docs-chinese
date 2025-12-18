@@ -1,0 +1,152 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:07:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Move-ClusterGroup"
+msgstr "# 移动集群组（Move-ClusterGroup）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Moves a clustered role (a resource group) from one node to another in a "
+"failover cluster."
+msgstr "将一个集群角色（即资源组）从一个节点迁移到故障转移集群中的另一个节点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Move-ClusterGroup` cmdlet moves a clustered role (a resource group) from one node to another\n"
+"in a failover cluster."
+msgstr "`Move-ClusterGroup` cmdlet 可以将一个集群角色（即资源组）从一个节点移动到故障转移集群中的另一个节点。"
+
+msgid ""
+"Moving a resource group is a way of simulating failover. Running this cmdlet is also an appropriate\n"
+"step to take in preparation for routine maintenance on a node."
+msgstr "移动资源组是一种模拟故障转移的方法。运行此cmdlet也是在为节点进行常规维护做准备时应该采取的适当步骤。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example moves the clustered service called `MyFileServer` from the current owner node to any\n"
+"other node."
+msgstr "这个示例将名为 `MyFileServer` 的集群服务从当前的所有者节点迁移到其他任意节点上。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example moves the resource group called `MyFileServer` from the current owner node to the node\n"
+"named `node2`."
+msgstr "这个示例将名为 `MyFileServer` 的资源组从当前的所有者节点移动到名为 `node2` 的节点上。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example moves all resource groups that are currently owned by the node named `node3` to other\n"
+"nodes. Use this cmdlet before performing maintenance on the specified node."
+msgstr "这个示例会将当前由名为 `node3` 的节点拥有的所有资源组转移到其他节点上。在对指定节点进行维护操作之前，请使用此cmdlet。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example moves the resource group called `MyFileServer` from the current owner node to the node\n"
+"named `node2`. Information about `MyFileServer` is displayed immediately, while it is in the process\n"
+"of being moved."
+msgstr ""
+"这个示例将名为 `MyFileServer` 的资源组从当前的所有者节点移动到名为 `node2` 的节点。在移动过程中，关于 "
+"`MyFileServer` 的信息会立即显示出来。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies that locked groups are ignored when running the cmdlet."
+msgstr "指定在运行该cmdlet时忽略已被锁定的组。"
+
+msgid "Specifies the resource group to move."
+msgstr "指定要移动的资源组。"
+
+msgid "Specifies the name of the resource group to move."
+msgstr "指定要移动的资源组的名称。"
+
+msgid ""
+"Specifies the name of the cluster node to which to move the resource group."
+msgstr "指定要将资源组移动到的集群节点的名称。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定用于等待该cmdlet完成的时间（以秒为单位）。如果未指定**Wait**参数，则cmdlet会一直等待直到完成；如果指定了`-Wait "
+"0`，则命令会被立即执行，且cmdlet会在不等待的情况下返回结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShell_clusterGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShell-clusterGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterGroup](./Add-ClusterGroup.md)"
+msgstr "[添加集群组](./Add-ClusterGroup.md)"
+
+msgid "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+msgstr "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+
+msgid "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+msgstr "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+
+msgid "[Start-ClusterGroup](./Start-ClusterGroup.md)"
+msgstr "[Start-ClusterGroup](./Start-ClusterGroup.md)"
+
+msgid "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"
+msgstr "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"

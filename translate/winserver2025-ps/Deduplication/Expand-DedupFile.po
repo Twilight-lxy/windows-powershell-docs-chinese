@@ -1,0 +1,139 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:47:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Expand-DedupFile"
+msgstr "# Expand-DedupFile"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Expands an optimized file into its original location."
+msgstr "将一个优化后的文件恢复到其原始位置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Expand-DedupFile` cmdlet expands an optimized file into its original location. You may need to\n"
+"expand optimized files because of compatibility with applications or other requirements."
+msgstr ""
+"`Expand-DedupFile` cmdlet 将优化后的文件恢复到其原始位置。由于与应用程序的兼容性或其他需求，你可能需要进行这样的操作。"
+
+msgid ""
+"Ensure that there is enough space on the volume to store the expanded file. If you do not have\n"
+"enough disk space, the cmdlet attempts to expand the file, and then informs you when it is unable to\n"
+"finish the operation. If you attempt to restore a file that is not optimized, the cmdlet notifies\n"
+"you of the error."
+msgstr ""
+"请确保卷上有足够的空闲空间来存储扩展后的文件。如果磁盘空间不足，该命令会尝试扩展文件，但无法完成操作时会通知您。如果您试图恢复一个未经过优化的文件，该命令也会向您提示错误信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Expand a file"
+msgstr "#### 示例 1：展开一个文件"
+
+msgid ""
+"This command expands a file to its original location, `D:\\Share\\File07.doc`. If the file is not\n"
+"optimized, the cmdlet informs you of the problem."
+msgstr "这个命令会将文件恢复到其原始位置，即 `D:\\Share\\File07.doc`。如果该文件没有经过优化处理，cmdlet 会提示你这个问题。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession) or\n"
+"[Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该Cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如 [New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该Cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies an array of file paths. The cmdlet expands files to the file paths specified by this\n"
+"parameter."
+msgstr "指定一个文件路径数组。此cmdlet会将文件扩展到由该参数指定的文件路径。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Uint32"
+msgstr "### Uint32"
+
+msgid ""
+"This cmdlet generates an integer that indicates success or failure of the operation. A value of zero\n"
+"indicates success."
+msgstr "此 cmdlet 会生成一个整数，用于表示操作的成败。值为零表示操作成功。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DedupVolume](./Get-DedupVolume.md)"
+msgstr "[Get-DedupVolume](./Get-DedupVolume.md)"

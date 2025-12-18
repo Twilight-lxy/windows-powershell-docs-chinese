@@ -1,0 +1,70 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:38:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-HVCIOptions"
+msgstr "# 设置 HVCI 选项"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies hypervisor Code Integrity options for a policy."
+msgstr "修改策略中的管理程序代码完整性（Code Integrity）相关选项。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Options"
+msgstr "### 选项"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-HVCIOptions** cmdlet modifies hypervisor Code Integrity options for a policy.\n"
+"The policy stores these options in the **HvciOptions** property of the policy.\n"
+"You can specify any combination of the following values:"
+msgstr ""
+"`Set-HVCIOptions` cmdlet 用于修改与策略相关的虚拟机监控程序（hypervisor）代码完整性（Code "
+"Integrity）设置。这些设置会被存储在策略的 `HvciOptions` 属性中。你可以指定以下值的任意组合："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-RuleOption](./Set-RuleOption.md)"
+msgstr "[Set-RuleOption](./Set-RuleOption.md)"

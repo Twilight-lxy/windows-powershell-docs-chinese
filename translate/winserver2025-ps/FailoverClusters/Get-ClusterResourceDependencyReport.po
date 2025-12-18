@@ -1,0 +1,143 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:04:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterResourceDependencyReport"
+msgstr "# 获取集群资源依赖关系报告"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Generates a report that lists the dependencies between resources in a "
+"failover cluster."
+msgstr "生成一份报告，列出故障转移集群中各资源之间的依赖关系。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterResourceDependencyReport` cmdlet generates a report that lists the dependencies\n"
+"between resources in a failover cluster."
+msgstr ""
+"`Get-ClusterResourceDependencyReport` cmdlet 生成一份报告，该报告列出了故障转移集群中各资源之间的依赖关系。"
+
+msgid ""
+"The report has a filename extension of MHT. For convenience in storing and finding the report, you\n"
+"can pipe this cmdlet to the [Copy-Item](https://go.microsoft.com/fwlink/?LinkID=113292) cmdlet and\n"
+"specify a destination folder into which to copy the report."
+msgstr ""
+"该报告的文件扩展名为 MHT。为了便于存储和查找，你可以将此 cmdlet 与 [Copy-"
+"Item](https://go.microsoft.com/fwlink/?LinkID=113292) cmdlet "
+"结合使用，并指定一个目标文件夹来保存报告。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example creates a dependency report file for the clustered file server, or resource group,\n"
+"named `cluster1FS12` on the local cluster."
+msgstr "这个示例为本地集群中的集群文件服务器（或资源组）创建了一个依赖关系报告文件，该文件服务器的名称为`cluster1FS12`。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example creates a dependency report file for the clustered file server, or resource group,\n"
+"named `cluster1FS12` on the local cluster. The dependency report is copied to `C:\\users\\user1`."
+msgstr ""
+"这个示例为本地集群上的集群文件服务器（或资源组）`cluster1FS12`生成了一个依赖关系报告文件。该报告文件被复制到了`C:\\users\\user1`目录中。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example creates a dependency report file for each clustered role, or resource group, on the\n"
+"local cluster, and copies all reports to `\\\\fileserver\\share`."
+msgstr "这个示例会为本地集群中的每个集群角色或资源组生成一个依赖关系报告文件，并将所有报告复制到`\\\\fileserver\\share`目录中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies the name of the cluster group for which to generate the dependency"
+" report."
+msgstr "指定要为其生成依赖关系报告的集群组的名称。"
+
+msgid ""
+"Specifies the cluster group or cluster resource for which to create the "
+"dependency report."
+msgstr "指定要创建依赖关系报告的集群组或集群资源。"
+
+msgid ""
+"Specifies the name of the cluster resource for which to generate the "
+"dependency report."
+msgstr "指定要生成依赖关系报告的集群资源的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShell-clusterGroup"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters PowerShell ClusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.IO.FileInfo"
+msgstr "### System.IO.FileInfo"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Copy-Item](https://go.microsoft.com/fwlink/?LinkID=113292)"
+msgstr "[复制项目](https://go.microsoft.com/fwlink/?LinkID=113292)"
+
+msgid "[Add-ClusterResourceDependency](./Add-ClusterResourceDependency.md)"
+msgstr "[Add-ClusterResourceDependency](./Add-ClusterResourceDependency.md)"
+
+msgid ""
+"[Remove-ClusterResourceDependency](./Remove-ClusterResourceDependency.md)"
+msgstr ""
+"[Remove-ClusterResourceDependency](./Remove-ClusterResourceDependency.md)"
+
+msgid "[Set-ClusterResourceDependency](./Set-ClusterResourceDependency.md)"
+msgstr "[Set-ClusterResourceDependency](./Set-ClusterResourceDependency.md)"

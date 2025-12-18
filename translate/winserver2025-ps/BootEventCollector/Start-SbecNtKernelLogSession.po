@@ -1,0 +1,140 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:00:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-SbecNtKernelLogSession"
+msgstr "# 启动 SbecNtKernelLogSession 会话"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Starts an NT Kernel Logger log session with forwarding of events to the "
+"Collector."
+msgstr "启动一个 NT 内核日志记录会话，并将事件转发到收集器（Collector）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Start-SbecNtKernelLogSession** cmdlet starts a real-time NT Kernel Logger trace session with forwarding of the events to the Collector.\n"
+"The name of the session is fixed as NT Kernel Logger and the GUID is fixed as {9e814aad-3204-11d2-9a82-006008a86939}."
+msgstr ""
+"`Start-SbecNtKernelLogSession` cmdlet 用于启动一个实时的 NT "
+"内核日志记录会话，并将产生的事件转发到相应的收集器（Collector）。该会话的名称固定为 “NT Kernel Logger”，其 GUID 固定为"
+" `{9e814aad-3204-11d2-9a82-006008a86939}`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the buffer size for the session, in kilobytes.\n"
+"This is the size of one buffer, with the count of these buffers set by the *MinimumBufferCount* and *MaximumBufferCount* parameters."
+msgstr ""
+"指定会话的缓冲区大小（以千字节为单位）。这表示一个缓冲区的大小，而缓冲区的数量由 *MinimumBufferCount* 和 "
+"*MaximumBufferCount* 参数来控制。"
+
+msgid ""
+"Specifies the type of clock used for the events collected by this session: "
+"The acceptable values for this parameter are:"
+msgstr "指定用于本次会话收集的事件的时间戳类型（时钟类型）。该参数的可接受值包括："
+
+msgid ""
+"Specifies the timeout in seconds for the session buffers to get automatically flushed.\n"
+"You can disable the flushing of buffers on timeout by setting this parameter to 0, then the buffers will be written only when full or on an explicit flush."
+msgstr ""
+"指定会话缓冲区自动清空的超时时间（以秒为单位）。您可以通过将此参数设置为 0 "
+"来禁用超时时的缓冲区清除功能；在这种情况下，缓冲区仅会在满载或手动执行清除操作时才会被写入。"
+
+msgid ""
+"Specifies flags for the NT Kernel Logger that enable the kernel events.\n"
+"For the setup and boot monitoring, the only reasonable flag is Process.\n"
+"This enumeration type is defined in $PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"用于指定 NT 内核日志记录器（NT Kernel Logger）的标志，这些标志可以启用内核事件记录功能。在系统设置和启动监控过程中，唯一合理的标志是"
+" “Process”。这种枚举类型定义在文件 "
+"$PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1 中。该参数的可接受取值为："
+
+msgid "Specifies the maximum number of buffers to allocate for this session."
+msgstr "指定为此会话分配的最大缓冲区数量。"
+
+msgid "Specifies the minimum number of buffers to allocate for this session."
+msgstr "指定为此会话分配的最小缓冲区数量。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个对象，该对象表示您正在操作的项。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### SbecEtwTrace.TraceSessionInfo"
+msgstr "### SbecEtwTrace.TraceSessionInfo"
+
+msgid ""
+"The **SbecEtwTrace.TraceSessionInfo** class is defined in "
+"$PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1."
+msgstr ""
+"`SbecEtwTrace.TraceSessionInfo` 类定义在 "
+"`$PsHomeModules\\BootEventCollector\\SbecTracehelpers.psm1` 文件中。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+msgstr "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+
+msgid "[Start-SbecLogSession](./Start-SbecLogSession.md)"
+msgstr "[开始 SbecLogSession 会话](./Start-SbecLogSession.md)"
+
+msgid "[Start-SbecSimpleLogSession](./Start-SbecSimpleLogSession.md)"
+msgstr "[Start-SbecSimpleLogSession](./Start-SbecSimpleLogSession.md)"
+
+msgid "[Stop-SbecLogSession](./Stop-SbecLogSession.md)"
+msgstr "[Stop-SbecLogSession](./Stop-SbecLogSession.md)"
+
+msgid "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+msgstr "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+
+msgid "[Save-SbecLogSession](./Save-SbecLogSession.md)"
+msgstr "[Save-SbecLogSession](./Save-SbecLogSession.md)"

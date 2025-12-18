@@ -1,0 +1,125 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:53:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-SbecHistory"
+msgstr "# Get-SbecHistory"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the recent history of changes in connection status."
+msgstr "获取连接状态变化的最新记录。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-SbecHistory** cmdlet gets the recent history of changes in "
+"connection status from the Setup and Boot Event Collector."
+msgstr "`Get-SbecHistory` cmdlet 用于从设置和启动事件收集器中获取连接状态变化的近期历史记录。"
+
+msgid ""
+"The length of the history kept in the Collector and returned by this command is limited by an absolute number.\n"
+"After the history grows beyond this size, new events cause the older events to disappear.\n"
+"Because of this, the returned history is not full but only recent.\n"
+"Reading the history doesn't erase it."
+msgstr ""
+"该命令返回的、存储在“Collector”中的历史记录的长度是受到绝对数值限制的。当历史记录的长度超过这个限制后，新的事件会导致旧的事件被覆盖（即旧事件从记录中消失）。因此，返回的历史记录并不完整，而只包含最近的事件。阅读这些历史记录并不会删除它们本身。"
+
+msgid ""
+"The similar information, in a reduced form, can be written by the Collector into the status log file.\n"
+"The reduction is in the sense that the status log only shows the points when a new ETL file is opened for a connection.\n"
+"The information from the status log file can be obtained with **Get-SbecDestination**."
+msgstr ""
+"类似的信息（以精简的形式）可以由收集者写入状态日志文件中。这种精简体现在：状态日志仅会记录在为新ETL文件建立连接时发生的事件。可以通过`Get-"
+"SbecDestination`命令获取状态日志文件中的信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the connection history"
+msgstr "### 示例 1：获取连接历史记录"
+
+msgid "This command gets the connection history."
+msgstr "这个命令可以获取连接历史记录。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet, or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行该 cmdlet。可以输入一个会话对象（例如 **New-CimSession** 或 **Get-"
+"CimSession** cmdlet 的输出结果），或者这些对象的数组。默认情况下，该 cmdlet 会在本地计算机上运行。有关更多信息，请参阅 "
+"About_CimSession。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on MSDN."
+msgstr ""
+"指定您想要在其上执行操作的计算机的名称。您可以分别为每台计算机指定一个完全合格的域名（FQDN）、NetBIOS 名称或 IP "
+"地址。有关更多信息，请参阅 MSDN 上的 [Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### CIM/WMI objects of class "
+"\\Root\\Microsoft\\Windows\\BootEventCollector\\TargetForwardingHistory"
+msgstr ""
+"### 类为 "
+"\\Root\\Microsoft\\Windows\\BootEventCollector\\TargetForwardingHistory 的 "
+"CIM/WMI 对象"
+
+msgid "The CIM/WMI objects contain the following fields"
+msgstr "CIM/WMI对象包含以下字段："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecDestination](./Get-SbecDestination.md)"
+msgstr "[Get-SbecDestination](./Get-SbecDestination.md)"
+
+msgid "[Get-SbecForwarding](./Get-SbecForwarding.md)"
+msgstr "[Get-SbecForwarding](./Get-SbecForwarding.md)"

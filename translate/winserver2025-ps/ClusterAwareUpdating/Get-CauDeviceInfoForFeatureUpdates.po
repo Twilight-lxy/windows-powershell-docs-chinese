@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:23:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-CauDeviceInfoForFeatureUpdates"
+msgstr "# 获取用于功能更新的设备信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Retrieves device information for feature updates from a specified directory."
+msgstr "从指定的目录中检索设备信息，以便进行功能更新。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-CauDeviceInfoForFeatureUpdates` cmdlet retrieves device information for feature updates\n"
+"from a specified directory."
+msgstr "`Get-CauDeviceInfoForFeatureUpdates` cmdlet 从指定的目录中检索用于功能更新的设备信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This command retrieves device information for feature updates from the `C:\\Updates` directory for\n"
+"the cluster named **CONTOSO-FC1**. It also specifies the path to the deployment cab file that will\n"
+"be created for the update in `C:\\Deployment\\FeatureUpdate.cab`."
+msgstr ""
+"此命令从名为**CONTOSO-"
+"FC1**的集群的`C:\\Updates`目录中检索用于功能更新的设备信息。同时，它还指定了用于存储更新内容的部署文件包（cab文件）的路径，该文件将保存在`C:\\Deployment\\FeatureUpdate.cab`中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to create the CAU clustered role. This parameter is only\n"
+"required when this cmdlet isn't run on a failover cluster node, or this cmdlet is used to reference\n"
+"a failover cluster different from where the cmdlet is run."
+msgstr ""
+"指定用于创建 CAU 集群角色的集群名称。此参数仅在以下情况下需要：要么该 cmdlet 不在故障转移集群节点上运行；要么该 cmdlet "
+"用于引用与执行该 cmdlet 的位置不同的故障转移集群。"
+
+msgid "Specifies the administrative credentials for the target cluster."
+msgstr "指定目标集群的管理凭据。"
+
+msgid ""
+"Specifies the path to the deployment cab file that will be created for the "
+"update."
+msgstr "指定用于更新操作的部署包文件的路径。该部署包文件将会被创建出来。"
+
+msgid ""
+"Specifies the path to the directory that contains the device information files. This parameter is\n"
+"required."
+msgstr "指定包含设备信息文件的目录的路径。此参数是必需的。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Input Data）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### Microsoft.ClusterAwareUpdating.ActivityIdMap"
+msgstr "### Microsoft_clusterAwareUpdatingActivityIdMap"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,142 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:15:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-DeviceHealthAttestation"
+msgstr "# 安装设备健康证明（Install-DeviceHealthAttestation）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Installs the Device Health Attestation service."
+msgstr "安装设备健康证明服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Install (Default)"
+msgstr "### 安装（默认设置）"
+
+msgid "### InstallAndAddSslBinding"
+msgstr "### 安装并添加 SSL 绑定"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Install-DeviceHealthAttestation** cmdlet installs the Device Health Attestation service and configures its dependencies.\n"
+"Before you can install the service, you must add the Device Health Attestation service role."
+msgstr ""
+"`Install-DeviceHealthAttestation` cmdlet 用于安装设备健康认证（Device Health "
+"Attestation）服务并配置其依赖项。在安装该服务之前，必须先添加相应的角色（即 Device Health Attestation 服务角色）。"
+
+msgid "The installation does the following:"
+msgstr "安装过程会完成以下操作："
+
+msgid "You must have administrator rights to run this cmdlet."
+msgstr "您必须具有管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Install the Device Health Attestation service"
+msgstr "### 示例 1：安装设备健康证明服务"
+
+msgid "This command installs the Device Health Attestation service."
+msgstr "此命令用于安装设备健康认证（Device Health Attestation）服务。"
+
+msgid "### Example 2: Install the Device Health Attestation service with SSL"
+msgstr "### 示例 2：使用 SSL 安装设备健康认证服务"
+
+msgid ""
+"This command installs the Device Health Attestation service with SSL "
+"bindings."
+msgstr "该命令安装了带有SSL绑定的设备健康证明（Device Health Attestation）服务。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Specifies the encryption certificate thumbprint.\n"
+"The value must contain only hexadecimal digits (0-9, A-F) and be 40 characters in length.\n"
+"This value is case-insensitive."
+msgstr "指定加密证书的指纹（thumbprint）。该值必须仅包含十六进制数字（0-9、A-F），且长度为40个字符。此值不区分大小写。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不会请求用户确认。"
+
+msgid ""
+"Specifies the signing certificate thumbprint.\n"
+"The value must contain only hexadecimal digits (0-9, A-F) and be 40 characters in length.\n"
+"This value is case-insensitive."
+msgstr "指定签名证书的指纹（thumbprint）。该值必须仅包含十六进制数字（0-9、A-F），长度为40个字符。此值的大小写不敏感。"
+
+msgid ""
+"Specifies the certificate store that contains the certificate referenced by the *SslCertificateThumbprint* parameter.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定包含由*SslCertificateThumbprint*参数引用的证书的证书存储库。该参数的可接受值为："
+
+msgid ""
+"Specifies the thumbprint of the certificate to use for server SSL binding.\n"
+"The value must contain only hexadecimal digits (0-9, A-F) and be 40 characters in length.\n"
+"This value is case-insensitive."
+msgstr ""
+"指定用于服务器SSL绑定的证书的“指纹”（即证书的唯一标识符）。该值必须仅包含十六进制数字（0-9、A-F），且长度为40个字符。此值不区分大小写。"
+
+msgid ""
+"If you specify *SslCertificateThumbprint*, the cmdlet creates an SSL binding on the default website.\n"
+"If you specify this parameter, you must also specify the *SslCertificateStoreName* parameter."
+msgstr ""
+"如果您指定了*SslCertificateThumbprint*参数，该cmdlet会在默认网站上创建一个SSL绑定。如果您指定了此参数，还必须指定*SslCertificateStoreName*参数。"
+
+msgid ""
+"Specifies, in a comma-separated list, the authentication schema that the Device Health Attestation service supports.\n"
+"The acceptable values for this parameter are:"
+msgstr "以逗号分隔的列表形式指定设备健康认证服务支持的认证方案。该参数的可接受值为："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Uninstall-DeviceHealthAttestation](./Uninstall-DeviceHealthAttestation.md)"
+msgstr "[卸载设备健康认证功能](./Uninstall-DeviceHealthAttestation.md)"

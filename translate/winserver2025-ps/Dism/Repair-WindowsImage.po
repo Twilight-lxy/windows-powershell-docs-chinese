@@ -1,0 +1,298 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:47:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Repair-WindowsImage"
+msgstr "# 修复Windows镜像"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Repairs a Windows image in a WIM or VHD file."
+msgstr "修复WIM或VHD文件中的Windows镜像。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Offline"
+msgstr "### 离线模式"
+
+msgid "### Online"
+msgstr "### 在线"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Repair-WindowsImage** cmdlet repairs a Windows image in a WIM or VHD "
+"file."
+msgstr "`Repair-WindowsImage` cmdlet 可以修复 WIM 或 VHD 文件中的 Windows 镜像。"
+
+msgid ""
+"Use the *Online* parameter to specify the running operating system on your "
+"local computer, or use the *Path* parameter to specify the location of a "
+"mounted Windows image."
+msgstr ""
+"使用 *Online* 参数来指定您本地计算机上正在运行的操作系统，或者使用 *Path* 参数来指定已挂载的 Windows 镜像的位置。"
+
+msgid ""
+"The *LimitAccess* parameter prevents access to Windows Update (WU) as a "
+"*Source* for repairing online images."
+msgstr "*LimitAccess* 参数用于阻止将 Windows 更新（WU）作为修复在线镜像的来源进行访问。"
+
+msgid ""
+"The *CheckHealth* parameter checks whether the image has been flagged as "
+"corrupted by a failed process and whether the corruption can be repaired."
+msgstr "*CheckHealth* 参数用于检查图像是否因某个进程失败而被标记为损坏，以及这种损坏是否能够被修复。"
+
+msgid ""
+"The *ScanHealth* parameter scans the image for component store corruption.\n"
+"This operation will take several minutes."
+msgstr "*ScanHealth* 参数用于扫描图像中是否存在组件存储损坏的情况。此操作可能需要几分钟时间才能完成。"
+
+msgid ""
+"The *RestoreHealth* parameter scans the image for component store corruption, and then performs repair operations automatically.\n"
+"This operation will take several minutes."
+msgstr "`RestoreHealth` 参数会扫描图像以检测组件存储是否损坏，然后自动执行修复操作。这个过程需要几分钟时间。"
+
+msgid ""
+"The *Source* parameter specifies the location of known good versions of "
+"files that can be used for the repair, such as a path to the root directory "
+"of a mounted image."
+msgstr "*Source* 参数指定了可用于修复的已知正常版本的文件的位置，例如挂载映像的根目录路径。"
+
+msgid ""
+"*CheckHealth*, *ScanHealth*, *RestoreHealth*, *Source*, and *LimitAccess* "
+"can only be used when servicing images that are running at least Windows 8 "
+"or Windows Server 2012."
+msgstr ""
+"*CheckHealth*、*ScanHealth*、*RestoreHealth*、*Source* 和 *LimitAccess* "
+"这些功能仅能用于处理运行在 Windows 8 或 Windows Server 2012 及更高版本操作系统上的图像文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Scan an image for corruption"
+msgstr "### 示例 1：扫描图像以检测是否存在损坏"
+
+msgid "This command scans the specified image for component store corruption."
+msgstr "该命令会扫描指定的图像，以检查组件存储是否出现损坏。"
+
+msgid ""
+"### Example 2: Check an image for corruption and whether to repair the image"
+msgstr "### 示例 2：检查图像是否损坏以及是否需要修复该图像"
+
+msgid ""
+"This command checks whether the specified image has been flagged as "
+"corrupted by a failed process and whether the corruption can be repaired."
+msgstr "此命令用于检查指定的图像是否因某个失败的进程而被标记为损坏状态，以及该损坏问题是否可以修复。"
+
+msgid "### Example 3: Check an image for corruption and repairs the image"
+msgstr "### 示例 3：检查图像是否损坏，并修复该图像"
+
+msgid ""
+"This command scans the specified image for component store corruption, and "
+"then performs repair operations automatically."
+msgstr "该命令会扫描指定的图像，检查是否存在组件存储损坏的情况，然后自动执行修复操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Checks whether the image has been flagged as corrupted by a failed process "
+"and whether the corruption can be repaired."
+msgstr "检查图像是否因某个进程失败而被标记为损坏，以及该损坏是否可以修复。"
+
+msgid "Defers cleanup operations until the next automatic maintenance."
+msgstr "将清理操作推迟到下一次自动维护时再进行。"
+
+msgid ""
+"Prevents DISM from contacting Windows Update (WU) when searching for the "
+"source files to repair an online image."
+msgstr "防止DISM在搜索用于修复在线镜像的源文件时与Windows Update（WU）进行通信。"
+
+msgid ""
+"*LimitAccess* can only be used when servicing images that are running at "
+"least Windows 8, Windows Server 2012, or Windows  Preinstallation "
+"Environment (Windows PE) 4.0."
+msgstr ""
+"*LimitAccess* 只能用于处理运行在 Windows 8、Windows Server 2012 或 Windows "
+"预安装环境（Windows PE）4.0 等操作系统上的图像文件。"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"用于指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及信息性内容  \n"
+"- 4 = 显示上述所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 虚拟磁盘（其容量可能低至 32 MB）。日志文件会自动被归档；归档后的日志文件会在文件名后附加 `.bak` "
+"扩展名，并生成一个新的日志文件。每次日志文件被归档时，对应的 `.bak` 文件都会被覆盖。当使用未加入域的网络共享资源时，请先使用 `net use`"
+" 命令并输入相应的域凭据来设置访问权限，然后再设置 DISM 日志的路径。"
+
+msgid ""
+"Suppresses reboot.\n"
+"If a reboot is not required, this command does nothing.\n"
+"This option will keep the application from prompting for a restart or keep it from restarting automatically."
+msgstr "抑制重新启动。如果不需要重新启动，该命令将不会执行任何操作。此选项可以防止应用程序提示用户进行重启，或者阻止应用程序自动重新启动。"
+
+msgid ""
+"Specifies that the action is to be taken on the operating system that is "
+"currently running on the local computer."
+msgstr "指定该操作应在当前正在本地计算机上运行的操作系统上执行。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service.\n"
+"If the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"`WindowsDirectory`。"
+
+msgid ""
+"Resets the base of superseded components to further reduce the component "
+"store size."
+msgstr "将已被替换的组件的基础状态重置，以进一步减小组件存储的大小。"
+
+msgid ""
+"Scans the image for component store corruption, and then performs repair operations automatically.\n"
+"This operation will take several minutes."
+msgstr "扫描图像以检测组件存储是否损坏，然后自动执行修复操作。此过程需要几分钟时间。"
+
+msgid ""
+"Scans the image for component store corruption.\n"
+"This operation will take several minutes."
+msgstr "扫描图像以检查组件存储是否损坏。此操作需要几分钟时间。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，该目录将在执行维护操作（servicing）时用于提取文件。此目录必须存在于本地计算机上。如果未指定目录，则系统会使用 "
+"`\\Windows\\%Temp%` 目录，并为每次 DISM "
+"操作生成一个随机的十六进制值作为子目录名称。每次操作完成后，临时目录中的所有内容都会被删除。不建议将网络共享位置用作用于安装包（.cab 或 .msu "
+"文件）的临时目录。在执行维护操作时用于提取文件的目录应为本地目录。"
+
+msgid ""
+"Specifies the location of the files that are required to repair an image.\n"
+"You can specify the Windows directory of a mounted image or a running Windows installation that is shared on the network."
+msgstr ""
+"指定用于修复图像所需的文件的位置。您可以指定已挂载的图像对应的Windows目录，或者是在网络中共享的正在运行的Windows系统所在的目录。"
+
+msgid ""
+"If you specify multiple *Source* arguments, the files are gathered from the first location where they are found and the rest of the locations are ignored.\n"
+"Separate source locations with a comma."
+msgstr "如果您指定了多个 *Source* 参数，系统将从第一个找到这些文件的 위치收集文件，其余的位置将被忽略。使用逗号分隔不同的来源位置。"
+
+msgid ""
+"If you do not specify a *Source*, the default location set by Group Policy is used.\n"
+"Windows Update (WU) is also used for online images."
+msgstr "如果您没有指定*来源*，则会使用组策略设置的默认位置。Windows Update（WU）也会用于获取在线更新所需的图像文件。"
+
+msgid ""
+"*Source* can only be used when servicing images that are running at least "
+"Windows 8 or Windows Server 2012."
+msgstr "“Source”功能仅适用于运行Windows 8或Windows Server 2012及以上操作系统的系统上的图像处理任务。"
+
+msgid ""
+"Cleans up superseded components to reduce the size of the component store."
+msgstr "清理已被替换的组件，以减小组件存储空间的大小。"
+
+msgid ""
+"Specifies the path to the location of the BootMgr files.\n"
+"This is necessary only when the BootMgr files are located on a partition other than the one that you are running the command from.\n"
+"Use -SystemDrive to service an installed Windows image from a Windows PE environment."
+msgstr ""
+"指定包含 BootMgr 文件的路径。只有当 BootMgr 文件位于与你运行命令的分区不同的分区上时，才需要提供该路径。使用 "
+"`-SystemDrive` 选项可以从 Windows PE 环境中管理服务已安装的 Windows 镜像。"
+
+msgid ""
+"Specifies the path to the Windows directory relative to the image path.\n"
+"This cannot be the full path to the Windows directory; it should be a relative path.\n"
+"If not specified, the default is the Windows directory in the root of the offline image directory."
+msgstr ""
+"指定相对于图像路径的 Windows 目录的路径。该路径不能是 Windows "
+"目录的完整路径，而应该是一个相对路径。如果未指定，默认值是离线图像目录根目录下的 Windows 目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dismcommands.ImageObject"
+
+msgid "### Microsoft.Dism.Commands.ImageInfoObject"
+msgstr "### Microsoft.Dism Commands.ImageInfoObject"
+
+msgid "### Microsoft.Dism.Commands.MountedImageInfoObject"
+msgstr "### Microsoft.Dismcommands.MountedImageInfoObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.ImageObjectWithState"
+msgstr "### Microsoft.DismCommands.ImageObjectWithState"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+msgstr "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+
+msgid "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+msgstr "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+
+msgid "[Get-WindowsImage](./Get-WindowsImage.md)"
+msgstr "[Get-WindowsImage](./Get-WindowsImage.md)"
+
+msgid "[Save-WindowsImage](./Save-WindowsImage.md)"
+msgstr "[Save-WindowsImage](./Save-WindowsImage.md)"

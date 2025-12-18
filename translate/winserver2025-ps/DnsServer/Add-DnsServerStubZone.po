@@ -1,0 +1,236 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 13:24:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-DnsServerStubZone"
+msgstr "# Add-DnsServerStubZone"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a DNS stub zone."
+msgstr "添加一个DNS存根区域（stub zone）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### FileForwardLookupZone (Default)"
+msgstr "### FileForwardLookupZone（默认值）"
+
+msgid "### FileReverseLookupZone"
+msgstr "### FileReverseLookupZone"
+
+msgid "### ADReverseLookupZone"
+msgstr "### ADReverseLookupZone"
+
+msgid "### ADForwardLookupZone"
+msgstr "### ADForward LookupZone"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-DnsServerStubZone** cmdlet adds a stub zone.\n"
+"A stub zone is a copy of a Domain Name System (DNS) zone that contains only resource records that identify the DNS servers for that zone."
+msgstr ""
+"`Add-DnsServerStubZone` cmdlet 用于添加一个存根区域（stub "
+"zone）。存根区域是域名系统（DNS）区域的副本，其中仅包含用于标识该区域对应的 DNS 服务器的资源记录。"
+
+msgid ""
+"You can add either a forward lookup zone or a reverse lookup zone.\n"
+"You can add either an Active Directory-integrated zone or a file-backed zone."
+msgstr ""
+"你可以添加正向查找区域（forward lookup zone）或反向查找区域（reverse lookup zone）。同时，你也可以选择添加与 "
+"Active Directory 集成的区域（Active Directory-integrated zone）或基于文件的区域（file-backed"
+" zone）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a file-backed stub zone"
+msgstr "#### 示例 1：添加一个基于文件的存根区域（stub zone）"
+
+msgid ""
+"This command adds west02.contoso.com as a file-backed stub zone.\n"
+"The command specifies a master server and uses the *PassThru* parameter to produce output."
+msgstr ""
+"此命令将 west02.contoso.com 添加为一个基于文件的存根区域（stub zone）。该命令指定了一个主服务器，并使用 "
+"*PassThru* 参数来生成输出结果。"
+
+msgid "### Example 2: Add an Active Directory-integrated stub zone"
+msgstr "#### 示例 2：添加一个与 Active Directory 集成的存根区域（stub zone）"
+
+msgid ""
+"This command adds west03.contoso.com as a stub zone replicated to all DNS "
+"servers in the forest."
+msgstr "此命令将 west03.contoso.com 添加为一个存根区域（stub zone），并复制到森林中的所有 DNS 服务器上。"
+
+msgid "### Example 3: Add an Active Directory-integrated reverse lookup zone"
+msgstr "### 示例 3：添加一个与 Active Directory 集成的反向查找区域"
+
+msgid ""
+"This command adds a stub zone for the network 2.1.10.in-addr.arpa, which is "
+"replicated to all DNS servers in the forest."
+msgstr ""
+"此命令为网络 2.1.10.in-addr.arpa 添加了一个存根区域（stub zone），该区域会被复制到森林中的所有 DNS 服务器上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该 cmdlet。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中操作。要管理该作业，请使用 `*-Job` "
+"系列 cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。请输入计算机名称或会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies a DNS server.\n"
+"If you do not specify this parameter, the command runs on the local system.\n"
+"You can specify an IP address or any value that resolves to an IP address, such as a fully qualified domain name (FQDN), host name, or NETBIOS name."
+msgstr ""
+"用于指定一个 DNS 服务器。如果您不指定此参数，命令将在本地系统上运行。您可以指定一个 IP 地址，或者任何能够解析为 IP "
+"地址的值，例如完全合格的域名（FQDN）、主机名或 NETBIOS 名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行操作。"
+
+msgid ""
+"Specifies a directory partition on which to store the zone.\n"
+"Use this parameter when the *ReplicationScope* parameter has a value of Custom."
+msgstr "指定用于存储区域（zone）的目录分区。当*ReplicationScope*参数的值为“Custom”时，请使用此参数。"
+
+msgid ""
+"Indicates that the server loads an existing file for the zone.\n"
+"Otherwise, the cmdlet creates default zone records automatically.\n"
+"This switch is relevant only for file-backed zones."
+msgstr ""
+"表示服务器会加载该区域对应的现有文件；否则，此命令行工具（cmdlet）会自动创建默认的区域记录。此参数仅适用于基于文件的区域（file-backed "
+"zones）。"
+
+msgid ""
+"Specifies an array of IP addresses of the master servers of the zone.\n"
+"You can use both IPv4 and IPv6."
+msgstr "指定该区域主服务器的IP地址数组。你可以同时使用IPv4和IPv6地址。"
+
+msgid "Specifies a name of a zone."
+msgstr "指定一个区域（zone）的名称。"
+
+msgid ""
+"Specifies a network ID and prefix length for a reverse lookup zone.\n"
+"Use the format A.B.C.D/prefix for IPv4 or 1111:2222:3333:4444::/prefix for IPv6."
+msgstr ""
+"指定反向查找区域的网络ID和前缀长度。对于IPv4，使用格式A.B.C.D/prefix；对于IPv6，使用格式1111:2222:3333:4444::/prefix。"
+
+msgid ""
+"For IPv4, the cmdlet creates only class A, B, C, or D reverse lookup zones.\n"
+"If you specify a prefix that is between classes, the cmdlet uses the longer prefix that is divisible by 8.\n"
+"For example, a value of 10.2.10.0/23 adds the 10.2.10.0/24 reverse lookup zone, and the 10.2.11.0/24 reverse lookup zone is not created.\n"
+"If you enter an IPv4 prefix longer than /24, the cmdlet creates a /32 reverse lookup zone."
+msgstr ""
+"对于 "
+"IPv4，该cmdlet仅能创建A类、B类、C类或D类的反向查找区域。如果您指定的前缀位于两个类别之间，cmdlet会使用能够被8整除的较长前缀。例如，当输入前缀“10.2.10.0/23”时，系统会创建“10.2.10.0/24”反向查找区域，而不会创建“10.2.11.0/24”反向查找区域。如果您输入的长度超过“/24”的IPv4前缀，cmdlet会创建一个“/32”类型的反向查找区域。"
+
+msgid ""
+"For IPv6, the cmdlet creates ip6.arpa zones for prefixes from /16 to /128 that are divisible by 4.\n"
+"If you specify a prefix that is between values, the cmdlet uses the longer prefix that is divisible by 4.\n"
+"For example, entering a value of AAAA::/58 adds the AAAA::/60  ip6.arpa zone.\n"
+"If you do not enter a prefix, the cmdlet uses a default prefix value of /128."
+msgstr ""
+"对于 IPv6，该 cmdlet 会为前缀范围从 /16 到 /128（且这些前缀能被 4 整除）创建 ip6.arpa "
+"区域。如果您指定了一个位于该范围内的前缀，cmdlet 会使用其中长度较长、且能被 4 整除的前缀。例如，输入值 AAAA::/58 时，系统会创建 "
+"AAAA::/60 这个 ip6.arpa 区域；如果您没有指定前缀，cmdlet 会使用默认的前缀值 /128。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies a partition on which to store an Active Directory-integrated zone.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定用于存储与 Active Directory 集成的区域的分区。该参数的可接受值为："
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid ""
+"Specifies a name of the zone file.\n"
+"This parameter is only relevant for file-backed DNS."
+msgstr "指定区域文件的名称。此参数仅适用于基于文件的DNS（File-Based DNS）配置。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance#DnsServerStubZone"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance#DnsServerStubZone"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-DnsServerStubZone](./Set-DnsServerStubZone.md)"
+msgstr "[Set-DnsServerStubZone](./Set-DnsServerStubZone.md)"

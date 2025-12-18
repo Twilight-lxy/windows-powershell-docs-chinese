@@ -1,0 +1,151 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:14:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-BCCachePackage"
+msgstr "# 导入 BCCache 包"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Imports a cache package."
+msgstr "导入一个缓存包。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Import-BCCachePackage** cmdlet imports a cache package.\n"
+"A cache package contains file and web data that can be imported on remote hosted cache computers, so that it is available for the first client request.\n"
+"Use the **Publish-BCFileContent** and **Publish-BCWebContent** cmdlets to collect data on file and web servers into a cache package, and then use the **Export-BCCachePackage** cmdlet to generate a cache package file.\n"
+"Import this file on hosted cache computers using this cmdlet."
+msgstr ""
+"`Import-BCCachePackage` cmdlet "
+"用于导入缓存包。缓存包包含文件数据和网页数据，这些数据可以被导入到远程托管的缓存服务器上，以便在第一个客户端请求时即可使用。可以使用 `Publish-"
+"BCFileContent` 和 `Publish-BCWebContent` cmdlets 将文件服务器和网页服务器上的数据收集到缓存包中，然后使用"
+" `Export-BCCachePackage` cmdlet 生成一个缓存包文件。最后，可以使用该 cmdlet "
+"将生成的缓存包文件导入到托管的缓存服务器上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import cache package"
+msgstr "#### 示例 1：导入缓存包"
+
+msgid ""
+"This command imports all content that exported into the cache package "
+"D:\\temp\\PeerDistPackage.zip."
+msgstr "这个命令会导入所有被导出到缓存包 D:\\temp\\PeerDistPackage.zip 中的内容。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用 `*-Job` 系列"
+" cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the fully qualified file name of the cache package that this "
+"cmdlet imports."
+msgstr "指定此 cmdlet 所导入的缓存包的完整限定文件名。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的cmdlet的最大操作数量。如果省略此参数或输入值为`0`，那么Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最佳限制值（即并发操作的最高数量）。此限制仅适用于当前正在运行的cmdlet，而不影响整个会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-BCCachePackage](./Export-BCCachePackage.md)"
+msgstr "[Export-BCCachePackage](./Export-BCCachePackage.md)"
+
+msgid "[Publish-BCFileContent](./Publish-BCFileContent.md)"
+msgstr "[ Publish-BCFileContent ](./Publish-BCFileContent.md)"
+
+msgid "[Publish-BCWebContent](./Publish-BCWebContent.md)"
+msgstr "[发布 BCWeb 内容](./Publish-BCWebContent.md)"

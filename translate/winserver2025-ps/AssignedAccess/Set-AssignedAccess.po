@@ -1,0 +1,157 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:27:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AssignedAccess"
+msgstr "# 设置分配的访问权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Configures a user to launch only one app."
+msgstr "配置用户仅能启动一个应用程序。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### UserNameANDAppName (Default)"
+msgstr "### UserName ANDAppName（默认值）"
+
+msgid "### UserNameANDAppId"
+msgstr "### UserName AND AppId"
+
+msgid "### UserSidANDAppId"
+msgstr "### UserSid AND AppId"
+
+msgid "### UserSidANDAppName"
+msgstr "### UserSidANDAppName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AssignedAccess** cmdlet configures the specified user account so that it can use only one Windows Store app.\n"
+"The user cannot exit the app, sign out, or access any system settings."
+msgstr ""
+"`Set-AssignedAccess` cmdlet 用于配置指定的用户账户，使其只能使用一个 Windows "
+"应用程序。该用户无法退出该应用程序、登出系统或访问任何系统设置。"
+
+msgid ""
+"If a user is signed-in or the computer has a PS/2 keyboard, you must restart"
+" the computer to apply the changes."
+msgstr "如果用户已登录，或者计算机配备了 PS/2 键盘，那么你必须重新启动计算机才能使更改生效。"
+
+msgid ""
+"To sign out of assigned access, quickly press the left Windows logo key five"
+" times."
+msgstr "要退出已分配的访问权限，请快速按五下左侧的Windows图标键。"
+
+msgid ""
+"Assigned Access cmdlets are supported on Windows 10 and Windows 11 client "
+"operating systems only."
+msgstr "“分配访问权限”（Assigned Access）相关的cmdlet仅支持Windows 10和Windows 11客户端操作系统。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set assigned access by SID and app name"
+msgstr "### 示例 1：根据 SID 和应用程序名称设置分配的访问权限"
+
+msgid ""
+"This command configures assigned access by using the user SID and the app "
+"name."
+msgstr "该命令通过使用用户SID（安全标识符）和应用程序名称来配置分配的访问权限。"
+
+msgid "### Example 2: Set assigned access by user name and AppUserModelID"
+msgstr "### 示例 2：根据用户名和 AppUserModelID 设置分配的访问权限"
+
+msgid ""
+"This command configures assigned access by using the user name and "
+"AppUserModelID."
+msgstr "此命令通过使用用户名和AppUserModelID来配置指定的访问权限。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the installed Windows Store app to use for assigned access.\n"
+"Wildcard characters are accepted."
+msgstr "指定用于分配访问权限的已安装 Windows 应用商店应用程序的名称。支持使用通配符字符。"
+
+msgid ""
+"Specifies the Application User Model ID (AppUserModelID) for the installed Windows Store app to use for assigned access.\n"
+"The AppUserModelID is found in the app's AUMIDs.txt file."
+msgstr ""
+"指定已安装的 Windows Store 应用程序用于分配访问权限的应用程序用户模型 ID（AppUserModelID）。该 ID 可以在应用程序的 "
+"AUMIDs.txt 文件中找到。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies the local user account name to use for assigned access.\n"
+"This cannot be a domain account or an administrator account."
+msgstr "指定用于分配访问权限的本地用户账户名称。该账户不能是域账户或管理员账户。"
+
+msgid ""
+"Specifies the security identifier (SID) for the local user account to use for assigned access.\n"
+"This account cannot be a domain account or an administrator account."
+msgstr "指定用于分配访问权限的本地用户账户的安全标识符（SID）。该账户不能是域账户或管理员账户。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您不能将输入数据通过管道传递给这个cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "`Get-AppxPackage -User \"username\"`"
+msgstr "`Get-AppxPackage -User \"username\"`"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-AssignedAccess](./Clear-AssignedAccess.md)"
+msgstr "[Clear-AssignedAccess](./Clear-AssignedAccess.md)"
+
+msgid "[Get-AssignedAccess](./Get-AssignedAccess.md)"
+msgstr "[获取分配的访问权限](./Get-AssignedAccess.md)"

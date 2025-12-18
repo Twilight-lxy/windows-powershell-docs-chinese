@@ -1,0 +1,151 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:47:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DfsReplicatedFolder"
+msgstr "# Set-DfsReplicatedFolder"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Changes settings of a replicated folder."
+msgstr "更改已复制文件夹的设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DfsReplicatedFolder** cmdlet changes settings of a replicated folder in a replication group.\n"
+"You can use this cmdlet to modify global settings of replicated folders such as filters and Distributed File System (DFS) Namespace associations.\n"
+"Replicated folders are logical arrangements of replication that do not contain computer-specific settings."
+msgstr ""
+"`Set-DfsReplicatedFolder` cmdlet 用于更改复制组中复制文件夹的设置。您可以使用此 cmdlet "
+"来修改复制文件夹的全局设置，例如过滤器以及分布式文件系统（DFS）命名空间关联等。复制文件夹是一种逻辑上的复制结构，其中不包含与特定计算机相关的设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a description to a replicated folder"
+msgstr "### 示例 1：为复制的文件夹添加描述"
+
+msgid ""
+"This command sets a new description on the replicated folder named RF101 in "
+"the replication group named RG11."
+msgstr "此命令为名为“RG11”的复制组中、名为“RF101”的复制文件夹设置了一个新的描述。"
+
+msgid "### Example 2: Exclude files on all replicated folders"
+msgstr "### 示例 2：排除所有已复制文件夹中的文件"
+
+msgid ""
+"This command sets the list of files to exclude from replication for all replicated folders in the RG11 replication group.\n"
+"The command specifies that the DFS Replication service exclude file names starting with a tilde (~) character and files that have the extensions .bak, .tmp, and .ned from replication."
+msgstr ""
+"此命令用于设置要从RG11复制组中所有被复制的文件夹的复制过程中排除的文件列表。该命令指定DFS复制服务应排除以波浪号（~）开头的文件名，以及扩展名为.bak、.tmp和.ned的文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies a description for the replicated folder."
+msgstr "为复制的文件夹指定一个描述。"
+
+msgid "Specifies the DFS Namespace folder path of the replicated folder."
+msgstr "指定已复制文件夹的 DFS 命名空间文件夹路径。"
+
+msgid ""
+"This parameter is used to connect the replication group to the replicated "
+"folder."
+msgstr "此参数用于将复制组连接到被复制的文件夹。"
+
+msgid ""
+"Specifies an array of names of subfolders that the DSFR service excludes and does not replicate in the replicated folder.\n"
+"You must provide only folder names, not full paths.\n"
+"You can use wildcards."
+msgstr ""
+"指定一个子文件夹名称数组，DSFR服务将排除这些文件夹，并且不会将这些文件夹复制到目标复制的文件夹中。您只需提供文件夹名称，无需提供完整的路径。可以使用通配符。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS 名称或完全限定域名（FQDN）。如果您不指定此参数，该 "
+"cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names and extensions of files that the DSFR service excludes and does not replicate.\n"
+"You must provide only file names, not full paths.\n"
+"You can use wildcards."
+msgstr "指定一个文件名称和扩展名的数组，这些文件将被 DSFR 服务排除且不会被复制。您只需提供文件名称，无需提供完整路径。可以使用通配符。"
+
+msgid ""
+"Specifies an array of names of replicated folders.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet gets all replicated folders."
+msgstr "指定一个包含已复制文件夹名称的数组。你可以使用逗号分隔的列表以及通配符（*）。如果未指定此参数，该cmdlet将获取所有已复制的文件夹。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。你可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsReplicatedFolder](./Get-DfsReplicatedFolder.md)"
+msgstr "[Get-DfsReplicatedFolder](./Get-DfsReplicatedFolder.md)"
+
+msgid "[New-DfsReplicatedFolder](./New-DfsReplicatedFolder.md)"
+msgstr "[New-DfsReplicatedFolder](./New-DfsReplicatedFolder.md)"
+
+msgid "[Remove-DfsReplicatedFolder](./Remove-DfsReplicatedFolder.md)"
+msgstr "[Remove-DfsReplicatedFolder](./Remove-DfsReplicatedFolder.md)"

@@ -1,0 +1,30 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:08:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# DefenderPerformance Module"
+msgstr "# DefenderPerformance模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "## DefenderPerformance Cmdlets"
+msgstr "## DefenderPerformanceCmdlets"
+
+msgid "### [Get-MpPerformanceReport](Get-MpPerformanceReport.md)"
+msgstr "### [Get-MpPerformanceReport](Get-MpPerformanceReport.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [New-MpPerformanceRecording](New-MpPerformanceRecording.md)"
+msgstr "### [New-MpPerformanceRecording](New-MpPerformanceRecording.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"

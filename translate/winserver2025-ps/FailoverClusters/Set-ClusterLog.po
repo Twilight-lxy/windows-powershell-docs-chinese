@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:24:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ClusterLog"
+msgstr "# 设置集群日志（Set-ClusterLog）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the size and level of detail for the cluster log."
+msgstr "设置集群日志的大小和详细程度级别。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Set-ClusterLog` cmdlet sets the size and level of detail for the cluster log. The default\n"
+"level, `3`, includes errors, warnings, and additional information."
+msgstr ""
+"`Set-ClusterLog` cmdlet 用于设置集群日志的大小和详细程度。默认的详细程度为 `3`，包括错误信息、警告信息以及其他相关数据。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example sets the cluster log to a detail level of `1`."
+msgstr "这个示例将集群日志的详细程度设置为`1`。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "This example sets the cluster log size to 1024 MB."
+msgstr "这个示例将集群日志的大小设置为 1024 MB。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the cluster from which to generate cluster logs."
+msgstr "指定用于生成集群日志的集群。"
+
+msgid ""
+"Specifies the log level to set for the cluster. The acceptable values for this parameter are: `0`\n"
+"to `5`."
+msgstr "指定要为集群设置的日志级别。该参数的可接受值为：`0` 到 `5`。"
+
+msgid ""
+"Specifies the log size to set for the cluster. The acceptable values for this parameter in Windows\n"
+"2016 are: `8` MB to `1024` MB. The acceptable values for this parameter in Windows 2019 are:\n"
+"`8` MB to `2048` MB."
+msgstr ""
+"指定要为集群设置的日志大小。在 Windows 2016 中，该参数的可接受值为：8 MB 到 1024 MB。在 Windows 2019 "
+"中，该参数的可接受值为：8 MB 到 2048 MB。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters PowerShellCluster"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterLog](./Get-ClusterLog.md)"
+msgstr "[Get-ClusterLog](./Get-ClusterLog.md)"

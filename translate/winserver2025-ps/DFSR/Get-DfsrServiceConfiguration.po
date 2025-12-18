@@ -1,0 +1,93 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:40:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrServiceConfiguration"
+msgstr "# Get-DfsrServiceConfiguration"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets settings for the DFS Replication service on group members."
+msgstr "获取群组成员上DFS复制服务的设置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfsrServiceConfiguration** cmdlet gets settings for the Distributed File System (DFS) Replication service on replication group members.\n"
+"Members of a replication group host replicated folders.\n"
+"Use this cmdlet to view settings for cleanup, debug logging, and automatic recovery for unexpected shut down."
+msgstr ""
+"`Get-DfsrServiceConfiguration` cmdlet "
+"可以获取分布式文件系统（DFS）复制服务在复制组成员上的相关设置。复制组的成员会托管被复制的文件夹。使用此 cmdlet "
+"可以查看与清理操作、调试日志记录以及意外关机时的自动恢复功能相关的设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get DFS Replication service settings for the local computer"
+msgstr "### 示例 1：获取本地计算机的 DFS 复制服务设置"
+
+msgid ""
+"This command gets the DFS Replication service settings for the local "
+"computer."
+msgstr "这个命令用于获取本地计算机的DFS复制服务设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of names of replication member computers.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet uses the current computer."
+msgstr "指定一组复制成员计算机的名称。您可以使用逗号分隔的列表以及通配符（*）。如果您不指定此参数，该 cmdlet 将使用当前计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.DistributedFileSystemReplication.DfsrServiceConfiguration"
+msgstr ""
+"### Microsoft.DistributedFileSystemReplication.DfsrServiceConfiguration"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-DfsrServiceConfiguration](./Set-DfsrServiceConfiguration.md)"
+msgstr "[Set-DfsrServiceConfiguration](./Set-DfsrServiceConfiguration.md)"

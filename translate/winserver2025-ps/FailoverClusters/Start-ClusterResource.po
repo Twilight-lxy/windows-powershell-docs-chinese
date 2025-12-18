@@ -1,0 +1,143 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:28:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-ClusterResource"
+msgstr "# 启动集群资源"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Brings a resource online in a failover cluster."
+msgstr "在故障转移集群中，将某个资源在线化（即使其能够正常运行）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Start-ClusterResource` cmdlet brings a resource online in a failover cluster. Before the\n"
+"resource is brought online, any resources that it depends are brought online."
+msgstr ""
+"`Start-ClusterResource` cmdlet "
+"用于在故障转移集群中启动某个资源。在该资源被启用之前，它所依赖的所有其他资源也会被依次启用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example brings the resource called `IP Address 172.24.11.0` online on the local cluster. Before\n"
+"bringing the resource online, this cmdlet brings online any resources on which the resource depends."
+msgstr ""
+"这个示例用于将名为“IP Address "
+"172.24.11.0”的资源在线启用到本地集群中。在将该资源上线之前，此cmdlet会先启动所有依赖于该资源的其它资源。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example brings the resource called `IP Address 172.24.11.0` online on the local cluster. Before\n"
+"bringing the resource online, this cmdlet brings online any resources on which the resource depends.\n"
+"The Windows PowerShell prompt returns as soon as the action has been initiated."
+msgstr ""
+"这个示例用于将名为“IP地址 172.24.11.0”的资源在本地集群上启用（即使其能够被访问）。在启用该资源之前，此 cmdlet "
+"会先启动所有依赖于该资源的其余资源。一旦操作开始，Windows PowerShell 提示符就会立即返回正常显示状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies that locked groups are ignored when running the cmdlet."
+msgstr "指定在运行该 cmdlet 时忽略已锁定的组。"
+
+msgid "Specifies the cluster resource to bring online."
+msgstr "指定要在线化的集群资源。"
+
+msgid ""
+"Specifies the name of the cluster resource to bring online. This can also be the name of a Cluster\n"
+"Shared Volume (CSV)."
+msgstr "指定要在线启用的集群资源的名称。这也可以是一个集群共享卷（Cluster Shared Volume，简称 CSV）的名称。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定等待该cmdlet完成所需的时间（以秒为单位）。如果未指定**Wait**参数，那么cmdlet会一直等待直到操作完成；如果指定了 `-Wait "
+"0`，则命令会被立即执行，而cmdlet会在不等待的情况下立即返回结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters PowerShellClusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### MicrosoftFailoverClusters.PowerShell_clusterSharedVolume"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FAILoverClusters.PowerShell_clusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterSharedVolume"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterResource](./Add-ClusterResource.md)"
+msgstr "[Add-ClusterResource](./Add-ClusterResource.md)"
+
+msgid "[Get-ClusterResource](./Get-ClusterResource.md)"
+msgstr "[Get-ClusterResource](./Get-ClusterResource.md)"
+
+msgid "[Move-ClusterResource](./Move-ClusterResource.md)"
+msgstr "[Move-ClusterResource](./Move-ClusterResource.md)"
+
+msgid "[Remove-ClusterResource](./Remove-ClusterResource.md)"
+msgstr "[Remove-ClusterResource](./Remove-ClusterResource.md)"
+
+msgid "[Resume-ClusterResource](./Resume-ClusterResource.md)"
+msgstr "[ Resume-ClusterResource](./Resume-ClusterResource.md)"
+
+msgid "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+msgstr "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+
+msgid "[Suspend-ClusterResource](./Suspend-ClusterResource.md)"
+msgstr "[暂停集群资源](./Suspend-ClusterResource.md)"

@@ -1,0 +1,158 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:22:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"A debugging tool that creates a new process in the context of a packaged "
+"app."
+msgstr "一个调试工具，它会在已打包的应用程序的上下文中创建一个新的进程。"
+
+msgid "# Invoke-CommandInDesktopPackage"
+msgstr "# 在桌面应用程序包中调用命令"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"A debugging tool that creates a new process in the context of a packaged "
+"app."
+msgstr "这是一个调试工具，它会在已打包的应用程序的上下文中创建一个新的进程。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"`Invoke-CommandInDesktopPackage` creates a new process in the context of the supplied\n"
+"**PackageFamilyName** and **AppId**."
+msgstr ""
+"`Invoke-CommandInDesktopPackage` 会在提供的 **PackageFamilyName** 和 **AppId** "
+"的上下文中创建一个新的进程。"
+
+msgid ""
+"The created process will have the identity of the provided **AppId** and will have access to its\n"
+"virtualized file system and registry (if any). The new process will have a token that's similar to,\n"
+"but not identical to, a real **AppId** process."
+msgstr ""
+"创建的进程将拥有所提供的 **AppId** 的身份，并能够访问其虚拟化的文件系统和注册表（如果有的话）。新进程将获得一个令牌，该令牌与真实的 "
+"**AppId** 进程相似，但不完全相同。"
+
+msgid ""
+"The primary use-case of this command is to invoke debugging or troubleshooting tools in the context\n"
+"of the packaged app to access its virtualized resources. For example, you can run the Registry\n"
+"Editor to see virtualized registry keys, or Notepad to read virtualized files. See the important\n"
+"note that follows on using tools such as the Registry Editor that require elevation."
+msgstr ""
+"这个命令的主要用途是在已打包的应用程序的上下文中调用调试或故障排除工具，以访问其虚拟化资源。例如，你可以运行注册表编辑器来查看虚拟化的注册表键，或者使用记事本来读取虚拟化的文件。请注意：某些工具（如注册表编辑器）需要管理员权限才能正常使用。"
+
+msgid ""
+"No guarantees are made about the behavior of the created process, other than it having the package\n"
+"identity and access to the package's virtualized resources. In particular, the new process will\n"
+"_not_ be created in an AppContainer even if an **AppId** process would normally be created in an\n"
+"AppContainer. Features such as Privacy Controls or other App Settings may or may not apply to the\n"
+"new process. You shouldn't rely on any specific side-effects of using this command, as they're\n"
+"undefined and subject to change."
+msgstr ""
+"对于所创建进程的行为，我们不提供任何保证（除了该进程具有相应的包标识以及对该包的虚拟化资源的访问权限）。特别需要注意的是：即使通常情况下带有 "
+"**AppId** 的进程会被创建在 AppContainer 中，新进程也不会被创建在 AppContainer "
+"内。诸如隐私控制或其他应用设置等功能可能适用于新进程，也可能不适用。你不应该依赖于使用此命令所产生的一些特定副作用，因为这些副作用是未定义的，并且可能会发生变化。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Invoke Notepad to read virtualized files"
+msgstr "### 示例 1：调用记事本来读取虚拟化文件"
+
+msgid ""
+"The following command invokes Notepad in the context of the `ContosoApp` app from the\n"
+"`Contoso.MyApp` package. This allows you to access resources such as a log file or configuration\n"
+"file stored in the app's virtualized filesystem."
+msgstr ""
+"以下命令会在 `Contoso.MyApp` 包中的 `ContosoApp` "
+"应用程序的上下文中调用记事本（Notepad）。这使您能够访问存储在应用程序虚拟文件系统中的资源，例如日志文件或配置文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "**AppId** is the Application ID from the target package's manifest."
+msgstr "**AppId** 是目标包清单（manifest）中的应用程序ID。"
+
+msgid ""
+"For example, `MyAppName` is the Application ID in this manifest snippet:"
+msgstr "例如，在这个清单片段中，`MyAppName` 就是应用程序的标识符（Application ID）。"
+
+msgid "`<Application Id=\"MyAppName\" ... />`"
+msgstr "`<Application Id=\"MyAppName\" ... />`"
+
+msgid ""
+"Optional arguments to be passed to the new process. For example, `/foo "
+"/bar`."
+msgstr "可以传递给新进程的可选参数。例如：`/foo /bar`。"
+
+msgid "An executable to invoke, like `regedit.exe`."
+msgstr "一个可执行的程序，类似于 `regedit.exe`。"
+
+msgid ""
+"Note that if the executable requires elevation (like `regedit`), you must call\n"
+"`Invoke-CommandInDesktopPackage` from an already-elevated context. Calling\n"
+"`Invoke-CommandInDesktopPackage` from a non-elevated context doesn't work as expected. The new\n"
+"process is created without the package context, and the PowerShell command fails."
+msgstr ""
+"请注意，如果可执行文件需要提升权限（例如 `regedit`），则必须从已经具有提升权限的上下文中调用 `Invoke-"
+"CommandInDesktopPackage`。如果从没有提升权限的上下文中调用 `Invoke-"
+"CommandInDesktopPackage`，则无法按预期正常工作。新的进程将在没有相应的包上下文的情况下创建，从而导致 PowerShell "
+"命令执行失败。"
+
+msgid ""
+"The Package Family Name of the target package. You can retrieve this by calling\n"
+"[Get-AppxPackage](./Get-AppxPackage.md)."
+msgstr ""
+"目标软件包所属的软件包系列名称。您可以通过调用 [Get-AppxPackage](./Get-AppxPackage.md) 命令来获取该信息。"
+
+msgid ""
+"Causes all child processes of the invoked process to also be created in the context of the\n"
+"**AppId**. By default, child processes are created without any context. This switch is useful for\n"
+"running `cmd.exe` so that you can launch multiple other tools in the package context."
+msgstr ""
+"该选项会确保被调用进程的所有子进程也在 **AppId** 的上下文中创建。默认情况下，子进程是在没有任何上下文的情况下创建的。这个开关对于运行 "
+"`cmd.exe` 非常有用，因为它允许你在包的上下文中启动其他多个工具。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AppxPackage](./Get-AppxPackage.md)"
+msgstr "[Get-AppxPackage](./Get-AppxPackage.md)"

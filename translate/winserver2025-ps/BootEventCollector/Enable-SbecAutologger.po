@@ -1,0 +1,257 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:48:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-SbecAutologger"
+msgstr "# 启用 SbecAutologger"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Enables the forwarding of the events to the Setup and Boot Event Collector "
+"in the AutoLogger settings."
+msgstr "在AutoLogger设置中，启用将事件转发到“Setup和Boot事件收集器”的功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Offline"
+msgstr "### 离线模式"
+
+msgid "### Online"
+msgstr "### 在线"
+
+msgid "### OnlineSession"
+msgstr "### OnlineSession"
+
+msgid "### Local"
+msgstr "### 本地（Local）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Enable-SbecAutologger** cmdlet enables the forwarding of the events to the Setup and Boot Event Collector in the AutoLogger settings in the registry.\n"
+"This operation has no immediate effect on the currently running log sessions; it takes effect after the operating system reboots and the AutoLogger service restarts the log sessions."
+msgstr ""
+"`Enable-SbecAutologger` cmdlet 可以在注册表的 AutoLogger 设置中启用将事件转发到 Setup 和 Boot "
+"事件收集器的功能。此操作不会立即影响当前正在运行的日志会话；只有在操作系统重启并且 AutoLogger 服务重新启动日志会话后，该设置才会生效。"
+
+msgid ""
+"The changes can be applied to the local computer, to a remote computer, or "
+"to an offline disk image."
+msgstr "这些更改可以应用到本地计算机、远程计算机，或者离线磁盘镜像上。"
+
+msgid ""
+"To operate on a local computer, specify the *Local* parameter.\n"
+"Enabling forwarding on the computer that runs the Collector service makes sense only if it sends the data to a Collector on a different computer.\n"
+"Otherwise, the in-kernel module is not able to connect to the Collector.\n"
+"However, you can copy the PowerShell BootEventCollector module to the other computers, where you can use it for local configuration."
+msgstr ""
+"要在本地计算机上操作，请指定“Local”参数。只有在运行收集器（Collector）服务的计算机将数据发送到另一台计算机上的收集器时，才需要启用数据转发功能；否则，内核模块将无法连接到该收集器。不过，您可以将PowerShell的BootEventCollector模块复制到其他计算机上，并在那里使用它进行本地配置。"
+
+msgid ""
+"To operate on a remote computer, specify either the *ComputerName* or *Session* parameter.\n"
+"Windows PowerShell remoting is used to perform the remote operations."
+msgstr ""
+"要远程操作一台计算机，请指定 *ComputerName* 或 *Session* 参数。Windows PowerShell "
+"的远程功能用于执行这些远程操作。"
+
+msgid "To operate on an offline (WIM or VHD) image, use the *Path* parameter."
+msgstr "要操作离线（WIM或VHD）镜像，请使用*Path*参数。"
+
+msgid ""
+"This operation configures the event log session NT Kernel Logger (creating it if it does not exist) and, if present, EventLog-System and SetupPlatform to send events to the Boot Event Collector.\n"
+"You can configure other log sessions by specifying the *Logger* or *PermLogger* parameter."
+msgstr ""
+"此操作会配置事件日志会话“NT Kernel Logger”（如果该会话不存在，则会创建它），以及已存在的“EventLog-"
+"System”和“SetupPlatform”，以便将这些事件发送到“Boot Event "
+"Collector”。您可以通过指定“Logger”或“PermLogger”参数来配置其他日志会话。"
+
+msgid ""
+"By default for the sessions NT Kernel Logger and EventLog-System, or when using the *Logger* parameter, the event log sessions are configured in such a manner that the event forwarding from them to the Collector becomes automatically disabled once the computer completes the boot sequence and the logging subsystem on it becomes fully functional.\n"
+"To let a session forward the events all the time, as is done by default for the session SetupPlatform, use the *PermLogger* parameter."
+msgstr ""
+"默认情况下，对于 NT 内核日志记录器和 EventLog-System 会话来说，或者在使用 *Logger* "
+"参数时，事件日志会话的配置方式是：一旦计算机完成启动序列并且其上的日志记录子系统完全启动并开始正常运行，从这些会话向收集器（Collector）转发事件的机制就会自动被禁用。如果你希望某个会话能够持续不断地转发事件（就像"
+" SetupPlatform 会话默认所做的那样），则需要使用 *PermLogger* 参数。"
+
+msgid ""
+"You can enable forwarding only for the sessions in the real-time mode (as opposed to writing to a file), so by default the file-based sessions are left unchanged.\n"
+"You can use the *ForceLogger* parameter to change such sessions to the real-time mode and enable forwarding."
+msgstr ""
+"你只能为处于实时模式（而非写入文件模式的）会话启用转发功能；因此，默认情况下，基于文件的会话将保持不变。你可以使用 `ForceLogger` "
+"参数将这些会话切换到实时模式，并启用转发功能。"
+
+msgid ""
+"This command also configures the Debug Print filter registry settings to "
+"pass, at minimum, Bugcheck messages for a system crash."
+msgstr "此命令还会配置“Debug Print”过滤器注册表设置，以确保至少能够传递系统崩溃时的错误检查（Bugcheck）信息。"
+
+msgid ""
+"You must enable **both** AutoLogger and BCD settings to forward events to "
+"the Boot Event Collector."
+msgstr "你必须同时启用自动记录器（AutoLogger）和BCD设置，才能将事件转发到启动事件收集器（Boot Event Collector）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable AutoLogger on a computer"
+msgstr "### 示例 1：在计算机上启用 AutoLogger"
+
+msgid ""
+"This command enables AutoLogger settings on the computer named Server01."
+msgstr "此命令在名为Server01的计算机上启用AutoLogger设置。"
+
+msgid "### Example 2: Enable AutoLogger for network setup images"
+msgstr "### 示例 2：为网络设置图像启用 AutoLogger 功能"
+
+msgid ""
+"This command configures the AutoLogger settings in the two images used for "
+"network-based setup, and forces the switch of the SetupPlatform session from"
+" the file destination to the event collector destination."
+msgstr ""
+"此命令配置了用于基于网络的设置的两个图像中的AutoLogger设置，并强制将SetupPlatform会话的存储位置从文件目标切换到事件收集器目标。"
+
+msgid "### Example 3: Enable AutoLogger in a VHD image"
+msgstr "### 示例 3：在 VHD 镜像中启用 AutoLogger"
+
+msgid ""
+"This command configures the AutoLogger in a VHD image, and switches the log "
+"session of the post-install setup (as used in Windows Nano Server) to the "
+"Boot Event Collector destination."
+msgstr ""
+"此命令配置了VHD镜像中的AutoLogger，并将安装后的日志会话（如Windows Nano Server中所使用的）切换到Boot Event "
+"Collector目标。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information, see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on TechNet."
+msgstr ""
+"指定您希望在其上执行操作的计算机的名称。您可以分别为每台计算机指定一个完全限定的域名（FQDN）、NetBIOS 名称或 IP "
+"地址。有关更多信息，请参阅 TechNet 上的 [Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid "Specifies the control set key for the registry path."
+msgstr "指定用于注册表路径的控制集键。"
+
+msgid ""
+"Specifies a user account that has permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the path of the file for the Deployment Image Servicing and "
+"Management (DISM) log when mounting images."
+msgstr ""
+"指定用于部署映像服务与管理（Deployment Image Servicing and "
+"Management，简称DISM）日志的文件路径，在挂载映像时使用该日志。"
+
+msgid ""
+"Forces the file-based AutoLogger sessions to real-time mode before enabling event forwading for them.\n"
+"Without this switch, they remain unchanged."
+msgstr ""
+"在为基于文件的AutoLogger会话启用事件转发功能之前，系统会强制将这些会话切换到实时模式。如果没有这个开关，这些会话的状态将保持不变。"
+
+msgid ""
+"Indicates to perform this operation on the local computer.\n"
+"This mode enables control over the registry path of where settings are applied."
+msgstr "表示在本地计算机上执行此操作。该模式允许控制设置应用的注册表路径。"
+
+msgid ""
+"Specifies the AutoLogger sessions for which to enable forwarding.\n"
+"The forwarding for these sessions is automatically disabled after the operating system starts.\n"
+"Specifying a session explicitly in *Logger* or *PermLogger* overrides its defaults."
+msgstr ""
+"指定要启用转发功能的 AutoLogger 会话。这些会话的转发功能在操作系统启动后会被自动禁用。如果在 *Logger* 或 *PermLogger*"
+" 中显式指定了某个会话，其默认设置将被覆盖。"
+
+msgid ""
+"Indicates that this operation does not automatically add the default set of "
+"logger sessions."
+msgstr "表示此操作不会自动添加默认的日志记录器会话集。"
+
+msgid ""
+"Specifies an array of full paths to the offline Windows image (WIM or VHD) files to which to apply the settings.\n"
+"If a WIM file contains multiple images, all of them are modified."
+msgstr ""
+"指定一个包含离线 Windows 映像文件（WIM 或 VHD）完整路径的数组，这些设置将应用于这些文件。如果一个 WIM "
+"文件包含多个映像，那么所有这些映像都会被修改。"
+
+msgid ""
+"Specifies the AutoLogger sessions for which to enable forwarding.\n"
+"The forwarding on these sessions remains enabled after the operating system starts."
+msgstr "指定要启用数据转发的 AutoLogger 会话。这些会话的数据转发功能在操作系统启动后仍会保持启用状态。"
+
+msgid ""
+"Specifying a session explicitly in *Logger* or *PermLogger* overrides the "
+"defaults for it."
+msgstr "在 *Logger* 或 *PermLogger* 中显式指定会话会覆盖其默认设置。"
+
+msgid ""
+"Specifies the **PSSession** objects connected to the remote target computers.\n"
+"Enter a session object, such as the output of **Get-PSSession** or **New-PSSession**, or an array of these objects."
+msgstr ""
+"指定连接到远程目标计算机的 **PSSession** 对象。可以输入一个会话对象（例如 `Get-PSSession` 或 `New-"
+"PSSession` 的输出结果），或者这些对象的数组。"
+
+msgid "Specifies the full path to the system hive for the registry."
+msgstr "指定注册表系统中配置文件（即“hive”文件）的完整路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-SbecAutologger](./Disable-SbecAutologger.md)"
+msgstr "[ Disable-SbecAutologger](./Disable-SbecAutologger.md)"
+
+msgid "[Disable-SbecBcd](./Disable-SbecBcd.md)"
+msgstr "[ Disable-SbecBcd](./Disable-SbecBcd.md)"
+
+msgid "[Enable-SbecBcd](./Enable-SbecBcd.md)"
+msgstr "[Enable-SbecBcd](./Enable-SbecBcd.md)"
+
+msgid "[Enable-SbecBootImage](./Enable-SbecBootImage.md)"
+msgstr "[Enable-SbecBootImage](./Enable-SbecBootImage.md)"

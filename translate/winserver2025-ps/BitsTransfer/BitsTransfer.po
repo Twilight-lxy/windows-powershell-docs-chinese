@@ -1,0 +1,77 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:38:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# BitsTransfer Module"
+msgstr "# BitTransfer 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Background "
+"Intelligent Transfer Management (BITS)-specific cmdlets. It lists the "
+"cmdlets in alphabetical order based on the verb at the beginning of the "
+"cmdlet."
+msgstr ""
+"该参考资料提供了所有与“后台智能传输管理”（Background Intelligent Transfer Management，简称 BITS）相关的"
+" cmdlet 的描述和语法信息。这些 cmdlet 按照其命令开头所使用的动词字母顺序进行排列。"
+
+msgid "## BitsTransfer Cmdlets"
+msgstr "## BitsTransferCmdlets"
+
+msgid "### [Add-BitsFile](./Add-BitsFile.md)"
+msgstr "### [Add-BitsFile](./Add-BitsFile.md)"
+
+msgid "Adds one or more files to an existing BITS transfer job."
+msgstr "将一个或多个文件添加到现有的BITS传输任务中。"
+
+msgid "### [Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+msgstr "### [Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+
+msgid "Completes a BITS transfer job."
+msgstr "完成了一个BITS传输任务。"
+
+msgid "### [Get-BitsTransfer](./Get-BitsTransfer.md)"
+msgstr "### [Get-BitsTransfer](./Get-BitsTransfer.md)"
+
+msgid "Gets the associated BitsJob object for an existing BITS transfer job."
+msgstr "获取与现有的BITS传输作业相关联的BitsJob对象。"
+
+msgid "### [Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+msgstr "### [Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+
+msgid "Cancels a BITS transfer job."
+msgstr "取消一个BITS传输作业。"
+
+msgid "### [Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+msgstr "### [Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+
+msgid "Resumes a BITS transfer job."
+msgstr "恢复BITS传输作业。"
+
+msgid "### [Set-BitsTransfer](./Set-BitsTransfer.md)"
+msgstr "### [Set-BitsTransfer](./Set-BitsTransfer.md)"
+
+msgid "Modifies the properties of an existing BITS transfer job."
+msgstr "修改现有BITS传输作业的属性。"
+
+msgid "### [Start-BitsTransfer](./Start-BitsTransfer.md)"
+msgstr "### [Start-BitsTransfer](./Start-BitsTransfer.md)"
+
+msgid "Creates a BITS transfer job."
+msgstr "创建一个BITS传输作业。"
+
+msgid "### [Suspend-BitsTransfer](./Suspend-BitsTransfer.md)"
+msgstr "### [Suspend-BitsTransfer](./Suspend-BitsTransfer.md)"
+
+msgid "Suspends a BITS transfer job."
+msgstr "暂停一个BITS传输作业。"

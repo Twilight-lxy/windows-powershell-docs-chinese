@@ -1,0 +1,117 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:34:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-BitLockerAutoUnlock"
+msgstr "# 启用 BitLocker 的自动解锁功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Enables automatic unlocking for a BitLocker volume."
+msgstr "启用BitLocker卷的自动解锁功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Enable-BitLockerAutoUnlock** cmdlet enables automatic unlocking for a "
+"volume protected by BitLocker Disk Encryption."
+msgstr "`Enable-BitLockerAutoUnlock` cmdlet 可以为受 BitLocker 磁盘加密保护的卷启用自动解锁功能。"
+
+msgid ""
+"You can configure BitLocker to automatically unlock volumes that do not host an operating system.\n"
+"After a user unlocks the operating system volume, BitLocker uses encrypted information stored in the registry and volume metadata to unlock any data volumes that use automatic unlocking."
+msgstr ""
+"你可以配置 BitLocker，使其自动解锁那些不包含操作系统的卷。当用户解锁了操作系统所在的卷后，BitLocker "
+"会使用存储在注册表和卷元数据中的加密信息来解锁所有启用自动解锁功能的数据卷。"
+
+msgid ""
+"For an overview of BitLocker, see [BitLocker Drive Encryption "
+"Overview](https://technet.microsoft.com/en-us/library/cc732774.aspx) on "
+"TechNet."
+msgstr ""
+"有关 BitLocker 的概述，请参阅 TechNet 上的 [BitLocker "
+"驱动器加密概述](https://technet.microsoft.com/en-us/library/cc732774.aspx)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable automatic unlocking"
+msgstr "### 示例 1：启用自动解锁功能"
+
+msgid ""
+"This command enables automatic unlocking for the specified BitLocker volume."
+msgstr "此命令可启用对指定BitLocker卷的自动解锁功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies an array of drive letters or BitLocker volume objects.\n"
+"The cmdlet enables automatic unlocking for the volumes specified.\n"
+"To obtain a BitLocker volume object, use the **Get-BitLockerVolume** cmdlet."
+msgstr ""
+"指定一个驱动器字母数组或 BitLocker 卷对象。该 cmdlet 可以实现对所指定卷的自动解锁功能。若要获取 BitLocker 卷对象，请使用 "
+"**Get-BitLockerVolume** cmdlet。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### BitLockerVolume[], String[]"
+msgstr "### BitLockerVolume[], String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### BitLockerVolume[]"
+msgstr "### BitLockerVolume[]"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-BitLockerAutoUnlock](./Clear-BitLockerAutoUnlock.md)"
+msgstr "[Clear-BitLockerAutoUnlock](./Clear-BitLockerAutoUnlock.md)"
+
+msgid "[Disable-BitLockerAutoUnlock](./Disable-BitLockerAutoUnlock.md)"
+msgstr "[Disable-BitLockerAutoUnlock](./Disable-BitLockerAutoUnlock.md)"
+
+msgid "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+msgstr "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"

@@ -1,0 +1,249 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:43:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-WindowsImage"
+msgstr "# 新Windows镜像"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Captures an image of a drive to a new WIM file."
+msgstr "将驱动器的图像捕获到一个新的WIM（Windows Imaging File）文件中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-WindowsImage** cmdlet captures an image of a drive to a new WIM file.\n"
+"Captured directories include all subfolders and data.\n"
+"You cannot capture an empty directory.\n"
+"A directory must contain at least one file."
+msgstr ""
+"`New-WindowsImage` cmdlet 可将驱动器的图像捕获到一个新的 WIM（Windows Imaging "
+"Manifest）文件中。被捕获的目录包括所有的子文件夹和数据。你无法捕获空目录；一个目录必须至少包含一个文件。"
+
+msgid "This cmdlet does not apply to virtual hard disk (VHD) files."
+msgstr "此cmdlet不适用于虚拟硬盘（VHD）文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Capture an image of a drive for a WIM file"
+msgstr "### 示例 1：为 WIM 文件捕获驱动器的图像"
+
+msgid ""
+"This command captures the Drive D image in the WIM file located on d:\\ and "
+"save to the file c:\\imagestore\\custom.wim."
+msgstr ""
+"这个命令会将位于 d:\\ 目录下的 Drive D 映像捕获到 WIM 文件中，并将其保存到 c:\\imagestore\\custom.wim "
+"文件中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the drive or path to the Windows operating system that is to be "
+"captured to an image file."
+msgstr "指定要捕获到图像文件中的Windows操作系统的驱动器或路径。"
+
+msgid ""
+"When the path specified is not the root folder of a drive, the captured "
+"image will inherit the parent folder security descriptors. If you are "
+"capturing an image that was previously applied, apply the original image to "
+"the root folder of the drive to ensure that the security descriptors of the "
+"new image remain the same."
+msgstr ""
+"当指定的路径不是驱动器的根文件夹时，捕获的图像将继承父文件夹的安全描述符。如果您要捕获的是之前已经应用过的镜像，请将该镜像重新应用于驱动器的根文件夹，以确保新图像的安全描述符保持不变。"
+
+msgid ""
+"Detects and tracks .wim file corruption when used with the **Add-WindowsImage**, **Dismount-WindowsImage**, or **Save-WindowsImage** cmdlet.\n"
+"CheckIntegrity stops the operation if DISM detects that the .wim file is corrupted when used with the **Expand-WindowsImage** or **Mount-WindowsImage** cmdlet."
+msgstr ""
+"当与 **Add-WindowsImage**、**Dismount-WindowsImage** 或 **Save-WindowsImage** "
+"cmdlet 一起使用时，该工具能够检测并追踪 .wim 文件的损坏情况。如果 DISM 在使用 **Expand-WindowsImage** 或 "
+"**Mount-WindowsImage** cmdlet 时发现 .wim 文件已损坏，**CheckIntegrity** 会立即停止相关操作。"
+
+msgid ""
+"Specifies the type of compression used for the initial capture operation:"
+msgstr "指定用于初始捕获操作的压缩类型："
+
+msgid ""
+"The *CompressionType* parameter does not apply when you export an image to "
+"an existing .wim file, you can only use this CompressionType when you export"
+" an image to a new .wim file."
+msgstr ""
+"当你将图像导出到现有的.wim文件时，*CompressionType*参数是无效的；只有在你将图像导出到新的.wim文件时，才能使用这个压缩类型。"
+
+msgid ""
+"Specifies the location of a configuration file that lists exclusions for image capture commands and compress commands.\n"
+"For more information, see [DISM Configuration List and WimScript.ini Files](https://go.microsoft.com/fwlink/?LinkID=313768) in the TechNet Library."
+msgstr ""
+"指定一个配置文件的位置，该文件列出了用于图像捕获命令和压缩命令的排除规则。有关更多信息，请参阅TechNet库中的[DISM配置列表和WimScript.ini文件](https://go.microsoft.com/fwlink/?LinkID=313768)。"
+
+msgid "Specifies the description of the image to be captured."
+msgstr "用于指定要捕获的图像的描述信息。"
+
+msgid "Specifies the location of a WIM file."
+msgstr "指定 WIM 文件的位置。"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is WarningsInfo.\n"
+"The accepted values are as follows:"
+msgstr "指定日志中显示的最大输出级别。默认的日志级别为 WarningsInfo。允许的值如下："
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"中，默认目录是 RAMDISK 虚拟磁盘中的临时存储空间，其大小可能低至 32 MB。日志文件会自动被归档；归档后的日志文件会在文件名后添加 "
+"`.bak` 扩展名，并生成新的日志文件。每次日志文件被归档时，对应的 `.bak` 文件都会被覆盖。如果使用未加入域的网络共享资源，请在使用 "
+"`DISM` 日志路径之前，先使用 `net use` 命令结合域凭据来设置访问权限。"
+
+msgid "Specifies the name of an image in a WIM file."
+msgstr "指定 WIM 文件中一张图片的名称。"
+
+msgid ""
+"Disables the reparse point tag fix.\n"
+"A reparse point is a file that contains a link to another file on the file system.\n"
+"If the parameter is not specified, reparse points that resolve to paths outside of the value specified by the *ImagePath* parameter will not be captured."
+msgstr ""
+"禁用对重新解析点标签的修复功能。重新解析点是一种文件，它在文件系统中包含指向另一个文件的链接。如果未指定该参数，则系统将不会捕获那些指向 "
+"*ImagePath* 参数所指定路径之外的位置的重新解析点。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，该目录将在执行维护操作（如文件提取）时被使用。此目录必须存在于本地系统中。如果未指定临时目录，默认会使用 "
+"`\\Windows\\%Temp%` 目录，且每次运行 DISM "
+"时该目录下的子目录名称会由随机生成的十六进制值决定。每次操作完成后，临时目录中的所有内容都会被删除。不建议将网络共享位置作为临时目录来用于展开安装包（.cab"
+" 或 .msu 文件）。用于文件提取的临时目录应始终是本地目录。"
+
+msgid ""
+"Marks a volume image as being a bootable image.\n"
+"This argument is available only for Windows PE images.\n"
+"Only one volume image can be marked as bootable in a .wim file."
+msgstr "将一个卷镜像标记为可启动镜像。此参数仅适用于 Windows PE 镜像。在一个 .wim 文件中，只能有一个卷镜像被标记为可启动的。"
+
+msgid ""
+"Captures extended attributes. The switch must be explicitly specified to capture extended\n"
+"attributes. DISM captures extended attribute bits if they are set in the components to be\n"
+"captured in the WIM image. If the bits are not set, DISM won't set them. Only the inbox components\n"
+"of CAB packages and drivers will have these extended attribute bits, not the AppX package components\n"
+"or Win32 application components. Extended attributes with the prefix `$Kernel.` in their name are skipped\n"
+"because only user mode extended attributes are captured."
+msgstr ""
+"可以捕获扩展属性。必须明确指定相应的开关才能捕获这些扩展属性。如果组件中设置了扩展属性位，并且这些组件需要被包含在WIM镜像中，DISM会将其捕获；如果没有设置这些属性位，DISM就不会对其进行处理。只有CAB包中的“收件箱”组件（inbox"
+" components）和驱动程序才会包含这些扩展属性位，而AppX包组件或Win32应用程序组件则不会包含这些属性位。名称中以 `$Kernel.` "
+"为前缀的扩展属性会被忽略，因为系统只会捕获用户模式下的扩展属性。"
+
+msgid ""
+"If you use DISM in Windows 10, version 1607\n"
+"or later to capture extended attributes and use an earlier version of DISM to apply the image, the\n"
+"operation will succeed but the extended attributes will not be set to the applied image."
+msgstr ""
+"如果您在 Windows 10（版本 1607 或更高版本）中使用 DISM 来捕获扩展属性，然后使用较早版本的 DISM "
+"来应用映像，操作本身会成功完成，但扩展属性不会被设置到所应用的映像中。"
+
+msgid ""
+"Checks for errors and file duplication.\n"
+" During an apply operation, for example, using the **Add-WindowsImage** cmdlet, the size and the hash of the file being applied are checked against the image file to verify they are both equal.\n"
+" During a capture operation, for example, when using the **New-WindowsImage** cmdlet, after the file is captured into a Windows image, the file is written to a temporary file and compared on a bit-by-bit basis with the original file."
+msgstr ""
+"检查错误和文件重复情况。例如，在执行“应用”操作时（使用 **Add-WindowsImage** "
+"cmdlet），会核对所应用文件的大小和哈希值与源镜像文件是否一致；而在执行“捕获”操作时（使用 **New-WindowsImage** "
+"cmdlet），在将文件捕获为Windows镜像后，会将该文件写入临时文件，并逐位与其原始文件进行比较。"
+
+msgid ""
+"Specifies that the image will be formatted to install on a Windows Image "
+"Format Boot (WIMBoot) system."
+msgstr "指定该图像将被格式化，以便安装在支持 Windows 映像格式启动（WIMBoot）的系统上。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.DismCommands.ImageObject"
+
+msgid "### Microsoft.Dism.Commands.ImageObjectWithState"
+msgstr "### Microsoft.Dismcommands.ImageObjectWithState"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.OfflineImageObject"
+msgstr "### Microsoft.Dism Commands.OfflineImageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+msgstr "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+
+msgid "[Expand-WindowsImage](./Expand-WindowsImage.md)"
+msgstr "[展开 Windows 图像](./Expand-WindowsImage.md)"
+
+msgid "[Export-WindowsImage](./Export-WindowsImage.md)"
+msgstr "[Export-WindowsImage](./Export-WindowsImage.md)"
+
+msgid "[Get-WindowsImage](./Get-WindowsImage.md)"
+msgstr "[Get-WindowsImage](./Get-WindowsImage.md)"
+
+msgid "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+msgstr "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+
+msgid "[Remove-WindowsImage](./Remove-WindowsImage.md)"
+msgstr "[Remove-WindowsImage](./Remove-WindowsImage.md)"
+
+msgid "[Repair-WindowsImage](./Repair-WindowsImage.md)"
+msgstr "[修复Windows镜像](./Repair-WindowsImage.md)"
+
+msgid "[Save-WindowsImage](./Save-WindowsImage.md)"
+msgstr "[Save-WindowsImage](./Save-WindowsImage.md)"
+
+msgid "[Split-WindowsImage](./Split-WindowsImage.md)"
+msgstr "[Split-WindowsImage](./Split-WindowsImage.md)"

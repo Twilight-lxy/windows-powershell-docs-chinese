@@ -1,0 +1,135 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:06:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterVMMonitoredItem"
+msgstr "# 获取集群虚拟机监控项"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets the list of services and events currently being monitored in the "
+"virtual machine."
+msgstr "获取虚拟机中当前正在被监控的服务和事件的列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VirtualMachine (Default)"
+msgstr "### VirtualMachine（默认设置）"
+
+msgid "### VMId"
+msgstr "### VMId"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterVMMonitoredItem` cmdlet gets the list of services and events currently being\n"
+"monitored in the virtual machine. If one of those services fails or one of the events occurs, then\n"
+"the system responds by taking an action based on the failover configuration for the virtual machine\n"
+"resource. For example, the configuration might specify that the virtual machine be restarted."
+msgstr ""
+"`Get-ClusterVMMonitoredItem` cmdlet "
+"可以获取当前在虚拟机中正在被监控的服务和事件的列表。如果其中某个服务发生故障，或者某个事件被触发，系统会根据该虚拟机资源的故障转移配置采取相应的措施进行响应。例如，配置可能规定需要重新启动该虚拟机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example returns the services and events being monitored in the virtual machine named `vm1` on\n"
+"the cluster named `Cluster1`."
+msgstr "这个示例会返回在名为 `Cluster1` 的集群中、名为 `vm1` 的虚拟机上被监控的服务和事件信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid ""
+"Specifies the cluster on which to run the cmdlet or the clustered virtual machine for which to\n"
+"retrieve the clustered virtual machine monitored item object."
+msgstr "指定要运行该cmdlet的集群，或者是要从中检索被监控的集群虚拟机对象的集群化虚拟机。"
+
+msgid "Specifies the virtual machine identifier (ID)."
+msgstr "指定虚拟机标识符（ID）。"
+
+msgid ""
+"Specifies the name of the clustered virtual machine on which to perform monitoring. When this\n"
+"parameter is specified, the cmdlet must be run on one of the host cluster nodes, or else the\n"
+"**Cluster** parameter must also be specified."
+msgstr ""
+"指定要对其进行监控的集群化虚拟机的名称。当指定了此参数时，必须在主机集群节点之一上运行该 cmdlet；否则还必须指定 **Cluster** 参数。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定等待该cmdlet完成所需的时间（以秒为单位）。如果未指定**Wait**参数，那么cmdlet会一直等待直到任务完成。如果指定了`-Wait "
+"0`，则命令会立即被执行，而cmdlet会在不进行等待的情况下直接返回结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell Cluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### Microsoft FailoverClusters.PowerShell ClusterGroup"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### MicrosoftFailoverClusters.PowerShell ClusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterVMMonitoredItem"
+msgstr "### MicrosoftFailoverClusters.PowerShell.ClusterVMMonitoredItem"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterVMMonitoredItem](./Add-ClusterVMMonitoredItem.md)"
+msgstr "[Add-ClusterVMMonitoredItem](./Add-ClusterVMMonitoredItem.md)"
+
+msgid "[Remove-ClusterVMMonitoredItem](./Remove-ClusterVMMonitoredItem.md)"
+msgstr "[Remove-ClusterVMMonitoredItem](./Remove-ClusterVMMonitoredItem.md)"
+
+msgid "[Reset-ClusterVMMonitoredState](./Reset-ClusterVMMonitoredState.md)"
+msgstr "[Reset-ClusterVMMonitoredState](./Reset-ClusterVMMonitoredState.md)"

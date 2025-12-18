@@ -1,0 +1,166 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:30:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DfsnRoot"
+msgstr "# Set-DfsnRoot"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Changes settings for a DFS namespace."
+msgstr "更改DFS命名空间的设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DfsnRoot** cmdlet changes settings for a Distributed File System "
+"(DFS) namespace."
+msgstr "`Set-DfsnRoot` cmdlet 用于更改分布式文件系统（DFS）命名空间的相关设置。"
+
+msgid "You can use this cmdlet to enable or disable the following settings:"
+msgstr "你可以使用此cmdlet来启用或禁用以下设置："
+
+msgid ""
+"Indicates whether a DFS namespace server provides a client only with referrals that are in the same\n"
+"site as the client. If this value is `$true`, a DFS namespace server provides only in-site\n"
+"referrals. If this value is `$false`, the DFS namespace server provides in-site referrals first,\n"
+"then other referrals."
+msgstr ""
+"该值用于指示DFS命名空间服务器是否仅向客户端提供与客户端位于同一站点内的引用（referrals）。如果值为 "
+"`$true`，则DFS命名空间服务器仅提供同站点的引用；如果值为 `$false`，则会先提供同站点的引用，然后再提供其他引用的信息。"
+
+msgid ""
+"Indicates whether a DFS namespace uses root scalability mode. If this value is `$true`, DFS\n"
+"namespace servers connect to the nearest domain controllers for periodic namespace updates. If this\n"
+"value is `$false`, the servers connect to the primary domain controller (PDC) emulator."
+msgstr ""
+"该值表示DFS命名空间是否使用“根级可扩展性模式”（root scalability "
+"mode）。如果值为`$true`，则DFS命名空间服务器会定期连接到最近的域控制器以获取命名空间更新信息；如果值为`$false`，则服务器会连接到主域控制器（PDC）模拟器。"
+
+msgid ""
+"Indicates whether a DFS namespace uses cost-based selection. If a client cannot access a folder\n"
+"target in-site, a DFS namespace server selects the least resource-intensive alternative. If you\n"
+"provide a value of `$true` for this parameter, the DFS namespace favors high-speed links over wide\n"
+"area network (WAN) links."
+msgstr ""
+"该参数用于指示DFS命名空间是否使用基于成本的选择机制。当客户端无法访问某个文件夹目标时，DFS命名空间服务器会选择资源消耗最少的替代方案。如果您为该参数设置"
+" `$true` 的值，DFS命名空间将优先选择高速连接，而非广域网（WAN）连接。"
+
+msgid ""
+"Indicates whether a DFS namespace uses target failback. If a client attempts to access target link\n"
+"on a server and that server is not available, the client fails over to another referral. If this\n"
+"value is `$true`, once the first server becomes available again, the client fails back to the first\n"
+"server. If this value is `$false`, the DFS namespace server does not require the client to fail back\n"
+"to the preferred server."
+msgstr ""
+"该值用于指示DFS命名空间是否使用目标服务器的故障切换功能。当客户端尝试访问服务器上的目标链接，但该服务器不可用时，客户端会自动切换到其他可用的服务器（即“引用”服务器）。如果此值为"
+" `$true`，则一旦第一台服务器恢复正常可用性，客户端会重新切换回原来的目标服务器；如果此值为 "
+"`$false$`，则表示DFS命名空间服务器不要求客户端必须切换回首选的服务器。"
+
+msgid ""
+"Specifies an array of accounts. This cmdlet grants management permissions the users and user groups\n"
+"specified for the DFS namespace. Users can add, remove, and modify namespace folders and folder\n"
+"targets."
+msgstr ""
+"指定一个账户数组。此 cmdlet 为 DFS 命名空间中指定的用户和用户组授予管理权限。这些用户可以添加、删除和修改命名空间文件夹及文件夹目标。"
+
+msgid "Specifies a path for the root of a DFS namespace."
+msgstr "指定一个用于DFS命名空间根目录的路径。"
+
+msgid ""
+"Specifies an array of accounts. This cmdlet removes management permissions for the users and user\n"
+"groups specified for the DFS namespace."
+msgstr "指定一个账户数组。此cmdlet会删除为DFS命名空间指定的用户和用户组的管理权限。"
+
+msgid ""
+"Specifies the state of the DFS namespace root. The acceptable values for "
+"this parameter are:"
+msgstr "指定DFS命名空间根的状态。该参数的可接受值为："
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大并发操作数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前正在执行的 cmdlet，而不影响整个会话或计算机本身。"
+
+msgid ""
+"Specifies a TTL interval, in seconds, for referrals. Clients store referrals to root targets for\n"
+"this length of time. The default TTL interval for root referrals is 300 seconds."
+msgstr ""
+"指定引用（referrals）的TTL间隔时间（以秒为单位）。客户端会将引用信息存储到根目标（root "
+"target）处，存储时间为指定的时长。根引用的默认TTL间隔为300秒。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的结果。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, `-ErrorVariable`,\n"
+"`-InformationAction`, `-InformationVariable`, `-OutVariable`, `-OutBuffer`, `-PipelineVariable`,\n"
+"`-Verbose`, `-WarningAction`, and `-WarningVariable`. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Boolean"
+msgstr "### System Boolean"
+
+msgid ""
+"### Microsoft.PowerShell.Cmdletization.GeneratedTypes.DfsNamespace.State"
+msgstr ""
+"### Microsoft.PowerShell Cmdletization GeneratedTypes.DfsNamespace.State"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsnRoot](./Get-DfsnRoot.md)"
+msgstr "[Get-DfsnRoot](./Get-DfsnRoot.md)"
+
+msgid "[New-DfsnRoot](./New-DfsnRoot.md)"
+msgstr "[New-DfsnRoot](./New-DfsnRoot.md)"
+
+msgid "[Remove-DfsnRoot](./Remove-DfsnRoot.md)"
+msgstr "[Remove-DfsnRoot](./Remove-DfsnRoot.md)"

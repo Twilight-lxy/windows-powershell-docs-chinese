@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:37:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"The Set-CIPolicySetting cmdlet modifies the SecureSettings within the Code "
+"Integrity policy."
+msgstr ""
+"`Set-CIPolicySetting` cmdlet 用于修改代码完整性（Code Integrity）策略中的 `SecureSettings` "
+"配置。"
+
+msgid "# Set-CIPolicySetting"
+msgstr "# Set-CIPolicySetting"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies the SecureSettings within the Code Integrity policy."
+msgstr "修改代码完整性策略中的安全设置（SecureSettings）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Set"
+msgstr "### 集合（Set）"
+
+msgid "### Delete"
+msgstr "### 删除"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-CIPolicySetting** cmdlet modifies the Secure Settings within a Code Integrity policy.\n"
+"Specify the .xml file of the policy to modify.\n"
+"Secure Settings are queried by Windows APIs to set security behaviors."
+msgstr ""
+"`Set-CIPolicySetting` cmdlet 用于修改代码完整性（Code Integrity）策略中的安全设置。请指定需要修改的策略对应的"
+" `.xml` 文件。Windows API 会通过这些安全设置来配置相应的安全行为。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the Code Integrity policy"
+msgstr "### 示例 1：设置代码完整性策略"
+
+msgid ""
+"This command sets the Code Integrity policy to allow for the specified "
+"**Provider**, **Key** and **ValueName**."
+msgstr "此命令将代码完整性策略设置为允许使用指定的**提供者（Provider）**、**密钥（Key）**和**键名（ValueName）**。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet removes a Secure Setting from the Code Integrity "
+"policy identified by **Provider**, **Key** and **ValueName**."
+msgstr "该cmdlet用于从代码完整性策略中删除一个安全设置，这些信息由**Provider**、**Key**和**ValueName**标识。"
+
+msgid "Specifies the full path of the policy .xml file."
+msgstr "指定 policy.xml 文件的完整路径。"
+
+msgid ""
+"Specifies the Secure Setting key.\n"
+"The key is the GUID of the program to run in this format:"
+msgstr "指定“安全设置”键（Secure Setting key）。该键是程序的 GUID，格式如下："
+
+msgid "{33333333-4444-4444-1616-161616161616}"
+msgstr "{33333333-4444-4444-1616-161616161616}"
+
+msgid ""
+"Specifies the Secure Setting provider.\n"
+"The provider is the platform on which the code runs."
+msgstr "指定安全设置提供者（Secure Setting provider）。该提供者是指代码运行的平台。"
+
+msgid ""
+"Specifies the Secure Setting value.\n"
+"Specify `$True` to allow or `$False` to deny."
+msgstr "指定安全设置的值。可以使用 `$True` 来允许访问，或使用 `$False` 来拒绝访问。"
+
+msgid ""
+"Specify $False, or deny, only for base policies, not supplemental policies."
+msgstr "仅对基础策略指定 `$False`（即拒绝该策略），而不适用于补充策略。"
+
+msgid "Specifies the value name."
+msgstr "指定值名称。"
+
+msgid "Specifies the value type. Valid values are:"
+msgstr "指定值类型。有效值为："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-CIPolicy](New-CIPolicy.md)"
+msgstr "[New-CIPolicy](New-CIPolicy.md)"
+
+msgid "[New-CIPolicyRule](New-CIPolicyRule.md)"
+msgstr "[New-CIPolicyRule](New-CIPolicyRule.md)"

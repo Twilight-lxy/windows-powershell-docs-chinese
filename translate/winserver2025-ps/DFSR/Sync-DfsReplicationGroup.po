@@ -1,0 +1,146 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:52:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Sync-DfsReplicationGroup"
+msgstr "# Sync-DfsReplicationGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Synchronizes replication between computers regardless of schedule."
+msgstr "无论时间安排如何，都能在计算机之间同步复制过程。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Sync-DfsReplicationGroup** cmdlet synchronizes replication between a "
+"source computer and a destination computer, even if replication is not "
+"scheduled by either a replication group or a connection."
+msgstr ""
+"`Sync-DfsReplicationGroup` cmdlet "
+"可以在源计算机和目标计算机之间同步数据复制过程，即使这种复制过程并未由任何复制组或连接机制进行调度。"
+
+msgid ""
+"This cmdlet ignores the schedule for the specified number of minutes.\n"
+"Use this cmdlet to alter the schedule temporarily to allow replication, because this cmdlet does not require Active Directory replication and LDAP polling."
+msgstr ""
+"此cmdlet会在指定的时间内忽略复制的调度安排。你可以使用此cmdlet暂时更改复制调度，以便进行数据复制操作；因为该cmdlet不需要Active "
+"Directory的复制功能或LDAP轮询机制。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Replicate between servers for 15 minutes"
+msgstr "### 示例 1：在服务器之间进行数据复制，持续时间为 15 分钟"
+
+msgid ""
+"This command allows replication from server SRV01 to SRV02 in the RG01 "
+"replication group for 15 minutes, even if the replication happens during a "
+"closed replication schedule."
+msgstr "此命令允许在RG01复制组中，从SRV01服务器向SRV02服务器进行15分钟的复制操作，即使复制发生在关闭的复制计划期间也是如此。"
+
+msgid "### Example 2: Replicate between servers with verbose output"
+msgstr "### 示例 2：在服务器之间进行复制，并显示详细的输出信息"
+
+msgid ""
+"This command allows replication from server SRV01 to SRV02 in the RG01 "
+"replication group for 5 minutes."
+msgstr "此命令允许在RG01复制组中，从SRV01服务器向SRV02服务器进行数据复制，持续时间为5分钟。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the name of the receiving computer.\n"
+"A destination computer is also  called an inbound or downstream computer.\n"
+"This computer overrides its schedule and replicates inbound."
+msgstr "指定接收计算机的名称。目标计算机也被称为入站计算机或下游计算机。这台计算机会覆盖自身的计划，并复制传入的数据。"
+
+msgid "Specifies the number of minutes to allow replication."
+msgstr "指定允许复制操作的分钟数。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"If you do not specify this parameter, the cmdlet queries for all participating replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。如果您不指定此参数，该cmdlet将查询所有参与的复制组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Specifies the name of the sending computer.\n"
+"A source computer is also called an outbound or upstream computer."
+msgstr "指定发送计算机的名称。源计算机也被称为出站计算机或上游计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### uint"
+msgstr "### uint（无符号整数）"
+
+msgid "### string"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"
+msgstr "[Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"
+
+msgid "[New-DfsReplicationGroup](./New-DfsReplicationGroup.md)"
+msgstr "[New-DfsReplicationGroup](./New-DfsReplicationGroup.md)"
+
+msgid "[Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"
+msgstr "[Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"
+
+msgid "[Set-DfsReplicationGroup](./Set-DfsReplicationGroup.md)"
+msgstr "[Set-DfsReplicationGroup](./Set-DfsReplicationGroup.md)"
+
+msgid "[Suspend-DfsReplicationGroup](./Suspend-DfsReplicationGroup.md)"
+msgstr "[Suspend-DfsReplicationGroup](./Suspend-DfsReplicationGroup.md)"

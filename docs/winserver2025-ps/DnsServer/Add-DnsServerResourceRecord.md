@@ -1,0 +1,1545 @@
+---
+description: 使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。
+external help file: PS_DnsServerResourceRecord_v1.0.0.cdxml-help.xml
+Module Name: DnsServer
+ms.date: 12/20/2016
+online version: https://learn.microsoft.com/powershell/module/dnsserver/add-dnsserverresourcerecord?view=windowsserver2025-ps&wt.mc_id=ps-gethelp
+schema: 2.0.0
+title: Add-DnsServerResourceRecord
+---
+
+# Add-DnsServerResourceRecord
+
+## 摘要
+向指定的DNS区域添加一个指定类型的资源记录。
+
+## 语法
+
+### InputObject（默认值）
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-AllowUpdateAny] -InputObject <CimInstance> [-Force]
+ [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### X25
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -PsdnAddress <String> [-X25] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### WKS
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -InternetAddress <IPAddress> -InternetProtocol <String> -Service <String[]> [-Wks]
+ [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### 胜利（WINS）R
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Force] -LookupTimeout <TimeSpan> [-Replicate] -CacheTimeout <TimeSpan>
+ -ResultDomain <String> [-WinsR] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### 胜利（WINS）
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Force] -LookupTimeout <TimeSpan> [-Replicate] -WinsServers <IPAddress[]>
+ -CacheTimeout <TimeSpan> [-Wins] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### 未知
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ [-Type] <UInt16> [-RecordData] <String> [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### TXT
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -DescriptiveText <String> [-Txt] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### TLSA
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [[-Name] <String>] [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ [-TLSA] -CertificateUsage <String> -MatchingType <String> -Selector <String>
+ -CertificateAssociationData <String> [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### SRV
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -DomainName <String> -Priority <UInt16> -Weight <UInt16> -Port <UInt16> [-Srv] [-CimSession <CimSession[]>]
+ [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RT
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -Preference <UInt16> -IntermediateHost <String> [-RT] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>]
+ [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RP
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -ResponsiblePerson <String> -Description <String> [-RP] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>]
+ [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PTR
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -PtrDomainName <String> [-Ptr] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### NS
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -NameServer <String> [-NS] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### MX
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -MailExchange <String> -Preference <UInt16> [-MX] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>]
+ [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ISDN
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -IsdnNumber <String> -IsdnSubAddress <String> [-Isdn] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>]
+ [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### HINFO
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -Cpu <String> -OperatingSystem <String> [-HInfo] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>]
+ [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DNAME
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -DomainNameAlias <String> [-DName] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### DHCID（动态主机配置标识）
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -DhcpIdentifier <String> [-DhcId] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CNAME（ Canonical Name Resolution）
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -HostNameAlias <String> [-CName] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### ATMA
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -Address <String> -AddressType <String> [-Atma] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AFSDB
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny]
+ -SubType <UInt16> -ServerName <String> [-Afsdb] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>] [-AsJob]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AAAA
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-CreatePtr] [-Name] <String> [-TimeToLive <TimeSpan>] [-AgeRecord]
+ [-AllowUpdateAny] -IPv6Address <IPAddress> [-AAAA] [-CimSession <CimSession[]>] [-ThrottleLimit <Int32>]
+ [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### A
+```
+Add-DnsServerResourceRecord [-ZoneName] <String> [-ComputerName <String>] [-PassThru] [-ZoneScope <String>]
+ [-VirtualizationInstance <String>] [-CreatePtr] -IPv4Address <IPAddress> [-Name] <String>
+ [-TimeToLive <TimeSpan>] [-AgeRecord] [-AllowUpdateAny] [-A] [-CimSession <CimSession[]>]
+ [-ThrottleLimit <Int32>] [-AsJob] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## 描述
+`Add-DnsServerResourceRecord` cmdlet 用于在 DNS 服务器上为域名系统 (DNS) 区域添加资源记录。你可以添加不同类型的资源记录，针对不同的记录类型需要使用相应的参数（即开关）。有关资源记录的更多信息，请参阅 [管理资源记录](https://technet.microsoft.com/en-us/library/cc754308.aspx)。
+
+通过使用这个cmdlet，您可以更改记录的值、配置记录是否具有时间戳、是否任何经过身份验证的用户都可以更新拥有相同所有者名称的记录，以及修改查找超时值、Windows互联网名称服务（WINS）缓存设置和复制设置。
+
+## 示例
+
+### 示例 1：添加一个 A 记录
+```
+PS C:\> Add-DnsServerResourceRecord -ZoneName "Contoso.com" -A -Name "Host34" -AllowUpdateAny -IPv4Address "10.17.1.34" -TimeToLive 01:00:00 -AgeRecord
+```
+
+此命令会在名为 contoso.com 的区域中添加一个名为 Host34 的 A 记录，并为其指定相应的 IP 地址。该命令使用了 **AllowUpdateAny** 选项，允许任何经过身份验证的用户更新该记录。同时，还指定了记录的 TTL（生存时间）值，并为记录启用了时间戳功能。
+
+### 示例 2：在 Admin 节点下添加一个 A 类资源记录
+```
+PS C:\> Add-DnsServerResourceRecord -ZoneName "Contoso.com" -A -Name "Host21.admin" -IPv4Address "10.17.1.21"
+
+VERBOSE: Adding DNS resource record host21.admin of type A in zone contoso.com on ROOT server.
+HostName                  RecordType Timestamp            TimeToLive      RecordData
+--------                  ---------- ---------            ----------      ----------
+host21.admin              A          0                    01:00:00        10.17.1.74
+```
+
+此命令会在 Contoso.com 的 Admin 节点下为 Host21 添加一个 A 记录。
+
+### 示例 3：添加一个 AAAA 资源记录
+```
+PS C:\> Add-DnsServerResourceRecord -AAAA -Name "Host73" -ZoneName "Contoso.com" -AllowUpdateAny -IPv6Address "3ffe::1" -TimeToLive 01:00:00 -AgeRecord
+```
+
+此命令用于添加一个AAAA记录。该命令指定了“AllowUpdateAny”选项、TTL值，并为该记录启用时间戳功能。
+
+### 示例 4：添加一个 CNAME 资源记录
+```
+PS C:\> Add-DnsServerResourceRecord -CName -Name "labhost34" -HostNameAlias "Host34.lab.contoso.com" -ZoneName "Contoso.com" -AllowUpdateAny  -TimeToLive 01:00:00
+```
+
+此命令用于添加一个 CNAME 资源记录。该命令指定了 **AllowUpdateAny** 选项以及一个 TTL（生存时间）值。
+
+### 示例 5：添加一个 PTR 资源记录
+```
+PS C:\> Add-DnsServerResourceRecord -Name "77" -Ptr -ZoneName "0.168.192.in-addr.arpa" -AllowUpdateAny -PtrDomainName "host77.contoso.com"
+```
+
+该命令为 IP 地址 192.168.0.77 添加一个指向记录（pointer record），名为 host77.contoso.com，并将其放入反向查找区域 0.168.192.in-addr.arpa.. 中。
+
+### 示例 6：添加一个 MX 资源记录
+```
+PS C:\> Add-DnsServerResourceRecord -Name "." -MX -ZoneName "contoso.com" -MailExchange "mail.contoso.com" -Preference 10
+```
+
+此命令为 contoso.com 区域添加了一个 MX 资源记录，并将其优先级设置为 10。
+
+### 示例 7：添加一个 SRV 资源记录
+```
+PS C:\> Add-DnsServerResourceRecord -Srv -Name "sip" -ZoneName "contoso.com" -DomainName "sipserver1.contoso.com" -Priority 0 -Weight 0 -Port 5060
+```
+
+此命令为 contoso.com 域名添加一个服务定位器（SRV）资源记录，用于标识运行在端口 5060 上的 _sip 服务。该服务的权重和优先级均为 0，提供服务的主机是 sipserver1.contoso.com。
+
+### 示例 8：添加一个多行 TXT 资源记录
+```powershell
+$dkim2 = "v=DKIM1;k=rsa;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy6OAXCmjYT823gq+DXRjXdsypt7iepfl4pkvLRVN8wRwoND2Fk2aVlG+CitAeJ0nqWn7JAPjoTXpFtHnOWMN7ay/atQd+DcLLHfJkpRvsYSDQ1jkI2s7CkWF6G+nwLGJcNFndOdB8oawpppyESE7+DiZae8bDicaTK8oPU0J7iogeZ1fgvmutwNtNzZHiSgwF9euCiX6lTmGe+0oZ+gRUJnUmZevh//IZ+NyDkRV2kPxQBtM8brHUpRL1c11q/CA0kC6C3ku+Pqmf6A8CGT+qvlCeQ2lVqlBydQL5UjiixUEwkSrgUEKoKE2Hqw97WrDEJZqngtuqma9hWoAsKVbzwIDAQAB"
+$dkim2_part1 = $dkim2.Substring(0,252)
+
+$dkim2_part2 = $dkim2.Substring(252,$dkim2.Length - 252)
+
+Add-DnsServerResourceRecord -DescriptiveText "$dkim2_part1`r`n$dkim_part2" -Name sea2048._domainkey -Txt -ZoneName $domain -TimeToLive 0:1:0:0
+```
+
+此命令用于添加一个多行TXT资源记录。该字符串被分割成252个字符组成的部分，然后在字符串的末尾添加一个新的行（在Windows系统中，新行由两个字符组成）。
+
+## 参数
+
+### -A
+这表示该cmdlet添加到DNS服务器中的记录是一个主机地址（A）资源记录。A资源记录将一个主机名映射到一个IPv4地址。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: A
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AAAA
+表示此cmdlet添加到DNS服务器中的记录是一个AAAA资源记录。AAA资源记录将主机名称映射到IPv6地址。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: AAAA
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Address
+指定一个字节数组，其中包含与该资源记录对象相关的所有者的异步传输模式（ATM）地址。*AddressType* 参数用于指定该字节数组的格式。数组的前 4 个字节存储八进制字符串的长度，其中最高有效字节是第 0 个字节。
+
+```yaml
+Type: String
+Parameter Sets: ATMA
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -AddressType
+用于指定 ATM 地址（ATMA）资源记录中 ATM 地址的格式。有效值为：0（表示 ATM 终端系统地址（AESA）格式），以及 1（表示 E.164 地址格式）。
+
+```yaml
+Type: String
+Parameter Sets: ATMA
+Aliases:
+Accepted values: E164, AESA
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Afsdb
+该信息表明，此 cmdlet 添加到 DNS 服务器中的记录是一种 Andrew File System Cell Database Server (AFSDB) 资源记录。AFSDB 资源记录用于指定 AFS Cell Database Server 的位置，并通过 DNS 将 DNS 域名映射到相应的 AFS Cell Database Server 名称。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: AFSDB
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AgeRecord
+表示DNS服务器会为该cmdlet添加的资源记录使用时间戳。DNS服务器可以根据时间戳来清除那些已经过期的资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: X25, TLSA
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: WKS, Unknown, TXT, SRV, RT, RP, PTR, NS, MX, ISDN, HINFO, DNAME, DHCID, CNAME, ATMA, AFSDB, AAAA, A
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowUpdateAny
+表示任何已认证的用户都可以更新拥有相同所有者名称的资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: InputObject, TLSA
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: X25, WKS, Unknown, TXT, SRV, RT, RP, PTR, NS, MX, ISDN, HINFO, DNAME, DHCID, CNAME, ATMA, AFSDB, AAAA, A
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AsJob
+以后台作业的方式运行该cmdlet。使用此参数来执行需要较长时间才能完成的命令。
+
+该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在该会话中工作。要管理该作业，请使用`*-Job` cmdlets；要获取作业结果，请使用[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。
+
+有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Atma
+表示此cmdlet添加到DNS服务器中的记录是一种ATM地址资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: ATMA
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CName
+表示此cmdlet添加到DNS服务器中的记录是一种规范名称（CNAME）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CNAME
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CacheTimeout
+指定DNS服务器从WINS服务器缓存响应的时间长度（以秒为单位）。
+
+```yaml
+Type: TimeSpan
+Parameter Sets: WINSR, WINS
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -CertificateAssociationData
+用于指定传输层安全（TLS）认证记录中的证书关联数据。
+
+```yaml
+Type: String
+Parameter Sets: TLSA
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -CertificateUsage
+指定用于TLS认证的证书使用记录。
+
+```yaml
+Type: String
+Parameter Sets: TLSA
+Aliases:
+Accepted values: CAConstraint, ServiceCertificateConstraint, TrustAnchorAssertion, DomainIssuedCertificate
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -CimSession
+在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet 的输出结果）。默认值为本地计算机上的当前会话。
+
+```yaml
+Type: CimSession[]
+Parameter Sets: (All)
+Aliases: Session
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ComputerName
+用于指定一个 DNS 服务器。如果您不指定此参数，命令将在本地系统上运行。您可以指定一个 IP 地址，或者任何能够解析为 IP 地址的字符串，例如完全合格域名（FQDN）、主机名或 NETBIOS 名称。
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases: Cn
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+在运行该cmdlet之前，会提示您进行确认。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Cpu
+用于指定DNS服务器的CPU类型。您可以在主机信息（HINFO）资源记录中找到CPU类型。
+
+```yaml
+Type: String
+Parameter Sets: HINFO
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -CreatePtr
+这表示DNS服务器会自动为A记录或AAAA记录创建一个相关的指针（PTR）资源记录。PTR资源记录用于将IP地址映射到主机名。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: AAAA
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: A
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DName
+这表示该cmdlet添加到DNS服务器中的记录是一种域别名（DNAME）资源记录。DNAME资源记录会重命名某个域名空间子树中的根节点及其所有后代节点，并实现非终端域名的重定向功能。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: DNAME
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Description
+指定用于描述负责该域名的人员的文本。
+
+```yaml
+Type: String
+Parameter Sets: RP
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DescriptiveText
+用于指定额外的文本以描述DNS服务器上的资源记录。每行最多允许254个字符。
+
+```yaml
+Type: String
+Parameter Sets: TXT
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DhcId
+表示此cmdlet添加到DNS服务器中的记录是一种动态主机配置协议信息（DHCID）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: DHCID
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DhcpIdentifier
+指定一个与FQDN关联的公钥，具体内容请参见RFC 2535的第3节。
+
+```yaml
+Type: String
+Parameter Sets: DHCID
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DomainName
+指定一个域的名称。
+
+```yaml
+Type: String
+Parameter Sets: SRV
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -DomainNameAlias
+指定域名的别名。
+
+```yaml
+Type: String
+Parameter Sets: DNAME
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Force
+添加资源记录时不会提示您进行确认。默认情况下，此cmdlet在执行操作之前会先询问您的确认意见。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: InputObject, WINSR, WINS
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HInfo
+这表明该cmdlet添加到DNS服务器中的记录是一种主机信息（HINFO）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: HINFO
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HostNameAlias
+用于指定 CNAME 记录的规范名称目标。该名称必须是一个完全合格的域名（FQDN）。
+
+```yaml
+Type: String
+Parameter Sets: CNAME
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -IPv4Address
+指定一个主机的 IPv4 地址。
+
+```yaml
+Type: IPAddress
+Parameter Sets: A
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -IPv6Address
+指定一个主机的 IPv6 地址。
+
+```yaml
+Type: IPAddress
+Parameter Sets: AAAA
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -InputObject
+指定要传递给此cmdlet的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传递给此cmdlet。
+
+```yaml
+Type: CimInstance
+Parameter Sets: InputObject
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IntermediateHost
+指定一个主机的完全 Qualified Domain Name（FQDN），该主机负责将数据包路由到目标主机。
+
+```yaml
+Type: String
+Parameter Sets: RT
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -InternetAddress
+指定资源记录所有者的IP地址。
+
+```yaml
+Type: IPAddress
+Parameter Sets: WKS
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -InternetProtocol
+用于指定资源记录的互联网协议（IP）地址。有效值为：UDP 或 TCP。
+
+```yaml
+Type: String
+Parameter Sets: WKS
+Aliases:
+Accepted values: UDP, TCP
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Isdn
+这表明该cmdlet添加到DNS服务器中的记录是一种综合业务数字网（ISDN）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: ISDN
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsdnNumber
+指定ISDN地址中与DNS服务器的FQDN（Fully Qualified Domain Name）相对应的那部分数字。ISDN地址由一个电话号码和一个可选的子地址组成，存储在ISDN资源记录中。该电话号码可以包含国家/地区代码、区号以及本地电话号码。
+
+```yaml
+Type: String
+Parameter Sets: ISDN
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -IsdnSubAddress
+指定ISDN地址中包含的数字，该数字对应于DNS服务器的FQDN（ Fully Qualified Domain Name）。ISDN地址由一个电话号码和一个可选的子地址组成，并位于ISDN资源记录中。子地址是一个标识符，用于描述ISDN子地址的编码类型。
+
+```yaml
+Type: String
+Parameter Sets: ISDN
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -LookupTimeout
+指定资源记录的查找超时值。
+
+```yaml
+Type: TimeSpan
+Parameter Sets: WINSR, WINS
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -MX
+表示此cmdlet添加到DNS服务器中的记录是一条邮件交换机（MX）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: MX
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MailExchange
+指定作为该账户所有者邮件交换机的主机的完全 Qualified Domain Name（FQDN）。
+
+```yaml
+Type: String
+Parameter Sets: MX
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -MatchingType
+指定记录的匹配类型。该参数的可接受值包括：
+
+- ExactMatch
+- Sha256Hash
+- Sha512Hash
+
+```yaml
+Type: String
+Parameter Sets: TLSA
+Aliases:
+Accepted values: ExactMatch, Sha256Hash, Sha512Hash
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -NS
+表示此cmdlet添加到DNS服务器中的记录是一条名称服务器（NS）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: NS
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Name
+指定DNS服务器资源记录对象的名称。
+
+```yaml
+Type: String
+Parameter Sets: X25, WKS, Unknown, TXT, SRV, RT, RP, PTR, NS, MX, ISDN, HINFO, DNAME, DHCID, CNAME, ATMA, AFSDB, AAAA, A
+Aliases:
+
+Required: True
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: TLSA
+Aliases:
+
+Required: False
+Position: 2
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -NameServer
+指定一个域的名称服务器。
+
+```yaml
+Type: String
+Parameter Sets: NS
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -OperatingSystem
+用于指定DNS服务器的操作系统标识符。您可以在HINFO资源记录中找到该操作系统标识符。
+
+```yaml
+Type: String
+Parameter Sets: HINFO
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -PassThru
+返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Port
+指定服务器监听该服务的端口。
+
+```yaml
+Type: UInt16
+Parameter Sets: SRV
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Preference
+指定该资源记录在属于同一所有者的其他资源记录中的优先级；其中，数值越小，优先级越高。
+
+```yaml
+Type: UInt16
+Parameter Sets: RT, MX
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Priority
+用于指定DNS服务器的优先级。客户端会尝试联系优先级最低的服务器。
+
+```yaml
+Type: UInt16
+Parameter Sets: SRV
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -PsdnAddress
+指定资源记录所有者的公共交换数据网络（PSDN）地址。
+
+```yaml
+Type: String
+Parameter Sets: X25
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Ptr
+表示此cmdlet添加到DNS服务器中的记录是一种PTR资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: PTR
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PtrDomainName
+在添加PTR资源记录时，用于指定主机的FQDN（完全 Qualified Domain Name）。
+
+```yaml
+Type: String
+Parameter Sets: PTR
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -RP
+表示此cmdlet添加到DNS服务器中的记录是一种“责任主体”（Responsible Person，简称RP）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: RP
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RT
+表示此 cmdlet 添加到 DNS 服务器中的记录是一种“路由通过”（Route Through，简称 RT）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: RT
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RecordData
+指定您想要添加的资源记录中包含的数据。
+
+```yaml
+Type: String
+Parameter Sets: Unknown
+Aliases:
+
+Required: True
+Position: 4
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Replicate
+表示该DNS服务器允许WINS复制功能。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: WINSR, WINS
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResponsiblePerson
+指定负责该资源记录的人员的域名邮箱名称对应的完全 Qualified Domain Name（FQDN）。
+
+当与该MR参数集一起使用时，这个值指定了一个邮箱地址，该地址实际上是资源记录中所有者名称所指定的邮箱地址的重新命名版本。
+
+```yaml
+Type: String
+Parameter Sets: RP
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ResultDomain
+指定要附加到返回的NetBIOS名称后的域名。
+
+```yaml
+Type: String
+Parameter Sets: WINSR
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Selector
+指定一个选择器（selector）。
+
+```yaml
+Type: String
+Parameter Sets: TLSA
+Aliases:
+Accepted values: FullCertificate, SubjectPublicKeyInfo
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ServerName
+用于指定 AFS （Apple File System）服务器的子类型。  
+- 子类型 1（值 = 1）：该主机为指定的 AFS 单元提供 AFS 版本 3.0 的卷定位服务（Volume Location Service）。  
+- 子类型 2（值 = 2）：该主机为指定的 DCE/NCA 单元提供经过身份验证的名称服务器，用于存储单元根目录节点。
+
+```yaml
+Type: String
+Parameter Sets: AFSDB
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Service
+指定当前重写路径可用的服务。也可以指定某种特定协议来使用某个服务。可用的服务包括Well-known Service（WKS）和NAPTR。
+
+```yaml
+Type: String[]
+Parameter Sets: WKS
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Srv
+表示此cmdlet添加到DNS服务器中的记录是一种服务（SRV）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: SRV
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubType
+用于指定服务器是否为 AFS（Advanced File System）卷位置服务器。使用值 1 表示该服务器是指定 AFS 单元的 AFS 版本 3.0 卷位置服务器；使用值 2 表示该服务器是一个经过身份验证的名称服务器，它存储着使用 Open Software Foundation (OSF) 的 DCE 身份验证单元命名系统或 HP/Apollo 的 Network Computing Architecture (NCA) 的服务器的单元根目录节点。
+
+有关服务器子类型的更多信息，请参阅[RFC 1183](http://www.ietf.org/rfc/rfc1183.txt)。
+
+```yaml
+Type: UInt16
+Parameter Sets: AFSDB
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -TLSA
+表示此cmdlet添加的记录是一条TLS身份验证资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: TLSA
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ThrottleLimit
+该参数用于指定可以同时执行该 cmdlet 的最大操作数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM cmdlet 数量来计算出适用于该 cmdlet 的最佳限制值。此限制仅适用于当前执行的 cmdlet，而不适用于整个会话或计算机本身。
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TimeToLive
+用于指定资源记录的生存时间（TTL）值，单位为秒。其他DNS服务器会利用这个时间长度来决定将记录缓存多久。
+
+```yaml
+Type: TimeSpan
+Parameter Sets: X25, WKS, Unknown, TXT, SRV, RT, RP, PTR, NS, MX, ISDN, HINFO, DNAME, DHCID, CNAME, ATMA, AFSDB, AAAA, A
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+```yaml
+Type: TimeSpan
+Parameter Sets: TLSA
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Txt
+表示此cmdlet添加到DNS服务器中的记录是一条TXT资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: TXT
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Type
+指定资源记录的类型。
+
+```yaml
+Type: UInt16
+Parameter Sets: Unknown
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -VirtualizationInstance
+指定要将区域添加到的虚拟化实例。虚拟化实例是 DNS 服务器中的逻辑分区，它能够独立托管区域和区域范围。相同名称的区域和区域范围可以托管在不同的虚拟化实例中。此参数是可选的；如果不提供该参数，系统会将区域添加到默认的虚拟化实例中，而这个默认实例在功能上等同于一个标准的 DNS 服务器。
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Weight
+用于指定资源记录中目标主机的权重值。当您有多个具有相同优先级的主机时，可以使用此参数。主机的使用频率与其权重成正比。
+
+```yaml
+Type: UInt16
+Parameter Sets: SRV
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -WhatIf
+展示了如果运行该cmdlet会发生什么情况。但实际上并未运行该cmdlet。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Wins
+表示此cmdlet添加到DNS服务器中的记录是一条WINS资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: WINS
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WinsR
+表示此cmdlet添加到DNS服务器中的记录是一种WINS反向（WinsR）资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: WINSR
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WinsServers
+指定一个或多个WINS服务器的IP地址，您希望将这些服务器用于资源记录的创建。
+
+```yaml
+Type: IPAddress[]
+Parameter Sets: WINS
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -Wks
+表示此cmdlet添加到DNS服务器中的记录是一种WKS资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: WKS
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -X25
+表示此 cmdlet 添加到 DNS 服务器中的记录是一条 X25 资源记录。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: X25
+Aliases:
+
+Required: True
+Position: 3
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ZoneName
+指定一个DNS区域的名称。
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: 1
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -ZoneScope
+指定区域范围的名称。
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### CommonParameters
+此 cmdlet 支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction 和 -WarningVariable。有关更多信息，请参阅 [关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。
+
+## 输入
+
+## 输出
+
+### Microsoft.ManagementInfrastructure.CimInstance#DnsServerResourceRecord
+
+## 备注
+
+## 相关链接
+
+[RFC 2535](http://www.ietf.orgRFC/rfc2535.txt)
+
+[RFC 1183](http://www.ietf.org/rfc/rfc1183.txt)
+
+[Show-DnsServerCache](./Show-DnsServerCache.md)
+
+[Set-DnsServerZoneAging](./Set-DnsServerZoneAging.md)

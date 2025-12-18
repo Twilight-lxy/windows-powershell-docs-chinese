@@ -1,0 +1,154 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:51:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WindowsProductKey"
+msgstr "# Set-WindowsProductKey"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the product key for the Windows image."
+msgstr "用于设置Windows镜像的产品密钥。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-WindowsProductKey** cmdlet sets the product key for the current "
+"Windows Edition in the specified image."
+msgstr "`Set-WindowsProductKey` cmdlet 用于将指定的产品密钥设置到当前 Windows 版本对应的镜像中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the product key on a mounted image"
+msgstr "### 示例 1：在已挂载的镜像上设置产品密钥"
+
+msgid ""
+"This command sets the product key on the Windows image that is mounted to "
+"c:\\offline."
+msgstr "此命令将产品密钥设置到挂载在 c:\\offline 目录下的 Windows 镜像上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"用于指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及相关信息  \n"
+"- 4 = 显示上述所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定要写入日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 临时存储空间，其大小可能低至 32 "
+"MB。日志文件会自动被归档；归档后的日志文件名称后会添加“.bak”后缀，并生成新的日志文件。每次日志文件被归档时，对应的“.bak”文件都会被覆盖。如果使用未加入域的网络共享资源，请在使用"
+" `DISM` 命令设置日志路径之前，先使用 `net use` 命令并输入相应的域凭据来配置访问权限。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service.\n"
+"If the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"“WindowsDirectory”。"
+
+msgid "Specifies the product key to use for the Windows image."
+msgstr "指定用于Windows镜像的产品密钥。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，用于在维护过程中提取文件。该目录必须存在于本地。如果未指定，则会使用 `\\Windows\\%Temp%\\` 目录，并且每次运行 "
+"DISM 时都会生成一个随机十六进制值的子目录名称。每次操作完成后，临时目录中的内容都会被删除。不建议将网络共享位置作为用于解压安装包（.cab 或 "
+".msu 文件）的临时目录。在维护过程中用于提取文件的临时目录应是一个本地目录。"
+
+msgid ""
+"Specifies the path to the location of the BootMgr files.\n"
+"This is necessary only when the BootMgr files are located on a partition other than the one that you are running the command from.\n"
+"Use -SystemDrive to service an installed Windows image from a Windows PE environment."
+msgstr ""
+"指定 BootMgr 文件所在的路径。只有当 BootMgr 文件位于与您执行命令的分区不同的分区上时，才需要提供该路径。使用 "
+"`-SystemDrive` 选项可以从 Windows PE 环境中对已安装的 Windows 镜像进行维护或操作。"
+
+msgid ""
+"Specifies the path to the Windows directory relative to the image path.\n"
+"This cannot be the full path to the Windows directory; it should be a relative path.\n"
+"If not specified, the default is the Windows directory in the root of the offline image directory."
+msgstr ""
+"指定相对于图像路径的 Windows 目录的路径。这个路径不能是 Windows "
+"目录的完整路径，而应该是一个相对路径。如果未指定，则默认值为离线图像目录根目录下的 Windows 目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.DismCommands.ImageObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dism Commands.ImageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WindowsEdition](./Get-WindowsEdition.md)"
+msgstr "[Get-WindowsEdition](./Get-WindowsEdition.md)"
+
+msgid "[Set-WindowsEdition](./Set-WindowsEdition.md)"
+msgstr "[Set-WindowsEdition](./Set-WindowsEdition.md)"

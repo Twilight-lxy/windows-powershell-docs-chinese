@@ -1,0 +1,221 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:19:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-DAEntryPointTableItem"
+msgstr "# 移除 DA 入口表项"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Removes a DirectAccess entry point from the specified configuration store."
+msgstr "从指定的配置存储中删除一个 DirectAccess 入口点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByPolicyStore (Default)"
+msgstr "### ByPolicyStore（默认值）"
+
+msgid "### ByGpoSession"
+msgstr "### ByGpoSession"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject (cdxml)"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-DAEntryPointTableItem** cmdlet removes a DirectAccess entry point from the specified configuration store.\n"
+"You must specify both the configuration store, by using either *GPOSession* or *PolicyStore*, and name of the entry point to remove."
+msgstr ""
+"`Remove-DAEntryPointTableItem` cmdlet 用于从指定的配置存储中删除 DirectAccess "
+"入口点。您必须指定配置存储（可以使用 `GPOSession` 或 `PolicyStore`）以及要删除的入口点的名称。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove an entry point by using the pipeline"
+msgstr "### 示例 1：使用管道删除入口点"
+
+msgid ""
+"This cmdlet removes the entry point named Redmond by first getting the entry"
+" point information using Get-DAEntryPointTableItem and then passing the "
+"information to **Remove-DAEntryPointTableItem**."
+msgstr ""
+"这个 cmdlet 首先使用 `Get-DAEntryPointTableItem` 获取名为 “Redmond” 的入口点信息，然后将这些信息传递给 "
+"`Remove-DA EntryPointTableItem` 来删除该入口点。"
+
+msgid "### Example 2: Remove an entry point directly"
+msgstr "### 示例 2：直接删除入口点"
+
+msgid ""
+"This cmdlet removes an entry point named Redmond by specifying the "
+"*EntryPointName* and *PolicyStore* parameters."
+msgstr "此cmdlet通过指定*EntryPointName*和*PolicyStore*参数来删除名为“Redmond”的入口点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该cmdlet。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中操作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，则可以使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。您可以输入一台计算机的名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the name of the entry point to remove.\n"
+"This parameter supports wildcards."
+msgstr "指定要删除的入口点的名称。此参数支持通配符。"
+
+msgid ""
+"Specifies the Group Policy session from which to read configuration information.\n"
+"You can use *GPOSession* with the *NetGPO* cmdlets to aggregate multiple operations performed on a Group Policy Object."
+msgstr ""
+"指定用于读取配置信息的组策略会话。您可以将 *GPOSession* 与 *NetGPO* 命令集结合使用，以便汇总对某个组策略对象执行的多个操作。"
+
+msgid "*GPOSession* cannot be used in conjunction with *PolicyStore*."
+msgstr "*GPOSession* 不能与 *PolicyStore* 同时使用。"
+
+msgid "Specifies the input object that is used in a pipeline command."
+msgstr "指定在管道命令中使用的输入对象。"
+
+msgid ""
+"Sends items from an interactive window down the pipeline as input to other cmdlets.\n"
+"By default, this cmdlet does not generate any output.\n"
+"However, to send items from the interactive window down the pipeline, click to select the items and then click OK.\n"
+"Shift-click and Ctrl-click are supported."
+msgstr ""
+"该cmdlet会将交互式窗口中的项目作为输入发送到其他cmdlets中。默认情况下，这个cmdlet不会生成任何输出。不过，若要将交互式窗口中的项目发送到其他cmdlets，请先点击以选择这些项目，然后点击“确定”。同时支持使用Shift键或Ctrl键进行选择操作。"
+
+msgid ""
+"Specifies the policy store from which the cmdlet retrieves the entry point "
+"information."
+msgstr "指定 cmdlet 从哪个策略存储库中检索入口点信息。"
+
+msgid ""
+"To retrieve the entry point information from a Group Policy Object, specify "
+"the GPO name using the format \"Domain\\GPOName\"."
+msgstr "要从组策略对象（Group Policy Object）中检索入口点信息，请使用“Domain\\GPOName”的格式指定GPO名称。"
+
+msgid ""
+"To retrieve the entry point information from a computer's local GPO, specify"
+" the computer's local GPO name in the format \"GPO:\\<computername\\>\"."
+msgstr ""
+"要从计算机的本地组策略对象（Local Group Policy "
+"Object，简称GPO）中检索入口点信息，请以“GPO:\\<计算机名称\\>”的格式指定该本地GPO的名称。"
+
+msgid "*PolicyStore* cannot be used in conjunction with *GPOSession*."
+msgstr "*PolicyStore* 不能与 *GPOSession* 同时使用。"
+
+msgid "The default value for *PolicyStore* is ActiveStore."
+msgstr "*PolicyStore* 的默认值是 ActiveStore。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令（cmdlet）的最大操作数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM 命令的数量来计算该 cmdlet 的最佳限制值。该限制仅适用于当前正在运行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/StandardCimv2/MSFT_DASiteTableEntry"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/StandardCimv2/MSFT_DASiteTableEntry"
+
+msgid ""
+"This cmdlet accepts as input a CIM object which contains a DA site table "
+"entry."
+msgstr "此cmdlet接受一个CIM对象作为输入，该对象包含一个DA站点表条目。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DAEntryPointTableItem](./Get-DAEntryPointTableItem.md)"
+msgstr "[Get-DAEntryPointTableItem](./Get-DAEntryPointTableItem.md)"
+
+msgid "[New-DAEntryPointTableItem](./New-DAEntryPointTableItem.md)"
+msgstr "[New-DAEntryPointTableItem](./New-DAEntryPointTableItem.md)"
+
+msgid "[Rename-DAEntryPointTableItem](./Rename-DAEntryPointTableItem.md)"
+msgstr "[Rename-DA EntryPointTableItem](./Rename-DAEntryPointTableItem.md)"
+
+msgid "[Reset-DAEntryPointTableItem](./Reset-DAEntryPointTableItem.md)"
+msgstr "[Reset-DA EntryPointTableItem](./Reset-DAEntryPointTableItem.md)"
+
+msgid "[Set-DAEntryPointTableItem](./Set-DAEntryPointTableItem.md)"
+msgstr "[Set-DA EntryPointTableItem](./Set-DAEntryPointTableItem.md)"

@@ -1,0 +1,107 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:38:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-RuleOption"
+msgstr "# Set-RuleOption"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies rule options in a Code Integrity policy."
+msgstr "修改代码完整性策略中的规则选项。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Action"
+msgstr "### 行动"
+
+msgid "### Help"
+msgstr "### 帮助"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-RuleOption** cmdlet modifies rule options in a Code Integrity policy.\n"
+"Rule options appear under the **Rules** property in the .xml policy file.\n"
+"To see the available rule options and their indexes, specify the **Help** parameter.\n"
+"This cmdlet adds the option that you specify by index.\n"
+"To remove a rule option, specify the **Delete** parameter."
+msgstr ""
+"`Set-RuleOption` cmdlet 用于修改代码完整性策略中的规则选项。这些规则选项位于 `.xml` 策略文件中的 `Rules` "
+"属性下。要查看可用的规则选项及其索引，请指定 `Help` 参数。该 cmdlet "
+"可根据您指定的索引来添加相应的规则选项；如果要删除某个规则选项，则需要指定 `Delete` 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a rule option"
+msgstr "### 示例 1：移除某个规则选项"
+
+msgid "This example removes Enabled:Audit Mode from a policy."
+msgstr "这个示例从策略中删除了“Enabled:Audit Mode”这一选项。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet removes the rule option that the **Option** "
+"parameter specifies."
+msgstr "表示此cmdlet会删除由`Option`参数指定的规则选项。"
+
+msgid "Specifies the path of the policy .xml file that this cmdlet modifies."
+msgstr "指定此cmdlet所修改的policy.xml文件的路径。"
+
+msgid ""
+"Indicates that this cmdlet displays the list of available options and their "
+"indexes."
+msgstr "表示此 cmdlet 会显示可用选项及其索引的列表。"
+
+msgid ""
+"Specifies the index of the rule option that this cmdlet modifies.\n"
+"Specify the **Help** parameter for option information. Refer to [WDAC Policy Rule Options](/windows/security/threat-protection/windows-defender-application-control/select-types-of-rules-to-create#windows-defender-application-control-policy-rules) for more detailed descriptions of each option."
+msgstr ""
+"指定此 cmdlet 所修改的规则选项的索引。若需了解有关选项的信息，请使用 **Help** 参数。有关每个选项的更详细描述，请参阅 [WDAC "
+"策略规则选项](/windows/security/threat-protection/windows-defender-application-"
+"control/select-types-of-rules-to-create#windows-defender-application-"
+"control-policy-rules)。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-HVCIOptions](./Set-HVCIOptions.md)"
+msgstr "[Set-HVCIOptions](./Set-HVCIOptions.md)"

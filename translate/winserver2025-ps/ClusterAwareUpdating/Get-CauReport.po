@@ -1,0 +1,167 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:24:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-CauReport"
+msgstr "# 获取Cau报告"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the Updating Run reports for all known Updating Runs, or all Updating Runs that match the\n"
+"specified dates or other specified parameters."
+msgstr "获取所有已知的“更新运行”（Updating Runs）的报告，或者获取符合指定日期或其他指定参数的所有“更新运行”的报告。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### AllParamsSet (Default)"
+msgstr "### AllParamsSet（默认值）"
+
+msgid "### RangeParamSet"
+msgstr "### RangeParamSet"
+
+msgid "### LastParamSet"
+msgstr "### LastParamSet"
+
+msgid "### SpecificReportParamSet"
+msgstr "### SpecificReportParamSet"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-CauReport` cmdlet gets the Updating Run reports for all known Updating Runs, or all\n"
+"Updating Runs that match the specified dates or other specified parameters. This cmdlet can return a\n"
+"list of all Updating Run reports between the specified **StartDate** and **EndDate** parameters, or if\n"
+"the **Last** parameter is specified instead of dates, then the cmdlet returns the most recent Updating\n"
+"Run report. By default, the report contains summaries only, but more detail can be obtained with the\n"
+"**Detailed** parameter or by using the **Report** parameter and specifying a Cluster-Aware Updating\n"
+"(CAU) report summary object."
+msgstr ""
+"`Get-CauReport` cmdlet 可以获取所有已知的 “Updating Run” 操作的报告，或者仅获取符合指定日期或其他参数条件的 "
+"“Updating Run” 操作的报告。该 cmdlet 可以返回在指定的 **StartDate** 和 **EndDate** 之间的所有 "
+"“Updating Run” 报告列表；如果使用的是 **Last** 参数而非具体的日期，则会返回最新的 “Updating Run” "
+"报告。默认情况下，报告仅包含摘要信息，但可以通过设置 **Detailed** 参数或使用 **Report** 参数并指定一个 “Cluster-"
+"Aware Updating (CAU)” 报告摘要对象来获取更详细的详细信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get a detailed list of updating runs from the specified "
+"cluster"
+msgstr "### 示例 1：从指定的集群中获取更新运行的详细列表"
+
+msgid ""
+"This command gets a detailed list of the updating runs performed on the cluster named Contoso-FC1 on\n"
+"01/01/2012 or later."
+msgstr "此命令可获取在名为 Contoso-FC1 的集群上于 2012 年 1 月 1 日或之后执行的更新操作的详细列表。"
+
+msgid ""
+"### Example 2: Get a detailed list of updating runs from a date span from "
+"the specified cluster"
+msgstr "### 示例 2：从指定的集群中获取指定日期范围内的更新运行详细列表"
+
+msgid ""
+"This command gets a detailed list of the updating runs performed on the cluster called Contoso-FC1\n"
+"starting with updating runs on 01/01/2012 and ending with updating runs on 04/01/2012."
+msgstr ""
+"此命令可获取在名为 Contoso-FC1 的集群上执行的更新操作的详细列表，这些更新操作的时间范围是从 2012 年 1 月 1 日开始到 2012 "
+"年 4 月 1 日结束。"
+
+msgid ""
+"### Example 3: Get the last updating run summary from the specified cluster"
+msgstr "### 示例 3：从指定的集群中获取最后一次更新运行的摘要"
+
+msgid ""
+"The first command gets the last updating run report summary from the cluster named Contoso-FC1 and\n"
+"stores the result in the variable named `$CauReportSummary`."
+msgstr ""
+"第一个命令从名为 Contoso-FC1 的集群中获取最后一次更新运行的报告摘要，并将结果存储在名为 `$CauReportSummary` 的变量中。"
+
+msgid ""
+"The second command gets the detailed report from the information stored in the `$CauReportSummary`\n"
+"variable."
+msgstr "第二个命令从存储在 `$CauReportSummary` 变量中的信息中获取详细报告。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster for which this cmdlet gets reports. This parameter is only\n"
+"required when this cmdlet isn't run on a failover cluster node, or this cmdlet is used to reference\n"
+"a failover cluster different from where the cmdlet is run."
+msgstr ""
+"指定该cmdlet获取报告的集群名称。只有当此cmdlet不在故障转移集群节点上运行，或者用于引用与当前执行位置不同的故障转移集群时，才需要这个参数。"
+
+msgid "Specifies the administrative credentials for the target cluster."
+msgstr "指定目标集群的管理凭据。"
+
+msgid ""
+"Specifies that cmdlet gets full results for one or more runs, instead of "
+"just summary information."
+msgstr "指定该 cmdlet 会获取一次或多次运行时的完整结果，而不仅仅是摘要信息。"
+
+msgid ""
+"Specifies that this cmdlet gets only the reports for runs before this time."
+msgstr "指定该cmdlet仅获取在此时间之前的运行所产生的报告。"
+
+msgid "Indicates that this cmdlet gets only the most recent run report."
+msgstr "表示此 cmdlet 只获取最新的运行报告。"
+
+msgid ""
+"Specifies the report summary that this cmdlet gets detailed results for the "
+"run."
+msgstr "指定此cmdlet获取详细运行结果的报告摘要。"
+
+msgid ""
+"Specifies that this cmdlet gets only the reports for runs after this time."
+msgstr "指定此cmdlet仅获取在该时间之后运行的报告。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### Microsoft.ClusterAwareUpdating.CauReportSummary"
+msgstr "### MicrosoftClusterAwareUpdating.CauReportSummary"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ClusterAwareUpdating.CauReport"
+msgstr "### Microsoft-cluster Aware-updating.CauReport"
+
+msgid "### Microsoft.ClusterAwareUpdating.CauReportSummary"
+msgstr "### Microsoft.ClusterAware Updating.CauReportSummary"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-CauReport](./Export-CauReport.md)"
+msgstr "[Export-CauReport](./Export-CauReport.md)"

@@ -1,0 +1,123 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:50:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-RmsRequestInfo"
+msgstr "# Get-RmsRequestInfo"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Generates a report about a particular user request for the AD RMS cluster."
+msgstr "生成关于AD RMS集群中特定用户请求的报告。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-RmsRequestInfo** cmdlet generates a report about a specified user "
+"request on the Active Directory Rights Management Services (AD RMS) cluster."
+msgstr ""
+"`Get-RmsRequestInfo` cmdlet 会生成一份关于 Active Directory 权限管理服务（AD "
+"RMS）集群中特定用户请求的报告。"
+
+msgid ""
+"To obtain the report, specify the *RequestID* of the user request for which you want a report and then set the *Path* parameter to the AD RMS provider drive subpath `<PSDrive>:\\`Report where `<PSDrive>` is the provider drive ID.\n"
+"You can also specify a relative path.\n"
+"For example, a dot (.) specifies the current location."
+msgstr ""
+"要获取报告，请指定您希望获取报告的用户请求的*RequestID*，然后将*Path*参数设置为 AD RMS 提供程序驱动器的子路径 "
+"`<PSDrive>:\\`Report`，其中 `<PSDrive>` 是提供程序驱动器 ID。您也可以指定一个相对路径。例如，点（.）表示当前位置。"
+
+msgid ""
+"Use the **Get-RmsUserRequestReport** cmdlet to obtain the *RequestID* of the"
+" user request for which you want a detailed report."
+msgstr "使用 `Get-RmsUserRequestReport` cmdlet 来获取您希望获取详细报告的用户请求的 *RequestID*。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a specified user request"
+msgstr "### 示例 1：获取指定的用户请求"
+
+msgid "This command displays information about a particular user request."
+msgstr "这个命令会显示有关特定用户请求的信息。"
+
+msgid "### Example 2: Get a user request by type"
+msgstr "### 示例 2：按类型获取用户请求"
+
+msgid ""
+"This command displays detailed information about a user's request to acquire a license.\n"
+"The **Get-RmsUserRequestReport** cmdlet retrieves the user's license request and then pipes the results to the **Get-RmsRequestInfo** cmdlet to display the details of the request."
+msgstr ""
+"此命令会显示有关用户获取许可证请求的详细信息。`Get-RmsUserRequestReport` cmdlet "
+"会检索用户的许可证请求，然后将结果传递给 `Get-RmsRequestInfo` cmdlet 以显示该请求的详细内容。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies a provider drive and path or relative path on the current drive.\n"
+"Use a dot (.) to specify the current location.\n"
+"This parameter does not accept wildcards and has no default value."
+msgstr "指定提供者驱动器及其路径，或者当前驱动器上的相对路径。可以使用点（.）来表示当前位置。此参数不支持通配符，且没有默认值。"
+
+msgid "Specifies the unique internal ID of a user request."
+msgstr "指定用户请求的唯一内部ID。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+
+msgid "[Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"
+msgstr "[Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"

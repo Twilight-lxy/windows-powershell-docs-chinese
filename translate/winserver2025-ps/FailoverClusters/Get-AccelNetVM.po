@@ -1,0 +1,92 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:56:59 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AccelNetVM"
+msgstr "# Get-AccelNetVM"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets VMs with Accelerated Networking."
+msgstr "可以获取配备加速网络的虚拟机（VMs）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "Retrieves VMs where AccelNet is enabled."
+msgstr "检索启用了AccelNet功能的虚拟机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "This example retrieves a VM named `MyVM`."
+msgstr "这个示例用于检索一个名为 `MyVM` 的虚拟机。"
+
+msgid ""
+"If the **-VMName** parameter isn't provided, all VM names are retrieved."
+msgstr "如果未提供 `-VMName` 参数，则会检索所有虚拟机的名称。"
+
+msgid "### EXAMPLE 2"
+msgstr "### 示例 2"
+
+msgid "This example retrieves the VM object for a VM named `MyVM`."
+msgstr "这个示例用于检索名为 `MyVM` 的虚拟机（VM）对应的对象信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "The Virtual Machine name."
+msgstr "虚拟机的名称。"
+
+msgid "The VM object."
+msgstr "VM对象。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-AccelNetVM](disable-accelnetvm.md)"
+msgstr "[禁用 AccelerNetVM](disable-accelnetvm.md)"
+
+msgid "[Enable-AccelNetVM](enable-accelnetvm.md)"
+msgstr "[启用-AccelNetVM](enable-accelnetvm.md)"
+
+msgid "[Set-AccelNetVM](set-accelnetvm.md)"
+msgstr "[Set-AccelNetVM](set-accelnetvm.md)"

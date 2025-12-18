@@ -1,0 +1,231 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:58:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-DhcpServerv4Filter"
+msgstr "# Add-DhcpServerv4Filter"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a MAC address filter to the DHCP server service."
+msgstr "为DHCP服务器服务添加一个MAC地址过滤器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-DhcpServerv4Filter** cmdlet adds the specified MAC address filter to the Dynamic Host Configuration Protocol (DHCP) server service.\n"
+"The MAC address can be added to the allow list or the deny list."
+msgstr ""
+"`Add-DhcpServerv4Filter` cmdlet 用于将指定的 MAC 地址过滤器添加到动态主机配置协议（DHCP）服务器服务中。该 "
+"MAC 地址可以被添加到允许列表或拒绝列表中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a client to the allowed filter"
+msgstr "### 示例 1：将某个客户端添加到允许访问的列表中"
+
+msgid ""
+"This example adds the specified client identified by the MAC address to the "
+"allowed list of MAC address filters."
+msgstr "这个示例将通过MAC地址识别的指定客户端添加到允许使用的MAC地址过滤器列表中。"
+
+msgid "### Example 2: Add multiple clients to the allowed filter"
+msgstr "### 示例 2：将多个客户端添加到允许访问的列表中"
+
+msgid ""
+"This example adds the specified clients identified by their MAC address to "
+"the allowed list of MAC address filters."
+msgstr "这个示例将那些通过其MAC地址被识别的客户端添加到允许的MAC地址过滤器的列表中。"
+
+msgid "### Example 3: Add address filters from a file"
+msgstr "### 示例 3：从文件中添加地址过滤器"
+
+msgid ""
+"This example adds all of the MAC address filters in the file that is named MacAddressFilters.csv to the allow MAC address list of the DHCP server service running on the computer named dhcpserver.contoso.com.\n"
+"The **Import-Csv** cmdlet returns the objects that have Mac address filter fields that are piped to this cmdlet, which in turn adds the MAC address filters to the server.\n"
+"The file that is named MacAddressFilters.csv should be in the following comma-separated values (CSV) format:"
+msgstr ""
+"这个示例将名为 `MacAddressFilters.csv` 的文件中的所有 MAC 地址过滤器添加到运行在 "
+"`dhcpserver.contoso.com` 这台计算机上的 DHCP 服务器服务的允许 MAC 地址列表中。`Import-Csv` cmdlet"
+" 会返回包含 MAC 地址过滤字段的对象，这些对象随后会被添加到服务器上。`MacAddressFilters.csv` "
+"文件应采用以下逗号分隔值（CSV）格式："
+
+msgid "`MacAddress,Description`"
+msgstr "`MacAddress,Description`"
+
+msgid "`1a-1b-1c-1d-1e-1f,Computer1`"
+msgstr "`1a-1b-1c-1d-1e-1f,Computer1`"
+
+msgid "`2a-2b-2c-2d-2e-2f,Computer2`"
+msgstr "`2a-2b-2c-2d-2e-2f,Computer2`"
+
+msgid "`3a-3b-3c-3d-3e-3f,Computer3`"
+msgstr "`3a-3b-3c-3d-3e-3f,Computer3`"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的方式运行该cmdlet。使用此参数来执行需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`"
+" cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the DHCP server service."
+msgstr "指定运行DHCP服务器服务的目标计算机的DNS名称、IPv4地址或IPv6地址。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Specifies the description string for the MAC address filter being added."
+msgstr "指定要添加的MAC地址过滤器的描述字符串。"
+
+msgid ""
+"Specifies that, if one or more of the MAC addresses are already present in "
+"the allow or deny list, the matching MAC addresses are deleted and the new "
+"entries created."
+msgstr "该规则规定：如果一个或多个MAC地址已经存在于“允许”或“拒绝”列表中，则会删除这些匹配的MAC地址，并创建新的条目。"
+
+msgid ""
+"This parameter is useful in the case where the MAC address specified is "
+"already present in one list, such as the allow list, and the same MAC "
+"address now has to be added to the other list, such as the deny list."
+msgstr "当指定的MAC地址已经存在于某个列表中（例如允许列表）时，这个参数非常有用。此时需要将该MAC地址添加到另一个列表中（例如拒绝列表）。"
+
+msgid ""
+"If this parameter is not specified, the cmdlet fails if the specified MAC "
+"address is already present in any of the lists."
+msgstr "如果未指定此参数，当指定的MAC地址已经存在于某个列表中时，该cmdlet将会失败。"
+
+msgid ""
+"Specifies the list to which one or more MAC addresses are to be added.\n"
+"The acceptable values for this parameter are: Allow or Deny."
+msgstr "指定要将一个或多个MAC地址添加到的列表。该参数的有效取值为：Allow（允许）或Deny（拒绝）。"
+
+msgid ""
+"Specifies one or more MAC addresses which are to be added to the MAC address"
+" filter list."
+msgstr "指定一个或多个要添加到MAC地址过滤列表中的MAC地址。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大并发操作数量。如果省略此参数或输入值 `0`，Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Filter"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Filter"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）之后的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Filter[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Filter[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DhcpServerv4Filter](./Get-DhcpServerv4Filter.md)"
+msgstr "[Get-DhcpServerv4Filter](./Get-DhcpServerv4Filter.md)"
+
+msgid "[Get-DhcpServerv4FilterList](./Get-DhcpServerv4FilterList.md)"
+msgstr "[Get-DhcpServerv4FilterList](./Get-DhcpServerv4FilterList.md)"
+
+msgid "[Get-DhcpServerv4Lease](./Get-DhcpServerv4Lease.md)"
+msgstr "[Get-DhcpServerv4Lease](./Get-DhcpServerv4Lease.md)"
+
+msgid "[Remove-DhcpServerv4Filter](./Remove-DhcpServerv4Filter.md)"
+msgstr "[Remove-DhcpServerv4Filter](./Remove-DhcpServerv4Filter.md)"
+
+msgid "[Set-DhcpServerv4FilterList](./Set-DhcpServerv4FilterList.md)"
+msgstr "[Set-DhcpServerv4FilterList](./Set-DhcpServerv4FilterList.md)"

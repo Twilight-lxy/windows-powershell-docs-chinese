@@ -1,0 +1,332 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:38:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-DhcpServer"
+msgstr "# 导入 DHCP 服务器相关模块"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Imports the Dynamic Host Configuration Protocol (DHCP) server service "
+"configuration, and optionally lease data, from a file."
+msgstr "从文件中导入动态主机配置协议（DHCP）服务器的服务配置信息，以及可选的租约数据。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Import-DhcpServer** cmdlet imports the Dynamic Host Configuration "
+"Protocol (DHCP) server service configuration, and optionally lease data, "
+"from the specified file."
+msgstr ""
+"`Import-DhcpServer` cmdlet 用于从指定的文件中导入动态主机配置协议（DHCP）服务器的服务配置信息，以及可选的租约数据。"
+
+msgid ""
+"If you specify either the *ScopeId* or the *Prefix* parameter, or both, only"
+" the specified scopes or prefixes are imported."
+msgstr "如果您指定了*ScopeId*或*Prefix*参数中的任意一个或多个，那么只有被指定的范围或前缀会被导入。"
+
+msgid ""
+"If you specify neither the *ScopeId* nor the *Prefix* parameter, all of the "
+"configurations that is contained in the file, and optionally any lease data,"
+" is imported."
+msgstr "如果您既没有指定 *ScopeId* 参数，也没有指定 *Prefix* 参数，那么文件中包含的所有配置信息以及可选的租赁数据都会被导入。"
+
+msgid ""
+"If you specify the *Leases* parameter, the lease data in the specified file "
+"is imported in addition to configuration data."
+msgstr "如果您指定了*Leases*参数，除了配置数据之外，指定文件中的租赁数据也会被导入。"
+
+msgid ""
+"If you specify the *ScopeOverWrite* parameter and the scope being imported exists on the destination server, the scope on the target DHCP server service is overwritten.\n"
+"If this parameter is not specified and the scope being imported exists on the destination DHCP server service, a warning message is displayed and the import proceeds to process the next scope being imported."
+msgstr ""
+"如果您指定了 *ScopeOverWrite* 参数，并且要导入的范围在目标服务器上也存在，那么目标 DHCP "
+"服务器服务上的相应范围将会被覆盖。如果未指定该参数，而要导入的范围在目标 DHCP "
+"服务器服务上确实存在，则会显示一条警告消息，之后系统会继续处理下一个要导入的范围。"
+
+msgid ""
+"If you specify the *ServerConfigOnly* parameter, only the server level configuration is imported on the destination DHCP server service.\n"
+"If the file specified contains any scope information, the same information is not imported on the destination DHCP server service."
+msgstr ""
+"如果您指定了 *ServerConfigOnly* 参数，则只有服务器级别的配置会被导入到目标 DHCP "
+"服务器服务中。如果指定的文件包含任何作用域（scope）信息，这些信息将不会被导入到目标 DHCP 服务器服务中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import configuration data"
+msgstr "### 示例 1：导入配置数据"
+
+msgid ""
+"This example imports the configuration data in the specified file onto the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"The file can contain DHCPv4 and DHCPv6 configuration data."
+msgstr ""
+"这个示例将指定文件中的配置数据导入到运行在名为dhcpserver.contoso.com的计算机上的DHCP服务器服务中。该文件可以包含DHCPv4和DHCPv6的配置数据。"
+
+msgid "### Example 2: Import configuration and lease data"
+msgstr "### 示例 2：导入配置信息和租赁数据"
+
+msgid ""
+"This example imports the configuration and lease data in the specified file onto the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"The file can contain DHCPv4 and DHCPv6 configuration data."
+msgstr ""
+"这个示例将指定文件中的配置数据和租约数据导入到运行在名为dhcpserver.contoso.com的计算机上的DHCP服务器服务中。该文件可以包含DHCPv4和DHCPv6的配置数据。"
+
+msgid "### Example 3: Import configuration data for specified scopes"
+msgstr "### 示例 3：为指定的范围导入配置数据"
+
+msgid ""
+"This example imports the configuration data for scopes 10.10.10.0 and 10.20.20.0 from the specified file onto the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"If the export file contains scopes besides 10.10.10.0 and 10.20.20.0, those scopes are ignored.\n"
+"The DHCPv4 server level configuration data, if present in the export file, is also imported onto the DHCP server service."
+msgstr ""
+"这个示例将从指定的文件中导入范围 10.10.10.0 和 10.20.20.0 的配置数据，并将其应用到运行在名为 "
+"dhcpserver.contoso.com 的计算机上的 DHCP 服务器服务上。如果导出文件中包含除了 10.10.10.0 和 "
+"10.20.20.0 之外的其他范围，那么这些范围将被忽略。如果在导出文件中存在 DHCPv4 服务器级别的配置数据，它们也会被导入到 DHCP "
+"服务器服务中。"
+
+msgid ""
+"### Example 4: Import configuration and lease data for specified scopes"
+msgstr "### 示例 4：导入指定范围内的配置信息和租赁数据"
+
+msgid ""
+"This example imports the configuration and lease data for scopes 10.10.10.0 and 10.20.20.0 from the specified file onto the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"If the export file contains scopes besides 10.10.10.0 and 10.20.20.0, those scopes are ignored.\n"
+"The DHCPv4 server level configuration data, if present in the export file, is also imported onto the DHCP server service."
+msgstr ""
+"这个示例从指定的文件中导入范围 10.10.10.0 和 10.20.20.0 的配置数据及租约信息，并将这些数据应用到运行在名为 "
+"dhcpserver.contoso.com 的计算机上的 DHCP 服务器服务上。如果导出文件中包含除 10.10.10.0 和 10.20.20.0"
+" 之外的其他范围，那么这些范围将被忽略。如果导出文件中还包含了 DHCPv4 服务器级别的配置数据，这些数据也会被导入到 DHCP 服务器服务中。"
+
+msgid ""
+"### Example 5: Import configuration and lease data for specified scopes with"
+" overwrite"
+msgstr "### 示例 5：导入指定范围内的配置和租约数据，并进行覆盖"
+
+msgid ""
+"This example imports the configuration and lease data for scopes 10.10.10.0 and 10.20.20.0 from the specified file onto the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"If the export file contains scopes besides 10.10.10.0 and 10.20.20.0, those scopes are ignored.\n"
+"The DHCPv4 server level configuration data, if present in the export file, is also imported onto the server.\n"
+"If the scopes 10.10.10.0 and 10.20.20.0 are already present on the DHCP server service that runs one the computer named dhcpserver.contoso.com, the scopes are deleted and recreated from the data in the export file."
+msgstr ""
+"此示例从指定的文件中导入范围 10.10.10.0 和 10.20.20.0 的配置和租约数据，并将这些数据应用到运行在名为 "
+"dhcpserver.contoso.com 的计算机上的 DHCP 服务器服务上。如果导出文件中包含除 10.10.10.0 和 10.20.20.0"
+" 之外的其他范围，那么这些其他范围将被忽略。如果导出文件中存在 DHCPv4 服务器级别的配置数据，这些数据也会被导入到服务器上。如果在名为 "
+"dhcpserver.contoso.com 的计算机上的 DHCP 服务器服务中已经存在范围 10.10.10.0 和 "
+"10.20.20.0，那么这些范围将被删除，并根据导出文件中的数据重新创建。"
+
+msgid "### Example 6: Import server level configuration data"
+msgstr "### 示例 6：导入服务器级别的配置数据"
+
+msgid ""
+"This example imports only the server level configuration data in the specified file onto the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"Any scope configuration data, if present in the file, is ignored."
+msgstr ""
+"这个示例仅将指定文件中的服务器级配置数据导入到运行在名为dhcpserver.contoso.com的计算机上的DHCP服务器服务中。如果文件中包含任何作用域配置数据，这些数据将被忽略。"
+
+msgid ""
+"### Example 7: Import configuration data for specified scopes for DHCPv6"
+msgstr "#### 示例 7：为指定的 DHCPv6 范围导入配置数据"
+
+msgid ""
+"This example imports the configuration data for scopes 2001:4898:7020:1020:: and 2001:4898:7020:1030:: from the specified file onto the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"If the export file contains scopes besides 2001:4898:7020:1020:: and 2001:4898:7020:1030::, those scopes are ignored.\n"
+"The DHCPv6 server level configuration data, if present in the export file, is also imported onto the DHCP server service."
+msgstr ""
+"这个示例从指定的文件中导入范围 2001:4898:7020:1020:: 和 2001:4898:7020:1030:: "
+"的配置数据，并将这些数据应用到运行在名为 dhcpserver.contoso.com 的计算机上的 DHCP "
+"服务器服务中。如果导出文件中包含除这两个范围之外的其他范围，那么这些其他范围将被忽略。如果导出文件中还包含了 DHCPv6 "
+"服务器级别的配置数据，这些数据也会被导入到 DHCP 服务器服务中。"
+
+msgid ""
+"### Example 8: Import configuration and lease data for specified scopes for "
+"DHCPv6"
+msgstr "### 示例 8：为指定的作用域导入 DHCPv6 的配置数据和租约数据"
+
+msgid ""
+"This example imports the configuration and lease data for scopes 2001:4898:7020:1020:: and 2001:4898:7020:1030:: from the specified file onto the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"If the export file contains scopes besides 2001:4898:7020:1020:: and 2001:4898:7020:1030::, those scopes are ignored.\n"
+"The DHCPv6 server level configuration data, if present in the export file, is also imported onto the DHCP server service."
+msgstr ""
+"这个示例从指定的文件中导入范围 2001:4898:7020:1020:: 和 2001:4898:7020:1030:: "
+"的配置和租约数据，并将其加载到运行在名为 dhcpserver.contoso.com 的计算机上的 DHCP 服务器服务中。如果导出文件中包含除 "
+"2001:4898:7020:1020:: 和 2001:4898:7020:1030:: 之外的其他范围，那么这些范围将被忽略。如果在导出文件中存在 "
+"DHCPv6 服务器级别的配置数据，这些数据也会被导入到 DHCP 服务器服务中。"
+
+msgid ""
+"### Example 9: Import configuration and lease data for specified scopes for "
+"DHCPv6 with overwrite"
+msgstr "### 示例 9：为指定的范围导入 DHCPv6 的配置和租约数据，并允许覆盖现有数据"
+
+msgid ""
+"This example imports the configuration and lease data for scopes 2001:4898:7020:1020:: and 2001:4898:7020:1030:: from the specified file onto the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"If the export file contains scopes besides 2001:4898:7020:1020:: and 2001:4898:7020:1030::, those scopes are ignored.\n"
+"The DHCPv6 server level configuration data, if present in the export file, is also imported onto the DHCP server service.\n"
+"If the scopes 2001:4898:7020:1020:: and 2001:4898:7020:1030:: are already present on the DHCP server service that runs on the computer named dhcpserver.contoso.com, the scopes are deleted and recreated from the data in the export file."
+msgstr ""
+"此示例将从指定的文件中导入范围 2001:4898:7020:1020:: 和 2001:4898:7020:1030:: "
+"的配置数据及租约信息，并将这些数据应用到运行在名为 dhcpserver.contoso.com 的计算机上的 DHCP "
+"服务器服务中。如果导出文件中包含除这两个范围之外的其他范围，那么这些其他范围将被忽略。如果导出文件中还包含了 DHCPv6 "
+"服务器级别的配置数据，这些数据也会被导入到 DHCP 服务器服务中。如果在名为 dhcpserver.contoso.com 的计算机上运行的 DHCP"
+" 服务器服务中已经存在范围 2001:4898:7020:1020:: 和 "
+"2001:4898:7020:1030::，那么这些现有范围将会被删除，并根据导出文件中的数据重新创建。"
+
+msgid "### Example 10: Import scopes specified in a file"
+msgstr "### 示例 10：从文件中导入指定的作用域"
+
+msgid ""
+"This example imports a list of scopes specified in file named "
+"_ScopeList.txt_ to the DHCP server service that runs on the computer named "
+"dhcpserver.contoso.com."
+msgstr ""
+"此示例将名为 `_ScopeList.txt` 的文件中指定的作用域列表导入到运行在计算机 `dhcpserver.contoso.com` 上的 "
+"DHCP 服务器服务中。"
+
+msgid ""
+"The **Import-Csv** cmdlet gets the list of scopes to import and returns it "
+"in the variable named _$ScopeIdList_. The second line imports the scopes "
+"using the variable named _$ScopeIdList_ as input for the _ScopeId_ "
+"parameter."
+msgstr ""
+"`Import-Csv` cmdlet 用于获取需要导入的 scope 列表，并将该列表存储在名为 `$ScopeIdList_` "
+"的变量中。第二行代码使用 `$ScopeIdList_` 变量作为 `_ScopeId_` 参数的输入值来导入这些 scope。"
+
+msgid "The file named _ScopeList.txt_ should contain the following format:"
+msgstr "名为 `_ScopeList.txt_` 的文件应包含以下格式："
+
+msgid ""
+"ScopeID \\\n"
+"10.10.10.0 \\\n"
+"10.20.20.0 \\\n"
+"10.30.30.0"
+msgstr "ScopeID：10.10.10.0、10.20.20.0、10.30.30.0"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the path where DHCP server database is backed up before it makes "
+"any configuration changes as part of the import operation."
+msgstr "在导入操作过程中进行任何配置更改之前，该命令用于指定备份DHCP服务器数据库的路径。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如 [New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the DHCP server service."
+msgstr "指定运行DHCP服务器服务的目标计算机的DNS名称，或其IPv4或IPv6地址。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the name of the file from which the data is imported.\n"
+"If a complete file path is not specified, the file is read from the current working directory."
+msgstr "指定用于导入数据的文件的名称。如果未指定完整的文件路径，则该文件将从当前工作目录中读取。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不会请求用户确认。"
+
+msgid "Specifies that the lease data is also imported."
+msgstr "指定也要导入租赁数据。"
+
+msgid "Specifies the subnet prefixes of IPv6 scopes which are imported."
+msgstr "指定被导入的 IPv6 范围内的子网前缀。"
+
+msgid ""
+"Specifies the scope identifiers (IDs), in IPv4 address format, which must be"
+" imported."
+msgstr "指定必须导入的范围标识符（ID），这些标识符采用IPv4地址格式。"
+
+msgid ""
+"Specifies that, if the scope being imported exists on the target server, the"
+" scope on the destination DHCP server service are overwritten."
+msgstr "指定：如果导入的范围在目标服务器上已经存在，则目标 DHCP 服务器服务上的该范围将被覆盖。"
+
+msgid ""
+"If this parameter is not specified and the scope being imported exists on "
+"the destination DHCP server service, a warning message is displayed and "
+"import will proceed to process the next scope being imported."
+msgstr "如果未指定此参数，并且要导入的范围在目标DHCP服务器服务上已经存在，系统会显示一条警告消息，然后继续处理下一个要导入的范围。"
+
+msgid ""
+"Specifies that only server level configuration is imported on the destination DHCP server service.\n"
+"If the file specified contains any scope information, the same is not imported on the destination DHCP server service."
+msgstr ""
+"指定仅将服务器级别的配置导入到目标DHCP服务器服务中。如果指定的文件包含任何范围（scope）信息，这些信息不会被导入到目标DHCP服务器服务中。"
+
+msgid "Both DHCPv4 and DHCPv6 server level configurations is imported."
+msgstr "DHCPv4和DHCPv6服务器级别的配置都已被导入。"
+
+msgid "The server level configuration includes of (both v4 and v6):"
+msgstr "服务器级配置包括（v4和v6版本均适用）："
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Import-Csv](https://go.microsoft.com/fwlink/p/?LinkId=113341)"
+msgstr "[Import-Csv](https://go.microsoft.com/fwlink/p/?LinkId=113341)"
+
+msgid "[Backup-DhcpServer](./Backup-DhcpServer.md)"
+msgstr "[备份-DhcpServer](./Backup-DhcpServer.md)"
+
+msgid "[Export-DhcpServer](./Export-DhcpServer.md)"
+msgstr "[Export-DhcpServer](./Export-DhcpServer.md)"
+
+msgid "[Restore-DhcpServer](./Restore-DhcpServer.md)"
+msgstr "[恢复 DHCP 服务器](./Restore-DhcpServer.md)"

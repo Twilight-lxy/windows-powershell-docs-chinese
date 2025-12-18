@@ -1,0 +1,145 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:07:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Mount-AppvClientConnectionGroup"
+msgstr "# Mount-AppvClientConnectionGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Streams the contents of packages to the local disk."
+msgstr "将包的内容流式传输到本地磁盘上。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByGuid (Default)"
+msgstr "### 使用 `ByGuid`（默认值）"
+
+msgid "### ByName"
+msgstr "### 按名称查找"
+
+msgid "### ByConnectionGroup"
+msgstr "### 按连接组（ByConnectionGroup）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Mount-AppvClientConnectionGroup** cmdlet streams the contents of all "
+"packages in a connection group to the local disk."
+msgstr "`Mount-AppvClientConnectionGroup` cmdlet 将连接组中所有包的内容流式传输到本地磁盘。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Download packages for a named group"
+msgstr "### 示例 1：为某个指定组下载软件包"
+
+msgid ""
+"This command downloads all packages that are part of the enabled connection "
+"group named MyGroup."
+msgstr "此命令会下载所有属于名为“MyGroup”的已启用连接组中的软件包。"
+
+msgid "### Example 2: Download packages for a group by using group ID"
+msgstr "### 示例 2：通过组ID为某个组下载软件包"
+
+msgid ""
+"This cmdlet downloads all the packages that are part of the enabled "
+"connection group that has the group ID 793afd37-bd68-4ea1-859a-669f6afd0aa8."
+msgstr "此cmdlet会下载属于已启用连接组的所有包，该连接组的ID为793afd37-bd68-4ea1-859a-669f6afd0aa8。"
+
+msgid "### Example 3: Download packages for groups that match a string"
+msgstr "### 示例 3：下载与特定字符串匹配的组对应的包"
+
+msgid ""
+"This command gets all enabled connection groups that have the string MyGr in"
+" the name, and then downloads all of the packages in those connection "
+"groups."
+msgstr "这个命令会获取所有名称中包含“MyGr”字符串的已启用连接组，然后下载这些连接组中的所有包。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the Microsoft Application Virtualization (App-V) Connection Group "
+"object."
+msgstr "指定 Microsoft 应用程序虚拟化 (App-V) 连接组对象。"
+
+msgid "Specifies the group ID of specific connection group."
+msgstr "指定特定连接组的组ID。"
+
+msgid "Specifies the name of the App-V Connection Group."
+msgstr "指定 App-V 连接组的名称。"
+
+msgid ""
+"Specifies the GUID that differentiates a Connection Group version from other versions.\n"
+"If you do not specify this parameter, the cmdlet operates on all versions of the connection group."
+msgstr "指定用于区分某个连接组版本与其他版本的 GUID。如果您不指定此参数，该 cmdlet 将对连接组的全部版本进行处理。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.AppvAgent.AppvClientConnectionGroup"
+msgstr "### Microsoft.AppvAgent.AppvClientConnectionGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvClientConnectionGroup](./Add-AppvClientConnectionGroup.md)"
+msgstr "[Add-AppvClientConnectionGroup](./Add-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Disable-AppvClientConnectionGroup](./Disable-AppvClientConnectionGroup.md)"
+msgstr ""
+"[disable-AppvClientConnectionGroup](./Disable-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Enable-AppvClientConnectionGroup](./Enable-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Enable-AppvClientConnectionGroup](./Enable-AppvClientConnectionGroup.md)"
+
+msgid "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+msgstr "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Remove-AppvClientConnectionGroup](./Remove-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Remove-AppvClientConnectionGroup](./Remove-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Repair-AppvClientConnectionGroup](./Repair-AppvClientConnectionGroup.md)"
+msgstr "[修复-AppvClientConnectionGroup](./Repair-AppvClientConnectionGroup.md)"
+
+msgid "[Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"
+msgstr "[Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"

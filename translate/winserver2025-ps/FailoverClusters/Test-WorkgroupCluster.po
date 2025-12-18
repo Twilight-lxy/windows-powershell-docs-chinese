@@ -1,0 +1,176 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:32:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-WorkgroupCluster"
+msgstr "# 测试工作群组集群"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Tests the configuration of a workgroup cluster."
+msgstr "用于测试工作组集群的配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Test-WorkgroupCluster` function tests the configuration of a workgroup cluster. The rest of\n"
+"the parameters will be forwarded to the `Test-Cluster` function. Please refer to the documentation\n"
+"for the [Test-Cluster](/powershell/module/failoverclusters/test-cluster) cmdlet."
+msgstr ""
+"`Test-WorkgroupCluster` 函数用于测试工作组集群的配置。其他参数将会被转发给 `Test-Cluster` 函数。有关 "
+"[Test-Cluster](/powershell/module/failoverclusters/test-cluster) cmdlet "
+"的详细信息，请参考其官方文档。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example tests the configuration of a workgroup cluster with `Node1` and `Node2` using the\n"
+"credentials in `$cred1` and `$cred2`, and additional parameters."
+msgstr ""
+"这个示例使用 `$cred1` 和 `$cred2` 中的凭据以及其他参数来测试包含 `Node1` 和 `Node2` 的工作组集群的配置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "An array of nodes in the workgroup cluster."
+msgstr "工作组集群中的一组节点。"
+
+msgid "An array of credentials for the nodes."
+msgstr "一组用于节点的身份凭证（credentials）。"
+
+msgid ""
+"Specifies the disk number or disks for which to run the cmdlet. If the specified disk is online and\n"
+"is assigned to a clustered role or Cluster Shared Volume, you must also specify the **Force**\n"
+"parameter to take the disk offline for the duration of the storage tests. Otherwise, the specified\n"
+"disk must be offline before the cmdlet is run."
+msgstr ""
+"指定要运行该 cmdlet 的磁盘编号。如果指定的磁盘处于在线状态，并且被分配给了某个集群角色或集群共享卷（Cluster Shared "
+"Volume），则还必须指定 **Force** 参数，以使该磁盘在存储测试期间处于离线状态。否则，在运行该 cmdlet "
+"之前，必须先将指定的磁盘设置为离线状态。"
+
+msgid ""
+"If the **Disk** parameter isn't specified, storage tests run on all disks that are available for\n"
+"use in the cluster or that are in the cluster resource offline or failed state."
+msgstr "如果未指定 **Disk** 参数，则存储测试将在集群中所有可用的磁盘上进行；这些磁盘可能是处于离线状态，也可能是出现故障的状态。"
+
+msgid "Acceptable values are:"
+msgstr "可接受的值包括："
+
+msgid ""
+"Specifies the clustered storage pool or pools for which to run the cmdlet. When the specified\n"
+"storage pool is online and a virtual disk in the storage pool is assigned to a clustered role or\n"
+"Cluster Shared Volume, you must also specify the **Force** parameter to take the storage pool\n"
+"offline for the duration of the storage tests. Otherwise, the command will exit with an error."
+msgstr ""
+"指定要运行该 cmdlet 的集群存储池。当指定的存储池处于在线状态，并且该存储池中的某个虚拟磁盘已被分配给某个集群角色或集群共享卷（Cluster "
+"Shared Volume）时，您还必须指定 **Force** 参数，以便在存储测试期间将该存储池设置为离线状态。否则，命令将因错误而终止执行。"
+
+msgid ""
+"The specified storage pool must be taken offline before running the storage tests. If the **Pool**\n"
+"parameter isn't specified, storage tests run on all storage pools that are available for use in the\n"
+"cluster or that are in the cluster resource offline or failed state."
+msgstr ""
+"在运行存储测试之前，必须将指定的存储池设置为离线状态。如果未指定 `Pool` "
+"参数，存储测试将在集群中所有可用的存储池上执行；或者这些存储池处于离线状态或故障状态。"
+
+msgid "Acceptable values are:"
+msgstr "可接受的值包括："
+
+msgid "Specifies the name of the test report to generate."
+msgstr "指定要生成的测试报告的名称。"
+
+msgid ""
+"Specifies which tests or category of tests to include during the validation test run. Only the tests\n"
+"or category of tests specified will run."
+msgstr "指定在验证测试运行期间应包含哪些测试或哪一类测试。只有所指定的测试或测试类别才会被执行。"
+
+msgid ""
+"Specifies which tests or category of tests to ignore during the validation test run. All other\n"
+"tests or category of tests will run."
+msgstr "指定在验证测试运行期间应忽略哪些测试或哪些类型的测试。其他所有测试或测试类型都将正常执行。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid ""
+"Specifies the location to which to copy one or more cluster logs. To copy to the current folder, use\n"
+"`.` for this parameter input. Default location is `C:\\Windows\\Cluster\\Reports`."
+msgstr ""
+"指定用于复制一个或多个集群日志的目标位置。若要复制到当前文件夹，请使用`.`作为此参数的输入值。默认位置是 "
+"`C:\\Windows\\Cluster\\Reports`。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WorkgroupClusterNode](add-workgroupclusternode.md)"
+msgstr "[添加工作组集群节点](add-workgroupclusternode.md)"
+
+msgid "[New-WorkgroupCluster](new-workgroupcluster.md)"
+msgstr "[New-WorkgroupCluster](new-workgroupcluster.md)"
+
+msgid "[Remove-WorkgroupCluster](remove-workgroupcluster.md)"
+msgstr "[Remove-WorkgroupCluster](remove-workgroupcluster.md)"
+
+msgid "[Remove-WorkgroupClusterNode](remove-workgroupclusternode.md)"
+msgstr "[Remove-WorkgroupClusterNode](remove-workgroupclusternode.md)"
+
+msgid ""
+"[Set-WorkgroupClusterRemotingConfiguration](set-"
+"workgroupclusterremotingconfiguration.md)"
+msgstr ""
+"[Set-WorkgroupClusterRemotingConfiguration](set-"
+"workgroupclusterremotingconfiguration.md)"
+
+msgid "[Test-WorkgroupClusterRemoting](test-workgroupclusterremoting.md)"
+msgstr "[Test-WorkgroupClusterRemoting](test-workgroupclusterremoting.md)"

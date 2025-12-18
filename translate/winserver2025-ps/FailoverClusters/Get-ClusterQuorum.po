@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:03:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterQuorum"
+msgstr "# Get-ClusterQuorum"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets information about the quorum configuration of a failover cluster."
+msgstr "获取有关故障转移集群的法定人数（quorum）配置的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterQuorum` cmdlet gets information about the quorum configuration of a failover\n"
+"cluster."
+msgstr "`Get-ClusterQuorum` cmdlet 可以获取有关故障转移集群的投票机制（quorum）配置的信息。"
+
+msgid ""
+"The quorum configuration in a failover cluster determines the number of failures that the cluster\n"
+"can sustain. If an additional failure occurs, then the cluster must stop running. The relevant\n"
+"failures in this context are failures of nodes or, in some cases, of a disk witness (which contains\n"
+"a copy of the cluster configuration) or file share witness."
+msgstr ""
+"在故障转移集群中，法定人数（quorum）的配置决定了该集群能够承受的故障数量。如果再发生一次故障，那么集群就必须停止运行。这里所指的相关故障包括节点故障，或者在某些情况下，还包括磁盘见证（disk"
+" witness，其中保存了集群配置的副本）或文件共享见证（file share witness）的故障。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example displays the quorum configuration for the local cluster."
+msgstr "这个示例展示了本地集群的法定人数（quorum）配置信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example displays the quorum configuration for the cluster named "
+"`Cluster1`."
+msgstr "这个示例显示了名为`Cluster1`的集群的法定人数（quorum）配置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Specifies the cluster for which to query the quorum type."
+msgstr "指定要查询法定人数（quorum）类型的集群。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell-cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterQuorumSettings"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterQuorumSettings"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-ClusterQuorum](./Set-ClusterQuorum.md)"
+msgstr "[Set-ClusterQuorum](./Set-ClusterQuorum.md)"

@@ -1,0 +1,65 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:56:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AccelNetManagement"
+msgstr "# 获取 AccelNet Management 数据"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the intent enabled for Accelerated Networking Management."
+msgstr "启用加速网络管理（Accelerated Networking Management）的相关功能/设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "Retrieves the intent enabled for AccelNet Management."
+msgstr "检索AccelNet管理所支持的意图（即用户想要执行的操作或请求）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "This example retrieves the enabled intent name."
+msgstr "这个示例用于获取已启用的意图名称。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-AccelNetManagement](disable-accelnetmanagement.md)"
+msgstr "[ Disable-AccelNetManagement](disable-accelnetmanagement.md)"
+
+msgid "[Enable-AccelNetManagement](enable-accelnetmanagement.md)"
+msgstr "[Enable-AccelNetManagement](enable-accelnetmanagement.md)"
+
+msgid "[Get-AccelNetManagementPreReq](get-accelnetmanagementprereq.md)"
+msgstr "[Get-AccelNetManagementPreReq](get-accelnetmanagementprereq.md)"
+
+msgid "[Set-AccelNetManagement](set-accelnetmanagement.md)"
+msgstr "[Set-AccelNetManagement](set-accelnetmanagement.md)"

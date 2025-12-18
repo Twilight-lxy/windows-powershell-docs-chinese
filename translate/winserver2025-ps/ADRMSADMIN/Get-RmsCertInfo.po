@@ -1,0 +1,137 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:49:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-RmsCertInfo"
+msgstr "# 获取 RMS 证书信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Generates a report about a certificate used in a user request for the AD RMS"
+" cluster."
+msgstr "生成一份关于在用户请求中用于AD RMS集群的证书的报告。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-RmsCertInfo** cmdlet generates a report about a certificate used "
+"in a user request on the Active Directory Rights Management Services (AD "
+"RMS) cluster."
+msgstr ""
+"`Get-RmsCertInfo` cmdlet 会生成一份关于在 Active Directory 权限管理服务（AD "
+"RMS）集群中用于用户请求的证书的报告。"
+
+msgid ""
+"To obtain the report, specify the CertificateID of the certificate for which you want a report and then set the *Path* parameter to the AD RMS provider drive path `<PSDrive>:\\`Report where `<PSDrive>` is the provider drive ID.\n"
+"You can also specify a relative path.\n"
+"For example, a dot (.) specifies the current location."
+msgstr ""
+"要获取报告，请指定您希望获取报告的证书的 CertificateID，然后将 *Path* 参数设置为 AD RMS 提供程序驱动器路径 "
+"`<PSDrive>:\\`Report，其中 `<PSDrive>` 是提供程序驱动器的 ID。您也可以指定相对路径。例如，点（.）表示当前位置。"
+
+msgid ""
+"Use the **Get-RmsCertChain** cmdlet to obtain the *CertificateID* of the certificate for which you want a report.\n"
+"The *CertificateID* value returned is valid only for the cluster identified by the *Path* parameter of **Get-RmsCertChain**.\n"
+"You cannot use a *CertificateID* to identify the same certificate in different clusters."
+msgstr ""
+"使用 `Get-RmsCertChain` cmdlet 来获取您想要生成报告的证书的 *CertificateID*。返回的 "
+"*CertificateID* 值仅适用于由 `Get-RmsCertChain` 的 *Path* 参数所指定的集群。您不能使用同一个 "
+"*CertificateID* 来标识不同集群中的同一证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a certificate report"
+msgstr "### 示例 1：获取证书报告"
+
+msgid ""
+"This command displays detailed information for a particular certificate."
+msgstr "该命令会显示特定证书的详细信息。"
+
+msgid "### Example 2: Pass a certificate and get a report for it"
+msgstr "### 示例 2：传递证书并获取相应的报告"
+
+msgid ""
+"This command stores filtered results of the **Get-RmsCertChain** cmdlet in a"
+" variable and then pipes the first certificate in the array to the **Get-"
+"RmsCertInfo** cmdlet to display details about that certificate."
+msgstr ""
+"该命令将 **Get-RmsCertChain** cmdlet 的过滤结果存储到一个变量中，然后将数组中的第一个证书传递给 **Get-"
+"RmsCertInfo** cmdlet，以显示有关该证书的详细信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a unique internal certificate ID."
+msgstr "指定一个唯一的内部证书ID。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies a provider drive and path or relative path on the current drive.\n"
+"Use a dot (.) to specify the current location.\n"
+"This parameter does not accept wildcards and has no default value."
+msgstr "指定一个提供程序驱动器及其路径，或者当前驱动器上的相对路径。可以使用点（.）来表示当前位置。此参数不支持通配符，且没有默认值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+
+msgid "[Get-RmsCertChain](./Get-RmsCertChain.md)"
+msgstr "[Get-RmsCertChain](./Get-RmsCertChain.md)"
+
+msgid "[Get-RmsChildCert](./Get-RmsChildCert.md)"
+msgstr "[Get-RmsChildCert](./Get-RmsChildCert.md)"
+
+msgid "[Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"
+msgstr "[Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"

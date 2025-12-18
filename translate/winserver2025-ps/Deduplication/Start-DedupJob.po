@@ -1,0 +1,183 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:55:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-DedupJob"
+msgstr "# 启动去重作业"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Starts a data deduplication job."
+msgstr "启动一个数据去重作业。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Start-DedupJob` starts a new data deduplication job for one or more volumes. The data\n"
+"deduplication job can queue if the server is running another job on the same volume or if the\n"
+"computer does not have sufficient resources to run the job. The server marks the queued jobs that\n"
+"you start with this cmdlet as manual jobs and gives the manual jobs priority over scheduled jobs.\n"
+"The server returns a **DeduplicationJob** object for each job that you start with this cmdlet."
+msgstr ""
+"`Start-DedupJob` "
+"命令用于为一个或多个卷启动新的数据去重任务。如果服务器正在同一卷上执行其他任务，或者计算机的资源不足以运行该任务，则数据去重任务可能会被放入队列中等待执行。使用此命令启动的任务会被服务器标记为“手动任务”，并且这类任务会优先于计划好的任务得到处理。对于每个通过该命令启动的任务，服务器都会返回一个"
+" `DeduplicationJob` 对象。"
+
+msgid ""
+"For multi-volume data deduplication jobs, you can use the **Preempt** parameter to move a job to the\n"
+"top of the job queue and cancel the current job."
+msgstr "对于多卷数据去重任务，您可以使用 **Preempt** 参数将任务移到任务队列的顶端，并取消当前正在运行的任务。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Start an optimization job"
+msgstr "### 示例 1：启动一个优化任务"
+
+msgid ""
+"This command starts a deduplication optimization job on drive `D:` and consume up to a maximum of\n"
+"`50` percent of RAM."
+msgstr "此命令会在驱动器 `D:` 上启动一个去重优化任务，并最多占用 50% 的内存（RAM）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "将此cmdlet作为后台作业运行。使用该参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个代表该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession) or\n"
+"[Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者提供一个会话对象（例如 [New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中运行。"
+
+msgid "Specifies the maximum percentage of physical cores that a job uses."
+msgstr "指定作业最多可以使用物理核心的比例（以百分比表示）。"
+
+msgid ""
+"Indicates that garbage collection jobs free up all deleted or unreferenced data on the volume, if\n"
+"you specify the value `GarbageCollection` for the **Type** parameter. If you do not specify this\n"
+"parameter, garbage collection jobs free up space after a system threshold of delete data is\n"
+"exceeded. We recommend that you run garbage collection regularly without specifying this parameter,\n"
+"and then once a month specify this parameter and run garbage collection again."
+msgstr ""
+"这表示：如果您为**Type**参数指定了`GarbageCollection`值，垃圾收集作业将会释放卷上所有被删除或未被引用的数据。如果您没有指定该参数，垃圾收集作业则会在系统删除数据的阈值被超过后自动释放空间。我们建议您定期运行垃圾收集（无需指定该参数），然后每月指定一次该参数并再次运行垃圾收集。"
+
+msgid ""
+"If you specify the value `Scrubbing` for the **Type** parameter, this parameter indicates that\n"
+"scrubbing jobs validate the integrity of all data on the volume. If you do not specify this\n"
+"parameter, the scrubbing job validates only critical metadata and data integrity issues that data\n"
+"deduplication previously encountered. We recommend that you run scrubbing regularly without\n"
+"specifying this parameter, and then once a month specify this parameter and run scrubbing again."
+msgstr ""
+"如果您为**Type**参数指定值`Scrubbing`，则表示该擦除作业会验证卷上所有数据的完整性。如果您不指定此参数，则擦除作业仅会验证关键元数据以及数据去重过程中之前发现的数据完整性问题。我们建议您定期运行擦除操作（此时无需指定该参数），然后每月再指定一次该参数并重新执行擦除操作。"
+
+msgid ""
+"Specifies the amount of input/output throttling applied to the deduplication job. Throttling ensures\n"
+"that deduplication does not interfere with other I/O intensive processes. The acceptable values for\n"
+"this parameter are: integers from `0` to `100`. If you specify this parameter and the\n"
+"**InputOutputThrottleLevel** parameter, **InputOutputThrottle** takes precedence."
+msgstr ""
+"指定应用于去重作业的输入/输出限流程度。限流可以确保去重操作不会干扰其他对I/O要求较高的进程。该参数的可接受值为：`0` 到 `100` "
+"之间的整数。如果您同时指定了此参数和 **InputOutputThrottleLevel** 参数，那么 "
+"**InputOutputThrottle** 的设置将具有优先级。"
+
+msgid ""
+"Specifies the amount of I/O throttling that the job provides to ensure that the job does not\n"
+"interfere with other I/O intensive processes. The acceptable values for this parameter are:"
+msgstr "指定作业提供的I/O限制程度，以确保该作业不会干扰其他对I/O要求较高的进程。此参数的可接受值为："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.Management.Automation.SwitchParameter"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid ""
+"### Microsoft.PowerShell.Cmdletization.GeneratedTypes.DedupJob.Priority"
+msgstr ""
+"### Microsoft.PowerShell CmdletizationGeneratedTypes.DedupJob.Priority"
+
+msgid "### Microsoft.PowerShell.Cmdletization.GeneratedTypes.DedupJob.Type"
+msgstr "### Microsoft.PowerShell Cmdletization.GenerateTypes.DedupJob.Type"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid ""
+"The **Microsoft.Management.Infrastructure.CimInstance** object is a wrapper class that displays\n"
+"Windows Management Instrumentation (WMI) objects. The path after the pound sign (`#`) provides the\n"
+"namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名称。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DedupJob](./Get-DedupJob.md)"
+msgstr "[Get-DedupJob](./Get-DedupJob.md)"
+
+msgid "[Stop-DedupJob](./Stop-DedupJob.md)"
+msgstr "[Stop-DedupJob](./Stop-DedupJob.md)"

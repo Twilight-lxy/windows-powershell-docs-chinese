@@ -1,0 +1,115 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:40:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Grant-DfsrDelegation"
+msgstr "# 授予 DFSR 委托权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Grants permissions to security principals for a replication group."
+msgstr "为安全主体授予复制组的权限。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Grant-DfsrDelegation** cmdlet grants users or groups permission to create replicated folders, connections, members, and memberships inside a replication group.\n"
+"Delegation allows users who are local administrators on servers that run the Distributed File System (DFS) Replication service to administer the Active Directory Domain Services (AD DS) portions of the replication topology, without being domain administrators."
+msgstr ""
+"**Grant-DfsrDelegation** cmdlet "
+"允许用户或组创建复制文件夹、连接、成员以及复制组中的成员关系。该功能使得在运行分布式文件系统（DFS）复制服务的服务器上担任本地管理员的用户，能够在不具备域管理员权限的情况下管理"
+" Active Directory 域服务（AD DS）相关部分的复制拓扑结构。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Grant delegated permissions"
+msgstr "### 示例 1：授予委托权限"
+
+msgid ""
+"This command grants delegated permissions to the security group named DFSR "
+"Admins for a replication group named RG01."
+msgstr "此命令为名为“DFSR Admins”的安全组授予对名为“RG01”的复制组的委托权限。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of names of security principals.\n"
+"This cmdlet assigns permissions to the users and groups that this parameter specifies."
+msgstr "指定一个安全主体名称的数组。此cmdlet会为该参数所指定的用户和组分配权限。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the AD DS domain that contains a replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr "指定包含复制组的 AD DS 域的 NetBIOS 名称或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用当前用户的域。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies an array of names of replication groups."
+msgstr "指定一个复制组名称的数组。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### String[]"
+msgstr "### String[]"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrDelegation"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrDelegation"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsrDelegation](./Get-DfsrDelegation.md)"
+msgstr "[Get-DfsrDelegation](./Get-DfsrDelegation.md)"
+
+msgid "[Revoke-DfsrDelegation](./Revoke-DfsrDelegation.md)"
+msgstr "[Revoke-DfsrDelegation](./Revoke-DfsrDelegation.md)"

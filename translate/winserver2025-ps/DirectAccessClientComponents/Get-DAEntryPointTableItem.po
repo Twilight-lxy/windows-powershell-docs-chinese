@@ -1,0 +1,199 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:18:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DAEntryPointTableItem"
+msgstr "# Get-DAEntryPointTableItem"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the list of entry points that have been configured for DirectAccess."
+msgstr "获取已为 DirectAccess 配置的所有入口点的列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByPolicyStore (Default)"
+msgstr "### ByPolicyStore（默认值）"
+
+msgid "### ByGpoSession"
+msgstr "### ByGpoSession"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-DAEntryPointTableItem** cmdlet gets the list of entry points that have been configured for DirectAccess.\n"
+"Entry points contain information about the IP addresses to use for connectivity, the IP-HTTPs profile, and other elements that enable connectivity for multisite DirectAccess."
+msgstr ""
+"`Get-DAEntryPointTableItem` cmdlet 可以获取为 DirectAccess "
+"配置的入口点列表。这些入口点包含有关用于连接的 IP 地址、IP-HTTPs 配置文件以及其他支持多站点 DirectAccess 连接性的元素的信息。"
+
+msgid ""
+"You can use **Get-DAEntryPointTableItem** to retrieve the list from Group "
+"Policy Objects or the local computer's active store."
+msgstr "你可以使用 **Get-DA EntryPointTableItem** 来从组策略对象或本地计算机的活动存储中检索该列表。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a list of entry points that are not active"
+msgstr "#### 示例 1：获取一组不处于活动状态的入口点列表"
+
+msgid ""
+"This cmdlet gets a list of entry points from the active store and filters "
+"the list to only display the entry points that are not active."
+msgstr "这个cmdlet从当前激活的存储中获取入口点的列表，并筛选该列表，仅显示那些未处于激活状态的入口点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job` "
+"cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，也可以输入会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the name of the entry point.\n"
+"The entry point name is usually the friendly name of the location, such as Redmond or Paris."
+msgstr "指定入口点的名称。入口点名称通常是该地点的友好称呼，例如“Redmond”（雷德蒙德）或“Paris”（巴黎）。"
+
+msgid "Specify the name of the entry point by using double quotes (\" \")."
+msgstr "使用双引号 (“”) 指定入口点的名称。"
+
+msgid ""
+"Specifies the Group Policy session to send configuration information.\n"
+"You can use *GPOSession* with the **NetGPO** cmdlets to aggregate multiple operations performed on a Group Policy Object."
+msgstr ""
+"指定用于发送配置信息的组策略会话。您可以将 *GPOSession* 与 **NetGPO** cmdlet "
+"结合使用，以汇总对某个组策略对象执行的多个操作。"
+
+msgid "*GPOSession* cannot be used in conjunction with *PolicyStore*."
+msgstr "*GPOSession* 不能与 *PolicyStore* 同时使用。"
+
+msgid "Specifies the policy store into which the cmdlet adds the entry point."
+msgstr "指定该cmdlet将入口点添加到的策略存储位置。"
+
+msgid ""
+"To add the entry point to a Group Policy Object, specify the GPO name using "
+"the format \"Domain\\GPOName\"."
+msgstr "要将入口点添加到组策略对象（Group Policy Object）中，请使用“Domain\\GPOName”的格式指定该GPO的名称。"
+
+msgid ""
+"To add the entry point information to a computer's local GPO, specify the "
+"computer's local GPO name in the format \"GPO:\\<computername\\>\"."
+msgstr ""
+"要将入口点信息添加到计算机的本地组策略对象（Local Group Policy "
+"Object，简称GPO）中，请以“GPO:\\<计算机名称\\>”的格式指定该计算机的本地GPO名称。"
+
+msgid "*PolicyStore* cannot be used in conjunction with *GPOSession*."
+msgstr "*PolicyStore* 不能与 *GPOSession* 同时使用。"
+
+msgid "The default value for *PolicyStore* is ActiveStore."
+msgstr "*PolicyStore* 的默认值是 ActiveStore。"
+
+msgid "This parameter is deprecated."
+msgstr "此参数已过时（不再被推荐使用）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的cmdlet的最大操作数量。如果省略此参数或输入值为`0`，那么Windows "
+"PowerShell®将根据计算机上正在运行的CIM "
+"cmdlet的数量来计算出一个最优的节流限制（即允许同时执行的操作数量）。这个节流限制仅适用于当前的cmdlet，而不适用于整个会话或整台计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.Management.Infrastructure.CimInstance "
+"Microsoft.Management.Infrastructure.CimInstance#root/StandardCimv2/MSFT_DASiteTableEntry"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance  \n"
+"Microsoft.Management Infrastructure.CimInstance#root/StandardCimv2/MSFT_DASiteTableEntry"
+
+msgid ""
+"This cmdlet returns a CIM object that contains the DA entry point table "
+"item."
+msgstr "此cmdlet返回一个CIM对象，其中包含DA入口点表项的信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-DAEntryPointTableItem](./New-DAEntryPointTableItem.md)"
+msgstr "[New-DA EntryPointTableItem](./New-DAEntryPointTableItem.md)"
+
+msgid "[Reset-DAEntryPointTableItem](./Reset-DAEntryPointTableItem.md)"
+msgstr "[Reset-DA EntryPointTableItem](./Reset-DAEntryPointTableItem.md)"
+
+msgid "[Rename-DAEntryPointTableItem](./Rename-DAEntryPointTableItem.md)"
+msgstr "[ Rename-DA EntryPointTableItem](./Rename-DAEntryPointTableItem.md)"
+
+msgid "[Remove-DAEntryPointTableItem](./Remove-DAEntryPointTableItem.md)"
+msgstr "[Remove-DAEntryPointTableItem](./Remove-DAEntryPointTableItem.md)"
+
+msgid "[Set-DAEntryPointTableItem](./Set-DAEntryPointTableItem.md)"
+msgstr "[Set-DAEntryPointTableItem](./Set-DAEntryPointTableItem.md)"

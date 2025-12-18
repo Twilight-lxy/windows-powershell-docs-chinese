@@ -1,0 +1,154 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:11:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-WorkgroupCluster"
+msgstr "# 新工作组集群"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a new workgroup cluster."
+msgstr "创建一个新的工作组集群。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The `New-WorkgroupCluster` cmdlet creates a new workgroup cluster."
+msgstr "`New-WorkgroupCluster` cmdlet 用于创建一个新的工作组集群。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example creates a new workgroup cluster named `Cluster1` with `Node1` and `Node2` using\n"
+"the credentials in `$cred1` and `$cred2`."
+msgstr ""
+"这个示例使用 `$cred1` 和 `$cred2` 中的凭据创建了一个名为 `Cluster1` 的新的工作组集群，该集群包含 `Node1` 和 "
+"`Node2`。"
+
+msgid "Note: Only None and DNS are supported for AdministrativeAccessPoint."
+msgstr "注意：对于 AdministrativeAccessPoint，仅支持 “None” 和 “DNS” 两种设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "An array of nodes to be included in the cluster."
+msgstr "一组要包含在集群中的节点。"
+
+msgid "An array of credentials for the nodes."
+msgstr "用于节点的一组凭据。"
+
+msgid "The name of the workgroup cluster."
+msgstr "工作组集群的名称。"
+
+msgid ""
+"Specifies one or more static addresses to use when running the cmdlet. Networks with DHCP enabled\n"
+"are always included, but other networks need a static address to be specified using the\n"
+"**StaticAddress** parameter or should be explicitly ignored with this **IgnoreNetwork** parameter."
+msgstr ""
+"指定一个或多个在运行该 cmdlet 时使用的静态地址。启用 DHCP 的网络始终会被包含在内，但其他网络需要通过 **StaticAddress** "
+"参数来指定静态地址；或者可以使用 **IgnoreNetwork** 参数明确忽略这些网络。"
+
+msgid ""
+"Specifies one or more networks to ignore when running the cmdlet. Networks with DHCP enabled are\n"
+"always included, but other networks need a static address to be specified using the\n"
+"**StaticAddress** parameter or should be explicitly ignored with this **IgnoreNetwork** parameter."
+msgstr ""
+"指定在运行此 cmdlet 时要忽略的一个或多个网络。启用 DHCP 的网络总是会被包含在内，但其他网络需要使用 **StaticAddress** "
+"参数来指定静态地址，或者应该通过 **IgnoreNetwork** 参数明确地将其忽略。"
+
+msgid ""
+"Specifies the network configuration used to determine IP address settings. "
+"Acceptable values are:"
+msgstr "指定用于确定 IP 地址设置的网络配置。可接受的值有："
+
+msgid ""
+"For on-prem SQL Server, if the value is set to `Automatic`, it defaults to "
+"`Singleton`."
+msgstr "对于本地部署的 SQL Server，如果该值被设置为 `Automatic`，则默认情况下会使用 `Singleton` 模式。"
+
+msgid ""
+"Specifies the type of administrative access point that the cmdlet creates for the cluster.\n"
+"Acceptable values are:"
+msgstr "指定cmdlet为集群创建的管理访问点的类型。可接受的值有："
+
+msgid ""
+"Specifies that shared storage is ignored for the workgroup cluster node."
+msgstr "指定工作组集群节点将忽略共享存储资源。"
+
+msgid ""
+"Specifies whether to enable Storage Spaces Direct when creating the "
+"workgroup cluster."
+msgstr "指定在创建工作组集群时是否启用“Storage Spaces Direct”功能。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需询问用户的确认。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您确认是否要执行该操作。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果该cmdlet被运行会发生的情景。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WorkgroupClusterNode](add-workgroupclusternode.md)"
+msgstr "[添加工作组集群节点](add-workgroupclusternode.md)"
+
+msgid "[Remove-WorkgroupCluster](remove-workgroupcluster.md)"
+msgstr "[Remove-WorkgroupCluster](remove-workgroupcluster.md)"
+
+msgid "[Remove-WorkgroupClusterNode](remove-workgroupclusternode.md)"
+msgstr "[Remove-WorkgroupClusterNode](remove-workgroupclusternode.md)"
+
+msgid ""
+"[Set-WorkgroupClusterRemotingConfiguration](set-"
+"workgroupclusterremotingconfiguration.md)"
+msgstr ""
+"[Set-WorkgroupClusterRemotingConfiguration](set-"
+"workgroupclusterremotingconfiguration.md)"
+
+msgid "[Test-WorkgroupCluster](test-workgroupcluster.md)"
+msgstr "[Test-WorkgroupCluster](test-workgroupcluster.md)"
+
+msgid "[Test-WorkgroupClusterRemoting](test-workgroupclusterremoting.md)"
+msgstr "[Test-WorkgroupClusterRemoting](test-workgroupclusterremoting.md)"

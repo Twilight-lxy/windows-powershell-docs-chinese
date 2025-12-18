@@ -1,0 +1,102 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:04:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppvClientApplication"
+msgstr "# Get-AppvClientApplication"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Returns applications that are part of App-V Client Packages."
+msgstr "返回属于 App-V 客户端包的应用程序。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AppvClientApplication** cmdlet returns a set of applications that "
+"are part of Microsoft Application Virtualization (App-V) Client Packages, "
+"based on the criteria provided."
+msgstr ""
+"`Get-AppvClientApplication` cmdlet 根据提供的条件，返回一组属于 Microsoft "
+"应用程序虚拟化（App-V）客户端包的应用程序。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a version of an application for the current user"
+msgstr "#### 示例 1：获取当前用户所使用的应用程序版本"
+
+msgid ""
+"This command gets the application on the client that is published to the "
+"user and has the name AppName and is version 1."
+msgstr "这个命令用于获取客户端上已发布的应用程序。该应用程序的名称为AppName，版本号为1。"
+
+msgid "### Example 2: Get all applications"
+msgstr "### 示例 2：获取所有应用程序"
+
+msgid "This command gets all of the applications on the client."
+msgstr "这个命令可以获取客户端上的所有应用程序。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet returns all applications that have been added to "
+"the computer, not just those that are visible to the current user."
+msgstr "表示该 cmdlet 返回了所有已添加到计算机上的应用程序，而不仅仅是当前用户可以看到的那些应用程序。"
+
+msgid ""
+"Specifies the name of the application.\n"
+"This value is obtained from the package manifest."
+msgstr "指定应用程序的名称。该名称是从软件包清单（package manifest）中获取的。"
+
+msgid ""
+"Specifies the version of the application.\n"
+"If you do not specify this parameter, the cmdlet operates on all available versions of the applications on the target computer."
+msgstr "指定应用程序的版本。如果不指定此参数，该cmdlet将针对目标计算机上所有可用的应用程序版本进行操作。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.AppV.AppvClientPowerShell.AppvClientApplication"
+msgstr "### Microsoft.AppV.AppvClientPowerShell.AppvClientApplication"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AppvClientConfiguration](./Get-AppvClientConfiguration.md)"
+msgstr "[Get-AppvClientConfiguration](./Get-AppvClientConfiguration.md)"

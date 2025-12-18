@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:09:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# New-MpPerformanceRecording"
+msgstr "# New-MpPerformanceRecording"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"This cmdlet collects a performance recording of Microsoft Defender Antivirus\n"
+"scans."
+msgstr "这个cmdlet用于收集Microsoft Defender Antivirus扫描的性能记录数据。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Interactive (Default)"
+msgstr "### 交互式（默认设置）"
+
+msgid "### Timed"
+msgstr "### 定时（Timed）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"This cmdlet collects a performance recording of Microsoft Defender Antivirus scans. These\n"
+"performance recordings contain Microsoft-Antimalware-Engine and NT kernel process events and can be\n"
+"analyzed after collection using the Get-MpPerformanceReport cmdlet."
+msgstr ""
+"此cmdlet用于收集Microsoft Defender Antivirus扫描的性能记录。这些性能记录包含了与Microsoft-"
+"Antimalware-Engine及NT内核进程相关的事件，可以通过使用Get-MpPerformanceReport "
+"cmdlet在收集后对这些记录进行进一步分析。"
+
+msgid "This cmdlet requires elevated administrator privileges."
+msgstr "此cmdlet需要提升的管理员权限才能执行。"
+
+msgid ""
+"The performance analyzer provides insight into problematic files that could cause performance\n"
+"degradation of Microsoft Defender Antivirus. This tool is provided \"AS IS\", and is not intended to\n"
+"provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints.\n"
+"Exclusions, if any, should be defined with caution."
+msgstr ""
+"性能分析器可以帮助您识别可能导致 Microsoft Defender "
+"防病毒软件性能下降的问题文件。该工具按“现状”提供，不旨在为您提供关于如何进行文件排除（即不再将某些文件视为潜在威胁）的建议。进行文件排除操作可能会降低终端设备的安全保护级别；因此，如果确实需要排除某些文件，请务必谨慎操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the location where to save the Microsoft Defender Antivirus "
+"performance recording."
+msgstr "指定用于保存 Microsoft Defender Antivirus 性能记录文件的位置。"
+
+msgid "Specifies the duration of the performance recording in seconds."
+msgstr "以秒为单位指定表演录制的持续时间。"
+
+msgid ""
+"Specifies the PSSession object in which to create and save the Microsoft Defender Antivirus\n"
+"performance recording. When you use this parameter, the RecordTo parameter refers to the local path\n"
+"on the remote machine."
+msgstr ""
+"指定用于创建和保存 Microsoft Defender Antivirus 性能记录的 PSSession 对象。使用此参数时，RecordTo "
+"参数指的是远程机器上的本地路径。"
+
+msgid ""
+"Optional argument to specifiy a different tool for recording traces. Default is wpr.exe When\n"
+"$Session parameter is used this path represents a location on the remote machine."
+msgstr "可选参数用于指定用于记录追踪数据的不同工具。默认值为 wpr.exe。当使用 $Session 参数时，该路径表示远程机器上的一个位置。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

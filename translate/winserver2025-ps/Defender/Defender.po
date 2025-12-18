@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:58:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Defender Module"
+msgstr "# 防御模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides functions descriptions and syntax for all Defender-specific functions. \n"
+"It lists the functions in alphabetical order based on the verb at the beginning of the functions."
+msgstr ""
+"这个参考资料提供了所有针对 Defender 的函数的描述和语法信息。它按照函数开头所使用的动词（即函数的行为类型）对这些函数进行了字母顺序的排列。"
+
+msgid ""
+"> [!NOTE]\n"
+"> You might also hear these functions being referred to as cmdlets. They were designed to appear like cmdlets, even though they were developed as PowerShell functions."
+msgstr ""
+"> [!注意] > "
+"你可能还会听到这些函数被称为“cmdlet”。尽管它们实际上是作为PowerShell函数开发的，但它们的设计目的是使其看起来像cmdlet。"
+
+msgid "## Defender Cmdlets"
+msgstr "## Defender cmdlets"
+
+msgid "### [Add-MpPreference](./Add-MpPreference.md)"
+msgstr "### [Add-MpPreference](./Add-MpPreference.md)"
+
+msgid "Modifies settings for Windows Defender."
+msgstr "修改Windows Defender的设置。"
+
+msgid "### [Get-MpComputerStatus](./Get-MpComputerStatus.md)"
+msgstr "### [Get-MpComputerStatus](./Get-MpComputerStatus.md)"
+
+msgid "Gets the status of antimalware software on the computer."
+msgstr "获取计算机上反恶意软件软件的状态。"
+
+msgid "### [Get-MpPreference](./Get-MpPreference.md)"
+msgstr "### [Get-MpPreference](./Get-MpPreference.md)"
+
+msgid "Gets preferences for the Windows Defender scans and updates."
+msgstr "获取Windows Defender扫描和更新的偏好设置。"
+
+msgid "### [Get-MpThreat](./Get-MpThreat.md)"
+msgstr "### [Get-MpThreat](./Get-MpThreat.md)"
+
+msgid "Gets the history of threats detected on the computer."
+msgstr "获取计算机上检测到的威胁的历史记录。"
+
+msgid "### [Get-MpThreatCatalog](./Get-MpThreatCatalog.md)"
+msgstr "### [Get-MpThreatCatalog](./Get-MpThreatCatalog.md)"
+
+msgid "Gets known threats from the definitions catalog."
+msgstr "从定义目录中获取已知的威胁信息。"
+
+msgid "### [Get-MpThreatDetection](./Get-MpThreatDetection.md)"
+msgstr "### [Get-MpThreatDetection](./Get-MpThreatDetection.md)"
+
+msgid "Gets active and past malware threats that Windows Defender detected."
+msgstr "该系统能够激活并有效应对Windows Defender检测到的恶意软件威胁。"
+
+msgid "### [Remove-MpPreference](./Remove-MpPreference.md)"
+msgstr "### [Remove-MpPreference](./Remove-MpPreference.md)"
+
+msgid "Removes exclusions or default actions."
+msgstr "移除排除项或默认操作。"
+
+msgid "### [Remove-MpThreat](./Remove-MpThreat.md)"
+msgstr "### [Remove-MpThreat](./Remove-MpThreat.md)"
+
+msgid "Removes active threats from a computer."
+msgstr "从计算机中清除活跃的威胁。"
+
+msgid "### [Set-MpPreference](./Set-MpPreference.md)"
+msgstr "### [Set-MpPreference](./Set-MpPreference.md)"
+
+msgid "Configures preferences for Windows Defender scans and updates."
+msgstr "配置 Windows Defender 扫描和更新的偏好设置。"
+
+msgid "### [Start-MpScan](./Start-MpScan.md)"
+msgstr "### [开始使用 MpScan](./Start-MpScan.md)"
+
+msgid "Starts a scan on a computer."
+msgstr "在计算机上开始扫描操作。"
+
+msgid "### [Start-MpWDOScan](./Start-MpWDOScan.md)"
+msgstr "### [Start-MpWDOScan](./Start-MpWDOScan.md)"
+
+msgid "Starts a Windows Defender offline scan."
+msgstr "启动Windows Defender的离线扫描功能。"
+
+msgid "### [Update-MpSignature](./Update-MpSignature.md)"
+msgstr "### [Update-MpSignature](./Update-MpSignature.md)"
+
+msgid "Updates the antimalware definitions on a computer."
+msgstr "更新计算机上的反恶意软件定义。"

@@ -1,0 +1,154 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:17:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-DAManualEntryPointSelection"
+msgstr "# 启用手动入口点选择功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Allows a user to manually choose which DirectAccess entry point to use for "
+"connectivity."
+msgstr "允许用户手动选择用于连接的 DirectAccess 入口点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-DAManualEntryPointSelection** cmdlet enables a user to manually choose which DirectAccess entry point to use for connectivity.\n"
+"This cmdlet succeeds only when the client computer is outside of the corporate network perimeter, and DirectAccess is deployed."
+msgstr ""
+"`Enable-DAManualEntryPointSelection` 这个 cmdlet 允许用户手动选择用于连接的 DirectAccess "
+"入口点。只有当客户端计算机位于企业网络边界之外，并且已经部署了 DirectAccess 时，该 cmdlet 才能正常执行。"
+
+msgid ""
+"Computers configured for multisite DirectAccess automatically pick the best entry point to use for connectivity.\n"
+"A user might want to override the entry point that is automatically selected; for example, to help troubleshoot network connectivity.\n"
+"This cmdlet allows a user to manually choose a DirectAccess entry point."
+msgstr ""
+"配置为支持多站点DirectAccess的计算机会自动选择最佳的连接入口点。用户可能希望覆盖系统自动选择的入口点，例如为了帮助排查网络连接问题。此cmdlet允许用户手动选择一个DirectAccess入口点。"
+
+msgid ""
+"You can prevent a user from overriding the automatic selection by using Group Policy.\n"
+"For more information about using Group Policy to restrict automatic selection changes, see **Get-DAClientExperienceConfiguration**."
+msgstr ""
+"您可以使用组策略来阻止用户覆盖自动选定的设置。有关使用组策略限制自动选择更改的更多信息，请参阅 **Get-"
+"DAClientExperienceConfiguration**。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable manual DirectAccess site selection"
+msgstr "#### 示例 1：启用手动选择 DirectAccess 站点的功能"
+
+msgid "This cmdlet enables the entry point named Redmond."
+msgstr "这个cmdlet允许使用名为“Redmond”的入口点（即启动或执行命令的起点）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该cmdlet。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示作业的对象，随后再显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用 `*-Job` 系列"
+" cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the name of the DirectAccess entry point to enable.\n"
+"The specified entry point is used for DirectAccess connectivity until the computer joins a new network."
+msgstr "指定要启用的 DirectAccess 入口点的名称。在计算机加入新网络之前，将使用指定的入口点进行 DirectAccess 连接。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的并发操作的最大数量。如果省略了此参数或输入了 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。这个限制仅适用于当前执行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Disable-DAManualEntryPointSelection](./Disable-"
+"DAManualEntryPointSelection.md)"
+msgstr ""
+"[Disable-DAManualEntryPointSelection](./Disable-"
+"DAManualEntryPointSelection.md)"

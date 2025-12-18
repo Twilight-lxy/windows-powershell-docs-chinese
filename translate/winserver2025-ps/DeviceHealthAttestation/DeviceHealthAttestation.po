@@ -1,0 +1,156 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:14:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# DeviceHealthAttestation Module"
+msgstr "# 设备健康证明模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid "This table describes the Device Health Attestation service cmdlets."
+msgstr "该表格描述了“设备健康证明”（Device Health Attestation）服务相关的cmdlet命令。"
+
+msgid "## DeviceHealthAttestation Cmdlets"
+msgstr "## DeviceHealthAttestationCmdlets"
+
+msgid "### [Backup-DHASConfiguration](./Backup-DHASConfiguration.md)"
+msgstr "### [Backup-DHASConfiguration](./Backup-DHASConfiguration.md)"
+
+msgid "Backs up the configuration."
+msgstr "备份配置文件。"
+
+msgid ""
+"### [Get-DHASActiveEncryptionCertificate](./Get-"
+"DHASActiveEncryptionCertificate.md)"
+msgstr ""
+"### [Get-DHASActiveEncryptionCertificate](./Get-"
+"DHASActiveEncryptionCertificate.md)"
+
+msgid "Gets the active encryption certificate thumbprint."
+msgstr "获取当前活动的加密证书的指纹（thumbprint）。"
+
+msgid ""
+"### [Get-DHASActiveSigningCertificate](./Get-"
+"DHASActiveSigningCertificate.md)"
+msgstr ""
+"### [Get-DHASActiveSigningCertificate](./Get-"
+"DHASActiveSigningCertificate.md)"
+
+msgid "Gets the active signing certificate."
+msgstr "获取当前有效的签名证书。"
+
+msgid ""
+"### [Get-DHASCertificateChainPolicy](./Get-DHASCertificateChainPolicy.md)"
+msgstr ""
+"### [Get-DHASCertificateChainPolicy](./Get-DHASCertificateChainPolicy.md)"
+
+msgid "Gets the certificate chain policy."
+msgstr "获取证书链策略。"
+
+msgid ""
+"### [Get-DHASInactiveEncryptionCertificate](./Get-"
+"DHASInactiveEncryptionCertificate.md)"
+msgstr ""
+"### [Get-DHASInactiveEncryptionCertificate](./Get-"
+"DHASInactiveEncryptionCertificate.md)"
+
+msgid "Gets the inactive encryption certificate."
+msgstr "获取无效的加密证书。"
+
+msgid ""
+"### [Get-DHASInactiveSigningCertificate](./Get-"
+"DHASInactiveSigningCertificate.md)"
+msgstr ""
+"### [Get-DHASInactiveSigningCertificate](./Get-"
+"DHASInactiveSigningCertificate.md)"
+
+msgid "Gets the inactive signing certificate."
+msgstr "获取无效的签名证书。"
+
+msgid ""
+"### [Install-DeviceHealthAttestation](./Install-DeviceHealthAttestation.md)"
+msgstr "### [安装设备健康认证功能](./Install-DeviceHealthAttestation.md)"
+
+msgid "Installs the Device Health Attestation service."
+msgstr "安装设备健康证明（Device Health Attestation）服务。"
+
+msgid ""
+"### [Remove-DHASInactiveEncryptionCertificate](./Remove-"
+"DHASInactiveEncryptionCertificate.md)"
+msgstr ""
+"### [Remove-DHASInactiveEncryptionCertificate](./Remove-"
+"DHASInactiveEncryptionCertificate.md)"
+
+msgid "Removes the inactive encryption certificate."
+msgstr "移除无效的加密证书。"
+
+msgid ""
+"### [Remove-DHASInactiveSigningCertificate](./Remove-"
+"DHASInactiveSigningCertificate.md)"
+msgstr ""
+"### [Remove-DHASInactiveSigningCertificate](./Remove-"
+"DHASInactiveSigningCertificate.md)"
+
+msgid "Removes the inactive signing certificate."
+msgstr "移除无效的签名证书。"
+
+msgid "### [Restore-DHASConfiguration](./Restore-DHASConfiguration.md)"
+msgstr "### [Restore-DHASConfiguration](./Restore-DHASConfiguration.md)"
+
+msgid "Restores a configuration."
+msgstr "恢复配置。"
+
+msgid ""
+"### [Set-DHASActiveEncryptionCertificate](./Set-"
+"DHASActiveEncryptionCertificate.md)"
+msgstr ""
+"### [Set-DHASActiveEncryptionCertificate](./Set-"
+"DHASActiveEncryptionCertificate.md)"
+
+msgid "Sets the active encryption certificate."
+msgstr "设置当前的加密证书。"
+
+msgid ""
+"### [Set-DHASActiveSigningCertificate](./Set-"
+"DHASActiveSigningCertificate.md)"
+msgstr ""
+"### [Set-DHASActiveSigningCertificate](./Set-"
+"DHASActiveSigningCertificate.md)"
+
+msgid "Sets the active signing certificate."
+msgstr "设置活动的签名证书。"
+
+msgid ""
+"### [Set-DHASCertificateChainPolicy](./Set-DHASCertificateChainPolicy.md)"
+msgstr ""
+"### [Set-DHASCertificateChainPolicy](./Set-DHASCertificateChainPolicy.md)"
+
+msgid "Sets certificate chain policy."
+msgstr "设置证书链策略。"
+
+msgid ""
+"### [Set-DHASSupportedAuthenticationSchema](./Set-"
+"DHASSupportedAuthenticationSchema.md)"
+msgstr ""
+"### [Set-DHASSSupportedAuthenticationSchema](./Set-"
+"DHASSSupportedAuthenticationSchema.md)"
+
+msgid "Sets authentication schemas."
+msgstr "设置身份验证方案。"
+
+msgid ""
+"### [Uninstall-DeviceHealthAttestation](./Uninstall-"
+"DeviceHealthAttestation.md)"
+msgstr "### [卸载设备健康证明功能](./Uninstall-DeviceHealthAttestation.md)"
+
+msgid "Uninstalls the Device Health Attestation service."
+msgstr "卸载设备健康证明（Device Health Attestation）服务。"

@@ -1,0 +1,227 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:08:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-Cluster"
+msgstr "# 新集群"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Creates a new failover cluster."
+msgstr "创建一个新的故障转移集群。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `New-Cluster` cmdlet creates a new failover cluster. Before creating a cluster, the hardware\n"
+"(servers, networks, and storage) must be connected, and the validation tests must be run."
+msgstr ""
+"`New-Cluster` cmdlet 用于创建一个新的故障转移集群。在创建集群之前，必须先连接相关的硬件（服务器、网络和存储设备），并运行验证测试。"
+
+msgid ""
+"Use Test-Cluster to run the validation tests. The tests will confirm that the hardware and settings\n"
+"are compatible with failover clustering. There are multiple types of tests, including Inventory,\n"
+"System Configuration, Network, Storage, and other types of tests."
+msgstr ""
+"使用 Test-Cluster "
+"来运行验证测试。这些测试将确认硬件和配置是否适合故障转移集群的需求。测试类型有多种，包括资源清单（Inventory）、系统配置（System "
+"Configuration）、网络（Network）、存储（Storage）以及其他类型的测试。"
+
+msgid ""
+"> [!TIP]\n"
+"> You should run the `New-Cluster` command from a cluster node or client that is the same version as\n"
+"> the cluster nodes. Running `New-Cluster` from a lower-level (down-level) client computer may\n"
+"> require `Update-ClusterFunctionalLevel` to be run after `New-Cluster` has been run."
+msgstr ""
+"> [!提示] > 您应该从与集群节点相同版本的集群节点或客户端运行 `New-Cluster` 命令。如果从版本较低的客户端计算机运行 `New-"
+"Cluster`，则可能需要在运行 `New-Cluster` 之后再执行 `Update-ClusterFunctionalLevel` 命令。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example creates a four-node cluster named `cluster1`, using default "
+"settings for IP addressing."
+msgstr "这个示例创建了一个名为 `cluster1` 的四节点集群，并使用默认的IP地址设置。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example creates a two-node cluster named `cluster1`. The cluster will not have any clustered\n"
+"storage, or disk resources. Storage can be added using the `Get-ClusterAvailableDisk` cmdlet with\n"
+"the `Add-ClusterDisk` cmdlet."
+msgstr ""
+"这个示例创建了一个名为 `cluster1` 的两节点集群。该集群没有任何集群化的存储资源或磁盘资源。可以使用 `Get-"
+"ClusterAvailableDisk` cmdlet 结合 `Add-ClusterDisk` cmdlet 来添加存储资源。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example creates a four-node cluster named `cluster1` that uses the static IP address\n"
+"`2.0.0.123`."
+msgstr "这个示例创建了一个名为 `cluster1` 的四节点集群，该集群使用静态 IP 地址 `2.0.0.123`。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example creates a four-node cluster named `cluster1` that uses the static IP addresses\n"
+"`2.0.0.123` and `3.0.0.123`."
+msgstr ""
+"这个示例创建了一个名为 `cluster1` 的四节点集群，该集群使用静态 IP 地址 `2.0.0.123` 和 `3.0.0.123`。"
+
+msgid "### Example 5"
+msgstr "### 示例 5"
+
+msgid ""
+"This example creates a four-node cluster named `cluster1`. The cluster uses default settings for IP\n"
+"addressing, and doesn't use the network `2.0.0.0/8`."
+msgstr ""
+"这个示例创建了一个名为 `cluster1` 的四节点集群。该集群使用默认的 IP 地址设置，并没有使用 `2.0.0.0/8` 这个网络。"
+
+msgid "### Example 6"
+msgstr "### 示例 6"
+
+msgid ""
+"This example creates a four-node cluster named cluster1. The cluster uses the static IP address\n"
+"2.0.0.123, and doesn't use the network 3.0.0.0/8."
+msgstr "这个示例创建了一个名为“cluster1”的四节点集群。该集群使用静态IP地址2.0.0.123，没有使用网络3.0.0.0/8。"
+
+msgid ""
+"This example uses splatting to pass parameter values from the `$Parameters` variable to the command.\n"
+"Learn more about [Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)."
+msgstr ""
+"这个示例使用了“拆分”（splatting）技术，将 `$Parameters` 变量中的参数值传递给命令。有关 "
+"[拆分](/powershell/module/microsoft.powershell.core/about/about_splatting) "
+"的更多信息，请参阅相关文档。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the type of administrative access point that the cmdlet creates for the cluster. The\n"
+"acceptable values for this parameter are:"
+msgstr "指定 cmdlet 为集群创建的行政访问点的类型。该参数的可接受值包括："
+
+msgid ""
+"The cmdlet doesn't create an administrative access point for the cluster. Some clustered roles and\n"
+"functionality might not be available for a cluster that doesn't have an administrative access\n"
+"point. Also, you cannot use Failover Cluster Manager to manage a cluster that doesn't have an\n"
+"administrative access point."
+msgstr ""
+"该 cmdlet "
+"不会为集群创建一个管理访问点。如果没有管理访问点，某些集群角色和功能可能无法使用。此外，也无法使用故障转移集群管理器来管理没有管理访问点的集群。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies one or more networks to ignore when running the cmdlet. Networks with DHCP enabled are\n"
+"always included, but other networks need a static address to be specified using the\n"
+"**StaticAddress** parameter or should be explicitly ignored with this **IgnoreNetwork** parameter."
+msgstr ""
+"指定在运行该cmdlet时要忽略的一个或多个网络。启用了DHCP的网络始终会被包含在内，但其他网络需要使用**StaticAddress**参数来指定静态地址，或者应通过**IgnoreNetwork**参数明确地将其忽略。"
+
+msgid ""
+"Specifies the network configuration used to determine IP address settings."
+msgstr "指定用于确定IP地址设置的网络配置。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid "Specifies the name of the cluster to create."
+msgstr "指定要创建的集群的名称。"
+
+msgid ""
+"Specifies that shared storage is ignored during the cluster creation. The cluster created at the end\n"
+"of the operation will not have shared storage. Shared storage can later be added by piping the\n"
+"**ClusterDiskInfo** object from the `Get-ClusterAvailableDisk` cmdlet into the `Add-ClusterDisk`\n"
+"cmdlet."
+msgstr ""
+"指定在创建集群的过程中忽略共享存储。操作完成后生成的集群将不包含共享存储。之后可以通过将 `Get-ClusterAvailableDisk` "
+"cmdlet 返回的 **ClusterDiskInfo** 对象通过管道传递给 `Add-ClusterDisk` cmdlet 来添加共享存储。"
+
+msgid ""
+"Specifies a comma-separated list of cluster node names, or server names, on which to create the\n"
+"cluster. If this parameter isn't specified, then a one node cluster is created on the local\n"
+"physical computer."
+msgstr "指定一个用逗号分隔的集群节点名称或服务器名称列表，在这些节点上创建集群。如果未指定此参数，则会在本地物理计算机上创建一个单节点集群。"
+
+msgid ""
+"Specifies whether to enable Storage Spaces Direct when creating the cluster."
+msgstr "指定在创建集群时是否启用“Storage Spaces Direct”功能。"
+
+msgid ""
+"Specifies one or more static addresses to use when running the cmdlet. Networks with DHCP enabled\n"
+"are always included, but other networks need a static address to be specified using the\n"
+"**StaticAddress** parameter or should be explicitly ignored with this **IgnoreNetwork** parameter."
+msgstr ""
+"指定一个或多个在运行该cmdlet时使用的静态地址。启用了DHCP的网络始终会被包含在内，但其他网络需要通过**StaticAddress**参数来指定静态地址；或者可以通过**IgnoreNetwork**参数明确忽略这些网络。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable,\n"
+"-Verbose, -WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell_cluster"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterNode](./Add-ClusterNode.md)"
+msgstr "[添加集群节点](./Add-ClusterNode.md)"
+
+msgid "[Get-Cluster](./Get-Cluster.md)"
+msgstr "[Get-Cluster](./Get-Cluster.md)"
+
+msgid "[Remove-Cluster](./Remove-Cluster.md)"
+msgstr "[Remove-Cluster](./Remove-Cluster.md)"
+
+msgid "[Start-Cluster](./Start-Cluster.md)"
+msgstr "[启动集群](./Start-Cluster.md)"
+
+msgid "[Stop-Cluster](./Stop-Cluster.md)"
+msgstr "[停止集群操作](./Stop-Cluster.md)"
+
+msgid "[Test-Cluster](./Test-Cluster.md)"
+msgstr "[测试集群](./Test-Cluster.md)"

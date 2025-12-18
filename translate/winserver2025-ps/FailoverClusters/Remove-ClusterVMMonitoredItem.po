@@ -1,0 +1,152 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:18:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ClusterVMMonitoredItem"
+msgstr "# 删除 ClusterVMM 监控项"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VirtualMachine (Default)"
+msgstr "### VirtualMachine（默认值）"
+
+msgid "### VMId"
+msgstr "### VMId"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Remove-ClusterVMMonitoredItem` cmdlet removes monitoring of a service or event that is\n"
+"currently being monitored. After removal, if the service fails or the event occurs, the system will\n"
+"no longer take an action, such as restarting the virtual machine."
+msgstr ""
+"`Remove-ClusterVMMonitoredItem` cmdlet "
+"用于停止对某个当前正在被监控的服务或事件的监控。在取消监控后，如果该服务出现故障或相关事件发生，系统将不再采取任何操作（例如重启虚拟机）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example removes all of the items being monitored on the virtual machine"
+" named `VM1`."
+msgstr "这个示例会移除在名为`VM1`的虚拟机上被监控的所有项目。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example removes monitoring on the print spooler service on the virtual "
+"machine named `VM1`."
+msgstr "这个示例会取消对名为`VM1`的虚拟机上的打印后台进程（print spooler service）的监控功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此 cmdlet 的集群的名称。如果该参数的输入为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid ""
+"Specifies the event identifier (ID) of the Event Tracing for Windows (ETW) event to be removed from\n"
+"monitoring."
+msgstr "指定要从监控中移除的 Windows 事件跟踪（ETW）事件的标识符（ID）。"
+
+msgid "Specifies the event log of the event to be removed from monitoring."
+msgstr "指定要从监控中移除的事件对应的事件日志。"
+
+msgid "Specifies the event source of the event to be removed from monitoring."
+msgstr "指定要从监控中移除的事件的来源。"
+
+msgid ""
+"Specifies the cluster on which to run the cmdlet, the clustered virtual machine from which to remove\n"
+"monitoring, or the clustered virtual machine monitored item to stop monitoring."
+msgstr "指定用于运行该cmdlet的集群、要从其中移除监控功能的集群化虚拟机，或是需要停止对其实施监控的集群化虚拟机中的被监控对象。"
+
+msgid "Specifies the name of the service to be removed from monitoring."
+msgstr "指定要从监控中移除的服务名称。"
+
+msgid "Specifies the virtual machine identifier (ID)."
+msgstr "指定虚拟机的标识符（ID）。"
+
+msgid ""
+"Specifies the name of the clustered virtual machine from which to remove monitoring. When this\n"
+"parameter is specified, this cmdlet must be run on one of the host cluster nodes, or else the\n"
+"**Cluster** parameter must also be specified."
+msgstr ""
+"指定要从中移除监控功能的集群虚拟机的名称。当指定了此参数时，必须在该主机集群节点之一上运行此 cmdlet；否则还必须指定 **Cluster** "
+"参数。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定用于等待该 cmdlet 的时间（以秒为单位）。如果未指定 **Wait** 参数，那么 cmdlet 将一直等待直到完成。如果指定了 `-Wait"
+" 0`，则 cmdlet 会立即开始执行并立即返回结果，而不会进行任何等待。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell.Cluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### Microsoft FailoverClusters.PowerShell ClusterGroup"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterVMMonitoredItem"
+msgstr "### Microsoft_failoverClusters.PowerShell ClusterVMMonitoredItem"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterVMMonitoredItem](./Add-ClusterVMMonitoredItem.md)"
+msgstr "[Add-ClusterVMMonitoredItem](./Add-ClusterVMMonitoredItem.md)"
+
+msgid "[Get-ClusterVMMonitoredItem](./Get-ClusterVMMonitoredItem.md)"
+msgstr "[Get-ClusterVMMonitoredItem](./Get-ClusterVMMonitoredItem.md)"
+
+msgid "[Reset-ClusterVMMonitoredState](./Reset-ClusterVMMonitoredState.md)"
+msgstr "[Reset-ClusterVMMonitoredState](./Reset-ClusterVMMonitoredState.md)"

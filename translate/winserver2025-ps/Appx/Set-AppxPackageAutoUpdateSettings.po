@@ -1,0 +1,197 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:25:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Provides guidance on how to configure the auto-update and repair settings of"
+" a Windows App."
+msgstr "提供了关于如何配置 Windows 应用程序的自动更新和修复设置的指导。"
+
+msgid "# Set-AppxPackageAutoUpdateSettings"
+msgstr "# 设置 AppX 包的自动更新设置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Configures a specific Windows App's Auto Update and Repair settings."
+msgstr "配置特定Windows应用程序的自动更新和修复设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### SetAutoUpdateOptionsSet (Default)"
+msgstr "### SetAutoUpdateOptionsSet（默认值）"
+
+msgid "### PauseAutoUpdateOptionsSet"
+msgstr "### PauseAutoUpdateOptionsSet"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Set-AppxPackageAutoUpdateSettings` cmdlet provides access to configure a specific Windows\n"
+"App's Auto Update and Repair setings."
+msgstr ""
+"`Set-AppxPackageAutoUpdateSettings` cmdlet 允许您配置特定 Windows 应用的自动更新和修复设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update the Auto Update settings for an App"
+msgstr "### 示例 1：更新某个应用的自动更新设置"
+
+msgid ""
+"This cmdlet will update the Auto Update settings of the `PackageName_8h66172c634n0` Windows App to\n"
+"target an AppInstaller file on a network accessible file share every two hours, displaying a prompt\n"
+"to the user. Allowing for the Windows App to update to any version (higher or lower) despite the\n"
+"version of the installed Windows App."
+msgstr ""
+"这个 cmdlet 会更新 `PackageName_8h66172c634n0` 这个 Windows "
+"应用的自动更新设置，使其每两小时从网络上可访问的文件共享位置下载应用程序安装文件（AppInstaller "
+"文件），同时向用户显示提示信息。这样一来，无论当前安装的 Windows "
+"应用版本如何，该应用都可以更新到任何其他版本的软件（无论是更高版本还是更低版本）。"
+
+msgid "### Example 2: Disable the Auto Repair setting for an App"
+msgstr "### 示例 2：禁用某个应用程序的自动修复功能"
+
+msgid "This cmdlet will disable the automatic repair of the Windows App."
+msgstr "这个cmdlet会禁用Windows应用程序的自动修复功能。"
+
+msgid "### Example 3: Pause Updates on a specific Windows App"
+msgstr "### 示例 3：暂停特定 Windows 应用的更新"
+
+msgid ""
+"This cmdlet will pause the Windows App from checking for App updates for "
+"`4320` hours (180 Days)."
+msgstr "此cmdlet将暂停Windows应用程序检查应用更新的功能，持续时间长达4320小时（即180天）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the duration of time in hours that the Windows App won't check for"
+" updates."
+msgstr "指定Windows应用程序在多少小时内不会检查更新。时间以小时为单位。"
+
+msgid "Specifies if the Windows App updates are to be paused."
+msgstr "指定是否需要暂停Windows应用程序的更新。"
+
+msgid ""
+"Specifies the Package Family Name of the Windows App which is being "
+"modified."
+msgstr "指定正在修改的Windows应用程序的包系列名称（Package Family Name）。"
+
+msgid ""
+"Specifies the location of the AppInstaller file targeted by this Windows "
+"App."
+msgstr "指定此Windows应用程序所针对的AppInstaller文件的位置。"
+
+msgid ""
+"Specifies that the Windows App will check for new updates when the App is "
+"launched."
+msgstr "该设置表示：当Windows应用程序启动时，会自动检查是否有新的更新可用。"
+
+msgid "Specifies any Dependency Packages being used by the Windows App."
+msgstr "指定Windows应用程序所使用的任何依赖包（Dependency Packages）。"
+
+msgid "Turns off the automatic repair of a broken Windows App."
+msgstr "关闭对损坏的Windows应用程序进行自动修复的功能。"
+
+msgid ""
+"Specifies that the automation of updating and repairing will occur as a "
+"background task."
+msgstr "指定更新和修复的自动化操作将以后台任务的形式进行。"
+
+msgid ""
+"Specifies that the next update of the Windows App can be of a higher or "
+"lower version."
+msgstr "指定Windows应用程序的下一次更新可以是更高版本，也可以是更低版本。"
+
+msgid ""
+"Specifies the time between update checks allowed for a specific Windows App."
+msgstr "指定特定 Windows 应用程序允许在两次更新检查之间的时间间隔。"
+
+msgid "Specifies the Optional Packages being used by the Windows App."
+msgstr "指定Windows应用程序所使用的可选软件包（Optional Packages）。"
+
+msgid ""
+"Specifies the location which will be sourced from when repairing the Windows"
+" App."
+msgstr "指定在修复Windows应用程序时将从中获取资源的位置。"
+
+msgid ""
+"Specifies that if any action is occurring for the Windows App, a prompt will"
+" be displayed."
+msgstr "指定如果Windows应用程序有任何操作发生，将会显示一个提示框。"
+
+msgid ""
+"Specifies that if an update is available for a Windows App, the App will prevent launching until the\n"
+"update has been installed."
+msgstr "该规定指出：如果某个Windows应用程序有可用的更新版本，那么在更新安装完成之前，该应用程序将无法被启动。"
+
+msgid ""
+"Specifies the location which will be sourced from when updating the Windows "
+"App."
+msgstr "指定在更新 Windows 应用程序时将从中获取资源的位置。"
+
+msgid ""
+"Specifies that an override can be applied to the Developer configured "
+"settings."
+msgstr "指定可以对开发者配置的设置进行覆盖（即修改原有的设置）。"
+
+msgid "Specifies the version of the Update Settings being applied."
+msgstr "指定所应用的“更新设置”（Update Settings）的版本号。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Package Manager API](http://go.microsoft.com/fwlink/?LinkId=245447)"
+msgstr "[包管理器 API](http://go.microsoft.com/fwlink/?LinkId=245447)"
+
+msgid ""
+"[How to Add and Remove Apps](http://go.microsoft.com/fwlink/?LinkID=231020)"
+msgstr "[如何添加和删除应用程序](http://go.microsoft.com/fwlink/?LinkID=231020)"
+
+msgid "[Get-AppxPackage](Get-AppxPackage.md)"
+msgstr "[Get-AppxPackage](Get-AppxPackage.md)"
+
+msgid "[Get-AppxPackageManifest](Get-AppxPackageManifest.md)"
+msgstr "[Get-AppxPackageManifest](Get-AppxPackageManifest.md)"
+
+msgid "[Move-AppxPackage](Move-AppxPackage.md)"
+msgstr "[Move-AppxPackage](Move-AppxPackage.md)"
+
+msgid "[Remove-AppxPackage](Remove-AppxPackage.md)"
+msgstr "[Remove-AppxPackage](Remove-AppxPackage.md)"

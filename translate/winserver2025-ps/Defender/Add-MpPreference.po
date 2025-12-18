@@ -1,0 +1,208 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:57:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "The Add-MpPreference cmdlet modifies settings for Windows Defender."
+msgstr "`Add-MpPreference` cmdlet 用于修改 Windows Defender 的设置。"
+
+msgid "# Add-MpPreference"
+msgstr "# Add-MpPreference"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Modifies settings for Windows Defender."
+msgstr "修改Windows Defender的设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-MpPreference` cmdlet modifies settings for Windows Defender. Use this cmdlet to add\n"
+"exclusions for file name extensions, paths, and processes, and to add default actions for high,\n"
+"moderate, and low threats."
+msgstr ""
+"`Add-MpPreference` cmdlet 用于修改 Windows Defender 的设置。您可以使用此 cmdlet "
+"为文件名扩展名、路径和进程添加排除规则，并为高风险、中等风险和低风险威胁设置默认处理方式。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a folder to the exclusion list"
+msgstr "### 示例 1：将一个文件夹添加到排除列表中"
+
+msgid ""
+"This command adds the folder C:\\Temp to the exclusion list.\n"
+"The command disables Windows Defender scheduled and real-time scanning for files in this folder."
+msgstr "这个命令将文件夹 C:\\Temp 添加到排除列表中，同时会禁用 Windows Defender 对该文件夹内文件的定时扫描和实时扫描功能。"
+
+msgid "### Example 2: Allow an application to access folders"
+msgstr "### 示例 2：允许应用程序访问文件夹"
+
+msgid ""
+"This command allows the specified application to make changes in controlled "
+"folders."
+msgstr "此命令允许指定的应用程序在受控文件夹中进行更改。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "将 cmdlet 作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Specifies the files and paths to exclude from attack surface reduction (ASR) rules. Specifies the\n"
+"folders or files and resources that should be excluded from ASR rules. Enter a folder path or a\n"
+"fully qualified resource name. For example, `C:\\Windows` excludes all files in that directory.\n"
+"`C:\\Windows\\App.exe` excludes only that specific file in that specific folder."
+msgstr ""
+"用于指定应从攻击面减少（ASR）规则中排除的文件和路径。这些文件或资源不应被ASR规则所影响。可以输入一个文件夹路径或一个完整的资源名称。例如，`C:\\Windows`会排除该目录中的所有文件；而`C:\\Windows\\App.exe`则仅排除该特定文件夹中的那个具体文件。"
+
+msgid ""
+"See the\n"
+"[ASR rules](/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules)\n"
+"topic for more information about excluding files and folders from ASR rules."
+msgstr ""
+"有关从自动语音识别（ASR）规则中排除文件和文件夹的更多信息，请参阅[ASR规则](/windows/security/threat-"
+"protection/microsoft-defender-atp/enable-attack-surface-reduction#exclude-"
+"files-and-folders-from-asr-rules)主题。"
+
+msgid ""
+"Specifies the states of attack surface reduction rules specified by using the\n"
+"**AttackSurfaceReductionRules_Ids** parameter. If you add multiple rules as a comma-separated list,\n"
+"specify their states separately as a comma-separated list."
+msgstr ""
+"使用 **AttackSurfaceReductionRules_Ids** "
+"参数指定攻击面缩减规则的状态。如果您添加了多条规则（以逗号分隔的列表形式），则需要分别以逗号分隔的列表形式指定这些规则的状态。"
+
+msgid ""
+"Specifies the IDs of attack surface reduction rules. Use the **AttackSurfaceReductionRules_Actions**\n"
+"parameter to specify the state for each rule. If you add multiple rules as a comma-separated list,\n"
+"specify their states separately as a comma-separated list."
+msgstr ""
+"指定用于减少攻击面的规则的ID。使用 **AttackSurfaceReductionRules_Actions** "
+"参数来为每条规则指定状态。如果您以逗号分隔的列表形式添加了多条规则，请分别为这些规则的状态也使用逗号分隔的列表进行指定。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)\n"
+"or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Specifies applications that can make changes in controlled folders."
+msgstr "指定可以在受控文件夹中进行更改的应用程序。"
+
+msgid "Specifies more folders to protect."
+msgstr "指定更多需要保护的文件夹。"
+
+msgid ""
+"Specifies an array of file name extensions, such as `obj` or `lib`, to exclude from scheduled, custom,\n"
+"and real-time scanning. This cmdlet adds these file name extensions to the exclusions."
+msgstr ""
+"指定一个文件扩展名数组（例如 `obj` 或 `lib`），以将这些文件排除在计划扫描、自定义扫描和实时扫描之外。此 cmdlet "
+"会将这些文件扩展名添加到排除列表中。"
+
+msgid ""
+"Specifies an array of IP addresses to exclude from scheduled and real-time "
+"scanning."
+msgstr "指定一个IP地址数组，这些地址将被排除在计划扫描和实时扫描之外。"
+
+msgid ""
+"Specifies an array of file paths to exclude from scheduled and real-time scanning.\n"
+"You can specify a folder to exclude all the files under the folder."
+msgstr "指定一个文件路径数组，这些文件路径应从计划扫描和实时扫描中排除。您可以指定一个文件夹，以排除该文件夹下的所有文件。"
+
+msgid ""
+"Specifies an array of processes, as paths to process images. This cmdlet excludes any files opened\n"
+"by the processes that you specify from scheduled and real-time scanning. Specifying this parameter\n"
+"excludes files opened by executable programs only. The cmdlet does not exclude the processes\n"
+"themselves. To exclude a process, specify it by using the **ExclusionPath** parameter."
+msgstr ""
+"用于指定一个进程数组，这些进程用于处理图像文件。此cmdlet会将从您指定的进程中打开的文件排除在计划扫描和实时扫描之外。需要注意的是，该参数仅排除由可执行程序打开的文件，并不会排除进程本身。如果您希望排除某个特定的进程，可以使用**ExclusionPath**参数来指定该进程的路径。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies an array of the actions to take for the IDs specified by using the\n"
+"**ThreatIDDefaultAction_Ids** parameter. The acceptable values for this parameter are:"
+msgstr "使用 **ThreatIDDefaultAction_Ids** 参数指定要针对这些 ID 执行的操作数组。该参数的可接受值为："
+
+msgid ""
+"Specifies an array of threat IDs.\n"
+"This cmdlet adds the default action for the threat IDs that you specify."
+msgstr "指定一个威胁ID数组。此cmdlet会为您指定的威胁ID添加默认的操作（即应对措施）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"指定可以同时执行的操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-MpPreference](./Get-MpPreference.md)"
+msgstr "[Get-MpPreference](./Get-MpPreference.md)"
+
+msgid "[Remove-MpPreference](./Remove-MpPreference.md)"
+msgstr "[Remove-MpPreference](./Remove-MpPreference.md)"
+
+msgid "[Set-MpPreference](./Set-MpPreference.md)"
+msgstr "[Set-MpPreference](./Set-MpPreference.md)"

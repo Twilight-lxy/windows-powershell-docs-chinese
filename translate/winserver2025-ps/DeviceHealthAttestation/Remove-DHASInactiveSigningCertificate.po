@@ -1,0 +1,99 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:16:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-DHASInactiveSigningCertificate"
+msgstr "# 删除不再使用的DHAS签名证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes the inactive signing certificate."
+msgstr "删除失效的签名证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-DHASInactiveSigningCertificate** cmdlet removes the inactive "
+"signing certificate for the Device Health Attestation service."
+msgstr ""
+"`Remove-DHASIncompleteSigningCertificate` 这个 cmdlet 用于移除设备健康验证（Device Health"
+" Attestation）服务中不再使用的签名证书。"
+
+msgid "You must have administrator rights to run this cmdlet."
+msgstr "您必须具有管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove the signing certificate"
+msgstr "### 示例 1：移除签名证书"
+
+msgid "This command removes the specified inactive signing certificate."
+msgstr "该命令会删除指定的无效签名证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不会要求用户确认。"
+
+msgid ""
+"Specifies the signing certificate thumbprint.\n"
+"The value must contain only hexadecimal digits (0-9, A-F) and be 40 characters in length.\n"
+"This value is case-insensitive."
+msgstr "指定签名证书的指纹（thumbprint）。该值必须仅包含十六进制数字（0-9、A-F），且长度为40个字符。此值不区分大小写。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-DHASInactiveSigningCertificate](./Get-"
+"DHASInactiveSigningCertificate.md)"
+msgstr ""
+"[Get-DHASInactiveSigningCertificate](./Get-"
+"DHASInactiveSigningCertificate.md)"

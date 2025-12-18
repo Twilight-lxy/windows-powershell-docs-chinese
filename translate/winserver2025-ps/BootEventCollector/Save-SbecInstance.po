@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:56:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Save-SbecInstance"
+msgstr "# 保存 Sbec 实例"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Writes in-memory buffers to disk."
+msgstr "将内存缓冲区中的数据写入磁盘。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Save-SbecInstance** cmdlet writes the in-memory buffers of the running"
+" Setup and Boot Event Collector to disk."
+msgstr ""
+"`Save-SbecInstance` cmdlet 将正在运行的 Setup 和 Boot Event Collector 的内存缓冲区数据写入磁盘。"
+
+msgid ""
+"When the command returns, the buffers of the forwarders in the Setup and "
+"Boot Event Collector are saved to disk, and thus all the data up to the "
+"point when the write request was received is saved to disk."
+msgstr ""
+"当命令执行完毕返回结果后，设置事件收集器（Setup Event Collector）和启动事件收集器（Boot Event "
+"Collector）中的转发器（forwarders）所持有的缓冲区数据会被保存到磁盘上；这样一来，所有在接收到写入请求之前的数据都会被完整地保存下来。"
+
+msgid "You must have the Builtin Administrator privilege to run this cmdlet."
+msgstr "你必须具有内置管理员（Built-in Administrator）权限才能运行此 cmdlet。"
+
+msgid "The alias for this cmdlet is **Flush-SbecInstance**."
+msgstr "这个cmdlet的别名是**Flush-SbecInstance**。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet, or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行相应的cmdlet。可以提供一个会话对象（例如`New-CimSession`或`Get-CimSession` "
+"cmdlet的输出结果），或者提供这些对象的数组。默认情况下，该cmdlet会在本地计算机上执行。有关更多信息，请参阅“About_CimSession”。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on MSDN."
+msgstr ""
+"指定您想要在其上执行操作的计算机的名称。您可以分别为每台计算机指定一个完全限定的域名（FQDN）、NetBIOS 名称或 IP "
+"地址。有关更多信息，请参阅 MSDN 上的 [Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None."
+msgstr "### 无。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecActiveConfig](./Get-SbecActiveConfig.md)"
+msgstr "[Get-SbecActiveConfig](./Get-SbecActiveConfig.md)"
+
+msgid "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+msgstr "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+
+msgid "[Stop-SbecInstance](./Stop-SbecInstance.md)"
+msgstr "[Stop-SbecInstance](./Stop-SbecInstance.md)"
+
+msgid "[Test-SbecActiveConfig](./Test-SbecActiveConfig.md)"
+msgstr "[Test-SbecActiveConfig](./Test-SbecActiveConfig.md)"
+
+msgid "[Test-SbecConfig](./Test-SbecConfig.md)"
+msgstr "[测试-SbecConfig配置](./Test-SbecConfig.md)"

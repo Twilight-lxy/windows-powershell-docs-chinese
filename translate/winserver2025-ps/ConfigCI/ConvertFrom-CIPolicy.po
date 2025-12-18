@@ -1,0 +1,91 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:33:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# ConvertFrom-CIPolicy"
+msgstr "# 将 CIP 政策转换为其他格式"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Converts an .xml file that contains a Code Integrity policy into binary "
+"format."
+msgstr "将包含代码完整性策略的.xml文件转换为二进制格式。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **ConvertFrom-CIPolicy** cmdlet converts an .xml file that contains a Code Integrity policy into binary format.\n"
+"You can install the binary version of a policy on a computer."
+msgstr ""
+"`ConvertFrom-CIPolicy` cmdlet 可将包含代码完整性策略的 `.xml` "
+"文件转换为二进制格式。您可以将该策略的二进制版本安装到计算机上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Converts a policy"
+msgstr "#### 示例 1：转换保险单"
+
+msgid ""
+"This command converts the policy in Policy03.xml into a binary named Policy03.bin.\n"
+"The console displays the full path of the binary file."
+msgstr "此命令会将 Policy03.xml 中的定义转换为名为 Policy03.bin 的二进制文件。控制台会显示该二进制文件的完整路径。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the path for the output converted policy binary file."
+msgstr "指定输出转换后的策略二进制文件的路径。"
+
+msgid "Specifies the path of the .xml policy file that this cmdlet converts."
+msgstr "指定该cmdlet要转换的.xml策略文件的路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-CIPolicy](./Get-CIPolicy.md)"
+msgstr "[Get-CIPolicy](./Get-CIPolicy.md)"
+
+msgid "[Merge-CIPolicy](./Merge-CIPolicy.md)"
+msgstr "[Merge-CIPolicy](./Merge-CIPolicy.md)"
+
+msgid "[New-CIPolicy](./New-CIPolicy.md)"
+msgstr "[New-CIPolicy](./New-CIPolicy.md)"

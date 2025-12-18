@@ -1,0 +1,212 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:49:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-RmsChildCert"
+msgstr "# Get-RmsChildCert"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Returns all child certificates from a parent certificate used in a user "
+"request for the AD RMS cluster."
+msgstr "从用于用户对 AD RMS 集群请求的父证书中返回所有子证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-RmsChildCert** cmdlet returns all issuance licenses from a parent "
+"client licensor certificate (CLC) or all end-user licenses (EULs) from a "
+"parent issuance license used in a user request on the Active Directory "
+"Rights Management Services (AD RMS) cluster."
+msgstr ""
+"`Get-RmsChildCert` cmdlet "
+"可以从父客户端许可证书（CLC）中获取所有发布的许可证，或者从用于用户请求的父发布许可证中获取所有最终用户许可证（EUL）。这些操作都是在 Active"
+" Directory 权限管理服务（AD RMS）集群中进行的。"
+
+msgid ""
+"To obtain licenses, specify the *ParentCertID* and *ParentCertType* of the parent certificate for which you want to retrieve child certificates and then set the *Path* parameter to the AD RMS provider drive path `<PSDrive>:\\`Report where `<PSDrive>` is the provider drive ID.\n"
+"You can also specify a relative path.\n"
+"For example, a dot (.) specifies the current location."
+msgstr ""
+"要获取许可证，请指定您希望从中检索子证书的父证书的 *ParentCertID* 和 *ParentCertType*，然后将 *Path* 参数设置为"
+" AD RMS 提供程序的驱动器路径 `<PSDrive>:\\`Report，其中 `<PSDrive>` 是提供程序的驱动器 "
+"ID。您也可以指定相对路径。例如，点（.）表示当前位置。"
+
+msgid ""
+"Use the **Get-RmsCertChain** cmdlet to obtain the *ParentCertID* and the *ParentCertType* of the certificate for which you to retrieve child certificates.\n"
+"The *ParentCertID* value returned is valid only for the cluster identified by the *Path* parameter of **Get-RmsCertChain**.\n"
+"You cannot use a *ParentCertID* to identify the same certificate in different clusters."
+msgstr ""
+"使用 `Get-RmsCertChain` cmdlet 来获取需要检索子证书的证书的 `ParentCertID` 和 "
+"`ParentCertType`。返回的 `ParentCertID` 值仅适用于由 `Get-RmsCertChain` 的 `Path` "
+"参数指定的集群。您不能使用同一个 `ParentCertID` 来标识不同集群中的同一证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all child certificates for a parent"
+msgstr "### 示例 1：获取某个父证书的所有子证书"
+
+msgid ""
+"This command returns all child certificates from a parent client licensor "
+"certificate."
+msgstr "该命令会返回父客户端许可证书（parent client licensor certificate）下的所有子证书。"
+
+msgid "### Example 2: Pass a certificate ID and get all child certificates"
+msgstr "### 示例 2：传递证书 ID 并获取所有子证书"
+
+msgid ""
+"This command stores a certificate obtained from the **Get-RmsCertChain** "
+"cmdlet in a variable and then uses that variable to pass the certificate ID "
+"and type to the **Get-RmsChildCert** cmdlet to return child certificates."
+msgstr ""
+"此命令将使用 **Get-RmsCertChain** cmdlet 获取的证书存储在一个变量中，然后利用该变量将证书ID和类型传递给 **Get-"
+"RmsChildCert** cmdlet，以获取子证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the end of a time period for a system health report.\n"
+"This parameter specifies a time value.\n"
+"See the description of the StartTime parameter for information on specifying a time."
+msgstr "用于指定系统健康报告的时间段的结束时间。此参数表示一个时间值。有关如何指定时间的详细信息，请参阅StartTime参数的说明。"
+
+msgid ""
+"Specifies the parent certificate for which child certificates are to be "
+"returned."
+msgstr "指定要返回子证书的父证书。"
+
+msgid ""
+"Specifies the type of parent certificate for which child certificates are to be returned.\n"
+"Possible values for this parameter are Client-Licensor-Certificate (or CLC) or Issuance-License (or IL)."
+msgstr ""
+"指定用于返回子证书的父证书类型。该参数的可能取值为“Client-Licensor-Certificate”（简称CLC）或“Issuance-"
+"License”（简称IL）。"
+
+msgid ""
+"Specifies a provider drive and path or relative path on the current drive.\n"
+"This parameter is required.\n"
+"Use a dot (.) to specify the current location.\n"
+"This parameter does not accept wildcards and has no default value."
+msgstr ""
+"指定一个提供程序驱动器及其路径，或者是当前驱动器上的相对路径。此参数是必需的。可以使用点（.）来表示当前位置。该参数不支持通配符，也没有默认值。"
+
+msgid ""
+"Specifies the beginning of a time period.\n"
+"This parameter specifies a time value."
+msgstr "指定一个时间段的开始点。此参数表示一个时间值。"
+
+msgid ""
+"The following examples show commonly-used syntax to specify a time.\n"
+"Time is assumed to be local time unless otherwise specified.\n"
+"When a time value is not specified, the time is assumed to 12:00:00 AM local time.\n"
+"When a date is not specified, the date is assumed to be the current date."
+msgstr ""
+"以下示例展示了用于指定时间的常用语法。除非另有说明，否则时间默认为当地时间。当没有指定时间值时，时间被假定为当天的凌晨12点（即12:00:00 "
+"AM）。当没有指定日期时，日期被假定为当前日期。"
+
+msgid "`4/17/2006`"
+msgstr "`2006年4月17日`"
+
+msgid "`Monday, April 17, 2006`"
+msgstr "2006年4月17日，星期一"
+
+msgid "`2:22:45 PM`"
+msgstr "下午2点22分45秒"
+
+msgid "`Monday, April 17, 2006 2:22:45 PM`"
+msgstr "2006年4月17日，星期一，下午2点22分45秒"
+
+msgid "These examples specify the same date and the time without the seconds."
+msgstr "这些示例指定了相同的日期和时间（但不包括秒数）。"
+
+msgid "`4/17/2006 2:22 PM`"
+msgstr "`2006年4月17日 下午2:22`"
+
+msgid "`Monday, April 17, 2006 2:22 PM`"
+msgstr "2006年4月17日，星期一，下午2点22分"
+
+msgid "`2:22 PM`"
+msgstr "下午2点22分"
+
+msgid ""
+"The following example shows how to specify a date and time by using the RFC1123 standard.\n"
+"This example defines time by using Greenwich Mean Time (GMT)."
+msgstr "以下示例展示了如何使用RFC1123标准来指定日期和时间。该示例以格林尼治标准时间（GMT）作为时间的参考基准。"
+
+msgid "`Mon, 17 Apr 2006 21:22:48 GMT`"
+msgstr "`2006年4月17日，星期一，21:22:48 GMT`"
+
+msgid ""
+"The following example shows how to specify a round-trip value as Coordinated Universal Time (UTC).\n"
+"This example represents Monday, April 17, 2006 at 2:22:48 PM UTC."
+msgstr "以下示例展示了如何将一个往返时间值指定为协调世界时（UTC）。该示例代表的是2006年4月17日星期一下午2点22分48秒（UTC时间）。"
+
+msgid "`2000-04-17T14:22:48.0000000`"
+msgstr "`2000-04-17T14:22:48.0000000`"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+
+msgid "[Get-RmsCertChain](./Get-RmsCertChain.md)"
+msgstr "[Get-RmsCertChain](./Get-RmsCertChain.md)"
+
+msgid "[Get-RmsCertInfo](./Get-RmsCertInfo.md)"
+msgstr "[Get-RmsCertInfo](./Get-RmsCertInfo.md)"
+
+msgid "[Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"
+msgstr "[Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"

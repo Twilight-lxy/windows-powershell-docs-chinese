@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:17:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DHASCertificateChainPolicy"
+msgstr "# Set-DHASCertificateChainPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets certificate chain policy."
+msgstr "设置证书链策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### SetCertificateChainPolicy (Default)"
+msgstr "### SetCertificateChainPolicy（默认值）"
+
+msgid "### SetCertificateChainPolicyComponents"
+msgstr "### SetCertificateChainPolicyComponents"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DHASCertificateChainPolicy** cmdlet sets the certificate chain policy that the Device Health Attestation service enforces.\n"
+"The certificate chain policy specifies parameters for certificate chain verification and revocation behavior."
+msgstr ""
+"`Set-DHASCertificateChainPolicy` cmdlet 用于设置设备健康验证（Device Health "
+"Attestation）服务所遵循的证书链策略。该证书链策略定义了证书链验证及相关撤销行为的参数。"
+
+msgid ""
+"You can specify a **CertificateChainPolicy** object to use as input, or alternatively, you can specify the components that comprise a **CertificateChainPolicy**.\n"
+"The components to specify as input are:"
+msgstr ""
+"您可以指定一个 `CertificateChainPolicy` 对象作为输入参数，或者也可以单独指定构成 "
+"`CertificateChainPolicy` 的各个组件。需要作为输入指定的组件包括："
+
+msgid "### Example 2: Set certificate chain policy with its components"
+msgstr "### 示例 2：设置证书链策略及其组成部分"
+
+msgid ""
+"This command modifies the certificate chain policy by specifying a value for"
+" each of its components."
+msgstr "此命令通过为证书链策略的每个组成部分指定一个值来修改该策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the certificate chain policy to use."
+msgstr "指定要使用的证书链策略。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies a .NET [X509RevocationFlag "
+"enumeration](https://go.microsoft.com/fwlink/?LinkId=821152)."
+msgstr ""
+"指定一个.NET [X509RevocationFlag "
+"枚举](https://go.microsoft.com/fwlink/?LinkId=821152)。"
+
+msgid ""
+"Specifies a .NET [X509RevocationMode "
+"enumeration](https://go.microsoft.com/fwlink/?LinkId=821153)."
+msgstr ""
+"指定一个.NET [X509RevocationMode "
+"枚举](https://go.microsoft.com/fwlink/?LinkId=821153)。"
+
+msgid ""
+"Specifies a .NET [TimeSpan "
+"structure](https://go.microsoft.com/fwlink/?LinkId=821155)."
+msgstr ""
+"指定一个.NET [TimeSpan 结构](https://go.microsoft.com/fwlink/?LinkId=821155)。"
+
+msgid ""
+"Specifies a .NET [X509VerificationFlags "
+"enumeration](https://go.microsoft.com/fwlink/?LinkId=821154)."
+msgstr ""
+"用于指定一个.NET [X509VerificationFlags "
+"枚举](https://go.microsoft.com/fwlink/?LinkId=821154)。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### CertificateChainPolicy"
+msgstr "### CertificateChainPolicy"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DHASCertificateChainPolicy](./Get-DHASCertificateChainPolicy.md)"
+msgstr "[Get-DHASCertificateChainPolicy](./Get-DHASCertificateChainPolicy.md)"

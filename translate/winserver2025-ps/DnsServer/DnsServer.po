@@ -1,0 +1,982 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 13:32:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# DnsServer Module"
+msgstr "# DnsServer 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all DNS Server cmdlets. It lists the cmdlets in alphabetical order based on the verb at the beginning of the cmdlet.\n"
+"DnsServer Module can be obtained either by installing DNS Server role or adding the DNS Server Tools part of Remote Server Administration Tools (RSAT) feature."
+msgstr ""
+"该参考文档提供了所有 DNS 服务器 cmdlet 的描述和语法信息。这些 cmdlet "
+"按照其开头所使用的动词（即命令的动词部分）按字母顺序排列。可以通过安装“DNS 服务器”角色，或者添加“远程服务器管理工具”（Remote Server"
+" Administration Tools, RSAT）中的“DNS 服务器工具”组件来获取 DnsServer 模块。"
+
+msgid "## DnsServer Cmdlets"
+msgstr "## DnsServer Cmdlets"
+
+msgid "### [Add-DnsServerClientSubnet](./Add-DnsServerClientSubnet.md)"
+msgstr "### [Add-DnsServerClientSubnet](./Add-DnsServerClientSubnet.md)"
+
+msgid "Adds a client subnet to a DNS server."
+msgstr "将一个客户端子网添加到DNS服务器中。"
+
+msgid ""
+"### [Add-DnsServerConditionalForwarderZone](./Add-"
+"DnsServerConditionalForwarderZone.md)"
+msgstr ""
+"### [Add-DnsServerConditionalForwarderZone](./Add-"
+"DnsServerConditionalForwarderZone.md)"
+
+msgid "Adds a conditional forwarder to a DNS server."
+msgstr "向DNS服务器添加一个条件转发器。"
+
+msgid ""
+"### [Add-DnsServerDirectoryPartition](./Add-DnsServerDirectoryPartition.md)"
+msgstr ""
+"### [Add-DnsServerDirectoryPartition](./Add-DnsServerDirectoryPartition.md)"
+
+msgid "Creates a DNS application directory partition."
+msgstr "创建一个DNS应用程序目录分区。"
+
+msgid "### [Add-DnsServerForwarder](./Add-DnsServerForwarder.md)"
+msgstr "### [Add-DnsServerForwarder](./Add-DnsServerForwarder.md)"
+
+msgid "Adds server level forwarders to a DNS server."
+msgstr "向DNS服务器添加服务器级转发器。"
+
+msgid "### [Add-DnsServerPrimaryZone](./Add-DnsServerPrimaryZone.md)"
+msgstr "### [Add-DnsServerPrimaryZone](./Add-DnsServerPrimaryZone.md)"
+
+msgid "Adds a primary zone to a DNS server."
+msgstr "向DNS服务器添加一个主区域。"
+
+msgid ""
+"### [Add-DnsServerQueryResolutionPolicy](./Add-"
+"DnsServerQueryResolutionPolicy.md)"
+msgstr ""
+"### [Add-DnsServerQueryResolutionPolicy](./Add-"
+"DnsServerQueryResolutionPolicy.md)"
+
+msgid "Adds a policy for query resolution to a DNS server."
+msgstr "为DNS服务器添加一个用于查询解析的策略。"
+
+msgid "### [Add-DnsServerRecursionScope](./Add-DnsServerRecursionScope.md)"
+msgstr "### [Add-DnsServerRecursionScope](./Add-DnsServerRecursionScope.md)"
+
+msgid "Adds a recursion scope on a DNS server."
+msgstr "在DNS服务器上添加一个递归作用域。"
+
+msgid "### [Add-DnsServerResourceRecord](./Add-DnsServerResourceRecord.md)"
+msgstr "### [Add-DnsServerResourceRecord](./Add-DnsServerResourceRecord.md)"
+
+msgid "Adds a resource record of a specified type to a specified DNS zone."
+msgstr "向指定的DNS区域添加一个指定类型的资源记录。"
+
+msgid "### [Add-DnsServerResourceRecordA](./Add-DnsServerResourceRecordA.md)"
+msgstr "### [Add-DnsServerResourceRecordA](./Add-DnsServerResourceRecordA.md)"
+
+msgid "Adds a type A resource record to a DNS zone."
+msgstr "向DNS区域中添加一个A类型的资源记录。"
+
+msgid ""
+"### [Add-DnsServerResourceRecordAAAA](./Add-DnsServerResourceRecordAAAA.md)"
+msgstr ""
+"### [Add-DnsServerResourceRecordAAAA](./Add-DnsServerResourceRecordAAAA.md)"
+
+msgid "Adds a type AAAA resource record to a DNS server."
+msgstr "向DNS服务器添加一个AAAA类型的资源记录。"
+
+msgid ""
+"### [Add-DnsServerResourceRecordCName](./Add-"
+"DnsServerResourceRecordCName.md)"
+msgstr ""
+"### [Add-DnsServerResourceRecordCName](./Add-"
+"DnsServerResourceRecordCName.md)"
+
+msgid "Adds a type CNAME resource record to a DNS  zone."
+msgstr "向DNS区域添加一个CNAME类型资源记录。"
+
+msgid ""
+"### [Add-DnsServerResourceRecordDnsKey](./Add-"
+"DnsServerResourceRecordDnsKey.md)"
+msgstr ""
+"### [Add-DnsServerResourceRecordDnsKey](./Add-"
+"DnsServerResourceRecordDnsKey.md)"
+
+msgid "Adds a type DNSKEY resource record to a DNS zone."
+msgstr "向DNS区域添加一种类型的DNSKEY资源记录。"
+
+msgid ""
+"### [Add-DnsServerResourceRecordDS](./Add-DnsServerResourceRecordDS.md)"
+msgstr ""
+"### [Add-DnsServerResourceRecordDS](./Add-DnsServerResourceRecordDS.md)"
+
+msgid "Adds a type DS resource record to a DNS zone."
+msgstr "向DNS区域添加一种类型为DS的资源记录。"
+
+msgid ""
+"### [Add-DnsServerResourceRecordMX](./Add-DnsServerResourceRecordMX.md)"
+msgstr ""
+"### [Add-DnsServerResourceRecordMX](./Add-DnsServerResourceRecordMX.md)"
+
+msgid "Adds an MX resource record to a DNS server."
+msgstr "向DNS服务器添加一个MX资源记录。"
+
+msgid ""
+"### [Add-DnsServerResourceRecordPtr](./Add-DnsServerResourceRecordPtr.md)"
+msgstr ""
+"### [Add-DnsServerResourceRecordPtr](./Add-DnsServerResourceRecordPtr.md)"
+
+msgid "Adds a type PTR resource record to a DNS server."
+msgstr "向DNS服务器添加一种类型为PTR的资源记录。"
+
+msgid ""
+"### [Add-DnsServerResponseRateLimitingExceptionlist](./Add-"
+"DnsServerResponseRateLimitingExceptionlist.md)"
+msgstr ""
+"### [Add-DnsServerResponseRateLimitingExceptionlist](./Add-"
+"DnsServerResponseRateLimitingExceptionlist.md)"
+
+msgid "Adds an RRL exception list on the DNS server."
+msgstr "在DNS服务器上添加一个RRL（Reverse Look-Up List，反向查找列表）异常列表。"
+
+msgid "### [Add-DnsServerRootHint](./Add-DnsServerRootHint.md)"
+msgstr "### [Add-DnsServerRootHint](./Add-DnsServerRootHint.md)"
+
+msgid "Adds root hints on a DNS server."
+msgstr "在DNS服务器上添加根提示（root hints）。"
+
+msgid "### [Add-DnsServerSecondaryZone](./Add-DnsServerSecondaryZone.md)"
+msgstr "### [Add-DnsServerSecondaryZone](./Add-DnsServerSecondaryZone.md)"
+
+msgid "Adds a DNS server secondary zone."
+msgstr "添加一个DNS服务器的辅助区域（secondary zone）。"
+
+msgid "### [Add-DnsServerSigningKey](./Add-DnsServerSigningKey.md)"
+msgstr "### [Add-DnsServerSigningKey](./Add-DnsServerSigningKey.md)"
+
+msgid "Adds a KSK or ZSK to a signed zone."
+msgstr "向已签名的区域添加KSK（Key Signing Key）或ZSK（Zone Signing Key）。"
+
+msgid "### [Add-DnsServerStubZone](./Add-DnsServerStubZone.md)"
+msgstr "### [Add-DnsServerStubZone](./Add-DnsServerStubZone.md)"
+
+msgid "Adds a DNS stub zone."
+msgstr "添加一个DNS存根区域（stub zone）。"
+
+msgid "### [Add-DnsServerTrustAnchor](./Add-DnsServerTrustAnchor.md)"
+msgstr "### [Add-DnsServerTrustAnchor](./Add-DnsServerTrustAnchor.md)"
+
+msgid "Adds a trust anchor to a DNS server."
+msgstr "向DNS服务器添加一个信任锚点。"
+
+msgid ""
+"### [Add-DnsServerVirtualizationInstance](./Add-"
+"DnsServerVirtualizationInstance.md)"
+msgstr ""
+"### [Add-DnsServerVirtualizationInstance](./Add-"
+"DnsServerVirtualizationInstance.md)"
+
+msgid "Adds a virtualization instance."
+msgstr "添加一个虚拟化实例。"
+
+msgid "### [Add-DnsServerZoneDelegation](./Add-DnsServerZoneDelegation.md)"
+msgstr "### [Add-DnsServerZoneDelegation](./Add-DnsServerZoneDelegation.md)"
+
+msgid "Adds a new delegated DNS zone to an existing zone."
+msgstr "向现有的DNS区域添加一个新的委托DNS区域。"
+
+msgid "### [Add-DnsServerZoneScope](./Add-DnsServerZoneScope.md)"
+msgstr "### [Add-DnsServerZoneScope](./Add-DnsServerZoneScope.md)"
+
+msgid "Adds a zone scope to an existing zone."
+msgstr "为现有的区域添加一个区域范围（zone scope）。"
+
+msgid ""
+"### [Add-DnsServerZoneTransferPolicy](./Add-DnsServerZoneTransferPolicy.md)"
+msgstr ""
+"### [Add-DnsServerZoneTransferPolicy](./Add-DnsServerZoneTransferPolicy.md)"
+
+msgid "Adds a zone transfer policy to a DNS server."
+msgstr "向DNS服务器添加一个区域传输策略。"
+
+msgid "### [Clear-DnsServerCache](./Clear-DnsServerCache.md)"
+msgstr "### [Clear-DnsServerCache](./Clear-DnsServerCache.md)"
+
+msgid "Clears resource records from a cache on the DNS server."
+msgstr "从DNS服务器的缓存中清除资源记录。"
+
+msgid "### [Clear-DnsServerStatistics](./Clear-DnsServerStatistics.md)"
+msgstr "### [Clear-DnsServerStatistics](./Clear-DnsServerStatistics.md)"
+
+msgid "Clears all DNS server statistics or statistics for zones."
+msgstr "清除所有DNS服务器的统计信息或各区域的统计信息。"
+
+msgid ""
+"### [ConvertTo-DnsServerPrimaryZone](./ConvertTo-DnsServerPrimaryZone.md)"
+msgstr "### [将 zone 转换为 DNS 服务器的主区域](./ConvertTo-DnsServerPrimaryZone.md)"
+
+msgid "Converts a zone to a DNS primary zone."
+msgstr "将某个区域转换为DNS主区域。"
+
+msgid ""
+"### [ConvertTo-DnsServerSecondaryZone](./ConvertTo-"
+"DnsServerSecondaryZone.md)"
+msgstr "### [将区域转换为DNS服务器的辅助区域](./ConvertTo-DnsServerSecondaryZone.md)"
+
+msgid "Converts a primary zone or stub zone to a secondary zone."
+msgstr "将主区域（primary zone）或存根区域（stub zone）转换为辅助区域（secondary zone）。"
+
+msgid "### [Disable-DnsServerPolicy](./Disable-DnsServerPolicy.md)"
+msgstr "### [Disable-DnsServerPolicy](./ Disable-DnsServerPolicy.md)"
+
+msgid "Disables DNS server policies."
+msgstr "禁用DNS服务器策略。"
+
+msgid ""
+"### [Disable-DnsServerSigningKeyRollover](./Disable-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"### [Disable-DnsServerSigningKeyRollover](./Disable-"
+"DnsServerSigningKeyRollover.md)"
+
+msgid "Disables key rollover on an input key."
+msgstr "禁用输入键上的按键悬停（鼠标悬停在按键上时显示相关信息的功能）。"
+
+msgid "### [Enable-DnsServerPolicy](./Enable-DnsServerPolicy.md)"
+msgstr "### [Enable-DnsServerPolicy](./Enable-DnsServerPolicy.md)"
+
+msgid "Enables DNS server policies."
+msgstr "启用DNS服务器策略。"
+
+msgid ""
+"### [Enable-DnsServerSigningKeyRollover](./Enable-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"### [Enable-DnsServer SigningKeyRollover](./Enable-"
+"DnsServerSigningKeyRollover.md)"
+
+msgid "Enables rollover on the input key."
+msgstr "启用对输入键的悬停功能（即当鼠标悬停在输入键上时发生的特定操作）。"
+
+msgid ""
+"### [Export-DnsServerDnsSecPublicKey](./Export-DnsServerDnsSecPublicKey.md)"
+msgstr ""
+"### [Export-DnsServerDnsSecPublicKey](./Export-DnsServerDnsSecPublicKey.md)"
+
+msgid "Exports DS and DNSKEY information for a DNSSEC-signed zone."
+msgstr "导出DNSSEC签名区域的DS和DNSKEY信息。"
+
+msgid "### [Export-DnsServerZone](./Export-DnsServerZone.md)"
+msgstr "### [Export-DnsServerZone](./Export-DnsServerZone.md)"
+
+msgid "Exports contents of a zone to a file."
+msgstr "将某个区域的内容导出到文件中。"
+
+msgid "### [Get-DnsServer](./Get-DnsServer.md)"
+msgstr "### [Get-DnsServer](./Get-DnsServer.md)"
+
+msgid "Retrieves a DNS server configuration."
+msgstr "检索DNS服务器配置信息。"
+
+msgid "### [Get-DnsServerCache](./Get-DnsServerCache.md)"
+msgstr "### [Get-DnsServerCache](./Get-DnsServerCache.md)"
+
+msgid "Retrieves DNS server cache settings."
+msgstr "检索DNS服务器缓存设置。"
+
+msgid "### [Get-DnsServerClientSubnet](./Get-DnsServerClientSubnet.md)"
+msgstr "### [Get-DnsServerClientSubnet](./Get-DnsServerClientSubnet.md)"
+
+msgid "Gets client subnets for a DNS server."
+msgstr "获取DNS服务器对应的客户端子网信息。"
+
+msgid "### [Get-DnsServerDiagnostics](./Get-DnsServerDiagnostics.md)"
+msgstr "### [Get-DnsServerDiagnostics](./Get-DnsServerDiagnostics.md)"
+
+msgid "Retrieves DNS event logging details."
+msgstr "检索DNS事件日志记录的详细信息。"
+
+msgid ""
+"### [Get-DnsServerDirectoryPartition](./Get-DnsServerDirectoryPartition.md)"
+msgstr ""
+"### [Get-DnsServerDirectoryPartition](./Get-DnsServerDirectoryPartition.md)"
+
+msgid "Gets a DNS application directory partition."
+msgstr "获取一个DNS应用程序目录分区。"
+
+msgid ""
+"### [Get-DnsServerDnsSecZoneSetting](./Get-DnsServerDnsSecZoneSetting.md)"
+msgstr ""
+"### [Get-DnsServerDnsSecZoneSetting](./Get-DnsServerDnsSecZoneSetting.md)"
+
+msgid "Gets DNSSEC settings for a zone."
+msgstr "获取某个区域的 DNSSEC 设置信息。"
+
+msgid "### [Get-DnsServerDsSetting](./Get-DnsServerDsSetting.md)"
+msgstr "### [Get-DnsServerDsSetting](./Get-DnsServerDsSetting.md)"
+
+msgid "Retrieves DNS Server Active Directory settings"
+msgstr "检索DNS服务器在Active Directory中的设置"
+
+msgid "### [Get-DnsServerEDns](./Get-DnsServerEDns.md)"
+msgstr "### [Get-DnsServerEDns](./Get-DnsServerEDns.md)"
+
+msgid "Gets EDNS configuration settings on a DNS server."
+msgstr "获取DNS服务器上的EDNS配置设置信息。"
+
+msgid "### [Get-DnsServerForwarder](./Get-DnsServerForwarder.md)"
+msgstr "### [Get-DnsServerForwarder](./Get-DnsServerForwarder.md)"
+
+msgid "Gets forwarder configuration settings on a DNS server."
+msgstr "获取DNS服务器上的转发器配置设置。"
+
+msgid "### [Get-DnsServerGlobalNameZone](./Get-DnsServerGlobalNameZone.md)"
+msgstr "### [Get-DnsServerGlobalNameZone](./Get-DnsServerGlobalNameZone.md)"
+
+msgid "Retrieves DNS server GlobalName zone configuration details."
+msgstr "检索DNS服务器的GlobalName区域配置详细信息。"
+
+msgid ""
+"### [Get-DnsServerGlobalQueryBlockList](./Get-"
+"DnsServerGlobalQueryBlockList.md)"
+msgstr ""
+"### [Get-DnsServerGlobalQueryBlockList](./Get-"
+"DnsServerGlobalQueryBlockList.md)"
+
+msgid "Gets a global query block list."
+msgstr "获取一个全局查询块列表。"
+
+msgid ""
+"### [Get-DnsServerQueryResolutionPolicy](./Get-"
+"DnsServerQueryResolutionPolicy.md)"
+msgstr ""
+"### [Get-DnsServerQueryResolutionPolicy](./Get-"
+"DnsServerQueryResolutionPolicy.md)"
+
+msgid "Gets policies for query resolution from a DNS server."
+msgstr "从DNS服务器获取用于查询解析的策略。"
+
+msgid "### [Get-DnsServerRecursion](./Get-DnsServerRecursion.md)"
+msgstr "### [Get-DnsServerRecursion](./Get-DnsServerRecursion.md)"
+
+msgid "Retrieves DNS server recursion settings."
+msgstr "检索DNS服务器的递归设置。"
+
+msgid "### [Get-DnsServerRecursionScope](./Get-DnsServerRecursionScope.md)"
+msgstr "### [Get-DnsServerRecursionScope](./Get-DnsServerRecursionScope.md)"
+
+msgid "Gets the DNS server recursion scopes."
+msgstr "获取DNS服务器的递归作用域（recursion scopes）。"
+
+msgid "### [Get-DnsServerResourceRecord](./Get-DnsServerResourceRecord.md)"
+msgstr "### [Get-DnsServerResourceRecord](./Get-DnsServerResourceRecord.md)"
+
+msgid "Gets resource records from a specified DNS zone."
+msgstr "从指定的DNS区域获取资源记录。"
+
+msgid ""
+"### [Get-DnsServerResponseRateLimiting](./Get-"
+"DnsServerResponseRateLimiting.md)"
+msgstr ""
+"### [Get-DnsServerResponseRateLimiting](./Get-"
+"DnsServerResponseRateLimiting.md)"
+
+msgid "Displays the RRL settings on a DNS server."
+msgstr "在DNS服务器上显示RRL（Real-Time Routing Layer）配置信息。"
+
+msgid ""
+"### [Get-DnsServerResponseRateLimitingExceptionlist](./Get-"
+"DnsServerResponseRateLimitingExceptionlist.md)"
+msgstr ""
+"### [Get-DnsServerResponseRateLimitingExceptionlist](./Get-"
+"DnsServerResponseRateLimitingExceptionlist.md)"
+
+msgid "Enumerates the RRL exception lists on a DNS Server."
+msgstr "枚举DNS服务器上的RRL异常列表。"
+
+msgid "### [Get-DnsServerRootHint](./Get-DnsServerRootHint.md)"
+msgstr "### [Get-DnsServerRootHint](./Get-DnsServerRootHint.md)"
+
+msgid "Gets root hints on a DNS server."
+msgstr "从DNS服务器获取根提示信息（root hints）。"
+
+msgid "### [Get-DnsServerScavenging](./Get-DnsServerScavenging.md)"
+msgstr "### [Get-DnsServerScavenging](./Get-DnsServerScavenging.md)"
+
+msgid "Gets DNS aging and scavenging settings."
+msgstr "获取DNS老化（ aged）和数据清除（scavenging）的相关设置。"
+
+msgid "### [Get-DnsServerSetting](./Get-DnsServerSetting.md)"
+msgstr "### [Get-DnsServerSetting](./Get-DnsServerSetting.md)"
+
+msgid "Retrieves DNS server settings."
+msgstr "检索DNS服务器设置。"
+
+msgid "### [Get-DnsServerSigningKey](./Get-DnsServerSigningKey.md)"
+msgstr "### [Get-DnsServerSigningKey](./Get-DnsServerSigningKey.md)"
+
+msgid "Gets zone signing keys."
+msgstr "获取区域签名密钥。"
+
+msgid "### [Get-DnsServerStatistics](./Get-DnsServerStatistics.md)"
+msgstr "### [Get-DnsServerStatistics](./Get-DnsServerStatistics.md)"
+
+msgid "Retrieves DNS server statistics or statistics for zones."
+msgstr "检索DNS服务器的统计数据或区域的统计数据。"
+
+msgid "### [Get-DnsServerTrustAnchor](./Get-DnsServerTrustAnchor.md)"
+msgstr "### [Get-DnsServerTrustAnchor](./Get-DnsServerTrustAnchor.md)"
+
+msgid "Gets trust anchors on a DNS server."
+msgstr "在DNS服务器上获取信任锚点（trust anchors）。"
+
+msgid "### [Get-DnsServerTrustPoint](./Get-DnsServerTrustPoint.md)"
+msgstr "### [Get-DnsServerTrustPoint](./Get-DnsServerTrustPoint.md)"
+
+msgid "Gets trust points on a DNS server."
+msgstr "在DNS服务器上获得信任点（即增加服务器的可信度）。"
+
+msgid ""
+"### [Get-DnsServerVirtualizationInstance](./Get-"
+"DnsServerVirtualizationInstance.md)"
+msgstr ""
+"### [Get-DnsServerVirtualizationInstance](./Get-"
+"DnsServerVirtualizationInstance.md)"
+
+msgid "Gets the virtualization instances on the DNS server."
+msgstr "获取DNS服务器上的虚拟化实例。"
+
+msgid "### [Get-DnsServerZone](./Get-DnsServerZone.md)"
+msgstr "### [Get-DnsServerZone](./Get-DnsServerZone.md)"
+
+msgid "Gets details of DNS zones on a DNS server."
+msgstr "获取DNS服务器上DNS区域的详细信息。"
+
+msgid "### [Get-DnsServerZoneAging](./Get-DnsServerZoneAging.md)"
+msgstr "### [Get-DnsServerZoneAging](./Get-DnsServerZoneAging.md)"
+
+msgid "Gets DNS aging settings for a zone."
+msgstr "获取某个区域的DNS老化设置（即DNS记录更新的时间间隔相关配置）。"
+
+msgid "### [Get-DnsServerZoneDelegation](./Get-DnsServerZoneDelegation.md)"
+msgstr "### [Get-DnsServerZoneDelegation](./Get-DnsServerZoneDelegation.md)"
+
+msgid "Gets the zone delegations of a DNS server zone."
+msgstr "获取DNS服务器区域的区域委托信息（zone delegations）。"
+
+msgid "### [Get-DnsServerZoneScope](./Get-DnsServerZoneScope.md)"
+msgstr "### [Get-DnsServerZoneScope](./Get-DnsServerZoneScope.md)"
+
+msgid "Gets the scopes of a zone on a DNS server."
+msgstr "获取DNS服务器上某个区域的权限范围（scope）。"
+
+msgid ""
+"### [Get-DnsServerZoneTransferPolicy](./Get-DnsServerZoneTransferPolicy.md)"
+msgstr ""
+"### [Get-DnsServerZoneTransferPolicy](./Get-DnsServerZoneTransferPolicy.md)"
+
+msgid "Gets the zone transfer policies on a DNS server."
+msgstr "获取DNS服务器上的区域转移策略信息。"
+
+msgid ""
+"### [Import-DnsServerResourceRecordDS](./Import-"
+"DnsServerResourceRecordDS.md)"
+msgstr ""
+"### [Import-DnsServerResourceRecordDS](./Import-"
+"DnsServerResourceRecordDS.md)"
+
+msgid "Imports DS resource record information from a file."
+msgstr "从文件中导入DS资源记录信息。"
+
+msgid "### [Import-DnsServerRootHint](./Import-DnsServerRootHint.md)"
+msgstr "### [Import-DnsServerRootHint](./Import-DnsServerRootHint.md)"
+
+msgid "Copies root hints from a DNS server."
+msgstr "从DNS服务器复制根提示信息。"
+
+msgid "### [Import-DnsServerTrustAnchor](./Import-DnsServerTrustAnchor.md)"
+msgstr "### [Import-DnsServerTrustAnchor](./Import-DnsServerTrustAnchor.md)"
+
+msgid "Imports a trust anchor for a DNS server."
+msgstr "导入用于DNS服务器的信任锚点。"
+
+msgid ""
+"### [Invoke-DnsServerSigningKeyRollover](./Invoke-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"### [Invoke-DnsServerSigningKeyRollover](./Invoke-"
+"DnsServerSigningKeyRollover.md)"
+
+msgid "Initiates rollover of signing keys for the zone."
+msgstr "启动该区域签名密钥的滚动更新（即定期替换或重新生成签名密钥）过程。"
+
+msgid "### [Invoke-DnsServerZoneSign](./Invoke-DnsServerZoneSign.md)"
+msgstr "### [Invoke-DnsServerZoneSign](./Invoke-DnsServerZoneSign.md)"
+
+msgid "Signs a DNS server zone."
+msgstr "用于签署DNS服务器区域文件。"
+
+msgid "### [Invoke-DnsServerZoneUnsign](./Invoke-DnsServerZoneUnsign.md)"
+msgstr "### [Invoke-DnsServerZoneUnsign](./Invoke-DnsServerZoneUnsign.md)"
+
+msgid "Unsigns a DNS server zone."
+msgstr "取消对DNS服务器区域的签名（即解绑该区域）。"
+
+msgid ""
+"### [Register-DnsServerDirectoryPartition](./Register-"
+"DnsServerDirectoryPartition.md)"
+msgstr ""
+"### [Register-DnsServerDirectoryPartition](./Register-"
+"DnsServerDirectoryPartition.md)"
+
+msgid "Registers a DNS server in a DNS application directory partition."
+msgstr "在DNS应用程序目录分区中注册一台DNS服务器。"
+
+msgid "### [Remove-DnsServerClientSubnet](./Remove-DnsServerClientSubnet.md)"
+msgstr "### [Remove-DnsServerClientSubnet](./Remove-DnsServerClientSubnet.md)"
+
+msgid "Removes a client subnet from a DNS server."
+msgstr "从DNS服务器中删除某个客户端子网。"
+
+msgid ""
+"### [Remove-DnsServerDirectoryPartition](./Remove-"
+"DnsServerDirectoryPartition.md)"
+msgstr ""
+"### [Remove-DnsServerDirectoryPartition](./Remove-"
+"DnsServerDirectoryPartition.md)"
+
+msgid "Removes a DNS application directory partition."
+msgstr "删除一个DNS应用程序目录分区。"
+
+msgid "### [Remove-DnsServerForwarder](./Remove-DnsServerForwarder.md)"
+msgstr "### [Remove-DnsServerForwarder](./Remove-DnsServerForwarder.md)"
+
+msgid "Removes server level forwarders from a DNS server."
+msgstr "从DNS服务器中删除服务器级别的转发器（forwarders）。"
+
+msgid ""
+"### [Remove-DnsServerQueryResolutionPolicy](./Remove-"
+"DnsServerQueryResolutionPolicy.md)"
+msgstr ""
+"### [Remove-DnsServerQueryResolutionPolicy](./Remove-"
+"DnsServerQueryResolutionPolicy.md)"
+
+msgid "Removes a policy for query resolution from a DNS server."
+msgstr "从DNS服务器中删除用于查询解析的策略。"
+
+msgid ""
+"### [Remove-DnsServerRecursionScope](./Remove-DnsServerRecursionScope.md)"
+msgstr ""
+"### [Remove-DnsServerRecursionScope](./Remove-DnsServerRecursionScope.md)"
+
+msgid "Removes a recursion scope from a DNS server."
+msgstr "从DNS服务器中移除一个递归作用域。"
+
+msgid ""
+"### [Remove-DnsServerResourceRecord](./Remove-DnsServerResourceRecord.md)"
+msgstr ""
+"### [Remove-DnsServerResourceRecord](./Remove-DnsServerResourceRecord.md)"
+
+msgid "Removes specified DNS server resource records from a zone."
+msgstr "从某个区域中删除指定的DNS服务器资源记录。"
+
+msgid ""
+"### [Remove-DnsServerResponseRateLimitingExceptionlist](./Remove-"
+"DnsServerResponseRateLimitingExceptionlist.md)"
+msgstr ""
+"### [Remove-DnsServerResponseRateLimitingExceptionlist](./Remove-"
+"DnsServerResponseRateLimitingExceptionlist.md)"
+
+msgid "Removes an RRL exception list from a DNS server."
+msgstr "从DNS服务器中删除RRL（Reverse Resolution List，反向解析列表）异常列表。"
+
+msgid "### [Remove-DnsServerRootHint](./Remove-DnsServerRootHint.md)"
+msgstr "### [Remove-DnsServerRootHint](./Remove-DnsServerRootHint.md)"
+
+msgid "Removes root hints from a DNS server."
+msgstr "从DNS服务器中移除根提示信息（即与根域名相关的标识信息）。"
+
+msgid "### [Remove-DnsServerSigningKey](./Remove-DnsServerSigningKey.md)"
+msgstr "### [Remove-DnsServerSigningKey](./Remove-DnsServerSigningKey.md)"
+
+msgid "Removes signing keys."
+msgstr "删除签名密钥。"
+
+msgid "### [Remove-DnsServerTrustAnchor](./Remove-DnsServerTrustAnchor.md)"
+msgstr "### [Remove-DnsServerTrustAnchor](./Remove-DnsServerTrustAnchor.md)"
+
+msgid "Removes a trust anchor from a DNS server."
+msgstr "从DNS服务器中删除一个信任锚点（trust anchor）。"
+
+msgid ""
+"### [Remove-DnsServerVirtualizationInstance](./Remove-"
+"DnsServerVirtualizationInstance.md)"
+msgstr ""
+"### [Remove-DnsServerVirtualizationInstance](./Remove-"
+"DnsServerVirtualizationInstance.md)"
+
+msgid "Removes a virtualization instance."
+msgstr "删除一个虚拟化实例。"
+
+msgid "### [Remove-DnsServerZone](./Remove-DnsServerZone.md)"
+msgstr "### [Remove-DnsServerZone](./Remove-DnsServerZone.md)"
+
+msgid "Removes a zone from a DNS server."
+msgstr "从DNS服务器中删除某个区域（zone）。"
+
+msgid ""
+"### [Remove-DnsServerZoneDelegation](./Remove-DnsServerZoneDelegation.md)"
+msgstr ""
+"### [Remove-DnsServerZoneDelegation](./Remove-DnsServerZoneDelegation.md)"
+
+msgid "Removes a name server or delegation from a DNS zone."
+msgstr "从DNS区域中删除名称服务器或委托记录。"
+
+msgid "### [Remove-DnsServerZoneScope](./Remove-DnsServerZoneScope.md)"
+msgstr "### [Remove-DnsServerZoneScope](./Remove-DnsServerZoneScope.md)"
+
+msgid "Removes a zone scope from an existing zone."
+msgstr "从现有的区域中移除某个区域范围（zone scope）。"
+
+msgid ""
+"### [Remove-DnsServerZoneTransferPolicy](./Remove-"
+"DnsServerZoneTransferPolicy.md)"
+msgstr ""
+"### [Remove-DnsServerZoneTransferPolicy](./Remove-"
+"DnsServerZoneTransferPolicy.md)"
+
+msgid "Removes a zone transfer policy from a DNS server."
+msgstr "从DNS服务器中删除区域传输策略。"
+
+msgid ""
+"### [Reset-DnsServerZoneKeyMasterRole](./Reset-"
+"DnsServerZoneKeyMasterRole.md)"
+msgstr ""
+"### [Reset-DnsServerZoneKeyMasterRole](./Reset-"
+"DnsServerZoneKeyMasterRole.md)"
+
+msgid "Transfers the role of Key Master for a DNS zone."
+msgstr "转移DNS区域的关键管理角色（Key Master的角色）。"
+
+msgid "### [Restore-DnsServerPrimaryZone](./Restore-DnsServerPrimaryZone.md)"
+msgstr "### [Restore-DnsServerPrimaryZone](./Restore-DnsServerPrimaryZone.md)"
+
+msgid ""
+"Restores primary DNS zone contents from Active Directory or from a file."
+msgstr "从 Active Directory 或文件中恢复主 DNS 区域的内容。"
+
+msgid ""
+"### [Restore-DnsServerSecondaryZone](./Restore-DnsServerSecondaryZone.md)"
+msgstr ""
+"### [ Restore-DnsServerSecondaryZone](./Restore-DnsServerSecondaryZone.md)"
+
+msgid "Restores secondary zone information from its source."
+msgstr "从源位置恢复次级区域的信息。"
+
+msgid "### [Resume-DnsServerZone](./Resume-DnsServerZone.md)"
+msgstr "### [Resume-DnsServerZone](./Resume-DnsServerZone.md)"
+
+msgid "Resumes name resolution on a suspended zone."
+msgstr "在已暂停的区域上恢复名称解析功能。"
+
+msgid "### [Set-DnsServer](./Set-DnsServer.md)"
+msgstr "### [Set-DnsServer](./Set-DnsServer.md)"
+
+msgid "Overwrites a DNS server configuration."
+msgstr "覆盖DNS服务器配置。"
+
+msgid "### [Set-DnsServerCache](./Set-DnsServerCache.md)"
+msgstr "### [Set-DnsServerCache](./Set-DnsServerCache.md)"
+
+msgid "Modifies cache settings for a DNS server."
+msgstr "修改DNS服务器的缓存设置。"
+
+msgid "### [Set-DnsServerClientSubnet](./Set-DnsServerClientSubnet.md)"
+msgstr "### [Set-DnsServerClientSubnet](./Set-DnsServerClientSubnet.md)"
+
+msgid "Updates the IP addresses in a client subnet."
+msgstr "更新客户端子网中的IP地址。"
+
+msgid ""
+"### [Set-DnsServerConditionalForwarderZone](./Set-"
+"DnsServerConditionalForwarderZone.md)"
+msgstr ""
+"### [Set-DnsServerConditionalForwarderZone](./Set-"
+"DnsServerConditionalForwarderZone.md)"
+
+msgid "Changes settings for a DNS conditional forwarder."
+msgstr "更改DNS条件转发器的设置。"
+
+msgid "### [Set-DnsServerDiagnostics](./Set-DnsServerDiagnostics.md)"
+msgstr "### [Set-DnsServerDiagnostics](./Set-DnsServerDiagnostics.md)"
+
+msgid "Sets debugging and logging parameters."
+msgstr "设置调试和日志记录参数。"
+
+msgid ""
+"### [Set-DnsServerDnsSecZoneSetting](./Set-DnsServerDnsSecZoneSetting.md)"
+msgstr ""
+"### [Set-DnsServerDnsSecZoneSetting](./Set-DnsServerDnsSecZoneSetting.md)"
+
+msgid "Changes settings for DNSSEC for a zone."
+msgstr "更改某个区域的DNSSEC相关设置。"
+
+msgid "### [Set-DnsServerDsSetting](./Set-DnsServerDsSetting.md)"
+msgstr "### [Set-DnsServerDsSetting](./Set-DnsServerDsSetting.md)"
+
+msgid "Modifies DNS Active Directory settings."
+msgstr "修改DNS和Active Directory的设置。"
+
+msgid "### [Set-DnsServerEDns](./Set-DnsServerEDns.md)"
+msgstr "### [Set-DnsServerEDns](./Set-DnsServerEDns.md)"
+
+msgid "Changes EDNS settings on a DNS server."
+msgstr "更改DNS服务器上的EDNS设置。"
+
+msgid "### [Set-DnsServerForwarder](./Set-DnsServerForwarder.md)"
+msgstr "### [Set-DnsServerForwarder](./Set-DnsServerForwarder.md)"
+
+msgid "Changes forwarder settings on a DNS server."
+msgstr "在DNS服务器上更改转发器的设置。"
+
+msgid "### [Set-DnsServerGlobalNameZone](./Set-DnsServerGlobalNameZone.md)"
+msgstr "### [Set-DnsServerGlobalNameZone](./Set-DnsServerGlobalNameZone.md)"
+
+msgid "Changes configuration settings for a GlobalNames zone."
+msgstr "更改 GlobalNames 区域的配置设置。"
+
+msgid ""
+"### [Set-DnsServerGlobalQueryBlockList](./Set-"
+"DnsServerGlobalQueryBlockList.md)"
+msgstr ""
+"### [Set-DnsServerGlobalQueryBlockList](./Set-"
+"DnsServerGlobalQueryBlockList.md)"
+
+msgid "Changes settings of a global query block list."
+msgstr "更改全局查询块列表的设置。"
+
+msgid "### [Set-DnsServerPrimaryZone](./Set-DnsServerPrimaryZone.md)"
+msgstr "### [Set-DnsServerPrimaryZone](./Set-DnsServerPrimaryZone.md)"
+
+msgid "Changes settings for a DNS primary zone."
+msgstr "更改DNS主区域的设置。"
+
+msgid ""
+"### [Set-DnsServerQueryResolutionPolicy](./Set-"
+"DnsServerQueryResolutionPolicy.md)"
+msgstr ""
+"### [Set-DnsServerQueryResolutionPolicy](./Set-"
+"DnsServerQueryResolutionPolicy.md)"
+
+msgid "Updates settings of a query resolution policy on a DNS server."
+msgstr "更新DNS服务器上查询解析策略的设置。"
+
+msgid "### [Set-DnsServerRecursion](./Set-DnsServerRecursion.md)"
+msgstr "### [Set-DnsServerRecursion](./Set-DnsServerRecursion.md)"
+
+msgid "Modifies recursion settings for a DNS server."
+msgstr "修改DNS服务器的递归设置。"
+
+msgid "### [Set-DnsServerRecursionScope](./Set-DnsServerRecursionScope.md)"
+msgstr "### [Set-DnsServerRecursionScope](./Set-DnsServerRecursionScope.md)"
+
+msgid "Modifies a recursion scope on a DNS server."
+msgstr "修改DNS服务器上的递归作用域（recursion scope）。"
+
+msgid "### [Set-DnsServerResourceRecord](./Set-DnsServerResourceRecord.md)"
+msgstr "### [Set-DnsServerResourceRecord](./Set-DnsServerResourceRecord.md)"
+
+msgid "Changes a resource record in a DNS zone."
+msgstr "修改DNS区域中的资源记录。"
+
+msgid ""
+"### [Set-DnsServerResourceRecordAging](./Set-"
+"DnsServerResourceRecordAging.md)"
+msgstr ""
+"### [Set-DnsServerResourceRecordAging](./Set-"
+"DnsServerResourceRecordAging.md)"
+
+msgid "Begins aging of resource records in a specified DNS zone."
+msgstr "指定DNS区域中的资源记录开始老化（即逐渐失去有效性）。"
+
+msgid ""
+"### [Set-DnsServerResponseRateLimiting](./Set-"
+"DnsServerResponseRateLimiting.md)"
+msgstr ""
+"### [Set-DnsServerResponseRateLimiting](./Set-"
+"DnsServerResponseRateLimiting.md)"
+
+msgid "Enables RRL on a DNS server."
+msgstr "在DNS服务器上启用RRL（Real-Time Load Balancing，实时负载均衡）功能。"
+
+msgid ""
+"### [Set-DnsServerResponseRateLimitingExceptionlist](./Set-"
+"DnsServerResponseRateLimitingExceptionlist.md)"
+msgstr ""
+"### [Set-DnsServerResponseRateLimitingExceptionlist](./Set-"
+"DnsServerResponseRateLimitingExceptionlist.md)"
+
+msgid "Updates the settings of an RRL exception list."
+msgstr "更新 RRL 异常列表的设置。"
+
+msgid "### [Set-DnsServerRootHint](./Set-DnsServerRootHint.md)"
+msgstr "### [Set-DnsServerRootHint](./Set-DnsServerRootHint.md)"
+
+msgid "Replaces a list of root hints."
+msgstr "用于替换一组根提示（root hints）。"
+
+msgid "### [Set-DnsServerScavenging](./Set-DnsServerScavenging.md)"
+msgstr "### [Set-DnsServerScavenging](./Set-DnsServerScavenging.md)"
+
+msgid "Changes DNS server scavenging settings."
+msgstr "更改DNS服务器扫描设置。"
+
+msgid "### [Set-DnsServerSecondaryZone](./Set-DnsServerSecondaryZone.md)"
+msgstr "### [Set-DnsServerSecondaryZone](./Set-DnsServerSecondaryZone.md)"
+
+msgid "Changes settings for a DNS secondary zone."
+msgstr "更改DNS备用区域的设置。"
+
+msgid "### [Set-DnsServerSetting](./Set-DnsServerSetting.md)"
+msgstr "### [Set-DnsServerSetting](./Set-DnsServerSetting.md)"
+
+msgid "Modifies DNS server settings."
+msgstr "修改DNS服务器设置。"
+
+msgid "### [Set-DnsServerSigningKey](./Set-DnsServerSigningKey.md)"
+msgstr "### [Set-DnsServerSigningKey](./Set-DnsServerSigningKey.md)"
+
+msgid "Changes settings of a signing key."
+msgstr "更改签名密钥的设置。"
+
+msgid "### [Set-DnsServerStubZone](./Set-DnsServerStubZone.md)"
+msgstr "### [Set-DnsServerStubZone](./Set-DnsServerStubZone.md)"
+
+msgid "Changes settings for a DNS server stub zone."
+msgstr "修改DNS服务器存根区域的设置。"
+
+msgid ""
+"### [Set-DnsServerVirtualizationInstance](./Set-"
+"DnsServerVirtualizationInstance.md)"
+msgstr ""
+"### [Set-DnsServerVirtualizationInstance](./Set-"
+"DnsServerVirtualizationInstance.md)"
+
+msgid "Updates the virtualization instance on the DNS server."
+msgstr "更新DNS服务器上的虚拟化实例。"
+
+msgid "### [Set-DnsServerZoneAging](./Set-DnsServerZoneAging.md)"
+msgstr "### [Set-DnsServerZoneAging](./Set-DnsServerZoneAging.md)"
+
+msgid "Configures DNS aging settings for a zone."
+msgstr "为某个区域配置DNS老化设置（即DNS记录的过期时间相关设置）。"
+
+msgid "### [Set-DnsServerZoneDelegation](./Set-DnsServerZoneDelegation.md)"
+msgstr "### [Set-DnsServerZoneDelegation](./Set-DnsServerZoneDelegation.md)"
+
+msgid "Changes delegation settings for a child zone."
+msgstr "更改子区域的委托设置。"
+
+msgid ""
+"### [Set-DnsServerZoneTransferPolicy](./Set-DnsServerZoneTransferPolicy.md)"
+msgstr ""
+"### [Set-DnsServerZoneTransferPolicy](./Set-DnsServerZoneTransferPolicy.md)"
+
+msgid "Updates a zone transfer policy on a DNS server."
+msgstr "在DNS服务器上更新区域传输策略。"
+
+msgid "### [Show-DnsServerCache](./Show-DnsServerCache.md)"
+msgstr "### [Show-DnsServerCache](./Show-DnsServerCache.md)"
+
+msgid "Shows the records in a DNS Server Cache."
+msgstr "显示DNS服务器缓存中的记录。"
+
+msgid ""
+"### [Show-DnsServerKeyStorageProvider](./Show-"
+"DnsServerKeyStorageProvider.md)"
+msgstr ""
+"### [Show-DnsServerKeyStorageProvider](./Show-"
+"DnsServerKeyStorageProvider.md)"
+
+msgid "Returns a list of key storage providers."
+msgstr "返回一个关键存储提供商的列表。"
+
+msgid "### [Start-DnsServerScavenging](./Start-DnsServerScavenging.md)"
+msgstr "### [开始DNS服务器信息收集过程](./Start-DnsServerScavenging.md)"
+
+msgid "Notifies a DNS server to attempt a search for stale resource records."
+msgstr "通知DNS服务器尝试查找过期的资源记录。"
+
+msgid "### [Start-DnsServerZoneTransfer](./Start-DnsServerZoneTransfer.md)"
+msgstr "### [Start-DnsServerZoneTransfer](./Start-DnsServerZoneTransfer.md)"
+
+msgid "Starts a zone transfer for a secondary DNS zone from master servers."
+msgstr "从主服务器开始对辅助DNS区域进行区域传输（zone transfer）操作。"
+
+msgid ""
+"### [Step-DnsServerSigningKeyRollover](./Step-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"### [Step-DnsServerSigningKeyRollover](./Step-"
+"DnsServerSigningKeyRollover.md)"
+
+msgid "Rolls over a KSK that is waiting for a parent DS update."
+msgstr "该过程会覆盖一个正在等待父DS更新的KSK（Key Signing Key）。"
+
+msgid "### [Suspend-DnsServerZone](./Suspend-DnsServerZone.md)"
+msgstr "### [Suspend-DnsServerZone](./Suspend-DnsServerZone.md)"
+
+msgid "Suspends a zone on a DNS server."
+msgstr "在DNS服务器上暂停某个区域的解析服务。"
+
+msgid "### [Sync-DnsServerZone](./Sync-DnsServerZone.md)"
+msgstr "### [Sync-DnsServerZone](./Sync-DnsServerZone.md)"
+
+msgid ""
+"Checks the DNS server memory for changes, and writes them to persistent "
+"storage."
+msgstr "检查DNS服务器内存中的变化，并将这些变化写入持久存储介质中。"
+
+msgid "### [Test-DnsServer](./Test-DnsServer.md)"
+msgstr "### [Test-DnsServer](./Test-DnsServer.md)"
+
+msgid "Tests that a specified computer is a functioning DNS server."
+msgstr "测试指定的计算机是否能够正常运行作为DNS服务器的功能。"
+
+msgid ""
+"### [Test-DnsServerDnsSecZoneSetting](./Test-DnsServerDnsSecZoneSetting.md)"
+msgstr ""
+"### [Test-DnsServerDnsSecZoneSetting](./Test-DnsServerDnsSecZoneSetting.md)"
+
+msgid "Validates DNSSEC settings for a zone."
+msgstr "验证某个区域的 DNSSEC 设置是否正确。"
+
+msgid ""
+"### [Unregister-DnsServerDirectoryPartition](./Unregister-"
+"DnsServerDirectoryPartition.md)"
+msgstr ""
+"### [Unregister-DnsServerDirectoryPartition](./Unregister-"
+"DnsServerDirectoryPartition.md)"
+
+msgid "Deregisters a DNS server from a DNS application directory partition."
+msgstr "将DNS服务器从DNS应用程序目录分区中注销（即停止将其注册为可使用的DNS服务器）。"
+
+msgid "### [Update-DnsServerTrustPoint](./Update-DnsServerTrustPoint.md)"
+msgstr "### [Update-DnsServerTrustPoint](./Update-DnsServerTrustPoint.md)"
+
+msgid "Updates all trust points in a DNS trust anchor zone."
+msgstr "更新DNS信任锚区域中的所有信任点。"

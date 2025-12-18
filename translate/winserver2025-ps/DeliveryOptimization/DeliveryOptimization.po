@@ -1,0 +1,166 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:10:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# DeliveryOptimization Module"
+msgstr "# 交付优化模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "## DeliveryOptimization Cmdlets"
+msgstr "## DeliveryOptimizationCmdlets"
+
+msgid ""
+"### [Delete-DeliveryOptimizationCache](Delete-DeliveryOptimizationCache.md)"
+msgstr ""
+"### [Delete-DeliveryOptimizationCache](Delete-DeliveryOptimizationCache.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Disable-DeliveryOptimizationVerboseLogs](Disable-"
+"DeliveryOptimizationVerboseLogs.md)"
+msgstr ""
+"### [ Disable-DeliveryOptimizationVerboseLogs](Disable-"
+"DeliveryOptimizationVerboseLogs.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid ""
+"### [Enable-DeliveryOptimizationVerboseLogs](Enable-"
+"DeliveryOptimizationVerboseLogs.md)"
+msgstr ""
+"### [Enable-DeliveryOptimizationVerboseLogs](Enable-"
+"DeliveryOptimizationVerboseLogs.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Get-DeliveryOptimizationPerfSnap](Get-DeliveryOptimizationPerfSnap.md)"
+msgstr ""
+"### [Get-DeliveryOptimizationPerfSnap](Get-DeliveryOptimizationPerfSnap.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid ""
+"### [Get-DeliveryOptimizationPerfSnapThisMonth](Get-"
+"DeliveryOptimizationPerfSnapThisMonth.md)"
+msgstr ""
+"### [Get-DeliveryOptimizationPerfSnapThisMonth](Get-"
+"DeliveryOptimizationPerfSnapThisMonth.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Get-DeliveryOptimizationStatus](Get-DeliveryOptimizationStatus.md)"
+msgstr ""
+"### [Get-DeliveryOptimizationStatus](Get-DeliveryOptimizationStatus.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-DOConfig](Get-DOConfig.md)"
+msgstr "### [Get-DOConfig](Get-DOConfig.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-DODownloadMode](Get-DODownloadMode.md)"
+msgstr "### [Get-DODownloadMode](Get-DODownloadMode.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Get-DOPercentageMaxBackgroundBandwidth](Get-"
+"DOPercentageMaxBackgroundBandwidth.md)"
+msgstr ""
+"### [Get-DOPercentageMaxBackgroundBandwidth](Get-"
+"DOPercentageMaxBackgroundBandwidth.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid ""
+"### [Get-DOPercentageMaxForegroundBandwidth](Get-"
+"DOPercentageMaxForegroundBandwidth.md)"
+msgstr ""
+"### [Get-DOPercentageMaxForegroundBandwidth](Get-"
+"DOPercentageMaxForegroundBandwidth.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Set-DeliveryOptimizationStatus](Set-DeliveryOptimizationStatus.md)"
+msgstr ""
+"### [Set-DeliveryOptimizationStatus](Set-DeliveryOptimizationStatus.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Set-DODownloadMode](Set-DODownloadMode.md)"
+msgstr "### [Set-DODownloadMode](Set-DODownloadMode.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-DOMaxBackgroundBandwidth](Set-DOMaxBackgroundBandwidth.md)"
+msgstr "### [Set-DOMaxBackgroundBandwidth](Set-DOMaxBackgroundBandwidth.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-DOMaxForegroundBandwidth](Set-DOMaxForegroundBandwidth.md)"
+msgstr "### [Set-DOMaxForegroundBandwidth](Set-DOMaxForegroundBandwidth.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Set-DOPercentageMaxBackgroundBandwidth](Set-"
+"DOPercentageMaxBackgroundBandwidth.md)"
+msgstr ""
+"### [Set-DOPercentageMaxBackgroundBandwidth](Set-"
+"DOPercentageMaxBackgroundBandwidth.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid ""
+"### [Set-DOPercentageMaxForegroundBandwidth](Set-"
+"DOPercentageMaxForegroundBandwidth.md)"
+msgstr ""
+"### [Set-DOPercentageMaxForegroundBandwidth](Set-"
+"DOPercentageMaxForegroundBandwidth.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Get-DeliveryOptimizationLog](Get-DeliveryOptimizationLog.md)"
+msgstr "### [Get-DeliveryOptimizationLog](Get-DeliveryOptimizationLog.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Get-DeliveryOptimizationLogAnalysis](Get-"
+"DeliveryOptimizationLogAnalysis.md)"
+msgstr ""
+"### [Get-DeliveryOptimizationLogAnalysis](Get-"
+"DeliveryOptimizationLogAnalysis.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"

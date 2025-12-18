@@ -1,0 +1,123 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:37:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-CIPolicyIdInfo"
+msgstr "# Set-CIPolicyIdInfo"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Modifies the name and ID of a Code Integrity policy."
+msgstr "修改代码完整性策略的名称和ID。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-CIPolicyIdInfo** cmdlet modifies the policy name and policy ID of a Code Integrity policy.\n"
+"Specify the .xml file of the policy to modify.\n"
+"Event Tracing for Windows (ETW) events use the **PolicyID** and **Name** properties to identify which policy is currently running on a computer."
+msgstr ""
+"`Set-CIPolicyIdInfo` cmdlet 用于修改代码完整性（Code Integrity）策略的名称和策略 "
+"ID。需要指定要修改的策略对应的 .xml 文件。Windows 事件跟踪（Event Tracing, ETW）会使用 `PolicyID` 和 "
+"`Name` 属性来识别当前在计算机上运行的策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify the ID and name of a policy"
+msgstr "### 示例 1：修改策略的 ID 和名称"
+
+msgid ""
+"This command modifies the policy ID and the policy name for the policy "
+"stored in the Policy03.xml file."
+msgstr "该命令会修改存储在 Policy03.xml 文件中的策略的策略ID和策略名称。"
+
+msgid "### Example 2: Modify the name of a policy"
+msgstr "### 示例 2：修改策略的名称"
+
+msgid ""
+"This command modifies only the policy name for the policy stored in the "
+"Policy03.xml file."
+msgstr "此命令仅修改存储在Policy03.xml文件中的策略的名称。"
+
+msgid "### Example 3: Specify the base policy ID of a supplemental policy"
+msgstr "### 示例 3：指定补充策略的基础策略 ID"
+
+msgid ""
+"This command will extract the PolicyID field from the Base_Policy.xml file "
+"and modify the BasePolicyID field in the Supplemental_Policy.xml file."
+msgstr ""
+"这个命令将从 Base_Policy.xml 文件中提取 PolicyID 字段，并修改 Supplementary_Policy.xml 文件中的 "
+"BasePolicyID 字段。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the path to a base policy to get the value for the "
+"**BasePolicyID** property for a supplemental policy."
+msgstr "指定基础策略的路径，以便获取补充策略的 **BasePolicyID** 属性的值。"
+
+msgid "Specifies the path of a Code Integrity policy .xml file."
+msgstr "指定代码完整性策略（Code Integrity policy）的.xml文件的路径。"
+
+msgid ""
+"Specifies the value for the **PolicyID** property.\n"
+"This string is not required to be a GUID."
+msgstr "指定 **PolicyID** 属性的值。该字符串不一定是 GUID（通用唯一标识符）。"
+
+msgid "Specifies the value for the **Name** property."
+msgstr "指定**Name**属性的值。"
+
+msgid ""
+"Resets both the PolicyID and BasePolicyID values. This parameter will "
+"convert a single-policy format policy to multi-policy format."
+msgstr "将 PolicyID 和 BasePolicyID 的值都重置为初始状态。该参数用于将采用单策略格式的保险政策转换为多策略格式。"
+
+msgid ""
+"Specifies the value for the **BasePolicyID** property for a supplemental "
+"policy."
+msgstr "为补充策略指定 **BasePolicyID** 属性的值。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-CIPolicyIdInfo](./Get-CIPolicyIdInfo.md)"
+msgstr "[Get-CIPolicyIdInfo](./Get-CIPolicyIdInfo.md)"

@@ -1,0 +1,56 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:27:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# BestPractices Module"
+msgstr "# 最佳实践模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all -specific "
+"cmdlets. It lists the cmdlets in alphabetical order based on the verb at the"
+" beginning of the cmdlet."
+msgstr ""
+"本参考资料提供了所有与 `-` 相关的 cmdlet 的描述和语法信息。这些 cmdlet 按照其开头所使用的动词（即命令行为）的字母顺序进行排列。"
+
+msgid "## BestPractices Cmdlets"
+msgstr "## BestPracticesCmdlets"
+
+msgid "### [Get-BpaModel](./Get-BpaModel.md)"
+msgstr "### [Get-BpaModel](./Get-BpaModel.md)"
+
+msgid "Retrieves and displays the list of BPA models installed on the system."
+msgstr "检索并显示系统中安装的所有BPA模型列表。"
+
+msgid "### [Get-BpaResult](./Get-BpaResult.md)"
+msgstr "### [Get-BpaResult](./Get-BpaResult.md)"
+
+msgid ""
+"Retrieves and displays the results of the most recent Best Practices "
+"Analyzer (BPA) scan for a specific model."
+msgstr "检索并显示针对特定模型最近进行的最佳实践分析器（Best Practices Analyzer，简称BPA）扫描的结果。"
+
+msgid "### [Invoke-BpaModel](./Invoke-BpaModel.md)"
+msgstr "### [Invoke-BpaModel](./Invoke-BpaModel.md)"
+
+msgid ""
+"Starts a BPA scan for a specific model that is installed on a computer."
+msgstr "开始对计算机上安装的特定模型进行BPA（Business Process Analysis，业务流程分析）扫描。"
+
+msgid "### [Set-BpaResult](./Set-BpaResult.md)"
+msgstr "### [Set-BpaResult](./Set-BpaResult.md)"
+
+msgid ""
+"Excludes or includes existing results of a BPA scan to display only the "
+"specified scan results."
+msgstr "排除或包含BPA扫描的现有结果，仅显示指定的扫描结果。"

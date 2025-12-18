@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:56:59 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Save-SbecLogSession"
+msgstr "# 保存 SbecLogSession"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Flushes the buffers in a log session to disk."
+msgstr "将日志会话中的缓冲区数据刷新到磁盘上。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Object"
+msgstr "### 对象"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Save-SbecLogSession** cmdlet flushes the buffers in a log session to disk.\n"
+"The session may be identified either by name or as an object."
+msgstr "`Save-SbecLogSession` cmdlet 将日志会话中的缓冲区内容刷新到磁盘上。该会话可以通过名称或对象来标识。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an array of session names."
+msgstr "指定一个会话名称数组。"
+
+msgid "Specifies an array of **SbecEtwTrace.TraceSessionInfo** objects."
+msgstr "指定一个包含 **SbecEtwTrace.TraceSessionInfo** 对象的数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### SbecEtwTrace.TraceSessionInfo"
+msgstr "### SbecEtwTrace.TraceSessionInfo"
+
+msgid ""
+"This cmdlet accepts **SbecEtwTrace.TraceSessionInfo** objects as the "
+"sessions to flush the buffers on."
+msgstr "此 cmdlet 接受 **SbecEtwTrace TRACESessionInfo** 对象作为需要刷新缓冲区的会话。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None."
+msgstr "### 没有（需要特别说明的内容）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+msgstr "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+
+msgid "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+msgstr "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+
+msgid "[Start-SbecLogSession](./Start-SbecLogSession.md)"
+msgstr "[Start-SbecLogSession](./Start-SbecLogSession.md)"
+
+msgid "[Start-SbecSimpleLogSession](./Start-SbecSimpleLogSession.md)"
+msgstr "[开始 SbecSimpleLogSession 会话](./Start-SbecSimpleLogSession.md)"
+
+msgid "[Start-SbecNtKernelLogSession](./Start-SbecNtKernelLogSession.md)"
+msgstr "[开始 SbecNtKernelLogSession 会话](./Start-SbecNtKernelLogSession.md)"
+
+msgid "[Stop-SbecLogSession](./Stop-SbecLogSession.md)"
+msgstr "[Stop-SbecLogSession](./Stop-SbecLogSession.md)"

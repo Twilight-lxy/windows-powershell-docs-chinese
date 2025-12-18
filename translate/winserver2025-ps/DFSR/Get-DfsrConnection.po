@@ -1,0 +1,114 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:36:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrConnection"
+msgstr "# Get-DfsrConnection"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets a connection between DFS Replication partners."
+msgstr "建立DFS复制伙伴之间的连接。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfsrConnection** cmdlet gets an existing connection between two "
+"Distributed File System (DFS) Replication partners."
+msgstr "`Get-DfsrConnection` cmdlet 可用于获取两个分布式文件系统（DFS）复制伙伴之间的现有连接。"
+
+msgid ""
+"DFS Replication connections are the logical partnerships between members in a replication group.\n"
+"The DFS Replication service uses the Remote Procedure Call (RPC) protocol to communicate between servers."
+msgstr "DFS复制连接是复制组中各成员之间的逻辑关联。DFS复制服务使用远程过程调用（RPC）协议在服务器之间进行通信。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a one-way connection between computers"
+msgstr "### 示例 1：在计算机之间建立单向连接"
+
+msgid ""
+"This command gets the one-way connection from the computer named SRV01 to "
+"the computer named SRV02 in the RG24 replication group."
+msgstr "此命令用于建立从名为 SRV01 的计算机到名为 SRV02 的计算机之间的单向连接，该连接属于 RG24 复制组。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the receiving computer.\n"
+"A receiving computer is also called an inbound or downstream computer."
+msgstr "指定接收计算机的名称。接收计算机也被称为入站计算机或下游计算机。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Specifies the name of the sending computer.\n"
+"A sending computer is also called an outbound or upstream computer."
+msgstr "指定发送计算机的名称。发送计算机也被称为出站计算机或上游计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrConnection"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrConnection"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DfsrConnection](./Add-DfsrConnection.md)"
+msgstr "[Add-DfsrConnection](./Add-DfsrConnection.md)"
+
+msgid "[Set-DfsrConnection](./Set-DfsrConnection.md)"
+msgstr "[Set-DfsrConnection](./Set-DfsrConnection.md)"
+
+msgid "[Remove-DfsrConnection](./Remove-DfsrConnection.md)"
+msgstr "[Remove-DfsrConnection](./Remove-DfsrConnection.md)"

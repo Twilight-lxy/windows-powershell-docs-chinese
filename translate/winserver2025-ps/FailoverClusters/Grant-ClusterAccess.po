@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:06:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this article to help manage Windows and Windows Server technologies with"
+" Windows PowerShell."
+msgstr "利用这篇文章来帮助您使用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Grant-ClusterAccess"
+msgstr "# 授予集群访问权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Grants access to a failover cluster, either full access or read-only access."
+msgstr "授予对故障转移集群的访问权限，可以是完全访问权限，也可以是只读访问权限。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Grant-ClusterAccess` cmdlet grants access to a failover cluster, either full access or\n"
+"read-only access. To provide someone with read-only access to the cluster, use the **ReadOnly**\n"
+"parameter. Granting full access to the cluster is equivalent to granting full access to each of the\n"
+"cluster nodes."
+msgstr ""
+"`Grant-ClusterAccess` cmdlet "
+"可以授予对故障转移集群的访问权限，包括完全访问权或仅读访问权。若要为某人提供仅读访问权限，请使用 **ReadOnly** "
+"参数。授予集群完全访问权限等同于同时授予该集群中每个节点的完全访问权限。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example grants full access to the local cluster to `johnj99` in the "
+"`contoso` domain."
+msgstr "这个示例为位于 `contoso` 域中的用户 `johnj99` 授予了对本地集群的完全访问权限。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example grants read-only access to the local cluster to `johnj99` in "
+"the `contoso` domain."
+msgstr "这个示例为属于“contoso”域的“johnj99”用户授予了对本地集群的只读访问权限。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies that the user gets full cluster access. If no access level is specified, then the user\n"
+"gets read-only cluster access."
+msgstr "指定用户具有对整个集群的完全访问权限。如果没有指定访问级别，则用户仅具有只读权限。"
+
+msgid "Specifies the cluster on which to grant access for the given user."
+msgstr "指定要授予给该用户访问权限的集群。"
+
+msgid ""
+"Specifies that the user gets read-only cluster access. If no access level is specified, then the\n"
+"user gets read-only cluster access."
+msgstr "指定用户具有只读集群访问权限。如果没有指定访问级别，则用户将获得只读集群访问权限。"
+
+msgid "Specifies the user for whom to grant cluster access."
+msgstr "指定要授予集群访问权限的用户。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell_cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Block-ClusterAccess](./Block-ClusterAccess.md)"
+msgstr "[Block-ClusterAccess](./Block-ClusterAccess.md)"
+
+msgid "[Get-ClusterAccess](./Get-ClusterAccess.md)"
+msgstr "[Get-ClusterAccess](./Get-ClusterAccess.md)"
+
+msgid "[Remove-ClusterAccess](./Remove-ClusterAccess.md)"
+msgstr "[Remove-ClusterAccess](./Remove-ClusterAccess.md)"

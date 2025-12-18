@@ -1,0 +1,83 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:23:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Remove-AppSharedPackageContainer"
+msgstr "# 删除应用程序共享包容器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes the shared package container."
+msgstr "删除共享的软件包容器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The cmdlet removes the shared package container definition for the "
+"particular user."
+msgstr "该cmdlet会删除特定用户的共享包容器定义。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This command removes the shared package container definition with the name "
+"`ContosoTestContainer`."
+msgstr "此命令会删除名为`ContosoTestContainer`的共享包容器定义。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Unsupported. Will result in `-AllUsers functionality is not yet implemented`"
+" error."
+msgstr "不受支持。这将导致“-AllUsers功能尚未实现”的错误。"
+
+msgid "Closes all packages in the Shared Package Container."
+msgstr "关闭共享包容器中的所有包。"
+
+msgid "The name of the container."
+msgstr "容器的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

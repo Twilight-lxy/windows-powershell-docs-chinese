@@ -1,0 +1,271 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 13:02:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Resolve-DnsName"
+msgstr "# 解析DNS名称"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Performs a DNS name query resolution for the specified name."
+msgstr "执行对指定名称的DNS名称查询解析操作。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Resolve-DnsName** cmdlet performs a DNS query for the specified name.\n"
+"This cmdlet is functionally similar to the nslookup tool which allows users to query for names."
+msgstr ""
+"` Resolve-DnsName` cmdlet 用于对指定的名称执行 DNS 查询。该 cmdlet 在功能上类似于 `nslookup` "
+"工具，用户可以使用它来查询各种名称信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "This example resolves a name using the default options."
+msgstr "这个示例使用默认选项来解析一个名称。"
+
+msgid "### EXAMPLE 2"
+msgstr "### 示例 2"
+
+msgid "This example resolves a name against the DNS server at 10.0.0.1."
+msgstr "这个示例通过地址为 10.0.0.1 的 DNS 服务器来解析一个名称。"
+
+msgid "### EXAMPLE 3"
+msgstr "### 示例 3"
+
+msgid "This example queries for A type records for name www.bing.com."
+msgstr "这个示例用于查询名称为 “www.bing.com” 的 A 类型记录。"
+
+msgid "### EXAMPLE 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example resolves a name using only DNS.\n"
+"LLMNR and NetBIOS queries are not issued."
+msgstr "这个示例仅使用 DNS 来解析名称，不会发起 LLMNR 或 NetBIOS 查询。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Resolves this query using only the local cache."
+msgstr "仅使用本地缓存来解决此查询问题。"
+
+msgid "Resolves this query using only the DNS protocol."
+msgstr "仅使用DNS协议来解决此查询问题。"
+
+msgid "Sets the DNSSEC checking-disabled bit for this query."
+msgstr "为此次查询设置DNSSEC检查禁用位（即该位被设置为“0”）。"
+
+msgid "Sets the DNSSEC OK bit for this query."
+msgstr "为此次查询设置DNSSEC OK标志。"
+
+msgid ""
+"Allows falling back to the LLMNR protocol when resolving this query with DNS"
+" fails."
+msgstr "当使用 DNS 解决此查询失败时，允许回退到 LLMNR 协议。"
+
+msgid "Resolves this query using only the LLMNR or NetBIOS protocols."
+msgstr "仅使用 LLMNR 或 NetBIOS 协议来解决此查询。"
+
+msgid "Resolves this query using only the LLMNR protocol."
+msgstr "仅使用 LLMNR 协议来解决此查询问题。"
+
+msgid "Specifies the name to be resolved."
+msgstr "指定要解析的名称。"
+
+msgid ""
+"Allows fallback to the NetBIOS protocol when resolving this query with DNS "
+"fails."
+msgstr "当使用 DNS 解决此查询失败时，允许回退到 NetBIOS 协议。"
+
+msgid "Skips the hosts file when resolving this query."
+msgstr "在解析此查询时跳过主机文件（hosts file）。"
+
+msgid "Specifies not to use IDN encoding logic for the query."
+msgstr "指定不要对查询使用 IDN 编码逻辑。"
+
+msgid "Instructs the server not to use recursion when resolving this query."
+msgstr "指示服务器在解析此查询时不要使用递归。"
+
+msgid "Uses shorter timeouts for this query."
+msgstr "为这个查询使用更短的超时时间。"
+
+msgid ""
+"Specifies the IP addresses or host names of the DNS servers to be queried.\n"
+"By default the interface DNS servers are queried if this parameter is not supplied."
+msgstr "指定要查询的DNS服务器的IP地址或主机名。如果未提供此参数，默认情况下会查询接口自带的DNS服务器。"
+
+msgid "Uses only TCP for this query."
+msgstr "此查询仅使用TCP协议进行通信。"
+
+msgid ""
+"Specifies the DNS query type that is to be issued.\n"
+"By default the type is A_AAAA, the A and AAAA types will both be queried.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要发出的DNS查询类型。默认情况下，查询类型为A_AAAA，此时会同时查询A类型和AAAAA类型的记录。该参数可接受的值包括："
+
+msgid " -- UNKNOWN = 0,"
+msgstr "-- UNKNOWN = 0,"
+
+msgid " -- A_AAAA = 0, the DNS query type is A_AAAA."
+msgstr "-- A_AAAA = 0，表示DNS查询类型为A_AAAA。"
+
+msgid " -- A = 1, the DNS query type is IPv4 server Address."
+msgstr "-- A 的值为 1，表示 DNS 查询类型为 IPv4 服务器地址。"
+
+msgid " -- AAAA = 28, the DNS query type is IPv6 server address."
+msgstr "-- AAAA 的值为 28，表示该 DNS 查询类型是用于获取 IPv6 服务器地址的请求。"
+
+msgid " -- NS = 2, the DNS query type is name server."
+msgstr "-- NS = 2，表示DNS查询类型为“名称服务器”（name server）。"
+
+msgid " -- MX = 15, the DNS query type is mail routing information."
+msgstr "-- MX = 15，表示DNS查询类型是邮件路由信息。"
+
+msgid " -- MD = 3, the DNS query type is mail destination."
+msgstr "-- MD = 3，表示DNS查询类型为邮件地址（即邮件接收目的地）。"
+
+msgid " -- MF = 4, the DNS query type is mail forwarder."
+msgstr "-- MF = 4，表示DNS查询类型为“邮件转发器”（mail forwarder）。"
+
+msgid " -- CNAME = 5, the DNS query type is canonical name."
+msgstr "-- CNAME = 5：表示DNS查询类型为“规范名称”（canonical name）。"
+
+msgid " -- SOA = 6, the DNS query type is start of authority zone."
+msgstr "-- SOA = 6，表示DNS查询类型为“权威区域起始（start of authority zone）”。"
+
+msgid " -- MB = 7, the DNS query type is mailbox domain name."
+msgstr "-- MB 的值为 7，表示 DNS 查询类型是邮箱域名（mailbox domain name）。"
+
+msgid " -- MG = 8, the DNS query type is mail group member."
+msgstr "-- MG = 8，表示DNS查询类型为“邮件组成员”（mail group member）。"
+
+msgid " -- MR = 9, the DNS query type is mail rename name."
+msgstr "-- MR = 9，DNS查询类型是“邮件重命名名称”（mail rename name）。"
+
+msgid " -- NULL = 10, the DNS query type is null resource record."
+msgstr "-- NULL = 10：表示DNS查询类型为空资源记录（null resource record）。"
+
+msgid " -- WKS = 11, the DNS query type is well known service."
+msgstr "-- WKS = 11，表示DNS查询类型为“well-known service”（众所周知的服务）。"
+
+msgid " -- PTR = 12, the DNS query type is domain name pointer."
+msgstr "-- PTR = 12：表示DNS查询类型为“域名指针”（Domain Name Pointer）。"
+
+msgid " -- HINFO = 13, the DNS query type is host information."
+msgstr "-- HINFO = 13，表示DNS查询类型为主机信息（host information）。"
+
+msgid " -- MINFO = 14, the DNS query type is mailbox information."
+msgstr "-- MINFO = 14，表示DNS查询类型是邮件箱信息。"
+
+msgid " -- TXT = 16, the DNS query type is text strings."
+msgstr "-- TXT = 16：表示DNS查询类型为文本字符串（text strings）。"
+
+msgid " -- RP = 17, the DNS query type is responsible person."
+msgstr "-- RP = 17，表示DNS查询类型为“负责人”（Responsible Person）。"
+
+msgid " -- AFSDB = 18, the DNS query type is AFS database servers."
+msgstr "-- AFSDB = 18：表示DNS查询的类型是AFS数据库服务器。"
+
+msgid " -- X25 = 19, the DNS query type is packet switched wide area network."
+msgstr "-- X25 = 19，表示DNS查询类型为分组交换广域网（packet-switched wide area network）。"
+
+msgid ""
+" -- ISDN = 20, the DNS query type is Integrated Services Digital Network."
+msgstr "-- ISDN = 20，表示DNS查询类型是综合业务数字网（Integrated Services Digital Network）。"
+
+msgid " -- RT = 21, the DNS query type is DNS route through."
+msgstr "-- RT = 21，表示DNS查询类型为“DNS路由穿透”（DNS Route Through）。"
+
+msgid " -- SRV = 33, the DNS query type is server selection."
+msgstr "-- SRV = 33：这种DNS查询类型用于服务器选择。"
+
+msgid " -- DNAME = 39, the DNS query type is domain aliases."
+msgstr "-- DNAME = 39：表示DNS查询类型为域名别名（domain aliases）。"
+
+msgid " -- OPT = 41, the DNS query type is DNS option."
+msgstr "-- OPT = 41，表示DNS查询类型为DNS选项（DNS Option）。"
+
+msgid " -- DS = 43, the DNS query type is delegation signer."
+msgstr "-- DS = 43，DNS查询类型表示“授权签名者”（delegation signer）。"
+
+msgid " -- RRSIG = 46, the DNS query type is DNSSEC signature."
+msgstr "-- RRSIG = 46，表示DNS查询类型为DNSSEC签名。"
+
+msgid " -- NSEC = 47, the DNS query type is next-secure record."
+msgstr "-- NSEC = 47，表示DNS查询类型为“下一条安全记录”（next-secure record）。"
+
+msgid " -- DNSKEY = 48, the DNS query type is DNS key record."
+msgstr "-- DNSKEY = 48，表示DNS查询类型为DNS密钥记录。"
+
+msgid ""
+" -- DHCID = 49, the DNS query type is Dynamic Host Configuration Protocol "
+"information."
+msgstr ""
+"-- DHCID = 49，表示DNS查询类型是动态主机配置协议（Dynamic Host Configuration Protocol）的相关信息。"
+
+msgid " -- NSEC3 = 50, the DNS query type is NSEC record version 3."
+msgstr "-- NSEC3 = 50，表示DNS查询类型为NSEC记录的第3版（version 3）。"
+
+msgid " -- NSEC3PARAM = 51, the DNS query type is NSEC3 parameters."
+msgstr "-- NSEC3PARAM = 51，表示DNS查询类型为NSEC3参数。"
+
+msgid " -- ANY = 255, the DNS query type is wildcard match."
+msgstr "-- ANY = 255：表示DNS查询类型为通配符匹配（即匹配所有可能的域名）。"
+
+msgid " -- ALL = 255, the DNS query type is wildcard match."
+msgstr "-- ALL = 255，表示DNS查询类型为通配符匹配。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DnsClient.Commands.DnsRecord"
+msgstr "### Microsoft.DnsClient Commands.DnsRecord"
+
+msgid ""
+"The DnsRecord object contains all of the records returned from the wire for "
+"the specified DNS query."
+msgstr "DnsRecord对象包含了针对指定DNS查询从网络中返回的所有记录。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Nslookup on TechNet](https://go.microsoft.com/fwlink/p/?LinkId=84907)"
+msgstr ""
+"[TechNet上的Nslookup介绍](https://go.microsoft.com/fwlink/p/?LinkId=84907)"

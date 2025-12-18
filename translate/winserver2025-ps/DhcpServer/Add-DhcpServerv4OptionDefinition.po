@@ -1,0 +1,218 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:01:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-DhcpServerv4OptionDefinition"
+msgstr "# Add-DhcpServerv4OptionDefinition"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds a DHCPv4 option definition on the DHCP server service."
+msgstr "在DHCP服务器服务中添加一个DHCPv4选项的定义。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-DhcpServerv4OptionDefinition** cmdlet adds a new DHCPv4 option definition on the Dynamic Host Configuration Protocol (DHCP) server service.\n"
+"An option definition must exist before an option value of that type can be configured."
+msgstr ""
+"`Add-DhcpServerv4OptionDefinition` cmdlet 用于在动态主机配置协议（DHCP）服务器服务上添加一个新的 "
+"DHCPv4 选项定义。在配置某种类型的选项值之前，必须先存在相应的选项定义。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Add the IPv4 option definition for web proxy auto detection"
+msgstr "#### 示例 1：为自动检测网页代理添加 IPv4 选项的定义"
+
+msgid ""
+"This example adds the IPv4 option definition for web proxy auto detection "
+"(wpad) to the DHCPv4 server service."
+msgstr "这个示例为DHCPv4服务器服务添加了用于Web代理自动检测（WPAD）的IPv4选项定义。"
+
+msgid ""
+"### Example 2: Add the option definition for the UC identifier for a vendor "
+"class"
+msgstr "### 示例 2：为供应商类别添加 UC 标识符的选项定义"
+
+msgid ""
+"This example adds the option definition for the Unified Communications (UC) "
+"identifier for the vendor class named MS-UC-Client."
+msgstr "这个示例为名为“MS-UC-Client”的供应商类别添加了统一通信（UC）标识符的相关选项定义。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用此参数来执行需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理作业，请使用`*-Job`"
+" cmdlets系列命令。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the DHCP server service."
+msgstr "指定运行DHCP服务器服务的目标计算机的DNS名称，或其IPv4或IPv6地址。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies the default value for the option for which a definition is created.\n"
+"The syntax to specify the default value for the option as follows:"
+msgstr "用于指定为该选项创建定义时的默认值。指定选项默认值的语法如下："
+
+msgid "Specifies the description of the option definition being added."
+msgstr "用于指定所添加的选项定义的描述内容。"
+
+msgid "Allows for multiple values."
+msgstr "允许多个值。"
+
+msgid "Specifies the name of the DHCPv4 option."
+msgstr "指定 DHCPv4 选项的名称。"
+
+msgid ""
+"Specifies the numeric identifier of the option.\n"
+"The acceptable values for this parameter are: 1 through 255."
+msgstr "指定该选项的数字标识符。此参数的可接受值为：1 至 255。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大操作数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前正在运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Specifies the data type of the values for this option.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定此选项所对应值的数据类型。该参数允许接受的值包括："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionDefinition"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionDefinition"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名称。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionDefinition"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionDefinition"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-DhcpServerv4OptionDefinition](./Get-DhcpServerv4OptionDefinition.md)"
+msgstr ""
+"[Get-DhcpServerv4OptionDefinition](./Get-DhcpServerv4OptionDefinition.md)"
+
+msgid ""
+"[Remove-DhcpServerv4OptionDefinition](./Remove-"
+"DhcpServerv4OptionDefinition.md)"
+msgstr ""
+"[Remove-DhcpServerv4OptionDefinition](./Remove-"
+"DhcpServerv4OptionDefinition.md)"
+
+msgid ""
+"[Set-DhcpServerv4OptionDefinition](./Set-DhcpServerv4OptionDefinition.md)"
+msgstr ""
+"[Set-DhcpServerv4OptionDefinition](./Set-DhcpServerv4OptionDefinition.md)"

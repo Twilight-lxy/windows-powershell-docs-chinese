@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:32:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-ClusterResourceFailure"
+msgstr "# 测试集群资源故障"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Simulates a failure of a cluster resource."
+msgstr "模拟集群资源发生故障的情况。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Test-ClusterResourceFailure` cmdlet simulates a failure of a cluster "
+"resource."
+msgstr "`Test-ClusterResourceFailure` cmdlet 用于模拟集群资源的故障。"
+
+msgid ""
+"Based on the failover and failback policies, when this cmdlet runs, the Cluster service moves the\n"
+"clustered role, or resource group, and attempts to bring the clustered resource online. This cmdlet\n"
+"can be used to simulate what actions the Cluster service will take when a resource fails."
+msgstr ""
+"根据故障转移和故障恢复策略，当运行此cmdlet时，Cluster服务会移动集群角色或资源组，并尝试将集群资源重新上线。可以使用此cmdlet来模拟资源发生故障时Cluster服务将采取的操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Simulate a failure"
+msgstr "### 示例 1：模拟故障"
+
+msgid ""
+"This example simulates a failure in cluster resource named `Cluster Disk 4`."
+msgstr "这个示例模拟了名为“Cluster Disk 4”的集群资源发生故障的情况。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此 cmdlet 的集群的名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Specifies the cluster resource of which to simulate failure."
+msgstr "指定要模拟故障的集群资源。"
+
+msgid ""
+"Specifies the name of the cluster resource of which to simulate failure."
+msgstr "指定要模拟故障的集群资源的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+msgstr "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+
+msgid "[Start-ClusterResource](./Start-ClusterResource.md)"
+msgstr "[开始创建集群资源](./Start-ClusterResource.md)"

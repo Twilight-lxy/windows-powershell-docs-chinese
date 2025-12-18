@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:41:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Remove-ClusterSetAvailabilitySet"
+msgstr "# 删除集群集合可用性集"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "{{ Fill in the Synopsis }}"
+msgstr "{{ 填写剧情概述 }}"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称排序（默认设置）"
+
+msgid "### ById"
+msgstr "### ById"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject（cdxml）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "{{ Add example description here }}"
+msgstr "{{ 在这里添加示例描述 }}"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "{{ Fill AsJob Description }}"
+msgstr "{{ 填写工作描述内容 }}"
+
+msgid "{{ Fill AvailabilitySetName Description }}"
+msgstr "{{ Fill AvailabilitySetName Description }}"
+
+msgid "{{ Fill CimSession Description }}"
+msgstr "{{ 填写 CimSession 描述 }}"
+
+msgid "{{ Fill Id Description }}"
+msgstr "{{ 填充ID及描述 }}"
+
+msgid "{{ Fill InputObject Description }}"
+msgstr "{{ 填写 InputObject 的描述内容 }}"
+
+msgid "{{ Fill PassThru Description }}"
+msgstr "{{ 填充 PassThru 描述 }}"
+
+msgid "{{ Fill ThrottleLimit Description }}"
+msgstr "{{ 填写 ThrottleLimit 的描述 }}"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### System.UInt64[]"
+msgstr "### System.UInt64[]"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance[]"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/microsoft/windows/cluster/scaleout/MSFT_ClusterSetAvailabilitySet"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/microsoft/windows/cluster/scaleout/MSFT_ClusterSetAvailabilitySet"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

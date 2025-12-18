@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:04:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppvClientConfiguration"
+msgstr "# 获取 AppVClient 配置信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Returns the configuration for the App-V client."
+msgstr "返回App-V客户端的相关配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AppvClientConfiguration** cmdlet returns an object that contains all of the settings and permissions for the Microsoft Application Virtualization (App-V) client.\n"
+"These settings include both App-V client settings and permissions."
+msgstr ""
+"`Get-AppvClientConfiguration` cmdlet 返回一个对象，其中包含了 Microsoft "
+"应用程序虚拟化（App-V）客户端的所有设置和权限。这些设置既包括 App-V 客户端的配置参数，也包括相应的权限信息。"
+
+msgid ""
+"If a particular setting is specified, the cmdlet returns the value for that "
+"setting."
+msgstr "如果指定了某个特定的设置，该cmdlet会返回该设置的值。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Display all configuration settings"
+msgstr "#### 示例 1：显示所有配置设置"
+
+msgid "This command displays all of the App-V Client Configuration settings."
+msgstr "此命令会显示所有App-V客户端配置设置。"
+
+msgid "### Example 2: Display a single configuration setting"
+msgstr "### 示例 2：显示单个配置设置"
+
+msgid "This command displays the value of the **PackageSourceRoot** setting."
+msgstr "这个命令会显示 **PackageSourceRoot** 设置的值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of a setting."
+msgstr "指定一个设置的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.AppV.AppvClientPowerShell.AppvClientConfiguration"
+msgstr "### Microsoft.AppV.AppvClientPowerShell.AppvClientConfiguration"
+
+msgid ""
+"The cmdlet returns an **AppvClientConfiguration** object, if you do not specify the *Name* parameter.\n"
+"The object is displayed as a two column table.\n"
+"The first column contains the specific configuration and the second column contains the associated current value."
+msgstr ""
+"如果未指定 *Name* 参数，该cmdlet会返回一个 **AppvClientConfiguration** "
+"对象。该对象以二维表格的形式显示：第一列包含具体的配置信息，第二列包含相应的当前值。"
+
+msgid ""
+"If you specify *Name*, the cmdlet returns the same two column table, but "
+"only for the configuration requested."
+msgstr "如果您指定了*名称*（Name），该cmdlet会返回相同的二维表格，但仅包含所请求的配置信息。"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-AppvClientConfiguration](./Set-AppvClientConfiguration.md)"
+msgstr "[Set-AppvClientConfiguration](./Set-AppvClientConfiguration.md)"

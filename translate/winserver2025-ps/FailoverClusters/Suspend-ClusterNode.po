@@ -1,0 +1,179 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:30:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Suspend-ClusterNode"
+msgstr "# 暂停集群节点（Suspend-ClusterNode）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Suspends activity on a failover cluster node, that is, pauses the node."
+msgstr "暂停故障转移集群节点上的所有活动，即让该节点进入休眠状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Suspend-ClusterNode` cmdlet suspends activity on a failover cluster node, that is, pauses the\n"
+"node. If you use the **Drain** parameter, clustered roles currently running on the node will be\n"
+"drained before the node is paused."
+msgstr ""
+"`Suspend-ClusterNode` cmdlet 用于暂停故障转移集群节点上的所有活动，即使该节点进入休眠状态。如果使用了 `Drain` "
+"参数，在节点被暂停之前，当前在该节点上运行的集群角色将会被关闭（即它们的资源会被释放）。"
+
+msgid ""
+"Pausing, or suspending, a node is usually done when applying software updates to the node. If you\n"
+"need to perform extensive diagnosis or maintenance on a cluster node, it might be more workable to\n"
+"stop, not pause, the Cluster service on that node."
+msgstr ""
+"暂停或中止一个节点通常是在对该节点应用软件更新时进行的。如果你需要对某个集群节点进行全面的诊断或维护操作，那么直接停止该节点上的集群服务（而不是仅仅将其置于暂停状态）可能会更加方便和高效。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Pause a node of the local cluster"
+msgstr "#### 示例 1：暂停本地集群中的一个节点"
+
+msgid "This example pauses the node named `node1` on the local cluster."
+msgstr "这个示例会暂停本地集群中名为 `node1` 的节点。"
+
+msgid "### Example 2: Pause a node of a cluster"
+msgstr "### 示例 2：暂停集群中的一个节点"
+
+msgid ""
+"This example pauses the node named `node2` on the cluster named `cluster2`."
+msgstr "这个例子会暂停名为 `node2` 的节点在名为 `cluster2` 的集群中的运行。"
+
+msgid "### Example 3: Pause a node and move its workloads"
+msgstr "### 示例 3：暂停一个节点并迁移其工作负载"
+
+msgid ""
+"This example pauses the node named `node1` and moves the workloads from it to the node named\n"
+"`node2`."
+msgstr "这个示例会暂停名为 `node1` 的节点，并将其上的工作负载转移到名为 `node2` 的节点上。"
+
+msgid "### Example 4: Preview a pause operation"
+msgstr "### 示例 4：预览暂停操作"
+
+msgid ""
+"This example provides a preview of the operation that will be performed on "
+"the node named `node1`."
+msgstr "这个示例展示了将对名为`node1`的节点执行的操作的预览结果。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies that all of the workloads are gracefully moved to other nodes while maintaining the\n"
+"highest levels of availability and using the best placement logic."
+msgstr "该方案确保所有工作负载都能优雅地迁移到其他节点上，同时保持最高的可用性，并采用最优的调度策略。"
+
+msgid ""
+"The -ForceDrain switch, used in conjunction with the -Drain switch, allows all the workloads to be\n"
+"safely moved to other nodes, while maintaining the highest levels of availability and using the best\n"
+"placement logic."
+msgstr ""
+"-ForceDrain开关与-Drain开关配合使用，可以确保所有工作负载安全地迁移到其他节点上，同时保持最高的可用性，并运用最优的节点分配策略。"
+
+msgid ""
+"If some or all of the workloads can't be moved safely, any workload that failed will be stopped and\n"
+"moved to another node as a failed role. Thereafter, the node will be forced to pause."
+msgstr ""
+"如果某些或所有工作负载无法安全地迁移，那么那些发生故障的工作负载将会被停止，并迁移到另一个节点上（在该节点上以“失败状态”存在）。此后，该节点将被强制进入暂停状态。"
+
+msgid ""
+"Specifies the cluster node to suspend, with or without draining, or the cluster on which to run the\n"
+"cmdlet."
+msgstr "指定要挂起的集群节点（可选择是否执行数据清理操作），或者指定用于运行该命令行的集群。"
+
+msgid ""
+"Specifies the name of the cluster node to suspend, with or without draining."
+msgstr "指定要暂停的集群节点的名称，可以选择是否进行数据清理（draining）。"
+
+msgid "Specifies a node to which to drain the workloads."
+msgstr "指定一个用于接收工作负载的节点。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the call is initiated and the cmdlet returns without waiting. If specified with no value, then\n"
+"the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定等待该cmdlet完成所需的时间（以秒为单位）。如果未指定**Wait**参数，那么将立即启动调用，且cmdlet会立即返回结果而不会进行等待；如果指定了一个值为0的**Wait**参数，同样也会立即启动调用，但cmdlet会在完成后返回结果。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell.Cluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### MicrosoftFailoverClusters.PowerShell ClusterNode"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### Microsoft FailoverClusters PowerShell ClusterNode"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterNode](./Add-ClusterNode.md)"
+msgstr "[添加集群节点](./Add-ClusterNode.md)"
+
+msgid "[Get-ClusterNode](./Get-ClusterNode.md)"
+msgstr "[Get-ClusterNode](./Get-ClusterNode.md)"
+
+msgid "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+msgstr "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+
+msgid "[Resume-ClusterNode](./Resume-ClusterNode.md)"
+msgstr "[Resume-ClusterNode](./Resume-ClusterNode.md)"
+
+msgid "[Start-ClusterNode](./Start-ClusterNode.md)"
+msgstr "[启动集群节点](./Start-ClusterNode.md)"
+
+msgid "[Stop-ClusterNode](./Stop-ClusterNode.md)"
+msgstr "[Stop-ClusterNode](./Stop-ClusterNode.md)"

@@ -1,0 +1,99 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:24:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AppxVolume"
+msgstr "# 移除 Appx 卷"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes an appx volume."
+msgstr "删除一个 AppX 卷（volume）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Remove-AppxVolume` cmdlet removes an **AppxVolume**. You can only remove a volume after there\n"
+"are no apps staged to it for any user. After you remove a volume, apps can no longer be added to\n"
+"it."
+msgstr ""
+"`Remove-AppxVolume` cmdlet 用于删除一个 "
+"**AppxVolume**。只有当某个卷上没有为任何用户暂存的应用程序时，才能将其删除。删除卷后，就无法再向该卷中添加应用程序了。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a volume by using an ID"
+msgstr "### 示例 1：通过使用卷ID来删除卷"
+
+msgid "This command removes a volume that has the specified media ID."
+msgstr "此命令会删除具有指定媒体ID的卷。"
+
+msgid "### Example 2: Remove a volume by using a path"
+msgstr "### 示例 2：通过路径移除卷"
+
+msgid "This command removes a volume at the path `E:\\`."
+msgstr "这个命令会删除位于路径 `E:\\` 下的某个卷（volume）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the **AppxVolume** object to remove."
+msgstr "指定要移除的 **AppxVolume** 对象。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppxVolume](./Add-AppxVolume.md)"
+msgstr "[Add-AppxVolume](./Add-AppxVolume.md)"
+
+msgid "[Dismount-AppxVolume](./Dismount-AppxVolume.md)"
+msgstr "[Dismount-AppxVolume](./Dismount-AppxVolume.md)"
+
+msgid "[Get-AppxVolume](./Get-AppxVolume.md)"
+msgstr "[Get-AppxVolume](./Get-AppxVolume.md)"
+
+msgid "[Mount-AppxVolume](./Mount-AppxVolume.md)"
+msgstr "[Mount-AppxVolume](./Mount-AppxVolume.md)"

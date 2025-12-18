@@ -1,0 +1,139 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:42:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ClusterCheckpoint"
+msgstr "# 添加集群检查点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Adds a cryptographic key checkpoint or registry checkpoint for a resource."
+msgstr "为某个资源添加一个加密密钥检查点或注册表检查点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Add-ClusterCheckpoint` cmdlet adds a cryptographic key checkpoint or registry checkpoint for\n"
+"a resource."
+msgstr "`Add-ClusterCheckpoint` cmdlet 用于为某个资源添加加密密钥检查点或注册表检查点。"
+
+msgid ""
+"Checkpoints help provide failover support for applications that store configuration information\n"
+"locally instead of or in addition to storing information in the cluster configuration database.\n"
+"Applications might store information locally in two ways. One way is to store configuration\n"
+"information in the registry on the local server; another way is to use cryptographic keys on the\n"
+"local server."
+msgstr ""
+"检查点（Checkpoints）有助于为那些将配置信息存储在本地（而非或除了存储在集群配置数据库中之外）的应用程序提供故障转移支持。应用程序可以通过两种方式在本地存储信息：一种是将配置信息存储在本地服务器的注册表中；另一种是使用本地服务器上的加密密钥来存储配置信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add registry checkpoint"
+msgstr "### 示例 1：添加注册表检查点"
+
+msgid ""
+"This example adds a registry checkpoint called `software\\clusname` for the resource named cluster\n"
+"name."
+msgstr ""
+"这个示例为名为 “cluster name” 的资源添加了一个注册表检查点（registry checkpoint），该检查点的名称为 "
+"“software\\clusname”。"
+
+msgid "### Example 2: Add cryptographic checkpoint"
+msgstr "### 示例 2：添加加密检查点"
+
+msgid ""
+"This example adds a cryptographic checkpoint for the resource named Cluster Name. This example uses\n"
+"splatting to pass parameter values from the `$Parameters` variable to the command. Learn more about\n"
+"[Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)."
+msgstr ""
+"这个示例为名为“Cluster Name”的资源添加了一个加密检查点。该示例使用了“Splatting”技术，将参数值从 `$Parameters` "
+"变量传递给命令。有关 [Splatting] 的更多信息，请参阅 [ "
+"/powershell/module/microsoft.powershell.core/about/about_splatting ]。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the key of a cryptographic key checkpoint to add."
+msgstr "指定要添加的加密密钥检查点的键值对。"
+
+msgid "Specifies the name of a cryptographic key checkpoint to add."
+msgstr "指定要添加的加密密钥检查点的名称。"
+
+msgid ""
+"Specifies the type of a cryptographic key checkpoint to add. Options depend on the cryptographic\n"
+"provider."
+msgstr "指定要添加的加密密钥检查点的类型。可选选项取决于所使用的加密提供者。"
+
+msgid ""
+"Specifies the cluster on which to run the cmdlet or the cluster resource for which the checkpoint\n"
+"should be added."
+msgstr "指定用于运行该cmdlet的集群，或者应为此添加检查点的集群资源。"
+
+msgid "Specifies the name of the registry checkpoint to add."
+msgstr "指定要添加的注册表检查点的名称。"
+
+msgid "Specifies the resource for which a checkpoint should be added."
+msgstr "指定应为其添加检查点的资源。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell-cluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterCheckpoint](./Get-ClusterCheckpoint.md)"
+msgstr "[Get-ClusterCheckpoint](./Get-ClusterCheckpoint.md)"
+
+msgid "[Get-ClusterResource](./Get-ClusterResource.md)"
+msgstr "[Get-ClusterResource](./Get-ClusterResource.md)"
+
+msgid "[Remove-ClusterCheckpoint](./Remove-ClusterCheckpoint.md)"
+msgstr "[Remove-ClusterCheckpoint](./Remove-ClusterCheckpoint.md)"

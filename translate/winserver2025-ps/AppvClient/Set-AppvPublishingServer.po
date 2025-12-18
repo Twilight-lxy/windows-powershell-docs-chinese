@@ -1,0 +1,141 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:13:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AppvPublishingServer"
+msgstr "# 设置 AppV Publishing 服务器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies properties of an App-V Publishing Server."
+msgstr "修改 App-V 发布服务器的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByServerId (Default)"
+msgstr "### ByServerId（默认值）"
+
+msgid "### ByObject"
+msgstr "### ByObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AppvPublishingServer** cmdlet modifies properties of an already existing Microsoft Application Virtualization (App-V) Publishing Server.\n"
+"To obtain an App-V Publishing Server object, use the **Get-AppvPublishingServer** cmdlet."
+msgstr ""
+"`Set-AppvPublishingServer` cmdlet 用于修改已存在的 Microsoft "
+"应用虚拟化（App-V）发布服务器的属性。若要获取一个 App-V 发布服务器对象，请使用 `Get-AppvPublishingServer` "
+"cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies whether the server does automatic syncs with the publishing server"
+" for all globally published packages."
+msgstr "指定服务器是否会对所有全局发布的软件包自动与发布服务器进行同步。"
+
+msgid ""
+"Specifies a time span that represents the period where refreshes occur for "
+"packages published globally."
+msgstr "指定一个时间范围，该范围表示在全球发布的软件包进行更新（刷新）的时间段。"
+
+msgid ""
+"Specifies the unit of time measurement.\n"
+"The acceptable values for this parameter are: day and hour."
+msgstr "指定时间测量单位。此参数的可接受值为：day（天）和hour（小时）。"
+
+msgid ""
+"Specifies whether a refresh occurs for all package published globally every "
+"time that a user logs into the target computer."
+msgstr "指定每次用户登录目标计算机时，是否会对所有全球发布的软件包进行更新（即刷新操作）。"
+
+msgid ""
+"Specifies an **AppvPublishingServer** object.\n"
+"To obtain an **AppvPublishingServer** object, use the **Get-AppvPublishingServer** cmdlet."
+msgstr ""
+"指定一个 **AppvPublishingServer** 对象。要获取一个 **AppvPublishingServer** 对象，请使用 "
+"**Get-AppvPublishingServer** cmdlet。"
+
+msgid ""
+"Specifies the identifier for the App-V Publishing Server.\n"
+"This can be queried using the **Get-AppvPublishingServer** cmdlet."
+msgstr "指定 App-V 发布服务器的标识符。可以使用 **Get-AppvPublishingServer** cmdlet 来查询该标识符。"
+
+msgid "Specifies whether user refresh is enabled."
+msgstr "指定是否启用了用户刷新功能。"
+
+msgid ""
+"Specifies the identifier for the App-V Publishing Server.\n"
+"This can be queried using the **Get-AppvPublishingServer** cmdlet."
+msgstr "指定 App-V 发布服务器的标识符。可以使用 **Get-AppvPublishingServer** cmdlet 来查询该标识符。"
+
+msgid ""
+"Specifies the unit of time measurement.\n"
+"The acceptable values for this parameter are: day and hour."
+msgstr "用于指定时间测量单位。该参数的可接受值为：day（天）和hour（小时）。"
+
+msgid ""
+"Specifies whether a refresh occurs every time that a user logs into the "
+"computer."
+msgstr "指定是否每次用户登录计算机时都会自动更新（刷新）界面或数据。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.AppvAgent.AppvPublishingServer"
+msgstr "### Microsoft.AppvAgent.AppvPublishingServer"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.AppvAgent.AppvPublishingServer"
+msgstr "### Microsoft.AppvAgent.AppvPublishingServer"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvPublishingServer](./Add-AppvPublishingServer.md)"
+msgstr "[Add-AppvPublishingServer](./Add-AppvPublishingServer.md)"
+
+msgid "[Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+msgstr "[Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+
+msgid "[Remove-AppvPublishingServer](./Remove-AppvPublishingServer.md)"
+msgstr "[Remove-AppvPublishingServer](./Remove-AppvPublishingServer.md)"
+
+msgid "[Sync-AppvPublishingServer](./Sync-AppvPublishingServer.md)"
+msgstr "[Sync-AppvPublishingServer](./Sync-AppvPublishingServer.md)"

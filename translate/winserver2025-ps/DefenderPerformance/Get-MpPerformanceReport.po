@@ -1,0 +1,526 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:08:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Get-MpPerformanceReport"
+msgstr "# 获取 MP 性能报告"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"This cmdlet reports the file paths, file extensions, and processes that cause the highest impact to\n"
+"Microsoft Defender Antivirus scans."
+msgstr "此cmdlet会报告对Microsoft Defender Antivirus扫描影响最大的文件路径、文件扩展名以及相关进程。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"This cmdlet analyzes a previously collected Microsoft Defender Antivirus performance recording and\n"
+"reports the file paths, file extensions and processes that cause the highest impact to Microsoft\n"
+"Defender Antivirus scans."
+msgstr ""
+"这个cmdlet用于分析之前收集的Microsoft Defender Antivirus性能记录，并报告对Microsoft Defender "
+"Antivirus扫描影响最大的文件路径、文件扩展名以及相关进程。"
+
+msgid ""
+"The performance analyzer provides insight into problematic files that could cause performance\n"
+"degradation of Microsoft Defender Antivirus. This tool is provided \"AS IS\", and is not intended to\n"
+"provide suggestions on exclusions. Exclusions can reduce the level of protection on your endpoints.\n"
+"Exclusions, if any, should be defined with caution."
+msgstr ""
+"性能分析工具可以帮助识别可能导致微软Defender防病毒软件性能下降的问题文件。该工具按“现状”提供，不旨在提供建议来指导哪些文件应该被排除在防护范围之外。排除某些文件可能会降低终端设备的安全保护水平；因此，如果有需要排除的文件，应谨慎操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "### EXAMPLE 2"
+msgstr "### 示例 2"
+
+msgid "### EXAMPLE 3"
+msgstr "### 示例 3"
+
+msgid "### EXAMPLE 4"
+msgstr "### 示例 4"
+
+msgid "### EXAMPLE 5"
+msgstr "### 示例 5"
+
+msgid "### EXAMPLE 6"
+msgstr "### 示例 6"
+
+msgid "### EXAMPLE 7"
+msgstr "### 示例 7"
+
+msgid "### EXAMPLE 8"
+msgstr "### 示例 8"
+
+msgid "### EXAMPLE 9"
+msgstr "### 示例 9"
+
+msgid "### EXAMPLE 10"
+msgstr "### 示例 10"
+
+msgid "### EXAMPLE 11"
+msgstr "### 示例 11"
+
+msgid "### EXAMPLE 12"
+msgstr "### 示例 12"
+
+msgid "### EXAMPLE 13"
+msgstr "### 示例 13"
+
+msgid "### EXAMPLE 14"
+msgstr "### 示例 14"
+
+msgid "### EXAMPLE 15"
+msgstr "### 示例 15"
+
+msgid "### EXAMPLE 16"
+msgstr "### 示例 16"
+
+msgid "### EXAMPLE 17"
+msgstr "### 示例 17"
+
+msgid "### EXAMPLE 18"
+msgstr "### 示例 18"
+
+msgid "### EXAMPLE 19"
+msgstr "### 示例 19"
+
+msgid "### EXAMPLE 20"
+msgstr "### 示例 20"
+
+msgid "### EXAMPLE 21"
+msgstr "### 示例 21"
+
+msgid "### EXAMPLE 22"
+msgstr "### 示例 22"
+
+msgid "### EXAMPLE 23"
+msgstr "### 示例 23"
+
+msgid "### EXAMPLE 24"
+msgstr "### 示例 24"
+
+msgid "### EXAMPLE 25"
+msgstr "### 示例 25"
+
+msgid "### EXAMPLE 26"
+msgstr "### 示例 26"
+
+msgid "### EXAMPLE 27"
+msgstr "### 示例 27"
+
+msgid "### EXAMPLE 28"
+msgstr "### 示例 28"
+
+msgid "### EXAMPLE 29"
+msgstr "### 示例 29"
+
+msgid "### EXAMPLE 30"
+msgstr "### 示例 30"
+
+msgid "### EXAMPLE 31"
+msgstr "### 示例 31"
+
+msgid "### EXAMPLE 32"
+msgstr "### 示例 32"
+
+msgid "### EXAMPLE 33"
+msgstr "### 示例 33"
+
+msgid "### EXAMPLE 34"
+msgstr "### 示例 34"
+
+msgid "### EXAMPLE 35"
+msgstr "### 示例 35"
+
+msgid "### EXAMPLE 36"
+msgstr "### 示例 36"
+
+msgid "### EXAMPLE 37"
+msgstr "### 示例 37"
+
+msgid "### EXAMPLE 38"
+msgstr "### 示例 38"
+
+msgid "### EXAMPLE 39"
+msgstr "### 示例 39"
+
+msgid "### EXAMPLE 40"
+msgstr "### 示例 40"
+
+msgid "### EXAMPLE 41"
+msgstr "### 示例 41"
+
+msgid "### EXAMPLE 42"
+msgstr "### 示例 42"
+
+msgid "### EXAMPLE 43"
+msgstr "### 示例 43"
+
+msgid "### EXAMPLE 44"
+msgstr "### 示例 44"
+
+msgid ""
+"Find top 10 scans with longest durations that both start and end between MinStartTime and\n"
+"MaxEndTime:"
+msgstr "找出持续时间最长（从开始到结束都在指定的 `MinStartTime` 和 `MaxEndTime` 范围内）的前 10 次扫描记录。"
+
+msgid "### EXAMPLE 45"
+msgstr "### 示例 45"
+
+msgid ""
+"Find top 10 scans with longest durations between MinEndTime and MaxStartTime, possibly partially\n"
+"overlapping this period"
+msgstr ""
+"找出在 `MinEndTime` 和 `MaxStartTime` 之间持续时间最长的前 10 次扫描记录（这些扫描记录可能部分重叠在这个时间段内）。"
+
+msgid "### EXAMPLE 46"
+msgstr "### 示例 46"
+
+msgid ""
+"Find top 10 scans with longest durations between MinStartTime and MaxStartTime, possibly partially\n"
+"overlapping this period"
+msgstr ""
+"找到在 `MinStartTime` 和 `MaxStartTime` 之间持续时间最长的前 10 "
+"次扫描记录（这些扫描记录可能部分重叠于该时间范围内）。"
+
+msgid "### EXAMPLE 47"
+msgstr "### 示例 47"
+
+msgid ""
+"Find top 10 scans with longest durations that start at MinStartTime or "
+"later:"
+msgstr "找到在 `MinStartTime` 或更晚时间开始的、持续时间最长的前 10 次扫描记录："
+
+msgid "### EXAMPLE 48"
+msgstr "### 示例 48"
+
+msgid ""
+"Find top 10 scans with longest durations that start before or at "
+"MaxStartTime:"
+msgstr "找出在 MaxStartTime 之前或等于 MaxStartTime 开始、且扫描时长最长的前 10 个扫描记录。"
+
+msgid "### EXAMPLE 49"
+msgstr "### 示例 49"
+
+msgid ""
+"Find top 10 scans with longest durations that end at MinEndTime or later:"
+msgstr "找出持续时间最长、且结束时间不早于 `MinEndTime` 的前 10 次扫描记录："
+
+msgid "### EXAMPLE 50"
+msgstr "### 示例 50"
+
+msgid ""
+"Find top 10 scans with longest durations that end before or at MaxEndTime:"
+msgstr "找出扫描时长最长、且在 MaxEndTime 之前或恰好在 MaxEndTime 时结束的前 10 次扫描记录："
+
+msgid "### EXAMPLE 51"
+msgstr "### 示例 51"
+
+msgid ""
+"Find top 10 scans with longest durations, impacting the current interval, "
+"that did not start or end between MaxStartTime and MinEndTime."
+msgstr ""
+"找出在当前时间间隔内影响最大的、扫描时长最长的前10个扫描任务，这些任务的开始或结束时间都不在 `MaxStartTime` 和 "
+"`MinEndTime` 的范围内。"
+
+msgid "### EXAMPLE 52"
+msgstr "### 示例 52"
+
+msgid ""
+"Find top 10 scans with longest durations, impacting the current interval, "
+"that started between MinStartTime and MaxStartTime, and ended later than "
+"MinEndTime."
+msgstr ""
+"找出在当前时间区间内影响最大的、扫描时长最长的前10个扫描任务。这些任务的开始时间应在 `MinStartTime` 和 `MaxStartTime` "
+"之间，结束时间应晚于 `MinEndTime`。"
+
+msgid "### EXAMPLE 53"
+msgstr "### 示例 53"
+
+msgid ""
+"Find top 10 scans with longest durations, impacting the current interval, "
+"that started before MaxStartTime, and ended between MinEndTime and "
+"MaxEndTime."
+msgstr ""
+"找出在前一个最大开始时间（MaxStartTime）之前开始，在最小结束时间（MinEndTime）和最大结束时间（MaxEndTime）之间结束的、对当前时间段影响最大的扫描任务，这些扫描任务的持续时间最长，并将它们排列在前三十名中。"
+
+msgid "### EXAMPLE 54"
+msgstr "### 示例 54"
+
+msgid ""
+"Find top 10 scans with longest durations, impacting the current interval, "
+"that started between MinStartTime and MaxStartTime, and ended between "
+"MinEndTime and MaxEndTime."
+msgstr ""
+"找出在当前时间区间内影响最大的、扫描时长最长的前10个扫描记录。这些扫描记录的开始时间应在 MinStartTime 和 MaxStartTime "
+"之间，结束时间应在 MinEndTime 和 MaxEndTime 之间。"
+
+msgid "### EXAMPLE 55"
+msgstr "### 示例 55"
+
+msgid ""
+"Find top 10 scans with longest durations that both start and end between MinStartTime and\n"
+"MaxEndTime, using DateTime as raw numbers in FILETIME format, e.g. from -Raw report format:"
+msgstr ""
+"找到持续时间最长的前10个扫描记录，这些扫描记录的开始时间和结束时间都必须在 `MinStartTime` 和 `MaxEndTime` 之间。请使用 "
+"`DateTime` 类型，并以 `FILETIME` 格式表示时间（即原始数字形式）。例如，来自“-Raw”报告格式的数据："
+
+msgid "### EXAMPLE 56"
+msgstr "### 示例 56"
+
+msgid ""
+"Find top 10 scans with longest durations between MinEndTime and MaxStartTime, possibly partially\n"
+"overlapping this period, using DateTime as raw numbers in FILETIME format, e.g. from -Raw report\n"
+"format:"
+msgstr ""
+"使用 DateTime（以 FILETIME 格式表示的原始数字）找出在 MinEndTime 和 MaxStartTime 之间持续时间最长的前 10"
+" 次扫描记录，这些扫描记录可能部分覆盖了该时间范围。例如，数据来源于 -Raw 报告格式："
+
+msgid "### EXAMPLE 57"
+msgstr "### 示例 57"
+
+msgid ""
+"Display a summary or overview of the scans captured in the trace, in addition to the information\n"
+"displayed regularly through other arguments. Output is influenced by time interval arguments\n"
+"MinStartTime and MaxEndTime."
+msgstr ""
+"除了通过其他参数定期显示的信息外，还展示在跟踪中捕获的扫描结果的摘要或概览。输出结果会受到时间间隔参数 `MinStartTime` 和 "
+"`MaxEndTime` 的影响。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the maximum end time of scans included in the report.\n"
+"Accepts a valid DateTime."
+msgstr "指定报告中包含的扫描任务的最大结束时间。仅接受有效的 DateTime 类型值。"
+
+msgid ""
+"Specifies the maximum start time of scans included in the report. Accepts a "
+"valid DateTime."
+msgstr "指定报告中包含的扫描任务的最大开始时间。必须输入有效的 DateTime 值。"
+
+msgid ""
+"Specifies the minimum duration of any scans or total scan durations of files, extensions and\n"
+"processes included in the report. Accepts values like '0.1234567sec' or '0.1234ms' or '0.1us' or a\n"
+"valid TimeSpan."
+msgstr ""
+"指定报告中包含的文件、扩展名和进程的所有扫描操作的最短持续时间或总扫描时间。接受的值格式有 "
+"‘0.1234567sec’、‘0.1234ms’、‘0.1us’ 或有效的 TimeSpan 类型。"
+
+msgid ""
+"Specifies the minimum end time of scans included in the report. Accepts a "
+"valid DateTime."
+msgstr "指定报告中包含的扫描任务的最晚结束时间。必须输入一个有效的 DateTime 对象。"
+
+msgid ""
+"Specifies the minimum start time of scans included in the report. Accepts a "
+"valid DateTime."
+msgstr "指定报告中包含的扫描任务的最小开始时间。必须输入有效的 DateTime 值。"
+
+msgid ""
+"Adds an overview or summary of the scans captured in the trace to the "
+"regular output."
+msgstr "在常规输出中添加对轨迹中所捕获的扫描结果的概述或总结。"
+
+msgid ""
+"Specifies the location of Microsoft Defender Antivirus performance recording"
+" to analyze."
+msgstr "指定用于分析的Microsoft Defender防病毒软件性能记录文件的位置。"
+
+msgid ""
+"Specifies that the output should be machine readable and readily convertible to serialization\n"
+"formats like JSON."
+msgstr "指定输出内容应具有机器可读性，并且可以轻松转换为 JSON 等序列化格式。"
+
+msgid ""
+"Requests a top extensions report and specifies how many top extensions to output, sorted by\n"
+"\"Duration\"."
+msgstr "请求一份顶级扩展程序的报告，并指定要输出多少个顶级扩展程序，这些扩展程序需按照“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top extensions to output for each top path, sorted by "
+"\"Duration\"."
+msgstr "指定每个顶级路径应输出多少个最受欢迎的扩展名（按“使用时长”排序）。"
+
+msgid ""
+"Specifies how many top extensions to output for each top process, sorted by "
+"\"Duration\"."
+msgstr "指定为每个顶级进程输出多少个最常用的扩展程序（top extensions），并按照“持续时间”（Duration）进行排序。"
+
+msgid ""
+"Requests a top files report and specifies how many top files to output, "
+"sorted by \"Duration\"."
+msgstr "请求生成一个顶级文件报告，并指定要输出多少个顶级文件，这些文件需按照“时长”进行排序。"
+
+msgid ""
+"Specifies how many top files to output for each top extension, sorted by "
+"\"Duration\"."
+msgstr "指定每个顶级扩展名应输出多少个排名靠前的文件，并按照“时长”（Duration）进行排序。"
+
+msgid ""
+"Specifies how many top files to output for each top path, sorted by "
+"\"Duration\"."
+msgstr "指定每个顶级路径应输出多少个排名靠前的文件，并按“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top files to output for each top process, sorted by "
+"\"Duration\"."
+msgstr "指定每个顶级进程要输出多少个最“重要”的文件（即表现最好的文件），这些文件将按照“耗时”（Duration）进行排序。"
+
+msgid ""
+"Requests a top paths report and specifies how many top entries to output, sorted by \"Duration\". This\n"
+"is called recursively for each directory entry. Scans are grouped hierarchically per folder and\n"
+"sorted by \"Duration\"."
+msgstr ""
+"请求生成一个“顶级路径报告”，并指定需要输出多少条顶级路径记录，这些记录需按照“时长”进行排序。这一过程会递归地应用于每个目录项。扫描结果会按文件夹层次结构进行分组，并同样按照“时长”进行排序。"
+
+msgid ""
+"Specifies the maxmimum depth (path-wise) that will be used to group scans "
+"when $TopPaths is used."
+msgstr "当使用 $TopPaths 时，该参数指定了用于对扫描结果进行分组的最大深度（按路径计算）。"
+
+msgid ""
+"Specifies how many top paths to output for each top extension, sorted by "
+"\"Duration\"."
+msgstr "指定为每个顶级扩展名输出多少条顶级路径，并按照“时长”进行排序。"
+
+msgid ""
+"Specifies how many top paths to output for each top process, sorted by "
+"\"Duration\"."
+msgstr "指定为每个顶级进程输出多少条顶级路径，并按照“持续时间”进行排序。"
+
+msgid ""
+"Requests a top processes report and specifies how many top processes to output, sorted by\n"
+"\"Duration\"."
+msgstr "请求生成一个顶级进程报告，并指定要输出多少个顶级进程，这些进程需按照“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top processes to output for each top extension, sorted by"
+" \"Duration\"."
+msgstr "指定每个顶级扩展程序应输出多少个排名靠前的进程，并按“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top processes to output for each top file, sorted by "
+"\"Duration\"."
+msgstr "指定每个“顶级文件”要输出多少个最耗时的进程，并按照“耗时时间”进行排序。"
+
+msgid ""
+"Specifies how many top processes to output for each top path, sorted by "
+"\"Duration\"."
+msgstr "指定每个顶级路径应输出多少个顶级进程，并按照“持续时间”（Duration）进行排序。"
+
+msgid ""
+"Requests a top scans report and specifies how many top scans to output, "
+"sorted by \"Duration\"."
+msgstr "请求一份“顶级扫描报告”，并指定需要输出多少份按“时长”排序的顶级扫描结果。"
+
+msgid ""
+"Specifies how many top scans to output for each top extension, sorted by "
+"\"Duration\"."
+msgstr "指定每个顶级扩展程序应输出多少条扫描结果，并按“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top extension for each top path, sorted by\n"
+"\"Duration\"."
+msgstr "指定为每个顶级路径中的每个顶级扩展名输出多少条扫描结果，这些结果按照“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top extension for each top process, sorted by\n"
+"\"Duration\"."
+msgstr "指定为每个顶级进程的每个顶级扩展程序输出多少条扫描结果，这些结果按“持续时间”（Duration）进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top file, sorted by "
+"\"Duration\"."
+msgstr "指定每个“热门文件”应输出多少条扫描结果，并按照“时长”进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top file for each top extension, sorted by\n"
+"\"Duration\"."
+msgstr "指定为每个顶级文件（具有该顶级扩展名）输出多少条扫描结果，这些结果按“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top file for each top path, "
+"sorted by \"Duration\"."
+msgstr "指定每个顶级路径下的每个顶级文件应输出多少条扫描结果，这些结果按照“时长”（Duration）进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top file for each top "
+"process, sorted by \"Duration\"."
+msgstr "指定为每个顶级进程的每个顶级文件输出多少条扫描结果，这些结果按照“时长”（Duration）进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top path, sorted by "
+"\"Duration\"."
+msgstr "指定每个主要路径应输出多少条最高优先级的扫描结果，并按“时长”进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top path for each top extension, sorted by\n"
+"\"Duration\"."
+msgstr "指定每个顶级扩展名的每个顶级路径应输出多少个扫描结果，并按“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top path for each top "
+"process, sorted by \"Duration\"."
+msgstr "指定为每个顶级进程的每条顶级路径输出多少条扫描结果，这些结果按照“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top process in the Top Processes report, sorted by\n"
+"\"Duration\"."
+msgstr "指定在“顶级进程”报告中为每个顶级进程输出多少条扫描结果，这些结果将按照“持续时间”进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top process for each top extension, sorted by\n"
+"\"Duration\"."
+msgstr "指定为每个顶级扩展程序中的每个顶级进程输出多少条扫描结果，并按照“时长”进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top process for each top "
+"file, sorted by \"Duration\"."
+msgstr "指定为每个顶级进程和每个顶级文件输出多少条扫描结果，这些结果按照“耗时”（Duration）进行排序。"
+
+msgid ""
+"Specifies how many top scans to output for each top process for each top "
+"path, sorted by \"Duration\"."
+msgstr "指定为每个顶级路径中的每个顶级进程输出多少个扫描结果，这些结果按照“持续时间”进行排序。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

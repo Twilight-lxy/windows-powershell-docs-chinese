@@ -1,0 +1,216 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:28:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Invoke-BpaModel"
+msgstr "#Invoke-BpaModel"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Starts a BPA scan for a specific model that is installed on a computer."
+msgstr "开始对计算机上安装的特定模型进行BPA（业务过程分析）扫描。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ModelParameterSet (Default)"
+msgstr "### ModelParameterSet（默认值）"
+
+msgid "### SubModelParameterSet"
+msgstr "### SubModelParameterSet"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Invoke-BpaModel** cmdlet starts a Best Practices Analyzer (BPA) scan for a specific model that is installed on a Windows-based computer.\n"
+"The model is specified either by using the *ModelId* parameter, or by piping the results of the **Get-BpaModel** cmdlet into this cmdlet.\n"
+"If a model is specified in the cmdlet after the BPA scan has been performed, then the results of the scan are available as an XML file."
+msgstr ""
+"`Invoke-BpaModel` cmdlet 用于对安装在基于 Windows 的计算机上的特定模型启动 Best Practices "
+"Analyzer (BPA) 扫描。该模型的指定可以通过使用 `ModelId` 参数来完成，或者将 `Get-BpaModel` cmdlet "
+"的输出结果通过管道传递给该 cmdlet 来实现。如果在 BPA 扫描完成后才在 cmdlet 中指定模型，则扫描结果将以 XML 文件的形式提供。"
+
+msgid "This cmdlet cannot be canceled after it has been started."
+msgstr "此 cmdlet 一旦启动后就无法取消。"
+
+msgid "Single-node XML is not supported by the BPA model schema."
+msgstr "BPA模型架构不支持单节点XML格式的数据。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Start a BPA scan for a specified model ID"
+msgstr "### 示例 1：为指定的模型 ID 启动 BPA 扫描"
+
+msgid ""
+"This example starts a BPA scan on the model that is represented by ModelId1."
+msgstr "这个示例会对由 ModelId1 表示的模型启动 BPA（Business Process Analysis，业务流程分析）扫描。"
+
+msgid ""
+"The same task can be completed by running either of the following cmdlets."
+msgstr "可以通过运行以下任意一个 cmdlet 来完成相同的任务。"
+
+msgid "`Invoke-BPAModel -Id \"ModelId1\"`"
+msgstr "`Invoke-BPAModel -Id \"ModelId1\"`"
+
+msgid "OR"
+msgstr "或者"
+
+msgid "`Invoke-BPAModel \"ModelId1\"`"
+msgstr "`Invoke-BPAModel \"ModelId1\"`"
+
+msgid "### Example 2: Start a BPA scan using the pipeline"
+msgstr "### 示例 2：使用管道启动 BPA 扫描"
+
+msgid ""
+"This example gets all BPA models that are installed on the computer, and "
+"then pipes the results of the **Get-BpaModel** cmdlet to this cmdlet to "
+"start a BPA scan on all models."
+msgstr ""
+"这个示例会获取计算机上安装的所有BPA模型，然后将`Get-BpaModel` "
+"cmdlet的输出结果传递给另一个cmdlet，以便对所有模型执行BPA扫描。"
+
+msgid "### Example 3: Start a BPA scan and save the results to a variable"
+msgstr "### 示例 3：启动 BPA 扫描并将结果保存到一个变量中"
+
+msgid ""
+"This example starts a BPA scan on the model specified by ModelId1, and saves"
+" the results of the cmdlet as a variable, $BPAObj."
+msgstr "这个示例在由 ModelId1 指定的模型上启动了一个 BPA 扫描，并将该cmdlet的结果保存到一个变量 $BPAObj 中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication mode to use when creating a remote connection for running a remote BPA scan.\n"
+"For more information, type `Get-Help Invoke-Command`."
+msgstr "指定在创建用于执行远程BPA扫描的远程连接时使用的身份验证模式。有关更多信息，请输入`Get-HelpInvoke-Command`。"
+
+msgid ""
+"Specifies the certificate thumbprint to use when creating a remote connection via SSL for running a remote BPA scan.\n"
+"For more information, type `Get-Help Invoke-Command`."
+msgstr ""
+"指定在通过 SSL 创建远程连接以执行远程 BPA 扫描时使用的证书指纹。有关更多信息，请键入 `Get-Help Invoke-Command`。"
+
+msgid "Specifies the target computer against which to run the BPA scan."
+msgstr "指定用于运行BPA扫描的目标计算机。"
+
+msgid ""
+"Specifies the session configuration, such as the name of the endpoint, to use when creating a session for a remote BPA scan.\n"
+"For more information, type `Get-Help Invoke-Command`."
+msgstr ""
+"用于指定会话配置（例如端点的名称），以便在为远程BPA扫描创建会话时使用这些配置。有关更多信息，请输入 `Get-Help Invoke-"
+"Command`。"
+
+msgid ""
+"Scans a submodel in the context of a specific model (one that is different from the parent model of the submodel).\n"
+"For example, an administrator wants to run a scan on the Backend submodel of the SQL model, but only those in the context of a third model, a technology that relies upon SQL Server."
+msgstr ""
+"在特定模型的背景下扫描某个子模型（该子模型与父模型不同）。例如，管理员希望对SQL模型的“Backend”子模型进行扫描，但仅限于在第三个模型的上下文中进行扫描；这个第三方模型依赖于SQL"
+" Server技术。"
+
+msgid ""
+"Specifies the credentials to use when creating a remote connection for running a remote BPA scan.\n"
+"For more information, type `Get-Help Invoke-Command`."
+msgstr "指定在创建远程连接以执行远程BPA扫描时使用的凭据。有关更多信息，请输入 `Get-HelpInvoke-Command`。"
+
+msgid ""
+"Specifies the mode to use when running the BPA scan.\n"
+"The acceptable values for this parameter are: All, Analysis, or Discovery."
+msgstr "指定在运行BPA扫描时使用的模式。该参数的可接受值为：All（全部）、Analysis（分析）或Discovery（发现）。"
+
+msgid "Identities the model to be used for the BPA scan."
+msgstr "确定将用于BPA扫描的模型。"
+
+msgid ""
+"Specifies the port to use when creating a remote connection for running a remote BPA scan.\n"
+"For more information, type `Get-Help Invoke-Command`."
+msgstr "指定在创建远程连接以执行远程BPA扫描时使用的端口。有关更多信息，请输入`Get-Help Invoke-Command`。"
+
+msgid ""
+"Specifies that the default location for reports specified by the ReportsRoot registry key should be overridden.\n"
+"This parameter specifies the path where the results should be stored."
+msgstr "指定应覆盖由 `ReportsRoot` 注册表键指定的报告的默认存储位置。该参数指定了结果应存储的路径。"
+
+msgid ""
+"Identifies the submodel to run for the model specified by the *ModelId* parameter.\n"
+"For example, the Update Services model (`Microsoft/Windows/UpdateServices`) has two submodels (`UpdateServices-DB`, `UpdateServices-Services`)."
+msgstr ""
+"用于确定要为由*ModelId*参数指定的模型运行的子模型。例如，Update "
+"Services模型（`Microsoft/Windows/UpdateServices`）有两个子模型（`UpdateServices-"
+"DB`、`UpdateServices-Services`）。"
+
+msgid ""
+"Specifies the throttle limit to use when creating a remote connection for running a remote BPA scan.\n"
+"For more information, type `Get-Help Invoke-Command`."
+msgstr "指定在创建用于执行远程BPA扫描的远程连接时使用的节流限制。有关更多信息，请输入 `Get-Help Invoke-Command`。"
+
+msgid ""
+"Specifies whether or not to use SSL when creating a remote connection for running a remote BPA scan.\n"
+"For more information, type `Get-Help Invoke-Command`."
+msgstr "指定在创建用于执行远程BPA扫描的远程连接时是否使用SSL。有关更多信息，请输入`Get-Help Invoke-Command`。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "The input string specified by the *ModelId* parameter."
+msgstr "由 *ModelId* 参数指定的输入字符串。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"System.Collections.Generic.List<Microsoft.BestPractices.CoreInterface.InvokeBpaModelOutput>"
+msgstr ""
+"### "
+"System.Collections.Generic.List<Microsoft.BestPractices.CoreInterface.InvokeBpaModelOutput>"
+
+msgid ""
+"The output object encapsulates the results of the cmdlet that is entered.\n"
+"The output object contains information such as the BPA model ID, the success or failure of the cmdlet, and other details."
+msgstr "输出对象封装了所输入的cmdlet的执行结果。该输出对象包含了诸如BPA模型ID、cmdlet的执行是否成功以及其他详细信息等内容。"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-BpaModel](./Get-BpaModel.md)"
+msgstr "[Get-BpaModel](./Get-BpaModel.md)"
+
+msgid "[Get-BpaResult](./Get-BpaResult.md)"
+msgstr "[Get-BpaResult](./Get-BpaResult.md)"
+
+msgid "[Set-BpaResult](./Set-BpaResult.md)"
+msgstr "[Set-BpaResult](./Set-BpaResult.md)"

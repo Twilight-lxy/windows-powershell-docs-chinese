@@ -1,0 +1,262 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:11:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AppvClientConfiguration"
+msgstr "# 设置 AppVClient 配置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Applies configuration settings to the App-V Client."
+msgstr "将配置设置应用到 App-V 客户端上。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AppvClientConfiguration** cmdlet applies configuration settings to the Microsoft Application Virtualization (App-V) client.\n"
+"Each parameter represents a setting that can be changed."
+msgstr ""
+"`Set-AppvClientConfiguration` cmdlet 用于将配置设置应用到 Microsoft "
+"应用虚拟化（App-V）客户端。每个参数代表一个可以更改的设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set a client configuration parameter"
+msgstr "### 示例 1：设置客户端配置参数"
+
+msgid ""
+"This schematic example sets a particular client configuration parameter."
+msgstr "这个示意图示例设置了一个特定的客户端配置参数。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies whether virtualized applications are started on Windows 8 "
+"computers that are connected over a metered network connection, for "
+"instance, 4G."
+msgstr "指定是否在通过计量型网络连接（例如4G）连接的Windows 8计算机上启动虚拟化应用程序。"
+
+msgid ""
+"Specifies how new packages should be loaded automatically by App-V on a specific computer.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定App-V应如何在特定计算机上自动加载新包。该参数的可接受值包括："
+
+msgid "Specifies the path of a valid certificate in the certificate store."
+msgstr "指定证书存储中有效证书的路径。"
+
+msgid ""
+"Specifies whether to enable dynamic virtualization.\n"
+"Dynamic virtualization enables supported Shell Extensions, Browser Helper Objects, and Active X controls to be virtualized and work with virtual applications."
+msgstr ""
+"指定是否启用动态虚拟化功能。动态虚拟化允许支持的Shell扩展程序、浏览器辅助对象（Browser Helper Objects）以及Active "
+"X控件在虚拟环境中运行，并与虚拟应用程序一起使用。"
+
+msgid ""
+"Specifies whether to enable the ability for scripts defined in the package "
+"manifest of configuration files to run."
+msgstr "指定是否启用配置文件包清单中定义的脚本的运行功能。"
+
+msgid ""
+"Specifies whether to enable the publishing refresh progress bar for the "
+"Client."
+msgstr "指定是否为客户端启用发布刷新进度条功能。"
+
+msgid ""
+"Specifies whether to opt in ($True) or opt out ($False) of the Customer "
+"Experience Improvement Program."
+msgstr "指定是选择参与（$True）还是不参与（$False）客户体验改进计划。"
+
+msgid ""
+"Specifies whether to force the client to ignore the Location Provider path "
+"and instead use the Package Source Root."
+msgstr "指定是否强制客户端忽略“Location Provider”路径，而使用“Package Source Root”。"
+
+msgid ""
+"Specifies the location to create symbolic links associated with the current version of a globally published package.\n"
+"All virtual application extensions, for example shortcuts and file type associations, use this path.\n"
+"If you do not specify a path, symbolic links are not be used when you publish the package."
+msgstr ""
+"指定用于创建与当前版本的全球发布软件包相关联的符号链接的位置。所有虚拟应用程序扩展（例如快捷方式以及文件类型关联）都会使用此路径。如果您没有指定路径，在发布软件包时将不会使用符号链接。"
+
+msgid ""
+"Specifies the location to create symbolic links associated with the current version of a per-user published package.\n"
+"All virtual application extensions, for example shortcuts and file type associations, use this path.\n"
+"If you do not specify a path, symbolic links will not be used when you publish the package."
+msgstr ""
+"指定用于创建与当前版本的用户专属发布包相关联的符号链接的位置。所有虚拟应用程序扩展（例如快捷方式及文件类型关联）都会使用此路径。如果您没有指定路径，在发布该包时将不会使用符号链接。"
+
+msgid ""
+"Specifies the class ID (CLSID) for a compatible implementation of the "
+"IAppvPackageLocationProvider interface."
+msgstr "指定 IAppvPackageLocationProvider 接口的一个兼容实现的类标识符（CLSID）。"
+
+msgid ""
+"Specifies whether to use migration mode.\n"
+"Migration mode allows the App-V client to control shortcuts and FTAs for packages published using an earlier version of App-V."
+msgstr ""
+"指定是否使用迁移模式。迁移模式允许App-V客户端控制通过早期版本的App-V发布的程序包的快捷方式（shortcuts）和文件传输协议（FTAs）。"
+
+msgid ""
+"Specifies directory where all new applications and updates are installed."
+msgstr "指定用于安装所有新应用程序和更新文件的目录。"
+
+msgid ""
+"Specifies a value that overrides source location for downloading package "
+"content."
+msgstr "指定一个值，该值会覆盖用于下载包内容的源位置。"
+
+msgid ""
+"Specifies a list of process paths which are candidates for using dynamic virtualization of supported shell extensions, browser helper objects, and ActiveX controls.\n"
+"This parameter may contain wildcard characters.\n"
+"Only processes whose full path matches one of these items can use dynamic virtualization."
+msgstr ""
+"指定一个进程路径列表，这些路径的进程可以作为使用动态虚拟化的候选对象，用于支持相应的shell扩展、浏览器辅助对象（browser helper "
+"objects）和ActiveX控件。该参数可以包含通配符字符。只有那些完整路径与列表中的某个条目匹配的进程才能使用动态虚拟化功能。"
+
+msgid ""
+"Specifies the number of seconds between attempts to reestablish a dropped session.\n"
+"The acceptable values for this parameter are: between 0 and 3600."
+msgstr "指定在尝试重新建立已中断的会话之间等待的秒数。该参数的可接受值为：0到3600之间的任意数值。"
+
+msgid ""
+"Specifies the number of times to retry a dropped session.\n"
+"The acceptable values for this parameter are: between 0 and 99."
+msgstr "指定重新尝试已断开的会话的次数。该参数的可接受值为：0 到 99 之间的任意整数。"
+
+msgid ""
+"Specifies the maximum size in bytes to transmit to the server for reporting upload requests.\n"
+"This can help avoid permanent transmission failures when the log has reached a significant size.\n"
+"The acceptable values for this parameter are: between 1024 and unlimited."
+msgstr ""
+"指定用于向服务器传输上传请求报告的最大数据量（以字节为单位）。这有助于避免在日志文件体积过大时发生永久性的传输失败。该参数的可接受取值范围是：1024 "
+"到无限大之间。"
+
+msgid ""
+"Specifies the maximum size in megabytes (MB) of the XML cache for storing reporting information.\n"
+"The size applies to the cache in memory.\n"
+"When the limit is reached, the log file rolls over.\n"
+"The acceptable values for this parameter are: between 0 and 1024."
+msgstr ""
+"指定用于存储报告信息的XML缓存的最大大小（以兆字节MB为单位）。该大小指的是内存中的缓存空间。当达到上限时，日志文件将会被替换。此参数的可接受取值范围是：0到1024之间。"
+
+msgid ""
+"Specifies whether to enable the client to return information to a reporting "
+"server."
+msgstr "指定是否允许客户端向报告服务器返回信息。"
+
+msgid ""
+"Specifies the retry interval that the client uses to resend data to the "
+"reporting server."
+msgstr "指定客户端用于将数据重新发送到报告服务器的重试间隔时间。"
+
+msgid ""
+"Specifies the maximum delay, in minutes, for data to be sent to the reporting server.\n"
+"When the scheduled task is started, the client generates a random delay between 0 and *ReportingRandomDelay* and waits the specified duration before it sends data.\n"
+"This can help prevent collisions on the server."
+msgstr ""
+"指定数据发送到报告服务器的最大延迟时间（以分钟为单位）。当计划任务启动时，客户端会生成一个介于 0 和 *ReportingRandomDelay* "
+"之间的随机延迟值，并在等待指定的时间长度后才会发送数据。这样可以有助于避免服务器上的数据冲突。"
+
+msgid ""
+"Specifies the location on the reporting server where client information is "
+"saved."
+msgstr "指定客户端信息在报告服务器上保存的位置。"
+
+msgid ""
+"Specifies the time to initiate the client to send data to the reporting server.\n"
+"The acceptable values for this parameter are: integers between 0-23 corresponding to the hour of the day.\n"
+"By default, the *ReportingStartTime* starts on the current day at 10 P.M or 22."
+msgstr ""
+"指定客户端开始向报告服务器发送数据的时间。该参数的可接受值为：0到23之间的整数，对应于一天中的小时数。默认情况下，*ReportingStartTime*从当天的晚上10点（即22:00）开始计算。"
+
+msgid ""
+"Specifies whether an unelevated user can publish registered App-V packages."
+msgstr "指定非特权用户是否可以发布已注册的App-V软件包。"
+
+msgid "This parameter is applicable starting in App-V 5.0 SP3."
+msgstr "此参数自 App-V 5.0 SP3 版本起开始适用。"
+
+msgid ""
+"Specifies the file paths relative to `%userprofile%` that do not roam with a"
+" user's profile, for example: `'desktop;my pictures'`."
+msgstr ""
+"指定相对于 `%userprofile%` 的文件路径，这些路径不会随用户的个人资料一起迁移。例如：`'desktop;my pictures'`。"
+
+msgid ""
+"Specifies the registry paths that do not roam with a user profile, for "
+"example `'software\\\\\\\\classes;software\\\\\\\\clients'`."
+msgstr "指定那些不会随用户配置文件一起迁移的注册表路径，例如 `‘software\\\\classes;software\\\\clients’`。"
+
+msgid ""
+"Specifies whether streamed package contents are not saved to the local hard "
+"disk."
+msgstr "指定是否不将流式传输的包内容保存到本地硬盘上。"
+
+msgid "Specifies whether branch caching is turned on."
+msgstr "指定是否启用分支缓存功能。"
+
+msgid ""
+"Specifies whether to verify Server certificate revocation status before "
+"steaming using HTTPS."
+msgstr "指定在使用 HTTPS 进行数据传输之前是否需要验证服务器证书的吊销状态。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.AppvAgent.AppvClientConfiguration"
+msgstr "### Microsoft.AppvAgent.AppvClientConfiguration"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.AppvAgent.AppvClientConfiguration"
+msgstr "### Microsoft.AppvAgent.AppvClientConfiguration"
+
+msgid ""
+"This cmdlet returns an object that is displayed as a two column table.\n"
+"The first column contains the specific configuration and the second column contains the associated current value."
+msgstr "此cmdlet返回一个对象，该对象以两列表格的形式显示。第一列包含具体的配置信息，第二列包含相应的当前值。"
+
+msgid ""
+"In the case where the name/value option is passed, the cmdlet returns the "
+"same two column table, but only for the configuration requested."
+msgstr "如果传递了名称/值选项，该cmdlet会返回相同的二维表格，但仅包含所请求的配置信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AppvClientConfiguration](./Get-AppvClientConfiguration.md)"
+msgstr "[Get-AppvClientConfiguration](./Get-AppvClientConfiguration.md)"

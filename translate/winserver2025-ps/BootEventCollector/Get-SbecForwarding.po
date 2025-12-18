@@ -1,0 +1,110 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:52:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-SbecForwarding"
+msgstr "# Get-SbecForwarding"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the current connections and how data is forwarded."
+msgstr "获取当前的连接状态以及数据传输的方式。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-SbecForwarding** cmdlet get the current connections and how data is forwarded from the Setup and Boot Event Collector.\n"
+"It returns one object for each connection."
+msgstr ""
+"`Get-SbecForwarding` cmdlet 可以获取当前的连接状态以及数据是如何从设置和启动事件收集器（Setup and Boot "
+"Event Collector）转发出去的。该命令会为每个连接返回一个对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get how data is forwarded"
+msgstr "### 示例 1：了解数据是如何被传输的"
+
+msgid ""
+"This command gets the forwarding information, and then stores it in the $x "
+"variable."
+msgstr "这条命令获取转发信息，然后将其存储在变量 $x 中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet, or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行该cmdlet。可以输入一个会话对象（例如`New-CimSession`或`Get-CimSession` "
+"cmdlet的输出结果），或者这些对象的数组。默认情况下，该cmdlet会在本地计算机上运行。有关更多信息，请参阅“关于_CimSession”。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on MSDN."
+msgstr ""
+"指定您想要在其上执行操作的计算机的名称。对于每台计算机，您可以指定一个完全合格的域名（FQDN）、一个NetBIOS名称或一个IP地址。有关更多信息，请参阅MSDN上的[Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### The CIM/WMI objects of class "
+"\\Root\\Microsoft\\Windows\\BootEventCollector\\TargetForwarding."
+msgstr ""
+"### 类 \\Root\\Microsoft\\Windows\\BootEventCollector\\TargetForwarding 的 "
+"CIM/WMI 对象。"
+
+msgid "The objects contain the fields:"
+msgstr "这些对象包含以下字段："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecDestination](./Get-SbecDestination.md)"
+msgstr "[Get-SbecDestination](./Get-SbecDestination.md)"
+
+msgid "[Get-SbecHistory](./Get-SbecHistory.md)"
+msgstr "[Get-SbecHistory](./Get-SbecHistory.md)"

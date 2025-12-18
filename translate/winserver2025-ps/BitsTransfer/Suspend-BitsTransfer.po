@@ -1,0 +1,155 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:45:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Suspend-BitsTransfer"
+msgstr "# 暂停比特传输"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Suspends a BITS transfer job."
+msgstr "暂停一个BITS传输作业。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Suspend-BitsTransfer** cmdlet suspends, or pauses, one or more Background Intelligent Transfer Service (BITS) transfer jobs.\n"
+"If the transfer is already suspended, the cmdlet does nothing.\n"
+"You can restart the BITS transfer job by using the **Resume-BitsTransfer** cmdlet."
+msgstr ""
+"`Suspend-BitsTransfer` cmdlet 可以暂停一个或多个后台智能传输服务（Background Intelligent "
+"Transfer Service，简称 BITS）的传输任务。如果传输任务已经处于暂停状态，该 cmdlet 将不会产生任何效果。您可以使用 "
+"`Resume-BitsTransfer` cmdlet 来重新启动 BITS 传输任务。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Suspend all BITS transfer jobs owned by the current user"
+msgstr "### 示例 1：暂停当前用户拥有的所有 BITS（Binary Transfer Service）传输作业"
+
+msgid ""
+"This command suspends all the BITS transfer jobs that are owned by the "
+"current user."
+msgstr "此命令会暂停当前用户拥有的所有BITS传输作业。"
+
+msgid ""
+"The output of **Get-BitsTransfer** is a set of **BitsJob** objects.\n"
+"This output is piped to the **Suspend-BitsTransfer** cmdlet."
+msgstr ""
+"`Get-BitsTransfer` 的输出是一组 `BitsJob` 对象。这些输出会被传递给 `Suspend-BitsTransfer` "
+"cmdlet。"
+
+msgid "### Example 2: Suspend all BITS transfer jobs on the computer"
+msgstr "### 示例 2：暂停计算机上所有的 BITS（Binary Transfer Service）传输任务"
+
+msgid "This command suspends all the BITS transfer jobs on the computer."
+msgstr "这个命令会暂停计算机上所有的BITS传输作业。"
+
+msgid ""
+"The first command gets all the **BitsJob** objects on the computer and then "
+"stores them in the $Bits variable."
+msgstr "第一个命令获取计算机上所有的 **BitsJob** 对象，然后将它们存储在 `$Bits` 变量中。"
+
+msgid ""
+"The second command uses the *BitsJob* parameter to pass the **BitsJob** "
+"objects that are stored in the $Bits variable to the **Suspend-"
+"BitsTransfer** cmdlet."
+msgstr ""
+"第二个命令使用 *BitsJob* 参数，将存储在 $Bits 变量中的 **BitsJob** 对象传递给 **Suspend-"
+"BitsTransfer** cmdlet。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the BITS transfer jobs to suspend.\n"
+"You can pipe a value to this parameter from other cmdlets that return **BitsJob** objects, such as **Get-BitsTransfer**."
+msgstr ""
+"用于指定需要暂停的 BITS（Bit Transfer Service）传输任务。您可以从其他返回 **BitsJob** 对象的 cmdlet（例如 "
+"**Get-BitsTransfer**）中将该对象的值传递给此参数。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+msgstr "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+
+msgid ""
+"This cmdlet accepts one or more **BitsJob** objects as input that populates "
+"the *BitsJob* parameter."
+msgstr "此cmdlet接受一个或多个**BitsJob**对象作为输入，并将这些对象填充到*BitsJob*参数中。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+msgstr "### Microsoft BackgroundIntelligentTransferManagement.BitsJob[]"
+
+msgid ""
+"This cmdlet generates the **BitsJob** objects that are associated with the "
+"BITS transfer jobs that were suspended."
+msgstr "此cmdlet会生成与那些被挂起的BITS传输任务相关的**BitsJob**对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-BitsFile](./Add-BitsFile.md)"
+msgstr "[Add-BitsFile](./Add-BitsFile.md)"
+
+msgid "[Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+msgstr "[Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+
+msgid "[Get-BitsTransfer](./Get-BitsTransfer.md)"
+msgstr "[Get-BitsTransfer](./Get-BitsTransfer.md)"
+
+msgid "[Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+msgstr "[Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+
+msgid "[Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+msgstr "[Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+
+msgid "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+msgstr "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+
+msgid "[Start-BitsTransfer](./Start-BitsTransfer.md)"
+msgstr "[开始比特传输](./Start-BitsTransfer.md)"

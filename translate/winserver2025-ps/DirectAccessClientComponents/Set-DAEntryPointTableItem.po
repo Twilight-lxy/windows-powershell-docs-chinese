@@ -1,0 +1,264 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:23:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DAEntryPointTableItem"
+msgstr "# Set-DAEntryPointTableItem"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Modifies the configuration of a DirectAccess entry point stored in a Group "
+"Policy object."
+msgstr "修改存储在组策略对象中的 DirectAccess 入口点的配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByPolicyStore (Default)"
+msgstr "### ByPolicyStore（默认值）"
+
+msgid "### ByGpoSession"
+msgstr "### ByGpoSession"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject (cdxml)"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DAEntryPointTableItem** cmdlet modifies an entry point configuration that is stored in a Group Policy object (GPO).\n"
+"You must specify the name of the GPO in which the DirectAccess entry point configuration is stored."
+msgstr ""
+"`Set-DA EntryPointTableItem` cmdlet 用于修改存储在组策略对象（GPO）中的入口点配置。您必须指定包含 "
+"DirectAccess 入口点配置的 GPO 的名称。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify an entry point"
+msgstr "#### 示例 1：修改入口点"
+
+msgid "This cmdlet modifies the GSLB of the entry point named Paris."
+msgstr "此cmdlet用于修改名为“Paris”的入口点的GSLB（全球负载均衡）设置。"
+
+msgid "### Example 2: Modify an entry point using an input object"
+msgstr "### 示例 2：使用输入对象修改入口点"
+
+msgid ""
+"This cmdlet modifies an entry point named Paris by passing an input object "
+"on the pipeline."
+msgstr "此cmdlet通过管道传递一个输入对象来修改名为“Paris”的入口点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the Active Directory Domain Services (AD DS) site name associated with the entry point.\n"
+"When a client computer connects to an entry point, the computer becomes associated with the AD DS site specified."
+msgstr ""
+"指定与入口点关联的 Active Directory 域服务（AD DS）站点名称。当客户端计算机连接到某个入口点时，该计算机就会与该指定的 AD DS"
+" 站点建立关联。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job` "
+"cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the IPv6 address of the entry point to use for connectivity.\n"
+"The cmdlet fails if the IP address specified is not within the IP address range specified by *EntryPointRange*."
+msgstr ""
+"指定用于连接的入口点的 IPv6 地址。如果指定的 IP 地址不在 *EntryPointRange* 指定的 IP 地址范围内，该 cmdlet "
+"将会失败。"
+
+msgid ""
+"Specifies the name of the entry point to modify.\n"
+"The entry point name is usually the friendly name of the location, such as Redmond or Paris."
+msgstr "指定要修改的入口点的名称。入口点名称通常是该位置的友好名称，例如“Redmond”或“Paris”。"
+
+msgid "Specify the name of the entry point by using double quotes (\" \")."
+msgstr "使用双引号 (“”) 指定入口点的名称。"
+
+msgid ""
+"Specifies the IPv6 address range associated with computers connecting through this entry point.\n"
+"Specify the IPv6 range in classless inter-domain routing (CIDR) notation."
+msgstr "指定通过此入口点连接的计算机所使用的 IPv6 地址范围。请使用无类别域间路由（CIDR）表示法来指定该 IPv6 地址范围。"
+
+msgid "The following is an example of an *EntryPointRange* entry:"
+msgstr "以下是一个 * EntryPointRange* 入口的示例："
+
+msgid ""
+"`{2001:4898:e0:305d::100:1/128, 2001:4898:e0:305d::100:2/128, "
+"2001:4898:e0:3084::/64}`"
+msgstr ""
+"`{2001:4898:e0:305d::100:1/128, 2001:4898:e0:305d::100:2/128, "
+"2001:4898:e0:3084::/64}`"
+
+msgid ""
+"Specifies the Group Policy session to send configuration information.\n"
+"You can use *GPOSession* with the **NetGPO** cmdlets to aggregate multiple operations performed on a Group Policy Object."
+msgstr ""
+"指定用于发送配置信息的组策略会话。您可以使用 *GPOSession* 与 **NetGPO** 命令集，来汇总对某个组策略对象执行的多个操作。"
+
+msgid "*GPOSession* cannot be used in conjunction with *PolicyStore*."
+msgstr "*GPOSession* 不能与 *PolicyStore* 同时使用。"
+
+msgid ""
+"Specifies the IP address associated with the new entry point, if using "
+"DirectAccess in conjunction with global server load balancing (GSLB) site "
+"balancing."
+msgstr "指定与新入口点关联的 IP 地址（如果在使用 DirectAccess 时结合了全局服务器负载均衡（GSLB）站点均衡功能）。"
+
+msgid ""
+"Specifies the IPHTTPs profile name to be used for connectivity.\n"
+"You specify the name of the profile in double quotes (\" \").\n"
+"**New-DAEntryPointTableItem** fails if the profile does not already exist in the GPO that contains the configuration.\n"
+"For more information about IPHTTPs profiles, see the **NetIPHTTPsConfiguration** cmdlets in the **NetworkTransition** module."
+msgstr ""
+"指定用于连接的 IPHTTPs 配置文件名称。配置文件的名称需要用双引号 (“”) 括起来。如果指定的配置文件在包含相应设置的 GPO "
+"中还不存在，`New-DAEntryPointTableItem` 命令将执行失败。有关 IPHTTPs 配置文件的更多信息，请参阅 "
+"`NetworkTransition` 模块中的 `NetIPHTTPsConfiguration` cmdlet。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此cmdlet的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传递给此cmdlet。"
+
+msgid ""
+"Sends items from an interactive window down the pipeline as input to other cmdlets.\n"
+"By default, this cmdlet does not generate any output.\n"
+"However, to send items from the interactive window down the pipeline, click to select the items and then click OK.\n"
+"Shift-click and Ctrl-click are supported."
+msgstr ""
+"该cmdlet会将交互式窗口中的项目作为输入数据传递给其他cmdlets。默认情况下，这个cmdlet不会生成任何输出结果。不过，如果要将这些项目传递到其他cmdlets中，请先点击鼠标选择所需的项目，然后再点击“确定”按钮。同时支持使用Shift键或Ctrl键进行多选操作。"
+
+msgid "Specifies the policy store into which the cmdlet adds the entry point."
+msgstr "指定该cmdlet将入口点添加到的策略存储库。"
+
+msgid ""
+"To add the entry point to a Group Policy Object, specify the GPO name using "
+"the format: \"Domain\\GPOName\"."
+msgstr ""
+"要将入口点添加到组策略对象（Group Policy Object）中，请使用以下格式指定 GPO 的名称：“Domain\\GPOName”。"
+
+msgid ""
+"To add the entry point information to a computer's local GPO, specify the "
+"computer's local GPO name in the format \"GPO:\\<computername\\>\"."
+msgstr "要将入口点信息添加到计算机的本地组策略对象（GPO）中，请以“GPO:<计算机名称>”的格式指定该计算机的本地GPO名称。"
+
+msgid "*PolicyStore* cannot be used in conjunction with *GPOSession*."
+msgstr "*PolicyStore* 不能与 *GPOSession* 同时使用。"
+
+msgid "Specifies the IP address of the Teredo server for the new entry point."
+msgstr "为新入口点指定Teredo服务器的IP地址。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的命令（cmdlet）的最大操作数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM 命令的数量来计算该命令的最佳限制值。此限制仅适用于当前执行的命令，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。不过实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/StandardCimv2/MSFT_DASiteTableEntry"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/StandardCimv2/MSFT_DASiteTableEntry"
+
+msgid ""
+"This cmdlet returns a CIM object which contains the DA entry point table "
+"item."
+msgstr "此cmdlet返回一个CIM对象，其中包含DA入口点表项。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DAEntryPointTableItem](./Get-DAEntryPointTableItem.md)"
+msgstr "[Get-DA EntryPointTableItem](./Get-DAEntryPointTableItem.md)"
+
+msgid "[New-DAEntryPointTableItem](./New-DAEntryPointTableItem.md)"
+msgstr "[New-DAEntryPointTableItem](./New-DAEntryPointTableItem.md)"
+
+msgid "[Remove-DAEntryPointTableItem](./Remove-DAEntryPointTableItem.md)"
+msgstr "[Remove-DAEntryPointTableItem](./Remove-DAEntryPointTableItem.md)"
+
+msgid "[Rename-DAEntryPointTableItem](./Rename-DAEntryPointTableItem.md)"
+msgstr "[ Rename-DA EntryPointTableItem](./Rename-DAEntryPointTableItem.md)"
+
+msgid "[Reset-DAEntryPointTableItem](./Reset-DAEntryPointTableItem.md)"
+msgstr "[Reset-DA EntryPointTableItem](./Reset-DAEntryPointTableItem.md)"

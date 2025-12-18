@@ -1,0 +1,146 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:51:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-RmsSystemHealthReport"
+msgstr "# 获取RMS系统健康报告"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Generates a system health report of the Active Directory Rights Management "
+"Services (AD RMS) cluster."
+msgstr "生成Active Directory Rights Management Services（AD RMS）集群的系统健康报告。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-RmsSystemHealthReport** cmdlet generates a report that contains "
+"information about the overall health of the Active Directory Rights "
+"Management Services (AD RMS) cluster."
+msgstr ""
+"`Get-RmsSystemHealthReport` cmdlet 生成一份报告，其中包含有关 Active Directory 权限管理服务（AD "
+"RMS）集群整体运行状况的信息。"
+
+msgid ""
+"To obtain the report, set the parameters for the type of report you want and then set the *Path* parameter to the AD RMS provider drive path `<PSDrive>:\\`Report where `<PSDrive>` is the provider drive ID.\n"
+"You can also specify a relative path.\n"
+"For example, a dot (.) specifies the current location."
+msgstr ""
+"要获取该报告，请设置所需报告类型的参数，然后将 *Path* 参数设置为 AD RMS 提供程序的驱动器路径 "
+"`<PSDrive>:\\`Report`，其中 `<PSDrive>` 是提供程序的驱动器 ID。您也可以指定相对路径。例如，点（.）表示当前位置。"
+
+msgid ""
+"The cmdlet generates a summary report for the specified ReportType unless "
+"you specify *RequestType*, *ServerName*, *DomainName*, or *UserName*."
+msgstr ""
+"除非指定了*RequestType*、*ServerName*、*DomainName*或*UserName*，否则此cmdlet会为指定的ReportType生成一份总结报告。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a report for requests"
+msgstr "#### 示例 1：获取请求的报告"
+
+msgid ""
+"This command displays a summary report of requests processed by the AD RMS "
+"cluster."
+msgstr "此命令会显示由 AD RMS 集群处理的请求的摘要报告。"
+
+msgid "### Example 2: Get a report of user activity"
+msgstr "#### 示例 2：获取用户活动报告"
+
+msgid ""
+"This command displays a summary report of user activity during calendar year"
+" 2008."
+msgstr "该命令会显示2008年整个日历年度内用户活动的汇总报告。"
+
+msgid "### Example 3: Get a report of users in a domain"
+msgstr "### 示例 3：获取某个域中用户的报告"
+
+msgid ""
+"This command displays a summary report of requests by all users in the "
+"Research domain."
+msgstr "该命令会显示“Research”领域中所有用户发出的请求的汇总报告。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid "Specifies the domain name of the e-mail of the user."
+msgstr "指定用户电子邮件的域名。"
+
+msgid ""
+"Specifies the end of a time period for a system health report.\n"
+"This parameter specifies a time value.\n"
+"See the description of the *StartTime* parameter for information on specifying a time."
+msgstr "用于指定系统健康报告的时间段的结束时间。此参数用于设置一个时间值。有关如何设置时间的详细信息，请参阅*StartTime*参数的描述。"
+
+msgid ""
+"Specifies a provider drive and path or relative path on the current drive.\n"
+"This parameter is required.\n"
+"Use a dot (.) to specify the current location.\n"
+"This parameter does not accept wildcards and has no default value."
+msgstr "指定提供者驱动器及其路径，或者是当前驱动器上的相对路径。此参数是必需的。使用点（.）来表示当前位置。该参数不支持通配符，也没有默认值。"
+
+msgid ""
+"Specifies the type of report.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定报告的类型。此参数的可接受值包括："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+
+msgid "[Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"
+msgstr "[Get-RmsUserRequestReport](./Get-RmsUserRequestReport.md)"

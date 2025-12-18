@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:53:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Initialize-RmsCryptoMode2"
+msgstr "# 初始化 RmsCryptoMode2"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Prepares an AD RMS server for transitioning to Cryptographic Mode 2."
+msgstr "为AD RMS服务器过渡到加密模式2做好准备。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Initialize-RmsCryptoMode2** cmdlet prepares an Active Directory Rights"
+" Management Services (AD RMS) server for transitioning to Cryptographic Mode"
+" 2."
+msgstr ""
+"`Initialize-RmsCryptoMode2` cmdlet 用于准备 Active Directory 权限管理服务（AD "
+"RMS）服务器，以便将其切换到加密模式 2。"
+
+msgid ""
+"Cryptographic Mode 2 is an updated and enhanced AD RMS cryptographic implementation.\n"
+"It supports 2048-bit RSA encryption and 256-bit length keys using the SHA-2 hashing algorithm (SHA-2/SHA-256) standards."
+msgstr ""
+"加密模式2（Cryptographic Mode 2）是经过更新和优化的AD "
+"RMS加密实现方案。它支持使用SHA-2哈希算法（SHA-2/SHA-256）标准的2048位RSA加密以及长度为256位的密钥。"
+
+msgid ""
+"While this cmdlet is useful for performing the initial steps required in transitioning an AD RMS deployment to Cryptographic Mode 2, additional tasks are required.\n"
+"First, all client computers in the AD RMS cluster environment must be patched to support this updated and enhanced mode.\n"
+"Depending on your deployment configuration, you may need to update some or all servers.\n"
+"When all computers are updated, as the final transition task to Cryptographic Mode 2, you can run the **Update-ADRMS** cmdlet with the *UpdateCryptographicModeOnly* parameter specified to effectively switch the cluster to using mode 2 instead of mode 1."
+msgstr ""
+"虽然这个cmdlet对于完成将AD RMS部署切换到加密模式2所需的初始步骤非常有用，但还需要进行其他操作。首先，AD "
+"RMS集群环境中的所有客户端计算机都必须安装相应的补丁以支持这种更新后的增强模式。根据您的部署配置，您可能需要更新部分或全部服务器。当所有计算机的更新工作完成后，作为最终过渡到加密模式2的步骤，您可以运行**Update-"
+"ADRMS** cmdlet，并指定*UpdateCryptographicModeOnly*参数，从而有效地将集群从模式1切换到模式2。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Export the SLC"
+msgstr "#### 示例 1：导出 SLC 文件"
+
+msgid ""
+"This command exports the server licensor certificate (SLC) for the current "
+"AD RMS server to the trusted user domain c:\\test.tud for a server that uses"
+" centrally managed keys."
+msgstr "该命令将当前 AD RMS 服务器的服务器许可证书（SLC）导出到受信任的用户域 c:\\test.tud，适用于使用集中管理密钥的服务器。"
+
+msgid "### Example 2: Force regeneration of cryptographic mode 2 keys"
+msgstr "### 示例 2：强制重新生成加密模式 2 的密钥"
+
+msgid "This command forces regeneration of the cryptographic mode 2 keys."
+msgstr "此命令强制重新生成加密模式2所需的密钥。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the name of the cryptographic service provider (CSP) to use for generating the mode 2 TUD when this cmdlet is executed.\n"
+"This CSP must be of the type PROV_RSA_AES to support mode 2 operation (in contrast to mode 1 keys which use the CSP type PROV_RSA_FULL)."
+msgstr ""
+"指定在执行此 cmdlet 时用于生成模式 2 TUD 的加密服务提供商（CSP）的名称。该 CSP 必须是 PROVRSA_AES 类型，以支持模式 "
+"2 操作（与使用 PROV_RSA_FULL 类型的模式 1 密钥不同）。"
+
+msgid ""
+"The *CspName* parameter is for CSP-based installs only.\n"
+"If a CSP name is specified for a server with a centrally managed key, an error is returned if this parameter is included in the command."
+msgstr ""
+"*CspName* 参数仅用于基于内容安全策略（CSP）的安装场景。如果为一台使用集中管理密钥的服务器指定了某个 CSP "
+"名称，且该参数被包含在命令中，将会返回错误信息。"
+
+msgid ""
+"Specifies the name and location for the file generated when this cmdlet is executed.\n"
+"This file contains the mode 2 SLC (server licensor certificate) which is exported as part of transitioning a trusted user domain (TUD) to mode operation."
+msgstr ""
+"指定当执行此 cmdlet 时生成的文件的名称和位置。该文件包含模式 2 的 "
+"SLC（服务器许可证书），在将受信任的用户域（TUD）转换为模式操作的过程中，该证书会被导出。"
+
+msgid ""
+"Forces the cmdlet to save (overwrite) an existing file if one is found to "
+"exist under the name and location specified as part of the *FilePath* "
+"parameter."
+msgstr "如果在与 *FilePath* 参数指定的名称和位置下存在同名文件，则该 cmdlet 会强制保存（覆盖）该现有文件。"
+
+msgid ""
+"This parameter is for CSP-based installs only.\n"
+"If a CSP name is specified for a server with a centrally managed key, an error is returned if this parameter is included in the command."
+msgstr ""
+"此参数仅适用于基于内容安全策略（CSP）的安装方式。如果为使用集中管理密钥的服务器指定了CSP名称，而在命令中包含了该参数，则会返回错误信息。"
+
+msgid ""
+"Forces the AD RMS server to generate a new key even if the cmdlet has previously run.\n"
+"This overwrites any previously generated key.\n"
+"Because you can run this cmdlet multiple times, if this parameter is omitted, the same key is exported each subsequent time the cmdlet is run."
+msgstr ""
+"即使之前已经运行过该cmdlet，此命令也会强制AD "
+"RMS服务器生成一个新的密钥，并会覆盖任何先前生成的密钥。由于可以多次运行这个cmdlet，如果省略了这个参数，那么每次运行该cmdlet时都会导出相同的密钥。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### string[], string, bool, SwitchParameter"
+msgstr "### string[]、string、bool、SwitchParameter"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"

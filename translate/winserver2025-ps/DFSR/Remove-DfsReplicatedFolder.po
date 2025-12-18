@@ -1,0 +1,141 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:43:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-DfsReplicatedFolder"
+msgstr "# 删除DFS复制文件夹"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a replicated folder from a replication group."
+msgstr "从复制组中删除一个已复制的文件夹。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-DfsReplicatedFolder** cmdlet removes replicated folders from a replication group.\n"
+"Replicated folders are logical arrangements of replication that do not contain computer-specific settings."
+msgstr ""
+"`Remove-DfsReplicatedFolder` cmdlet "
+"用于从复制组中删除已复制的文件夹。这些复制的文件夹只是数据复制的逻辑结构，其中不包含与特定计算机相关的设置信息。"
+
+msgid ""
+"When you remove a replicated folder, the Distributed File System (DFS) Replication service cannot replicate the folder.\n"
+"This operation does not delete any replicated file data.\n"
+"Use this cmdlet only when you decommission a replicated folder."
+msgstr ""
+"当你删除一个已复制的文件夹时，分布式文件系统（DFS）的复制服务将无法继续复制该文件夹。此操作不会删除任何已复制的文件数据。仅当你需要停止使用某个已复制的文件夹时，请使用此"
+" cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a replicated folder"
+msgstr "#### 示例 1：删除一个被复制的文件夹"
+
+msgid ""
+"This command removes the replicated folder RF22 and its associated "
+"memberships from the replication group named RG11."
+msgstr "此命令会将复制的文件夹RF22及其关联的成员从名为RG11的复制组中删除。"
+
+msgid ""
+"### Example 2: Remove all replicated folders associated with a replication "
+"group"
+msgstr "### 示例 2：删除与某个复制组关联的所有重复文件夹"
+
+msgid ""
+"This command removes all replicated folders and their associated memberships from the replication group named RG11.\n"
+"The *Force* parameter specifies that the cmdlet does not prompt you to confirm that you want to remove each replicated folder."
+msgstr ""
+"此命令会从名为 RG11 的复制组中删除所有已复制的文件夹及其关联的成员资格。*Force* "
+"参数表示该cmdlet不会提示您确认是否要删除每个复制的文件夹。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names of replicated folders.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet gets all replicated folders."
+msgstr "指定一个包含已复制文件夹名称的数组。您可以使用逗号分隔的列表以及通配符（*）。如果您不指定此参数，该cmdlet将获取所有已复制的文件夹。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该 cmdlet 被运行时会发生什么情况。但实际上，这个 cmdlet 并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### string"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsReplicatedFolder](./Get-DfsReplicatedFolder.md)"
+msgstr "[Get-DfsReplicatedFolder](./Get-DfsReplicatedFolder.md)"
+
+msgid "[Set-DfsReplicatedFolder](./Set-DfsReplicatedFolder.md)"
+msgstr "[Set-DfsReplicatedFolder](./Set-DfsReplicatedFolder.md)"
+
+msgid "[New-DfsReplicatedFolder](./New-DfsReplicatedFolder.md)"
+msgstr "[New-DfsReplicatedFolder](./New-DfsReplicatedFolder.md)"

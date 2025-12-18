@@ -1,0 +1,218 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:06:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DnsServer"
+msgstr "# Set-DnsServer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Overwrites a DNS server configuration."
+msgstr "覆盖DNS服务器配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-DnsServer** cmdlet uses an input object to overwrite a specified Domain Name System (DNS) server configuration.\n"
+"You can generate the input object by using an XML file that is exported by using any of the following cmdlets: **Get-DnsServer**, **Export-Clixml**, or **Import-Clixml**."
+msgstr ""
+"`Set-DnsServer` cmdlet 使用一个输入对象来覆盖指定的域名系统（DNS）服务器配置。你可以通过使用以下任意一个 cmdlet 生成的"
+" XML 文件来创建该输入对象：`Get-DnsServer`、`Export-Clixml` 或 `Import-Clixml`。"
+
+msgid ""
+"For more information about **Export-Clixml**, see  [Export-Clixml](https://technet.microsoft.com/en-us/library/hh849916.aspx).\n"
+"For more information about **Import-Clixml**, see  [Import-Clixml](https://technet.microsoft.com/en-us/library/hh849906.aspx)."
+msgstr ""
+"有关 **Export-Clixml** 的更多信息，请参阅 [Export-"
+"Clixml](https://technet.microsoft.com/en-us/library/hh849916.aspx)。有关 "
+"**Import-Clixml** 的更多信息，请参阅 [Import-"
+"Clixml](https://technet.microsoft.com/en-us/library/hh849906.aspx)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Overwrite a DNS server configuration by using an input object"
+msgstr "### 示例 1：使用输入对象覆盖 DNS 服务器配置"
+
+msgid ""
+"This set of commands uses an input object to overwrite a DNS server "
+"configuration."
+msgstr "这组命令使用一个输入对象来覆盖DNS服务器的配置信息。"
+
+msgid ""
+"As shown in the code block, the first command gets DNS server configuration by using the **Get-DnsServer** cmdlet.\n"
+"It then pipes the information to the **Export-Clixml** cmdlet, which exports the data into an XML file."
+msgstr ""
+"如代码块所示，第一个命令使用 **Get-DnsServer** cmdlet 获取 DNS 服务器配置信息，然后将这些信息传递给 **Export-"
+"Clixml** cmdlet，后者将这些数据导出到一个 XML 文件中。"
+
+msgid "The second command gets and stores the XML file data in variable $x."
+msgstr "第二条命令将XML文件的数据获取并存储到变量$x$中。"
+
+msgid ""
+"The third command uses the data that is stored in variable $x to overwrite "
+"an existing DNS server configuration."
+msgstr "第三个命令使用存储在变量$x`中的数据来覆盖现有的DNS服务器配置。"
+
+msgid ""
+"### Example 2: Set DNS server configuration by using the Cimsession "
+"parameter"
+msgstr "### 示例 2：使用 Cimsession 参数设置 DNS 服务器配置"
+
+msgid ""
+"This command gets DNS server configuration from a server that has an IP "
+"address of 172.22.50.137 and applies it to the server on which the **Set-"
+"DnsServer** cmdlet is run."
+msgstr ""
+"此命令从 IP 地址为 172.22.50.137 的服务器获取 DNS 服务器配置，并将其应用到运行 **Set-DnsServer** cmdlet"
+" 的服务器上。"
+
+msgid "### Example 3: Migrate DNS server configuration by using IP addresses"
+msgstr "### 示例 3：使用 IP 地址迁移 DNS 服务器配置"
+
+msgid ""
+"This command migrates DNS server configuration from a server that has an IP "
+"address of 172.22.50.137 to a server that has an IP address of "
+"172.22.50.138."
+msgstr "该命令将DNS服务器配置从IP地址为172.22.50.137的服务器迁移到IP地址为172.22.50.138的服务器上。"
+
+msgid "### Example 4: Create a file-backed primary zone"
+msgstr "### 示例 4：创建一个基于文件的主区域（primary zone）"
+
+msgid ""
+"This command creates file-backed primary zones on the specified local DNS server.\n"
+"The file that contains resource records must exist in the %windir%\\system32\\dns directory."
+msgstr ""
+"此命令在指定的本地DNS服务器上创建基于文件的primary "
+"zone（主区域）。包含资源记录的文件必须位于%windir%\\system32\\dns目录中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用 `*-Job` 系列的"
+" cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该cmdlet将在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies a DNS server.\n"
+"The acceptable values for this parameter are: an IP v4 address; an IP v6 address; any other value that resolves to an IP address, such as a fully qualified domain name (FQDN), host name, or NETBIOS name."
+msgstr ""
+"指定一个 DNS 服务器。此参数的可接受值为：IP v4 地址；IP v6 地址；任何能够解析为 IP "
+"地址的其他值，例如完全限定域名（FQDN）、主机名或 NETBIOS 名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Indicates that you must create new file-backed primary zones in the input object.\n"
+"The files that contains the resource records must exist in the %windir%\\system32\\dns directory."
+msgstr ""
+"这表示您必须在输入对象中创建新的、基于文件的主区域（primary zones）。包含资源记录的文件必须位于 "
+"`%windir%\\system32\\dns` 目录下。"
+
+msgid ""
+"Overrides the default confirmation setting before the cmdlet performs the "
+"action."
+msgstr "在 cmdlet 执行操作之前，会覆盖默认的确认设置。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此 cmdlet 的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传递给此 cmdlet。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的cmdlet的最大操作数量。如果省略此参数或输入`0`，则Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最优限制值。此限制仅适用于当前执行的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance#DnsServer"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance#DnsServer"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DnsServer](./Get-DnsServer.md)"
+msgstr "[Get-DnsServer](./Get-DnsServer.md)"
+
+msgid "[Test-DnsServer](./Test-DnsServer.md)"
+msgstr "[测试DNS服务器](./Test-DnsServer.md)"

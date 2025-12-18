@@ -1,0 +1,184 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:19:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Appx Module"
+msgstr "# Appx 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"The Windows PowerShell cmdlets for AppX are designed to streamline the administration of MSIX or\n"
+"AppX package management."
+msgstr "用于AppX的Windows PowerShell cmdlet旨在简化MSIX或AppX包的管理工作。"
+
+msgid "## Appx Cmdlets"
+msgstr "## AppxCmdlets"
+
+msgid "### [Add-AppSharedPackageContainer](Add-AppSharedPackageContainer.md)"
+msgstr "### [Add-AppSharedPackageContainer](Add-AppSharedPackageContainer.md)"
+
+msgid "Deploys the shared package container definition."
+msgstr "部署共享的包容器定义。"
+
+msgid "### [Add-AppxPackage](Add-AppxPackage.md)"
+msgstr "### [Add-AppxPackage](Add-AppxPackage.md)"
+
+msgid "Adds a signed app package to a user account."
+msgstr "将一个已签名（加密）的应用程序包添加到用户账户中。"
+
+msgid "### [Add-AppxVolume](Add-AppxVolume.md)"
+msgstr "### [Add-AppxVolume](Add-AppxVolume.md)"
+
+msgid "Adds an appx volume to the Package Manager."
+msgstr "向包管理器中添加一个 AppX 文件（即应用程序安装文件）。"
+
+msgid "### [Dismount-AppxVolume](Dismount-AppxVolume.md)"
+msgstr "### [Dismount-AppxVolume](Dismount-AppxVolume.md)"
+
+msgid "Dismounts an appx volume."
+msgstr "卸载一个 AppX 卷。"
+
+msgid "### [Get-AppSharedPackageContainer](Get-AppSharedPackageContainer.md)"
+msgstr "### [Get-AppSharedPackageContainer](Get-AppSharedPackageContainer.md)"
+
+msgid "Gets information about the shared package container."
+msgstr "获取有关共享包容器的相关信息。"
+
+msgid "### [Get-AppxDefaultVolume](Get-AppxDefaultVolume.md)"
+msgstr "### [Get-AppxDefaultVolume](Get-AppxDefaultVolume.md)"
+
+msgid "Gets the default appx volume."
+msgstr "获取默认的应用程序包（appx）音量设置。"
+
+msgid "### [Get-AppxLastError](Get-AppxLastError.md)"
+msgstr "### [Get-AppxLastError](Get-AppxLastError.md)"
+
+msgid "Get the last error reported in the app package installation logs."
+msgstr "获取应用程序包安装日志中报告的最新错误信息。"
+
+msgid "### [Get-AppxLog](Get-AppxLog.md)"
+msgstr "### [Get-AppxLog](Get-AppxLog.md)"
+
+msgid "Gets an app package installation log."
+msgstr "获取应用程序包安装日志。"
+
+msgid "### [Get-AppxPackage](Get-AppxPackage.md)"
+msgstr "### [Get-AppxPackage](Get-AppxPackage.md)"
+
+msgid "Gets a list of the app packages that are installed in a user profile."
+msgstr "获取用户配置文件中已安装的应用程序包列表。"
+
+msgid ""
+"### [Get-AppxPackageAutoUpdateSettings](Get-"
+"AppxPackageAutoUpdateSettings.md)"
+msgstr ""
+"### [Get-AppxPackageAutoUpdateSettings](Get-"
+"AppxPackageAutoUpdateSettings.md)"
+
+msgid ""
+"Provides visibility to the settings configured for a particular Windows App."
+msgstr "提供了对为特定Windows应用程序配置的设置的可见性（即可以查看这些设置的内容）。"
+
+msgid "### [Get-AppxPackageManifest](Get-AppxPackageManifest.md)"
+msgstr "### [Get-AppxPackageManifest](Get-AppxPackageManifest.md)"
+
+msgid "Gets the manifest of an app package."
+msgstr "获取应用程序包的清单文件（manifest）。"
+
+msgid "### [Get-AppxVolume](Get-AppxVolume.md)"
+msgstr "### [Get-AppxVolume](Get-AppxVolume.md)"
+
+msgid "Gets appx volumes for the computer."
+msgstr "获取该计算机的 AppX 卷容量信息。"
+
+msgid ""
+"### [Invoke-CommandInDesktopPackage](Invoke-CommandInDesktopPackage.md)"
+msgstr ""
+"### [Invoke-CommandInDesktopPackage](Invoke-CommandInDesktopPackage.md)"
+
+msgid ""
+"A debugging tool that creates a new process in the context of a packaged "
+"app."
+msgstr "一个调试工具，它会在已打包应用程序的上下文中创建一个新的进程。"
+
+msgid "### [Mount-AppxVolume](Mount-AppxVolume.md)"
+msgstr "### [Mount-AppxVolume](Mount-AppxVolume.md)"
+
+msgid "Mounts an appx volume."
+msgstr "挂载一个 AppX 卷。"
+
+msgid "### [Move-AppxPackage](Move-AppxPackage.md)"
+msgstr "### [Move-AppxPackage](Move-AppxPackage.md)"
+
+msgid "Moves a package from its current location to another appx volume."
+msgstr "将一个包从当前位置移动到另一个 appx 卷中。"
+
+msgid ""
+"### [Remove-AppSharedPackageContainer](Remove-AppSharedPackageContainer.md)"
+msgstr ""
+"### [Remove-AppSharedPackageContainer](Remove-AppSharedPackageContainer.md)"
+
+msgid "Removes the shared package container."
+msgstr "删除共享的软件包容器。"
+
+msgid "### [Remove-AppxPackage](Remove-AppxPackage.md)"
+msgstr "### [Remove-AppxPackage](Remove-AppxPackage.md)"
+
+msgid "Removes an app package from one or more user accounts."
+msgstr "从一个或多个用户账户中删除应用程序包。"
+
+msgid ""
+"### [Remove-AppxPackageAutoUpdateSettings](Remove-"
+"AppxPackageAutoUpdateSettings.md)"
+msgstr ""
+"### [Remove-AppxPackageAutoUpdateSettings](Remove-"
+"AppxPackageAutoUpdateSettings.md)"
+
+msgid "Removes settings configured for a particular Windows app."
+msgstr "删除为某个特定的Windows应用程序配置的设置。"
+
+msgid "### [Remove-AppxVolume](Remove-AppxVolume.md)"
+msgstr "### [Remove-AppxVolume](Remove-AppxVolume.md)"
+
+msgid "Removes an appx volume."
+msgstr "删除一个 appx 文件夹（或卷）。"
+
+msgid ""
+"### [Reset-AppSharedPackageContainer](Reset-AppSharedPackageContainer.md)"
+msgstr ""
+"### [Reset-AppSharedPackageContainer](Reset-AppSharedPackageContainer.md)"
+
+msgid "Destroys all the application data of the container."
+msgstr "会删除容器中所有的应用程序数据。"
+
+msgid "### [Reset-AppxPackage](Reset-AppxPackage.md)"
+msgstr "### [Reset-AppxPackage](Reset-AppxPackage.md)"
+
+msgid "Restores the Windows app to its initial configuration."
+msgstr "将Windows应用程序恢复到其初始配置状态。"
+
+msgid "### [Set-AppxDefaultVolume](Set-AppxDefaultVolume.md)"
+msgstr "### [Set-AppxDefaultVolume](Set-AppxDefaultVolume.md)"
+
+msgid "Specifies a default appx volume."
+msgstr "指定一个默认的 AppX 容量（volume）。"
+
+msgid ""
+"### [Set-AppxPackageAutoUpdateSettings](Set-"
+"AppxPackageAutoUpdateSettings.md)"
+msgstr ""
+"### [Set-AppxPackageAutoUpdateSettings](Set-"
+"AppxPackageAutoUpdateSettings.md)"
+
+msgid "Configures a specific Windows App's Auto Update and Repair settings."
+msgstr "配置特定Windows应用程序的自动更新和修复设置。"

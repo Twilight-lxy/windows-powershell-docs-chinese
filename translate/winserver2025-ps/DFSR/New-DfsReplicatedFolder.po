@@ -1,0 +1,178 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:42:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-DfsReplicatedFolder"
+msgstr "# 新DFS复制文件夹"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a replicated folder in a replication group."
+msgstr "在复制组中创建一个已复制的文件夹。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-DfsReplicatedFolder** cmdlet creates a new replicated folder in a replication group.\n"
+"Replicated folders are logical arrangements of replication that do not contain computer-specific settings."
+msgstr ""
+"`New-DfsReplicatedFolder` cmdlet "
+"可以在复制组中创建一个新的复制文件夹。复制文件夹是一种逻辑上的复制结构，其中不包含与特定计算机相关的设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a replicated folder"
+msgstr "### 示例 1：创建一个可复制的文件夹"
+
+msgid ""
+"This command creates a replicated folder named RF26 in the replication group named RG22.\n"
+"The command does not alter the default settings for a replicated folder."
+msgstr "该命令在名为RG22的复制组中创建一个名为RF26的复制文件夹。此命令不会更改复制文件夹的默认设置。"
+
+msgid ""
+"### Example 2: Create a replicated folder and add a DFS namespace link path"
+msgstr "### 示例 2：创建一个复制的文件夹，并添加一个DFS命名空间链接路径"
+
+msgid ""
+"This command creates a replicated folder named RF26 in the replication group named RG22.\n"
+"The command **DfsnPath** parameter sets the administrative property for a DFS namespace link path.\n"
+"The cmdlet reminds the administrator that the DFSN path is cosmetic only and is not verified or used by DFS Replication in any way."
+msgstr ""
+"此命令在名为 RG22 的复制组中创建一个名为 RF26 的复制文件夹。参数 **DfsnPath** 用于设置 DFS "
+"命名空间链接路径的相关管理属性。该 cmdlet 提醒管理员：DFSN 路径仅具有显示性作用，DFS 复制功能并不会以任何方式验证或使用该路径。"
+
+msgid ""
+"### Example 3: Create a replicated folder that excludes specific file names"
+msgstr "### 示例 3：创建一个复制文件夹，但该文件夹会排除某些特定的文件名"
+
+msgid ""
+"This command creates a replicated folder named RF08 in the replication group named RG11.\n"
+"The command specifies that the DFS Replication service exclude file names starting with a tilde (~) character and files that have the extensions .bak, .tmp, and .ned from replication."
+msgstr ""
+"该命令在名为 RG11 的复制组中创建一个名为 RF08 的复制文件夹。命令指出，DFS 复制服务应排除以波浪号（~）开头的文件名以及具有 "
+".bak、.tmp 和 .ned 扩展名的文件，这些文件不会被纳入复制过程。"
+
+msgid "### Example 4: Create a data distribution replication topology"
+msgstr "### 示例 4：创建数据分布复制拓扑结构"
+
+msgid ""
+"This example creates a hub and spoke data distribution replication topology."
+msgstr "这个示例创建了一个中心辐射式（hub-and-spoke）的数据分布复制拓扑结构。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行操作。"
+
+msgid ""
+"Indicates that the any members that you add to the replicated folder have disabled memberships.\n"
+"You do not typically need to set this parameter, because the next step in creating a new replication topology is to create the connections and membership, and then start replication."
+msgstr ""
+"这表示您添加到复制文件夹中的任何成员的会员资格都被禁用了。通常情况下，您不需要设置此参数，因为创建新的复制拓扑结构的下一步就是建立连接和配置成员资格，然后开始复制过程。"
+
+msgid "Specifies a description for the replicated folder."
+msgstr "为复制的文件夹指定一个描述。"
+
+msgid ""
+"Specifies the DFS Namespace (DFSN) folder path of the replicated folder."
+msgstr "指定复制文件夹的DFS命名空间（DFSN）文件夹路径。"
+
+msgid ""
+"The DFSN folder path has no effect on replication.\n"
+"This property exists only as a descriptive convenience to administrators and DFS Replication service does not validate the value of this property."
+msgstr "DFSN文件夹路径对复制过程没有影响。此属性仅作为描述性信息提供给管理员使用，DFS复制服务不会验证该属性的值。"
+
+msgid ""
+"Specifies an array of names of subfolders that the DSFR service excludes and does not replicate in the replicated folder.\n"
+"You must provide only folder names, not full paths.\n"
+"You can use wildcards."
+msgstr ""
+"指定一个子文件夹名称数组，DSFR服务将排除这些子文件夹，并且不会在复制的文件夹中复制它们。您只需提供文件夹名称，无需提供完整路径。可以使用通配符。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果您不指定此参数，cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names and extensions of files that the Distributed File System (DSF) Replication service excludes and does not replicate in the replicated folder.\n"
+"Provide only folder names for this parameter.\n"
+"Do not specify full paths.\n"
+"You can use wildcards."
+msgstr ""
+"指定一个文件名称和扩展名的数组，这些文件将被分布式文件系统（DSF）复制服务排除，不会被复制到目标文件夹中。此参数只需提供文件夹名称，无需指定完整路径。可以使用通配符。"
+
+msgid ""
+"Specifies an array of names of replicated folders.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet gets all replicated folders."
+msgstr "指定一个包含已复制文件夹名称的数组。您可以使用逗号分隔的列表以及通配符（*）。如果不指定此参数，该cmdlet将获取所有已复制的文件夹。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsReplicatedFolder](./Get-DfsReplicatedFolder.md)"
+msgstr "[Get-DfsReplicatedFolder](./Get-DfsReplicatedFolder.md)"
+
+msgid "[Set-DfsReplicatedFolder](./Set-DfsReplicatedFolder.md)"
+msgstr "[Set-DfsReplicatedFolder](./Set-DfsReplicatedFolder.md)"
+
+msgid "[Remove-DfsReplicatedFolder](./Remove-DfsReplicatedFolder.md)"
+msgstr "[Remove-DfsReplicatedFolder](./Remove-DfsReplicatedFolder.md)"

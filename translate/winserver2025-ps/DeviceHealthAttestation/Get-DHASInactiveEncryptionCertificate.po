@@ -1,0 +1,89 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:14:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DHASInactiveEncryptionCertificate"
+msgstr "# 获取未使用的加密证书（使用 Get-DHASInactiveEncryptionCertificate 命令）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the inactive encryption certificate."
+msgstr "获取无效的加密证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DHASInactiveEncryptionCertificate** cmdlet gets the inactive "
+"encryption certificate thumbprint for the Device Health Attestation service."
+msgstr ""
+"`Get-DHASInactiveEncryptionCertificate` cmdlet 用于获取设备健康认证（Device Health "
+"Attestation）服务中无效的加密证书的指纹信息。"
+
+msgid "You must have administrator rights to run this cmdlet."
+msgstr "你必须具有管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the inactive encryption certificate"
+msgstr "### 示例 1：获取无效的加密证书"
+
+msgid "This command gets the inactive encryption certificate thumbprint."
+msgstr "这个命令用于获取失效的加密证书的指纹（thumbprint）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid ""
+"This cmdlet returns the inactive encryption certificate as a **String**."
+msgstr "此cmdlet以**字符串**的形式返回无效的加密证书。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Remove-DHASInactiveEncryptionCertificate](./Remove-"
+"DHASInactiveEncryptionCertificate.md)"
+msgstr ""
+"[Remove-DHASInactiveEncryptionCertificate](./Remove-"
+"DHASInactiveEncryptionCertificate.md)"

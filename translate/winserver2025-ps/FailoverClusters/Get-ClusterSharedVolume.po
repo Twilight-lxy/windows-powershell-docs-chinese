@@ -1,0 +1,115 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:05:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterSharedVolume"
+msgstr "# Get-ClusterSharedVolume"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets information about Cluster Shared Volumes in a failover cluster."
+msgstr "获取关于故障转移集群中集群共享卷（Cluster Shared Volumes）的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-ClusterSharedVolume` cmdlet gets information about Cluster Shared Volumes in a failover\n"
+"cluster."
+msgstr ""
+"`Get-ClusterSharedVolume` cmdlet 可以获取关于故障转移集群中集群共享卷（Cluster Shared "
+"Volumes）的信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example lists all the Cluster Shared Volumes on the local cluster."
+msgstr "这个示例列出了本地集群中的所有集群共享卷（Cluster Shared Volumes）。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example lists all the Cluster Shared Volumes on the cluster named "
+"`cluster1`."
+msgstr "这个示例列出了名为 `cluster1` 的集群中的所有集群共享卷（Cluster Shared Volumes）。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example displays the state of the Cluster Shared Volume called `Cluster"
+" Disk 4`."
+msgstr "这个示例展示了名为“Cluster Disk 4”的集群共享卷（Cluster Shared Volume）的状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此 cmdlet 的集群的名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 会在本地集群上运行。"
+
+msgid ""
+"Specifies the cluster on which to enumerate the Cluster Shared Volumes."
+msgstr "指定用于枚举集群共享卷（Cluster Shared Volumes）的集群。"
+
+msgid "Specifies the name of the Cluster Shared Volume to get."
+msgstr "指定要获取的集群共享卷（Cluster Shared Volume）的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters PowerShellCluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterSharedVolume"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterSharedVolume](./Add-ClusterSharedVolume.md)"
+msgstr "[添加集群共享卷](./Add-ClusterSharedVolume.md)"
+
+msgid "[Move-ClusterSharedVolume](./Move-ClusterSharedVolume.md)"
+msgstr "[Move-ClusterSharedVolume](./Move-ClusterSharedVolume.md)"
+
+msgid "[Remove-ClusterSharedVolume](./Remove-ClusterSharedVolume.md)"
+msgstr "[Remove-ClusterSharedVolume](./Remove-ClusterSharedVolume.md)"

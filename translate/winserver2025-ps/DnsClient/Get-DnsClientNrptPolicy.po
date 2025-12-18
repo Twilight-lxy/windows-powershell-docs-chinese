@@ -1,0 +1,175 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:59:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DnsClientNrptPolicy"
+msgstr "# Get-DnsClientNrptPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the NRPT configured on a computer."
+msgstr "获取计算机上配置的NRPT信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DnsClientNrptPolicy** cmdlet gets the following Name Resolution "
+"Policy Table (NRPT) details for each namespace."
+msgstr "`Get-DnsClientNrptPolicy` cmdlet 为每个命名空间获取以下名称解析策略表（NRPT）的详细信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the NRPT policy"
+msgstr "### 示例 1：获取 NRPT 策略"
+
+msgid "This example gets the NRPT policy on a computer."
+msgstr "这个示例用于获取计算机上的NRPT策略。"
+
+msgid "### Example 2: Get the effective NRPT policy"
+msgstr "### 示例 2：获取有效的 NRPT 策略"
+
+msgid "This example gets the effective NRPT policy on a computer."
+msgstr "这个示例用于获取计算机上有效的NRPT（Network Resource Protection Table）策略。"
+
+msgid "### Example 3: Get the effective NRPT policy for a specified namespace"
+msgstr "### 示例 3：获取指定命名空间的有效 NRPT 策略"
+
+msgid ""
+"This example gets an effective NRPT policy for the namespace "
+"nls.corp.contoso.com."
+msgstr ""
+"这个示例为命名空间 nls.corp.contoso.com 获取了一个有效的 NRPT（Network Routing Policy）策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该 cmdlet。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，随后会显示命令提示符。在该作业完成之前，您可以继续在当前会话中执行其他操作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，则可以使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[关于任务](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Indicates that the effective NRPT policy is returned."
+msgstr "表示返回了有效的NRPT策略。"
+
+msgid "Specifies the DNS namespace for which the policy is retrieved."
+msgstr "指定用于获取策略的 DNS 命名空间。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时执行的操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DNS/DnsClientPolicyConfiguration[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DNS/DnsClientPolicyConfiguration[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid ""
+"The **DnsClientPolicyConfiguration** object contains all of the properties of the DNS client NRPT policy.\n"
+"If the *Effective* parameter is specified, then only the contents of effective policy are retrieved."
+msgstr ""
+"`DnsClientPolicyConfiguration` 对象包含了 DNS 客户端 NRPT（Name Resolution Protocol "
+"Translation）策略的所有属性。如果指定了 `Effective` 参数，那么只会检索有效策略的内容。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DnsClientNrptRule](./Add-DnsClientNrptRule.md)"
+msgstr "[Add-DnsClientNrptRule](./Add-DnsClientNrptRule.md)"
+
+msgid "[Get-DnsClientNrptGlobal](./Get-DnsClientNrptGlobal.md)"
+msgstr "[Get-DnsClientNrptGlobal](./Get-DnsClientNrptGlobal.md)"
+
+msgid "[Get-DnsClientNrptPolicy](./Get-DnsClientNrptPolicy.md)"
+msgstr "[Get-DnsClientNrptPolicy](./Get-DnsClientNrptPolicy.md)"
+
+msgid "[Get-DnsClientNrptRule](./Get-DnsClientNrptRule.md)"
+msgstr "[Get-DnsClientNrptRule](./Get-DnsClientNrptRule.md)"
+
+msgid "[Remove-DnsClientNrptRule](./Remove-DnsClientNrptRule.md)"
+msgstr "[Remove-DnsClientNrptRule](./Remove-DnsClientNrptRule.md)"
+
+msgid "[Set-DnsClientNrptGlobal](./Set-DnsClientNrptGlobal.md)"
+msgstr "[Set-DnsClientNrptGlobal](./Set-DnsClientNrptGlobal.md)"
+
+msgid "[Set-DnsClientNrptRule](./Set-DnsClientNrptRule.md)"
+msgstr "[Set-DnsClientNrptRule](./Set-DnsClientNrptRule.md)"

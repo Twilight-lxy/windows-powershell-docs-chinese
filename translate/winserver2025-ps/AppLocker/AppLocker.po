@@ -1,0 +1,73 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:58:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# AppLocker Module"
+msgstr "# AppLocker 模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid ""
+"The Windows PowerShell cmdlets for AppLocker are designed to streamline the "
+"administration of application control policies. The cmdlets can be used to "
+"help author, test, maintain, and troubleshoot application control policies "
+"and can be used in conjunction with the AppLocker user interface that is "
+"accessed through the Microsoft Management Console (MMC) snap-in extension to"
+" the Local Security Policy snap-in and Group Policy Management Console."
+msgstr ""
+"用于 AppLocker 的 Windows PowerShell cmdlet 旨在简化应用程序控制策略的管理。这些 cmdlet "
+"可以帮助创建、测试、维护和排查应用程序控制策略的问题，并且可以与 AppLocker 用户界面配合使用。该用户界面可通过 Microsoft "
+"Management Console (MMC) 中的“本地安全策略”管理单元和“组策略管理控制台”来访问。"
+
+msgid ""
+"Note that AppLocker cmdlets only interact with group policy and do not have "
+"any knowledge of the AppLocker CSP."
+msgstr "请注意，AppLocker cmdlets 仅与组策略交互，并不了解 AppLocker CSP 的任何信息。"
+
+msgid "## AppLocker Cmdlets"
+msgstr "## AppLockerCmdlets"
+
+msgid "### [Get-AppLockerFileInformation](./Get-AppLockerFileInformation.md)"
+msgstr "### [Get-AppLockerFileInformation](./Get-AppLockerFileInformation.md)"
+
+msgid ""
+"Gets the file information necessary to create AppLocker rules from a list of"
+" files or an event log."
+msgstr "从文件列表或事件日志中获取创建 AppLocker 规则所需的文件信息。"
+
+msgid "### [Get-AppLockerPolicy](./Get-AppLockerPolicy.md)"
+msgstr "### [Get-AppLockerPolicy](./Get-AppLockerPolicy.md)"
+
+msgid "Gets the local, the effective, or a domain AppLocker policy."
+msgstr "获取本地、生效的或域级别的 AppLocker 策略。"
+
+msgid "### [New-AppLockerPolicy](./New-AppLockerPolicy.md)"
+msgstr "### [新应用锁策略](./New-AppLockerPolicy.md)"
+
+msgid ""
+"Creates a new AppLocker policy from a list of file information and other "
+"rule creation options."
+msgstr "根据文件信息列表及其他规则创建选项，生成一个新的AppLocker策略。"
+
+msgid "### [Set-AppLockerPolicy](./Set-AppLockerPolicy.md)"
+msgstr "### [Set-AppLockerPolicy](./Set-AppLockerPolicy.md)"
+
+msgid "Sets the AppLocker policy for the specified GPO."
+msgstr "为指定的组策略对象（GPO）设置 AppLocker 策略。"
+
+msgid "### [Test-AppLockerPolicy](./Test-AppLockerPolicy.md)"
+msgstr "### [Test-AppLockerPolicy](./Test-AppLockerPolicy.md)"
+
+msgid ""
+"Specifies the AppLocker policy to determine whether the input files will be "
+"allowed to run for a given user."
+msgstr "指定 AppLocker 策略，以确定给定用户是否被允许运行输入文件。"

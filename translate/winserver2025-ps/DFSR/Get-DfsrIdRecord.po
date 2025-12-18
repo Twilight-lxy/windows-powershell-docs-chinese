@@ -1,0 +1,107 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:39:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrIdRecord"
+msgstr "# 获取 DFSR ID 记录"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets ID records for replicated files or folders from the DFS Replication "
+"database."
+msgstr "从DFS复制数据库中获取已复制文件或文件夹的ID记录。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### PathParameterSet (Default)"
+msgstr "### PathParameterSet（默认值）"
+
+msgid "### UidParameterSet"
+msgstr "### UidParameterSet"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfsrIdRecord** cmdlet gets ID records for replicated files or folders from the Distributed File System (DFS) Replication database.\n"
+"Specify unique identifiers (UIDs) or file paths.\n"
+"A UID consists of a GUID and a version value."
+msgstr ""
+"`Get-DfsrIdRecord` cmdlet 用于从分布式文件系统（DFS）复制数据库中获取已复制文件或文件夹的 ID "
+"记录。可以指定唯一的标识符（UID）或文件路径。一个 UID 由一个 GUID 和一个版本值组成。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get an ID record for a specified path"
+msgstr "### 示例 1：获取指定路径的 ID 记录"
+
+msgid ""
+"This command gets the ID record for a file specified by the file path "
+"C:\\RF01\\Accounting 2013.xlsx."
+msgstr "该命令用于获取由文件路径 C:\\RF01\\Accounting 2013.xlsx 指定的文件的ID记录。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of a replication member computer.\n"
+"If you do not specify this parameter, the cmdlet uses the current computer."
+msgstr "指定复制成员计算机的名称。如果未指定此参数，cmdlet 将使用当前计算机。"
+
+msgid ""
+"Specifies an array of paths for files or folders.\n"
+"If you specify this parameter, do not specify the *Uid* parameter."
+msgstr "指定一组文件或文件夹的路径。如果指定了此参数，请不要指定 *Uid* 参数。"
+
+msgid ""
+"Specifies an array of UIDs for files or folders.\n"
+"If you specify this parameter, do not specify the *Path* parameter."
+msgstr "指定一组文件或文件夹的 UID（唯一标识符）。如果指定了此参数，则不要指定 *Path* 参数。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### DfsrIdRecord"
+msgstr "### DfsrIdRecord"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[ConvertFrom-DfsrGuid](./ConvertFrom-DfsrGuid.md)"
+msgstr "[ConvertFrom-DfsrGuid](./ConvertFrom-DfsrGuid.md)"

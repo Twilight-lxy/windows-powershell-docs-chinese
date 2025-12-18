@@ -1,0 +1,170 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:27:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-DfsnRootTarget"
+msgstr "# 移除 DfsnRoot 目标"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes a target for a DFS namespace root."
+msgstr "删除DFS命名空间根的目标（即与该根相关的所有目标）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-DfsnRootTarget** cmdlet removes a target for a Distributed File System (DFS) namespace\n"
+"root. This cmdlet deletes a target, but does not delete the contents of the target."
+msgstr ""
+"`Remove-DfsnRootTarget` cmdlet 用于删除分布式文件系统（DFS）命名空间根的目标对象。该 cmdlet "
+"会删除目标对象本身，但不会删除目标对象中的内容。"
+
+msgid ""
+"A DFS namespace root can have more than one root target. If you remove the last root target\n"
+"associated with a DFS namespace root, this cmdlet deletes the namespace as well. Users cannot use\n"
+"the DFS namespace path after you delete the namespace."
+msgstr ""
+"一个 DFS 命名空间根可以有多个根目标。如果您删除了与某个 DFS 命名空间根关联的最后一个根目标，此 cmdlet "
+"也会同时删除该命名空间。在删除命名空间后，用户将无法再使用该命名空间的路径。"
+
+msgid ""
+"For more information about DFS namespaces, see\n"
+"[Overview of DFS Namespaces](https://technet.microsoft.com/library/cc730736) on TechNet."
+msgstr ""
+"有关DFS命名空间的更多信息，请参阅TechNet上的[DFS命名空间概述](https://technet.microsoft.com/library/cc730736)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a root target"
+msgstr "#### 示例 1：移除根目标（root target）"
+
+msgid ""
+"This command removes the DFS root target path `\\\\Contoso-FS\\AccountingSoftware` from the DFS\n"
+"namespace that has the path `\\\\Contoso\\AccountingSoftware`."
+msgstr ""
+"此命令会从名为 `\\\\Contoso\\AccountingSoftware` 的 DFS 命名空间中，删除 DFS 根目标路径 "
+"`\\\\Contoso-FS\\AccountingSoftware`。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "将该 cmdlet 作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中操作。要管理该作业，请使用`*-Job`系列cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)\n"
+"or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Indicates that the cmdlet attempts to force a clean-up of the root target in Active Directory Domain\n"
+"Services (AD DS)."
+msgstr "表示该cmdlet尝试强制清理Active Directory域服务（AD DS）中的根目标对象。"
+
+msgid ""
+"Prompts you for confirmation before running the cmdlet. The default value is **True** and asks for\n"
+"confirmation. If you do not want to confirm the operation, you must use the switch with the\n"
+"**False** value, as shown in this example: `-Confirm:$false`"
+msgstr ""
+"在运行该cmdlet之前，系统会提示您确认操作。默认值为**True**（即需要确认）。如果您不想确认该操作，则必须使用带有**False**值的开关，如下例所示：`-Confirm:$false`"
+
+msgid "Specifies the path for the root of a DFS namespace."
+msgstr "指定DFS命名空间根目录的路径。"
+
+msgid ""
+"Specifies a path for the root target. This cmdlet removes the root target that has the path\n"
+"specified."
+msgstr "指定根目标的路径。此cmdlet会删除具有所指定路径的根目标。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"该参数用于指定可以同时执行的cmdlet操作的最大数量。如果省略此参数或输入值为`0`，那么Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最佳限制值。此限制仅适用于当前执行的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, `-ErrorVariable`,\n"
+"`-InformationAction`, `-InformationVariable`, `-OutVariable`, `-OutBuffer`, `-PipelineVariable`,\n"
+"`-Verbose`, `-WarningAction`, and `-WarningVariable`. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsnRootTarget](./Get-DfsnRootTarget.md)"
+msgstr "[Get-DfsnRootTarget](./Get-DfsnRootTarget.md)"
+
+msgid "[New-DfsnRootTarget](./New-DfsnRootTarget.md)"
+msgstr "[New-DfsnRootTarget](./New-DfsnRootTarget.md)"
+
+msgid "[Set-DfsnRootTarget](./Set-DfsnRootTarget.md)"
+msgstr "[Set-DfsnRootTarget](./Set-DfsnRootTarget.md)"

@@ -1,0 +1,145 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:20:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Resume-ClusterNode"
+msgstr "# Resume-ClusterNode"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Resumes a node from the paused state or brings back drained workloads to the"
+" node or both."
+msgstr "从暂停状态恢复节点，或将已耗尽资源的工作负载重新分配回该节点，或者同时执行这两项操作。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Resume-ClusterNode` cmdlet resumes activity on a failover cluster node after it has been\n"
+"suspended, or paused, or brings back drained workloads to the node, or both. When a node is resumed,\n"
+"clustered roles that were drained from the node are returned to it, and clustered roles or resources\n"
+"that are currently offline can be brought online on that node."
+msgstr ""
+"`Resume-ClusterNode` cmdlet "
+"用于在故障转移集群节点被暂停或停止运行后恢复其活动，或者将已被移除的工作负载重新分配回该节点。当一个节点被恢复运行时，之前从该节点上移除的集群角色会被重新添加回去；同时，当前处于离线状态的集群角色或资源也可以在该节点上重新上线。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example resumes node1 on the local cluster."
+msgstr "这个示例用于在本地集群上重新启动节点1。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "This example resumes node2 on the cluster called `mycluster`."
+msgstr "这个示例会在名为 `mycluster` 的集群中重新启动节点2。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example resumes all cluster nodes that are suspended, or paused, on the"
+" local cluster."
+msgstr "这个示例会恢复本地集群中所有处于挂起（suspended）或暂停（paused）状态的节点。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example resumes all cluster nodes that are suspended, or paused, on the local cluster and\n"
+"immediately brings back the workloads drained from the nodes."
+msgstr ""
+"这个示例会恢复本地集群中所有处于挂起（suspended）或暂停（paused）状态的节点，并立即将之前从这些节点上移除的工作负载重新加载回这些节点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Sets the policy to bring back drained workloads to the node. The acceptable values for this\n"
+"parameter are:"
+msgstr "该参数用于设置策略，以便将资源消耗殆尽的工作负载重新恢复到相应的节点上。可接受的参数值包括："
+
+msgid ""
+"Specifies the group, node, resource, or service for which or cluster on "
+"which to run the cmdlet."
+msgstr "指定要运行该cmdlet的组、节点、资源或服务，以及对应的集群。"
+
+msgid ""
+"Specifies the name of the group, node, resource, or service for which or cluster on which to run the\n"
+"cmdlet."
+msgstr "指定要运行该 cmdlet 的组、节点、资源或服务的名称，以及对应的集群名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### Microsoft FailoverClusters PowerShell ClusterNode"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### Microsoft_failoverClusters.PowerShell ClusterNode"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterNode](./Add-ClusterNode.md)"
+msgstr "[添加集群节点](./Add-ClusterNode.md)"
+
+msgid "[Clear-ClusterNode](./Clear-ClusterNode.md)"
+msgstr "[Clear-ClusterNode](./Clear-ClusterNode.md)"
+
+msgid "[Get-ClusterNode](./Get-ClusterNode.md)"
+msgstr "[Get-ClusterNode](./Get-ClusterNode.md)"
+
+msgid "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+msgstr "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+
+msgid "[Start-ClusterNode](./Start-ClusterNode.md)"
+msgstr "[启动集群节点](./Start-ClusterNode.md)"
+
+msgid "[Stop-ClusterNode](./Stop-ClusterNode.md)"
+msgstr "[停止集群节点](./Stop-ClusterNode.md)"
+
+msgid "[Suspend-ClusterNode](./Suspend-ClusterNode.md)"
+msgstr "[暂停集群节点](./Suspend-ClusterNode.md)"

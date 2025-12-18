@@ -1,0 +1,92 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:34:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-CIPolicy"
+msgstr "# Get-CIPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the rules in a Code Integrity policy."
+msgstr "获取代码完整性策略中的规则。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-CIPolicy** cmdlet returns the rules in a Code Integrity policy.\n"
+"Specify a policy .xml file.\n"
+"This cmdlet does not currently support policies in Public-Key Cryptography Standards #7 format (.p7b files)."
+msgstr ""
+"`Get-CIPolicy` cmdlet 可以返回代码完整性（Code Integrity）策略中的规则。需要指定一个策略对应的 `.xml` "
+"文件。目前，该 cmdlet 不支持公钥加密标准第 7 版（Public-Key Cryptography Standards #7）格式的策略文件（即"
+" `.p7b` 格式的文件）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get rules from a policy"
+msgstr "#### 示例 1：从策略中获取规则"
+
+msgid ""
+"This command returns the rule objects from Policy.xml.\n"
+"For this example, we present only the first few rules."
+msgstr "这个命令会从Policy.xml文件中返回规则对象。在这个示例中，我们仅展示前几个规则。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the path of the policy .xml file for which this cmdlet gets rules."
+msgstr "指定此cmdlet获取规则的policy.xml文件的路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Rule"
+msgstr "### 规则"
+
+msgid "This cmdlet returns rules from the policy."
+msgstr "此cmdlet会从策略中返回规则。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Merge-CIPolicy](./Merge-CIPolicy.md)"
+msgstr "[Merge-CIPolicy](./Merge-CIPolicy.md)"
+
+msgid "[New-CIPolicy](./New-CIPolicy.md)"
+msgstr "[New-CIPolicy](./New-CIPolicy.md)"

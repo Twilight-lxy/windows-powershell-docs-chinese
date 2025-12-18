@@ -1,0 +1,205 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:25:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DnsServerZoneAging"
+msgstr "# Set-DnsServerZoneAging"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Configures DNS aging settings for a zone."
+msgstr "配置某个区域的DNS老化设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-DnsServerZoneAging** cmdlet configures aging settings for a Domain"
+" Name System (DNS) server zone."
+msgstr "`Set-DnsServerZoneAging` cmdlet 用于配置域名系统（DNS）服务器区域的老化设置。"
+
+msgid ""
+"A resource record can remain on a DNS server after the resource is no longer part of the network.\n"
+"Aging settings determine when a record can be removed, or scavenged, as a stale record."
+msgstr ""
+"即使某个资源已不再属于网络，其对应的资源记录仍可能保留在DNS服务器上。系统中的“老化设置”决定了这些记录何时会被删除（即被视为过时的记录并被清除）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set a scavenging server"
+msgstr "#### 示例 1：设置一个资源收集服务器"
+
+msgid ""
+"This command enables aging for a domain named west01.contoso.com and "
+"specifies a scavenging server."
+msgstr "此命令启用名为 west01.contoso.com 的域的老化（即数据清除）功能，并指定了用于数据清理的服务器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates whether to enable aging and scavenging for a zone.\n"
+"Aging and scavenging are not enabled by default."
+msgstr ""
+"用于指示是否为某个区域启用“老化”（aging）和“清理”（scavenging）功能。默认情况下，“老化”和“清理”功能是处于禁用状态的。"
+
+msgid ""
+"For a value of $True, a DNS server refreshes time stamps for resource records when the server receives a dynamic update request.\n"
+"This enables DNS servers to scavenge resource records."
+msgstr "当 `$True` 为真时，DNS服务器在接收到动态更新请求时会刷新资源记录的时间戳。这使得DNS服务器能够收集这些资源记录。"
+
+msgid ""
+"For a value of $False, DNS servers do not refresh time stamps for resource "
+"records and do not scavenge resource records."
+msgstr "当值为 `$False` 时，DNS服务器不会更新资源记录的时间戳，也不会扫描（或收集）资源记录。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用该参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies a DNS server.\n"
+"If you do not specify this parameter, the command runs on the local system.\n"
+"You can specify an IP address or any value that resolves to an IP address, such as a fully qualified domain name (FQDN), host name, or NETBIOS name."
+msgstr ""
+"用于指定一个DNS服务器。如果未指定此参数，命令将在本地系统上运行。您可以指定一个IP地址，或任何能够解析为IP地址的值，例如完全合格域名（FQDN）、主机名或NETBIOS名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the name of a zone.\n"
+"This cmdlet is relevant only for primary zones."
+msgstr "指定区域（zone）的名称。此 cmdlet 仅适用于主区域（primary zones）。"
+
+msgid ""
+"Specifies the length of time as a TimeSpan object.\n"
+"This value is the interval between the last update of a timestamp for a record and the earliest time when the timestamp can be refreshed.\n"
+"The minimum value is 0.\n"
+"The maximum value is 8760 hours."
+msgstr ""
+"该值以 `TimeSpan` 对象的形式表示时间长度。它表示记录的时间戳最后一次更新与时间戳能够被重新刷新之间的间隔。最小值为 0，最大值为 8760 "
+"小时。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the refresh interval as a TimeSpan object.\n"
+"During this interval, a DNS server can refresh a resource record that has a non-zero time stamp."
+msgstr "使用 `TimeSpan` 对象指定刷新间隔。在这段时间内，DNS 服务器可以更新那些具有非零时间戳的资源记录。"
+
+msgid ""
+"If a resource record that has a non-zero time stamp is not refreshed for a "
+"period of the sum the values defined in the *NoRefreshInterval* parameter "
+"and the *RefreshInterval* parameter, a DNS server can remove that record "
+"during the next scavenging."
+msgstr ""
+"如果某个带有非零时间戳的资源记录在一段时间内未被更新（这段时间等于“NoRefreshInterval”参数与“RefreshInterval”参数所定义的数值之和），那么DNS服务器可以在下一次数据清理（scavenging）过程中删除该记录。"
+
+msgid ""
+"Do not select a value smaller than the longest refresh period of a resource "
+"record registered in the zone."
+msgstr "请不要选择一个小于该区域内已注册的资源记录最长刷新周期的值。"
+
+msgid ""
+"The minimum value is 0.\n"
+"The maximum value is 8760 hours.\n"
+"The default value is the same as the **DefaultRefreshInterval** property of the zone DNS server."
+msgstr "最小值为0，最大值为8760小时。默认值与该区域DNS服务器的**DefaultRefreshInterval**属性相同。"
+
+msgid ""
+"Specifies an array of IP addresses for DNS servers.\n"
+"These servers can scavenge records in this zone.\n"
+"If you do not specify any scavenge servers, any primary DNS server that is authoritative for the zone can scavenge."
+msgstr ""
+"指定用于DNS服务器的IP地址数组。这些服务器可以收集该区域中的记录信息。如果您没有指定任何记录收集服务器，那么对该区域具有权威性的任何主DNS服务器都可以进行记录收集操作。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时执行的命令（cmdlet）的最大操作数量。如果省略此参数或输入值 `0`，那么 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM 命令的数量来计算该 cmdlet 的最佳限制值。这个限制仅适用于当前执行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance#DnsServerZoneAging"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance#DnsServerZoneAging"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DnsServerZoneAging](./Get-DnsServerZoneAging.md)"
+msgstr "[Get-DnsServerZoneAging](./Get-DnsServerZoneAging.md)"

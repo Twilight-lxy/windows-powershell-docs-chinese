@@ -1,0 +1,205 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 13:43:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DnsServerResourceRecord"
+msgstr "# 获取 DNS 服务器资源记录"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets resource records from a specified DNS zone."
+msgstr "从指定的DNS区域获取资源记录。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Unknown"
+msgstr "### 未知"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DnsServerResourceRecord** cmdlet gets the following information "
+"for a specified resource record from a Domain Name System (DNS) zone:"
+msgstr "`Get-DnsServerResourceRecord` cmdlet 可以从域名系统（DNS）区域中获取指定资源记录的以下信息："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all resource records in a specified zone"
+msgstr "#### 示例 1：获取指定区域内的所有资源记录"
+
+msgid ""
+"This command gets all DNS server resource records in a zone named "
+"contoso.com."
+msgstr "这个命令会获取名为 “contoso.com” 的区域中的所有 DNS 服务器资源记录。"
+
+msgid "### Example 2: Get all resource records in a zone for a specified node"
+msgstr "### 示例 2：获取指定节点所在区域内的所有资源记录"
+
+msgid ""
+"This command gets all DNS server resource records in a zone named "
+"contoso.com from the node named Admin01."
+msgstr "这个命令从名为Admin01的节点中获取名为contoso.com的区域中的所有DNS服务器资源记录。"
+
+msgid ""
+"### Example 3: Get all resource records in a zone by specified host name"
+msgstr "### 示例 3：根据指定的主机名称获取某个区域中的所有资源记录"
+
+msgid ""
+"This command gets all DNS server resource records in a zone named contoso.com that have the name Host02.\n"
+"The command is similar to the one in example 2, but in this case the command uses a host name instead of a node name."
+msgstr ""
+"这个命令会获取名为“contoso.com”的区域内所有包含主机名“Host02”的DNS服务器资源记录。该命令与示例2中的命令类似，只不过在这里使用的是主机名而不是节点名称。"
+
+msgid ""
+"### Example 4: Get all A records in a zone by specified host and specified "
+"type"
+msgstr "### 示例 4：根据指定的主机和类型获取某个区域中所有类型为“A”的记录"
+
+msgid ""
+"This command gets all A records in a zone named contoso.com that have the "
+"name Host03."
+msgstr "这个命令会获取名为 contoso.com 的区域中所有名称为 Host03 的 A 记录。"
+
+msgid "### Example 5: Get all A records in a specified zone"
+msgstr "#### 示例 5：获取指定区域内所有类型为“A”的记录"
+
+msgid "This command gets all A records in a zone named contoso.com."
+msgstr "这个命令会获取名为“contoso.com”的区域中的所有A记录。"
+
+msgid "### Example 6: Get all NS records at the root of a specified zone"
+msgstr "### 示例 6：获取指定区域根目录下的所有 NS 记录"
+
+msgid ""
+"This command gets all NS records at the root of a zone named contoso.com."
+msgstr "这个命令可以获取名为“contoso.com”的区域的根目录下的所有NS记录。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，随后再显示命令提示符。在作业完成之前，您可以继续在该会话中执行其他操作。要管理该作业，请使用`*-Job`系列的cmdlets；若要获取作业结果，则可以使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies a DNS server.\n"
+"If you do not specify this parameter, the command runs on the local system.\n"
+"You can specify an IP address or any value that resolves to an IP address, such as a fully qualified domain name (FQDN), host name, or NETBIOS name."
+msgstr ""
+"用于指定一个DNS服务器。如果您不指定此参数，命令将在本地系统上运行。您可以指定一个IP地址，或者任何能够解析为IP地址的值，例如完全限定域名（FQDN）、主机名或NETBIOS名称。"
+
+msgid ""
+"Specifies a node name within the selected zone.\n"
+"If not specified, it defaults to the root (@) node."
+msgstr "指定所选区域内的一个节点名称。如果未指定，则默认使用根节点（@）。"
+
+msgid ""
+"Indicates that the command returns only the resource records at the root of the node specified by the *Name* parameter.\n"
+"If **Node** is not specified then both the root and any child records in the node are returned."
+msgstr "这表示该命令仅返回由 *Name* 参数指定的节点根目录下的资源记录。如果未指定 **Node**，则将返回该节点的根记录及其所有子记录。"
+
+msgid "Specifies the type of resource record."
+msgstr "指定资源记录的类型。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid "Specifies a type of record to get."
+msgstr "指定要获取的记录类型。"
+
+msgid ""
+"Specifies the virtualization instance in which the zone will be added.\n"
+"A virtualization instance is logical partition in a DNS Server, which is capable of independently hosting zones and zone scopes.\n"
+"Same name zones and zone scopes can be hosted in different virtualization instances.\n"
+"This parameter is optional and if not provided it will add the zone into the default virtualization instance which is functionally equivalent to a standard DNS server."
+msgstr ""
+"指定该区域将被添加到的虚拟化实例。虚拟化实例是DNS服务器中的逻辑分区，它能够独立托管多个区域及其相关范围。相同名称的区域和区域范围可以托管在不同的虚拟化实例中。此参数是可选的；如果未提供该参数，系统会将该区域添加到默认的虚拟化实例中，而这个默认实例在功能上等同于一个标准的DNS服务器。"
+
+msgid "Specifies the name of a DNS server zone."
+msgstr "指定一个DNS服务器区域的名称。"
+
+msgid "Specifies the name of a zone scope."
+msgstr "指定区域范围的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#DnsServerResourceRecord[]"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance#DnsServerResourceRecord[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-DnsServerResourceRecord](./Set-DnsServerResourceRecord.md)"
+msgstr "[Set-DnsServerResourceRecord](./Set-DnsServerResourceRecord.md)"
+
+msgid "[Add-DnsServerResourceRecord](./Add-DnsServerResourceRecord.md)"
+msgstr "[Add-DnsServerResourceRecord](./Add-DnsServerResourceRecord.md)"
+
+msgid "[Remove-DnsServerResourceRecord](./Remove-DnsServerResourceRecord.md)"
+msgstr "[Remove-DnsServerResourceRecord](./Remove-DnsServerResourceRecord.md)"

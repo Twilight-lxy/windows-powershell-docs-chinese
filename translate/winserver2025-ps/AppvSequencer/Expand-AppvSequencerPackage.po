@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:15:59 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Expand-AppvSequencerPackage"
+msgstr "# Expand-AppvSequencerPackage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Expands an existing App-V package."
+msgstr "用于扩展现有的 App-V 包。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Expand-AppvSequencerPackage** cmdlet expands a Microsoft Application Virtualization (App-V) package into its native form to the NTFS file system on the computer running the sequencer.\n"
+"You can more easily add prerequisites or dependent applications to the sequencer before generating the package."
+msgstr ""
+"`Expand-AppvSequencerPackage` cmdlet 将 Microsoft "
+"应用程序虚拟化（App-V）包扩展为其在运行序列器的计算机上的 NTFS "
+"文件系统中的原始格式。这样，在生成包之前，您可以更轻松地向序列器中添加先决条件或依赖应用程序。"
+
+msgid ""
+"Run this cmdlet each time to expand a new package onto the computer running "
+"the sequencer."
+msgstr "每次运行此cmdlet时，都可以将一个新的软件包安装到正在运行sequencer的计算机上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Expand a package"
+msgstr "#### 示例 1：扩展一个包"
+
+msgid ""
+"This command expands the package PreReq.appv to the sequencing computer."
+msgstr "这个命令将PreReq.appv包扩展到测序计算机上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the file path to an existing App-V package to be expanded to the "
+"NTFS file system of the computer running the cmdlet."
+msgstr "指定一个现有的 App-V 包的文件路径，该包将被扩展到运行该 cmdlet 的计算机的 NTFS 文件系统中。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-AppvSequencerPackage](./New-AppvSequencerPackage.md)"
+msgstr "[New-AppvSequencerPackage](./New-AppvSequencerPackage.md)"
+
+msgid "[Update-AppvSequencerPackage](./Update-AppvSequencerPackage.md)"
+msgstr "[更新 AppvSequencerPackage](./Update-AppvSequencerPackage.md)"

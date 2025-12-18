@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:20:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Reset-ClusterVMMonitoredState"
+msgstr "# 重置 ClusterVMM 的监控状态"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Resets the Application Critical state of a virtual machine, so that the virtual machine is no longer\n"
+"marked as being in a critical state in the cluster."
+msgstr "将虚拟机的应用程序状态重置为“正常”状态，从而使该虚拟机在集群中不再被标记为处于临界状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Reset-ClusterVMMonitoredState` cmdlet resets the Application Critical state of a virtual\n"
+"machine, so that the virtual machine is no longer marked as being in a critical state in the\n"
+"cluster. Note: This cmdlet can only be run locally on the virtual machine or through Windows\n"
+"PowerShell remoting to the virtual machine."
+msgstr ""
+"`Reset-ClusterVMMonitoredState` cmdlet 用于将虚拟机的应用关键状态（Application Critical "
+"status）重置为正常状态，从而使该虚拟机不再在集群中被标记为处于关键状态。注意：此 cmdlet 只能在本机上直接运行，或者通过 Windows "
+"PowerShell 的远程连接来对虚拟机执行操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example resets the state of the virtual machine and clears the critical"
+" state."
+msgstr "这个示例会重置虚拟机的状态，并清除所有关键错误信息（即“critical state”）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定等待该 cmdlet 完成的时间（以秒为单位）。如果未指定 `Wait` 参数，那么 cmdlet 会一直等待直到完成；如果指定了 `-Wait "
+"0`，则 cmdlet 会立即开始执行并立即返回结果，而不会进行等待。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterVMMonitoredItem](./Add-ClusterVMMonitoredItem.md)"
+msgstr "[Add-ClusterVMMonitoredItem](./Add-ClusterVMMonitoredItem.md)"
+
+msgid "[Get-ClusterVMMonitoredItem](./Get-ClusterVMMonitoredItem.md)"
+msgstr "[Get-ClusterVMMonitoredItem](./Get-ClusterVMMonitoredItem.md)"
+
+msgid "[Remove-ClusterVMMonitoredItem](./Remove-ClusterVMMonitoredItem.md)"
+msgstr "[Remove-ClusterVMMonitoredItem](./Remove-ClusterVMMonitoredItem.md)"

@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:21:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Provides guidance on how to view the auto-update and repair settings of a "
+"Windows App."
+msgstr "提供了关于如何查看Windows应用程序的自动更新和修复设置的指导。"
+
+msgid "# Get-AppxPackageAutoUpdateSettings"
+msgstr "# Get-AppxPackageAutoUpdateSettings"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Provides visibility to the settings configured for a particular Windows App."
+msgstr "提供了对为特定 Windows 应用程序配置的设置的可见性（即让用户能够查看这些设置）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-AppxPackageAutoUpdateSettings` PowerShell cmdlet returns the settings configured for a\n"
+"specific or all installed Windows Apps in relation to Auto Update and Repair."
+msgstr ""
+"`Get-AppxPackageAutoUpdateSettings` PowerShell cmdlet 可以返回为特定已安装的 Windows "
+"应用程序或所有已安装的 Windows 应用程序配置的与自动更新和修复相关的设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all App Package Auto Update settings"
+msgstr "### 示例 1：获取所有应用程序包自动更新的设置"
+
+msgid ""
+"This will return the Auto Update and Repair settings for all configured and installed Windows Apps\n"
+"on the device, and registered to the user."
+msgstr "这将返回设备上所有已配置和安装的Windows应用程序的自动更新及修复设置信息，这些应用程序都是为用户注册的。"
+
+msgid "### Example 2: Get App Package Auto Update settings for all users"
+msgstr "### 示例 2：获取所有用户的应用包自动更新设置"
+
+msgid ""
+"This will return the Auto Update and Repair settings for all configured and installed Windows Apps\n"
+"that have been registered for all users."
+msgstr "这将返回所有已配置和安装的Windows应用程序的自动更新和修复设置，这些设置适用于所有用户。"
+
+msgid "### Example 3: Get a single App Package Auto Update setting"
+msgstr "### 示例 3：获取单个应用包的自动更新设置"
+
+msgid ""
+"This will return the Auto Update and Repair settings for a specific Windows App that has been\n"
+"installed and registered to the signed-in user."
+msgstr "这将返回已安装并注册到该登录用户的特定Windows应用程序的“自动更新”和“修复”设置。"
+
+msgid ""
+"### Example 4: Get App Package Auto Update settings for all installed "
+"Windows Apps"
+msgstr "### 示例 4：获取所有已安装的 Windows 应用程序的自动更新设置"
+
+msgid "Displays available update information for all installed Windows Apps."
+msgstr "显示所有已安装的Windows应用程序的可用更新信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the Package Full Name of the app that's being queried."
+msgstr "指定正在查询的应用程序的完整包名（Package Full Name）。"
+
+msgid ""
+"Specifies to display available update information for a specific Windows "
+"App."
+msgstr "用于指定显示特定Windows应用程序的可用更新信息。"
+
+msgid ""
+"Specifies to display Windows App Auto Update and Repair settings for all that are installed for all\n"
+"users."
+msgstr "指定为所有用户显示已安装的所有Windows应用程序的自动更新和修复设置。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.Management Automation.SwitchParameter"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Package Manager API](http://go.microsoft.com/fwlink/?LinkId=245447)"
+msgstr "[包管理器 API](http://go.microsoft.com/fwlink/?LinkId=245447)"
+
+msgid ""
+"[How to Add and Remove Apps](http://go.microsoft.com/fwlink/?LinkID=231020)"
+msgstr "[如何添加和删除应用程序](http://go.microsoft.com/fwlink/?LinkID=231020)"
+
+msgid "[Get-AppxPackage](./Get-AppxPackage.md)"
+msgstr "[Get-AppxPackage](./Get-AppxPackage.md)"
+
+msgid "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+msgstr "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+
+msgid "[Move-AppxPackage](./Move-AppxPackage.md)"
+msgstr "[Move-AppxPackage](./Move-AppxPackage.md)"
+
+msgid "[Remove-AppxPackage](./Remove-AppxPackage.md)"
+msgstr "[Remove-AppxPackage](./Remove-AppxPackage.md)"

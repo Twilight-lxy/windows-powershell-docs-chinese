@@ -1,0 +1,143 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:53:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Write-DfsrHealthReport"
+msgstr "# 编写DFSR健康报告"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Generates a DFS Replication health report."
+msgstr "生成一份深度优先（DFS）复制健康状态报告。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Write-DfsrHealthReport** cmdlet generates a Distributed File System (DFS) Replication health, or diagnostic, report for two or more servers.\n"
+"A health reports contains administrative information about replication state, efficiency, and any potential replication issues."
+msgstr ""
+"`Write-DfsrHealthReport` cmdlet "
+"为两个或多个服务器生成分布式文件系统（DFS）复制状态的健康报告或诊断报告。该健康报告包含有关复制状态、效率以及任何潜在复制问题的管理信息。"
+
+msgid ""
+"The cmdlet creates the reports as an HTML file, with an associated XML file."
+msgstr "该cmdlet会将报告生成为HTML文件，并附带一个XML文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Generate a health report with a file count"
+msgstr "### 示例 1：生成一份包含文件数量的健康报告"
+
+msgid ""
+"This command generates a report for the replication group RG01 and the "
+"reference computer SRV01."
+msgstr "该命令为复制组RG01和参考计算机SRV01生成一份报告。"
+
+msgid "### Example 2: Generate a health report"
+msgstr "### 示例 2：生成一份健康报告"
+
+msgid ""
+"This command generates a health report for the RG01 replication group with a baseline computer of SRV01 and all other servers in the replication group.\n"
+"The command writes the report to the C:\\ folder."
+msgstr "该命令为RG01复制组生成一份健康报告，其中基准服务器为SRV01，复制组中的其他所有服务器也包含在内。报告会被写入C:\\文件夹中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Indicates that the cmdlet counts the number of files present in the replicated content folders.\n"
+"By default, the cmdlet does not count files, in order to save time while generating a report."
+msgstr "该cmdlet用于统计复制内容文件夹中存在的文件数量。默认情况下，为了在生成报告时节省时间，该cmdlet不会计算文件的数量。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains a replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the current domain of the user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS 名称或完全限定域名（FQDN）。如果未指定此参数，该 "
+"cmdlet 将使用用户的当前域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"If you do not specify this parameter, the cmdlet queries for all participating replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "用于指定复制组名称的数组。如果不指定此参数，该 cmdlet 会查询所有参与的复制组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Specifies an array of DFS Replication members to analyze in comparison to a server specified by the *ReferenceComputerName* parameter.\n"
+"If you do not specify this parameter, the cmdlet includes all members of the replication group.\n"
+"You can specify multiple computer names, separated by commas, as well as wildcard characters (*)."
+msgstr ""
+"指定一个DFS复制成员数组，以便与由*ReferenceComputerName*参数指定的服务器进行比较分析。如果您没有指定此参数，该cmdlet将包含复制组中的所有成员。您可以指定多个计算机名称（用逗号分隔），也可以使用通配符（*）。"
+
+msgid ""
+"Specifies the folder path for the report file.\n"
+"If you do not specify this parameter, the cmdlet uses the current working directory."
+msgstr "指定报告文件的文件夹路径。如果未指定此参数，cmdlet 将使用当前的工作目录。"
+
+msgid ""
+"The cmdlet names each report in the format Health-\\<Replication Group "
+"Name\\>-\\<Date\\>-\\<Time\\> with HTML and XML extensions."
+msgstr "该cmdlet以“Health-\\<复制组名称\\>-\\<日期\\>-\\<时间\\>”的格式为每个报告命名，并生成带有HTML和XML扩展名的文件。"
+
+msgid ""
+"Specifies the name of a reference computer in the replication group.\n"
+"The replication backlog from this server is compared to all other members specified in the *MemberComputerName* parameter.\n"
+"If you do not specify this parameter, the cmdlet uses the local computer."
+msgstr ""
+"指定复制组中参考计算机的名称。来自该服务器的复制延迟数据（replication backlog）会与 *MemberComputerName* "
+"参数中指定的所有其他成员进行比较。如果您不指定此参数，该cmdlet将使用本地计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

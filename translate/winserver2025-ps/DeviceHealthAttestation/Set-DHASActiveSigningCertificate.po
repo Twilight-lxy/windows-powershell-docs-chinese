@@ -1,0 +1,104 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:16:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DHASActiveSigningCertificate"
+msgstr "# Set-DHASActiveSigningCertificate"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the active signing certificate."
+msgstr "设置当前使用的签名证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DHASActiveSigningCertificate** cmdlet sets the active signing "
+"certificate for the Device Health Attestation service."
+msgstr ""
+"`Set-DHASActiveSigningCertificate` cmdlet 用于设置设备健康认证（Device Health "
+"Attestation）服务的当前签名证书。"
+
+msgid "You must have administrator rights to run this cmdlet."
+msgstr "您必须具有管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the active signing certificate"
+msgstr "### 示例 1：设置激活的签名证书"
+
+msgid "This command sets the active signing certificate."
+msgstr "这个命令用于设置当前的签名证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the signing certificate thumbprint.\n"
+"The value must contain only hexadecimal digits (0-9, A-F) and be 40 characters in length.\n"
+"This value is case-insensitive."
+msgstr "指定签名证书的指纹（thumbprint）。该值必须仅包含十六进制数字（0-9、A-F），且长度为40个字符。此值的大小写不敏感。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### String"
+msgstr "### 字符串（String）"
+
+msgid ""
+"The input type is a string for the active signing certificate thumbprint."
+msgstr "输入类型是一个字符串，用于表示当前使用的签名证书的指纹（thumbprint）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-DHASActiveSigningCertificate](./Get-DHASActiveSigningCertificate.md)"
+msgstr ""
+"[Get-DHASActiveSigningCertificate](./Get-DHASActiveSigningCertificate.md)"

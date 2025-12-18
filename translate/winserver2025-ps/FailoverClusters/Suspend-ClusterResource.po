@@ -1,0 +1,155 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:31:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Suspend-ClusterResource"
+msgstr "# 暂停集群资源"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Turns on maintenance for a disk resource or CSV so that you can run a disk maintenance tool without\n"
+"triggering failover."
+msgstr "为某个磁盘资源或CSV文件启用维护模式，这样你就可以运行磁盘维护工具而不会触发故障转移（failover）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Suspend-ClusterResource` cmdlet turns on maintenance for a disk resource or Cluster Shared\n"
+"Volume (CSV) so that a disk maintenance tool can be run without triggering failover."
+msgstr ""
+"`Suspend-ClusterResource` cmdlet 用于将磁盘资源或集群共享卷（Cluster Shared Volume，简称 "
+"CSV）设置为维护模式，这样就可以运行磁盘维护工具而不会触发故障转移。"
+
+msgid ""
+"This cmdlet only applies to disks and CSVs. For Cluster Shared Volumes, turning on maintenance takes\n"
+"dependent resources offline, which interrupts client access. For other disks, Logical Unit Number\n"
+"(LUNs), in cluster storage, turning on maintenance leaves dependent resources online."
+msgstr ""
+"此cmdlet仅适用于磁盘和CSV文件。对于集群共享卷（Cluster Shared "
+"Volumes），启用维护模式会使得相关资源处于离线状态，从而中断客户端对这些资源的访问；而对于其他类型的磁盘（例如逻辑单元号LUNs）在集群存储环境中的情况，启用维护模式后相关资源仍保持在线状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Turn on maintenance for a CSV"
+msgstr "#### 示例 1：为 CSV 文件启用维护模式"
+
+msgid ""
+"This example turns on maintenance for CSV named `Cluster Disk 2` so that you can run a disk\n"
+"maintenance tool without triggering failover."
+msgstr "这个示例会启用名为“Cluster Disk 2”的CSV文件的维护功能，这样你就可以运行磁盘维护工具而不会触发故障转移。"
+
+msgid "### Example 2: Turn on maintenance for multiple volumes"
+msgstr "### 示例 2：为多个卷启用维护模式"
+
+msgid ""
+"This example turns on maintenance for all volumes on the CSV named `Cluster "
+"Disk 5`."
+msgstr "这个示例会为名为“Cluster Disk 5”的CSV文件中的所有卷启用维护功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群的名称。如果该参数的输入值为`.` 或省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies the cluster resource, a disk or CSV, to suspend."
+msgstr "指定要挂起的集群资源（磁盘或 CSV 文件）。"
+
+msgid "Specifies the name of the cluster resource, a disk or CSV, to suspend."
+msgstr "指定要挂起的集群资源（磁盘或CSV文件）的名称。"
+
+msgid ""
+"Causes CSV access to the storage device to be redirected over the network through another cluster\n"
+"node. This parameter is only applicable to CSVs."
+msgstr "这会导致对存储设备的CSV访问通过网络重定向到另一个集群节点上。此参数仅适用于CSV文件。"
+
+msgid ""
+"Specifies the name of the volume to suspend. This parameter is only applicable to CSVs. If this\n"
+"parameter isn't specified, then the operation will be performed on all volumes on the CSV."
+msgstr ""
+"指定要挂起的卷的名称。此参数仅适用于CSV（Cloud Storage Volume）对象。如果未指定该参数，操作将针对CSV中的所有卷执行。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters.PowerShellClusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### Microsoft FailoverClusters.PowerShell.ClusterSharedVolume"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters PowerShell ClusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### MicrosoftFailoverClusters.PowerShell-clusterSharedVolume"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterResource](./Add-ClusterResource.md)"
+msgstr "[添加集群资源](./Add-ClusterResource.md)"
+
+msgid "[Get-ClusterResource](./Get-ClusterResource.md)"
+msgstr "[Get-ClusterResource](./Get-ClusterResource.md)"
+
+msgid "[Move-ClusterResource](./Move-ClusterResource.md)"
+msgstr "[Move-ClusterResource](./Move-ClusterResource.md)"
+
+msgid "[Remove-ClusterResource](./Remove-ClusterResource.md)"
+msgstr "[Remove-ClusterResource](./Remove-ClusterResource.md)"
+
+msgid "[Resume-ClusterResource](./Resume-ClusterResource.md)"
+msgstr "[Resume-ClusterResource](./Resume-ClusterResource.md)"
+
+msgid "[Start-ClusterResource](./Start-ClusterResource.md)"
+msgstr "[开始创建集群资源](./Start-ClusterResource.md)"
+
+msgid "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+msgstr "[Stop-ClusterResource](./Stop-ClusterResource.md)"

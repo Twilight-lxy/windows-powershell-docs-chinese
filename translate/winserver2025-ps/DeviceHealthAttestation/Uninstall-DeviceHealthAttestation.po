@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:17:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Uninstall-DeviceHealthAttestation"
+msgstr "# 卸载 DeviceHealthAttestation"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Uninstalls the Device Health Attestation service."
+msgstr "卸载设备健康证明（Device Health Attestation）服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Uninstall-DeviceHealthAttestation** cmdlet uninstalls the Device Health Attestation service and its dependencies.\n"
+"The cmdlet also removes the firewall rule for incoming requests, the web application, and the application pool."
+msgstr ""
+"`Uninstall-DeviceHealthAttestation` cmdlet 用于卸载设备健康认证（Device Health "
+"Attestation）服务及其依赖项。该 cmdlet 还会删除与传入请求相关的防火墙规则、相关 Web 应用程序以及应用程序池。"
+
+msgid "You must have administrator rights to run this cmdlet."
+msgstr "您必须具有管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Uninstall the Device Health Attestation service"
+msgstr "### 示例 1：卸载设备健康认证（Device Health Attestation）服务"
+
+msgid "This command uninstalls the Device Health Attestation service."
+msgstr "此命令用于卸载设备健康认证（Device Health Attestation）服务。"
+
+msgid ""
+"### Example 2: Uninstall the Device Health Attestation service with SSL "
+"bindings"
+msgstr "### 示例 2：卸载具有 SSL 绑定的设备健康认证（Device Health Attestation）服务"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而无需请求用户确认。"
+
+msgid "Removes the SSL binding from the default website."
+msgstr "从默认网站中移除SSL绑定（即取消使用SSL加密）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Install-DeviceHealthAttestation](./Install-DeviceHealthAttestation.md)"
+msgstr "[安装设备健康认证功能](./Install-DeviceHealthAttestation.md)"

@@ -1,0 +1,192 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:46:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Checkpoint-SbecActiveConfig"
+msgstr "# 检查Checkpoint-SbecActiveConfig的状态"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a configuration checkpoint."
+msgstr "创建一个配置检查点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Checkpoint-SbecActiveConfig** cmdlet creates a checkpoint for the "
+"active Boot Event Collector configuration."
+msgstr ""
+"`Checkpoint-SbecActiveConfig` cmdlet 用于为当前处于活动状态的启动事件收集器（Boot Event "
+"Collector）配置创建一个检查点。"
+
+msgid ""
+"The checkpoint enables you to return to this configuration later using the **Undo-SbecActiveConfig**, **Redo-SbecActiveConfig**, and **Restore-SbecBackupConfig** cmdlets.\n"
+"The checkpoints mark the known good configurations that you can revert to if a new configuration is incorrect.\n"
+"For example, if you changed a configuration yesterday, find an issue with it today, and want to revert to yesterday's configuration before you made a change, you can use the checkpointed configuration from yesterday."
+msgstr ""
+"检查点允许您日后通过使用 **Undo-SbecActiveConfig**、**Redo-SbecActiveConfig** 和 "
+"**Restore-SbecBackupConfig** 这些 cmdlet "
+"来恢复到之前的配置状态。这些检查点记录了那些被确认为正确的配置版本，当新的配置出现问题时，您可以依赖这些检查点来恢复到之前的正确配置。例如，如果您昨天更改了某个配置，但今天发现该配置存在问题，并且希望恢复到更改前的状态，那么就可以使用昨天保存的检查点配置。"
+
+msgid ""
+"Most checkpoints are created automatically, but on rare occasions you might need to explicitly create them.\n"
+"Automatic checkpoints are created when the current configuration has not yet been checkpointed and one of the following events occurs:"
+msgstr ""
+"大多数检查点都是自动创建的，但在极少数情况下，您可能需要手动创建它们。当当前配置尚未被保存为检查点，并且发生了以下事件之一时，系统会自动创建检查点："
+
+msgid ""
+"A checkpoint ensures that the current configuration is remembered, but it doesn't immediately create a backup configuration file.\n"
+"Instead, the checkpointed current configuration is saved to a backup file when the configuration changes."
+msgstr ""
+"检查点（checkpoint）的作用是确保当前配置能够被保留下来，但它并不会立即生成备份配置文件。只有当配置发生变化时，才会将已标记为检查点的当前配置保存到备份文件中。"
+
+msgid ""
+"The repeated checkpointing succeeds but has no effect, because it only flags"
+" the configuration to create a backup in the future."
+msgstr "重复进行检查点操作虽然成功了，但实际上并没有产生任何效果，因为这些操作只是标记了系统在未来需要创建备份的配置信息而已。"
+
+msgid ""
+"The **Undo-SbecActiveConfig**, **Redo-SbecActiveConfig**, and **Restore-SbecBackupConfig** cmdlets change the current configuration by browsing through the backup configurations, but they don't do an immediate checkpointing.\n"
+"This lets you browse through the past configurations, try them out, and change your mind if a configuration doesn't work well without causing a flurry of spurious checkpoints and backup files with identical content.\n"
+"When you are satisfied with a configuration, checkpoint it with **Checkpoint-SbecActiveConfig**.\n"
+"If you forget to create a checkpoint for a configuration, it is automatically checkpointed after an hour."
+msgstr ""
+"`Undo-SbecActiveConfig`、`Redo-SbecActiveConfig` 和 `Restore-SbecBackupConfig`"
+" 这些 cmdlet "
+"通过浏览备份配置来更改当前配置，但它们不会立即创建检查点。这样你可以查看之前的配置、尝试使用这些配置，并在发现某个配置不适用时随时改变决定，而不会因此产生大量内容相同的冗余检查点和备份文件。当你对某个配置满意后，可以使用"
+" `Checkpoint-SbecActiveConfig` 来创建一个检查点。如果你忘记为某个配置创建检查点，系统会在一小时后自动为其创建一个检查点。"
+
+msgid ""
+"Use **Get-SbecBackupConfig** to get the list of backup configuration files."
+msgstr "使用 `Get-SbecBackupConfig` 命令来获取备份配置文件的列表。"
+
+msgid ""
+"You can use the *OldTimestamp* parameter to modify the configuration "
+"atomically."
+msgstr "你可以使用 *OldTimestamp* 参数来原子性地修改配置。"
+
+msgid "You must have the Builtin Administrator rights to run the cmdlet."
+msgstr "您必须具有内置管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Undo a configuration and create a checkpoint"
+msgstr "#### 示例 1：撤销配置并创建一个检查点"
+
+msgid ""
+"This command undoes a configuration and creates a checkpoint, in a simple way.\n"
+"**Format-List** formats the information that this cmdlet returns."
+msgstr ""
+"这个命令可以简单地撤销某个配置设置，并创建一个检查点（checkpoint）。**Format-List** 用于格式化该 cmdlet 返回的信息。"
+
+msgid "### Example 2: Undo a configuration and create a checkpoint atomically"
+msgstr "### 示例 2：原子性地撤销配置并创建检查点"
+
+msgid ""
+"This command undoes a configuration and creates a checkpoint, making sure "
+"that no other changes are done in between, and throwing on errors."
+msgstr ""
+"这个命令会撤销之前的配置设置，并创建一个检查点（checkpoint），以确保在此期间不会发生其他任何更改；如果过程中出现错误，该命令也会相应地处理这些错误。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet, or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行该 cmdlet。可以输入一个会话对象（例如 **New-CimSession** 或 **Get-"
+"CimSession** cmdlet 的输出结果），或者这些对象的数组。默认情况下，该 cmdlet 会在本地计算机上运行。有关更多信息，请参阅 "
+"About_CimSession。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on MSDN."
+msgstr ""
+"指定您希望在其上执行操作的计算机的名称。您可以分别为每台计算机指定一个完全合格的域名（FQDN）、NetBIOS 名称或 IP "
+"地址。有关更多信息，请参阅 MSDN 上的 [Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid ""
+"Indicates that this operation will not throw an exception if a failure occurs.\n"
+"Instead, the caller should examine the output of the cmdlet for the error information."
+msgstr "这表示如果操作失败，该操作不会抛出异常。相反，调用者应该检查 cmdlet 的输出以获取错误信息。"
+
+msgid ""
+"Specifies the timestamp of the previous active configuration.\n"
+"This provides a way to perform the atomic changes of the configuration."
+msgstr "指定上一个有效配置的时间戳。这提供了一种执行配置原子性更改的方法。"
+
+msgid ""
+"Each configuration has a timestamp (the time when it was last set or restored) and an original timestamp (if the configuration was restored, the time when it was originally set, otherwise the same as the normal timestamp).\n"
+"This operation checks that the *OldTimestamp* value matches either the normal or original timestamp of the current active configuration, thus ensuring that the active configuration has not changed since the last time you examined it.\n"
+"If the values do not match, an error is returned."
+msgstr ""
+"每种配置都有一个时间戳（最后一次设置或恢复该配置的时间），以及一个原始时间戳（如果该配置是恢复的，则为最初设置的时间；否则，原始时间戳与当前配置的时间戳相同）。此操作会检查"
+" `OldTimestamp` "
+"的值是否与当前活动配置的正常时间戳或原始时间戳相匹配，从而确保自上次检查以来活动配置没有发生变化。如果这两个值不匹配，系统将返回一个错误。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### hashtable"
+msgstr "### 哈希表（Hashtable）"
+
+msgid "This cmdlet returns a hashtable that includes the following elements:"
+msgstr "此cmdlet返回一个哈希表，其中包含以下元素："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecBackupConfig](./Get-SbecBackupConfig.md)"
+msgstr "[Get-SbecBackupConfig](./Get-SbecBackupConfig.md)"
+
+msgid "[Redo-SbecActiveConfig](./Redo-SbecActiveConfig.md)"
+msgstr "[Redo-SbecActiveConfig](./Redo-SbecActiveConfig.md)"
+
+msgid "[Restore-SbecBackupConfig](./Restore-SbecBackupConfig.md)"
+msgstr "[Restore-SbecBackupConfig](./Restore-SbecBackupConfig.md)"
+
+msgid "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+msgstr "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+
+msgid "[Undo-SbecActiveConfig](./Undo-SbecActiveConfig.md)"
+msgstr "[Undo-SbecActiveConfig](./Undo-SbecActiveConfig.md)"

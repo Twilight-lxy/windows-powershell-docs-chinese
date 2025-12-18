@@ -1,0 +1,186 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:38:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-BitsTransfer"
+msgstr "# Get-BitsTransfer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the associated BitsJob object for an existing BITS transfer job."
+msgstr "获取与现有的BITS传输作业相关联的BitsJob对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ListJobsByName (Default)"
+msgstr "### ListJobsByName（默认值）"
+
+msgid "### ListJobsById"
+msgstr "### ListJobsById"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-BitsTransfer** cmdlet retrieves a set of Background Intelligent Transfer Service (BITS) transfer jobs.\n"
+"By default, the cmdlet returns the jobs that are owned by the current user.\n"
+"However, if you have administrative credentials, you can specify the *AllUsers* parameter so that the command returns jobs that are owned by all users.\n"
+"The returned jobs can be filtered by name or ID.\n"
+"The jobs are represented by **BitsJob** objects."
+msgstr ""
+"`Get-BitsTransfer` cmdlet 用于检索一组由 Background Intelligent Transfer Service "
+"(BITS) 执行的传输任务。默认情况下，该 cmdlet 会返回当前用户拥有的传输任务；不过如果你具有管理员权限，可以指定 `AllUsers` "
+"参数，从而让命令显示所有用户拥有的传输任务。返回的任务可以通过名称或 ID 进行筛选。这些任务由 `BitsJob` 对象表示。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all BitsJob objects owned by the current user"
+msgstr "### 示例 1：获取当前用户拥有的所有 BitsJob 对象"
+
+msgid ""
+"This command gets all the **BitsJob** objects that are owned by the current "
+"user."
+msgstr "这个命令可以获取当前用户拥有的所有 **BitsJob** 对象。"
+
+msgid "### Example 2: Get the BitsJob object identified by job ID"
+msgstr "### 示例 2：通过作业 ID 获取 BitsJob 对象"
+
+msgid ""
+"This command gets the **BitsJob** object that is identified by the specified"
+" job ID."
+msgstr "该命令用于获取由指定作业ID标识的**BitsJob**对象。"
+
+msgid "### Example 3: Get all BitsJob objects with a specific display name"
+msgstr "### 示例 3：获取所有显示名称为特定值的 BitsJob 对象"
+
+msgid ""
+"This command gets all the **BitsJob** objects, owned by all users, where the **DisplayName** property of the **BitsJob** object contains either Microsoft or Windows.\n"
+"If the user does not have administrative credentials, this command returns an error because it uses the *AllUsers* parameter."
+msgstr ""
+"这个命令会获取所有用户拥有的所有 **BitsJob** 对象，其中这些 **BitsJob** 对象的 **DisplayName** 属性包含 "
+"“Microsoft” 或 “Windows”。如果用户没有管理员权限，此命令将会返回错误，因为它使用了 *AllUsers* 参数。"
+
+msgid ""
+"### Example 4: Get a BitsJob object identified by a specific display name"
+msgstr "### 示例 4：获取由特定显示名称标识的 BitsJob 对象"
+
+msgid ""
+"This command gets the **BitsJob** object that is identified by the specified"
+" display name."
+msgstr "这个命令会获取由指定显示名称标识的 **BitsJob** 对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet gets BITS transfer jobs that are owned by all users.\n"
+"If this parameter is not specified, only jobs that are owned by the current user are returned.\n"
+"This parameter requires administrative credentials."
+msgstr "表示此 cmdlet 会获取所有用户拥有的 BITS 传输作业。如果未指定此参数，则仅返回当前用户拥有的作业。该参数需要管理员凭据。"
+
+msgid ""
+"Specifies an array of BITS jobs by job ID.\n"
+"Only the BITS jobs that include a job ID in this array are returned.\n"
+"If **BitsJob** objects are piped to this cmdlet, their job IDs are used as the values of this parameter."
+msgstr ""
+"通过作业ID指定一个BITS作业数组。只有包含在该数组中的BITS作业才会被返回。如果将**BitsJob**对象传递给此cmdlet，那么这些对象的作业ID将作为该参数的值使用。"
+
+msgid ""
+"Specifies an array of BITS jobs based on job name.\n"
+"Only BITS jobs with job names that match a name in this array are returned.\n"
+"You can use standard wildcard characters  such as the asterisk (*) and the question mark (?).\n"
+"Or, you can use a range operator such as\"\\[a-r\\]\"."
+msgstr ""
+"根据作业名称指定一个BITS作业数组。只有那些名称与该数组中的某个名称匹配的BITS作业才会被返回。您可以使用标准的通配符，如星号（*）和问号（？），也可以使用范围操作符，例如“\\[a-r\\]”。"
+
+msgid "For example, you can use any of the following commands:"
+msgstr "例如，您可以使用以下任意命令："
+
+msgid "`Get-BitsTransfer -Name \"BITS*\"`"
+msgstr "`Get-BitsTransfer -Name \"BITS*\"`"
+
+msgid "`Get-BitsTransfer -Name \"BITS Transfer\"`"
+msgstr "`Get-BitsTransfer -Name \"BITS Transfer\"`"
+
+msgid "`Get-BitsTransfer -Name \"BITS Transfe[a-r]\"`"
+msgstr "`Get-BitsTransfer -Name \"BITS Transfer[a-r]\"`"
+
+msgid ""
+"A combination of the wildcard character and range operators is also "
+"possible."
+msgstr "也可以将通配符和范围操作符结合起来使用。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+msgstr "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+
+msgid ""
+"This cmdlet accepts one or more **BitsJob** objects as input that populates "
+"the JobId parameter (based on the property name)."
+msgstr "此cmdlet接受一个或多个**BitsJob**对象作为输入，这些对象会根据属性名称填充JobId参数。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+msgstr "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+
+msgid ""
+"This cmdlet generates the **BitsJob** objects that are associated with the "
+"retrieved BITS transfer jobs."
+msgstr "这个cmdlet会生成与检索到的BITS传输作业相关联的**BitsJob**对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-BitsFile](./Add-BitsFile.md)"
+msgstr "[Add-BitsFile](./Add-BitsFile.md)"
+
+msgid "[Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+msgstr "[Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+
+msgid "[Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+msgstr "[Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+
+msgid "[Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+msgstr "[Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+
+msgid "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+msgstr "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+
+msgid "[Start-BitsTransfer](./Start-BitsTransfer.md)"
+msgstr "[开始比特传输](./Start-BitsTransfer.md)"
+
+msgid "[Suspend-BitsTransfer](./Suspend-BitsTransfer.md)"
+msgstr "[Suspend-BitsTransfer](./Suspend-BitsTransfer.md)"

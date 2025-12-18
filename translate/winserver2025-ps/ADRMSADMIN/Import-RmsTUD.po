@@ -1,0 +1,160 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:53:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-RmsTUD"
+msgstr "# 导入RmsTUD"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Imports a TUD from a file in AD RMS or specifies to trust Microsoft account "
+"IDs."
+msgstr "从 AD RMS 文件中导入一个 TUD（信任声明），或指定要信任某些 Microsoft 账户 ID。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### EnterpriseTUD (Default)"
+msgstr "### EnterpriseTUD（默认设置）"
+
+msgid "### WindowsLiveID"
+msgstr "### WindowsLiveID"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Import-RmsTUD** cmdlet imports an enterprise trusted user domain (TUD)"
+" from a file in Active Directory Rights Management Services (AD RMS) or it "
+"specifies to trust a Microsoft account ID."
+msgstr ""
+"`Import-RmsTUD` cmdlet 用于从 Active Directory Rights Management Services (AD "
+"RMS) 中的文件导入企业受信任用户域（TUD），或者指定要信任某个 Microsoft 账户 ID。"
+
+msgid ""
+"To perform the import of enterprise TUDs, specify the *DisplayName* and "
+"*SourceFile* parameters and set the *Path* parameter to the AD RMS provider "
+"drive folder `<PSDrive>:\\TrustPolicy\\TrustedUserDomain` where `<PSDrive>` "
+"is the provider drive ID."
+msgstr ""
+"要导入企业级TUD（Trusted User "
+"Domain）配置文件，请指定*DisplayName*和*SourceFile*参数，并将*Path*参数设置为AD "
+"RMS提供程序驱动器文件夹`<PSDrive>:\\TrustPolicy\\TrustedUserDomain`，其中`<PSDrive>`表示提供程序驱动器的ID。"
+
+msgid ""
+"To trust a Microsoft account ID, specify the *WindowsLiveID* parameter, and "
+"set the *Path* parameter to the AD RMS provider drive folder "
+"`<PSDrive>:\\TrustPolicy\\TrustedUserDomain`."
+msgstr ""
+"要信任一个微软账户 ID，请指定 *WindowsLiveID* 参数，并将 *Path* 参数设置为 AD RMS 提供程序的驱动器文件夹 "
+"`<PSDrive>:\\TrustPolicy\\TrustedUserDomain>`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import a TUD and assign it a name"
+msgstr "### 示例 1：导入一个 TUD 并为其分配一个名称"
+
+msgid ""
+"This command imports the TUD information stored in the specified file and "
+"assigns the name Fabrikam to the TUD."
+msgstr "此命令导入存储在指定文件中的TUD信息，并将名称“Fabrikam”分配给该TUD。"
+
+msgid "### Example 2: Configure a TUD to trust Microsoft account IDs"
+msgstr "### 示例 2：配置 TUD 以信任微软账户 ID"
+
+msgid ""
+"This command configures the AD RMS cluster to trust Microsoft account IDs."
+msgstr "此命令配置AD RMS集群以信任Microsoft账户ID。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the name that will be used to identify the domain being imported."
+msgstr "指定用于识别正在导入的域的名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies a provider drive and path or relative path on the current drive.\n"
+"This parameter is required.\n"
+"Use a dot (.) to specify the current location.\n"
+"This parameter does not accept wildcards and has no default value."
+msgstr "指定提供商提供的驱动器路径或当前驱动器上的相对路径。此参数是必需的。使用点（.）来表示当前位置。该参数不支持通配符，且没有默认值。"
+
+msgid ""
+"Specifies the path to the file that contains the domain information to "
+"import."
+msgstr "指定包含要导入的域名信息的文件的路径。"
+
+msgid "Specifies to trust Active Directory Federation Services (ADFS) users."
+msgstr "指定要信任 Active Directory Federation Services (ADFS) 的用户。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "Indicates to trust Microsoft account IDs."
+msgstr "表示可以信任微软账户ID。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.RightsManagementServices.PowerShell.TrustedUserDomainImportedItem"
+msgstr ""
+"### "
+"Microsoft.RightsManagementServices.PowerShell.TrustedUserDomainImportedItem"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+
+msgid "[Export-RmsTUD](./Export-RmsTUD.md)"
+msgstr "[Export-RmsTUD](./Export-RmsTUD.md)"

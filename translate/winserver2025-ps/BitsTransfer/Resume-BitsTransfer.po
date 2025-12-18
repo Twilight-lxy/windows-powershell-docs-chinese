@@ -1,0 +1,201 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:39:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Resume-BitsTransfer"
+msgstr "# 简历 - BitsTransfer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Resumes a BITS transfer job."
+msgstr "恢复BITS传输作业。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Resume-BitsTransfer** cmdlet resumes one or more suspended Background Intelligent Transfer Service (BITS) transfer jobs.\n"
+"If the BITS transfer is already in process, the cmdlet does nothing.\n"
+"You can view the current state of a transfer job through the **Get-BitsTransfer** cmdlet."
+msgstr ""
+"`Resume-BitsTransfer` cmdlet 可以恢复一个或多个被暂停的背景智能传输服务（Background Intelligent "
+"Transfer Service，简称 BITS）传输作业。如果 BITS 传输已经在运行中，该 cmdlet 将不会执行任何操作。您可以使用 "
+"`Get-BitsTransfer` cmdlet 查看传输作业的当前状态。"
+
+msgid ""
+"By default, the **Resume-BitsTransfer** cmdlet restarts the transfer job synchronously even if the original job was specified as an asynchronous transfer job.\n"
+"You could use this behavior to convert an asynchronous transfer job into a synchronous transfer job.\n"
+"You could do this if either of the following conditions is true:"
+msgstr ""
+"默认情况下，`Resume-BitsTransfer` cmdlet "
+"会重新启动传输作业，并使其以同步方式进行；即使原始作业被指定为异步传输作业也是如此。你可以利用这种特性将一个异步传输作业转换为同步传输作业。在以下任一条件成立的情况下，都可以执行这一操作："
+
+msgid ""
+"If you want to restart the transfer job as an asynchronous transfer, use the"
+" *Asynchronous* parameter."
+msgstr "如果您想将传输作业重新启动为异步传输，请使用 *Asynchronous* 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Resume all BITS transfer jobs owned by the current user"
+msgstr "### 示例 1：恢复当前用户拥有的所有 BITS 数据传输作业"
+
+msgid ""
+"This command resumes all the BITS transfer jobs that are owned by the "
+"current user."
+msgstr "此命令会恢复当前用户所拥有的所有BITS传输作业。"
+
+msgid ""
+"The command prompt returns after the jobs are complete or after the jobs enter an error state.\n"
+"The output of the **Get-BitsTransfer** cmdlet is a set of BitsJob objects.\n"
+"This output is piped to the **Resume-BitsTransfer** cmdlet.\n"
+"If any of the BITS transfer jobs are already active, they will continue to run."
+msgstr ""
+"当作业完成或进入错误状态后，命令提示符会重新显示。`Get-BitsTransfer` cmdlet 的输出是一组 `BitsJob` "
+"对象，这些输出会被传递给 `Resume-BitsTransfer` cmdlet。如果任何 BITS 传输作业已经在运行中，它们将会继续执行。"
+
+msgid ""
+"### Example 2: Resume a new BITS transfer job that was initially suspended"
+msgstr "### 示例 2：恢复一个最初被暂停的新 BITS（巴西信息科技学院）传输任务"
+
+msgid ""
+"This command resumes a new BITS transfer job that was initially suspended, "
+"and it returns the command prompt immediately."
+msgstr "此命令会恢复一个最初被暂停的新BITS传输任务，并立即返回命令提示符。"
+
+msgid ""
+"The first command creates a new **BitsJob** object in a suspended state and "
+"then stores it in the $Bits variable."
+msgstr "第一个命令创建了一个处于“暂停状态”的新的**BitsJob**对象，然后将其存储在$Bits变量中。"
+
+msgid ""
+"The second command adds a file to the transfer queue of the new **BitsJob** "
+"object that is stored in the $Bits variable."
+msgstr "第二个命令会将一个文件添加到新的 **BitsJob** 对象的传输队列中，该对象存储在 $Bits 变量中。"
+
+msgid ""
+"The third command uses the **BitsJob** parameter to pass the **BitsJob** object that is stored in the $Bits variable to the **Resume-BitsTransfer** cmdlet.\n"
+"This command starts the BITS transfer job."
+msgstr ""
+"第三个命令使用了 **BitsJob** 参数，将该参数传递给存储在 `$Bits` 变量中的 **BitsJob** 对象，并将其传给 "
+"**Resume-BitsTransfer** cmdlet。这个命令会启动 BITS 数据传输任务。"
+
+msgid "### Example 3: Resume the BITS transfer by the specified display name"
+msgstr "### 示例 3：根据指定的显示名称恢复 BITS 数据传输"
+
+msgid ""
+"This command resumes the BITS transfer that is identified by the display "
+"name named TestJob01."
+msgstr "此命令会恢复由显示名称“TestJob01”标识的BITS传输过程。"
+
+msgid ""
+"The command prompt returns after the job is complete or after the job enters an error state.\n"
+"The output of the **Get-BitsTransfer** cmdlet is a **BitsJob** object.\n"
+"This output is piped to the **Resume-BitsTransfer** cmdlet.\n"
+"If the BITS transfer job is already active, it continues to run."
+msgstr ""
+"任务完成后或任务进入错误状态后，命令提示符会重新显示。`Get-BitsTransfer` cmdlet 的输出是一个 `BitsJob` "
+"对象，该对象会被传递给 ` Resume-BitsTransfer` cmdlet。如果 BITS 传输任务已经处于活动状态，它将继续执行。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet processes the BITS transfer job in the background.\n"
+"The command prompt reappears immediately after the BITS transfer job is resumed.\n"
+"The returned **BitsJob** object can be used to monitor status and progress."
+msgstr ""
+"表示该cmdlet在后台处理BITS传输任务。当BITS传输任务恢复后，命令提示符会立即重新显示。返回的`BitsJob`对象可用于监控状态和进度。"
+
+msgid ""
+"Specifies an array of BITS transfer jobs to resume.\n"
+"You can pipe a value to this parameter from other cmdlets that return **BitsJob** objects, such as the **Get-BitsTransfer** cmdlet."
+msgstr ""
+"用于指定需要恢复的 BITS 传输作业数组。您可以从返回 **BitsJob** 对象的其他 Cmdlet（例如 **Get-"
+"BitsTransfer** Cmdlet）中将该参数的值通过管道传递过来。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+msgstr "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+
+msgid ""
+"This cmdlet accepts one or more **BitsJob** objects as input that populates "
+"the *BitsJob* parameter."
+msgstr "此cmdlet接受一个或多个**BitsJob**对象作为输入，这些对象会填充*BitsJob*参数的值。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+msgstr "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+
+msgid ""
+"When called with the *Asynchronous* parameter, this cmdlet sends the **BitsJob** object that is associated with the resumed BITS transfer job as output.\n"
+"Otherwise, no output is generated."
+msgstr ""
+"当使用“异步（Asynchronous）”参数调用此cmdlet时，它会将与恢复的BITS传输任务相关联的**BitsJob**对象作为输出结果返回。否则，不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-BitsFile](./Add-BitsFile.md)"
+msgstr "[Add-BitsFile](./Add-BitsFile.md)"
+
+msgid "[Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+msgstr "[完成位传输](./Complete-BitsTransfer.md)"
+
+msgid "[Get-BitsTransfer](./Get-BitsTransfer.md)"
+msgstr "[Get-BitsTransfer](./Get-BitsTransfer.md)"
+
+msgid "[Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+msgstr "[Remove-BitsTransfer](./Remove-BitsTransfer.md)"
+
+msgid "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+msgstr "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+
+msgid "[Start-BitsTransfer](./Start-BitsTransfer.md)"
+msgstr "[开始比特传输](./Start-BitsTransfer.md)"
+
+msgid "[Suspend-BitsTransfer](./Suspend-BitsTransfer.md)"
+msgstr "[暂停比特传输](./Suspend-BitsTransfer.md)"

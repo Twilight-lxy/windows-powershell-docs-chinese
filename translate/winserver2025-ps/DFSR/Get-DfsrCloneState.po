@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:36:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrCloneState"
+msgstr "# Get-DfsrCloneState"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the status of a database cloning operation."
+msgstr "获取数据库克隆操作的状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfsrCloneState** cmdlet gets the status of an ongoing cloning operation for a volume from the local computer.\n"
+"The cmdlet returns the state of exporting or importing configuration XML file settings for a Distributed File System (DFS) Replication database or volume."
+msgstr ""
+"`Get-DfsrCloneState` 这个 cmdlet 可以获取本地计算机上正在进行的卷克隆操作的状态。该 cmdlet "
+"会返回分布式文件系统（DFS）复制数据库或卷的配置 XML 文件设置导出或导入过程的当前状态。"
+
+msgid ""
+"This cmdlet does not have any parameters and returns only state information.\n"
+"You must run this cmdlet on the DFS Replication computer that performs the export or import.\n"
+"Only one import or export can run at a time on a server."
+msgstr ""
+"此cmdlet没有任何参数，仅返回状态信息。您必须在该执行导出或导入操作的DFS复制计算机上运行此cmdlet。在一台服务器上一次只能进行一个导入或导出操作。"
+
+msgid "The DFS Replication service can return the following cloning states:"
+msgstr "DFS复制服务可以返回以下克隆状态："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the state of DFS Replication cloning"
+msgstr "### 示例 1：获取分布式文件系统（DFS）复制克隆的状态"
+
+msgid ""
+"This command gets the state of DFS Replication cloning.\n"
+"In this case the server is not currently cloning.\n"
+"The cloning operation has not started or has finished."
+msgstr "这个命令用于获取DFS复制克隆的状态。在这种情况下，服务器当前并未处于克隆状态；克隆操作既没有开始，也没有完成。"
+
+msgid "### Example 2: Get the state during a cloning operation"
+msgstr "### 示例 2：在克隆操作过程中获取状态信息"
+
+msgid ""
+"This example exports a DFS Replication database clone and gets the status of the ongoing cloning operation.\n"
+"The first command runs in one Windows PowerShell console, and the remaining commands run in a second Windows PowerShell console.\n"
+"This is required because the **Export-DfsrClone** cmdlet does not return until the DFS Replication service completes the export or if you press Ctrl + C to exit the cmdlet."
+msgstr ""
+"这个示例用于导出DFS复制数据库的副本，并获取正在进行中的克隆操作的状态。第一个命令在一个Windows "
+"PowerShell控制台中执行，其余命令则在另一个Windows PowerShell控制台中执行。这样做是必要的，因为`Export-"
+"DfsrClone` cmdlet只有在DFS复制服务完成导出操作或用户按下Ctrl + C退出该cmdlet时才会返回结果。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### DfsrCloneState"
+msgstr "### DfsrCloneState"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Import-DfsrClone](./Import-DfsrClone.md)"
+msgstr "[Import-DfsrClone](./Import-DfsrClone.md)"
+
+msgid "[Export-DfsrClone](./Export-DfsrClone.md)"
+msgstr "[Export-DfsrClone](./Export-DfsrClone.md)"
+
+msgid "[Reset-DfsrCloneState](./Reset-DfsrCloneState.md)"
+msgstr "[Reset-DfsrCloneState](./Reset-DfsrCloneState.md)"

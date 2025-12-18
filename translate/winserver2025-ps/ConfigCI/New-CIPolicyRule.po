@@ -1,0 +1,147 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:36:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-CIPolicyRule"
+msgstr "# 新CIP政策规则"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Generates Code Integrity policy rules for user mode code and drivers."
+msgstr "为用户模式代码和驱动程序生成代码完整性策略规则。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DriverFileList"
+msgstr "### DriverFileList"
+
+msgid "### DriverFilePath"
+msgstr "### DriverFilePath"
+
+msgid "### PackageFamilyName"
+msgstr "### PackageFamilyName"
+
+msgid "### ManualFilePath"
+msgstr "### ManualFilePath"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-CIPolicyRule** cmdlet generates Code Integrity policy rules for drivers.\n"
+"Specify a rule level and an array of **DriverFile** objects or the path of a driver."
+msgstr ""
+"`New-CIPolicyRule` cmdlet 用于为驱动程序生成代码完整性（Code Integrity）策略规则。你需要指定规则的级别，以及一个"
+" `DriverFile` 对象数组或驱动程序的路径。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create policy rules for drivers"
+msgstr "### 示例 1：为驾驶员创建策略规则"
+
+msgid ""
+"The first command gets drivers by using the **Get-SystemDriver** cmdlet, and"
+" then stores them in the $DriverFiles variable."
+msgstr ""
+"第一个命令使用 **Get-SystemDriver** cmdlet 获取驱动程序，并将它们存储在 `$DriverFiles` 变量中。"
+
+msgid ""
+"The second command creates policy rules at the file name level for the drivers in $DriverList.\n"
+"For this example, we present only the first few rules."
+msgstr "第二个命令为 `$DriverList` 中列出的驱动程序在文件名级别创建策略规则。在这个示例中，我们仅展示前几条规则。"
+
+msgid ""
+"### Example 2: Create policy rules for drivers and include a fallback value"
+msgstr "### 示例 2：为驾驶员创建策略规则，并包含一个备用值"
+
+msgid ""
+"This command generates rule at the Publisher level for the same drivers from the previous example.\n"
+"For files that are unsigned, the cmdlet creates Hash rules, as a fallback.\n"
+"For this example, we present only the first few rules."
+msgstr ""
+"此命令为上一个示例中提到的相同驱动程序在发布者（Publisher）级别生成相应的规则。对于未签名的文件，该cmdlet会创建哈希规则作为备用方案。在这个示例中，我们仅展示前几条规则。"
+
+msgid "### Example 3: Specify a policy rule for a kernel component"
+msgstr "### 示例 3：为内核组件指定一条策略规则"
+
+msgid ""
+"This command generates a publisher rule for the specific file named ci.dll.\n"
+"The file ci.dll is a kernel component.\n"
+"Therefore, the cmdlet generates both a kernel rule and a user mode rule."
+msgstr ""
+"该命令为名为 ci.dll 的特定文件生成一条发布者规则。ci.dll 文件是一个内核组件，因此这个 cmdlet "
+"会同时生成一条针对内核模式的规则和一条针对用户模式（user mode）的规则。"
+
+msgid "### Example 4: Specify a policy rule for a folder path with wildcards"
+msgstr "### 示例 4：为包含通配符的文件夹路径指定策略规则"
+
+msgid ""
+"This command generates a filepath rule for the specific path verbatim "
+"string. This will allow anything in the parent folder."
+msgstr "这个命令会为指定的路径生成一个文件路径规则（即字符串形式的文件路径）。这样，父文件夹中的任何内容都可以被访问或操作。"
+
+msgid ""
+"### Example 5: Create a policy rule for a packaged application and its "
+"dependencies"
+msgstr "### 示例 5：为打包的应用程序及其依赖项创建策略规则"
+
+msgid ""
+"This set of commands finds a packaged application matching the specified "
+"name and generates an allow rule for the packaged application and its "
+"dependencies."
+msgstr "这组命令会查找名称与指定值匹配的打包应用程序，并为该应用程序及其依赖项生成一条允许访问（或使用）的规则。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that files that do not have an `OriginalFileName` fall back in the"
+" following order:"
+msgstr "表示那些没有 `OriginalFileName` 的文件将按以下顺序进行处理："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Rule"
+msgstr "### 规则"
+
+msgid "This cmdlet returns the rules that it creates."
+msgstr "这个cmdlet会返回它创建的规则。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SystemDriver](./Get-SystemDriver.md)"
+msgstr "[Get-SystemDriver](./Get-SystemDriver.md)"

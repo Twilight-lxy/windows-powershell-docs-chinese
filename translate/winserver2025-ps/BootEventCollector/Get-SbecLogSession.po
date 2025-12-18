@@ -1,0 +1,117 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:53:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-SbecLogSession"
+msgstr "# Get-SbecLogSession"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the running log sessions."
+msgstr "获取运行日志会话信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-SbecLogSession** cmdlet gets the ETW log sessions that are currently running.\n"
+"This operation does not get log sessions defined in the registry for AutoLogger."
+msgstr ""
+"`Get-SbecLogSession` cmdlet 用于获取当前正在运行的 ETW（Events Tracing "
+"Windows）日志会话。该操作不会检索注册表中为 AutoLogger 定义的日志会话信息。"
+
+msgid ""
+"This cmdlet returns the **SbecEtwTrace.TraceSessionInfo** objects, whose properties contain most of the interesting information.\n"
+"More details are available in the Trace property."
+msgstr ""
+"此cmdlet会返回`SbecEtwTrace "
+"TRACESessionInfo`对象，这些对象的属性包含了大部分有用的信息。更多详细内容可以在`Trace`属性中找到。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation gets only log sessions that are configured to "
+"forward events through the kernel transport to the collector."
+msgstr "表示此操作仅获取那些被配置为通过内核传输机制将事件转发到收集器的日志会话。"
+
+msgid "Specifies the name of a log session."
+msgstr "指定日志会话的名称。"
+
+msgid ""
+"Simulate a Windows error, and cause the function to throw.\n"
+"You can specify this parameter to test error handling."
+msgstr "模拟一个Windows错误，导致函数抛出异常。你可以指定这个参数来测试错误处理机制。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### SbecEtwTrace.TraceSessionInfo"
+msgstr "### SbecEtwTrace TRACESessionInfo"
+
+msgid ""
+"The **SbecEtwTrace.TraceSessionInfo** class is defined in "
+"$PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1."
+msgstr ""
+"`SbecEtwTrace.TraceSessionInfo` 类定义在 "
+"`$PsHomeModules\\BootEventCollector\\SbecTrace Helpers.psm1` 中。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Save-SbecLogSession](./Save-SbecLogSession.md)"
+msgstr "[Save-SbecLogSession](./Save-SbecLogSession.md)"
+
+msgid "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+msgstr "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+
+msgid "[Start-SbecLogSession](./Start-SbecLogSession.md)"
+msgstr "[开始 SbecLogSession 会话](./Start-SbecLogSession.md)"
+
+msgid "[Start-SbecNtKernelLogSession](./Start-SbecNtKernelLogSession.md)"
+msgstr "[Start-SbecNtKernelLogSession](./Start-SbecNtKernelLogSession.md)"
+
+msgid "[Start-SbecSimpleLogSession](./Start-SbecSimpleLogSession.md)"
+msgstr "[开始 SbecSimpleLogSession 会话](./Start-SbecSimpleLogSession.md)"
+
+msgid "[Stop-SbecLogSession](./Stop-SbecLogSession.md)"
+msgstr "[Stop-SbecLogSession](./Stop-SbecLogSession.md)"

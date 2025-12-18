@@ -1,0 +1,137 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:19:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Repair-ClusterNameAccount"
+msgstr "# 修复-集群名称-账户"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Repairs the Cluster Name Account and ensures that the cluster continues to "
+"function properly."
+msgstr "修复集群名称相关的账户问题，并确保集群能够继续正常运行。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### InputObject (Default)"
+msgstr "### InputObject（默认值）"
+
+msgid "### Credentials"
+msgstr "### 凭据（Credentials）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Repair-ClusterNameAccount` cmdlet repairs or updates the Cluster Name Account used for\n"
+"authentication and authorization on a Failover Cluster. The Cluster Name Account is used to create\n"
+"Highly Available applications or Virtual Computer Objects (VCOs) in the cluster."
+msgstr ""
+"`Repair-ClusterNameAccount` cmdlet 用于修复或更新用于故障转移集群（Failover "
+"Cluster）中身份验证和授权的“集群名称账户”（Cluster Name Account）。该账户用于在集群中创建高可用性应用程序（Highly "
+"Available Applications）或虚拟计算机对象（Virtual Computer Objects，简称 VCOs）。"
+
+msgid ""
+"To learn more about cluster accounts in domain environments, see\n"
+"[Configuring cluster accounts in Active Directory](/windows-server/failover-clustering/configure-ad-accounts)."
+msgstr ""
+"要了解更多关于域环境中集群账户的信息，请参阅[在Active Directory中配置集群账户](/windows-server/failover-"
+"clustering/configure-ad-accounts)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example repairs or updates the Cluster Name Account for the cluster "
+"named `Cluster01`."
+msgstr "这个示例用于修复或更新名为`Cluster01`的集群的“Cluster Name Account”（集群名称账户）。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example repairs or updates the Cluster Name Account for the cluster named `Cluster01` using\n"
+"the specified credentials and domain. The `Get-Credential` cmdlet is used to create a PSCredential\n"
+"object for the `-Credentials` parameter."
+msgstr ""
+"这个示例使用指定的凭据和域名来修复或更新名为 `Cluster01` 的集群的集群名称账户。`Get-Credential` cmdlet 用于为 "
+"`-Credentials` 参数创建一个 PSCredential 对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies the credentials that this cmdlet uses when it connects to Active Directory Domain\n"
+"Services."
+msgstr "指定此cmdlet在连接到Active Directory域服务时使用的凭据。"
+
+msgid ""
+"Specifies the name of the domain in which to repair the cluster name account. This should be the\n"
+"fully qualified domain name (FQDN) of the domain that the cluster is in."
+msgstr "指定用于修复集群名称账户的域的名称。这应该是该集群所在域的完全限定域名（FQDN）。"
+
+msgid "Specifies the cluster name account to repair."
+msgstr "指定要修复的集群名称和账户信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### System.Management.Automation.PSObject"
+msgstr "### System.ManagementAutomation.PSObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterExcludedAdapter](add-clusterexcludedadapter.md)"
+msgstr "[Add-ClusterExcludedAdapter](add-clusterexcludedadapter.md)"
+
+msgid "[Get-ClusterExcludedAdapter](get-clusterexcludedadapter.md)"
+msgstr "[Get-ClusterExcludedAdapter](get-clusterexcludedadapter.md)"
+
+msgid "[Remove-ClusterExcludedAdapter](remove-clusterexcludedadapter.md)"
+msgstr "[Remove-ClusterExcludedAdapter](remove-clusterexcludedadapter.md)"
+
+msgid "[Set-ClusterExcludedAdapter](set-clusterexcludedadapter.md)"
+msgstr "[Set-ClusterExcludedAdapter](set-clusterexcludedadapter.md)"

@@ -1,0 +1,221 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:27:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DhcpServerv4Reservation"
+msgstr "# 获取 DHCP Server v4 的预留信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets IPv4 reservations for IP addresses or client IDs."
+msgstr "用于获取 IP 地址或客户端 ID 的 IPv4 预留地址。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ScopeId (Default)"
+msgstr "### ScopeId（默认值）"
+
+msgid "### IPAddress"
+msgstr "### IP地址"
+
+msgid "### ClientId"
+msgstr "### ClientId"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-DhcpServerv4Reservation** cmdlet gets one or more IPv4 reservations for the specified IP addresses or client identifiers (IDs).\n"
+"If only the *ScopeId* parameter is specified, all of the IPv4 reservations from the specified scope are returned."
+msgstr ""
+"`Get-DhcpServerv4 Reservation` 这个 cmdlet 可以获取一个或多个与指定 IP 地址或客户端标识符（ID）相关的 "
+"IPv4 预留地址。如果仅指定了 `ScopeId` 参数，那么将返回该范围内所有的 IPv4 预留地址。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get reservations in a specified scope"
+msgstr "#### 示例 1：获取指定范围内的预订信息"
+
+msgid ""
+"This cmdlet gets all of the reservations present in the specified scope on "
+"the specified DHCP server service that runs on the computer named "
+"dhcpserver.contoso.com."
+msgstr ""
+"这个cmdlet用于获取在名为dhcpserver.contoso.com的计算机上运行的指定DHCP服务器服务中、位于指定范围内的所有预订信息。"
+
+msgid "### Example 2: Get a reservation for a specified client"
+msgstr "### 示例 2：为指定的客户预订服务"
+
+msgid ""
+"This cmdlet gets the reservation present in the specified scope for "
+"specified client ID."
+msgstr "这个cmdlet用于获取指定范围内、属于指定客户端ID的预订信息。"
+
+msgid "### Example 3: Get a reservation information for a specified address"
+msgstr "### 示例 3：获取指定地址的预订信息"
+
+msgid "This cmdlet gets the reservation information for specified IP address."
+msgstr "这个cmdlet用于获取指定IP地址的预留信息。"
+
+msgid "### Example 4: Get all reservations for all scopes"
+msgstr "### 示例 4：获取所有范围内的所有预订信息"
+
+msgid ""
+"This cmdlet gets all the reserved IP addresses from all of the scopes on the server dhcpserver.contoso.com.\n"
+"The **Get-DhcpServerv4Scope** cmdlet returns all of the scope objects and pipes the objects into this cmdlet, which returns the reservations from all the scopes."
+msgstr ""
+"这个 cmdlet 会从服务器 dhcpserver.contoso.com 上的所有作用域中获取所有预留的 IP 地址。**Get-"
+"DhcpServerv4Scope** cmdlet 会返回所有的作用域对象，并将这些对象传递给这个 "
+"cmdlet，后者则会从中提取出所有作用域中的预留地址信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此 cmdlet 作为后台作业运行。使用此参数来执行耗时较长的命令。该 cmdlet "
+"会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用 `*-Job` 系列 "
+"cmdlet；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关 Windows "
+"PowerShell® 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more client IDs of the reservations which need to be retrieved.\n"
+"For Windows clients, the MAC address is the client ID."
+msgstr "指定一个或多个需要检索的预订记录对应的客户端ID。对于Windows客户端来说，MAC地址即为该客户端的ID。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the Dynamic Host Configuration Protocol (DHCP) server service."
+msgstr "指定目标计算机的DNS名称或IPv4/IPv6地址，该计算机运行动态主机配置协议（DHCP）服务器服务。"
+
+msgid ""
+"Specifies one or more IPv4 addresses of the reservations which are to be "
+"retrieved."
+msgstr "指定一个或多个需要检索的预留IPv4地址。"
+
+msgid ""
+"Specifies the scope ID, in IPv4 address format, from which the reservations "
+"are to be retrieved."
+msgstr "指定用于检索预留资源的范围ID（采用IPv4地址格式）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，那么 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算一个最优的限流值（即并发操作的最大数量）。这个限流值仅适用于当前的 "
+"cmdlet，而不适用于整个会话或整个计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Reservation"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4"
+" Reservation"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Reservation[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Reservation[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DhcpServerv4Reservation](./Add-DhcpServerv4Reservation.md)"
+msgstr "[Add-DhcpServerv4Reservation](./Add-DhcpServerv4 Reservation.md)"
+
+msgid "[Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+msgstr "[Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+
+msgid "[Remove-DhcpServerv4Reservation](./Remove-DhcpServerv4Reservation.md)"
+msgstr ""
+"[Remove-DhcpServerv4Reservation](./Remove-DhcpServerv4 Reservation.md)"
+
+msgid "[Set-DhcpServerv4Reservation](./Set-DhcpServerv4Reservation.md)"
+msgstr "[Set-DhcpServerv4 Reservation](./Set-DhcpServerv4Reservation.md)"

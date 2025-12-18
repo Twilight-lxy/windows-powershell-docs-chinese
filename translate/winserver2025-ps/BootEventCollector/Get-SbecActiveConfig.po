@@ -1,0 +1,157 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:51:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-SbecActiveConfig"
+msgstr "# Get-SbecActiveConfig"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the current active configuration from the running Setup and Boot Event "
+"Collector."
+msgstr "从正在运行的设置和启动事件收集器中获取当前活动的配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-SbecActiveConfig** cmdlet returns a hash table with two elements, `<Content>` and `<Timestamp>`.\n"
+"The `<Content>` element contains the text of the active configuration as a single string.\n"
+"The `<Timestamp>` element contains the timestamp when that configuration was set, as a FILETIME 64-bit value."
+msgstr ""
+"`Get-SbecActiveConfig` cmdlet 返回一个包含两个元素的哈希表：`<Content>` 和 "
+"`<Timestamp>`。`<Content>` 元素以字符串的形式存储了当前生效的配置内容；`<Timestamp>` "
+"元素则保存了该配置被设置的时间戳，该时间戳是一个 64 位的 FILETIME 值。"
+
+msgid ""
+"You can use the timestamp to verify that the configuration didn't change since the last reading.\n"
+"You can also use it to get the configuration, modify it locally, and set it back, and ensuring that nobody has modified it during that time."
+msgstr ""
+"你可以使用时间戳来验证配置自上次读取以来是否发生了变化。你还可以利用时间戳获取配置信息，在本地对其进行修改，然后再将其设置回原来的状态，从而确保在这段时间内没有人对配置进行过任何更改。"
+
+msgid ""
+"You can modify the text of the configuration from the exact text that was last set.\n"
+"You can normalize it by removing all the carriage return (`\\r`) characters and by removing any empty lines at the end of configuration."
+msgstr "你可以修改配置文件中的文本内容，使其恢复到上次设置时的精确形式。为此，你需要删除所有的回车符（`\\r`），并移除配置文件末尾的任何空行。"
+
+msgid "This command throws an error on failures."
+msgstr "当执行此命令失败时，会抛出一个错误。"
+
+msgid ""
+"This command is available only to the users having the Builtin Administrator"
+" (BA) privilege."
+msgstr "此命令仅适用于具有内置管理员（Built-in Administrator，简称BA）权限的用户。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the active configuration"
+msgstr "#### 示例 1：获取当前活动的配置"
+
+msgid ""
+"This command gets the active configuration, and then stores it in the $res "
+"variable."
+msgstr "这条命令获取当前的配置信息，并将其存储在 `$res` 变量中。"
+
+msgid "### Example 2: Convert a timestamp"
+msgstr "### 示例 2：转换时间戳"
+
+msgid ""
+"This command converts the returned timestamp to the PowerShell format, and "
+"then stores it in the $res variable."
+msgstr "该命令将返回的时间戳转换为PowerShell格式，然后将其存储在 `$res` 变量中。"
+
+msgid "### Example 3: Get the text of a configuration"
+msgstr "### 示例 3：获取配置文件的文本内容"
+
+msgid ""
+"This command extracts the returned text of the configuration as a single "
+"string, and then stores it in the $text variable."
+msgstr "该命令将配置返回的文本提取为一个字符串，然后将其存储在 `$text` 变量中。"
+
+msgid "### Example 4: Print the complete returned information"
+msgstr "### 示例 4：打印返回的全部信息"
+
+msgid ""
+"This command gets the active configuration and pipes it to Format-List, "
+"which formats the results."
+msgstr "这个命令获取当前的配置信息，并将其传递给 `Format-List` 命令，后者会对结果进行格式化处理。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet, or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行该cmdlet。可以输入一个会话对象（例如**New-CimSession**或**Get-CimSession** "
+"cmdlet的输出结果），或者这些对象的数组。默认情况下，该cmdlet会在本地计算机上运行。有关更多信息，请参阅“About_CimSession”。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on TechNet."
+msgstr ""
+"指定您想要执行操作的计算机名称。对于每台计算机，您可以指定一个完全 Qualified Domain Name（FQDN）、一个 NetBIOS "
+"名称或一个 IP 地址。有关更多信息，请参阅 TechNet 上的 [Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### hash table"
+msgstr "### 哈希表"
+
+msgid "This cmdlet returns a hash table with two elements:"
+msgstr "这个cmdlet返回一个包含两个元素的哈希表："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+msgstr "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+
+msgid "[Test-SbecActiveConfig](./Test-SbecActiveConfig.md)"
+msgstr "[Test-SbecActiveConfig](./Test-SbecActiveConfig.md)"
+
+msgid "[Test-SbecConfig](./Test-SbecConfig.md)"
+msgstr "[测试-SbecConfig](./Test-SbecConfig.md)"

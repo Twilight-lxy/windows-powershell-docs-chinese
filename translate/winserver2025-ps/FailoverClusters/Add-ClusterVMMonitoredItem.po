@@ -1,0 +1,174 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:50:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ClusterVMMonitoredItem"
+msgstr "# 添加集群虚拟机监控项（Add-ClusterVMMonitoredItem）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Configures monitoring for a service or an Event Tracing for Windows (ETW) event so that it is\n"
+"monitored on a virtual machine."
+msgstr "配置对某个服务或 Windows 事件跟踪（ETW）事件的监控，以便在虚拟机上对其进行监控。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VirtualMachine (Default)"
+msgstr "### VirtualMachine（默认设置）"
+
+msgid "### VMId"
+msgstr "### VMId"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Add-ClusterVMMonitoredItem` cmdlet configures monitoring for a service or an Event Tracing\n"
+"for Windows (ETW) event so that it is monitored on a virtual machine. If the service fails or the\n"
+"event occurs, then the system responds by taking an action based on the failover configuration for\n"
+"the virtual machine resource. For example, the configuration might specify that the virtual machine\n"
+"be restarted."
+msgstr ""
+"`Add-ClusterVMMonitoredItem` cmdlet 用于配置对某个服务或 Windows 事件跟踪 (ETW) "
+"事件的监控，以便在虚拟机上对该服务或事件进行监视。当该服务出现故障或相应事件发生时，系统会根据虚拟机资源的故障转移配置采取相应的措施（例如重启虚拟机）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example adds monitoring for the ETW event ID `4708`. This example uses splatting to pass\n"
+"parameter values from the `$Parameters` variable to the command. Learn more about\n"
+"[Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)."
+msgstr ""
+"这个示例为 ETW 事件 ID `4708` 添加了监控功能。该示例使用了“拼接”（splatting）技术，将 `$Parameters` "
+"变量中的参数值传递给相应的命令。有关 "
+"[Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)"
+" 的更多信息，请参阅相关文档。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "This example configures monitoring for the print spooler service."
+msgstr "这个示例配置了对打印队列服务（print spooler service）的监控功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the event identifier (ID) of the event to be monitored."
+msgstr "指定要监控的事件的标识符（ID）。"
+
+msgid "Specifies the event log of the event to be monitored."
+msgstr "指定要监控的事件的事件日志。"
+
+msgid "Specifies the event source of the event to be monitored."
+msgstr "指定要监控的事件的来源（即事件发生的源头）。"
+
+msgid ""
+"Specifies the cluster on which to run the cmdlet, the clustered virtual machine on which to\n"
+"configure monitoring, and the cluster virtual machine monitored item object to monitor."
+msgstr "指定用于运行该 cmdlet 的集群、用于配置监控的集群虚拟机，以及需要被监控的集群虚拟机对象。"
+
+msgid ""
+"Specifies that the cluster service will fix, by overriding, the service recovery actions in the\n"
+"event that it isn't properly configured for monitoring. To be configured for monitoring the\n"
+"following conditions need to be met:"
+msgstr ""
+"该设置表明：如果集群服务未正确配置以进行监控，那么该服务将通过覆盖（override）现有的服务恢复机制来自动修复相关问题。要使集群服务能够被用于监控，需要满足以下条件："
+
+msgid "AND"
+msgstr "和（逻辑运算符）"
+
+msgid ""
+"Specifies the name of a service to be monitored. This must be the short name, not the long name, of\n"
+"the service. For example, specify clussvc instead of Failover Cluster service."
+msgstr ""
+"指定要监控的服务的名称。这必须是服务的简称，而不是全称。例如，应指定“clussvc”，而不是“Failover Cluster Service”。"
+
+msgid "Specifies the virtual machine identifier (ID)."
+msgstr "指定虚拟机的标识符（ID）。"
+
+msgid ""
+"Specifies the name of the clustered virtual machine on which to perform monitoring. When this\n"
+"parameter is specified, the cmdlet must be run on one of the host cluster nodes, or else the\n"
+"**Cluster** parameter must also be specified."
+msgstr ""
+"指定要对其进行监控的集群化虚拟机的名称。当指定了此参数时，必须在该主机集群节点之一上运行该cmdlet；否则还必须同时指定`Cluster`参数。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If the value `0` is specified, then the call is initiated and\n"
+"the cmdlet returns without waiting."
+msgstr ""
+"指定等待该cmdlet完成所需的时间（以秒为单位）。如果未指定**Wait**参数，则cmdlet会一直等待直到完成；如果指定了值`0`，则会立即启动调用，而cmdlet会在不等待的情况下返回结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FAILoverClusters.PowerShell Cluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### Microsoft FailoverClusters.PowerShell ClusterGroup"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters.PowerShell_clusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterVMMonitoredItem"
+msgstr "### Microsoft FAILoverClusters.PowerShell_clusterVMMonitoredItem"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterVMMonitoredItem](./Get-ClusterVMMonitoredItem.md)"
+msgstr "[Get-ClusterVMMonitoredItem](./Get-ClusterVMMonitoredItem.md)"
+
+msgid "[Remove-ClusterVMMonitoredItem](./Remove-ClusterVMMonitoredItem.md)"
+msgstr "[Remove-ClusterVMMonitoredItem](./Remove-ClusterVMMonitoredItem.md)"
+
+msgid "[Reset-ClusterVMMonitoredState](./Reset-ClusterVMMonitoredState.md)"
+msgstr "[Reset-ClusterVMMonitoredState](./Reset-ClusterVMMonitoredState.md)"

@@ -1,0 +1,188 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:35:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-CIPolicy"
+msgstr "# 新CIP政策"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a Code Integrity policy as an .xml file."
+msgstr "创建一个代码完整性策略，并将其保存为.xml文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Drivers"
+msgstr "### 驱动程序"
+
+msgid "### Rules"
+msgstr "### 规则"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-CIPolicy** cmdlet creates a Code Integrity policy as an .xml file."
+msgstr "`New-CIPolicy` cmdlet 会创建一个代码完整性策略，并将其保存为 `.xml` 文件。"
+
+msgid ""
+"If you specify **DriverFile** objects, this cmdlet generates rules based on the **Level** parameter.\n"
+"This cmdlet creates a policy based on those rules for the specified driver files."
+msgstr ""
+"如果您指定了 **DriverFile** 对象，此cmdlet将根据 **Level** "
+"参数生成规则。然后，该cmdlet会根据这些规则为指定的驱动程序文件创建相应的策略。"
+
+msgid ""
+"If you specify **Rule** objects, this cmdlet creates a policy based on those objects.\n"
+"Because the rules that you specify are created at a specific level, do not specify a level."
+msgstr "如果您指定了**Rule**对象，此cmdlet将根据这些对象创建一个策略。由于您指定的规则是在特定层级上创建的，请不要指定具体的层级。"
+
+msgid ""
+"If you do not supply either driver files or rules, this cmdlet performs a system scan similar to the **Get-SystemDriver** cmdlet.\n"
+"The cmdlet generates rules based on **Level**.\n"
+"If you specify the **Audit** parameter, this cmdlet scans the Code Integrity Audit log instead."
+msgstr ""
+"如果你既不提供驱动程序文件，也不提供规则，此cmdlet会执行类似于**Get-SystemDriver** "
+"cmdlet的系统扫描。该cmdlet会根据指定的**Level**来生成相应的规则。如果你指定了**Audit**参数，那么它将扫描代码完整性审计日志（Code"
+" Integrity Audit log）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a policy in multiple policy format"
+msgstr "### 示例 1：以多种政策格式创建一个政策"
+
+msgid ""
+"The first command scans for user-mode executables (applications) along with "
+"kernel-mode binaries such as drivers and creates rules at the Publisher "
+"level. The command creates a policy in multiple policy format and stores it "
+"in the file that is named Policy.xml. This command specifies the "
+"**OmitPaths** parameter to exclude files in the temp\\ConfigCITestBinaries "
+"folder. The command specifies the **NoScript** parameter so that it gets "
+"information for only portable executable files (PE files)."
+msgstr ""
+"第一个命令会扫描用户模式的可执行文件（应用程序）以及内核模式的二进制文件（如驱动程序），并在“发布者”级别创建相应的规则。该命令会生成多种格式的策略，并将其存储在名为"
+" Policy.xml 的文件中。该命令指定了 **OmitPaths** 参数，用于排除 temp\\ConfigCITestBinaries "
+"文件夹中的文件；同时，它还指定了 **NoScript** 参数，以确保仅获取可移植执行文件（PE 文件）的相关信息。"
+
+msgid "### Example 2: Scan unsigned files"
+msgstr "### 示例 2：扫描未签名的文件"
+
+msgid ""
+"This command scans for user-mode executables (applications) along with kernel-mode binaries such as drivers, and then creates rules at the Publisher level, just as the first example did.\n"
+"This command does not specify the **OmitPaths** and **NoScript** parameters.\n"
+"The command encounters files that have an invalid or corrupted signature format.\n"
+"The cmdlet returns an informational message about generated rules."
+msgstr ""
+"该命令会扫描用户模式的可执行文件（应用程序）以及内核模式的二进制文件（如驱动程序），然后在发布者（Publisher）级别创建相应的规则，就像第一个示例中所做的那样。此命令没有指定"
+" **OmitPaths** 和 **NoScript** "
+"参数。在执行过程中，如果遇到签名格式无效或损坏的文件，该命令会返回相应的提示信息。此外，该cmdlet还会提供关于生成的规则的信息。"
+
+msgid "### Example 3: Create rules for driver files in a variable"
+msgstr "### 示例 3：为驱动程序文件创建规则，并将这些规则存储在一个变量中"
+
+msgid ""
+"The first command gets drivers by using the **Get-SystemDriver** cmdlet, and"
+" then stores them in the $DriverFiles variable."
+msgstr ""
+"第一个命令使用 **Get-SystemDriver** cmdlet 获取驱动程序，并将它们存储在 `$DriverFiles` 变量中。"
+
+msgid ""
+"The second command creates rules at the Publisher level for the items stored in $DriverFiles.\n"
+"This example has the same effect as the single command in the second example."
+msgstr ""
+"第二个命令在发布者（Publisher）层面为存储在 $DriverFiles "
+"中的文件创建了相应的规则。这个示例产生的效果与第二个示例中的单个命令相同。"
+
+msgid "### Example 4: Create a policy with exception rules"
+msgstr "### 示例 4：创建包含异常规则的策略"
+
+msgid ""
+"The first set of commands creates an allow file rule based on the CA "
+"certificate used to sign the test application as well as a deny exception "
+"rule based on the original file name of the application to block. The deny "
+"rule has a user mode and kernel mode component which requires both sections'"
+" file exception boolean fields to be set to '1'."
+msgstr ""
+"第一组命令会根据用于签署测试应用程序的CA证书创建一条允许文件通过的规则，同时还会根据应用程序的原始文件名创建一条拒绝访问的规则。这条拒绝规则包含用户模式（user"
+" mode）和内核模式（kernel mode）两部分；要使该规则生效，需要将这两部分的“文件异常处理”布尔字段（file exception "
+"boolean fields）都设置为“1”。"
+
+msgid ""
+"The second set of commands sets the exceptions field of the allow file rule "
+"to the identifier of the exception rule. If the allow rule has both a user "
+"mode and kernel mode component, the exception fields of both components must"
+" have the identifier of the exception rule set."
+msgstr ""
+"第二组命令将“allow”文件规则的“exceptions”字段设置为该异常规则的标识符。如果“allow”规则同时包含用户模式和内核模式组件，那么这两个组件的“exceptions”字段都必须被设置为该异常规则的标识符。"
+
+msgid ""
+"The last commands merge the allow file rule and its deny rule exceptions "
+"into one rule variable which can be used in the New-CIPolicy creation step. "
+"The same process can be repeated for a deny file rule with allow exception "
+"rules."
+msgstr ""
+"最后的命令将允许文件规则的规则内容及其拒绝规则的例外情况合并到一个规则变量中，该变量可以在创建新CIPolicy（New-"
+"CIPolicy）的步骤中使用。对于包含允许例外情况的拒绝文件规则，也可以重复同样的处理过程。"
+
+msgid ""
+"File rule exceptions cannot use the PCA Certificate, Publisher, Signed "
+"Version, or File Publisher rule levels."
+msgstr "文件规则异常无法使用PCA证书、发布者、签名版本或文件发布者等规则级别。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that files that do not have an `OriginalFileName` fall back in the"
+" following order:"
+msgstr "表示对于那些没有 `OriginalFileName` 的文件，系统会按照以下顺序进行处理："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-CIPolicy](./Get-CIPolicy.md)"
+msgstr "[Get-CIPolicy](./Get-CIPolicy.md)"
+
+msgid "[Get-SystemDriver](./Get-SystemDriver.md)"
+msgstr "[Get-SystemDriver](./Get-SystemDriver.md)"
+
+msgid "[Merge-CIPolicy](./Merge-CIPolicy.md)"
+msgstr "[Merge-CIPolicy](./Merge-CIPolicy.md)"
+
+msgid "[New-CIPolicyRule](./New-CIPolicyRule.md)"
+msgstr "[New-CIPolicyRule](./New-CIPolicyRule.md)"

@@ -1,0 +1,156 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:42:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-DfsReplicationGroup"
+msgstr "# 新DFS复制组"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a replication group."
+msgstr "创建一个复制组。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-DfsReplicationGroup** cmdlet creates a replication group.\n"
+"A replication group is a set of servers, or members, that participate in the replication of one or more folders.\n"
+"A replicated folder is kept synchronized among the members of a replication group.\n"
+"This cmdlet cannot modify resource group bandwidth or schedules."
+msgstr ""
+"`New-DfsReplicationGroup` cmdlet "
+"用于创建一个复制组。复制组是由一组服务器组成的集合，这些服务器参与一个或多个文件夹的复制过程。被复制的文件夹会在复制组的成员之间保持同步状态。此 "
+"cmdlet 无法修改资源组的带宽或调度设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a replication group"
+msgstr "### 示例 1：创建一个复制组"
+
+msgid "This command creates a replication group named RG01."
+msgstr "该命令创建了一个名为RG01的复制组。"
+
+msgid "### Example 2: Create a replication topology"
+msgstr "#### 示例 2：创建复制拓扑结构"
+
+msgid ""
+"This example creates a replication topology with an upstream server and two "
+"downstream servers."
+msgstr "这个示例创建了一个复制拓扑结构，其中包含一个上游服务器和两个下游服务器。"
+
+msgid ""
+"The first command uses the **New-DfsReplicationGroup** cmdlet to create a replication group with the name Branch Office 1.\n"
+"The command pipes the output to the **New-DfsReplicatedFolder** cmdlet to create a replicated folder with the name Data Distribution 1.\n"
+"The command pipes the output to the **Add-DfsrMember** cmdlet to add the member servers named SRV01, SRV02, and SRV03.\n"
+"The command formats the output of the pipeline as a table."
+msgstr ""
+"第一个命令使用 **New-DfsReplicationGroup** cmdlet 创建一个名为 “Branch Office 1” "
+"的复制组。该命令将输出结果传递给 **New-DfsReplicatedFolder** cmdlet，以创建一个名为 “Data "
+"Distribution 1” 的复制备份文件夹。接着，该命令将输出结果再次传递给 **Add-DfsrMember** "
+"cmdlet，用于添加成员服务器 SRV01、SRV02 和 SRV03。最后，该命令将整个处理流程的输出结果格式化为表格形式。"
+
+msgid ""
+"The second command uses the **Add-DfsrConnection** cmdlet to add "
+"bidirectional connections between servers SRV01 and SRV02."
+msgstr "第二个命令使用了 **Add-DfsrConnection** cmdlet，在服务器 SRV01 和 SRV02 之间建立双向连接。"
+
+msgid ""
+"The third command uses the **Add-DfsrConnection** cmdlet to add "
+"bidirectional connections between servers SRV01 and SRV03."
+msgstr "第三个命令使用了 **Add-DfsrConnection** cmdlet 来在 SRV01 和 SRV03 服务器之间建立双向连接。"
+
+msgid ""
+"The fourth command uses the **Set-DfsrMembership** cmdlet to set SRV01 as "
+"the primary member."
+msgstr "第四条命令使用 **Set-DfsrMembership** cmdlet 将 SRV01 设置为主要成员。"
+
+msgid ""
+"The fifth command uses the **Set-DfsrMembership** cmdlet to set membership "
+"for servers SRV02 and SRV03."
+msgstr "第五条命令使用了 **Set-DfsrMembership** cmdlet 来设置 SRV02 和 SRV03 服务器的成员身份。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid "Specifies a description for the replication group."
+msgstr "为复制组指定一个描述。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains a replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the current domain."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果不指定此参数，cmdlet 将使用当前域。"
+
+msgid "Specifies an array of names of replication groups."
+msgstr "指定一个复制组名称的数组。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"
+msgstr "[Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"
+
+msgid "[Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"
+msgstr "[Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"
+
+msgid "[Set-DfsReplicationGroup](./Set-DfsReplicationGroup.md)"
+msgstr "[Set-DfsReplicationGroup](./Set-DfsReplicationGroup.md)"
+
+msgid "[Suspend-DfsReplicationGroup](./Suspend-DfsReplicationGroup.md)"
+msgstr "[Suspend-DfsReplicationGroup](./Suspend-DfsReplicationGroup.md)"
+
+msgid "[Sync-DfsReplicationGroup](./Sync-DfsReplicationGroup.md)"
+msgstr "[Sync-DfsReplicationGroup](./Sync-DfsReplicationGroup.md)"

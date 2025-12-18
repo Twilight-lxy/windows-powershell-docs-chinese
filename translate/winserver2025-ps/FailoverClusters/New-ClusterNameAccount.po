@@ -1,0 +1,135 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:10:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-ClusterNameAccount"
+msgstr "# 新集群名称账户"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a cluster name account in Active Directory Domain Services."
+msgstr "在 Active Directory 域服务中创建一个用于管理集群名称的账户。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### InputObject (Default)"
+msgstr "### InputObject（默认值）"
+
+msgid "### Credentials"
+msgstr "### 凭证（Credentials）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `New-ClusterNameAccount` cmdlet creates a cluster name account in Active Directory Domain\n"
+"Services. A cluster name account is also referred to as a cluster name object (CNO). This cmdlet\n"
+"changes the existing cluster name to match the cluster name account that it creates. If a cluster\n"
+"name account already exists for a cluster, this cmdlet has no effect."
+msgstr ""
+"`New-ClusterNameAccount` cmdlet 在 Active Directory Domain Services "
+"中创建一个集群名称账户。这种集群名称账户也被称为集群名称对象（Cluster Name Object，简称 CNO）。该 cmdlet "
+"会更改现有的集群名称，使其与所创建的集群名称账户相匹配。如果某个集群已经存在对应的集群名称账户，则该 cmdlet 不会产生任何效果。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a cluster name account for the current cluster"
+msgstr "#### 示例 1：为当前集群创建一个集群名称账户"
+
+msgid ""
+"This command creates a cluster name account for the current cluster in the specified domain.\n"
+"The current cluster is the default value for the cluster on which this cmdlet operates."
+msgstr "此命令会为当前集群在指定的域中创建一个集群名称账户。当前集群是执行此 cmdlet 时所针对的默认集群。"
+
+msgid "### Example 2: Create a cluster name account by using credentials"
+msgstr "### 示例 2：使用凭据创建集群名称账户"
+
+msgid ""
+"The first command prompts you for credentials, and then stores them in the "
+"`$Credential` variable."
+msgstr "第一个命令会提示您输入凭据，然后将这些凭据存储在 `$Credential` 变量中。"
+
+msgid ""
+"The second command creates a cluster name account for the current cluster in the specified domain.\n"
+"The command supplies the credentials stored in `$Credential` to access Active Directory Domain\n"
+"Services."
+msgstr ""
+"第二个命令为当前集群在指定的域中创建一个集群名称账户。该命令使用了存储在 `$Credential` 变量中的凭据来访问 Active "
+"Directory 域服务。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies the credentials that this cmdlet uses when it connects to Active Directory Domain\n"
+"Services. To obtain credentials, use the `Get-Credential` cmdlet. For more information, type\n"
+"`Get-Help Get-Credential`."
+msgstr ""
+"指定此 cmdlet 在连接到 Active Directory 域服务时使用的凭据。若要获取凭据，请使用 `Get-Credential` "
+"cmdlet。有关更多信息，请键入 `Get-Help Get-Credential`。"
+
+msgid ""
+"Specifies the Active Directory Domain Services domain in which this cmdlet creates a cluster name\n"
+"account."
+msgstr "指定此cmdlet用于创建集群名称账户的Active Directory域服务域名。"
+
+msgid ""
+"Specifies the cluster for which this cmdlet adds a cluster name account."
+msgstr "指定该 cmdlet 用于为其添加集群名称账户的集群。"
+
+msgid ""
+"Specifies the name of the cluster name account that this cmdlet creates."
+msgstr "指定此cmdlet创建的集群账户的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShellCluster"
+
+msgid ""
+"This cmdlet accepts a **Cluster** object for which it creates a cluster name"
+" account."
+msgstr "此cmdlet接受一个**Cluster**对象，并为此对象创建一个集群名称账户。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-Credential](https://go.microsoft.com/fwlink/?LinkID=293936)"
+msgstr "[获取凭据](https://go.microsoft.com/fwlink/?LinkID=293936)"

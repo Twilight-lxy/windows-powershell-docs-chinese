@@ -1,0 +1,126 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:04:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterResourceDependency"
+msgstr "# Get-ClusterResourceDependency"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets information about the dependencies that have been configured between clustered resources in a\n"
+"failover cluster."
+msgstr "获取有关故障转移集群中已配置的、用于连接集群资源之间依赖关系的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-ClusterResourceDependency` cmdlet gets information about the dependencies that have been\n"
+"configured between clustered resources in a failover cluster. Resource dependencies control the\n"
+"order in which resources are brought online or taken offline in the cluster."
+msgstr ""
+"`Get-ClusterResourceDependency` cmdlet "
+"可以获取关于故障转移集群中配置的资源依赖关系的信息。这些资源依赖关系决定了集群中资源上线或下线的顺序。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "#### 示例 1"
+
+msgid ""
+"This example displays the dependencies for the resource called "
+"`cluster1FS12`."
+msgstr "这个示例展示了名为 `cluster1FS12` 的资源所依赖的其他组件（即其依赖关系）。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example displays the dependencies for each resource in the clustered file server resource\n"
+"group called `cluster1FS12`. Some resources don't have dependencies."
+msgstr "这个示例展示了名为`cluster1FS12`的集群文件服务器资源组中每个资源的依赖关系。有些资源没有依赖关系。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Causes the generated dependency expression to have the resource GUIDs "
+"instead of the resource names."
+msgstr "这会导致生成的依赖关系表达式中包含资源GUID而不是资源名称。"
+
+msgid ""
+"Specifies the cluster resource for which to get the dependency expression."
+msgstr "指定要获取依赖关系表达式的集群资源。"
+
+msgid ""
+"Specifies the name of the cluster resource for which to get the dependency "
+"expression."
+msgstr "指定要获取依赖关系表达式的集群资源的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft_failoverClusters.PowerShellClusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResourceDependency"
+msgstr "### Microsoft FailoverClusters PowerShellClusterResourceDependency"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterResourceDependency](./Add-ClusterResourceDependency.md)"
+msgstr "[添加集群资源依赖关系](./Add-ClusterResourceDependency.md)"
+
+msgid "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+msgstr "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+
+msgid "[Get-ClusterResource](./Get-ClusterResource.md)"
+msgstr "[Get-ClusterResource](./Get-ClusterResource.md)"
+
+msgid ""
+"[Remove-ClusterResourceDependency](./Remove-ClusterResourceDependency.md)"
+msgstr ""
+"[Remove-ClusterResourceDependency](./Remove-ClusterResourceDependency.md)"
+
+msgid "[Set-ClusterResourceDependency](./Set-ClusterResourceDependency.md)"
+msgstr "[Set-ClusterResourceDependency](./Set-ClusterResourceDependency.md)"

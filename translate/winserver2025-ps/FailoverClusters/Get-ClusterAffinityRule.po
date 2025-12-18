@@ -1,0 +1,151 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:57:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "Get-ClusterAffinityRule"
+msgstr "Get-ClusterAffinityRule"
+
+msgid "# Get-ClusterAffinityRule"
+msgstr "# Get-ClusterAffinityRule"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "This cmdlet is used to display the given rule and what type it is."
+msgstr "此cmdlet用于显示给定的规则及其类型。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"This cmdlet is used to display the given rule and what type it is. The cmdlet lists all rules by\n"
+"default. Use the **Name** parameter to return a specific rule or rules."
+msgstr ""
+"此cmdlet用于显示给定的规则及其类型。默认情况下，该cmdlet会列出所有规则。可以使用**Name**参数来返回特定的规则或多个特定规则。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1 - Get a specific affinity rule"
+msgstr "#### 示例 1 - 获取特定的亲和性规则"
+
+msgid ""
+"This example returns information about the cluster affinity rule with the name `Rule1` from\n"
+"`Cluster1`."
+msgstr "这个示例从 `Cluster1` 中返回名为 `Rule1` 的集群亲和性规则的相关信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job` "
+"cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 PowerShell 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)\n"
+"or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"The name of the desired affinity rule. When this parameter isn't specified, the cmdlet lists every\n"
+"rule."
+msgstr "所需亲和性规则的名称。如果未指定此参数，该cmdlet会列出所有规则。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then PowerShell calculates an optimum\n"
+"throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令行脚本（cmdlet）的最大操作数量。如果省略此参数或输入值 `0`，PowerShell 会根据计算机上正在运行的 "
+"CIM 命令行脚本的数量来计算一个最优的限制值。此限制仅适用于当前正在运行的命令行脚本，而不适用于整个会话或整个计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid ""
+"When a string is piped to this cmdlet, the value is used as the name of the "
+"affinity rule to get."
+msgstr "当一个字符串被传递给此 cmdlet 时，该值将用作要获取的亲和性规则的名称。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/MSCLUSTER/MSCluster_AffinityRule"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/MSCLUSTER/MSCluster_AffinityRule"
+
+msgid ""
+"The cmdlet returns an object representing an affinity rule as a CIM instance within the\n"
+"`root/MSCLUSTER/MSCluster_AffinityRule` path."
+msgstr ""
+"该 cmdlet 返回一个对象，该对象表示一条亲和性规则，并以 CIM 实例的形式存在于 "
+"`root/MSCLUSTER/MSCluster_AffinityRule` 路径下。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-ClusterAffinityRule](New-ClusterAffinityRule.md)"
+msgstr "[New-ClusterAffinityRule](New-ClusterAffinityRule.md)"
+
+msgid "[Remove-ClusterAffinityRule](Remove-ClusterAffinityRule.md)"
+msgstr "[Remove-ClusterAffinityRule](Remove-ClusterAffinityRule.md)"
+
+msgid "[Set-ClusterAffinityRule](Set-ClusterAffinityRule.md)"
+msgstr "[Set-ClusterAffinityRule](Set-ClusterAffinityRule.md)"

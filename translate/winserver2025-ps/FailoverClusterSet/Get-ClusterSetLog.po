@@ -1,0 +1,108 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:37:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Get-ClusterSetLog"
+msgstr "# 获取集群集日志"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "{{ Fill in the Synopsis }}"
+msgstr "{{ 填写剧情简介 }}"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### InputObject (Default)"
+msgstr "### InputObject（默认值）"
+
+msgid "### ClusterSetCimSession"
+msgstr "### ClusterSetCimSession"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "{{ Add example description here }}"
+msgstr "{{ 在这里添加示例描述 }}"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "{{ Fill ClusterSetCimSession Description }}"
+msgstr "{{ 填写 ClusterSetCimSession 的描述内容 }}"
+
+msgid "{{ Fill DestinationFolderPath Description }}"
+msgstr "{{ 填写目标文件夹路径描述 }}"
+
+msgid "{{ Fill IncludeClusterLog Description }}"
+msgstr "{{ 填写内容：包含集群日志描述 }}"
+
+msgid "{{ Fill IncludeManagementClusterLog Description }}"
+msgstr "{{ Fill IncludeManagementClusterLog Description }}"
+
+msgid "{{ Fill NoCollateLogs Description }}"
+msgstr "{{ Fill NoCollateLogs Description }}"
+
+msgid "{{ Fill Node Description }}"
+msgstr "{{ 填充节点描述 }}"
+
+msgid ""
+"Generate the cluster set log without retrieving cluster set state "
+"information."
+msgstr "生成集群集日志，但不检索集群集的状态信息。"
+
+msgid "{{ Fill TimeSpanInMinutes Description }}"
+msgstr "{{ Fill(TimeSpanInMinutes Description }}"
+
+msgid "Generate the cluster log using local time instead of GMT."
+msgstr "使用本地时间而不是GMT来生成集群日志。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.Management.Infrastructure.CimSession"
+msgstr "### Microsoft.ManagementInfrastructure.CimSession"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.IO.FileInfo"
+msgstr "### System.IO.FileInfo"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[https://go.microsoft.com/fwlink/?LinkId=216212](https://go.microsoft.com/fwlink/?LinkId=216212)"
+msgstr "[https://go.microsoft.com/fwlink/?LinkId=216212]"

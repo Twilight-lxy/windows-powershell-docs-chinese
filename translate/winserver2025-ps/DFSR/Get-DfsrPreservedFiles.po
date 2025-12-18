@@ -1,0 +1,143 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:40:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrPreservedFiles"
+msgstr "# Get-DfsrPreservedFiles"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets a list of files and folders that DFS Replication previously preserved."
+msgstr "获取DFS复制之前已保存的文件和文件夹列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-DfsrPreservedFiles** cmdlet gets a list of preserved files and folders.\n"
+"The Distributed File System (DFS) Replication service preserves the following kinds of files and folders:"
+msgstr ""
+"`Get-DfsrPreservedFiles` cmdlet "
+"可用于获取被保留的文件和文件夹列表。分布式文件系统（DFS）复制服务会保留以下类型的文件和文件夹："
+
+msgid ""
+"For all three types, DFS Replication moves the files and folders to \\<replicated folder\\>\\DfsrPrivate\\ConflictsAndDeleted or \\<replicated folder\\>\\DfsrPrivate\\Preexisting.\n"
+"DFS Replication records these files in a manifest, either ConflictAndDeletedManifest.xml or PreexistingManifest.xml, as appropriate.\n"
+"Specify the ConflictAndDeletedManifest.xml manifest to view conflicted and deleted files and folders.\n"
+"Specify the PreexistingManifest.xml manifest to view preexisting files and folders.\n"
+"You can use the **Restore-DfsrPreservedFiles** cmdlet to restore files and folders."
+msgstr ""
+"对于这三种类型，DFS复制都会将文件和文件夹移动到 `<replicated "
+"folder>\\DfsrPrivate\\ConflictsAndDeleted` 或 `<replicated "
+"folder>\\DfsrPrivate\\Preexisting` 中。DFS复制会将这些文件记录在相应的清单文件中（分别为 "
+"`ConflictAndDeletedManifest.xml` 或 "
+"`PreexistingManifest.xml`）。要查看发生冲突或被删除的文件和文件夹，请指定 "
+"`ConflictAndDeletedManifest.xml`；要查看原本就存在的文件和文件夹，请指定 "
+"`PreexistingManifest.xml`。您可以使用 `Restore-DfsrPreservedFiles` cmdlet "
+"来恢复这些文件和文件夹。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get conflicted and deleted files and folders for a replicated"
+" folder"
+msgstr "### 示例 1：获取某个复制文件夹中发生冲突并被删除的文件和文件夹"
+
+msgid ""
+"This command gets a list of conflicted and deleted files and folders for the replicated folder C:\\RF01.\n"
+"The command specifies the manifest for that replicated folder.\n"
+"The console displays the file name and other data."
+msgstr ""
+"该命令会获取复制文件夹 C:\\RF01 "
+"中存在冲突或已被删除的文件和文件夹的列表。命令指定了该复制文件夹的相关信息（即清单文件）。控制台会显示文件的名称以及其他相关数据。"
+
+msgid "### Example 2: Get preexisting files for a replicated folder"
+msgstr "### 示例 2：获取复制文件夹中已存在的文件"
+
+msgid ""
+"This command gets a list of preexisting files and folders for the replicated folder C:\\RF01.\n"
+"The console displays the file name and other data."
+msgstr "这个命令会获取复制文件夹 C:\\RF01 中已存在的文件和文件夹的列表。控制台会显示文件名称以及其他相关信息。"
+
+msgid "### Example 3: Look for conflicting or deleted files by using a name"
+msgstr "### 示例 3：通过文件名查找存在冲突或已被删除的文件"
+
+msgid ""
+"This command looks for conflicting or deleted files that have a name that contains the string canary.\n"
+"The command gets the preserved files recorded in the specified manifest.\n"
+"The command then passes those files to the **Where-Object** cmdlet by using the pipeline operator.\n"
+"That cmdlet passes files that match the criteria back to the console.\n"
+"For more information, type `Get-Help Where-Object`."
+msgstr ""
+"这个命令用于查找那些名称中包含字符串“canary”的、存在冲突或已被删除的文件。该命令会将被保留下来的文件记录在指定的清单（manifest）中，然后通过管道运算符将这些文件传递给**Where-"
+"Object** cmdlet。该cmdlet会将与指定条件匹配的文件显示回控制台。如需更多信息，请输入`Get-Help Where-Object`。"
+
+msgid ""
+"In this example, the command finds a file, named canary.bmp.\n"
+"You could use the Restore-DfsrPreservedFiles to restore this file."
+msgstr ""
+"在这个例子中，该命令会找到一个名为 `canary.bmp` 的文件。你可以使用 `Restore-DfsrPreservedFiles` "
+"命令来恢复这个文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the path of a manifest.\n"
+"By default, the manifest files exist in the \\<Replicated Folder\\>\\DfsrPrivate folder.\n"
+"Specify ConflictAndDeletedManifest.xml to view conflicted and deleted files.\n"
+"Specify PreexistingManifest.xml to view preexisting files."
+msgstr ""
+"指定清单文件的路径。默认情况下，清单文件位于 `<Replicated Folder>\\DfsrPrivate` "
+"文件夹中。如果想查看存在冲突或已被删除的文件，请指定 `ConflictAndDeletedManifest.xml`；如果想查看预先存在的文件，请指定"
+" `PreexistingManifest.xml`。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrPreservedEntry"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrPreservedEntry"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Restore-DfsrPreservedFiles](./Restore-DfsrPreservedFiles.md)"
+msgstr "[Restore-DfsrPreservedFiles](./Restore-DfsrPreservedFiles.md)"

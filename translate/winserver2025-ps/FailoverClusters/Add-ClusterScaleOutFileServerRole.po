@@ -1,0 +1,158 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:48:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ClusterScaleOutFileServerRole"
+msgstr "# 添加 ClusterScaleOutFileServerRole 角色"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a clustered file server for scale-out application data."
+msgstr "创建一个集群化的文件服务器，用于扩展应用程序数据存储容量。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Add-ClusterScaleOutFileServerRole` cmdlet creates a clustered file server for scale-out\n"
+"application data. A file server for scale-out application data provides storage for applications or\n"
+"virtual machines that leave files open for extended periods of time. Client connections are\n"
+"distributed across nodes for better throughput. This type of file server supports the Server Message\n"
+"Block (SMB) protocol. It doesn't support the Network File System (NFS) protocol, or certain role\n"
+"services such as File Server Resource Manager (FSRM) or Distributed File System (DFS) Replication."
+msgstr ""
+"`Add-ClusterScaleOutFileServerRole` cmdlet "
+"用于创建一个集群化的文件服务器，以支持应用程序数据的扩展需求。这种类型的文件服务器可以为那些需要长时间保持文件打开状态的应用程序或虚拟机提供存储空间。客户端连接会被分布到各个节点上，从而提高数据传输效率。该文件服务器支持"
+" Server Message Block (SMB) 协议，但不支持 Network File System (NFS) "
+"协议，也不支持某些角色服务（如 File Server Resource Manager (FSRM) 或 Distributed File "
+"System (DFS) 复制功能）。"
+
+msgid ""
+"> [!NOTE]\n"
+"> This cmdlet cannot be run remotely without Credential Security Service Provider (CredSSP)\n"
+"> authentication on the server computer."
+msgstr "> [注意] > 如果服务器计算机上没有启用凭据安全服务提供程序（CredSSP）进行身份验证，该cmdlet无法远程运行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example creates a highly available scale-out file server role."
+msgstr "这个示例创建了一个高可用性的可扩展文件服务器角色。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example creates a highly available scale out file server role.\n"
+"The cmdlet completes without waiting for all resources to come online."
+msgstr "这个示例创建了一个高可用性的可扩展文件服务器角色。该命令行工具（cmdlet）会在不等待所有资源都上线的情况下完成执行。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example creates an infrastructure file server scale-out file server role. It automatically\n"
+"creates a single namespace share for the CSV drive (such as `\\\\InfraSOFSName\\Volume1`). In\n"
+"hyper-converged configurations, an infrastructure scale-out file server allows an SMB client\n"
+"(Hyper-V host) to communicate with guaranteed continuous availability with the infrastructure\n"
+"scale-out SMB file server. There can be at most only one infrastructure scale-out file server\n"
+"cluster role on a failover cluster."
+msgstr ""
+"这个示例创建了一个用于基础设施文件服务器扩展的文件服务器角色。它会自动为 CSV 驱动器创建一个命名空间共享（例如 "
+"`\\\\InfraSOFSName\\Volume1`）。在超融合配置中，这样的基础设施文件服务器可以确保 SMB 客户端（Hyper-V "
+"主机）与基础设施文件服务器之间的通信具有高可用性（即持续稳定的连接）。在一个故障转移集群上，最多只能有一个基础设施文件服务器扩展角色。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群的名称。如果该参数的输入为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid ""
+"Specifies whether to create infrastructure file server scale-out file server"
+" role."
+msgstr "指定是否创建用于扩展文件服务器角色的基础设施文件服务器。"
+
+msgid ""
+"Specifies the cluster on which to create the highly available scale-out file"
+" server."
+msgstr "指定用于创建高可用性扩展文件服务器的集群。"
+
+msgid ""
+"Specifies the name of the highly available scale-out file server being "
+"created."
+msgstr "指定正在创建的高可用性横向扩展文件服务器的名称。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If the value `0` is specified, then the call is initiated and\n"
+"the cmdlet returns without waiting."
+msgstr ""
+"指定等待该cmdlet完成所需的时间（以秒为单位）。如果未指定**Wait**参数，那么cmdlet会一直等待直到操作完成。如果指定的值为`0`，则表示命令将立即被执行，cmdlet会在不等待的情况下立即返回结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters.PowerShellCluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShell.ClusterGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterFileServerRole](./Add-ClusterFileServerRole.md)"
+msgstr "[Add-ClusterFileServerRole](./Add-ClusterFileServerRole.md)"
+
+msgid "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+msgstr "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+
+msgid "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+msgstr "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+
+msgid "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+msgstr "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+
+msgid "[Start-ClusterGroup](./Start-ClusterGroup.md)"
+msgstr "[启动集群组](./Start-ClusterGroup.md)"
+
+msgid "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"
+msgstr "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"

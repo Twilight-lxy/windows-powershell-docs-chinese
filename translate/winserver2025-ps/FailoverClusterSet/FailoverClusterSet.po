@@ -1,0 +1,232 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:36:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# FailoverClusterSet Module"
+msgstr "# FailoverClusterSet 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "## FailoverClusterSet Cmdlets"
+msgstr "## FailoverClusterSetCmdlets"
+
+msgid ""
+"### [Add-ClusterSetFaultDomainMember](Add-ClusterSetFaultDomainMember.md)"
+msgstr ""
+"### [Add-ClusterSetFaultDomainMember](Add-ClusterSetFaultDomainMember.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Add-ClusterSetMember](Add-ClusterSetMember.md)"
+msgstr "### [Add-ClusterSetMember](Add-ClusterSetMember.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Add-ClusterSetMemberTag](Add-ClusterSetMemberTag.md)"
+msgstr "### [Add-ClusterSetMemberTag](Add-ClusterSetMemberTag.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Add-ClusterSetParticipantToAvailabilitySet](Add-"
+"ClusterSetParticipantToAvailabilitySet.md)"
+msgstr "### [将集群集成员添加到可用性集中](Add-ClusterSet ParticipantToAvailabilitySet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Clear-ClusterSetMember](Clear-ClusterSetMember.md)"
+msgstr "### [Clear-ClusterSetMember](Clear-ClusterSetMember.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-ClusterSet](Get-ClusterSet.md)"
+msgstr "### [Get-ClusterSet](Get-ClusterSet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-ClusterSetAvailabilitySet](Get-ClusterSetAvailabilitySet.md)"
+msgstr "### [Get-ClusterSetAvailabilitySet](Get-ClusterSetAvailabilitySet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Get-ClusterSetFaultDomain](Get-ClusterSetFaultDomain.md)"
+msgstr "### [Get-ClusterSetFaultDomain](Get-ClusterSetFaultDomain.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-ClusterSetMember](Get-ClusterSetMember.md)"
+msgstr "### [Get-ClusterSetMember](Get-ClusterSetMember.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-ClusterSetNode](Get-ClusterSetNode.md)"
+msgstr "### [Get-ClusterSetNode](Get-ClusterSetNode.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid ""
+"### [Get-ClusterSetOptimalNodeForVm](Get-ClusterSetOptimalNodeForVm.md)"
+msgstr ""
+"### [Get-ClusterSetOptimalNodeForVm](Get-ClusterSetOptimalNodeForVm.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Get-ClusterSetVM](Get-ClusterSetVM.md)"
+msgstr "### [Get-ClusterSetVM](Get-ClusterSetVM.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Initialize-ClusterSet](Initialize-ClusterSet.md)"
+msgstr "### [Initialize-ClusterSet](Initialize-ClusterSet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Initialize-ClusterSetMember](Initialize-ClusterSetMember.md)"
+msgstr "### [Initialize-ClusterSetMember]( Initialize-ClusterSetMember.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Move-ClusterSetVM](Move-ClusterSetVM.md)"
+msgstr "### [Move-ClusterSetVM](Move-ClusterSetVM.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [New-ClusterSet](New-ClusterSet.md)"
+msgstr "### [New-ClusterSet](New-ClusterSet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [New-ClusterSetAvailabilitySet](New-ClusterSetAvailabilitySet.md)"
+msgstr "### [New-ClusterSetAvailabilitySet](New-ClusterSetAvailabilitySet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [New-ClusterSetFaultDomain](New-ClusterSetFaultDomain.md)"
+msgstr "### [New-ClusterSetFaultDomain](New-ClusterSetFaultDomain.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Register-ClusterSetMember](Register-ClusterSetMember.md)"
+msgstr "### [注册集群集成员](Register-ClusterSetMember.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Register-ClusterSetSRPartnership](Register-ClusterSetSRPartnership.md)"
+msgstr "### [注册集群集合作伙伴关系](Register-ClusterSetSRPartnership.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Register-ClusterSetVM](Register-ClusterSetVM.md)"
+msgstr "### [注册-ClusterSetVM](Register-ClusterSetVM.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Remove-ClusterSet](Remove-ClusterSet.md)"
+msgstr "### [Remove-ClusterSet](Remove-ClusterSet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid ""
+"### [Remove-ClusterSetAvailabilitySet](Remove-ClusterSetAvailabilitySet.md)"
+msgstr ""
+"### [Remove-ClusterSetAvailabilitySet](Remove-ClusterSetAvailabilitySet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Remove-ClusterSetFaultDomain](Remove-ClusterSetFaultDomain.md)"
+msgstr "### [Remove-ClusterSetFaultDomain](Remove-ClusterSetFaultDomain.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Remove-ClusterSetFaultDomainMember](Remove-"
+"ClusterSetFaultDomainMember.md)"
+msgstr ""
+"### [Remove-ClusterSetFaultDomainMember](Remove-"
+"ClusterSetFaultDomainMember.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Remove-ClusterSetMember](Remove-ClusterSetMember.md)"
+msgstr "### [Remove-ClusterSetMember](Remove-ClusterSetMember.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Remove-ClusterSetMemberTag](Remove-ClusterSetMemberTag.md)"
+msgstr "### [Remove-ClusterSetMemberTag](Remove-ClusterSetMemberTag.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid ""
+"### [Remove-ClusterSetParticipantFromAvailabilitySet](Remove-"
+"ClusterSetParticipantFromAvailabilitySet.md)"
+msgstr ""
+"### [从可用性集中移除集群集参与者](Remove-ClusterSetParticipantFromAvailabilitySet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-ClusterSet](Set-ClusterSet.md)"
+msgstr "### [Set-ClusterSet](Set-ClusterSet.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Set-ClusterSetVm](Set-ClusterSetVm.md)"
+msgstr "### [Set-ClusterSetVm](Set-ClusterSetVm.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Unregister-ClusterSetMember](Unregister-ClusterSetMember.md)"
+msgstr "### [Unregister-ClusterSetMember](Unregister-ClusterSetMember.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Unregister-ClusterSetVM](Unregister-ClusterSetVM.md)"
+msgstr "### [Unregister-ClusterSetVM](Unregister-ClusterSetVM.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Get-ClusterSetLog](Get-ClusterSetLog.md)"
+msgstr "### [Get-ClusterSetLog](Get-ClusterSetLog.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"

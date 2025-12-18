@@ -1,0 +1,168 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:18:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# DFSN Module"
+msgstr "# DFSN模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all DFS Namespace cmdlets. It lists the\n"
+"cmdlets in alphabetical order based on the verb at the beginning of the cmdlet."
+msgstr ""
+"本参考资料提供了所有 DFS 命名空间（DFS Namespace）cmdlet 的描述和语法信息。这些 cmdlet "
+"按照命令开头所使用的动词（即命令的行为）的字母顺序进行排列。"
+
+msgid "## DFSN Cmdlets"
+msgstr "## DFSN 命令行工具（Cmdlets）"
+
+msgid "### [Get-DfsnAccess](./Get-DfsnAccess.md)"
+msgstr "### [Get-DfsnAccess](./Get-DfsnAccess.md)"
+
+msgid "Gets permissions for a DFS namespace folder."
+msgstr "获取DFS命名空间文件夹的权限。"
+
+msgid "### [Get-DfsnFolder](./Get-DfsnFolder.md)"
+msgstr "### [Get-DfsnFolder](./Get-DfsnFolder.md)"
+
+msgid "Gets settings for a DFS namespace folder."
+msgstr "获取DFS命名空间文件夹的设置信息。"
+
+msgid "### [Get-DfsnFolderTarget](./Get-DfsnFolderTarget.md)"
+msgstr "### [Get-DfsnFolderTarget](./Get-DfsnFolderTarget.md)"
+
+msgid "Gets settings for targets of a DFS namespace folder."
+msgstr "获取DFS命名空间文件夹的目标对象的设置信息。"
+
+msgid "### [Get-DfsnRoot](./Get-DfsnRoot.md)"
+msgstr "### [Get-DfsnRoot](./Get-DfsnRoot.md)"
+
+msgid "Gets settings for DFS namespaces."
+msgstr "获取分布式文件系统（DFS）命名空间的相关设置信息。"
+
+msgid "### [Get-DfsnRootTarget](./Get-DfsnRootTarget.md)"
+msgstr "### [Get-DfsnRootTarget](./Get-DfsnRootTarget.md)"
+
+msgid "Gets settings for root targets of a DFS namespace."
+msgstr "获取DFS命名空间中根目标的设置信息。"
+
+msgid "### [Get-DfsnServerConfiguration](./Get-DfsnServerConfiguration.md)"
+msgstr "### [Get-DfsnServerConfiguration](./Get-DfsnServerConfiguration.md)"
+
+msgid "Gets DFS namespace settings for a DFSN root server."
+msgstr "获取DFSN根服务器的DFS命名空间设置。"
+
+msgid "### [Grant-DfsnAccess](./Grant-DfsnAccess.md)"
+msgstr "### [Grant-DfsnAccess](./Grant-DfsnAccess.md)"
+
+msgid ""
+"Grants permissions to users and groups to access a DFS namespace folder."
+msgstr "为用户和组授予访问DFS命名空间文件夹的权限。"
+
+msgid "### [Move-DfsnFolder](./Move-DfsnFolder.md)"
+msgstr "### [Move-DfsnFolder](./Move-DfsnFolder.md)"
+
+msgid "Moves or renames a DFS namespace folder."
+msgstr "移动或重命名DFS命名空间文件夹。"
+
+msgid "### [New-DfsnFolder](./New-DfsnFolder.md)"
+msgstr "### [New-DfsnFolder](./New-DfsnFolder.md)"
+
+msgid "Creates a folder in a DFS namespace."
+msgstr "在DFS命名空间中创建一个文件夹。"
+
+msgid "### [New-DfsnFolderTarget](./New-DfsnFolderTarget.md)"
+msgstr "### [New-DfsnFolderTarget](./New-DfsnFolderTarget.md)"
+
+msgid "Adds a target to a DFS namespace folder."
+msgstr "向DFS命名空间文件夹中添加一个目标（target）。"
+
+msgid "### [New-DfsnRoot](./New-DfsnRoot.md)"
+msgstr "### [New-DfsnRoot](./New-DfsnRoot.md)"
+
+msgid "Creates a DFS namespace."
+msgstr "创建一个DFS命名空间。"
+
+msgid "### [New-DfsnRootTarget](./New-DfsnRootTarget.md)"
+msgstr "### [New-DfsnRootTarget](./New-DfsnRootTarget.md)"
+
+msgid "Adds a root target to a DFS namespace."
+msgstr "向DFS命名空间中添加一个根目标（root target）。"
+
+msgid "### [Remove-DfsnAccess](./Remove-DfsnAccess.md)"
+msgstr "### [Remove-DfsnAccess](./Remove-DfsnAccess.md)"
+
+msgid "Removes users and groups from the ACL for a folder in a DFS namespace."
+msgstr "从DFS命名空间中的某个文件夹的ACL中删除用户和组。"
+
+msgid "### [Remove-DfsnFolder](./Remove-DfsnFolder.md)"
+msgstr "### [Remove-DfsnFolder](./Remove-DfsnFolder.md)"
+
+msgid "Removes a DFS namespace folder."
+msgstr "删除一个DFS命名空间文件夹。"
+
+msgid "### [Remove-DfsnFolderTarget](./Remove-DfsnFolderTarget.md)"
+msgstr "### [Remove-DfsnFolderTarget](./Remove-DfsnFolderTarget.md)"
+
+msgid "Removes a target for a DFS namespace folder."
+msgstr "删除DFS命名空间文件夹的目标对象。"
+
+msgid "### [Remove-DfsnRoot](./Remove-DfsnRoot.md)"
+msgstr "### [Remove-DfsnRoot](./Remove-DfsnRoot.md)"
+
+msgid "Removes a DFS namespace."
+msgstr "删除一个DFS命名空间。"
+
+msgid "### [Remove-DfsnRootTarget](./Remove-DfsnRootTarget.md)"
+msgstr "### [Remove-DfsnRootTarget](./Remove-DfsnRootTarget.md)"
+
+msgid "Removes a target for a DFS namespace root."
+msgstr "移除DFS命名空间根的目标对象。"
+
+msgid "### [Revoke-DfsnAccess](./Revoke-DfsnAccess.md)"
+msgstr "### [Revoke-DfsnAccess](./Revoke-DfsnAccess.md)"
+
+msgid ""
+"Revokes permissions for users to access and enumerate the contents of a DFS "
+"namespace folder."
+msgstr "撤销用户访问和枚举DFS命名空间文件夹内容的权限。"
+
+msgid "### [Set-DfsnFolder](./Set-DfsnFolder.md)"
+msgstr "### [Set-DfsnFolder](./Set-DfsnFolder.md)"
+
+msgid "Changes settings for a DFS namespace folder."
+msgstr "更改DFS命名空间文件夹的设置。"
+
+msgid "### [Set-DfsnFolderTarget](./Set-DfsnFolderTarget.md)"
+msgstr "### [Set-DfsnFolderTarget](./Set-DfsnFolderTarget.md)"
+
+msgid "Changes settings for a target of a DFS namespace folder."
+msgstr "更改DFS命名空间文件夹的目标设置。"
+
+msgid "### [Set-DfsnRoot](./Set-DfsnRoot.md)"
+msgstr "### [Set-DfsnRoot](./Set-DfsnRoot.md)"
+
+msgid "Changes settings for a DFS namespace."
+msgstr "更改分布式文件系统（DFS）命名空间的设置。"
+
+msgid "### [Set-DfsnRootTarget](./Set-DfsnRootTarget.md)"
+msgstr "### [Set-DfsnRootTarget](./Set-DfsnRootTarget.md)"
+
+msgid "Changes settings for a root target of a DFS namespace."
+msgstr "更改DFS命名空间中根目标的设置。"
+
+msgid "### [Set-DfsnServerConfiguration](./Set-DfsnServerConfiguration.md)"
+msgstr "### [Set-DfsnServerConfiguration](./Set-DfsnServerConfiguration.md)"
+
+msgid "Changes settings for a DFS namespace root server."
+msgstr "更改分布式文件系统（DFS）命名空间根服务器的设置。"

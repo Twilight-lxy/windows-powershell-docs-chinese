@@ -1,0 +1,205 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:23:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DnsServerSigningKey"
+msgstr "# Set-DnsServerSigningKey"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Changes settings of a signing key."
+msgstr "更改签名密钥的设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-DnsServerSigningKey** cmdlet changes settings of a signing key for a Domain Name System (DNS) zone.\n"
+"You must specify the *ZoneName* parameter and at least one of the optional parameters."
+msgstr ""
+"`Set-DnsServerSigningKey` cmdlet 用于更改域名系统（DNS）区域的签名键设置。你必须指定 `ZoneName` "
+"参数以及至少一个可选参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Retire signing keys during the next rollover"
+msgstr "### 示例 1：在下次滚动更新期间移除签名密钥"
+
+msgid ""
+"This command retires the signing keys of a zone during the next rollover.\n"
+"The **Get-DnsServerSigningKey** cmdlet gets the signing keys for the zone that is named sec.contoso.com and passes the results to the **Set-DnsServerSigningKey** cmdlet by using the pipeline operator."
+msgstr ""
+"此命令会在下一次域名更新（rollover）过程中移除该域名的签名密钥。`Get-DnsServerSigningKey` cmdlet 会获取名为 "
+"`sec.contoso.com` 的域名的签名密钥，并通过管道运算符将这些结果传递给 `Set-DnsServerSigningKey` "
+"cmdlet。"
+
+msgid ""
+"**Set-DnsServerSigningKey** specifies that the signing keys will be retired "
+"during the next rollover."
+msgstr "`Set-DnsServerSigningKey` 指定在下次角色轮换期间，这些签名键将被停用（即不再被使用）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此 cmdlet 作为后台作业运行。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在当前会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies a remote DNS server.\n"
+"You can specify an IP address or any value that resolves to an IP address, such as a fully qualified domain name (FQDN), host name, or NETBIOS name."
+msgstr ""
+"用于指定远程DNS服务器。您可以指定一个IP地址，或者任何能够解析为IP地址的字符串，例如完全合格域名（FQDN）、主机名或NETBIOS名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the amount of time that signatures that cover DS record sets are "
+"valid."
+msgstr "指定覆盖 DS 记录集的签名有效的持续时间。"
+
+msgid ""
+"Specifies the amount of time that signatures that cover DNSKEY record sets "
+"are valid."
+msgstr "指定了覆盖 DNSKEY 记录集的签名有效的时间长度。"
+
+msgid "Specifies the unique identifier of a key."
+msgstr "指定一个键的唯一标识符。"
+
+msgid "Specifies the next rollover action."
+msgstr "指定下一个鼠标悬停（rollover）时的操作。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the amount of time between scheduled key rollovers."
+msgstr "指定计划中的密钥轮换之间的时间间隔。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令（cmdlet）的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM "
+"命令（cmdlets）的数量来计算该命令的最佳并发限制。这个并发限制仅适用于当前运行的命令，而不影响整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid ""
+"Specifies the name of the zone in which DNS Security Extensions (DNSSEC) "
+"operations are performed."
+msgstr "指定用于执行 DNS 安全扩展（DNSSEC）操作的区域的名称。"
+
+msgid ""
+"Specifies the amount of time that signatures that cover all other record "
+"sets are valid."
+msgstr "指定了覆盖所有其他记录集的签名有效的持续时间。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.Management.Infrastructure.CimInstance#DnsServerSigningKey"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance#DnsServerSigningKey"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DnsServerSigningKey](./Get-DnsServerSigningKey.md)"
+msgstr "[Get-DnsServerSigningKey](./Get-DnsServerSigningKey.md)"
+
+msgid "[Add-DnsServerSigningKey](./Add-DnsServerSigningKey.md)"
+msgstr "[Add-DnsServerSigningKey](./Add-DnsServerSigningKey.md)"
+
+msgid "[Remove-DnsServerSigningKey](./Remove-DnsServerSigningKey.md)"
+msgstr "[Remove-DnsServerSigningKey](./Remove-DnsServerSigningKey.md)"
+
+msgid ""
+"[Disable-DnsServerSigningKeyRollover](./Disable-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"[ Disable-DnsServerSigningKeyRollover](./Disable-"
+"DnsServerSigningKeyRollover.md)"
+
+msgid ""
+"[Enable-DnsServerSigningKeyRollover](./Enable-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"[Enable-DnsServerSigningKeyRollover](./Enable-"
+"DnsServerSigningKeyRollover.md)"
+
+msgid ""
+"[Invoke-DnsServerSigningKeyRollover](./Invoke-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"[Invoke-DnsServer SigningKeyRollover](./Invoke-"
+"DnsServerSigningKeyRollover.md)"

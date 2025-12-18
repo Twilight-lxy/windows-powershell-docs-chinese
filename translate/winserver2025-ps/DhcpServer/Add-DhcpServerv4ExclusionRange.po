@@ -1,0 +1,185 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:56:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-DhcpServerv4ExclusionRange"
+msgstr "# Add-DhcpServerv4ExclusionRange"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a range of excluded IP addresses for an IPv4 scope."
+msgstr "为某个IPv4地址范围添加一系列需要排除的IP地址。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-DhcpServerv4ExclusionRange** cmdlet adds a range of excluded IP addresses for an IPv4 scope.\n"
+"The excluded IP addresses are not leased out by the Dynamic Host Configuration Protocol (DHCP) server service to any DHCP client.\n"
+"The only exception to this is reservation.\n"
+"If an IP address is reserved, the same IP address is leased to the designated client even if it falls in the exclusion range."
+msgstr ""
+"`Add-DhcpServerv4ExclusionRange` cmdlet 用于为一个 IPv4 范围添加一组被排除的 IP 地址。这些被排除的 "
+"IP 地址不会通过动态主机配置协议 (DHCP) 服务器服务分配给任何 DHCP 客户端。唯一的例外情况是地址预留：如果某个 IP "
+"地址已被预留，即使它位于被排除的范围内，该地址仍会分配给指定的客户端。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Exclude an IP address range on the local computer"
+msgstr "### 示例 1：在本地计算机上排除某个 IP 地址范围"
+
+msgid ""
+"This command excludes the IP address range from 10.1.1.1 through 10.1.1.10 "
+"from the scope 10.1.1.0 on the DHCP server service that runs on the local "
+"computer."
+msgstr ""
+"此命令将 IP 地址范围（10.1.1.1 到 10.1.1.10）从本地计算机上运行的 DHCP 服务器服务的作用域（10.1.1.0）中排除出去。"
+
+msgid "### Example 2: Exclude an IP address on a remote computer"
+msgstr "### 示例 2：在远程计算机上排除某个 IP 地址"
+
+msgid ""
+"This example excludes the IP address 10.1.1.1 from the scope 10.1.1.0 on the"
+" DHCP server service that runs on the computer named dhcpserver.contoso.com."
+msgstr ""
+"这个示例将从名为dhcpserver.contoso.com的计算机上运行的DHCP服务器服务中，将IP地址10.1.1.1排除在范围10.1.1.0之外。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的形式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。您可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the DHCP server service."
+msgstr "指定运行DHCP服务器服务的目标计算机的DNS名称，或其IPv4或IPv6地址。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies the end IP address of the range that is excluded."
+msgstr "指定被排除在外的IP地址范围的结束地址。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个对象，该对象代表您正在操作的项目。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the identifier (ID) of the IPv4 scope from which the IP addresses "
+"are excluded."
+msgstr "指定被排除的 IP 地址所属的 IPv4 范围的标识符（ID）。"
+
+msgid "Specifies the starting IP address of the range that is excluded."
+msgstr "指定要排除的IP地址范围的起始地址。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时建立的最大并发操作数量，以便运行该cmdlet。如果省略此参数或输入值`0`，则Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最优限制。此限制仅适用于当前的cmdlet，而不适用于会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4ExclusionRange"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4ExclusionRange"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4ExclusionRange"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4ExclusionRange"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DhcpServerv4ExclusionRange](./Get-DhcpServerv4ExclusionRange.md)"
+msgstr "[Get-DhcpServerv4ExclusionRange](./Get-DhcpServerv4ExclusionRange.md)"
+
+msgid ""
+"[Remove-DhcpServerv4ExclusionRange](./Remove-DhcpServerv4ExclusionRange.md)"
+msgstr ""
+"[Remove-DhcpServerv4ExclusionRange](./Remove-DhcpServerv4ExclusionRange.md)"

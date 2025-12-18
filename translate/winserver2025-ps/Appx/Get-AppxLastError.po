@@ -1,0 +1,95 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:20:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppxLastError"
+msgstr "# Get-AppxLastError"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Get the last error reported in the app package installation logs."
+msgstr "获取应用程序包安装日志中报告的最后一个错误信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-AppxLastError` cmdlet gets the last error reported in the app package installation logs\n"
+"for the current Windows PowerShell session. An app package has an `.msix` or `.appx` file\n"
+"extension."
+msgstr ""
+"`Get-AppxLastError` cmdlet 可以获取当前 Windows PowerShell "
+"会话中应用程序包安装日志中报告的最后一个错误。应用程序包的文件扩展名为 `.msix` 或 `.appx`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the last error"
+msgstr "#### 示例 1：获取最后一个错误"
+
+msgid ""
+"This command gets the last error reported in the app installation logs."
+msgstr "这个命令用于获取应用程序安装日志中报告的最后一条错误信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Diagnostics.Eventing.Reader.EventLogRecord"
+msgstr "### System.Diagnostics.Eventing.Reader.EventLogRecord"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Package Manager API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+msgstr "[包管理器 API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+
+msgid ""
+"[How to Deploy App Packages](https://go.microsoft.com/fwlink/?LinkID=231020)"
+msgstr "[如何部署应用程序包](https://go.microsoft.com/fwlink/?LinkID=231020)"
+
+msgid "[Get-AppxPackage](./Get-AppxPackage.md)"
+msgstr "[Get-AppxPackage](./Get-AppxPackage.md)"
+
+msgid "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+msgstr "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+
+msgid "[Get-AppxLog](./Get-AppxLog.md)"
+msgstr "[Get-AppxLog](./Get-AppxLog.md)"

@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:51:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Block-ClusterAccess"
+msgstr "# 块集群访问（Block-ClusterAccess）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Prevents the specified user or users from accessing a failover cluster."
+msgstr "防止指定的用户或用户访问故障转移集群。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Block-ClusterAccess` cmdlet prevents the specified user or users from accessing a failover\n"
+"cluster. If you don't want to completely block access and instead want to limit a user to using\n"
+"Windows PowerShell to view cluster settings (not change settings), then use the\n"
+"`Grant-ClusterAccess` cmdlet with the **Readonly** parameter."
+msgstr ""
+"`Block-ClusterAccess` cmdlet 可以阻止指定的用户访问故障转移集群。如果你不想完全禁止该用户访问，而是希望仅允许其使用 "
+"Windows PowerShell 查看集群配置（而不允许修改配置），则可以使用带有 `Readonly` 参数的 `Grant-"
+"ClusterAccess` cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example prevents the user named `johnj99` on the `contoso` domain from gaining access to the local\n"
+"cluster."
+msgstr "这个示例可以阻止名为 `johnj99` 的用户在 `contoso` 域名下访问本地集群。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此 cmdlet 的集群名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 会在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies the cluster on which to block access for the given user."
+msgstr "指定要阻止给定用户访问的集群。"
+
+msgid "Specifies the user for whom to block cluster access."
+msgstr "指定要阻止其访问集群的用户。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters PowerShellCluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterAccess](./Get-ClusterAccess.md)"
+msgstr "[Get-ClusterAccess](./Get-ClusterAccess.md)"
+
+msgid "[Grant-ClusterAccess](./Grant-ClusterAccess.md)"
+msgstr "[Grant-ClusterAccess](./Grant-ClusterAccess.md)"
+
+msgid "[Remove-ClusterAccess](./Remove-ClusterAccess.md)"
+msgstr "[Remove-ClusterAccess](./Remove-ClusterAccess.md)"

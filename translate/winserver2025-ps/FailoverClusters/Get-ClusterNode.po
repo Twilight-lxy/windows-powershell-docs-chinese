@@ -1,0 +1,134 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:02:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterNode"
+msgstr "# Get-ClusterNode"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets information about one or more nodes, or servers, in a failover cluster."
+msgstr "获取关于故障转移集群中一个或多个节点或服务器的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterNode` cmdlet gets information about one or more nodes, or servers, in a failover\n"
+"cluster."
+msgstr "`Get-ClusterNode` cmdlet 可以获取关于故障转移集群中的一个或多个节点或服务器的信息。"
+
+msgid ""
+"Use this cmdlet to obtain information about the node status. To see the resources currently owned by\n"
+"a particular node, specify that node in this cmdlet and then pipe the results through the\n"
+"`Get-ClusterResource` cmdlet."
+msgstr ""
+"使用此cmdlet来获取有关节点状态的信息。要查看某个特定节点当前拥有的资源，请在该cmdlet中指定该节点，然后将结果通过`Get-"
+"ClusterResource` cmdlet进行处理。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example displays the name, id, and state of each node, or server, in "
+"the local cluster."
+msgstr "这个示例显示了本地集群中每个节点或服务器的名称、ID和状态。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example displays the name, id, and state of each node, or server, in the cluster named\n"
+"`cluster1`."
+msgstr "这个示例显示了名为`cluster1`的集群中每个节点或服务器的名称、ID和状态。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example lists all cluster resources that are currently owned by node named `node1` on the local\n"
+"cluster."
+msgstr "这个示例列出了当前由本地集群中名为 `node1` 的节点所拥有的所有集群资源。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此 cmdlet 的集群的名称。如果该参数的输入为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Specifies the cluster on which to enumerate cluster nodes."
+msgstr "指定用于枚举集群节点的集群。"
+
+msgid "Specifies the name of the cluster node to get."
+msgstr "指定要获取的集群节点的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters PowerShell Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterNode"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterNode](./Add-ClusterNode.md)"
+msgstr "[添加集群节点](./Add-ClusterNode.md)"
+
+msgid "[Get-ClusterResource](./Get-ClusterResource.md)"
+msgstr "[Get-ClusterResource](./Get-ClusterResource.md)"
+
+msgid "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+msgstr "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+
+msgid "[Resume-ClusterNode](./Resume-ClusterNode.md)"
+msgstr "[Resume-ClusterNode](./Resume-ClusterNode.md)"
+
+msgid "[Start-ClusterNode](./Start-ClusterNode.md)"
+msgstr "[开始创建集群节点](./Start-ClusterNode.md)"
+
+msgid "[Stop-ClusterNode](./Stop-ClusterNode.md)"
+msgstr "[停止集群节点](./Stop-ClusterNode.md)"
+
+msgid "[Suspend-ClusterNode](./Suspend-ClusterNode.md)"
+msgstr "[Pause-ClusterNode](./Suspend-ClusterNode.md)"

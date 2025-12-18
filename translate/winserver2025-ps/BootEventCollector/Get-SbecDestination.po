@@ -1,0 +1,128 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:52:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-SbecDestination"
+msgstr "# Get-SbecDestination"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Get destination data files."
+msgstr "获取目标数据文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-SbecDestination** cmdlet gets the known (per the status log) "
+"destination data files."
+msgstr "`Get-SbecDestination` cmdlet 可以获取已知的目的地数据文件（这些信息来自状态日志）。"
+
+msgid ""
+"As the forwarders create the destination files with the data, this information is recorded in the status log, if the status log is enabled.\n"
+"This information can then be used to present the list of all the known destination data files along with the information of who and when created then."
+msgstr ""
+"当转发器使用数据创建目标文件时，如果启用了状态日志，这些信息会被记录在状态日志中。随后可以利用这些信息来展示所有已知的目标数据文件列表，以及每个文件的创建者和相关创建时间信息。"
+
+msgid ""
+"The status log may contain more than one entry per destination file, if this file has been overwritten more than once and the log has not been compacted since.\n"
+"However, this function always returns the compacted view, with only one entry per file.\n"
+"Some of the returned files might not exist any longer if the administrator has deleted them since the time of the last status log compaction."
+msgstr ""
+"状态日志中每个目标文件可能包含多条记录，这是因为该文件被多次覆盖，且自那时起日志未被压缩。不过，此函数始终返回压缩后的视图，即每个文件只显示一条记录。如果管理员在最后一次日志压缩后删除了某些文件，那么返回的文件可能已经不存在了。"
+
+msgid ""
+"If the status log is not enabled in the collector configuration, no data is "
+"returned."
+msgstr "如果在收集器配置中未启用状态日志功能，则不会返回任何数据。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get destination files"
+msgstr "#### 示例 1：获取目标文件"
+
+msgid ""
+"This command gets the destination files, and then stores them in the $x "
+"variable."
+msgstr "这个命令会获取目标文件，然后将它们存储在 `$x` 变量中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet, or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行该cmdlet。可以输入一个会话对象（例如`New-CimSession`或`Get-CimSession` "
+"cmdlet的输出结果），或者这些对象的数组。默认情况下，该cmdlet会在本地计算机上运行。有关更多信息，请参阅“About_CimSession”。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on MSDN."
+msgstr ""
+"指定您想要在其上执行操作的计算机的名称。您可以分别为每台计算机指定一个完全合格的域名（FQDN）、NetBIOS 名称或 IP "
+"地址。有关更多信息，请参阅 MSDN 上的 [Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### CIM/WMI objects of class "
+"\\Root\\Microsoft\\Windows\\BootEventCollector\\TargetForwardingDestination"
+msgstr ""
+"### 类为 "
+"\\Root\\Microsoft\\Windows\\BootEventCollector\\TargetForwardingDestination "
+"的 CIM/WMI 对象"
+
+msgid "The output contains these fields:"
+msgstr "输出包含以下字段："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecForwarding](./Get-SbecForwarding.md)"
+msgstr "[Get-SbecForwarding](./Get-SbecForwarding.md)"
+
+msgid "[Get-SbecHistory](./Get-SbecHistory.md)"
+msgstr "[Get-SbecHistory](./Get-SbecHistory.md)"

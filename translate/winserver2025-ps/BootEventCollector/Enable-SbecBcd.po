@@ -1,0 +1,228 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:49:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-SbecBcd"
+msgstr "# Enable-SbecBcd"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables and configures the event forwarding mode in the BCD settings."
+msgstr "在BCD设置中启用并配置事件转发模式。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Offline"
+msgstr "### 离线"
+
+msgid "### Online"
+msgstr "### 在线"
+
+msgid "### OnlineSession"
+msgstr "### OnlineSession"
+
+msgid "### Local"
+msgstr "### 本地（Local）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Enable-SbecBcd** cmdlet configures the Setup and Boot Event Collector settings in the BCD.\n"
+"This enables the */event* flag, and sets the collector host IP address, port, and the encryption key in */eventsettings* in Boot Configuration Data (BCD)."
+msgstr ""
+"`Enable-SbecBcd` cmdlet 用于配置 BCD（Boot Configuration "
+"Data）中的安装和启动事件收集器设置。该命令会启用 `/event` 标志，并在 BCD 的 `/eventsettings` 中设置收集器的主机 "
+"IP 地址、端口以及加密密钥。"
+
+msgid ""
+"This operation has no immediate effect on the current connections; it takes "
+"effect after the operating system reboots."
+msgstr "此操作对当前的连接没有立即影响；它会在操作系统重启后才会生效。"
+
+msgid ""
+"The changes can be applied to the local computer, to a remote computer, or "
+"to an offline disk image."
+msgstr "这些更改可以应用到本地计算机、远程计算机或离线磁盘镜像上。"
+
+msgid ""
+"To operate on a local computer, specify the *Local* parameter.\n"
+"Enabling forwarding on the computer that runs the Collector service makes sense only if it sends the data to a Collector on a different computer.\n"
+"Otherwise, the in-kernel module is not able to connect to the Collector.\n"
+"However, you can copy the PowerShell BootEventCollector module to the other computers, where you can use it for local configuration."
+msgstr ""
+"要在本地计算机上进行操作，请指定“Local”参数。只有当运行收集器服务的计算机将数据发送到另一台计算机上的收集器时，才有必要在该计算机上启用数据转发功能；否则，内核中的模块将无法连接到收集器。不过，您可以将PowerShell"
+" BootEventCollector模块复制到其他计算机上，并在那里使用它进行本地配置。"
+
+msgid ""
+"To operate on a remote computer, specify either the *ComputerName* or *Session* parameter.\n"
+"Windows PowerShell remoting is used to perform the remote operations."
+msgstr ""
+"要远程操作一台计算机，请指定 *ComputerName* 或 *Session* 参数。Windows PowerShell "
+"的远程功能用于执行这些远程操作。"
+
+msgid ""
+"To operate on an offline (WIM or VHD) image, use the *Path* parameter.\n"
+"WIM images do not normally contain the BCD files, there is rarely a requirement to place them there.\n"
+"Instead, Windows Setup creates the BCD settings when it extracts the image from WIM onto the hard drive."
+msgstr ""
+"要操作离线（WIM或VHD）镜像，请使用*Path*参数。WIM镜像通常不包含BCD文件，也几乎没有必要将它们放入镜像中。相反，Windows安装程序在从WIM镜像提取内容到硬盘驱动器时才会创建BCD设置。"
+
+msgid ""
+"You must enable **both** AutoLogger and BCD settings to forward events to "
+"the Boot Event Collector."
+msgstr ""
+"你必须同时启用自动日志记录（AutoLogger）和BCD设置，才能将事件转发到启动事件收集器（Boot Event Collector）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Configure the BCD settings for a remote session"
+msgstr "### 示例 1：为远程会话配置 BCD 设置"
+
+msgid "This command configures the BCD settings for a remote session."
+msgstr "此命令用于配置远程会话的BCD（Binary-Coded Decimal）设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the full path of the BCD store."
+msgstr "指定 BCD 存储文件的完整路径。"
+
+msgid ""
+"Specifies the bus parameters to use to select the NIC of the target computer for communication.\n"
+"This value overrides the default choice of the first supported adapter."
+msgstr "指定用于选择目标计算机上用于通信的网络适配器（NIC）的总线参数。此值会覆盖系统默认选择的第一个受支持的适配器。"
+
+msgid ""
+"This value applies to all the computers that use this image; it can be used "
+"only if the hardware of these computers is sufficiently homogeneous."
+msgstr "这个值适用于所有使用该镜像的计算机；只有当这些计算机的硬件具有足够的同质性时，才能使用该值。"
+
+msgid ""
+"To find the value of bus parameters for a specific NIC on a machine, open Device Manager, and in Network Adapters select the desired device.\n"
+"Right-click the device, select Properties, select the Details tab, and then select Location information.\n"
+"It will display a string of the form PCI bus X, device Y, function Z.\n"
+"The bus parameter to specify in this example is \"X,Y,Z\"."
+msgstr ""
+"要找到机器上某个特定网络接口卡（NIC）的总线参数值，请打开“设备管理器”，在“网络适配器”中选择所需的网络适配器。右键点击该适配器，选择“属性”，然后选择“详细信息”选项卡，再选择“位置信息”。系统会显示一段如下形式的字符串：PCI"
+" 总线 X，设备 Y，功能 Z。本例中需要指定的总线参数就是 “X,Y,Z”。"
+
+msgid ""
+"Specifies the IPv4 address of the host on which the Boot Event Collector is "
+"located."
+msgstr "指定托管“启动事件收集器”（Boot Event Collector）的主机的IPv4地址。"
+
+msgid "Specifies the port number (common for the target and collector)."
+msgstr "指定端口号（该端口号通常同时适用于目标系统和数据收集器）。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information, see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on TechNet."
+msgstr ""
+"指定您希望在其上执行操作的计算机名称。您可以分别为每台计算机指定一个完全限定域名（FQDN）、NetBIOS名称或IP地址。有关更多信息，请参阅TechNet上的[Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid ""
+"Indicates that this operation explicitly creates the {eventsettings} key, "
+"which is required for the BCD files generated by WDS."
+msgstr "这表示该操作会明确创建 `{eventsettings}` 键，这是 WDS 生成的 BCD 文件所必需的。"
+
+msgid ""
+"Specifies a user account that has permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the path of the file for the Deployment Image Servicing and "
+"Management (DISM) log when mounting images."
+msgstr "指定用于部署映像服务和管理（DISM）日志的文件路径，在挂载映像时使用该日志。"
+
+msgid ""
+"Specifies the ID of the entry to modify, without the curly braces.\n"
+"The BCD settings may contain entries for multiple boot images (when a computer has multiple operating system versions installed).\n"
+"When the settings for another operating system than the currently booted one (or the default one in an offline image) must be modified, you can use this parameter to select the entry."
+msgstr ""
+"指定要修改的条目的ID，无需使用大括号。BCD设置中可能包含多个启动镜像的条目（当计算机安装了多个操作系统版本时）。如果需要修改当前正在运行的操作系统以外的其他操作系统的设置（或离线镜像中的默认操作系统设置），可以使用此参数来选择相应的条目。"
+
+msgid ""
+"Specifies the encryption key for the communication.\n"
+"This value must match the key specified in the collector configuration for this target."
+msgstr "指定用于通信的加密密钥。该值必须与为此目标收集器配置中指定的密钥相匹配。"
+
+msgid ""
+"Indicates that this operation occurs on the local computer.\n"
+"This mode also allows the extra control over the BCD store of where the settings are applied."
+msgstr "表示此操作是在本地计算机上执行的。这种模式还允许对BCD存储进行额外的控制，从而可以指定设置应用的位置。"
+
+msgid ""
+"Specifies the list of full paths to the offline Windows image files (WIM or VHD) to which to apply the settings.\n"
+"If a WIM file contains multiple images, all of them are modified."
+msgstr ""
+"指定要应用这些设置的离线Windows镜像文件（WIM或VHD）的完整路径列表。如果一个WIM文件包含多个镜像，那么所有这些镜像都会被修改。"
+
+msgid ""
+"Specifies the **PSSession** objects connected to the remote target computers.\n"
+"Enter a session object, such as the output of the **Get-PSSession** or **New-PSSession** cmdlet, or an array of these objects."
+msgstr ""
+"指定连接到远程目标计算机的 **PSSession** 对象。可以输入一个会话对象（例如 `Get-PSSession` 或 `New-"
+"PSSession` 命令的输出结果），或者这些对象的数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-SbecAutologger](./Disable-SbecAutologger.md)"
+msgstr "[Disable-SbecAutologger](./Disable-SbecAutologger.md)"
+
+msgid "[Disable-SbecBcd](./Disable-SbecBcd.md)"
+msgstr "[Disable-SbecBcd](./Disable-SbecBcd.md)"
+
+msgid "[Enable-SbecAutologger](./Enable-SbecAutologger.md)"
+msgstr "[Enable-SbecAutologger](./Enable-SbecAutologger.md)"
+
+msgid "[Enable-SbecBootImage](./Enable-SbecBootImage.md)"
+msgstr "[Enable-SbecBootImage](./Enable-SbecBootImage.md)"
+
+msgid "[Enable-SbecWdsBcd](./Enable-SbecWdsBcd.md)"
+msgstr "[Enable-SbecWdsBcd](./Enable-SbecWdsBcd.md)"

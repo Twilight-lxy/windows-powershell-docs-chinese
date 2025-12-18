@@ -1,0 +1,170 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:00:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AppLockerPolicy"
+msgstr "# 设置 AppLocker 策略"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the AppLocker policy for the specified GPO."
+msgstr "为指定的组策略对象（GPO）设置 AppLocker 策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByXmlPolicy (Default)"
+msgstr "### ByXmlPolicy（默认值）"
+
+msgid "### ByPolicyObject"
+msgstr "### ByPolicyObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-AppLockerPolicy cmdlet** sets the specified GPO to contain the specified AppLocker policy.\n"
+"If no Lightweight Directory Access Protocol (LDAP) is specified, then the default is the local GPO."
+msgstr ""
+"`Set-AppLockerPolicy` cmdlet 用于将指定的 GPO 设置为包含所指定的 AppLocker "
+"策略。如果没有指定轻量级目录访问协议（LDAP），则默认使用本地 GPO。"
+
+msgid ""
+"The input values for the AppLocker policy can be an **AppLockerPolicy** "
+"object or an XML-formatted file that contains the AppLocker policy."
+msgstr "AppLocker策略的输入值可以是一个`AppLockerPolicy`对象，或者是一个包含AppLocker策略内容的XML格式文件。"
+
+msgid ""
+"Note that the Set-AppLockerPolicy cmdlet only works with GP. It cannot "
+"interact with the AppLocker CSP."
+msgstr ""
+"请注意，Set-AppLockerPolicy cmdlet 仅适用于组策略（Group Policy，简称 GP），无法与 AppLocker "
+"Content Protection Service（AppLocker CSP）进行交互。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the local AppLocker policy"
+msgstr "#### 示例 1：设置本地的 AppLocker 策略"
+
+msgid ""
+"This example sets the local AppLocker policy to the policy specified in "
+"C:\\Policy.xml."
+msgstr "这个示例将本地的 AppLocker 策略设置为 C:\\Policy.xml 文件中指定的策略。"
+
+msgid "### Example 2: Set the GPO to contain an AppLocker policy."
+msgstr "### 示例 2：将 GPO 设置为包含 AppLocker 策略。"
+
+msgid ""
+"This example sets the GPO specified in the LDAP path to contain the "
+"AppLocker policy that is specified in C:\\Policy.xml."
+msgstr "这个示例将 LDAP 路径中指定的 GPO 设置为包含位于 C:\\Policy.xml 中的 AppLocker 策略。"
+
+msgid "### Example 3: Merge the local AppLocker policy with another"
+msgstr "### 示例 3：将本地的 AppLocker 策略与另一个策略合并"
+
+msgid ""
+"This example gets the local AppLocker policy, and then merges the policy with the existing AppLocker policy in the GPO specified in the LDAP path.\n"
+"For more information on how two policies are merged, see the *Merge* parameter description."
+msgstr ""
+"这个示例会获取本地的 AppLocker 策略，然后将该策略与 LDAP 路径中指定的 GPO 中现有的 AppLocker "
+"策略合并。有关如何合并两个策略的更多信息，请参阅 *Merge* 参数的描述。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the LDAP path of the GPO.\n"
+"It must specify a unique GPO.\n"
+"If this parameter is not specified, then the local AppLocker policy is set."
+msgstr "指定 GPO 的 LDAP 路径。必须指定一个唯一的 GPO。如果未指定此参数，则会应用本地 AppLocker 策略。"
+
+msgid ""
+"Merges the rules in the specified AppLocker policy with the AppLocker rules in the target GPO specified in the LDAP path.\n"
+"The merging of policies will remove rules with duplicate rule IDs, and the enforcement setting specified by the AppLocker policy in the target GPO will be preserved.\n"
+"If the *Merge* parameter is not specified, then the new policy will overwrite the existing policy."
+msgstr ""
+"将指定的 AppLocker 策略中的规则与 LDAP 路径中指定的目标 GPO 中的 AppLocker 规则合并。合并规则时会删除具有重复规则 ID"
+" 的规则，并保留目标 GPO 中由 AppLocker 策略指定的强制设置。如果未指定 *Merge* 参数，则新策略将覆盖现有策略。"
+
+msgid ""
+"Specifies the **AppLockerPolicy** object that contains the AppLocker policy.\n"
+"Can be obtained from the Get-AppLockerPolicy and the New-AppLockerPolicy cmdlets."
+msgstr ""
+"指定包含 AppLocker 策略的 **AppLockerPolicy** 对象。可以通过 Get-AppLockerPolicy 和 New-"
+"AppLockerPolicy cmdlet 获取该对象。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被运行。"
+
+msgid ""
+"Specifies the path where the XML-formatted file that contains the AppLocker "
+"policy is saved."
+msgstr "指定保存包含 AppLocker 策略的 XML 格式文件的路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.AppLockerPolicy"
+msgstr ""
+"### "
+"Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.AppLockerPolicy"
+
+msgid "**AppLockerPolicy**"
+msgstr "**AppLockerPolicy**"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AppLockerFileInformation](./Get-AppLockerFileInformation.md)"
+msgstr "[Get-AppLockerFileInformation](./Get-AppLockerFileInformation.md)"
+
+msgid "[Get-AppLockerPolicy](./Get-AppLockerPolicy.md)"
+msgstr "[Get-AppLockerPolicy](./Get-AppLockerPolicy.md)"
+
+msgid "[New-AppLockerPolicy](./New-AppLockerPolicy.md)"
+msgstr "[New-AppLockerPolicy](./New-AppLockerPolicy.md)"
+
+msgid "[Test-AppLockerPolicy](./Test-AppLockerPolicy.md)"
+msgstr "[测试 AppLockerPolicy](./Test-AppLockerPolicy.md)"

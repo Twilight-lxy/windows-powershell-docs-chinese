@@ -1,0 +1,141 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:07:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Move-ClusterSharedVolume"
+msgstr "# 移动集群共享卷（Move-ClusterSharedVolume）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Moves a Cluster Shared Volume (CSV) to ownership by a different node in a "
+"failover cluster."
+msgstr "将集群共享卷（Cluster Shared Volume, CSV）的所有权转移给故障转移集群中的另一个节点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Move-ClusterSharedVolume` cmdlet moves a Cluster Shared Volume (CSV) to ownership by a\n"
+"different node in a failover cluster."
+msgstr ""
+"`Move-ClusterSharedVolume` cmdlet 将集群共享卷（Cluster Shared Volume，简称 "
+"CSV）的所有权从一个节点转移到故障转移集群中的另一个节点。"
+
+msgid ""
+"On a failover cluster that uses CSVs, at any given time, access to each CSV is controlled by a\n"
+"particular node, called the owner of that CSV. However, a single CSV can contain virtual hard disk\n"
+"(VHD) files used by multiple clustered virtual machines that are distributed across multiple cluster\n"
+"nodes."
+msgstr ""
+"在这样一个使用CSV文件的故障转移集群中，任何时候对每个CSV文件的访问都由一个特定的节点控制，这个节点被称为该CSV文件的所有者。然而，单个CSV文件可以包含虚拟硬盘（VHD）文件，这些文件被多个集群中的虚拟机所使用，并且这些虚拟机分布在不同的集群节点上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example moves the Cluster Shared Volume called `Cluster Disk 3` to "
+"another cluster node."
+msgstr "这个示例将名为“Cluster Disk 3”的集群共享卷移动到另一个集群节点上。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example moves the Cluster Shared Volume called `Cluster Disk 3` to the "
+"node named `node1`."
+msgstr "这个示例将名为“Cluster Disk 3”的集群共享卷移动到名为“node1”的节点上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此 cmdlet 的集群的名称。如果该参数的输入值为 `.` 或省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Specifies the Cluster Shared Volume to move."
+msgstr "指定要移动的集群共享卷（Cluster Shared Volume）。"
+
+msgid "Specifies the name of the Cluster Shared Volume to move."
+msgstr "指定要移动的集群共享卷（Cluster Shared Volume）的名称。"
+
+msgid ""
+"Specifies the name of the cluster node to which to move the Cluster Shared "
+"Volume."
+msgstr "指定要将集群共享卷（Cluster Shared Volume）移动到的集群节点的名称。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定等待该cmdlet完成所需的时间（以秒为单位）。如果未指定**Wait**参数，那么cmdlet会一直等待直到完成。如果指定了`-Wait "
+"0`，则cmdlet会立即开始执行并立即返回结果，而不会等待任何时间。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### MicrosoftFailoverClusters.PowerShell.ClusterSharedVolume"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### Microsoft FailoverClusters.PowerShellClusterSharedVolume"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterSharedVolume](./Add-ClusterSharedVolume.md)"
+msgstr "[添加集群共享卷](./Add-ClusterSharedVolume.md)"
+
+msgid "[Get-ClusterSharedVolume](./Get-ClusterSharedVolume.md)"
+msgstr "[Get-ClusterSharedVolume](./Get-ClusterSharedVolume.md)"
+
+msgid "[Remove-ClusterSharedVolume](./Remove-ClusterSharedVolume.md)"
+msgstr "[Remove-ClusterSharedVolume](./Remove-ClusterSharedVolume.md)"
+
+msgid "[Resume-ClusterResource](./Resume-ClusterResource.md)"
+msgstr "[ Resume-ClusterResource ](./Resume-ClusterResource.md)"
+
+msgid "[Start-ClusterResource](./Start-ClusterResource.md)"
+msgstr "[Start-ClusterResource](./Start-ClusterResource.md)"
+
+msgid "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+msgstr "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+
+msgid "[Suspend-ClusterResource](./Suspend-ClusterResource.md)"
+msgstr "[暂停集群资源](./Suspend-ClusterResource.md)"

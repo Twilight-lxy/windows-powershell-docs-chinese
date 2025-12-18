@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:29:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-Cluster"
+msgstr "# 停止集群（Stop-Cluster）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Stops the Cluster service on all nodes in a failover cluster, which will stop all services and\n"
+"applications configured in the cluster."
+msgstr "在故障转移集群中的所有节点上停止Cluster服务，这将导致集群中配置的所有服务和应用程序也随之停止运行。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Cluster name (Default)"
+msgstr "### 集群名称（默认值）"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Stop-Cluster` cmdlet stops the Cluster service on all nodes in a failover cluster, which will\n"
+"stop all services and applications configured in the cluster. A node can only function as part of\n"
+"the cluster when the Cluster service is running on that node."
+msgstr ""
+"`Stop-Cluster` cmdlet 会停止故障转移集群中所有节点上的 Cluster "
+"服务，这会导致集群中配置的所有服务和应用程序也停止运行。只有当某个节点上正在运行 Cluster 服务时，该节点才能作为集群的一部分正常工作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Stop Cluster service on all nodes of the local cluster"
+msgstr "### 示例 1：停止本地集群中所有节点上的集群服务"
+
+msgid ""
+"This example stops the Cluster service on all nodes in the local cluster, which will stop all\n"
+"services and applications configured in the cluster."
+msgstr "这个示例会停止本地集群中所有节点上的Cluster服务，从而导致集群中配置的所有服务和应用程序也随之停止运行。"
+
+msgid "### Example 2: Stop Cluster service on all nodes of a cluster"
+msgstr "### 示例 2：停止集群中所有节点上的集群服务"
+
+msgid ""
+"This example stops the Cluster service on all nodes in the cluster named `cluster1`, which will stop\n"
+"all services and applications configured in the cluster."
+msgstr "这个示例会停止名为 `cluster1` 的集群中所有节点上的 Cluster 服务，从而终止该集群中配置的所有服务和应用程序。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Runs the cmdlet without prompting for confirmation. By default the cmdlet will ask for confirmation\n"
+"from the user before proceeding."
+msgstr "直接运行该 cmdlet，而不会提示用户进行确认。默认情况下，该 cmdlet 会在执行前询问用户的确认。"
+
+msgid "Specifies the cluster to stop."
+msgstr "指定要停止运行的集群。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定等待该 cmdlet 完成的时间（以秒为单位）。如果未指定 **Wait** 参数，那么 cmdlet 会一直等待直到完成。如果指定了 `-Wait"
+" 0`，则命令会被立即执行，且 cmdlet 会在不等待的情况下立即返回结果。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShellCluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-Cluster](./Get-Cluster.md)"
+msgstr "[Get-Cluster](./Get-Cluster.md)"
+
+msgid "[New-Cluster](./New-Cluster.md)"
+msgstr "[新集群](./New-Cluster.md)"
+
+msgid "[Remove-Cluster](./Remove-Cluster.md)"
+msgstr "[Remove-Cluster](./Remove-Cluster.md)"
+
+msgid "[Start-Cluster](./Start-Cluster.md)"
+msgstr "[启动集群](./Start-Cluster.md)"
+
+msgid "[Test-Cluster](./Test-Cluster.md)"
+msgstr "[测试集群](./Test-Cluster.md)"

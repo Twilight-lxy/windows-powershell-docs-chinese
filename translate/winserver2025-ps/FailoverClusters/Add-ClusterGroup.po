@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:45:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ClusterGroup"
+msgstr "# 添加 ClusterGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Adds an empty resource group to the failover cluster configuration, in preparation for adding\n"
+"clustered resources to the group."
+msgstr "向故障转移集群配置中添加一个空的资源组，为后续向该组中添加集群资源做准备。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-ClusterGroup` cmdlet adds an empty resource group to the failover cluster configuration,\n"
+"in preparation for adding clustered resources to the group. A resource group, or a clustered role,\n"
+"is the unit of failover. During failover, all resources in the resource group move together."
+msgstr ""
+"`Add-ClusterGroup` cmdlet "
+"用于向故障转移集群配置中添加一个空的资源组，为后续向该组中添加集群化资源做准备。资源组（或称为“集群角色”）是故障转移的基本单位；在发生故障转移时，资源组中的所有资源都会一同被迁移。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a resource group"
+msgstr "### 示例 1：添加资源组"
+
+msgid ""
+"This example adds an empty resource group called Group1 to the failover "
+"cluster."
+msgstr "这个示例向故障转移集群中添加了一个名为“Group1”的空资源组。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此 cmdlet 的集群的名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 会在本地集群上运行。"
+
+msgid ""
+"Specifies the type of group to add to the failover cluster configuration."
+msgstr "指定要添加到故障转移集群配置中的组类型。"
+
+msgid "Specifies the cluster on which to create the resource group."
+msgstr "指定用于创建资源组的集群。"
+
+msgid "Specifies the name of the resource group to add."
+msgstr "指定要添加的资源组的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShellCluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowShell ClusterGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+msgstr "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+
+msgid "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+msgstr "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+
+msgid "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+msgstr "[ Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+
+msgid "[Start-ClusterGroup](./Start-ClusterGroup.md)"
+msgstr "[开始创建集群组](./Start-ClusterGroup.md)"
+
+msgid "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"
+msgstr "[停止集群组](./Stop-ClusterGroup.md)"

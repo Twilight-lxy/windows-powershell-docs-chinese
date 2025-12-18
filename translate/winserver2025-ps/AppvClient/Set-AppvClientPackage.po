@@ -1,0 +1,151 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:12:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AppvClientPackage"
+msgstr "# Set-AppvClientPackage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Configures an App-V Client Package."
+msgstr "配置一个App-V客户端软件包。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByGuid (Default)"
+msgstr "### 使用 ByGuid（默认值）"
+
+msgid "### ByPackage"
+msgstr "### 按软件包分类"
+
+msgid "### ByName"
+msgstr "### 按名称查找"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AppvClientPackage** cmdlet modifies the configuration files of a "
+"Microsoft Application Virtualization (App-V) package."
+msgstr "`Set-AppvClientPackage` cmdlet 用于修改微软应用程序虚拟化（App-V）包的配置文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set a deployment configuration for a package"
+msgstr "### 示例 1：为某个软件包设置部署配置"
+
+msgid "This command sets a new deployment configuration for a package."
+msgstr "此命令为某个软件包设置新的部署配置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the path of a Dynamic Deployment Configuration file for the App-V package to be added.\n"
+"The cmdlet uses the Dynamic Deployment Configuration file to override the default behavior provided in the package manifest."
+msgstr "指定要添加的 App-V 包的动态部署配置文件的路径。此cmdlet使用该动态部署配置文件来覆盖包清单中提供的默认行为。"
+
+msgid ""
+"Specifies the friendly name of the package given during Sequencing time.\n"
+"This value is obtained from the package manifest."
+msgstr "指定在序列化过程中提供的包的友好名称。该值是从包清单中获取的。"
+
+msgid "Specifies an App-V package."
+msgstr "指定一个 App-V 包。"
+
+msgid ""
+"Specifies the GUID that uniquely identifies the package.\n"
+"It can be found in the package manifest or by opening the package in the App-V Sequencer.\n"
+"The package ID is shared by all versions of a package."
+msgstr ""
+"指定用于唯一标识该软件包的 GUID。该 GUID 可以在软件包清单中找到，或者通过在 App-V Sequencer "
+"中打开该软件包来获取。同一个软件包的所有版本都使用相同的包 ID。"
+
+msgid ""
+"Specifies the path specifies the location of the .APPV file that contains the package to be added.\n"
+"This value can be local directory, a network directory, or an HTTP or HTTPS URL."
+msgstr "指定包含要添加的包的.APPV文件的路径。该路径可以是本地目录、网络目录，或者是HTTP或HTTPS URL。"
+
+msgid ""
+"Indicates that this cmdlet applies the default computer policy to the "
+"selected package."
+msgstr "表示此cmdlet会将默认的计算机策略应用到所选的软件包上。"
+
+msgid ""
+"Specifies the version of an App-V package in a lineage.\n"
+"If you do not specify this parameter, the cmdlet operates on all available versions of the package on the target computer."
+msgstr "用于指定App-V包在版本系列中的具体版本。如果您不指定此参数，该cmdlet将会针对目标计算机上所有可用的版本执行操作。"
+
+msgid ""
+"Specifies a GUID that differentiates a package version from other versions, whether older, newer, or of a different lineage.\n"
+"If you do not specify this parameter, the cmdlet operates on all versions of the package."
+msgstr ""
+"指定一个GUID，用于区分某个软件包的版本与其他版本（无论是旧版本、新版本，还是属于不同系列的版本）。如果未指定此参数，该cmdlet将对该软件包的所有版本执行操作。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.AppvAgent.AppvClientPackage"
+msgstr "### Microsoft.AppvAgent.AppvClientPackage"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.AppvAgent.AppvClientPackage"
+msgstr "### Microsoft.AppvAgent.AppvClientPackage"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+msgstr "[Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+
+msgid "[Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+msgstr "[Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+
+msgid "[Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+msgstr "[Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+
+msgid "[Publish-AppvClientPackage](./Publish-AppvClientPackage.md)"
+msgstr "[发布 AppvClient 包](./Publish-AppvClientPackage.md)"
+
+msgid "[Remove-AppvClientPackage](./Remove-AppvClientPackage.md)"
+msgstr "[Remove-AppvClientPackage](./Remove-AppvClientPackage.md)"
+
+msgid "[Repair-AppvClientPackage](./Repair-AppvClientPackage.md)"
+msgstr "[Repair-AppvClientPackage](./Repair-AppvClientPackage.md)"
+
+msgid "[Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+msgstr "[Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+
+msgid "[Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"
+msgstr "[Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"

@@ -1,0 +1,145 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:47:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ClusterNode"
+msgstr "# 添加集群节点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a node (server) to a failover cluster."
+msgstr "向故障转移集群中添加一个节点（服务器）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-ClusterNode` cmdlet adds a node, or server, to a failover cluster. Before adding the new\n"
+"node, you should run validation tests on the existing nodes together with the proposed new node."
+msgstr ""
+"`Add-ClusterNode` cmdlet "
+"可用于将一个节点（或服务器）添加到故障转移集群中。在添加新节点之前，应先对现有节点以及拟添加的新节点一起进行验证测试。"
+
+msgid ""
+"Before adding the new node, you should run validation tests on the existing nodes together with the\n"
+"proposed new node. By running the validation tests, you can confirm that the server to be added is\n"
+"connected correctly to the networks and storage and that it contains the same software updates."
+msgstr ""
+"在添加新节点之前，你应该对现有的节点以及提议添加的新节点一起运行验证测试。通过这些验证测试，你可以确认要添加的服务器已正确连接到网络和存储系统，并且其安装了相同的软件更新。"
+
+msgid ""
+"> [!NOTE]\n"
+"> This cmdlet cannot be run remotely without Credential Security Service Provider (CredSSP)\n"
+"> authentication on the server computer."
+msgstr "> [注意] > 如果服务器计算机上没有启用凭据安全服务提供程序（CredSSP）的认证功能，此cmdlet无法远程运行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example adds node named `node4` to the local cluster."
+msgstr "这个示例向本地集群添加了一个名为 `node4` 的节点。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "This example adds the node named `node3` to cluster called `cluster1`."
+msgstr "这个示例将名为 `node3` 的节点添加到名为 `cluster1` 的集群中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the cluster to which to add the new cluster node."
+msgstr "指定要向其中添加新集群节点的集群。"
+
+msgid "Specifies the name of the cluster node to add."
+msgstr "指定要添加的集群节点的名称。"
+
+msgid ""
+"Ensures that shared storage, on the node being joined to the cluster, will not be added to the\n"
+"cluster during the join operation. Shared storage can be added by piping the ClusterDiskInfo object\n"
+"from the `Get-ClusterAvailableDisk` cmdlet into the `Add-ClusterDisk` cmdlet."
+msgstr ""
+"确保在将节点加入集群的过程中，该节点上的共享存储不会被添加到集群中。可以通过将 `Get-ClusterAvailableDisk` cmdlet "
+"返回的 `ClusterDiskInfo` 对象传递给 `Add-ClusterDisk` cmdlet 来添加共享存储。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterNode"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterDisk](./Add-ClusterDisk.md)"
+msgstr "[添加集群磁盘](./Add-ClusterDisk.md)"
+
+msgid "[Get-ClusterAvailableDisk](./Get-ClusterAvailableDisk.md)"
+msgstr "[Get-ClusterAvailableDisk](./Get-ClusterAvailableDisk.md)"
+
+msgid "[Get-ClusterNode](./Get-ClusterNode.md)"
+msgstr "[Get-ClusterNode](./Get-ClusterNode.md)"
+
+msgid "[New-Cluster](./New-Cluster.md)"
+msgstr "[新集群](./New-Cluster.md)"
+
+msgid "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+msgstr "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+
+msgid "[Resume-ClusterNode](./Resume-ClusterNode.md)"
+msgstr "[Resume-ClusterNode](./Resume-ClusterNode.md)"
+
+msgid "[Start-ClusterNode](./Start-ClusterNode.md)"
+msgstr "[启动集群节点](./Start-ClusterNode.md)"
+
+msgid "[Stop-ClusterNode](./Stop-ClusterNode.md)"
+msgstr "[Stop-ClusterNode](./Stop-ClusterNode.md)"
+
+msgid "[Suspend-ClusterNode](./Suspend-ClusterNode.md)"
+msgstr "[暂停集群节点](./Suspend-ClusterNode.md)"
+
+msgid "[Test-Cluster](./Test-Cluster.md)"
+msgstr "[测试集群](./Test-Cluster.md)"

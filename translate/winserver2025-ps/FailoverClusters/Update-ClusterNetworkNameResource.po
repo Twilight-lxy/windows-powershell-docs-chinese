@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:34:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-ClusterNetworkNameResource"
+msgstr "# 更新集群网络名称资源"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Registers existing Network Name resources with a DNS server in a way that doesn't interrupt cluster\n"
+"availability."
+msgstr "将现有的网络名称资源注册到DNS服务器上，同时不会中断集群的正常运行（即保持集群的可用性）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Update-ClusterNetworkNameResource` cmdlet registers existing Network Name resources with a\n"
+"DNS server in a way that doesn't interrupt cluster availability."
+msgstr ""
+"`Update-ClusterNetworkNameResource` cmdlet 可以将现有的网络名称资源注册到 DNS "
+"服务器上，而不会中断集群的正常运行（即不会影响集群的可用性）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Register name resources with a DNS server"
+msgstr "#### 示例 1：使用 DNS 服务器注册名称资源"
+
+msgid ""
+"This example registers the Network Name resources of the local cluster with "
+"a DNS server."
+msgstr "这个示例将本地集群的网络名称资源注册到DNS服务器上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the network name resource to register with the DNS server."
+msgstr "指定要注册到DNS服务器的网络名称资源。"
+
+msgid "Specifies the network name to be registered with the DNS server."
+msgstr "指定要注册到 DNS 服务器上的网络名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FAILoverClusters.PowerShell ClusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### MicrosoftFailoverClusters.PowerShell_clusterResource"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterResource](./Get-ClusterResource.md)"
+msgstr "[Get-ClusterResource](./Get-ClusterResource.md)"
+
+msgid "[Update-ClusterIPResource](./Update-ClusterIPResource.md)"
+msgstr "[更新 ClusterIP 资源](./Update-ClusterIPResource.md)"

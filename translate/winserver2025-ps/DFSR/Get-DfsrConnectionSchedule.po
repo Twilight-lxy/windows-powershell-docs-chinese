@@ -1,0 +1,127 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:37:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrConnectionSchedule"
+msgstr "# Get-DfsrConnectionSchedule"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets a connection schedule between members of a replication group."
+msgstr "获取复制组中各成员之间的连接调度信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **Get-DfsrConnectionSchedule** cmdlet gets a connection schedule."
+msgstr "`Get-DfsrConnectionSchedule` cmdlet 用于获取连接计划信息。"
+
+msgid ""
+"Distributed File System (DFS) Replication connections are the logical partnerships between members in a replication group.\n"
+"The DFS Replication service uses the Remote Procedure Call (RPC) protocol to communicate between servers.\n"
+"DFS Replication schedules control the availability and bandwidth usage of replication."
+msgstr ""
+"分布式文件系统（DFS）复制连接是复制组中各成员之间的逻辑关联。DFS复制服务使用远程过程调用（RPC）协议在服务器之间进行通信。DFS复制计划负责控制复制的可用性以及带宽的使用情况。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a connection schedule"
+msgstr "### 示例 1：获取连接计划"
+
+msgid ""
+"This command gets the connection-based replication schedule from the server named SRV02 to the server named SRV01.\n"
+"Because the administrator has not specified a custom schedule for the connection, the connection inherits the schedule settings from the replication group."
+msgstr ""
+"该命令从名为 SRV02 的服务器获取到与名为 SRV01 "
+"的服务器之间的基于连接的复制计划。由于管理员没有为该连接指定自定义的复制计划，因此该连接会继承来自复制组的计划设置。"
+
+msgid "### Example 2: Get a custom connection schedule"
+msgstr "#### 示例 2：获取自定义的连接计划"
+
+msgid ""
+"This command gets the connection-based replication schedule from the server named SRV01 to the server named SRV02.\n"
+"The cmdlet gets a custom connection schedule that blocks replication from 9 A.M.\n"
+"to 5 P.M.\n"
+"Monday through Friday (represented by zeros in the output), and allows full bandwidth replication for all remaining time blocks."
+msgstr ""
+"这个命令用于从名为 SRV01 的服务器获取到名为 SRV02 的服务器的基于连接的复制调度信息。该 cmdlet "
+"返回一个自定义的连接调度方案：在周一至周五的上午 9 点到下午 5 "
+"点期间，复制操作被禁止（输出结果中对应这些时间段的部分显示为“0”）；而在其他所有时间范围内，复制操作可以使用全部带宽进行。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the receiving computer.\n"
+"A receiving computer is also called an inbound or downstream computer."
+msgstr "指定接收计算机的名称。接收计算机也被称为入站计算机或下游计算机。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS 名称或完全限定域名（FQDN）。如果您不指定此参数，该 "
+"cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Specifies the name of the sending computer.\n"
+"A sending computer is also called an outbound or upstream computer."
+msgstr ""
+"指定发送计算机的名称。发送计算机也被称为外出计算机（outbound computer）或上游计算机（upstream computer）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrConnectionSchedule"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrConnectionSchedule"
+
+msgid "### string"
+msgstr "### 字符串"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-DfsrConnectionSchedule](./Set-DfsrConnectionSchedule.md)"
+msgstr "[Set-DfsrConnectionSchedule](./Set-DfsrConnectionSchedule.md)"

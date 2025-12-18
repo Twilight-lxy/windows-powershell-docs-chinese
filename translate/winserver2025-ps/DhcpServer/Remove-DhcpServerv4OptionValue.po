@@ -1,0 +1,271 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:48:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-DhcpServerv4OptionValue"
+msgstr "# 移除 DHCP Server v4 选项值"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Deletes one or more IPv4 option values at the server, scope or reservation "
+"level, either for the standard IPv4 options or for the specified vendor or "
+"user class."
+msgstr "在服务器、作用域或预留级别上删除一个或多个 IPv4 选项值，这些选项值可以属于标准的 IPv4 选项，也可以属于指定的供应商或用户类别。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-DhcpServerv4OptionValue** cmdlet deletes one or more IPv4 "
+"option values at the server, scope or reservation level, either for the "
+"standard IPv4 options or for the specified vendor or user class."
+msgstr ""
+"`Remove-DhcpServerv4OptionValue` cmdlet 可以在服务器、作用域或预留级别上删除一个或多个 IPv4 "
+"选项值，这些选项值既可以适用于标准的 IPv4 选项，也可以适用于指定的供应商或用户类别。"
+
+msgid ""
+"If you specify only the *ReservedIP* parameter, the option values set at the reservation level are deleted.\n"
+"If you specify only the *ScopeId* parameter, the option values set at the scope level are deleted.\n"
+"If you specify neither the *ScopeId* nor the *ReservedIP* parameter, the option values set at the server level are deleted.\n"
+"The *ScopeId* and the *ReservedIP* parameters cannot both be specified."
+msgstr ""
+"如果您只指定了 *ReservedIP* 参数，那么在预留级别设置的选项值将被删除；如果您只指定了 *ScopeId* "
+"参数，那么在范围级别设置的选项值将被删除；如果您既没有指定 *ScopeId* 也没有指定 *ReservedIP* "
+"参数，那么在服务器级别设置的选项值将被删除。*ScopeId* 和 *ReservedIP* 这两个参数不能同时被指定。"
+
+msgid "The *UserClass* and *PolicyName* parameters cannot both be specified."
+msgstr "不能同时指定 *UserClass* 和 *PolicyName* 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Delete an option value on a scope"
+msgstr "### 示例 1：删除某个作用域内的选项值"
+
+msgid ""
+"This example deletes DHCPv4 option value configured on the specified scope "
+"for the specified option ID."
+msgstr "这个示例会删除在指定范围内为指定的选项ID配置的DHCPv4选项值。"
+
+msgid "### Example 2: Delete an option value for a vendor class"
+msgstr "### 示例 2：删除供应商类别的一个选项值"
+
+msgid ""
+"This example deletes DHCPv4 option value configured on the specified scope "
+"for the specified vendor class named MSUCClient with the specific option 5."
+msgstr "这个示例会删除在指定范围内为名为“MSUCClient”的供应商类别配置的DHCPv4选项值。该选项使用的是特定的编号（选项5）。"
+
+msgid "### Example 3: Delete an option value by using an option ID"
+msgstr "#### 示例 3：通过使用选项 ID 来删除一个选项值"
+
+msgid ""
+"This example deletes DHCPv4 option value with the option ID 252 configured "
+"for the specified policy in the scope 10.10.10.0."
+msgstr "这个示例会删除在范围 10.10.10.0 内为指定策略配置的、选项 ID 为 252 的 DHCPv4 选项值。"
+
+msgid "### Example 4: Delete an option value for a user class in a scope"
+msgstr "### 示例 4：删除某个作用域内用户类的选项值"
+
+msgid ""
+"This example deletes DHCPv4 option value with the option ID 252 configured "
+"for the specified user class in the scope 10.10.10.0."
+msgstr "这个示例会删除在范围 10.10.10.0 内为指定用户类配置的、选项 ID 为 252 的 DHCPv4 选项值。"
+
+msgid "### Example 5: Delete an option value at the server level"
+msgstr "### 示例 5：在服务器端删除一个选项值"
+
+msgid ""
+"This example deletes DHCPv4 option value configured at the server level, or "
+"server-wide, for the specified option ID."
+msgstr "这个示例会删除在服务器级别或整个服务器范围内为指定的选项ID配置的DHCPv4选项值。"
+
+msgid ""
+"### Example 6: Delete an otion value at the server level for a vendor class"
+msgstr "### 示例 6：在服务器级别删除某个供应商类的选项值"
+
+msgid ""
+"This example deletes DHCPv4 option value configured at the server level, or "
+"server-wide, for the specified vendor class named MSUCClient with the "
+"specific option 5."
+msgstr ""
+"这个示例会删除在服务器级别或整个服务器范围内为指定的供应商类别（名为MSUCClient）配置的DHCPv4选项值。该供应商类别使用了特定的选项5。"
+
+msgid ""
+"### Example 7: Delete an option value at the server level by using an option"
+" ID"
+msgstr "### 示例 7：通过使用选项 ID 在服务器级别删除一个选项值"
+
+msgid ""
+"This example deletes DHCPv4 option value with the option ID 252 configured "
+"for the specified policy at the server level, or server-wide."
+msgstr "这个示例会删除在服务器级别或整个服务器范围内为指定策略配置的、选项ID为252的DHCPv4选项值。"
+
+msgid ""
+"### Example 8: Delete an option value by using an option ID for a user class"
+msgstr "### 示例 8：通过使用用户类的选项ID来删除一个选项值"
+
+msgid ""
+"This example deletes DHCPv4 option value with the option ID 252 configured "
+"for the specified user class at the server level, or server-wide."
+msgstr "这个示例会删除在服务器级别或整个服务器范围内为指定用户类别配置的、选项ID为252的DHCPv4选项值。"
+
+msgid "### Example 9: Delete an option value on a reservation"
+msgstr "### 示例 9：删除预订中的选项值"
+
+msgid ""
+"This example deletes DHCPv4 option value configured on the specified "
+"reservation for the specified option ID."
+msgstr "此示例会删除在指定预留资源上为指定的选项ID配置的DHCPv4选项值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用该参数来执行需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the Dynamic Host Configuration Protocol (DHCP) server service."
+msgstr "指定运行动态主机配置协议（DHCP）服务器服务的目标计算机的DNS名称，或IPv4地址或IPv6地址。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行。"
+
+msgid ""
+"Specifies one or more numeric identifiers (IDs) for the options which are to"
+" be deleted."
+msgstr "指定一个或多个用于标识要删除的选项的数字标识符（ID）。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the name of the policy from which the option values are deleted."
+msgstr "指定要从中删除选项值的策略的名称。"
+
+msgid ""
+"Specifies the IPv4 address of the reservation from which the option values "
+"are deleted."
+msgstr "指定用于删除选项值的预留资源的 IPv4 地址。"
+
+msgid ""
+"Specifies the scope ID, in IPv4 address format, from which the option values"
+" are deleted."
+msgstr "指定删除选项值的范围ID（采用IPv4地址格式）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令（cmdlet）的最大数量。如果省略此参数或输入值为`0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM 命令（cmdlets）的数量来计算该命令的最佳限制值。这个限制仅适用于当前执行的命令，而不涉及整个会话或计算机本身。"
+
+msgid ""
+"Specifies that the option values for the specified user class are deleted."
+msgstr "指定删除指定用户类的选项值。"
+
+msgid ""
+"Specifies that the option values for the specified vendor class are deleted."
+msgstr "指定删除指定供应商类别的选项值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于展示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DhcpServerv4OptionValue](./Get-DhcpServerv4OptionValue.md)"
+msgstr "[Get-DhcpServerv4OptionValue](./Get-DhcpServerv4OptionValue.md)"
+
+msgid "[Set-DhcpServerv4OptionValue](./Set-DhcpServerv4OptionValue.md)"
+msgstr "[Set-DhcpServerv4OptionValue](./Set-DhcpServerv4OptionValue.md)"

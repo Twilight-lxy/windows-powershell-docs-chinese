@@ -1,0 +1,117 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:48:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DfsReplicationGroup"
+msgstr "# Set-DfsReplicationGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies a replication group."
+msgstr "修改一个复制组。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DfsReplicationGroup** cmdlet modifies the configuration of "
+"existing replication groups."
+msgstr "`Set-DfsReplicationGroup` cmdlet 用于修改现有复制组的配置。"
+
+msgid ""
+"A replication group is a set of servers, or members, that participate in the replication of one or more folders.\n"
+"A replicated folder is kept synchronized among the members of a replication group.\n"
+"This cmdlet cannot modify resource group bandwidth or schedules."
+msgstr ""
+"复制组是一组服务器或成员，它们共同参与一个或多个文件夹的复制过程。被复制的文件夹会在复制组的各个成员之间保持同步状态。此命令无法修改资源组的带宽设置或调度计划。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify a replication group configuration"
+msgstr "### 示例 1：修改复制组配置"
+
+msgid ""
+"This command modifies the description of a replication group named RG01."
+msgstr "此命令用于修改名为 RG01 的复制组的描述信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid "Specifies a description for a replication group."
+msgstr "为复制组指定一个描述。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains a replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the current domain."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用当前域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"If you do not specify this parameter, the cmdlet queries for all participating replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。如果不指定此参数，该cmdlet将查询所有参与的复制组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"
+msgstr "[Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"
+
+msgid "[New-DfsReplicationGroup](./New-DfsReplicationGroup.md)"
+msgstr "[New-DfsReplicationGroup](./New-DfsReplicationGroup.md)"
+
+msgid "[Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"
+msgstr "[Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"

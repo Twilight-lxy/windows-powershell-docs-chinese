@@ -1,0 +1,132 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 13:05:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DnsClientNrptGlobal"
+msgstr "# Set-DnsClientNrptGlobal"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies the global Name Resolution Policy Table (NRPT) settings."
+msgstr "修改全局名称解析策略表（NRPT）的设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DnsClientNrptGlobal** cmdlet modifies the following global Name "
+"Resolution Policy Table (NRPT) settings:"
+msgstr "`Set-DnsClientNrptGlobal` cmdlet 会修改以下全局名称解析策略表（NRPT）设置："
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令（cmdlet）的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM "
+"命令（cmdlets）的数量来计算该命令的最佳运行限制（即并发操作的最大数量）。这个限制仅适用于当前正在执行的命令，而不影响整个会话或整台计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DNS/DnsClientNrptGlobal"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DNS/DnsClientNrptGlobal"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名称。"
+
+msgid ""
+"The **DnsClientNrptGlobal** object contains all of the properties of the DNS"
+" client NRPT global settings."
+msgstr ""
+"`DnsClientNrptGlobal` 对象包含了 DNS 客户端 NRPT（Name Resolution Protocol "
+"Translation）全局设置的所有属性。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DNS/DnsClientNrptGlobal"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DNS/DnsClientNrptGlobal"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid ""
+"The **DnsClientNrptGlobal** object contains all of the properties of the DNS"
+" client NRPT global settings."
+msgstr ""
+"`DnsClientNrptGlobal` 对象包含了 DNS 客户端 NRPT（Name Resolution Protocol "
+"Translation）全局设置的所有属性。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DnsClientNrptRule](./Add-DnsClientNrptRule.md)"
+msgstr "[Add-DnsClientNrptRule](./Add-DnsClientNrptRule.md)"
+
+msgid "[Get-DnsClientNrptGlobal](./Get-DnsClientNrptGlobal.md)"
+msgstr "[Get-DnsClientNrptGlobal](./Get-DnsClientNrptGlobal.md)"
+
+msgid "[Get-DnsClientNrptPolicy](./Get-DnsClientNrptPolicy.md)"
+msgstr "[Get-DnsClientNrptPolicy](./Get-DnsClientNrptPolicy.md)"
+
+msgid "[Get-DnsClientNrptRule](./Get-DnsClientNrptRule.md)"
+msgstr "[Get-DnsClientNrptRule](./Get-DnsClientNrptRule.md)"
+
+msgid "[Remove-DnsClientNrptRule](./Remove-DnsClientNrptRule.md)"
+msgstr "[Remove-DnsClientNrptRule](./Remove-DnsClientNrptRule.md)"
+
+msgid "[Set-DnsClientNrptRule](./Set-DnsClientNrptRule.md)"
+msgstr "[Set-DnsClientNrptRule](./Set-DnsClientNrptRule.md)"

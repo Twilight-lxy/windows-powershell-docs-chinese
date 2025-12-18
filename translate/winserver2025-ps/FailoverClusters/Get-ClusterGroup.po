@@ -1,0 +1,144 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:00:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterGroup"
+msgstr "# Get-ClusterGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets information about one or more clustered roles (resource groups) in a "
+"failover cluster."
+msgstr "获取有关故障转移集群中一个或多个聚类角色（资源组）的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-ClusterGroup` cmdlet gets information about one or more clustered roles (resource groups)\n"
+"in a failover cluster."
+msgstr "`Get-ClusterGroup` cmdlet 可以获取有关故障转移集群中的一个或多个集群角色（资源组）的信息。"
+
+msgid ""
+"A resource group is the unit of failover. During failover, all resources in the resource group move\n"
+"together."
+msgstr "资源组是故障转移的基本单位。在发生故障转移时，资源组中的所有资源会一起被迁移（或重新分配）到其他位置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example lists the state and owner node of each clustered role, or resource group, in the local\n"
+"cluster."
+msgstr "这个示例列出了本地集群中每个集群化角色（或资源组）的状态和所属节点信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example lists the resources in `Cluster Group` on the local cluster."
+msgstr "这个示例列出了本地集群中“Cluster Group”中的资源。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example lists the clustered services and applications, or resource groups, that are currently\n"
+"owned by `node1` in the local cluster."
+msgstr "这个示例列出了当前由 `node1` 拥有的、位于本地集群中的服务、应用程序或资源组。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example displays the properties of a clustered file server, or resource group, called\n"
+"`FileServer1`, in the form of a list."
+msgstr "这个示例以列表的形式展示了名为`FileServer1`的集群文件服务器或资源组的属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies the cluster or cluster node on which to enumerate the clustered "
+"roles."
+msgstr "指定用于遍历集群角色的集群或集群节点。"
+
+msgid "Specifies the name of the clustered role to get."
+msgstr "指定要获取的集群角色的名称。"
+
+msgid "Specifies the virtual machine identifier (ID)."
+msgstr "指定虚拟机标识符（ID）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters PowerShellCluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### Microsoft FailoverClusters.PowerShell ClusterNode"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShell_CLUSTERGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Format-List](https://go.microsoft.com/fwlink/?LinkID=113302)"
+msgstr "[格式化列表](https://go.microsoft.com/fwlink/?LinkID=113302)"
+
+msgid "[Add-ClusterGroup](./Add-ClusterGroup.md)"
+msgstr "[Add-ClusterGroup](./Add-ClusterGroup.md)"
+
+msgid "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+msgstr "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+
+msgid "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+msgstr "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+
+msgid "[Start-ClusterGroup](./Start-ClusterGroup.md)"
+msgstr "[开始使用 ClusterGroup](./Start-ClusterGroup.md)"
+
+msgid "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"
+msgstr "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"

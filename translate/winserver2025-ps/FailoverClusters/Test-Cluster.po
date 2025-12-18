@@ -1,0 +1,248 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:31:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-Cluster"
+msgstr "# 测试集群"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Runs validation tests for failover cluster hardware and settings."
+msgstr "运行验证测试，以检查故障转移集群的硬件和配置是否正常。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Test-Cluster` cmdlet runs validation tests for failover cluster hardware and settings. Tests\n"
+"can be run both before and after a cluster is set up."
+msgstr "`Test-Cluster` cmdlet 用于对故障转移集群的硬件和设置进行验证测试。这些测试可以在集群搭建之前或之后执行。"
+
+msgid ""
+"Test results are captured in a file with the file name that you specify. By running the validation\n"
+"tests, you can confirm that your hardware and settings are compatible with Failover Clustering.\n"
+"There are multiple types of tests, including Cluster, Inventory, Network, Storage, System, and other\n"
+"types of tests. Storage tests will not test online disks or storage pools that are in use by a\n"
+"clustered role. To test such disks, first run `Stop-ClusterGroup` to stop the clustered role, and\n"
+"then run `Test-Cluster`. After the tests are done, start the clustered roles, also known as resource\n"
+"groups, again."
+msgstr ""
+"测试结果会被保存在一个由您指定的文件名所命名的文件中。通过运行这些验证测试，您可以确认您的硬件配置和设置是否与故障转移集群（Failover "
+"Clustering）兼容。测试类型多种多样，包括集群相关测试、资源清单测试、网络测试、存储测试、系统测试等。需要注意的是，存储测试不会检测那些正在被集群角色使用的在线磁盘或存储池。如果要测试这些磁盘/存储池，请先使用"
+" `Stop-ClusterGroup` 命令停止相应的集群角色，然后再运行 `Test-Cluster` "
+"命令。测试完成后，需要重新启动这些集群角色（即资源组）。"
+
+msgid ""
+"> [!NOTE]\n"
+"> To perform some of the Cluster Shared Volume (CSV) validation tests, the `Test-Cluster` command\n"
+"> creates a local user account named CliTest2 on each cluster node. The account is automatically\n"
+"> removed from your system after the cluster validation tests are completed."
+msgstr ""
+"> [!注意] > 为了执行某些集群共享卷（CSV）的验证测试，`Test-Cluster` 命令会在每个集群节点上创建一个名为 `CliTest2` "
+"的本地用户账户。这些账户在集群验证测试完成后会自动从您的系统中删除。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Validate local cluster"
+msgstr "#### 示例 1：验证本地集群"
+
+msgid ""
+"This example runs all applicable cluster validation tests on the local "
+"cluster."
+msgstr "这个示例会在本地集群上运行所有适用的集群验证测试。"
+
+msgid "### Example 2: Validate specified nodes"
+msgstr "### 示例 2：验证指定的节点"
+
+msgid ""
+"This example runs all cluster validation tests on the nodes named `node1` and `node2`. If either\n"
+"`node1` or `node2` is already a member of a cluster, then the tests will include all nodes in that\n"
+"cluster."
+msgstr ""
+"这个示例会在名为 `node1` 和 `node2` 的节点上运行所有集群验证测试。如果 `node1` 或 `node2` "
+"已经是某个集群的成员，那么测试将包含该集群中的所有节点。"
+
+msgid "### Example 3: View tests and categories in cluster validation"
+msgstr "### 示例 3：在聚类验证中查看测试用例和分类"
+
+msgid ""
+"This example lists the names of all tests and categories in cluster validation. Specify these test\n"
+"names with **Ignore** or **Include** parameters to run specific tests."
+msgstr "这个示例列出了簇验证中所有测试的名称和类别。您可以使用 **Ignore** 或 **Include** 参数来指定要运行的特定测试。"
+
+msgid "### Example 4: Validate specified nodes for storage"
+msgstr "### 示例 4：验证指定的节点是否适用于存储用途"
+
+msgid ""
+"This example runs the storage validation tests on the nodes named node1 and node2. If either node1\n"
+"or node2 is already a member of a cluster, then the tests will include all nodes in that cluster."
+msgstr ""
+"这个示例会在名为“node1”和“node2”的节点上运行存储验证测试。如果“node1”或“node2”已经是某个集群的成员，那么这些测试将会涵盖该集群中的所有节点。"
+
+msgid ""
+"### Example 5: Validate specified nodes for everything except inventory"
+msgstr "### 示例 5：验证指定节点的所有属性（除了库存信息）"
+
+msgid ""
+"This example runs all validation tests except the Inventory tests on the nodes named node1 and\n"
+"node2. If either node1 or node2 is already a member of a cluster, then the tests will include all\n"
+"nodes in that cluster."
+msgstr ""
+"这个示例会在名为“node1”和“node2”的节点上运行所有验证测试（除了库存相关测试）。如果“node1”或“node2”已经是某个集群的成员，那么测试将会涵盖该集群中的所有节点。"
+
+msgid "### Example 6: Run a specific test"
+msgstr "### 示例 6：运行特定的测试"
+
+msgid ""
+"This example runs the test called List Potential Cluster Disks on the local "
+"cluster."
+msgstr "这个示例会在本地集群上运行名为“List Potential Cluster Disks”的测试。"
+
+msgid "### Example 7: Run multiple tests"
+msgstr "### 示例 7：运行多个测试"
+
+msgid ""
+"This example runs the tests called List System Drivers and List Unsigned Drivers on the local\n"
+"cluster."
+msgstr "这个示例在本地集群上运行名为“List System Drivers”和“List Unsigned Drivers”的测试。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the disk number or disks for which to run the cmdlet. If the specified disk is online and\n"
+"is assigned to a clustered role or Cluster Shared Volume, you must also specify the **Force**\n"
+"parameter to take the disk offline for the duration of the storage tests. Otherwise, the specified\n"
+"disk must be offline before the cmdlet is run. If the **Disk** parameter isn't specified, storage\n"
+"tests run on all disks that are available for use in the cluster or that are in the cluster resource\n"
+"offline or failed state."
+msgstr ""
+"指定要运行此cmdlet的磁盘编号。如果指定的磁盘处于在线状态，并且被分配给某个集群角色或集群共享卷（Cluster Shared "
+"Volume），则必须同时指定**Force**参数，以在该存储测试期间将磁盘设置为离线状态。否则，在运行该cmdlet之前，必须先将指定的磁盘设置为离线状态。如果未指定**Disk**参数，存储测试将在集群中所有可用的磁盘上执行；或者在这些磁盘处于离线状态或出现故障的情况下执行。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "该参数的可接受值为："
+
+msgid ""
+"Runs the cmdlet without prompting for confirmation. By default the cmdlet will ask for confirmation\n"
+"from the user before proceeding. When combined with the **Disk** or **Pool** parameters, the disks\n"
+"or storage pool is taken offline for the duration of the storage tests."
+msgstr ""
+"该cmdlet会直接执行，而不会提示用户进行确认。默认情况下，该cmdlet会在执行前询问用户的确认意见。当与**Disk**或**Pool**参数结合使用时，在存储测试期间，相应的磁盘或存储池将被设置为离线状态。"
+
+msgid ""
+"Specifies which tests or category of tests to ignore during the validation test run. All other\n"
+"tests or category of tests will run."
+msgstr "指定在验证测试运行期间应忽略哪些测试或哪一类测试。所有其他测试或测试类别仍将正常运行。"
+
+msgid ""
+"Specifies which tests or category of tests to include during the validation test run. Only the tests\n"
+"or category of tests specified here will run."
+msgstr "指定在验证测试运行期间应包含哪些测试或测试类别。只有此处指定的测试或测试类别才会被执行。"
+
+msgid "Specifies the cluster on which to run the validation tests."
+msgstr "指定用于运行验证测试的集群。"
+
+msgid ""
+"Causes the cmdlet to list the tests and test categories. No tests will run on the servers or cluster\n"
+"nodes."
+msgstr "该命令会列出所有的测试及其所属的类别，但实际的测试过程（即在服务器或集群节点上执行测试）并不会被触发。"
+
+msgid ""
+"Specifies a comma-separated list of server names on which to run the cluster"
+" validation tests."
+msgstr "指定一个由逗号分隔的服务器名称列表，在这些服务器上运行集群验证测试。"
+
+msgid ""
+"Specifies the clustered storage pool or pools for which to run the cmdlet. When the specified\n"
+"storage pool is online and a virtual disk in the storage pool is assigned to a clustered role or\n"
+"Cluster Shared Volume, you must also specify the **Force** parameter to take the storage pool\n"
+"offline for the duration of the storage tests. Otherwise, command will exit with an error. The\n"
+"specified storage pool must be taken offline before running the storage tests. If the **Pool**\n"
+"parameter isn't specified, storage tests run on all storage pools that are available for use in the\n"
+"cluster or that are in the cluster resource offline or failed state."
+msgstr ""
+"指定要运行此 cmdlet 的集群存储池。当指定的存储池处于在线状态，并且该存储池中的某个虚拟磁盘被分配给了某个集群角色或集群共享卷（Cluster "
+"Shared Volume）时，必须同时指定 **Force** "
+"参数，以在存储测试期间将该存储池设置为离线状态。否则，命令会因错误而退出。在运行存储测试之前，必须先将该存储池设置为离线状态。如果未指定 "
+"**Pool** 参数，则存储测试将在集群中所有可用的存储池上执行；或者在这些存储池处于离线或故障状态的情况下进行。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid "Specifies the name of the test report to generate."
+msgstr "指定要生成的测试报告的名称。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.IO.FileInfo"
+msgstr "### System.IO.FileInfo"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterTestInfo"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterTestInfo"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-Cluster](./Get-Cluster.md)"
+msgstr "[Get-Cluster](./Get-Cluster.md)"
+
+msgid "[New-Cluster](./New-Cluster.md)"
+msgstr "[新集群](./New-Cluster.md)"
+
+msgid "[Remove-Cluster](./Remove-Cluster.md)"
+msgstr "[Remove-Cluster](./Remove-Cluster.md)"
+
+msgid "[Start-Cluster](./Start-Cluster.md)"
+msgstr "[启动集群](./Start-Cluster.md)"
+
+msgid "[Stop-Cluster](./Stop-Cluster.md)"
+msgstr "[停止集群操作](./Stop-Cluster.md)"

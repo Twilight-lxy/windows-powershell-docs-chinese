@@ -1,0 +1,119 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:02:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterNetworkInterface"
+msgstr "# Get-ClusterNetworkInterface"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets information about one or more network adapters in a failover cluster."
+msgstr "获取关于故障转移集群中一个或多个网络适配器的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterNetworkInterface` cmdlet gets information about one or more network adapters in a\n"
+"failover cluster. A failover cluster requires network connectivity among nodes and between clients\n"
+"and nodes."
+msgstr ""
+"`Get-ClusterNetworkInterface` cmdlet "
+"可以获取故障转移集群中一个或多个网络适配器的信息。故障转移集群要求节点之间以及客户端与节点之间能够保持网络连接。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example displays information about the physical network adapters used "
+"by the local cluster."
+msgstr "这个示例显示了本地集群使用的物理网络适配器的相关信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example displays information about the physical network adapters used by `node1` in the local\n"
+"cluster. This cmdlet is equivalent to `Get-ClusterNetworkInterface -Node node1`."
+msgstr ""
+"这个示例展示了本地集群中 `node1` 使用的物理网络适配器的相关信息。该 cmdlet 等同于 `Get-"
+"ClusterNetworkInterface -Node node1`。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群的名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid ""
+"Specifies the cluster on which to enumerate the cluster network interfaces."
+msgstr "指定用于遍历集群网络接口的集群。"
+
+msgid "Specifies the name of the cluster network interface to get."
+msgstr "指定要获取的集群网络接口的名称。"
+
+msgid ""
+"Specifies the name of the cluster network for which to enumerate the network"
+" interfaces."
+msgstr "指定要枚举网络接口的集群网络的名称。"
+
+msgid ""
+"Specifies the name of the cluster node on which to enumerate the network "
+"interfaces."
+msgstr "指定要遍历网络接口的集群节点的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell_cluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNetwork"
+msgstr "### MicrosoftFailoverClusters.PowerShell_clusterNetwork"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNetworkInterface"
+msgstr "### Microsoft FailoverClusters PowerShellClusterNetworkInterface"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterNetwork](./Get-ClusterNetwork.md)"
+msgstr "[Get-ClusterNetwork](./Get-ClusterNetwork.md)"

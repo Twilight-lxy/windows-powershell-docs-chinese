@@ -1,0 +1,78 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:06:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppvStatus"
+msgstr "# 获取应用程序版本状态（Get-AppvStatus）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the status of the App-V service."
+msgstr "获取App-V服务的状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-AppvStatus** cmdlet gets the status of the Microsoft Application Virtualization (App-V) service.\n"
+"This cmdlet returns a value of $True or $False for whether App-V is enabled and whether a restart is required."
+msgstr ""
+"`Get-AppvStatus` cmdlet 用于获取 Microsoft 应用程序虚拟化（App-V）服务的状态。该 cmdlet 会返回一个 "
+"`$True` 或 `$False` 的值，表示 App-V 是否已启用以及是否需要重启。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get status"
+msgstr "#### 示例 1：获取状态信息"
+
+msgid "This command gets the status of the App-V service."
+msgstr "这个命令用于获取App-V服务的状态信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-Appv](./Disable-Appv.md)"
+msgstr "[禁用 AppV](./Disable-Appv.md)"
+
+msgid "[Enable-Appv](./Enable-Appv.md)"
+msgstr "[Enable-Appv](./Enable-Appv.md)"

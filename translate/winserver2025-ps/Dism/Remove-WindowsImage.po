@@ -1,0 +1,196 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:46:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-WindowsImage"
+msgstr "# 删除 Windows 图像文件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Deletes the specified volume image from a WIM file that has multiple volume "
+"images."
+msgstr "从一个包含多个卷镜像的WIM文件中删除指定的卷镜像。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### InputByFilePathAndName"
+msgstr "### InputByFilePathAndName"
+
+msgid "### InputByFilePathAndIndex"
+msgstr "### InputByFilePathAndIndex"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-WindowsImage** cmdlet deletes the specified volume image from a WIM file that has multiple volume images.\n"
+"This cmdlet deletes only the metadata entries and XML entries.\n"
+"It does not delete the stream data and does not optimize the WIM file."
+msgstr ""
+"`Remove-WindowsImage` cmdlet 用于从包含多个卷镜像的 WIM 文件中删除指定的卷镜像。该 cmdlet 仅会删除元数据条目和"
+" XML 条目，而不会删除流数据，也不会优化 WIM 文件本身。"
+
+msgid ""
+"This command-line option does not apply to virtual hard disk (VHD) files."
+msgstr "此命令行选项不适用于虚拟硬盘（VHD）文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove the first image from a WIM file"
+msgstr "### 示例 1：从 WIM 文件中删除第一张图片"
+
+msgid "This command removes the first image in c:\\imagestore\\custom.wim."
+msgstr "这个命令会删除 c:\\imagestore\\custom.wim 文件中的第一张图片。"
+
+msgid "### Example 2: Remove an image from a WIM file by name"
+msgstr "### 示例 2：通过名称从 WIM 文件中删除图片"
+
+msgid ""
+"This command removes the image named Starter that is located in "
+"c:\\imagestore\\custom.wim."
+msgstr "此命令会删除位于 c:\\imagestore\\custom.wim 中的名为 “Starter” 的图像文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Detects and tracks .wim file corruption when used with the **Add-WindowsImage**, **Dismount-WindowsImage**, or **Save-WindowsImage** cmdlet.\n"
+"CheckIntegrity stops the operation if DISM detects that the .wim file is corrupted when used with the **Expand-WindowsImage** or **Mount-WindowsImage** cmdlet."
+msgstr ""
+"当使用 `Add-WindowsImage`、`Dismount-WindowsImage` 或 `Save-WindowsImage` cmdlet "
+"时，该工具能够检测并追踪 `.wim` 文件的损坏情况。如果在使用 `Expand-WindowsImage` 或 `Mount-"
+"WindowsImage` cmdlet 时 DISM 发现 `.wim` 文件已损坏，`CheckIntegrity` 会立即停止相关操作。"
+
+msgid "Specifies the location of a WIM file."
+msgstr "指定WIM文件的位置。"
+
+msgid ""
+"Specifies the index number of a Windows image in a WIM or VHD file.\n"
+"For a VHD file, the Index must be 1."
+msgstr "指定 WIM 或 VHD 文件中某个 Windows 镜像的索引编号。对于 VHD 文件而言，索引编号必须是 1。"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"用于指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及信息性内容  \n"
+"- 4 = 显示上述所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，则默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"中，默认目录是 RAMDISK 虚拟磁盘（其容量可能低至 32 MB）。日志文件会自动被归档；归档后的日志文件会在原文件名后加上 `.bak` "
+"扩展名进行保存，并同时生成一个新的日志文件。每次日志文件被归档时，原来的 `.bak` 文件都会被覆盖。如果使用的是未加入域的网络共享资源，请在使用 "
+"`DISM` 命令设置日志路径之前，先通过 `net use` 命令结合域凭据来配置访问权限。"
+
+msgid "Specifies the name of an image in a WIM file."
+msgstr "指定 WIM 文件中一张图片的名称。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，用于在服务期间提取文件。该目录必须存在于本地计算机上。如果未指定临时目录，系统将使用 `\\Windows\\%Temp%\\` "
+"目录，并为每次运行 DISM "
+"工具生成一个随机十六进制值的子目录名称。每次操作完成后，临时目录中的文件都会被删除。不建议使用网络共享位置作为临时目录来解压用于安装的包文件（.cab "
+"或 .msu 格式）。在服务期间用于提取文件的临时目录应为本地目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dismcommands.ImageObject"
+
+msgid "### Microsoft.Dism.Commands.ImageObjectWithState"
+msgstr "### Microsoft.Dism Commands.ImageObjectWithState"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.DismCommands.ImageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WindowsImage](./Add-WindowsImage.md)"
+msgstr "[Add-WindowsImage](./Add-WindowsImage.md)"
+
+msgid "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+msgstr "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+
+msgid "[Expand-WindowsImage](./Expand-WindowsImage.md)"
+msgstr "[Expand-WindowsImage](./Expand-WindowsImage.md)"
+
+msgid "[Export-WindowsImage](./Export-WindowsImage.md)"
+msgstr "[Export-WindowsImage](./Export-WindowsImage.md)"
+
+msgid "[Get-WindowsImage](./Get-WindowsImage.md)"
+msgstr "[Get-WindowsImage](./Get-WindowsImage.md)"
+
+msgid "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+msgstr "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+
+msgid "[New-WindowsImage](./New-WindowsImage.md)"
+msgstr "[New-WindowsImage](./New-WindowsImage.md)"
+
+msgid "[Repair-WindowsImage](./Repair-WindowsImage.md)"
+msgstr "[修复Windows镜像](./Repair-WindowsImage.md)"
+
+msgid "[Save-WindowsImage](./Save-WindowsImage.md)"
+msgstr "[Save-WindowsImage](./Save-WindowsImage.md)"
+
+msgid "[Split-WindowsImage](./Split-WindowsImage.md)"
+msgstr "[Split-WindowsImage](./Split-WindowsImage.md)"

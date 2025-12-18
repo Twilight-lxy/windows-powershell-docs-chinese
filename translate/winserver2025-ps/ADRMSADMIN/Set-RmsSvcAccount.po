@@ -1,0 +1,145 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:54:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-RmsSvcAccount"
+msgstr "# Set-RmsSvcAccount"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the service account for an AD RMS cluster."
+msgstr "为 AD RMS 集群设置服务账户。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-RmsSvcAccount** cmdlet sets the service account of an Active "
+"Directory Rights Management Services (AD RMS) cluster."
+msgstr ""
+"`Set-RmsSvcAccount` cmdlet 用于设置 Active Directory 权限管理服务（AD RMS）集群的服务账户。"
+
+msgid ""
+"To specify the service account, set the *Credential* parameter to the "
+"service account credentials, and then set the *Path* parameter to "
+"`<PSDrive>:\\` where `<PSDrive>` is the AD RMS provider drive ID."
+msgstr ""
+"要指定服务账户，请将 *Credential* 参数设置为该服务账户的凭据，然后将 *Path* 参数设置为 `<PSDrive>:\\`，其中 "
+"`<PSDrive>` 是 AD RMS 提供者的驱动器 ID。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify the service account"
+msgstr "### 示例 1：修改服务账户"
+
+msgid ""
+"This command changes the AD RMS service account.\n"
+"Because the *Credential* parameter is not used, the **Set-RmsSvcAccount** cmdlet prompts for the user name and password of the new service account."
+msgstr ""
+"此命令用于更改 AD RMS 服务账户。由于未使用 `Credential` 参数，`Set-RmsSvcAccount` cmdlet "
+"会提示用户输入新服务账户的用户名和密码。"
+
+msgid "### Example 2: Modify the service account with specified credentials"
+msgstr "### 示例 2：使用指定的凭据修改服务账户"
+
+msgid ""
+"This command changes the AD RMS service account.\n"
+"Because the *Credential* parameter specifies the domain and user name of the account, the **Set-RmsSvcAccount** cmdlet prompts for the password of the new service account."
+msgstr ""
+"此命令用于更改 AD RMS 服务账户。由于 `Credential` 参数指定了该账户的域名和用户名，因此 `Set-RmsSvcAccount` "
+"cmdlet 会提示用户输入新服务账户的密码。"
+
+msgid "### Example 3: Get credentials to use to modify a service account"
+msgstr "### 示例 3：获取用于修改服务账户的凭据"
+
+msgid ""
+"This command uses the **Get-Credential** cmdlet to prompt for the password "
+"for the ITDOMAIN\\adrmsvc account and then stores the account credentials "
+"securely in a variable, which is then passed to the **Set-RmsSvcAccount** "
+"cmdlet."
+msgstr ""
+"此命令使用 **Get-Credential** cmdlet 来提示用户输入 ITDOMAIN\\adrmsvc "
+"账户的密码，然后将账户凭据安全地存储在一个变量中，之后将该变量传递给 **Set-RmsSvcAccount** cmdlet。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies a user name and password as a **PSCredential** object."
+msgstr "指定一个用户名和密码作为 **PSCredential** 对象。"
+
+msgid ""
+"Overrides restrictions that prevent the command from succeeding if the "
+"restrictions do not compromise security."
+msgstr "如果这些限制不会危及安全性，那么可以忽略那些阻止命令成功执行的限制。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies a provider drive and path or relative path on the current drive.\n"
+"Use a dot (.) to specify the current location.\n"
+"This parameter does not accept wildcards and has no default value."
+msgstr "指定一个提供者驱动器及其路径，或者当前驱动器上的相对路径。可以使用点（.）来表示当前位置。此参数不支持通配符，且没有默认值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的结果。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### PSCredential"
+msgstr "### PSCredential"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+
+msgid "[Get-RmsSvcAccount](./Get-RmsSvcAccount.md)"
+msgstr "[Get-RmsSvcAccount](./Get-RmsSvcAccount.md)"

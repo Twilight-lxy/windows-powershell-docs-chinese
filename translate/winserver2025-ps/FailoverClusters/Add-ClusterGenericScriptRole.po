@@ -1,0 +1,189 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:44:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ClusterGenericScriptRole"
+msgstr "# 添加通用集群脚本角色（Add-ClusterGenericScriptRole）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Configures an application controlled by a script that runs in Windows Script Host, within a failover\n"
+"cluster."
+msgstr ""
+"配置一个由脚本控制的应用程序，该脚本在 Windows 脚本宿主（Windows Script "
+"Host）中运行，并且位于一个故障转移集群（failover cluster）中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-ClusterGenericScriptRole` cmdlet configures an application controlled by a script that\n"
+"runs in Windows Script Host, within a failover cluster."
+msgstr ""
+"`Add-ClusterGenericScriptRole` cmdlet 用于配置一个由脚本控制的应用程序，该脚本在 Windows "
+"脚本宿主（Windows Script Host）中运行，并且该应用程序属于一个故障转移集群（failover cluster）的一部分。"
+
+msgid ""
+"The script provides the cluster software with information about the current state of the\n"
+"application. As needed, the cluster software will restart or fail over the script. Through the\n"
+"script, the application will be restarted or failed over."
+msgstr ""
+"该脚本向集群软件提供了关于应用程序当前状态的信息。根据需要，集群软件会重新启动应用程序或进行故障转移操作。通过该脚本，应用程序可以被成功重启或顺利完成故障转移。"
+
+msgid ""
+"> [!NOTE]\n"
+"> This cmdlet cannot be run remotely without Credential Security Service Provider (CredSSP)\n"
+"> authentication on the server computer."
+msgstr "> [注意] > 如果服务器计算机上没有启用凭据安全服务提供程序（CredSSP）的身份验证功能，此 cmdlet 无法远程运行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Configure a script to run on a failover cluster"
+msgstr "#### 示例 1：配置一个脚本以便在故障转移集群上运行"
+
+msgid ""
+"This example configures the script named `script1.vbs` to run within a failover cluster, using\n"
+"defaults for the name and IP address, and doesn't assign a disk."
+msgstr ""
+"这个示例配置了名为 `script1.vbs` 的脚本，使其在故障转移集群中运行。该脚本的名称和 IP 地址使用默认值设置，并且没有分配任何磁盘。"
+
+msgid ""
+"### Example 2: Configure a script on a failover cluster and assign a "
+"clustered script name"
+msgstr "### 示例 2：在故障转移集群上配置一个脚本，并为其指定一个集群脚本名称"
+
+msgid ""
+"This example configures the script named `script1.vbs` to run within a failover cluster and use\n"
+"`Cluster Disk 4`. The cmdlet assigns the clustered script the name script1."
+msgstr ""
+"这个示例配置了一个名为 `script1.vbs` 的脚本，使其能够在故障转移集群中运行，并使用 “Cluster Disk 4” "
+"作为存储资源。该命令行工具（cmdlet）为这个集群化的脚本指定了名称 “script1”。"
+
+msgid ""
+"### Example 3: Configure a script to run on a fail over cluster without "
+"waiting for resources"
+msgstr "### 示例 3：配置一个脚本，在故障转移集群上运行时无需等待资源准备好"
+
+msgid ""
+"This example configures the script called `script1.vbs` to run within a failover cluster, using\n"
+"defaults for the name and IP address, and doesn't assign a disk. The cmdlet completes without\n"
+"waiting for all resources to come online."
+msgstr ""
+"这个示例配置了一个名为 `script1.vbs` 的脚本，使其在故障转移集群中运行。该脚本使用默认的名称和 IP "
+"地址进行配置，并且没有为脚本分配任何磁盘资源。此外，此 cmdlet 在所有资源都上线之前就会完成执行过程（即不会等待所有资源都准备好才继续执行）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies one or more networks to ignore when running the cmdlet. Networks with DHCP enabled are\n"
+"always included, but other networks need a static address to be specified using the\n"
+"**StaticAddress** parameter or should be explicitly ignored with this **IgnoreNetwork** parameter."
+msgstr ""
+"指定在运行该cmdlet时需要忽略的一个或多个网络。启用DHCP的网络总是会被包含在内，但其他网络则需要使用**StaticAddress**参数来指定静态地址，或者可以使用**IgnoreNetwork**参数明确表示忽略这些网络。"
+
+msgid "Specifies the cluster on which to create the highly available script."
+msgstr "指定用于创建高可用性脚本的集群。"
+
+msgid "Specifies the name of the highly available script to create."
+msgstr "指定要创建的高可用性脚本的名称。"
+
+msgid ""
+"Specifies the path of the script file to use for the highly available "
+"script."
+msgstr "指定用于高可用性脚本的脚本文件的路径。"
+
+msgid ""
+"Specifies one or more static addresses to use when running the cmdlet. Networks with DHCP enabled\n"
+"are always included, but other networks need a static address to be specified using the\n"
+"**StaticAddress** parameter or should be explicitly ignored with this **IgnoreNetwork** parameter."
+msgstr ""
+"指定一个或多个在运行该 cmdlet 时使用的静态地址。启用 DHCP 的网络始终会被包含在内，但其他网络需要使用 **StaticAddress** "
+"参数来指定静态地址；或者可以通过使用 **IgnoreNetwork** 参数明确忽略这些网络。"
+
+msgid ""
+"Specifies the cluster disk resource to be added to the created highly "
+"available script."
+msgstr "指定要添加到创建的高可用性脚本中的集群磁盘资源。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If the value `0` is specified, then the call is initiated and\n"
+"the cmdlet returns without waiting."
+msgstr ""
+"该参数用于指定等待 cmdlet 完成的时间（以秒为单位）。如果未指定 `Wait` 参数，那么 cmdlet 会一直等待直到完成；如果指定了值 "
+"`0`，则 cmdlet 会立即执行并立即返回，而不会进行任何等待。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft_failoverClusters.PowerShell_cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### Microsoft FailoverClusters.PowerShell ClusterGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-ClusterGenericApplicationRole](./Add-ClusterGenericApplicationRole.md)"
+msgstr ""
+"[Add-ClusterGenericApplicationRole](./Add-ClusterGenericApplicationRole.md)"
+
+msgid "[Add-ClusterGenericServiceRole](./Add-ClusterGenericServiceRole.md)"
+msgstr "[Add-ClusterGenericServiceRole](./Add-ClusterGenericServiceRole.md)"
+
+msgid "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+msgstr "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+
+msgid "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+msgstr "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+
+msgid "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+msgstr "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+
+msgid "[Start-ClusterGroup](./Start-ClusterGroup.md)"
+msgstr "[开始集群组操作](./Start-ClusterGroup.md)"
+
+msgid "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"
+msgstr "[停止集群组](./Stop-ClusterGroup.md)"

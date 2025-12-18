@@ -1,0 +1,139 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:38:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsReplicationGroup"
+msgstr "# Get-DfsReplicationGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Retrieves a replication group."
+msgstr "检索一个复制组。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfsReplicationGroup** cmdlet retrieves existing replication "
+"groups."
+msgstr "`Get-DfsReplicationGroup` cmdlet 用于检索现有的复制组。"
+
+msgid ""
+"A replication group is a set of servers, or members, that participate in the replication of one or more folders.\n"
+"A replicated folder is kept synchronized among the members of a replication group.\n"
+"The Distributed File System (DFS) Replication Get-* cmdlets are useful for pipeline operations or inventory."
+msgstr ""
+"复制组是一组服务器或成员，它们共同参与一个或多个文件夹的复制过程。被复制的文件夹会在复制组的各个成员之间保持同步状态。分布式文件系统（DFS）中的“Replication"
+" Get-*”命令集对于管道操作或资源清单管理非常有用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Retrieve replication groups"
+msgstr "### 示例 1：检索复制组"
+
+msgid ""
+"This command retrieves the RG02 replication group for inventory or use in "
+"other pipelines."
+msgstr "该命令用于检索 RG02 复制组的信息，以便进行库存管理或在其他流程中使用。"
+
+msgid "### Example 2: Retrieve replication groups and SYSVOL shared volume"
+msgstr "### 示例 2：检索复制组（replication groups）和 SYSVOL 共享卷"
+
+msgid ""
+"This command retrieves all replication groups for inventory, including the special Domain System Volume resource group created by domain controllers.\n"
+"By default, this resource group is not returned as its management is controlled by Active Directory."
+msgstr ""
+"此命令用于检索所有用于库存管理的复制组，其中包括由域控制器创建的特殊“Domain System "
+"Volume”资源组。默认情况下，该资源组不会被返回，因为其管理是由Active Directory控制的。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains a replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the current domain of the user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS 名称或完全限定域名（FQDN）。如果您不指定此参数，该 "
+"cmdlet 将使用用户的当前域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"If you do not specify this parameter, the cmdlet queries for all participating replications groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。如果您不指定此参数，该 cmdlet 会查询所有参与的复制组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Indicates that the cmdlet retrieves the special Domain System Volume replication group that domain controllers create.\n"
+"This replication group contains the SYSVOL Share replicated folder.\n"
+"DFS Replication does not allow direct modification of SYSVOL due to internal blocks, and this parameter is provided for convenience only so that administrators can inventory if a domain contains DFSR SYSVOL."
+msgstr ""
+"该参数表示 cmdlet 用于检索域控制器创建的特殊“域名系统卷复制组”（Domain System Volume replication "
+"group）。这个复制组包含了被复制的 SYSVOL 共享文件夹。由于内部限制，DFS 复制（DFS Replication）不允许直接修改 "
+"SYSVOL 文件夹；因此提供此参数仅是为了方便管理员了解某个域是否包含使用 DFSR （Domain Name System Resource "
+"Manager）进行管理的 SYSVOL 文件夹。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid ""
+"This cmdlet returns an object that contains the properties of a DFS "
+"Replication group."
+msgstr "此 cmdlet 返回一个对象，其中包含 DFS 复制组的属性信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-DfsReplicationGroup](./New-DfsReplicationGroup.md)"
+msgstr "[New-DfsReplicationGroup](./New-DfsReplicationGroup.md)"
+
+msgid "[Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"
+msgstr "[Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"
+
+msgid "[Set-DfsReplicationGroup](./Set-DfsReplicationGroup.md)"
+msgstr "[Set-DfsReplicationGroup](./Set-DfsReplicationGroup.md)"
+
+msgid "[Suspend-DfsReplicationGroup](./Suspend-DfsReplicationGroup.md)"
+msgstr "[暂停DFS复制组](./Suspend-DfsReplicationGroup.md)"
+
+msgid "[Sync-DfsReplicationGroup](./Sync-DfsReplicationGroup.md)"
+msgstr "[Sync-DfsReplicationGroup](./Sync-DfsReplicationGroup.md)"

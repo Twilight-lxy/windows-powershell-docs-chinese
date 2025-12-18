@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:32:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-BitLockerAutoUnlock"
+msgstr "# Clear-BitLockerAutoUnlock"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes BitLocker automatic unlocking keys."
+msgstr "删除BitLocker的自动解锁密钥。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Clear-BitLockerAutoUnlock** cmdlet removes all automatic unlocking keys used by BitLocker Drive Encryption.\n"
+"BitLocker stores these keys for the fixed data drives of a system on a volume that hosts a BitLocker-enabled operating system volume so that it can automatically unlock the fixed and removable data volumes in a system.\n"
+"This makes it easier for users to access data volumes."
+msgstr ""
+"**Clear-BitLockerAutoUnlock** cmdlet 会删除 BitLocker "
+"驱动加密所使用的所有自动解锁密钥。BitLocker 将这些密钥存储在系统中支持 BitLocker "
+"的操作系统所在的分区上，以便能够自动解锁系统中的固定数据驱动器和可移动数据驱动器。这样用户就可以更轻松地访问数据驱动器了。"
+
+msgid ""
+"You can configure BitLocker to automatically unlock volumes that do not host an operating system.\n"
+"After a user unlocks the operating system volume, BitLocker uses encrypted information stored in the registry and volume metadata to unlock any data volumes that use automatic unlocking."
+msgstr ""
+"您可以配置 BitLocker，使其自动解锁那些未安装操作系统的磁盘卷。当用户解锁了装有操作系统的磁盘卷后，BitLocker "
+"会利用存储在注册表和磁盘元数据中的加密信息来解锁所有启用自动解锁功能的 数据磁盘卷。"
+
+msgid ""
+"You must remove automatic unlocking keys before you can disable BitLocker by using the **Disable-BitLocker** cmdlet.\n"
+"You can use the **Disable-BitLockerAutoUnlock** cmdlet to remove keys for specific volumes that use automatic unlocking instead of all volumes."
+msgstr ""
+"在使用 **Disable-BitLocker** cmdlet 禁用 BitLocker 之前，你必须先删除自动解锁密钥。你可以使用 "
+"**Disable-BitLockerAutoUnlock** cmdlet 来仅删除特定卷的自动解锁密钥，而不是所有卷的密钥。"
+
+msgid ""
+"For an overview of BitLocker, see [BitLocker Drive Encryption "
+"Overview](https://technet.microsoft.com/en-us/library/cc732774.aspx) on "
+"TechNet."
+msgstr ""
+"有关 BitLocker 的概述，请参阅 TechNet 上的 [BitLocker "
+"磁盘加密概述](https://technet.microsoft.com/en-us/library/cc732774.aspx)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Clear automatic unlocking keys"
+msgstr "### 示例 1：清除自动解锁密钥"
+
+msgid ""
+"This command clears all automatic unlocking keys stored on the current "
+"computer."
+msgstr "这个命令会清除当前计算机上存储的所有自动解锁密钥。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### BitLockerVolume"
+msgstr "### BitLockerVolume"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-BitLockerAutoUnlock](./Disable-BitLockerAutoUnlock.md)"
+msgstr "[Disable-BitLockerAutoUnlock](./Disable-BitLockerAutoUnlock.md)"
+
+msgid "[Enable-BitLockerAutoUnlock](./Enable-BitLockerAutoUnlock.md)"
+msgstr "[Enable-BitLockerAutoUnlock](./Enable-BitLockerAutoUnlock.md)"
+
+msgid "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+msgstr "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"

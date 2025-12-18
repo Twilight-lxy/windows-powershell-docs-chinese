@@ -1,0 +1,169 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:38:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrFileHash"
+msgstr "# Get-DfsrFileHash"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets a file hash."
+msgstr "获取一个文件哈希值。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfsrFileHash** cmdlet gets a hash value identical to the one computed by the Distributed File System (DFS) Replication service for the specified file or folder during normal replication.\n"
+"Use this cmdlet to determine if you correctly populated a content set, or if a file is in sync between replication partners."
+msgstr ""
+"`Get-DfsrFileHash` cmdlet "
+"可获取与分布式文件系统（DFS）复制服务在正常复制过程中为指定文件或文件夹计算出的哈希值相同的哈希值。使用此 cmdlet "
+"可以判断您是否正确填充了内容集，或者文件在各个复制节点之间是否已保持同步状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a file hash"
+msgstr "### 示例 1：获取文件哈希值"
+
+msgid ""
+"This command uses the **Get-DfsrFileHash** cmdlet to retrieve the simulated "
+"marshaled hash of the file `C:\\Rf01\\Drawing2.vsd`."
+msgstr "此命令使用 **Get-DfsrFileHash** cmdlet 来获取文件 `C:\\Rf01\\Drawing2.vsd` 的模拟哈希值。"
+
+msgid "### Example 2: Retrieve the hash of a folder and its contents"
+msgstr "### 示例 2：获取文件夹及其内容的哈希值"
+
+msgid ""
+"This command uses the **Get-DfsrFileHash** cmdlet to retrieve the hash of a "
+"folder and the hashes for the individual files in the folder."
+msgstr "此命令使用 **Get-DfsrFileHash** cmdlet 来检索文件夹的哈希值以及该文件夹中各个文件的哈希值。"
+
+msgid ""
+"### Example 3: Retrieve the hash of a folder and its contents using "
+"recursion"
+msgstr "### 示例 3：使用递归方法获取文件夹及其内容的哈希值"
+
+msgid ""
+"This command uses the **Get-DfsrFileHash** cmdlet to retrieve the hash of a folder and the hashes for the individual files in the folder.\n"
+"The command also uses the **Get-ChildItem** cmdlet to recursively find all files and folders in the path."
+msgstr ""
+"这个命令使用 **Get-DfsrFileHash** cmdlet 来获取文件夹的哈希值以及该文件夹中各个文件的哈希值。同时，该命令还利用 "
+"**Get-ChildItem** cmdlet 递归地查找路径中的所有文件和文件夹。"
+
+msgid "### Example 4: Retrieve the hash of files with the *.png extension"
+msgstr "### 示例 4：获取带有 *.png 扩展名的文件的哈希值"
+
+msgid ""
+"This command uses the **Get-DfsrFileHash** cmdlet to retrieve the hash of all files with a `*.png` extension.\n"
+"The command searches the folder path recursively."
+msgstr ""
+"这个命令使用 **Get-DfsrFileHash** cmdlet 来检索所有具有 `.png` "
+"扩展名的文件的哈希值。该命令会递归地搜索文件夹路径中的文件。"
+
+msgid ""
+"### Example 5: Retrieve and compare file hashes between two replicated "
+"folders"
+msgstr "### 示例 5：检索并比较两个复制文件夹之间的文件哈希值"
+
+msgid ""
+"This example retrieves and compares simulated file hashes for two replicated"
+" folders on different computers."
+msgstr "这个例子从不同的计算机上检索并比较了两个复制文件夹的模拟文件哈希值。"
+
+msgid ""
+"The first command maps a drive to the replicated folder on the first "
+"computer."
+msgstr "第一个命令将一个驱动器映射到第一台计算机上的复制文件夹。"
+
+msgid ""
+"The second command uses the **Get-DfsrFileHash** cmdlet to retrieve the simulated file hashes for the contents of the folder.\n"
+"The command saves the output to a text file."
+msgstr ""
+"第二个命令使用 **Get-DfsrFileHash** cmdlet 来获取文件夹内容的模拟文件哈希值。该命令将输出结果保存到一个文本文件中。"
+
+msgid "The third command deletes the mapped drive for the first computer."
+msgstr "第三个命令会删除第一台计算机上的映射驱动器。"
+
+msgid ""
+"The fourth command maps the same drive letter to the replicated folder on "
+"the second computer."
+msgstr "第四条命令将相同的驱动器字母映射到第二台计算机上的复制文件夹上。"
+
+msgid ""
+"The fifth command uses the **Get-DfsrFileHash** cmdlet to retrieve the simulated file hashes for the contents of the folder.\n"
+"The command saves the output to a text file."
+msgstr ""
+"第五条命令使用了 **Get-DfsrFileHash** cmdlet 来获取该文件夹内容的模拟文件哈希值，并将输出结果保存到一个文本文件中。"
+
+msgid "The sixth command deletes the mapped drive for the second computer."
+msgstr "第六条命令会删除第二台计算机上的映射驱动器。"
+
+msgid ""
+"The seventh command uses the **Compare-Object** cmdlet to compare the two output files and display the results.\n"
+"In this example, the `Drawing2.png` files differ."
+msgstr ""
+"第七条命令使用了 **Compare-Object** cmdlet 来比较这两个输出文件，并显示比较结果。在这个例子中，`Drawing2.png` "
+"文件是不同的。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of paths to files or folders.\n"
+"You can use local paths, mapped drives, or UNC paths."
+msgstr "指定一个包含文件或文件夹路径的数组。您可以使用本地路径、映射驱动器或 UNC 路径。"
+
+msgid ""
+"If you specify a file or folder with a wildcard character, this cmdlet calculates any matching files or folders individually.\n"
+"If you specify a folder path that ends with a wildcard descriptor, such as C:\\Rf01\\*, the cmdlet calculates hashes for all immediate contents of that folder.\n"
+"This parameter does not support recursion of subfolders and their contents."
+msgstr ""
+"如果您使用通配符来指定一个文件或文件夹，此cmdlet会分别计算所有匹配的文件或文件夹。如果您指定的文件夹路径以通配符结尾（例如 "
+"C:\\Rf01\\*），则cmdlet会计算该文件夹中所有内容的哈希值。此参数不支持对子文件夹及其内容进行递归处理。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### DfsrFileHash"
+msgstr "### DfsrFileHash"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

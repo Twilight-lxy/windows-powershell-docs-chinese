@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:54:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-SbecTraceProviders"
+msgstr "# Get-SbecTraceProviders"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the ETW trace providers."
+msgstr "获取 ETW 跟踪提供者（ETW Trace Providers）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-SbecTraceProviders** cmdlet gets the list of ETW trace providers, "
+"building the hash tables for translation from name to GUID and back."
+msgstr ""
+"`Get-SbecTraceProviders` cmdlet 可以获取 ETW（Event Tracing "
+"Windows）跟踪提供程序的列表，并构建用于名称与 GUID 之间相互转换的哈希表。"
+
+msgid ""
+"**Get-SbecTraceProviders** returns a hash table with the following nested "
+"hash tables:"
+msgstr "`Get-SbecTraceProviders` 返回一个哈希表，其中包含以下嵌套的哈希表："
+
+msgid ""
+"Curly braces are added to the GUIDs when they are converted to strings."
+msgstr "当GUID转换为字符串时，会在其末尾添加弯曲的大括号（{ }）。"
+
+msgid ""
+"The returned hash table is also saved as a cache, and is returned on subsequent calls.\n"
+"If any new providers are defined, they are added to the cache (and thus to the previously returned references to it) on subsequent calls."
+msgstr ""
+"返回的哈希表也会被保存为缓存，并在后续调用中再次使用。如果定义了任何新的提供者（provider），它们将会被添加到缓存中（从而也会被包含在之前返回的引用中）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Indicates that this operation bypasses the cache."
+msgstr "表示此操作会绕过缓存。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### hash table"
+msgstr "### 哈希表"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-SbecProviderCache](./Clear-SbecProviderCache.md)"
+msgstr "[Clear-SbecProviderCache](./Clear-SbecProviderCache.md)"

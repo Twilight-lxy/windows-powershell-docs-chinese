@@ -1,0 +1,107 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:39:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrMember"
+msgstr "# Get-DfsrMember"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets member computers in a replication group."
+msgstr "获取复制组中的成员计算机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfsrMember** cmdlet gets member computers in a replication group.\n"
+"Members of a replication group host replicated folders."
+msgstr "`Get-DfsrMember` cmdlet 可以获取复制组中的成员计算机。复制组的成员计算机会托管被复制的文件夹。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a member in a replication group"
+msgstr "#### 示例 1：获取复制组中的一个成员"
+
+msgid ""
+"This command gets the member computer named SRV01 that belongs to the group "
+"named RG07."
+msgstr "这个命令用于获取名为 SRV01 的成员计算机，该计算机属于名为 RG07 的组。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of names of member computers.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet gets all members of replication groups specified by using the **DomainName** and **GroupName** parameters."
+msgstr ""
+"指定一组成员计算机的名称。您可以使用逗号分隔的列表以及通配符（*）。如果您不指定此参数，该cmdlet将获取通过**DomainName**和**GroupName**参数指定的所有复制组的成员。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains a replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet uses all participating replication groups."
+msgstr "指定一个复制组名称的数组。您可以使用逗号分隔的列表以及通配符（*）。如果您不指定此参数，该cmdlet将使用所有参与的复制组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrMember"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrMember"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DfsrMember](./Add-DfsrMember.md)"
+msgstr "[Add-DfsrMember](./Add-DfsrMember.md)"
+
+msgid "[Remove-DfsrMember](./Remove-DfsrMember.md)"
+msgstr "[Remove-DfsrMember](./Remove-DfsrMember.md)"
+
+msgid "[Set-DfsrMember](./Set-DfsrMember.md)"
+msgstr "[Set-DfsrMember](./Set-DfsrMember.md)"

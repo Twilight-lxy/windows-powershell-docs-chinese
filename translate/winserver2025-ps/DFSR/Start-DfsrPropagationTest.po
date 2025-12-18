@@ -1,0 +1,153 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:51:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-DfsrPropagationTest"
+msgstr "# 启动 DfsrPropagationTest"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a propagation test file in a replicated folder."
+msgstr "在复制的文件夹中创建一个用于测试数据传播的文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Start-DfsrPropagationTest** cmdlet creates a propagation test file in a Distributed File System (DFS) replicated folder.\n"
+"The test file contains metadata, such as time and date stamps.\n"
+"The DFS Replication service propagates the file to other computers in the replication group.\n"
+"You can create propagation reports by using the **Write-DfsrPropagationReport** cmdlet."
+msgstr ""
+"`Start-DfsrPropagationTest` cmdlet "
+"会在分布式文件系统（DFS）的复制文件夹中创建一个用于测试文件传播功能的文件。该测试文件包含元数据，例如时间和日期戳。DFS "
+"复制服务会将此文件传播到复制组中的其他计算机上。您可以使用 `Write-DfsrPropagationReport` cmdlet "
+"来生成相关的文件传播报告。"
+
+msgid ""
+"This cmdlet creates test files in replicated folders in a hidden, read-only system folder named __DFSR_DIAGNOSTICS_TEST_FOLDER__.\n"
+"The cmdlet names the test files \\<Reference Computer Name\\>@\\<GUID\\>@\\<RG Name\\>-\\<RF Name\\>.xml.\n"
+"Use the **Remove-DfsrPropagationTestFile** cmdlet to delete old test files."
+msgstr ""
+"此cmdlet会在一个隐藏的、只读的系统文件夹（名为__DFSR_DIAGNOSTICS_TEST_FOLDER__）中，于复制的文件夹内创建测试文件。这些测试文件的名称格式为\\<参考计算机名\\>@\\<GUID\\>@\\<RG名称\\>-\\<RF名称\\>.xml。可以使用**Remove-"
+"DfsrPropagationTestFile** cmdlet来删除旧的测试文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a test file on a specified reference computer"
+msgstr "### 示例 1：在指定的参考计算机上创建一个测试文件"
+
+msgid ""
+"This command creates a propagation test file for the replicated folder named ReplicatedFolder19 in the group named ReplicationGroup07.\n"
+"The command specifies a reference computer name."
+msgstr ""
+"此命令为名为“ReplicatedFolder19”的复制文件夹创建一个用于测试传播功能的文件，该文件夹属于名为“ReplicationGroup07”的组。同时，该命令指定了参考计算机的名称。"
+
+msgid "### Example 2: Create test files for all replicated folders"
+msgstr "### 示例 2：为所有复制的文件夹创建测试文件"
+
+msgid ""
+"This command creates test files in all replicated folders on the reference computer named SRV01.corp.Contoso.com.\n"
+"The command uses the wildcard character (*) for the **GroupName** and **FolderName** parameter values, and, therefore, it creates a test file in any replicated folder on the computer, regardless of what replication group or groups the computer might be a member of."
+msgstr ""
+"此命令会在参考计算机 SRV01.corp.Contoso.com 上的所有复制文件夹中创建测试文件。该命令使用通配符 (*) 作为 "
+"**GroupName** 和 **FolderName** "
+"参数的值，因此它会在计算机的任何复制文件夹中创建测试文件，而不管这台计算机属于哪个或多个复制组。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用当前用户的所在域。"
+
+msgid ""
+"Specifies an array of names of replicated folders.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet creates test files for all replicated folders within the specified group and domain."
+msgstr ""
+"指定一个包含已复制文件夹名称的数组。您可以使用逗号分隔的列表以及通配符（*）。如果您不指定此参数，该 cmdlet "
+"将为指定组域内的所有已复制文件夹创建测试文件。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet creates test files for all replicated folders that have name that matches the value of the *FolderName* parameter within the specified domain."
+msgstr ""
+"指定一个复制组名称的数组。您可以使用逗号分隔的列表以及通配符（*）。如果您不指定此参数，该cmdlet将为所有在指定域内且名称与*FolderName*参数值匹配的已复制文件夹创建测试文件。"
+
+msgid ""
+"Specifies the name of a reference computer in the replication group.\n"
+"The cmdlet creates the propagation test file on the reference computer.\n"
+"If you do not specify this parameter, the cmdlet uses the local computer as the reference computer."
+msgstr ""
+"指定复制组中参考计算机的名称。该cmdlet会在参考计算机上创建用于测试数据传播的文件。如果未指定此参数，cmdlet会使用本地计算机作为参考计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+
+msgid "### String"
+msgstr "### 字符串（String）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Remove-DfsrPropagationTestFile](./Remove-DfsrPropagationTestFile.md)"
+msgstr "[Remove-DfsrPropagationTestFile](./Remove-DfsrPropagationTestFile.md)"
+
+msgid "[Write-DfsrPropagationReport](./Write-DfsrPropagationReport.md)"
+msgstr "[Write-DfsrPropagationReport](./Write-DfsrPropagationReport.md)"

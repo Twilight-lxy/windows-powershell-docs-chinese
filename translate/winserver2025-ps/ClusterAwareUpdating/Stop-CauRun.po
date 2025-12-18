@@ -1,0 +1,108 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:32:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-CauRun"
+msgstr "# 停止 CauRun"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Stops an updating run that is in progress on a cluster."
+msgstr "停止集群上正在进行的更新操作。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Stop-CauRun` cmdlet stops an updating run that is in progress on a "
+"failover cluster."
+msgstr "`Stop-CauRun` cmdlet 用于停止在故障转移集群上正在进行的更新操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Stop an updating run on the specified cluster"
+msgstr "#### 示例 1：停止在指定集群上进行的更新操作"
+
+msgid ""
+"This command stops the updating run that is being performed by the CAU Update Coordinator that is\n"
+"configured on the cluster named CONTOSO-FC1. The cmdlet waits to return until the canceled updating\n"
+"run has finished. Because the command specifies the **Force** parameter, the cmdlet runs without\n"
+"displaying confirmation prompts."
+msgstr ""
+"此命令会停止由配置在名为 CONTOSO-FC1 的集群上的 CAU Update Coordinator 执行的更新操作。该 cmdlet "
+"会一直等待，直到被取消的更新操作完成为止。由于该命令指定了 **Force** 参数，因此它在执行时不会显示任何确认提示。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to stop an updating run that is in progress. This\n"
+"parameter is only required when this cmdlet isn't run on a failover cluster node, or this cmdlet is\n"
+"used to reference a failover cluster different from where the cmdlet is run."
+msgstr ""
+"指定要停止正在进行的更新操作的集群名称。仅当此cmdlet不在故障转移集群节点上运行，或者用于引用与执行该cmdlet的集群不同的故障转移集群时，才需要此参数。"
+
+msgid "Specifies the administrative credentials for the target cluster."
+msgstr "指定目标集群的管理凭据。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需询问用户的确认。"
+
+msgid ""
+"Indicates that the cmdlet waits until after the canceled updating run has finished. Otherwise,\n"
+"returns as soon as the stop request has been acknowledged by the current Cluster-Aware Updating\n"
+"(CAU) Update Coordinator."
+msgstr ""
+"表示该cmdlet会一直等待，直到被取消的更新操作完成为止。否则，一旦当前集群感知更新（Cluster-Aware Updating, "
+"CAU）更新协调器接收到停止请求，它就会立即返回结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Boolean"
+msgstr "### System Boolean"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-CauRun](./Get-CauRun.md)"
+msgstr "[Get-CauRun](./Get-CauRun.md)"
+
+msgid "[Invoke-CauRun](./Invoke-CauRun.md)"
+msgstr "[Invoke-CauRun](./Invoke-CauRun.md)"

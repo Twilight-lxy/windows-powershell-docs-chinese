@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:21:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Resume-ClusterResource"
+msgstr "# Resume-ClusterResource"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Turns off maintenance for a disk resource or Cluster Shared Volume within a "
+"failover cluster."
+msgstr "在故障转移集群中，会关闭某个磁盘资源或集群共享卷（Cluster Shared Volume）的维护功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Resume-ClusterResource` cmdlet turns off maintenance for a disk resource or Cluster Shared\n"
+"Volume within a failover cluster."
+msgstr ""
+"`Resume-ClusterResource` cmdlet 用于关闭故障转移集群中某个磁盘资源或集群共享卷（Cluster Shared "
+"Volume）的维护模式。"
+
+msgid ""
+"This cmdlet applies to disks and Cluster Shared Volumes only. We recommend that maintenance be\n"
+"turned off for a disk or Cluster Shared Volume as soon as the maintenance tasks have been completed."
+msgstr ""
+"此cmdlet仅适用于磁盘和集群共享卷（Cluster Shared Volumes）。我们建议在维护任务完成后，立即关闭该磁盘或集群共享卷的维护功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example turns off maintenance for the CSV named `Cluster Disk 2`."
+msgstr "这个示例会关闭名为“Cluster Disk 2”的CSV文件的维护功能。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example turns off maintenance for all volumes on the CSV named `Cluster"
+" Disk 5`."
+msgstr "这个示例会关闭名为“Cluster Disk 5”的CSV文件中所有卷的维护功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the cluster resource to resume."
+msgstr "指定要恢复的集群资源。"
+
+msgid "Specifies the name of the cluster resource to resume."
+msgstr "指定要恢复的集群资源的名称。"
+
+msgid ""
+"Specifies the name of the volume to suspend. This parameter is only applicable to Cluster Shared\n"
+"Volumes. If this parameter isn't specified, then the operation will be performed on all volumes on\n"
+"the Cluster Shared Volume."
+msgstr ""
+"指定要挂起的卷的名称。此参数仅适用于集群共享卷（Cluster Shared Volumes）。如果未指定该参数，操作将针对集群共享卷上的所有卷进行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### Microsoft FailoverClusters.PowerShellClusterSharedVolume"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters PowerShell ClusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### Microsoft FAILoverClusters.PowerShellClusterSharedVolume"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterResource](./Add-ClusterResource.md)"
+msgstr "[Add-ClusterResource](./Add-ClusterResource.md)"
+
+msgid "[Get-ClusterResource](./Get-ClusterResource.md)"
+msgstr "[Get-ClusterResource](./Get-ClusterResource.md)"
+
+msgid "[Move-ClusterResource](./Move-ClusterResource.md)"
+msgstr "[Move-ClusterResource](./Move-ClusterResource.md)"
+
+msgid "[Remove-ClusterResource](./Remove-ClusterResource.md)"
+msgstr "[Remove-ClusterResource](./Remove-ClusterResource.md)"
+
+msgid "[Start-ClusterResource](./Start-ClusterResource.md)"
+msgstr "[启动集群资源](./Start-ClusterResource.md)"
+
+msgid "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+msgstr "[Stop-ClusterResource](./Stop-ClusterResource.md)"
+
+msgid "[Suspend-ClusterResource](./Suspend-ClusterResource.md)"
+msgstr "[暂停集群资源](./Suspend-ClusterResource.md)"

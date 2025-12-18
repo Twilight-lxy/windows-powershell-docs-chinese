@@ -1,0 +1,102 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:24:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterlessCauRun"
+msgstr "# 获取-ClusterlessCauRun"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Retrieves information about a Cluster-Aware Updating (CAU) run not "
+"associated with a cluster."
+msgstr "检索与任何集群无关的“Cluster-Aware Updating（CAU）”运行相关的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DefaultParamSet (Default)"
+msgstr "### DefaultParamSet（默认值）"
+
+msgid "### ShowClusterNodeState"
+msgstr "### ShowClusterNodeState"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-ClusterlessCauRun` cmdlet retrieves information about a Cluster-Aware Updating (CAU) run\n"
+"that is not associated with a cluster."
+msgstr ""
+"`Get-ClusterlessCauRun` cmdlet 用于检索与集群无关的 Cluster-Aware Updating (CAU) "
+"运行相关的信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example displays information about the current CAU run, including the status of each node that\n"
+"is being updated."
+msgstr "这个示例显示了有关当前CAU运行过程的信息，包括每个正在被更新的节点的状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the administrative credentials for the target cluster."
+msgstr "指定目标集群的管理凭据。"
+
+msgid ""
+"Displays detailed information about the state of each node in the CAU run."
+msgstr "显示关于CAU运行过程中每个节点状态的详细信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ClusterAwareUpdating.CauWmiObject"
+msgstr "### Microsoft-clusterawareupdating.cauwmiobject"
+
+msgid "### Microsoft.ClusterAwareUpdating.ClusterlessCauRun"
+msgstr "### Microsoft ClusterAware UpdatingClusterlessCauRun"
+
+msgid "### Microsoft.ClusterAwareUpdating.RunState"
+msgstr "### Microsoft ClusterAwareUpdating.RunState"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Invoke-ClusterlessCauRun](invoke-clusterlesscaurun.md)"
+msgstr "[Invoke-ClusterlessCauRun](invoke-clusterlesscaurun.md)"

@@ -1,0 +1,83 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:03:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-Appv"
+msgstr "# 启用 AppV 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables the App-V service."
+msgstr "启用App-V服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-Appv** cmdlet enables the Microsoft Application Virtualization (App-V) service on computers running at least Windows 10 Anniversary Edition (version 1607) .\n"
+"If this cmdlet succeeds, it returns a message."
+msgstr ""
+"`Enable-Appv` cmdlet 可以在运行至少 Windows 10 Anniversary Edition（版本 1607）的计算机上启用 "
+"Microsoft 应用虚拟化（App-V）服务。如果此 cmdlet 成功执行，它会返回一条消息。"
+
+msgid ""
+"Before you enable the App-V service, configure App-V service settings by "
+"using Windows PowerShell or Group Policy."
+msgstr "在启用 App-V 服务之前，请使用 Windows PowerShell 或组策略来配置 App-V 服务的设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable the service"
+msgstr "#### 示例 1：启用该服务"
+
+msgid "This command enables the App-V service."
+msgstr "此命令用于启用App-V服务。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see [about "
+"CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-Appv](./Disable-Appv.md)"
+msgstr "[disable-Appv](./Disable-Appv.md)"
+
+msgid "[Get-AppvStatus](./Get-AppvStatus.md)"
+msgstr "[Get-AppvStatus](./Get-AppvStatus.md)"

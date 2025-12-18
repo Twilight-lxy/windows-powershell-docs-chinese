@@ -1,0 +1,89 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:53:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-AccelNetVM"
+msgstr "# 启用AccelNetVM"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables Accelerated Networking on a VM."
+msgstr "启用虚拟机上的加速网络功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "Enables AccelNet on a VM."
+msgstr "在虚拟机上启用AccelNet功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example enables AccelNet with the performance level set to `High` for the VM\n"
+"named `MyVM`."
+msgstr "此示例为名为“MyVM”的虚拟机启用了AccelNet，并将性能级别设置为“高”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Sets the performance level. This parameter is required. Acceptable values "
+"are:"
+msgstr "设置性能级别。此参数是必需的。可选的值有："
+
+msgid "Specifies the name of the virtual machine. This parameter is required."
+msgstr "指定虚拟机的名称。此参数是必需的。"
+
+msgid "The VM object."
+msgstr "这个VM对象。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-AccelNetVM](disable-accelnetvm.md)"
+msgstr "[Disable-AccelNetVM](disable-accelnetvm.md)"
+
+msgid "[Get-AccelNetVM](get-accelnetvm.md)"
+msgstr "[获取 AccelerNetVM](get-accelnetvm.md)"
+
+msgid "[Set-AccelNetVM](set-accelnetvm.md)"
+msgstr "[Set-AccelNetVM](set-accelnetvm.md)"

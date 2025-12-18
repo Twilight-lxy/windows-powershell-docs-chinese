@@ -1,0 +1,183 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:55:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-RmsMfgEnrollment"
+msgstr "# 更新 RMS 制造商注册信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Updates enrollment information for an AD RMS server enrolled with the "
+"Microsoft Federation Gateway service."
+msgstr "更新已注册到 Microsoft Federation Gateway 服务的 AD RMS 服务器的注册信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Update-RmsMfgEnrollment** cmdlet updates enrollment information for an"
+" Active Directory Rights Management Services (AD RMS) server enrolled with "
+"the Microsoft Federation Gateway service."
+msgstr ""
+"`Update-RmsMfgEnrollment` cmdlet 用于更新已注册到 Microsoft Federation Gateway 服务的 "
+"Active Directory 权限管理服务（AD RMS）服务器的注册信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update support enrollment using the default certificate"
+msgstr "### 示例 1：使用默认证书更新支持服务的注册信息"
+
+msgid ""
+"This command updates the Microsoft Federation Gateway support enrollment for"
+" the current AD RMS server by retrieving and using the thumbprint hash of "
+"the AD RMS default certificate."
+msgstr ""
+"此命令通过检索并使用 AD RMS 默认证书的指纹哈希值来更新当前 AD RMS 服务器对 Microsoft Federation Gateway "
+"支持的注册信息。"
+
+msgid "### Example 2: Update support enrollment using a specified certificate"
+msgstr "### 示例 2：使用指定的证书更新支持服务注册信息"
+
+msgid ""
+"This command updates the Microsoft Federation Gateway support enrollment for"
+" the current AD RMS server using the thumbprint hash of a non-default "
+"certificate."
+msgstr "此命令使用非默认证书的指纹哈希值来更新当前AD RMS服务器对Microsoft Federation Gateway支持的注册信息。"
+
+msgid "### Example 3: Update the signing certificate for the enrollment"
+msgstr "### 示例 3：更新注册所需的签名证书"
+
+msgid ""
+"This command updates the Microsoft Federation Gateway support enrollment for"
+" the current AD RMS server."
+msgstr "此命令用于更新当前AD RMS服务器对Microsoft Federation Gateway支持的注册状态。"
+
+msgid "### Example 4: Update the token decryption certificate"
+msgstr "### 示例 4：更新令牌解密证书"
+
+msgid ""
+"This command updates the token decryption certificate for the current AD RMS"
+" server."
+msgstr "此命令用于更新当前AD RMS服务器的令牌解密证书。"
+
+msgid ""
+"### Example 5: Set certificate permissions for the Microsoft Federation "
+"Gateway"
+msgstr "### 示例 5：为 Microsoft Federation Gateway 设置证书权限"
+
+msgid ""
+"This command sets certificate permissions for the Microsoft Federation "
+"Gateway support enrollment for the current AD RMS."
+msgstr "此命令用于设置当前 AD RMS 的 Microsoft Federation Gateway 支持注册功能的证书权限。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a string containing the thumbprint hash of the certificate being "
+"used to update enrollment with the Microsoft Federation Gateway."
+msgstr "指定一个字符串，其中包含用于通过 Microsoft Federation Gateway 更新注册信息的证书的指纹哈希值。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"When specified, indicates that the thumbprint hash of the AD RMS default "
+"certificate should be retrieved and used to update enrollment with the "
+"Microsoft Federation Gateway."
+msgstr ""
+"当指明这一点时，表示应获取 AD RMS 默认证书的指纹哈希值，并使用该哈希值来更新与 Microsoft Federation Gateway "
+"的注册信息。"
+
+msgid ""
+"When specified, indicates that permissions are to be set on the AD RMS "
+"server enrollment with the Microsoft Federation Gateway."
+msgstr ""
+"当指定此选项时，表示需要在通过 Microsoft Federation Gateway 进行的 AD RMS 服务器注册过程中设置相应的权限。"
+
+msgid ""
+"When specified, indicates that the Microsoft Federation Gateway signing "
+"certificate should be updated (or refreshed in metadata) for the current AD "
+"RMS server enrollment."
+msgstr ""
+"当指定此选项时，表示需要更新（或在元数据中刷新）Microsoft Federation Gateway的签名证书，以便用于当前的AD "
+"RMS服务器注册过程。"
+
+msgid ""
+"When specified, indicates that the token decryption certificate should be "
+"updated for the AD RMS server enrollment with the Microsoft Federation "
+"Gateway."
+msgstr ""
+"当指定该选项时，表示需要更新令牌解密证书，以便在与 Microsoft Federation Gateway 进行 AD RMS "
+"服务器注册时使用该证书。"
+
+msgid ""
+"You can update the token decryption certificate or the Microsoft Federation Gateway certificate, as needed.\n"
+"Because the token decryption certificate is the SSL certificate for the AD RMS cluster, you must update the token decryption certificate if the cluster SSL certificate expires.\n"
+"After you update the token decryption certificate, you must grant the AD RMS Services group permission to access the certificate on all servers in the AD RMS cluster."
+msgstr ""
+"您可以根据需要更新令牌解密证书或 Microsoft Federation Gateway 证书。由于令牌解密证书是 AD RMS 集群的 SSL "
+"证书，因此如果集群的 SSL 证书过期，就必须更新该令牌解密证书。更新令牌解密证书后，还需要为 AD RMS Services 组授予在 AD RMS "
+"集群中的所有服务器上访问该证书的权限。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"

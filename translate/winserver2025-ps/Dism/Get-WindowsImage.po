@@ -1,0 +1,207 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:38:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WindowsImage"
+msgstr "# Get-WindowsImage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets information about a Windows image in a WIM or VHD file."
+msgstr "获取关于WIM或VHD文件中Windows镜像的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### InputByFilePath"
+msgstr "### InputByFilePath"
+
+msgid "### InputByFilePathAndName"
+msgstr "### InputByFilePathAndName"
+
+msgid "### InputByFilePathAndIndex"
+msgstr "### InputByFilePathAndIndex"
+
+msgid "### InputByMounted"
+msgstr "### InputByMounted"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WindowsImage** cmdlet gets information about a Windows image in a "
+"WIM or VHD file."
+msgstr ""
+"`Get-WindowsImage` cmdlet 可以获取 WIM（Windows Imaging Format）或 VHD（Virtual Hard"
+" Disk）文件中包含的 Windows 镜像的相关信息。"
+
+msgid ""
+"Use the *Mounted* parameter to get information about any Windows images that"
+" are mapped to directories on the local computer."
+msgstr "使用 *Mounted* 参数来获取有关映射到本地计算机目录上的任何 Windows 镜像的信息。"
+
+msgid ""
+"Use the *ImagePath* parameter to get information about images in a specific "
+"WIM or VHD file."
+msgstr "使用 *ImagePath* 参数来获取特定 WIM 或 VHD 文件中图像的相关信息。"
+
+msgid ""
+"Use the *Index* or *Name* parameter to get detailed information about a specific image in a WIM or VHD file.\n"
+"For a VHD file, the *Index* must be 1."
+msgstr ""
+"使用 *Index* 或 *Name* 参数可以获取 WIM 或 VHD 文件中特定图像的详细信息。对于 VHD 文件，*Index* 的值必须为 1。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get information about all mounted images"
+msgstr "### 示例 1：获取所有已挂载图像的信息"
+
+msgid ""
+"This command gets information, including mount path, about all of the "
+"Windows images mounted on the local computer."
+msgstr "此命令可获取有关本地计算机上所有已挂载的Windows镜像的信息，包括挂载路径等详细信息。"
+
+msgid "### Example 2: Get information about a specific mounted image"
+msgstr "### 示例 2：获取关于某个已挂载镜像的信息"
+
+msgid ""
+"This command gets detailed information about the Windows image named "
+"\"Ultimate\" in the install.wim file at c:\\imagestore."
+msgstr ""
+"这个命令可以获取关于名为“Ultimate”的Windows镜像的详细信息，该镜像位于c:\\imagestore目录下的install.wim文件中。"
+
+msgid "### Example 3: Get information about a specific image"
+msgstr "### 示例 3：获取关于特定图像的信息"
+
+msgid ""
+"This command gets basic information about the Windows image in the "
+"install.vhd file at c:\\imagestore."
+msgstr "这个命令可以获取关于位于 c:\\imagestore 目录下的 install.vhd 文件中所包含的 Windows 镜像的基本信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the location of a WIM or VHD file."
+msgstr "指定 WIM 或 VHD 文件的位置。"
+
+msgid ""
+"Specifies the index number of a Windows image in a WIM or VHD file.\n"
+"For a VHD file, the Index must be 1."
+msgstr "用于指定 Windows 映像在 WIM 或 VHD 文件中的索引编号。对于 VHD 文件，索引值必须为 1。"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及常规信息  \n"
+"- 4 = 显示上述所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 擦除空间，其容量可能低至 32 MB。日志文件会自动归档；归档后的日志文件会在文件名后添加 `.bak` "
+"扩展名，并生成新的日志文件。每次日志文件被归档时，对应的 `.bak` 文件都会被覆盖。当使用未加入域的网络共享资源时，请先使用 `net use` "
+"命令并输入域凭据来设置访问权限，然后再设置 DISM 日志的路径。"
+
+msgid ""
+"Gets information, including the mount path, for all images mapped to a "
+"directories on the local computer."
+msgstr "获取所有映射到本地计算机上目录中的图像的相关信息，包括这些图像的安装路径（即挂载路径）。"
+
+msgid "Specifies the name of an image in a WIM or VHD file."
+msgstr "指定 WIM 或 VHD 文件中图像的名称。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，该目录将在执行服务维护操作时用于提取文件。此目录必须存在于本地计算机上。如果未指定临时目录，默认使用 "
+"`\\Windows\\%Temp%\\` 目录，且每次运行 DISM "
+"时，该目录下的子目录名称会生成一个随机的十六进制值。每次操作完成后，临时目录中的文件都会被删除。不建议将网络共享位置用作用于安装软件包（.cab 或 "
+".msu 文件）的临时目录。在执行服务维护操作时用于提取文件的临时目录应为本地目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dism CommandsIMAGEObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.ImageInfoObject"
+msgstr "### Microsoft.DismCommands.ImageInfoObject"
+
+msgid "### Microsoft.Dism.Commands.MountedImageInfoObject"
+msgstr "### Microsoft.Dism Commands.MountedImageInfoObject"
+
+msgid "### Microsoft.Dism.Commands.WimImageInfoObject"
+msgstr "### Microsoft.Dism Commands.WimImageInfoObject"
+
+msgid "### Microsoft.Dism.Commands.BasicImageInfoObject"
+msgstr "### Microsoft.Dism Commands.BasicImageInfoObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+msgstr "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+
+msgid "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+msgstr "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+
+msgid "[Repair-WindowsImage](./Repair-WindowsImage.md)"
+msgstr "[修复Windows映像](./Repair-WindowsImage.md)"
+
+msgid "[Save-WindowsImage](./Save-WindowsImage.md)"
+msgstr "[保存Windows镜像](./Save-WindowsImage.md)"

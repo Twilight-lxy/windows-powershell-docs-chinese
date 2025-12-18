@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:37:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrDelegation"
+msgstr "# Get-DfsrDelegation"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets principals that have permissions for a replication group."
+msgstr "获取具有复制组权限的主体（principals）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-DfsrDelegation** cmdlet gets the users and groups that have permission to create replicated folders, connections, members, and memberships for a replication group.\n"
+"For more information about delegation in the Distributed File System (DFS) Replication service, see the documentation for the **Grant-DfsrDelegation** cmdlet."
+msgstr ""
+"`Get-DfsrDelegation` cmdlet "
+"可以获取具有创建复制文件夹、连接以及为复制组添加成员等权限的用户和组。有关分布式文件系统（DFS）复制服务中委派机制的更多信息，请参阅 `Grant-"
+"DfsrDelegation` cmdlet 的相关文档。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get principals for a replication group"
+msgstr "#### 示例 1：获取复制组的 principals（管理信息）"
+
+msgid ""
+"This command gets the users and groups that have delegated permissions for "
+"the replication group named RG01."
+msgstr "此命令用于获取被授权访问名为RG01的复制组的用户和组。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用当前用户的所在域。"
+
+msgid "Specifies an array of names of replication groups."
+msgstr "指定一个复制组名称数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### String[]"
+msgstr "### String[]"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrDelegation"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrDelegation"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Grant-DfsrDelegation](./Grant-DfsrDelegation.md)"
+msgstr "[Grant-DfsrDelegation](./Grant-DfsrDelegation.md)"
+
+msgid "[Revoke-DfsrDelegation](./Revoke-DfsrDelegation.md)"
+msgstr "[Revoke-DfsrDelegation](./Revoke-DfsrDelegation.md)"

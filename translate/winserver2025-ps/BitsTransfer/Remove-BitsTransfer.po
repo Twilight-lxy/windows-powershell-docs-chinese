@@ -1,0 +1,165 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:39:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-BitsTransfer"
+msgstr "# Remove-BitsTransfer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Cancels a BITS transfer job."
+msgstr "取消一个BITS传输任务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-BitsTransfer** cmdlet cancels a Background Intelligent Transfer Service (BITS) transfer job.\n"
+"It deletes the underlying transfer job, removes any temporary files from the client, and deletes the associated **BitsJob** object."
+msgstr ""
+"`Remove-BitsTransfer` cmdlet 用于取消后台智能传输服务（Background Intelligent Transfer "
+"Service，简称 BITS）的传输作业。它会删除相关的传输任务、客户端上的所有临时文件，并移除相应的 `BitsJob` 对象。"
+
+msgid ""
+"When the **Remove-BitsTransfer** cmdlet cancels a transfer job, it deletes all the transfers.\n"
+"Consider a scenario is which you are transferring three files.\n"
+"One file is completely transferred, one file is pending, and one file is currently being transferred.\n"
+"In this scenario, **Remove-BitsTransfer** cancels the whole transfer and deletes the underlying files.\n"
+"Any files that were already transferred are not available after you use the **Remove-BitsTransfer** cmdlet to cancel the transfer job.\n"
+"Optionally, you can use the **Complete-BitsTransfer** cmdlet to commit any files that are completely downloaded and to cancel the pending and current transfers.\n"
+"The transferred file is not be deleted and is available."
+msgstr ""
+"当 `Remove-BitsTransfer` cmdlet "
+"取消一个传输作业时，它会删除所有相关的传输任务。假设你正在传输三个文件：其中一个文件已经完全传输完成，另一个文件正处于传输过程中，还有一个文件仍在传输中。在这种情况下，`Remove-"
+"BitsTransfer` 会取消整个传输操作，并删除相关文件。使用 `Remove-BitsTransfer` cmdlet "
+"取消传输作业后，之前已传输完成的文件将无法再次访问。如果你需要的话，可以使用 `Complete-BitsTransfer` cmdlet "
+"来完成那些已经成功下载的文件的传输过程，并取消尚未完成或正在进行的传输任务。在这种情况下，已传输完成的文件不会被删除，仍然可以正常使用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Cancel all BITS transfer jobs owned by the current user"
+msgstr "### 示例 1：取消当前用户拥有的所有 BITS（Binary Transfer System）传输作业"
+
+msgid ""
+"This command cancels all the BITS transfer jobs that are owned by the "
+"current user."
+msgstr "这个命令会取消当前用户所拥有的所有BITS传输作业。"
+
+msgid ""
+"The output of the **Get-BitsTransfer** cmdlet is piped to the **Remove-BitsTransfer** cmdlet.\n"
+"The output is a set of **BitsJob** objects."
+msgstr ""
+"`Get-BitsTransfer` cmdlet 的输出结果被传递给 `Remove-BitsTransfer` cmdlet。该输出结果是一组 "
+"`BitsJob` 对象。"
+
+msgid "### Example 2: Cancel all BITS transfer jobs on the computer"
+msgstr "### 示例 2：取消计算机上所有 BITS 数据传输任务"
+
+msgid "This command cancels all the BITS transfer jobs on the computer."
+msgstr "这个命令会取消计算机上所有与BITS（BitTorrent Transfer Service）相关的传输任务。"
+
+msgid ""
+"The first command gets all the **BitsJob** objects on the computer and then "
+"stores them in the $Bits variable."
+msgstr "第一个命令会获取计算机上所有的 **BitsJob** 对象，并将它们存储在 `$Bits` 变量中。"
+
+msgid ""
+"The second command uses the *BitsJob* parameter to pass the **BitsJob** "
+"objects that are stored in the $Bits variable to the **Remove-BitsTransfer**"
+" cmdlet."
+msgstr ""
+"第二个命令使用了 *BitsJob* 参数，将存储在 $Bits 变量中的 **BitsJob** 对象传递给 **Remove-"
+"BitsTransfer** cmdlet。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of BITS transfer jobs to cancel.\n"
+"You can pipe a value to this parameter from other cmdlets that return **BitsJob** objects, such as the **Get-BitsTransfer** cmdlet."
+msgstr ""
+"用于指定需要取消的 BITS 传输作业数组。您可以从返回 **BitsJob** 对象的其他 cmdlet（例如 **Get-"
+"BitsTransfer** cmdlet）中将相关值传递给此参数。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+msgstr "### Microsoft.BackgroundIntelligentTransfer.Management.BitsJob[]"
+
+msgid ""
+"This cmdlet accepts one or more **BitsJob** objects as input that populates "
+"the *BitsJob* parameter."
+msgstr "此cmdlet接受一个或多个**BitsJob**对象作为输入，并将这些对象赋值给*BitsJob*参数。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet does not generate any output."
+msgstr "这个cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-BitsFile](./Add-BitsFile.md)"
+msgstr "[Add-BitsFile](./Add-BitsFile.md)"
+
+msgid "[Complete-BitsTransfer](./Complete-BitsTransfer.md)"
+msgstr "[完成位传输](./Complete-BitsTransfer.md)"
+
+msgid "[Get-BitsTransfer](./Get-BitsTransfer.md)"
+msgstr "[Get-BitsTransfer](./Get-BitsTransfer.md)"
+
+msgid "[Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+msgstr "[Resume-BitsTransfer](./Resume-BitsTransfer.md)"
+
+msgid "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+msgstr "[Set-BitsTransfer](./Set-BitsTransfer.md)"
+
+msgid "[Start-BitsTransfer](./Start-BitsTransfer.md)"
+msgstr "[开始比特传输](./Start-BitsTransfer.md)"
+
+msgid "[Suspend-BitsTransfer](./Suspend-BitsTransfer.md)"
+msgstr "[Suspend-BitsTransfer](./Suspend-BitsTransfer.md)"

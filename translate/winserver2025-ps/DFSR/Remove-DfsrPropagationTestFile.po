@@ -1,0 +1,148 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:44:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-DfsrPropagationTestFile"
+msgstr "# 删除 DfsrPropagationTestFile 文件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes DFS Replication propagation test files."
+msgstr "删除DFS复制传播测试文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-DfsrPropagationTestFile** cmdlet removes test files from a Distributed File System (DFS) Replication replicated folder.\n"
+"Once you remove the file from one member computer in a replication group, DFS Replication removes the file from all other members.\n"
+"To create test files, use the **Start-DfsrPropagationTest** cmdlet."
+msgstr ""
+"`Remove-DfsrPropagationTestFile` cmdlet "
+"用于从分布式文件系统（DFS）复制文件夹中删除测试文件。一旦您从一个复制组中的成员计算机上删除了某个文件，DFS Replication "
+"会自动将该文件从所有其他成员计算机上也删除掉。要创建测试文件，请使用 `Start-DfsrPropagationTest` cmdlet。"
+
+msgid ""
+"Test files contain only test metadata.\n"
+"You can remove them at any time."
+msgstr "测试文件仅包含测试元数据。您可以在任何时候删除它们。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Remove all test files from a specified replicated folder"
+msgstr "### 示例 1：从指定的复制文件夹中删除所有测试文件"
+
+msgid ""
+"This command removes all propagation test files from the RF07 folder on the computer named SRV01.\n"
+"This computer is part of the group named RG01.\n"
+"The value of zero (0) for the *AgeInDays* parameter causes the command to remove all test files, no matter how long ago you created them.\n"
+"The command does not include the *Force* parameter, so you must confirm the removal."
+msgstr ""
+"此命令会从名为 SRV01 的计算机上的 RF07 文件夹中删除所有与传播测试相关的文件。该计算机属于名为 RG01 的组。*AgeInDays* "
+"参数的值为 0（零），这意味着无论这些测试文件是何时创建的，该命令都会将它们全部删除。由于此命令没有包含 *Force* "
+"参数，因此您必须确认是否真的要执行删除操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the age, in days, of propagation test files to delete.\n"
+"To delete propagation files created within the past 24 hours or to delete all propagation test files, set this value to zero (0)."
+msgstr ""
+"指定用于删除的传播测试文件的年龄（以天为单位）。如果要删除过去24小时内创建的传播文件，或者要删除所有传播测试文件，请将此值设置为零（0）。"
+
+msgid ""
+"Specifies the name of a replication member computer.\n"
+"If you do not specify this parameter, the cmdlet uses the current computer."
+msgstr "指定复制成员计算机的名称。如果您不指定此参数，该 cmdlet 将使用当前的计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names of replicated folders.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet removes test files from all replicated folders."
+msgstr ""
+"指定一个包含已复制文件夹名称的数组。你可以使用逗号分隔的列表以及通配符（*）。如果未指定此参数，该cmdlet将从所有已复制的文件夹中删除测试文件。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"If you do not specify this parameter, the cmdlet removes test files from replicated folders for all groups within the specified domain."
+msgstr ""
+"指定一个复制组名称的数组。你可以使用逗号分隔的列表以及通配符（*）。如果你不指定此参数，该cmdlet将从指定域内的所有组的复制文件夹中删除测试文件。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+
+msgid "### string"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Start-DfsrPropagationTest](./Start-DfsrPropagationTest.md)"
+msgstr "[Start-DfsrPropagationTest](./Start-DfsrPropagationTest.md)"
+
+msgid "[Write-DfsrPropagationReport](./Write-DfsrPropagationReport.md)"
+msgstr "[Write-DfsrPropagationReport](./Write-DfsrPropagationReport.md)"

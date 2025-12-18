@@ -1,0 +1,228 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:32:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-EtwTraceProvider"
+msgstr "# 添加 TraceProvider"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Adds an ETW trace provider to an ETW trace session or AutoLogger session "
+"configuration."
+msgstr "向 ETW（事件跟踪）会话或 AutoLogger 会话配置中添加一个 ETW 跟踪提供者。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### BySession"
+msgstr "### BySession"
+
+msgid "### ByAutologger"
+msgstr "### 作者：ByAutologger"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-EtwTraceProvider** cmdlet adds an Event Tracing for Windows (ETW) "
+"trace provider to a specified ETW trace session or AutoLogger session "
+"configuration with the specified parameters."
+msgstr ""
+"`Add-EtwTraceProvider` cmdlet 根据指定的参数，将一个 Event Tracing for Windows (ETW) "
+"追踪提供者添加到指定的 ETW 追踪会话或 AutoLogger 会话配置中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Add an ETW trace provider to an AutoLogger configuration"
+msgstr "### 示例 1：向 AutoLogger 配置中添加一个 ETW 跟踪提供者"
+
+msgid ""
+"This command adds the ETW trace provider that has the specified GUID to an "
+"AutoLogger configuration named WFP-IPsec Trace."
+msgstr "此命令将具有指定GUID的ETW跟踪提供程序添加到名为“WFP-IPsec Trace”的AutoLogger配置中。"
+
+msgid "### Example 2: Add an ETW trace provider to an ETW session"
+msgstr "### 示例 2：向 ETW 会话中添加一个 ETW 跟踪提供者"
+
+msgid ""
+"This command adds the ETW trace provider that has the specified GUID to an "
+"session named VMM."
+msgstr "此命令将具有指定GUID的ETW跟踪提供程序添加到名为VMM的会话中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用该参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job` "
+"cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid "Specifies the name of the target AutoLogger session."
+msgstr "指定目标 AutoLogger 会话的名称。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前，会提示您确认是否要执行该操作。"
+
+msgid "Specifies the provider ID."
+msgstr "指定提供者ID。"
+
+msgid "Specifies the maximum event level for which to enable for collection."
+msgstr "指定允许收集事件的最大级别。"
+
+msgid ""
+"For more information, see [EnableTraceEx2 "
+"function](https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/dd392305.aspx) on MSDN."
+msgstr ""
+"有关更多信息，请参阅 MSDN 上的 [EnableTraceEx2 函数](https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/dd392305.aspx)。"
+
+msgid ""
+"Specifies a bitmask of keywords an event must match in order to be logged to"
+" the session."
+msgstr "指定一个关键字位掩码（bitmap），事件必须与该掩码匹配才能被记录到会话中。"
+
+msgid ""
+"An event must match every keyword set by this parameter.\n"
+"Most of the time, the *MatchAnyKeyword* parameter is more suitable."
+msgstr "一个事件必须与该参数设置的每个关键词都匹配。在大多数情况下，使用*MatchAnyKeyword*参数更为合适。"
+
+msgid ""
+"For more information, see [EnableTraceEx2 "
+"function](https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/dd392305.aspx) on MSDN."
+msgstr ""
+"有关更多信息，请参阅 MSDN 上的 [EnableTraceEx2 函数](https://msdn.microsoft.com/en-"
+"us/library/windowsdesktop/dd392305.aspx)。"
+
+msgid ""
+"Specifies a bitmask of keywords an event must match in order to be logged to"
+" the session."
+msgstr "指定一个关键字位掩码（bitmap），事件必须与该位掩码匹配才能被记录到会话中。"
+
+msgid "An event must match at least one keyword set by this parameter."
+msgstr "一个事件必须至少与该参数设置的一个关键词集合相匹配。"
+
+msgid ""
+"For more information, see [EnableTraceEx2 "
+"function](https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/dd392305.aspx) on MSDN."
+msgstr ""
+"有关更多信息，请参阅 MSDN 上的 [EnableTraceEx2 函数](https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/dd392305.aspx)。"
+
+msgid ""
+"Specifies the Enable property to use for events logged from this provider to"
+" the session."
+msgstr "指定用于从该提供者记录到会话中的事件的“Enable”属性。"
+
+msgid ""
+"For more information, see [Configuring and Starting an AutoLogger "
+"Session](https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa363687.aspx)."
+msgstr ""
+"有关更多信息，请参阅[配置和启动自动记录会话](https://msdn.microsoft.com/en-"
+"us/library/windowsdesktop/aa363687.aspx)。"
+
+msgid "Specifies the name of the target ETW session."
+msgstr "指定目标 ETW 会话的名称。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of zero is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大并发操作数量。如果省略此参数或输入值为 0，Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Configuring and Starting an AutoLogger "
+"Session](https://msdn.microsoft.com/library/windows/desktop/aa363687.aspx)"
+msgstr ""
+"[配置并启动自动记录器会话](https://msdn.microsoft.com/library/windows/desktop/aa363687.aspx)"
+
+msgid ""
+"[Configuring and Starting an Event Tracing "
+"Session](https://msdn.microsoft.com/library/windows/desktop/aa363688.aspx)"
+msgstr ""
+"[配置并启动事件追踪会话](https://msdn.microsoft.com/library/windowsdesktop/aa363688.aspx)"
+
+msgid "[Get-EtwTraceProvider](./Get-EtwTraceProvider.md)"
+msgstr "[Get-EtwTraceProvider](./Get-EtwTraceProvider.md)"
+
+msgid "[Remove-EtwTraceProvider](./Remove-EtwTraceProvider.md)"
+msgstr "[Remove-EtwTraceProvider](./Remove-EtwTraceProvider.md)"
+
+msgid "[Set-EtwTraceProvider](./Set-EtwTraceProvider.md)"
+msgstr "[Set-EtwTraceProvider](./Set-EtwTraceProvider.md)"

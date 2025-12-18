@@ -1,0 +1,130 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:22:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppxVolume"
+msgstr "# Get-AppxVolume"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets appx volumes for the computer."
+msgstr "获取计算机的 AppX 容量信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DefaultParameterSet"
+msgstr "### DefaultParameterSet"
+
+msgid "### OnlineParameterSet"
+msgstr "### OnlineParameterSet"
+
+msgid "### OfflineParameterSet"
+msgstr "### OfflineParameterSet"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-AppxVolume` cmdlet gets a list of **AppxVolume** objects known to the computer.\n"
+"Volumes can be added by the user or a device, for instance, by using Storage Sense."
+msgstr ""
+"`Get-AppxVolume` cmdlet 可以获取计算机上已知的所有 **AppxVolume** "
+"对象的列表。这些卷可以由用户或设备添加，例如通过使用 Storage Sense 功能来添加。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all the volumes"
+msgstr "### 示例 1：获取所有卷"
+
+msgid "The command gets all the **AppxVolume** objects on the computer."
+msgstr "该命令会获取计算机上所有的 **AppxVolume** 对象。"
+
+msgid "### Example 2: Get the volume at a path"
+msgstr "### 示例 2：获取指定路径下的文件体积（即文件大小）"
+
+msgid "This command gets the **AppxVolume** at the path F:\\."
+msgstr "这个命令会获取位于路径 F:\\ 下的 **AppxVolume** 文件。"
+
+msgid "### Example 3: Get mounted volumes"
+msgstr "#### 示例 3：获取已挂载的卷"
+
+msgid ""
+"This command gets only **AppxVolume** objects that are currently mounted on "
+"the computer."
+msgstr "该命令仅获取当前已挂载在计算机上的 **AppxVolume** 对象。"
+
+msgid "### Example 4: Get volumes that are note mounted"
+msgstr "### 示例 4：获取未挂载的卷"
+
+msgid ""
+"This command gets the **AppxVolume** objects that not currently mounted on "
+"the computer."
+msgstr "这个命令用于获取那些当前没有挂载到计算机上的 **AppxVolume** 对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet returns only volumes that are currently "
+"dismounted."
+msgstr "表示此cmdlet仅返回当前已卸载的卷。"
+
+msgid ""
+"Indicates that this cmdlet returns only volumes that are currently mounted."
+msgstr "表示此 cmdlet 仅返回当前已挂载的卷。"
+
+msgid ""
+"Specifies the path of the mount point of a volume. This cmdlet gets a volume at the location that\n"
+"this parameter specifies."
+msgstr "指定卷的挂载点的路径。此cmdlet会获取位于该参数所指定位置的卷。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Appx.PackageManager.Commands.AppxVolume"
+msgstr "### Microsoft.AppxPackageManager.Commands.AppxVolume"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppxVolume](./Add-AppxVolume.md)"
+msgstr "[Add-AppxVolume](./Add-AppxVolume.md)"
+
+msgid "[Dismount-AppxVolume](./Dismount-AppxVolume.md)"
+msgstr "[Dismount-AppxVolume](./Dismount-AppxVolume.md)"
+
+msgid "[Mount-AppxVolume](./Mount-AppxVolume.md)"
+msgstr "[Mount-AppxVolume](./Mount-AppxVolume.md)"
+
+msgid "[Remove-AppxVolume](./Remove-AppxVolume.md)"
+msgstr "[Remove-AppxVolume](./Remove-AppxVolume.md)"

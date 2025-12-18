@@ -1,0 +1,128 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:27:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-ClusterGroup"
+msgstr "# 启动 ClusterGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Starts one or more clustered roles, also known as resource groups, on a "
+"failover cluster."
+msgstr "在故障转移集群上启动一个或多个群集角色（也称为资源组）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Start-ClusterGroup` cmdlet starts one or more clustered roles, also known as resource groups,\n"
+"on a failover cluster. With this cmdlet, a clustered role can be started again after stopping it for\n"
+"maintenance or diagnosis."
+msgstr ""
+"`Start-ClusterGroup` cmdlet 可以在故障转移集群上启动一个或多个集群角色（也称为资源组）。使用此 "
+"cmdlet，可以在因维护或诊断需要停止某个集群角色后重新启动它。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example starts the clustered file server, or resource group, called "
+"`FileServer1`."
+msgstr "这个示例启动了一个名为 `FileServer1` 的集群文件服务器或资源组。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example starts the clustered file server, or resource group, called `FileServer1`.\n"
+"The Windows PowerShell prompt returns as soon as the action has been initiated."
+msgstr ""
+"这个示例启动了一个名为“FileServer1”的集群文件服务器或资源组。一旦操作开始执行，Windows PowerShell提示符就会立即显示出来。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies that locked groups are ignored when running the cmdlet."
+msgstr "指定在运行此cmdlet时忽略已锁定的组。"
+
+msgid "Specifies the clustered role to start."
+msgstr "指定要启动的集群角色。"
+
+msgid "Specifies the name of the clustered role to start."
+msgstr "指定要启动的集群角色的名称。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定等待该cmdlet完成所需的时间（以秒为单位）。如果未指定**Wait**参数，那么cmdlet会一直等待直到完成；如果指定了`-Wait "
+"0`，则命令会被立即执行，而cmdlet会在不进行任何等待的情况下立即返回结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShell-clusterGroup"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterGroup](./Add-ClusterGroup.md)"
+msgstr "[Add-ClusterGroup](./Add-ClusterGroup.md)"
+
+msgid "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+msgstr "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+
+msgid "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+msgstr "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+
+msgid "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+msgstr "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+
+msgid "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"
+msgstr "[停止集群组](./Stop-ClusterGroup.md)"

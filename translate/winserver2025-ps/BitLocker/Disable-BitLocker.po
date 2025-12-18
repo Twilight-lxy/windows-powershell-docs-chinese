@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:32:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-BitLocker"
+msgstr "# 禁用BitLocker"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Disables BitLocker Drive Encryption for a volume."
+msgstr "禁用某个卷的 BitLocker 驱动器加密功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Disable-BitLocker** cmdlet disables BitLocker Drive Encryption for a BitLocker volume.\n"
+"When you run this cmdlet, it removes all key protectors and begins decrypting the content of the volume."
+msgstr ""
+"`Disable-BitLocker` cmdlet 用于禁用 BitLocker 对卷的加密功能。运行此 cmdlet "
+"时，它会删除所有密钥保护机制，并开始解密该卷中的数据。"
+
+msgid ""
+"If the volume that hosts the operating system contains any automatic unlocking keys, the cmdlet does not proceed.\n"
+"You can use the **Clear-BitLockerAutoUnlock** cmdlet to remove all automatic unlocking keys.\n"
+"Then you can disable BitLocker for the volume."
+msgstr ""
+"如果包含操作系统的卷中存在任何自动解锁密钥，该cmdlet将不会继续执行。你可以使用**Clear-BitLockerAutoUnlock** "
+"cmdlet来删除所有自动解锁密钥，之后就可以禁用该卷上的BitLocker功能了。"
+
+msgid ""
+"For an overview of BitLocker, see [BitLocker Drive Encryption "
+"Overview](https://technet.microsoft.com/en-us/library/cc732774.aspx) on "
+"TechNet."
+msgstr ""
+"有关 BitLocker 的概述，请参阅 TechNet 上的 [BitLocker "
+"驱动器加密概述](https://technet.microsoft.com/en-us/library/cc732774.aspx)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable BitLocker for a volume"
+msgstr "#### 示例 1：禁用某个卷的 BitLocker 功能"
+
+msgid ""
+"This command disables BitLocker for the specified BitLocker volume.\n"
+"BitLocker begins decrypting data on C: immediately."
+msgstr "此命令将禁用指定BitLocker卷的BitLocker功能。BitLocker会立即开始解密C:盘上的数据。"
+
+msgid "### Example 2: Disable BitLocker for all volumes"
+msgstr "### 示例 2：禁用所有卷的 BitLocker 功能"
+
+msgid "This example disables BitLocker encryption for all volumes."
+msgstr "这个示例会禁用所有卷的 BitLocker 加密功能。"
+
+msgid ""
+"The first command uses **Get-BitLockerVolume** to get all the BitLocker "
+"volumes for the current computer and stores them in the $BLV variable."
+msgstr ""
+"第一个命令使用 **Get-BitLockerVolume** 来获取当前计算机上的所有 BitLocker 加密卷，并将它们存储在 `$BLV` "
+"变量中。"
+
+msgid ""
+"The second command disables BitLocker encryption for all the BitLocker volumes stored in the $BLV variable.\n"
+"BitLocker begins decrypting data on the volumes."
+msgstr ""
+"第二个命令会禁用存储在 `$BLV` 变量中的所有 BitLocker 卷的 BitLocker 加密功能。随后，BitLocker "
+"会开始解密这些卷上的数据。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies an array of drive letters or BitLocker volume objects.\n"
+"The cmdlet disables protection for the volumes specified.\n"
+"To obtain a BitLocker volume object, use the **Get-BitLockerVolume** cmdlet."
+msgstr ""
+"指定一个包含驱动器字母或 BitLocker 卷对象的数组。该 cmdlet 会禁用所指定卷的保护功能。若要获取 BitLocker 卷对象，请使用 "
+"**Get-BitLockerVolume** cmdlet。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### BitLockerVolume[], String[]"
+msgstr "### BitLockerVolume[], String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### BitLockerVolume[]"
+msgstr "### BitLockerVolume[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-BitLocker](./Enable-BitLocker.md)"
+msgstr "[Enable-BitLocker](./Enable-BitLocker.md)"
+
+msgid "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+msgstr "[Get-BitLockerVolume](./Get-BitlockerVolume.md)"
+
+msgid "[Lock-BitLocker](./Lock-BitLocker.md)"
+msgstr "[Lock-BitLocker](./Lock-BitLocker.md)"
+
+msgid "[Resume-BitLocker](./Resume-BitLocker.md)"
+msgstr "[Resume-BitLocker](./Resume-BitLocker.md)"
+
+msgid "[Suspend-BitLocker](./Suspend-BitLocker.md)"
+msgstr "[暂停 BitLocker 功能](./Suspend-BitLocker.md)"
+
+msgid "[Unlock-BitLocker](./Unlock-BitLocker.md)"
+msgstr "[解锁 BitLocker](./Unlock-BitLocker.md)"

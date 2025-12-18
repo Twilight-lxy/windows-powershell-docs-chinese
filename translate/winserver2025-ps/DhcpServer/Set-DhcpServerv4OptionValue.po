@@ -1,0 +1,362 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:06:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DhcpServerv4OptionValue"
+msgstr "# Set-DhcpServerv4OptionValue"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets an IPv4 option value at the server, scope, or reservation level."
+msgstr "在服务器、范围或预留级别设置一个IPv4选项值。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### OptionIds (Default)"
+msgstr "### OptionIds（默认值）"
+
+msgid "### CommonOptions"
+msgstr "### CommonOptions"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-DhcpServerv4OptionValue** cmdlet sets an IPv4 option value at the server, scope, or reservation level.\n"
+"The definition for the option must already exist.\n"
+"This cmdlet fails if the option definition does not occur in the Dynamic Host Configuration Protocol (DHCP) server service."
+msgstr ""
+"`Set-DhcpServerv4OptionValue` cmdlet 可以在服务器、作用域或预留级别设置 IPv4 "
+"选项的值。该选项的定义必须已经存在。如果动态主机配置协议（DHCP）服务器服务中不存在该选项的定义，此 cmdlet 将会失败。"
+
+msgid ""
+"If you specify only the *ReservedIP* parameter, the option values are set at the reservation level.\n"
+"If you specify only the *ScopeId* parameter, the option values are set at the scope level."
+msgstr ""
+"如果您只指定了*ReservedIP*参数，那么选项值将在预留级别进行设置；如果您只指定了*ScopeId*参数，那么选项值将在范围级别进行设置。"
+
+msgid ""
+"If you specify neither the *ScopeId* nor *ReservedIP* parameter, the option values are set at the server level.\n"
+"If you specify the *VendorClass* parameter, the option value is set for that vendor class."
+msgstr ""
+"如果您既没有指定 *ScopeId* 参数，也没有指定 *ReservedIP* 参数，那么这些选项的值将在服务器层面进行设置。如果您指定了 "
+"*VendorClass* 参数，那么该选项的值将会针对所指定的供应商类别进行设置。"
+
+msgid ""
+"If you specify the *UserClass* parameter, the option value is set for that "
+"user class."
+msgstr "如果您指定了 *UserClass* 参数，那么该选项的值就会设置为对应的用户类。"
+
+msgid ""
+"If you specify the *PolicyName* parameter, the option values are set for that policy.\n"
+"The *UserClass* and *PolicyName* parameters cannot both be specified.\n"
+"The *ScopeId* and *ReservedIP* parameters cannot both be specified."
+msgstr ""
+"如果您指定了 *PolicyName* 参数，那么该参数对应的选项值将被设置。*UserClass* 和 *PolicyName* "
+"这两个参数不能同时被指定。同理，*ScopeId* 和 *ReservedIP* 这两个参数也不能同时被指定。"
+
+msgid "The *PolicyName* and *ReservedIP* parameters cannot both be specified."
+msgstr "*PolicyName* 和 *ReservedIP* 参数不能同时被指定。"
+
+msgid ""
+"The option values for policies can only be set for a DHCP server service that runs on Windows Server® 2012 and later versions of the Windows operating system.\n"
+"Setting user class options for a DHCP server service that runs on Windows Server 2012 and later versions of the Windows operating creates of a policy with the policy name set to the name of the user class.\n"
+"For a DHCP server service that runs on firstref_server_7 or earlier, only option values based on the user class can be set."
+msgstr ""
+"策略的选项值仅能用于在 Windows Server® 2012 及更高版本的 Windows 操作系统上运行的 DHCP 服务器服务。为在 "
+"Windows Server 2012 及更高版本上运行的 DHCP "
+"服务器服务设置用户类选项时，会生成一个策略，该策略的名称将与所设置的用户类名称相同。而对于在 firstref_server_7 或更低版本上运行的 "
+"DHCP 服务器服务，只能设置基于用户类的选项值。"
+
+msgid ""
+"To set options based on legacy user classes, the *UserClass* parameter must "
+"be specified."
+msgstr "要基于传统的用户类别来设置选项，必须指定 *UserClass* 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set server level option values"
+msgstr "### 示例 1：设置服务器级别的选项值"
+
+msgid ""
+"This example sets the server level option values for DNS server, WINS "
+"server, DNS domain, router, and WPAD."
+msgstr "这个示例设置了服务器级别的选项值，包括DNS服务器、WINS服务器、DNS域、路由器和WPAD的相关配置。"
+
+msgid "### Example 2: Set option values for a scope"
+msgstr "### 示例 2：为某个范围设置选项值"
+
+msgid ""
+"This example sets the option values for DNS server, WINS server, DNS domain,"
+" router, and WPAD for scope 10.10.10.0."
+msgstr "这个示例为作用域 10.10.10.0 设置了 DNS 服务器、WINS 服务器、DNS 域名、路由器和 WPAD 的相关选项值。"
+
+msgid "### Example 3: Set option values for an address"
+msgstr "### 示例 3：为地址设置选项值"
+
+msgid ""
+"This example sets the option values for DNS server, WINS server, DNS domain,"
+" router, and WPAD for reserved IP address 10.10.10.5."
+msgstr "这个示例为保留的IP地址10.10.10.5设置了DNS服务器、WINS服务器、DNS域名、路由器以及WPAD的相关选项值。"
+
+msgid "### Example 4: Set option values for a policy"
+msgstr "### 示例 4：为策略设置选项值"
+
+msgid ""
+"This example sets the option values for DNS server, WINS server, DNS domain,"
+" router, and WPAD for policy named LabComputers in the scope 10.10.10.0."
+msgstr ""
+"这个示例为名为“LabComputers”的策略设置了DNS服务器、WINS服务器、DNS域名、路由器和WPAD的选项值，该策略的作用域是10.10.10.0。"
+
+msgid "### Example 5: Set service-wide option value for DNS server"
+msgstr "### 示例 5：为 DNS 服务器设置全服务范围内的选项值"
+
+msgid ""
+"This example sets the server-wide DHCPv4 option value for option ID 6, or "
+"DNS server."
+msgstr "这个示例为服务器范围内的DHCPv4选项设置了选项ID为6（即DNS服务器）的选项值。"
+
+msgid "### Example 6: Set option value for DNS server for a scope"
+msgstr "### 示例 6：为某个作用域设置 DNS 服务器的选项值"
+
+msgid ""
+"This example sets the DHCPv4 option value for option ID 6, or DNS server, "
+"for the scope 10.10.10.0."
+msgstr "这个示例为范围 10.10.10.0 设置了 DHCPv4 选项的值，该选项的 ID 为 6，对应的选项是 DNS 服务器。"
+
+msgid "### Example 7: Set option value for DNS server for a reservation"
+msgstr "### 示例 7：为预订设置 DNS 服务器的选项值"
+
+msgid ""
+"This example sets the DHCPv4 option value for option ID 6, or DNS server, "
+"for the specified reservation."
+msgstr "这个示例为指定的预留资源设置了DHCPv4选项的值，该选项的ID为6（即DNS服务器）。"
+
+msgid "### Example 8: Set a vendor class specific option value"
+msgstr "### 示例 8：设置特定于供应商类的选项值"
+
+msgid ""
+"This example sets the vendor class specific DHCPv4 option value for option "
+"ID 5 on the specified scope for the specified vendor class named MSUCClient."
+msgstr ""
+"这个示例为名为 MSUCClient 的指定供应商类，在指定的作用域内，设置了供应商类别特定的 DHCPv4 选项值（选项 ID 为 5）。"
+
+msgid "### Example 9: Set option value for DNS server for a policy"
+msgstr "### 示例 9：为策略设置 DNS 服务器的选项值"
+
+msgid ""
+"This example sets the DHCPv4 option value for option ID 6, or DNS server, on"
+" the specified scope for the specified policy."
+msgstr "这个示例为指定的策略，在指定的作用域内，设置了 DHCPv4 选项的值（对应于选项 ID 6，即 DNS 服务器）。"
+
+msgid "### Example 10: Set a user class specific option value for DNS server"
+msgstr "### 示例 10：为 DNS 服务器设置特定于用户类的选项值"
+
+msgid ""
+"This example sets the user class specific DHCPv4 option value for option ID "
+"6, or DNS server, on the specified scope for the specified user class."
+msgstr "这个示例为指定的用户类，在指定的作用域内，设置与用户类别相关的DHCPv4选项值（即选项ID为6的选项，该选项用于配置DNS服务器）。"
+
+msgid "### Example 11: Set a vendor class specific option value for a scope"
+msgstr "### 示例 11：为某个作用域设置特定于供应商类的选项值"
+
+msgid ""
+"This example sets the vendor class specific DHCPv4 option value for option "
+"ID 43, or embedded vendor-specific options, on the specified scope."
+msgstr "这个示例为指定的作用域设置了供应商类特定的DHCPv4选项值（选项ID为43），即那些嵌入的、与特定供应商相关的选项。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的形式运行该cmdlet。使用此参数来执行那些需要很长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the DHCP server service."
+msgstr "指定运行DHCP服务器服务的目标计算机的DNS名称，或IPv4或IPv6地址。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies the value for the DNS domain option."
+msgstr "指定DNS域名选项的值。"
+
+msgid ""
+"Specifies one or more values for the DNS server option, in the IPv4 address "
+"format."
+msgstr "为DNS服务器选项指定一个或多个值，这些值采用IPv4地址格式表示。"
+
+msgid ""
+"Specifies that the DNS server validation is skipped.\n"
+"This parameter is only applicable if the *DnsServer* parameter is specified."
+msgstr "指定跳过DNS服务器验证步骤。此参数仅在指定了*DnsServer*参数的情况下才适用。"
+
+msgid ""
+"Specifies the numeric identifier (ID) of the option for which one or more "
+"values are set."
+msgstr "指定某个选项的数值标识符（ID），该选项已设置了一个或多个值。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the name of the policy for which one or more option values are "
+"set."
+msgstr "指定要为其设置一个或多个选项值的策略的名称。"
+
+msgid ""
+"Specifies the IPv4 address of the reservation for which one or more option "
+"values are set."
+msgstr "指定已设置一个或多个选项值的预留资源的IPv4地址。"
+
+msgid ""
+"Specifies one or more values for the router or default gateway option, in "
+"IPv4 address format."
+msgstr "为“路由器”或“默认网关”选项指定一个或多个值，这些值需采用 IPv4 地址格式表示。"
+
+msgid ""
+"Specifies the scope ID, in IPv4 address format for which one or more option "
+"values are set."
+msgstr "指定一个范围ID（采用IPv4地址格式），为一个或多个选项值设置相应的值。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的最大操作数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机。"
+
+msgid "Sets the option value for the specified user class."
+msgstr "为指定的用户类别设置选项值。"
+
+msgid ""
+"Specifies one or more values to be set for the option.\n"
+"Use the following formats:"
+msgstr "指定一个或多个要为该选项设置的值。使用以下格式："
+
+msgid "Sets the option value for the specified vendor class."
+msgstr "为指定的供应商类别设置选项值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid ""
+"Specifies the values for the WINS server option, in IPv4 address format."
+msgstr "指定 WINS 服务器选项的值，采用 IPv4 地址格式。"
+
+msgid ""
+"Specifies the value for the web proxy auto detection option.\n"
+"The value for this option is specified as a URL."
+msgstr "用于指定网页代理自动检测选项的值。该选项的值以URL的形式进行设置。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionDefinition"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionDefinition"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4OptionValue"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DhcpServerv4OptionValue](./Get-DhcpServerv4OptionValue.md)"
+msgstr "[Get-DhcpServerv4OptionValue](./Get-DhcpServerv4OptionValue.md)"
+
+msgid "[Remove-DhcpServerv4OptionValue](./Remove-DhcpServerv4OptionValue.md)"
+msgstr "[Remove-DhcpServerv4OptionValue](./Remove-DhcpServerv4OptionValue.md)"

@@ -1,0 +1,142 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:32:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Expand-WindowsCustomDataImage"
+msgstr "# 扩展 Windows 自定义数据镜像"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Expands a custom data image."
+msgstr "展开一个自定义的数据图像。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Expand-WindowsCustomDataImage** cmdlet expands a custom data image.\n"
+"Single instance files apply to the operating system partition that is contained in a custom data image in the recovery folder on the device."
+msgstr ""
+"`Expand-WindowsCustomDataImage` cmdlet "
+"用于展开自定义数据镜像。这些单实例文件适用于设备恢复文件夹中的自定义数据镜像所包含的操作系统分区。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Expand a custom data image"
+msgstr "### 示例 1：展开自定义数据图像"
+
+msgid ""
+"This command expands the custom data image C:\\oem.ppkg to the specified image path.\n"
+"This command specifies the *SingleInstance* parameter."
+msgstr "此命令将自定义数据镜像文件 C:\\oem.ppkg 解压到指定的镜像路径。该命令指定了 *SingleInstance* 参数。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the custom data of a Windows image captured in a WIM container."
+msgstr "用于指定在 WIM 容器中捕获的 Windows 镜像的自定义数据。"
+
+msgid "Specifies the location of a WIM file."
+msgstr "指定WIM文件的位置。"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及常规信息  \n"
+"- 4 = 显示上述所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK（一种临时存储空间），其容量可能低至 32 MB。日志文件会自动被归档；归档后的日志文件会在原文件名后添加 "
+"`.bak` 扩展名，并生成一个新的日志文件。每次日志文件被归档时，原来的 `.bak` 文件都会被覆盖。如果使用未加入域的网络共享资源，请在使用 "
+"`DISM` 命令设置日志路径之前，先通过 `net use` 命令结合域凭据来配置访问权限。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，该目录将在执行服务维护操作时用于解压文件。此目录必须存在于本地计算机上。如果未指定临时目录，则系统会使用 "
+"`\\Windows\\%Temp%\\` 目录，并为每次 DISM "
+"操作生成一个随机十六进制数值作为子目录的名称。每次操作完成后，该临时目录中的所有文件都会被删除。切勿将网络共享位置用作解压安装包（.cab 或 .msu"
+" 文件）的临时目录；用于服务维护过程中临时解压文件的目录应始终是本地目录。"
+
+msgid ""
+"Indicates that this cmdlet changes the custom data files applied on the "
+"operating system partition to file pointers backed up by the file payloads "
+"in the custom data image."
+msgstr "这表示该cmdlet会修改应用于操作系统分区上的自定义数据文件，使其变为由自定义数据镜像中的文件载荷所备份的文件指针。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid ""
+"### System.String[], Microsoft.Dism.Commands.ImageObject, "
+"Microsoft.Dism.Commands.ImageObjectWithState"
+msgstr ""
+"### System.String[]、Microsoft.Dism "
+"Commands.ImageObject、Microsoft.DismCommands.ImageObjectWithState"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.OfflineImageObject"
+msgstr "### Microsoft.Dism Commands.OfflineImageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Expand-WindowsImage](./Expand-WindowsImage.md)"
+msgstr "[Expand-WindowsImage](./Expand-WindowsImage.md)"

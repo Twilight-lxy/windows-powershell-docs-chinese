@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:55:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-RmsCluster"
+msgstr "# Update-RmsCluster"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Updates the AD RMS cluster information."
+msgstr "更新AD RMS集群信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Update-RmsCluster** cmdlet updates the cluster information including the hierarchy of content that defines the cluster in Active Directory Rights Management Services (AD RMS).\n"
+"The AD RMS cluster hierarchy is reflected in the directory structure of the provider drive associated with the cluster.\n"
+"For example, you can access the rights policy template information from the RightsPolicyTemplate subdirectory."
+msgstr ""
+"**Update-RmsCluster** cmdlet 用于更新集群信息，包括在 Active Directory 权限管理服务（AD "
+"RMS）中定义该集群的内容层次结构。AD RMS 集群的结构会反映在与该集群关联的提供程序驱动器的目录结构中。例如，您可以从 "
+"RightsPolicyTemplate 子目录中访问权限策略模板的相关信息。"
+
+msgid ""
+"To update AD RMS cluster information, set the *Path* parameter to "
+"`<PSDrive>:\\` where `<PSDrive>` is the AD RMS provider drive ID associated "
+"with the cluster that you want to update."
+msgstr ""
+"要更新 AD RMS 集群信息，请将 *Path* 参数设置为 `<PSDrive>:\\`，其中 `<PSDrive>` 是与要更新的集群关联的 AD"
+" RMS 提供程序驱动器 ID。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update cluster information"
+msgstr "### 示例 1：更新集群信息"
+
+msgid "This command updates the AD RMS cluster information."
+msgstr "此命令用于更新 AD RMS 集群的信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Overrides restrictions that prevent the command from succeeding if the "
+"changes do not compromise security."
+msgstr "如果所做的更改不会危及安全性，那么可以忽略那些阻止命令成功执行的限制。"
+
+msgid ""
+"Specifies a provider drive and path or relative path on the current drive.\n"
+"Use a dot (.) to specify the current location.\n"
+"This parameter does not accept wildcards and has no default value."
+msgstr "指定一个提供者驱动器以及路径，或者当前驱动器上的相对路径。可以使用点（.）来表示当前位置。此参数不支持通配符，并且没有默认值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"

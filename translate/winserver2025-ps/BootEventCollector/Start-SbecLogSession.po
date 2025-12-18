@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:59:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-SbecLogSession"
+msgstr "# 启动 SbecLogSession"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Starts an ETW log session."
+msgstr "开始一个ETW日志会话。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Start-SbecLogSession** cmdlet starts an Event Tracing for Windows "
+"(ETW) log session with full flexibility."
+msgstr ""
+"`Start-SbecLogSession` cmdlet 可以以非常灵活地启动一个用于 Windows 事件跟踪（Event Tracing for "
+"Windows，简称 ETW）的日志会话。"
+
+msgid ""
+"To start an ETW session in a simpler way with fewer parameters, use the "
+"**Start-SbecSimpleLogSession** cmdlet."
+msgstr ""
+"要以更简单的方式、使用更少的参数来启动一个 ETW（事件跟踪）会话，请使用 **Start-SbecSimpleLogSession** cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the buffer size for the session, in kilobytes.\n"
+"This is the size of one buffer, with the count of these buffers set by the *MinimumBufferCount* and *MaximumBufferCount* parameters."
+msgstr ""
+"指定会话的缓冲区大小（以千字节为单位）。这表示一个缓冲区的大小，而缓冲区的数量由 *MinimumBufferCount* 和 "
+"*MaximumBufferCount* 参数来控制。"
+
+msgid ""
+"Specifies the type of clock used for the events collected by this session: "
+"The acceptable values for this parameter are:"
+msgstr "指定此会话收集的事件所使用的时钟类型：该参数的可接受值包括："
+
+msgid ""
+"Specifies the timeout, in seconds, for the session buffers to automatically flush.\n"
+"You can disable the flushing of buffers on timeout by setting this parameter to 0, then the buffers will be written only when full or on an explicit flush."
+msgstr ""
+"指定会话缓冲区自动刷新的超时时间（以秒为单位）。您可以通过将此参数设置为 0 "
+"来禁用超时时的缓冲区刷新功能，这样缓冲区只有在满载或明确执行刷新操作时才会被写入。"
+
+msgid ""
+"Specifies flags for the NT Kernel Logger that enable the kernel events.\n"
+"For the setup and boot monitoring, the only reasonable flag is Process.\n"
+"This enumeration type is defined in $PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"用于指定 NT 内核日志记录器的标志，这些标志可以启用内核事件记录功能。对于系统设置和启动监控来说，唯一合理的标志是 "
+"“Process”。该枚举类型定义在 "
+"`$PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1` "
+"文件中。该参数的可接受值包括："
+
+msgid ""
+"Specifies the highest detail level value to enable for providers.\n"
+"This enumeration type is defined in $PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"指定可供提供者使用的最高细节级别值。此枚举类型定义在 $PsHome-"
+"modules\\BootEventCollector\\SbecTraceHelpers.psm1 中。该参数的可接受值为："
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### SbecEtwTrace.TraceSessionInfo"
+msgstr "### SbecEtwTrace.TraceSessionInfo"
+
+msgid ""
+"The class is defined in "
+"$PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1."
+msgstr "该类定义在 $PsHomeModules\\BootEventCollector\\SbecTraceHelpers.psm1 文件中。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+msgstr "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+
+msgid "[Save-SbecLogSession](./Save-SbecLogSession.md)"
+msgstr "[Save-SbecLogSession](./Save-SbecLogSession.md)"
+
+msgid "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+msgstr "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+
+msgid "[Start-SbecNtKernelLogSession](./Start-SbecNtKernelLogSession.md)"
+msgstr "[开始 SbecNt Kernel Log 会话](./Start-SbecNtKernelLogSession.md)"
+
+msgid "[Start-SbecSimpleLogSession](./Start-SbecSimpleLogSession.md)"
+msgstr "[开始 SbecSimpleLogSession 会话](./Start-SbecSimpleLogSession.md)"
+
+msgid "[Stop-SbecLogSession](./Stop-SbecLogSession.md)"
+msgstr "[停止 SbecLogSession 会话](./Stop-SbecLogSession.md)"

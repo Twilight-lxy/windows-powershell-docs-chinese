@@ -1,0 +1,196 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:50:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "Sets an app package as non-removable (can not be uninstalled)."
+msgstr "将一个应用程序包设置为不可移除的（无法卸载）。"
+
+msgid "# Set-NonRemovableAppsPolicy"
+msgstr "# Set-NonRemovableAppsPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets an app package as non-removable (can not be uninstalled)."
+msgstr "将某个应用包设置为不可移除（即无法卸载）的状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Offline"
+msgstr "### 离线模式"
+
+msgid "### Online"
+msgstr "### 在线"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The Set-NonRemovableAppsPolicy cmdlet sets an installed app package as either removable (capable of\n"
+"being uninstalled) or non-removable (can not be uninstalled)."
+msgstr ""
+"`Set-NonRemovableAppsPolicy` cmdlet "
+"用于将已安装的应用程序包设置为可移除（能够被卸载）或不可移除（无法被卸载）的状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the app package Application1 as non-removable"
+msgstr "### 示例 1：将应用包 `Application1` 设置为不可移除的"
+
+msgid "This command sets the app package *Application1* as non-removable."
+msgstr "此命令将应用程序包“Application1”设置为不可移除的（即用户无法删除该应用程序）。"
+
+msgid "### Example 2: Set the app package Application1 as removable"
+msgstr "### 示例 2：将应用程序包 Application1 设置为可移除的"
+
+msgid "This command sets the app package *Application1* as removable."
+msgstr "此命令将应用程序包“Application1”设置为可移除的（即用户可以将其从设备上卸载）。"
+
+msgid ""
+"### Example 3: Sets the app package Application1 as non-removable on an "
+"offline Windows image"
+msgstr "### 示例 3：将应用程序包 Application1 设置为在离线 Windows 系统上无法删除的状态"
+
+msgid ""
+"This command sets the app package *Application1* as non-removable for offline Windows image named\n"
+"*image.win*."
+msgstr ""
+"此命令将应用程序包“Application1”设置为无法卸载的（即用户无法从已安装的离线Windows镜像“image/win”中删除该应用程序包）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"用于指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及详细信息  \n"
+"- 4 = 包含上述所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to. If not set, the default is\n"
+"`%WINDIR%\\Logs\\Dism\\dism.log`. In Windows PE, the default directory is the RAMDISK scratch space\n"
+"which can be as low as 32 MB. The log file will automatically be archived. The archived log file\n"
+"will be saved with .bak appended to the file name and a new log file will be generated. Each time\n"
+"the log file is archived the .bak file will be overwritten. When using a network share that is not\n"
+"joined to a domain, use the net use command together with domain credentials to set access\n"
+"permissions before you set the log path for the DISM log."
+msgstr ""
+"指定日志文件的全路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 虚拟磁盘（其容量可能低至 32 MB）。日志文件会自动被归档；归档后的日志文件会在文件名后添加 `.bak` "
+"扩展名，并生成一个新的日志文件。每次日志文件被归档时，原来的 `.bak` 文件都会被覆盖。如果使用的是未加入域的网络共享资源，在设置 DISM "
+"日志文件的路径之前，请先使用 `net use` 命令并输入相应的域凭据来设置访问权限。"
+
+msgid "Configures an app package as removable or non-removable."
+msgstr "将应用程序包配置为可移除或不可移除的状态。"
+
+msgid ""
+" Accepted values are as follows:\n"
+"- 0 = Sets the application as removable and can be uninstalled.\n"
+"- 1 = Sets the application as non-removable and unable to be uninstalled."
+msgstr ""
+"允许的值如下：  \n"
+"- 0：将应用程序设置为可移除的（即可以卸载）。  \n"
+"- 1：将应用程序设置为不可移除的（即无法卸载）。"
+
+msgid ""
+"Specifies that the action is to be taken on the operating system that is currently running on the\n"
+"local computer."
+msgstr "指定该操作应在当前在本地计算机上运行的操作系统上执行。"
+
+msgid ""
+"Specifies the Package Family Name of the app package to set as non-"
+"removable."
+msgstr "指定应用程序包的“包系列名称”，并将其设置为不可移除的（即用户无法删除该应用包）。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service. If\n"
+"the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be\n"
+"specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"“WindowsDirectory”。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally. If not specified, the `\\Windows\\%Temp%` directory will be used,\n"
+"with a subdirectory name of a randomly generated hexadecimal value for each run of DISM. Items in\n"
+"the scratch directory are deleted after each operation. You should not use a network share location\n"
+"as a scratch directory to expand a package (.cab or .msu file) for installation. The directory used\n"
+"for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，该目录将在执行维护任务时用于提取文件。此目录必须存在于本地系统上。如果未指定临时目录，系统将使用 "
+"`\\Windows\\%Temp%` 目录，并为每次 DISM "
+"操作生成一个随机十六进制值的子目录名称。每次操作完成后，临时目录中的所有内容都会被删除。不建议使用网络共享位置作为提取文件或安装包（.cab 或 "
+".msu 文件）的临时目录；用于维护任务的临时文件提取操作的目录应为本地目录。"
+
+msgid ""
+"Specifies the path to the location of the BootMgr files. This is necessary only when the BootMgr\n"
+"files are located on a partition other than the one that you are running the command from. Use\n"
+"-SystemDrive to service an installed Windows image from a Windows PE environment."
+msgstr ""
+"指定包含 BootMgr 文件的路径。仅当 BootMgr 文件位于与运行命令的分区不同的分区上时，才需要设置此参数。使用 `-SystemDrive`"
+" 可以通过 Windows PE 环境来管理服务已安装的 Windows 镜像。"
+
+msgid ""
+"Specifies the path to the Windows directory relative to the image path. This cannot be the full path\n"
+"to the Windows directory; it should be a relative path. If not specified, the default is the Windows\n"
+"directory in the root of the offline image directory."
+msgstr ""
+"指定相对于图像路径的Windows目录的路径。该路径不能是Windows目录的完整路径，而应该是一个相对路径。如果未指定，默认值为离线图像目录根目录下的Windows目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.Management Automation.SwitchParameter"
+
+msgid "### Microsoft.Dism.Commands.LogLevel"
+msgstr "### Microsoft.Dism Commands.LogLevel"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.DismCommands.ImageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[https://go.microsoft.com/fwlink/?LinkId=293633](https://go.microsoft.com/fwlink/?LinkId=293633)"
+msgstr "[https://go.microsoft.com/fwlink/?LinkId=293633]"

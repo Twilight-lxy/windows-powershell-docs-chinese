@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:35:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Merge-CIPolicy"
+msgstr "# 合并CIP政策"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Combines the rules in several Code Integrity policy files."
+msgstr "将这些规则合并到多个代码完整性策略文件中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Merge-CIPolicy** cmdlet combines the rules in several Code Integrity policy files.\n"
+"This cmdlet creates a single policy .xml file.\n"
+"You can specify rules to add to the merged list.\n"
+"This cmdlet does not save redundant rules.\n"
+"The cmdlet appends a digit to the IDs of the rules to make the IDs of the rules unique."
+msgstr ""
+"`Merge-CIPolicy` cmdlet 将多个代码完整性（Code Integrity）策略文件中的规则合并成一个统一的 `.xml` "
+"政策文件。你可以指定要添加到合并后的列表中的规则，但该 cmdlet 会自动删除重复的规则。此外，它还会在规则的 ID 后添加一个数字，以确保每个规则的"
+" ID 都是唯一的。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Merge policies"
+msgstr "#### 示例 1：合并策略"
+
+msgid ""
+"This command merges policies defined in the two .xml files into a third file, MergedPolicy.xml.\n"
+"The cmdlet appends _0 to ID of the rules from the first policy, such as ID_SIGNER_S_17_0.\n"
+"It appends _1 to rules from the second policy, such as ID_ALLOW_A_49_1.\n"
+"The command does not include duplicates.\n"
+"For this example, we present only the first few rules."
+msgstr ""
+"这个命令将两个.xml文件中定义的策略合并到第三个文件MergedPolicy.xml中。该cmdlet会在第一个策略中的规则ID后加上“_0”（例如：ID_SIGNER_S_17_0），在第二个策略中的规则ID后加上“_1”（例如：ID_ALLOW_A_49_1）。命令会自动去除重复的规则。在这个示例中，我们仅展示前几条规则。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "This parameter is reserved for future use."
+msgstr "此参数保留以供将来使用。"
+
+msgid "Specifies the path of the merged .xml policy file."
+msgstr "指定合并后的.xml策略文件的路径。"
+
+msgid ""
+"Specifies an array of paths of the policy .xml files that this cmdlet "
+"merges."
+msgstr "指定一个包含 `.xml` 政策文件的路径数组，该 cmdlet 会将这些文件合并在一起。"
+
+msgid ""
+"Specifies an array of **Rule** objects that this cmdlet adds to the merged policy.\n"
+"To obtain a rule object, use the **Get-CIPolicy** or **New-CIPolicyRule** cmdlets."
+msgstr ""
+"指定一个由 **Rule** 对象组成的数组，该数组将被此 cmdlet 添加到合并后的策略中。要获取一个规则对象，请使用 **Get-"
+"CIPolicy** 或 **New-CIPolicyRule** cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Rule"
+msgstr "### 规则"
+
+msgid "This cmdlet returns the rules in the policy that it creates."
+msgstr "此cmdlet会返回它所创建的政策中的规则。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-CIPolicy](./Get-CIPolicy.md)"
+msgstr "[Get-CIPolicy](./Get-CIPolicy.md)"
+
+msgid "[New-CIPolicy](./New-CIPolicy.md)"
+msgstr "[New-CIPolicy](./New-CIPolicy.md)"

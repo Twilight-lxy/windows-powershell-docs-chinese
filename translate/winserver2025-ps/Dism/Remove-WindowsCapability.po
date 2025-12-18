@@ -1,0 +1,171 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:45:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-WindowsCapability"
+msgstr "# 移除 Windows 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Uninstalls a Windows capability package from an image."
+msgstr "从一个镜像文件中卸载Windows功能包。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Online"
+msgstr "### 在线"
+
+msgid "### Offline"
+msgstr "### 离线模式"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-WindowsCapability** cmdlet uninstalls a Windows capability "
+"package from the specified image."
+msgstr "`Remove-WindowsCapability` cmdlet 会从指定的镜像中卸载相应的 Windows 功能包。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove Windows capabilities for an image"
+msgstr "#### 示例 1：从图像中移除与 Windows 相关的功能"
+
+msgid ""
+"This command uninstalls the Windows capabilities installed in the operating "
+"system image specified by the *Name* parameter at the path C:\\offline."
+msgstr "此命令会卸载在由 *Name* 参数指定的操作系统映像（路径为 C:\\offline）中安装的 Windows 功能。"
+
+msgid ""
+"### Example 2: Remove Windows capabilities for the local operating system"
+msgstr "### 示例 2：移除本地操作系统的 Windows 功能"
+
+msgid ""
+"This command uninstalls the Windows capabilities installed on the local "
+"host."
+msgstr "此命令会卸载本地主机上安装的Windows相关功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"用于指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及相关信息  \n"
+"- 4 = 显示上述所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 的临时存储空间，其容量可能低至 32 MB。日志文件会自动被归档；归档后的文件名称会添加 `.bak` "
+"扩展名，同时系统会生成一个新的日志文件。每次日志文件被归档时，原来的 `.bak` 文件都会被覆盖。如果使用未加入域的网络共享资源，请先使用 `net "
+"use` 命令并输入相应的域凭据来设置访问权限，然后再指定 DISM 日志的路径。"
+
+msgid ""
+"Specifies the identity of the capability to remove from an operating system "
+"image."
+msgstr "指定要从操作系统镜像中删除的功能的标识信息。"
+
+msgid ""
+"Indicates that the cmdlet operates on a running operating system on the "
+"local host."
+msgstr "表示该cmdlet在本地主机上正在运行的操作系统中执行。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service.\n"
+"If the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"“WindowsDirectory”。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，该目录将在执行维护任务时用于解压文件。此目录必须存在于本地系统中。如果未指定临时目录，则系统会使用 "
+"`\\Windows\\%Temp%` 目录，并为每次运行 DISM "
+"命令生成一个随机十六进制值的子目录名称。每次操作完成后，临时目录中的所有内容都会被删除。不建议将网络共享位置作为用于解压安装包（.cab 或 .msu "
+"文件）的临时目录；用于维护任务的文件解压操作的目录应始终是本地目录。"
+
+msgid ""
+"Specifies the path to the location of the BootMgr files.\n"
+"This is necessary only when the BootMgr files are located on a partition other than the one that you are running the command from.\n"
+"Use -SystemDrive to service an installed Windows image from a Windows PE environment."
+msgstr ""
+"指定BootMgr文件所在的路径。只有当BootMgr文件位于与您运行命令的分区不同的分区上时，才需要指定该路径。使用-"
+"SystemDrive选项可以从Windows PE环境中对已安装的Windows镜像进行维护（即对该镜像执行相关操作）。"
+
+msgid ""
+"Specifies the path to the Windows directory relative to the image path.\n"
+"This cannot be the full path to the Windows directory; it should be a relative path.\n"
+"If not specified, the default is the Windows directory in the root of the offline image directory."
+msgstr ""
+"指定相对于图像路径的 Windows 目录的路径。这不能是 Windows "
+"目录的完整路径，而应该是一个相对路径。如果未指定，默认值将是离线图像目录根目录下的 Windows 目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.DismCommands.ImageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WindowsCapability](./Add-WindowsCapability.md)"
+msgstr "[Add-WindowsCapability](./Add-WindowsCapability.md)"
+
+msgid "[Get-WindowsCapability](./Get-WindowsCapability.md)"
+msgstr "[Get-WindowsCapability](./Get-WindowsCapability.md)"

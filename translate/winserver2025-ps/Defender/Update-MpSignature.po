@@ -1,0 +1,133 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:07:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-MpSignature"
+msgstr "# Update-MpSignature"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Updates the antimalware definitions on a computer."
+msgstr "更新计算机上的反恶意软件定义文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Update-MpSignature** cmdlet updates the antimalware definitions with "
+"the latest definitions available on an update server."
+msgstr "`Update-MpSignature` cmdlet 会使用更新服务器上提供的最新定义来更新反恶意软件库中的定义。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update signatures"
+msgstr "#### 示例 1：更新签名"
+
+msgid ""
+"This command updates the antimalware definitions.\n"
+"By default, the cmdlet uses the sources configured through [SignatureFallbackOrder](Set-MpPreference.yml#-signaturefallbackorder). If no signature fallback order is configured, the cmdlet uses the default update source."
+msgstr ""
+"此命令用于更新反恶意软件定义。默认情况下，该cmdlet会使用通过[SignatureFallbackOrder](Set-"
+"MpPreference.yml#-signatureFallbackorder)配置的来源进行更新。如果未配置任何签名回退顺序，则cmdlet会使用默认的更新来源。"
+
+msgid "### Example 2: Update signatures from a specific source"
+msgstr "### 示例 2：从特定来源更新签名"
+
+msgid ""
+"This command updates the antimalware definitions from the Microsoft Update "
+"Server."
+msgstr "此命令会从微软更新服务器（Microsoft Update Server）获取最新的反恶意软件定义文件并进行更新。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个代表该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[关于任务](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，也可以输入会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的cmdlet的最大操作数量。如果省略此参数或输入值为`0`，那么Windows "
+"PowerShell®将根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最优限制值。这个限制仅适用于当前执行的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Specifies an update source.\n"
+"This cmdlet downloads updated definitions from the server you specify.\n"
+"If you do not specify this parameter, the cmdlet uses the sources configured through [SignatureFallbackOrder](Set-MpPreference.yml#-signaturefallbackorder). If no signature fallback order is configured, the cmdlet uses Microsoft Update Server, then Microsoft Malware Protection Center (MMPC) as an update source.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"指定一个更新源。此 cmdlet 会从您指定的服务器下载更新的定义文件。如果您未指定该参数，cmdlet 将使用通过 "
+"[SignatureFallbackOrder](Set-MpPreference.yml#-signaturefallbackorder) "
+"配置的更新源。如果没有配置签名回退顺序，cmdlet 将首先使用 Microsoft Update Server，然后使用 Microsoft "
+"Malware Protection Center (MMPC) 作为更新源。该参数的可接受值为："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

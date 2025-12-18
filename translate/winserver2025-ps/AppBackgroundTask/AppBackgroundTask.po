@@ -1,0 +1,74 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:56:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# AppBackgroundTask Module"
+msgstr "# AppBackgroundTask 模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all App "
+"Background Task cmdlets. It lists the cmdlets in alphabetical order based on"
+" the verb at the beginning of the cmdlet."
+msgstr ""
+"此参考提供了所有“App Background "
+"Task”（应用程序后台任务）相关cmdlet的描述和语法信息。这些cmdlet按照命令开头所使用的动词字母顺序进行排列。"
+
+msgid "## AppBackgroundTask Cmdlets"
+msgstr "## AppBackgroundTask Cmdlets"
+
+msgid ""
+"### [Disable-AppBackgroundTaskDiagnosticLog](./Disable-"
+"AppBackgroundTaskDiagnosticLog.md)"
+msgstr "### [禁用应用后台任务诊断日志功能](./Disable-AppBackgroundTaskDiagnosticLog.md)"
+
+msgid "Disables background task logging in Event Viewer."
+msgstr "在事件查看器中禁用后台任务的日志记录功能。"
+
+msgid ""
+"### [Enable-AppBackgroundTaskDiagnosticLog](./Enable-"
+"AppBackgroundTaskDiagnosticLog.md)"
+msgstr ""
+"### [Enable-AppBackgroundTaskDiagnosticLog](./Enable-"
+"AppBackgroundTaskDiagnosticLog.md)"
+
+msgid "Enables background task logging in Event Viewer."
+msgstr "在事件查看器中启用后台任务日志记录功能。"
+
+msgid "### [Get-AppBackgroundTask](./Get-AppBackgroundTask.md)"
+msgstr "### [Get-AppBackgroundTask](./Get-AppBackgroundTask.md)"
+
+msgid "Gets background task information."
+msgstr "获取后台任务信息。"
+
+msgid ""
+"### [Set-AppBackgroundTaskResourcePolicy](./Set-"
+"AppBackgroundTaskResourcePolicy.md)"
+msgstr ""
+"### [Set-AppBackgroundTaskResourcePolicy](./Set-"
+"AppBackgroundTaskResourcePolicy.md)"
+
+msgid "Configures the use of the global pool by background tasks."
+msgstr "配置后台任务对全局资源池的使用方式。"
+
+msgid "### [Start-AppBackgroundTask](./Start-AppBackgroundTask.md)"
+msgstr "### [Start-AppBackgroundTask](./Start-AppBackgroundTask.md)"
+
+msgid "Starts a background task."
+msgstr "启动一个后台任务。"
+
+msgid "### [Unregister-AppBackgroundTask](./Unregister-AppBackgroundTask.md)"
+msgstr "### [Unregister-AppBackgroundTask](./Unregister-AppBackgroundTask.md)"
+
+msgid "Unregisters a background task."
+msgstr "取消注册一个后台任务。"

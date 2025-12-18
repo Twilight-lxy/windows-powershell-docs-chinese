@@ -1,0 +1,171 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:28:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-ClusterNode"
+msgstr "# 启动集群节点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Starts the Cluster service on a node in a failover cluster."
+msgstr "在故障转移集群中的一个节点上启动Cluster服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Start-ClusterNode` cmdlet starts the Cluster service on a node in a failover cluster. If this\n"
+"is the first node started, then it will wait for other nodes to join. The cluster will begin to run\n"
+"when a quorum has formed."
+msgstr ""
+"`Start-ClusterNode` cmdlet 用于在故障转移集群中的一个节点上启动 Cluster "
+"服务。如果这是第一个被启动的节点，它会等待其他节点加入。当达到法定人数（quorum）时，集群才会开始运行。"
+
+msgid ""
+"This cmdlet with the **FixQuorum** parameter can be used to force quorum, that is, force the start\n"
+"of a cluster node even if quorum hasn't been achieved. When quorum is forced on a given node, the\n"
+"copy of the cluster configuration that is on that node will be treated as the authoritative copy and\n"
+"will be replicated to all other nodes. Therefore, forcing quorum should be considered a last resort,\n"
+"because some cluster configuration changes could be lost. The ability to force quorum can be\n"
+"especially useful in a multi-site cluster if the primary site, with the majority of nodes, becomes\n"
+"unavailable, and the secondary site, with a minority of nodes, need to be brought into service.\n"
+"Similarly, the ability to force quorum makes it possible to start a cluster that uses the Node and\n"
+"File Share Majority quorum option when none of the available cluster nodes contains a current copy\n"
+"of the cluster configuration."
+msgstr ""
+"这个带有 **FixQuorum** 参数的 cmdlet 可以用于强制达到集群所需的法定人数（即 "
+"quorum），也就是说，即使尚未达到法定人数要求，也可以强制启动某个集群节点。当在某个节点上强制达成法定人数时，该节点上的集群配置副本将被视为权威配置，并会被复制到所有其他节点。因此，强制达成法定人数应被视为最后的手段，因为某些集群配置更改可能会丢失。在多站点集群环境中，如果拥有大多数节点的主要站点不可用，而需要启动只有少数节点的次要站点时，这种强制达成法定人数的功能就尤为有用。同样地，当没有任何可用的集群节点包含当前的集群配置副本时，该功能也可以用来启动那些采用“节点和文件共享多数投票机制”（Node"
+" and File Share Majority quorum）来决定集群状态的集群。"
+
+msgid ""
+"Note: This cmdlet cannot be run remotely without Credential Security Service Provider (CredSSP)\n"
+"authentication on the server computer."
+msgstr "注意：如果服务器计算机上没有启用凭据安全服务提供程序（CredSSP）进行身份验证，那么无法远程运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example starts the Cluster service on the node named `node3` on the "
+"local cluster."
+msgstr "这个示例在本地集群中名为`node3`的节点上启动了Cluster服务。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example starts the Cluster service on the node named `node1` on the "
+"cluster named `cluster2`."
+msgstr "这个示例在名为 `cluster2` 的集群中的节点 `node1` 上启动了 Cluster 服务。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example forces the local node and the local cluster to start, even if quorum hasn't been\n"
+"achieved. If quorum hasn't been achieved, then the copy of the cluster configuration that is on the\n"
+"local node will be treated as the authoritative copy and will be replicated to all other nodes. This\n"
+"cmdlet should be considered a last resort, because some cluster configuration changes could be lost,\n"
+"such as recovery options for cluster service."
+msgstr ""
+"这个示例会强制本地节点和本地集群启动，即使尚未达到法定人数（quorum）的要求。如果尚未达到法定人数，那么本地节点上保存的集群配置副本将被视为权威版本，并会被复制到所有其他节点。请注意，此命令应仅作为最后的手段使用，因为某些集群配置更改可能会丢失（例如与集群服务相关的恢复选项）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 会在本地集群上运行。"
+
+msgid ""
+"Indicates that the cmdlet forces the start of a cluster node regardless if "
+"quorum isn't formed."
+msgstr "表示该cmdlet会强制启动集群节点，无论是否已达到法定人数（quorum）。"
+
+msgid "Starts the cluster node without bringing resources online on the node."
+msgstr "启动集群节点，但不会在该节点上启用任何资源（即不会让相关服务或应用程序开始运行）。"
+
+msgid "Specifies the cluster node to start."
+msgstr "指定要启动的集群节点。"
+
+msgid "Specifies the name of the cluster node to start."
+msgstr "指定要启动的集群节点的名称。"
+
+msgid ""
+"Starts the node, but prevents it from achieving quorum and forming the cluster, to prevent a split\n"
+"situation with two competing instances of the cluster running."
+msgstr "启动该节点，但阻止其达到法定人数（quorum）并形成集群，以避免出现两个相互竞争的集群实例同时运行的情况。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If `-Wait 0` is specified, then the call is initiated and the\n"
+"cmdlet returns without waiting."
+msgstr ""
+"指定等待该cmdlet完成所需的时间（以秒为单位）。如果未指定**Wait**参数，那么cmdlet会一直等待直到完成。如果指定了`-Wait "
+"0`，则命令会被立即执行，而cmdlet会在不等待的情况下立即返回结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### Microsoft FailoverClusters.PowerShell.ClusterNode"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterNode"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterNode](./Add-ClusterNode.md)"
+msgstr "[添加集群节点](./Add-ClusterNode.md)"
+
+msgid "[Get-ClusterNode](./Get-ClusterNode.md)"
+msgstr "[Get-ClusterNode](./Get-ClusterNode.md)"
+
+msgid "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+msgstr "[Remove-ClusterNode](./Remove-ClusterNode.md)"
+
+msgid "[Resume-ClusterNode](./Resume-ClusterNode.md)"
+msgstr "[Resume-ClusterNode](./Resume-ClusterNode.md)"
+
+msgid "[Stop-ClusterNode](./Stop-ClusterNode.md)"
+msgstr "[Stop-ClusterNode](./Stop-ClusterNode.md)"
+
+msgid "[Suspend-ClusterNode](./Suspend-ClusterNode.md)"
+msgstr "[暂停集群节点](./Suspend-ClusterNode.md)"

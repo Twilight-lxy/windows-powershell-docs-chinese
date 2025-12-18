@@ -1,0 +1,116 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:29:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Register-CauPlugin"
+msgstr "# Register-CauPlugin"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Registers a CAU software updating plug-in on the local computer."
+msgstr "在本地计算机上注册一个用于更新CAU软件的插件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Register-CauPlugin` cmdlet registers a Cluster-Aware Updating (CAU) software updating plug-in\n"
+"on the local computer."
+msgstr ""
+"`Register-CauPlugin` cmdlet 用于在本地计算机上注册一个支持集群感知更新（Cluster-Aware Updating，简称 "
+"CAU）的软件更新插件。"
+
+msgid ""
+"CAU always uses a plug-in when performing updates, although you don't need to register a plug-in\n"
+"because CAU uses the **Microsoft.WindowsUpdatePlugin** plug-in by default. This plug-in communicates\n"
+"with the Windows Update Agent software resident on each node, the same software that is used when\n"
+"updates are downloaded from Windows Update or Microsoft Update, or from a Windows Server Update\n"
+"Services (WSUS) server. For more information about how plug-ins work in CAU, see\n"
+"[How CAU Plug-ins Work](https://go.microsoft.com/fwlink/p/?LinkId=235333)."
+msgstr ""
+"在执行更新时，CAU始终会使用某个插件。不过实际上你无需手动注册该插件，因为CAU默认使用了**Microsoft.WindowsUpdatePlugin**这个插件。该插件会与每个节点上安装的Windows"
+" Update代理软件进行通信；这种软件在从Windows Update、Microsoft Update或Windows Server Update "
+"Services "
+"(WSUS)服务器下载更新时也会被使用。有关插件在CAU中工作原理的更多信息，请参阅[CAU插件的工作原理](https://go.microsoft.com/fwlink/p/?LinkId=235333)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Register a specific plug-in located in the specified folder"
+msgstr "### 示例 1：注册位于指定文件夹中的特定插件"
+
+msgid ""
+"The command registers a plug-in called Plugin01.dll located in the C:\\PluginDevelopment folder.\n"
+"Because the command specifies the **Force** parameter, the cmdlet runs without displaying confirmation\n"
+"prompts."
+msgstr ""
+"该命令注册了一个名为 Plugin01.dll 的插件，该插件位于 C:\\PluginDevelopment 文件夹中。由于命令指定了 "
+"**Force** 参数，因此此 cmdlet 在运行时不会显示确认提示。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the path to the binary that implements the plug-in. Classes that implement the plug-in\n"
+"interface and are decorated with the plug-in attribute, are discovered through reflection and\n"
+"registered."
+msgstr "指定实现该插件的二进制文件的路径。那些实现了插件接口并使用了 `plugin` 属性进行装饰的类，会通过反射机制被检测到并被注册到系统中。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet isn't run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ClusterAwareUpdating.CauPlugin"
+msgstr "### Microsoft-cluster Aware-Updating.CauPlugin"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-CauPlugin](./Get-CauPlugin.md)"
+msgstr "[Get-CauPlugin](./Get-CauPlugin.md)"
+
+msgid "[Unregister-CauPlugin](./Unregister-CauPlugin.md)"
+msgstr "[Unregister-CauPlugin](./Unregister-CauPlugin.md)"

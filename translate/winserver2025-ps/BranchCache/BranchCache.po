@@ -1,0 +1,246 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:05:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# BranchCache Module"
+msgstr "# BranchCache模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all BranchCache **Manageability-specific** cmdlets. \n"
+"It lists the cmdlets in alphabetical order based on the verb at the beginning of the cmdlet."
+msgstr ""
+"此参考资料提供了所有与BranchCache管理功能相关的cmdlet的描述和语法信息。这些cmdlet按照命令开头所使用的动词（即动词部分）的字母顺序进行排列。"
+
+msgid "## BranchCache Cmdlets"
+msgstr "## BranchCacheCmdlets"
+
+msgid "### [Add-BCDataCacheExtension](./Add-BCDataCacheExtension.md)"
+msgstr "### [Add-BCDataCacheExtension](./Add-BCDataCacheExtension.md)"
+
+msgid ""
+"Increases the amount of cache storage space that is available on a hosted "
+"cache server by adding a new cache file."
+msgstr "通过添加一个新的缓存文件，增加托管缓存服务器上可用的缓存存储空间。"
+
+msgid "### [Clear-BCCache](./Clear-BCCache.md)"
+msgstr "### [Clear-BCCache](./Clear-BCCache.md)"
+
+msgid "Deletes all data in all data cache files and all hash cache files."
+msgstr "删除所有数据缓存文件和所有哈希缓存文件中的所有数据。"
+
+msgid "### [Disable-BC](./Disable-BC.md)"
+msgstr "### [Disable-BC](./Disable-BC.md)"
+
+msgid "Disables the BranchCache service."
+msgstr "禁用BranchCache服务。"
+
+msgid "### [Disable-BCDowngrading](./Disable-BCDowngrading.md)"
+msgstr "### [禁用 BC 下降级功能](./ Disable-BCDowngrading.md)"
+
+msgid ""
+"Disables downgrading, so that client computers do not request previous "
+"versions of content information from content servers."
+msgstr "禁止降级功能，从而防止客户端计算机向内容服务器请求旧版本的内容信息。"
+
+msgid "### [Disable-BCServeOnBattery](./Disable-BCServeOnBattery.md)"
+msgstr "### [禁用在电池供电时运行BCServe](./Disable-BCServeOnBattery.md)"
+
+msgid ""
+"Configures a client to ignore content discovery requests in distributed "
+"cache mode when operating on battery power."
+msgstr "配置客户端在仅使用电池供电的情况下，在分布式缓存模式下忽略内容发现请求。"
+
+msgid "### [Enable-BCDistributed](./Enable-BCDistributed.md)"
+msgstr "### [Enable-BCDistributed](./Enable-BCDistributed.md)"
+
+msgid ""
+"Enables BranchCache and configures a computer to operate in distributed "
+"cache mode."
+msgstr "启用BranchCache功能，并配置计算机以分布式缓存模式运行。"
+
+msgid "### [Enable-BCDowngrading](./Enable-BCDowngrading.md)"
+msgstr "### [Enable-BCDowngrading](./Enable-BCDowngrading.md)"
+
+msgid ""
+"Instructs a client computer that is running an operating system in a "
+"downgraded mode."
+msgstr "用于指示运行在降级模式下的操作系统的客户端计算机执行相应操作。"
+
+msgid "### [Enable-BCHostedClient](./Enable-BCHostedClient.md)"
+msgstr "### [Enable-BCHostedClient](./Enable-BCHostedClient.md)"
+
+msgid "Configures BranchCache to operate in hosted cache client mode."
+msgstr "将 BranchCache 配置为以托管缓存客户端模式运行。"
+
+msgid "### [Enable-BCHostedServer](./Enable-BCHostedServer.md)"
+msgstr "### [Enable-BCHostedServer](./Enable-BCHostedServer.md)"
+
+msgid "Configures BranchCache to operate in hosted cache server mode."
+msgstr "将 BranchCache 配置为以托管缓存服务器模式运行。"
+
+msgid "### [Enable-BCLocal](./Enable-BCLocal.md)"
+msgstr "### [Enable-BCLocal](./Enable-BCLocal.md)"
+
+msgid "Enables the BranchCache service in local caching mode."
+msgstr "以本地缓存模式启用BranchCache服务。"
+
+msgid "### [Enable-BCServeOnBattery](./Enable-BCServeOnBattery.md)"
+msgstr "### [Enable-BCServeOnBattery](./Enable-BCServeOnBattery.md)"
+
+msgid ""
+"Configures a client to listen for content discovery requests in distributed "
+"cache mode when operating on battery power."
+msgstr "配置客户端在仅使用电池供电的情况下，以分布式缓存模式监听内容发现请求。"
+
+msgid "### [Export-BCCachePackage](./Export-BCCachePackage.md)"
+msgstr "### [Export-BCCachePackage](./Export-BCCachePackage.md)"
+
+msgid "Exports a cache package."
+msgstr "导出一个缓存包。"
+
+msgid "### [Export-BCSecretKey](./Export-BCSecretKey.md)"
+msgstr "### [Export-BCSecretKey](./Export-BCSecretKey.md)"
+
+msgid "Exports a secret key to a file."
+msgstr "将一个密钥导出到一个文件中。"
+
+msgid "### [Get-BCClientConfiguration](./Get-BCClientConfiguration.md)"
+msgstr "### [Get-BCClientConfiguration](./Get-BCClientConfiguration.md)"
+
+msgid "Retrieves the current BranchCache client computer settings."
+msgstr "检索当前的BranchCache客户端计算机设置。"
+
+msgid ""
+"### [Get-BCContentServerConfiguration](./Get-"
+"BCContentServerConfiguration.md)"
+msgstr ""
+"### [Get-BCContentServerConfiguration](./Get-"
+"BCContentServerConfiguration.md)"
+
+msgid "Retrieves the current BranchCache content server settings."
+msgstr "检索当前的BranchCache内容服务器设置。"
+
+msgid "### [Get-BCDataCache](./Get-BCDataCache.md)"
+msgstr "### [Get-BCDataCache](./Get-BCDataCache.md)"
+
+msgid "Retrieves an object that represents the BranchCache data cache."
+msgstr "检索一个表示BranchCache数据缓存的对象。"
+
+msgid "### [Get-BCDataCacheExtension](./Get-BCDataCacheExtension.md)"
+msgstr "### [Get-BCDataCacheExtension](./Get-BCDataCacheExtension.md)"
+
+msgid ""
+"Retrieves objects that represent the BranchCache data cache extensions from "
+"a hosted cache server."
+msgstr "从托管的缓存服务器中检索表示BranchCache数据缓存扩展的对象。"
+
+msgid "### [Get-BCHashCache](./Get-BCHashCache.md)"
+msgstr "### [Get-BCHashCache](./Get-BCHashCache.md)"
+
+msgid "Retrieves the BranchCache hash cache."
+msgstr "检索 BranchCache 的哈希缓存数据。"
+
+msgid ""
+"### [Get-BCHostedCacheServerConfiguration](./Get-"
+"BCHostedCacheServerConfiguration.md)"
+msgstr ""
+"### [Get-BCHostedCacheServerConfiguration](./Get-"
+"BCHostedCacheServerConfiguration.md)"
+
+msgid "Retrieves the current BranchCache hosted cache server settings."
+msgstr "获取当前BranchCache托管缓存服务器的设置信息。"
+
+msgid "### [Get-BCNetworkConfiguration](./Get-BCNetworkConfiguration.md)"
+msgstr "### [Get-BCNetworkConfiguration](./Get-BCNetworkConfiguration.md)"
+
+msgid "Retrieves the current BranchCache network settings."
+msgstr "检索当前的BranchCache网络设置。"
+
+msgid "### [Get-BCStatus](./Get-BCStatus.md)"
+msgstr "### [Get-BCStatus](./Get-BCStatus.md)"
+
+msgid ""
+"Retrieves a set of objects that provide BranchCache status and configuration"
+" information."
+msgstr "检索一组对象，这些对象提供BranchCache的状态和配置信息。"
+
+msgid "### [Import-BCCachePackage](./Import-BCCachePackage.md)"
+msgstr "### [Import-BCCachePackage](./Import-BCCachePackage.md)"
+
+msgid "Imports a cache package."
+msgstr "导入一个缓存包。"
+
+msgid "### [Import-BCSecretKey](./Import-BCSecretKey.md)"
+msgstr "### [Import-BCSecretKey](./Import-BCSecretKey.md)"
+
+msgid ""
+"Imports the cryptographic key that BranchCache uses for the generation of "
+"segment secrets."
+msgstr "导入BranchCache用于生成分段密钥（segment secrets）所需的加密密钥。"
+
+msgid "### [Publish-BCFileContent](./Publish-BCFileContent.md)"
+msgstr "### [Publish-BCFileContent](./Publish-BCFileContent.md)"
+
+msgid "Generates hashes for files in shared folders."
+msgstr "为共享文件夹中的文件生成哈希值。"
+
+msgid "### [Publish-BCWebContent](./Publish-BCWebContent.md)"
+msgstr "### [Publish-BCWebContent](./Publish-BCWebContent.md)"
+
+msgid "Creates hashes for web content."
+msgstr "为网页内容生成哈希值。"
+
+msgid "### [Remove-BCDataCacheExtension](./Remove-BCDataCacheExtension.md)"
+msgstr "### [Remove-BCDataCacheExtension](./Remove-BCDataCacheExtension.md)"
+
+msgid "Deletes a data cache file."
+msgstr "删除一个数据缓存文件。"
+
+msgid "### [Reset-BC](./Reset-BC.md)"
+msgstr "### [Reset-BC](./Reset-BC.md)"
+
+msgid "Resets BranchCache to the default configuration."
+msgstr "将 BranchCache 重置为默认配置。"
+
+msgid "### [Set-BCAuthentication](./Set-BCAuthentication.md)"
+msgstr "### [Set-BCAuthentication](./Set-BCAuthentication.md)"
+
+msgid "Specifies the BranchCache computer authentication mode."
+msgstr "指定 BranchCache 计算机身份验证模式。"
+
+msgid "### [Set-BCCache](./Set-BCCache.md)"
+msgstr "### [Set-BCCache](./Set-BCCache.md)"
+
+msgid "Modifies the cache file configuration."
+msgstr "修改缓存文件配置。"
+
+msgid "### [Set-BCDataCacheEntryMaxAge](./Set-BCDataCacheEntryMaxAge.md)"
+msgstr "### [Set-BCDataCacheEntryMaxAge](./Set-BCDataCacheEntryMaxAge.md)"
+
+msgid "Modifies the maximum amount of time that data can remain in the cache."
+msgstr "修改数据能够在缓存中保留的最大时间长度。"
+
+msgid "### [Set-BCMinSMBLatency](./Set-BCMinSMBLatency.md)"
+msgstr "### [Set-BCMinSMBLatency](./Set-BCMinSMBLatency.md)"
+
+msgid ""
+"Sets the minimum latency that must exist between client and server before "
+"transparent caching functions are utilized."
+msgstr "设置客户端与服务器之间必须存在的最小延迟时间，才能使用透明缓存功能。"
+
+msgid "### [Set-BCSecretKey](./Set-BCSecretKey.md)"
+msgstr "### [Set-BCSecretKey](./Set-BCSecretKey.md)"
+
+msgid "Sets the cryptographic key used in the generation of segment secrets."
+msgstr "用于生成分段密钥（segment secrets）的加密密钥。"

@@ -1,0 +1,193 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:29:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Step-DnsServerSigningKeyRollover"
+msgstr "# Step-DnsServerSigningKeyRollover"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Rolls over a KSK that is waiting for a parent DS update."
+msgstr "它覆盖了一个正在等待父DS更新的KSK（Key Signing Key）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Step-DnsServerSigningKeyRollover` cmdlet rolls over a key signing key (KSK) that is waiting\n"
+"for an update from a parent delegation signer (DS). If a Domain Name System (DNS) server that hosts\n"
+"a securely delegated zone cannot check whether the DS record in a parent is updated, use this cmdlet\n"
+"to force a rollover."
+msgstr ""
+"`Step-DnsServerSigningKeyRollover` cmdlet "
+"用于更新那些正在等待来自父级委托签名者（DS）更新的密钥签名键（KSK）。如果某个托管了安全委托区域的域名系统（DNS）服务器无法检查其父级记录是否已更新，可以使用此"
+" cmdlet 强制执行密钥的更新操作。"
+
+msgid ""
+"Important: You must manually update the DS record in the parent before you "
+"run this cmdlet."
+msgstr "重要提示：在运行此cmdlet之前，你必须手动更新父目录中的DS记录。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Force a key signing key rollover"
+msgstr "#### 示例 1：强制进行密钥签名密钥的轮换"
+
+msgid ""
+"This example gets keys for a signed zone, and then forces a KSK rollover for"
+" one of the keys in the zone."
+msgstr "这个示例获取已签名区域的密钥信息，然后强制对该区域中某个密钥进行KSK（Key Signing Key）的轮换操作。"
+
+msgid ""
+"The first command uses the **Get-DnsServerSigningKey** cmdlet to gets keys "
+"for the signed zone Sec.Contoso.com."
+msgstr ""
+"第一个命令使用了 **Get-DnsServerSigningKey** cmdlet 来获取已签名区域 Sec.Contoso.com 的相关密钥。"
+
+msgid ""
+"The last command forces a KSK rollover that is waiting for a parent DS update on Contoso.com. The\n"
+"command performs a KSK rollover for the specified key in the zone named Sec.Contoso.com."
+msgstr ""
+"最后一条命令会强制执行KSK（Key Signing Key）的更新过程，该过程正在等待Contoso.com上的父DS（Domain "
+"Controller）进行更新。这条命令会针对名为Sec.Contoso.com的区域中指定的密钥来执行KSK更新操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，随后再显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)\n"
+"or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称或会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies a remote DNS server. Specify the IP address or any value that resolves to an IP address,\n"
+"such as a fully qualified domain name (FQDN), host name, or NETBIOS name, for the DNS server."
+msgstr ""
+"指定一个远程DNS服务器。请提供该DNS服务器的IP地址，或者任何可以解析为IP地址的字符串，例如完全限定域名（FQDN）、主机名或NETBIOS名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies the ID of the key for which to perform the KSK rollover."
+msgstr "指定要执行KSK轮换操作的密钥的ID。"
+
+msgid ""
+"Returns an object representing the item with which you are working. By default, this cmdlet does not\n"
+"generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell&reg; calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"该参数用于指定可以同时执行的操作的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell 会根据计算机上正在运行的 CIM"
+" cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。不过实际上并没有运行这个cmdlet。"
+
+msgid ""
+"Specifies the name of the DNS zone in which the cmdlet performs the KSK "
+"rollover."
+msgstr "指定该 cmdlet 执行 KSK 更换操作的 DNS 区域的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.Management.Infrastructure.CimInstance#DnsServerSigningKey[]"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance#DnsServerSigningKey[]"
+
+msgid "The output object contains the following fields:"
+msgstr "输出对象包含以下字段："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Enable-DnsServerSigningKeyRollover](./Enable-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"[Enable-DnsServerSigningKeyRollover](./Enable-DnsServer "
+"SigningKeyRollover.md)"
+
+msgid ""
+"[Invoke-DnsServerSigningKeyRollover](./Invoke-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"[Invoke-DnsServerSigningKeyRollover](./Invoke-"
+"DnsServerSigningKeyRollover.md)"
+
+msgid ""
+"[Disable-DnsServerSigningKeyRollover](./Disable-"
+"DnsServerSigningKeyRollover.md)"
+msgstr ""
+"[ Disable-DnsServerSigningKeyRollover](./Disable-"
+"DnsServerSigningKeyRollover.md)"

@@ -1,0 +1,104 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:05:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterSharedVolumeState"
+msgstr "# 获取集群共享卷的状态"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the state of Cluster Shared Volumes in a cluster."
+msgstr "获取集群中群集共享卷（Cluster Shared Volumes）的状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterSharedVolumeState` cmdlet gets the state of Cluster Shared "
+"Volumes in a cluster."
+msgstr ""
+"`Get-ClusterSharedVolumeState` cmdlet 用于获取集群中集群共享卷（Cluster Shared "
+"Volumes）的状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This command gets the state of Cluster Shared Volumes on the local cluster."
+msgstr "该命令用于获取本地集群中群集共享卷（Cluster Shared Volumes）的状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If you specify a period (`.`) or\n"
+"don't specify this parameter, the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群名称。如果您使用点（`.`）作为集群名称，或者未指定该参数，则 cmdlet 会在本地集群上运行。"
+
+msgid ""
+"Specifies the input to this cmdlet. You can use this parameter, or you can pipe the input to this\n"
+"cmdlet."
+msgstr "指定要输入到此 cmdlet 的数据。您可以使用这个参数，也可以将数据通过管道（pipe）传递给该 cmdlet。"
+
+msgid ""
+"Specifies the names, as a collection of strings, of the Cluster Shared Volumes for which to get\n"
+"state information."
+msgstr "指定要获取状态信息的集群共享卷（Cluster Shared Volumes）的名称，这些名称以字符串集合的形式提供。"
+
+msgid ""
+"Specifies the names, as a collection of strings, of the cluster nodes for which to get the state of\n"
+"Cluster Shared Volumes."
+msgstr "指定用于获取集群共享卷（Cluster Shared Volumes）状态的集群节点的名称，这些名称以字符串集合的形式提供。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters PowerShell Cluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### Microsoft FailoverClusters.PowerShell ClusterNode"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### MicrosoftFailoverClusters.PowerShell-clusterSharedVolume"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterSharedVolume](./Get-ClusterSharedVolume.md)"
+msgstr "[Get-ClusterSharedVolume](./Get-ClusterSharedVolume.md)"

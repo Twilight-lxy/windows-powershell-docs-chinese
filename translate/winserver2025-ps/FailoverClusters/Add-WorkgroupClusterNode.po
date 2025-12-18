@@ -1,0 +1,114 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:51:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-WorkgroupClusterNode"
+msgstr "# 添加工作组集群节点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a node to a workgroup cluster."
+msgstr "向工作组集群中添加一个节点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-WorkgroupClusterNode` cmdlet adds a node to a workgroup cluster."
+msgstr "`Add-WorkgroupClusterNode` cmdlet 用于将一个节点添加到工作组集群中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example adds `Node3` to the cluster whose membership is comprised of "
+"`Node1` and `Node2`."
+msgstr "这个示例将 `Node3` 添加到由 `Node1` 和 `Node2` 组成的集群中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "An array of nodes to be added to the cluster."
+msgstr "一个需要添加到集群中的节点数组。"
+
+msgid "An array of credentials for the nodes."
+msgstr "一组用于节点的身份凭证（credentials）。"
+
+msgid "The name of the node to be added."
+msgstr "要添加的节点的名称。"
+
+msgid "The credential for the node to be added."
+msgstr "要添加的节点所需的凭据。"
+
+msgid ""
+"Specifies that shared storage is ignored for the workgroup cluster node."
+msgstr "指定工作组集群节点将忽略共享存储。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-WorkgroupCluster](new-workgroupcluster.md)"
+msgstr "[新工作群组集群](new-workgroupcluster.md)"
+
+msgid "[Remove-WorkgroupCluster](remove-workgroupcluster.md)"
+msgstr "[Remove-WorkgroupCluster](remove-workgroupcluster.md)"
+
+msgid "[Remove-WorkgroupClusterNode](remove-workgroupclusternode.md)"
+msgstr "[Remove-WorkgroupClusterNode](remove-workgroupclusternode.md)"
+
+msgid ""
+"[Set-WorkgroupClusterRemotingConfiguration](set-"
+"workgroupclusterremotingconfiguration.md)"
+msgstr ""
+"[Set-WorkgroupClusterRemotingConfiguration](set-"
+"workgroupclusterremotingconfiguration.md)"
+
+msgid "[Test-WorkgroupCluster](test-workgroupcluster.md)"
+msgstr "[测试-工作组集群](test-workgroupcluster.md)"
+
+msgid "[Test-WorkgroupClusterRemoting](test-workgroupclusterremoting.md)"
+msgstr "[Test-WorkgroupClusterRemoting](test-workgroupclusterremoting.md)"

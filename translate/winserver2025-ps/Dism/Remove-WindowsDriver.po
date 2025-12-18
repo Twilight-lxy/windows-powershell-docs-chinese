@@ -1,0 +1,174 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:46:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-WindowsDriver"
+msgstr "# 删除 Windows 驱动程序"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a driver from an offline Windows image."
+msgstr "从离线的Windows镜像中删除某个驱动程序。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-WindowsDriver** cmdlet removes third-party driver packages from"
+" an offline Windows image."
+msgstr "`Remove-WindowsDriver` cmdlet 可以从离线的 Windows 镜像中删除第三方驱动程序包。"
+
+msgid ""
+"Caution: Removing a boot-critical driver package can make the offline "
+"Windows image unbootable."
+msgstr "注意：删除对系统启动至关重要的驱动程序包可能会导致离线Windows镜像无法正常启动。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a driver from an image"
+msgstr "### 示例 1：从图像中移除驱动程序相关的内容"
+
+msgid "This command removes the OEM1.inf driver from a mounted Windows image."
+msgstr "这个命令会从已挂载的Windows镜像中删除OEM1.inf驱动程序。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the .inf file or folder containing the .inf files of the drivers you want to add.\n"
+"When third-party drivers are added to an image, they are named OEM0.inf, OEM1.inf, and so on.\n"
+"You must specify the published name (for example, OEM1.inf) to remove the driver.\n"
+"You cannot remove default drivers."
+msgstr ""
+"请指定包含您想要添加的驱动程序对应的 `.inf` 文件的 `.inf` 文件或文件夹。当第三方驱动程序被添加到镜像中时，它们的名称会被设置为 "
+"`OEM0.inf`、`OEM1.inf` 等。要删除某个驱动程序，必须指定其对应的公开名称（例如 `OEM1.inf`）。默认驱动程序是无法被删除的。"
+
+msgid ""
+"When you specify a folder, .inf files that are not valid driver packages are"
+" ignored."
+msgstr "当您指定一个文件夹时，那些无效的驱动程序包（即不符合要求的 `.inf` 文件）将被忽略。"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"指定日志中显示的最大输出级别。默认的日志级别为 3。允许的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误和警告信息  \n"
+"- 3 = 显示错误、警告以及信息性内容  \n"
+"- 4 = 显示上述所有信息，外加调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 虚拟磁盘，其容量可能低至 32 MB。日志文件会自动被归档；归档后的日志文件名称后面会添加 `.bak` "
+"扩展名，并且系统会生成一个新的日志文件。每次日志文件被归档时，对应的 `.bak` 文件都会被覆盖。如果使用的是未加入域的网络共享资源，请在使用 "
+"`DISM` 命令设置日志路径之前，先使用 `net use` 命令结合相应的域凭据来配置访问权限。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service.\n"
+"If the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"“WindowsDirectory”。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，用于在服务过程中提取文件以供使用。该目录必须存在于本地计算机上。如果未指定临时目录，则系统会使用 "
+"`\\Windows\\%Temp%\\` 目录，并为每次 DISM "
+"操作生成一个随机十六进制值的子目录名称。每次操作完成后，临时目录中的内容都会被删除。不建议将网络共享位置作为临时目录来解压安装包（.cab 或 .msu"
+" 文件）。用于在服务过程中提取文件的临时目录应为本地目录。"
+
+msgid ""
+"Specifies the path to the location of the BootMgr files.\n"
+"This is necessary only when the BootMgr files are located on a partition other than the one that you are running the command from.\n"
+"Use -SystemDrive to service an installed Windows image from a Windows PE environment."
+msgstr ""
+"指定 BootMgr 文件所在的路径。只有当 BootMgr 文件位于与运行命令的分区不同的分区时，才需要提供该路径。使用 `-SystemDrive`"
+" 选项可以从 Windows PE 环境中维护已安装的 Windows 映像。"
+
+msgid ""
+"Specifies the path to the Windows directory relative to the image path.\n"
+"This cannot be the full path to the Windows directory; it should be a relative path.\n"
+"If not specified, the default is the Windows directory in the root of the offline image directory."
+msgstr ""
+"指定相对于镜像路径的Windows目录的路径。这不能是Windows目录的完整路径，而应该是一个相对路径。如果未指定，默认值是离线镜像目录根目录下的Windows目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dism Commands.ImageObject"
+
+msgid "### Microsoft.Dism.Commands.BasicDriverObject"
+msgstr "### Microsoft.Dism Commands.BasicDriverObject"
+
+msgid "### Microsoft.Dism.Commands.AdvancedDriverObject"
+msgstr "### Microsoft.DismCommands.AdvancedDriverObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dism Commands.ImageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WindowsDriver](./Get-WindowsDriver.md)"
+msgstr "[Get-WindowsDriver](./Get-WindowsDriver.md)"
+
+msgid "[Add-WindowsDriver](./Add-WindowsDriver.md)"
+msgstr "[Add-WindowsDriver](./Add-WindowsDriver.md)"

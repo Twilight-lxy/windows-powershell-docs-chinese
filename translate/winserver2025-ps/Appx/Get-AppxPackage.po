@@ -1,0 +1,174 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:20:59 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppxPackage"
+msgstr "# Get-AppxPackage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets a list of the app packages that are installed in a user profile."
+msgstr "获取用户配置文件中安装的应用程序包列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-AppxPackage` cmdlet gets a list of the app packages that are installed in a user profile.\n"
+"An app package has an `.msix` or `.appx` file extension. To get the list of packages for a user\n"
+"profile other than the profile for the current user, you must run this command with administrator\n"
+"permissions."
+msgstr ""
+"`Get-AppxPackage` cmdlet 可以获取用户配置文件中安装的应用程序包列表。应用程序包的文件扩展名为 `.msix` 或 "
+"`.appx`。如果要获取当前用户之外的其他用户配置文件中的应用程序包列表，必须以管理员权限运行此命令。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all app packages for every user account"
+msgstr "#### 示例 1：获取每个用户账户的所有应用程序包"
+
+msgid ""
+"This command lists the app packages that are installed for every user "
+"account on the computer."
+msgstr "这个命令会列出计算机上每个用户账户所安装的应用程序包。"
+
+msgid "### Example 2: Get an app package for a specific a user"
+msgstr "### 示例 2：获取特定用户的应用程序包"
+
+msgid ""
+"This command displays information about `Package17` if it's installed in the specified user\n"
+"profile."
+msgstr "如果 `Package17` 已安装在指定的用户配置文件中，此命令将显示有关它的信息。"
+
+msgid "### Example 3: Get a particular app package information"
+msgstr "### 示例 3：获取特定应用程序包的信息"
+
+msgid "This command displays information about the ScreenSketch app."
+msgstr "这个命令会显示有关ScreenSketch应用程序的信息。"
+
+msgid "### Example 4: Get all app packages for a particular Publisher"
+msgstr "### 示例 4：获取某个发布者的所有应用包"
+
+msgid ""
+"This command lists all the Microsoft app packages that are installed on the "
+"computer."
+msgstr "这个命令会列出计算机上安装的所有Microsoft应用程序包。"
+
+msgid "### Example 5: Get all app packages with PackageTypeFilter"
+msgstr "### 示例 5：使用 PackageTypeFilter 获取所有应用程序包"
+
+msgid ""
+"This command lists all the app packages with PackageTypeFilter installed on "
+"the computer."
+msgstr "这个命令会列出计算机上安装了 PackageTypeFilter 的所有应用程序包。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet lists app packages for all user accounts on the computer. To use this\n"
+"parameter, you must run the command with administrator permissions."
+msgstr "表示此 cmdlet 会列出计算机上所有用户账户的应用程序包。要使用此参数，必须以管理员权限运行命令。"
+
+msgid ""
+"Specifies the name of a particular package. If you specify this parameter, the cmdlet returns\n"
+"results for this package only. Wildcards are permitted."
+msgstr "用于指定某个特定软件包的名称。如果您指定了此参数，该cmdlet将仅返回与该软件包相关的结果。允许使用通配符。"
+
+msgid ""
+"Specifies one or more comma-separated types of packages that the cmdlet gets from the package\n"
+"repository."
+msgstr "指定一个或多个用逗号分隔的包类型，这些包类型是该 cmdlet 从包仓库中获取的。"
+
+msgid ""
+"By default, this cmdlet returns only packages of types `Main` and "
+"`Framework`."
+msgstr "默认情况下，此cmdlet仅返回类型为`Main`和`Framework`的包。"
+
+msgid ""
+"Specifies the publisher of a particular package. If you specify this parameter, the cmdlet returns\n"
+"results only for this publisher. Wildcards are permitted."
+msgstr "用于指定某个特定软件包的发行商。如果指定了此参数，该 cmdlet 仅会返回与该发行商相关的结果。支持使用通配符。"
+
+msgid ""
+"Specifies a user. If you specify this parameter, the cmdlet returns a list of app packages that are\n"
+"installed for only the user that this cmdlet specifies. To get the list of packages for a user\n"
+"profile other than the profile for the current user, you must run this command with\n"
+"administrator permissions. The user name can be in one of these formats:"
+msgstr ""
+"用于指定一个用户。如果指定了此参数，cmdlet "
+"将返回仅针对该用户安装的应用包列表。若要获取当前用户之外的其他用户配置文件中的应用包列表，必须以管理员权限运行此命令。用户名可以采用以下格式之一："
+
+msgid ""
+"Specifies an **AppxVolume** object. If you specify this parameter, this cmdlet returns only\n"
+"packages that are relative to volume that this parameter specifies."
+msgstr "指定一个 **AppxVolume** 对象。如果您指定了此参数，该 cmdlet 仅返回与该参数指定的卷相关的包。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.Appx.PackageManager.Commands.AppxPackage"
+msgstr "### Microsoft.Windows.AppxPackageManager Commands.AppxPackage"
+
+msgid ""
+"This cmdlet returns an **AppxPackage** object that contains information, including the full name of\n"
+"the app package."
+msgstr "此cmdlet返回一个**AppxPackage**对象，其中包含相关信息，包括应用程序包的完整名称。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Package Manager API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+msgstr "[包管理器 API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+
+msgid ""
+"[How to Add and Remove Apps](https://go.microsoft.com/fwlink/?LinkID=231020)"
+msgstr "[如何添加和删除应用程序](https://go.microsoft.com/fwlink/?LinkID=231020)"
+
+msgid "[Add-AppxPackage](./Add-AppxPackage.md)"
+msgstr "[Add-AppxPackage](./Add-AppxPackage.md)"
+
+msgid "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+msgstr "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+
+msgid "[Move-AppxPackage](./Move-AppxPackage.md)"
+msgstr "[Move-AppxPackage](./Move-AppxPackage.md)"
+
+msgid "[Remove-AppxPackage](./Remove-AppxPackage.md)"
+msgstr "[Remove-AppxPackage](./Remove-AppxPackage.md)"

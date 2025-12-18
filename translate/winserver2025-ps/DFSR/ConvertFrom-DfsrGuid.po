@@ -1,0 +1,136 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:33:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# ConvertFrom-DfsrGuid"
+msgstr "# 将DFSR GUID转换为其他格式"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Translates GUIDs to friendly names within a given replication group."
+msgstr "在给定的复制组内，将 GUID（全局唯一标识符）转换为更易于理解的名称。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **ConvertFrom-DfsrGuid** cmdlet translates Distributed File System (DFS) Replication GUIDs to friendly names within a given replication group.\n"
+"DFS Replication uses GUIDs to represent the friendly names of various objects and metadata.\n"
+"DFS Replication writes these GUIDs to Active Directory, XML files, the event log, and debug logs.\n"
+"This cmdlet converts GUIDs for connections (connid), replicated folders (csid), replication groups (rgid), volumes (volumeid), members (memberid), and databases (dbguid)."
+msgstr ""
+"`ConvertFrom-DfsrGuid` cmdlet 可以将分布式文件系统（DFS）复制中的 GUID 转换为给定复制组内的友好名称。DFS "
+"复制使用 GUID 来表示各种对象和元数据的友好名称。DFS 复制会将这些 GUID 写入 Active Directory、XML "
+"文件、事件日志以及调试日志中。该 cmdlet 可以转换以下类型的 "
+"GUID：连接（connid）、复制的文件夹（csid）、复制组（rgid）、卷（volumeid）、成员（memberid）以及数据库（dbguid）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Convert a GUID to a friendly name"
+msgstr "### 示例 1：将 GUID 转换为友好的名称"
+
+msgid ""
+"This command uses the **ConvertFrom-DfsrGuid** cmdlet to convert a "
+"replicated folder GUID to its friendly details."
+msgstr ""
+"此命令使用 **ConvertFrom-DfsrGuid** cmdlet 将复制的文件夹的 GUID "
+"转换为其友好的显示形式（即更易于理解的名称或描述）。"
+
+msgid "### Example 2: Determine which server originated a file modification"
+msgstr "### 示例 2：确定哪个服务器进行了文件修改"
+
+msgid ""
+"This example looks up a Global Version Sequence Number (GUID) for a file, "
+"and then looks up the name of the server that originated that change."
+msgstr "这个示例首先查找一个文件的全球版本序列号（GUID），然后再查找发起该更改的服务器名称。"
+
+msgid ""
+"The first command uses the **Get-DfsrIdRecord** cmdlet to lookup a file's "
+"Global Version Sequence Number (GUID)."
+msgstr "第一个命令使用了 **Get-DfsrIdRecord** cmdlet 来查找文件的全球版本序列号（GUID）。"
+
+msgid "The second command looks up the server that originated the change."
+msgstr "第二个命令用于查找发起该更改的服务器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS 名称或完全限定域名（FQDN）。如果您不指定此参数，该 "
+"cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"If you do not specify this parameter, the cmdlet queries for all participating replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。如果不指定此参数，该cmdlet将会查询所有参与复制的组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid "Specifies an array of GUID values to convert to a friendly name."
+msgstr "指定一个 GUID 值数组，将其转换为友好的名称（即易于理解的字符串）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### System.Guid"
+msgstr "### System.Guid"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrMember"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrMember"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrMembership"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrMembership"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrConnection"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrConnection"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrVolume"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrVolume"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

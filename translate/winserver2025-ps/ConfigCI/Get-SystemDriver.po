@@ -1,0 +1,146 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:34:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-SystemDriver"
+msgstr "# Get-SystemDriver"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Scans for drivers on the system."
+msgstr "扫描系统中的驱动程序。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-SystemDriver** cmdlet performs a full system scan for drivers.\n"
+"This cmdlet returns a **DriverFile** object that contains information for the **New-CIPolicyRule** and **New-CIPolicy** cmdlets.\n"
+"Those cmdlets create rules based on the scanned files.\n"
+"By default, this cmdlet recursively scans C:\\ and includes only kernel mode files."
+msgstr ""
+"`Get-SystemDriver` cmdlet 会对系统中的所有驱动程序进行全面的扫描。该 cmdlet 会返回一个 `DriverFile` "
+"对象，其中包含用于 `New-CIPolicyRule` 和 `New-CIPolicy` cmdlets 的相关信息。这些 cmdlets "
+"会根据扫描到的文件来创建相应的规则。默认情况下，此 cmdlet 会递归地扫描 C:\\ 目录，并仅包括内核模式下的驱动程序文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Scan a folder for drivers"
+msgstr "### 示例 1：扫描文件夹以查找驱动程序"
+
+msgid ""
+"This command scans the specified folder.\n"
+"The command returns the **DriverFile** object that is used to make rules."
+msgstr "这个命令会扫描指定的文件夹，并返回一个名为**DriverFile**的对象，该对象用于生成规则。"
+
+msgid "Provide this object to **New-CIPolicyRule** to create a rule."
+msgstr "将此对象提供给 **New-CIPolicyRule** 以创建一条规则。"
+
+msgid "### Example 2: Scan only PE files and exclude a folder"
+msgstr "### 示例 2：仅扫描 PE 文件，并排除某个文件夹"
+
+msgid ""
+"This command scans the specified folder, just like the previous example.\n"
+"This command specifies the **OmitPaths** parameter to exclude files in the temp\\ConfigCITestBinaries folder.\n"
+"The command specifies the **NoScript** parameter so that it gets information for only PE files."
+msgstr ""
+"这个命令会扫描指定的文件夹，就像之前的例子一样。该命令设置了 **OmitPaths** 参数，用于排除位于 `temp "
+"ConfigCITestBinaries` 文件夹中的文件。同时，它还设置了 **NoScript** 参数，以便仅获取 PE 格式的文件的相关信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet searches the Code Integrity Audit log for drivers.\n"
+"It does not perform a full system scan."
+msgstr "表示此cmdlet会在代码完整性审计日志中搜索驱动程序，而不会对整个系统进行扫描。"
+
+msgid ""
+"Indicates that this cmdlet does not scan script files.\n"
+"It searches portable executable files (PE files) only."
+msgstr "表示该cmdlet不会扫描脚本文件，仅会搜索可移植的可执行文件（PE文件）。"
+
+msgid ""
+"Indicates that the Volume Snapshot Service (VSS) does not make a shadow copy of the disk while the scan runs.\n"
+"This parameter could cause an incomplete scan for a system that is running."
+msgstr "表示在扫描过程中，卷快照服务（VSS）不会对磁盘进行镜像备份。对于正在运行的系统而言，此参数可能会导致扫描无法完整完成。"
+
+msgid ""
+"If a scan fails due to VSS errors caused by low disk space on the target "
+"drive, this cmdlet prompts you to specify this parameter."
+msgstr "如果由于目标驱动器上的磁盘空间不足导致VSS（虚拟机存储）出现错误而使扫描失败，此cmdlet会提示您指定该参数。"
+
+msgid ""
+"Specifies an array of paths that this cmdlet omits from the scan.\n"
+"We recommend that you omit C:\\Windows.old."
+msgstr "指定一个路径数组，该cmdlet在扫描过程中会忽略这些路径。我们建议您忽略C:\\Windows.old路径。"
+
+msgid ""
+"Specifies the path of the CatRoot folder.\n"
+"Specify this parameter to scan a remote or mounted drive."
+msgstr "指定 CatRoot 文件夹的路径。如果要扫描远程驱动器或已挂载的驱动器，请设置此参数。"
+
+msgid ""
+"Specifies the path for this cmdlet to scan.\n"
+"You can specify a local or remote path.\n"
+"If you specify a remote or mounted drive, also specify the **PathToCatroot** parameter."
+msgstr ""
+"指定此cmdlet需要扫描的路径。您可以指定本地路径或远程路径。如果指定了远程驱动器或挂载的驱动器，还需要同时指定**PathToCatroot**参数。"
+
+msgid "Indicates that this cmdlet includes user mode files in the scan."
+msgstr "表示此cmdlet会在扫描过程中包含用户模式文件。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### DriverFile"
+msgstr "### DriverFile"
+
+msgid ""
+"This cmdlet returns a **DriverFile** object that contains all properties and"
+" certificates of a driver that you must have in order to generate a Code "
+"Integrity policy rule."
+msgstr "此cmdlet返回一个**DriverFile**对象，其中包含生成代码完整性策略规则所需的所有驱动程序属性和证书。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-CIPolicy](./New-CIPolicy.md)"
+msgstr "[New-CIPolicy](./New-CIPolicy.md)"
+
+msgid "[New-CIPolicyRule](./New-CIPolicyRule.md)"
+msgstr "[New-CIPolicyRule](./New-CIPolicyRule.md)"

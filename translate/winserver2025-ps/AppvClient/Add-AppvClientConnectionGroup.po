@@ -1,0 +1,115 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:01:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AppvClientConnectionGroup"
+msgstr "# 添加 Add-AppvClientConnectionGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a composition of multiple packages."
+msgstr "创建由多个软件包组成的解决方案（或应用程序）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-AppvClientConnectionGroup** cmdlet creates a Microsoft Application Virtualization (App-V) connection group.\n"
+"In order for the group to be applied, all packages in the group must be added to the target computer, and must not be running."
+msgstr ""
+"`Add-AppvClientConnectionGroup` cmdlet 用于创建一个 Microsoft "
+"应用程序虚拟化（App-V）连接组。为了使该连接组生效，组中的所有软件包都必须添加到目标计算机上，并且这些软件包在目标计算机上不应处于运行状态。"
+
+msgid ""
+"This cmdlet can also be used to update an already existing connection group "
+"definition."
+msgstr "此cmdlet也可用于更新已存在的连接组定义。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a connection group"
+msgstr "### 示例 1：添加一个连接组"
+
+msgid ""
+"This command adds the connection group file to the computer from the path "
+"provided."
+msgstr "此命令会根据提供的路径将连接组文件添加到计算机上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the App-V connection group definition file."
+msgstr "指定App-V连接组定义文件。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.AppvAgent.AppvClientConnectionGroup"
+msgstr "### Microsoft.AppvAgent.AppvClientConnectionGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Disable-AppvClientConnectionGroup](./Disable-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Disable-AppvClientConnectionGroup](./Disable-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Enable-AppvClientConnectionGroup](./Enable-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Enable-AppvClientConnectionGroup](./Enable-AppvClientConnectionGroup.md)"
+
+msgid "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+msgstr "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Mount-AppvClientConnectionGroup](./Mount-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Mount-AppvClientConnectionGroup](./Mount-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Remove-AppvClientConnectionGroup](./Remove-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Remove-AppvClientConnectionGroup](./Remove-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Repair-AppvClientConnectionGroup](./Repair-AppvClientConnectionGroup.md)"
+msgstr "[修复-AppvClientConnectionGroup](./Repair-AppvClientConnectionGroup.md)"
+
+msgid "[Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"
+msgstr "[Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"

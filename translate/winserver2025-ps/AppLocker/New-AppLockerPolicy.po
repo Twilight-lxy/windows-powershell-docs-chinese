@@ -1,0 +1,206 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:59:49 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AppLockerPolicy"
+msgstr "# 新的AppLocker策略"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Creates a new AppLocker policy from a list of file information and other "
+"rule creation options."
+msgstr "根据文件信息列表及其他规则创建选项来生成一个新的 AppLocker 策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### FileInformation"
+msgstr "### 文件信息"
+
+msgid "### AllowWindows"
+msgstr "### AllowWindows"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-AppLockerPolicy** cmdlet uses a list of file information to automatically generate a list of rules for a given user or group.\n"
+"Rules can be generated based on publisher, hash, or path information."
+msgstr ""
+"`New-AppLockerPolicy` cmdlet "
+"使用文件信息列表来为指定的用户或组自动生成规则列表。规则可以根据发行商、哈希值或路径信息进行生成。"
+
+msgid ""
+"Run the **Get-AppLockerFileInformation** cmdlet to create the list of file "
+"information."
+msgstr "运行 `Get-AppLockerFileInformation` cmdlet 以创建文件信息列表。"
+
+msgid ""
+"By default, the output is an **AppLockerPolicy** object.\n"
+"If the *Xml* parameter is specified, the output will be the AppLocker policy as an XML-formatted string."
+msgstr ""
+"默认情况下，输出结果是一个 **AppLockerPolicy** 对象。如果指定了 *Xml* 参数，那么输出结果将是以 XML 格式表示的 "
+"AppLocker 策略字符串。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create an AppLocker policy with allow rules"
+msgstr "### 示例 1：创建包含允许规则的 AppLocker 策略"
+
+msgid ""
+"This example creates an AppLocker policy that contains allow rules for all of the executable files in C:\\Windows\\System32.\n"
+"The policy contains publisher rules for those files with publisher information and hash rules for those that do not.\n"
+"The rules are prefixed with `System32:` and the rules apply to the Everyone group."
+msgstr ""
+"这个示例创建了一个 AppLocker 策略，其中包含针对 C:\\Windows\\System32 "
+"目录下所有可执行文件的允许规则。对于那些具有发布者信息的文件，该策略还包含了相应的发布者规则；而对于没有发布者信息的文件，则包含了哈希规则。这些规则的前缀为"
+" `System32:`，并且这些规则适用于 “Everyone” 组用户。"
+
+msgid "### Example 2: Create an AppLocker policy"
+msgstr "### 示例 2：创建一个 AppLocker 策略"
+
+msgid ""
+"This example creates an XML-formatted AppLocker policy for all of the executable files in `C:\\Windows\\System32`.\n"
+"The policy contains only path rules.\n"
+"The rules are applied to the Everyone group.\n"
+"The *Optimize* parameter indicates that similar rules are grouped together where possible.\n"
+"The AppLocker policy trusts all local Windows components."
+msgstr ""
+"这个示例为 `C:\\Windows\\System32` 目录下的所有可执行文件创建了一个 XML 格式的 AppLocker "
+"策略。该策略仅包含路径规则，并且这些规则适用于 “Everyone” 组。`Optimize` "
+"参数表示在可能的情况下，相似的规则会被合并到一起。此外，此 AppLocker 策略信任所有的本地 Windows 组件。"
+
+msgid "### Example 3: Create an AppLocker policy from audited events"
+msgstr "### 示例 3：根据审核后的事件创建一个 AppLocker 策略"
+
+msgid ""
+"This example creates a new AppLocker policy from the audited events in the local Microsoft-Windows-AppLocker/EXE and DLL event log.\n"
+"All of the rules will be applied to the domain\\FinanceGroup group.\n"
+"Publisher rules are created when the publisher information is available, and hash rules are created if the publisher information is not available.\n"
+"If only path information is available for a file, then the file is skipped because the *IgnoreMissingFileInformation* parameter is specified, and the file is included in the warning log.\n"
+"If the *IgnoreMissingFileInformation* parameter is not specified when file information is missing, then the cmdlet exits because it cannot create the specified rule type.\n"
+"After the new AppLocker policy is created, the AppLocker policy of the specified Group Policy Object (GPO) is set.\n"
+"The existing AppLocker policy in the specified GPO will be overwritten."
+msgstr ""
+"这个示例根据本地“Microsoft-Windows-"
+"AppLocker/EXE”和“DLL”事件日志中记录的审计事件创建一个新的AppLocker策略。所有规则都将应用于“Domain\\FinanceGroup”组。当发布者信息可用时，会生成相应的“发布者规则”；如果发布者信息缺失，则会生成“哈希规则”。对于那些只有文件路径信息的文件，由于指定了“IgnoreMissingFileInformation”参数，这些文件将被忽略，并会被记录到警告日志中。如果在缺少文件信息的情况下没有指定该参数，那么该cmdlet将无法创建相应的规则类型并因此退出执行。新AppLocker策略创建完成后，会将该策略应用到指定的组策略对象（Group"
+" Policy Object, GPO）中，从而覆盖该GPO中现有的AppLocker策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the AppLocker policy allows all local Windows components."
+msgstr "表示 AppLocker 策略允许使用所有本地的 Windows 组件。"
+
+msgid ""
+"Specifies a file that can contain publisher, path, and hash information.\n"
+"Some information may be missing, such as publisher information for an unsigned file."
+msgstr "指定一个文件，该文件可以包含发布者、路径和哈希信息。某些信息可能会缺失，例如未签名文件的发布者信息。"
+
+msgid ""
+"Specifies that, if a rule cannot be created for a file because of missing "
+"file information, then evaluation of the remaining file information will "
+"continue and a warning log of the files skipped will be generated."
+msgstr "说明：如果由于缺少文件信息而无法为某个文件创建规则，那么系统将继续评估该文件的其余信息，并生成一个包含被跳过文件的警告日志。"
+
+msgid "Specifies that similar rules will be grouped together."
+msgstr "指定相似的规则将被归为一组。"
+
+msgid "Specifies a name to add as the prefix for each rule that is created."
+msgstr "指定一个名称，作为每个创建的规则的前缀。"
+
+msgid ""
+"Specifies the type of rules to create from the file information.\n"
+"Publisher, path, or hash rules can be created from the file information.\n"
+"Multiple rule types may be specified.\n"
+"Therefore, that there are backup rule types if the necessary file information is not available."
+msgstr ""
+"指定根据文件信息创建的规则类型。可以从文件信息中创建发布者（Publisher）规则、路径（Path）规则或哈希（Hash）规则。可以指定多种规则类型；如果所需的文件信息不可用，系统也会提供相应的备份规则类型。"
+
+msgid ""
+"For example, if `Publisher, Hash` is specified for this parameter, then the "
+"hash rules are applied when publisher information is not available."
+msgstr "例如，如果为该参数指定了“Publisher, Hash”，那么当出版商信息不可用时，就会应用哈希规则。"
+
+msgid ""
+"Specifies whether the AppLocker policy for EXE and DLL rule collections applies to non-interactive processes.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定 AppLocker 策略（针对 EXE 和 DLL 规则集）是否适用于非交互式进程。该参数的合法取值如下："
+
+msgid ""
+"Specifies the user or group to which the rules are applied.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定规则将应用于哪个用户或组。该参数的可接受值包括："
+
+msgid ""
+"Specifies that the output of the AppLocker policy be as an XML-formatted "
+"string."
+msgstr "指定 AppLocker 策略的输出应为 XML 格式的字符串。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid ""
+"### "
+"Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.FileInformation"
+msgstr ""
+"### "
+"Microsoft.security.ApplicationId.PolicyManagement.PolicyModel.FileInformation"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.AppLockerPolicy"
+msgstr ""
+"### Microsoft "
+"SECURITY.ApplicationId.PolicyManagement.PolicyModel.AppLockerPolicy"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AppLockerFileInformation](./Get-AppLockerFileInformation.md)"
+msgstr "[Get-AppLockerFileInformation](./Get-AppLockerFileInformation.md)"
+
+msgid "[Get-AppLockerPolicy](./Get-AppLockerPolicy.md)"
+msgstr "[Get-AppLockerPolicy](./Get-AppLockerPolicy.md)"
+
+msgid "[Set-AppLockerPolicy](./Set-AppLockerPolicy.md)"
+msgstr "[Set-AppLockerPolicy](./Set-AppLockerPolicy.md)"
+
+msgid "[Test-AppLockerPolicy](./Test-AppLockerPolicy.md)"
+msgstr "[测试 AppLockerPolicy](./Test-AppLockerPolicy.md)"

@@ -1,0 +1,86 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:52:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-AccelNetManagement"
+msgstr "# 禁用AccelNetManagement"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Disables Accelerated Networking Management cluster-wide."
+msgstr "在集群范围内禁用加速网络管理功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"Disables AccelNet Management cluster-wide. This doesn't turn off SR-IOV on "
+"VMs."
+msgstr "在集群范围内禁用AccelNet管理功能。但这并不会关闭虚拟机上的SR-IOV技术。"
+
+msgid ""
+"Disabling this feature on the cluster won't change any configuration settings on the VMs. They will\n"
+"no longer be managed by AccelNet or tracked by HUD."
+msgstr "在集群上禁用此功能不会更改虚拟机上的任何配置设置。这些虚拟机将不再由 AccelNet 管理，也不会被 HUD 跟踪。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "This example disables the AccelNet Management layer on the cluster."
+msgstr "这个示例会禁用集群上的AccelNet管理层。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-AccelNetManagement](enable-accelnetmanagement.md)"
+msgstr "[Enable-AccelNetManagement](enable-accelnetmanagement.md)"
+
+msgid "[Get-AccelNetManagement](get-accelnetmanagement.md)"
+msgstr "[Get-AccelNetManagement](get-accelnetmanagement.md)"
+
+msgid "[Get-AccelNetManagementPreReq](get-accelnetmanagementprereq.md)"
+msgstr "[Get-AccelNetManagementPreReq](get-accelnetmanagementprereq.md)"
+
+msgid "[Set-AccelNetManagement](set-accelnetmanagement.md)"
+msgstr "[Set-AccelNetManagement](set-accelnetmanagement.md)"

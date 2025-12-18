@@ -1,0 +1,313 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:29:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-BitLockerKeyProtector"
+msgstr "# Add-BitLockerKeyProtector"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds a key protector for a BitLocker volume."
+msgstr "为 BitLocker 卷添加一个密钥保护器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### PasswordProtector"
+msgstr "### PasswordProtector"
+
+msgid "### RecoveryPasswordProtector"
+msgstr "### RecoveryPasswordProtector"
+
+msgid "### StartupKeyProtector"
+msgstr "### StartupKeyProtector"
+
+msgid "### TpmAndStartupKeyProtector"
+msgstr "### TpmAndStartupKeyProtector"
+
+msgid "### TpmAndPinAndStartupKeyProtector"
+msgstr "### TpmAndPinAndStartupKeyProtector"
+
+msgid "### SidProtector"
+msgstr "### SidProtector"
+
+msgid "### TpmAndPinProtector"
+msgstr "### TpmAndPinProtector"
+
+msgid "### TpmProtector"
+msgstr "### TpmProtector"
+
+msgid "### RecoveryKeyProtector"
+msgstr "### RecoveryKeyProtector"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-BitLockerKeyProtector** cmdlet adds a protector for the volume key"
+" of the volume protected with BitLocker Drive Encryption."
+msgstr ""
+"`Add-BitLockerKeyProtector` cmdlet 为使用 BitLocker 驱动器加密保护的卷的卷密钥添加一个保护机制。"
+
+msgid ""
+"When a user accesses a drive protected by BitLocker, such as when starting a computer, BitLocker requests the relevant key protector.\n"
+"For example, the user can enter a PIN or provide a USB drive that contains a key.\n"
+"BitLocker retrieves the encryption key and uses it to read data from the drive."
+msgstr ""
+"当用户访问受 BitLocker 保护的驱动器时（例如在启动计算机时），BitLocker 会请求相应的密钥保护机制。用户可以输入 PIN "
+"码，或者提供一个包含加密密钥的 USB 驱动器。BitLocker 会检索到该加密密钥，并使用它来从驱动器中读取数据。"
+
+msgid ""
+"You can use one of the following methods or combinations of methods for a "
+"key protector:"
+msgstr "你可以使用以下方法中的一种或几种方法的组合来创建一个密钥保护器："
+
+msgid ""
+"You can add only one of these methods or combinations at a time, but you can"
+" run this cmdlet more than once on a volume."
+msgstr "一次只能添加这些方法中的一种或它们的组合，但你可以在一个卷上多次运行这个cmdlet。"
+
+msgid ""
+"Adding a key protector is a single operation; for example, adding a startup key protector to a volume that uses the TPM and PIN combination as a key protector results in two key protectors, not a single key protector that uses TPM, PIN, and startup key.\n"
+"Instead, add a protector that uses TPM, PIN, and startup key and then remove the TPM and PIN protector by using the **Remove-BitLockerKeyProtector** cmdlet."
+msgstr ""
+"添加密钥保护器是一个简单的操作。例如，如果向一个使用 TPM 和 PIN "
+"组合作为密钥保护器的卷中添加启动密钥保护器，那么实际上会创建两个独立的密钥保护器（而不是一个同时使用 TPM、PIN "
+"和启动密钥的单一保护器）。正确的做法是先添加一个同时使用 TPM、PIN 和启动密钥的保护器，然后通过使用 **Remove-"
+"BitLockerKeyProtector** cmdlet 来移除 TPM 和 PIN 保护器。"
+
+msgid ""
+"For a password or PIN key protector, specify a secure string.\n"
+"You can use the **ConvertTo-SecureString** cmdlet to create a secure string.\n"
+"You can use secure strings in a script and still maintain confidentiality of passwords."
+msgstr ""
+"对于密码或PIN码保护工具，请指定一个安全的字符串。您可以使用 **ConvertTo-SecureString** cmdlet "
+"来创建这样的安全字符串。在脚本中使用这些安全字符串，仍然可以确保密码的保密性。"
+
+msgid ""
+"This cmdlet returns a BitLocker volume object.\n"
+"If you choose recovery password as your key protector but do not specify a 48-digit recovery password, this cmdlet creates a random 48-digit recovery password.\n"
+"The cmdlet stores the password as the **RecoveryPassword** field of the **KeyProtector** attribute of the BitLocker volume object."
+msgstr ""
+"此cmdlet返回一个BitLocker卷对象。如果您选择“恢复密码”作为密钥保护方式，但未指定48位的恢复密码，那么该cmdlet会自动生成一个随机的48位恢复密码，并将该密码存储在BitLocker卷对象的**KeyProtector**属性的**RecoveryPassword**字段中。"
+
+msgid ""
+"If you use startup key or recovery key as part of your key protector, provide a path to store the key.\n"
+"This cmdlet stores the name of the file that contains the key in the **KeyFileName** field of the **KeyProtector** field in the BitLocker volume object."
+msgstr ""
+"如果您在密钥保护器中使用启动键或恢复键，请提供用于存储该密钥的路径。此cmdlet会将包含密钥的文件的名称存储在BitLocker卷对象中**KeyProtector**字段的**KeyFileName**字段中。"
+
+msgid ""
+"For an overview of BitLocker, see [BitLocker Drive Encryption "
+"Overview](https://technet.microsoft.com/en-us/library/cc732774.aspx) on "
+"TechNet."
+msgstr ""
+"有关 BitLocker 的概述，请参阅 TechNet 上的 [BitLocker "
+"驱动器加密概述](https://technet.microsoft.com/en-us/library/cc732774.aspx)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add key protector"
+msgstr "### 示例 1：添加密钥保护器"
+
+msgid ""
+"This example adds a combination of the TPM and a PIN as key protector for "
+"the BitLocker volume identified with the drive letter C:."
+msgstr ""
+"这个示例结合了TPM（Trusted Platform "
+"Module，可信平台模块）和PIN码作为加密保护机制，用于保护标识为驱动器字母C:的BitLocker卷。"
+
+msgid ""
+"The first command uses the **ConvertTo-SecureString** cmdlet to create a secure string that contains a PIN and saves that string in the $SecureString variable.\n"
+"For more information about the **ConvertTo-SecureString** cmdlet, type `Get-Help ConvertTo-SecureString`."
+msgstr ""
+"第一个命令使用了 **ConvertTo-SecureString** cmdlet 来创建一个包含 PIN 的安全字符串，并将该字符串保存在 "
+"$SecureString 变量中。有关 **ConvertTo-SecureString** cmdlet 的更多信息，请输入 `Get-Help "
+"ConvertTo-SecureString`。"
+
+msgid ""
+"The second command adds a protector to the BitLocker volume that has the drive letter C:.\n"
+"The command specifies that this volume uses a combination of the TPM and the PIN as key protector and provides the PIN saved in the $SecureString variable."
+msgstr ""
+"第二个命令为使用驱动器字母C:的BitLocker卷添加了一个保护机制。该命令指定该卷使用TPM（可信平台模块）和PIN码的组合作为密钥保护方式，并使用了存储在$SecureString变量中的PIN码。"
+
+msgid "### Example 2: Add a recovery key for all BitLocker volumes"
+msgstr "### 示例 2：为所有使用 BitLocker 加密的卷添加恢复密钥"
+
+msgid ""
+"This command gets all the BitLocker volumes for the current computer and passes them to the **Add-BitLockerKeyProtector** cmdlet by using the pipe operator.\n"
+"This cmdlet specifies a path to a folder where the randomly generated recovery key will be stored and indicates that these volumes use a recovery key as a key protector."
+msgstr ""
+"这个命令会获取当前计算机上所有的 BitLocker 加密卷，并通过管道运算符将这些卷传递给 **Add-BitLockerKeyProtector**"
+" cmdlet。该 cmdlet 指定一个文件夹路径，用于存储随机生成的恢复密钥，并表明这些加密卷使用恢复密钥作为密钥保护机制。"
+
+msgid "### Example 3: Add credentials as a key protector"
+msgstr "### 示例 3：将凭据作为密钥保护器添加"
+
+msgid ""
+"This command adds an AD DS account key protector to the BitLocker volume specified by the *MountPoint* parameter.\n"
+"The command specifies an account and specifies that BitLocker uses user credentials as a key protector.\n"
+"When a user accesses this volume, BitLocker prompts for credentials for the user account Western\\SarahJones."
+msgstr ""
+"此命令为由 *MountPoint* 参数指定的 BitLocker 卷添加一个 AD DS 账户密钥保护器。该命令指定了一个账户，并说明 "
+"BitLocker 将使用该用户的凭据作为密钥保护器。当用户访问这个卷时，BitLocker 会要求输入用户名 Western\\SarahJones "
+"的凭据。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an account using the format Domain\\User.\n"
+"This cmdlet adds the account you specify as a key protector for the volume encryption key."
+msgstr "使用“Domain/User”格式指定一个账户。此cmdlet会将您指定的账户添加为卷加密密钥的密钥保护者。"
+
+msgid ""
+"Indicates that BitLocker uses an AD DS account as a protector for the volume"
+" encryption key."
+msgstr "这表示 BitLocker 使用 AD DS 账户来保护卷加密密钥。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies an array of drive letters or BitLocker volume objects.\n"
+"This cmdlet adds a key protector to the volumes specified.\n"
+"To obtain a BitLocker volume object, use the **Get-BitLockerVolume** cmdlet."
+msgstr ""
+"用于指定一组驱动器字母或 BitLocker 卷对象。此 cmdlet 会为指定的卷添加一个密钥保护机制。若要获取 BitLocker 卷对象，请使用 "
+"**Get-BitLockerVolume** cmdlet。"
+
+msgid ""
+"Specifies a secure string object that contains a password.\n"
+"The cmdlet adds the password specified as a protector for the volume encryption key."
+msgstr "指定一个包含密码的安全字符串对象。此 cmdlet 将指定的密码作为卷加密密钥的保护机制（即“保护器”）添加到系统中。"
+
+msgid ""
+"Indicates that BitLocker uses a password as a protector for the volume "
+"encryption key."
+msgstr "这表示 BitLocker 使用密码来保护卷加密密钥。"
+
+msgid ""
+"Specifies a secure string object that contains a PIN.\n"
+"The cmdlet adds the PIN specified, with other data, as a protector for the volume encryption key."
+msgstr "指定一个包含PIN码的安全字符串对象。该cmdlet会将指定的PIN码与其他数据一起添加，用作卷加密密钥的保护措施。"
+
+msgid ""
+"Specifies a path to a folder.\n"
+"This cmdlet adds a randomly generated recovery key as a protector for the volume encryption key and stores it in the specified path."
+msgstr "指定一个文件夹的路径。此cmdlet会生成一个随机恢复密钥，作为卷加密密钥的保护机制，并将其存储在指定的路径中。"
+
+msgid ""
+"Indicates that BitLocker uses a recovery key as a protector for the volume "
+"encryption key."
+msgstr "表示 BitLocker 使用恢复密钥来保护卷加密密钥。"
+
+msgid ""
+"Specifies a recovery password.\n"
+"If you do not specify this parameter, the cmdlet creates a random password.\n"
+"You can enter a 48 digit password.\n"
+"The cmdlet adds the password specified or created as a protector for the volume encryption key."
+msgstr ""
+"指定一个恢复密码。如果您不指定此参数，cmdlet 将生成一个随机密码。您可以输入一个 48 位长的密码。该 cmdlet "
+"会将所指定的或生成的密码添加为卷加密密钥的保护机制。"
+
+msgid ""
+"Indicates that BitLocker uses a recovery password as a protector for the "
+"volume encryption key."
+msgstr "这表示 BitLocker 使用恢复密码来保护卷加密密钥的安全性。"
+
+msgid ""
+"Indicates that the system account for this computer unlocks the encrypted "
+"volume."
+msgstr "表示该计算机的系统账户用于解锁被加密的卷（即解密该卷中的数据）。"
+
+msgid ""
+"Specifies a path to a startup key.\n"
+"The cmdlet adds the key stored in the specified path as a protector for the volume encryption key."
+msgstr "指定一个启动密钥（startup key）的路径。该cmdlet会将存储在指定路径中的密钥添加为卷加密密钥的保护机制。"
+
+msgid ""
+"Indicates that BitLocker uses a startup key as a protector for the volume "
+"encryption key."
+msgstr "这表示 BitLocker 使用一个启动密钥来保护卷加密密钥。"
+
+msgid ""
+"Indicates that BitLocker uses a combination of TPM, a PIN, and a startup key"
+" as a protector for the volume encryption key."
+msgstr "这表示 BitLocker 使用 TPM（可信平台模块）、PIN 码以及启动密钥的组合来保护卷加密密钥。"
+
+msgid ""
+"Indicates that BitLocker uses a combination of TPM and a PIN as a protector "
+"for the volume encryption key."
+msgstr ""
+"这表示 BitLocker 使用 TPM（ Trusted Platform Module，可信平台模块）和 PIN 码的组合来保护卷加密密钥的安全。"
+
+msgid ""
+"Indicates that BitLocker uses a combination of TPM and a startup key as a "
+"protector for the volume encryption key."
+msgstr "这表明 BitLocker 使用 TPM（Trusted Platform Module，可信平台模块）和启动密钥的组合来保护卷加密密钥。"
+
+msgid ""
+"Indicates that BitLocker uses TPM as a protector for the volume encryption "
+"key."
+msgstr "表示 BitLocker 使用 TPM 作为卷加密密钥的保护机制。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### BitLockerVolume[], string[]"
+msgstr "### BitLockerVolume[], string[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### BitLockerVolume[]"
+msgstr "### BitLockerVolume[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Backup-BitLockerKeyProtector](./Backup-BitLockerKeyProtector.md)"
+msgstr "[Backup-BitLockerKeyProtector](./Backup-BitLockerKeyProtector.md)"
+
+msgid "[Enable-BitLocker](./Enable-BitLocker.md)"
+msgstr "[Enable-BitLocker](./Enable-BitLocker.md)"
+
+msgid "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+msgstr "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+
+msgid "[Remove-BitLockerKeyProtector](./Remove-BitLockerKeyProtector.md)"
+msgstr "[Remove-BitLockerKeyProtector](./Remove-BitLockerKeyProtector.md)"

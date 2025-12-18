@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:23:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-CauPlugin"
+msgstr "# 获取Cau插件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets information about one or more software updating plug-ins that are registered on the local\n"
+"computer."
+msgstr "获取有关在本地计算机上注册的一个或多个软件更新插件的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-CauPlugin` cmdlet gets information about one or more software updating plug-ins that are\n"
+"registered on the local computer. A plug-in can be specified or information can be retrieved about\n"
+"all registered plug-ins."
+msgstr ""
+"`Get-CauPlugin` cmdlet "
+"可以获取有关在本地计算机上注册的一个或多个软件更新插件的信息。可以指定特定的插件，也可以检索所有已注册插件的相关信息。"
+
+msgid ""
+"CAU always uses a plug-in when performing updates. The default is the\n"
+"**Microsoft.WindowsUpdatePlugin** plug-in. This plug-in communicates with the Windows Update agent,\n"
+"the same software that is used when updates are downloaded from Windows Update or Microsoft Update,\n"
+"or from a Windows Server Update Services (WSUS) server. For more information about how plug-ins work\n"
+"in CAU, see [How CAU Plug-ins Work](https://go.microsoft.com/fwlink/p/?LinkId=235333)."
+msgstr ""
+"在执行更新时，CAU总是会使用插件。默认使用的插件是**Microsoft.WindowsUpdatePlugin**。该插件与Windows "
+"Update代理进行通信，这种代理软件用于从Windows Update、Microsoft Update或Windows Server Update "
+"Services (WSUS)服务器下载更新时。有关插件在CAU中工作原理的更多信息，请参阅[How CAU Plug-ins "
+"Work](https://go.microsoft.com/fwlink/p/?LinkId=235333)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get information about software update plug-ins"
+msgstr "### 示例 1：获取有关软件更新插件的信息"
+
+msgid ""
+"This command gets information about the software updating plug-ins that are registered in the local\n"
+"CAU tool."
+msgstr "这个命令用于获取有关在本地CAU工具中注册的软件更新插件的信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the plug-in whose information this cmdlet gets.\n"
+"If not specified, then information for all the registered plug-ins is returned."
+msgstr "指定此 cmdlet 获取信息的插件的名称。如果未指定，则会返回所有已注册插件的信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ClusterAwareUpdating.CauPlugin"
+msgstr "### Microsoft-cluster Aware-Updating.CauPlugin"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Register-CauPlugin](./Register-CauPlugin.md)"
+msgstr "[注册 Cau 插件](./Register-CauPlugin.md)"
+
+msgid "[Unregister-CauPlugin](./Unregister-CauPlugin.md)"
+msgstr "[Unregister-CauPlugin](./Unregister-CauPlugin.md)"

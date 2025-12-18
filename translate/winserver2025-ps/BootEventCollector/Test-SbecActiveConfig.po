@@ -1,0 +1,142 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:02:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-SbecActiveConfig"
+msgstr "# 测试 SbecActiveConfig 配置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Tests the active Boot Event Collector configuration."
+msgstr "测试当前的“启动事件收集器”（Boot Event Collector）配置是否正常工作。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Test-SbecActiveConfig** cmdlet tests whether the specified Boot Event "
+"Collector configuration matches the current active configuration."
+msgstr ""
+"`Test-SbecActiveConfig` cmdlet 用于检测指定的启动事件收集器（Boot Event "
+"Collector）配置是否与当前的活动配置相匹配。"
+
+msgid ""
+"The comparison is done on the \"normalized\" text of the configuration by removing all the carriage return (`\\r`) characters and by removing any empty lines at the end of configuration.\n"
+"The empty lines in the middle of the text are not removed, and the white space matters."
+msgstr ""
+"比较是基于配置文件的“标准化”文本进行的，具体方法包括删除所有的回车符（`\\r`）以及配置文件末尾的任何空行。文本中的中间空行不会被删除，并且空白字符（如空格、制表符等）在比较过程中是会被考虑在内的。"
+
+msgid ""
+"This command returns $True if the configurations match; otherwise, it "
+"returns $False."
+msgstr "如果配置相匹配，此命令将返回 `$True`；否则，它将返回 `$False`。"
+
+msgid "This command throws an error on failures."
+msgstr "这个命令在执行失败时会抛出错误。"
+
+msgid "You must have the Builtin Administrator privilege to run this command."
+msgstr "您必须具有内置管理员权限才能运行此命令。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test a configuration file through a pipeline"
+msgstr "### 示例 1：通过管道测试配置文件"
+
+msgid ""
+"This command compares the current configuration with the contents of the "
+"file MyConfig.xml by passing it through a pipeline."
+msgstr "这个命令通过将当前配置传递给一个处理流程（pipeline），将其与文件“MyConfig.xml”中的内容进行比较。"
+
+msgid "### Example 2: Test a configuration file through a parameter"
+msgstr "### 示例 2：通过参数测试配置文件"
+
+msgid ""
+"This command compares the current configuration with the contents of the "
+"file MyConfig.xml by passing it as a parameter."
+msgstr "该命令通过将文件 MyConfig.xml 作为参数传递，来比较当前配置与该文件的内容。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行该cmdlet。可以输入一个会话对象（例如**New-CimSession**或**Get-CimSession** "
+"cmdlet的输出结果），或者这些对象的数组。默认情况下，该cmdlet会在本地计算机上运行。有关更多信息，请参阅“关于_CimSession”。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on MSDN."
+msgstr ""
+"指定您希望执行操作的计算机名称。您可以分别为每台计算机指定一个完全限定域名（FQDN）、NetBIOS 名称或 IP 地址。有关更多信息，请参阅 "
+"MSDN 上的 [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid ""
+"Specifies the configuration to test.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要测试的配置。该参数的可接受值为："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### string"
+msgstr "### 字符串"
+
+msgid "The text of the configuration, same as in the *Content* parameter."
+msgstr "配置文本与*Content*参数中的内容相同。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Boolean"
+msgstr "### 布尔值（Boolean）"
+
+msgid "The result of comparison: $True or $False."
+msgstr "比较的结果：$True 或 $False。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecActiveConfig](./Get-SbecActiveConfig.md)"
+msgstr "[Get-SbecActiveConfig](./Get-SbecActiveConfig.md)"
+
+msgid "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+msgstr "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+
+msgid "[Test-SbecConfig](./Test-SbecConfig.md)"
+msgstr "[测试-SbecConfig配置](./Test-SbecConfig.md)"

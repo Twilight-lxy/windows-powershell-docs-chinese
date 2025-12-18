@@ -1,0 +1,153 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:58:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Repair-DhcpServerv4IPRecord"
+msgstr "# 修复 DHCP Server v4 IP 记录问题"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Reconciles inconsistent lease records in the DHCP database."
+msgstr "协调DHCP数据库中不一致的租赁记录。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Repair-DhcpServerv4IPRecord** cmdlet reconciles inconsistent Dynamic Host Configuration Protocol (DHCP) lease records in the database for the DHCP Server service for the specified DHCP scopes.\n"
+"Specify the *ReportOnly* parameter to view the inconsistent records without repairs."
+msgstr ""
+"`Repair-DhcpServerv4IPRecord` 这个 cmdlet 用于修复指定 DHCP 范围内 DHCP "
+"服务器服务数据库中不一致的动态主机配置协议 (DHCP) 租约记录。如果仅希望查看这些不一致的记录而不进行修复，可以指定 `ReportOnly` "
+"参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Reconcile DHCP leases"
+msgstr "### 示例 1：协调 DHCP 租约"
+
+msgid ""
+"This command reconciles inconsistent DHCP leases for the DHCP server for the"
+" scope 10.10.10.0."
+msgstr "该命令用于协调DHCP服务器在10.10.10.0范围内的不一致的DHCP租约信息。"
+
+msgid "### Example 2: View inconsistent DHCP records"
+msgstr "### 示例 2：查看不一致的 DHCP 记录"
+
+msgid ""
+"This command gets inconsistent DHCP client records for the scope 10.10.10.0.\n"
+"The command specifies the *ReportOnly* parameter.\n"
+"Unlike the previous example, this command makes no changes to inconsistent records."
+msgstr ""
+"这个命令会获取 IP 范围 10.10.10.0 内的不一致 DHCP 客户端记录。该命令指定了 *ReportOnly* "
+"参数。与之前的例子不同，这个命令不会对那些不一致的记录进行任何修改。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用该参数来执行那些需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies the Domain Name System (DNS) name or IP address of the target "
+"computer that runs the DHCP Server service."
+msgstr "指定运行 DHCP 服务器服务的目标计算机的域名系统（DNS）名称或 IP 地址。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Indicates that the cmdlet reports inconsistent lease records but does not "
+"modify them."
+msgstr "表示该 cmdlet 报告了不一致的租约记录，但并不会对这些记录进行修改。"
+
+msgid "Specifies the scope IDs of scopes to reconcile."
+msgstr "指定需要协调的范围（scopes）的范围ID（scope IDs）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算一个最优的节流限制。这个节流限制仅适用于当前的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.Management.Infrastructure.CimInstance#DhcpServerv4IPRecords[]"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance#DhcpServerv4IPRecords[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DhcpServerDnsCredential](./Get-DhcpServerDnsCredential.md)"
+msgstr "[Get-DhcpServerDnsCredential](./Get-DhcpServerDnsCredential.md)"
+
+msgid "[Set-DhcpServerDnsCredential](./Set-DhcpServerDnsCredential.md)"
+msgstr "[Set-DhcpServerDnsCredential](./Set-DhcpServerDnsCredential.md)"

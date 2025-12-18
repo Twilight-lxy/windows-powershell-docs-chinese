@@ -1,0 +1,247 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:02:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# AppvClient Module"
+msgstr "# AppvClient 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"The following list contains links to the help topics for the Microsoft "
+"Application Virtualization (App-V) Client cmdlets."
+msgstr "以下列表包含了指向 Microsoft 应用虚拟化（App-V）客户端 cmdlet 帮助主题的链接。"
+
+msgid "## AppvClient Cmdlets"
+msgstr "## AppvClientCmdlets"
+
+msgid ""
+"### [Add-AppvClientConnectionGroup](./Add-AppvClientConnectionGroup.md)"
+msgstr ""
+"### [Add-AppvClientConnectionGroup](./Add-AppvClientConnectionGroup.md)"
+
+msgid "Creates a composition of multiple packages."
+msgstr "创建由多个包组成的组合。"
+
+msgid "### [Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+msgstr "### [Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+
+msgid "Adds a package to a computer running the App-V client."
+msgstr "将一个软件包添加到运行App-V客户端程序的计算机上。"
+
+msgid "### [Add-AppvPublishingServer](./Add-AppvPublishingServer.md)"
+msgstr "### [Add-AppvPublishingServer](./Add-AppvPublishingServer.md)"
+
+msgid "Adds a publishing server for the computer that runs the App-V client."
+msgstr "为运行App-V客户端的计算机添加一个发布服务器。"
+
+msgid "### [Disable-Appv](./Disable-Appv.md)"
+msgstr "### [Disable-Appv](./ Disable-Appv.md)"
+
+msgid "Disables the App-V service."
+msgstr "禁用App-V服务。"
+
+msgid ""
+"### [Disable-AppvClientConnectionGroup](./Disable-"
+"AppvClientConnectionGroup.md)"
+msgstr ""
+"### [Disable-AppvClientConnectionGroup](./Disable-"
+"AppvClientConnectionGroup.md)"
+
+msgid "Disables a connection group on the computer running the App-V client."
+msgstr "禁用运行App-V客户端计算机上的连接组。"
+
+msgid "### [Enable-Appv](./Enable-Appv.md)"
+msgstr "### [Enable-Appv](./Enable-Appv.md)"
+
+msgid "Enables the App-V service."
+msgstr "启用App-V服务。"
+
+msgid ""
+"### [Enable-AppvClientConnectionGroup](./Enable-"
+"AppvClientConnectionGroup.md)"
+msgstr ""
+"### [Enable-AppvClientConnectionGroup](./Enable-"
+"AppvClientConnectionGroup.md)"
+
+msgid ""
+"Enables a running connection group on the computer running the App-V client."
+msgstr "允许在运行App-V客户端的计算机上保持连接组的持续运行状态。"
+
+msgid "### [Get-AppvClientApplication](./Get-AppvClientApplication.md)"
+msgstr "### [Get-AppvClientApplication](./Get-AppvClientApplication.md)"
+
+msgid "Returns applications that are part of App-V Client Packages."
+msgstr "返回属于 App-V 客户端包的应用程序。"
+
+msgid "### [Get-AppvClientConfiguration](./Get-AppvClientConfiguration.md)"
+msgstr "### [Get-AppvClientConfiguration](./Get-AppvClientConfiguration.md)"
+
+msgid "Returns the configuration for the App-V client."
+msgstr "返回App-V客户端的配置信息。"
+
+msgid ""
+"### [Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+msgstr ""
+"### [Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+
+msgid "Returns an App-V connection group object."
+msgstr "返回一个App-V连接组对象。"
+
+msgid "### [Get-AppvClientMode](./Get-AppvClientMode.md)"
+msgstr "### [Get-AppvClientMode](./Get-AppvClientMode.md)"
+
+msgid "Displays the mode for the App-V Client."
+msgstr "显示App-V客户端的工作模式（即客户端所处的运行状态或配置方式）。"
+
+msgid "### [Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+msgstr "### [Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+
+msgid "Returns App-V Client Packages."
+msgstr "返回App-V客户端软件包。"
+
+msgid "### [Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+msgstr "### [Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+
+msgid "Returns App-V Server objects."
+msgstr "返回 App-V 服务器对象。"
+
+msgid "### [Get-AppvStatus](./Get-AppvStatus.md)"
+msgstr "### [Get-AppvStatus](./Get-AppvStatus.md)"
+
+msgid "Gets the status of the App-V service."
+msgstr "获取App-V服务的状态信息。"
+
+msgid "### [Get-AppvVirtualProcess](./Get-AppvVirtualProcess.md)"
+msgstr "### [Get-AppvVirtualProcess](./Get-AppvVirtualProcess.md)"
+
+msgid "Displays the virtual processes running on a computer."
+msgstr "显示正在计算机上运行的虚拟进程。"
+
+msgid ""
+"### [Mount-AppvClientConnectionGroup](./Mount-AppvClientConnectionGroup.md)"
+msgstr ""
+"### [Mount-AppvClientConnectionGroup](./Mount-AppvClientConnectionGroup.md)"
+
+msgid "Streams the contents of packages to the local disk."
+msgstr "将包中的内容流式传输到本地磁盘。"
+
+msgid "### [Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+msgstr "### [Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+
+msgid "Loads a package into the App-V cache."
+msgstr "将一个软件包加载到 App-V 缓存中。"
+
+msgid "### [Publish-AppvClientPackage](./Publish-AppvClientPackage.md)"
+msgstr "### [Publish-AppvClientPackage](./Publish-AppvClientPackage.md)"
+
+msgid "Publishes the App-V package."
+msgstr "发布App-V包。"
+
+msgid ""
+"### [Remove-AppvClientConnectionGroup](./Remove-"
+"AppvClientConnectionGroup.md)"
+msgstr ""
+"### [Remove-AppvClientConnectionGroup](./Remove-"
+"AppvClientConnectionGroup.md)"
+
+msgid "Deletes an App-V connection group on the client."
+msgstr "在客户端上删除一个App-V连接组。"
+
+msgid "### [Remove-AppvClientPackage](./Remove-AppvClientPackage.md)"
+msgstr "### [Remove-AppvClientPackage](./Remove-AppvClientPackage.md)"
+
+msgid "Removes the package from a computer."
+msgstr "从计算机上删除该软件包。"
+
+msgid "### [Remove-AppvPublishingServer](./Remove-AppvPublishingServer.md)"
+msgstr "### [Remove-AppvPublishingServer](./Remove-AppvPublishingServer.md)"
+
+msgid "Removes an App-V publishing server."
+msgstr "删除一个App-V发布服务器。"
+
+msgid ""
+"### [Repair-AppvClientConnectionGroup](./Repair-"
+"AppvClientConnectionGroup.md)"
+msgstr ""
+"### [修复-AppvClientConnectionGroup](./Repair-AppvClientConnectionGroup.md)"
+
+msgid "Resets the user package settings for the connection group."
+msgstr "重置该连接组的用户包设置。"
+
+msgid "### [Repair-AppvClientPackage](./Repair-AppvClientPackage.md)"
+msgstr "### [Repair-AppvClientPackage](./Repair-AppvClientPackage.md)"
+
+msgid "Resets the user settings of a package."
+msgstr "重置某个软件包的用户设置。"
+
+msgid "### [Send-AppvClientReport](./Send-AppvClientReport.md)"
+msgstr "### [Send-AppvClientReport](./Send-AppvClientReport.md)"
+
+msgid "Sends reporting data from the client."
+msgstr "从客户端发送报告数据。"
+
+msgid "### [Set-AppvClientConfiguration](./Set-AppvClientConfiguration.md)"
+msgstr "### [Set-AppvClientConfiguration](./Set-AppvClientConfiguration.md)"
+
+msgid "Applies configuration settings to the App-V Client."
+msgstr "将配置设置应用到 App-V 客户端。"
+
+msgid "### [Set-AppvClientMode](./Set-AppvClientMode.md)"
+msgstr "### [Set-AppvClientMode](./Set-AppvClientMode.md)"
+
+msgid "Sets the mode in which the client runs."
+msgstr "设置客户端运行的模式。"
+
+msgid "### [Set-AppvClientPackage](./Set-AppvClientPackage.md)"
+msgstr "### [Set-AppvClientPackage](./Set-AppvClientPackage.md)"
+
+msgid "Configures an App-V Client Package."
+msgstr "配置一个App-V客户端软件包。"
+
+msgid "### [Set-AppvPublishingServer](./Set-AppvPublishingServer.md)"
+msgstr "### [Set-AppvPublishingServer](./Set-AppvPublishingServer.md)"
+
+msgid "Modifies properties of an App-V Publishing Server."
+msgstr "修改App-V发布服务器的属性。"
+
+msgid "### [Start-AppvVirtualProcess](./Start-AppvVirtualProcess.md)"
+msgstr "### [Start-AppvVirtualProcess](./Start-AppvVirtualProcess.md)"
+
+msgid "Starts a virtual process."
+msgstr "启动一个虚拟进程。"
+
+msgid ""
+"### [Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"
+msgstr ""
+"### [Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"
+
+msgid "Shuts down the shared virtual environment of a connection group."
+msgstr "关闭连接组的共享虚拟环境。"
+
+msgid "### [Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+msgstr "### [Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+
+msgid "Shuts down virtual environments for specified packages."
+msgstr "关闭包含指定软件包的虚拟环境。"
+
+msgid "### [Sync-AppvPublishingServer](./Sync-AppvPublishingServer.md)"
+msgstr "### [Sync-AppvPublishingServer](./Sync-AppvPublishingServer.md)"
+
+msgid "Initiates the App-V Publishing Refresh operation."
+msgstr "启动App-V发布刷新操作。"
+
+msgid "### [Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"
+msgstr "### [Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"
+
+msgid "Removes the extension points for packages."
+msgstr "移除了包的扩展点（extension points）。"

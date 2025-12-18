@@ -1,0 +1,139 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:14:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Sync-AppvPublishingServer"
+msgstr "# 同步应用发布服务器（Sync-AppvPublishingServer）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Initiates the App-V Publishing Refresh operation."
+msgstr "启动App-V发布刷新操作。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByServerId (Default)"
+msgstr "### ByServerId（默认值）"
+
+msgid "### ByObject"
+msgstr "### ByObject"
+
+msgid "### ByNameUrl"
+msgstr "### ByNameUrl"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Sync-AppvPublishingServer** cmdlet initiates the Microsoft Application Virtualization (App-V) publishing refresh operation in the context of the current user.\n"
+"The publishing refresh connects to all added servers on the client and expose new App-V packages and their respective extension points to the user."
+msgstr ""
+"`Sync-AppvPublishingServer` cmdlet 在当前用户的上下文中启动 Microsoft 应用虚拟化 (App-V) "
+"的发布刷新操作。该操作会连接到客户端上所有已添加的服务器，并向用户展示新的 App-V 包及其相应的扩展点。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Start publishing refresh"
+msgstr "### 示例 1：开始发布刷新内容"
+
+msgid ""
+"This command starts publishing refresh for the current user for the server "
+"named MyServer."
+msgstr "此命令会开始为当前用户在名为“MyServer”的服务器上发布刷新（refresh）操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet forces all publishes and unpublishes of packages."
+msgstr "表示该cmdlet会强制执行所有包的发布（publish）和取消发布（unpublish）操作。"
+
+msgid ""
+"The Force switch specifies whether to suppress warning and confirmation "
+"messages. It can be useful in scripting to suppress interactive prompts. If "
+"the Force switch isn't provided in the command, you're prompted for "
+"administrative input if required."
+msgstr ""
+"“Force”开关用于决定是否抑制警告消息和确认消息。在脚本编写中，它可以帮助屏蔽交互式提示信息。如果命令中没有使用“Force”开关，那么在需要时系统会要求用户提供管理员权限（即进行身份验证）。"
+
+msgid ""
+"Indicates that the cmdlet synchronizes packages from the App-V publishing "
+"server that are provisioned to the computer and are published to all users "
+"on the computer."
+msgstr "表示该cmdlet会同步从App-V发布服务器下载到的软件包，这些软件包会被安装到计算机上，并且会推送给计算机上的所有用户。"
+
+msgid ""
+"Indicates that the cmdlet suppresses the Publishing Refresh Progress bar."
+msgstr "表示该cmdlet会隐藏发布更新进度条。"
+
+msgid "Specifies the friendly name of the server."
+msgstr "指定服务器的友好名称（即易于人们理解的名称）。"
+
+msgid "Indicates that this cmdlet is network cost aware."
+msgstr "表示此 cmdlet 具有网络成本意识（即会在执行操作时考虑网络使用的成本）。"
+
+msgid ""
+"Specifies an **AppvPublishingServer** object.\n"
+"To obtain an **AppvPublishingServer** object, use the **Get-AppvPublishingServer** cmdlet."
+msgstr ""
+"指定一个 **AppvPublishingServer** 对象。要获取一个 **AppvPublishingServer** 对象，可以使用 "
+"**Get-AppvPublishingServer** cmdlet。"
+
+msgid ""
+"Specifies the identifier for the App-V Publishing Server.\n"
+"This can be queried using the **Get-AppvPublishingServer** cmdlet."
+msgstr ""
+"用于指定 App-V 发布服务器的标识符。可以使用 **Get-AppvPublishingServer** cmdlet 来查询该标识符。"
+
+msgid "Specifies the URL path of the server."
+msgstr "指定服务器的URL路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvPublishingServer](./Add-AppvPublishingServer.md)"
+msgstr "[Add-AppvPublishingServer](./Add-AppvPublishingServer.md)"
+
+msgid "[Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+msgstr "[Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+
+msgid "[Remove-AppvPublishingServer](./Remove-AppvPublishingServer.md)"
+msgstr "[Remove-AppvPublishingServer](./Remove-AppvPublishingServer.md)"
+
+msgid "[Set-AppvPublishingServer](./Set-AppvPublishingServer.md)"
+msgstr "[Set-AppvPublishingServer](./Set-AppvPublishingServer.md)"

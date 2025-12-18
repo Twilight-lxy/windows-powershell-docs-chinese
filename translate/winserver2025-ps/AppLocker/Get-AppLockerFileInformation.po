@@ -1,0 +1,197 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:58:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppLockerFileInformation"
+msgstr "# 获取 AppLocker 文件信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the file information necessary to create AppLocker rules from a list of"
+" files or an event log."
+msgstr "从文件列表或事件日志中获取创建 AppLocker 规则所需的文件信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByFilePath (Default)"
+msgstr "### ByFilePath（默认值）"
+
+msgid "### ByAppx"
+msgstr "### 作者：ByAppx"
+
+msgid "### ByDirectory"
+msgstr "### 按目录（ByDirectory）"
+
+msgid "### ByEventLog"
+msgstr "### ByEventLog"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AppLockerFileInformation** cmdlet gets the AppLocker file information from a list of files or an event log.\n"
+"File information includes the publisher information, file hash, and file path."
+msgstr ""
+"`Get-AppLockerFileInformation` cmdlet 可以从文件列表或事件日志中获取 AppLocker "
+"文件的相关信息。这些信息包括文件的发布者信息、文件哈希值以及文件路径。"
+
+msgid ""
+"The file information from an event log may not contain all of the publisher information, file hash, and file path fields.\n"
+"Files that are not signed will not have any publisher information."
+msgstr "事件日志中的文件信息可能不包含所有的发布者信息、文件哈希值以及文件路径字段。未经过签名的文件将没有任何发布者相关信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get file information for .exe files and scripts"
+msgstr "### 示例 1：获取.exe 文件和脚本的文件信息"
+
+msgid ""
+"This example gets the file information for all the .exe files and scripts "
+"under %windir%\\system32."
+msgstr "这个示例会获取 `%windir%\\system32` 目录下所有 `.exe` 文件和脚本的文件信息。"
+
+msgid "### Example 2: Get file information for a file"
+msgstr "### 示例 2：获取文件的文件信息"
+
+msgid ""
+"This example gets the file information for the file specified by the path."
+msgstr "这个示例会获取由路径指定的文件的文件信息。"
+
+msgid ""
+"### Example 3: Get file information for all packaged applications for all "
+"users"
+msgstr "### 示例 3：获取所有用户安装的所有应用程序的文件信息"
+
+msgid ""
+"This example outputs the file information for all the packaged applications "
+"installed on this computer for all users."
+msgstr "这个示例会输出该计算机上为所有用户安装的所有打包应用程序的文件信息。"
+
+msgid "### Example 4: Get file information for Audited events"
+msgstr "### 示例 4：获取已审核事件的文件信息"
+
+msgid ""
+"This example outputs the file information for all the Audited events in the local event log.\n"
+"Audited events correspond to the Warning event in the AppLocker audit log."
+msgstr "这个示例会输出本地事件日志中所有经过审核的事件的文件信息。这些被审核的事件对应于 AppLocker 审计日志中的“警告”级别事件。"
+
+msgid "### Example 5: Get statistics for Allowed events"
+msgstr "### 示例 5：获取允许事件的统计数据"
+
+msgid ""
+"This example displays statistics for all the Allowed events in the local event log.\n"
+"For each file in the event log, the cmdlet will sum the number of times the event type occurred."
+msgstr "这个示例显示了本地事件日志中所有允许发生的事件的统计信息。对于事件日志中的每个文件，该 cmdlet 会统计该事件类型出现的次数总和。"
+
+msgid "### Example 6: Create an AppLocker policy"
+msgstr "### 示例 6：创建一个 AppLocker 策略"
+
+msgid ""
+"This example creates a new AppLocker policy from the warning events in the "
+"local event log and sets the policy of a test Group Policy Object (GPO)."
+msgstr ""
+"这个示例根据本地事件日志中的警告事件创建一个新的AppLocker策略，并将该策略应用到一个测试组策略对象（Group Policy "
+"Object，简称GPO）上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the directory that contains the files for which to get the file information.\n"
+"If all subfolders and files in the specified directory are to be searched, then include the *Recurse* parameter"
+msgstr "指定包含需要获取文件信息的文件的目录。如果需要搜索指定目录中的所有子文件夹和文件，请添加 *Recurse* 参数。"
+
+msgid "Specifies that the file information is retrieved from the event log."
+msgstr "指定文件信息是从事件日志中获取的。"
+
+msgid ""
+"Specifies the event type by which to filter the events.\n"
+"The acceptable values for this parameter are: Allowed, Denied, or Audited.\n"
+"The event types correspond to the Informational, Error, and Warning level events in the AppLocker event logs."
+msgstr ""
+"指定用于过滤事件的事件类型。该参数的允许值包括：Allowed（允许）、Denied（拒绝）或Audited（审计）。这些事件类型对应于AppLocker事件日志中的信息性（Informational）、错误性（Error）和警告性（Warning）级别的事件。"
+
+msgid ""
+"Specifies the generic file type for which to search.\n"
+"All files having the appropriate file name extension will be included.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要搜索的通用文件类型。所有具有相应文件扩展名的文件都将被包括在内。此参数的可接受值为："
+
+msgid ""
+"Specifies a list of paths to the files from which the file information is retrieved.\n"
+"Supports regular expressions."
+msgstr "指定用于获取文件信息的文件路径列表。支持正则表达式。"
+
+msgid ""
+"Specifies that all files and folders in the specified directory will be "
+"searched."
+msgstr "指定将对指定目录中的所有文件和文件夹进行搜索。"
+
+msgid ""
+"Specifies the statistics to retrieve on the files included in the event log.\n"
+"Calculates a simple sum of the number of times a file is included in the event log based on specified parameters."
+msgstr "指定要从事件日志中包含的文件中检索哪些统计信息。根据指定的参数，计算文件在事件日志中出现的次数总和（即简单的计数结果）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Security.ApplicationId.PolicyManagement.PolicyModel.FileInformation"
+msgstr ""
+"### "
+"Microsoft.security.ApplicationId.PolicyManagement.PolicyModel.FileInformation"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AppLockerPolicy](./Get-AppLockerPolicy.md)"
+msgstr "[Get-AppLockerPolicy](./Get-AppLockerPolicy.md)"
+
+msgid "[New-AppLockerPolicy](./New-AppLockerPolicy.md)"
+msgstr "[新应用锁策略](./New-AppLockerPolicy.md)"
+
+msgid "[Set-AppLockerPolicy](./Set-AppLockerPolicy.md)"
+msgstr "[Set-AppLockerPolicy](./Set-AppLockerPolicy.md)"
+
+msgid "[Test-AppLockerPolicy](./Test-AppLockerPolicy.md)"
+msgstr "[Test-AppLockerPolicy](./Test-AppLockerPolicy.md)"

@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:57:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-AppBackgroundTaskResourcePolicy"
+msgstr "# 设置应用背景任务资源策略"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Configures the use of the global pool by background tasks."
+msgstr "配置后台任务对全局资源池的使用方式。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-AppBackgroundTaskResourcePolicy** cmdlet configures the use of the global pool by background tasks.\n"
+"The global pool is a shared resource that provides CPU or network resources when an application requires additional resources to complete a task.\n"
+"You must have administrator access to set the background task resource policy."
+msgstr ""
+"`Set-AppBackgroundTaskResourcePolicy` cmdlet "
+"用于配置后台任务对全局资源池的使用。全局资源池是一种共享资源，在应用程序需要额外资源来完成任务时，可以提供 CPU "
+"或网络资源。要设置后台任务的资源策略，必须具有管理员权限。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set global resource policy to Conservative mode"
+msgstr "#### 示例 1：将全局资源策略设置为“保守”模式"
+
+msgid ""
+"This command sets the global resource policy for background tasks to "
+"Conservative, which ensures that background tasks use the minimum CPU."
+msgstr "此命令将后台任务的全局资源策略设置为“Conservative”（保守模式），从而确保后台任务使用最少的CPU资源。"
+
+msgid "### Example 2: Set global resource policy to Normal mode"
+msgstr "### 示例 2：将全局资源策略设置为“正常”模式"
+
+msgid ""
+"This command sets the global resource policy for background tasks to Normal.\n"
+"A restart is required if the previous setting was Conservative."
+msgstr "此命令将后台任务的全局资源策略设置为“Normal”（正常）。如果之前的设置是“Conservative”（保守的），则需要重新启动系统。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the global pool settings for background tasks on the system.\n"
+"Valid values are Normal and Conservative.\n"
+"Use Normal to enable the global pool for all applications.\n"
+"Use Conservative to disable the global pool for all applications."
+msgstr ""
+"指定系统中后台任务的全局池设置。有效值为 Normal 和 Conservative。使用 Normal 可为所有应用程序启用全局池；使用 "
+"Conservative 可禁用所有应用程序的全局池。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

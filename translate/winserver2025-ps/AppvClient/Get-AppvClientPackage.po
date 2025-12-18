@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:05:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppvClientPackage"
+msgstr "# Get-AppvClientPackage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Returns App-V Client Packages."
+msgstr "返回App-V客户端软件包。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称查找（默认方式）"
+
+msgid "### ByGuid"
+msgstr "### 作者：ByGuid"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-AppvClientPackage** cmdlet returns a set of Microsoft Application "
+"Virtualization (App-V) Client Packages based on the criteria provided."
+msgstr ""
+"`Get-AppvClientPackage` cmdlet 根据提供的标准返回一组 Microsoft 应用程序虚拟化（App-V）客户端包。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get packages that have names that match a string"
+msgstr "### 示例 1：获取名称与某个字符串匹配的包"
+
+msgid ""
+"This command gets the set of packages that have names that start with the "
+"string MyApp."
+msgstr "这个命令会获取所有名称以“MyApp”开头的软件包。"
+
+msgid "### Example 2: Get a specific version of a package by name"
+msgstr "#### 示例 2：通过名称获取特定版本的包"
+
+msgid "This command gets the version 4 of the package named MyApp."
+msgstr "这个命令用于获取名为“MyApp”的软件包的第4个版本。"
+
+msgid "### Example 3: Get a package by using its package ID"
+msgstr "#### 示例 3：通过使用软件包的ID来获取该软件包"
+
+msgid ""
+"This command gets the package with the package ID of "
+"793afd37-bd68-4ea1-859a-669f6afd0aa8."
+msgstr "这个命令用于获取包ID为793afd37-bd68-4ea1-859a-669f6afd0aa8的软件包。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet uses the set of all packages added to the computers as the searchable set.\n"
+"If not provided, the cmdlet only uses packages that are entitled to the current user."
+msgstr "这表示该cmdlet使用所有添加到计算机上的包作为可搜索的集合。如果未提供该参数，cmdlet仅会使用当前用户有权使用的包。"
+
+msgid ""
+"Specifies the friendly name of the package given during Sequencing time.\n"
+"This value is obtained from the package manifest."
+msgstr "在排序（Sequencing）过程中指定的软件包的友好名称。该名称是从软件包清单（package manifest）中获取的。"
+
+msgid ""
+"Specifies the GUID that uniquely identifies the package.\n"
+"It can be found in the package manifest or by opening the package in the App-V Sequencer.\n"
+"The package ID is shared by all versions of a package."
+msgstr ""
+"指定用于唯一标识该软件包的 GUID。该 GUID 可以在软件包清单中找到，或者通过使用 App-V Sequencer "
+"打开软件包来获取。同一个软件包的所有版本都共享相同的包 ID。"
+
+msgid ""
+"Specifies the version of an App-V package in one specific lineage.\n"
+"If you do not specify this parameter, the cmdlet operates on available versions of the package on the target computer."
+msgstr "指定某个特定App-V包在特定版本系列中的版本号。如果未指定此参数，则该cmdlet将操作目标计算机上可用的该包的所有版本。"
+
+msgid ""
+"Specifies the GUID that differentiates a package version from other versions, whether older, newer, or of a different lineage.\n"
+"If you do specify this parameter, the cmdlet operates on all versions of a package."
+msgstr ""
+"用于指定一个 GUID，该 GUID 可以区分某个软件包的不同版本（无论是旧版本、新版本，还是属于不同系列的版本）。如果您指定了此参数，那么该 "
+"cmdlet 将对该软件包的所有版本进行处理。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.AppV.AppvClientPowerShell.AppvClientPackage"
+msgstr "### Microsoft.AppV.AppvClientPowerShell.AppvClientPackage"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+msgstr "[Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+
+msgid "[Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+msgstr "[Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+
+msgid "[Publish-AppvClientPackage](./Publish-AppvClientPackage.md)"
+msgstr "[发布 AppvClient 包](./Publish-AppvClientPackage.md)"
+
+msgid "[Remove-AppvClientPackage](./Remove-AppvClientPackage.md)"
+msgstr "[Remove-AppvClientPackage](./Remove-AppvClientPackage.md)"
+
+msgid "[Repair-AppvClientPackage](./Repair-AppvClientPackage.md)"
+msgstr "[Repair-AppvClientPackage](./Repair-AppvClientPackage.md)"
+
+msgid "[Set-AppvClientPackage](./Set-AppvClientPackage.md)"
+msgstr "[Set-AppvClientPackage](./Set-AppvClientPackage.md)"
+
+msgid "[Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+msgstr "[Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+
+msgid "[Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"
+msgstr "[Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"

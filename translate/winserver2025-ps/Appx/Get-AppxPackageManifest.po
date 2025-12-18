@@ -1,0 +1,136 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:21:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppxPackageManifest"
+msgstr "# Get-AppxPackageManifest"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the manifest of an app package."
+msgstr "获取应用程序包的清单文件（manifest）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-AppxPackageManifest` cmdlet gets the manifest of an app package. An app package has an\n"
+"`.msix` or `.appx` file name extension. The manifest is an `.xml` document that contains\n"
+"information about the package, like the package ID."
+msgstr ""
+"`Get-AppxPackageManifest` cmdlet 可以获取应用程序包的清单文件。应用程序包的文件扩展名通常是 `.msix` 或 "
+"`.appx`。清单文件是一个 `.xml` 格式的文档，其中包含了关于该包的信息，例如包的 ID。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the manifest for an app package"
+msgstr "#### 示例 1：获取应用程序包的清单文件"
+
+msgid ""
+"This command gets the manifest for an app package named "
+"package1_1.0.0.0_neutral__8wekyb3d8bbwe."
+msgstr ""
+"这个命令用于获取名为“package1_1.0.0.0_neutral__8wekyb3d8bbwe”的应用程序包的清单文件（manifest）。"
+
+msgid "### Example 2: Get the application ID for an app package"
+msgstr "### 示例 2：获取应用程序包的应用程序 ID"
+
+msgid ""
+"This command gets the application ID for an app package that has the string "
+"WinJS in the name."
+msgstr "这个命令用于获取名称中包含“WinJS”字符串的应用包对应的应用程序ID。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This command gets the capabilities for an app package that has the string "
+"ZuneMusic in the name."
+msgstr "这个命令用于获取名称中包含字符串“ZuneMusic”的应用程序包的功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an **AppxPackage** object or the full name of a package. To get the manifest of a package\n"
+"on the computer that's not installed for the current user, you must run this command with\n"
+"administrator permissions. Wildcards are permitted."
+msgstr ""
+"指定一个 `AppxPackage` "
+"对象或包的完整名称。若要获取当前用户未安装的计算机上的某个包的清单文件（manifest），必须以管理员权限运行此命令。允许使用通配符。"
+
+msgid ""
+"Specifies a user. This cmdlet gets the manifest of packages that are installed for the user that\n"
+"this parameter specifies. To get the list of packages for a user profile other than the profile for\n"
+"the current user, you must run this command with administrator permissions. The user name can be\n"
+"in one of these formats:"
+msgstr ""
+"用于指定某个用户。此cmdlet会获取为该用户安装的软件包的相关信息（即软件包清单）。若需获取当前用户之外的其他用户配置文件中的软件包列表，必须以管理员权限运行此命令。用户名可以采用以下格式之一："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Windows.Appx.PackageManager.Commands.AppxPackage[]"
+msgstr "### Microsoft.Windows.AppxPackageManager Commands.AppxPackage[]"
+
+msgid ""
+"This cmdlet accepts an array of **AppxPackage** objects that contain information, including the full\n"
+"name of the app package."
+msgstr "这个cmdlet接受一个包含**AppxPackage**对象的数组，这些对象中包含了各种信息，包括应用程序包的完整名称。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.XML.XMLDocument"
+msgstr "### System.XML.XMLDocument"
+
+msgid ""
+"This cmdlet returns a read-only `.xml` document that contains information about the app package,\n"
+"like the package ID."
+msgstr "此 cmdlet 会返回一个只读的 `.xml` 文档，其中包含有关应用程序包的信息（例如包 ID）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Package Manager API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+msgstr "[包管理器 API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+
+msgid ""
+"[How to Add and Remove Apps](https://go.microsoft.com/fwlink/?LinkID=231020)"
+msgstr "[如何添加和删除应用程序](https://go.microsoft.com/fwlink/?LinkID=231020)"
+
+msgid "[Get-AppxPackage](./Get-AppxPackage.md)"
+msgstr "[Get-AppxPackage](./Get-AppxPackage.md)"
+
+msgid "[Add-AppxPackage](./Add-AppxPackage.md)"
+msgstr "[Add-AppxPackage](./Add-AppxPackage.md)"

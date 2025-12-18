@@ -1,0 +1,92 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:13:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Backup-DHASConfiguration"
+msgstr "# 备份DHAS配置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Backs up the configuration."
+msgstr "备份配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Backup-DHASConfiguration** cmdlet backs up the Device Health "
+"Attestation service configuration from the web.config file."
+msgstr ""
+"`Backup-DHASConfiguration` cmdlet 用于从 `web.config` 文件中备份设备健康认证（Device Health"
+" Attestation）服务的配置信息。"
+
+msgid "You must have administrator rights to run this cmdlet."
+msgstr "您必须具有管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Back up the service configuration"
+msgstr "### 示例 1：备份服务配置"
+
+msgid ""
+"This commands backs up the service configuration from the web.config file to"
+" the file specified by the *Path* parameter."
+msgstr "该命令会将服务配置从 `web.config` 文件备份到由 `Path` 参数指定的文件中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies the location in which to save the backup configuration file."
+msgstr "指定用于保存备份配置文件的位置。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "This cmdlet returns a string with the backup file path."
+msgstr "这个cmdlet返回一个包含备份文件路径的字符串。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Restore-DHASConfiguration](./Restore-DHASConfiguration.md)"
+msgstr "[ Restore-DHASConfiguration](./Restore-DHASConfiguration.md)"

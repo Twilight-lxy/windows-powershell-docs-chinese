@@ -1,0 +1,165 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:10:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Repair-AppvClientConnectionGroup"
+msgstr "# 修复 AppvClientConnectionGroup 的问题"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Resets the user package settings for the connection group."
+msgstr "重置连接组对应的用户包设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByGuid (Default)"
+msgstr "### 使用 `ByGuid`（默认值）"
+
+msgid "### ByName"
+msgstr "### 按名称查找"
+
+msgid "### ByConnectionGroup"
+msgstr "### 按连接组（ByConnectionGroup）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Repair-AppvClientConnectionGroup** cmdlet resets the user settings of the connection group.\n"
+"Resetting the settings causes permanent loss of any user-specific application settings in the package.\n"
+"The settings are reset to their original state when the connection group was originally added to the system."
+msgstr ""
+"`Repair-AppvClientConnectionGroup` cmdlet "
+"用于重置连接组的用户设置。重置设置会导致包中所有与用户相关的应用程序设置永久丢失。这些设置会被恢复到该连接组最初被添加到系统时的原始状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Repair a named connection group"
+msgstr "### 示例 1：修复一个已命名的连接组"
+
+msgid "This command repairs the connection group named MyGroup."
+msgstr "这个命令用于修复名为“MyGroup”的连接组。"
+
+msgid "### Example 2: Repair a connection group by using its ID"
+msgstr "#### 示例 2：通过使用连接组的 ID 来修复该连接组"
+
+msgid ""
+"This command repairs the connection group that has the group ID "
+"793afd37-bd68-4ea1-859a-669f6afd0aa8."
+msgstr "此命令用于修复组ID为793afd37-bd68-4ea1-859a-669f6afd0aa8的连接组。"
+
+msgid ""
+"### Example 3: Repair all connection groups that have names that match a "
+"string"
+msgstr "### 示例 3：修复所有名称与某个字符串匹配的连接组"
+
+msgid ""
+"This command finds all of the connection groups that have the string MyGr in"
+" the name, and then repairs them."
+msgstr "此命令会找到所有名称中包含“MyGr”这个字符串的连接组，然后对这些连接组进行修复。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an App-V Connection Group object."
+msgstr "指定一个 App-V 连接组对象。"
+
+msgid ""
+"Indicates that the cmdlet repairs the extension points of a connection group"
+" only, and does not delete the user state of the connection group."
+msgstr "表示该cmdlet仅修复连接组的扩展点（extension points），而不会删除该连接组的用户状态（user state）。"
+
+msgid ""
+"Indicates that this cmdlet resets user settings for the specified packages for all users on the computer.\n"
+"Usage of the *Global* parameter requires administrative credentials."
+msgstr "该命令表示会为计算机上所有用户重置指定软件包的相关用户设置。使用 *Global* 参数需要具有管理员权限。"
+
+msgid "Specifies the group ID of specific connection group."
+msgstr "指定特定连接组的组ID。"
+
+msgid ""
+"Specifies the name of the Microsoft Application Virtualization (App-V) "
+"Connection Group."
+msgstr "指定Microsoft应用程序虚拟化（App-V）连接组的名称。"
+
+msgid ""
+"Indicates that the cmdlet deletes the user state of the connection group "
+"only, and does not perform a repair on the extension points."
+msgstr "表示该cmdlet仅删除连接组中的用户状态，并不会对扩展点进行修复。"
+
+msgid ""
+"Specifies a GUID that differentiates a connection group version from other versions, whether older, newer, or of a different lineage.\n"
+"If you do not specify this parameter, the cmdlet operates on all versions of the connection group."
+msgstr ""
+"指定一个 GUID，用于区分某个连接组版本与其他版本（无论是旧版本、新版本还是属于不同分支的版本）。如果未指定此参数，则该 cmdlet "
+"将对连接组的所有版本进行操作。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.AppvAgent.AppvClientConnectionGroup"
+msgstr "### Microsoft.AppvAgent.AppvClientConnectionGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvClientConnectionGroup](./Add-AppvClientConnectionGroup.md)"
+msgstr "[Add-AppvClientConnectionGroup](./Add-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Disable-AppvClientConnectionGroup](./Disable-AppvClientConnectionGroup.md)"
+msgstr ""
+"[ Disable-AppvClientConnectionGroup](./Disable-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Enable-AppvClientConnectionGroup](./Enable-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Enable-AppvClientConnectionGroup](./Enable-AppvClientConnectionGroup.md)"
+
+msgid "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+msgstr "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Mount-AppvClientConnectionGroup](./Mount-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Mount-AppvClientConnectionGroup](./Mount-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Remove-AppvClientConnectionGroup](./Remove-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Remove-AppvClientConnectionGroup](./Remove-AppvClientConnectionGroup.md)"
+
+msgid "[Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"
+msgstr "[Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"

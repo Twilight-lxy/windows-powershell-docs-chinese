@@ -1,0 +1,186 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:37:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WindowsEdition"
+msgstr "# Get-WindowsEdition"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets edition information about a Windows image."
+msgstr "获取有关Windows镜像的版本信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Offline"
+msgstr "### 离线"
+
+msgid "### Online"
+msgstr "### 在线"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WindowsEdition** cmdlet gets the current editions of the specified"
+" Windows image."
+msgstr "`Get-WindowsEdition` cmdlet 可以获取指定 Windows 镜像的当前版本信息。"
+
+msgid ""
+"The *Target* parameter gets the target editions available in the specified "
+"Windows image."
+msgstr "`Target` 参数用于获取指定 Windows 映像中可用的目标版本。"
+
+msgid ""
+"Use the *Online* parameter to specify the running operating system on your "
+"local computer, or use the *Path* parameter to specify the location of a "
+"mounted Windows image."
+msgstr ""
+"使用 *Online* 参数来指定您本地计算机上正在运行的操作系统，或者使用 *Path* 参数来指定已挂载的 Windows 镜像的位置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Display the current edition of the operating system"
+msgstr "#### 示例 1：显示操作系统的当前版本"
+
+msgid ""
+"This command displays the name of the current edition of the running Windows"
+" operating system."
+msgstr "此命令会显示当前正在运行的Windows操作系统的版本名称。"
+
+msgid "### Example 2: Display the target editions for a mounted image"
+msgstr "### 示例 2：显示已挂载镜像的目标版本"
+
+msgid ""
+"This command displays the names of the available target editions that the "
+"mounted Windows image at c:\\offline can be changed to."
+msgstr "此命令会显示可用的目标版本名称，这些版本是可以将已挂载到 c:\\offline 目录中的 Windows 镜像更改为的目标版本。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"用于指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误和警告信息  \n"
+"- 3 = 显示错误、警告以及信息性内容  \n"
+"- 4 = 显示上述所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 虚拟磁盘（其存储空间可能小至 32 MB）。日志文件会自动被归档；归档后的日志文件名称后会添加 `.bak` "
+"扩展名，并生成一个新的日志文件。每次日志文件被归档时，对应的 `.bak` 文件都会被覆盖。如果使用的是未加入域的网络共享资源，请在使用 `DISM` "
+"命令设置日志路径之前，先通过 `net use` 命令结合域凭据来配置访问权限。"
+
+msgid ""
+"Specifies that the action is to be taken on the operating system that is "
+"currently running on the local computer."
+msgstr "指定该操作应在当前在本地计算机上运行的操作系统上执行。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service.\n"
+"If the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"“WindowsDirectory”。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，用于在服务过程中提取文件。该目录必须存在于本地。如果未指定，则会使用 `\\Windows\\%Temp%\\` 目录，并且每次运行 "
+"DISM "
+"时，该目录下的子目录名称会是一个随机生成的十六进制值。每次操作完成后，临时目录中的内容都会被删除。不建议将网络共享位置作为临时目录来用于解压安装包（.cab"
+" 或 .msu 文件）。在服务过程中用于提取文件的临时目录应为本地目录。"
+
+msgid ""
+"Specifies the path to the location of the BootMgr files.\n"
+"This is necessary only when the BootMgr files are located on a partition other than the one that you are running the command from.\n"
+"Use -SystemDrive to service an installed Windows image from a Windows PE environment."
+msgstr ""
+"指定 BootMgr 文件所在的路径。只有当 BootMgr 文件位于与你运行命令的分区不同的分区上时，才需要设置此路径。使用 "
+"`-SystemDrive` 选项可以从 Windows PE 环境中管理服务已安装的 Windows 镜像。"
+
+msgid "Displays a list of Windows editions that an image can be changed to."
+msgstr "显示该镜像可以转换为的Windows版本列表。"
+
+msgid ""
+"Specifies the path to the Windows directory relative to the image path.\n"
+"This cannot be the full path to the Windows directory; it should be a relative path.\n"
+"If not specified, the default is the Windows directory in the root of the offline image directory."
+msgstr ""
+"指定相对于图像路径的 Windows 目录的路径。该路径不能是 Windows "
+"目录的完整路径，而应该是一个相对路径。如果未指定，默认值将是离线图像目录根目录中的 Windows 目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dism Commands.ImageObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.EditionObject"
+msgstr "### Microsoft.Dism Commands.EditionObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-WindowsEdition](./Set-WindowsEdition.md)"
+msgstr "[Set-WindowsEdition](./Set-WindowsEdition.md)"
+
+msgid "[Set-WindowsProductKey](./Set-WindowsProductKey.md)"
+msgstr "[Set-WindowsProductKey](./Set-WindowsProductKey.md)"

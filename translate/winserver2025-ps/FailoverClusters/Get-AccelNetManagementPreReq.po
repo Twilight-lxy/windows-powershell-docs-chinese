@@ -1,0 +1,93 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:56:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AccelNetManagementPreReq"
+msgstr "# 获取 AccelNet Management 的先决条件信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Informs the user if the cluster nodes support Accelerated Networking."
+msgstr "如果集群节点支持加速网络（Accelerated Networking），则会通知用户。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"Retrieves information if the cluster nodes support Accelerated Networking, including verifying OS\n"
+"version and hyperthreading status."
+msgstr "如果集群节点支持加速网络（Accelerated Networking）功能，该工具会检索相关信息，包括验证操作系统版本和超线程状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example checks if the cluster nodes support AccelNet for the intent "
+"named `MyIntent`."
+msgstr "这个示例用于检查集群节点是否支持名为`MyIntent`的意图（intention）所使用的AccelNet技术。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"The intent name to be used for Accelerated Networking Management. This "
+"parameter is required."
+msgstr "用于加速网络管理的意图名称。此参数是必需的。"
+
+msgid ""
+"This value must be an integer greater than or equal to **0** and less than "
+"or equal to **99**."
+msgstr "这个值必须是一个大于或等于 **0** 且小于或等于 **99** 的整数。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-AccelNetManagement](disable-accelnetmanagement.md)"
+msgstr "[Disable-AccelNetManagement](disable-accelnetmanagement.md)"
+
+msgid "[Enable-AccelNetManagement](enable-accelnetmanagement.md)"
+msgstr "[Enable-AccelNetManagement](enable-accelnetmanagement.md)"

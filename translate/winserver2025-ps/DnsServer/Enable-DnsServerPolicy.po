@@ -1,0 +1,179 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 13:34:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-DnsServerPolicy"
+msgstr "# Enable-DnsServerPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables DNS server policies."
+msgstr "启用DNS服务器策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-DnsServerPolicy** cmdlet enables Domain Name System (DNS) server policies.\n"
+"You can enable both query resolution policies and zone transfer policies.\n"
+"Specify a single policy by name.\n"
+"If you do not specify a name, this cmdlet enables all policies for the zone or domain that you specify."
+msgstr ""
+"`Enable-DnsServerPolicy` cmdlet "
+"可用于启用域名系统（DNS）服务器策略。您可以同时启用查询解析策略和区域传输策略。只需通过名称指定一个策略即可。如果您未指定名称，此 cmdlet "
+"会为您指定的区域或域启用所有策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable a zone level policy"
+msgstr "### 示例 1：启用区域级别的策略"
+
+msgid ""
+"This command enables a zone level policy named Policy07.\n"
+"This policy can be either a query resolution policy or a zone transfer policy."
+msgstr "此命令启用了一个名为“Policy07”的区域级策略。该策略既可以是一种查询解析策略，也可以是一种区域传输策略。"
+
+msgid "### Example 2: Enable a server level policy"
+msgstr "### 示例 2：启用服务器级别的策略"
+
+msgid "This command enables a server level policy named Policy22."
+msgstr "此命令启用了一个名为Policy22的服务器级别策略。"
+
+msgid "### Example 3: Enable all zone level policies"
+msgstr "### 示例 3：启用所有区域级别的策略"
+
+msgid "This command enables all the policies in the zone named EuropeZone."
+msgstr "这个命令会启用名为“EuropeZone”的区域中的所有策略。"
+
+msgid "### Example 4: Enable all server level policies"
+msgstr "### 示例 4：启用所有服务器级别的策略"
+
+msgid "This command enables all the server level policies."
+msgstr "此命令启用所有服务器级别的策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将该cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，随后会显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用 `*-Job` "
+"系列 cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies a DNS server.\n"
+"You can specify an IP address or any value that resolves to an IP address, such as a fully qualified domain name (FQDN), host name, or NETBIOS name."
+msgstr ""
+"用于指定一个DNS服务器。您可以指定一个IP地址，或者任何能够解析为IP地址的字符串，例如完全 Qualified Domain "
+"Name（FQDN）、主机名或NETBIOS名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需询问用户确认。"
+
+msgid ""
+"Specifies which level at which to enable policies.\n"
+"The acceptable values for this parameter are: Zone and Server."
+msgstr "指定在哪个层级启用策略。该参数的可接受值为：Zone（区域）和Server（服务器）。"
+
+msgid "Specifies the name of the policy to enable."
+msgstr "指定要启用的策略的名称。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的最大操作数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前正在运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "Specifies the name of a DNS zone in which to enable policies."
+msgstr "指定要启用策略的DNS区域的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-DnsServerPolicy](./Disable-DnsServerPolicy.md)"
+msgstr "[disable-DnsServerPolicy](./ Disable-DnsServerPolicy.md)"
+
+msgid ""
+"[Add-DnsServerQueryResolutionPolicy](./Add-"
+"DnsServerQueryResolutionPolicy.md)"
+msgstr ""
+"[Add-DnsServerQueryResolutionPolicy](./Add-"
+"DnsServerQueryResolutionPolicy.md)"
+
+msgid ""
+"[Add-DnsServerZoneTransferPolicy](./Add-DnsServerZoneTransferPolicy.md)"
+msgstr ""
+"[Add-DnsServerZoneTransferPolicy](./Add-DnsServerZoneTransferPolicy.md)"

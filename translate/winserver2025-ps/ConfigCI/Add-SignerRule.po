@@ -1,0 +1,70 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:33:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-SignerRule"
+msgstr "# Add-SignerRule"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a signer rule and adds it to a policy."
+msgstr "创建一个签名者规则，并将其添加到策略中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Certificate"
+msgstr "### 证书"
+
+msgid "### CertStore"
+msgstr "### CertStore"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-SignerRule** cmdlet creates a signer rule based on a certificate, and then adds the rule to a Code Integrity policy.\n"
+"By default, this cmdlet creates allow rules.\n"
+"Specify at least one scenario for the rule in the policy from the following scenarios:"
+msgstr ""
+"`Add-SignerRule` cmdlet 根据证书创建一个签名规则，然后将该规则添加到代码完整性策略中。默认情况下，此 cmdlet "
+"创建的是允许（allow）类型的规则。请从以下场景中为该规则在策略中指定至少一种应用场景："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-CIPolicyRule](./New-CIPolicyRule.md)"
+msgstr "[New-CIPolicyRule](./New-CIPolicyRule.md)"

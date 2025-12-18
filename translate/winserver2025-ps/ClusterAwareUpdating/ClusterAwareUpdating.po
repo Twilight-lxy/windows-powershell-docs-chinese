@@ -1,0 +1,178 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:21:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# ClusterAwareUpdating Module"
+msgstr "# ClusterAwareUpdating 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Cluster-Aware Updating-specific\n"
+"cmdlets. It lists the cmdlets in alphabetical order based on the verb at the beginning of the\n"
+"cmdlet."
+msgstr ""
+"这个参考资料提供了所有与“Cluster-Aware "
+"Updating”功能相关的cmdlet的描述和语法信息。这些cmdlet按照它们开头所使用的动词（即命令的操作部分）按字母顺序排列。"
+
+msgid "## ClusterAwareUpdating Cmdlets"
+msgstr "## ClusterAwareUpdatingCmdlets"
+
+msgid "### [Add-CauClusterRole](Add-CauClusterRole.md)"
+msgstr "### [Add-CauClusterRole](Add-CauClusterRole.md)"
+
+msgid ""
+"Adds the CAU clustered role that provides the self-updating functionality to"
+" the specified cluster."
+msgstr "为指定的集群添加CAU（Clustered Authentication Unit）集群角色，该角色提供了自更新功能。"
+
+msgid "### [Disable-CauClusterRole](Disable-CauClusterRole.md)"
+msgstr "### [Disable-CauClusterRole]( Disable-CauClusterRole.md)"
+
+msgid "Suspends the self-updating functionality on the specified cluster."
+msgstr "暂停指定集群上的自动更新功能。"
+
+msgid "### [Enable-CauClusterRole](Enable-CauClusterRole.md)"
+msgstr "### [Enable-CauClusterRole](Enable-CauClusterRole.md)"
+
+msgid "Re-enables the self-updating functionality on the specified cluster."
+msgstr "重新启用指定集群上的自动更新功能。"
+
+msgid "### [Export-CauReport](Export-CauReport.md)"
+msgstr "### [Export-CauReport](Export-CauReport.md)"
+
+msgid ""
+"Exports one or more Updating Run reports into an HTML or CSV-formatted "
+"document."
+msgstr "将一份或多份“更新运行”报告导出为HTML或CSV格式的文档。"
+
+msgid "### [Get-CauClusterRole](Get-CauClusterRole.md)"
+msgstr "### [Get-CauClusterRole](Get-CauClusterRole.md)"
+
+msgid ""
+"Gets configuration properties of the CAU clustered role on the specified "
+"cluster."
+msgstr "获取指定集群上CAU集群角色的配置属性。"
+
+msgid ""
+"### [Get-CauDeviceInfoForFeatureUpdates](Get-"
+"CauDeviceInfoForFeatureUpdates.md)"
+msgstr ""
+"### [Get-CauDeviceInfoForFeatureUpdates](Get-"
+"CauDeviceInfoForFeatureUpdates.md)"
+
+msgid ""
+"Retrieves device information for feature updates from a specified directory."
+msgstr "从指定的目录中检索设备信息，以便进行功能更新。"
+
+msgid "### [Get-CauPlugin](Get-CauPlugin.md)"
+msgstr "### [Get-CauPlugin](Get-CauPlugin.md)"
+
+msgid ""
+"Gets information about one or more software updating plug-ins that are "
+"registered on the local computer."
+msgstr "获取有关在本地计算机上注册的一个或多个软件更新插件的信息。"
+
+msgid "### [Get-CauReport](Get-CauReport.md)"
+msgstr "### [Get-CauReport](Get-CauReport.md)"
+
+msgid ""
+"Gets the Updating Run reports for all known Updating Runs, or all Updating "
+"Runs that match the specified dates or other specified parameters."
+msgstr "获取所有已知更新运行的报告，或者获取符合指定日期或其他指定参数的所有更新运行的报告。"
+
+msgid "### [Get-CauRun](Get-CauRun.md)"
+msgstr "### [Get-CauRun](Get-CauRun.md)"
+
+msgid "Gets status information about an updating run currently in progress."
+msgstr "获取关于当前正在进行的更新运行的状态信息。"
+
+msgid "### [Get-ClusterlessCauRun](Get-ClusterlessCauRun.md)"
+msgstr "### [Get-ClusterlessCauRun](Get-ClusterlessCauRun.md)"
+
+msgid ""
+"Retrieves information about a Cluster-Aware Updating (CAU) run not "
+"associated with a cluster."
+msgstr "检索与某个集群无关的“Cluster-Aware Updating”（CAU）运行相关的信息。"
+
+msgid "### [Invoke-CauRun](Invoke-CauRun.md)"
+msgstr "### [Invoke-CauRun](Invoke-CauRun.md)"
+
+msgid ""
+"Performs a scan of cluster nodes for applicable updates and installs those "
+"updates through an Updating Run on the specified cluster."
+msgstr "对集群节点进行扫描，查找可应用的更新，并通过在该指定集群上执行的“更新运行”（Updating Run）来安装这些更新。"
+
+msgid "### [Invoke-CauScan](Invoke-CauScan.md)"
+msgstr "### [Invoke-CauScan](Invoke-CauScan.md)"
+
+msgid ""
+"Performs a scan of cluster nodes for applicable updates and gets a list of "
+"the initial set of updates that are applied to each node in a specified "
+"cluster."
+msgstr "扫描集群节点以查找可应用的更新，并获取将应用于指定集群中每个节点的初始更新列表。"
+
+msgid "### [Invoke-ClusterlessCauRun](Invoke-ClusterlessCauRun.md)"
+msgstr "### [Invoke-ClusterlessCauRun](Invoke-ClusterlessCauRun.md)"
+
+msgid ""
+"Performs a Cluster-Aware Updating (CAU) run on a set of nodes that are not "
+"associated with a cluster."
+msgstr "在一组未与任何集群关联的节点上执行集群感知更新（Cluster-Aware Updating, CAU）操作。"
+
+msgid "### [Register-CauPlugin](Register-CauPlugin.md)"
+msgstr "### [Register-CauPlugin](Register-CauPlugin.md)"
+
+msgid "Registers a CAU software updating plug-in on the local computer."
+msgstr "在本地计算机上注册一个用于更新CAU软件的插件。"
+
+msgid "### [Remove-CauClusterRole](Remove-CauClusterRole.md)"
+msgstr "### [Remove-CauClusterRole](Remove-CauClusterRole.md)"
+
+msgid "Removes the CAU clustered role from the specified failover cluster."
+msgstr "从指定的故障转移集群中移除CAU集群角色。"
+
+msgid "### [Save-CauDebugTrace](Save-CauDebugTrace.md)"
+msgstr "### [Save-CauDebugTrace](Save-CauDebugTrace.md)"
+
+msgid "Saves CAU debug tracing information to a local zip file."
+msgstr "将中国农业大学（CAU）的调试追踪信息保存到本地ZIP文件中。"
+
+msgid "### [Set-CauClusterRole](Set-CauClusterRole.md)"
+msgstr "### [Set-CauClusterRole](Set-CauClusterRole.md)"
+
+msgid ""
+"Sets configuration properties for the CAU clustered role on the specified "
+"cluster."
+msgstr "为指定集群上的CAU（Clustered Application Utility）集群角色设置配置属性。"
+
+msgid "### [Stop-CauRun](Stop-CauRun.md)"
+msgstr "### [Stop-CauRun](Stop-CauRun.md)"
+
+msgid "Stops an updating run that is in progress on a cluster."
+msgstr "停止集群上正在进行的更新操作。"
+
+msgid "### [Test-CauSetup](Test-CauSetup.md)"
+msgstr "### [Test-CauSetup](Test-CauSetup.md)"
+
+msgid ""
+"Tests whether a cluster is properly set up to apply software updates using "
+"CAU."
+msgstr "用于测试集群是否已正确配置，以便使用CAU（Cluster Application Update）应用软件更新。"
+
+msgid "### [Unregister-CauPlugin](Unregister-CauPlugin.md)"
+msgstr "### [Unregister-CauPlugin](Unregister-CauPlugin.md)"
+
+msgid ""
+"Removes a software updating plug-in from the list of plug-ins that are used "
+"by CAU."
+msgstr "从CAU使用的插件列表中移除一个用于软件更新的插件。"

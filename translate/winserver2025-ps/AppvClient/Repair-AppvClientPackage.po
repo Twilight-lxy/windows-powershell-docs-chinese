@@ -1,0 +1,168 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:10:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Repair-AppvClientPackage"
+msgstr "# 修复 AppvClientPackage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Resets the user settings of a package."
+msgstr "重置某个软件包的用户设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByGuid (Default)"
+msgstr "### ByGuid（默认值）"
+
+msgid "### ByPackage"
+msgstr "### 按包分类（ByPackage）"
+
+msgid "### ByName"
+msgstr "### 按名称查找"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Repair-AppvClientPackage** cmdlet deletes the user settings and reset the extension points of the package.\n"
+"Resetting the settings causes permanent loss of any user-specific application settings in the package.\n"
+"The settings are reset to their original state when the package was originally added to the system."
+msgstr ""
+"`Repair-AppvClientPackage` cmdlet 会删除用户设置，并重置该软件包的扩展点（extension "
+"points）。重置设置会导致软件包中所有与用户相关的应用程序设置被永久丢失。这些设置会被恢复到该软件包最初被添加到系统时的原始状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Delete user state for a version of a package"
+msgstr "#### 示例 1：删除某个软件包版本的用户状态信息"
+
+msgid ""
+"This command deletes the user state of version 3 of the package named MyApp."
+msgstr "此命令会删除名为“MyApp”的包中版本号为3的用户状态数据。"
+
+msgid ""
+"### Example 2: Delete user state for packages that have a name that matches "
+"a string"
+msgstr "### 示例 2：删除名称与指定字符串匹配的软件包对应的用户状态信息"
+
+msgid ""
+"This command gets all packages that have the string MyA in the name, and "
+"then delete the user state for those packages."
+msgstr "这个命令会获取所有名称中包含 “MyA” 这个字符串的软件包，然后删除这些软件包的用户相关数据（即用户状态信息）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet repairs the extension points of a package only, "
+"and does not delete the user state of the package."
+msgstr "表示该cmdlet仅修复包的扩展点（extension points），而不会删除该包的用户状态（user state）。"
+
+msgid ""
+"Indicates that this cmdlet repairs the extension points for the provided packages for all users that log into the targeted computer.\n"
+"Otherwise, the extension points of the packages are only repaired for the currently running user."
+msgstr ""
+"该命令用于修复目标计算机上所有登录用户的相应软件包的扩展点（extension "
+"points）。如果不使用此命令，软件包的扩展点只会被当前正在运行的用户所对应的系统修复。"
+
+msgid ""
+"Specifies the friendly name of the package given during Sequencing time.\n"
+"This value is obtained from the package manifest."
+msgstr "指定在序列化过程中提供的包的友好名称。该值是从包清单中获取的。"
+
+msgid "Specifies an App-V package."
+msgstr "指定一个 App-V 包。"
+
+msgid ""
+"Specifies a GUID that uniquely identifies the package.\n"
+"It can be found in the package manifest or by opening the package in the Microsoft Application Virtualization (App-V) Sequencer.\n"
+"The Package ID is shared by all versions of a package."
+msgstr ""
+"指定一个唯一标识该软件包的 GUID。该 GUID 可以在软件包清单中找到，或者通过打开 Microsoft "
+"应用程序虚拟化（App-V）序列器来获取。同一个软件包的所有版本都使用相同的 Package ID。"
+
+msgid ""
+"Indicates that the cmdlet deletes the user state of the package only, and "
+"does not perform a repair on the extension points."
+msgstr "表示该 cmdlet 仅删除包的用户状态，并不对扩展点进行修复操作。"
+
+msgid ""
+"Specifies the version of an App-V package in a lineage.\n"
+"If you do not specify this parameter, the cmdlet operates on all versions on the computer."
+msgstr "用于指定App-V包在某个版本系列中的具体版本。如果不指定此参数，该cmdlet将作用于计算机上的所有版本。"
+
+msgid ""
+"Specifies the GUID that differentiates a package version from other versions, whether older, newer, or of a different lineage.\n"
+"If you do not specify this parameter, the cmdlet operates on all versions of the package."
+msgstr ""
+"指定用于区分某个软件包版本与其他版本的 "
+"GUID（全局唯一标识符），无论是旧版本、新版本，还是属于不同分支的版本。如果未指定此参数，该命令行工具将作用于该软件包的所有版本。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.AppvAgent.AppvClientPackage"
+msgstr "### Microsoft.AppvAgent.AppvClientPackage"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.AppvAgent.AppvClientPackage"
+msgstr "### Microsoft.AppvAgent.AppvClientPackage"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+msgstr "[Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+
+msgid "[Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+msgstr "[Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+
+msgid "[Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+msgstr "[Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+
+msgid "[Publish-AppvClientPackage](./Publish-AppvClientPackage.md)"
+msgstr "[发布 AppvClient 包](./Publish-AppvClientPackage.md)"
+
+msgid "[Remove-AppvClientPackage](./Remove-AppvClientPackage.md)"
+msgstr "[Remove-AppvClientPackage](./Remove-AppvClientPackage.md)"
+
+msgid "[Set-AppvClientPackage](./Set-AppvClientPackage.md)"
+msgstr "[Set-AppvClientPackage](./Set-AppvClientPackage.md)"
+
+msgid "[Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+msgstr "[Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+
+msgid "[Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"
+msgstr "[Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"

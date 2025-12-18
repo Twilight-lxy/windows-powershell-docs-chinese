@@ -1,0 +1,97 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:38:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-CIPolicyVersion"
+msgstr "# 设置 CIPolicyVersion"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Updates the version number of the policy."
+msgstr "更新策略的版本号。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-CIPolicyVersion** cmdlet updates the version number of the policy for a signed policy scenario.\n"
+"When you update a signed policy, the policy must be replaced by a policy that has a signer specified in the **UpdatePolicySigners** property of the policy.\n"
+"The policy must also be an equal or greater version that the previous policy."
+msgstr ""
+"`Set-CIPolicyVersion` cmdlet 用于更新已签名策略的版本号。在更新已签名的策略时，必须用一个新的策略来替换旧策略；新策略必须在"
+" `UpdatePolicySigners` 属性中指定了签名者，并且其版本号必须大于或等于旧策略的版本号。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update the version number of a policy"
+msgstr "#### 示例 1：更新策略的版本号"
+
+msgid "The first command modifies the version of Policy.xml to be 11.1.0.2."
+msgstr "第一个命令将 Policy.xml 的版本修改为 11.1.0.2。"
+
+msgid ""
+"The second command displays the contents of the policy.\n"
+"This example shows the first few lines of the policy, which include the **VersionEx** property.\n"
+"It now has a value of 11.1.0.2."
+msgstr ""
+"第二个命令用于显示该策略的内容。这个示例展示了策略的前几行内容，其中包含了 **VersionEx** 属性。该属性现在的值为 11.1.0.2。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the path of a policy .xml file that this cmdlet updates."
+msgstr "指定该cmdlet要更新的policy.xml文件的路径。"
+
+msgid ""
+"Specifies the version string with which this cmdlet replaces the current version of the policy.\n"
+"Specify the version in the following format: integer.integer.integer.integer.\n"
+"The **New-CIPolicy** and **Merge-CIPolicy** cmdlets create policies with the default version of 10.0.0.0."
+msgstr ""
+"指定用于替换当前策略版本的版本字符串。请按照以下格式输入版本号：整数.整数.整数.整数。**New-CIPolicy** 和 **Merge-"
+"CIPolicy** 这两个 cmdlet 创建的策略默认版本号为 10.0.0.0。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Merge-CIPolicy](./Merge-CIPolicy.md)"
+msgstr "[Merge-CIPolicy](./Merge-CIPolicy.md)"
+
+msgid "[New-CIPolicy](./New-CIPolicy.md)"
+msgstr "[New-CIPolicy](./New-CIPolicy.md)"

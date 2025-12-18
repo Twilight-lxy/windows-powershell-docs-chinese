@@ -1,0 +1,170 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:52:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Windows gives a user the ability to uninstall and roll back to a previous "
+"version of Windows."
+msgstr "Windows允许用户卸载当前版本的操作系统，并恢复到之前的版本。"
+
+msgid "# Start-OSUninstall"
+msgstr "# 开始卸载操作系统"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Windows gives a user the ability to uninstall and roll back to a previous version of Windows. You\n"
+"can use DISM to initiate an uninstall."
+msgstr "Windows 允许用户卸载当前版本并恢复到之前的 Windows 版本。你可以使用 DISM 来启动卸载过程。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Offline"
+msgstr "### 离线模式"
+
+msgid "### Online"
+msgstr "### 在线"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Start-OSUninstall** cmdlet enables you to uninstall and roll back to a previously installed\n"
+"version of Windows."
+msgstr "`Start-OSUninstall` cmdlet 允许你卸载 Windows 并恢复到之前安装的版本。"
+
+msgid ""
+"The **Start-OSUninstall** cmdlet is supported on Windows 11 client operating"
+" system only."
+msgstr "`Start-OSUninstall` cmdlet 仅支持 Windows 11 客户端操作系统。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Uninstall OS"
+msgstr "### 示例 1：卸载操作系统"
+
+msgid ""
+"Uninstalls the operating system that is currently running on the local computer and rolls back to a\n"
+"previously installed version of Windows."
+msgstr "卸载当前在本地计算机上运行的操作系统，并恢复到之前安装的Windows版本。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及信息性内容  \n"
+"- 4 = 包括上述所有信息，此外还显示调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to. If not set, the default is\n"
+"`%WINDIR%\\Logs\\Dism\\dism.log`. In Windows PE, the default directory is the RAMDISK scratch space\n"
+"which can be as low as 32 MB. The log file will automatically be archived. The archived log file\n"
+"will be saved with .bak appended to the file name and a new log file will be generated. Each time\n"
+"the log file is archived the .bak file will be overwritten. When using a network share that is not\n"
+"joined to a domain, use the net use command together with domain credentials to set access\n"
+"permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 暂存空间，其容量可能低至 32 MB。日志文件会自动被归档；归档后的日志文件会在文件名后加上 `.bak` "
+"扩展名，并生成新的日志文件。每次日志文件被归档时，原来的 `.bak` 文件都会被覆盖。当使用未加入域的网络共享资源时，请先使用 `net use` "
+"命令并输入域凭据来设置访问权限，然后再为 DISM 日志指定路径。"
+
+msgid "Suppresses the prompt to restart and also requires a manual restart."
+msgstr "会抑制重新启动的提示信息，并且需要手动进行重启操作。"
+
+msgid ""
+"Specifies that the action is to be taken on the operating system that is currently running on the\n"
+"local computer."
+msgstr "指定该操作应在当前正在本地计算机上运行的操作系统上执行。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service. If\n"
+"the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be\n"
+"specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"“WindowsDirectory”。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally. If not specified, the `\\Windows\\%Temp%` directory will be used,\n"
+"with a subdirectory name of a randomly generated hexadecimal value for each run of DISM. Items in\n"
+"the scratch directory are deleted after each operation. You should not use a network share location\n"
+"as a scratch directory to expand a package (.cab or .msu file) for installation. The directory used\n"
+"for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，用于在维护过程中提取文件。该目录必须存在于本地系统中。如果未指定目录，则会使用 `\\Windows\\%Temp%\\` "
+"目录，并且每次运行 DISM "
+"时都会为该目录生成一个随机十六进制值的子目录名称。每次操作完成后，临时目录中的内容都会被删除。不建议将网络共享位置用作安装包（.cab 或 .msu "
+"文件）的临时提取目录。用于在维护过程中临时提取文件的目录应为本地目录。"
+
+msgid ""
+"Specifies the path to the location of the BootMgr files. This is necessary only when the BootMgr\n"
+"files are located on a partition other than the one that you are running the command from. Use\n"
+"-SystemDrive to service an installed Windows image from a Windows PE environment."
+msgstr ""
+"指定 BootMgr 文件所在的路径。只有当 BootMgr 文件位于与执行命令的分区不同的分区时，才需要提供该路径。使用 `-SystemDrive`"
+" 选项可以从 Windows PE 环境中服务已安装的 Windows 镜像。"
+
+msgid ""
+"Specifies the path to the Windows directory relative to the image path. This cannot be the full path\n"
+"to the Windows directory; it should be a relative path. If not specified, the default is the Windows\n"
+"directory in the root of the offline image directory."
+msgstr ""
+"指定相对于图像路径的Windows目录的路径。该路径不能是Windows目录的完整路径，而应该是一个相对路径。如果未指定，默认值为离线图像目录根目录下的Windows目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.Management Automation.SwitchParameter"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### Microsoft.Dism.Commands.LogLevel"
+msgstr "### Microsoft.Dismcommands.LogLevel"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.BaseDismObject"
+msgstr "### Microsoft.Dism Commands.BaseDismObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

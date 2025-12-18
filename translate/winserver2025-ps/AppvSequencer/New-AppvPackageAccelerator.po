@@ -1,0 +1,120 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:16:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-AppvPackageAccelerator"
+msgstr "# New-AppvPackageAccelerator"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Generates a package accelerator."
+msgstr "生成一个包加速器（package accelerator）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### FromInstaller (Default)"
+msgstr "### 从安装程序（默认方式）"
+
+msgid "### FromInstalledMedia"
+msgstr "### FromInstalledMedia"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-AppvPackageAccelerator** cmdlet generates a package accelerator object.\n"
+"It accepts an existing Application Virtualization (App-V) 5.0 package file along with the appropriately installed files or installation media.\n"
+"The cmdlet then generates a package accelerator file."
+msgstr ""
+"`New-AppvPackageAccelerator` cmdlet 用于生成一个包加速器对象。该 cmdlet "
+"接受一个现有的应用程序虚拟化（App-V）5.0 包文件，以及已正确安装的文件或安装介质，然后生成一个新的包加速器文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a package accelerator"
+msgstr "### 示例 1：创建一个软件包加速器"
+
+msgid ""
+"This command creates a package accelerator using an installer folder "
+"containing, for example, MSI installers."
+msgstr ""
+"这个命令使用一个安装程序文件夹来创建一个包加速器（package accelerator），该文件夹中可能包含例如 MSI 安装程序等文件。"
+
+msgid "### Example 2: Create a package accelerator with instruction sheet"
+msgstr "### 示例 2：创建一个带有使用说明表的软件包加速器"
+
+msgid ""
+"This command creates a package accelerator and inserts an instruction sheet "
+"on how to accelerate package."
+msgstr "这个命令会创建一个用于加速软件包发布的工具，并插入一份关于如何使用该工具来加快发布过程的说明书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the package accelerator description file."
+msgstr "指定软件包加速器描述文件。"
+
+msgid ""
+"Specifies the path to the App-V package used as input to generate the "
+"accelerator from."
+msgstr "指定用于生成加速器的 App-V 包的路径。"
+
+msgid ""
+"Specifies the path to the folder containing the directory where the package "
+"is installed to, to generate an accelerator for."
+msgstr "指定包含该软件包安装目录的文件夹路径，以便为其生成加速器文件。"
+
+msgid ""
+"Specifies the path to the folder of the application installer to generate an accelerator from.\n"
+"The installer must be of the format msi, or cab, or zip.\n"
+"If you do not have an installer of this format, use the *InstalledFilesPath* parameter instead."
+msgstr ""
+"指定应用程序安装程序所在文件夹的路径，以便从中生成加速器文件。该安装程序必须采用 MSI、CAB 或 ZIP 格式。如果您没有这种格式的安装程序，请改用"
+" *InstalledFilesPath* 参数。"
+
+msgid "Specifies the full path to the .cab package accelerator output file."
+msgstr "指定.cab包加速器输出文件的完整路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Expand-AppvSequencerPackage](./Expand-AppvSequencerPackage.md)"
+msgstr "[Expand-AppvSequencerPackage](./Expand-AppvSequencerPackage.md)"
+
+msgid "[Update-AppvSequencerPackage](./Update-AppvSequencerPackage.md)"
+msgstr "[更新 AppvSequencerPackage](./Update-AppvSequencerPackage.md)"

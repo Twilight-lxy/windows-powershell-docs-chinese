@@ -1,0 +1,136 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:03:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterParameter"
+msgstr "# Get-ClusterParameter"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets detailed information about an object in a failover cluster, such as a "
+"cluster resource."
+msgstr "获取关于故障转移集群中某个对象（如集群资源）的详细信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterParameter` cmdlet gets detailed information about an object in a failover cluster,\n"
+"such as a cluster resource. This cmdlet is used to manage private properties for a cluster object.\n"
+"To get and set common properties for a cluster object, use the appropriate Get-Cluster* cmdlet to\n"
+"get the cluster object of interest and then set the property of interest on that cluster object\n"
+"directly."
+msgstr ""
+"`Get-ClusterParameter` cmdlet 可以获取故障转移集群中对象的详细信息，例如集群资源的相关数据。该 cmdlet "
+"用于管理集群对象的私有属性。若需获取或设置集群对象的公共属性，请使用相应的 `Get-Cluster*` cmdlet "
+"来获取目标集群对象，然后直接在该对象上设置所需的属性。"
+
+msgid ""
+"The type of detailed information you can obtain with this cmdlet depends on the cmdlet you combine\n"
+"with it. For example:"
+msgstr "使用此 cmdlet 可以获取的详细信息类型取决于与其结合使用的其他 cmdlet。例如："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example gets the parameters, including the detailed information, for the cluster resource named\n"
+"`cluster1FS` on the local cluster. The displayed parameters will vary according to the type of\n"
+"resource being viewed."
+msgstr "这个示例用于获取本地集群中名为 `cluster1FS` 的集群资源的参数，包括详细信息。显示的参数会根据所查看的资源类型而有所不同。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example displays the HostRecordTTL parameter for the cluster resource named `cluster1FS` on the\n"
+"local cluster, if that parameter is applicable to `cluster1FS`."
+msgstr ""
+"这个示例会显示本地集群中名为 `cluster1FS` 的集群资源的 `HostRecordTTL` 参数（如果该参数适用于 `cluster1FS` "
+"的话）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the cluster object for which to get more information."
+msgstr "指定要获取更多信息的集群对象。"
+
+msgid "Specifies the name of the cluster parameter to get."
+msgstr "指定要获取的集群参数的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters PowerShell Cluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### Microsoft_failoverClusters.PowShell-clusterGroup"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNetwork"
+msgstr "### Microsoft_failoverClusters.PowerShell-clusterNetwork"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNetworkInterface"
+msgstr "### MicrosoftFailoverClusters.PowerShell-clusterNetworkInterface"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNode"
+msgstr "### MicrosoftFailoverClusters.PowerShellClusterNode"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters.PowerShellClusterResource"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResourceType"
+msgstr "### MicrosoftFailoverClusters.PowerShell ClusterResourceType"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterSharedVolume"
+msgstr "### Microsoft FailoverClusters.PowerShell.ClusterSharedVolume"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterParameter"
+msgstr "### MicrosoftFailoverClusters.PowerShell ClusterParameter"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-ClusterParameter](./Set-ClusterParameter.md)"
+msgstr "[Set-ClusterParameter](./Set-ClusterParameter.md)"

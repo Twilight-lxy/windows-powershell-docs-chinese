@@ -1,0 +1,201 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:29:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DfsnFolderTarget"
+msgstr "# Set-DfsnFolderTarget"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Changes settings for a target of a DFS namespace folder."
+msgstr "更改DFS命名空间文件夹的目标设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DfsnRootTarget** cmdlet changes settings for a target of a Distributed File System (DFS)\n"
+"namespace folder. You can change the state of the DFS namespace target and configure priority class\n"
+"and priority rank for referrals."
+msgstr ""
+"`Set-DfsnRootTarget` cmdlet 用于更改分布式文件系统（DFS）命名空间文件夹的目标设置。您可以修改 DFS "
+"命名空间目标的状态，并配置引用操作的优先级类别和优先级等级。"
+
+msgid ""
+"A DFS namespace folder has one or more folder targets that are shared folders on computers. When a\n"
+"client attempts to connect to a folder, the DFS namespace server provides a list of folder targets,\n"
+"called referrals. The server determines the order for referrals and clients attempt to connect to a\n"
+"folder target in the order that the server provides."
+msgstr ""
+"DFS命名空间文件夹包含一个或多个目标文件夹，这些目标文件夹是位于不同计算机上的共享文件夹。当客户端尝试连接到一个文件夹时，DFS命名空间服务器会提供一份目标文件夹的列表（称为“引用”）。服务器会确定这些引用的连接顺序，客户端则按照服务器提供的顺序尝试连接到相应的目标文件夹。"
+
+msgid ""
+"For more information about DFS namespaces, see\n"
+"[Overview of DFS Namespaces](https://technet.microsoft.com/library/cc730736) on TechNet."
+msgstr ""
+"有关DFS命名空间的更多信息，请参阅TechNet上的[DFS命名空间概述](https://technet.microsoft.com/library/cc730736)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Change the state for a folder target"
+msgstr "### 示例 1：更改文件夹目标的状态"
+
+msgid ""
+"This command changes the state for a target for the folder\n"
+"`\\\\Contoso\\AccountingResources\\LegacySoftware` to `Online`. The folder target is\n"
+"`\\\\Contoso-FS\\LegacySoftware`."
+msgstr ""
+"此命令将文件夹 `\\\\Contoso\\AccountingResources\\LegacySoftware` 的目标状态更改为 "
+"`Online`。该文件夹的目标路径是 `\\\\Contoso-FS\\LegacySoftware`。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "将此cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务 (About "
+"Jobs)](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)\n"
+"or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您确认是否要执行该操作。"
+
+msgid "Specifies a path for the DFS namespace folder."
+msgstr "指定DFS命名空间文件夹的路径。"
+
+msgid ""
+"Specifies the priority class for a DFS namespace folder target. Target priority offers you the\n"
+"ability to classify and rank in-site targets. You can specify targets to receive the highest or\n"
+"lowest preference, and you can divide the remaining targets based on their site cost for a DFS\n"
+"client to connect to them. The acceptable values for this parameter are:"
+msgstr ""
+"用于指定DFS命名空间文件夹目标的优先级类别。目标优先级允许您对站点内的目标进行分类和排序：您可以指定某些目标获得最高的优先级，或者最低的优先级；同时还可以根据这些目标的连接成本来划分其余的目标，以便DFS客户端能够选择合适的连接目标。该参数的可接受值如下："
+
+msgid ""
+"Specifies the priority rank, as an integer, for a target of the DFS namespace folder. Lower values\n"
+"have greater preference. A value of zero (0) is the greatest preference."
+msgstr "用于指定DFS命名空间文件夹中某个目标的优先级等级（以整数形式表示）。数值越低，优先级越高；数值为零（0）表示最高优先级。"
+
+msgid ""
+"Specifies the state of the DFS namespace folder target. The acceptable values for this parameter\n"
+"are:"
+msgstr "用于指定DFS命名空间文件夹目标的状态。该参数的可接受值包括："
+
+msgid ""
+"Specifies a path for a target of the DFS namespace folder. This cmdlet changes settings for the\n"
+"target that the path specifies."
+msgstr "指定DFS命名空间文件夹目标的路径。此cmdlet会更改该路径所指向的目标的设置。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"该参数用于指定可以同时执行的命令（cmdlet）操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM "
+"命令（cmdlets）的数量来计算该命令的最优限制值。这个限制仅适用于当前正在执行的命令，而不影响整个会话或计算机本身的运行状态。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并未运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, `-ErrorVariable`,\n"
+"`-InformationAction`, `-InformationVariable`, `-OutVariable`, `-OutBuffer`, `-PipelineVariable`,\n"
+"`-Verbose`, `-WarningAction`, and `-WarningVariable`. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.DfsNamespaceFolderTarget.State"
+msgstr ""
+"### Microsoft.PowerShell Cmdletization "
+"GeneratedTypes.DfsNamespaceFolderTarget.State"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.DfsNamespaceFolderTarget.ReferralPriorityClass"
+msgstr ""
+"### Microsoft.PowerShell "
+"Cmdletization.GeneratedTypes.DfsNamespaceFolderTarget.ReferralPriorityClass"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsnFolderTarget](./Get-DfsnFolderTarget.md)"
+msgstr "[Get-DfsnFolderTarget](./Get-DfsnFolderTarget.md)"
+
+msgid "[New-DfsnFolderTarget](./New-DfsnFolderTarget.md)"
+msgstr "[New-DfsnFolderTarget](./New-DfsnFolderTarget.md)"
+
+msgid "[Remove-DfsnFolderTarget](./Remove-DfsnFolderTarget.md)"
+msgstr "[Remove-DfsnFolderTarget](./Remove-DfsnFolderTarget.md)"
+
+msgid "[Set-DfsnFolderTarget](./Set-DfsnFolderTarget.md)"
+msgstr "[Set-DfsnFolderTarget](./Set-DfsnFolderTarget.md)"

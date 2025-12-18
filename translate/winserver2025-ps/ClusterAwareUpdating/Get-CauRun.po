@@ -1,0 +1,130 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:24:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-CauRun"
+msgstr "# Get-CauRun"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets status information about an updating run currently in progress."
+msgstr "获取关于当前正在进行中的更新运行的状态信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DefaultParamSet (Default)"
+msgstr "### DefaultParamSet（默认值）"
+
+msgid "### WaitForStart"
+msgstr "### WaitForStart"
+
+msgid "### WaitForCompletion"
+msgstr "### WaitForCompletion"
+
+msgid "### ShowClusterNodeState"
+msgstr "### ShowClusterNodeState"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-CauRun` cmdlet gets status information about an updating run currently in progress.\n"
+"Use this cmdlet to monitor current updating runs."
+msgstr "`Get-CauRun` cmdlet 可以获取当前正在进行中的更新运行的状态信息。您可以使用此 cmdlet 来监控这些更新运行过程。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get status information about the updating run in progress "
+"from the specified cluster"
+msgstr "### 示例 1：从指定的集群中获取有关正在进行中的更新运行的状态信息"
+
+msgid ""
+"This command gets status information about the updating run currently in progress on the cluster\n"
+"named CONTOSO-FC1."
+msgstr "该命令用于获取关于在名为CONTOSO-FC1的集群上当前正在进行的更新操作的状态信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster for which this cmdlet gets the updating run status. This parameter\n"
+"is only required when this cmdlet isn't run on a failover cluster node, or this cmdlet is used to\n"
+"reference a failover cluster different from where the cmdlet is run."
+msgstr ""
+"指定该 cmdlet 获取更新运行状态的集群名称。仅当此 cmdlet 不在故障转移集群节点上运行，或者用于引用与执行该 cmdlet "
+"的位置不同的故障转移集群时，才需要这个参数。"
+
+msgid "Specifies the administrative credentials for the target cluster."
+msgstr "指定目标集群的管理凭据。"
+
+msgid ""
+"Indicates that this cmdlet gets the status of the Windows Management Instrumentation (WMI) object\n"
+"that is created on each cluster node. This can be used to debug the status of leftover objects."
+msgstr ""
+"表示该 cmdlet 用于获取在每个集群节点上创建的 Windows "
+"管理规范（WMI）对象的状态。这可以帮助调试遗留对象的问题（即那些未被正确删除或配置的对象）。"
+
+msgid ""
+"Indicates that this cmdlet waits for the updating run to finish. If this parameter is specified, the\n"
+"cmdlet also writes the updated CAU run objects to the output stream as progress is recorded by the\n"
+"current CAU Update Coordinator."
+msgstr ""
+"表示该cmdlet会等待更新任务的完成。如果指定了此参数，cmdlet还会将更新的CAU任务对象写入输出流中，以便当前CAU更新协调器记录进度信息。"
+
+msgid ""
+"Indicates that this cmdlet waits for an updating run that is in progress on the specified cluster.\n"
+"Otherwise the cmdlet waits for an updating run to begin."
+msgstr "表示此 cmdlet 会等待在指定集群上正在进行的更新操作完成；否则，该 cmdlet 会等待更新操作的开始。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ClusterAwareUpdating.CauRun"
+msgstr "### Microsoft-cluster Aware-Updating.CauRun"
+
+msgid "### Microsoft.ClusterAwareUpdating.RunState"
+msgstr "### Microsoft-cluster Aware-Updating.RunState"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Invoke-CauRun](./Invoke-CauRun.md)"
+msgstr "[Invoke-CauRun](./Invoke-CauRun.md)"
+
+msgid "[Stop-CauRun](./Stop-CauRun.md)"
+msgstr "[Stop-CauRun](./Stop-CauRun.md)"

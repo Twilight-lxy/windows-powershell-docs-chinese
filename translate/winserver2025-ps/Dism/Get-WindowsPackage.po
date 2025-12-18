@@ -1,0 +1,208 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:40:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WindowsPackage"
+msgstr "# Get-WindowsPackage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets information about packages in a Windows image."
+msgstr "获取有关Windows镜像中包的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Offline"
+msgstr "### 离线状态"
+
+msgid "### Online"
+msgstr "### 在线"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WindowsPackage** cmdlet gets information about all packages in a "
+"Windows image or about a specific package that is provided as a .cab file."
+msgstr ""
+"`Get-WindowsPackage` cmdlet 可以获取有关 Windows 映像中所有包的信息，或者获取作为 `.cab` "
+"文件提供的特定包的信息。"
+
+msgid ""
+"Use the *Online* parameter to specify the running operating system on your "
+"local computer, or use the *Path* parameter to specify the location of a "
+"mounted Windows image."
+msgstr "使用 *Online* 参数来指定本地计算机上正在运行的操作系统，或者使用 *Path* 参数来指定已挂载的 Windows 镜像的位置。"
+
+msgid ""
+"Use either the *PackageName* or *PackagePath* parameter to get more detailed"
+" information about a specific package in the Windows image such as whether "
+"the package can be installed completely offline without booting the image."
+msgstr ""
+"使用 `PackageName` 或 `PackagePath` 参数来获取有关 Windows "
+"镜像中特定包的更详细信息，例如该包是否可以在不启动镜像的情况下完全离线安装。"
+
+msgid ""
+"You cannot use this command to obtain detailed package information for .msu "
+"files, only .cab files."
+msgstr "您不能使用此命令来获取.msu文件的详细包信息，仅适用于.cab文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Lists packages in a mounted image"
+msgstr "### 示例 1：列出已挂载镜像中的软件包"
+
+msgid ""
+"This command lists all of the packages in the Windows image that is mounted "
+"to c:\\offline."
+msgstr "这个命令会列出所有安装到 c:\\offline 路径下的 Windows 镜像中的软件包。"
+
+msgid "### Example 2: Lists details about a package in a mounted image"
+msgstr "### 示例 2：在已挂载的镜像中列出有关软件包的详细信息"
+
+msgid ""
+"This command displays detailed information about the specified package in "
+"the Windows image that is mounted to c:\\offline."
+msgstr "此命令会显示关于指定软件包的详细信息，该软件包位于已挂载到 c:\\offline 的 Windows 镜像中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"用于指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及常规信息  \n"
+"- 4 = 包括上述所有信息，再加上调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 虚拟磁盘（其存储空间可能小至 32 MB）。日志文件会自动被归档；归档后的日志文件会在原文件名后加上 `.bak` "
+"扩展名进行保存，并同时生成一个新的日志文件。每次日志文件被归档时，对应的 `.bak` 文件都会被覆盖。如果使用的是未加入域的网络共享资源，请在使用 "
+"`DISM` 命令设置日志路径之前，先通过 `net use` 命令结合相应的域凭据来设置访问权限。"
+
+msgid ""
+"Specifies that the action is to be taken on the operating system that is "
+"currently running on the local computer."
+msgstr "指定该操作应在当前在本地计算机上运行的操作系统上执行。"
+
+msgid ""
+"Specifies the name of a package as it is listed in the Windows image.\n"
+"Use the *PackageName* parameter to get more detailed information about a specific package in the Windows image, such as whether the package can be installed completely offline without booting the image."
+msgstr ""
+"指定在 Windows 镜像中列出的软件包的名称。可以使用 `PackageName` "
+"参数来获取关于该软件包的更多详细信息，例如该软件包是否可以在不启动镜像的情况下完全离线安装。"
+
+msgid ""
+"Specifies the location of a .cab file in the Windows image.\n"
+"Use the *PackagePath* parameter to get more detailed information about a specific package in the Windows image, such as whether the package can be installed completely offline without booting the image."
+msgstr ""
+"指定 Windows 镜像中某个 `.cab` 文件的位置。可以使用 `*PackagePath*` "
+"参数来获取有关该镜像中特定包的更多详细信息，例如该包是否可以在不启动镜像的情况下完全离线安装。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service.\n"
+"If the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"“WindowsDirectory”。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，该目录将在执行维护操作（如文件提取）时被使用。此目录必须存在于本地系统中。如果未指定临时目录，则会使用 "
+"`\\Windows\\%Temp%\\` 目录，并且每次运行 DISM "
+"时都会为该目录生成一个随机十六进制值的子目录名称。每次维护操作完成后，临时目录中的所有内容都会被删除。不建议将网络共享位置作为用于安装包（.cab 或 "
+".msu 文件）的临时目录。在执行维护操作期间用于文件提取的临时目录应当是本地目录。"
+
+msgid ""
+"Specifies the path to the location of the BootMgr files.\n"
+"This is necessary only when the BootMgr files are located on a partition other than the one that you are running the command from.\n"
+"Use -SystemDrive to service an installed Windows image from a Windows PE environment."
+msgstr ""
+"指定 BootMgr 文件所在的路径。仅当 BootMgr 文件位于与您运行命令的分区不同的分区时，才需要指定该路径。使用 `-SystemDrive`"
+" 选项可以从 Windows PE 环境中管理服务已安装的 Windows 镜像。"
+
+msgid ""
+"Specifies the path to the Windows directory relative to the image path.\n"
+"This cannot be the full path to the Windows directory; it should be a relative path.\n"
+"If not specified, the default is the Windows directory in the root of the offline image directory."
+msgstr ""
+"指定相对于镜像路径的Windows目录的路径。这个路径不能是Windows目录的完整路径，而应该是一个相对路径。如果未指定，默认值将是离线镜像目录根目录中的Windows目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.DismCommands.ImageObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.BasicPackageObject"
+msgstr "### Microsoft.DismCommands.BasicPackageObject"
+
+msgid "### Microsoft.Dism.Commands.AdvancedPackageObject"
+msgstr "### Microsoft.Dism Commands.AdvancedPackageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WindowsPackage](./Add-WindowsPackage.md)"
+msgstr "[Add-WindowsPackage](./Add-WindowsPackage.md)"
+
+msgid "[Remove-WindowsPackage](./Remove-WindowsPackage.md)"
+msgstr "[Remove-WindowsPackage](./Remove-WindowsPackage.md)"

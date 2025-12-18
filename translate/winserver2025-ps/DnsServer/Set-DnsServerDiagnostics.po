@@ -1,0 +1,313 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:09:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DnsServerDiagnostics"
+msgstr "# Set-DnsServerDiagnostics"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets debugging and logging parameters."
+msgstr "设置调试和日志记录参数。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Parameters (Default)"
+msgstr "### 参数（默认值）"
+
+msgid "### LogLevel"
+msgstr "###LogLevel"
+
+msgid "### All"
+msgstr "### 所有"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DnsServerDiagnostics** cmdlet sets debugging and logging "
+"parameters on a Domain Name System (DNS) server."
+msgstr "`Set-DnsServerDiagnostics` cmdlet 用于设置域名系统（DNS）服务器的调试和日志记录参数。"
+
+msgid ""
+"To enable debug logging, specify a value of $True for the *FullPackets* "
+"parameter and do the following:"
+msgstr "要启用调试日志记录，请为 *FullPackets* 参数指定一个值为 $True 的值，并执行以下操作："
+
+msgid ""
+"If you use the *Parameters* parameter set, you must specify at least one of "
+"the options in each of the following pairs of parameters:"
+msgstr "如果您使用的是“Parameters”参数集，那么必须在以下每对参数中至少指定一个选项："
+
+msgid ""
+"The *All* parameter set enables all options except for the following: "
+"**LogFilePath**, **MaxMBFileSize**, **EventLogLevel**, **FilterIpAddrList**,"
+" **UseSystemEventLog**, and **EnableLogFileRollover**."
+msgstr ""
+"“All”参数组合会启用除以下选项之外的所有选项：**LogFilePath**、**MaxMBFileSize**、**EventLogLevel**、**FilterIpAddrList**、**UseSystemEventLog**"
+" 和 **EnableLogFileRollover**。"
+
+msgid ""
+"Use the *LogLevel* parameter to enable diagnostics at a more detailed level."
+msgstr "使用 `LogLevel` 参数可以在更详细的级别上启用诊断功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Enable diagnostics for outgoing TCP responses for updates"
+msgstr "### 示例 1：为更新请求中的出站 TCP 响应启用诊断功能"
+
+msgid ""
+"This command enables the diagnostics of outgoing TCP responses for updates."
+msgstr "此命令可启用对出站TCP响应的诊断功能，以便进行更新操作。"
+
+msgid "### Example 2: Enable all diagnostic options except for LogFilePath"
+msgstr "### 示例 2：启用所有诊断选项，除了 LogFilePath"
+
+msgid ""
+"This command enables all options for DNS server diagnostics except for "
+"**LogFilePath**."
+msgstr "此命令启用了DNS服务器诊断的所有选项，除了**LogFilePath**之外。"
+
+msgid "### Example 3: Log send packets"
+msgstr "### 示例 3：日志发送数据包"
+
+msgid "This command logs send packages."
+msgstr "这个命令用于记录发送的数据包信息。"
+
+msgid "### Example 4: Reset debugging settings"
+msgstr "### 示例 4：重置调试设置"
+
+msgid ""
+"This command resets the TCP packet debugging and UDP packet debugging "
+"options on DNSServer02 to their values on DNSServer01."
+msgstr "这个命令将 DNSServer02 上的 TCP 数据包调试和 UDP 数据包调试选项重置为与 DNSServer01 相同的值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies whether the DNS server logs all events."
+msgstr "指定DNS服务器是否记录所有事件。"
+
+msgid "Specifies whether to enable the logging of DNS responses."
+msgstr "指定是否启用DNS响应的日志记录功能。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将 cmdlet 作为后台作业运行。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在该会话中工作。要管理该作业，请使用`*-Job` "
+"cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies a DNS server.\n"
+"The acceptable values for this parameter are: an IPv4 address, an IPv6 address, and any other value that resolves to an IP address, such as fully qualified domain name (FQDN), Hostname, or NETBIOS name."
+msgstr ""
+"用于指定一个DNS服务器。该参数的可接受值包括：IPv4地址、IPv6地址，以及任何能够解析为IP地址的其他值（如完全限定域名（FQDN）、主机名或NETBIOS名称）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies the bitmask for debug logging.\n"
+"Valid values are:"
+msgstr "用于指定调试日志记录的位掩码（bitmask）。有效值包括："
+
+msgid "Specifies whether to enable log file rollover."
+msgstr "指定是否启用日志文件的滚动（即当日志文件满时自动创建新的日志文件）。"
+
+msgid "Specifies whether the DNS server logs local lookup events."
+msgstr "指定DNS服务器是否记录本地查询事件。"
+
+msgid ""
+"Specifies whether the DNS server logs dynamic link library (DLL) plug-in "
+"events."
+msgstr "指定DNS服务器是否记录动态链接库（DLL）插件事件。"
+
+msgid "Specifies whether the DNS server logs recursive lookup events."
+msgstr "指定DNS服务器是否记录递归查询事件。"
+
+msgid "Specifies whether the DNS server logs remote server events."
+msgstr "指定DNS服务器是否记录远程服务器的事件。"
+
+msgid "Specifies whether the DNS server logs server start and stop events."
+msgstr "指定DNS服务器是否记录服务器启动和停止事件。"
+
+msgid "Specifies whether the DNS server logs tombstone events."
+msgstr "指定DNS服务器是否记录“墓碑事件”（tombstone events）。"
+
+msgid "Specifies Controls whether the DNS server logs zone data write events."
+msgstr "该选项用于指定DNS服务器是否记录区域数据写入事件。"
+
+msgid "Specifies whether the DNS server logs zone load events."
+msgstr "指定DNS服务器是否记录区域加载事件。"
+
+msgid "Specifies whether the DNS server logs logging-to-file."
+msgstr "指定DNS服务器是否将日志记录到文件中。"
+
+msgid ""
+"Specifies an event log level.\n"
+"Valid values are:"
+msgstr "指定事件日志的级别。有效值为："
+
+msgid "Specifies whether the DNS server logs full packets."
+msgstr "指定DNS服务器是否记录完整的数据包（即数据包中的所有内容）。"
+
+msgid ""
+"Specifies an array of IP addresses to filter.\n"
+"When you enable logging, traffic to and from these IP addresses is logged.\n"
+"If you do not specify any IP addresses, traffic to and from all IP addresses is logged."
+msgstr ""
+"指定一个用于过滤的 IP 地址数组。当启用日志记录功能时，这些 IP 地址之间的网络流量会被记录下来。如果您没有指定任何 IP 地址，那么所有 IP "
+"地址之间的网络流量都会被记录。"
+
+msgid "Specifies a log file path."
+msgstr "指定一个日志文件的路径。"
+
+msgid ""
+"Specifies the maximum size of the log file.\n"
+"This parameter is relevant if you set **EnableLogFileRollover** and **EnableLoggingToFile** to $True."
+msgstr ""
+"指定日志文件的最大大小。如果您将 **EnableLogFileRollover** 和 **EnableLoggingToFile** 设置为 "
+"$True，则此参数非常有用。"
+
+msgid "Specifies whether the DNS server logs notifications."
+msgstr "指定DNS服务器是否记录通知信息。"
+
+msgid ""
+"Specifies a bit flag for the logging level.\n"
+"Valid values are:"
+msgstr "用于指定日志记录级别的位标志。有效值包括："
+
+msgid ""
+"Specifies the additional operations that the DNS server logs.\n"
+"The default valid value is:"
+msgstr "指定DNS服务器需要记录的额外操作。默认的有效值为："
+
+msgid ""
+"0x01000000.\n"
+"Valid values for this parameter are: 0x01, 0x02, and 0x03.The DNS server logs operational logging information for activities that are related to interaction with plug-in DLLs to the log file."
+msgstr ""
+"0x01000000。该参数的有效值为：0x01、0x02 和 0x03。DNS 服务器会将与插件 DLL 相关的操作活动日志信息记录到日志文件中。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies whether the DNS server allows query packet exchanges to pass "
+"through the content filter, such as the *IPFilterList* parameter."
+msgstr "指定DNS服务器是否允许查询数据包通过内容过滤器（例如*IPFilterList*参数）进行传输。"
+
+msgid "Specifies whether the DNS server logs queries."
+msgstr "指定DNS服务器是否记录查询日志。"
+
+msgid "Specifies whether the DNS server logs receive packets."
+msgstr "指定DNS服务器日志是否接收数据包。"
+
+msgid "Specifies whether the DNS server saves logs to persistent storage."
+msgstr "指定DNS服务器是否将日志保存到持久存储中。"
+
+msgid "Specifies whether the DNS server logs send packets."
+msgstr "指定DNS服务器日志是否记录数据包的发送情况。"
+
+msgid "Specifies whether the DNS server logs TCP packets."
+msgstr "指定DNS服务器是否记录TCP数据包。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的并发操作的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前执行的 cmdlet，而不适用于整个会话或整个计算机。"
+
+msgid "Specifies whether the DNS server logs UDP packets."
+msgstr "指定DNS服务器是否记录UDP数据包。"
+
+msgid "Specifies whether the DNS server logs unmatched responses."
+msgstr "指定DNS服务器是否记录未匹配的响应。"
+
+msgid "Specifies whether the DNS server logs updates."
+msgstr "指定DNS服务器是否记录更新日志。"
+
+msgid ""
+"Specifies whether the DNS server uses the system event log for logging."
+msgstr "指定DNS服务器是否使用系统事件日志进行记录。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "Specifies whether the DNS server logs write-throughs."
+msgstr "指定DNS服务器是否记录所有数据写入操作（即“写通”方式）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.Management.Infrastructure.CimInstance#DnsServerDiagnostics"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance#DnsServerDiagnostics"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DnsServerDiagnostics](./Get-DnsServerDiagnostics.md)"
+msgstr "[Get-DnsServerDiagnostics](./Get-DnsServerDiagnostics.md)"

@@ -1,0 +1,157 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:04:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-AppvClientConnectionGroup"
+msgstr "# 启用 AppvClientConnectionGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Enables a running connection group on the computer running the App-V client."
+msgstr "在运行App-V客户端的计算机上，启用一个处于活动状态的连接组。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByGuid (Default)"
+msgstr "### ByGuid（默认值）"
+
+msgid "### ByName"
+msgstr "### 按名称查找"
+
+msgid "### ByConnectionGroup"
+msgstr "### 按连接组（ByConnectionGroup）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-AppvClientConnectionGroup** cmdlet enables a connection group "
+"to the computer that runs the Microsoft Application Virtualization (App-V) "
+"client."
+msgstr ""
+"**Enable-AppvClientConnectionGroup** cmdlet 可以使计算机与运行 Microsoft "
+"应用程序虚拟化（App-V）客户端的设备建立连接。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable a connection group by using its name"
+msgstr "### 示例 1：通过使用连接组的名称来启用该连接组"
+
+msgid ""
+"This command enables the connection group named MyGroup to all users on the "
+"computer."
+msgstr "此命令允许名为“MyGroup”的连接组与计算机上的所有用户建立连接。"
+
+msgid "### Example 2: Enable a connection group by using its ID"
+msgstr "### 示例 2：通过使用连接组的 ID 来启用该连接组"
+
+msgid ""
+"This command enables the connection group that has the group ID "
+"35ec9e5f-ab21-463f-8fe6-b90d4b66d182."
+msgstr "此命令用于启用具有组ID 35ec9e5f-ab21-463f-8fe6-b90d4b66d182的连接组。"
+
+msgid ""
+"### Example 3: Enable all connection groups by names that match a string"
+msgstr "### 示例 3：通过名称启用所有与指定字符串匹配的连接组"
+
+msgid ""
+"This command finds all connection groups that have the string MyGr in the "
+"name, and then enables them."
+msgstr "这个命令会找到所有名称中包含字符串“MyGr”的连接组，并将它们启用。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an App-V Connection Group object."
+msgstr "指定一个App-V连接组对象。"
+
+msgid ""
+"Indicates that this cmdlet enables the connection group is disabled for all users that log into the target computer.\n"
+"Otherwise, it enables the connection group only for the currently running user."
+msgstr "该命令表示：对于所有登录目标计算机的用户来说，此连接组的功能将被禁用；或者，仅对当前正在使用的用户启用该连接组的功能。"
+
+msgid "Specifies the ID associated with a connection group."
+msgstr "指定与连接组关联的ID。"
+
+msgid "Specifies the name of the App-V connection group."
+msgstr "指定 App-V 连接组的名称。"
+
+msgid ""
+"Specifies the SID of the intended user, in the form of S-1-2-34-56789012-3456789012-345678901-2345.\n"
+"This parameter requires elevated rights to run."
+msgstr ""
+"指定目标用户的 SID，格式为 S-1-2-34-56789012-3456789012-345678901-2345。运行此参数需要具有提升的权限。"
+
+msgid ""
+"Specifies a GUID that differentiates a connection group version from other versions.\n"
+"If you do not specify this parameter, the cmdlet operates on all versions of the connection group."
+msgstr "指定一个GUID，用于区分某个连接组版本与其他版本。如果您不指定此参数，该cmdlet将会对连接组的所有版本进行处理。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.AppvAgent.AppvClientConnectionGroup"
+msgstr "### Microsoft.AppvAgent.AppvClientConnectionGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvClientConnectionGroup](./Add-AppvClientConnectionGroup.md)"
+msgstr "[Add-AppvClientConnectionGroup](./Add-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Disable-AppvClientConnectionGroup](./Disable-AppvClientConnectionGroup.md)"
+msgstr ""
+"[disable-AppvClientConnectionGroup](./ Disable-AppvClientConnectionGroup.md)"
+
+msgid "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+msgstr "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Mount-AppvClientConnectionGroup](./Mount-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Mount-AppvClientConnectionGroup](./Mount-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Remove-AppvClientConnectionGroup](./Remove-AppvClientConnectionGroup.md)"
+msgstr ""
+"[Remove-AppvClientConnectionGroup](./Remove-AppvClientConnectionGroup.md)"
+
+msgid ""
+"[Repair-AppvClientConnectionGroup](./Repair-AppvClientConnectionGroup.md)"
+msgstr "[修复-AppvClientConnectionGroup](./Repair-AppvClientConnectionGroup.md)"
+
+msgid "[Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"
+msgstr "[Stop-AppvClientConnectionGroup](./Stop-AppvClientConnectionGroup.md)"

@@ -1,0 +1,120 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:17:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-AppvSequencerPackage"
+msgstr "# 更新 AppvSequencerPackage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Upgrades virtual application packages."
+msgstr "升级虚拟应用程序包。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Update-AppvSequencerPackage** cmdlet upgrades virtual application packages.\n"
+"It takes as an input the original package, the upgrade installer, and an output path.\n"
+"The cmdlet returns a package that is upgraded."
+msgstr ""
+"`Update-AppvSequencerPackage` cmdlet "
+"用于升级虚拟应用程序包。它接受三个输入参数：原始包文件、升级安装程序以及输出路径。执行该 cmdlet 后，会得到一个已升级的包文件作为返回结果。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update an application"
+msgstr "#### 示例 1：更新应用程序"
+
+msgid "This command updates an application, changing the output path."
+msgstr "这个命令用于更新应用程序，并更改输出路径。"
+
+msgid ""
+"### Example 2: Update an application and require package to be fully loaded"
+msgstr "### 示例 2：更新应用程序并要求包被完全加载"
+
+msgid ""
+"This command updates an application, and sets the package to be fully "
+"loaded."
+msgstr "这个命令用于更新应用程序，并将相关包设置为完全加载状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet forces the package to be fully downloaded onto the"
+" computer before it can be launched."
+msgstr "这表示该 cmdlet 在启动包之前会强制将其完全下载到计算机上。"
+
+msgid ""
+"Specifies the path of the existing Microsoft Application Virtualization "
+"(App-V) package to upgrade."
+msgstr "指定要升级的现有Microsoft应用程序虚拟化（App-V）包的路径。"
+
+msgid "Specifies the installer used to upgrade the App-V package."
+msgstr "指定用于升级 App-V 包的安装程序。"
+
+msgid ""
+"Specifies an array of Installer Command-Line Options as parameter values, "
+"such as /quiet, /passive, or /norestart."
+msgstr "指定一个安装程序命令行选项数组作为参数值，例如 /quiet、/passive 或 /norestart。"
+
+msgid ""
+"Specifies the friendly name of the package given during Sequencing time.\n"
+"This value is obtained from the package manifest."
+msgstr "指定在序列化过程中给出的包的友好名称。该值是从包清单中获取的。"
+
+msgid ""
+"Specifies the path of the folder where the updated package is to be saved."
+msgstr "指定用于保存更新后的软件包的文件夹路径。"
+
+msgid ""
+"Specifies the path to the App-V package template file to be used for this "
+"package."
+msgstr "指定用于创建此应用程序包的应用程序虚拟化（App-V）包模板文件的路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Expand-AppvSequencerPackage](./Expand-AppvSequencerPackage.md)"
+msgstr "[Expand-AppvSequencerPackage](./Expand-AppvSequencerPackage.md)"
+
+msgid "[New-AppvSequencerPackage](./New-AppvSequencerPackage.md)"
+msgstr "[New-AppvSequencerPackage](./New-AppvSequencerPackage.md)"

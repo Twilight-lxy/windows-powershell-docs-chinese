@@ -1,0 +1,93 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:24:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Remove-AppxPackageAutoUpdateSettings"
+msgstr "# 移除 AppxPackage 的自动更新设置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes settings configured for a particular Windows app."
+msgstr "删除为特定Windows应用程序配置的设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The 'Remove-AppxPackageAutoUpdateSettings' PowerShell cmdlet removes the "
+"settings configured for a specific or all installed Windows apps in relation"
+" to the Auto Update and Repair settings."
+msgstr ""
+"`Remove-AppxPackageAutoUpdateSettings` 这个 PowerShell cmdlet 用于删除为特定的或所有已安装的 "
+"Windows 应用程序配置的与自动更新和修复相关的设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example removes the Auto Update and Repair settings for a specific "
+"Windows app that has been installed and registered to the signed-in user."
+msgstr "这个示例会移除已安装并注册到当前登录用户的某个特定Windows应用程序的“自动更新”和“自动修复”设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "{{ Fill AllUsers Description }}"
+msgstr "{{ 填充所有用户信息 的描述 }}"
+
+msgid "{{ Fill PackageFamilyName Description }}"
+msgstr "{{ 填写 PackageFamilyName 和 Description }}"
+
+msgid "{{ Fill UseSystemPolicySource Description }}"
+msgstr "{{ 填写 UseSystemPolicySource 的描述 }}"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

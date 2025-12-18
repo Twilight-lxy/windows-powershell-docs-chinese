@@ -1,0 +1,181 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:54:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"The Add-DnsClientDohServerAddress cmdlet adds a DNS-over-HTTPS (DoH) server "
+"configuration to the supported DoH servers."
+msgstr ""
+"`Add-DnsClientDohServerAddress` cmdlet 用于将基于 HTTPS 的 DNS（DoH）服务器配置添加到支持的 DoH"
+" 服务器列表中。"
+
+msgid "# Add-DnsClientDohServerAddress"
+msgstr "# Add-DnsClientDohServerAddress"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds a DoH server configuration to the supported DoH servers."
+msgstr "将一个 DNS-over-HTTP（DoH）服务器配置添加到支持的 DoH 服务器列表中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-DnsClientDohServerAddress** cmdlet adds a DNS-over-HTTPS (DoH) "
+"server configuration to the supported DoH servers."
+msgstr ""
+"`Add-DnsClientDohServerAddress` cmdlet 可将基于 HTTPS 的 DNS（DoH）服务器配置添加到受支持的 DoH"
+" 服务器列表中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a DoH server"
+msgstr "### 示例 1：添加一个 DoH（DNS over HTTPS）服务器"
+
+msgid ""
+"This example adds 10.23.1.1 to the system DoH list with the specified URI "
+"template."
+msgstr "这个示例使用指定的 URI 模板，将 10.23.1.1 添加到系统的 DoH（Domain Name System）列表中。"
+
+msgid "### Example 2: Add a DoH server with automatic upgrade"
+msgstr "### 示例 2：添加一个具有自动升级功能的 DoH（DNS over HTTPS）服务器"
+
+msgid ""
+"This example adds 10.23.1.1 to the system DoH list with the specified URI template.\n"
+"The command upgrades any resolutions to 10.23.1.1 to DoH.\n"
+"If the encrypted name resolution fails, the command allows fallback to unencrypted DNS."
+msgstr ""
+"这个示例使用指定的 URI 模板，将 10.23.1.1 添加到系统的 DoH（DNS over HTTPS）列表中。该命令会将所有指向 "
+"10.23.1.1 的域名解析请求重定向到 DoH 服务器。如果加密的域名解析失败，系统会自动回退到未加密的 DNS 解析方式。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies whether to allow fallback to unencrypted DNS if the DoH query to the server fails.\n"
+"This parameter applies only if **AutoUpgrade** is `True`.\n"
+"The default is `False`."
+msgstr ""
+"指定在向服务器发起的 DoH 查询失败时是否允许使用未加密的 DNS 作为备用方案。此参数仅在 **AutoUpgrade** 设置为 `True` "
+"时生效。默认值为 `False`。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该cmdlet。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业 (About "
+"Jobs)](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Specifies whether to encrypt all name resolutions to this server using the DoH settings.\n"
+"The upgrade occurs if the server is configured on an adapter or if it is part of a Name Resolution Policy Table (NRPT) rule.\n"
+"The default is `False`."
+msgstr ""
+"指定是否使用 DoH "
+"设置来加密所有发送到该服务器的名称解析请求。如果服务器配置在适配器上，或者它是名称解析策略表（NRPT）规则的一部分，则会执行此升级操作。默认值为 "
+"`False`。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Specifies a valid URI template used to connect to the DoH server."
+msgstr "指定一个有效的 URI 模板，用于连接到 DNS-over-HTTP (DoH) 服务器。"
+
+msgid "Specifies the IP address of the DoH server."
+msgstr "指定DoH服务器的IP地址。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的cmdlet的最大操作数量。如果省略此参数或输入值为`0`，则Windows "
+"PowerShell会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最佳限制值。该限制仅适用于当前执行的cmdlet，而不影响整个会话或计算机本身。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Boolean"
+msgstr "### System(Boolean)"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DnsClientNrptRule](Add-DnsClientNrptRule.md)"
+msgstr "[Add-DnsClientNrptRule](Add-DnsClientNrptRule.md)"
+
+msgid "[Get-DnsClientDohServerAddress](Get-DnsClientDohServerAddress.md)"
+msgstr "[Get-DnsClientDohServerAddress](Get-DnsClientDohServerAddress.md)"
+
+msgid ""
+"[Remove-DnsClientDohServerAddress](Remove-DnsClientDohServerAddress.md)"
+msgstr ""
+"[Remove-DnsClientDohServerAddress](Remove-DnsClientDohServerAddress.md)"
+
+msgid "[Set-DnsClientDohServerAddress](Set-DnsClientDohServerAddress.md)"
+msgstr "[Set-DnsClientDohServerAddress](Set-DnsClientDohServerAddress.md)"

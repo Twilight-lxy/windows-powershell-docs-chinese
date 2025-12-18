@@ -1,0 +1,145 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:11:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您使用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-Cluster"
+msgstr "# 移除集群"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Destroys an existing failover cluster."
+msgstr "删除一个现有的故障转移集群。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Remove-Cluster` cmdlet destroys an existing failover cluster. The affected servers will no\n"
+"longer function together as a cluster."
+msgstr "`Remove-Cluster` cmdlet 用于销毁现有的故障转移集群。受影响的服务器将不再作为一个集群一起运行。"
+
+msgid ""
+"This cmdlet deletes all copies of the cluster configuration database on all "
+"cluster nodes."
+msgstr "此 cmdlet 会删除所有集群节点上的所有集群配置数据库副本。"
+
+msgid ""
+"Note: This cmdlet cannot be run remotely without Credential Security Service Provider (CredSSP)\n"
+"authentication on the server computer."
+msgstr "注意：如果没有服务器计算机上的凭据安全服务提供程序（CredSSP）进行身份验证，此cmdlet无法远程运行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example prompts the user for confirmation, then destroys the local failover cluster and removes\n"
+"cluster configuration information from the cluster nodes."
+msgstr "这个示例会先提示用户进行确认，随后销毁本地的故障转移集群，并从集群节点中删除相应的集群配置信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example destroys the local failover cluster and removes cluster configuration information from\n"
+"the cluster nodes. The cmdlet doesn't prompt for confirmation."
+msgstr "这个示例会销毁本地的故障转移集群，并从集群节点中删除集群配置信息。该cmdlet不会提示用户进行确认操作。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example destroys the cluster named `Cluster1`, removes cluster configuration information from\n"
+"the cluster nodes, and deletes the cluster objects in Active Directory. The cmdlet doesn't prompt\n"
+"for confirmation."
+msgstr ""
+"这个示例会销毁名为 `Cluster1` 的集群，从集群节点中删除集群配置信息，并在 Active Directory "
+"中删除相关集群对象。该命令行工具（cmdlet）不会提示用户进行确认操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies that when the cluster is destroyed, the objects in Active Directory that are associated\n"
+"with the cluster are removed."
+msgstr "该规定指出：当集群被销毁时，与集群关联的Active Directory中的对象也将被删除。"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Runs the cmdlet without prompting for confirmation. By default the cmdlet will ask for confirmation\n"
+"from the user before proceeding."
+msgstr "该cmdlet会直接执行操作，而不会提示用户确认是否继续。默认情况下，该cmdlet会在执行前询问用户的确认意见。"
+
+msgid "Specifies the cluster to destroy."
+msgstr "指定要销毁的集群。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters.PowerShell Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-Cluster](./Get-Cluster.md)"
+msgstr "[Get-Cluster](./Get-Cluster.md)"
+
+msgid "[New-Cluster](./New-Cluster.md)"
+msgstr "[新建集群](./New-Cluster.md)"
+
+msgid "[Start-Cluster](./Start-Cluster.md)"
+msgstr "[启动集群](./Start-Cluster.md)"
+
+msgid "[Stop-Cluster](./Stop-Cluster.md)"
+msgstr "[停止集群](./Stop-Cluster.md)"
+
+msgid "[Test-Cluster](./Test-Cluster.md)"
+msgstr "[测试集群](./Test-Cluster.md)"

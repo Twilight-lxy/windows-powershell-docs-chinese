@@ -1,0 +1,263 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:21:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DhcpServerv4Lease"
+msgstr "# Get-DhcpServerv4Lease"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets one or more lease records from the DHCP server service."
+msgstr "从DHCP服务器服务中获取一个或多个租约记录。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ScopeId (Default)"
+msgstr "### ScopeId（默认值）"
+
+msgid "### IPAddress"
+msgstr "### IP地址"
+
+msgid "### ClientId"
+msgstr "### ClientId"
+
+msgid "### BadLeases"
+msgstr "### BadLeases"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DhcpServerv4Lease** cmdlet gets one or more lease records from the"
+" Dynamic Host Configuration Protocol (DHCP) server service."
+msgstr "`Get-DhcpServerv4Lease` cmdlet 从动态主机配置协议（DHCP）服务器服务中获取一个或多个租约记录。"
+
+msgid ""
+"If you specify the *ScopeId* parameter, the active leases from the specified scope are returned.\n"
+"To get all kinds of leases including Active, Offered, Declined, and Expired, the *AllLeases* parameter must be specified."
+msgstr ""
+"如果您指定了 *ScopeId* "
+"参数，系统将返回来自指定范围内的有效租赁信息。如果要获取包括“有效”（Active）、“已提供”（Offered）、“已被拒绝”（Declined）和“已过期”（Expired）在内的所有类型的租赁信息，则必须指定"
+" *AllLeases* 参数。"
+
+msgid ""
+"If you specify the *IPAddress* parameter, the lease records for the "
+"specified IP address are returned."
+msgstr "如果您指定了 *IPAddress* 参数，系统将返回与该指定 IP 地址相关的租约记录。"
+
+msgid ""
+"If you specify the *ClientId* and *ScopeId* parameters, the leases for the "
+"specified *ClientId* parameter values in the specified scope are returned."
+msgstr ""
+"如果您指定了 *ClientId* 和 *ScopeId* 参数，系统将返回在指定范围内、与指定的 *ClientId* 值对应的租约信息。"
+
+msgid ""
+"If you specify the *BadLeases* and *ScopeId* parameters, all of the bad "
+"lease records for the specified scope are returned."
+msgstr "如果您指定了 *BadLeases* 和 *ScopeId* 参数，系统将返回指定范围内所有不良租赁记录。"
+
+msgid ""
+"If you specify the *BadLeases* parameter without the *ScopeId* parameter, "
+"all of the bad lease records from the DHCP server service are returned."
+msgstr "如果您指定了 *BadLeases* 参数但没有指定 *ScopeId* 参数，那么将从 DHCP 服务器服务中返回所有不良的租约记录。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all active leases in a scope"
+msgstr "### 示例 1：获取某个范围内的所有有效租约"
+
+msgid ""
+"This example gets all the active IPv4 address leases from the DHCPv4 scope "
+"10.10.10.0."
+msgstr "这个示例从 DHCPv4 范围 10.10.10.0 中获取所有有效的 IPv4 地址租约。"
+
+msgid "### Example 2: Get leases for specified addresses"
+msgstr "### 示例 2：获取指定地址的租赁信息"
+
+msgid ""
+"This example gets the IP address lease information for the IPv4 addresses "
+"10.10.10.10 and 10.20.20.20."
+msgstr "这个示例用于获取IPv4地址10.10.10.10和10.20.20.20的IP地址租用信息。"
+
+msgid "### Example 3: Get declined leases"
+msgstr "### 示例 3：租约申请被拒绝的情况"
+
+msgid ""
+"This example gets all the bad, or declined, IPv4 address leases from the "
+"DHCPv4 scope 10.10.10.0."
+msgstr "这个示例从 DHCPv4 范围 10.10.10.0 中获取所有无效或被拒绝的 IPv4 地址租约。"
+
+msgid "### Example 4: Get leases for specified clients"
+msgstr "### 示例 4：获取指定客户的租约信息"
+
+msgid ""
+"This example gets the IPv4 address leases from the DHCPv4 scope 10.10.10.0 "
+"for the clients identified by the client IDs F0-DE-F1-7A-00-5E and "
+"00-24-D7-C5-25-B0."
+msgstr ""
+"这个示例从 DHCPv4 范围 10.10.10.0 中获取 IPv4 地址租约，这些地址是分配给客户端 ID 为 F0-DE-F1-7A-00-5E "
+"和 00-24-D7-C5-25-B0 的客户端的。"
+
+msgid "### Example 5: Get all leases in a scope"
+msgstr "### 示例 5：获取某个范围内的所有租约"
+
+msgid ""
+"This example gets all of the types of IPv4 address leases including Active, "
+"Declined, and Expired from the DHCPv4 scope 10.10.10.0."
+msgstr ""
+"这个示例从 DHCPv4 范围 10.10.10.0 中获取了所有类型的 IPv4 "
+"地址租约，包括“活动”（Active）、“拒绝”（Declined）和“过期”（Expired）状态的租约。"
+
+msgid "### Example 6: Get active leases from all scopes on a computer"
+msgstr "### 示例 6：从计算机上的所有作用域中获取活动的租约"
+
+msgid ""
+"This example gets all of the active IP address leases from all of the scopes on the DHCP server service that runs on the computer named dhcpserver.contoso.com.\n"
+"The **Get-DhcpServerv4Scope** cmdlet returns the scope objects and pipes the objects into this cmdlet which returns the active address lease objects from all the scopes."
+msgstr ""
+"这个示例从名为dhcpserver.contoso.com的计算机上运行的DHCP服务器服务中获取所有作用域内的活动IP地址租约信息。`Get-"
+"DhcpServerv4Scope` "
+"cmdlet会返回相应的作用域对象，并将这些对象传递给另一个cmdlet，后者再从中提取出所有作用域内的活动地址租约信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet returns all of the IPv4 address leases regardless of address state.\n"
+"By default, this cmdlet returns only active leases."
+msgstr "表示该cmdlet会返回所有IPv4地址租约，而不论地址的状态如何。默认情况下，该cmdlet仅返回处于活动状态的租约。"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用此参数来执行需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成过程中，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Indicates that this cmdlet returns only bad leases.\n"
+"If an IP address lease is declined by the client because of a conflict with another client, the lease record is marked as bad, or declined, by the DHCP server service."
+msgstr ""
+"表示此cmdlet仅返回无效的IP地址租约信息。当某个IP地址租约因与其他客户端发生冲突而被客户端拒绝，或者该租约记录被DHCP服务器服务标记为无效/已被拒绝时，系统会相应地处理这些情况。"
+
+msgid ""
+"An IP address lease in this state is not offered to any client until expiry "
+"of a timer, which is 10 minutes."
+msgstr "在这种状态下，IP地址租赁在计时器到期（时间为10分钟）之前不会提供给任何客户端。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如 `[New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the client identifier (ID) for which the IP address lease record "
+"is to be retrieved."
+msgstr "指定要获取其IP地址租用记录的客户端标识符（ID）。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the DHCP server service."
+msgstr "指定运行DHCP服务器服务的目标计算机的DNS名称、IPv4地址或IPv6地址。"
+
+msgid "Specifies the IP address for which the lease record is retrieved."
+msgstr "指定用于检索租约记录的 IP 地址。"
+
+msgid ""
+"Specifies the scope ID, in IPv4 address format from which the IPv4 address "
+"leases are retrieved."
+msgstr "指定用于获取IPv4地址租约的范围ID，该范围ID采用IPv4地址格式表示。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® 会根据计算机上正在运行的"
+" CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前执行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Lease[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Lease[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DhcpServerv4Lease](./Add-DhcpServerv4Lease.md)"
+msgstr "[Add-DhcpServerv4Lease](./Add-DhcpServerv4Lease.md)"
+
+msgid "[Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+msgstr "[Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+
+msgid "[Remove-DhcpServerv4Lease](./Remove-DhcpServerv4Lease.md)"
+msgstr "[Remove-DhcpServerv4Lease](./Remove-DhcpServerv4Lease.md)"

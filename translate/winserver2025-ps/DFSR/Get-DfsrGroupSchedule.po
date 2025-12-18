@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:38:55 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrGroupSchedule"
+msgstr "# Get-DfsrGroupSchedule"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Retrieves a replication group schedule."
+msgstr "检索复制组的调度信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-DfsrGroupSchedule** cmdlet retrieves a schedule from a specified replication group.\n"
+"Distributed File System (DFS) Replication schedules control the availability and bandwidth usage of replication.\n"
+"By default, DFS Replication schedules replication 24 hours a day, 7 days a week with full bandwidth as the recommended configuration."
+msgstr ""
+"`Get-DfsrGroupSchedule` cmdlet "
+"用于从指定的复制组中检索调度信息。分布式文件系统（DFS）的复制调度机制用于控制复制的可用性和带宽使用情况。默认情况下，DFS 复制机制建议配置为每天 "
+"24 小时、每周 7 天持续进行复制，并且使用全部带宽。"
+
+msgid ""
+"The DFS Replication Get-* cmdlets are useful for pipeline operations or "
+"inventory."
+msgstr "DFS复制Get-*命令集对于管道操作或资源清单管理非常有用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a group schedule"
+msgstr "### 示例 1：获取小组日程安排"
+
+msgid ""
+"This command uses the **Get-DfsrGroupSchedule** cmdlet to display the "
+"replication group schedule for a resource group named RG01."
+msgstr "此命令使用 **Get-DfsrGroupSchedule** cmdlet 来显示名为 RG01 的资源组的复制组计划。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains a replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the current domain of the user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果未指定此参数，cmdlet 将使用用户的当前域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"If you do not specify this parameter, the cmdlet queries for all participating replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。如果不指定此参数，该cmdlet将查询所有参与的复制组。你可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsRGroupSchedule"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsRGroupSchedule"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-DfsrGroupSchedule](./Set-DfsrGroupSchedule.md)"
+msgstr "[Set-DfsrGroupSchedule](./Set-DfsrGroupSchedule.md)"

@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:12:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-ClusterCheckpoint"
+msgstr "# 删除集群检查点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Removes a cryptographic key checkpoint or registry checkpoint for a "
+"resource."
+msgstr "删除某个资源的加密密钥检查点或注册表检查点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Remove-ClusterCheckpoint` cmdlet removes a cryptographic key checkpoint or registry\n"
+"checkpoint for a resource."
+msgstr "`Remove-ClusterCheckpoint` cmdlet 用于删除资源的加密密钥检查点或注册表检查点。"
+
+msgid ""
+"Checkpoints help provide failover support for applications that store configuration information\n"
+"locally instead of or in addition to storing information in the cluster configuration database.\n"
+"Applications might store information locally in two ways. One way is to store configuration\n"
+"information in the registry on the local server; another way is to use cryptographic keys on the\n"
+"local server."
+msgstr ""
+"检查点（Checkpoints）有助于为那些将配置信息存储在本地（而不是或除了存储在集群配置数据库中之外）的应用程序提供故障转移支持。应用程序可以通过两种方式在本地存储信息：一种是将配置信息存储在本地服务器的注册表中；另一种是使用本地服务器上的加密密钥来存储配置信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example returns all registry checkpoints for the resource named `Cluster Name`, then removes\n"
+"them without user confirmation."
+msgstr ""
+"这个示例会返回名为“Cluster Name”的资源的所有注册表检查点（即该资源在注册表中的状态变化记录），然后在没有用户确认的情况下删除这些检查点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of the checkpoint to remove."
+msgstr "指定要删除的检查点的名称。"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群名称。如果该参数的输入值为`.` 或被省略，则 cmdlet 会在本地集群上运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies that cryptographic key checkpoints will be removed."
+msgstr "指定将删除加密密钥的检查点（即用于验证密钥完整性的数据）。"
+
+msgid ""
+"Runs the cmdlet without prompting for confirmation. By default the cmdlet will ask for confirmation\n"
+"from the user before proceeding."
+msgstr "该cmdlet在运行时不会提示用户进行确认。默认情况下，该cmdlet会在执行前询问用户的确认意见。"
+
+msgid ""
+"Specifies the cluster on which to run the cmdlet or the cluster resource from which to remove the\n"
+"checkpoint."
+msgstr "指定用于运行该 cmdlet 的集群，或用于删除检查点的集群资源。"
+
+msgid "Specifies that registry checkpoints will be removed."
+msgstr "指定将删除注册表检查点。"
+
+msgid "Specifies the resource from which a checkpoint should be removed."
+msgstr "指定应从中删除检查点的资源。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft_failoverClusters.PowerShell-cluster"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### MicrosoftFailoverClusters.PowerShell-clusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterCheckpoint](./Add-ClusterCheckpoint.md)"
+msgstr "[添加集群检查点](./Add-ClusterCheckpoint.md)"
+
+msgid "[Get-ClusterCheckpoint](./Get-ClusterCheckpoint.md)"
+msgstr "[Get-ClusterCheckpoint](./Get-ClusterCheckpoint.md)"

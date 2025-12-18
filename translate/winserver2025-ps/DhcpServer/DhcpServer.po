@@ -1,0 +1,972 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:12:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# DhcpServer Module"
+msgstr "# DhcpServer 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Dynamic Host "
+"Configuration Protocol (DHCP) server service-specific cmdlets. It lists the "
+"cmdlets in alphabetical order based on the verb at the beginning of the "
+"cmdlet. "
+msgstr ""
+"本参考资料提供了所有与动态主机配置协议（DHCP）服务器服务相关的cmdlet的描述和语法信息。这些cmdlet按照每个cmdlet开头所使用的动词（即命令操作关键字）的字母顺序进行排列。"
+
+msgid ""
+"Also see [DHCP Classes](https://go.microsoft.com/FWLink/p/?LinkId=260590)."
+msgstr "另请参阅[DHCP类别](https://go.microsoft.com/FWLink/p/?LinkId=260590)。"
+
+msgid "## DhcpServer Cmdlets"
+msgstr "## DhcpServerCmdlets"
+
+msgid "### [Add-DhcpServerInDC](./Add-DhcpServerInDC.md)"
+msgstr "### [Add-DhcpServerInDC](./Add-DhcpServerInDC.md)"
+
+msgid ""
+"Adds the computer that runs the DHCP server service to the list of "
+"authorized DHCP server services in Active Directory."
+msgstr "将运行DHCP服务器服务的计算机添加到Active Directory中授权的DHCP服务器服务列表中。"
+
+msgid "### [Add-DhcpServerSecurityGroup](./Add-DhcpServerSecurityGroup.md)"
+msgstr "### [Add-DhcpServerSecurityGroup](./Add-DhcpServerSecurityGroup.md)"
+
+msgid "Adds security groups to a DHCP server."
+msgstr "将安全组添加到DHCP服务器中。"
+
+msgid "### [Add-DhcpServerv4Class](./Add-DhcpServerv4Class.md)"
+msgstr "### [Add-DhcpServerv4Class](./Add-DhcpServerv4Class.md)"
+
+msgid "Adds an IPv4 vendor or user class to the DHCP server service."
+msgstr "向DHCP服务器服务添加一个IPv4供应商或用户类别。"
+
+msgid ""
+"### [Add-DhcpServerv4ExclusionRange](./Add-DhcpServerv4ExclusionRange.md)"
+msgstr ""
+"### [Add-DhcpServerv4ExclusionRange](./Add-DhcpServerv4ExclusionRange.md)"
+
+msgid "Adds a range of excluded IP addresses for an IPv4 scope."
+msgstr "为某个 IPv4 范围添加一系列需要排除的 IP 地址。"
+
+msgid "### [Add-DhcpServerv4Failover](./Add-DhcpServerv4Failover.md)"
+msgstr "### [Add-DhcpServerv4Failover](./Add-DhcpServerv4Failover.md)"
+
+msgid "Adds an IPv4 failover relationship on the DHCP server service."
+msgstr "在DHCP服务器服务上添加一个IPv4故障转移关系。"
+
+msgid ""
+"### [Add-DhcpServerv4FailoverScope](./Add-DhcpServerv4FailoverScope.md)"
+msgstr ""
+"### [Add-DhcpServerv4FailoverScope](./Add-DhcpServerv4FailoverScope.md)"
+
+msgid "Adds one or more specified scopes to the failover relationship."
+msgstr "将一个或多个指定的作用域添加到故障转移关系中。"
+
+msgid "### [Add-DhcpServerv4Filter](./Add-DhcpServerv4Filter.md)"
+msgstr "### [Add-DhcpServerv4Filter](./Add-DhcpServerv4Filter.md)"
+
+msgid "Adds a MAC address filter to the DHCP server service."
+msgstr "向DHCP服务器服务添加一个MAC地址过滤器。"
+
+msgid "### [Add-DhcpServerv4Lease](./Add-DhcpServerv4Lease.md)"
+msgstr "### [Add-DhcpServerv4Lease](./Add-DhcpServerv4Lease.md)"
+
+msgid "Adds a new IPv4 address lease in the DHCP server service."
+msgstr "在DHCP服务器服务中添加一个新的IPv4地址租约。"
+
+msgid ""
+"### [Add-DhcpServerv4MulticastExclusionRange](./Add-"
+"DhcpServerv4MulticastExclusionRange.md)"
+msgstr ""
+"### [Add-DhcpServerv4MulticastExclusionRange](./Add-"
+"DhcpServerv4MulticastExclusionRange.md)"
+
+msgid "Adds a range of addresses to exclude from a multicast scope."
+msgstr "添加一系列地址，以将这些地址从多播范围内排除掉。"
+
+msgid ""
+"### [Add-DhcpServerv4MulticastScope](./Add-DhcpServerv4MulticastScope.md)"
+msgstr ""
+"### [Add-DhcpServerv4MulticastScope](./Add-DhcpServerv4MulticastScope.md)"
+
+msgid "Adds a multicast scope on the DHCP server."
+msgstr "在DHCP服务器上添加一个多播作用域（multicast scope）。"
+
+msgid ""
+"### [Add-DhcpServerv4OptionDefinition](./Add-"
+"DhcpServerv4OptionDefinition.md)"
+msgstr ""
+"### [Add-DhcpServerv4OptionDefinition](./Add-"
+"DhcpServerv4OptionDefinition.md)"
+
+msgid "Adds a DHCPv4 option definition on the DHCP server service."
+msgstr "在DHCP服务器服务上添加一个DHCPv4选项定义。"
+
+msgid "### [Add-DhcpServerv4Policy](./Add-DhcpServerv4Policy.md)"
+msgstr "### [Add-DhcpServerv4Policy](./Add-DhcpServerv4Policy.md)"
+
+msgid "Adds a new policy either at the server level or at the scope level."
+msgstr "在服务器级别或作用域级别添加新的策略。"
+
+msgid ""
+"### [Add-DhcpServerv4PolicyIPRange](./Add-DhcpServerv4PolicyIPRange.md)"
+msgstr ""
+"### [Add-DhcpServerv4PolicyIPRange](./Add-DhcpServerv4PolicyIPRange.md)"
+
+msgid "Adds an IP range to an existing policy at the scope level."
+msgstr "在范围级别（scope level）将一个IP地址段添加到现有的策略中。"
+
+msgid "### [Add-DhcpServerv4Reservation](./Add-DhcpServerv4Reservation.md)"
+msgstr "### [Add-DhcpServerv4Reservation](./Add-DhcpServerv4Reservation.md)"
+
+msgid "Reserves an IPv4 address in the scope for a client."
+msgstr "为客户在指定的地址范围内预留一个IPv4地址。"
+
+msgid "### [Add-DhcpServerv4Scope](./Add-DhcpServerv4Scope.md)"
+msgstr "### [Add-DhcpServerv4Scope](./Add-DhcpServerv4Scope.md)"
+
+msgid "Adds an IPv4 scope on the DHCP server service."
+msgstr "在DHCP服务器服务上添加一个IPv4地址范围。"
+
+msgid "### [Add-DhcpServerv4Superscope](./Add-DhcpServerv4Superscope.md)"
+msgstr "### [Add-DhcpServerv4Superscope](./Add-DhcpServerv4Superscope.md)"
+
+msgid "Adds scopes to a superscope."
+msgstr "向一个超范围（superscope）添加作用域（scopes）。"
+
+msgid "### [Add-DhcpServerv6Class](./Add-DhcpServerv6Class.md)"
+msgstr "### [Add-DhcpServerv6Class](./Add-DhcpServerv6Class.md)"
+
+msgid "Adds an IPv6 vendor or user class to the DHCP server service."
+msgstr "向DHCP服务器服务添加一个IPv6供应商或用户类别。"
+
+msgid ""
+"### [Add-DhcpServerv6ExclusionRange](./Add-DhcpServerv6ExclusionRange.md)"
+msgstr ""
+"### [Add-DhcpServerv6ExclusionRange](./Add-DhcpServerv6ExclusionRange.md)"
+
+msgid "Sets the range of IPv6 addresses to exclude from an IPv6 scope."
+msgstr "用于指定要从某个 IPv6 范围中排除的 IPv6 地址范围。"
+
+msgid "### [Add-DhcpServerv6Lease](./Add-DhcpServerv6Lease.md)"
+msgstr "### [Add-DhcpServerv6Lease](./Add-DhcpServerv6Lease.md)"
+
+msgid "Adds an IPv6 address lease to the DHCP server service."
+msgstr "向DHCP服务器服务添加一个IPv6地址租约。"
+
+msgid ""
+"### [Add-DhcpServerv6OptionDefinition](./Add-"
+"DhcpServerv6OptionDefinition.md)"
+msgstr ""
+"### [Add-DhcpServerv6OptionDefinition](./Add-"
+"DhcpServerv6OptionDefinition.md)"
+
+msgid "Adds a DHCPv6 option definition to a DHCP server service."
+msgstr "向DHCP服务器服务添加一个DHCPv6选项定义。"
+
+msgid "### [Add-DhcpServerv6Reservation](./Add-DhcpServerv6Reservation.md)"
+msgstr "### [Add-DhcpServerv6Reservation](./Add-DhcpServerv6 Reservation.md)"
+
+msgid "Adds an IPv6 Reservation to an IPv6 prefix or scope."
+msgstr "将一个 IPv6 预留地址添加到某个 IPv6 前缀或作用域中。"
+
+msgid "### [Add-DhcpServerv6Scope](./Add-DhcpServerv6Scope.md)"
+msgstr "### [Add-DhcpServerv6Scope](./Add-DhcpServerv6Scope.md)"
+
+msgid ""
+"Adds an IPv6 scope to the DHCP server service with the specified parameters."
+msgstr "使用指定的参数为DHCP服务器服务添加一个IPv6作用域。"
+
+msgid "### [Backup-DhcpServer](./Backup-DhcpServer.md)"
+msgstr "### [备份DHCP服务器](./Backup-DhcpServer.md)"
+
+msgid "Backs up the DHCP database of DHCP server service."
+msgstr "备份DHCP服务器服务的DHCP数据库。"
+
+msgid "### [Export-DhcpServer](./Export-DhcpServer.md)"
+msgstr "### [Export-DhcpServer](./Export-DhcpServer.md)"
+
+msgid "Exports the DHCP server service configuration and lease data."
+msgstr "导出DHCP服务器的服务配置和租约数据。"
+
+msgid "### [Get-DhcpServerAuditLog](./Get-DhcpServerAuditLog.md)"
+msgstr "### [Get-DhcpServerAuditLog](./Get-DhcpServerAuditLog.md)"
+
+msgid ""
+"Gets the configuration parameters related to the audit log of the DHCP "
+"server service."
+msgstr "获取与DHCP服务器服务的审计日志相关的配置参数。"
+
+msgid "### [Get-DhcpServerDatabase](./Get-DhcpServerDatabase.md)"
+msgstr "### [Get-DhcpServerDatabase](./Get-DhcpServerDatabase.md)"
+
+msgid ""
+"Gets the configuration parameters related to the database of the DHCP server"
+" service."
+msgstr "获取与DHCP服务器服务的数据库相关的配置参数。"
+
+msgid "### [Get-DhcpServerDnsCredential](./Get-DhcpServerDnsCredential.md)"
+msgstr "### [Get-DhcpServerDnsCredential](./Get-DhcpServerDnsCredential.md)"
+
+msgid ""
+"Gets an account that the DHCP Server service uses to register or deregister "
+"client records on a DNS server."
+msgstr "获取一个DHCP服务器服务用于在DNS服务器上注册或注销客户端记录的账户。"
+
+msgid "### [Get-DhcpServerInDC](./Get-DhcpServerInDC.md)"
+msgstr "### [Get-DhcpServerInDC](./Get-DhcpServerInDC.md)"
+
+msgid ""
+"Retrieves the list of authorized computers that run the DHCP server service "
+"from Active Directory."
+msgstr "从 Active Directory 中检索运行 DHCP 服务器服务的授权计算机的列表。"
+
+msgid "### [Get-DhcpServerSetting](./Get-DhcpServerSetting.md)"
+msgstr "### [Get-DhcpServerSetting](./Get-DhcpServerSetting.md)"
+
+msgid ""
+"Gets the configuration parameters of the database of the DHCP server "
+"service."
+msgstr "获取DHCP服务器服务数据库的配置参数。"
+
+msgid "### [Get-DhcpServerv4Binding](./Get-DhcpServerv4Binding.md)"
+msgstr "### [Get-DhcpServerv4Binding](./Get-DhcpServerv4Binding.md)"
+
+msgid ""
+"Gets the IPv4 interfaces on the computer to which the DHCP server service is"
+" bound."
+msgstr "获取DHCP服务器服务所绑定的计算机上的IPv4接口信息。"
+
+msgid "### [Get-DhcpServerv4Class](./Get-DhcpServerv4Class.md)"
+msgstr "### [Get-DhcpServerv4Class](./Get-DhcpServerv4Class.md)"
+
+msgid "Retrieves an IPv4 vendor or user class from the DHCP server service."
+msgstr "从DHCP服务器服务中检索IPv4供应商或用户类别信息。"
+
+msgid "### [Get-DhcpServerv4DnsSetting](./Get-DhcpServerv4DnsSetting.md)"
+msgstr "### [Get-DhcpServerv4DnsSetting](./Get-DhcpServerv4DnsSetting.md)"
+
+msgid ""
+"Gets the DNS settings configured on the DHCP server service for a specific "
+"scope, reservation, or server level."
+msgstr "用于获取在DHCP服务器服务中为特定作用域、预留地址或服务器级别配置的DNS设置。"
+
+msgid ""
+"### [Get-DhcpServerv4ExclusionRange](./Get-DhcpServerv4ExclusionRange.md)"
+msgstr ""
+"### [Get-DhcpServerv4ExclusionRange](./Get-DhcpServerv4ExclusionRange.md)"
+
+msgid "Returns the IPv4 address ranges excluded from the specified scope IDs."
+msgstr "返回从指定范围ID中排除的IPv4地址段。"
+
+msgid "### [Get-DhcpServerv4Failover](./Get-DhcpServerv4Failover.md)"
+msgstr "### [Get-DhcpServerv4Failover](./Get-DhcpServerv4Failover.md)"
+
+msgid ""
+"Gets the failover relationships configured on the DHCP server service for "
+"the specific failover relationship name."
+msgstr "获取在DHCP服务器服务上为特定故障转移关系名称配置的故障转移关系信息。"
+
+msgid "### [Get-DhcpServerv4Filter](./Get-DhcpServerv4Filter.md)"
+msgstr "### [Get-DhcpServerv4Filter](./Get-DhcpServerv4Filter.md)"
+
+msgid ""
+"Gets MAC addresses from the allow list or the deny list on the DHCP server "
+"service."
+msgstr "从DHCP服务器服务的允许列表或拒绝列表中获取MAC地址。"
+
+msgid "### [Get-DhcpServerv4FilterList](./Get-DhcpServerv4FilterList.md)"
+msgstr "### [Get-DhcpServerv4FilterList](./Get-DhcpServerv4FilterList.md)"
+
+msgid ""
+"Gets the enabled state of the allow filter list and deny filter list set on "
+"the DHCP server service."
+msgstr ""
+"获取DHCP服务器服务上设置的“允许过滤列表”（allow filter list）和“拒绝过滤列表”（deny filter list）的启用状态。"
+
+msgid ""
+"### [Get-DhcpServerv4FreeIPAddress](./Get-DhcpServerv4FreeIPAddress.md)"
+msgstr ""
+"### [Get-DhcpServerv4FreeIPAddress](./Get-DhcpServerv4FreeIPAddress.md)"
+
+msgid "Gets free IPv4 addresses from a specified scope."
+msgstr "从一个指定的范围内获取免费的IPv4地址。"
+
+msgid "### [Get-DhcpServerv4Lease](./Get-DhcpServerv4Lease.md)"
+msgstr "### [Get-DhcpServerv4Lease](./Get-DhcpServerv4Lease.md)"
+
+msgid "Gets one or more lease records from the DHCP server service."
+msgstr "从DHCP服务器服务中获取一个或多个租约记录。"
+
+msgid ""
+"### [Get-DhcpServerv4MulticastExclusionRange](./Get-"
+"DhcpServerv4MulticastExclusionRange.md)"
+msgstr ""
+"### [Get-DhcpServerv4MulticastExclusionRange](./Get-"
+"DhcpServerv4MulticastExclusionRange.md)"
+
+msgid "Retrieves the exclusion range for a specified multicast scope."
+msgstr "获取指定多播范围的排除范围（即不允许使用的地址范围）。"
+
+msgid ""
+"### [Get-DhcpServerv4MulticastLease](./Get-DhcpServerv4MulticastLease.md)"
+msgstr ""
+"### [Get-DhcpServerv4MulticastLease](./Get-DhcpServerv4MulticastLease.md)"
+
+msgid "Retrieves multicast leases for a specified scope name."
+msgstr "检索指定作用域名称的多播租约信息。"
+
+msgid ""
+"### [Get-DhcpServerv4MulticastScope](./Get-DhcpServerv4MulticastScope.md)"
+msgstr ""
+"### [Get-DhcpServerv4MulticastScope](./Get-DhcpServerv4MulticastScope.md)"
+
+msgid "Gets multicast scope objects."
+msgstr "获取多播作用域对象（multicast scope objects）。"
+
+msgid ""
+"### [Get-DhcpServerv4MulticastScopeStatistics](./Get-"
+"DhcpServerv4MulticastScopeStatistics.md)"
+msgstr ""
+"### [Get-DhcpServerv4MulticastScopeStatistics](./Get-"
+"DhcpServerv4MulticastScopeStatistics.md)"
+
+msgid "Gets multicast scope statistics."
+msgstr "获取组播范围统计信息。"
+
+msgid ""
+"### [Get-DhcpServerv4OptionDefinition](./Get-"
+"DhcpServerv4OptionDefinition.md)"
+msgstr ""
+"### [Get-DhcpServerv4OptionDefinition](./Get-"
+"DhcpServerv4OptionDefinition.md)"
+
+msgid "Gets the DHCPv4 option definition for the specified option IDs."
+msgstr "获取指定选项ID对应的DHCPv4选项定义。"
+
+msgid "### [Get-DhcpServerv4OptionValue](./Get-DhcpServerv4OptionValue.md)"
+msgstr "### [Get-DhcpServerv4OptionValue](./Get-DhcpServerv4OptionValue.md)"
+
+msgid ""
+"Returns the IPv4 option values for IPv4 options at the server, scope, or "
+"reservation level."
+msgstr "返回服务器、作用域或预留级别上与 IPv4 选项相关的值。"
+
+msgid "### [Get-DhcpServerv4Policy](./Get-DhcpServerv4Policy.md)"
+msgstr "### [Get-DhcpServerv4Policy](./Get-DhcpServerv4Policy.md)"
+
+msgid "Gets policies at the server level or the scope level."
+msgstr "可以在服务器级别或作用域级别获取策略。"
+
+msgid ""
+"### [Get-DhcpServerv4PolicyIPRange](./Get-DhcpServerv4PolicyIPRange.md)"
+msgstr ""
+"### [Get-DhcpServerv4PolicyIPRange](./Get-DhcpServerv4PolicyIPRange.md)"
+
+msgid "Gets IP address ranges from a policy in the specified scope."
+msgstr "从指定范围内的策略中获取 IP 地址范围。"
+
+msgid "### [Get-DhcpServerv4Reservation](./Get-DhcpServerv4Reservation.md)"
+msgstr "### [Get-DhcpServerv4Reservation](./Get-DhcpServerv4 Reservation.md)"
+
+msgid "Gets IPv4 reservations for IP addresses or client IDs."
+msgstr "用于获取IPv4地址或客户端ID的预留资源。"
+
+msgid "### [Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+msgstr "### [Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+
+msgid "Returns the IPv4 scope configuration of the specified scopes."
+msgstr "返回指定范围的IPv4地址范围配置信息。"
+
+msgid ""
+"### [Get-DhcpServerv4ScopeStatistics](./Get-DhcpServerv4ScopeStatistics.md)"
+msgstr ""
+"### [Get-DhcpServerv4ScopeStatistics](./Get-DhcpServerv4ScopeStatistics.md)"
+
+msgid ""
+"Gets the IPv4 scope statistics corresponding to the IPv4 scope IDs specified"
+" for a DHCP server service."
+msgstr "获取与为DHCP服务器服务指定的IPv4范围ID相对应的IPv4范围统计信息。"
+
+msgid "### [Get-DhcpServerv4Statistics](./Get-DhcpServerv4Statistics.md)"
+msgstr "### [Get-DhcpServerv4Statistics](./Get-DhcpServerv4Statistics.md)"
+
+msgid "Gets DHCP server service statistics for IPv4."
+msgstr "获取IPv4地址对应的DHCP服务器服务统计信息。"
+
+msgid "### [Get-DhcpServerv4Superscope](./Get-DhcpServerv4Superscope.md)"
+msgstr "### [Get-DhcpServerv4Superscope](./Get-DhcpServerv4Superscope.md)"
+
+msgid "Gets the configuration for the specified superscope."
+msgstr "获取指定超范围的配置信息。"
+
+msgid ""
+"### [Get-DhcpServerv4SuperscopeStatistics](./Get-"
+"DhcpServerv4SuperscopeStatistics.md)"
+msgstr ""
+"### [Get-DhcpServerv4SuperscopeStatistics](./Get-"
+"DhcpServerv4SuperscopeStatistics.md)"
+
+msgid "Returns statistics for superscopes."
+msgstr "返回关于超范围（superscopes）的统计信息。"
+
+msgid "### [Get-DhcpServerv6Binding](./Get-DhcpServerv6Binding.md)"
+msgstr "### [Get-DhcpServerv6Binding](./Get-DhcpServerv6Binding.md)"
+
+msgid "Returns the IPv6 interfaces to which the DHCP server service is bound."
+msgstr "返回DHCP服务器服务所绑定的IPv6接口。"
+
+msgid "### [Get-DhcpServerv6Class](./Get-DhcpServerv6Class.md)"
+msgstr "### [Get-DhcpServerv6Class](./Get-DhcpServerv6Class.md)"
+
+msgid "Gets the IPv6 vendor or user class from the DHCP server service."
+msgstr "从DHCP服务器服务中获取IPv6供应商或用户类别信息。"
+
+msgid "### [Get-DhcpServerv6DnsSetting](./Get-DhcpServerv6DnsSetting.md)"
+msgstr "### [Get-DhcpServerv6DnsSetting](./Get-DhcpServerv6DnsSetting.md)"
+
+msgid ""
+"Gets the DNS settings configured on the DHCP server service for a specific "
+"scope, reservation, or server-wide."
+msgstr "用于获取在DHCP服务器服务上为特定范围、预订项配置的DNS设置，或者全局适用的DNS设置。"
+
+msgid ""
+"### [Get-DhcpServerv6ExclusionRange](./Get-DhcpServerv6ExclusionRange.md)"
+msgstr ""
+"### [Get-DhcpServerv6ExclusionRange](./Get-DhcpServerv6ExclusionRange.md)"
+
+msgid ""
+"Gets the IPv6 address ranges excluded from the specified IPv6 subnet prefix."
+msgstr "获取从指定的 IPv6 子网前缀中排除的 IPv6 地址范围。"
+
+msgid ""
+"### [Get-DhcpServerv6FreeIPAddress](./Get-DhcpServerv6FreeIPAddress.md)"
+msgstr ""
+"### [Get-DhcpServerv6FreeIPAddress](./Get-DhcpServerv6FreeIPAddress.md)"
+
+msgid "Gets free IPv6 addresses from a scope."
+msgstr "从一个地址范围内获取免费的IPv6地址。"
+
+msgid "### [Get-DhcpServerv6Lease](./Get-DhcpServerv6Lease.md)"
+msgstr "### [Get-DhcpServerv6Lease](./Get-DhcpServerv6Lease.md)"
+
+msgid "Gets IPv6 lease records from the DHCP server service."
+msgstr "从DHCP服务器服务中获取IPv6租赁记录。"
+
+msgid ""
+"### [Get-DhcpServerv6OptionDefinition](./Get-"
+"DhcpServerv6OptionDefinition.md)"
+msgstr ""
+"### [Get-DhcpServerv6OptionDefinition](./Get-"
+"DhcpServerv6OptionDefinition.md)"
+
+msgid "Gets the option definition for the option identified by the option ID."
+msgstr "获取由选项ID标识的选项的定义信息。"
+
+msgid "### [Get-DhcpServerv6OptionValue](./Get-DhcpServerv6OptionValue.md)"
+msgstr "### [Get-DhcpServerv6OptionValue](./Get-DhcpServerv6OptionValue.md)"
+
+msgid ""
+"Returns the IPv6 option values for one or more IPv6 options either for a "
+"specific reserved IP, scope or, server level."
+msgstr "返回一个或多个IPv6选项的值，这些值可以针对特定的保留IP地址、作用域或服务器级别进行查询。"
+
+msgid "### [Get-DhcpServerv6Reservation](./Get-DhcpServerv6Reservation.md)"
+msgstr "### [Get-DhcpServerv6Reservation](./Get-DhcpServerv6Reservation.md)"
+
+msgid "Returns the reserved IPv6 addresses on the DHCP server service."
+msgstr "返回DHCP服务器服务中预留的IPv6地址。"
+
+msgid "### [Get-DhcpServerv6Scope](./Get-DhcpServerv6Scope.md)"
+msgstr "### [Get-DhcpServerv6Scope](./Get-DhcpServerv6Scope.md)"
+
+msgid ""
+"Gets the scope information for the specified IPv6 prefixes on the DHCP "
+"server service."
+msgstr "从DHCP服务器服务中获取指定IPv6前缀的相关范围信息。"
+
+msgid ""
+"### [Get-DhcpServerv6ScopeStatistics](./Get-DhcpServerv6ScopeStatistics.md)"
+msgstr ""
+"### [Get-DhcpServerv6ScopeStatistics](./Get-DhcpServerv6ScopeStatistics.md)"
+
+msgid ""
+"Gets the IPv6 prefix statistics for an IPv6 prefix specified for a DHCP "
+"server service."
+msgstr "获取为 DHCP 服务器服务指定的 IPv6 前缀的统计信息。"
+
+msgid ""
+"### [Get-DhcpServerv6StatelessStatistics](./Get-"
+"DhcpServerv6StatelessStatistics.md)"
+msgstr ""
+"### [Get-DhcpServerv6StatelessStatistics](./Get-"
+"DhcpServerv6StatelessStatistics.md)"
+
+msgid ""
+"Gets IPv6 subnet prefixes which have stateless clients and the number of "
+"addresses in use in each subnet."
+msgstr "获取包含无状态客户端（stateless clients）的 IPv6 子网前缀，以及每个子网中正在使用的地址数量。"
+
+msgid ""
+"### [Get-DhcpServerv6StatelessStore](./Get-DhcpServerv6StatelessStore.md)"
+msgstr ""
+"### [Get-DhcpServerv6StatelessStore](./Get-DhcpServerv6StatelessStore.md)"
+
+msgid "Gets the properties of IPv6 stateless store for an IPv6 subnet."
+msgstr "获取指定IPv6子网的IPv6无状态存储（stateless storage）的相关属性。"
+
+msgid "### [Get-DhcpServerv6Statistics](./Get-DhcpServerv6Statistics.md)"
+msgstr "### [Get-DhcpServerv6Statistics](./Get-DhcpServerv6Statistics.md)"
+
+msgid "Gets the DHCP server service statistics for IPv6."
+msgstr "获取IPv6的DHCP服务器服务统计数据。"
+
+msgid "### [Get-DhcpServerVersion](./Get-DhcpServerVersion.md)"
+msgstr "### [Get-DhcpServerVersion](./Get-DhcpServerVersion.md)"
+
+msgid "Gets the version of the DHCP server service."
+msgstr "获取DHCP服务器服务的版本信息。"
+
+msgid "### [Import-DhcpServer](./Import-DhcpServer.md)"
+msgstr "### [Import-DhcpServer](./Import-DhcpServer.md)"
+
+msgid ""
+"Imports the DHCP server service configuration, and optionally lease data, "
+"from a file."
+msgstr "从文件中导入DHCP服务器服务配置信息（以及可选的租约数据）。"
+
+msgid ""
+"### [Invoke-DhcpServerv4FailoverReplication](./Invoke-"
+"DhcpServerv4FailoverReplication.md)"
+msgstr ""
+"### [Invoke-DhcpServerv4FailoverReplication](./Invoke-"
+"DhcpServerv4FailoverReplication.md)"
+
+msgid ""
+"Replicates scope configuration between failover partner DHCP server "
+"services."
+msgstr "在故障转移伙伴DHCP服务器服务之间复制作用域配置。"
+
+msgid ""
+"### [Remove-DhcpServerDnsCredential](./Remove-DhcpServerDnsCredential.md)"
+msgstr ""
+"### [Remove-DhcpServerDnsCredential](./Remove-DhcpServerDnsCredential.md)"
+
+msgid ""
+"Removes the credential that the DHCP Server service uses to register or "
+"deregister client records on a DNS server."
+msgstr "删除DHCP服务器服务用于在DNS服务器上注册或注销客户端记录的凭据。"
+
+msgid "### [Remove-DhcpServerInDC](./Remove-DhcpServerInDC.md)"
+msgstr "### [Remove-DhcpServerInDC](./Remove-DhcpServerInDC.md)"
+
+msgid ""
+"Deletes the specified DHCP server service from the list of authorized DHCP "
+"server services in Active Directory."
+msgstr "从 Active Directory 中授权的 DHCP 服务器服务列表中删除指定的 DHCP 服务器服务。"
+
+msgid "### [Remove-DhcpServerv4Class](./Remove-DhcpServerv4Class.md)"
+msgstr "### [Remove-DhcpServerv4Class](./Remove-DhcpServerv4Class.md)"
+
+msgid ""
+"Deletes the IPv4 vendor class or user class from a DHCP server service."
+msgstr "从DHCP服务器服务中删除IPv4供应商类别或用户类别。"
+
+msgid ""
+"### [Remove-DhcpServerv4ExclusionRange](./Remove-"
+"DhcpServerv4ExclusionRange.md)"
+msgstr ""
+"### [Remove-DhcpServerv4ExclusionRange](./Remove-"
+"DhcpServerv4ExclusionRange.md)"
+
+msgid ""
+"Deletes a range of IPv4 addresses that were previously excluded from an IPv4"
+" scope."
+msgstr "删除之前被排除在某个IPv4地址范围之外的那些IPv4地址。"
+
+msgid "### [Remove-DhcpServerv4Failover](./Remove-DhcpServerv4Failover.md)"
+msgstr "### [Remove-DhcpServerv4Failover](./Remove-DhcpServerv4Failover.md)"
+
+msgid "Removes failover relationships."
+msgstr "删除故障转移关系。"
+
+msgid ""
+"### [Remove-DhcpServerv4FailoverScope](./Remove-"
+"DhcpServerv4FailoverScope.md)"
+msgstr ""
+"### [Remove-DhcpServerv4FailoverScope](./Remove-"
+"DhcpServerv4FailoverScope.md)"
+
+msgid "Removes the specified scopes from the failover relationship."
+msgstr "从故障转移关系中移除指定的作用域。"
+
+msgid "### [Remove-DhcpServerv4Filter](./Remove-DhcpServerv4Filter.md)"
+msgstr "### [Remove-DhcpServerv4Filter](./Remove-DhcpServerv4Filter.md)"
+
+msgid ""
+"Deletes a MAC address or MAC address pattern from the allow list or the deny"
+" list of the DHCP server service."
+msgstr "从DHCP服务器服务的允许列表或拒绝列表中删除某个MAC地址或MAC地址模式。"
+
+msgid "### [Remove-DhcpServerv4Lease](./Remove-DhcpServerv4Lease.md)"
+msgstr "### [Remove-DhcpServerv4Lease](./Remove-DhcpServerv4Lease.md)"
+
+msgid "Deletes IPv4 address lease records from the DHCP server service."
+msgstr "从DHCP服务器服务中删除IPv4地址租用记录。"
+
+msgid ""
+"### [Remove-DhcpServerv4MulticastExclusionRange](./Remove-"
+"DhcpServerv4MulticastExclusionRange.md)"
+msgstr ""
+"### [Remove-DhcpServerv4MulticastExclusionRange](./Remove-"
+"DhcpServerv4MulticastExclusionRange.md)"
+
+msgid ""
+"Removes a range of addresses previously excluded from a multicast scope."
+msgstr "将之前被排除在多播范围之外的地址重新添加到该范围内。"
+
+msgid ""
+"### [Remove-DhcpServerv4MulticastLease](./Remove-"
+"DhcpServerv4MulticastLease.md)"
+msgstr ""
+"### [Remove-DhcpServerv4MulticastLease](./Remove-"
+"DhcpServerv4MulticastLease.md)"
+
+msgid "Removes multicast scope leases for a multicast scope or IP address."
+msgstr "删除某个多播范围或多播地址的多播范围租约。"
+
+msgid ""
+"### [Remove-DhcpServerv4MulticastScope](./Remove-"
+"DhcpServerv4MulticastScope.md)"
+msgstr ""
+"### [Remove-DhcpServerv4MulticastScope](./Remove-"
+"DhcpServerv4MulticastScope.md)"
+
+msgid "Removes multicast scopes."
+msgstr "移除多播范围（multicast scopes）。"
+
+msgid ""
+"### [Remove-DhcpServerv4OptionDefinition](./Remove-"
+"DhcpServerv4OptionDefinition.md)"
+msgstr ""
+"### [Remove-DhcpServerv4OptionDefinition](./Remove-"
+"DhcpServerv4OptionDefinition.md)"
+
+msgid "Deletes IPv4 option definitions from a DHCP server service."
+msgstr "从DHCP服务器服务中删除IPv4选项定义。"
+
+msgid ""
+"### [Remove-DhcpServerv4OptionValue](./Remove-DhcpServerv4OptionValue.md)"
+msgstr ""
+"### [Remove-DhcpServerv4OptionValue](./Remove-DhcpServerv4OptionValue.md)"
+
+msgid ""
+"Deletes one or more IPv4 option values at the server, scope or reservation "
+"level, either for the standard IPv4 options or for the specified vendor or "
+"user class."
+msgstr "在服务器、作用域或预留级别删除一个或多个 IPv4 选项值，这些选项值既可以是标准的 IPv4 选项，也可以是特定供应商或用户类别的选项。"
+
+msgid "### [Remove-DhcpServerv4Policy](./Remove-DhcpServerv4Policy.md)"
+msgstr "### [Remove-DhcpServerv4Policy](./Remove-DhcpServerv4Policy.md)"
+
+msgid "Deletes IPv4 policies at the server level or the scope level."
+msgstr "在服务器级别或作用域级别删除IPv4策略。"
+
+msgid ""
+"### [Remove-DhcpServerv4PolicyIPRange](./Remove-"
+"DhcpServerv4PolicyIPRange.md)"
+msgstr ""
+"### [Remove-DhcpServerv4PolicyIPRange](./Remove-"
+"DhcpServerv4PolicyIPRange.md)"
+
+msgid "Deletes an IP range from an existing policy at the scope level."
+msgstr "从现有策略中删除某个 IP 范围（操作在范围级别进行）。"
+
+msgid ""
+"### [Remove-DhcpServerv4Reservation](./Remove-DhcpServerv4Reservation.md)"
+msgstr ""
+"### [Remove-DhcpServerv4Reservation](./Remove-DhcpServerv4 Reservation.md)"
+
+msgid "Deletes the IPv4 reservation from the specified scope."
+msgstr "从指定的范围内删除该IPv4预留地址。"
+
+msgid "### [Remove-DhcpServerv4Scope](./Remove-DhcpServerv4Scope.md)"
+msgstr "### [Remove-DhcpServerv4Scope](./Remove-DhcpServerv4Scope.md)"
+
+msgid "Deletes the specified IPv4 scopes from the DHCP server service."
+msgstr "从DHCP服务器服务中删除指定的IPv4地址范围。"
+
+msgid ""
+"### [Remove-DhcpServerv4Superscope](./Remove-DhcpServerv4Superscope.md)"
+msgstr ""
+"### [Remove-DhcpServerv4Superscope](./Remove-DhcpServerv4Superscope.md)"
+
+msgid "Removes scopes from a superscope."
+msgstr "从父作用域中移除子作用域。"
+
+msgid "### [Remove-DhcpServerv6Class](./Remove-DhcpServerv6Class.md)"
+msgstr "### [Remove-DhcpServerv6Class](./Remove-DhcpServerv6Class.md)"
+
+msgid ""
+"Deletes the specified IPv6 vendor class or user class from a DHCP server "
+"service."
+msgstr "从DHCP服务器服务中删除指定的IPv6供应商类别或用户类别。"
+
+msgid ""
+"### [Remove-DhcpServerv6ExclusionRange](./Remove-"
+"DhcpServerv6ExclusionRange.md)"
+msgstr ""
+"### [Remove-DhcpServerv6ExclusionRange](./Remove-"
+"DhcpServerv6ExclusionRange.md)"
+
+msgid ""
+"Deletes a range of IPv6 addresses previously excluded from an IPv6 scope."
+msgstr "删除之前从某个 IPv6 范围中被排除在外的一系列 IPv6 地址。"
+
+msgid "### [Remove-DhcpServerv6Lease](./Remove-DhcpServerv6Lease.md)"
+msgstr "### [Remove-DhcpServerv6Lease](./Remove-DhcpServerv6Lease.md)"
+
+msgid "Deletes IPv6 lease records from the DHCP server service."
+msgstr "从DHCP服务器服务中删除IPv6租约记录。"
+
+msgid ""
+"### [Remove-DhcpServerv6OptionDefinition](./Remove-"
+"DhcpServerv6OptionDefinition.md)"
+msgstr ""
+"### [Remove-DhcpServerv6OptionDefinition](./Remove-"
+"DhcpServerv6OptionDefinition.md)"
+
+msgid "Deletes IPv6 option definitions from the DHCP server service."
+msgstr "从DHCP服务器服务中删除IPv6选项的定义。"
+
+msgid ""
+"### [Remove-DhcpServerv6OptionValue](./Remove-DhcpServerv6OptionValue.md)"
+msgstr ""
+"### [Remove-DhcpServerv6OptionValue](./Remove-DhcpServerv6OptionValue.md)"
+
+msgid ""
+"Deletes DHCPv6 option values set at the reservation level, scope level, or "
+"server level, for the standard IPv6 options or for a vendor class."
+msgstr "删除在保留级别、作用域级别或服务器级别设置的 DHCPv6 选项值，这些选项值适用于标准的 IPv6 选项或特定供应商的类别。"
+
+msgid ""
+"### [Remove-DhcpServerv6Reservation](./Remove-DhcpServerv6Reservation.md)"
+msgstr ""
+"### [Remove-DhcpServerv6Reservation](./Remove-DhcpServerv6Reservation.md)"
+
+msgid "Deletes IPv6 reservations from the specified scope."
+msgstr "从指定的范围内删除IPv6预留地址。"
+
+msgid "### [Remove-DhcpServerv6Scope](./Remove-DhcpServerv6Scope.md)"
+msgstr "### [Remove-DhcpServerv6Scope](./Remove-DhcpServerv6Scope.md)"
+
+msgid ""
+"Deletes the IPv6 scopes from the DHCP server service corresponding to the "
+"specified prefixes."
+msgstr "从DHCP服务器服务中删除与指定前缀对应的IPv6地址范围。"
+
+msgid ""
+"### [Rename-DhcpServerv4Superscope](./Rename-DhcpServerv4Superscope.md)"
+msgstr ""
+"### [Rename-DhcpServerv4Superscope](./Rename-DhcpServerv4Superscope.md)"
+
+msgid "Renames a superscope."
+msgstr "重命名一个超范围（superscope）。"
+
+msgid "### [Repair-DhcpServerv4IPRecord](./Repair-DhcpServerv4IPRecord.md)"
+msgstr "### [Repair-DhcpServerv4IPRecord](./Repair-DhcpServerv4IPRecord.md)"
+
+msgid "Reconciles inconsistent lease records in the DHCP database."
+msgstr "协调DHCP数据库中不一致的租赁记录。"
+
+msgid "### [Restore-DhcpServer](./Restore-DhcpServer.md)"
+msgstr "### [Restore-DhcpServer](./Restore-DhcpServer.md)"
+
+msgid ""
+"Restores the database of the DHCP server service from the specified "
+"location."
+msgstr "从指定位置恢复DHCP服务器服务的数据库。"
+
+msgid "### [Set-DhcpServerAuditLog](./Set-DhcpServerAuditLog.md)"
+msgstr "### [Set-DhcpServerAuditLog](./Set-DhcpServerAuditLog.md)"
+
+msgid ""
+"Sets the DHCP server service audit log configuration on the DHCP server "
+"service that runs on the computer."
+msgstr "在计算机上运行的DHCP服务器服务上，设置DHCP服务器服务的审计日志配置。"
+
+msgid "### [Set-DhcpServerDatabase](./Set-DhcpServerDatabase.md)"
+msgstr "### [Set-DhcpServerDatabase](./Set-DhcpServerDatabase.md)"
+
+msgid ""
+"Modifies one or more configuration parameters of the database of the DHCP "
+"server service."
+msgstr "修改DHCP服务器服务的数据库中的一个或多个配置参数。"
+
+msgid "### [Set-DhcpServerDnsCredential](./Set-DhcpServerDnsCredential.md)"
+msgstr "### [Set-DhcpServerDnsCredential](./Set-DhcpServerDnsCredential.md)"
+
+msgid ""
+"Sets credentials that the DHCP Server service uses to register or deregister"
+" client records on a DNS server."
+msgstr "设置DHCP服务器服务用于在DNS服务器上注册或注销客户端记录的凭据。"
+
+msgid "### [Set-DhcpServerSetting](./Set-DhcpServerSetting.md)"
+msgstr "### [Set-DhcpServerSetting](./Set-DhcpServerSetting.md)"
+
+msgid ""
+"Sets server level configuration parameters for the DHCP server service."
+msgstr "设置DHCP服务器服务的服务器级配置参数。"
+
+msgid "### [Set-DhcpServerv4Binding](./Set-DhcpServerv4Binding.md)"
+msgstr "### [Set-DhcpServerv4Binding](./Set-DhcpServerv4Binding.md)"
+
+msgid ""
+"Sets the binding state of an IPv4 interface for the DHCP server service that"
+" runs on a computer."
+msgstr "用于设置计算机上运行的DHCP服务器服务的IPv4接口的绑定状态。"
+
+msgid "### [Set-DhcpServerv4Class](./Set-DhcpServerv4Class.md)"
+msgstr "### [Set-DhcpServerv4Class](./Set-DhcpServerv4Class.md)"
+
+msgid ""
+"Modifies an IPv4 vendor class or user class on the DHCP server service with "
+"the specified parameters."
+msgstr "使用指定的参数，在DHCP服务器服务上修改IPv4供应商类别或用户类别。"
+
+msgid "### [Set-DhcpServerv4DnsSetting](./Set-DhcpServerv4DnsSetting.md)"
+msgstr "### [Set-DhcpServerv4DnsSetting](./Set-DhcpServerv4DnsSetting.md)"
+
+msgid ""
+"Configures how the DHCP server service updates the DNS server with the "
+"client-related information."
+msgstr "配置DHCP服务器服务如何将与客户端相关的信息更新到DNS服务器上。"
+
+msgid "### [Set-DhcpServerv4Failover](./Set-DhcpServerv4Failover.md)"
+msgstr "### [Set-DhcpServerv4Failover](./Set-DhcpServerv4Failover.md)"
+
+msgid "Modifies the properties of an existing failover relationship."
+msgstr "修改现有故障转移关系的属性。"
+
+msgid "### [Set-DhcpServerv4FilterList](./Set-DhcpServerv4FilterList.md)"
+msgstr "### [Set-DhcpServerv4FilterList](./Set-DhcpServerv4FilterList.md)"
+
+msgid ""
+"Sets the enabled state for the allow and the deny MAC address filter lists "
+"on the DHCP server service."
+msgstr "设置DHCP服务器服务上“允许”和“拒绝”MAC地址过滤列表的启用状态。"
+
+msgid ""
+"### [Set-DhcpServerv4MulticastScope](./Set-DhcpServerv4MulticastScope.md)"
+msgstr ""
+"### [Set-DhcpServerv4MulticastScope](./Set-DhcpServerv4MulticastScope.md)"
+
+msgid "Modifies the properties of a multicast scope."
+msgstr "修改多播作用域的属性。"
+
+msgid ""
+"### [Set-DhcpServerv4OptionDefinition](./Set-"
+"DhcpServerv4OptionDefinition.md)"
+msgstr ""
+"### [Set-DhcpServerv4OptionDefinition](./Set-"
+"DhcpServerv4OptionDefinition.md)"
+
+msgid "Modifies the properties of an IPv4 option definition."
+msgstr "修改 IPv4 选项定义的属性。"
+
+msgid "### [Set-DhcpServerv4OptionValue](./Set-DhcpServerv4OptionValue.md)"
+msgstr "### [Set-DhcpServerv4OptionValue](./Set-DhcpServerv4OptionValue.md)"
+
+msgid "Sets an IPv4 option value at the server, scope, or reservation level."
+msgstr "在服务器、范围或预留级别设置一个IPv4选项的值。"
+
+msgid "### [Set-DhcpServerv4Policy](./Set-DhcpServerv4Policy.md)"
+msgstr "### [Set-DhcpServerv4Policy](./Set-DhcpServerv4Policy.md)"
+
+msgid ""
+"Sets the properties of a policy at the server level or at the specified "
+"scope level."
+msgstr "在服务器级别或指定的范围级别设置策略的属性。"
+
+msgid "### [Set-DhcpServerv4Reservation](./Set-DhcpServerv4Reservation.md)"
+msgstr "### [Set-DhcpServerv4Reservation](./Set-DhcpServerv4 Reservation.md)"
+
+msgid "Modifies the properties of an IPv4 reservation."
+msgstr "修改IPv4预留资源的属性。"
+
+msgid "### [Set-DhcpServerv4Scope](./Set-DhcpServerv4Scope.md)"
+msgstr "### [Set-DhcpServerv4Scope](./Set-DhcpServerv4Scope.md)"
+
+msgid ""
+"Sets the properties of an existing IPv4 scope on the DHCP server service."
+msgstr "用于在DHCP服务器服务上设置现有IPv4地址段的属性。"
+
+msgid "### [Set-DhcpServerv6Binding](./Set-DhcpServerv6Binding.md)"
+msgstr "### [Set-DhcpServerv6Binding](./Set-DhcpServerv6Binding.md)"
+
+msgid ""
+"Sets the binding state for an IPv6 interface of the DHCP server service."
+msgstr "设置DHCP服务器服务中IPv6接口的绑定状态。"
+
+msgid "### [Set-DhcpServerv6Class](./Set-DhcpServerv6Class.md)"
+msgstr "### [Set-DhcpServerv6Class](./Set-DhcpServerv6Class.md)"
+
+msgid ""
+"Modifies the properties of an IPv6 vendor or user class on the DHCP server "
+"service."
+msgstr "在DHCP服务器服务上修改IPv6供应商或用户类别的属性。"
+
+msgid "### [Set-DhcpServerv6DnsSetting](./Set-DhcpServerv6DnsSetting.md)"
+msgstr "### [Set-DhcpServerv6DnsSetting](./Set-DhcpServerv6DnsSetting.md)"
+
+msgid ""
+"Configures how the DHCP server service updates the DNS server with the "
+"client-related information."
+msgstr "配置DHCP服务器服务如何将与客户端相关的信息更新到DNS服务器上。"
+
+msgid ""
+"### [Set-DhcpServerv6OptionDefinition](./Set-"
+"DhcpServerv6OptionDefinition.md)"
+msgstr ""
+"### [Set-DhcpServerv6OptionDefinition](./Set-"
+"DhcpServerv6OptionDefinition.md)"
+
+msgid "Modifies the properties of a DHCPv6 option definition."
+msgstr "修改 DHCPv6 选项定义的属性。"
+
+msgid "### [Set-DhcpServerv6OptionValue](./Set-DhcpServerv6OptionValue.md)"
+msgstr "### [Set-DhcpServerv6OptionValue](./Set-DhcpServerv6OptionValue.md)"
+
+msgid "Sets an IPv6 option value at the server, scope, or reservation level."
+msgstr "在服务器、范围或预留级别设置一个IPv6选项的值。"
+
+msgid "### [Set-DhcpServerv6Reservation](./Set-DhcpServerv6Reservation.md)"
+msgstr "### [Set-DhcpServerv6Reservation](./Set-DhcpServerv6Reservation.md)"
+
+msgid "Modifies the properties of the specified IPv6 reservation."
+msgstr "修改指定的IPv6预留资源的属性。"
+
+msgid "### [Set-DhcpServerv6Scope](./Set-DhcpServerv6Scope.md)"
+msgstr "### [Set-DhcpServerv6Scope](./Set-DhcpServerv6Scope.md)"
+
+msgid "Modifies the properties of the IPv6 scope on the DHCP server service."
+msgstr "修改DHCP服务器服务中IPv6作用域的属性。"
+
+msgid ""
+"### [Set-DhcpServerv6StatelessStore](./Set-DhcpServerv6StatelessStore.md)"
+msgstr ""
+"### [Set-DhcpServerv6StatelessStore](./Set-DhcpServerv6StatelessStore.md)"
+
+msgid "Sets properties of IPv6 stateless store for an IPv6 prefix."
+msgstr "为某个 IPv6 前缀设置 IPv6 无状态存储（stateless store）的相关属性。"

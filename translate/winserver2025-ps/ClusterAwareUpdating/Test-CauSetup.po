@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:32:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-CauSetup"
+msgstr "# Test-CauSetup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Tests whether a cluster is properly set up to apply software updates using "
+"CAU."
+msgstr "用于测试集群是否已正确配置，以便使用CAU（Cluster Application Update）机制来应用软件更新。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Test-CauSetup` cmdlet tests whether a failover cluster is properly set up to apply software\n"
+"updates using Cluster-Aware Updating (CAU). The cmdlet performs a Best Practices Analyzer (BPA) scan\n"
+"of the failover cluster and network environment by invoking the ClusterAwareUpdating BPA model that\n"
+"is installed with CAU. To view the results of a BPA scan that is performed by `Test-CauSetup`,\n"
+"including possible problems and resolution steps, run the `Get-BpaResult` cmdlet."
+msgstr ""
+"`Test-CauSetup` 这个 cmdlet 用于检测故障转移集群是否已正确配置为使用 Cluster-Aware Updating (CAU) "
+"来应用软件更新。该 cmdlet 通过调用随 CAU 安装的 ClusterAwareUpdating BPA "
+"模型，对故障转移集群和网络环境进行最佳实践分析（Best Practices Analyzer, BPA）扫描。要查看由 `Test-CauSetup`"
+" 执行的 BPA 扫描结果（包括可能存在的问题及解决方法），请运行 `Get-BpaResult` cmdlet。"
+
+msgid ""
+"You must run the `Test-CauSetup` cmdlet with local administrative "
+"credentials."
+msgstr "你必须使用本地管理员凭据来运行 `Test-CauSetup` cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Test whether the specified failover cluster is set up for CAU"
+msgstr "### 示例 1：测试指定的故障转移集群是否已设置为支持 CAU（Continuous Availability Update）"
+
+msgid ""
+"This example tests whether the failover cluster named CONTOSO-FC1 is "
+"properly set up for CAU."
+msgstr "这个示例用于测试名为 CONTOSO-FC1 的故障转移集群是否已正确配置以支持 CAU（Content Access Unified）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to test for proper setup. This parameter is only required\n"
+"when this cmdlet isn't run on a failover cluster node, or this cmdlet is used to reference a\n"
+"failover cluster different from where the cmdlet is run."
+msgstr ""
+"指定用于测试是否设置正确的集群名称。只有当此 cmdlet 不在故障转移集群节点上运行，或者用于引用与执行该 cmdlet "
+"的位置不同的故障转移集群时，才需要这个参数。"
+
+msgid "Specifies the administrative credentials for the target cluster."
+msgstr "指定目标集群的管理凭据。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ClusterAwareUpdating.CauBpaProgress"
+msgstr "### Microsoft_clusterAwareUpdating.CauBpaProgress"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

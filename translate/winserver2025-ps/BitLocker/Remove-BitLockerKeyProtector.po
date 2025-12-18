@@ -1,0 +1,173 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:35:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-BitLockerKeyProtector"
+msgstr "# 移除 BitLocker 密钥保护器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a key protector for a BitLocker volume."
+msgstr "删除BitLocker卷的关键保护机制。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-BitLockerKeyProtector** cmdlet removes a key protector for a "
+"volume protected by BitLocker Drive Encryption."
+msgstr ""
+"`Remove-BitLockerKeyProtector` cmdlet 用于移除受 BitLocker 驱动器加密保护的卷所使用的密钥保护器。"
+
+msgid ""
+"You can specify a key protector to remove by using an ID.\n"
+"To add a protector, use the **Add-BitLockerKeyProtector** cmdlet."
+msgstr "您可以使用ID来指定要删除的密钥保护器。若要添加保护器，请使用**Add-BitLockerKeyProtector** cmdlet。"
+
+msgid ""
+"If you remove all the key protectors for a BitLocker volume, BitLocker stores the data encryption key for the volume without using encryption.\n"
+"This means that any user that can access the volume can read the encrypted data on the volume unless you add a key protector.\n"
+"Any encrypted data on the drive remains encrypted."
+msgstr ""
+"如果你删除了BitLocker卷的所有密钥保护机制，那么BitLocker会以不使用加密的方式存储该卷的数据加密密钥。这意味着任何能够访问该卷的用户都可以读取其中的数据（即使这些数据是加密的），除非你重新添加密钥保护机制。驱动器上的所有加密数据仍然保持加密状态。"
+
+msgid ""
+"We recommend you have at least one recovery password as key protector to a "
+"volume in case you need to recover a system."
+msgstr "我们建议您至少设置一个恢复密码，作为保护卷数据的关键手段，以防您需要恢复系统时使用。"
+
+msgid ""
+"For an overview of BitLocker, see [Overview of BitLocker Device "
+"Encryption](/windows/security/information-protection/bitlocker/bitlocker-"
+"device-encryption-overview-windows-10)."
+msgstr ""
+"有关 BitLocker 的概述，请参阅 [BitLocker 设备加密的概述](/windows/security/information-"
+"protection/bitlocker/bitlocker-device-encryption-overview-windows-10)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove the second key protector for a volume"
+msgstr "### 示例 1：移除某个卷的第二个键保护器"
+
+msgid "This example removes a key protector for a specified BitLocker volume."
+msgstr "这个示例会移除指定BitLocker卷的关键保护机制（即用于保护该卷数据的加密措施）。"
+
+msgid ""
+"The first command uses **Get-BitLockerVolume** to obtain a BitLocker volume "
+"and store it in the `$BLV` variable."
+msgstr ""
+"第一个命令使用 **Get-BitLockerVolume** 来获取一个 BitLocker 加密卷，并将其存储在 `$BLV` 变量中。"
+
+msgid ""
+"The second command removes the key protector for the BitLocker volume specified by the **MountPoint** parameter.\n"
+"The command specifies the key protector by using its ID, contained in the BitLocker object stored in `$BLV`."
+msgstr ""
+"第二个命令会删除由 **MountPoint** 参数指定的 BitLocker 卷的密钥保护机制。该命令通过使用密钥保护机制的 ID 来识别它，这个 "
+"ID 存储在 `$BLV` 中的 BitLocker 对象中。"
+
+msgid "### Example 2: Remove TpmPin key protector for a volume"
+msgstr "### 示例 2：移除卷上的 TpmPin 密钥保护机制"
+
+msgid ""
+"This example removes a key protector of type TpmPin for a specified "
+"BitLocker Volume."
+msgstr "这个示例会移除指定 BitLocker 卷中的一种类型为 TpmPin 的密钥保护机制。"
+
+msgid ""
+"The first command uses **Get-BitLockerVolume** to obtain a BitLocker volume "
+"and store it in the `$BLV` variable."
+msgstr "第一个命令使用 **Get-BitLockerVolume** 来获取一个 BitLocker 卷，并将其存储在 `$BLV` 变量中。"
+
+msgid ""
+"The second command filters the key protectors to get only the one with "
+"TpmPin type and stores it in the `$TpmPinKeyProtector` variable."
+msgstr ""
+"第二个命令会过滤掉那些用于保护密钥的工具（key protectors），仅保留类型为 TpmPin 的那个，并将其存储在 "
+"`$TpmPinKeyProtector` 变量中。"
+
+msgid "The third command removes the key protector by its ID."
+msgstr "第三个命令通过键的ID来移除键保护器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the ID for a key protector.\n"
+"A BitLocker volume object includes a **KeyProtector** object.\n"
+"You have to specify the key protector ID.\n"
+"See the Examples section.\n"
+"To obtain a BitLocker volume object, use the **Get-BitLockerVolume** cmdlet."
+msgstr ""
+"用于指定密钥保护器的ID。BitLocker卷对象包含一个**KeyProtector**对象，因此必须指定该密钥保护器的ID。请参阅“示例”部分。要获取BitLocker卷对象，请使用**Get-"
+"BitLockerVolume** cmdlet。"
+
+msgid ""
+"Specifies an array of drive letters or BitLocker volume objects.\n"
+"The cmdlet removes key protectors for the volumes specified.\n"
+"To obtain a BitLocker volume object, use the **Get-BitLockerVolume** cmdlet."
+msgstr ""
+"指定一个包含驱动器字母或 BitLocker 卷对象的数组。该 cmdlet 会删除所指定卷的密钥保护机制。要获取 BitLocker 卷对象，请使用 "
+"**Get-BitLockerVolume** cmdlet。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, "
+"`-ErrorVariable`, `-InformationAction`, `-InformationVariable`, "
+"`-OutVariable`, `-OutBuffer`, `-PipelineVariable`, `-Verbose`, "
+"`-WarningAction`, and `-WarningVariable`. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### BitLockerVolume[], String[]"
+msgstr "### BitLockerVolume[], String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### BitLockerVolume[]"
+msgstr "### BitLockerVolume[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-BitLockerKeyProtector](./Add-BitLockerKeyProtector.md)"
+msgstr "[Add-BitLockerKeyProtector](./Add-BitLockerKeyProtector.md)"
+
+msgid "[Backup-BitLockerKeyProtector](./Backup-BitLockerKeyProtector.md)"
+msgstr "[Backup-BitLockerKeyProtector](./Backup-BitLockerKeyProtector.md)"
+
+msgid "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+msgstr "[Get-BitLockerVolume](./Get-BitLockerVolume.md)"

@@ -1,0 +1,169 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:43:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-ClusterFileServerRole"
+msgstr "# 添加 ClusterFileServerRole 角色"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a clustered file server resource group."
+msgstr "创建一个集群文件服务器资源组。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-ClusterFileServerRole` cmdlet creates a clustered file server resource group that\n"
+"includes one or more disks, on which shared folders can be created for users."
+msgstr ""
+"`Add-ClusterFileServerRole` cmdlet "
+"创建一个集群文件服务器资源组，该资源组包含一个或多个磁盘，在这些磁盘上可以为用户创建共享文件夹。"
+
+msgid ""
+"When adding a clustered file server, specify a name for the file server, any IP address information\n"
+"that isn't automatically supplied by your DHCP settings, and the storage volume or volumes that the\n"
+"clustered file server should use."
+msgstr "在添加集群文件服务器时，请指定该文件服务器的名称、任何未被DHCP设置自动提供的IP地址信息，以及该集群文件服务器应使用的存储卷。"
+
+msgid ""
+"> [!NOTE]\n"
+"> This cmdlet cannot be run remotely without Credential Security Service Provider (CredSSP)\n"
+"> authentication on the server computer."
+msgstr "> [注意] > 如果服务器计算机上没有启用凭据安全服务提供程序（CredSSP）的身份验证功能，就无法远程运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a clustered file server"
+msgstr "### 示例 1：创建一个集群文件服务器"
+
+msgid ""
+"This example creates a clustered file server using `Cluster Disk 8`, and "
+"assigns a default name."
+msgstr "这个示例使用“Cluster Disk 8”创建了一个集群文件服务器，并为其分配了一个默认名称。"
+
+msgid "### Example 2: Create and name a clustered file server"
+msgstr "### 示例 2：创建并命名一个集群文件服务器"
+
+msgid ""
+"This example creates a clustered file server using `Cluster Disk 6`, and assigns the name\n"
+"`cluster1FS12`."
+msgstr "这个示例使用“Cluster Disk 6”创建了一个集群文件服务器，并将其命名为“cluster1FS12”。"
+
+msgid ""
+"### Example 3: Create a clustered file server with no waiting for resources"
+msgstr "### 示例 3：创建一个集群文件服务器，无需等待资源分配"
+
+msgid ""
+"This example creates a clustered file server using `Cluster Disk 8`, and assigns a default name.\n"
+"The cmdlet completes without waiting for all resources to come online."
+msgstr ""
+"这个示例使用“Cluster Disk "
+"8”创建了一个集群文件服务器，并为其分配了一个默认名称。该cmdlet在不需要等待所有资源都上线的情况下即可完成操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies one or more networks to ignore when running the cmdlet. Networks with DHCP enabled are\n"
+"always included, but other networks need a static address to be specified using the\n"
+"**StaticAddress** parameter or should be explicitly ignored with this **IgnoreNetwork** parameter."
+msgstr ""
+"指定在运行该cmdlet时要忽略的一个或多个网络。启用DHCP的网络总是会被包含在内，但其他网络需要使用**StaticAddress**参数来指定静态地址，或者应该通过**IgnoreNetwork**参数明确地忽略它们。"
+
+msgid ""
+"Specifies the cluster on which to create the highly available file server."
+msgstr "指定用于创建高可用性文件服务器的集群。"
+
+msgid "Specifies the name of the highly available file server to create."
+msgstr "指定要创建的高可用文件服务器的名称。"
+
+msgid ""
+"Specifies one or more static addresses to use when running the cmdlet. Networks with DHCP enabled\n"
+"are always included, but other networks need a static address to be specified using the\n"
+"**StaticAddress** parameter or should be explicitly ignored with this **IgnoreNetwork** parameter."
+msgstr ""
+"指定一个或多个在运行该 cmdlet 时使用的静态地址。启用 DHCP 的网络总是会被包含在内，但其他网络需要通过 `StaticAddress` "
+"参数来指定静态地址；或者可以使用 `IgnoreNetwork` 参数明确忽略这些网络。"
+
+msgid ""
+"Specifies the cluster disk resource to be added to the created highly "
+"available file server."
+msgstr "指定要添加到新建的高可用文件服务器中的集群磁盘资源。"
+
+msgid ""
+"Specifies the time in seconds to wait for the cmdlet. If the **Wait** parameter isn't specified,\n"
+"then the cmdlet waits for completion. If the value `0` is specified, then the call is initiated and\n"
+"the cmdlet returns without waiting."
+msgstr ""
+"指定用于等待该cmdlet完成的时间（以秒为单位）。如果未指定**Wait**参数，则cmdlet会一直等待直到操作完成。如果指定的值为`0`，则命令会立即被执行，并且cmdlet会在不进行任何等待的情况下立即返回结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### MicrosoftFailoverClusters.PowerShell Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterGroup"
+msgstr "### MicrosoftFailoverClusters.PowerShell ClusterGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-ClusterScaleOutFileServerRole](./Add-ClusterScaleOutFileServerRole.md)"
+msgstr ""
+"[Add-ClusterScaleOutFileServerRole](./Add-ClusterScaleOutFileServerRole.md)"
+
+msgid "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+msgstr "[Get-ClusterGroup](./Get-ClusterGroup.md)"
+
+msgid "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+msgstr "[Move-ClusterGroup](./Move-ClusterGroup.md)"
+
+msgid "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+msgstr "[Remove-ClusterGroup](./Remove-ClusterGroup.md)"
+
+msgid "[Start-ClusterGroup](./Start-ClusterGroup.md)"
+msgstr "[开始创建集群组](./Start-ClusterGroup.md)"
+
+msgid "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"
+msgstr "[Stop-ClusterGroup](./Stop-ClusterGroup.md)"

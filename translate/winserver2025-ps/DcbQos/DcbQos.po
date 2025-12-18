@@ -1,0 +1,97 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:39:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# DcbQos Module"
+msgstr "# DcbQos 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Data Center Bridging (DCB) Quality of\n"
+"Service (QoS)-specific cmdlets. It lists the cmdlets in alphabetical order based on the verb at the\n"
+"beginning of the cmdlet."
+msgstr ""
+"本参考资料提供了所有与数据中心桥接（Data Center Bridging，简称DCB）服务质量（Quality of "
+"Service，简称QoS）相关的cmdlet的描述和语法信息。这些cmdlet按照每个cmdlet开头所使用的动词字母顺序进行排列。"
+
+msgid "## DcbQos Cmdlets"
+msgstr "## DcbQosCmdlets"
+
+msgid "### [Disable-NetQosFlowControl](Disable-NetQosFlowControl.md)"
+msgstr "### [禁用 NetQosFlowControl](Disable-NetQosFlowControl.md)"
+
+msgid "Disables link level flow control based on the IEEE 802.1p priority."
+msgstr "根据IEEE 802.1p优先级来禁用链路级别的流量控制功能。"
+
+msgid "### [Enable-NetQosFlowControl](Enable-NetQosFlowControl.md)"
+msgstr "### [Enable-NetQosFlowControl](Enable-NetQosFlowControl.md)"
+
+msgid "Enables link level flow control based on the IEEE 802.1p priority."
+msgstr "基于IEEE 802.1p优先级，实现链路级别的流量控制功能。"
+
+msgid "### [Get-NetQosDcbxSetting](Get-NetQosDcbxSetting.md)"
+msgstr "### [Get-NetQosDcbxSetting](Get-NetQosDcbxSetting.md)"
+
+msgid "Gets data center bridging exchange settings."
+msgstr "获取数据中心桥接交换机的配置信息。"
+
+msgid "### [Get-NetQosFlowControl](Get-NetQosFlowControl.md)"
+msgstr "### [Get-NetQosFlowControl](Get-NetQosFlowControl.md)"
+
+msgid "Gets the priority-based flow control settings."
+msgstr "获取基于优先级的流控制设置。"
+
+msgid "### [Get-NetQosTrafficClass](Get-NetQosTrafficClass.md)"
+msgstr "### [Get-NetQosTrafficClass](Get-NetQosTrafficClass.md)"
+
+msgid "Gets the traffic class settings."
+msgstr "获取流量类别设置信息。"
+
+msgid "### [New-NetQosTrafficClass](New-NetQosTrafficClass.md)"
+msgstr "### [New-NetQosTrafficClass](New-NetQosTrafficClass.md)"
+
+msgid "Creates a traffic class."
+msgstr "创建一个流量类别。"
+
+msgid "### [Remove-NetQosTrafficClass](Remove-NetQosTrafficClass.md)"
+msgstr "### [Remove-NetQosTrafficClass](Remove-NetQosTrafficClass.md)"
+
+msgid "Removes a traffic class."
+msgstr "删除一个流量类别。"
+
+msgid "### [Set-NetQosDcbxSetting](Set-NetQosDcbxSetting.md)"
+msgstr "### [Set-NetQosDcbxSetting](Set-NetQosDcbxSetting.md)"
+
+msgid "Sets the data center bridging exchange settings."
+msgstr "设置数据中心桥接交换机的配置参数。"
+
+msgid "### [Set-NetQosFlowControl](Set-NetQosFlowControl.md)"
+msgstr "### [Set-NetQosFlowControl](Set-NetQosFlowControl.md)"
+
+msgid "Sets the flow control settings."
+msgstr "设置流控制相关参数。"
+
+msgid "### [Set-NetQosTrafficClass](Set-NetQosTrafficClass.md)"
+msgstr "### [Set-NetQosTrafficClass](Set-NetQosTrafficClass.md)"
+
+msgid "Sets the traffic class settings."
+msgstr "设置流量类别相关配置。"
+
+msgid "### [Switch-NetQosDcbxSetting](Switch-NetQosDcbxSetting.md)"
+msgstr "### [Switch-NetQosDcbxSetting](Switch-NetQosDcbxSetting.md)"
+
+msgid "### [Switch-NetQosFlowControl](Switch-NetQosFlowControl.md)"
+msgstr "### [Switch-NetQosFlowControl](Switch-NetQosFlowControl.md)"
+
+msgid "### [Switch-NetQosTrafficClass](Switch-NetQosTrafficClass.md)"
+msgstr "### [Switch-NetQosTrafficClass](Switch-NetQosTrafficClass.md)"

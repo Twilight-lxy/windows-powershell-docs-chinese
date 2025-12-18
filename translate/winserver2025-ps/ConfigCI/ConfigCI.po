@@ -1,0 +1,125 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:33:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# ConfigCI Module"
+msgstr "# ConfigCI 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for the Configurable Code Integrity Cmdlets. \n"
+"These cmdlets belong to the **ConfigCI** module. "
+msgstr ""
+"本参考资料提供了可配置代码完整性（Configurable Code "
+"Integrity）相关cmdlet的描述和语法信息。这些cmdlet属于**ConfigCI**模块。"
+
+msgid "## ConfigCI Cmdlets"
+msgstr "## ConfigCICmdlets"
+
+msgid "### [Add-SignerRule](./Add-SignerRule.md)"
+msgstr "### [Add-SignerRule](./Add-SignerRule.md)"
+
+msgid "Creates a signer rule and adds it to a policy."
+msgstr "创建一个签名者规则，并将其添加到策略中。"
+
+msgid "### [ConvertFrom-CIPolicy](./ConvertFrom-CIPolicy.md)"
+msgstr "### [ConvertFrom-CIPolicy](./ConvertFrom-CIPolicy.md)"
+
+msgid ""
+"Converts an .xml file that contains a Code Integrity policy into binary "
+"format."
+msgstr "将包含代码完整性策略的.xml文件转换为二进制格式。"
+
+msgid "### [Edit-CIPolicyRule](./Edit-CIPolicyRule.md)"
+msgstr "### [Edit-CIPolicyRule](./Edit-CIPolicyRule.md)"
+
+msgid "This cmdlet is not supported."
+msgstr "此cmdlet不受支持。"
+
+msgid "### [Get-CIPolicy](./Get-CIPolicy.md)"
+msgstr "### [Get-CIPolicy](./Get-CIPolicy.md)"
+
+msgid "Gets the rules in a Code Integrity policy."
+msgstr "获取代码完整性策略中的规则。"
+
+msgid "### [Get-CIPolicyIdInfo](./Get-CIPolicyIdInfo.md)"
+msgstr "### [Get-CIPolicyIdInfo](./Get-CIPolicyIdInfo.md)"
+
+msgid "Displays Code Integrity policy information."
+msgstr "显示代码完整性策略的相关信息。"
+
+msgid "### [Get-CIPolicyInfo](./Get-CIPolicyInfo.md)"
+msgstr "### [Get-CIPolicyInfo](./Get-CIPolicyInfo.md)"
+
+msgid "This cmdlet is not supported."
+msgstr "此cmdlet不受支持。"
+
+msgid "### [Get-SystemDriver](./Get-SystemDriver.md)"
+msgstr "### [Get-SystemDriver](./Get-SystemDriver.md)"
+
+msgid "Scans for drivers on the system."
+msgstr "扫描系统中的驱动程序。"
+
+msgid "### [Merge-CIPolicy](./Merge-CIPolicy.md)"
+msgstr "### [合并-CIPolicy](./Merge-CIPolicy.md)"
+
+msgid "Combines the rules in several Code Integrity policy files."
+msgstr "将多个代码完整性策略文件中的规则合并在一起。"
+
+msgid "### [New-CIPolicy](./New-CIPolicy.md)"
+msgstr "### [New-CIPolicy](./New-CIPolicy.md)"
+
+msgid "Creates a Code Integrity policy as an .xml file."
+msgstr "创建一个代码完整性策略文件（格式为.xml）。"
+
+msgid "### [New-CIPolicyRule](New-CIPolicyRule.md)"
+msgstr "### [New-CIPolicyRule](New-CIPolicyRule.md)"
+
+msgid "Generates Code Integrity policy rules for user mode code and drivers."
+msgstr "为用户模式代码和驱动程序生成代码完整性策略规则。"
+
+msgid "### [Remove-CIPolicyRule](./Remove-CIPolicyRule.md)"
+msgstr "### [Remove-CIPolicyRule](./Remove-CIPolicyRule.md)"
+
+msgid "This cmdlet is not supported."
+msgstr "此cmdlet不受支持。"
+
+msgid "### [Set-CIPolicyIdInfo](./Set-CIPolicyIdInfo.md)"
+msgstr "### [Set-CIPolicyIdInfo](./Set-CIPolicyIdInfo.md)"
+
+msgid "Modifies the name and ID of a Code Integrity policy."
+msgstr "修改代码完整性策略的名称和ID。"
+
+msgid "### [Set-CIPolicySetting](Set-CIPolicySetting.md)"
+msgstr "### [Set-CIPolicySetting](Set-CIPolicySetting.md)"
+
+msgid "Modifies the SecureSettings within the Code Integrity policy."
+msgstr "修改代码完整性策略（Code Integrity policy）中的安全设置（SecureSettings）。"
+
+msgid "### [Set-CIPolicyVersion](Set-CIPolicyVersion.md)"
+msgstr "### [Set-CIPolicyVersion](Set-CIPolicyVersion.md)"
+
+msgid "Updates the version number of the policy."
+msgstr "更新策略的版本号。"
+
+msgid "### [Set-HVCIOptions](./Set-HVCIOptions.md)"
+msgstr "### [Set-HVCIOptions](./Set-HVCIOptions.md)"
+
+msgid "Modifies hypervisor Code Integrity options for a policy."
+msgstr "修改策略的超管理程序代码完整性（Code Integrity）相关设置。"
+
+msgid "### [Set-RuleOption](./Set-RuleOption.md)"
+msgstr "### [Set-RuleOption](./Set-RuleOption.md)"
+
+msgid "Modifies rule options in a Code Integrity policy."
+msgstr "修改代码完整性策略中的规则选项。"

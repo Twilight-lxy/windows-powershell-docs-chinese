@@ -1,0 +1,312 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:34:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# DFSR Module"
+msgstr "# DFSR模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Distributed "
+"File System (DFS) Replication cmdlets. It lists the cmdlets in alphabetical "
+"order based on the verb at the beginning of the cmdlet."
+msgstr ""
+"此参考资料提供了所有分布式文件系统（DFS）复制相关cmdlet的描述和语法信息。这些cmdlet按照它们开头所使用的动词（即命令操作）的字母顺序进行排列。"
+
+msgid "## DFSR Cmdlets"
+msgstr "## DFSRCmdlets"
+
+msgid "### [Add-DfsrConnection](./Add-DfsrConnection.md)"
+msgstr "### [Add-DfsrConnection](./Add-DfsrConnection.md)"
+
+msgid "Creates a connection between members of a replication group."
+msgstr "在复制组的成员之间建立连接。"
+
+msgid "### [Add-DfsrMember](./Add-DfsrMember.md)"
+msgstr "### [Add-DfsrMember](./Add-DfsrMember.md)"
+
+msgid "Adds computers to a replication group."
+msgstr "将计算机添加到复制组中。"
+
+msgid "### [ConvertFrom-DfsrGuid](./ConvertFrom-DfsrGuid.md)"
+msgstr "### [ConvertFrom-DfsrGuid](./ConvertFrom-DfsrGuid.md)"
+
+msgid "Translates GUIDs to friendly names within a given replication group."
+msgstr "将给定复制组中的GUID转换为友好的名称（即易于理解的字符串）。"
+
+msgid "### [Export-DfsrClone](./Export-DfsrClone.md)"
+msgstr "### [Export-DfsrClone](./Export-DfsrClone.md)"
+
+msgid ""
+"Exports the cloned DFS Replication database and volume configuration "
+"settings."
+msgstr "导出克隆后的DFS复制数据库和卷配置设置。"
+
+msgid "### [Get-DfsrBacklog](./Get-DfsrBacklog.md)"
+msgstr "### [Get-DfsrBacklog](./Get-DfsrBacklog.md)"
+
+msgid ""
+"Retrieves the list of pending file updates between two DFS Replication "
+"partners."
+msgstr "检索两个DFS复制伙伴之间待处理的文件更新列表。"
+
+msgid "### [Get-DfsrCloneState](./Get-DfsrCloneState.md)"
+msgstr "### [Get-DfsrCloneState](./Get-DfsrCloneState.md)"
+
+msgid "Gets the status of a database cloning operation."
+msgstr "获取数据库克隆操作的状态。"
+
+msgid "### [Get-DfsrConnection](./Get-DfsrConnection.md)"
+msgstr "### [Get-DfsrConnection](./Get-DfsrConnection.md)"
+
+msgid "Gets a connection between DFS Replication partners."
+msgstr "在DFS复制合作伙伴之间建立连接。"
+
+msgid "### [Get-DfsrConnectionSchedule](./Get-DfsrConnectionSchedule.md)"
+msgstr "### [Get-DfsrConnectionSchedule](./Get-DfsrConnectionSchedule.md)"
+
+msgid "Gets a connection schedule between members of a replication group."
+msgstr "获取复制组成员之间的连接调度信息。"
+
+msgid "### [Get-DfsrDelegation](./Get-DfsrDelegation.md)"
+msgstr "### [Get-DfsrDelegation](./Get-DfsrDelegation.md)"
+
+msgid "Gets principals that have permissions for a replication group."
+msgstr "获取具有复制组权限的主体（principals）。"
+
+msgid "### [Get-DfsReplicatedFolder](./Get-DfsReplicatedFolder.md)"
+msgstr "### [Get-DfsReplicatedFolder](./Get-DfsReplicatedFolder.md)"
+
+msgid "Gets a replicated folder from a replication group."
+msgstr "从一个复制组中获取一个已复制的文件夹。"
+
+msgid "### [Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"
+msgstr "### [Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"
+
+msgid "Retrieves a replication group."
+msgstr "检索一个复制组。"
+
+msgid "### [Get-DfsrFileHash](./Get-DfsrFileHash.md)"
+msgstr "### [Get-DfsrFileHash](./Get-DfsrFileHash.md)"
+
+msgid "Gets a file hash."
+msgstr "获取一个文件哈希值。"
+
+msgid "### [Get-DfsrGroupSchedule](./Get-DfsrGroupSchedule.md)"
+msgstr "### [Get-DfsrGroupSchedule](./Get-DfsrGroupSchedule.md)"
+
+msgid "Retrieves a replication group schedule."
+msgstr "检索复制组的调度信息。"
+
+msgid "### [Get-DfsrIdRecord](./Get-DfsrIdRecord.md)"
+msgstr "### [Get-DfsrIdRecord](./Get-DfsrIdRecord.md)"
+
+msgid ""
+"Gets ID records for replicated files or folders from the DFS Replication "
+"database."
+msgstr "从DFS复制数据库中获取已复制文件或文件夹的ID记录。"
+
+msgid "### [Get-DfsrMember](./Get-DfsrMember.md)"
+msgstr "### [Get-DfsrMember](./Get-DfsrMember.md)"
+
+msgid "Gets member computers in a replication group."
+msgstr "获取复制组中的成员计算机。"
+
+msgid "### [Get-DfsrMembership](./Get-DfsrMembership.md)"
+msgstr "### [Get-DfsrMembership](./Get-Dfsr Membership.md)"
+
+msgid "Gets membership settings for members of replication groups."
+msgstr "获取复制组中成员的会员设置信息。"
+
+msgid "### [Get-DfsrPreservedFiles](./Get-DfsrPreservedFiles.md)"
+msgstr "### [Get-DfsrPreservedFiles](./Get-DfsrPreservedFiles.md)"
+
+msgid ""
+"Gets a list of files and folders that DFS Replication previously preserved."
+msgstr "获取DFS复制之前保存的文件和文件夹列表。"
+
+msgid "### [Get-DfsrServiceConfiguration](./Get-DfsrServiceConfiguration.md)"
+msgstr "### [Get-DfsrServiceConfiguration](./Get-DfsrServiceConfiguration.md)"
+
+msgid "Gets settings for the DFS Replication service on group members."
+msgstr "获取组成员上DFS复制服务的设置信息。"
+
+msgid "### [Get-DfsrState](./Get-DfsrState.md)"
+msgstr "### [Get-DfsrState](./Get-DfsrState.md)"
+
+msgid "Gets the DFS Replication state for a member."
+msgstr "获取成员的DFS复制状态。"
+
+msgid "### [Grant-DfsrDelegation](./Grant-DfsrDelegation.md)"
+msgstr "### [Grant-DfsrDelegation](./Grant-DfsrDelegation.md)"
+
+msgid "Grants permissions to security principals for a replication group."
+msgstr "为复制组的安全主体授予相应的权限。"
+
+msgid "### [Import-DfsrClone](./Import-DfsrClone.md)"
+msgstr "### [Import-DfsrClone](./Import-DfsrClone.md)"
+
+msgid ""
+"Imports a cloned DFS Replication database and volume configuration settings."
+msgstr "导入克隆的DFS复制数据库和卷配置设置。"
+
+msgid "### [New-DfsReplicatedFolder](./New-DfsReplicatedFolder.md)"
+msgstr "### [New-DfsReplicatedFolder](./New-DfsReplicatedFolder.md)"
+
+msgid "Creates a replicated folder in a replication group."
+msgstr "在复制组中创建一个被复制的文件夹。"
+
+msgid "### [New-DfsReplicationGroup](./New-DfsReplicationGroup.md)"
+msgstr "### [New-DfsReplicationGroup](./New-DfsReplicationGroup.md)"
+
+msgid "Creates a replication group."
+msgstr "创建一个复制组。"
+
+msgid "### [Remove-DfsrConnection](./Remove-DfsrConnection.md)"
+msgstr "### [Remove-DfsrConnection](./Remove-DfsrConnection.md)"
+
+msgid "Removes a connection between members of a replication group."
+msgstr "删除复制组中成员之间的连接。"
+
+msgid "### [Remove-DfsReplicatedFolder](./Remove-DfsReplicatedFolder.md)"
+msgstr "### [Remove-DfsReplicatedFolder](./Remove-DfsReplicatedFolder.md)"
+
+msgid "Removes a replicated folder from a replication group."
+msgstr "从一个复制组中删除一个已复制的文件夹。"
+
+msgid "### [Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"
+msgstr "### [Remove-DfsReplicationGroup](./Remove-DfsReplicationGroup.md)"
+
+msgid "Removes a replication group."
+msgstr "删除一个复制组。"
+
+msgid "### [Remove-DfsrMember](./Remove-DfsrMember.md)"
+msgstr "### [Remove-DfsrMember](./Remove-DfsrMember.md)"
+
+msgid "Removes computers from a replication group."
+msgstr "将计算机从复制组中移除。"
+
+msgid ""
+"### [Remove-DfsrPropagationTestFile](./Remove-DfsrPropagationTestFile.md)"
+msgstr ""
+"### [Remove-DfsrPropagationTestFile](./Remove-DfsrPropagationTestFile.md)"
+
+msgid "Removes DFS Replication propagation test files."
+msgstr "删除DFS复制传播测试文件。"
+
+msgid "### [Reset-DfsrCloneState](./Reset-DfsrCloneState.md)"
+msgstr "### [Reset-DfsrCloneState](./Reset-DfsrCloneState.md)"
+
+msgid "Cancels a cloning operation."
+msgstr "取消克隆操作。"
+
+msgid "### [Restore-DfsrPreservedFiles](./Restore-DfsrPreservedFiles.md)"
+msgstr "### [Restore-DfsrPreservedFiles](./Restore-DfsrPreservedFiles.md)"
+
+msgid "Restores files and folders that DFS Replication previously preserved."
+msgstr "恢复之前由DFS复制功能保存的文件和文件夹。"
+
+msgid "### [Revoke-DfsrDelegation](./Revoke-DfsrDelegation.md)"
+msgstr "### [Revoke-DfsrDelegation](./Revoke-DfsrDelegation.md)"
+
+msgid "Revokes permissions to security principals for a replication group."
+msgstr "撤销复制组中安全主体（security principals）的权限。"
+
+msgid "### [Set-DfsrConnection](./Set-DfsrConnection.md)"
+msgstr "### [Set-DfsrConnection](./Set-DfsrConnection.md)"
+
+msgid ""
+"Changes the settings of a connection between members of a replication group."
+msgstr "更改复制组中成员之间连接的设置。"
+
+msgid "### [Set-DfsrConnectionSchedule](./Set-DfsrConnectionSchedule.md)"
+msgstr "### [Set-DfsrConnectionSchedule](./Set-DfsrConnectionSchedule.md)"
+
+msgid ""
+"Changes the settings of a connection schedule between members of a "
+"replication group."
+msgstr "用于更改复制组中成员之间连接调度的相关设置。"
+
+msgid "### [Set-DfsReplicatedFolder](./Set-DfsReplicatedFolder.md)"
+msgstr "### [Set-DfsReplicatedFolder](./Set-DfsReplicatedFolder.md)"
+
+msgid "Changes settings of a replicated folder."
+msgstr "更改已复制文件夹的设置。"
+
+msgid "### [Set-DfsReplicationGroup](./Set-DfsReplicationGroup.md)"
+msgstr "### [Set-DfsReplicationGroup](./Set-DfsReplicationGroup.md)"
+
+msgid "Modifies a replication group."
+msgstr "修改一个复制组。"
+
+msgid "### [Set-DfsrGroupSchedule](./Set-DfsrGroupSchedule.md)"
+msgstr "### [Set-DfsrGroupSchedule](./Set-DfsrGroupSchedule.md)"
+
+msgid "Modifies a replication group schedule."
+msgstr "修改复制组的计划（即复制组的工作时间安排）。"
+
+msgid "### [Set-DfsrMember](./Set-DfsrMember.md)"
+msgstr "### [Set-DfsrMember](./Set-DfsrMember.md)"
+
+msgid "Modifies member computer information in a replication group."
+msgstr "修改复制组中成员计算机的信息。"
+
+msgid "### [Set-DfsrMembership](./Set-DfsrMembership.md)"
+msgstr "### [Set-DfsrMembership](./Set-DfsrMembership.md)"
+
+msgid "Configures membership settings for replication group members."
+msgstr "配置复制组成员的成员资格设置。"
+
+msgid "### [Set-DfsrServiceConfiguration](./Set-DfsrServiceConfiguration.md)"
+msgstr "### [Set-DfsrServiceConfiguration](./Set-DfsrServiceConfiguration.md)"
+
+msgid "Modifies settings for the DFS Replication service."
+msgstr "修改DFS复制服务的设置。"
+
+msgid "### [Start-DfsrPropagationTest](./Start-DfsrPropagationTest.md)"
+msgstr "### [Start-DfsrPropagationTest](./Start-DfsrPropagationTest.md)"
+
+msgid "Creates a propagation test file in a replicated folder."
+msgstr "在复制的文件夹中创建一个用于测试传播效果的文件。"
+
+msgid "### [Suspend-DfsReplicationGroup](./Suspend-DfsReplicationGroup.md)"
+msgstr "### [Suspend-DfsReplicationGroup](./Suspend-DfsReplicationGroup.md)"
+
+msgid "Suspends replication between computers regardless of schedule."
+msgstr "无论原定计划如何，都会暂停计算机之间的数据复制（即阻止数据在两台计算机之间传输）。"
+
+msgid "### [Sync-DfsReplicationGroup](./Sync-DfsReplicationGroup.md)"
+msgstr "### [Sync-DfsReplicationGroup](./Sync-DfsReplicationGroup.md)"
+
+msgid "Synchronizes replication between computers regardless of schedule."
+msgstr "无论计划如何，都能在计算机之间同步复制过程。"
+
+msgid ""
+"### [Update-DfsrConfigurationFromAD](./Update-DfsrConfigurationFromAD.md)"
+msgstr ""
+"### [Update-DfsrConfigurationFromAD](./Update-DfsrConfigurationFromAD.md)"
+
+msgid "Initiates an update of the DFS Replication service."
+msgstr "启动DFS复制服务的更新过程。"
+
+msgid "### [Write-DfsrHealthReport](./Write-DfsrHealthReport.md)"
+msgstr "### [Write-DfsrHealthReport](./Write-DfsrHealthReport.md)"
+
+msgid "Generates a DFS Replication health report."
+msgstr "生成深度优先搜索（DFS）复制健康状况报告。"
+
+msgid "### [Write-DfsrPropagationReport](./Write-DfsrPropagationReport.md)"
+msgstr "### [Write-DfsrPropagationReport](./Write-DfsrPropagationReport.md)"
+
+msgid "Generates reports for propagation test files in a replication group."
+msgstr "为复制组中的传播测试文件生成报告。"

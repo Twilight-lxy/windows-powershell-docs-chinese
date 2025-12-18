@@ -1,0 +1,219 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:55:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Restore-SbecBackupConfig"
+msgstr "# 恢复 SbecBackupConfig 配置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Restores a configuration from a backup file."
+msgstr "从备份文件中恢复配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "### At"
+msgstr "### 在……时间（或地点）"
+
+msgid "### AtTimestamp"
+msgstr "### AtTimestamp"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Restore-SbecBackupConfig** cmdlet restores a Boot Event Collector "
+"configuration from a backup file."
+msgstr ""
+"`Restore-SbecBackupConfig` cmdlet 从备份文件中恢复启动事件收集器（Boot Event "
+"Collector）的配置信息。"
+
+msgid ""
+"If the previous active configuration was not itself restored but set afresh (or checkpointed after restore), it is saved in a backup file.\n"
+"When doing multiple undo/redo/restore commands in a sequence, the intermediate configurations are not saved in the new backup files.\n"
+"A configuration from undo/redo/restore commands is automatically considered checkpointed if it was left unchanged for an hour."
+msgstr ""
+"如果之前的活动配置没有被恢复，而是被重新设置（或者在恢复后被标记为检查点），那么该配置会被保存在一个备份文件中。当连续执行多次“撤销”/“重做”/“恢复”命令时，这些中间状态下的配置不会被保存到新的备份文件中。如果某个配置在一段时间内保持不变（即没有被修改），那么它就会自动被视为一个检查点。"
+
+msgid ""
+"You can use the OldTimestamp parameter to modify the configuration "
+"atomically."
+msgstr "你可以使用 `OldTimestamp` 参数来原子性地修改配置。"
+
+msgid ""
+"The restored configuration is re-checked for validity, and refused if it has"
+" become corrupted."
+msgstr "恢复后的配置会再次被检查其有效性；如果配置已经损坏，则会被拒绝接受。"
+
+msgid "You must have Builtin Administrator privilege to run this cmdlet."
+msgstr "您必须具有内置管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Restore a backup configuration by name"
+msgstr "#### 示例 1：通过名称恢复备份配置"
+
+msgid ""
+"This command restores the backup file named "
+"Active.xml.201502202002352592047.xml and uses the pipeline operator to pass "
+"it to Format-List, which formats the hash table returned by the operation."
+msgstr ""
+"这个命令会恢复名为 Active.xml.201502202002352592047.xml 的备份文件，并使用管道运算符（pipeline "
+"operator）将其传递给 Format-List 命令。Format-List 命令会对该操作返回的哈希表进行格式化处理。"
+
+msgid "### Example 2: Restore the most recent backup configuration"
+msgstr "#### 示例 2：恢复最近的备份配置"
+
+msgid ""
+"This command restores the most recent backup file from the list of available"
+" ones, identifying it by name."
+msgstr "此命令会从可用的备份文件列表中恢复最新的备份文件，并通过文件名来识别该文件。"
+
+msgid "### Example 3: Restore a backup based on its time"
+msgstr "### 示例 3：根据备份的时间来恢复备份文件"
+
+msgid ""
+"This command restores the most recent backup file from the list of available"
+" backups, and identifies it by its time."
+msgstr "这个命令会从可用的备份文件列表中恢复最新的备份文件，并根据其创建时间来识别该文件。"
+
+msgid "### Example 4: Restore a backup based on its FILETIME timestamp"
+msgstr "### 示例 4：根据文件的 FILETIME 时间戳恢复备份"
+
+msgid ""
+"This command restores the most recent backup file from the list of available"
+" ones, identifying it by the FILETIME timestamp."
+msgstr "该命令会从可用的备份文件列表中恢复最新的备份文件，并通过 FILETIME 时间戳来识别该文件。"
+
+msgid "### Example 5: Restore a configuration from a specified time"
+msgstr "### 示例 5：从指定时间点恢复配置"
+
+msgid ""
+"This command restores the backup configuration that was active at midnight "
+"UTC of February 19 2015."
+msgstr "此命令会恢复在2015年2月19日午夜（UTC时间）处于活动状态的备份配置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the timestamp of the configuration file to restore.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要恢复的配置文件的时间戳。该参数的可接受值为："
+
+msgid ""
+"See Get-SbecBackupConfig for more information about timestamp formats and "
+"how to convert them."
+msgstr "有关时间戳格式及其转换方法的更多信息，请参阅 `Get-SbecBackupConfig`。"
+
+msgid "Specifies a FILETIME timestamp of the configuration file to restore."
+msgstr "指定要恢复的配置文件的 FILETIME 时间戳。"
+
+msgid ""
+"See Get-SbecBackupConfig for more information about timestamp formats and "
+"how to convert them."
+msgstr "有关时间戳格式以及如何转换它们的更多信息，请参阅 Get-SbecBackupConfig。"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet, or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行相应的 cmdlet。可以输入一个会话对象（例如 **New-CimSession** 或 **Get-"
+"CimSession** cmdlet 的输出结果），或者这些对象的数组。默认情况下，该 cmdlet 会在本地计算机上运行。有关更多信息，请参阅 "
+"“About_CimSession”。"
+
+msgid ""
+"Specifies the names of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address for each computer.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on MSDN."
+msgstr ""
+"指定您希望在其上执行操作的计算机的名称。您可以分别为每台计算机指定一个完全限定域名（FQDN）、NetBIOS名称或IP地址。有关更多信息，请参阅MSDN上的[Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid ""
+"Specifies that this operation will not throw an exception if a failure occurs.\n"
+"Instead the caller should examine the output of the cmdlet for the error information."
+msgstr "该说明指出：如果操作失败，该方法不会抛出异常。相反，调用者应该查看cmdlet的输出以获取错误信息。"
+
+msgid ""
+"Specifies the name of the configuration file to restore.\n"
+"To get the list of backup configuration files, use the Get-SbecBackupConfig cmdlet."
+msgstr "指定要恢复的配置文件的名称。若要获取备份配置文件的列表，请使用 Get-SbecBackupConfig cmdlet。"
+
+msgid ""
+"Specifies the timestamp of the previous active configuration.\n"
+"This provides a way to perform the atomic changes of the configuration.\n"
+"Each configuration has a timestamp (the time when it was last set or restored) and an original timestamp (if the configuration was restored, the time when it was originally set, otherwise the same as the normal timestamp).\n"
+"This operation checks that the *OldTimestamp* value matches either the normal or original timestamp of the current active configuration, thus ensuring that the active configuration wasn't changed since the last time you have looked at it.\n"
+"If the values do not match, an error is returned."
+msgstr ""
+"指定上一个活跃配置的时间戳。这样可以实现对配置的原子级更改（即配置状态不会被部分修改）。每个配置都有一个时间戳（最后一次设置或恢复时的时间），以及一个原始时间戳（如果配置是从备份中恢复的，则为最初设置时的时间；否则与当前的时间戳相同）。此操作会检查"
+" `OldTimestamp` "
+"的值是否与当前活跃配置的正常时间戳或原始时间戳相匹配，从而确保自上次查看该配置以来，其状态没有被修改过。如果两个时间戳不匹配，则会返回错误信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### hashtable"
+msgstr "### HashTable"
+
+msgid "The hashtable includes the following elements:"
+msgstr "哈希表包含以下元素："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Checkpoint-SbecActiveConfig](./Checkpoint-SbecActiveConfig.md)"
+msgstr "[Checkpoint-SbecActiveConfig](./Checkpoint-SbecActiveConfig.md)"
+
+msgid "[Get-SbecBackupConfig](./Get-SbecBackupConfig.md)"
+msgstr "[Get-SbecBackupConfig](./Get-SbecBackupConfig.md)"
+
+msgid "[Redo-SbecActiveConfig](./Redo-SbecActiveConfig.md)"
+msgstr "[Redo-SbecActiveConfig](./Redo-SbecActiveConfig.md)"
+
+msgid "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+msgstr "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+
+msgid "[Undo-SbecActiveConfig](./Undo-SbecActiveConfig.md)"
+msgstr "[Undo-SbecActiveConfig](./Undo-SbecActiveConfig.md)"

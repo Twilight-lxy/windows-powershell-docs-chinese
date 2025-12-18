@@ -1,0 +1,178 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:01:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-DnsServerTrustAnchor"
+msgstr "# 移除DNS服务器信任锚点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a trust anchor from a DNS server."
+msgstr "从DNS服务器中移除一个信任锚点（trust anchor）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-DnsServerTrustAnchor** cmdlet removes a trust anchor from a Domain Name System (DNS) server.\n"
+"If you specify an anchor type, the cmdlet removes the specified type of trust anchor.\n"
+"You can also use the *InputObject* parameter to specify the trust anchor to delete."
+msgstr ""
+"`Remove-DnsServerTrustAnchor` cmdlet "
+"用于从域名系统（DNS）服务器中删除信任锚点。如果您指定了具体的信任锚点类型，该 cmdlet 将删除该类型的信任锚点。您还可以使用 "
+"`InputObject` 参数来指定要删除的信任锚点。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove trust anchors from a DNS server"
+msgstr "### 示例 1：从 DNS 服务器中删除信任锚点"
+
+msgid ""
+"This command removes all the trust anchors that are associated with the "
+"trust point named Dept06.contoso.com."
+msgstr "此命令会删除所有与名为Dept06.contoso.com的信任点相关联的信任锚。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在当前会话中工作。要管理该作业，请使用 `*-Job` "
+"系列 cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如使用[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies a remote DNS server.\n"
+"The acceptable values for this parameter are: an IP address or any value that resolves to an IP address, such as a fully qualified domain name (FQDN), host name, or NETBIOS name."
+msgstr ""
+"指定一个远程DNS服务器。该参数的可接受值为：IP地址，或任何能够解析为IP地址的字符串，例如完全限定域名（FQDN）、主机名或NETBIOS名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否继续执行。"
+
+msgid ""
+"Removes a trust anchor without prompting you for confirmation.\n"
+"By default, the cmdlet prompts you for confirmation before it proceeds."
+msgstr "该命令会直接删除信任锚点，而不会先提示用户进行确认。默认情况下，该cmdlet在执行操作之前会先询问用户的确认意见。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此cmdlet的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传递给此cmdlet。"
+
+msgid "Specifies the name of a trust anchor on a DNS server."
+msgstr "指定DNS服务器上一个信任锚点的名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大并发操作数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 数量来计算该 cmdlet 的最优限制值。此限制仅适用于当前正在运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Specifies the trust anchor type.\n"
+"If you do not specify this parameter, the server removes all trust anchors that match the other parameters that you specify."
+msgstr "指定信任锚点的类型。如果您不指定此参数，服务器将删除所有与其他指定参数匹配的信任锚点。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid ""
+"### Microsoft.Management.Infrastructure.CimInstance#DnsServerTrustAnchor[]"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance#DnsServerTrustAnchor[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.Management.Infrastructure.CimInstance#DnsServerTrustAnchor[]"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance#DnsServerTrustAnchor[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DnsServerTrustAnchor](./Add-DnsServerTrustAnchor.md)"
+msgstr "[Add-DnsServerTrustAnchor](./Add-DnsServerTrustAnchor.md)"
+
+msgid "[Get-DnsServerTrustAnchor](./Get-DnsServerTrustAnchor.md)"
+msgstr "[Get-DnsServerTrustAnchor](./Get-DnsServerTrustAnchor.md)"
+
+msgid "[Import-DnsServerTrustAnchor](./Import-DnsServerTrustAnchor.md)"
+msgstr "[Import-DnsServerTrustAnchor](./Import-DnsServerTrustAnchor.md)"

@@ -1,0 +1,167 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:58:06 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-SbecLogSession"
+msgstr "# Set-SbecLogSession"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Updates the settings for a log session."
+msgstr "更新日志会话的设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Object"
+msgstr "### 对象"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-SbecLogSession** cmdlet updates the settings for a log session."
+msgstr "`Set-SbecLogSession` cmdlet 用于更新日志会话的设置。"
+
+msgid ""
+"You can change the properties of an object before passing it as input to this cmdlet rather than passing changes as parameters.\n"
+"In this case, make sure to set the properties directly in the object rather than in its Trace field (the modifications of Trace are silently ignored by PowerShell)."
+msgstr ""
+"你可以在将对象作为参数传递给此cmdlet之前，先修改对象的属性。在这种情况下，请确保直接在对象本身中设置属性，而不是通过其`Trace`字段来设置（PowerShell会忽略对`Trace`字段的任何修改）。"
+
+msgid ""
+"The cmdlet parameters that are unused or set to $Null are left unchanged."
+msgstr "未使用的或被设置为 `$Null` 的 cmdlet 参数将保持不变。"
+
+msgid "You cannot update the session name."
+msgstr "您无法更新会话名称。"
+
+msgid ""
+"The operating system may refuse to change some parameters or silently ignore"
+" the updates."
+msgstr "操作系统可能会拒绝更改某些参数，或者默默地忽略这些更新。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the buffer size for the session, in kilobytes.\n"
+"This is the size of one buffer, with the count of these buffers set by the *MinimumBufferCount* and *MaximumBufferCount* parameters."
+msgstr ""
+"指定会话的缓冲区大小（以千字节为单位）。这是一个缓冲区的大小，而缓冲区的数量由 *MinimumBufferCount* 和 "
+"*MaximumBufferCount* 参数来控制。"
+
+msgid ""
+"Specifies the type of clock used for the events collected by this session.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定用于本次会话收集的事件的时间戳类型。该参数的可接受值包括："
+
+msgid ""
+"Changes the LogFileMode flags to disable the forwarding through the kernel transport to the collector for the real-time log sessions.\n"
+"The switches *EnableKd* and *DisableKd* are mutually exclusive."
+msgstr ""
+"将 `LogFileMode` 标志设置为禁用通过内核传输将实时日志会话的数据转发给收集器。`EnableKd` 和 `DisableKd` "
+"这两个选项是互斥的（即只能选择一个处于启用状态）。"
+
+msgid ""
+"Changes the LogFileMode flags to enable the forwarding through the kernel transport to the collector for the real-time log sessions.\n"
+"The switches *EnableKd* and *DisableKd* are mutually exclusive."
+msgstr ""
+"这些更改用于调整 `LogFileMode` 标志，以启用通过内核传输将实时日志会话数据转发到收集器的功能。`EnableKd` 和 "
+"`DisableKd` 这两个开关是互斥的（即只能选择其中一个进行启用）。"
+
+msgid ""
+"Specifies the timeout in seconds for the session buffers to get automatically flushed.\n"
+"You can disable the flushing of buffers on timeout by setting this parameter to 0, then the buffers will be written only when full or on an explicit flush."
+msgstr ""
+"指定会话缓冲区自动清空的超时时间（以秒为单位）。您可以通过将此参数设置为 0 "
+"来禁用超时时的缓冲区清除功能；在这种情况下，缓冲区只有在满载时或通过显式命令清除时才会被写入。"
+
+msgid ""
+"Specifies flags for the NT Kernel Logger that enable the kernel events.\n"
+"For the setup and boot monitoring, the only reasonable flag is Process.\n"
+"This enumeration type is defined in $PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"用于指定 NT 内核日志记录器的标志，以启用内核事件记录功能。在系统设置和启动监控过程中，唯一合理的标志是 "
+"“Process”（进程相关）。该枚举类型定义在文件 "
+"$PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1 中。此参数的可接受取值为："
+
+msgid "Specifies the GUID for the session."
+msgstr "指定会话的 GUID（全局唯一标识符）。"
+
+msgid ""
+"Simulates a Windows error in session creation, and causes the function to throw an error.\n"
+"You can specify this parameter to test error handling."
+msgstr "模拟在会话创建过程中出现的Windows错误，导致该函数抛出异常。您可以指定此参数来测试错误处理机制。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### SbecEtwTrace.TraceSessionInfo"
+msgstr "### SbecEtwTrace.TraceSessionInfo"
+
+msgid ""
+"The class is defined in "
+"$PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1."
+msgstr "该类定义在文件 `$PsHomeModules\\BootEventCollector\\SbecTrace Helpers.psm1` 中。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+msgstr "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+
+msgid "[Save-SbecLogSession](./Save-SbecLogSession.md)"
+msgstr "[Save-SbecLogSession](./Save-SbecLogSession.md)"
+
+msgid "[Start-SbecLogSession](./Start-SbecLogSession.md)"
+msgstr "[Start-SbecLogSession](./Start-SbecLogSession.md)"
+
+msgid "[Start-SbecNtKernelLogSession](./Start-SbecNtKernelLogSession.md)"
+msgstr "[开始 SbecNtKernelLogSession 会话](./Start-SbecNtKernelLogSession.md)"
+
+msgid "[Start-SbecSimpleLogSession](./Start-SbecSimpleLogSession.md)"
+msgstr "[开始 SbecSimpleLogSession 会话](./Start-SbecSimpleLogSession.md)"
+
+msgid "[Stop-SbecLogSession](./Stop-SbecLogSession.md)"
+msgstr "[Stop-SbecLogSession](./Stop-SbecLogSession.md)"

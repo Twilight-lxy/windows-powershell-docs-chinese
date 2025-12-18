@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:35:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrBacklog"
+msgstr "# Get-DfsrBacklog"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Retrieves the list of pending file updates between two DFS Replication "
+"partners."
+msgstr "检索两个DFS复制伙伴之间待处理的文件更新列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfrsBacklog** cmdlet retrieves pending updates between two "
+"computers that participate in Distributed File System (DFS) Replication."
+msgstr "`Get-DfrsBacklog` cmdlet 可以检索参与分布式文件系统（DFS）复制的两台计算机之间尚未完成的更新操作。"
+
+msgid ""
+"Updates can be new, modified, or deleted files and folders.\n"
+"The maximum number of files that this command displays is 100.\n"
+"The **Verbose** parameter displays a count of all backlogged updates.\n"
+"Any files or folders listed in the DFS Replication backlog have not yet replicated from the source computer to the destination computer.\n"
+"This is not necessarily an indication of problems.\n"
+"A backlog indicates latency, and a backlog may be expected in your environment, depending on configuration, rate of change, network, and other factors."
+msgstr ""
+"更新可以包括新文件、修改后的文件或删除的文件及文件夹。该命令最多能显示 100 个文件。`**Verbose**` "
+"参数会显示所有待处理的更新的数量。DFS "
+"复制任务列表中出现的任何文件或文件夹都尚未从源计算机复制到目标计算机。这并不一定表示存在问题；待处理的任务列表只是反映了复制过程中的延迟现象。根据配置、数据变化频率、网络状况等因素，您的环境中出现这种延迟是正常的。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Retrieve unreplicated changes"
+msgstr "### 示例 1：检索未复制的更改"
+
+msgid ""
+"This command retrieves the first 100 unreplicated changes between the local computer and the upstream computer SRV02 for the replication group RG01 and the replicated folder RF1A.\n"
+"The command displays all file metadata."
+msgstr ""
+"该命令用于检索复制组RG01以及已复制文件夹RF1A中，本地计算机与上游服务器SRV02之间未复制的前100个变更。该命令会显示所有文件的元数据信息。"
+
+msgid ""
+"### Example 2: Retrieve unreplicated changes between upstream and downstream"
+" computers"
+msgstr "### 示例 2：获取上游计算机和下游计算机之间未复制的更改"
+
+msgid ""
+"This command retrieves the first 100 unreplicated changes between the downstream computer SRV01 and the upstream computer SRV02 for the replication group RG01 and the replicated folder RF1.\n"
+"The command also formats the output into a table that contains only the file paths and modification dates on the upstream server."
+msgstr ""
+"此命令用于检索复制组RG01及已复制文件夹RF1中，从下游计算机SRV01到上游计算机SRV02之间发生的、尚未被复制的（即未完成复制的）前100个更改记录。该命令还会将输出结果格式化为表格形式，其中仅包含文件路径和修改日期信息（这些信息均来自上游服务器）。"
+
+msgid "### Example 3: Retrieve unreplicated changes count to display"
+msgstr "### 示例 3：检索未复制的更改数量以进行显示"
+
+msgid ""
+"This command retrieves the total count of unreplicated changes between the downstream computer SRV02 and the upstream computer SRV01 for the replication group RG01 and the replicated folder RF01.\n"
+"The command displays this output in the verbose stream."
+msgstr ""
+"此命令用于检索复制组RG01及其复制的文件夹RF01中，下游计算机SRV02与上游计算机SRV01之间未复制的更改的总数。该命令会将输出结果显示在详细信息流（verbose"
+" stream）中。"
+
+msgid "### Example 4: Retrieve unreplicated changes count to a string object"
+msgstr "### 示例 4：获取未复制的更改次数，并将其存储到字符串对象中"
+
+msgid ""
+"This command retrieves the total count of unreplicated changes between the downstream computer SRV02 and the upstream computer SRV01 for the replication group RG01 and the replicated folder RF01.\n"
+"The command converts the verbose stream data into a text string containing only the count, for later manipulation."
+msgstr ""
+"该命令用于获取复制组RG01及其复制的文件夹RF01中，下游计算机SRV02与上游计算机SRV02之间未复制更改的总数。命令会将详细的流数据转换为仅包含计数的文本字符串，以便后续处理。"
+
+msgid "### Example 5: Retrieve unreplicated changes count to a file"
+msgstr "### 示例 5：获取文件中未复制的更改数量"
+
+msgid ""
+"This command retrieves the total count of unreplicated changes between the downstream computer SRV02 and the upstream computer SRV01 for the replication group RG01 and the replicated folder RF01.\n"
+"The command converts the verbose stream data into a text string containing only the count, for later manipulation."
+msgstr ""
+"该命令用于获取复制组RG01及其复制的文件夹RF01中，下游计算机SRV02与上游计算机SRV02之间未复制变更的总数量。命令会将详细的流数据转换为一个仅包含计数的文本字符串，以便后续处理。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the receiving computer.\n"
+"A destination computer is also called an inbound or downstream computer."
+msgstr "指定接收计算机的名称。目标计算机也被称为入站计算机或下游计算机。"
+
+msgid ""
+"Specifies an array of names of replicated folders.\n"
+"If you do not specify this parameter, the cmdlet queries for all participating replicated folders.\n"
+"You can specify multiple folders, separated by commas, as well as wildcard characters (*)."
+msgstr ""
+"指定一组已复制文件夹的名称。如果不指定此参数，该cmdlet将查询所有参与复制的文件夹。您可以指定多个文件夹（用逗号分隔），也可以使用通配符（*）。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"If you do not specify this parameter, the cmdlet queries for all participating replications groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。如果您不指定此参数，该cmdlet将查询所有参与的复制组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Specifies the name of the sending computer.\n"
+"A source computer is also called an outbound or upstream computer."
+msgstr "指定发送计算机的名称。源计算机也被称为外出（outbound）计算机或上游（upstream）计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, "
+"`-ErrorVariable`, `-InformationAction`, `-InformationVariable`, "
+"`-OutVariable`, `-OutBuffer`, `-PipelineVariable`, `-Verbose`, "
+"`-WarningAction`, and `-WarningVariable`. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicatedFolder"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrIdRecord"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrIdRecord"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

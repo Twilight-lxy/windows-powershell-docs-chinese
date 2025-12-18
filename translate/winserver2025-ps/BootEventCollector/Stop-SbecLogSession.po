@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:02:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-SbecLogSession"
+msgstr "# 停止 SbecLogSession 会话"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Stops a log session."
+msgstr "停止日志会话。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Object"
+msgstr "### 对象"
+
+msgid "### Name"
+msgstr "### 名称"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **Stop-SbecLogSession** cmdlet stops a log session."
+msgstr "`Stop-SbecLogSession` cmdlet 用于停止日志会话。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of the log session to stop."
+msgstr "指定要停止的日志会话的名称。"
+
+msgid "Specifies the session objects to stop."
+msgstr "指定要停止的会话对象。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### SbecEtwTrace.TraceSessionInfo"
+msgstr "### SbecEtwTrace.TraceSessionInfo"
+
+msgid ""
+"The **SbecEtwTrace.TraceSessionInfo** class is defined in "
+"$PsHome\\Modules\\BootEventCollector\\SbecTraceHelpers.psm1."
+msgstr ""
+"`SbecEtwTrace.TraceSessionInfo` 类定义在 "
+"`$PsHomeModules\\BootEventCollector\\SbecTrace Helpers.psm1` 文件中。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+msgstr "[Get-SbecLogSession](./Get-SbecLogSession.md)"
+
+msgid "[Save-SbecLogSession](./Save-SbecLogSession.md)"
+msgstr "[Save-SbecLogSession](./Save-SbecLogSession.md)"
+
+msgid "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+msgstr "[Set-SbecLogSession](./Set-SbecLogSession.md)"
+
+msgid "[Start-SbecLogSession](./Start-SbecLogSession.md)"
+msgstr "[开始 SbecLogSession 会话](./Start-SbecLogSession.md)"
+
+msgid "[Start-SbecNtKernelLogSession](./Start-SbecNtKernelLogSession.md)"
+msgstr "[开始 SbecNtKernelLogSession 会话](./Start-SbecNtKernelLogSession.md)"
+
+msgid "[Start-SbecSimpleLogSession](./Start-SbecSimpleLogSession.md)"
+msgstr "[开始 SbecSimpleLogSession 会话](./Start-SbecSimpleLogSession.md)"

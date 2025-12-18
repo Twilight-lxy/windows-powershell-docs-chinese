@@ -1,0 +1,120 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:09:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AppvPublishingServer"
+msgstr "# 移除 AppV Publishing 服务器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes an App-V publishing server."
+msgstr "删除一个App-V发布服务器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByServerId (Default)"
+msgstr "### ByServerId（默认值）"
+
+msgid "### ByObject"
+msgstr "### ByObject"
+
+msgid "### ByNameUrl"
+msgstr "### ByNameUrl"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-AppvPublishingServer** cmdlet removes the Microsoft Application"
+" Virtualization (App-V) publishing server from the App-V client list."
+msgstr ""
+"`Remove-AppvPublishingServer` cmdlet 会从 App-V 客户端列表中删除 Microsoft "
+"应用程序虚拟化（App-V）发布服务器。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a publishing server"
+msgstr "### 示例 1：移除发布服务器"
+
+msgid "This command removes the publishing server named Server01."
+msgstr "此命令将删除名为 Server01 的发布服务器。"
+
+msgid "### Example 2: Remove multiple publishing servers"
+msgstr "#### 示例 2：移除多个发布服务器"
+
+msgid ""
+"This command removes all publishing servers that have names that start with "
+"the string Server."
+msgstr "此命令会删除所有名称以“Server”开头的所有发布服务器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of the composition."
+msgstr "指定该作品的名称。"
+
+msgid ""
+"Specifies an **AppvPublishingServer** object.\n"
+"To obtain an **AppvPublishingServer** object, use the **Get-AppvPublishingServer** cmdlet."
+msgstr ""
+"指定一个 **AppvPublishingServer** 对象。要获取一个 **AppvPublishingServer** 对象，请使用 "
+"**Get-AppvPublishingServer** cmdlet。"
+
+msgid "Specifies the ID for the publishing server."
+msgstr "指定发布服务器的ID。"
+
+msgid "Specifies the URL path of the publishing server."
+msgstr "指定发布服务器的URL路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.AppvAgent.AppvMgmtServer"
+msgstr "### Microsoft.AppvAgent.AppvMgmtServer"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvPublishingServer](./Add-AppvPublishingServer.md)"
+msgstr "[Add-AppvPublishingServer](./Add-AppvPublishingServer.md)"
+
+msgid "[Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+msgstr "[Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+
+msgid "[Set-AppvPublishingServer](./Set-AppvPublishingServer.md)"
+msgstr "[Set-AppvPublishingServer](./Set-AppvPublishingServer.md)"
+
+msgid "[Sync-AppvPublishingServer](./Sync-AppvPublishingServer.md)"
+msgstr "[Sync-AppvPublishingServer](./Sync-AppvPublishingServer.md)"

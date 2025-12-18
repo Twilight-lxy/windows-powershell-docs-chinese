@@ -1,0 +1,117 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:22:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-CauClusterRole"
+msgstr "# 禁用 CauClusterRole"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Suspends the self-updating functionality on the specified cluster."
+msgstr "暂停指定集群上的自动更新功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Disable-CauClusterRole` cmdlet suspends the self-updating functionality on the specified\n"
+"cluster. The self-updating functionality of the cluster can be re-enabled with the\n"
+"`Enable-CauClusterRole` cmdlet."
+msgstr ""
+"`Disable-CauClusterRole` cmdlet 会暂停指定集群的自动更新功能。该功能的重新启用可以通过 `Enable-"
+"CauClusterRole` cmdlet 来实现。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable a CAU clustered role on the specified cluster"
+msgstr "### 示例 1：在指定的集群上禁用一个 CAU 集群角色"
+
+msgid ""
+"This command prevents the CAU clustered role on the CONTOSO-FC1 cluster from performing Updating\n"
+"Runs. The cmdlet changes the status of the CAU clustered role to Offline. Because the command\n"
+"specified the **Force** parameter, the cmdlet runs without displaying confirmation prompts."
+msgstr ""
+"此命令可防止位于 CONTOSO-FC1 集群上的 CAU 集群角色执行更新操作。该cmdlet会将 CAU "
+"集群角色的状态更改为“离线”（Offline）。由于该命令指定了 **Force** 参数，因此在执行过程中不会显示确认提示。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to disable the self-updating functionality. This\n"
+"parameter is only required when this cmdlet isn't run on a failover cluster node, or this cmdlet is\n"
+"used to reference a failover cluster different from where the cmdlet is run."
+msgstr ""
+"指定要禁用自更新功能的集群名称。仅当此 cmdlet 不在故障转移集群节点上运行，或者用于引用与执行该 cmdlet "
+"的位置不同的故障转移集群时，才需要此参数。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid "Specifies the administrative credentials for the target cluster."
+msgstr "指定目标集群的管理凭据。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不需要用户确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-CauClusterRole](./Enable-CauClusterRole.md)"
+msgstr "[Enable-CauClusterRole](./Enable-CauClusterRole.md)"
+
+msgid "[Get-CauClusterRole](./Get-CauClusterRole.md)"
+msgstr "[Get-CauClusterRole](./Get-CauClusterRole.md)"
+
+msgid "[Remove-CauClusterRole](./Remove-CauClusterRole.md)"
+msgstr "[Remove-CauClusterRole](./Remove-CauClusterRole.md)"
+
+msgid "[Set-CauClusterRole](./Set-CauClusterRole.md)"
+msgstr "[Set-CauClusterRole](./Set-CauClusterRole.md)"

@@ -1,0 +1,208 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:28:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DhcpServerv4ScopeStatistics"
+msgstr "# Get-DhcpServerv4ScopeStatistics"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the IPv4 scope statistics corresponding to the IPv4 scope IDs specified"
+" for a DHCP server service."
+msgstr "获取与为DHCP服务器服务指定的IPv4范围ID对应的IPv4范围统计信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DhcpServerv4ScopeStatistics** cmdlet gets the scope statistics corresponding to the IPv4 scope identifiers (IDs) specified for a Dynamic Host Configuration Protocol (DHCP) server service.\n"
+"If you do not specify the *ScopeId* parameter, this cmdlet gets the statistics for all of the IPv4 scopes."
+msgstr ""
+"`Get-DhcpServerv4ScopeStatistics` cmdlet 可获取与动态主机配置协议（DHCP）服务器服务中指定的 IPv4 "
+"范围标识符（IDs）相对应的范围统计信息。如果您未指定 `ScopeId` 参数，该 cmdlet 会获取所有 IPv4 范围的统计信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get scope statistics for scopes on a DHCP server service"
+msgstr "### 示例 1：获取 DHCP 服务器服务上各个作用域的范围统计信息"
+
+msgid ""
+"This example gets the scope statistics for the scopes on the specified DHCP "
+"server service."
+msgstr "这个示例获取了指定DHCP服务器服务上各个作用域（scopes）的相关统计信息。"
+
+msgid ""
+"### Example 2: Get scope statistics for a scope on a DHCP server service"
+msgstr "### 示例 2：获取 DHCP 服务器服务上某个作用域的范围统计信息"
+
+msgid ""
+"This example gets the scope statistics for the specified scope on the "
+"specified DHCP server service."
+msgstr "这个示例用于获取指定DHCP服务器服务上指定作用域的作用域统计信息。"
+
+msgid ""
+"### Example 3: Get scope statistics for a scope on a DHCP server service "
+"including failover"
+msgstr "### 示例 3：获取 DHCP 服务器服务上某个作用域（scope）的统计信息（包括故障转移情况）"
+
+msgid ""
+"This example gets the scope statistics including those related to failover, "
+"if the scope is part of a failover relationship, for the specified scope on "
+"the specified DHCP server service."
+msgstr "此示例会获取指定DHCP服务器服务上指定范围内的范围统计信息，包括与故障转移相关的统计信息（前提是该范围属于某个故障转移关系）。"
+
+msgid ""
+"### Example 4: Get scope statistics for scopes on a DHCP server service "
+"including failover"
+msgstr "### 示例 4：获取 DHCP 服务器服务上各个作用域（包括故障转移机制）的范围统计信息"
+
+msgid ""
+"This example gets the scope statistics including those related to failover, "
+"if the scope is part of a failover relationship, for all of the scopes on "
+"the specified DHCP server service."
+msgstr "此示例会获取指定DHCP服务器服务上所有作用域的范围统计信息，包括与故障转移相关的统计信息（如果该作用域属于某个故障转移关系的话）。"
+
+msgid ""
+"### Example 5: Get statistics for scopes on a DHCP server service which have"
+" a portion of their IP address range exhausted"
+msgstr "### 示例 5：获取 DHCP 服务器服务上那些部分 IP 地址范围已被耗尽的作用域的统计信息"
+
+msgid ""
+"This example gets the scope statistics for the scopes on the specified DHCP "
+"server service which have more than 80% of their IP address range exhausted."
+msgstr "这个示例获取了指定DHCP服务器服务上那些IP地址范围已使用超过80%的命名空间的统计信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的方式运行该 cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。该 cmdlet "
+"会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用 `*-Job` 系列 "
+"cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关 Windows "
+"PowerShell® 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the DHCP server service."
+msgstr "指定运行DHCP服务器服务的目标计算机的DNS名称、IPv4地址或IPv6地址。"
+
+msgid ""
+"Specifies that, if the scope is configured for failover, the failover "
+"related scope statistics are returned as part of the scope statistics."
+msgstr "指定如果某个范围被配置为支持故障转移（failover），那么与该故障转移相关的统计信息也将作为该范围统计信息的一部分被返回。"
+
+msgid ""
+"Specifies the scope IDs, in IPv4 address format, for which the statistics "
+"are returned."
+msgstr "指定用于返回统计数据的范围ID（以IPv4地址格式表示）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时执行此cmdlet的最大操作数量。如果省略了此参数或输入了`0`，那么Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算一个最佳的限制值（即并发操作的上限）。这个限制仅适用于当前执行的cmdlet，而不适用于整个会话或整个计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于展示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4ScopeStatistics[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4ScopeStatistics[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DhcpServerv4Scope](./Add-DhcpServerv4Scope.md)"
+msgstr "[Add-DhcpServerv4Scope](./Add-DhcpServerv4Scope.md)"
+
+msgid "[Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+msgstr "[Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+
+msgid "[Remove-DhcpServerv4Scope](./Remove-DhcpServerv4Scope.md)"
+msgstr "[Remove-DhcpServerv4Scope](./Remove-DhcpServerv4Scope.md)"
+
+msgid "[Set-DhcpServerv4Scope](./Set-DhcpServerv4Scope.md)"
+msgstr "[Set-DhcpServerv4Scope](./Set-DhcpServerv4Scope.md)"

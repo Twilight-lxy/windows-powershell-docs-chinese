@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:33:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# EventTracingManagement Module"
+msgstr "# 事件追踪管理模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for Event Tracing "
+"Management-specific cmdlets. It lists the cmdlets in alphabetical order "
+"based on the verb at the beginning of the cmdlet."
+msgstr ""
+"本参考资料提供了针对事件跟踪管理（Event Tracing "
+"Management）特定命令集的cmdlet描述及其语法信息。这些cmdlet按照它们开头所使用的动词字母顺序进行排列。"
+
+msgid "## EventTracingManagement Cmdlets"
+msgstr "## EventTracingManagementCmdlets"
+
+msgid "### [Add-EtwTraceProvider](./Add-EtwTraceProvider.md)"
+msgstr "### [Add-EtwTraceProvider](./Add-EtwTraceProvider.md)"
+
+msgid ""
+"Adds an ETW trace provider to an ETW trace session or AutoLogger session "
+"configuration."
+msgstr "将一个 ETW（事件跟踪）跟踪提供程序添加到 ETW 跟踪会话或 AutoLogger 会话配置中。"
+
+msgid "### [Get-AutologgerConfig](./Get-AutologgerConfig.md)"
+msgstr "### [Get-AutologgerConfig](./Get-AutologgerConfig.md)"
+
+msgid "Enumerates existing AutoLogger session configurations."
+msgstr "列出现有的AutoLogger会话配置。"
+
+msgid "### [Get-EtwTraceProvider](./Get-EtwTraceProvider.md)"
+msgstr "### [Get-EtwTraceProvider](./Get-EtwTraceProvider.md)"
+
+msgid "Enumerates existing AutoLogger session configurations."
+msgstr "列出现有的AutoLogger会话配置。"
+
+msgid "### [Get-EtwTraceSession](./Get-EtwTraceSession.md)"
+msgstr "### [Get-EtwTraceSession](./Get-EtwTraceSession.md)"
+
+msgid "Enumerates ETW sessions on the system."
+msgstr "枚举系统上的 ETW（Event Tracking Wizard）会话。"
+
+msgid "### [New-AutologgerConfig](./New-AutologgerConfig.md)"
+msgstr "### [New-AutologgerConfig](./New-AutologgerConfig.md)"
+
+msgid "Creates an Autologger session configuration in the registry."
+msgstr "在注册表中创建一个自动记录器会话配置。"
+
+msgid "### [New-EtwTraceSession](./New-EtwTraceSession.md)"
+msgstr "### [New-EtwTraceSession](./New-EtwTraceSession.md)"
+
+msgid "Creates an ETW trace session."
+msgstr "创建一个 ETW 跟踪会话（ETW trace session）。"
+
+msgid "### [Remove-AutologgerConfig](./Remove-AutologgerConfig.md)"
+msgstr "### [Remove-AutologgerConfig](./Remove-AutologgerConfig.md)"
+
+msgid "Removes the named AutoLogger session configuration from the registry."
+msgstr "从注册表中删除指定的AutoLogger会话配置信息。"
+
+msgid "### [Remove-EtwTraceProvider](./Remove-EtwTraceProvider.md)"
+msgstr "### [Remove-EtwTraceProvider](./Remove-EtwTraceProvider.md)"
+
+msgid "Removes an ETW provider from the ETW or AutoLogger session."
+msgstr "从 ETW（Event Tracing for Windows）或 AutoLogger 会话中移除一个 ETW 提供者。"
+
+msgid "### [Save-EtwTraceSession](./Save-EtwTraceSession.md)"
+msgstr "### [Save-EtwTraceSession](./Save-EtwTraceSession.md)"
+
+msgid "Saves the events collected by the ETW session to an .etl file."
+msgstr "将ETW会话收集到的事件保存到.etl文件中。"
+
+msgid "### [Send-EtwTraceSession](./Send-EtwTraceSession.md)"
+msgstr "### [Send-EtwTraceSession](./Send-EtwTraceSession.md)"
+
+msgid "Sends the log file of the specified ETW session to a destination."
+msgstr "将指定ETW会话的日志文件发送到目标位置。"
+
+msgid "### [Set-EtwTraceProvider](./Set-EtwTraceProvider.md)"
+msgstr "### [Set-EtwTraceProvider](./Set-EtwTraceProvider.md)"
+
+msgid ""
+"Modifies a provider's enablement settings in an ETW or AutoLogger session."
+msgstr "在 ETW 或 AutoLogger 会话中修改提供者的启用设置。"
+
+msgid "### [Start-EtwTraceSession](./Start-EtwTraceSession.md)"
+msgstr "### [开始 ETWTraceSession 会话](./Start-EtwTraceSession.md)"
+
+msgid "Starts an ETW session with the specified name and settings."
+msgstr "使用指定的名称和设置启动一个ETW会话。"
+
+msgid "### [Stop-EtwTraceSession](./Stop-EtwTraceSession.md)"
+msgstr "### [Stop-EtwTraceSession](./Stop-EtwTraceSession.md)"
+
+msgid "Stops the specified ETW session."
+msgstr "停止指定的 ETW（Events Tracking Writer）会话。"
+
+msgid "### [Update-AutologgerConfig](Update-AutologgerConfig.md)"
+msgstr "### [更新自动记录器配置](Update-AutologgerConfig.md)"
+
+msgid "Modifies an existing AutoLogger session configuration."
+msgstr "修改现有的AutoLogger会话配置。"
+
+msgid "### [Update-EtwTraceSession](Update-EtwTraceSession.md)"
+msgstr "### [Update-EtwTraceSession](Update-EtwTraceSession.md)"
+
+msgid "Modifies an existing ETW session."
+msgstr "修改现有的 ETW 会话。"

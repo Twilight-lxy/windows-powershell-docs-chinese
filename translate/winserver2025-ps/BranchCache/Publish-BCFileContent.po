@@ -1,0 +1,188 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:15:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Publish-BCFileContent"
+msgstr "# 发布 BC 文件内容"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Generates hashes for files in shared folders."
+msgstr "为共享文件夹中的文件生成哈希值。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Publish-BCFileContent** cmdlet generates hashes, also called content "
+"information, for files in shared folders on file servers that have "
+"BranchCache enabled and the BranchCache for Network Files role service "
+"installed."
+msgstr ""
+"**Publish-BCFileContent** cmdlet 会为文件服务器上共享文件夹中的文件生成哈希值（也称为内容信息），这些文件已启用 "
+"BranchCache 功能，并且安装了 BranchCache for Network Files 角色服务。"
+
+msgid ""
+"This cmdlet is also used to stage data for the creation of a data preloading package.\n"
+"Run this cmdlet with the *StageData* parameter on one or more collections of files.\n"
+"Run the **Export-BCCachePackage** cmdlet to produce a data package that contains all the staged data.\n"
+"You can import that data package on remote hosted cache computers."
+msgstr ""
+"此cmdlet还用于准备数据，以便创建数据预加载包。可以使用带有*StageData*参数的此cmdlet对一个或多个文件集合进行处理。然后运行**Export-"
+"BCCachePackage** cmdlet来生成包含所有已处理数据的数据包。您可以将该数据包导入到远程托管的缓存计算机上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Hash the contents of a folder for export"
+msgstr "### 示例 1：对文件夹的内容进行哈希处理以便导出"
+
+msgid ""
+"This command hashes the contents of D:\\share and adds the data to a cache "
+"package that can later be exported and sent to a remote hosted cache server."
+msgstr ""
+"此命令会对 D:\\share 目录中的内容进行哈希处理，并将生成的数据添加到一个缓存包中。该缓存包之后可以导出并发送到远程的托管缓存服务器上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该 cmdlet。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用 `*-Job` "
+"系列 cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，也可以输入会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the file path or the path of a folder that contains files that "
+"this cmdlet hashes."
+msgstr "指定包含该 cmdlet 需要哈希处理的文件的文件路径或文件夹路径。"
+
+msgid ""
+"Indicates that hashes are created for content in subfolders.\n"
+"If you do not specify this parameter, this cmdlet creates hashes only for content in the top folder."
+msgstr "表示将为子文件夹中的内容生成哈希值。如果您不指定此参数，该cmdlet将仅为顶层文件夹中的内容生成哈希值。"
+
+msgid ""
+"Specifies a reference file from a previous run.\n"
+"A reference file contains a list of identifiers that describe the data in a data package.\n"
+"If you specify a reference file, this cmdlet excludes all data described in that file from the output.\n"
+"You can use a reference files to create data packages that only contain the changes from the previous time a data package was created."
+msgstr ""
+"指定一个来自之前运行的参考文件。该参考文件包含一组标识符，用于描述数据包中的数据。如果指定了参考文件，此 cmdlet "
+"会将该文件中描述的所有数据从输出结果中排除。你可以使用参考文件来创建仅包含自上次生成数据包以来发生更改的数据包。"
+
+msgid ""
+"Indicates that this cmdlet saves data to a staging area for future export using the **Export-BCCachePackage** cmdlet.\n"
+"If you do not specify this parameter, hashes are generated for data, but the data is not prepared for export."
+msgstr ""
+"表示此cmdlet会将数据保存到一个临时区域，以便将来使用**Export-BCCachePackage** "
+"cmdlet进行导出。如果您不指定此参数，则系统会为数据生成哈希值，但数据本身不会被准备用于导出。"
+
+msgid ""
+"Specifies a temporary folder to which this cmdlet saves the staging data.\n"
+"If you do not specify a location, this cmdlet uses a default location on the local hard disk.\n"
+"Use this parameter if a large data package is being created that must be housed on a separate hard disk."
+msgstr ""
+"指定一个临时文件夹，用于保存此cmdlet阶段处理的数据。如果没有指定位置，该cmdlet将使用本地硬盘上的默认位置。如果正在创建一个较大的数据包，并且需要将该数据包存储在单独的硬盘上，请使用此参数。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时进行的操作的最大数量，以便运行相应的 Cmdlet。如果省略此参数或输入值 `0`，Windows PowerShell® "
+"会根据计算机上正在运行的 CIM Cmdlet 的数量来计算该 Cmdlet 的最佳限制值。这个限制仅适用于当前的 "
+"Cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Specifies the version of the BranchCache hashing scheme to use.\n"
+"If the version specified is 1, content information is generated according to the scheme used by Windows 7 clients.\n"
+"If version specified is 2, content information is generated according to the more efficient hashing scheme used by client computers that run operating systems later than Windows® 7."
+msgstr ""
+"指定要使用的 BranchCache 哈希方案版本。如果指定的版本是 1，则内容信息将按照 Windows 7 客户端所使用的方案生成；如果指定的版本是"
+" 2，则内容信息将按照运行较新操作系统（晚于 Windows® 7）的客户端计算机所使用的更高效的哈希方案生成。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-BCCachePackage](./Export-BCCachePackage.md)"
+msgstr "[Export-BCCachePackage](./Export-BCCachePackage.md)"

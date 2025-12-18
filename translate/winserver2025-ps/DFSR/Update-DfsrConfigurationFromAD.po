@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:53:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-DfsrConfigurationFromAD"
+msgstr "# 从 Active Directory 更新 DFSR 配置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Initiates an update of the DFS Replication service."
+msgstr "启动DFS复制服务的更新过程。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Update-DfsrConfigurationFromAD** cmdlet initiates an update of the Distributed File System (DFS) Replication service.\n"
+"The cmdlet forces the DFS Replication service to immediately perform a full Lightweight Directory Access Protocol (LDAP) poll of the Active Directory Domain Services (AD DS) for configuration changes, and applies any changes to the service."
+msgstr ""
+"`Update-DfsrConfigurationFromAD` cmdlet 用于启动分布式文件系统（DFS）复制服务的更新。该 cmdlet 强制 "
+"DFS 复制服务立即对 Active Directory 域服务（AD "
+"DS）执行一次完整的轻量级目录访问协议（LDAP）查询，以检测配置变更，并将任何变更应用到该服务中。"
+
+msgid ""
+"By default, the DFS Replication service queries domain controllers every five minutes by using a lightweight check for membership configuration changes in AD DS.\n"
+"This periodic check speeds up the service response to certain types of configuration changes.\n"
+"If the DFS Replication service detects a new membership, a full poll follows.\n"
+"By default, the DFS Replication service performs a full poll every hour."
+msgstr ""
+"默认情况下，DFS复制服务会每隔五分钟查询一次域控制器，通过简单的检查来检测AD "
+"DS中的成员配置是否发生了变化。这种定期检查可以加快服务对某些类型配置变化的响应速度。如果DFS复制服务发现新的成员信息，它会随后进行一次全面的轮询。默认情况下，DFS复制服务每小时会执行一次全面轮询。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update the DFS Replication service"
+msgstr "### 示例 1：更新DFS复制服务"
+
+msgid ""
+"This command forces the remote DFS Replication servers SRV01 and SRV02 to "
+"poll AD DS immediately and apply any changes to the DFS Replication service."
+msgstr "此命令强制远程DFS复制服务器SRV01和SRV02立即查询AD DS，并将任何更改应用到DFS复制服务中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of names of member computers.\n"
+"You can use a comma separated list and the wildcard character (*).\n"
+"The cmdlet forces the DFS Replication service on the computers to poll Active Directory immediately."
+msgstr ""
+"指定一组成员计算机的名称。可以使用逗号分隔的列表以及通配符（*）。此cmdlet会强制这些计算机上的DFS复制服务立即向Active "
+"Directory发送查询请求。"
+
+msgid ""
+"If you do not specify this parameter, the cmdlet uses the local computer.\n"
+"To return a response, use the *Verbose* parameter."
+msgstr "如果您不指定此参数，cmdlet 将使用本地计算机。要返回响应，请使用 *Verbose* 参数。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsrMember](./Get-DfsrMember.md)"
+msgstr "[Get-DfsrMember](./Get-DfsrMember.md)"

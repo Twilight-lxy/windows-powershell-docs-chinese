@@ -1,0 +1,115 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:31:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# BitLocker Module"
+msgstr "# BitLocker模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all BitLocker "
+"cmdlets. It lists the cmdlets in alphabetical order based on the verb at the"
+" beginning of the cmdlet."
+msgstr ""
+"这个参考资料提供了所有 BitLocker 命令的功能描述和语法说明。这些命令是按照每个命令开头所使用的动词（即命令的操作类型）的字母顺序排列的。"
+
+msgid "## BitLocker Cmdlets"
+msgstr "## BitLocker cmdlets（BitLocker命令集）"
+
+msgid "### [Add-BitLockerKeyProtector](./Add-BitLockerKeyProtector.md)"
+msgstr "### [Add-BitLockerKeyProtector](./Add-BitLockerKeyProtector.md)"
+
+msgid "Adds a key protector for a BitLocker volume."
+msgstr "为 BitLocker 卷添加一个密钥保护器。"
+
+msgid ""
+"### [BackupToAAD-BitLockerKeyProtector](./BackupToAAD-"
+"BitLockerKeyProtector.md)"
+msgstr ""
+"### [BackupToAAD-BitLockerKeyProtector](./BackupToAAD-"
+"BitlockerKeyProtector.md)"
+
+msgid "Saves a key protector for a BitLocker volume in Microsoft Entra ID."
+msgstr "在 Microsoft Entra ID 中为 BitLocker 卷保存一个密钥保护器。"
+
+msgid "### [Backup-BitLockerKeyProtector](./Backup-BitLockerKeyProtector.md)"
+msgstr "### [Backup-BitLockerKeyProtector](./Backup-BitLockerKeyProtector.md)"
+
+msgid "Saves a key protector for a BitLocker volume in AD DS."
+msgstr "在 Active Directory Domain Services (AD DS) 中为 BitLocker 卷保存一个密钥保护器。"
+
+msgid "### [Clear-BitLockerAutoUnlock](./Clear-BitLockerAutoUnlock.md)"
+msgstr "### [Clear-BitLockerAutoUnlock](./Clear-BitLockerAutoUnlock.md)"
+
+msgid "Removes BitLocker automatic unlocking keys."
+msgstr "删除BitLocker的自动解锁密钥。"
+
+msgid "### [Disable-BitLocker](./Disable-BitLocker.md)"
+msgstr "### [禁用BitLocker](./ Disable-BitLocker.md)"
+
+msgid "Disables BitLocker Drive Encryption for a volume."
+msgstr "禁用卷的BitLocker驱动器加密功能。"
+
+msgid "### [Disable-BitLockerAutoUnlock](./Disable-BitLockerAutoUnlock.md)"
+msgstr "### [禁用 BitLocker 自动解锁功能](./ Disable-BitLockerAutoUnlock.md)"
+
+msgid "Disables automatic unlocking for a BitLocker volume."
+msgstr "禁用BitLocker卷的自动解锁功能。"
+
+msgid "### [Enable-BitLocker](./Enable-BitLocker.md)"
+msgstr "### [Enable-BitLocker](./Enable-BitLocker.md)"
+
+msgid "Enables BitLocker Drive Encryption for a volume."
+msgstr "为某个卷启用 BitLocker 磁盘加密功能。"
+
+msgid "### [Enable-BitLockerAutoUnlock](./Enable-BitLockerAutoUnlock.md)"
+msgstr "### [Enable-BitLockerAutoUnlock](./Enable-BitLockerAutoUnlock.md)"
+
+msgid "Enables automatic unlocking for a BitLocker volume."
+msgstr "启用BitLocker卷的自动解锁功能。"
+
+msgid "### [Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+msgstr "### [Get-BitLockerVolume](./Get-BitLockerVolume.md)"
+
+msgid "Gets information about volumes that BitLocker can protect."
+msgstr "获取有关 BitLocker 可以保护的卷的信息。"
+
+msgid "### [Lock-BitLocker](./Lock-BitLocker.md)"
+msgstr "### [Lock-BitLocker](./Lock-BitLocker.md)"
+
+msgid "Prevents access to encrypted data on a BitLocker volume."
+msgstr "防止访问使用 BitLocker 加密技术保护的卷中的加密数据。"
+
+msgid "### [Remove-BitLockerKeyProtector](./Remove-BitLockerKeyProtector.md)"
+msgstr "### [Remove-BitLockerKeyProtector](./Remove-BitLockerKeyProtector.md)"
+
+msgid "Removes a key protector for a BitLocker volume."
+msgstr "移除BitLocker卷的保护机制（即删除用于保护该卷的关键文件或设置）。"
+
+msgid "### [Resume-BitLocker](./Resume-BitLocker.md)"
+msgstr "### [Resume-BitLocker](./Resume-BitLocker.md)"
+
+msgid "Restores Bitlocker encryption for the specified volume."
+msgstr "恢复指定卷的Bitlocker加密功能。"
+
+msgid "### [Suspend-BitLocker](./Suspend-BitLocker.md)"
+msgstr "### [Suspend-BitLocker](./Suspend-Bitlocker.md)"
+
+msgid "Suspends Bitlocker encryption for the specified volume."
+msgstr "暂停指定卷上的Bitlocker加密功能。"
+
+msgid "### [Unlock-BitLocker](./Unlock-BitLocker.md)"
+msgstr "### [解锁 BitLocker](./Unlock-BitLocker.md)"
+
+msgid "Restores access to data on a BitLocker volume."
+msgstr "恢复对使用 BitLocker 加密技术的卷中的数据的访问权限。"

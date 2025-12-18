@@ -1,0 +1,108 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:04:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterResourceType"
+msgstr "# Get-ClusterResourceType"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets information about one or more resource types in a failover cluster."
+msgstr "获取关于故障转移集群中一种或多种资源类型的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ClusterResourceType` cmdlet gets information about one or more resource types in a\n"
+"failover cluster. Obtain information such as the name of the dynamic-link library (DLL) through\n"
+"which the Cluster service communicates with a particular resource type."
+msgstr ""
+"`Get-ClusterResourceType` cmdlet "
+"可以获取关于故障转移集群中一种或多种资源类型的信息。例如，它可以提供动态链接库（DLL）的名称，该 DLL 用于让 Cluster "
+"服务与特定资源类型进行通信。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example lists all the resource types that can be used in configurations"
+" on the local cluster."
+msgstr "这个示例列出了可以在本地集群的配置中使用的所有资源类型。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example gets information about the `File Server` resource type on the local cluster, and\n"
+"displays the information in the form of a list."
+msgstr "这个示例获取有关本地集群中“文件服务器”资源类型的信息，并以列表的形式显示这些信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此cmdlet的集群名称。如果该参数的输入为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies the cluster on which to enumerate the cluster resource types."
+msgstr "指定用于枚举集群资源类型的集群。"
+
+msgid "Specifies the name of the cluster resource type to get."
+msgstr "指定要获取的集群资源类型的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FAILoverClusters.PowerShell.Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResourceType"
+msgstr "### MicrosoftFailoverClusters.PowerShell_clusterResourceType"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterResourceType](./Add-ClusterResourceType.md)"
+msgstr "[Add-ClusterResourceType](./Add-ClusterResourceType.md)"
+
+msgid "[Remove-ClusterResourceType](./Remove-ClusterResourceType.md)"
+msgstr "[Remove-ClusterResourceType](./Remove-ClusterResourceType.md)"

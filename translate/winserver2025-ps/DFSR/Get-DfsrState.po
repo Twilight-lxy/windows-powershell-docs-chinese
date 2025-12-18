@@ -1,0 +1,88 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:40:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrState"
+msgstr "# Get-DfsrState"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the DFS Replication state for a member."
+msgstr "获取某个成员的DFS复制状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-DfsrState** cmdlet gets the overall Distributed File System (DFS) Replication state for a computer in regard to its replication group partners.\n"
+"The cmdlet returns both inbound and outbound file replication information, such as files currently replicating and files immediately queued to replicate next."
+msgstr ""
+"`Get-DfsrState` cmdlet 可以获取计算机在其复制组伙伴方面的分布式文件系统（DFS）复制状态。该 cmdlet "
+"会返回传入和传出的文件复制信息，例如当前正在复制的文件以及接下来即将被复制的文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the DFS Replication state for a member"
+msgstr "### 示例 1：获取某个成员的 DFS 复制状态"
+
+msgid ""
+"This command gets the list of files currently replicating or queued inbound "
+"and outbound from the computer named SRV02."
+msgstr "这个命令可以获取当前正在从名为SRV02的计算机复制文件或排队进行入站/出站复制的文件列表。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of a replication member computer.\n"
+"If you do not specify this parameter, the cmdlet uses the current computer."
+msgstr "指定复制成员计算机的名称。如果您不指定此参数，该cmdlet将使用当前计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrUpdate"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrUpdate"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"
+msgstr "[Get-DfsReplicationGroup](./Get-DfsReplicationGroup.md)"

@@ -1,0 +1,88 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:34:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-CIPolicyIdInfo"
+msgstr "# 获取CIPolicyId信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Displays Code Integrity policy information."
+msgstr "显示代码完整性策略的相关信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-CIPolicyIdInfo** cmdlet displays Code Integrity policy information.\n"
+"Specify the .xml file of the policy to modify."
+msgstr ""
+"`Get-CIPolicyIdInfo` cmdlet 用于显示代码完整性（Code Integrity）策略的相关信息。你需要指定要修改的策略对应的 "
+"`.xml` 文件。"
+
+msgid ""
+"This cmdlet returns human readable content.\n"
+"It is not intended for use with other cmdlets."
+msgstr "这个cmdlet返回的是人类可读的内容，并非用于与其他cmdlet配合使用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Display Code Integrity policy information"
+msgstr "#### 示例 1：显示代码完整性策略信息"
+
+msgid ""
+"This command displays the Code Integrity policy information for the policy in the stored in the Policy03.xml file.\n"
+"This policy has values for both name and ID."
+msgstr "此命令会显示存储在Policy03.xml文件中的代码完整性策略的相关信息。该策略同时具有“名称”和“ID”这两个属性的值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the path of a Code Integrity policy .xml file."
+msgstr "指定代码完整性策略（Code Integrity policy）的.xml文件的路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CIPolicyIdInfo"
+msgstr "### CIPolicyIdInfo"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-CIPolicyIdInfo](./Set-CIPolicyIdInfo.md)"
+msgstr "[Set-CIPolicyIdInfo](./Set-CIPolicyIdInfo.md)"

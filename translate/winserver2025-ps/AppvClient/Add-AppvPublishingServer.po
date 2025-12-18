@@ -1,0 +1,125 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:02:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-AppvPublishingServer"
+msgstr "# 添加 AppvPublishingServer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds a publishing server for the computer that runs the App-V client."
+msgstr "为运行App-V客户端的计算机添加一个发布服务器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-AppvPublishingServer** cmdlet adds a new publishing server for the computer that runs the Microsoft Application Virtualization (App-V) client to connect to.\n"
+"After the server has been added, the computer that runs the App-V client can use the server to obtain publishing refresh data, stream packages, and perform other operations."
+msgstr ""
+"`Add-AppvPublishingServer` cmdlet 为运行 Microsoft "
+"应用虚拟化（App-V）客户端的那台计算机添加一个新的发布服务器，以便该客户端可以连接到这个服务器。添加服务器后，运行 App-V "
+"客户端的计算机就可以使用该服务器来获取发布更新数据、流式传输软件包以及执行其他操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies whether to turn on the refreshing of the publishing server for all packages that are published globally.\n"
+"You can set the refresh to be at the time of logon or on a defined time interval."
+msgstr "该设置用于指定是否启用对所有全局发布的软件包的更新功能。您可以将其设置为在登录时自动更新，或者按照指定的时间间隔进行更新。"
+
+msgid ""
+"Specifies the time interval for the refresh of globally published packages."
+msgstr "指定全局发布软件包更新的时间间隔。"
+
+msgid ""
+"Specifies the unit of time measurement.\n"
+"The acceptable values for this parameter are: day and hour."
+msgstr "指定时间测量单位。该参数的可接受值为：day（天）和 hour（小时）。"
+
+msgid ""
+"Specifies whether a refresh of all packages published to globally occurs "
+"every time that a user logs into the target computer."
+msgstr "指定每次用户登录目标计算机时，是否都会刷新所有已发布到全局范围内的软件包。"
+
+msgid "Specifies the friendly name of the publishing server."
+msgstr "指定发布服务器的友好名称（即便于人们识别的名称）。"
+
+msgid "Specifies the URL path of the App-V publishing server."
+msgstr "指定 App-V 发布服务器的 URL 路径。"
+
+msgid ""
+"Specifies whether to turn on the refreshing of the publishing server for all packages that are published to the user.\n"
+"The refresh can be set to be at the time of logon or on a defined time interval."
+msgstr "指定是否启用对发布给用户的所有包的更新机制。更新可以设置在登录时自动进行，或者按照预定义的时间间隔来执行。"
+
+msgid "Specifies the time interval for refreshes of user-published packages."
+msgstr "指定用户发布的软件包更新的时间间隔。"
+
+msgid ""
+"Specifies the unit of time measurement.\n"
+"The acceptable values for this parameter are: day and hour."
+msgstr "指定时间测量单位。该参数的可接受值为：day（天）和hour（小时）。"
+
+msgid ""
+"Specifies whether a refresh of all packages published to the user occurs "
+"every time that a user logs into the target computer."
+msgstr "指定是否在用户每次登录目标计算机时都会刷新所有发布给该用户的软件包。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.AppvAgent.AppvPublishingServer"
+msgstr "### Microsoft.AppvAgent.AppvPublishingServer"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+msgstr "[Get-AppvPublishingServer](./Get-AppvPublishingServer.md)"
+
+msgid "[Remove-AppvPublishingServer](./Remove-AppvPublishingServer.md)"
+msgstr "[Remove-AppvPublishingServer](./Remove-AppvPublishingServer.md)"
+
+msgid "[Set-AppvPublishingServer](./Set-AppvPublishingServer.md)"
+msgstr "[Set-AppvPublishingServer](./Set-AppvPublishingServer.md)"
+
+msgid "[Sync-AppvPublishingServer](./Sync-AppvPublishingServer.md)"
+msgstr "[Sync-AppvPublishingServer](./Sync-AppvPublishingServer.md)"

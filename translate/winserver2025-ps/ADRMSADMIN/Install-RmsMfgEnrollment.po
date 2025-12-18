@@ -1,0 +1,125 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:53:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您使用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-RmsMfgEnrollment"
+msgstr "# 安装 RmsMfgEnrollment"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enrolls an AD RMS server with Microsoft Federation Gateway."
+msgstr "将 AD RMS 服务器注册到 Microsoft Federation Gateway 中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Install-RmsMfgEnrollment** cmdlet enrolls an Active Directory Rights "
+"Management Services (AD RMS) server with the Microsoft Federation Gateway."
+msgstr ""
+"`Install-RmsMfgEnrollment` 这个 cmdlet 用于将 Active Directory 权限管理服务（AD "
+"RMS）服务器注册到 Microsoft Federation Gateway 中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Enroll in the Microsoft Federation Gateway using the default "
+"certificate"
+msgstr "### 示例 1：使用默认证书注册 Microsoft Federation Gateway"
+
+msgid ""
+"This command enrolls the AD RMS cluster in the Microsoft Federation Gateway "
+"by retrieving and using the thumbprint hash of the AD RMS default "
+"certificate."
+msgstr ""
+"该命令通过检索并使用 AD RMS 默认证书的指纹哈希值，将 AD RMS 集群注册到 Microsoft Federation Gateway 中。"
+
+msgid ""
+"### Example 2: Enroll in the Microsoft Federation Gateway using a specified "
+"certificate"
+msgstr "### 示例 2：使用指定的证书注册到 Microsoft Federation Gateway"
+
+msgid ""
+"This command enrolls the AD RMS cluster in the Microsoft Federation Gateway "
+"using the thumbprint hash of a non-default certificate."
+msgstr "该命令使用非默认证书的指纹哈希值，将 AD RMS 集群注册到 Microsoft Federation Gateway 中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a string containing the thumbprint hash of the certificate being "
+"used to enroll with the Microsoft Federation Gateway."
+msgstr "指定一个字符串，其中包含用于向 Microsoft Federation Gateway 注册的证书的指纹哈希值。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Indicates that the thumbprint hash of the AD RMS default certificate should "
+"be retrieved and used to enroll with the Microsoft Federation Gateway."
+msgstr "这表示需要获取 AD RMS 默认证书的指纹哈希值，并使用该哈希值来注册 Microsoft Federation Gateway。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+
+msgid "[Uninstall-RmsMfgEnrollment](./Uninstall-RmsMfgEnrollment.md)"
+msgstr "[卸载-RmsMfgEnrollment](./Uninstall-RmsMfgEnrollment.md)"

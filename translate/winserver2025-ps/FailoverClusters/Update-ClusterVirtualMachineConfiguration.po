@@ -1,0 +1,120 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:34:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-ClusterVirtualMachineConfiguration"
+msgstr "# 更新集群虚拟机配置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Refreshes the configuration of a clustered virtual machine within a failover"
+" cluster."
+msgstr "刷新故障转移集群中集群虚拟机的配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Update-ClusterVirtualMachineConfiguration` cmdlet refreshes the configuration of a clustered\n"
+"virtual machine within a failover cluster. Use this cmdlet if a hardware device, such as a network\n"
+"adapter, is to be added or removed or the hardware configuration settings, such as the setting for\n"
+"virtual memory, are being changed for a clustered virtual machine."
+msgstr ""
+"`Update-ClusterVirtualMachineConfiguration` 这个 cmdlet "
+"用于更新故障转移集群中集群化虚拟机的配置。当需要添加或删除某个硬件设备（例如网络适配器），或者需要更改该集群化虚拟机的硬件配置设置（例如虚拟内存设置）时，可以使用此"
+" cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Refresh a clustered virtual machine on the local cluster"
+msgstr "### 示例 1：刷新本地集群中的集群化虚拟机"
+
+msgid ""
+"This example refreshes the clustered virtual machine named `Virtual Machine Configuration VM1` on\n"
+"the local cluster."
+msgstr "这个示例会刷新本地集群中名为“Virtual Machine Configuration VM1”的集群化虚拟机。"
+
+msgid "### Example 2: Refresh a clustered virtual machine on a cluster"
+msgstr "### 示例 2：刷新集群中的虚拟机"
+
+msgid ""
+"This example refreshes the clustered virtual machine named `Virtual Machine Configuration VM2` on\n"
+"the cluster named `cluster1`. The example uses splatting to pass parameter values from\n"
+"the `$Parameters` variable to the command. Learn more about\n"
+"[Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)."
+msgstr ""
+"这个示例会刷新名为 `Virtual Machine Configuration VM2` 的集群虚拟机，该虚拟机位于名为 `cluster1` "
+"的集群中。示例使用了 “Splatting” 技术，将参数值从 `$Parameters` 变量传递给相应的命令。有关 "
+"[Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)"
+" 的更多信息，请参阅相关文档。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the clustered virtual machine resource to update."
+msgstr "指定要更新的集群化虚拟机资源。"
+
+msgid ""
+"Specifies the name of the clustered virtual machine resource to update."
+msgstr "指定要更新的集群化虚拟机资源的名称。"
+
+msgid "Specifies the virtual machine identifier (ID)."
+msgstr "指定虚拟机的标识符（ID）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters.PowerShellClusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters.PowerShellClusterResource"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterVirtualMachineRole](./Add-ClusterVirtualMachineRole.md)"
+msgstr "[Add-ClusterVirtualMachineRole](./Add-ClusterVirtualMachineRole.md)"
+
+msgid "[Move-ClusterVirtualMachineRole](./Move-ClusterVirtualMachineRole.md)"
+msgstr "[Move-ClusterVirtualMachineRole](./Move-ClusterVirtualMachineRole.md)"

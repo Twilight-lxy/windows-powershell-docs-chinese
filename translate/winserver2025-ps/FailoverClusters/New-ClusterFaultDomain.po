@@ -1,0 +1,152 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:09:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-ClusterFaultDomain"
+msgstr "# 新集群故障域（New-ClusterFaultDomain）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a fault domain in the cluster."
+msgstr "在集群中创建一个故障域。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `New-ClusterFaultDomain` cmdlet creates a fault domain in the cluster. Additionally, you can\n"
+"specify the relationship between the fault domains when they are created."
+msgstr ""
+"`New-ClusterFaultDomain` cmdlet 用于在集群中创建故障域。此外，在创建故障域时，您还可以指定这些故障域之间的关系。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Create a cluster fault domain in an existing fault domain"
+msgstr "### 示例 1：在现有的故障域中创建一个集群故障域"
+
+msgid ""
+"This command creates a cluster fault domain of type Rack named `Rack1` in the existing fault domain\n"
+"named `Site001`."
+msgstr "此命令在现有的故障域“Site001”中创建一个类型为“Rack”的集群故障域，命名为“Rack1”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，随后会显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[关于任务（about_Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)\n"
+"or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies the description of the cluster fault domain that this cmdlet "
+"creates."
+msgstr "指定此cmdlet创建的集群故障域的描述信息。"
+
+msgid "Specifies the name of the fault domain."
+msgstr "指定故障域的名称。"
+
+msgid "Specifies the type of the fault domain that this cmdlet creates."
+msgstr "指定此cmdlet创建的故障域的类型。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid ""
+"Any flags that need to be passed in when creating the cluster fault domain."
+msgstr "在创建集群故障域时需要传递的任何标志（flags）。"
+
+msgid ""
+"A string describing the location of the cluster fault domain that will be "
+"created."
+msgstr "一段用于描述将要创建的集群故障域位置的字符串。"
+
+msgid ""
+"Specifies the name of the cluster fault domain that this cmdlet creates."
+msgstr "指定此cmdlet创建的集群故障域的名称。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值（即并发操作的数量）。此限制仅适用于当前运行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterFaultDomain](./Get-ClusterFaultDomain.md)"
+msgstr "[Get-ClusterFaultDomain](./Get-ClusterFaultDomain.md)"
+
+msgid "[Remove-ClusterFaultDomain](./Remove-ClusterFaultDomain.md)"
+msgstr "[Remove-ClusterFaultDomain](./Remove-ClusterFaultDomain.md)"
+
+msgid "[Set-ClusterFaultDomain](./Set-ClusterFaultDomain.md)"
+msgstr "[Set-ClusterFaultDomain](./Set-ClusterFaultDomain.md)"

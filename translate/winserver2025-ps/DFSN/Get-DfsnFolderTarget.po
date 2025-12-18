@@ -1,0 +1,148 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:19:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsnFolderTarget"
+msgstr "# Get-DfsnFolderTarget"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets settings for targets of a DFS namespace folder."
+msgstr "获取DFS命名空间文件夹的目标设置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfsnFolderTarget** cmdlet gets settings for targets of a Distributed File System (DFS)\n"
+"namespace folder. You can specify a DFS namespace folder path to see all the targets for that path.\n"
+"You can specify a namespace path and a target path to see settings for a particular target."
+msgstr ""
+"`Get-DfsnFolderTarget` cmdlet 可用于获取分布式文件系统（DFS）命名空间文件夹的目标设置。您可以指定一个 DFS "
+"命名空间文件夹路径来查看该路径下的所有目标；或者同时指定命名空间路径和目标路径，以查看特定目标的详细设置。"
+
+msgid ""
+"For more information about DFS namespaces, see\n"
+"[DFS Namespaces overview](/windows-server/storage/dfs-namespaces/dfs-overview)."
+msgstr ""
+"有关DFS命名空间的更多信息，请参阅[DFS命名空间概述](/windows-server/storage/dfs-namespaces/dfs-"
+"overview)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get settings for a target"
+msgstr "### 示例 1：获取目标的设置信息"
+
+msgid ""
+"This command gets settings for the target of the `\\\\Contoso\\AccountingResources\\LegacySoftware`\n"
+"folder with the folder target of `\\\\Contoso-FS\\LegacySoftware`."
+msgstr ""
+"此命令用于获取“\\\\Contoso\\AccountingResources\\LegacySoftware”文件夹的设置信息，其中该文件夹的目标路径为“\\\\Contoso-"
+"FS\\LegacySoftware”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "将该cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个代表该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在当前会话中执行其他操作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession) or\n"
+"[Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Specifies a path for the root folder of a DFS namespace."
+msgstr "指定一个DFS命名空间的根文件夹的路径。"
+
+msgid ""
+"Specifies a path for the target of a DFS namespace folder. This cmdlet gets settings for the target\n"
+"that has the path specified."
+msgstr "指定一个DFS命名空间文件夹的目标路径。此cmdlet会获取与该路径对应的目标的设置信息。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令行脚本（cmdlet）的最大操作数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 数量来计算一个最优的并发限制。这个并发限制仅适用于当前执行的命令行脚本，而不适用于整个会话或整个计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, `-ErrorVariable`,\n"
+"`-InformationAction`, `-InformationVariable`, `-OutVariable`, `-OutBuffer`, `-PipelineVariable`,\n"
+"`-Verbose`, `-WarningAction`, and `-WarningVariable`. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance[]"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-DfsnFolderTarget](./New-DfsnFolderTarget.md)"
+msgstr "[New-DfsnFolderTarget](./New-DfsnFolderTarget.md)"
+
+msgid "[Remove-DfsnFolderTarget](./Remove-DfsnFolderTarget.md)"
+msgstr "[Remove-DfsnFolderTarget](./Remove-DfsnFolderTarget.md)"
+
+msgid "[Set-DfsnFolderTarget](./Set-DfsnFolderTarget.md)"
+msgstr "[Set-DfsnFolderTarget](./Set-DfsnFolderTarget.md)"

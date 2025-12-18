@@ -1,0 +1,195 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:46:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-DedupVolume"
+msgstr "# Enable-DedupVolume"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Enables data deduplication on one or more volumes."
+msgstr "支持在一个或多个卷上实现数据去重功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Enable-DedupVolume` cmdlet enables data deduplication on one or more volumes. You can use the\n"
+"`Set-DedupVolume` cmdlet to customize the data deduplication settings. Data deduplication is\n"
+"disabled by default. Data deduplication is not supported for certain volumes, such as any volume\n"
+"that is not a NTFS file system or any volume that is smaller than 2 GB."
+msgstr ""
+"`Enable-DedupVolume` cmdlet 可以在一个或多个卷上启用数据去重功能。你可以使用 `Set-DedupVolume` "
+"cmdlet 来自定义数据去重的设置。默认情况下，数据去重是处于禁用状态的。某些卷不支持数据去重功能，例如那些不是 NTFS 文件系统的卷，或者体积小于"
+" 2 GB 的卷。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable data deduplication on volumes"
+msgstr "### 示例 1：在卷上启用数据去重功能"
+
+msgid ""
+"This command enables data deduplication on volumes `D:`, `E:`, and `F:`. This command does not\n"
+"specify a value for the **UsageType** parameter, and, therefore, the cmdlet uses defaults for\n"
+"general purpose file server operations."
+msgstr ""
+"此命令可对`D:`、`E:`和`F:`这些卷启用数据去重功能。该命令未为**UsageType**参数指定具体值，因此该cmdlet会使用适用于通用文件服务器操作的默认设置。"
+
+msgid ""
+"### Example 2: Enable data deduplication on a volume for Hyper-V storage"
+msgstr "### 示例 2：为 Hyper-V 存储在卷上启用数据去重功能"
+
+msgid ""
+"This command enables data duplication on the D: volume. The command specifies Hyper-V storage as the\n"
+"usage type for this volume."
+msgstr "此命令允许在D:卷上进行数据复制。该命令指定了使用Hyper-V存储作为该卷的存储类型。"
+
+msgid "### Example 3: Enable data deduplication on a volume by using a GUID"
+msgstr "### 示例 3：使用 GUID 启用卷上的数据去重功能"
+
+msgid ""
+"This command enables data deduplication for the volume that has the GUID\n"
+"`26a21bda-a627-11d7-9931-806e6f6e6963`."
+msgstr "此命令可为GUID为`26a21bda-a627-11d7-9931-806e6f6e6963`的卷启用数据去重功能。"
+
+msgid "### Example 4: Resume I/O activity on a specified volume/"
+msgstr "### 示例 4：恢复对指定卷的 I/O 活动"
+
+msgid ""
+"This command resumes I/O activity for data deduplication on the specified volume. Effectively, this\n"
+"command causes the data deduplication file system mini-filter to attach to the specified volume"
+msgstr "此命令会恢复指定卷上的数据去重I/O操作。实际上，该命令会使数据去重文件系统迷你过滤器连接到指定的卷上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that take a long time to\n"
+"complete."
+msgstr "将该cmdlet作为后台作业运行。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command\n"
+"prompt. You can continue to work in the session while the job completes. To manage the job, use the\n"
+"`*-Job` cmdlets. To get the job results, use the\n"
+"[Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see\n"
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession) or\n"
+"[Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Indicates that data access to deduplicated files on the volume is enabled."
+msgstr "表示已启用对卷上已去重文件的数据访问功能。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet. If\n"
+"this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an\n"
+"optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the\n"
+"computer. The throttle limit applies only to the current cmdlet, not to the session or to the\n"
+"computer."
+msgstr ""
+"该参数用于指定可以同时执行的操作的最大数量。如果省略此参数或输入值为 `0`，那么 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM コマンド的数量来计算该コマンド的最佳限制值。此限制仅适用于当前执行的コマンド，而不影响整个会话或计算机本身。"
+
+msgid ""
+"Specifies the expected type of workload for the volume. This cmdlet sets several low-level settings\n"
+"to default values that are appropriate to the usage type that you specify. If you specify this\n"
+"parameter for a volume that already has data deduplication enabled, the cmdlet modifies the settings\n"
+"to the appropriate default values. If you run this cmdlet on a volume that already has data\n"
+"deduplication enabled but do not specify this parameter, the cmdlet does not change the usage type.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"指定卷的工作负载类型。此cmdlet会将若干低级设置设置为适合您所指定使用类型的默认值。如果您为已启用数据去重的卷指定该参数，cmdlet会将其设置修改为相应的默认值；如果您在已启用数据去重的卷上运行此cmdlet但不指定该参数，则cmdlet不会更改该卷的使用类型。该参数的可接受值为："
+
+msgid ""
+"If you specify a value of HyperV, the computer that has data deduplication enabled cannot be the\n"
+"same computer that runs Hyper-V. The two computers must communicate remotely."
+msgstr ""
+"如果您指定了一个 HyperV 的值，那么启用数据去重的计算机不能与运行 HyperV 的同一台计算机相同。这两台计算机必须通过远程方式进行通信。"
+
+msgid ""
+"Specifies an array of system volumes. Specify one or more volume IDs, drive letters, or volume GUID\n"
+"paths. For drive letters, use the format D:. For volume GUID paths, use the format\n"
+"`\\\\?\\Volume{{GUID}}\\`. Separate multiple volumes with a comma."
+msgstr ""
+"指定一组系统卷。可以提供一个或多个卷ID、驱动器字母或卷GUID路径。对于驱动器字母，请使用格式“D:”。对于卷GUID路径，请使用格式“\\\\?\\Volume{{GUID}}”。多个卷之间用逗号分隔。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid ""
+"The **Microsoft.Management.Infrastructure.CimInstance** object is a wrapper class that displays\n"
+"Windows Management Instrumentation (WMI) objects. The path after the pound sign (`#`) provides the\n"
+"namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-DedupVolume](./Disable-DedupVolume.md)"
+msgstr "[ Disable-DedupVolume](./Disable-DedupVolume.md)"
+
+msgid "[Get-DedupVolume](./Get-DedupVolume.md)"
+msgstr "[Get-DedupVolume](./Get-DedupVolume.md)"
+
+msgid "[Set-DedupVolume](./Set-DedupVolume.md)"
+msgstr "[Set-DedupVolume](./Set-DedupVolume.md)"

@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:41:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Get-WindowsReservedStorageState"
+msgstr "# Get-WindowsReservedStorageState"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the reserved storage state of the image."
+msgstr "获取图像的预留存储状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"Gets the current state of reserved storage. This command is only supported "
+"with the online Windows image."
+msgstr "获取预留存储空间的当前状态。此命令仅支持在线Windows镜像。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This command gets the Windows reserved storage state on the local host."
+msgstr "此命令用于获取本地主机上的Windows预留存储空间状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the output level shown in the logs.\n"
+"The accepted values are as follows:\n"
+"- Errors (or '0') - shows error events. Could be combined with Warnings or WarningsInfo\n"
+"- Warnings (or '1') - shows warning events\n"
+"- WarningsInfo (or '2') - shows information log records"
+msgstr ""
+"用于指定日志中显示的输出级别。可选的值如下：  \n"
+"- Errors（或“0”）：显示错误事件。可以与其他级别（如Warnings或WarningsInfo）结合使用。  \n"
+"- Warnings（或“1”）：显示警告事件。  \n"
+"- WarningsInfo（或“2”）：显示信息日志记录。"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 虚拟磁盘中的临时存储空间，其容量可能低至 32 MB。日志文件会自动被归档；归档后的日志文件名会加上 `.bak` "
+"扩展名，同时系统会生成一个新的日志文件。每次日志文件被归档时，原来的 `.bak` 文件都会被覆盖。如果使用的是未加入域的网络共享资源，请在使用 "
+"`DISM` 命令设置日志路径之前，先通过 `net use` 命令并输入相应的域凭据来配置访问权限。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，该目录将在执行维护操作（如文件提取）时被使用。此目录必须存在于本地系统中。如果未指定临时目录，则会使用 "
+"`\\Windows\\%Temp%\\` 目录，并且每次运行 DISM "
+"时，该目录下的子目录名称都会是一个随机生成的十六进制值。每次维护操作完成后，临时目录中的内容都会被删除。不建议将网络共享位置用作用于展开安装包（.cab"
+" 或 .msu 文件）的临时目录。因此，在执行维护操作期间用于提取文件的临时目录应当是本地目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### Microsoft.Dism.Commands.LogLevel"
+msgstr "### Microsoft.Dismcommands.LogLevel"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.ReservedStorageStateObject"
+msgstr "### Microsoft.Dism Commands.ReservedStorageStateObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "Supported on Windows 10, version 2004"
+msgstr "支持 Windows 10 的 2004 版本"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Set-WindowsReservedStorageState](./Set-WindowsReservedStorageState.md)"
+msgstr ""
+"[Set-WindowsReservedStorageState](./Set-WindowsReservedStorageState.md)"

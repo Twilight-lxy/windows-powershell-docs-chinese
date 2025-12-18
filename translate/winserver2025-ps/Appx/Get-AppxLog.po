@@ -1,0 +1,144 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:20:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-AppxLog"
+msgstr "# 获取 AppX 日志"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets an app package installation log."
+msgstr "获取应用程序包安装日志。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### All (Default)"
+msgstr "### 全部（默认设置）"
+
+msgid "### ActivityId"
+msgstr "### ActivityId"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-AppxLog` cmdlet gets the app package installation log created during the deployment of\n"
+"an app package. An app package has an `.msix` or `.appx` file extension. The log contains errors,\n"
+"warnings, and additional information about the processes initiated by cmdlets in the Appx Windows\n"
+"PowerShell module."
+msgstr ""
+"`Get-AppxLog` cmdlet 可以获取在应用程序包部署过程中生成的安装日志。应用程序包的文件扩展名为 `.msix` 或 "
+"`.appx`。该日志包含了错误信息、警告提示，以及有关 Appx Windows PowerShell 模块中使用的 cmdlets "
+"启动的进程的其他详细信息。"
+
+msgid ""
+"When `Add-AppxPackage` or `Remove-AppxPackage` report a failure, they return the **ActivityID** to\n"
+"use with `Get-AppxLog`."
+msgstr ""
+"当 `Add-AppxPackage` 或 `Remove-AppxPackage` 命令执行失败时，它们会返回一个 **ActivityID**，该 "
+"ID 可以与 `Get-AppxLog` 命令一起使用。"
+
+msgid ""
+"For more information about common error codes, see\n"
+"[Troubleshooting packaging, deployment, and query of Windows Store apps](https://go.microsoft.com/fwlink/?LinkId=271201)."
+msgstr ""
+"有关常见错误代码的更多信息，请参阅[故障排除：Windows应用商店应用的打包、部署和查询](https://go.microsoft.com/fwlink/?LinkId=271201)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get logs for the most recent deployment"
+msgstr "#### 示例 1：获取最近一次部署的日志"
+
+msgid ""
+"This command gets the logs associated with the most recent deployment "
+"operation."
+msgstr "这个命令可以获取与最近一次部署操作相关的日志信息。"
+
+msgid "### Example 2: Get logs for all logs"
+msgstr "### 示例 2：获取所有日志的详细信息"
+
+msgid ""
+"This command gets all the app package installation logs on the computer."
+msgstr "这个命令可以获取计算机上所有应用程序包安装日志。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an activity ID. This cmdlet uses the ID to get the log for a particular app package\n"
+"installation."
+msgstr "指定一个活动ID。此cmdlet使用该ID来获取特定应用程序包安装的日志信息。"
+
+msgid ""
+"Indicates that the cmdlet gets all logs on the computer. You can get additional information when you\n"
+"run this cmdlets from Windows PowerShell as an administrator."
+msgstr ""
+"表示该cmdlet会获取计算机上的所有日志。当您以管理员身份在Windows PowerShell中运行此cmdlet时，可以获取更多相关信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.System.String[]"
+msgstr "### System.System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Diagnostics.Eventing.Reader.EventLogRecord"
+msgstr ""
+"```csharp\n"
+"### System.Diagnostics.Eventing.Reader.EventLogRecord\n"
+"```"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Package Manager API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+msgstr "[包管理器 API](https://go.microsoft.com/fwlink/?LinkId=245447)"
+
+msgid ""
+"[How to Add and Remove Apps](https://go.microsoft.com/fwlink/?LinkID=231020)"
+msgstr "[如何添加和删除应用程序](https://go.microsoft.com/fwlink/?LinkID=231020)"
+
+msgid ""
+"[Troubleshooting packaging, deployment, and query of Windows Store "
+"apps](https://go.microsoft.com/fwlink/?LinkId=271201)"
+msgstr ""
+"[解决Windows应用商店应用的打包、部署和查询相关问题](https://go.microsoft.com/fwlink/?LinkId=271201)"
+
+msgid "[Get-AppxPackage](./Get-AppxPackage.md)"
+msgstr "[Get-AppxPackage](./Get-AppxPackage.md)"
+
+msgid "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+msgstr "[Get-AppxPackageManifest](./Get-AppxPackageManifest.md)"
+
+msgid "[Get-AppxLastError](./Get-AppxLastError.md)"
+msgstr "[Get-AppxLastError](./Get-AppxLastError.md)"

@@ -1,0 +1,160 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:02:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-SbecInstance"
+msgstr "# 停止 SbecInstance 实例"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Stops the Setup and Boot Event Collector."
+msgstr "停止设置过程以及启动事件收集器的运行。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Service"
+msgstr "### 服务"
+
+msgid "### Direct"
+msgstr "### 直接"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Stop-SbecInstance** cmdlet stops an instance of the Setup and Boot "
+"Event Collector."
+msgstr ""
+"**Stop-SbecInstance** cmdlet 用于停止 Setup and Boot Event Collector 的一个实例。"
+
+msgid "You must have the Builtin Administrator privilege to run this cmdlet."
+msgstr "您必须具有内置管理员（Builtin Administrator）权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Stop the Boot Event Collector service"
+msgstr "### 示例 1：停止 Boot Event Collector 服务"
+
+msgid "This command stops the Boot Event Collector service."
+msgstr "此命令会停止“启动事件收集器”（Boot Event Collector）服务。"
+
+msgid "### Example 2: Stop a Boot Event Collector instance"
+msgstr "### 示例 2：停止一个启动事件收集器（Boot Event Collector）实例"
+
+msgid ""
+"This command stops an instance of Boot Event Collector that was started from"
+" the command line."
+msgstr "此命令用于停止通过命令行启动的“Boot Event Collector”实例。"
+
+msgid "### Example 3: Immediately stop a Boot Event Collector instance"
+msgstr "### 示例 3：立即停止一个启动事件收集器（Boot Event Collector）实例"
+
+msgid ""
+"This command stops an instance of Boot Event Collector that was started from"
+" the command line, and discards any buffered but not-yet processed data."
+msgstr "此命令会停止通过命令行启动的“Boot Event Collector”实例，并丢弃所有已缓冲但尚未处理的数据。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet on the remote computers through a remote session.\n"
+"Enter a session object, such as the output of a **New-CimSession** or **Get-CimSession** cmdlet or an array of these objects.\n"
+"The default is to run the cmdlet on the local computer.\n"
+"For more information, see About_CimSession."
+msgstr ""
+"通过远程会话在远程计算机上运行该 cmdlet。可以输入一个会话对象（例如 **New-CimSession** 或 **Get-"
+"CimSession** cmdlet 的输出结果），或者这些对象的数组。默认情况下，该 cmdlet 会在本地计算机上运行。有关更多信息，请参阅 "
+"About_CimSession。"
+
+msgid ""
+"Specifies the name of the computers on which you want to perform the operation.\n"
+"You can specify a fully qualified domain name (FQDN), a NetBIOS name, or an IP address.\n"
+"For more information see [Invoke-CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801) on MSDN."
+msgstr ""
+"指定您想要在其上执行操作的计算机的名称。您可以指定一个完全 qualified domain name (FQDN)、一个 NetBIOS 名称或一个 "
+"IP 地址。有关更多信息，请参阅 MSDN 上的 [Invoke-"
+"CimMethod](https://go.microsoft.com/fwlink/?LinkId=808801)。"
+
+msgid ""
+"Stops the Setup and Boot Event Collector instance directly through the WMI/CIM interface.\n"
+"Specify this parameter to stop an instance of the Setup and Boot Event Collector that was started from a command prompt."
+msgstr ""
+"通过 WMI/CIM 接口直接停止 Setup and Boot Event Collector "
+"实例。如果该实例是通过命令提示符启动的，可以指定此参数来将其关闭。"
+
+msgid ""
+"If multiple instances are running (including the service), specifying this parameter stops a random instance, because WMI connects to a random instance.\n"
+"Do not use this parameter with the service, because the service controller interprets it as a service failure and restarts it."
+msgstr ""
+"如果有多个实例正在运行（包括该服务），指定此参数会停止其中一个随机选择的实例，因为WMI会连接到任意一个随机运行的实例。请不要在服务中使用这个参数，否则服务控制器会将其视为服务故障并重新启动该服务。"
+
+msgid ""
+"With the *Service* parameter, this parameter acts as a pass-through parameter for **Stop-Service**, allowing the cmdlet to stop a service even if that service has dependent services.\n"
+"With *Direct*, requests the fast stopping, discarding the buffered but not yet fully processed data."
+msgstr ""
+"使用 `Service` 参数时，该参数作为 **Stop-Service** 命令的传递参数，使 cmdlet "
+"能够停止某个服务，即使该服务有依赖的其他服务。当使用 `Direct` 选项时，则会请求快速停止服务，此时会丢弃尚未完全处理但已被缓冲的数据。"
+
+msgid ""
+"Stops the Setup and Boot Event Collector service on the current computer."
+msgstr "停止当前计算机上的“设置和启动事件收集器”服务。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SbecActiveConfig](./Get-SbecActiveConfig.md)"
+msgstr "[Get-SbecActiveConfig](./Get-SbecActiveConfig.md)"
+
+msgid "[Save-SbecInstance](./Save-SbecInstance.md)"
+msgstr "[Save-SbecInstance](./Save-SbecInstance.md)"
+
+msgid "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+msgstr "[Set-SbecActiveConfig](./Set-SbecActiveConfig.md)"
+
+msgid "[Start-SbecInstance](./Start-SbecInstance.md)"
+msgstr "[启动 Sbec 实例](./Start-SbecInstance.md)"
+
+msgid "[Test-SbecActiveConfig](./Test-SbecActiveConfig.md)"
+msgstr "[Test-SbecActiveConfig](./Test-SbecActiveConfig.md)"

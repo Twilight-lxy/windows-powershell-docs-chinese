@@ -1,0 +1,212 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 11:20:59 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DhcpServerv4FreeIPAddress"
+msgstr "# Get-DhcpServerv4FreeIPAddress"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets one or more free or unassigned IPv4 Addresses from the specified scope."
+msgstr "从指定的范围内获取一个或多个免费或未分配的IPv4地址。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"This **Get-DhcpServerv4FreeIPAddress** cmdlet gets one or more free IP "
+"addresses from the specified scope."
+msgstr "这个 `Get-DhcpServerv4FreeIPAddress` cmdlet 可以从指定的范围内获取一个或多个空闲的 IP 地址。"
+
+msgid ""
+"If you specify the *NumAddress* parameter, the requested number of free IPv4 addresses are returned.\n"
+"If you do not specify the *NumAddress* parameter, a single free IP address is returned.\n"
+"The maximum number of free IP addresses returned is capped at 1024."
+msgstr ""
+"如果您指定了 *NumAddress* 参数，系统会返回所需数量的可用 IPv4 地址；如果没有指定该参数，则仅返回一个可用 IP 地址。系统返回的可用"
+" IP 地址的最大数量被限制为 1024 个。"
+
+msgid ""
+"If you specify the *StartAddress* parameter and not the *EndAddress* "
+"parameter, the free IP addresses starting from the *StartAddress* parameter "
+"value through the end of the IP address range of the scope are returned."
+msgstr ""
+"如果您指定了*StartAddress*参数而没有指定*EndAddress*参数，系统将返回从*StartAddress*值开始的所有可用IP地址，直到该IP地址范围内的最后一个地址为止。"
+
+msgid ""
+"If you specify the *EndAddress* parameter and not the *StartAddress* "
+"parameter, the free IP addresses starting from the start of the IP address "
+"range of the scope through the *EndAddress* parameter value are returned."
+msgstr ""
+"如果您指定了 *EndAddress* 参数而未指定 *StartAddress* 参数，系统将返回从该作用域的 IP 地址范围起始处开始、直到 "
+"*EndAddress* 参数值为止的所有可用 IP 地址。"
+
+msgid ""
+"If you specify both the *StartAddress* and *EndAddress* parameters, the free"
+" IP addresses between the *StartAddress* and *EndAddress* parameter values "
+"are returned."
+msgstr ""
+"如果您同时指定了*StartAddress*（起始地址）和*EndAddress*（结束地址）参数，系统将返回位于这两个地址之间的所有可用IP地址。"
+
+msgid ""
+"The exclusion address ranges, reservations, active, offered, and bad, or "
+"declined, leases are excluded while returning the free IP addresses."
+msgstr ""
+"在返回免费的IP地址时，会排除那些被排除在外的地址范围、已预留的地址、处于活动状态的租赁协议、已被提供的租赁协议，以及那些状态不佳或已被拒绝的租赁协议。"
+
+msgid ""
+"The IP address ranges associated with a policy are included while returning "
+"the free IP addresses."
+msgstr "在返回免费的IP地址时，会同时包含与该策略关联的IP地址范围。"
+
+msgid ""
+"The IP addresses which are in expired, or doomed, state will be included "
+"while returning the free IP addresses."
+msgstr "在返回免费的IP地址时，那些已经过期或处于失效状态的IP地址也会被包含在内。"
+
+msgid ""
+"If the requested number of free IP addresses could not be found, this cmdlet"
+" displays a warning."
+msgstr "如果无法找到所需数量的免费 IP 地址，此 cmdlet 会显示一条警告信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a free address"
+msgstr "#### 示例 1：获取一个免费的地址"
+
+msgid "This example gets a free IPv4 addresses from the specified scope."
+msgstr "这个示例从指定的范围内获取免费的IPv4地址。"
+
+msgid "### Example 2: Get ten free addresses"
+msgstr "### 示例 2：获取十个免费地址"
+
+msgid ""
+"This example gets a list of ten free IPv4 addresses from the specified "
+"scope."
+msgstr "这个示例从指定的范围内获取了10个免费的IPv4地址。"
+
+msgid "### Example 3: Get a free address from a range"
+msgstr "### 示例 3：从指定范围内获取一个免费的地址"
+
+msgid ""
+"This example gets a free IPv4 address from the specified scope in the IP "
+"address range from 10.10.10.10 through 10.10.10.50."
+msgstr "这个示例从指定的地址范围内获取一个免费的IPv4地址。该地址范围是10.10.10.10到10.10.10.50。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成过程中，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`"
+" cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，使用的是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the Dynamic Host Configuration Protocol (DHCP) server service."
+msgstr "指定运行动态主机配置协议（DHCP）服务器服务的目标计算机的DNS名称、IPv4地址或IPv6地址。"
+
+msgid ""
+"Specifies the ending IP address of the range from which the free IP "
+"addresses are returned."
+msgstr "指定用于返回空闲IP地址的范围的结束IP地址。"
+
+msgid "Specifies the number of free IP addresses requested."
+msgstr "指定所请求的可用IP地址的数量。"
+
+msgid ""
+"Specifies the scope identifier (ID), in IPv4 address format, from which one "
+"or more free IP addresses are requested."
+msgstr "指定一个范围标识符（ID），该标识符采用 IPv4 地址格式，用于请求一个或多个空闲的 IP 地址。"
+
+msgid ""
+"Specifies the starting IP address of the range from which the free IP "
+"addresses are returned."
+msgstr "指定用于返回空闲IP地址的范围的起始IP地址。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大操作数量。如果省略此参数或输入值为 `0`，那么 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前执行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DhcpServerv6FreeIPAddress](./Get-DhcpServerv6FreeIPAddress.md)"
+msgstr "[Get-DhcpServerv6FreeIPAddress](./Get-DhcpServerv6FreeIPAddress.md)"

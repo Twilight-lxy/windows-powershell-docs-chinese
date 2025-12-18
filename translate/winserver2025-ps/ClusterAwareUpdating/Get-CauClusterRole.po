@@ -1,0 +1,109 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:23:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-CauClusterRole"
+msgstr "# Get-CauClusterRole"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets configuration properties of the CAU clustered role on the specified "
+"cluster."
+msgstr "获取指定集群上CAU（Clustered Authentication Unit）角色相关的配置属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-CauClusterRole` cmdlet gets configuration properties of the Cluster-Aware Updating (CAU)\n"
+"clustered role on the specified cluster."
+msgstr ""
+"`Get-CauClusterRole` cmdlet 用于获取指定集群中“集群感知更新”（Cluster-Aware Updating, "
+"CAU）集群角色的配置属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get information about a CAU clustered role on the specified "
+"cluster"
+msgstr "#### 示例 1：获取指定集群上关于 CAU 集群角色的信息"
+
+msgid ""
+"This command gets information about the CAU clustered role on the cluster "
+"named CONTOSO-FC1."
+msgstr "此命令用于获取名为 CONTOSO-FC1 的集群上 CAU 集群角色的相关信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster for which the CAU clustered role information that this cmdlet\n"
+"gets. This parameter is only required when this cmdlet isn't run on a failover cluster node, or\n"
+"this cmdlet is used to reference a failover cluster different from where the cmdlet is run."
+msgstr ""
+"指定此cmdlet获取CAU（Clustered Authentication "
+"Unit）集群角色信息所对应的集群名称。仅当该cmdlet不在故障转移集群节点上运行，或者用于引用与执行该cmdlet的集群不同的故障转移集群时，才需要这个参数。"
+
+msgid "Specifies the administrative credentials for the target cluster."
+msgstr "指定目标集群的管理凭据。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ClusterAwareUpdating.CauParameter"
+msgstr "### Microsoft_CLUSTERAwareUpdating.CauParameter"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-CauClusterRole](./Add-CauClusterRole.md)"
+msgstr "[Add-CauClusterRole](./Add-CauClusterRole.md)"
+
+msgid "[Disable-CauClusterRole](./Disable-CauClusterRole.md)"
+msgstr "[Disable-CauClusterRole](./Disable-CauClusterRole.md)"
+
+msgid "[Enable-CauClusterRole](./Enable-CauClusterRole.md)"
+msgstr "[Enable-CauClusterRole](./Enable-CauClusterRole.md)"
+
+msgid "[Remove-CauClusterRole](./Remove-CauClusterRole.md)"
+msgstr "[Remove-CauClusterRole](./Remove-CauClusterRole.md)"
+
+msgid "[Set-CauClusterRole](./Set-CauClusterRole.md)"
+msgstr "[Set-CauClusterRole](./Set-CauClusterRole.md)"

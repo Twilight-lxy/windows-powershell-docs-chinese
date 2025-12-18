@@ -1,0 +1,179 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:04:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Reset-DnsServerZoneKeyMasterRole"
+msgstr "# 重置 DNS 服务器区域密钥主角色"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Transfers the role of Key Master for a DNS zone."
+msgstr "转移DNS区域的密钥管理角色（Key Master）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Reset-DnsServerZoneKeyMasterRole** cmdlet transfers the role of DNS Security (DNSSEC) Key Master server.\n"
+"Any authoritative Domain Name System (DNS) server that hosts a primary copy of the zone can be the Key Master server."
+msgstr ""
+"`Reset-DnsServerZoneKeyMasterRole` cmdlet 用于转移 DNS "
+"安全（DNSSEC）密钥主服务器的角色。任何托管该区域主要副本的权威域名系统（DNS）服务器都可以作为密钥主服务器。"
+
+msgid ""
+"This cmdlet attempts to connect to the current Key Master server.\n"
+"If it cannot connect to that server, the cmdlet does not make the change unless you specify **SeizeRole**."
+msgstr ""
+"此cmdlet尝试连接到当前的Key "
+"Master服务器。如果无法连接到该服务器，则除非您指定了“SeizeRole”，否则该cmdlet不会执行任何更改。"
+
+msgid ""
+"This cmdlet prompts the user for confirmation before it transfers the role "
+"unless you use the **Force** switch."
+msgstr "除非使用了 **Force** 切换开关，否则此cmdlet在转移角色之前会提示用户进行确认。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Transfer the role"
+msgstr "#### 示例 1：转移角色"
+
+msgid ""
+"This command transfers the Key Master role for the zone named west01.contoso.com to the server named keys.contoso.com.\n"
+"If the cmdlet cannot verify with the current Key Master server, it does not transfer the role."
+msgstr ""
+"此命令将名为west01.contoso.com的区域的密钥管理器（Key "
+"Master）角色转移到名为keys.contoso.com的服务器上。如果该cmdlet无法与当前的密钥管理器服务器进行验证，那么它将不会执行角色的转移操作。"
+
+msgid "### Example 2: Transfer the role, required"
+msgstr "### 示例 2：转移所需的角色"
+
+msgid ""
+"This command transfers the Key Master role for the zone named west01.contoso.com to a server named keys.contoso.com.\n"
+"If the cmdlet cannot verify with the current Key Master server, the cmdlet nevertheless transfers the role."
+msgstr ""
+"此命令将名为 west01.contoso.com 的区域的密钥主控角色（Key Master role）转移到名为 keys.contoso.com "
+"的服务器上。即使该 cmdlet 无法与当前的密钥主控服务器进行验证，它仍会执行角色转移操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，则可以使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Transfers the role without prompting you for confirmation.\n"
+"By default, the cmdlet prompts you for confirmation before it proceeds."
+msgstr "该命令会直接转移角色，而不会询问您是否确认。默认情况下，此cmdlet在执行操作之前会先提示您进行确认。"
+
+msgid ""
+"Specifies the name of a DNS server.\n"
+"Use a NetBIOS name, IP address, or fully qualified domain name.\n"
+"The cmdlet makes this server the Key Master server for the specified zone.\n"
+"The specified zone must be present on the DNS server as a primary zone."
+msgstr ""
+"指定DNS服务器的名称。可以使用NetBIOS名称、IP地址或完全限定域名。该cmdlet会将此服务器设置为指定区域的关键主机（Key "
+"Master）服务器。指定的区域必须作为主区域存在于DNS服务器上。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Indicates that this cmdlet seizes the Key Master role.\n"
+"Unless this switch is specified, the cmdlet does not make a change if it cannot reach the current Key Master server."
+msgstr ""
+"表示此cmdlet会夺取“Key Master”角色。除非指定了该开关，否则如果无法连接到当前的“Key "
+"Master”服务器，该cmdlet将不会进行任何更改。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的并发操作的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最优限制值。此限制仅适用于当前执行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid ""
+"Specifies a name of a zone.\n"
+"The cmdlet transfers the Key Master role for this zone."
+msgstr "指定一个区域的名称。此cmdlet会将该区域的关键主机（Key Master）角色进行转移。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

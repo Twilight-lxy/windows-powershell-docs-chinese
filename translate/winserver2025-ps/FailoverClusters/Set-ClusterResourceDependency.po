@@ -1,0 +1,160 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:25:49 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-ClusterResourceDependency"
+msgstr "# 设置集群资源依赖关系"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Specifies the resources that a particular resource depends on within a "
+"failover cluster."
+msgstr "指定某个资源在故障转移集群中依赖于哪些其他资源。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Set-ClusterResourceDependency` cmdlet specifies the resources that a particular resource\n"
+"depends on within a failover cluster. Existing dependencies will be overwritten by the dependencies\n"
+"that you specify."
+msgstr ""
+"`Set-ClusterResourceDependency` cmdlet "
+"用于指定某个资源在故障转移集群中依赖的其他资源。您指定的依赖关系会覆盖现有的依赖关系。"
+
+msgid ""
+"The term or can be used in the expression describing the dependency. For example, an or dependency\n"
+"can be set up where a Network Name resource is dependent on either of two IP address resources,\n"
+"instead of being dependent on both. This use of or dependencies is common in multi-site cluster\n"
+"deployments."
+msgstr ""
+"该术语可以用于描述依赖关系的表达式中。例如，可以设置一种“或”（or）依赖关系，使得某个“网络名称资源”依赖于两个IP地址资源中的任意一个，而不是同时依赖于这两个资源。这种使用“或”依赖关系的做法在多站点集群部署中非常常见。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example makes the resource called cluster1FS12 dependent on `[IP "
+"Address 151.56.48.0]`."
+msgstr "这个示例使得名为 `cluster1FS12` 的资源依赖于 `[IP 地址 151.56.48.0]`。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example makes the resource called `cluster1FS12` dependent on either `[IP Address 151.56.48.0]`\n"
+"or `[New IP Address]`."
+msgstr ""
+"这个示例使得名为 `cluster1FS12` 的资源依赖于 `[IP 地址 151.56.48.0]` 或 `[新 IP 地址]` 中的任何一个。"
+
+msgid ""
+"This example uses splatting to pass parameter values from the `$Parameters` variable to the command.\n"
+"Learn more about [Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)."
+msgstr ""
+"这个示例使用“拆分”（splatting）机制，将 `$Parameters` 变量中的参数值传递给命令。欲了解更多关于“拆分”的信息，请参阅 "
+"[Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example clears the dependency list for the resource named `cluster1FS12`, so that it no longer\n"
+"depends on any other resources."
+msgstr "这个示例清除了名为 `cluster1FS12` 的资源的依赖关系列表，使其不再依赖于任何其他资源。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入值为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid ""
+"Specifies the dependency expression to set for this resource. The format for this is string is as\n"
+"follows. `\"[Resource Name 1] [and|or [Resource Name 2] [...] ]\"Resource Name 1Resource Name 2`"
+msgstr ""
+"用于指定要为此资源设置的依赖关系表达式。其格式如下（以字符串形式表示）：`\"[资源名称1] [和/或 [资源名称2] [...]]\"`，其中 "
+"`资源名称1` 和 `资源名称2` 是需要配置的资源的名称。"
+
+msgid ""
+" Resource names should be enclosed in square brackets as `[Cluster Disk 2]Cluster Disk 2`. To reset\n"
+" the resource dependency, use an empty string `\"\"` in this parameter."
+msgstr ""
+"资源名称应使用方括号括起来，例如 `[Cluster Disk 2]Cluster Disk 2`。要重置资源依赖关系，请在此参数中使用空字符串 "
+"`\"\"`。"
+
+msgid ""
+"Specifies the cluster resource for which to set the dependency expression."
+msgstr "指定要设置依赖表达式的集群资源。"
+
+msgid ""
+"Specifies the name of the cluster resource for which to set the dependency "
+"expression."
+msgstr "指定要设置依赖表达式的集群资源的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterResource"
+msgstr "### Microsoft FailoverClusters PowerShell ClusterResource"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterResourceDependency](./Add-ClusterResourceDependency.md)"
+msgstr "[添加集群资源依赖关系](./Add-ClusterResourceDependency.md)"
+
+msgid "[Get-ClusterResourceDependency](./Get-ClusterResourceDependency.md)"
+msgstr "[Get-ClusterResourceDependency](./Get-ClusterResourceDependency.md)"
+
+msgid ""
+"[Get-ClusterResourceDependencyReport](./Get-"
+"ClusterResourceDependencyReport.md)"
+msgstr ""
+"[Get-ClusterResourceDependencyReport](./Get-"
+"ClusterResourceDependencyReport.md)"
+
+msgid ""
+"[Remove-ClusterResourceDependency](./Remove-ClusterResourceDependency.md)"
+msgstr ""
+"[Remove-ClusterResourceDependency](./Remove-ClusterResourceDependency.md)"

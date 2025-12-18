@@ -1,0 +1,108 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:51:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-RmsSvcAccount"
+msgstr "# Get-RmsSvcAccount"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets service account credentials for an Active Directory Rights Management "
+"Services (AD RMS) cluster."
+msgstr "获取用于 Active Directory 权限管理服务（AD RMS）集群的服务账户凭据。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-RmsSvcAccount** cmdlet gets service account credentials for an "
+"Active Directory Rights Management Services (AD RMS) cluster."
+msgstr ""
+"`Get-RmsSvcAccount` cmdlet 可以获取 Active Directory 权限管理服务（AD RMS）集群的服务账户凭据。"
+
+msgid ""
+"To get the service account credentials, set the *Path* parameter to "
+"`<PSDrive>:\\` where `<PSDrive>` is the drive ID of the provider drive "
+"associated with AD RMS cluster."
+msgstr ""
+"要获取服务账户凭据，请将 *Path* 参数设置为 `<PSDrive>:\\`，其中 `<PSDrive>` 是与 AD RMS "
+"集群关联的提供者驱动器的驱动器 ID。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the service account"
+msgstr "### 示例 1：获取服务账户"
+
+msgid "This command displays the AD RMS service account."
+msgstr "此命令显示AD RMS服务账户的信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies a provider drive and path or relative path on the current drive.\n"
+"Use a dot (.) to specify the current location.\n"
+"This parameter does not accept wildcards and has no default value."
+msgstr "指定一个提供程序驱动器及其路径，或者当前驱动器上的相对路径。可以使用点（.）来表示当前位置。此参数不支持通配符，也没有默认值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Management.Automation.PSCredential"
+msgstr "### System.Management.Automation.PSCredential"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Using Windows PowerShell with AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+msgstr ""
+"[使用 Windows PowerShell 与 AD "
+"RMS](https://go.microsoft.com/fwlink/?LinkId=136806)"
+
+msgid "[Set-RmsSvcAccount](./Set-RmsSvcAccount.md)"
+msgstr "[Set-RmsSvcAccount](./Set-RmsSvcAccount.md)"

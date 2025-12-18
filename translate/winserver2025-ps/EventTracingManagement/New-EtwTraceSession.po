@@ -1,0 +1,274 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:35:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-EtwTraceSession"
+msgstr "# New-EtwTraceSession"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Creates an ETW trace session."
+msgstr "创建一个ETW跟踪会话。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The Start-EtwTraceSession cmdlet replaces this cmdlet as the recommended method of starting an ETW session.\n"
+"It provides an easier way to specify common *LogFileMode* settings and other parameters."
+msgstr ""
+"`Start-EtwTraceSession` cmdlet 已取代了原有的 cmdlet，成为启动 "
+"ETW（事件跟踪）会话的推荐方法。它提供了一种更简便的方式来指定常见的 `LogFileMode` 设置和其他参数。"
+
+msgid ""
+"The **New-EtwTraceSession** cmdlet creates an Event Trace for Windows (ETW) "
+"trace session."
+msgstr "`New-EtwTraceSession` cmdlet 用于创建一个 Windows 事件跟踪（ETW）会话。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create an ETW trace session"
+msgstr "### 示例 1：创建一个 ETW 跟踪会话"
+
+msgid ""
+"This command creates an ETW trace session named NetCfgTrace that has a value"
+" of 24 for the *MaximumBuffers* parameter."
+msgstr "此命令创建了一个名为 NetCfgTrace 的 ETW（事件跟踪）会话，该会话的 *MaximumBuffers* 参数值为 24。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，随后再显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用 `-*Job` "
+"系列 cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid "Specifies the ETW session buffer size, in kilobytes."
+msgstr "指定 ETW 会话缓冲区的大小（单位：千字节）。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the type of timestamp that will be used for each event logged to "
+"this ETW session."
+msgstr "指定将用于记录到此 ETW 会话中的每个事件的时间戳类型。"
+
+msgid ""
+"This is an advanced session configuration option, and it is not recommended "
+"that this parameter be set."
+msgstr "这是一个高级的会话配置选项，不建议设置这个参数。"
+
+msgid ""
+"For more information, see the description of the **ClientContext** field in "
+"the topic [WNODE_HEADER structure](https://msdn.microsoft.com/en-"
+"us/library/windows/desktop/aa364160.aspx) for a description of the different"
+" clock types available."
+msgstr ""
+"有关更多信息，请参阅[WNODE_HEADER结构](https://msdn.microsoft.com/en-"
+"us/library/windowsdesktop/aa364160.aspx)中**ClientContext**字段的描述，以了解可用的不同时钟类型。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"When set, all active buffers in the session will be flushed at this "
+"interval, in seconds."
+msgstr "设置此值后，会以指定的秒数为间隔刷新会话中所有处于活动状态的缓冲区内容。"
+
+msgid ""
+"This is an advanced session configuration option, and it is not recommended "
+"that this parameter be set."
+msgstr "这是一个高级会话配置选项，不建议设置该参数。"
+
+msgid ""
+"If it is not set, the ETW will select an appropriate default based on the "
+"LogFileMode."
+msgstr "如果该值没有被设置，ETW将根据 LogFileMode 选择一个合适的默认值。"
+
+msgid ""
+"Specifies the full path to the file the ETW session should write to.\n"
+"For non-buffering mode sessions only."
+msgstr "指定 ETW 会话应写入的文件的完整路径。仅适用于非缓冲模式的会话。"
+
+msgid ""
+"When creating a new-file file mode session, the file path must contain a %d "
+"in the file name."
+msgstr "在创建一个新的文件模式会话时，文件路径中的文件名必须包含一个 `%d`。"
+
+msgid ""
+"Do not use this parameter if the session is configured as a buffering mode session.\n"
+"Use **Save-EtwTraceSession** to save a buffering mode session to disk instead."
+msgstr ""
+"如果会话被配置为缓冲模式会话，请不要使用此参数。相反，应使用 **Save-EtwTraceSession** 将缓冲模式会话保存到磁盘上。"
+
+msgid ""
+"Specifies the ETW session logging mode.\n"
+"The value is a bitmask of the ETW logging mode constants.\n"
+"For valid values, see [Logging Mode Constants](https://msdn.microsoft.com/library/windows/desktop/aa364080.aspx)."
+msgstr ""
+"指定 ETW 会话日志记录模式。该值是 ETW 日志记录模式常量对应的位掩码（bitmap）。有关有效值的详细信息，请参阅 "
+"[日志记录模式常量](https://msdn.microsoft.com/library/windows/desktop/aa364080.aspx)。"
+
+msgid "Specifies the maximum number of buffers the ETW session should use."
+msgstr "指定 ETW 会话应使用的缓冲区的最大数量。"
+
+msgid ""
+"The ETW session will use a maximum of (BufferSize * MaximumBuffers) kilobytes of memory.\n"
+"Depending on the specified *LogFileMode* this may be pageable or non-paged memory."
+msgstr ""
+"ETW会话最多使用`( bufferSize * "
+"MaximumBuffers)`千字节的内存。根据指定的`LogFileMode`，这些内存可能是分页的，也可能是非分页的。"
+
+msgid ""
+"If the session is losing events because the buffers cannot be flushed "
+"quickly enough to keep up with the incoming event rate, try increasing this "
+"value."
+msgstr "如果会话因为缓冲区无法快速刷新而导致事件丢失（即缓冲区的处理速度跟不上传入事件的速度），可以尝试增加这个数值。"
+
+msgid ""
+"Configuring a session to use too many buffers may affect system performance."
+msgstr "配置会话以使用过多的缓冲区可能会影响系统性能。"
+
+msgid ""
+"Specifies the maximum file size for the output .etl file to grow to, in "
+"megabytes."
+msgstr "指定输出.etl文件的最大文件大小（以兆字节为单位）。"
+
+msgid ""
+"The parameter must be set for a circular, new-file, or sequential file mode "
+"ETW session."
+msgstr "该参数必须设置为圆形文件模式、新文件模式或顺序文件模式的ETW会话。"
+
+msgid ""
+"For circular sessions, once the file reaches this size the oldest buffers "
+"will be overwritten by the new buffers."
+msgstr "对于循环会话来说，一旦文件大小达到这个限制，最旧的缓冲区将被新的缓冲区覆盖。"
+
+msgid ""
+"For new-file sessions, once the file reaches this size a new file will be "
+"created and all new events will be written to that file."
+msgstr "对于新文件会话而言，当文件大小达到这个阈值时，系统会创建一个新文件，并将所有新的事件都写入到这个新文件中。"
+
+msgid ""
+"For sequential file sessions, once the file reaches this size the session "
+"will stop."
+msgstr "对于顺序文件会话来说，一旦文件大小达到这个限制，会话就会停止。"
+
+msgid "Specifies the minimum number of buffers the ETW session should use."
+msgstr "指定 ETW 会话应使用的缓冲区的最小数量。"
+
+msgid ""
+"The ETW session will use a minimum of (BufferSize * MinimumBuffers) kilobytes of memory.\n"
+"Depending on the specified *LogFileMode* this may be pageable or non-paged memory."
+msgstr ""
+"ETW会话将至少使用`( bufferSize * "
+"MinimumBuffers)`千字节的内存。根据指定的`LogFileMode`，这些内存可能是分页的，也可能是非分页的。"
+
+msgid ""
+"If the session is losing events because the buffers cannot be flushed quick "
+"enough to keep up with the incoming event rate, try increasing this value."
+msgstr "如果会话因为缓冲区无法足够快地刷新以跟上传入事件的速率而丢失事件，请尝试增加这个值。"
+
+msgid ""
+"Configuring a session to use too many buffers may affect system performance."
+msgstr "配置一个会话以使用过多的缓冲区可能会影响系统性能。"
+
+msgid "Specifies the name of the new ETW trace session."
+msgstr "指定新的 ETW （事件跟踪）会话的名称。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的cmdlet的最大操作数量。如果省略此参数或输入值`0`，则Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最优限制值。此限制仅适用于当前运行的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-EtwTraceSession](./Get-EtwTraceSession.md)"
+msgstr "[Get-EtwTraceSession](./Get-EtwTraceSession.md)"
+
+msgid "[Save-EtwTraceSession](./Save-EtwTraceSession.md)"
+msgstr "[Save-EtwTraceSession](./Save-EtwTraceSession.md)"
+
+msgid "[Send-EtwTraceSession](./Send-EtwTraceSession.md)"
+msgstr "[Send-EtwTraceSession](./Send-EtwTraceSession.md)"
+
+msgid "[Start-EtwTraceSession](./Start-EtwTraceSession.md)"
+msgstr "[开始 ETW 跟踪会话](./Start-EtwTraceSession.md)"
+
+msgid "[Stop-EtwTraceSession](./Stop-EtwTraceSession.md)"
+msgstr "[Stop-EtwTraceSession](./Stop-EtwTraceSession.md)"
+
+msgid "[Update-EtwTraceSession](./Update-EtwTraceSession.md)"
+msgstr "[更新-EtwTraceSession](./Update-EtwTraceSession.md)"

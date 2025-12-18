@@ -1,0 +1,168 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:13:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-AppvVirtualProcess"
+msgstr "# 启动 AppVVirtualProcess 进程"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Starts a virtual process."
+msgstr "启动一个虚拟进程。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Default (Default)"
+msgstr "### 默认值（Default）"
+
+msgid "### UseShellExecute"
+msgstr "### 使用 ShellExecute"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **Start-AppvVirtualProcess** cmdlet starts a new virtual process."
+msgstr "`Start-AppvVirtualProcess` cmdlet 用于启动一个新的虚拟进程。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Start a virtual process in a virtual environment of a package"
+msgstr "#### 示例 1：在某个软件包的虚拟环境中启动一个虚拟进程"
+
+msgid ""
+"The first command gets the client package named MyPackage by using the **Get-AppvClientPackage** cmdlet.\n"
+"The command stores the result in the $AppVObj variable."
+msgstr ""
+"第一个命令使用 **Get-AppvClientPackage** cmdlet 获取名为 “MyPackage” 的客户端包，并将结果存储在 "
+"`$AppVObj` 变量中。"
+
+msgid ""
+"The second command starts a new virtual process for Calc.exe in virtual "
+"environment of in $AppVObj."
+msgstr "第二个命令会在 `$AppVObj` 的虚拟环境中为 `Calc.exe` 启动一个新的虚拟进程。"
+
+msgid ""
+"### Example 2: Start a virtual process in a virtual environment of a "
+"connection group"
+msgstr "### 示例 2：在连接组的虚拟环境中启动一个虚拟进程"
+
+msgid ""
+"The first command gets the client package named MyPackage by using the **Get-AppvClientConnectionGroup** cmdlet.\n"
+"The command stores the result in the $AppVObj variable."
+msgstr ""
+"第一个命令使用 **Get-AppvClientConnectionGroup** cmdlet 获取名为 “MyPackage” "
+"的客户端软件包，并将结果存储在 $AppVObj 变量中。"
+
+msgid ""
+"The second command starts a new virtual process for Calc.exe in the virtual "
+"environment of in $AppVObj."
+msgstr "第二个命令会在 `$AppVObj` 的虚拟环境中为 `Calc.exe` 启动一个新的虚拟进程。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an **AppvClientPackage** or **AppvClientConnectionGroup** object."
+msgstr "指定一个 **AppvClientPackage** 或 **AppvClientConnectionGroup** 对象。"
+
+msgid "Specifies the arguments to be passed into the virtual process."
+msgstr "指定要传递给虚拟进程的参数。"
+
+msgid "Specifies the credential to start this process."
+msgstr "指定用于启动此过程的凭据。"
+
+msgid "Specifies a file path."
+msgstr "指定一个文件路径。"
+
+msgid ""
+"Indicates that the cmdlet loads a user profile for use with the process."
+msgstr "表示该cmdlet加载了一个用户配置文件，以便在过程中使用。"
+
+msgid ""
+"Indicates that the cmdlet attempts to keep the process in the same window "
+"instead of opening a new window."
+msgstr "表示该cmdlet会尝试将进程保持在同一个窗口中，而不是打开一个新的窗口。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Redirects the stderr to the file specified."
+msgstr "将标准错误（stderr）重定向到指定的文件中。"
+
+msgid "Takes the stdinput from the file specified."
+msgstr "从指定的文件中读取标准输入（stdinput）。"
+
+msgid "Redirects the stdout to the file specified."
+msgstr "将标准输出（stdout）重定向到指定的文件中。"
+
+msgid "Indicates that this cmdlet uses a new environment for the process."
+msgstr "表示此cmdlet在运行过程中使用了新的环境设置。"
+
+msgid "Specifies a verb for the process."
+msgstr "为该过程指定一个动词（即执行操作的命令或动作）。"
+
+msgid ""
+"Indicates that the cmdlet uses synchronous operation of the virtual process.\n"
+"The cmdlet waits to exit until the virtual process exits."
+msgstr "这表示该cmdlet使用虚拟进程的同步操作方式。在执行完命令后，该cmdlet会一直等待直到虚拟进程完全终止才会结束自身的执行。"
+
+msgid ""
+"Specifies what to do without a Process Window Style.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定在没有“进程窗口样式”（Process Window Style）的情况下应执行的操作。该参数的可接受值为："
+
+msgid "The default value is Normal."
+msgstr "默认值是“Normal”。"
+
+msgid "Specifies working directory of the process."
+msgstr "指定进程的工作目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+msgstr "[Get-AppvClientConnectionGroup](./Get-AppvClientConnectionGroup.md)"
+
+msgid "[Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+msgstr "[Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+
+msgid "[Get-AppvVirtualProcess](./Get-AppvVirtualProcess.md)"
+msgstr "[Get-AppvVirtualProcess](./Get-AppvVirtualProcess.md)"

@@ -1,0 +1,200 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:47:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-WindowsPackage"
+msgstr "# 移除Windows软件包"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a package from a Windows image."
+msgstr "从Windows镜像中删除一个软件包。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Offline"
+msgstr "### 离线模式"
+
+msgid "### Online"
+msgstr "### 在线"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-WindowsPackage** cmdlet removes a specified .cab file package from the image.\n"
+"Only .cab files can be specified.\n"
+"You cannot use this command to remove .msu files."
+msgstr ""
+"`Remove-WindowsPackage` cmdlet 用于从镜像中删除指定的 `.cab` 文件包。只能指定 `.cab` "
+"文件；不能使用此命令来删除 `.msu` 文件。"
+
+msgid ""
+"Using this command to remove a package from an offline image will not reduce"
+" the image size."
+msgstr "使用此命令从离线镜像中删除某个软件包并不会减小镜像的大小。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a package from a running operating system image"
+msgstr "### 示例 1：从正在运行的操作系统镜像中删除某个软件包"
+
+msgid ""
+"This command removes the specified package from the running Windows "
+"operating system."
+msgstr "此命令会从正在运行的Windows操作系统中删除指定的软件包。"
+
+msgid "### Example 2: Remove a package from a mounted operating system image"
+msgstr "### 示例 2：从已挂载的操作系统镜像中删除一个软件包"
+
+msgid ""
+"This command removes the package at c:\\packages\\package.cab from the "
+"Windows image that is mounted to c:\\offline."
+msgstr "此命令会从挂载到 c:\\offline 的 Windows 映像中删除位于 c:\\packages\\package.cab 的程序包。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"指定日志中显示的最大输出级别。默认的日志级别为 3。允许的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及常规信息  \n"
+"- 4 = 显示上述所有信息，外加调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定用于记录日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK scratch space（临时存储空间），其容量可能低至 32 "
+"MB。日志文件会自动被归档；归档后的日志文件会在文件名后加上 `.bak` 扩展名，并生成一个新的日志文件。每次日志文件被归档时，原来的 `.bak` "
+"文件都会被覆盖。如果使用未加入域的网络共享资源，请在使用 `DISM` 日志的路径设置之前，先使用 `net use` "
+"命令并结合相应的域凭据来设置访问权限。"
+
+msgid ""
+"Suppresses reboot.\n"
+"If a reboot is not required, this command does nothing.\n"
+"This option will keep the application from prompting for a restart or keep it from restarting automatically."
+msgstr "禁止重新启动。如果不需要重新启动，此命令将不会执行任何操作。该选项可以防止应用程序提示用户重新启动，或者阻止应用程序自动重新启动。"
+
+msgid ""
+"Specifies that the action is to be taken on the operating system that is "
+"currently running on the local computer."
+msgstr "指定该操作应在当前在本地计算机上运行的操作系统上执行。"
+
+msgid "Specifies the name of a package in the Windows image."
+msgstr "指定Windows镜像中一个软件包的名称。"
+
+msgid "Specifies the path to a .cab file."
+msgstr "指定一个.cab文件的路径。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service.\n"
+"If the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"“WindowsDirectory”。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，该目录将在执行服务操作（如文件提取）时被使用。该目录必须存在于本地系统中。如果未指定临时目录，则系统会使用 "
+"`\\Windows\\%Temp%\\` 目录，并为每次 DISM "
+"操作生成一个随机十六进制值的子目录名称。每次操作完成后，该临时目录中的所有内容都会被删除。不建议将网络共享位置作为用于解压安装包（.cab 或 .msu"
+" 文件）的临时目录；用于服务过程中文件提取操作的目录应始终是本地目录。"
+
+msgid ""
+"Specifies the path to the location of the BootMgr files.\n"
+"This is necessary only when the BootMgr files are located on a partition other than the one that you are running the command from.\n"
+"Use -SystemDrive to service an installed Windows image from a Windows PE environment."
+msgstr ""
+"指定 BootMgr 文件所在的路径。仅当 BootMgr 文件位于与您运行命令的分区不同的分区上时，才需要指定该路径。使用 "
+"`-SystemDrive` 选项可以从 Windows PE 环境中管理服务已安装的 Windows 映像。"
+
+msgid ""
+"Specifies the path to the Windows directory relative to the image path.\n"
+"This cannot be the full path to the Windows directory; it should be a relative path.\n"
+"If not specified, the default is the Windows directory in the root of the offline image directory."
+msgstr ""
+"指定相对于图像路径的Windows目录的路径。该路径不能是Windows目录的完整路径，而应该是一个相对路径。如果未指定，则默认值为离线图像目录根目录下的Windows目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dism Commands.ImageObject"
+
+msgid "### Microsoft.Dism.Commands.BasicPackageObject"
+msgstr "### Microsoft.DismCommands.BasicPackageObject"
+
+msgid "### Microsoft.Dism.Commands.AdvancedPackageObject"
+msgstr "### Microsoft.Dismcommands.AdvancedPackageObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dism Commands.ImageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WindowsPackage](./Get-WindowsPackage.md)"
+msgstr "[Get-WindowsPackage](./Get-WindowsPackage.md)"
+
+msgid "[Add-WindowsPackage](./Add-WindowsPackage.md)"
+msgstr "[Add-WindowsPackage](./Add-WindowsPackage.md)"
+
+msgid "[Disable-WindowsOptionalFeature](./Disable-WindowsOptionalFeature.md)"
+msgstr ""
+"[Disable-WindowsOptionalFeature](./ Disable-WindowsOptionalFeature.md)"

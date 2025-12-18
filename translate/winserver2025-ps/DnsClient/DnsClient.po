@@ -1,0 +1,162 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:56:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# DnsClient Module"
+msgstr "# DnsClient模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Domain Name "
+"System (DNS) Client-specific cmdlets. It lists the cmdlets in alphabetical "
+"order based on the verb at the beginning of the cmdlet."
+msgstr "本参考资料提供了所有与域名系统（DNS）客户端相关的cmdlet的描述和语法。这些cmdlet按照以动词开头的顺序按字母顺序进行排列。"
+
+msgid "## DnsClient Cmdlets"
+msgstr "## DnsClientCmdlets"
+
+msgid "### [Add-DnsClientDohServerAddress](Add-DnsClientDohServerAddress.md)"
+msgstr "### [Add-DnsClientDohServerAddress](Add-DnsClientDohServerAddress.md)"
+
+msgid "Adds a DoH server configuration to the supported DoH servers."
+msgstr "将一个 DoH（Domain Name System over HTTPS）服务器配置添加到受支持的 DoH 服务器列表中。"
+
+msgid "### [Add-DnsClientNrptRule](Add-DnsClientNrptRule.md)"
+msgstr "### [Add-DnsClientNrptRule](Add-DnsClientNrptRule.md)"
+
+msgid "Adds a rule to the NRPT."
+msgstr "向NRPT中添加一条规则。"
+
+msgid "### [Clear-DnsClientCache](./Clear-DnsClientCache.md)"
+msgstr "### [Clear-DnsClientCache](./Clear-DnsClientCache.md)"
+
+msgid "Clears the contents of the DNS client cache."
+msgstr "清空DNS客户端缓存中的内容。"
+
+msgid "### [Get-DnsClient](./Get-DnsClient.md)"
+msgstr "### [Get-DnsClient](./Get-DnsClient.md)"
+
+msgid ""
+"Gets details of the network interfaces configured on a specified computer."
+msgstr "获取指定计算机上配置的网络接口的详细信息。"
+
+msgid "### [Get-DnsClientCache](./Get-DnsClientCache.md)"
+msgstr "### [Get-DnsClientCache](./Get-DnsClientCache.md)"
+
+msgid "Retrieves the contents of the DNS client cache."
+msgstr "检索DNS客户端缓存的内容。"
+
+msgid "### [Get-DnsClientDohServerAddress](Get-DnsClientDohServerAddress.md)"
+msgstr "### [Get-DnsClientDohServerAddress](Get-DnsClientDohServerAddress.md)"
+
+msgid "Gets the DoH server configuration."
+msgstr "获取域名系统（DoH）服务器的配置信息。"
+
+msgid "### [Get-DnsClientGlobalSetting](Get-DnsClientGlobalSetting.md)"
+msgstr "### [Get-DnsClientGlobalSetting](Get-DnsClientGlobalSetting.md)"
+
+msgid "Retrieves global DNS client settings like the suffix search list."
+msgstr "检索全局DNS客户端设置，例如后缀搜索列表。"
+
+msgid "### [Get-DnsClientNrptGlobal](./Get-DnsClientNrptGlobal.md)"
+msgstr "### [Get-DnsClientNrptGlobal](./Get-DnsClientNrptGlobal.md)"
+
+msgid "Gets the NRPT global settings."
+msgstr "获取NRPT全局设置。"
+
+msgid "### [Get-DnsClientNrptPolicy](./Get-DnsClientNrptPolicy.md)"
+msgstr "### [Get-DnsClientNrptPolicy](./Get-DnsClientNrptPolicy.md)"
+
+msgid "Gets the NRPT configured on a computer."
+msgstr "获取计算机上配置的NRPT（Network Real-Time Protocol）。"
+
+msgid "### [Get-DnsClientNrptRule](./Get-DnsClientNrptRule.md)"
+msgstr "### [Get-DnsClientNrptRule](./Get-DnsClientNrptRule.md)"
+
+msgid "Retrieves the DNS client NRPT rules."
+msgstr "检索DNS客户端的相关NRPT规则。"
+
+msgid "### [Get-DnsClientServerAddress](./Get-DnsClientServerAddress.md)"
+msgstr "### [Get-DnsClientServerAddress](./Get-DnsClientServerAddress.md)"
+
+msgid ""
+"Gets DNS server IP addresses from the TCP/IP properties on an interface."
+msgstr "从接口的TCP/IP属性中获取DNS服务器的IP地址。"
+
+msgid "### [Register-DnsClient](./Register-DnsClient.md)"
+msgstr "### [Register-DnsClient](./Register-DnsClient.md)"
+
+msgid ""
+"Registers all of the IP addresses on the computer onto the configured DNS "
+"server."
+msgstr "将计算机上的所有 IP 地址注册到已配置的 DNS 服务器上。"
+
+msgid ""
+"### [Remove-DnsClientDohServerAddress](Remove-DnsClientDohServerAddress.md)"
+msgstr ""
+"### [Remove-DnsClientDohServerAddress](Remove-DnsClientDohServerAddress.md)"
+
+msgid "Removes a DoH server configuration from the supported DoH servers."
+msgstr "从受支持的 DNS-over-HTTP（DoH）服务器列表中移除某个 DoH 服务器配置。"
+
+msgid "### [Remove-DnsClientNrptRule](Remove-DnsClientNrptRule.md)"
+msgstr "### [Remove-DnsClientNrptRule](Remove-DnsClientNrptRule.md)"
+
+msgid "Removes the specified DNS client NRPT rule."
+msgstr "删除指定的DNS客户端NRPT规则。"
+
+msgid "### [Resolve-DnsName](./Resolve-DnsName.md)"
+msgstr "### [ Resolve-DnsName](./Resolve-DnsName.md)"
+
+msgid "Performs a DNS name query resolution for the specified name."
+msgstr "执行对指定名称的DNS域名查询解析操作。"
+
+msgid "### [Set-DnsClient](./Set-DnsClient.md)"
+msgstr "### [Set-DnsClient](./Set-DnsClient.md)"
+
+msgid "Sets the interface-specific DNS client configurations on the computer."
+msgstr "在计算机上设置特定于该接口的DNS客户端配置。"
+
+msgid "### [Set-DnsClientDohServerAddress](Set-DnsClientDohServerAddress.md)"
+msgstr "### [Set-DnsClientDohServerAddress](Set-DnsClientDohServerAddress.md)"
+
+msgid "Modifies an existing DoH server configuration."
+msgstr "修改现有的 DoH（DNS over HTTPS）服务器配置。"
+
+msgid "### [Set-DnsClientGlobalSetting](Set-DnsClientGlobalSetting.md)"
+msgstr "### [Set-DnsClientGlobalSetting](Set-DnsClientGlobalSetting.md)"
+
+msgid "Sets the DNS client global, non-interface specific, settings."
+msgstr "设置DNS客户端的全局配置（与特定接口无关）。"
+
+msgid "### [Set-DnsClientNrptGlobal](./Set-DnsClientNrptGlobal.md)"
+msgstr "### [Set-DnsClientNrptGlobal](./Set-DnsClientNrptGlobal.md)"
+
+msgid "Modifies the global Name Resolution Policy Table (NRPT) settings."
+msgstr "修改全局名称解析策略表（NRPT）的设置。"
+
+msgid "### [Set-DnsClientNrptRule](./Set-DnsClientNrptRule.md)"
+msgstr "### [Set-DnsClientNrptRule](./Set-DnsClientNrptRule.md)"
+
+msgid ""
+"Modifies a DNS client Name Resolution Policy Table (NRPT) rule for the "
+"specified namespace."
+msgstr "修改指定命名空间的DNS客户端名称解析策略表（NRPT）规则。"
+
+msgid "### [Set-DnsClientServerAddress](./Set-DnsClientServerAddress.md)"
+msgstr "### [Set-DnsClientServerAddress](./Set-DnsClientServerAddress.md)"
+
+msgid ""
+"Sets DNS server addresses associated with the TCP/IP properties on an "
+"interface."
+msgstr "设置与接口上的TCP/IP属性相关联的DNS服务器地址。"

@@ -1,0 +1,195 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:30:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Dismount-WindowsImage"
+msgstr "# 卸载 Windows 映像文件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Dismounts a Windows image from the directory it is mapped to."
+msgstr "从映射到的目录中卸载Windows镜像文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DismountDiscard"
+msgstr "### DismountDiscard"
+
+msgid "### DismountSave"
+msgstr "### DismountSave"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Dismount-WindowsImage** cmdlet either saves or discards the changes to"
+" a Windows image and then dismounts the image."
+msgstr "`Dismount-WindowsImage` cmdlet 会保存或丢弃对 Windows 镜像所做的更改，之后再卸载该镜像。"
+
+msgid ""
+"The *Path* parameter specifies the location of the mounted Windows image."
+msgstr "*Path* 参数指定了已挂载的 Windows 镜像的位置。"
+
+msgid ""
+"The *Append* parameter specifies the location of an existing .wim file to "
+"add the Windows image to when you dismount it instead of overwriting the "
+"existing image."
+msgstr ""
+"`Append` 参数用于指定一个现有的 `.wim` 文件的位置，以便在卸载该文件时将 Windows 镜像添加到该文件中，而不是覆盖原有的镜像。"
+
+msgid ""
+"The *CheckIntegrity* parameter detects and tracks .wim file corruption.\n"
+"CheckIntegrity stops the operation if DISM detects that the .wim file is corrupted when used with the **Mount-WindowsImage** cmdlet."
+msgstr ""
+"`CheckIntegrity` 参数用于检测和跟踪 `.wim` 文件的损坏情况。当使用 `DISM` 并配合 `Mount-"
+"WindowsImage` cmdlet 时，如果发现 `.wim` 文件已损坏，`CheckIntegrity` 会立即停止相关操作。"
+
+msgid ""
+"The *CheckIntegrity* and *Append* parameters do not apply to virtual hard "
+"disk (VHD) files."
+msgstr "*CheckIntegrity* 和 *Append* 参数不适用于虚拟硬盘（VHD）文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Dismount an operating system image"
+msgstr "### 示例 1：卸载操作系统镜像"
+
+msgid ""
+"This command dismounts the Windows Image mapped to c:\\offline and saves any"
+" changes that were made while servicing the image."
+msgstr "此命令会卸载映射到 c:\\offline 的 Windows 镜像，并保存在对该镜像进行维护时所做的所有更改。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the location of an existing .wim file to add the Windows image to "
+"when you dismount it instead of overwriting the existing image."
+msgstr "指定一个现有的.wim文件的位置，以便在卸载该文件时将Windows镜像添加到该文件中，而不是覆盖原有的镜像。"
+
+msgid ""
+"Detects and tracks .wim file corruption.\n"
+"*CheckIntegrity* stops the operation if DISM detects that the .wim file is corrupted when used with the **Mount-WindowsImage** cmdlet."
+msgstr ""
+"能够检测并追踪.wim文件的损坏情况。当DISM在使用**Mount-WindowsImage** "
+"cmdlet时发现.wim文件已损坏时，*CheckIntegrity*会停止相关操作。"
+
+msgid "Discards the changes to a Windows image."
+msgstr "丢弃对Windows镜像所做的更改。"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"指定日志中显示的最大输出级别。默认的日志级别为 3。允许的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及详细信息  \n"
+"- 4 = 显示上述所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定要写入日志的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 虚拟磁盘，其容量可能低至 32 MB。日志文件会自动被归档；归档后的日志文件名称会在原文件名后添加 `.bak` "
+"扩展名，并且系统会生成一个新的日志文件。每次日志文件被归档时，对应的 `.bak` 文件都会被覆盖。如果使用的是未加入域的网络共享资源，请在使用 "
+"`DISM` 命令设置日志路径之前，先通过 `net use` 命令结合域凭据来设置访问权限。"
+
+msgid ""
+"Specifies the full path to the root directory of the offline Windows image that you will service.\n"
+"If the directory named Windows is not a subdirectory of the root directory, *WindowsDirectory* must be specified."
+msgstr ""
+"指定要维护的离线 Windows 镜像的根目录的完整路径。如果名为 “Windows” 的目录不是根目录的子目录，则必须指定 "
+"“WindowsDirectory”。"
+
+msgid "Saves the changes to a Windows image."
+msgstr "将所做的更改保存到Windows镜像文件中。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，用于在服务过程中提取文件。该目录必须存在于本地。如果未指定，则会使用 `\\Windows\\%Temp%\\` 目录，并且每次运行 "
+"DISM "
+"时，子目录的名称都会是一个随机生成的十六进制值。每次操作后，临时目录中的内容都会被删除。不建议使用网络共享位置作为临时目录来解压安装包（.cab 或 "
+".msu 文件）。用于在服务过程中提取文件的临时目录应该是本地目录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dism Commands.ImageObject"
+
+msgid "### Microsoft.Dism.Commands.MountedImageInfoObject"
+msgstr "### Microsoft.Dism Commands.MountedImageInfoObject"
+
+msgid "### Microsoft.Dism.Commands.ImageInfoObject"
+msgstr "### Microsoft.Dismcommands.ImageInfoObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.BaseDismObject"
+msgstr "### Microsoft.Dism Commands.BaseDismObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Save-WindowsImage](./Save-WindowsImage.md)"
+msgstr "[Save-WindowsImage](./Save-WindowsImage.md)"
+
+msgid "[Repair-WindowsImage](./Repair-WindowsImage.md)"
+msgstr "[修复Windows镜像](./Repair-WindowsImage.md)"
+
+msgid "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+msgstr "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+
+msgid "[Get-WindowsImage](./Get-WindowsImage.md)"
+msgstr "[Get-WindowsImage](./Get-WindowsImage.md)"

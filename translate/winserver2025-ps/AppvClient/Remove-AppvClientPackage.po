@@ -1,0 +1,146 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:09:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-AppvClientPackage"
+msgstr "# 移除 AppvClient 包"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes the package from a computer."
+msgstr "从计算机上删除该软件包。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByGuid (Default)"
+msgstr "### ByGuid（默认值）"
+
+msgid "### ByPackage"
+msgstr "### 按软件包分类"
+
+msgid "### ByName"
+msgstr "### 按名称查找"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-AppvClientPackage** cmdlet removes the package from computer that runs the Microsoft Application Virtualization (App-V) client.\n"
+"The cmdlet deletes the **AppvClientPackage** object."
+msgstr ""
+"`Remove-AppvClientPackage` cmdlet 用于从运行 Microsoft "
+"应用虚拟化（App-V）客户端的计算机上删除相应的软件包。该 cmdlet 会删除 `AppvClientPackage` 对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Remove a version of a package by using the pipeline operator"
+msgstr "#### 示例 1：使用管道操作符删除某个包的某个版本"
+
+msgid ""
+"This command gets version 1 of the package named MyPackage, and then removes"
+" it from the computer."
+msgstr "这个命令会获取名为“MyPackage”的软件包的第1个版本，然后将其从计算机上删除。"
+
+msgid "### Example 2: Remove a version of a package"
+msgstr "### 示例 2：删除软件包的某个版本"
+
+msgid ""
+"This command removes version 1 of the package named MyPackage from the "
+"computer."
+msgstr "这个命令会将名为“MyPackage”的软件包的版本1从计算机上删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the friendly name of the package given during sequencing.\n"
+"This value is obtained from the package manifest."
+msgstr "指定在序列化过程中提供的软件包的友好名称。该值是从软件包清单中获取的。"
+
+msgid "Specifies an App-V package."
+msgstr "指定一个App-V包。"
+
+msgid ""
+"Specifies the package ID that uniquely identifies the package.\n"
+"It can be found in the package manifest or by opening the package in the sequencer.\n"
+"The package ID is shared by all versions of a specific package."
+msgstr ""
+"指定用于唯一标识该软件包的ID。该ID可以在软件包清单中找到，或者通过在“Sequencer”中打开该软件包来获取。同一软件包的所有版本都共享相同的ID。"
+
+msgid ""
+"Specifies the version of an App-V package in a lineage.\n"
+"If you do not specify this parameter, the cmdlet operates on all versions on the computer."
+msgstr "用于指定App-V包在版本系列中的具体版本。如果您不指定此参数，该cmdlet将作用于计算机上的所有版本。"
+
+msgid ""
+"Specifies a GUID that differentiates a package version from other versions, whether older, newer, or of a different lineage.\n"
+"If you do not specify this parameter, the cmdlet operates on all versions of the package."
+msgstr ""
+"指定一个 GUID，用于区分某个软件包的版本与其他版本（无论是旧版本、新版本还是属于不同分支的版本）。如果不指定此参数，该 cmdlet "
+"将对软件包的所有版本进行操作。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.AppvAgent.AppvClientPackage"
+msgstr "### Microsoft.AppvAgent.AppvClientPackage"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+msgstr "[Add-AppvClientPackage](./Add-AppvClientPackage.md)"
+
+msgid "[Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+msgstr "[Get-AppvClientPackage](./Get-AppvClientPackage.md)"
+
+msgid "[Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+msgstr "[Mount-AppvClientPackage](./Mount-AppvClientPackage.md)"
+
+msgid "[Publish-AppvClientPackage](./Publish-AppvClientPackage.md)"
+msgstr "[发布 AppvClient 包](./Publish-AppvClientPackage.md)"
+
+msgid "[Repair-AppvClientPackage](./Repair-AppvClientPackage.md)"
+msgstr "[Repair-AppvClientPackage](./Repair-AppvClientPackage.md)"
+
+msgid "[Set-AppvClientPackage](./Set-AppvClientPackage.md)"
+msgstr "[Set-AppvClientPackage](./Set-AppvClientPackage.md)"
+
+msgid "[Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+msgstr "[Stop-AppvClientPackage](./Stop-AppvClientPackage.md)"
+
+msgid "[Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"
+msgstr "[Unpublish-AppvClientPackage](./Unpublish-AppvClientPackage.md)"

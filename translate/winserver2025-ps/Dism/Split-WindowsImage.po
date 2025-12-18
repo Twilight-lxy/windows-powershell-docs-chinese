@@ -1,0 +1,195 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:52:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Split-WindowsImage"
+msgstr "# Split-WindowsImage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Splits an existing .wim file into multiple read-only split .wim files."
+msgstr "将现有的.wim文件分割成多个只读的独立.wim文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Split-WindowsImage** cmdlet creates the .swm files in the specified directory, naming each file the same as the specified path_to_swm, but with an appended number.\n"
+"For example, if you set path_to_swm as `c:\\Data.swm`, this option creates a Data.swm file, a Data2.swm file, a Data3.swm file, and so on, defining each portion of the split .wim file and saving it to the C:\\ directory."
+msgstr ""
+"`Split-WindowsImage` cmdlet 会在指定的目录中创建 `.swm` 文件，每个文件的名称都与 `path_to_swm` "
+"的值相同，只是在文件名后加上一个数字。例如，如果你将 `path_to_swm` 设置为 `c:\\Data.swm`，那么该命令会创建 "
+"`Data.swm`、`Data2.swm`、`Data3.swm` 等文件，这些文件分别对应分割后的 `.wim` 文件的不同部分，并将它们保存到 "
+"`C:` 目录中。"
+
+msgid ""
+"If a single file is larger than the value specified in the *FileSize* "
+"parameter, one of the split .swm files that results will be larger than the "
+"value specified in the *FileSize* parameter, in order to accommodate the "
+"large file."
+msgstr ""
+"如果某个文件的体积超过了 *FileSize* 参数中指定的值，那么生成的多个分割后的 `.swm` "
+"文件中至少会有一个文件的体积也会超过该参数指定的值，这样就能容纳这个较大的文件了。"
+
+msgid "This cmdlet does not apply to virtual hard disk (VHD) files."
+msgstr "此cmdlet不适用于虚拟硬盘（VHD）文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Split a .wim file"
+msgstr "### 示例 1：分割一个.wim 文件"
+
+msgid ""
+"This command uses the image from c:\\imagestore\\install.wim to create a "
+"split.swm file, a split2.swm file, a split3.swm file, and so on, defining "
+"each portion of the split .wim file with a maximum size of 1024 MB and "
+"saving it to the C:\\ imagestore\\splitfiles\\ directory."
+msgstr ""
+"此命令使用位于 c:\\imagestore\\install.wim 的图像文件来创建 split.swm、split2.swm、split3.swm"
+" 等文件。每个分割后的 .wim 文件的最大大小被设置为 1024 MB，并将这些文件保存到 C:\\imagestore\\splitfiles\\ "
+"目录中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Detects and tracks .wim file corruption when used with the **Add-WindowsImage**, **Dismount-WindowsImage**, or **Save-WindowsImage** cmdlet.\n"
+"CheckIntegrity stops the operation if DISM detects that the .wim file is corrupted when used with the **Expand-WindowsImage** or **Mount-WindowsImage** cmdlet."
+msgstr ""
+"当与 **Add-WindowsImage**、**Dismount-WindowsImage** 或 **Save-WindowsImage** "
+"cmdlet 一起使用时，该工具能够检测并跟踪 .wim 文件的损坏情况。如果 DISM 在使用 **Expand-WindowsImage** 或 "
+"**Mount-WindowsImage** cmdlet 时发现 .wim 文件已损坏，CheckIntegrity 会立即停止相关操作。"
+
+msgid ""
+"Specifies the maximum size in megabytes (MB) for each created .swm file."
+msgstr "指定每个创建的.swm文件的最大大小（以兆字节MB为单位）。"
+
+msgid "Specifies the location of a WIM file."
+msgstr "指定WIM文件的位置。"
+
+msgid ""
+"Specifies the maximum output level shown in the logs.\n"
+"The default log level is 3.\n"
+"The accepted values are as follows:\n"
+"- 1 = Errors only\n"
+"- 2 = Errors and warnings\n"
+"- 3 = Errors, warnings, and information\n"
+"- 4 = All of the information listed previously, plus debug output"
+msgstr ""
+"指定日志中显示的最大输出级别。默认的日志级别为 3。可接受的值如下：  \n"
+"- 1 = 仅显示错误信息  \n"
+"- 2 = 显示错误信息和警告信息  \n"
+"- 3 = 显示错误信息、警告信息以及详细信息  \n"
+"- 4 = 显示前面列出的所有信息，还包括调试输出"
+
+msgid ""
+"Specifies the full path and file name to log to.\n"
+"If not set, the default is `%WINDIR%\\Logs\\Dism\\dism.log`.\n"
+"In Windows PE, the default directory is the RAMDISK scratch space which can be as low as 32 MB.\n"
+"The log file will automatically be archived.\n"
+"The archived log file will be saved with .bak appended to the file name and a new log file will be generated.\n"
+"Each time the log file is archived the .bak file will be overwritten.\n"
+"When using a network share that is not joined to a domain, use the net use command together with domain credentials to set access permissions before you set the log path for the DISM log."
+msgstr ""
+"指定日志文件的完整路径和文件名。如果未设置，默认值为 `%WINDIR%\\Logs\\Dism\\dism.log`。在 Windows PE "
+"环境中，默认目录是 RAMDISK 虚拟磁盘，其容量可能低至 32 MB。日志文件会自动被归档；归档后的文件名称会加上 `.bak` "
+"扩展名，并且会生成一个新的日志文件。每次日志文件被归档时，原有的 `.bak` 文件都会被覆盖。如果使用的网络共享未加入域，请在使用 `DISM` "
+"日志路径之前，先通过 `net use` 命令并输入域凭据来设置访问权限。"
+
+msgid ""
+"Specifies a temporary directory that will be used when extracting files for use during servicing.\n"
+"The directory must exist locally.\n"
+"If not specified, the `\\Windows\\%Temp%` directory will be used, with a subdirectory name of a randomly generated hexadecimal value for each run of DISM.\n"
+"Items in the scratch directory are deleted after each operation.\n"
+"You should not use a network share location as a scratch directory to expand a package (.cab or .msu file) for installation.\n"
+"The directory used for extracting files for temporary usage during servicing should be a local directory."
+msgstr ""
+"指定一个临时目录，用于在维护过程中提取文件。该目录必须存在于本地系统中。如果未指定临时目录，则会使用 `\\Windows\\%Temp%\\` "
+"目录，并且每次运行 DISM "
+"时都会为该目录生成一个随机十六进制值的子目录名称。每次操作完成后，临时目录中的文件都会被删除。不建议将网络共享位置用作扩展安装包（.cab 或 .msu"
+" 文件）的临时目录。用于在维护过程中提取文件的目录应为本地目录。"
+
+msgid "Specifies the location and the base split image file name."
+msgstr "指定位置以及基础分割图像文件的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Dism.Commands.ImageObject"
+msgstr "### Microsoft.Dism Commands.ImageObject"
+
+msgid "### Microsoft.Dism.Commands.ImageObjectWithState"
+msgstr "### Microsoft.Dism Commands.ImageObjectWithState"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Dism.Commands.OfflineImageObject"
+msgstr "### Microsoft.Dism Commands.OfflineImageObject"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WindowsImage](./Add-WindowsImage.md)"
+msgstr "[Add-WindowsImage](./Add-WindowsImage.md)"
+
+msgid "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+msgstr "[Dismount-WindowsImage](./Dismount-WindowsImage.md)"
+
+msgid "[Expand-WindowsImage](./Expand-WindowsImage.md)"
+msgstr "[Expand-WindowsImage](./Expand-WindowsImage.md)"
+
+msgid "[Export-WindowsImage](./Export-WindowsImage.md)"
+msgstr "[Export-WindowsImage](./Export-WindowsImage.md)"
+
+msgid "[Get-WindowsImage](./Get-WindowsImage.md)"
+msgstr "[Get-WindowsImage](./Get-WindowsImage.md)"
+
+msgid "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+msgstr "[Mount-WindowsImage](./Mount-WindowsImage.md)"
+
+msgid "[New-WindowsImage](./New-WindowsImage.md)"
+msgstr "[New-WindowsImage](./New-WindowsImage.md)"
+
+msgid "[Repair-WindowsImage](./Repair-WindowsImage.md)"
+msgstr "[修复Windows镜像](./Repair-WindowsImage.md)"
+
+msgid "[Remove-WindowsImage](./Remove-WindowsImage.md)"
+msgstr "[Remove-WindowsImage](./Remove-WindowsImage.md)"
+
+msgid "[Save-WindowsImage](./Save-WindowsImage.md)"
+msgstr "[Save-WindowsImage](./Save-WindowsImage.md)"

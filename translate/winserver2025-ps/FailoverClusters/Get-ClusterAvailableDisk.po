@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:58:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterAvailableDisk"
+msgstr "# 获取集群中可用的磁盘"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets information about the disks that can support Failover Clustering and are visible to all nodes,\n"
+"but aren't yet part of the set of clustered disks."
+msgstr ""
+"获取有关可以支持故障转移集群（Failover Clustering）的磁盘的信息，这些磁盘对所有节点都是可见的，但尚未成为集群磁盘集合的一部分。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-ClusterAvailableDisk` cmdlet gets information about the disks that can support Failover\n"
+"Clustering and are visible to all nodes, but aren't yet part of the set of clustered disks."
+msgstr ""
+"`Get-ClusterAvailableDisk` cmdlet 可以获取有关那些能够支持故障转移集群（Failover "
+"Clustering）且对所有节点都可见的磁盘的信息，但这些磁盘尚未成为集群磁盘集合的一部分。"
+
+msgid ""
+"If a disk is unexpectedly missing from the list of disks that are available for use in the cluster,\n"
+"then make sure that the configuration of the storage allows the operating system on all clustered\n"
+"servers to recognize and mount the disk as needed. The disk must be a basic disk, not a dynamic\n"
+"disk, and shouldn't be exposed to any other servers."
+msgstr ""
+"如果某个磁盘突然从可用于集群的磁盘列表中消失，请确保存储配置允许所有集群服务器上的操作系统能够根据需要识别并挂载该磁盘。该磁盘必须是基本磁盘（而非动态磁盘），并且不应被其他服务器访问或使用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example lists the disks that are ready to be added to the cluster."
+msgstr "这个示例列出了可以添加到集群中的磁盘。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example adds all disks that are ready to be added to the local cluster."
+msgstr "这个示例将所有可以添加到本地集群中的磁盘都添加进来。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "{{Fill All Description}}"
+msgstr "请帮我填写所有相关描述内容。"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定用于运行此 cmdlet 的集群名称。如果该参数的输入为`.` 或被省略，则 cmdlet 将在本地集群上运行。"
+
+msgid "Specifies the disks on which to enumerate."
+msgstr "指定要枚举的磁盘。"
+
+msgid "Specifies the cluster on which to enumerate available shared disks."
+msgstr "指定用于列举可用共享磁盘的集群。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters.PowerShellCluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterDiskInfo"
+msgstr "### MicrosoftFailoverClusters.PowerShell ClusterDiskInfo"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-ClusterDisk](./Add-ClusterDisk.md)"
+msgstr "[添加集群磁盘](./Add-ClusterDisk.md)"

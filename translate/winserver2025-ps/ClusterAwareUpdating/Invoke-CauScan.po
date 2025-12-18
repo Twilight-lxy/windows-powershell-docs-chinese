@@ -1,0 +1,253 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 09:27:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Invoke-CauScan"
+msgstr "# 调用 CauScan"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Performs a scan of cluster nodes for applicable updates and gets a list of "
+"the initial set of updates that are applied to each node in a specified "
+"cluster."
+msgstr "执行对集群节点的扫描，以查找可应用的更新，并获取将应用于指定集群中每个节点的一组初始更新列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Invoke-CauScan` cmdlet performs a scan of cluster nodes for applicable updates and gets a\n"
+"list of the initial set of updates that are applied to each node in a specified cluster. Generation\n"
+"of the list can take a few minutes to complete."
+msgstr ""
+"`Invoke-CauScan` cmdlet "
+"用于扫描集群节点，查找可应用的更新，并获取将应用于指定集群中每个节点的初始更新列表。生成该列表可能需要几分钟的时间才能完成。"
+
+msgid ""
+"The preview list includes only an initial set of updates. The list doesn't include updates that\n"
+"might become applicable after the initial updates are installed."
+msgstr "预览列表中仅包含最初的一批更新内容。该列表没有包括那些在初始更新安装之后可能会变得适用的更新。"
+
+msgid ""
+"If the **Microsoft.HotfixPlugin** plug-in is specified, the scan gets only the list of hotfix files\n"
+"that are discovered on the hotfix file share."
+msgstr "如果指定了 **Microsoft.HotfixPlugin** 插件，扫描将仅获取在热修复文件共享位置找到的热修复文件的列表。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get a detailed list of the initial set of updates on the "
+"specified cluster"
+msgstr "### 示例 1：获取指定集群上初始更新集合的详细列表"
+
+msgid ""
+"This command gets a detailed list of the initial set of updates that would currently be applied to\n"
+"each node in the cluster named **CONTOSO-FC1**. The list is based on the updates that would be\n"
+"applied by the **Microsoft.WindowsUpdatePlugin** plug-in, which is the default plug-in. The preview\n"
+"list includes only an initial set of updates, and doesn't include updates that might become\n"
+"applicable only after the initial updates are installed."
+msgstr ""
+"这个命令会获取一组初始更新的详细列表，这些更新目前将应用于名为 **CONTOSO-FC1** 的集群中的每个节点。该列表是基于由默认插件 "
+"**Microsoft.WindowsUpdatePlugin** "
+"应用的更新内容生成的。预览列表中仅包含了一组初始更新，并不包括那些可能在初始更新安装之后才会生效的更新。"
+
+msgid ""
+"### Example 2: Get a detailed list of the initial set of updates on the "
+"specified cluster using a query string"
+msgstr "### 示例 2：使用查询字符串获取指定集群上初始更新集的详细列表"
+
+msgid ""
+"This example gets a detailed list of the initial set of updates that would currently be applied to\n"
+"each node in the cluster named **CONTOSO-FC1**. The list is based on the updates that would be applied\n"
+"by the **Microsoft.WindowsUpdatePlugin** plug-in, using a specified query string, and the\n"
+"**Microsoft.HotfixPlugin**, after the necessary hotfixes and the hotfix configuration file have been\n"
+"downloaded to `\\\\CauHotfixSrv\\shareName`. This example also shows how to pass the administrative\n"
+"credentials for cluster **CONTOSO-FC1** to the cmdlet."
+msgstr ""
+"这个示例会获取一组初始更新的详细列表，这些更新将当前应用于名为 **CONTOSO-FC1** 的集群中的每个节点。该列表是根据 "
+"**Microsoft.WindowsUpdatePlugin** 插件使用指定的查询字符串所应用的更新，以及在必要的热修复程序和热修复配置文件被下载到"
+" `\\\\CauHotfixSrv\\shareName` 之后由 **Microsoft.HotfixPlugin** "
+"所应用的更新来生成的。此外，这个示例还展示了如何将集群 **CONTOSO-FC1** 的管理凭据传递给相应的 cmdlet。"
+
+msgid ""
+"This example uses splatting to pass parameter values from the `$parameters` variable to the command.\n"
+"Learn more about [Splatting](/powershell/module/microsoft.powershell.core/about/about_splatting)."
+msgstr ""
+"这个示例使用“拆分”（splatting）技术将 `$parameters` "
+"变量中的参数值传递给命令。欲了解更多关于[“拆分”技术的信息，请访问](/powershell/module/microsoft.powershell.core/about/about_splatting)。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that command assumes a Kernel Soft Reboot (KSR) for the failover "
+"cluster."
+msgstr "表示该命令假设故障转移集群将执行内核软重启（Kernel Soft Reboot，简称KSR）。"
+
+msgid ""
+"KSR bypasses BIOS/firmware initialization. You can only use KSR for updates that do not require a\n"
+"BIOS/firmware initialization."
+msgstr "KSR可以绕过BIOS/固件的初始化过程。只有那些不需要进行BIOS/固件初始化的更新才能使用KSR来完成。"
+
+msgid ""
+"Specifies a set of name=value pairs, as arguments, for each updating plug-in"
+" to use."
+msgstr "为每个需要更新的插件指定一组名称=值的对作为参数使用。"
+
+msgid "For instance, to specify a Domain argument for one plug-in:"
+msgstr "例如，要为一个插件指定一个“Domain”参数："
+
+msgid ""
+"You can specify multiple pairs in a set separated with semicolons. For "
+"instance:"
+msgstr "你可以用分号（;）分隔在一组中的多对参数。例如："
+
+msgid ""
+"For the default **Microsoft.WindowsUpdatePlugin** plug-in, no arguments are needed. The following\n"
+"arguments are optional:"
+msgstr "对于默认的 **Microsoft.WindowsUpdatePlugin** 插件来说，不需要传递任何参数。以下参数是可选的："
+
+msgid ""
+"For more information about query strings for the default **Microsoft.WindowsUpdatePlugin** plug-in\n"
+"and the criteria such as IsInstalled that can be included in the query strings, see\n"
+"[IUpdateSearcher::Search method](/windows/win32/api/wuapi/nf-wuapi-iupdatesearcher-search)."
+msgstr ""
+"有关默认的 **Microsoft.WindowsUpdatePlugin** 插件的查询字符串的更多信息，以及可以包含在查询字符串中的条件（如 "
+"IsInstalled），请参阅 [IUpdateSearcher::Search 方法](/windows/win32/api/wuapi/nf-"
+"wuapi-iupdatesearcher-search)。"
+
+msgid ""
+"For the **Microsoft.HotfixPlugin** plug-in, the following argument is "
+"required:"
+msgstr "对于 **Microsoft.HotfixPlugin** 插件，需要以下参数："
+
+msgid ""
+"The following arguments are optional for the **Microsoft.HotfixPlugin** "
+"plug-in:"
+msgstr "以下参数对于 **Microsoft.HotfixPlugin** 插件来说是可选的："
+
+msgid ""
+"Specifies one or more plug-ins to use when performing scans. You can specify multiple values\n"
+"separated with commas. The default is the **Microsoft.WindowsUpdatePlugin** plug-in. This plug-in\n"
+"coordinates the Windows Update Agent software resident on each cluster node, the same software that\n"
+"is used when updates are downloaded from Windows Update or Microsoft Update, or from a Windows\n"
+"Server Update Services (WSUS) server. For more information about how plug-ins work with\n"
+"Cluster-Aware Updating (CAU), see\n"
+"[How Cluster-Aware Updating plug-ins work](/windows-server/failover-clustering/cluster-aware-updating-plug-ins)."
+msgstr ""
+"指定在执行扫描时使用的一个或多个插件。可以使用逗号分隔多个插件名称。默认使用的插件是 "
+"**Microsoft.WindowsUpdatePlugin**。该插件负责协调安装在每个集群节点上的 Windows Update Agent "
+"软件；该软件用于在从 Windows Update、Microsoft Update 或 Windows Server Update Services "
+"(WSUS) 服务器下载更新时进行相关操作。有关插件如何与 Cluster-Aware Updating (CAU) 协同工作的更多信息，请参阅 "
+"[Cluster-Aware Updating 插件的工作原理](/windows-server/failover-"
+"clustering/cluster-aware-updating-plug-ins)。"
+
+msgid ""
+"Specifies the name of the cluster which should be scanned for applicable updates. This parameter is\n"
+"only required when this cmdlet isn't run on a failover cluster node, or this cmdlet is used to\n"
+"reference a failover cluster different from where the cmdlet is run."
+msgstr ""
+"指定需要扫描以查找适用更新的集群名称。仅当此cmdlet不在故障转移集群节点上运行，或者用于引用与执行该cmdlet的地点不同的故障转移集群时，才需要这个参数。"
+
+msgid "Specifies the administrative credentials for the target cluster."
+msgstr "指定目标集群的管理凭据。"
+
+msgid ""
+"Indicates that the CAU cluster role scans for upgrades to the operating system of the cluster nodes\n"
+"without stopping the Hyper-V or the Scale-Out File Server workloads."
+msgstr "这表示CAU集群角色会在不中断Hyper-V或Scale-Out文件服务器工作负载的情况下，扫描集群节点操作系统的升级需求。"
+
+msgid ""
+"Specifies the type of reboot to use for each node in the cluster during the update. The available\n"
+"values are:"
+msgstr "指定在更新过程中集群中每个节点应使用的重启类型。可用的值有："
+
+msgid ""
+"Indicates that CAU scans each cluster node for applicable updates and stages the updates for each\n"
+"plug-in in the plug-in order passed into the **CauPluginName** parameter then multiple plug-ins are\n"
+"used during a scan for updates."
+msgstr ""
+"这表示 CAU 会扫描每个集群节点以查找可应用的更新，并按照传递给 **CauPluginName** "
+"参数的插件顺序对每个插件进行更新处理。在更新扫描过程中，会同时使用多个插件。"
+
+msgid ""
+"By default, CAU scans and stages the applicable updates for all plug-ins in parallel. This\n"
+"parameter is valid only when multiple plug-ins are specified in the **CauPluginName** parameter. If\n"
+"a single plug-in is specified, a warning appears."
+msgstr ""
+"默认情况下，CAU会并行扫描并处理所有插件所需的更新。只有当在**CauPluginName**参数中指定了多个插件时，此参数才有效。如果只指定了一个插件，则会出现警告提示。"
+
+msgid ""
+"Indicates that if a failure occurs during a scan on a node by any plug-in, subsequent scans on the\n"
+"node that are coordinated by the remaining plug-ins are stopped when multiple plug-ins are used\n"
+"during a scan for updates."
+msgstr "这表示：如果在某个节点上进行扫描时某个插件出现了故障，那么当使用多个插件进行更新扫描时，由剩余插件协调的对该节点进行的后续扫描将会被停止。"
+
+msgid ""
+"The parameter is valid only when multiple plug-ins are specified in the **CauPluginName** parameter.\n"
+"If a single plug-in is specified, a warning appears."
+msgstr "该参数仅在**CauPluginName**参数中指定了多个插件时才有效。如果只指定了一个插件，会出现警告提示。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.ClusterAwareUpdating.ActivityIdMap"
+msgstr "### Microsoft_clusterAwareUpdating.ActivityIdMap"
+
+msgid "### Microsoft.ClusterAwareUpdating.UpdateInfo"
+msgstr "### Microsoft-clusterAwareupdating.UpdateInfo"
+
+msgid "### Microsoft.ClusterAwareUpdating.UpgradeSetupInfo"
+msgstr "### MicrosoftCluster AwareUpdating.UpgradeSetupInfo"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-CauClusterRole](add-cauclusterrole.md)"
+msgstr "[Add-CauClusterRole](add-cauclusterrole.md)"
+
+msgid "[Get-CauRun](get-caurun.md)"
+msgstr "[Get-CauRun](get-caurun.md)"
+
+msgid "[Invoke-CauRun](invoke-caurun.md)"
+msgstr "[Invoke-CauRun](invoke-caurun.md)"
+
+msgid "[Stop-CauRun](stop-caurun.md)"
+msgstr "[Stop-CauRun](stop-caurun.md)"

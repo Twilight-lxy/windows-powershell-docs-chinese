@@ -1,0 +1,229 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:32:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-DfsrConnection"
+msgstr "# Add-DfsrConnection"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a connection between members of a replication group."
+msgstr "在复制组中的成员之间建立连接。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-DfsrConnection** cmdlet creates a connection between members of a "
+"replication group."
+msgstr "`Add-DfsrConnection` cmdlet 可用于在复制组的成员之间建立连接。"
+
+msgid ""
+"Distributed File System (DFS) Replication connections are the logical partnerships between members in a replication group.\n"
+"The DFS Replication service uses the Remote Procedure Call (RPC) protocol to communicate between servers.\n"
+"You must create a connection between a pair of computers before the DFS Replication service can initiate replication.\n"
+"You should always create connections bidirectionally between two servers, even if you are using read-only replication.\n"
+"The exception to this case is if you create a ring topology between three or more servers, where all members transitively replicate to all partners, and where all servers are hosting only writable replicated folders."
+msgstr ""
+"分布式文件系统（DFS）复制连接是复制组中各成员之间的逻辑关联。DFS复制服务使用远程过程调用（RPC）协议在服务器之间进行通信。在DFS复制服务能够启动复制之前，必须先在一对计算机之间建立连接。即使您使用的是只读复制模式，也应当始终在两台服务器之间建立双向连接。唯一的例外情况是当您在三台或更多服务器之间创建环形拓扑结构时：在这种情况下，所有成员都会相互复制数据，并且所有服务器都仅托管可写复制的文件夹。"
+
+msgid ""
+"This cmdlet does not support modifying connection bandwidth or schedules, "
+"which typically do not require changes."
+msgstr "这个cmdlet不支持修改连接带宽或调度安排，因为这些通常不需要进行更改。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Create a bidirectional connection between members of a "
+"replication group"
+msgstr "### 示例 1：在复制组的成员之间创建双向连接"
+
+msgid ""
+"This command creates a bidirectional replication connection between the "
+"computer named SRV01 and the computer named SRV02 in the replication group "
+"named RG24."
+msgstr "该命令在名为RG24的复制组中，创建了名为SRV01的计算机与名为SRV02的计算机之间的双向复制连接。"
+
+msgid ""
+"### Example 2: Create a one-way connection between members of a replication "
+"group"
+msgstr "### 示例 2：在复制组中的成员之间创建单向连接"
+
+msgid ""
+"This command creates a one-way replication connection from computer named SRV02 to the computer named SRV01 in the replication group named RG24.\n"
+"To create a one-way replication connection, you must run the cmdlet once in each direction between members of the replication group.\n"
+"DFS Replication supports one-way connections only for a ring topology configuration on three or more servers."
+msgstr ""
+"此命令会在名为RG24的复制组中，建立从计算机SRV02到计算机SRV01的单向复制连接。要创建单向复制连接，必须在复制组的各成员之间分别运行该cmdlet（每个方向执行一次）。DFS复制仅支持在三个或更多服务器组成的环形拓扑配置中使用单向复制连接。"
+
+msgid "### Example 3: Create a data distribution replication topology"
+msgstr "### 示例 3：创建数据分布复制拓扑结构"
+
+msgid ""
+"This example creates a hub and spoke data distribution replication topology."
+msgstr "这个示例创建了一个中心辐射式（hub-and-spoke）的数据分布复制拓扑结构。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies that the DFSR service does not create a matching connection in the"
+" opposite direction between the two computers."
+msgstr "指定DFSR服务不会在两台计算机之间创建反向的连接。"
+
+msgid ""
+"You do not typically need to specify this parameter.\n"
+"DFS Replication requires a fully-connected replication topology, which means that all servers have both an inbound and outbound connection between each of its direct partners, or through transitive replication.\n"
+"This is required even when you specify read-only replication by using the **Set-DfsrMembership** cmdlet and setting the *ReadOnly* parameter to $True."
+msgstr ""
+"通常情况下，你不需要指定这个参数。DFS复制需要一个完全连接的复制拓扑结构，这意味着所有服务器都必须与其直接的对等节点之间存在双向连接（无论是直接的入站/出站连接，还是通过间接的复制机制）。即使你使用"
+" **Set-DfsrMembership** cmdlet 并将 *ReadOnly* 参数设置为 $True "
+"以指定只读复制模式，这一要求也同样适用。"
+
+msgid "Specifies a description for the connection."
+msgstr "为该连接指定一个描述。"
+
+msgid ""
+"Specifies the name of the receiving computer.\n"
+"A receiving computer is also called an inbound or downstream computer."
+msgstr "指定接收计算机的名称。接收计算机也被称为入站计算机或下游计算机。"
+
+msgid "Specifies that the DFSR service disables the connection."
+msgstr "指定DFSR服务会断开连接。"
+
+msgid ""
+"You do not typically need to disable a connection.\n"
+"Specify this parameter to temporarily pause replication.\n"
+"You can also use the **Suspend-DfsReplicationGroup** cmdlet to halt replication between computers.\n"
+"You must enable a connection between the computers before the DFS Replication service can initiate replication."
+msgstr ""
+"通常情况下，你不需要手动禁用连接。如果你想暂时停止复制过程，可以设置这个参数。此外，你还可以使用 **Suspend-"
+"DfsReplicationGroup** cmdlet 来中断计算机之间的复制操作。在 DFS "
+"复制服务能够重新启动复制之前，你必须先恢复计算机之间的连接。"
+
+msgid ""
+"Important: Specify this parameter instead of disabling a computer's membership in the replication group by using the **Set-DfsrMembership** cmdlet.\n"
+"Disabling and enabling a computer's membership will cause non-authoritative inbound replication."
+msgstr ""
+"重要提示：请使用该参数来指定相关设置，而不是通过 `Set-DfsrMembership` cmdlet "
+"来禁用某台计算机在复制组中的成员身份。禁用或重新启用某台计算机的成员资格会导致非授权的入站复制操作发生。"
+
+msgid ""
+"Indicates that the DFSR service disables the cross-file similarity Remote "
+"Differential Compression (RDC) algorithm on this connection."
+msgstr "表示DFSR服务在此连接上禁用了跨文件相似性的远程差分压缩（RDC）算法。"
+
+msgid ""
+"Cross-file RDC uses up to five existing previously replicated files on a volume to seed a new replicating file.\n"
+"Applying cross-file RDC over very low-bandwidth network connections with files that are very similar results in very large bandwidth savings and potentially large time savings.\n"
+"When you use cross-file RDC on very high-bandwidth network connections, cross-file RDC may add too much local processing time and negatively affect performance.\n"
+"In extremely large datasets (millions of files on a volume with a great deal of similarity), cross-file RDC may also negatively affect CPU and disk utilization.\n"
+"Consider disabling cross-file RDC during initial synchronization when you replicate over LANs and very high performance WANs.\n"
+"This setting is only supported on Windows Server 2012 R2 and later."
+msgstr ""
+"跨文件RDC（Cross-File "
+"RDC）会使用卷上已存在的五个先前复制过的文件来作为新复制文件的“种子”。在带宽较低的网络连接环境下，如果复制的文件之间具有很高的相似性，那么采用跨文件RDC技术可以显著节省带宽和传输时间。然而，在带宽较高的网络环境下，跨文件RDC可能会导致过多的本地处理开销，从而影响系统性能。对于包含大量高度相似文件的庞大数据集（例如卷上拥有数百万个文件的情况），跨文件RDC还可能对CPU和磁盘利用率产生负面影响。因此，在通过局域网（LAN）或高性能广域网（WAN）进行数据复制时，建议禁用跨文件RDC功能。此设置仅支持Windows"
+" Server 2012 R2及更高版本的系统。"
+
+msgid ""
+"Indicates that the DFS Replication service creates the connection with "
+"Remote Differential Compression (RDC) disabled."
+msgstr "这表示DFS复制服务在禁用远程差分压缩（Remote Differential Compression，简称RDC）的情况下创建连接。"
+
+msgid ""
+"You do not typically need to specify this parameter when you use lower bandwidth, higher latency connections.\n"
+"Consider specifying this parameter if the connection is over a LAN or very high performance WAN connection.\n"
+"By default, RDC is enabled on DFS Replication connections."
+msgstr ""
+"当使用带宽较低、延迟较高的连接时，通常不需要指定此参数。但如果连接是通过局域网（LAN）或性能非常高的广域网（WAN）建立的，则建议指定该参数。默认情况下，DFS复制连接会启用RDC功能。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS "
+"名称或完全限定域名（FQDN）。如果未指定此参数，该cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。你可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid "Specifies the file size threshold, in kilobytes, for RDC to apply."
+msgstr "指定用于远程桌面连接（RDC）应用的文件大小阈值，单位为千字节（kilobytes）。"
+
+msgid ""
+"You do not typically need to specify this parameter when you use lower bandwidth/higher latency connections.\n"
+"Consider specifying this parameter only if the connection is over a LAN or a very high performance WAN connection.\n"
+"By default, any files equal to or greater than 64KB are chunked by RDC."
+msgstr ""
+"当使用带宽较低、延迟较高的连接时，通常不需要指定这个参数。只有在连接是通过局域网（LAN）或性能非常高的广域网（WAN）建立的情况下，才需要考虑指定该参数。默认情况下，RDC会将大小等于或大于64KB的文件分割成多个数据块进行传输。"
+
+msgid ""
+"Specifies the name of the sending computer.\n"
+"A sending computer is also called an outbound or upstream computer."
+msgstr "指定发送计算机的名称。发送计算机也被称为出站计算机或上游计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的后果。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrConnection"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrConnection"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DfsrConnection](./Get-DfsrConnection.md)"
+msgstr "[Get-DfsrConnection](./Get-DfsrConnection.md)"
+
+msgid "[Set-DfsrConnection](./Set-DfsrConnection.md)"
+msgstr "[Set-DfsrConnection](./Set-DfsrConnection.md)"
+
+msgid "[Remove-DfsrConnection](./Remove-DfsrConnection.md)"
+msgstr "[Remove-DfsrConnection](./Remove-DfsrConnection.md)"

@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:39:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DfsrMembership"
+msgstr "# Get-DfsrMembership"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets membership settings for members of replication groups."
+msgstr "获取复制组成员的会员设置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DfsrMembership** cmdlet gets membership settings for members of replication groups.\n"
+"Members of a replication group host replicated folders.\n"
+"Use the **Add-DfsrMember** cmdlet to add a member to a group.\n"
+"Adding a member creates a membership that contains default values.\n"
+"You can use the current cmdlet to view settings for a membership, and use the Set-DfsrMembership to modify membership settings."
+msgstr ""
+"`Get-DfsrMembership` cmdlet 可以获取复制组成员的成员资格设置。复制组的成员会托管被复制的文件夹。可以使用 `Add-"
+"DfsrMember` cmdlet 将某个成员添加到组中；添加成员时会创建一个包含默认值的成员资格记录。你可以使用当前的 `Get-"
+"DfsrMembership` cmdlet 来查看成员资格的设置，同时也可以使用 `Set-DfsrMembership` cmdlet "
+"来修改这些设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all members of all groups"
+msgstr "### 示例 1：获取所有组的所有成员"
+
+msgid ""
+"This command gets all member computers in all replication groups.\n"
+"The console displays **DfsrMembership** objects for two member computers, named SRV01 and SRV02.\n"
+"These two computers belong to the same group, named RG01."
+msgstr ""
+"该命令会获取所有复制组中的所有成员计算机信息。控制台显示了两台名为 SRV01 和 SRV02 的成员计算机的 **DfsrMembership** "
+"对象。这两台计算机属于同一个名为 RG01 的组。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of names of replication member computers.\n"
+"The cmdlet modifies membership settings for these member computers.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一组复制成员计算机的名称。该cmdlet会修改这些成员计算机的成员资格设置。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid ""
+"Specifies the NetBIOS name or fully qualified domain name (FQDN) for the Active Directory Domain Service (AD DS) domain that contains the replication group.\n"
+"If you do not specify this parameter, the cmdlet uses the domain of the current user."
+msgstr ""
+"指定包含复制组的 Active Directory 域服务（AD DS）域的 NetBIOS 名称或完全限定域名（FQDN）。如果您未指定此参数，该 "
+"cmdlet 将使用当前用户的域。"
+
+msgid ""
+"Specifies an array of names of replication groups.\n"
+"If you do not specify this parameter, the cmdlet applies to all participating replication groups.\n"
+"You can use a comma separated list and the wildcard character (*)."
+msgstr "指定一个复制组名称的数组。如果不指定此参数，该cmdlet将适用于所有参与的复制组。您可以使用逗号分隔的列表以及通配符（*）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsReplicationGroup"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.DistributedFileSystemReplication.DfsrMembership"
+msgstr "### Microsoft.DistributedFileSystemReplication.DfsrMembership"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-DfsrMembership](./Set-DfsrMembership.md)"
+msgstr "[Set-DfsrMembership](./Set-DfsrMembership.md)"
+
+msgid "[Add-DfsrMember](./Add-DfsrMember.md)"
+msgstr "[Add-DfsrMember](./Add-DfsrMember.md)"

@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 15:02:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ClusterNetwork"
+msgstr "# Get-ClusterNetwork"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets information about one or more networks in a failover cluster."
+msgstr "获取有关故障转移集群中一个或多个网络的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-ClusterNetwork` cmdlet gets information about one or more networks in a failover cluster.\n"
+"A failover cluster requires network connectivity among nodes and between clients and nodes."
+msgstr ""
+"`Get-ClusterNetwork` cmdlet "
+"可以获取关于故障转移集群中一个或多个网络的信息。故障转移集群要求节点之间以及客户端与节点之间存在网络连接。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example gets information about the networks used by the local cluster."
+msgstr "这个示例用于获取有关本地集群所使用的网络的信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "This example renames `Cluster Network 1` to `Cluster Network 3`."
+msgstr "这个例子将“Cluster Network 1”重命名为“Cluster Network 3”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the cluster on which to run this cmdlet. If the input for this parameter is\n"
+"`.` or it is omitted, then the cmdlet runs on the local cluster."
+msgstr "指定要运行此cmdlet的集群名称。如果该参数的输入为`.`或被省略，则cmdlet将在本地集群上运行。"
+
+msgid "Specifies the cluster on which to enumerate the cluster networks."
+msgstr "指定用于遍历集群网络的集群。"
+
+msgid "Specifies the name of the cluster network to get."
+msgstr "指定要获取的集群网络的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.Cluster"
+msgstr "### Microsoft FailoverClusters PowerShell Cluster"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.FailoverClusters.PowerShell.ClusterNetwork"
+msgstr "### MicrosoftFailoverClusters.PowerShell-clusterNetwork"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ClusterNetworkInterface](./Get-ClusterNetworkInterface.md)"
+msgstr "[Get-ClusterNetworkInterface](./Get-ClusterNetworkInterface.md)"

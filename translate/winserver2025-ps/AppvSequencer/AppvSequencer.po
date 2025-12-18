@@ -1,0 +1,49 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:15:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# AppvSequencer Module"
+msgstr "# AppvSequencer 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"The following list contains links to the help topics for the Microsoft "
+"Application Virtualization (App-V) Sequencer cmdlets."
+msgstr "以下列表包含了指向 Microsoft 应用程序虚拟化（App-V）Sequencer cmdlet 帮助主题的链接。"
+
+msgid "## AppvSequencer Cmdlets"
+msgstr "## AppvSequencerCmdlets"
+
+msgid "### [Expand-AppvSequencerPackage](./Expand-AppvSequencerPackage.md)"
+msgstr "### [Expand-AppvSequencerPackage](./Expand-AppvSequencerPackage.md)"
+
+msgid "Expands an existing App-V package."
+msgstr "用于扩展现有的App-V软件包。"
+
+msgid "### [New-AppvPackageAccelerator](./New-AppvPackageAccelerator.md)"
+msgstr "### [New-AppvPackageAccelerator](./New-AppvPackageAccelerator.md)"
+
+msgid "Generates a package accelerator."
+msgstr "生成一个包加速器（package accelerator）。"
+
+msgid "### [New-AppvSequencerPackage](./New-AppvSequencerPackage.md)"
+msgstr "### [New-AppvSequencerPackage](./New-AppvSequencerPackage.md)"
+
+msgid "Creates a new App-V package."
+msgstr "创建一个新的App-V软件包。"
+
+msgid "### [Update-AppvSequencerPackage](./Update-AppvSequencerPackage.md)"
+msgstr "### [更新 AppvSequencerPackage](./Update-AppvSequencerPackage.md)"
+
+msgid "Upgrades virtual application packages."
+msgstr "升级虚拟应用程序包。"

@@ -1,0 +1,169 @@
+---
+description: 使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。
+external help file: Microsoft.FailoverClusters.PowerShell.dll-Help.xml
+Module Name: FailoverClusters
+ms.date: 07/18/2025
+online version: https://learn.microsoft.com/powershell/module/failoverclusters/update-clusterfunctionallevel?view=windowsserver2025-ps&wt.mc_id=ps-gethelp
+schema: 2.0.0
+title: Update-ClusterFunctionalLevel
+---
+
+# 更新集群功能级别（Update-ClusterFunctionalLevel）
+
+## 摘要
+更新混合版本集群的功能级别。
+
+## 语法
+
+```
+Update-ClusterFunctionalLevel [-Force] [-WhatIf] [-InputObject <PSObject>] [-Cluster <String>]
+ [<CommonParameters>]
+```
+
+## 描述
+
+`Update-ClusterFunctionalLevel` cmdlet 用于更新混合版本集群的功能级别。你可以在所有节点都完成更新后，再对整个集群进行功能级别的更新。
+
+从 Windows Server 2016 开始，您可以将运行较新版本 Windows 操作系统的节点添加到那些运行旧版本 Windows 操作系统的节点集群中。
+
+在添加了一个运行不同版本Windows操作系统的节点后，该集群就变成了一个混合版本的集群。您可以使用这种混合版本的集群，在对集群中的每个节点进行操作系统升级的同时继续让集群正常运行。
+
+我们建议您在一个月内升级集群中的所有节点。不建议长期使用混合版本的集群。
+
+你可以使用这个cmdlet来支持集群的滚动式操作系统升级。如果你使用的集群运行的是Hyper-V，那么你可以在不中断虚拟机运行的情况下对该集群的节点进行升级。
+
+## 示例
+
+#### 示例 1：测试一个可能的更新
+
+```powershell
+Update-ClusterFunctionalLevel -WhatIf
+```
+
+这个命令用于测试更新操作是否能够成功完成。由于该命令包含了 **WhatIf** 参数，因此实际上并不会执行更新操作。
+
+### 示例 2：更新集群的功能级别
+
+```powershell
+Update-ClusterFunctionalLevel -Cluster "cluster_17"
+```
+
+此命令用于更新名为`cluster_17`的集群的功能级别。在运行此命令之前，必须先确保该集群的所有节点都已完成更新。
+
+### 示例 3：集群的滚动操作系统升级
+
+首先，通过指定 `Suspend-ClusterNode` cmdlet 的 **Drain** 参数来关闭一个集群节点。该 cmdlet 会使得所有虚拟机实时迁移到其他主机之一。
+
+接下来，使用 `Remove-ClusterNode` cmdlet 从集群中移除该主机。
+
+接下来，执行原位升级以安装新版本的操作系统。请注意，一个集群一次只能升级到一个操作系统版本，例如：
+
+- Windows Server 2012 R2 to Windows Server 2016
+- Windows Server 2016 to Windows Server 2019
+- Windows Server 2019 to Windows Server 2022
+- Windows Server 2022 to Windows Server 2025
+
+接下来，如果尚未安装的话，通过运行以下命令来添加 **Hyper-V** 角色和 **故障转移集群** 功能：
+
+```powershell
+Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
+Install-WindowsFeature -Name Failover-Clustering -IncludeManagementTools
+```
+
+最后，使用 `Add-ClusterNode` cmdlet 将该节点添加到集群中。
+
+对集群中的每个节点重复这些步骤。
+
+## 参数
+
+### -Cluster
+
+指定用于运行此 cmdlet 的集群的名称。如果该参数的输入为`.` 或被省略，则 cmdlet 会在本地集群上运行。
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Force
+
+强制命令运行，而不需要用户确认。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+
+指定该 cmdlet 的输入数据。您可以使用此参数，也可以将输入数据通过管道（pipe）传递给该 cmdlet。
+
+```yaml
+Type: PSObject
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -WhatIf
+
+展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+
+此 cmdlet 支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction 和 -WarningVariable。有关更多信息，请参阅 [关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。
+
+## 输入
+
+### MicrosoftFailoverClusters.PowerShellCluster
+
+此cmdlet接受一个**集群**作为参数，并用于更新该集群的功能级别。
+
+## 输出
+
+### MicrosoftFailoverClusters.PowerShellCluster
+
+此cmdlet返回一个**集群**。此外，该cmdlet还会更新这个集群的功能级别（即集群所使用的操作系统版本或相关配置）。
+
+## 备注
+
+一旦使用此cmdlet更新了集群的功能级别，该更改将是永久性的，无法恢复到之前的级别。
+
+## 相关链接
+
+[添加集群节点](add-clusternode.md)
+
+[暂停集群节点](suspend-clusternode.md)
+
+[Remove-ClusterNode](remove-clusternode.md)

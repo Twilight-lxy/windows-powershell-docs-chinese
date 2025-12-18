@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 10:14:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-DHASActiveEncryptionCertificate"
+msgstr "# 获取 DHA 活动加密证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the active encryption certificate thumbprint."
+msgstr "获取活动的加密证书指纹。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-DHASActiveEncryptionCertificate** cmdlet gets the active "
+"encryption certificate thumbprint for the Device Health Attestation service."
+msgstr ""
+"`Get-DHASActiveEncryptionCertificate` cmdlet 可以获取设备健康认证（Device Health "
+"Attestation）服务当前使用的加密证书的摘要（thumbprint）。"
+
+msgid "You must have administrator rights to run this cmdlet."
+msgstr "您必须具有管理员权限才能运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the active encryption certificate"
+msgstr "#### 示例 1：获取当前的加密证书"
+
+msgid ""
+"This command gets the thumbprint of the active encryption certificate for "
+"the Device Health Attestation service."
+msgstr "此命令用于获取设备健康验证（Device Health Attestation）服务所使用的当前加密证书的“指纹”信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "This cmdlet returns the active encryption certificate thumbprint."
+msgstr "此cmdlet返回当前的加密证书指纹。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Set-DHASActiveEncryptionCertificate](./Set-"
+"DHASActiveEncryptionCertificate.md)"
+msgstr ""
+"[Set-DHASActiveEncryptionCertificate](./Set-"
+"DHASActiveEncryptionCertificate.md)"

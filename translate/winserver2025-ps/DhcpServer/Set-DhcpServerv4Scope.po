@@ -1,0 +1,241 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 12:09:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DhcpServerv4Scope"
+msgstr "# Set-DhcpServerv4Scope"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Sets the properties of an existing IPv4 scope on the DHCP server service."
+msgstr "用于在DHCP服务器服务上设置现有IPv4地址范围的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### WithoutRange (Default)"
+msgstr "### WithoutRange（默认值）"
+
+msgid "### WithRange"
+msgstr "### WithRange"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DhcpServerv4Scope** cmdlet sets the properties of an existing IPv4"
+" scope on the Dynamic Host Configuration Protocol (DHCP) server service."
+msgstr "`Set-DhcpServerv4Scope` cmdlet 用于设置动态主机配置协议（DHCP）服务器服务中现有 IPv4 范围的属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set values for a scope"
+msgstr "#### 示例 1：为某个作用域设置值"
+
+msgid ""
+"This example sets the name of the specified DHCPv4 scope to Ext Lab Net "
+"VLAN100, activates the scope, and sets the lease duration to 4 days."
+msgstr "这个示例将指定的 DHCPv4 范围的名称设置为 “Ext Lab Net VLAN100”，激活该范围，并将租约持续时间设置为 4 天。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the enabled state for the policy enforcement on the scope."
+msgstr "指定在该范围内策略执行的启用状态。"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+"For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的方式运行该 cmdlet。使用此参数来执行需要较长时间才能完成的命令。该 cmdlet "
+"会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用 `*-Job` 系列 "
+"cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关 Windows "
+"PowerShell® 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies the DNS name, or IPv4 or IPv6 address, of the target computer that"
+" runs the DHCP server service."
+msgstr "指定运行DHCP服务器服务的目标计算机的DNS名称、IPv4地址或IPv6地址。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Specifies the time, in milliseconds, by which the DHCP server service should delay sending a response to the clients.\n"
+"This parameter should be used on the secondary DHCP server service in a split scope configuration."
+msgstr "指定 DHCP 服务器服务延迟向客户端发送响应的时间（以毫秒为单位）。该参数应用于分域配置中的备用 DHCP 服务器服务。"
+
+msgid "Specifies the description to set for the scope."
+msgstr "指定要为该作用域设置的描述信息。"
+
+msgid ""
+"Specifies the ending address of the IPv4 range to set for the scope.\n"
+"If a new IPv4 range is being set, then the previously set IPv4 range of the scope is discarded."
+msgstr "指定要为该作用域设置的IPv4范围的结束地址。如果正在设置一个新的IPv4范围，则之前为此作用域设置的IPv4范围将被弃用。"
+
+msgid ""
+"Specifies the duration of the IPv4 address lease to give for the clients of "
+"the scope."
+msgstr "指定为该范围内的客户端提供的IPv4地址租约的有效期限。"
+
+msgid ""
+"Specifies the maximum number of Bootp clients permitted to get an IP address lease from the scope.\n"
+"This parameter can only be used if the *Type* parameter value is Both."
+msgstr "指定允许从该范围获取 IP 地址租约的 Bootp 客户端的最大数量。仅当 *Type* 参数值为 “Both” 时，才能使用此参数。"
+
+msgid "Specifies the name for the scope."
+msgstr "指定该作用域的名称。"
+
+msgid ""
+"Specifies the enabled state for network access protection (NAP) for the "
+"scope."
+msgstr "指定该范围内网络访问保护（NAP）功能的启用状态。"
+
+msgid ""
+"Specifies the name of the NAP profile for clients in the scope.\n"
+"The NAP profile refers to the Microsoft Service Class which is a condition used in network policies on the network policy server (NPS).\n"
+"This parameter can only be used if the *NapEnable* parameter value is $True."
+msgstr ""
+"指定范围内客户端的 NAP 配置文件的名称。NAP 配置文件指的是“Microsoft 服务类别”（Microsoft Service "
+"Class），这是一种在网络策略服务器（NPS）上的网络策略中使用的条件。只有当 *NapEnable* 参数的值为 $True 时，才能使用此参数。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the scope identifier (ID), in IPv4 address format, for which the "
+"properties are set."
+msgstr "指定属性所设置的范围内标识符（ID）的范围，该范围需采用 IPv4 地址格式表示。"
+
+msgid ""
+"Specifies the starting address of the IPv4 range to set for the scope.\n"
+"If a new IP range is being set, the previously set IP range of the scope is discarded."
+msgstr "指定要为该范围设置的 IPv4 地址范围的起始地址。如果要设置一个新的 IP 范围，则会丢弃该范围之前已设置的 IP 范围。"
+
+msgid ""
+"Specifies the state of the scope.\n"
+"The acceptable values for this parameter are: Active and InActive."
+msgstr "用于指定作用域的状态。该参数的可接受值为：Active（活动）和Inactive（非活动）。"
+
+msgid "Specifies the name of the superscope to which this scope is added."
+msgstr "指定要将此作用域添加到的超作用域（superscope）的名称。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大并发操作数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。这个限制仅适用于当前的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Specifies the type of the scope.\n"
+"The acceptable values for this parameter are: DHCP, BootP, and Both.\n"
+"The type of the scope determines if the DHCP server service responds to only DHCP client requests, only BootP client requests, or Both types of clients."
+msgstr ""
+"用于指定作用域的类型。该参数的可接受值为：DHCP、BootP 和 Both。作用域的类型决定了 DHCP 服务器服务是仅响应 DHCP "
+"客户端请求，还是仅响应 BootP 客户端请求，或者同时响应这两种类型的客户端请求。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#root/Microsoft/Windows/DHCP/DhcpServerv4Scope"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径指定了底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-DhcpServerv4Scope](./Add-DhcpServerv4Scope.md)"
+msgstr "[Add-DhcpServerv4Scope](./Add-DhcpServerv4Scope.md)"
+
+msgid "[Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+msgstr "[Get-DhcpServerv4Scope](./Get-DhcpServerv4Scope.md)"
+
+msgid ""
+"[Get-DhcpServerv4ScopeStatistics](./Get-DhcpServerv4ScopeStatistics.md)"
+msgstr ""
+"[Get-DhcpServerv4ScopeStatistics](./Get-DhcpServerv4ScopeStatistics.md)"
+
+msgid "[Remove-DhcpServerv4Scope](./Remove-DhcpServerv4Scope.md)"
+msgstr "[Remove-DhcpServerv4Scope](./Remove-DhcpServerv4Scope.md)"

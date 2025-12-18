@@ -1,0 +1,108 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 08:26:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-AssignedAccess"
+msgstr "# 清除已分配的访问权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Clears assigned access configured account settings."
+msgstr "清除已分配的访问权限及配置的账户设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Clear-AssignedAccess** cmdlet clears assigned access configured "
+"account settings and returns the user to default settings."
+msgstr "`Clear-AssignedAccess` cmdlet 会清除已配置的访问权限设置，并将用户的账户设置恢复到默认状态。"
+
+msgid ""
+"If a user is signed-in or the computer has a PS/2 keyboard, you must restart"
+" the computer to apply the changes."
+msgstr "如果用户已登录，或者电脑配备了 PS/2 键盘，那么必须重新启动电脑才能使更改生效。"
+
+msgid ""
+"Assigned Access cmdlets are supported on Windows 10 and Windows 11 client "
+"operating systems only."
+msgstr "“分配访问权限”（Assigned Access）相关的cmdlet仅支持Windows 10和Windows 11客户端操作系统。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Clear assigned access configured settings"
+msgstr "### 示例 1：清除已配置的访问权限设置"
+
+msgid ""
+"This command assigned access configured account settings  and returns the "
+"user to default settings."
+msgstr "该命令配置了账户访问权限，并将用户的设置恢复为默认值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您不能将输入内容通过管道（pipe）传递给这个cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "This cmdlet does not generate any output."
+msgstr "这个cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-AssignedAccess](./Get-AssignedAccess.md)"
+msgstr "[获取分配的访问权限](./Get-AssignedAccess.md)"
+
+msgid "[Set-AssignedAccess](./Set-AssignedAccess.md)"
+msgstr "[Set-AssignedAccess](./Set-AssignedAccess.md)"

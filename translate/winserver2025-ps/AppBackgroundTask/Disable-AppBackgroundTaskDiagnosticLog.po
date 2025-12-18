@@ -1,0 +1,87 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 07:56:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-AppBackgroundTaskDiagnosticLog"
+msgstr "# 禁用应用后台任务诊断日志功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables background task logging in Event Viewer."
+msgstr "禁用事件查看器中后台任务的日志记录功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Disable-AppBackgroundTaskDiagnosticLog** cmdlet disables background task logging in Event Viewer.\n"
+"You must have administrator access to disable background task logging."
+msgstr ""
+"` Disable-AppBackgroundTaskDiagnosticLog ` 这个 cmdlet 会禁用事件查看器（Event "
+"Viewer）中的后台任务日志记录功能。要禁用该功能，您必须具有管理员权限。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable background task logging"
+msgstr "#### 示例 1：禁用后台任务的日志记录"
+
+msgid "This command turns off background task logging in Event Viewer."
+msgstr "这个命令会关闭事件查看器（Event Viewer）中的后台任务日志记录功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Enable-AppBackgroundTaskDiagnosticLog](./Enable-"
+"AppBackgroundTaskDiagnosticLog.md)"
+msgstr ""
+"[Enable-AppBackgroundTaskDiagnosticLog](./Enable-"
+"AppBackgroundTaskDiagnosticLog.md)"

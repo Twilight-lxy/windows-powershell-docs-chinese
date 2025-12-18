@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-18 14:37:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Save-EtwTraceSession"
+msgstr "# Save-EtwTraceSession"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Saves the events collected by the ETW session to an .etl file."
+msgstr "将ETW会话收集到的事件保存到.etl文件中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Save-EtwTraceSession** cmdlet saves the events collected by the ETW "
+"session to an .etl file."
+msgstr "`Save-EtwTraceSession` cmdlet 将 ETW 会话收集到的事件保存到 `.etl` 文件中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid "Specifies the name of the ETW session."
+msgstr "指定 ETW 会话的名称。"
+
+msgid "Specifies the file to save the .etl file to for the ETW session."
+msgstr "指定用于保存ETL文件的目录，该文件将与ETW会话相关联。"
+
+msgid "Specifies the folder to save the .etl file to for the ETW session."
+msgstr "指定用于保存 ETW 会话生成的 `.etl` 文件的文件夹。"
+
+msgid ""
+"When this parameter is set, the file name of the .etl will be selected "
+"automatically based on the session properties."
+msgstr "当设置此参数时，将根据会话属性自动选择.etl文件的名称。"
+
+msgid ""
+"If the session is a buffering mode session, the file name will be the name "
+"of the session."
+msgstr "如果会话处于缓冲模式，那么文件名将会与该会话的名称相同。"
+
+msgid ""
+"If the session is a file mode session, the file name will be the file name "
+"of the currently being written to."
+msgstr "如果该会话是文件模式会话，那么文件名就是当前正在写入的文件的名称。"
+
+msgid ""
+"To control the file name as well as the output folder, use the *OutputFile* "
+"parameter instead."
+msgstr "要同时控制文件名和输出文件夹，请使用 *OutputFile* 参数。"
+
+msgid ""
+"Controls whether an existing file should be overwritten by saving this "
+"session."
+msgstr "控制是否在保存本次会话时覆盖现有的文件。"
+
+msgid ""
+"Controls whether the session should be stopped after the save is complete."
+msgstr "控制在保存操作完成后是否应停止会话。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### System.IO.FileInfo"
+msgstr "### System.IO.FileInfo"
+
+msgid "### System.IO.DirectoryInfo"
+msgstr "### System.IO.DirectoryInfo"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.IO.FileInfo"
+msgstr "### System.IO.FileInfo"
+
+msgid ""
+"This cmdlet returns a **System.IO.FileInfo** object that represents a file on the local computer.\n"
+"The object is returned when the current session is saved successfully to a file on the local machine."
+msgstr ""
+"此cmdlet返回一个**System.IO.FileInfo**对象，该对象表示本地计算机上的一个文件。当当前会话成功保存到本地计算机上的某个文件时，就会返回这个对象。"
+
+msgid "### CIM_DataFile"
+msgstr "### CIM_DataFile"
+
+msgid ""
+"This cmdlet returns a **CIM_DataFile** object when the current session is saved successfully to a\n"
+"file over a CIM session."
+msgstr "当当前会话通过CIM会话成功保存到文件时，此cmdlet会返回一个**CIM_DataFile**对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-EtwTraceSession](./Get-EtwTraceSession.md)"
+msgstr "[Get-EtwTraceSession](./Get-EtwTraceSession.md)"
+
+msgid "[New-EtwTraceSession](./New-EtwTraceSession.md)"
+msgstr "[New-EtwTraceSession](./New-EtwTraceSession.md)"
+
+msgid "[Send-EtwTraceSession](./Send-EtwTraceSession.md)"
+msgstr "[Send-EtwTraceSession](./Send-EtwTraceSession.md)"
+
+msgid "[Start-EtwTraceSession](./Start-EtwTraceSession.md)"
+msgstr "[开始 ETW 追踪会话](./Start-EtwTraceSession.md)"
+
+msgid "[Stop-EtwTraceSession](./Stop-EtwTraceSession.md)"
+msgstr "[Stop-EtwTraceSession](./Stop-EtwTraceSession.md)"
+
+msgid "[Update-EtwTraceSession](./Update-EtwTraceSession.md)"
+msgstr "[更新-EtwTraceSession](./Update-EtwTraceSession.md)"
