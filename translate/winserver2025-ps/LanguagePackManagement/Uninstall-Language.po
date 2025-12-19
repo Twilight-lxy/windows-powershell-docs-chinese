@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:01:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"The Uninstall-Language cmdlet lets you remove a language and its components "
+"from a running Windows installation"
+msgstr "`Uninstall-Language` cmdlet 可以帮助您从正在运行的 Windows 系统中删除某个语言及其相关组件。"
+
+msgid "# Uninstall-Language"
+msgstr "# 卸载指定语言包"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Uninstalls a language from a device."
+msgstr "从设备中卸载某种语言相关的内容（或应用程序）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"Uninstalls a language, including all language components, from a device. "
+"This operation runs asynchronously."
+msgstr "从设备中卸载某种语言及其所有相关组件。此操作为异步执行的。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a language from a device"
+msgstr "### 示例 1：从设备中删除某种语言设置"
+
+msgid "This command removes the Japanese language from the device."
+msgstr "此命令会从设备中删除日语相关内容（或：删除与日语相关的设置/数据等）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "The bcp47 tag of the language to install."
+msgstr "需要安装的语言对应的 bcp47 标签。"
+
+msgid ""
+"If specified, this parameter returns the bcp47 tag of the newly installed "
+"language upon successful installation."
+msgstr "如果指定了该参数，在成功安装新语言后，它将返回所安装语言对应的 bcp47 标签。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Void"
+msgstr "### System Void"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[InstallLanguage](Install-Language.md)"
+msgstr "[安装语言](Install-Language.md)"

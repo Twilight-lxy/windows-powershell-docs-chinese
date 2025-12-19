@@ -1,0 +1,133 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:35:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VipHostMapping"
+msgstr "# Get-VipHostMapping"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets VIP host mapping."
+msgstr "可以获得VIP主机映射服务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-VipHostMapping** cmdlet gets information for a virtual IP (VIP) "
+"host, including its multiplexers (MUXes) and DIP hosts."
+msgstr ""
+"`Get-VipHostMapping` cmdlet 可以获取虚拟 IP（VIP）主机的相关信息，包括其复用器（MUX）和 DIP 主机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a VIP host mapping"
+msgstr "### 示例 1：获取 VIP 主机映射信息"
+
+msgid ""
+"The first command creates a password, and then stores it in the $Password "
+"variable."
+msgstr "第一个命令生成一个密码，然后将其存储在 `$Password` 变量中。"
+
+msgid ""
+"The second command creates a **PSCredential** object, and then stores it in "
+"the $Cred variable."
+msgstr "第二个命令创建了一个 **PSCredential** 对象，然后将其存储在 `$Cred` 变量中。"
+
+msgid ""
+"The third command assigns the specified Network Controller IP address to the"
+" $ncIPAddress variable."
+msgstr "第三个命令将指定的网络控制器IP地址赋值给$ncIPAddress变量。"
+
+msgid ""
+"The fourth command gets the Network Controller deployment information, and "
+"then stores it in the $NCInfo variable."
+msgstr "第四条命令获取网络控制器的部署信息，并将其存储在$NCInfo变量中。"
+
+msgid ""
+"The fifth command gets the specified VIP resource, and then stores it in the"
+" $vipInfo variable."
+msgstr "第五条命令获取指定的VIP资源，然后将其存储在$vipInfo变量中。"
+
+msgid "The last command gets the VIP host mapping for the specified host."
+msgstr "最后一个命令用于获取指定主机的VIP主机映射信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a certificate thumbprint for Network Controller.\n"
+"Specify this parameter for a certificate deployment."
+msgstr "为网络控制器指定证书指纹。在进行证书部署时需要设置此参数。"
+
+msgid ""
+"Specifies the credentials to use for Network Controller.\n"
+"Specify this parameter for a Kerberos deployment."
+msgstr "指定用于网络控制器的凭据。在采用 Kerberos 部署方案时，请设置此参数。"
+
+msgid "Specifies a Network Controller node name or IP address."
+msgstr "指定一个网络控制器节点的名称或 IP 地址。"
+
+msgid ""
+"Specifies the URI to use for Network Controller REST APIs.\n"
+"Specify this parameter for wild card certificate deployments."
+msgstr "指定用于网络控制器（Network Controller）REST API的URI。在部署通配符证书时需要设置此参数。"
+
+msgid ""
+"Specifies the type.\n"
+"The acceptable values for this parameter are:"
+msgstr "用于指定类型。该参数的可接受值包括："
+
+msgid "Specifies the VIP endpoint REST resource."
+msgstr "指定VIP端点的REST资源。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-NetworkControllerVipResource](./Get-NetworkControllerVipResource.md)"
+msgstr ""
+"[Get-NetworkControllerVipResource](./Get-NetworkControllerVipResource.md)"

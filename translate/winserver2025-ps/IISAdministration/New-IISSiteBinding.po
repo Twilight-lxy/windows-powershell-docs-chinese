@@ -1,0 +1,168 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:35:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-IISSiteBinding"
+msgstr "# 新的IISSiteBinding配置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Adds a new binding to an existing Website. This cmdlet has been introduced "
+"in version 1.1.0.0 of IISAdministration module."
+msgstr "向现有的网站添加一个新的绑定（binding）。此cmdlet是在IISAdministration模块的1.1.0.0版本中引入的。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "Adds a new binding to an existing website."
+msgstr "为现有的网站添加一个新的绑定（binding）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a new HTTP binding"
+msgstr "### 示例 1：创建一个新的 HTTP 绑定"
+
+msgid ""
+"This command creates a new HTTP binding of \"*:8080:\" on a website named "
+"TestSite"
+msgstr "这个命令会在一个名为TestSite的网站上创建一个新的HTTP绑定，端口号为“8080”。"
+
+msgid "### Example 2: Create a new HTTPS binding"
+msgstr "### 示例 2：创建一个新的 HTTPS 绑定"
+
+msgid ""
+"This command creates a new HTTPS binding of \"*:443:\" bindingInformation on a website named TestSite using an existing certificate which has a thumbprint of D043B153FCEFD5011B9C28E186A60B9F13103363 and\n"
+"is placed at the Cert:\\LocalMachine\\Webhosting certificate store"
+msgstr ""
+"此命令使用一个现有的证书为名为 TestSite 的网站创建一个新的 HTTPS 绑定（绑定信息为 "
+"“*:443:”），该证书的指纹（thumbprint）为 "
+"D043B153FCEFD5011B9C28E186A60B9F13103363，并将其存储在 "
+"Cert:\\LocalMachine\\Webhosting 证书存储中。"
+
+msgid ""
+"### Example 3: Create a new HTTPS binding and set it with Sni and "
+"CentralCertStore SSL flag settings"
+msgstr "### 示例 3：创建一个新的 HTTPS 绑定，并设置 SNI 和 CentralCertStore SSL 标志"
+
+msgid ""
+"This command creates a new HTTPS binding of \"*:443:foo.com\" on a website "
+"named TestSite setting the SNI and CentralCertStore SSL flag settings"
+msgstr ""
+"此命令在名为 TestSite 的网站上创建一个新的 HTTPS 绑定，绑定地址为 “*:443:foo.com”，并设置了 SNI 和 "
+"CentralCertStore SSL 标志的相关参数。"
+
+msgid ""
+"### Example 4: Create a new self signed certificate and use it for adding a "
+"new HTTPS binding for testing purpose"
+msgstr "### 示例 4：创建一个新的自签名证书，并使用它来添加一个新的 HTTPS 绑定以用于测试目的"
+
+msgid ""
+"This powershell script example shows how to create a self-signed certificate on Personal store. Export the certificate to ROOT store to make the certificate considered as a trusted certificate\n"
+"in the local machine and add a new HTTPS binding on a website named TestSite for testing purposes."
+msgstr ""
+"这个 PowerShell 脚本示例展示了如何在个人证书存储（Personal Store）中创建一个自签名证书。将该证书导出到系统根证书存储（ROOT"
+" Store），以便在本地机器上将其视为受信任的证书；同时，还会为名为 “TestSite” 的网站添加一个新的 HTTPS 绑定，用于测试目的。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the binding information string to use for the new site. The binding information of the form\n"
+"IP:Port:hostname such as 192.168.0.1:80:www.contoso.com and one or more of the fields can be left blank, which\n"
+"is equivalent to using a wildcard character such as \\*:443:. In this representation \\*  indicates all IP\n"
+"addresses and all hostnames are indicated by leaving the corresponding field blank."
+msgstr ""
+"指定用于新站点的绑定信息字符串。该绑定信息的格式为 "
+"IP:Port:hostname（例如：192.168.0.1:80:www.contoso.com），其中的一个或多个字段可以留空，这相当于使用了通配符（如"
+" *:443:）。在这种表示法中，* 表示所有 IP 地址；而通过将相应的字段留空，则表示所有主机名。"
+
+msgid ""
+"Specifies a certificate thumbprint, which is used to add a new HTTPS "
+"binding."
+msgstr "指定一个证书指纹（certificate thumbprint），该指纹用于添加新的 HTTPS 绑定（HTTPS binding）。"
+
+msgid ""
+"Specifies the certificate store path of the certificate, which is used to "
+"add a new HTTPS binding."
+msgstr "指定证书的存储路径，该路径用于添加新的 HTTPS 绑定。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需用户确认。"
+
+msgid "Specifies the name of the IIS website."
+msgstr "指定 IIS 网站的名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working. By "
+"default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"The protocol for which the binding is configured, usually http, https or "
+"ftp."
+msgstr "用于配置绑定的协议，通常是 http、https 或 ftp。"
+
+msgid "Specifies the SSL Flag(s) of the new binding."
+msgstr "指定新绑定对象的 SSL 标志（SSL Flags）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### Microsoft.Web.Administration.SslFlags"
+msgstr "### Microsoft.WebAdministration.SslFlags"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IISSiteBinding](./Get-IISSiteBinding.md)"
+msgstr "[Get-IISSiteBinding](./Get-IISSiteBinding.md)"
+
+msgid "[Remove-IISSiteBinding](./Remove-IISSiteBinding.md)"
+msgstr "[Remove-IISSiteBinding](./Remove-IISSiteBinding.md)"
+
+msgid "[New-IISSite](./New-IISSite.md)"
+msgstr "[New-IISSite](./New-IISSite.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

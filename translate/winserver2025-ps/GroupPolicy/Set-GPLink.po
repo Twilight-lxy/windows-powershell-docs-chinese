@@ -1,0 +1,283 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:04:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-GPLink"
+msgstr "# Set-GPLink"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the properties of the specified GPO link."
+msgstr "设置指定 GPO 链接的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### LinkGUID (Default)"
+msgstr "### LinkGUID（默认值）"
+
+msgid "### LinkName"
+msgstr "### LinkName"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-GPLink** cmdlet sets the properties of a Group Policy Object (GPO)"
+" link."
+msgstr "`Set-GPLink` cmdlet 用于设置组策略对象（Group Policy Object，简称 GPO）链接的属性。"
+
+msgid "You can set the following properties:"
+msgstr "你可以设置以下属性："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable the link between a GPO and OU"
+msgstr "### 示例 1：启用 GPO 与 OU 之间的关联"
+
+msgid ""
+"This command enables the link between the GPO named `TestGPO` and the `MyOU` organizational unit\n"
+"in the `contoso.com` domain. The **Enforced** and **Order** properties are not changed."
+msgstr ""
+"此命令用于在 `contoso.com` 域中，将名为 `TestGPO` 的组策略对象（Group Policy Object, GPO）与名为 "
+"`MyOU` 的组织单元（Organizational Unit, OU）关联起来。`Enforced` 和 `Order` 属性保持不变。"
+
+msgid "### Example 2: Enable the link between a GPO and two domains"
+msgstr "### 示例 2：启用 GPO 与两个域之间的关联"
+
+msgid ""
+"This command enables the link between the GPO named `TestGPO` in the `north.contoso.com` domain and\n"
+"the `south.contoso.com` domain. The link is set to enforced, so it cannot be blocked at lower-level\n"
+"containers (for example OUs in the `south.contoso.com` domain). Because the order is set to `1`, the\n"
+"settings of `TestGPO` is applied with the highest precedence (except for enforced links) when Group\n"
+"policy is processed for the `south.contoso.com` domain container."
+msgstr ""
+"此命令用于在 `north.contoso.com` 域中的名为 `TestGPO` 的组策略对象（GPO）与 `south.contoso.com` "
+"域之间建立链接。该链接被设置为“强制执行”模式，因此无法在较低级别的容器（例如 `south_contoso.com` "
+"域中的组织单位（OU））中被阻止。由于链接的优先级被设置为 “1”，因此在处理 `south.contoso.com` "
+"域容器的组策略时，`TestGPO` 的设置将具有最高的优先级（强制执行的链接除外）。"
+
+msgid ""
+"### Example 3: Set the enforced property of a link between a GPO and a test "
+"site"
+msgstr "### 示例 3：设置 GPO 与测试站点之间链接的强制属性"
+
+msgid ""
+"This command sets the enforced property of the link between the GPO that has ID\n"
+"`77c5285d-952e-4559-94ef-a02f5c107799` and the `Test-Site`. Inheritance cannot be blocked for this\n"
+"link at containers that are at lower-levels of the Group Policy hierarchy."
+msgstr ""
+"此命令用于设置 ID 为 `77c5285d-952e-4559-94ef-a02f5c107799` 的 GPO 与 `Test-Site` "
+"之间的链接的“强制属性”（enforced property）。对于位于 Group Policy "
+"层次结构较低级别的容器而言，无法阻止该链接继承相关设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the domain for this cmdlet.\n"
+"You must specify the fully qualified domain name (FQDN) of the domain."
+msgstr "指定此 cmdlet 所使用的域。您必须提供该域的完全限定域名（FQDN）。"
+
+msgid "For the **Set-GPLink** cmdlet:"
+msgstr "关于 `Set-GPLink` cmdlet："
+
+msgid "To specify a domain to link to, use the **Target** parameter."
+msgstr "要指定要链接到的域名，请使用**Target**参数。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the user that is running the current\n"
+"session is used. If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used. For more information, see the Notes section in the full Help."
+msgstr ""
+"如果您没有指定 **Domain** 参数，将使用当前会话所运行用户的域名。如果该 cmdlet "
+"是从计算机启动或关闭脚本中运行的，则将使用计算机的域名。有关更多信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user that is running the current\n"
+"session (or, for a startup or shutdown script, the computer), a trust must exist between that domain\n"
+"and the domain of the user or the computer."
+msgstr ""
+"如果您指定的域名与当前会话所使用的用户的域名不同（或者对于启动/关闭脚本来说，是与计算机相关的域名不同），那么该域名与用户或计算机的域名之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to the **Domain** parameter by its built-in alias, **DomainName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用该参数的内置别名 **DomainName** 来引用它。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies whether the GPO link is enforced. You can specify Yes or No. By default, GPO links are not\n"
+"enforced."
+msgstr "指定是否强制执行GPO链接。您可以选择“是”或“否”。默认情况下，GPO链接不会被强制执行。"
+
+msgid "By setting the GPO link to enforced, you ensure the following:"
+msgstr "通过将 GPO 链接设置为“强制执行”（enforced），您可以确保以下几点："
+
+msgid ""
+"This option should be used sparingly. Casual use of this option complicates "
+"troubleshooting."
+msgstr "这个选项应该谨慎使用。随意使用该选项会使故障排查变得更加复杂。"
+
+msgid "The following values are permitted for this object type."
+msgstr "对于这种对象类型，允许使用以下值。"
+
+msgid ""
+"Specifies the GPO of the link by its globally unique identifier (GUID). The GUID uniquely identifies\n"
+"the GPO."
+msgstr "通过该链接的全局唯一标识符（GUID）来指定相应的组策略对象（GPO）。GUID能够唯一地识别这个GPO。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in alias, **Id**."
+msgstr "您也可以使用其内置别名 **Id** 来引用 **Guid** 参数。"
+
+msgid "Specifies whether the GPO link is enabled. You can specify Yes or No."
+msgstr "指定是否启用GPO链接。可以选择“是”或“否”。"
+
+msgid ""
+"By default, Group Policy processing is enabled for all GPO links. You can completely block the\n"
+"application of a GPO for a specific site, domain, or OU by disabling the GPO link for that site,\n"
+"domain, or OU. Disabling a GPO link does not disable the GPO itself. If the GPO is linked to other\n"
+"sites, domains, or OUs, Group Policy continues to process the GPO for each link that is enabled."
+msgstr ""
+"默认情况下，所有组策略对象（GPO）链接都启用了组策略处理功能。你可以通过禁用某个站点、域或组织单元（OU）对应的GPO链接来完全阻止该GPO在该站点、域或OU中的应用。不过，禁用GPO链接并不会导致该GPO本身被禁用。如果该GPO还与其他站点、域或OU关联，那么组策略仍会继续针对所有已启用的链接对该GPO进行处理。"
+
+msgid "Specifies the GPO of the link by its display name."
+msgstr "通过链接的显示名称来指定该链接对应的GPO（组策略对象）。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another GPO with the same display\n"
+"name exists in the domain, an error occurs. You can use the **Guid** parameter to uniquely identify\n"
+"a GPO."
+msgstr ""
+"显示名称在域内不保证是唯一的。如果域中存在另一个具有相同显示名称的 GPO，将会发生错误。您可以使用 **Guid** 参数来唯一地标识一个 GPO。"
+
+msgid ""
+"You can also refer to the **Name** parameter by its built-in alias, "
+"**DisplayName**."
+msgstr "您也可以通过其内置别名 **DisplayName** 来引用 **Name** 参数。"
+
+msgid ""
+"Specifies the link order for the GPO link. You can specify a number that is between one and the\n"
+"current number of GPO links to the target site, domain, or OU, plus one."
+msgstr "指定GPO链接的顺序。您可以指定一个介于1和当前目标站点、域或组织单元（OU）所关联的GPO链接数量之间的数值（该数值需加上1）。"
+
+msgid ""
+"The link order specifies the order of precedence with which GPOs linked to the same Active Directory\n"
+"container are applied. When Group Policy is processed, GPOs with a higher link order number are\n"
+"processed before GPOs with a lower link order number. Therefore, when two GPOs contain conflicting\n"
+"settings, the settings in the GPO with the lower link order number, because it is processed last,\n"
+"overwrites those of the GPO with the higher link order number. A lower number indicates higher\n"
+"precedence."
+msgstr ""
+"链接顺序决定了链接到同一 Active Directory 容器的 GPO（组策略对象）的优先应用顺序。在处理组策略时，链接顺序号较高的 GPO "
+"会先于链接顺序号较低的 GPO 被执行。因此，当两个 GPO 包含相互冲突的设置时，链接顺序号较低的 GPO 中的设置会覆盖链接顺序号较高的 GPO "
+"中的设置（因为后者被执行的顺序较晚）。较低的链接顺序号表示更高的优先级。"
+
+msgid ""
+"By default, the GPO link is added at the lowest precedence (with a link order equal to the number of\n"
+"GPO links to the container, plus one). Link order is a dynamic value because the value may change as\n"
+"GPO links are added and deleted from the container."
+msgstr ""
+"默认情况下，GPO链接会被添加到优先级最低的位置（其链接顺序等于该容器中所有GPO链接的数量加一）。链接顺序是一个动态值，因为随着GPO链接的添加或删除，这个顺序可能会发生变化。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此 cmdlet 用于联系以完成操作的域控制器的名称。您可以指定完全合格的域名（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the primary domain controller\n"
+"(PDC) emulator is contacted."
+msgstr "如果您不使用 **Server** 参数来指定名称，系统将会联系主域控制器（PDC）的仿真器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, "
+"**DC**."
+msgstr "您也可以通过其内置别名“DC”来引用**Server**参数。"
+
+msgid ""
+"Specifies the Lightweight Directory Access Protocol (LDAP) distinguished name of the site, domain,\n"
+"or OU of the link. For instance, for the `MyOU` organizational unit in the `contoso.com` domain, the\n"
+"LDAP distinguished name is `ou=MyOU,dc=contoso,dc=com`."
+msgstr ""
+"指定链接所对应的站点、域或组织单元（OU）的轻量级目录访问协议（LDAP）规范名称。例如，对于位于 `contoso.com` 域中的 `MyOU` "
+"组织单元，其 LDAP 规范名称为 `ou=MyOU,dc=contoso,dc=com`。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.GroupPolicy.GpoLink"
+msgstr "### Microsoft.GroupPolicy.GpoLink"
+
+msgid "A GPO link between a GPO and a site, domain, or OU."
+msgstr "GPO与站点、域或组织单元（OU）之间的链接。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.GpoLink"
+msgstr "### Microsoft.GroupPolicy.GpoLink"
+
+msgid "This cmdlet returns the GPO link after the change has been applied."
+msgstr "此cmdlet在更改应用后会返回GPO链接。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"  If you do not explicitly specify the domain, the cmdlet uses a default domain. The default domain\n"
+"  is the domain that is used to access network resources by the security context under which the\n"
+"  current session is running. This domain is typically the domain of the user that is running the\n"
+"  session. For instance, the domain of the user who started the session by opening Windows\n"
+"  PowerShell from the Program Files menu, or the domain of a user that is specified in a runas\n"
+"  command. However, computer startup and shutdown scripts run under the context of the LocalSystem\n"
+"  account. The LocalSystem account is a built-in local account, and it accesses network resources\n"
+"  under the context of the computer account. Therefore, when this cmdlet is run from a startup or\n"
+"  shutdown script, the default domain is the domain to which the computer is joined."
+msgstr ""
+"如果您没有明确指定域名，该 cmdlet "
+"会使用默认域名。默认域名是指当前会话所运行的安全上下文用于访问网络资源时使用的域名。这个域名通常就是运行该会话的用户的域名。例如，通过“程序文件”菜单启动"
+" Windows PowerShell 的用户的域名，或者在 `runas` 命令中指定的用户的域名。然而，计算机启动和关闭脚本是在 "
+"`LocalSystem` 账户的上下文中运行的。`LocalSystem` "
+"账户是一个内置的本地账户，它以计算机的身份访问网络资源。因此，当从这个启动或关闭脚本中运行该 cmdlet 时，默认域名就是计算机所属的域名。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-GPLink](./New-GPLink.md)"
+msgstr "[New-GPLink](./New-GPLink.md)"
+
+msgid "[Remove-GPLink](./Remove-GPLink.md)"
+msgstr "[Remove-GPLink](./Remove-GPLink.md)"

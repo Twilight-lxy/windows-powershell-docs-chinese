@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:08:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WmsSystem"
+msgstr "# Get-WmsSystem"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets MultiPoint Server system information."
+msgstr "获取多点服务器（MultiPoint Server）的系统信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-WmsSystem** cmdlet gets Windows MultiPoint Server system "
+"information."
+msgstr "**Get-WmsSystem** cmdlet 可以获取 Windows MultiPoint Server 的系统信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get system information"
+msgstr "### 示例 1：获取系统信息"
+
+msgid "This command gets MultiPoint Server system information."
+msgstr "该命令用于获取MultiPoint Server的系统信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标（即MultiPoint Server）的完整主机名。默认值为localhost。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.WmsSystem"
+msgstr ""
+"### Microsoft.WindowsServerSolutions.MultipointServer.PowerShell "
+"Commands.Library.WmsSystem"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WmsSystem](./Add-WmsSystem.md)"
+msgstr "[Add-WmsSystem](./Add-WmsSystem.md)"
+
+msgid "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+msgstr "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+
+msgid "[Restart-WmsSystem](./Restart-WmsSystem.md)"
+msgstr "[重启 WMS 系统](./Restart-WmsSystem.md)"
+
+msgid "[Search-WmsSystem](./Search-WmsSystem.md)"
+msgstr "[Search-WmsSystem](./Search-WmsSystem.md)"
+
+msgid "[Set-WmsSystem](./Set-WmsSystem.md)"
+msgstr "[Set-WmsSystem](./Set-WmsSystem.md)"
+
+msgid "[Stop-WmsSystem](./Stop-WmsSystem.md)"
+msgstr "[Stop-WmsSystem](./Stop-WmsSystem.md)"

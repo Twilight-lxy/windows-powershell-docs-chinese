@@ -1,0 +1,224 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:10:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMNetworkAdapterIsolation"
+msgstr "# 设置虚拟机网络适配器的隔离状态"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Modifies isolation settings for a virtual network adapter."
+msgstr "修改虚拟网络适配器的隔离设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-VMNetworkAdapterIsolation** cmdlet modifies isolation settings for a virtual network adapter.\n"
+"You can isolate a virtual machine adapter by using virtual local area network (VLAN), Hyper-V Network Virtualization or a third party virtualization solution.\n"
+"You can specify the isolation method and modify other settings, which include multitenancy settings.\n"
+"For more information about multitenancy, see the **Add-VMNetworkAdapterRoutingDomainMapping** cmdlet."
+msgstr ""
+"`Set-VMNetworkAdapterIsolation` cmdlet "
+"用于修改虚拟网络适配器的隔离设置。你可以通过使用虚拟局域网（VLAN）、Hyper-V "
+"网络虚拟化或第三方虚拟化解决方案来对虚拟机适配器进行隔离。你可以指定隔离方法，并修改其他设置，其中包括多租户相关设置。有关多租户的更多信息，请参阅 "
+"`Add-VMNetworkAdapterRoutingDomainMapping` cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set isolation mode for a virtual machine"
+msgstr "### 示例 1：为虚拟机设置隔离模式"
+
+msgid ""
+"This command sets the isolation mode of the virtual machine named TSQA01 to NativeVirtualSubnet, which indicates Hyper-V Network Virtualization.\n"
+"The virtual machine does not accept untagged traffic, but the **MultitenantStack** parameter has a value of On, so the virtual machine can provide services to multiple tenants."
+msgstr ""
+"此命令将名为TSQA01的虚拟机的隔离模式设置为NativeVirtualSubnet，该模式表示使用Hyper-"
+"V网络虚拟化技术。该虚拟机不接受未标记的流量；但由于**MultitenantStack**参数的值为“On”，因此该虚拟机可以为多个租户提供服务。"
+
+msgid ""
+"### Example 2: Set isolation mode and untagged traffic setting for a virtual"
+" machine"
+msgstr "### 示例 2：为虚拟机设置隔离模式和未标记流量（untagged traffic）的相关配置"
+
+msgid ""
+"This command sets the isolation mode for virtual machine named TSQA01 to be VLAN.\n"
+"The virtual machine accepts untagged traffic, which is sent and received on VLAN 1, specified by the **DefaultIsolationID** parameter.\n"
+"Untagged traffic goes to the default compartment in the virtual machine.\n"
+"Multitenancy is enabled, therefore, the virtual machine receives isolation subnet and routing domain information."
+msgstr ""
+"此命令将名为 TSQA01 的虚拟机的隔离模式设置为 VLAN。该虚拟机可以接收未标记的流量，这些流量在由 **DefaultIsolationID**"
+" 参数指定的 VLAN 1 "
+"上进行发送和接收。未标记的流量会被送入虚拟机中的默认区域。由于启用了多租户功能，因此该虚拟机会接收到关于隔离子网和路由域的信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates whether the virtual machine sends and receives untagged traffic."
+msgstr "该属性用于指示虚拟机是否发送和接收未标记（untagged）的数据包。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies an array of Hyper-V hosts.\n"
+"The cmdlet modifies isolation settings for virtual machines hosted by the computers that you specify."
+msgstr "指定一个Hyper-V主机的数组。该cmdlet会修改由所指定的计算机托管的虚拟机的隔离设置。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the ID of the network for traffic to the default compartment on virtual machines that have multitenancy enabled.\n"
+"The value that you specify applies only to untagged traffic.\n"
+"This parameter has an effect only if you specify a value of $True for the *AllowUntaggedTraffic* parameter."
+msgstr ""
+"该参数用于指定虚拟机（已启用多租户功能）中通往默认隔间的网络ID。您指定的值仅适用于未标记的流量。只有当您为 "
+"*AllowUntaggedTraffic* 参数设置了 `$True` 时，此参数才会生效。"
+
+msgid ""
+"Specifies the isolation mode for the adapter.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定适配器的隔离模式。此参数的可接受值包括："
+
+msgid ""
+"If you specify a value of None, the network adapter uses its default isolation mode.\n"
+"Set the default isolation mode by using the **Set-VMNetworkAdapterVlan** cmdlet or the **Set-VMNetworkAdapter** cmdlet."
+msgstr ""
+"如果您指定值为 `None`，则网络适配器将使用其默认的隔离模式。您可以使用 `Set-VMNetworkAdapterVlan` cmdlet 或 "
+"`Set-VMNetworkAdapter` cmdlet 来设置默认的隔离模式。"
+
+msgid ""
+"Indicates that the cmdlet operates on the parent or host operating system.\n"
+"If you specify this parameter, this cmdlet modifies isolation settings for the parent or host operating system."
+msgstr ""
+"表示该 cmdlet 是在父操作系统或主机操作系统上运行的。如果您指定了此参数，该 cmdlet 将修改父操作系统或主机操作系统的隔离设置。"
+
+msgid ""
+"Specifies whether to use multiple isolation IDs for the virtual machine.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定是否为虚拟机使用多个隔离ID。该参数的可接受值为："
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies an array of virtual machine objects.\n"
+"The cmdlet modifies isolation settings for adapters that belong to the virtual machines that you specify.\n"
+"To obtain a virtual machine object, use the **Get-VM** cmdlet."
+msgstr ""
+"指定一个虚拟机对象数组。该cmdlet会修改属于所指定虚拟机的适配器的隔离设置。要获取虚拟机对象，请使用**Get-VM** cmdlet。"
+
+msgid ""
+"Specifies an array of names of virtual machines.\n"
+"The cmdlet modifies isolation settings for adapters that belong to the virtual machines that you specify."
+msgstr "指定一个虚拟机名称数组。该cmdlet会修改属于所指定虚拟机的适配器的隔离设置。"
+
+msgid ""
+"Specifies an array VM network adapters as **VMNetworkAdapterBase** objects.\n"
+"The cmdlet modifies isolation settings for the adapters that you specify.\n"
+"To obtain a network adapter, use the **Get-VMNetworkAdapter** cmdlet."
+msgstr ""
+"指定一个由 **VMNetworkAdapterBase** 对象组成的虚拟机（VM）网络适配器数组。该 cmdlet "
+"会修改所指定适配器的隔离设置。若要获取某个网络适配器，可以使用 **Get-VMNetworkAdapter** cmdlet。"
+
+msgid ""
+"Specifies the name of a virtual network adapter.\n"
+"The cmdlet modifies isolation settings for the adapters that you specify."
+msgstr "用于指定虚拟网络适配器的名称。该cmdlet会修改所指定适配器的隔离设置。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterIsolationSetting"
+msgstr ""
+"```csharp\n"
+"### Microsoft.HyperV.PowerShell.VMNetworkAdapterIsolationSetting\n"
+"```"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VMNetworkAdapterIsolation](./Get-VMNetworkAdapterIsolation.md)"
+msgstr "[Get-VMNetworkAdapterIsolation](./Get-VMNetworkAdapterIsolation.md)"
+
+msgid "[Get-VM](./Get-VM.md)"
+msgstr "[Get-VM](./Get-VM.md)"
+
+msgid "[Get-VMNetworkAdapter](./Get-VMNetworkAdapter.md)"
+msgstr "[Get-VMNetworkAdapter](./Get-VMNetworkAdapter.md)"
+
+msgid "[Set-VMNetworkAdapter](./Set-VMNetworkAdapter.md)"
+msgstr "[Set-VMNetworkAdapter](./Set-VMNetworkAdapter.md)"
+
+msgid "[Set-VMNetworkAdapterVlan](./Set-VMNetworkAdapterVlan.md)"
+msgstr "[Set-VMNetworkAdapterVlan](./Set-VMNetworkAdapterVlan.md)"

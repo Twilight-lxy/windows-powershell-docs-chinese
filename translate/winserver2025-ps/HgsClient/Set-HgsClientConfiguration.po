@@ -1,0 +1,149 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:22:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-HgsClientConfiguration"
+msgstr "# Set-HgsClientConfiguration"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Modifies the configuration of a Host Guardian Service client."
+msgstr "修改Host Guardian Service客户端的相关配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ChangeToLocalMode"
+msgstr "### ChangeToLocalMode"
+
+msgid "### FullSecureHostingServiceMode"
+msgstr "### FullSecureHostingServiceMode"
+
+msgid "### SecureHostingServiceMode"
+msgstr "### SecureHostingServiceMode"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-HgsClientConfiguration** cmdlet modifies the configuration of a Host Guardian Service client.\n"
+"You can configure the client in either local mode or Host Guardian Service mode.\n"
+"In local mode, there is no attestation and the client keeps key material."
+msgstr ""
+"`Set-HgsClientConfiguration` cmdlet 用于修改主机防护服务（Host Guardian "
+"Service）客户端的相关配置。您可以在本地模式或主机防护服务模式下对客户端进行配置。在本地模式下，不涉及任何身份验证过程，且客户端会自行保管密钥材料。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set an attestation and key protection servers"
+msgstr "### 示例 1：设置认证服务器和密钥保护服务器"
+
+msgid ""
+"This command configures the URLs used by the attestation client and the key protection client.\n"
+"Use this command to configure the local host to run in Host Guardian Service mode."
+msgstr ""
+"此命令用于配置认证客户端（attestation client）和密钥保护客户端（key protection "
+"client）所使用的URL。使用该命令可以将本地主机设置为在Host Guardian Service模式下运行。"
+
+msgid "### Example 2: Change the mode to Local"
+msgstr "### 示例 2：将模式更改为“本地”（Local）"
+
+msgid ""
+"This command changes the Host Guardian Service client from Host Guardian Service mode to Local mode.\n"
+"This command resets the attestation server URL and the key protection server URL."
+msgstr ""
+"此命令将Host Guardian Service客户端从“Host Guardian "
+"Service模式”切换为“本地模式”。同时，该命令还会重置证书颁发服务器（attestation server）的URL和密钥保护服务器（key "
+"protection server）的URL。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the URL of an attestation server.\n"
+"A Host Guardian Service client in Secure Hosting Service mode uses the server that this parameter specifies."
+msgstr ""
+"指定证书颁发服务器的 URL。处于“安全托管服务”（Secure Hosting Service）模式的 Host Guardian Service "
+"客户端会使用此参数所指定的服务器。"
+
+msgid ""
+"Indicates that this cmdlet changes the mode of client from Host Guardian Service to Local mode.\n"
+"A change in mode to Local resets the attestation server and key protection server URLs."
+msgstr ""
+"该命令行工具用于将客户端的工作模式从“Host Guardian "
+"Service”更改为“Local”模式。当模式切换到“Local”时，会重置认证服务器（attestation server）和密钥保护服务器（key"
+" protection server）的URL地址。"
+
+msgid ""
+"Specifies the URL of an attestation server to use if the primary attestation"
+" server cannot be reached."
+msgstr "指定在无法访问主要认证服务器时使用的认证服务器的URL。"
+
+msgid ""
+"Specifies the URL of a key protection server to use if the primary "
+"attestation server cannot be reached."
+msgstr "指定在无法访问主认证服务器时使用的密钥保护服务器的URL。"
+
+msgid ""
+"Specifies the URL of a key protection server.\n"
+"A Host Guardian Service client in Secure Hosting Service mode uses the server that this parameter specifies."
+msgstr ""
+"指定密钥保护服务器的 URL。处于“安全托管服务”（Secure Hosting Service）模式的 Host Guardian Service "
+"客户端会使用该参数所指定的服务器。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并未运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于通用参数（about_CommonParameters）的文档：http://go.microsoft.com/fwlink/?LinkID=113216。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CimInstance#MSFT_HgsClientConfiguration"
+msgstr "### CimInstance#MSFT_HgsClientConfiguration"
+
+msgid ""
+"An HGS client configuration object containing information about the "
+"operating mode, configured URLs, and result of the most recent attestation "
+"attempt, if applicable."
+msgstr "一个HGS客户端配置对象，其中包含有关操作模式、已配置的URL以及最近一次认证尝试的结果（如适用）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-HgsClientConfiguration](./Get-HgsClientConfiguration.md)"
+msgstr "[Get-HgsClientConfiguration](./Get-HgsClientConfiguration.md)"

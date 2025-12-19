@@ -1,0 +1,133 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:51:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-IscsiVirtualDisk"
+msgstr "# 导入 IscsiVirtualDisk"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Adds an iSCSI Virtual Disk object using an existing virtual hard disk (VHD) "
+"file."
+msgstr "使用现有的虚拟硬盘（VHD）文件来添加一个iSCSI虚拟磁盘对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Import-IscsiVirtualDisk** cmdlet adds an iSCSI Virtual Disk object using an existing virtual hard disk (VHD) file.\n"
+"This cmdlet imports virtual disks in both VHD and VHDX formats.\n"
+"The **New-IscsiVirtualDisk** cmdlet creates virtual disks in the VHDX format only."
+msgstr ""
+"`Import-IscsiVirtualDisk` cmdlet 使用现有的虚拟硬盘（VHD）文件来创建一个 iSCSI 虚拟磁盘对象。该 cmdlet"
+" 可以导入 VHD 和 VHDX 格式的虚拟磁盘；而 `New-IscsiVirtualDisk` cmdlet 仅能创建 VHDX 格式的虚拟磁盘。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a virtual disk for a VHD file"
+msgstr "### 示例 1：为 VHD 文件创建一个虚拟磁盘"
+
+msgid ""
+"This example creates a Virtual Disk object for an existing VHD file located "
+"at E:\\Temp\\test.vhd and sets the Virtual Disk object description to "
+"Migrated from fs1."
+msgstr ""
+"这个示例为位于 E:\\Temp\\test.vhd 的现有 VHD 文件创建了一个虚拟磁盘对象，并将该虚拟磁盘对象的描述设置为 “从 fs1 "
+"迁移而来”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此cmdlet在远程计算机上运行，则会指定该远程计算机的名称或IP地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "如果此cmdlet在集群配置上运行，则指定集群资源组的网络名称，或者集群节点的名称。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接远程计算机时所需的凭据信息。"
+
+msgid "Specifies the description for the iSCSI virtual disk."
+msgstr "用于指定iSCSI虚拟磁盘的描述信息。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the path of the VHD file that is associated with the iSCSI virtual disk.\n"
+"Filter the iSCSI Virtual Disk object using this parameter."
+msgstr "指定与 iSCSI 虚拟磁盘关联的 VHD 文件的路径。可以使用此参数来过滤 iSCSI 虚拟磁盘对象。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Iscsi.Target.Commands.IscsiVirtualDisk"
+msgstr "### Microsoft.Iscsi.Target Commands.IscsiVirtualDisk"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Checkpoint-IscsiVirtualDisk](./Checkpoint-IscsiVirtualDisk.md)"
+msgstr "[Checkpoint-IscsiVirtualDisk](./Checkpoint-IscsiVirtualDisk.md)"
+
+msgid "[Convert-IscsiVirtualDisk](./Convert-IscsiVirtualDisk.md)"
+msgstr "[Convert-IscsiVirtualDisk](./Convert-IscsiVirtualDisk.md)"
+
+msgid "[Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"
+msgstr "[Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"
+
+msgid "[New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+msgstr "[New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+
+msgid "[Remove-IscsiVirtualDisk](./Remove-IscsiVirtualDisk.md)"
+msgstr "[Remove-IscsiVirtualDisk](./Remove-IscsiVirtualDisk.md)"
+
+msgid "[Restore-IscsiVirtualDisk](./Restore-IscsiVirtualDisk.md)"
+msgstr "[恢复Iscsi虚拟磁盘](./Restore-IscsiVirtualDisk.md)"
+
+msgid "[Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"
+msgstr "[Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"

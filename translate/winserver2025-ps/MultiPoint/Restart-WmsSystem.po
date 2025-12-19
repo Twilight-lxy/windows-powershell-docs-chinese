@@ -1,0 +1,110 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:12:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Restart-WmsSystem"
+msgstr "# 重启 WMS 系统"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Restarts a computer that is running MultiPoint Server."
+msgstr "重启正在运行MultiPoint Server的计算机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Restart-WmsSystem** cmdlet restarts the specified computer that is "
+"running Windows MultiPoint Server by using a Windows Management "
+"Instrumentation (WMI) call."
+msgstr ""
+"`Restart-WmsSystem` cmdlet 通过使用 Windows 管理规范（WMI）调用来重新启动运行 Windows "
+"MultiPoint Server 的指定计算机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Restart a MultiPoint server"
+msgstr "### 示例 1：重启一个多点服务器（MultiPoint server）"
+
+msgid "This command restarts the MultiPoint server sample.microsoft.com."
+msgstr "这个命令会重新启动multiPoint服务器（示例地址：sample.microsoft.com）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标——即多点服务器（MultiPoint Server）的完全限定主机名。默认值为 `localhost`。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WmsSystem](./Add-WmsSystem.md)"
+msgstr "[Add-WmsSystem](./Add-WmsSystem.md)"
+
+msgid "[Get-WmsSystem](./Get-WmsSystem.md)"
+msgstr "[Get-WmsSystem](./Get-WmsSystem.md)"
+
+msgid "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+msgstr "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+
+msgid "[Search-WmsSystem](./Search-WmsSystem.md)"
+msgstr "[Search-WmsSystem](./Search-WmsSystem.md)"
+
+msgid "[Set-WmsSystem](./Set-WmsSystem.md)"
+msgstr "[Set-WmsSystem](./Set-WmsSystem.md)"
+
+msgid "[Stop-WmsSystem](./Stop-WmsSystem.md)"
+msgstr "[Stop-WmsSystem](./Stop-WmsSystem.md)"

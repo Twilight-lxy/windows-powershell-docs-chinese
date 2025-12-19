@@ -1,0 +1,144 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:31:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Install-HgsServer"
+msgstr "# 安装 HGS 服务器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Installs the Host Guardian Service server."
+msgstr "安装Host Guardian服务服务器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### PrimaryServer_HgsDomain (Default)"
+msgstr "### PrimaryServer_HgsDomain（默认值）"
+
+msgid "### AdditionalServer"
+msgstr "### AdditionalServer"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Install-HgsServer** cmdlet configures infrastructure components "
+"necessary for the Host Guardian Service (HGS) that require reboot."
+msgstr ""
+"`Install-HgsServer` cmdlet 用于配置主机防护服务（Host Guardian Service, "
+"HGS）所需的基础设施组件，这些组件在安装后需要重新启动。"
+
+msgid ""
+"When this cmdlet is run on the first HGS node, it promotes the node to the primary domain controller for the specified domain.\n"
+"When this cmdlet is run on an additional HGS node, it promotes the node to a secondary domain controller for the specified domain."
+msgstr ""
+"当此cmdlet在第一个HGS节点上运行时，该节点会被提升为指定域的主域控制器。当此cmdlet在其他HGS节点上运行时，该节点会被提升为指定域的从属域控制器。"
+
+msgid ""
+"A reboot is necessary for the infrastructure components configured by this "
+"cmdlet."
+msgstr "对于通过此cmdlet配置的基础设施组件来说，需要重新启动才能使它们正常运行。"
+
+msgid ""
+"For more information about the scenario terms, see [Security and "
+"Assurance](https://go.microsoft.com/fwlink/?LinkId=699209)."
+msgstr ""
+"有关场景术语的更多信息，请参阅[安全与保障](https://go.microsoft.com/fwlink/?LinkId=699209)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Install the HGS server on the current node and prompt for the"
+" administrator password"
+msgstr "#### 示例 1：在当前节点上安装 HGS 服务器，并提示输入管理员密码"
+
+msgid ""
+"This command installs the HGS Server on the current node and configures it "
+"as the primary server."
+msgstr "此命令会在当前节点上安装 HGS 服务器，并将其配置为主服务器。"
+
+msgid ""
+"### Example 2: Install the HGS server on the current node as a security "
+"server and prompt for the administrator password"
+msgstr "### 示例 2：在当前节点上安装 HGS 服务器作为安全服务器，并提示输入管理员密码"
+
+msgid ""
+"This command installs the HGS server and uses the current node as a security"
+" server."
+msgstr "此命令用于安装HGS服务器，并将当前节点用作安全服务器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a database path."
+msgstr "指定一个数据库路径。"
+
+msgid ""
+"Specifies the Active Directory domain administrator credentials for the "
+"primary HGS server."
+msgstr "指定用于主HGS服务器的Active Directory域管理员凭据。"
+
+msgid "Specifies the name of the Active Directory domain for the HGS server."
+msgstr "指定用于 HGS 服务器的 Active Directory 域的名称。"
+
+msgid "Specifies the output log directory location."
+msgstr "指定输出日志目录的位置。"
+
+msgid ""
+"Indicates that a system reboot is initiated after running this command."
+msgstr "表示在运行此命令后，系统将会重新启动。"
+
+msgid ""
+"Specifies the password for the administrator account when the computer is "
+"started in Safe Mode or a variant of Safe Mode, such as Directory Services "
+"Restore Mode."
+msgstr "当计算机在安全模式（或安全模式的变体，例如目录服务恢复模式）下启动时，该选项用于指定管理员账户的密码。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[HGS Server Cmdlets](./hgsserver.md)"
+msgstr "[HGS 服务器命令行工具](./hgsserver.md)"

@@ -1,0 +1,167 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:29:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-IISCentralCertProvider"
+msgstr "# 启用 IISCentralCertProvider"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Enables the IIS central certificate store."
+msgstr "启用 IIS 中央证书存储功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-IISCentralCertProvider** cmdlet enables the IIS central certificate store.\n"
+"The central certificate store allows you to store all your IIS certificates in a centralized location (such as a file share); IIS servers then retrieve certificate from this centralized location.\n"
+"That means that you only have to install certificates in one location; there is no need to install the same certificate on each and every IIS server."
+msgstr ""
+"**Enable-IISCentralCertProvider** cmdlet 可以启用 IIS "
+"的中央证书存储功能。通过这个中央证书存储机制，你可以将所有的 IIS 证书集中存储在一个位置（例如文件共享文件夹）；IIS "
+"服务器会从这个集中位置获取所需的证书。这样一来，你只需要在其中一个位置安装证书即可，无需在每台 IIS 服务器上都单独安装相同的证书。"
+
+msgid ""
+"When you install the central certificate store the store is disabled by default.\n"
+"To actually use this capability you need to run the **Enable-IISCentralCertProvider** cmdlet."
+msgstr ""
+"当你安装中央证书存储时，默认情况下该存储是处于禁用状态的。要实际使用这一功能，你需要运行 **Enable-"
+"IISCentralCertProvider** cmdlet 命令。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable the central certificate store"
+msgstr "#### 示例 1：启用中央证书存储"
+
+msgid ""
+"This command enables the IIS central certificate store.\n"
+"In this example, the certificate store is located on file share \\\\\\\\CertStoreServer\\CertStore and accessed by using the user account IISCertificateAdmin."
+msgstr ""
+"此命令启用了 IIS 的中央证书存储功能。在这个示例中，证书存储位于文件共享路径 “\\\\CertStoreServer\\CertStore” "
+"上，并且需要使用用户账户 “IISCertificateAdmin” 来访问该证书存储。"
+
+msgid ""
+"### Example 2: Enable the central certificate store and specify the private "
+"key password"
+msgstr "### 示例 2：启用中央证书存储并指定私钥密码"
+
+msgid ""
+"This command is a variation of the command shown in Example 1.\n"
+"In Example 2, however, the *PrivateKeyPassword* parameter is included to specify the private key password that has been assigned to all the IIS certificates."
+msgstr ""
+"这个命令是示例1中所示命令的变体。然而，在示例2中，添加了*PrivateKeyPassword*参数，用于指定分配给所有IIS证书的私钥密码。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the physical path to the central certificate store; this can be either a local path (e.g., D:\\CertStore) or a UNC path.\n"
+"For example:"
+msgstr "指定中央证书存储的物理路径；该路径可以是本地路径（例如：D:\\CertStore），也可以是 UNC 路径。例如："
+
+msgid "`-CertStoreLocation \"\\\\\\\\CertStoreServer\\CertStore\"`"
+msgstr "`-CertStoreLocation \"\\\\\\\\CertStoreServer\\CertStore\"`"
+
+msgid ""
+"Specifies the password for the user account used to access the certificate store.\n"
+"For example:"
+msgstr "指定用于访问证书存储的用户账户的密码。例如："
+
+msgid "`-Password \"P@ssw0rd\"`"
+msgstr "`-密码 \"P@ssw0rd\"`"
+
+msgid ""
+"Specifies the private key password for your IIS certificates.\n"
+"For example:"
+msgstr "指定您的 IIS 证书的私钥密码。例如："
+
+msgid "`-PrivateKeyPassword \"pa$$W0rd\"`"
+msgstr "`-PrivateKeyPassword \"pa$$W0rd\"`"
+
+msgid ""
+"This parameter should only be used if all your IIS certificates share the "
+"same password."
+msgstr "只有当所有的 IIS 证书都使用相同的密码时，才应该使用这个参数。"
+
+msgid ""
+"Specifies the user account used to access the certificate store; this can be either an Active Directory SAM Account Name or a user principal name.\n"
+"For example:"
+msgstr "指定用于访问证书存储的用户账户；该账户可以是 Active Directory 的 SAM 账户名称，也可以是用户主体名称。例如："
+
+msgid "`-UserName \"IISCertificateAdmin\"`"
+msgstr "`-UserName \"IISCertificateAdmin\"`"
+
+msgid ""
+"It is recommended that you create a user account reserved solely for certificate administration, and that you give this account only the privileges required to manage the certificate store (most notably, the account needs read access to the store location).\n"
+"The certificate store user account can be either a local account or a domain account."
+msgstr ""
+"建议您创建一个专门用于证书管理的用户账户，并仅为该账户授予管理证书存储所需的权限（最重要的是，该账户需要具有对存储位置的读取访问权限）。证书存储的用户账户可以是本地账户，也可以是域账户。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Security.SecureString"
+msgstr "### System.Security.SecureString"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-IISCentralCertProvider](./Clear-IISCentralCertProvider.md)"
+msgstr "[Clear-IISCentralCertProvider](./Clear-IISCentralCertProvider.md)"
+
+msgid "[Disable-IISCentralCertProvider](./Disable-IISCentralCertProvider.md)"
+msgstr ""
+"[Disable-IISCentralCertProvider](./ Disable-IISCentralCertProvider.md)"
+
+msgid "[Get-IISCentralCertProvider](./Get-IISCentralCertProvider.md)"
+msgstr "[Get-IISCentralCertProvider](./Get-IISCentralCertProvider.md)"
+
+msgid "[Set-IISCentralCertProvider](./Set-IISCentralCertProvider.md)"
+msgstr "[设置 IISCentralCertProvider](./Set-IISCentralCertProvider.md)"
+
+msgid ""
+"[Set-IISCentralCertProviderCredential](./Set-"
+"IISCentralCertProviderCredential.md)"
+msgstr ""
+"[设置 IISCentralCertProvider 凭据](./Set-IISCentralCertProviderCredential.md)"

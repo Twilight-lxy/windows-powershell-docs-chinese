@@ -1,0 +1,246 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:44:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-VMNetworkAdapterAcl"
+msgstr "# 删除 VMNetworkAdapterAcl"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Removes an ACL applied to the traffic through a virtual network adapter."
+msgstr "移除应用于通过虚拟网络适配器传输的数据流的访问控制列表（ACL）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### `VMName`（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### InputObjectParameter"
+msgstr "### InputObjectParameter"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-VMNetworkAdapterAcl** cmdlet removes an ACL applied to the "
+"traffic through a virtual network adapter."
+msgstr ""
+"`Remove-VMNetworkAdapterAcl` cmdlet 用于删除应用于通过虚拟网络适配器传输的数据流的访问控制列表（ACL）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Removes from virtual machine Redmond the ACL allowing any IPv4 traffic sent "
+"from or to the virtual machine."
+msgstr "从Redmond虚拟机中移除相应的ACL（访问控制列表），从而禁止任何来自或发往该虚拟机的IPv4流量通过。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Removes from virtual machine Redmond the ACL that allows any IPv6 traffic "
+"sent from and to the virtual machine."
+msgstr "从Redmond虚拟机中移除允许任何IPv6流量进出该虚拟机的ACL（访问控制列表）。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Removes the MAC ACL to prevent virtual machine Redmond from sending traffic "
+"to or receiving traffic from a remote device with MAC address "
+"03-0f-01-0e-aa-b2."
+msgstr ""
+"删除MAC地址访问控制列表（ACL），以防止名为“Redmond”的虚拟机向MAC地址为03-0f-01-0e-aa-b2的远程设备发送或接收数据。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"Retrieves all the port ACLs configured for virtual machine Redmond and "
+"pipelines them to Remove-VMNetworkAdapterAcl, which removes all of them from"
+" the virtual machine."
+msgstr ""
+"检索为虚拟机“Redmond”配置的所有端口ACL（访问控制列表），并将这些ACL传递给`Remove-"
+"VMNetworkAdapterAcl`命令，该命令会从虚拟机中删除所有这些ACL。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the action of the ACL to be removed.\n"
+"Allowed values are **Allow**, **Deny**, and **Meter**."
+msgstr "指定要删除的ACL的操作类型。允许的值有**Allow**（允许）、**Deny**（拒绝）和**Meter**（计量）。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the ACL applied to a virtual machine network adapter is to be removed.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个 Hyper-V 主机，要从这些主机上删除应用于虚拟机网络适配器的访问控制列表（ACL）。允许使用 NetBIOS 名称、IP "
+"地址和完全限定域名进行指定。默认值是本地计算机。可以使用 “localhost” 或点号（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"The direction of the network traffic (from the perspective of the virtual machine) to which the ACL applies.\n"
+"Allowed values are **Inbound**, **Outbound**, or **Both**."
+msgstr ""
+"网络流量的方向（从虚拟机的角度来看），ACL将应用于该方向的流量。允许的值有：**Inbound**（入站）、**Outbound**（出站）或**Both**（两者）。"
+
+msgid "Specifies the ACL to be removed."
+msgstr "指定要删除的访问控制列表（ACL）。"
+
+msgid ""
+"Specifies the local IP address.\n"
+"It can be either IPv4 or IPv6 address.\n"
+"It can be either a host address or a subnet address, e.g.\n"
+"1.2.3.4, 2001::2008, 192.168.1.0/24, or f001:f002:f003:f004::1/64.the IP address can also be a wildcard, 0.0.0.0/0 for all IPv4 addresses, ::/0 for all IPv6 addresses, or ANY for all IPv4 and IPv6 addresses."
+msgstr ""
+"指定本地 IP 地址。该地址可以是 IPv4 或 IPv6 "
+"格式，也可以是主机地址或子网地址（例如：1.2.3.4、2001::2008、192.168.1.0/24 或 "
+"f001:f002:f003:f004::1/64）。IP 地址还可以使用通配符：0.0.0.0/0 表示所有 IPv4 地址，::/0 表示所有 "
+"IPv6 地址，ANY 则表示所有 IPv4 和 IPv6 地址。"
+
+msgid ""
+"Specifies the local MAC address (e.g.\n"
+"00-ab-00-11-22-33).\n"
+"Use the wildcard **ANY** to specify all MAC addresses."
+msgstr "指定本地MAC地址（例如：00-ab-00-11-22-33）。可以使用通配符**ANY**来指定所有MAC地址。"
+
+msgid ""
+"Specifies that the ACL is to be removed from the management (e.g.\n"
+"the parent, or host) operating system."
+msgstr "指定要从管理（例如父级操作系统或主机操作系统）中删除该ACL。"
+
+msgid ""
+"Specifies that a **Microsoft.HyperV.PowerShell.VMNetworkAdapterAclSetting** "
+"object is to be passed through to the pipeline representing the ACL to be "
+"removed."
+msgstr ""
+"指定要将一个 `Microsoft.HyperV.PowShell.VMNetworkAdapterAclSetting` "
+"对象传递给管道，该对象表示需要删除的访问控制列表（ACL）。"
+
+msgid ""
+"Specifies the remote IP address.\n"
+". It can be either IPv4 or IPv6 address.\n"
+"It can be either a host address or a subnet address, e.g.\n"
+"1.2.3.4, 2001::2008, 192.168.1.0/24, or f001:f002:f003:f004::1/64.\n"
+"the IP address can also be a wildcard, 0.0.0.0/0 for all IPv4 addresses, ::/0 for all IPv6 addresses, or ANY for all IPv4 and IPv6 addresses."
+msgstr ""
+"指定远程 IP 地址。该地址可以是 IPv4 或 IPv6 "
+"格式，也可以是主机地址或子网地址（例如：1.2.3.4、2001::2008、192.168.1.0/24 或 "
+"f001:f002:f003:f004::1/64）。IP 地址还可以使用通配符表示：0.0.0.0/0 表示所有 IPv4 地址；::/0 表示所有 "
+"IPv6 地址；ANY 表示所有 IPv4 和 IPv6 地址。"
+
+msgid ""
+"Specifies the remote MAC address.\n"
+". It can be a host MAC address, e.g.\n"
+"00-ab-00-11-22-33, or a wildcard, ANY, for all MAC addresses."
+msgstr ""
+"指定远程MAC地址。它可以是一个主机MAC地址（例如：00-ab-00-11-22-33），也可以是一个通配符“ANY”，表示所有MAC地址。"
+
+msgid "Specifies the virtual machine from which the ACL is to be removed."
+msgstr "指定要从该虚拟机中删除访问控制列表（ACL）的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine from which the ACL is to be "
+"removed."
+msgstr "指定要从其中删除访问控制列表（ACL）的虚拟机的名称。"
+
+msgid ""
+"Specifies the virtual machine network adapter from which ACL is to be "
+"removed."
+msgstr "指定要从哪个虚拟机网络适配器中删除ACL。"
+
+msgid ""
+"Specifies the name of the virtual machine network adapter from which the ACL"
+" is to be removed."
+msgstr "指定要从其中删除访问控制列表（ACL）的虚拟机网络适配器的名称。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "By default, this cmdlet doesn't return any output."
+msgstr "默认情况下，此cmdlet不会返回任何输出。"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterAclSetting"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapterAclSetting"
+
+msgid ""
+"When you use the **PassThru** parameter, this cmdlet returns a "
+"**Microsoft.HyperV.PowerShell.VMNetworkAdapterAclSetting** object."
+msgstr ""
+"当你使用 **PassThru** 参数时，此cmdlet会返回一个 "
+"**Microsoft.HyperV.PowerShell.VMNetworkAdapterAclSetting** 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

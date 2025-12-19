@@ -1,0 +1,117 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:14:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WmsUser"
+msgstr "# Set-WmsUser"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies a Windows MultiPoint Server user account."
+msgstr "修改Windows多点服务器用户账户的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### UseUserName"
+msgstr "### 使用用户名（UseUserName）"
+
+msgid "### UseCreds"
+msgstr "### UseCreds"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-WmsUser** cmdlet updates a local user on the current Windows "
+"MultiPoint Server system."
+msgstr "`Set-WmsUser` cmdlet 用于更新当前 Windows MultiPoint Server 系统中的本地用户信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This command updates a user account with the description New Student, the "
+"name as Student01, and the full name as Patti Fuller."
+msgstr "该命令用于更新用户账户的信息：将账户描述设置为“新学生”，用户名设置为“Student01”，全名设置为“Patti Fuller”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a **PSCredential** object. Use the **Get-Credential** cmdlet to "
+"get a **PSCredential** object."
+msgstr ""
+"指定一个 **PSCredential** 对象。可以使用 **Get-Credential** cmdlet 来获取一个 "
+"**PSCredential** 对象。"
+
+msgid "Specifies a description."
+msgstr "指定一个描述（description）。"
+
+msgid "Specifies the full name of the user."
+msgstr "指定用户的全名。"
+
+msgid "Specifies a name for the user."
+msgstr "为用户指定一个名称。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the"
+" target of the command. The default is localhost."
+msgstr "指定该命令的目标（即MultiPoint Server）的完全限定主机名。默认值为“localhost”。"
+
+msgid "Specifies the user type. The acceptable values for this parameter are:"
+msgstr "指定用户类型。该参数的可接受值包括："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WmsUser](Get-WmsUser.md)"
+msgstr "[Get-WmsUser](Get-WmsUser.md)"
+
+msgid "[New-WmsUser](New-WmsUser.md)"
+msgstr "[New-WmsUser](New-WmsUser.md)"
+
+msgid "[Remove-WmsUser](Remove-WmsUser.md)"
+msgstr "[Remove-WmsUser](Remove-WmsUser.md)"

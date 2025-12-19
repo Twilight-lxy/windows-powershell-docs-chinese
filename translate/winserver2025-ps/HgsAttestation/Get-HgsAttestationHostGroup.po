@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:15:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-HgsAttestationHostGroup"
+msgstr "# Get-HgsAttestationHostGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets attestation policies based on host groups."
+msgstr "根据主机组获取认证策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-HgsAttestationHostGroup** cmdlet gets attestation policies that are based on the configuration of Active Directory host groups.\n"
+"To obtain a particular host group policy, specify it by name."
+msgstr ""
+"`Get-HgsAttestationHostGroup` cmdlet 可以获取基于 Active Directory "
+"主机组配置的认证策略。若要获取特定的主机组策略，请通过其名称进行指定。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get policies for all host groups"
+msgstr "### 示例 1：获取所有主机组的策略"
+
+msgid ""
+"This command gets policies for all host groups configured with the "
+"Attestation service."
+msgstr "这个命令可以获取所有使用“Attestation服务”配置的主机组的策略信息。"
+
+msgid "### Example 2: Get a specific policy for a host group"
+msgstr "### 示例 2：获取特定主机组的策略信息"
+
+msgid ""
+"This command gets the policy for the host group named TrustedADHostGroup14."
+msgstr "此命令用于获取名为 TrustedADHostGroup14 的主机组的策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the friendly name of the host group for which this cmdlet gets the"
+" policy."
+msgstr "指定该 cmdlet 获取策略的目标主机组的友好名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Collections.Specialized.StringCollection"
+msgstr "### System.Collections.Specialized.StringCollection"
+
+msgid "This cmdlet returns a **StringCollection** object."
+msgstr "此cmdlet返回一个**StringCollection**对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-HgsAttestationHostGroup](./Add-HgsAttestationHostGroup.md)"
+msgstr "[Add-HgsAttestationHostGroup](./Add-HgsAttestationHostGroup.md)"
+
+msgid "[Remove-HgsAttestationHostGroup](./Remove-HgsAttestationHostGroup.md)"
+msgstr "[Remove-HgsAttestationHostGroup](./Remove-HgsAttestationHostGroup.md)"

@@ -1,0 +1,107 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:08:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WmsUser"
+msgstr "# Get-WmsUser"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets local user account information."
+msgstr "获取本地用户账户信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### GetUser"
+msgstr "### getUsers"
+
+msgid "### GetAllUsers"
+msgstr "### getAllUsers"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WmsUser** cmdlet gets local user account information for a "
+"specified user or all users."
+msgstr "`Get-WmsUser` cmdlet 可以获取指定用户或所有用户的本地用户账户信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all local user account information"
+msgstr "### 示例 1：获取所有本地用户账户信息"
+
+msgid "This command gets all local user account information."
+msgstr "这个命令可以获取所有本地用户账户的信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid "Specifies the name of the user to get."
+msgstr "指定要获取的用户名称。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标（即MultiPoint Server）的完全限定主机名。默认值为localhost。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### WmsUser"
+msgstr "### WmsUser"
+
+msgid ""
+"This cmdlet returns a **WmsUser** collection as **PSObject** collection."
+msgstr "这个cmdlet将一个**WmsUser**集合作为**PSObject**集合返回。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-WmsUser](New-WmsUser.md)"
+msgstr "[New-WmsUser](New-WmsUser.md)"
+
+msgid "[Remove-WmsUser](Remove-WmsUser.md)"
+msgstr "[Remove-WmsUser](Remove-WmsUser.md)"
+
+msgid "[Set-WmsUser](Set-WmsUser.md)"
+msgstr "[Set-WmsUser](Set-WmsUser.md)"

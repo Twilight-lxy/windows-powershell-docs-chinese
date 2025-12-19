@@ -1,0 +1,134 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:10:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "Gets the host machine’s partitionable GPU."
+msgstr "获取主机上可分割使用的GPU（图形处理器）。"
+
+msgid "# Get-VMHostPartitionableGpu"
+msgstr "# Get-VMHostPartitionableGpu"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the host machine’s partitionable GPU."
+msgstr "获取主机上可分区的GPU。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ComputerName (Default)"
+msgstr "### ComputerName（默认值）"
+
+msgid "### CimSession"
+msgstr "### CimSession"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-VMHostPartitionableGpu` cmdlet gets the host machine’s partitionable graphic processing\n"
+"unit. This displays the information of the GPU as provided by the manufacturer's driver."
+msgstr ""
+"`Get-VMHostPartitionableGpu` cmdlet "
+"可用于获取主机上可分割的图形处理单元（GPU）的相关信息。这些信息是由显卡制造商提供的驱动程序所提供的。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example gets the details of the local partitionable graphic processing "
+"unit on the host."
+msgstr "这个示例获取了主机上本地可分区图形处理单元的详细信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example gets a partitionable GPU by using the host name. This command will display all the GPU\n"
+"devices available for partitioning in the host."
+msgstr "这个示例通过使用主机名来获取一个可分区的GPU。该命令将显示主机上所有可用于分区的GPU设备。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example retrieves information about the partitionable GPUs available on a virtual machine host\n"
+"and formats the output as a list, displaying the name of each GPU and the number of valid\n"
+"partitions that can be created on each GPU."
+msgstr ""
+"这个示例用于检索虚拟机主机上可用的可分区GPU的信息，并将输出结果格式化为列表，显示每个GPU的名称以及可以在每个GPU上创建的有效分区数量。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession)\n"
+"or [Get-CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，也可以输入会话对象（例如 [New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-"
+"CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts that run this cmdlet. NetBIOS names, IP addresses, and fully\n"
+"qualified domain names are allowed. The default is the local computer. Use localhost or a dot (`.`)\n"
+"to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个运行此cmdlet的Hyper-"
+"V主机。允许使用NetBIOS名称、IP地址和完全限定域名作为主机标识。默认值是本地计算机。可以使用`localhost`或点（`.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action. The default is the\n"
+"current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the name of the graphic processing unit to be retrieved."
+msgstr "指定要获取的图形处理单元（GPU）的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### Microsoft.Management.Infrastructure.CimSession[]"
+msgstr "### Microsoft.ManagementInfrastructure.CimSession[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMHostPartitionableGpu"
+msgstr "### Microsoft.HyperV.PowerShell.VMHostPartitionableGpu"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-VMHostPartitionableGpu](set-vmhostpartitionablegpu.md)"
+msgstr "[Set-VMHostPartitionableGpu](set-vmhostpartitionable gpu.md)"

@@ -1,0 +1,241 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:44:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-VMNetworkAdapterAcl"
+msgstr "# 添加虚拟机网络适配器访问控制列表（Add-VMNetworkAdapterAcl）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Creates an ACL to apply to the traffic through a virtual machine network "
+"adapter."
+msgstr "创建一个访问控制列表（ACL），用于应用于通过虚拟机网络适配器传输的数据流。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-VMNetworkAdapterAcl** cmdlet creates an ACL to apply to the traffic through a virtual machine network adapter.\n"
+"When a virtual network adapter is created there is no ACL on it.\n"
+"Given a list of IP-based ACL entries to be applied to traffic in the same direction, the longest match rule decides which one of the entries is most appropriate to apply to a specific packet."
+msgstr ""
+"`Add-VMNetworkAdapterAcl` cmdlet "
+"用于创建一个访问控制列表（ACL），以便应用于通过虚拟机网络适配器传输的流量。在创建虚拟网络适配器时，该适配器上默认没有 ACL。如果提供了基于 IP "
+"地址的 ACL 规则列表，并且这些规则需要应用于相同方向的流量，那么系统会根据匹配度最高的规则来决定应该将哪个规则应用到特定的数据包上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example adds an ACL to allow virtual machine Redmond to send to and "
+"receive from traffic on IP subnet 10.0.0.8/8."
+msgstr "这个示例添加了一个访问控制列表（ACL），以允许虚拟机“Redmond”与IP子网10.0.0.8/8上的其他设备进行数据的发送和接收。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example adds an ACL to deny virtual machine Redmond to send either IPv4"
+" or IPv6 traffic to anywhere and receive such traffic from anywhere."
+msgstr ""
+"这个示例添加了一个访问控制列表（ACL），以禁止虚拟机“Redmond”向任何地方发送IPv4或IPv6流量，同时也禁止它从任何地方接收此类流量。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example gets virtual machine Redmond and adds an ACL to deny it to send"
+" any traffic to a device with MAC address 03-0f-01-0e-aa-b2 or to receive "
+"any traffic from that device."
+msgstr ""
+"这个示例获取名为“Redmond”的虚拟机，并为其添加了一个访问控制列表（ACL），以禁止该虚拟机向MAC地址为03-0f-01-0e-aa-b2的设备发送任何流量，或者从该设备接收任何流量。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example gets virtual network adapters from virtual machine Redmond and "
+"adds an ACL to meter outgoing traffic sent to IP subnet 192.168.0.0/16."
+msgstr ""
+"这个示例从名为“Redmond”的虚拟机中获取虚拟网络适配器，并为发送到IP子网192.168.0.0/16的出站流量添加一个访问控制列表（ACL）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the action for the ACL.\n"
+"Allowed values are **Allow**, **Deny**, and **Meter**.\n"
+"A metering ACL must be IP-based, i.e.\n"
+"either -RemoteIPAddress or -LocalIPAddress must be specified."
+msgstr ""
+"指定ACL（访问控制列表）的操作类型。允许的值有**Allow**（允许）、**Deny**（拒绝）和**Meter**（计量）。用于计量的ACL必须基于IP地址进行配置，也就是说必须要指定`-RemoteIPAddress`或`-LocalIPAddress`中的一个参数。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the ACL is to be created.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于创建访问控制列表（ACL）的Hyper-"
+"V主机。允许使用NetBIOS名称、IP地址或完全合格的域名作为主机标识。默认值为本地计算机；可以使用“localhost”或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the direction of the network traffic to which the ACL is to apply.\n"
+"Allowed values are **Inbound**, **Outbound**, or **Both**.\n"
+". If **Both** is specified, the new ACL entry is added to both the inbound direction and the outbound direction.\n"
+"In the output of Get-VMNetworkAdapterAcl, the ACL entry appears in both the inbound ACL list and the outbound ACL list."
+msgstr ""
+"指定要应用ACL的网络流量的方向。允许的值为**Inbound**（入站）、**Outbound**（出站）或**Both**（两者）。如果指定了**Both**，则新的ACL条目会同时添加到入站和出站方向中。在Get-"
+"VMNetworkAdapterAcl的输出结果中，该ACL条目会同时出现在入站ACL列表和出站ACL列表中。"
+
+msgid ""
+"Specifies the local IP address to which the ACL is to apply.\n"
+"For an inbound packet, this is the destination IP address in the packet header; for an outbound packet, this is the source IP address in the packet header.\n"
+"It can be either IPv4 or IPv6 address.\n"
+"It can be either a host address or a subnet address, e.g.\n"
+"1.2.3.4, 2001::2008, 192.168.1.0/24, or f001:f002:f003:f004::1/64.\n"
+"The IP address can also be a wildcard, 0.0.0.0/0 for all IPv4 addresses, ::/0 for all IPv6 addresses, or ANY for all IPv4 and IPv6 addresses."
+msgstr ""
+"指定要应用访问控制列表（ACL）的本地IP地址。对于入站数据包，该地址是数据包头部中的目标IP地址；对于出站数据包，该地址是数据包头部中的源IP地址。该地址可以是IPv4地址或IPv6地址，也可以是主机地址或子网地址（例如：1.2.3.4、2001::2008、192.168.1.0/24"
+" 或 f001:f002:f003:f004::1/64）。IP地址还可以是通配符：0.0.0.0/0 表示所有IPv4地址，::/0 "
+"表示所有IPv6地址，ANY 表示所有IPv4和IPv6地址。"
+
+msgid ""
+"Specifies the local MAC address to which the ACL is to apply.\n"
+"For an inbound packet, this is the destination MAC address in the packet header; for an outbound packet, this is the source MAC address in the packet header.\n"
+"It can be a host MAC address, e.g.\n"
+"00-ab-00-11-22-33, or a wildcard, ANY, for all MAC addresses."
+msgstr ""
+"指定要应用ACL的本地MAC地址。对于入站数据包，该地址是数据包头中的目标MAC地址；对于出站数据包，该地址是数据包头中的源MAC地址。它可以是主机MAC地址（例如00-ab-00-11-22-33），也可以是通配符“ANY”，表示所有MAC地址。"
+
+msgid ""
+"Specifies that the ACL is to be applied in the management (i.e.\n"
+"the parent, or host) operating system."
+msgstr "指定该访问控制列表（ACL）应用于管理操作系统（即父级操作系统或主机操作系统）。"
+
+msgid ""
+"Specifies that an object is to be passed through to the pipeline "
+"representing the ACL to be added."
+msgstr "指定将一个对象传递给表示要添加的ACL（访问控制列表）的处理流程。"
+
+msgid ""
+"Specifies the remote IP address to which this ACL is to apply.\n"
+"For an inbound packet, this is the source IP address in the packet header; for an outbound packet, this is the destination IP address in the packet header.\n"
+"It can be either IPv4 or IPv6 address.\n"
+"It can be either a host address or a subnet address, e.g.\n"
+"1.2.3.4, 2001::2008, 192.168.1.0/24, or f001:f002:f003:f004::1/64.the IP address can also be a wildcard, 0.0.0.0/0 for all IPv4 addresses, ::/0 for all IPv6 addresses, or ANY for all IPv4 and IPv6 addresses."
+msgstr ""
+"指定此ACL应应用的远程IP地址。对于入站数据包，该地址是数据包头中的源IP地址；对于出站数据包，该地址是数据包头中的目的IP地址。该地址可以是IPv4地址或IPv6地址，也可以是主机地址或子网地址（例如：1.2.3.4、2001::2008、192.168.1.0/24或f001:f002:f003:f004::1/64）。此外，该IP地址还可以使用通配符表示：0.0.0.0/0表示所有IPv4地址；::/0表示所有IPv6地址；ANY则表示所有IPv4和IPv6地址。"
+
+msgid ""
+"Specifies the remote MAC address to which this ACL is to apply.\n"
+"For an inbound packet, this is the source MAC address in the packet header; for an outbound packet, this is the destination MAC address in the packet header.\n"
+"It can be a host MAC address, e.g.\n"
+"00-ab-00-11-22-33, or a wildcard, ANY, for all MAC addresses."
+msgstr ""
+"指定此ACL应应用于的远程MAC地址。对于入站数据包，该地址是数据包头中的源MAC地址；对于出站数据包，该地址是数据包头中的目标MAC地址。它可以是一个主机MAC地址（例如00-ab-00-11-22-33），也可以是一个通配符“ANY”，表示所有MAC地址。"
+
+msgid "Specifies the virtual machine on which the ACL is to apply."
+msgstr "指定要应用访问控制列表（ACL）的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine on which the ACL is to apply."
+msgstr "指定要应用访问控制列表（ACL）的虚拟机的名称。"
+
+msgid ""
+"Specifies the virtual machine network adapter to which the ACL is to apply."
+msgstr "指定要应用访问控制列表（ACL）的虚拟机网络适配器。"
+
+msgid ""
+"Specifies the name of the virtual machine network adapter to which the ACL "
+"is to apply."
+msgstr "指定要应用访问控制列表（ACL）的虚拟机网络适配器的名称。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterAclSetting"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapterAclSetting"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了**-PassThru**选项的话……"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

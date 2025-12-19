@@ -1,0 +1,96 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:43:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WinAcceptLanguageFromLanguageListOptOut"
+msgstr ""
+"# 使用 `Set-WinAcceptLanguageFromLanguageListOptOut` 命令来设置 Windows 的语言接受选项"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Sets the HTTP Accept Language from the Language List opt-out setting for the"
+" current user account."
+msgstr ""
+"根据当前用户账户的“语言列表”设置（该设置允许用户选择不接收某些语言信息），来决定HTTP请求中应使用的接受语言（Accept Language）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-WinAcceptLanguageFromLanguageListOptOut** cmdlet sets the **HTTP Accept Language** from the Language List opt-out setting for the current user account.\n"
+"By default, the **HTTP Accept Language List** is automatically generated from language list of the current user account.\n"
+"You can use this cmdlet to set the **HTTP Accept Language from Language List opt-out** value.\n"
+"When set to $True, this setting deletes the current content of the HTTP Accept Language registry key and prevents changes to the language list from reestablishing the key.\n"
+"When set to $False, this setting reestablishes the **HTTP Accept Language List** based on the language list for the current user account."
+msgstr ""
+"`Set-WinAcceptLanguageFromLanguageListOptOut` cmdlet 用于根据当前用户账户的语言列表设置来修改 HTTP 请求中的 `Accept-Language` 头信息。默认情况下，HTTP 的 `Accept-Language` 头值会自动从该用户账户的语言列表中生成。你可以使用这个 cmdlet 来手动指定 `Accept-Language` 的具体值。\n"
+"\n"
+"- 如果将此参数设置为 `$True`，则会清除注册表中与 HTTP `Accept-Language` 相关的设置，并阻止后续对语言列表的更改再次影响该设置。\n"
+"- 如果将此参数设置为 `$False`，则系统会根据当前用户账户的语言列表重新生成并应用相应的 `Accept-Language` 值。\n"
+"\n"
+"简而言之：这个 cmdlet 允许你手动控制浏览器在发送 HTTP 请求时使用的 `Accept-Language` 头内容。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update the registry key"
+msgstr "### 示例 1：更新注册表键"
+
+msgid ""
+"This cmdlet deletes the current content of the **HTTP Accept Language** "
+"registry key and blocks updates to the key based on changes to the language "
+"list of the user."
+msgstr "这个cmdlet会删除**HTTP Accept Language**注册表键中的当前内容，并根据用户语言列表的变化来阻止对该键的更新。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the opt-out value."
+msgstr "指定退出（即选择不参与某项服务或活动的）值。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-WinAcceptLanguageFromLanguageListOptOut](./Get-"
+"WinAcceptLanguageFromLanguageListOptOut.md)"
+msgstr ""
+"[Get-WinAcceptLanguageFromLanguageListOptOut](./Get-"
+"WinAcceptLanguageFromLanguageListOptOut.md)"

@@ -1,0 +1,92 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:43:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WinHomeLocation"
+msgstr "# 设置 WinHome 的位置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the home location setting for the current user account."
+msgstr "为当前用户账户设置家庭位置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-WinHomeLocation** cmdlet sets the value of the user **GeoID** object.\n"
+"The Windows GeoID setting is a user setting that describes the home location of the current user account.\n"
+"A home location is the country or region.\n"
+"Applications that require the home location of the current user account, such as a driver for a television tuner application, can use this setting."
+msgstr ""
+"`Set-WinHomeLocation` cmdlet 用于设置用户 `GeoID` 对象的值。Windows 的 `GeoID` "
+"设置是一种描述当前用户账户所在地的用户配置项。所谓“所在地”，指的是该用户所属的国家或地区。那些需要获取当前用户账户所在地的应用程序（例如电视调谐器的相关驱动程序）就可以使用这一设置。"
+
+msgid ""
+"For a table of GeoIDs, see Table of [Geographical "
+"Locations](https://go.microsoft.com/fwlink/?LinkID=242308)."
+msgstr ""
+"有关地理ID（GeoIDs）的表格，请参阅[地理位置](https://go.microsoft.com/fwlink/?LinkID=242308)的相关内容。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the home location"
+msgstr "#### 示例 1：设置起始位置"
+
+msgid ""
+"This command sets the home location for the current user account to 0xF4 "
+"(hex) (United States)."
+msgstr "此命令将当前用户账户的主位置设置为 0xF4（十六进制）（美国）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a GeoID setting."
+msgstr "指定一个GeoID设置。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[RegionInfo.GeoId Property](https://go.microsoft.com/fwlink/?LinkID=242310)"
+msgstr "[RegionInfo.GeoId 属性](https://go.microsoft.com/fwlink/?LinkID=242310)"
+
+msgid "[Get-WinHomeLocation](./Get-WinHomeLocation.md)"
+msgstr "[Get-WinHomeLocation](./Get-WinHomeLocation.md)"

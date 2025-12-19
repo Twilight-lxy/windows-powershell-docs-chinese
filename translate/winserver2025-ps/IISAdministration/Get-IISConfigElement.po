@@ -1,0 +1,104 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:32:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IISConfigElement"
+msgstr "# Get-IISConfigElement"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets a configuration element object from an IIS configuration section or a "
+"configuration element."
+msgstr "从 IIS 配置节或某个配置元素中获取一个配置元素对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-IISConfigElement** cmdlet gets a child ConfigurationElement object"
+" from either a ConfigurationSection or a ConfigurationElement."
+msgstr ""
+"`Get-IISConfigElement` cmdlet 可以从 `ConfigurationSection` 或 "
+"`ConfigurationElement` 中获取一个子 `ConfigurationElement` 对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a configuration element for an IIS website"
+msgstr "### 示例 1：获取 IIS 网站的配置元素"
+
+msgid ""
+"This command returns the configuration element limits for the Default Web "
+"Site into the Windows PowerShell variable $Elem."
+msgstr "该命令将“Default Web Site”的配置元素限制信息返回到Windows PowerShell变量$Elem中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the child ConfigurationElement to be returned.\n"
+"If this parameter is omitted, all the child elements for the given parent are returned."
+msgstr "指定要返回的子配置元素（ConfigurationElement）的名称。如果省略此参数，则将返回给定父元素的所有子元素。"
+
+msgid ""
+"Specifies the IIS ConfigurationSection or ConfigurationElement for which the"
+" child ConfigurationElement is returned."
+msgstr ""
+"指定要返回子配置元素（ConfigurationElement）所对应的 IIS ConfigurationSection 或 "
+"ConfigurationElement。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### Microsoft.Web.Administration.ConfigurationElement"
+msgstr "### Microsoft.WebAdministration.ConfigurationElement"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Remove-IISConfigElement](./Remove-IISConfigElement.md)"
+msgstr "[Remove-IISConfigElement](./Remove-IISConfigElement.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

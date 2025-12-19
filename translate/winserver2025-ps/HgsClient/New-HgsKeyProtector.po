@@ -1,0 +1,141 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:21:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-HgsKeyProtector"
+msgstr "# 新HgsKeyProtector"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a key protector."
+msgstr "创建一个密钥保护器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-HgsKeyProtector** cmdlet creates a key protector.\n"
+"This cmdlet generates a key and wraps it for the specified guardian owner.\n"
+"You cannot change the owner for this key protector.\n"
+"You can grant or revoke access to the key for other guardians by using the **Grant-HgsKeyProtectorAccess** and **Revoke-HgsKeyProtectorAccess** cmdlets."
+msgstr ""
+"`New-HgsKeyProtector` cmdlet 用于创建一个密钥保护器。该 cmdlet "
+"会生成一个密钥，并将其封装后交由指定的监护人所有者管理。您无法更改这个密钥保护器的所有者。您可以使用 `Grant-"
+"HgsKeyProtectorAccess` 和 `Revoke-HgsKeyProtectorAccess` cmdlets "
+"来授予或撤销其他监护人对该密钥的访问权限。"
+
+msgid ""
+"This cmdlet can create a key protector based on the raw byte stream of an "
+"existing key protector."
+msgstr "此 cmdlet 可以根据现有密钥保护器的原始字节流来创建一个新的密钥保护器。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a key protector"
+msgstr "### 示例 1：创建一个密钥保护器"
+
+msgid ""
+"The first command gets the guardian object named Guardian11 by using the "
+"**Get-HgsGuardian** cmdlet, and then stores that object in the **$Owner** "
+"variable."
+msgstr ""
+"第一个命令使用 **Get-HgsGuardian** cmdlet 获取名为 Guardian11 的守护对象，然后将该对象存储在 "
+"**$Owner** 变量中。"
+
+msgid ""
+"The second and third commands get two guardians named GuardianA and GuardianB.\n"
+"These commands store the guardians in the **$GuardianA** and **$GuardianB** variables."
+msgstr ""
+"第二和第三条命令分别创建了两个守护者，名称分别为 GuardianA 和 GuardianB。这些命令将这两个守护者存储在 `$GuardianA` 和"
+" `$GuardianB` 变量中。"
+
+msgid ""
+"The final command creates a key protector.\n"
+"The command defines Guardian11 as the **Owner**.\n"
+"The command also grants access to the guardians stored in **$GuardianA** and **$GuardianB**."
+msgstr ""
+"最后一个命令用于创建一个密钥保护机制。该命令将 Guardian11 视为“所有者”（Owner），并同时授予对存储在 $GuardianA 和 "
+"$GuardianB 中的守护程序（guardians）的访问权限。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet can create a key protector by using certificates "
+"that are expired."
+msgstr "表示此cmdlet可以使用已过期的证书来创建密钥保护器。"
+
+msgid ""
+"Indicates that this cmdlet can create a key protector by using self-signed "
+"certificates."
+msgstr "表示此cmdlet可以使用自签名证书来创建密钥保护器。"
+
+msgid ""
+"Specifies an array of guardians to grant access to the key in addition to "
+"the guardian specified by the **Owner** parameter."
+msgstr "指定一个守护者数组，除了由 **Owner** 参数指定的守护者之外，这些守护者也可以被授权访问该密钥。"
+
+msgid ""
+"Specifies a guardian for the new key protector.\n"
+"The cmdlet grants access to this guardian.\n"
+"This guardian cannot be changed for this key protector."
+msgstr "为新密钥保护器指定一个监护人。该cmdlet会授予该监护人相应的访问权限。对于这个特定的密钥保护器而言，其监护人是无法被更改的。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"about_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CimInstance#MSFT_HgsKeyProtector"
+msgstr "### CimInstance#MSFT_HgsKeyProtector"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Grant-HgsKeyProtectorAccess](./Grant-HgsKeyProtectorAccess.md)"
+msgstr "[Grant-HgsKeyProtectorAccess](./Grant-HgsKeyProtectorAccess.md)"
+
+msgid "[Revoke-HgsKeyProtectorAccess](./Revoke-HgsKeyProtectorAccess.md)"
+msgstr "[Revoke-HgsKeyProtectorAccess](./Revoke-HgsKeyProtectorAccess.md)"
+
+msgid "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+msgstr "[Get-HgsGuardian](./Get-HgsGuardian.md)"

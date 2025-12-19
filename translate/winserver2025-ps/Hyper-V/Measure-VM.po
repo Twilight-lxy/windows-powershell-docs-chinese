@@ -1,0 +1,298 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:30:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Measure-VM"
+msgstr "# Measure-VM"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Reports resource utilization data for one or more virtual machines."
+msgstr "报告一个或多个虚拟机的资源利用情况数据。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Measure-VM** cmdlet reports data on processor usage, memory usage, "
+"network traffic, and disk capacity for one or more virtual machines."
+msgstr "`Measure-VM` cmdlet 可报告一个或多个虚拟机的处理器使用情况、内存使用情况、网络流量以及磁盘容量等数据。"
+
+msgid ""
+"Note: Data is available for reporting through the **Measure-VM** cmdlet only"
+" after resource metering is enabled for a virtual machine."
+msgstr "注意：只有当为虚拟机启用资源计量功能后，才能通过 **Measure-VM** cmdlet 获取用于报告的数据。"
+
+msgid "The report has the following fields:"
+msgstr "该报告包含以下字段："
+
+msgid " -- ComputerName: The name of the virtual machine host."
+msgstr "-- ComputerName：虚拟机主机的名称。"
+
+msgid " -- VMId: The unique identifier of the virtual machine."
+msgstr "-- VMId：虚拟机的唯一标识符。"
+
+msgid " -- VMName: The friendly name of the virtual machine."
+msgstr "-- VMName：虚拟机的友好名称。"
+
+msgid ""
+" -- HardDiskMetrics: Information about the performance and throughput of the"
+" storage subsystem."
+msgstr "-- HardDiskMetrics：关于存储子系统性能和吞吐量的信息。"
+
+msgid ""
+" -- MeteringDuration: The duration over which resource utilization data is "
+"being reported."
+msgstr "-- MeteringDuration：资源使用数据报告所覆盖的时间段。"
+
+msgid ""
+" -- AverageProcessorUsage: The average processor usage, in megahertz, of the"
+" virtual machine over the period reported in the MeteringDuration field."
+msgstr ""
+"-- AverageProcessorUsage：在 MeteringDuration "
+"字段所指定的时间段内，虚拟机的平均处理器使用率（以兆赫兹为单位）。"
+
+msgid ""
+" -- AverageMemoryUsage: The average memory usage, in megabytes, of the "
+"virtual machine over the period reported in the MeteringDuration field."
+msgstr ""
+"-- AverageMemoryUsage：虚拟机在报告时间段内的平均内存使用量（以兆字节为单位），该时间段由 MeteringDuration "
+"字段指定。"
+
+msgid ""
+" -- MaximumMemoryUsage: The maximum memory usage, in megabytes, of the "
+"virtual machine over the period reported in the MeteringDuration field."
+msgstr ""
+"-- MaximumMemoryUsage：在MeteringDuration字段所指定的时间段内，虚拟机的最大内存使用量（以兆字节为单位）。"
+
+msgid ""
+" -- MinimumMemoryUsage: The minimum memory usage, in megabytes, of the "
+"virtual machine over the time period reported in the MeteringDuration field."
+msgstr ""
+"-- MinimumMemoryUsage：在MeteringDuration字段所指定的时间范围内，虚拟机的最低内存使用量（以兆字节为单位）。"
+
+msgid ""
+" -- TotalDiskAllocation: The maximum disk capacity, in megabytes, allocated to the virtual machine over the time period reported in the MeteringDuration field.\n"
+"For more information, see the 'Notes' following the field descriptions."
+msgstr ""
+"-- "
+"TotalDiskAllocation：在MeteringDuration字段所报告的时间段内，分配给虚拟机的最大磁盘容量（以兆字节为单位）。有关更多信息，请参阅该字段描述后的“注释”。"
+
+msgid ""
+" -- NetworkMeteredTrafficReport: An array whose elements report the traffic through each NetworkAdapterAcl on the virtual machine or machines over the time period reported in the MeteringDuration field.\n"
+"Each array element has the following properties:"
+msgstr ""
+"-- "
+"NetworkMeteredTrafficReport：一个数组，其元素用于报告在计量时间长度（MeteringDuration字段中指定的时间段内）虚拟机或各台机器上每个NetworkAdapterAcl的流量情况。该数组的每个元素具有以下属性："
+
+msgid ""
+" -- NetworkAdapter: The virtual machine network adapter object on which the "
+"NetworkAdapterAcl has been configured."
+msgstr "-- NetworkAdapter：用于配置 NetworkAdapterAcl 的虚拟机网络适配器对象。"
+
+msgid ""
+" -- LocalAddress: for an inbound packet, the destination IP address in the "
+"packet header; for an outbound packet, the source IP address in the packet "
+"header."
+msgstr "-- LocalAddress：对于入站数据包，指的是数据包头部中的目标IP地址；对于出站数据包，指的是数据包头部中的源IP地址。"
+
+msgid ""
+" -- RemoteAddress: for an inbound packet, the source IP address in the "
+"packet header; for an outbound packet, the destination IP address in the "
+"packet header."
+msgstr "-- RemoteAddress：对于入站数据包，是指数据包头部中的源IP地址；对于出站数据包，是指数据包头部中的目的IP地址。"
+
+msgid ""
+" -- Direction: the direction of the network traffic to which the ACL applies.\n"
+"Allowed values are Inbound, Outbound, or Both."
+msgstr "-- 方向：ACL适用的网络流量方向。允许的值有“Inbound”（入站）、“Outbound”（出站）或“Both”（两者）。"
+
+msgid ""
+" -- TotalTraffic: the amount of network traffic, in megabytes, through the "
+"NetworkAdapterAcl."
+msgstr "-- TotalTraffic：通过NetworkAdapterAcl的网络流量总量（以兆字节为单位）。"
+
+msgid "Notes:"
+msgstr "注释："
+
+msgid ""
+" -- The disk capacity allocated to the virtual machine is reported as the "
+"sum of two totals -- the total storage capacity of all attached virtual hard"
+" disks, and the total amount of physical storage consumed by the virtual "
+"machine's snapshots."
+msgstr "分配给虚拟机的磁盘容量被报告为两个数值的总和：所有连接的虚拟硬盘的总存储容量，以及虚拟机快照所消耗的物理存储空间总量。"
+
+msgid ""
+" -- If the virtual machine has more than one virtual hard disk, then the "
+"TotalDiskAllocation property displays the sum of disk capacity allocated to "
+"all virtual hard disks."
+msgstr "-- 如果虚拟机拥有多个虚拟硬盘，则 TotalDiskAllocation 属性显示分配给所有虚拟硬盘的磁盘容量的总和。"
+
+msgid ""
+" -- Resource utilization is not reported for disks attached through a "
+"virtual Fiber Channel connection or network adapters configured to use "
+"single-root I/O virtualization (SR-IOV)."
+msgstr "对于通过虚拟光纤通道连接附加的磁盘，或者配置为使用单根I/O虚拟化（SR-IOV）的网络适配器，其资源利用率不会被报告。"
+
+msgid ""
+" -- If the virtual machine is configured with static memory rather than "
+"Dynamic Memory, then AverageMemoryUsage, MinimumMemoryUsage, and "
+"MaximumMemoryUsage metrics equals the memory amount configured for the "
+"virtual machine."
+msgstr ""
+"-- 如果虚拟机配置的是静态内存而不是动态内存，那么 AverageMemoryUsage、MinimumMemoryUsage 和 "
+"MaximumMemoryUsage 这些指标的值将等于为该虚拟机配置的内存容量。"
+
+msgid ""
+"The default display of a resource pool resource utilization report includes "
+"the following columns:"
+msgstr "资源池资源利用报告的默认显示内容包括以下列："
+
+msgid " -- VMName: The name of the virtual machine."
+msgstr "-- VMName：虚拟机的名称。"
+
+msgid ""
+" -- AvgCPU(Mhz): The average processor usage, in megahertz, of the virtual "
+"machine."
+msgstr "-- AvgCPU(Mhz)：虚拟机的平均处理器使用率，单位为兆赫（MHz）。"
+
+msgid ""
+" -- TotalDisk(M): The average disk usage, in megabytes, of the virtual machine.\n"
+"For more information, see the 'Notes' following the field descriptions."
+msgstr "-- TotalDisk(M)：虚拟机的平均磁盘使用量（以兆字节为单位）。有关更多信息，请参阅该字段描述后面的“备注”部分。"
+
+msgid ""
+" -- NetworkInbound(M): Total incoming network traffic, in megabytes, to the "
+"virtual machine."
+msgstr "-- NetworkInbound(M)：虚拟机器接收到的总网络流量，单位为兆字节（MB）。"
+
+msgid ""
+" -- NetworkOutbound(M): Total outgoing network traffic, in megabytes, from "
+"the virtual machine."
+msgstr "-- NetworkOutbound(M)：虚拟机发出的总网络流量（以兆字节为单位）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "#### 示例 1"
+
+msgid ""
+"This example reports resource utilization data for a virtual machine named "
+"TestVM."
+msgstr "这个示例报告了一台名为TestVM的虚拟机的资源利用数据。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example uses two commands as well as the pipeline.\n"
+"The first command uses the **Get-VM** cmdlet and passes the object to the **Measure-VM** cmdlet to retrieve collected resource utilization data for a virtual machine named TestVM, and stores the data in a variable named $UtilizationReport.\n"
+"The second command uses the **Reset-VMResourceMetering** cmdlet to clear existing data so that Hyper-V begins collecting new data."
+msgstr ""
+"这个示例使用了两个命令以及管道（pipeline）机制。第一个命令使用了 **Get-VM** cmdlet，并将获取到的虚拟机对象传递给 "
+"**Measure-VM** cmdlet，以收集名为 TestVM 的虚拟机的资源使用情况数据，并将这些数据存储在变量 "
+"$UtilizationReport 中。第二个命令使用了 **Reset-VMResourceMetering** cmdlet "
+"来清除现有的数据，从而使 Hyper-V 重新开始收集新的数据。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies one or more virtual machine hosts for which resource utilization is to be reported.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个需要报告资源使用情况的虚拟机主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名进行标识。默认值为本地计算机。可以通过使用 "
+"`localhost` 或点号（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the friendly name of the virtual machine whose resource "
+"utilization data will be reported."
+msgstr "指定要报告其资源利用数据的虚拟机的友好名称。"
+
+msgid ""
+"Specifies the virtual machine whose resource utilization will be reported."
+msgstr "指定要报告其资源使用情况的虚拟机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Input Data）"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine[]"
+msgstr "### Microsoft.HyperV.PowerShell_virtualMachine[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMMeteringReportForVirtualMachine"
+msgstr "### Microsoft.HyperV.PowerShell.VMMeteringReportForVirtualMachine"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-VMNetworkAdapterAcl](./Add-VMNetworkAdapterAcl.md)"
+msgstr "[Add-VMNetworkAdapterAcl](./Add-VMNetworkAdapterAcl.md)"
+
+msgid "[Disable-VMResourceMetering](./Disable-VMResourceMetering.md)"
+msgstr "[禁用虚拟机资源计量功能](./Disable-VMResourceMetering.md)"
+
+msgid "[Enable-VMResourceMetering](./Enable-VMResourceMetering.md)"
+msgstr "[启用虚拟机资源计量功能](./Enable-VMResourceMetering.md)"
+
+msgid "[Remove-VMNetworkAdapterAcl](./Remove-VMNetworkAdapterAcl.md)"
+msgstr "[Remove-VMNetworkAdapterAcl](./Remove-VMNetworkAdapterAcl.md)"
+
+msgid "[Reset-VMResourceMetering](./Reset-VMResourceMetering.md)"
+msgstr "[重置虚拟机资源计量数据](./Reset-VMResourceMetering.md)"

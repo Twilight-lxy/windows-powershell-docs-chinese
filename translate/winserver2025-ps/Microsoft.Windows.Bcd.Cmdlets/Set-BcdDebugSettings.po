@@ -1,0 +1,144 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:21:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Set-BcdDebugSettings"
+msgstr "# 设置 BCD 调试选项"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "{{ Fill in the Synopsis }}"
+msgstr "{{ 填写剧情简介 }}"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### SerialWithDebugPort"
+msgstr "### SerialWithDebugPort"
+
+msgid "### SerialWithOutDebugPort"
+msgstr "### SerialWithOutDebugPort"
+
+msgid "### NETWithKey"
+msgstr "### NETWithKey"
+
+msgid "### NETCreateKey"
+msgstr "### NETCreateKey"
+
+msgid "### 1394"
+msgstr "### 1394"
+
+msgid "### Usb"
+msgstr "### USB"
+
+msgid "### Local"
+msgstr "### 本地"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "{{ Add example description here }}"
+msgstr "{{ 在这里添加示例描述 }}"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "{{ Fill Baudrate Description }}"
+msgstr "{{ 填写波特率描述 }}"
+
+msgid "{{ Fill Channel Description }}"
+msgstr "{{ 填写频道描述 }}"
+
+msgid "{{ Fill DebugPort Description }}"
+msgstr "{{ 填写调试端口的描述 }}"
+
+msgid "{{ Fill Force Description }}"
+msgstr "{{ 填充力量描述 }}"
+
+msgid "{{ Fill HostIp Description }}"
+msgstr "{{ 填写主机IP地址的描述 }}"
+
+msgid "{{ Fill Ieee1394 Description }}"
+msgstr "{{ 填写 Ieee1394 的描述 }}"
+
+msgid "{{ Fill Key Description }}"
+msgstr "{{ 填写键描述 }}"
+
+msgid "{{ Fill Local Description }}"
+msgstr "{{ 填写本地描述 }}"
+
+msgid "{{ Fill Net Description }}"
+msgstr "请帮我填写网络描述（Fill in the network description）。"
+
+msgid "{{ Fill NewKey Description }}"
+msgstr "请帮我填写「NewKey 的描述」。"
+
+msgid "{{ Fill NoDhcp Description }}"
+msgstr "请帮我填写 {{ Fill NoDhcp Description }}"
+
+msgid "{{ Fill NoUserModeExceptions Description }}"
+msgstr "{{ Fill NoUserModeExceptions Description }}"
+
+msgid "{{ Fill Port Description }}"
+msgstr "请填写端口描述："
+
+msgid "{{ Fill Serial Description }}"
+msgstr "{{ 填写序列描述 }}"
+
+msgid "{{ Fill StartPolicy Description }}"
+msgstr "{{ 填写政策描述开始 }}"
+
+msgid "{{ Fill Store Description }}"
+msgstr "{{ 填写店铺描述 }}"
+
+msgid "{{ Fill TargetName Description }}"
+msgstr "{{ 填写目标名称及描述 }}"
+
+msgid "{{ Fill Usb Description }}"
+msgstr "{{ 填写U盘描述 }}"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.Windows.Bcd.Cmdlets.BcdExtensions.BcdStoreInfo"
+msgstr "### Microsoft.Windows.Bcd Cmdlets.BcdExtensions.BcdStoreInfo"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

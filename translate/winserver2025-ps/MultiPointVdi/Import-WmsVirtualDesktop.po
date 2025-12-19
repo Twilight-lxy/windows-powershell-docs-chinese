@@ -1,0 +1,119 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:17:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-WmsVirtualDesktop"
+msgstr "# 导入 WMSVirtualDesktop 模块"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a virtual desktop template hard disk image."
+msgstr "创建一个虚拟桌面模板硬盘镜像文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Import-WmsVirtualDesktop** cmdlet creates the Windows MultiPoint "
+"Services (WMS) virtual switch if it doesn't already exist, shuts down any "
+"existing MultiPoint station virtual machines that may be running, and "
+"creates a template virtual machine hard disk (.vhd) from the specified "
+"Windows image."
+msgstr ""
+"`Import-WmsVirtualDesktop` cmdlet 会创建 Windows "
+"多点服务（WMS）虚拟交换机（如果该交换机还不存在的话），关闭所有可能正在运行的现有多点服务器虚拟机，并根据指定的 Windows "
+"镜像创建一个模板虚拟机硬盘（.vhd 文件）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import a template"
+msgstr "### 示例 1：导入模板"
+
+msgid ""
+"This command creates a virtual machine template named MyVdiImage that "
+"installs the guest operating system from "
+"C:\\images\\Windows10Enterprise.iso, and stores the resulting .vhd file in "
+"the folder C:\\MultiPointVhdImages."
+msgstr ""
+"这个命令创建了一个名为“MyVdiImage”的虚拟机模板，该模板会从C:\\images\\Windows10Enterprise.iso安装客户操作系统，并将生成的.vhd文件存储在C:\\MultiPointVhdImages文件夹中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the full path of the input file to use for the virtual desktop template.\n"
+"Valid file types are .wim, .iso, or .vhd that contains the version of Windows to use as the guest operating system."
+msgstr ""
+"指定用于虚拟桌面模板的输入文件的完整路径。有效的文件类型包括 `.wim`、`.iso` 或 `.vhd`，这些文件包含将用作客户操作系统的 "
+"Windows 版本。"
+
+msgid ""
+"Specifies the prefix to use for the name of the virtual machine template."
+msgstr "指定用于虚拟机模板名称的前缀。"
+
+msgid ""
+"Specifies the path in which to store the template and station .vhd files."
+msgstr "指定用于存储模板文件和station.vhd文件的路径。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WmsVirtualDesktop](./Get-WmsVirtualDesktop.md)"
+msgstr "[Get-WmsVirtualDesktop](./Get-WmsVirtualDesktop.md)"
+
+msgid "[New-WmsVirtualDesktop](./New-WmsVirtualDesktop.md)"
+msgstr "[New-WmsVirtualDesktop](./New-WmsVirtualDesktop.md)"
+
+msgid "[Open-WmsVirtualDesktop](./Open-WmsVirtualDesktop.md)"
+msgstr "[Open-WmsVirtualDesktop](./Open-WmsVirtualDesktop.md)"

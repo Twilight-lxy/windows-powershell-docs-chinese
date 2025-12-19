@@ -1,0 +1,145 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:12:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMNetworkAdapterTeamMapping"
+msgstr "# 设置虚拟机网络适配器团队映射关系"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The **Set-VMNetworkAdapterTeamMapping** cmdlet"
+msgstr "`Set-VMNetworkAdapterTeamMapping` cmdlet"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者输入一个会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名来进行指定。默认值是本地计算机。可以通过使用 "
+"`localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Indicates that the cmdlet operates on the parent or host operating system."
+msgstr "表示该cmdlet是在父操作系统或宿主操作系统上运行的。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the name of the physical net adapter."
+msgstr "指定物理网络适配器的名称。"
+
+msgid "Specifies the name of a switch."
+msgstr "指定一个开关的名称。"
+
+msgid "Specifies a virtual machine."
+msgstr "指定一台虚拟机。"
+
+msgid "Specifies the name of a virtual machine."
+msgstr "指定虚拟机的名称。"
+
+msgid "Specifies a virtual machine network adapter."
+msgstr "指定一个虚拟机网络适配器。"
+
+msgid "Specifies the name of a virtual network adapter."
+msgstr "指定虚拟网络适配器的名称。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterTeamMappingSetting"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapterTeamMappingSetting"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-VMNetworkAdapterTeamMapping](./Get-VMNetworkAdapterTeamMapping.md)"
+msgstr ""
+"[Get-VMNetworkAdapterTeamMapping](./Get-VMNetworkAdapterTeamMapping.md)"
+
+msgid ""
+"[Remove-VMNetworkAdapterTeamMapping](./Remove-"
+"VMNetworkAdapterTeamMapping.md)"
+msgstr ""
+"[Remove-VMNetworkAdapterTeamMapping](./Remove-"
+"VMNetworkAdapterTeamMapping.md)"

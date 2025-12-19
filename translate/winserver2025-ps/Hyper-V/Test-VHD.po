@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:26:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-VHD"
+msgstr "# Test-VHD"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Tests a virtual hard disk for any problems that would make it unusable."
+msgstr "测试虚拟硬盘是否存在任何可能导致其无法使用的问题。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ExistingVHD (Default)"
+msgstr "### ExistingVHD（默认值）"
+
+msgid "### SharedDisk"
+msgstr "### SharedDisk"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Test-VHD** cmdlet tests a virtual hard disk for any problems that "
+"would make it unusable."
+msgstr "`Test-VHD` cmdlet 用于检测虚拟硬盘是否存在任何可能导致其无法使用的故障。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Tests whether the virtual hard disk chain is in a usable state that starts "
+"with the virtual hard disk associated with Diff2.vhdx."
+msgstr "测试虚拟硬盘链是否处于可用状态，该状态以与 Diff2.vhdx 关联的虚拟硬盘为起始点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual hard disk is to be tested.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于测试虚拟硬盘的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名来进行指定。默认值为本地计算机。可以使用"
+" `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the path to the virtual hard disk file of the virtual hard disk to be tested.\n"
+"If a filename or relative path is specified, the new virtual hard disk path is calculated relative to the current working directory."
+msgstr "指定要测试的虚拟硬盘对应的虚拟硬盘文件的路径。如果指定了文件名或相对路径，新的虚拟硬盘路径将相对于当前工作目录进行计算。"
+
+msgid ""
+"Indicates that the cmdlet tests for SCSI persistent reservation support semantics.\n"
+"Specify this parameter to test whether a virtual hard disk or path supports shared virtual disks."
+msgstr ""
+"表示该cmdlet会测试SCSI持久保留（persistent "
+"reservation）支持的相关语义。请指定此参数，以检测某个虚拟硬盘或路径是否支持共享虚拟硬盘的功能。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Boolean"
+msgstr "### System(Boolean)"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

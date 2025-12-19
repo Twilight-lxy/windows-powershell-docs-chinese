@@ -1,0 +1,104 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:56:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-MsmqCertificate"
+msgstr "# 获取 MSMQ 证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets certificates registered in Active Directory Domain Services."
+msgstr "用于将证书注册到 Active Directory 域服务中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-MsmqCertificate** cmdlet gets an array of **System.Security.Cryptography.X509Certificates.X509Certificate** objects.\n"
+"Each object represents a personal certificate that is currently registered in Active Directory® Domain Services."
+msgstr ""
+"`Get-MsmqCertificate` cmdlet 会获取一个 `System.security "
+"cryptography.X509Certificates.X509Certificate` 对象数组。每个对象代表一个当前在 Active "
+"Directory® 域服务中注册的个人证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all certificates of the current user"
+msgstr "### 示例 1：获取当前用户的所有证书"
+
+msgid ""
+"This command gets the certificates of the current user for all hosts or "
+"virtual servers."
+msgstr "这个命令可以获取当前用户所有主机或虚拟服务器的证书。"
+
+msgid ""
+"### Example 2: Get the certificates of the current user for a host or "
+"virtual server"
+msgstr "### 示例 2：获取当前用户针对某个主机或虚拟服务器的证书"
+
+msgid ""
+"This command gets the certificates of the current user for the host or "
+"virtual server named Contoso27."
+msgstr "这个命令会获取当前用户针对名为“Contoso27”的主机或虚拟服务器所拥有的证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of a host or virtual server.\n"
+"This cmdlet gets the certificates of the current user for the specified host or virtual server.\n"
+"If you do not specify this parameter, this cmdlet gets the certificates of the current user for all hosts or virtual servers."
+msgstr ""
+"用于指定主机或虚拟服务器的名称。此cmdlet会获取当前用户为该指定主机或虚拟服务器所拥有的证书。如果您未指定此参数，那么此cmdlet将获取当前用户拥有的所有主机或虚拟服务器的证书。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-MsmqCertificate](./Enable-MsmqCertificate.md)"
+msgstr "[Enable-MsmqCertificate](./Enable-MsmqCertificate.md)"
+
+msgid "[Remove-MsmqCertificate](./Remove-MsmqCertificate.md)"
+msgstr "[Remove-MsmqCertificate](./Remove-MsmqCertificate.md)"

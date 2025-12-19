@@ -1,0 +1,147 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:58:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-VMConsoleSupport"
+msgstr "# 启用虚拟机控制台支持"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables keyboard, video, and mouse for virtual machines."
+msgstr "为虚拟机启用键盘、视频和鼠标功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Enable-VMConsoleSupport** cmdlet enables keyboard, video, and mouse "
+"for virtual machines."
+msgstr "`Enable-VMConsoleSupport` cmdlet 可以为虚拟机启用键盘、视频和鼠标功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable keyboard, video, and mouse support"
+msgstr "#### 示例 1：启用键盘、视频和鼠标支持"
+
+msgid ""
+"The first command uses the **Get-VM** cmdlet to obtain the virtual machines on the host named Server01.\n"
+"The command stores the results in the **$VM** variable."
+msgstr ""
+"第一个命令使用了 **Get-VM** cmdlet 来获取名为 Server01 的主机上的虚拟机信息。该命令将结果存储在 **$VM** 变量中。"
+
+msgid ""
+"The second command enables keyboard, video, and mouse support on the virtual"
+" machine or virtual machines in **$VM**."
+msgstr "第二个命令可以为虚拟机（位于 `$VM` 目录下）启用键盘、视频和鼠标支持功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts that run this cmdlet.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个运行此 cmdlet 的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行标识。默认值为本地计算机。可以使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Indicates that this cmdlet returns the **Microsoft.HyperV.VirtualMachine** "
+"object that it modifies."
+msgstr "表示此cmdlet会返回其所修改的`Microsoft.HyperVVirtualMachine`对象。"
+
+msgid ""
+"Specifies an array of virtual machines on which this cmdlet enables support for keyboard, video, and mouse.\n"
+"To obtain a **VirtualMachine** object, use the **Get-VM** cmdlet."
+msgstr ""
+"指定一个虚拟机数组，该cmdlet可以在这些虚拟机上实现键盘、视频和鼠标功能的支持。要获取一个**VirtualMachine**对象，请使用**Get-"
+"VM** cmdlet。"
+
+msgid ""
+"Specifies an array of names of virtual machines on which this cmdlet enables"
+" support keyboard, video, and mouse."
+msgstr "指定一个虚拟机名称数组，该cmdlet通过这个数组在这些虚拟机上启用对键盘、视频和鼠标的支持功能。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行这个 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.Powershell.VirtualMachine"
+msgstr "### Microsoft.HyperV.Powershell.VirtualMachine"
+
+msgid ""
+"This cmdlet returns a **VirtualMachine** object, if you specify the "
+"**Passthru**."
+msgstr "如果指定了 `Passsthru` 参数，此 cmdlet 会返回一个 `VirtualMachine` 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-VMConsoleSupport](./Disable-VMConsoleSupport.md)"
+msgstr "[Disable-VMConsoleSupport](./Disable-VMConsoleSupport.md)"
+
+msgid "[Get-VM](./Get-VM.md)"
+msgstr "[Get-VM](./Get-VM.md)"

@@ -1,0 +1,91 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:40:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WinLanguageBarOption"
+msgstr "# Get-WinLanguageBarOption"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets the language bar mode and language bar type for the current user "
+"account."
+msgstr "获取当前用户账户的语言栏模式和语言栏类型。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WinLanguageBarOption** cmdlet gets the language bar type and mode by using a **LanguageBar** object.\n"
+"The values for the type and mode settings can be either true or false.\n"
+"The default value for each setting is false."
+msgstr ""
+"`Get-WinLanguageBarOption` cmdlet 使用 `LanguageBar` "
+"对象来获取语言栏的类型和模式。类型和模式的设置值可以是 `true` 或 `false`。每个设置的默认值为 `false`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the settings for the language bar"
+msgstr "### 示例 1：获取语言栏的设置"
+
+msgid ""
+"This command returns the current settings for the language bar options for "
+"the current user account."
+msgstr "此命令返回当前用户账户的语言栏选项的当前设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### LanguageBar"
+msgstr "### LanguageBar"
+
+msgid "This cmdlet returns an object that contains the following settings."
+msgstr "此cmdlet返回一个对象，其中包含以下设置。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-WinDefaultInputMethodOverride](./Get-WinDefaultInputMethodOverride.md)"
+msgstr ""
+"[Get-WinDefaultInputMethodOverride](./Get-WinDefaultInputMethodOverride.md)"
+
+msgid "[Set-WinLanguageBarOption](./Set-WinLanguageBarOption.md)"
+msgstr "[Set-WinLanguageBarOption](./Set-WinLanguageBarOption.md)"

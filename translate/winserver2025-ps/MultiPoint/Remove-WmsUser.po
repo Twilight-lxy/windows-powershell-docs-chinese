@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:12:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-WmsUser"
+msgstr "# 删除 WMS 用户"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a local user from the current MultiPoint Server system."
+msgstr "从当前的多点服务器系统中删除一个本地用户。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-WmsUser** cmdlet removes a local user from the current Windows "
+"MultiPoint Server system."
+msgstr "`Remove-WmsUser` cmdlet 用于从当前的 Windows MultiPoint Server 系统中删除一个本地用户。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a user"
+msgstr "### 示例 1：删除用户"
+
+msgid "This command removes the user named Student01."
+msgstr "这个命令会删除名为Student01的用户。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid "Specifies the name of the user account to remove."
+msgstr "指定要删除的用户账户的名称。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标MultiPoint Server的完全限定主机名。默认值为localhost。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WmsUser](Get-WmsUser.md)"
+msgstr "[Get-WmsUser](Get-WmsUser.md)"
+
+msgid "[New-WmsUser](New-WmsUser.md)"
+msgstr "[New-WmsUser](New-WmsUser.md)"
+
+msgid "[Set-WmsUser](Set-WmsUser.md)"
+msgstr "[Set-WmsUser](Set-WmsUser.md)"

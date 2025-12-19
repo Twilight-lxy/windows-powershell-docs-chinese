@@ -1,0 +1,166 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:07:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IpamDnsZone"
+msgstr "# Get-IpamDnsZone"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets information about DNS zones from IPAM database."
+msgstr "从 IPAM 数据库中获取有关 DNS 区域的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-IpamDnsZone** cmdlet gets information about all the Domain Name System (DNS) zones in the IPAM (IP Address Management) server database.\n"
+"A DNS zone is a distinct section of the domain name system for an organization.\n"
+"For instance, the DNS zone northamerica.contoso.com would maintain DNS records for contoso.com's northamerica subdomain.\n"
+"Likewise, the DNS zone southamerica.contoso.com would maintain DNS records for contoso.com's southamerica subdomain."
+msgstr ""
+"**Get-IpamDnsZone** cmdlet 可以获取 IPAM（IP 地址管理）服务器数据库中所有域名系统（DNS）区域的信息。DNS "
+"区域是域名系统中用于表示某个组织的独立部分。例如，`northamerica.contoso.com` 这个 DNS 区域会存储 "
+"`contoso.com` 的 `northamerica` 子域的 DNS 记录；同样地，`southamerica.contoso.com` 这个 "
+"DNS 区域会存储 `contoso.com` 的 `southamerica` 子域的 DNS 记录。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get information about all forward zones"
+msgstr "### 示例 1：获取所有前置区域的信息"
+
+msgid ""
+"This command returns information about all the forward zones in the IPAM "
+"database."
+msgstr "此命令会返回有关 IPAM 数据库中所有转发区域的信息。"
+
+msgid ""
+"### Example 2: Get information about the forward zones in a specific DNS "
+"zone"
+msgstr "### 示例 2：获取特定 DNS 区域中转发区域的信息"
+
+msgid ""
+"This command returns information for the DNS zone named "
+"northamerica.contoso.com."
+msgstr "此命令会返回名为 northamerica.contoso.com 的 DNS 区域的相关信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，随后再显示命令提示符。在作业完成之前，您可以继续在该会话中执行其他操作。要管理该作业，请使用 "
+"`*-Job` 系列 cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时执行的命令（cmdlet）的最大数量。如果省略此参数或输入值 `0`，Windows PowerShell® "
+"会根据计算机上正在运行的 CIM "
+"命令（cmdlets）的数量来计算一个最优的限制值。这个限制仅适用于当前正在执行的命令，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Specifies the name of the DNS zone to be returned.\n"
+"For example:"
+msgstr "指定要返回的DNS区域的名称。例如："
+
+msgid "`-ZoneName \"northamerica.contoso.com\"`"
+msgstr "`-ZoneName \"northamerica.contoso.com\"`"
+
+msgid "Specifies the type of DNS zone to be returned."
+msgstr "指定要返回的DNS区域的类型。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid "For example:"
+msgstr "例如："
+
+msgid "`-ZoneType \"IPv4Reverse\"`"
+msgstr "`-ZoneType \"IPv4Reverse\"`"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### IpamDnsZone"
+msgstr "### IpamDnsZone"
+
+msgid "This cmdlet returns an instance of the **IpamDnsZone** object."
+msgstr "此cmdlet返回一个**IpamDnsZone**对象的实例。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-IpamDnsConditionalForwarder](./Get-IpamDnsConditionalForwarder.md)"
+msgstr ""
+"[Get-IpamDnsConditionalForwarder](./Get-IpamDnsConditionalForwarder.md)"
+
+msgid "[Get-IpamDnsResourceRecord](./Get-IpamDnsResourceRecord.md)"
+msgstr "[Get-IpamDnsResourceRecord](./Get-IpamDnsResourceRecord.md)"
+
+msgid "[Get-IpamDnsServer](./Get-IpamDnsServer.md)"
+msgstr "[Get-IpamDnsServer](./Get-IpamDnsServer.md)"

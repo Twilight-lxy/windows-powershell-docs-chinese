@@ -1,0 +1,175 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:51:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-IpamServerInventory"
+msgstr "# Add-IpamServerInventory"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds an infrastructure server to an IPAM database."
+msgstr "将一台基础设施服务器添加到 IPAM 数据库中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-IpamServerInventory** cmdlet adds a new infrastructure server to the IP Address Management (IPAM) server inventory.\n"
+"Use the fully qualified domain name (FQDN) of the server to add to the server inventory."
+msgstr ""
+"`Add-IpamServerInventory` cmdlet 用于将新的基础设施服务器添加到 IP "
+"地址管理（IPAM）服务器清单中。请使用该服务器的完全限定域名（FQDN）来进行添加操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a server to the IPAM server inventory"
+msgstr "### 示例 1：将一台服务器添加到 IPAM 服务器清单中"
+
+msgid ""
+"This command adds a DHCP server named Dhcp01.Contoso.com to the IPAM server "
+"inventory."
+msgstr "此命令将一个名为Dhcp01.Contoso.com的DHCP服务器添加到IPAM服务器库存中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job` "
+"cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。请输入计算机名称或会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid "Specifies custom metadata for the server."
+msgstr "为服务器指定自定义元数据。"
+
+msgid "Specifies a description for the server."
+msgstr "为服务器指定一个描述信息。"
+
+msgid ""
+"Specifies the Simple Mail Transfer Protocol (SMTP) domain name of the target"
+" forest."
+msgstr "指定目标林的简单邮件传输协议（SMTP）域名。"
+
+msgid ""
+"Specifies the manageability status of a server.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定服务器的可管理性状态。该参数的可接受值包括："
+
+msgid ""
+"Specifies the FQDN of the infrastructure server to add to the server "
+"inventory."
+msgstr "指定要添加到服务器清单中的基础设施服务器的完全qualified domain name（FQDN）。"
+
+msgid ""
+"Specifies the owner of the Dynamic Host Configuration Protocol (DHCP) "
+"server."
+msgstr "指定动态主机配置协议（DHCP）服务器的所有者。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies an array of server roles that are present on the server.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定服务器上存在的服务器角色数组。该参数的可接受值为："
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时执行的操作的最大数量。如果省略了此参数或输入的值为 `0`，那么 Windows PowerShell® 会根据计算机上正在运行的"
+" CIM cmdlets 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前执行的 cmdlet，而不适用于整个会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### IpamServerInventory"
+msgstr "### IpamServerInventory"
+
+msgid ""
+"This cmdlet returns an object that represents an infrastructure server in "
+"the IPAM system."
+msgstr "此cmdlet返回一个对象，该对象代表IPAM系统中的基础设施服务器。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IpamServerInventory](./Get-IpamServerInventory.md)"
+msgstr "[Get-IpamServerInventory](./Get-IpamServerInventory.md)"
+
+msgid "[Remove-IpamServerInventory](./Remove-IpamServerInventory.md)"
+msgstr "[Remove-IpamServerInventory](./Remove-IpamServerInventory.md)"
+
+msgid "[Set-IpamServerInventory](./Set-IpamServerInventory.md)"
+msgstr "[Set-IpamServerInventory](./Set-IpamServerInventory.md)"

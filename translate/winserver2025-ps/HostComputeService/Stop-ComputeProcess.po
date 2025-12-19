@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:37:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-ComputeProcess"
+msgstr "# 停止计算进程"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Stops a running compute system in the Hyper-V Host Compute Service."
+msgstr "在 Hyper-V 主机计算服务中停止正在运行的计算系统。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Id (Default)"
+msgstr "### ID（默认值）"
+
+msgid "### Object"
+msgstr "### 对象"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Stop-ComputeProcess** cmdlet stops a running compute system in the "
+"Hyper-V Host Compute Service."
+msgstr "`Stop-ComputeProcess` cmdlet 用于停止 Hyper-V 主机计算服务中正在运行的计算系统。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of compute systems that this cmdlet stops.\n"
+"To obtain a **ComputeProcess** object, use the **Get-ComputeProcess** cmdlet."
+msgstr ""
+"指定一个计算系统数组，该cmdlet会停止这些系统的运行。要获取一个**ComputeProcess**对象，请使用**Get-"
+"ComputeProcess** cmdlet。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不会询问用户的确认。"
+
+msgid "Specifies the ID of a compute system that this cmdlet stops."
+msgstr "指定该cmdlet将要停止运行的计算系统的ID。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ComputeProcess](./Get-ComputeProcess.md)"
+msgstr "[Get-ComputeProcess](./Get-ComputeProcess.md)"

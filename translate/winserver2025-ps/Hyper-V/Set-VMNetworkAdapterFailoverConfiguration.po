@@ -1,0 +1,251 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:10:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMNetworkAdapterFailoverConfiguration"
+msgstr "# 设置虚拟机网络适配器的故障转移配置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Configures the IP address of a virtual network adapter to be used when a "
+"virtual machine fails over."
+msgstr "配置虚拟网络适配器的IP地址，以便在虚拟机发生故障转移时使用该IP地址。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-VMNetworkAdapterFailoverConfiguration** cmdlet sets the "
+"configuration of an IP address of a virtual network adapter  to be used when"
+" a virtual machine fails over."
+msgstr ""
+"`Set-VMNetworkAdapterFailoverConfiguration` cmdlet 用于设置虚拟网络适配器的 IP "
+"地址配置，该地址将在虚拟机发生故障转移时被使用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example configures a failover IPv4 address for virtual network adapter "
+"NetworkAdapter01 on virtual machine VM01."
+msgstr "这个示例为虚拟机VM01上的虚拟网络适配器NetworkAdapter01配置了一个用于故障转移的IPv4地址。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example clears the current failover IPv4 settings on virtual network "
+"adapter NetworkAdapter01 for virtual machine VM01."
+msgstr "这个示例会清除虚拟机VM01所使用的虚拟网络适配器NetworkAdapter01上的当前故障转移（failover）IPv4设置。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example configures an IPv6 address and a prefix length of 12 for a "
+"virtual network adapter NetworkAdapter01 for virtual machine VM01."
+msgstr "这个示例为虚拟机VM01中的虚拟网络适配器NetworkAdapter01配置了一个IPv6地址以及前缀长度为12的参数。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example clears the current failover IPv6 settings on a virtual network "
+"adapter NetworkAdapter01 for virtual machine VM01."
+msgstr "这个示例会清除虚拟机VM01所使用的虚拟网络适配器NetworkAdapter01当前的IPv6故障转移设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Clears the configured IPv4 failover settings.\n"
+"The IPv4 address configured in the primary virtual machine (static or dynamic) will be used by the Replica virtual machine."
+msgstr "清除已配置的 IPv4 故障转移设置。主虚拟机中配置的 IPv4 地址（无论是静态地址还是动态地址）将被复制虚拟机使用。"
+
+msgid ""
+"Clears the configured IPv6 failover settings.\n"
+"The IPv6 address configured in the primary virtual machine (static or dynamic) will be used by the Replica virtual machine."
+msgstr "清除已配置的 IPv6 故障转移设置。主虚拟机中配置的 IPv6 地址（无论是静态地址还是动态地址）将被复制虚拟机使用。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the IP address configuration of a virtual network adapter is to be set.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于设置虚拟网络适配器IP地址配置的Hyper-"
+"V主机。允许使用NetBIOS名称、IP地址和完全限定域名作为主机标识。默认值为本地计算机；可以使用`localhost`或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the IPv4 address to set on the VMNetworkAdapter for use on failover of the virtual machine.\n"
+"You must also specify the **IPv4SubnetMask** parameter when you specify this parameter."
+msgstr ""
+"指定要设置在 `VMNetworkAdapter` 上的 IPv4 地址，以便在虚拟机发生故障转移时使用。在指定此参数的同时，还必须指定 "
+"`IPv4SubnetMask` 参数。"
+
+msgid ""
+"Specifies the IPv4 alternate DNS server to be set on the VMNetworkAdapter "
+"for use on failover of the virtual machine."
+msgstr "指定要在 VMNetworkAdapter 上设置的 IPv4 备用 DNS 服务器，以便在虚拟机发生故障转移时使用。"
+
+msgid ""
+"Specifies the IPv4 default gateway to be set on VMNetworkAdapter for use on "
+"failover of the virtual machine.."
+msgstr "指定要设置在 `VMNetworkAdapter` 上的 IPv4 默认网关，以便在虚拟机发生故障转移时使用该网关。"
+
+msgid ""
+"Specifies the IPv4 preferred DNS server to be set on VMNetworkAdapter for "
+"use on failover of the virtual machine."
+msgstr "指定要在 `VMNetworkAdapter` 上设置的 IPv4 首选 DNS 服务器，以便在虚拟机发生故障转移时使用。"
+
+msgid ""
+"Specifies the IPv4 subnet mask to be set on VMNetworkAdapter for use on failover of the virtual machine.\n"
+"You must specify the **IPv4Address** parameter when you specify this parameter."
+msgstr ""
+"指定要设置在 `VMNetworkAdapter` 上的 IPv4 子网掩码，以便在虚拟机故障转移时使用。在指定此参数时，必须同时指定 "
+"`IPv4Address` 参数。"
+
+msgid ""
+"Specifies the IPv6 address to be set on VMNetworkAdapter for use on failover of the virtual machine.\n"
+"You must specify the **IPv6SubnetPrefixLength** parameter when you specify this parameter."
+msgstr ""
+"指定要设置在 `VMNetworkAdapter` 上的 IPv6 地址，以便在虚拟机发生故障转移时使用该地址。在指定此参数时，必须同时指定 "
+"`IPv6SubnetPrefixLength` 参数。"
+
+msgid ""
+"Specifies the IPv6 alternate DNS server to be set on VMNetworkAdapter for "
+"use on failover of the virtual machine."
+msgstr "指定要在 `VMNetworkAdapter` 上设置的 IPv6 备用 DNS 服务器，以便在虚拟机发生故障转移时使用。"
+
+msgid ""
+"Specifies the IPv6 default gateway to be set on VMNetworkAdapter for use on "
+"failover of the virtual machine."
+msgstr "指定要设置在 `VMNetworkAdapter` 上的 IPv6 默认网关，以便在虚拟机发生故障转移时使用。"
+
+msgid ""
+"Specifies the IPv6 preferred DNS server to be set on VMNetworkAdapter for "
+"use on failover of the virtual machine."
+msgstr "指定要在 `VMNetworkAdapter` 上设置的 IPv6 首选 DNS 服务器，以便在虚拟机发生故障转移时使用。"
+
+msgid ""
+"Specifies the IPv6 subnet prefix length to be set on VMNetworkAdapter for use on failover of the virtual machine.\n"
+"You must specify the **IPv6Address** parameter when you specify this parameter."
+msgstr ""
+"指定要设置在 `VMNetworkAdapter` 上的 IPv6 子网前缀长度，以便在虚拟机故障转移时使用。在指定此参数时，必须同时指定 "
+"`IPv6Address` 参数。"
+
+msgid ""
+"Specifies that a "
+"**Microsoft.HyperV.PowerShell.VMNetworkAdapterFailoverConfiguration** object"
+" is to be passed through to the pipeline representing the IP address "
+"configuration to be set."
+msgstr ""
+"指定要将一个 **Microsoft.HyperV.PowerShell.VMNetworkAdapterFailoverConfiguration**"
+" 对象传递给管道，该对象代表要设置的 IP 地址配置。"
+
+msgid ""
+"Specifies the virtual machine for which you want to configure the IP "
+"address."
+msgstr "指定您想要为其配置IP地址的虚拟机。"
+
+msgid ""
+"Specifies the friendly name of the virtual machine for which you want to "
+"configure the IP address."
+msgstr "指定您想要配置IP地址的虚拟机的友好名称。"
+
+msgid ""
+"Specifies the virtual network adapter for which you want to configure the IP"
+" address."
+msgstr "指定您想要配置IP地址的虚拟网络适配器。"
+
+msgid ""
+"Specifies the name of the virtual network adapter for which you want to set "
+"the IP address."
+msgstr "指定要为其设置 IP 地址的虚拟网络适配器的名称。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterFailoverConfiguration"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapterFailoverConfiguration"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 `-PassThru`。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

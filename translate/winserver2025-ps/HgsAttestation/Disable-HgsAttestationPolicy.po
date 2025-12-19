@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:15:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-HgsAttestationPolicy"
+msgstr "# 禁用 HGS 证明策略"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables an attestation policy in HGS."
+msgstr "在HGS中禁用某种认证策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Disable-HgsAttestationPolicy** cmdlet disables an attestation policy in the Host Guardian Service (HGS).\n"
+"Specify the policy to disable by name."
+msgstr ""
+"` Disable-HgsAttestationPolicy ` cmdlet 用于禁用 Host Guardian Service (HGS) "
+"中的认证策略。需要通过名称来指定要禁用的策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable a policy"
+msgstr "#### 示例 1：禁用某项策略"
+
+msgid ""
+"This command disables the attestation policy named BaselineTpmPolicy16.\n"
+"After you run this command, any guarded host that requires this policy can no longer obtain new attestation certificates."
+msgstr "此命令会禁用名为 BaselineTpmPolicy16 的认证策略。运行此命令后，任何需要该策略的受保护主机将无法再获取新的认证证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of the policy that this cmdlet disables."
+msgstr "指定此cmdlet要禁用的策略的名称。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### AttestationPolicyInfo"
+msgstr "### AttestationPolicyInfo"
+
+msgid "This cmdlet returns an **AttestationPolicyInfo** object."
+msgstr "此 cmdlet 返回一个 **AttestationPolicyInfo** 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-HgsAttestationPolicy](./Enable-HgsAttestationPolicy.md)"
+msgstr "[Enable-HgsAttestationPolicy](./Enable-HgsAttestationPolicy.md)"
+
+msgid "[Get-HgsAttestationPolicy](./Get-HgsAttestationPolicy.md)"
+msgstr "[Get-HgsAttestationPolicy](./Get-HgsAttestationPolicy.md)"
+
+msgid "[Remove-HgsAttestationPolicy](./Remove-HgsAttestationPolicy.md)"
+msgstr "[Remove-HgsAttestationPolicy](./Remove-HgsAttestationPolicy.md)"

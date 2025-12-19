@@ -1,0 +1,117 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:04:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Close-WmsApp"
+msgstr "# 关闭 WMS 应用程序"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Closes an application."
+msgstr "关闭一个应用程序。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Close-WmsApp** cmdlet closes the specified application using the specified process ID and window ID.\n"
+"The cmdlet first attempts to close the application gracefully.\n"
+"If the application does not close gracefully, the cmdlet forces the application to close."
+msgstr ""
+"`Close-WmsApp` cmdlet 使用指定的进程 ID 和窗口 ID 来关闭指定的应用程序。该 cmdlet "
+"会首先尝试优雅地关闭应用程序；如果应用程序无法优雅地关闭，则会强制关闭它。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Close an application"
+msgstr "### 示例 1：关闭一个应用程序"
+
+msgid ""
+"This command closes the application running on session 3 with the process ID"
+" 852 and window ID 65854."
+msgstr "这个命令会关闭在会话3中运行的应用程序，该应用程序的进程ID为852，窗口ID为65854。"
+
+msgid ""
+"Use Get-WmsApp to get a list of applications along with their process IDs "
+"and window IDs."
+msgstr "使用 `Get-WmsApp` 命令来获取应用程序列表及其进程 ID 和窗口 ID。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies the process creation time."
+msgstr "指定进程创建的时间。"
+
+msgid "Specifies the ID of the process to close."
+msgstr "指定要关闭的进程的ID。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的 MultiPoint Server 的完全限定主机名。默认值为 localhost。"
+
+msgid "Specifies the ID of the session."
+msgstr "指定会话的ID。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "Specifies the ID of the window."
+msgstr "指定窗口的ID。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WmsApp](./Get-WmsApp.md)"
+msgstr "[Get-WmsApp](./Get-WmsApp.md)"
+
+msgid "[Open-WmsApp](./Open-WmsApp.md)"
+msgstr "[Open-WmsApp](./Open-WmsApp.md)"

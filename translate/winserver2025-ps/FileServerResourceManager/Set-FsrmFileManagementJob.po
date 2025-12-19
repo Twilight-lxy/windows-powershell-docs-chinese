@@ -1,0 +1,235 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:28:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-FsrmFileManagementJob"
+msgstr "# Set-FsrmFileManagementJob"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Changes configuration settings of a file management job."
+msgstr "更改文件管理作业的配置设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Query (cdxml) (Default)"
+msgstr "### 查询（CDXML）（默认值）"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject (cdxml)"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-FsrmFileManagementJob** cmdlet changes configuration settings of a file management job.\n"
+"You must specify at least one other parameter in addition to the *Name* parameter."
+msgstr ""
+"`Set-FsrmFileManagementJob` cmdlet 用于更改文件管理作业的配置设置。除了 `Name` "
+"参数外，您还必须指定至少一个其他参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Change the condition for a file management job"
+msgstr "### 示例 1：修改文件管理任务的条件"
+
+msgid ""
+"This example changes the file management job named Expire stale data to "
+"include only files that have the PII property set to true in addition to the"
+" existing conditions."
+msgstr ""
+"这个示例修改了名为“Expire stale data”的文件管理任务，使其在原有的条件基础上，只包含那些将 PII（个人身份信息）属性设置为 "
+"“true” 的文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a **FsrmFmjAction** object.\n"
+"You can use the **New-FsrmFmjAction** cmdlet to create a **FsrmFmjAction** object."
+msgstr ""
+"指定一个 **FsrmFmjAction** 对象。您可以使用 **New-FsrmFmjAction** cmdlet 来创建一个 "
+"**FsrmFmjAction** 对象。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该 cmdlet。使用此参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中操作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务 (About "
+"Jobs)](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies a **FsrmFmjCondition** object.\n"
+"You can use the **New-FsrmFmjCondition** cmdlet to create a **FsrmFmjCondition** object."
+msgstr ""
+"指定一个 **FsrmFmjCondition** 对象。你可以使用 **New-FsrmFmjCondition** cmdlet 来创建一个 "
+"**FsrmFmjCondition** 对象。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Indicates that the server continuously applies classification to files in "
+"the background."
+msgstr "表示服务器在后台持续对文件进行分类处理。"
+
+msgid ""
+"If you specify this parameter, you cannot specify any notifications and the "
+"conditions that you specify cannot include any objects where the "
+"classification property is set to the following values:"
+msgstr "如果您指定了此参数，则无法指定任何通知内容；同时，您指定的条件中也不能包含那些分类属性被设置为以下值的对象："
+
+msgid ""
+"Indicates that the server maintains a log of continuous classification activities.\n"
+"You must specify the *Continuous* parameter to log classification activities."
+msgstr "这表示服务器会记录连续的分类活动日志。要记录分类活动，必须指定“Continuous”参数。"
+
+msgid ""
+"Specifies the maximum size of the log that contains continuous classification activity.\n"
+"You must specify the *Continuous* parameter to log classification activities."
+msgstr "指定包含连续分类活动的日志的最大大小。要记录分类活动，必须指定“Continuous”参数。"
+
+msgid "Specifies a description for the file management job."
+msgstr "为文件管理任务指定一个描述信息。"
+
+msgid "Indicates that the file management job is disabled."
+msgstr "表示文件管理任务已禁用。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此 cmdlet 的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传送到该 cmdlet。"
+
+msgid ""
+"Specifies a semicolon-separated list of email addresses to which the file "
+"server sends the email."
+msgstr "指定一个由分号分隔的电子邮件地址列表，文件服务器会将邮件发送到这些地址。"
+
+msgid "Specifies a name for the file management job."
+msgstr "为文件管理任务指定一个名称。"
+
+msgid ""
+"Specifies an array of namespaces that are part of the scope.\n"
+"Each value must be either a value of the FolderType property defined on the server (in the format \"\\[Folder type property name=\\<value\\>\\]\") or a static path."
+msgstr ""
+"指定一个命名空间数组，这些命名空间属于当前作用域的范围。每个值必须是服务器上定义的 `FolderType` 属性的值（格式为 "
+"„\\[文件夹类型属性名称=\\<值\\>\\“），或者是某个静态路径。"
+
+msgid ""
+"Specifies a **FsrmFmjNotificationAction** object.\n"
+"You can use the **New-FsrmFmjNotificationAction** cmdlet to create a **FsrmFmjNotificationAction** object."
+msgstr ""
+"指定一个 **FsrmFmjNotificationAction** 对象。您可以使用 **New-"
+"FsrmFmjNotificationAction** cmdlet 来创建一个 **FsrmFmjNotificationAction** 对象。"
+
+msgid ""
+"Specifies an array of strings using the format \\<name\\>=\\<value\\>.\n"
+"The File Classification Infrastructure and other management tools use these parameters."
+msgstr ""
+"使用 `<name>\\>=<value>` 的格式指定一个字符串数组。文件分类基础设施（File Classification "
+"Infrastructure）和其他管理工具会使用这些参数。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies an array of report formats that the file management job produces.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定文件管理任务生成的报告格式数组。该参数的可接受值包括："
+
+msgid ""
+"Specifies an array of report types that the file management job generates.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定文件管理任务生成的报表类型数组。该参数的可接受值为："
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance[]"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#Root/Microsoft/Windows/FSRM/MSFT_FSRMFileManagementJob"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#Root/Microsoft/Windows/FSRM/MSFT_FSRMFileManagementJob"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-FsrmFileManagementJob](./Get-FsrmFileManagementJob.md)"
+msgstr "[Get-FsrmFileManagementJob](./Get-FsrmFileManagementJob.md)"
+
+msgid "[New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+msgstr "[New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+
+msgid "[New-FsrmFmjCondition](./New-FsrmFmjCondition.md)"
+msgstr "[New-FsrmFmjCondition](./New-FsrmFmjCondition.md)"
+
+msgid "[New-FsrmFmjNotificationAction](./New-FsrmFmjNotificationAction.md)"
+msgstr "[New-FsrmFmjNotificationAction](./New-FsrmFmjNotificationAction.md)"
+
+msgid "[New-FsrmScheduledTask](./New-FsrmScheduledTask.md)"
+msgstr "[New-FsrmScheduledTask](./New-FsrmScheduledTask.md)"
+
+msgid "[Remove-FsrmFileManagementJob](./Remove-FsrmFileManagementJob.md)"
+msgstr "[Remove-FsrmFileManagementJob](./Remove-FsrmFileManagementJob.md)"
+
+msgid "[Start-FsrmFileManagementJob](./Start-FsrmFileManagementJob.md)"
+msgstr "[开始-FsrmFileManagementJob作业](./Start-FsrmFileManagementJob.md)"
+
+msgid "[Stop-FsrmFileManagementJob](./Stop-FsrmFileManagementJob.md)"
+msgstr "[Stop-FsrmFileManagementJob](./Stop-FsrmFileManagementJob.md)"
+
+msgid "[Wait-FsrmFileManagementJob](./Wait-FsrmFileManagementJob.md)"
+msgstr "[Wait-FsrmFileManagementJob](./Wait-FsrmFileManagementJob.md)"

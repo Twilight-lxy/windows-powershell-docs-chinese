@@ -1,0 +1,123 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:25:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-HgsKeyProtectionAttestationSignerCertificate"
+msgstr "# 获取 HGS 密钥保护证明签名者证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the attestation signer certificates that the Key Protection Service "
+"trusts."
+msgstr "获取密钥保护服务所信任的认证签名者证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-HgsKeyProtectionAttestationSignerCertificate** cmdlet gets the "
+"attestation signer certificates that the Key Protection Service trusts"
+msgstr ""
+"`Get-HgsKeyProtectionAttestationSignerCertificate` cmdlet 可以获取密钥保护服务（Key "
+"Protection Service）所信任的认证签名者证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all attestation certificates"
+msgstr "#### 示例 1：获取所有证明证书"
+
+msgid ""
+"This command gets all the attestation certificates signers that the Key "
+"Protection Service trusts."
+msgstr "该命令获取密钥保护服务（Key Protection Service）所信任的所有认证证书签署者信息。"
+
+msgid "### Example 2: Get a single attestation certificate"
+msgstr "### 示例 2：获取单个认证证书"
+
+msgid ""
+"This command gets a single attestation certificate signer that the Key Protection Service trusts.\n"
+"The command looks up the certificate signer by using a thumbprint."
+msgstr ""
+"该命令获取一个密钥保护服务（Key Protection "
+"Service）所信任的认证证书签名者。命令通过使用“指纹”（thumbprint）来查找该证书签名者。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the thumbprint of the attestation signer certificate to get.\n"
+"If you do not specify a value for this parameter, this cmdlet gets all the attestation signer certificates for trusted attestation servers."
+msgstr ""
+"指定要获取的认证签名者证书的“指纹”（即该证书的唯一标识信息）。如果未为此参数指定值，此cmdlet将获取所有受信任的认证服务器的认证签名者证书。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"about_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "你不能将输入内容通过管道（pipe）传递给这个cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.Windows.KpsServer.Common.Store.Data.AttestationCertificate"
+msgstr ""
+"### Microsoft.Windows.KpsServer.Common.Store.Data.AttestationCertificate"
+
+msgid ""
+"This cmdlet returns an **AttestationCertificate** object that represents an attestation signer certificate.\n"
+"The object contains the following fields:"
+msgstr ""
+"此 cmdlet 返回一个 **AttestationCertificate** 对象，该对象代表一个证明签名者的证书。该对象包含以下字段："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-HgsKeyProtectionAttestationSignerCertificate](./Add-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+msgstr ""
+"[Add-HgsKeyProtectionAttestationSignerCertificate](./Add-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+
+msgid ""
+"[Remove-HgsKeyProtectionAttestationSignerCertificate](./Remove-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+msgstr ""
+"[Remove-HgsKeyProtectionAttestationSignerCertificate](./Remove-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"

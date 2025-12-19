@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:09:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Clear-ReFSDedupScrubSchedule"
+msgstr "# 清除 ReFSD 的重复数据扫描计划"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Clears the deduplication scrub schedule on a specified ReFS volume."
+msgstr "清除指定ReFS卷上的去重清理计划（即停止去重操作）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Clear-ReFSDedupScrubSchedule` cmdlet clears the deduplication scrub schedule on a specified\n"
+"ReFS volume. When you clear the schedule, any pending scrub jobs will be cancelled and the schedule\n"
+"will be reset."
+msgstr ""
+"`Clear-ReFSDedupScrubSchedule` cmdlet 用于清除指定 ReFS "
+"卷上的去重扫描计划。清除该计划后，所有待处理的扫描任务都将被取消，并且该计划会被重置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example clears the deduplication scrub schedule on the `D:` ReFS "
+"volume."
+msgstr "这个示例清除了`D:` ReFS卷上的去重清洗计划（deduplication scrub schedule）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the volume on which to clear the ReFS deduplication scrub schedule. Enter one or more\n"
+"volume IDs, drive letters, or volume GUID paths. For drive letters, use the format `D:`. For volume\n"
+"GUID paths, use the format `\\\\?\\Volume{{GUID}}\\`. Separate multiple volumes with a comma."
+msgstr ""
+"指定要清除 ReFS 重复数据删除扫描计划（deduplication scrub schedule）的卷。可以输入一个或多个卷 ID、驱动器字母或卷 "
+"GUID 路径。对于驱动器字母，请使用格式 `D:`；对于卷 GUID 路径，请使用格式 "
+"`\\\\?\\Volume{{GUID}}`。多个卷之间用逗号分隔。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-ReFSDedupScrubSchedule](Get-ReFSDedupScrubSchedule.md)"
+msgstr "[Get-ReFSDedupScrubSchedule](Get-ReFSDedupScrubSchedule.md)"
+
+msgid "[Set-ReFSDedupScrubSchedule](Set-ReFSDedupScrubSchedule.md)"
+msgstr "[Set-ReFSDedupScrubSchedule](Set-ReFSDedupScrubSchedule.md)"

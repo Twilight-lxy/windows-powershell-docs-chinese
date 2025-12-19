@@ -1,0 +1,224 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:51:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# IscsiTarget Module"
+msgstr "# IscsiTarget 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all iSCSI target "
+"service-specific cmdlets. It lists the cmdlets in alphabetical order based "
+"on the verb at the beginning of the cmdlet."
+msgstr ""
+"本参考资料提供了所有针对 iSCSI 目标服务的特定 cmdlet 的描述和语法信息。这些 cmdlet "
+"按照其开头所使用的动词（即命令动作）的字母顺序进行排列。"
+
+msgid "## IscsiTarget Cmdlets"
+msgstr "## IscsiTargetCmdlets"
+
+msgid ""
+"### [Add-IscsiVirtualDiskTargetMapping](./Add-"
+"IscsiVirtualDiskTargetMapping.md)"
+msgstr ""
+"### [Add-IscsiVirtualDiskTargetMapping](./Add-"
+"IscsiVirtualDiskTargetMapping.md)"
+
+msgid "Assigns a virtual disk to an iSCSI target."
+msgstr "将一个虚拟磁盘分配给一个iSCSI目标设备。"
+
+msgid "### [Checkpoint-IscsiVirtualDisk](./Checkpoint-IscsiVirtualDisk.md)"
+msgstr "### [Checkpoint-IscsiVirtualDisk](./Checkpoint-IscsiVirtualDisk.md)"
+
+msgid "Creates a virtual disk snapshot."
+msgstr "创建一个虚拟磁盘快照。"
+
+msgid "### [Convert-IscsiVirtualDisk](./Convert-IscsiVirtualDisk.md)"
+msgstr "### [Convert-IscsiVirtualDisk](./Convert-IscsiVirtualDisk.md)"
+
+msgid ""
+"Converts an iSCSI virtual disk to a 4K sector aligned advanced virtual disk "
+"1.0 format."
+msgstr "将一个 iSCSI 虚拟磁盘转换为采用 4K 扇区对齐的高级虚拟磁盘 1.0 格式。"
+
+msgid ""
+"### [Dismount-IscsiVirtualDiskSnapshot](./Dismount-"
+"IscsiVirtualDiskSnapshot.md)"
+msgstr ""
+"### [Dismount-IscsiVirtualDiskSnapshot](./Dismount-"
+"IscsiVirtualDiskSnapshot.md)"
+
+msgid "Dismounts the snapshot."
+msgstr "卸载快照。"
+
+msgid ""
+"### [Export-IscsiTargetServerConfiguration](./Export-"
+"IscsiTargetServerConfiguration.md)"
+msgstr ""
+"### [Export-IscsiTargetServerConfiguration](./Export-"
+"IscsiTargetServerConfiguration.md)"
+
+msgid "Exports an iSCSI Target Server configuration."
+msgstr "导出iSCSI目标服务器配置信息。"
+
+msgid ""
+"### [Export-IscsiVirtualDiskSnapshot](./Export-IscsiVirtualDiskSnapshot.md)"
+msgstr ""
+"### [Export-IscsiVirtualDiskSnapshot](./Export-IscsiVirtualDiskSnapshot.md)"
+
+msgid "Exports an iSCSI virtual disk snapshot."
+msgstr "导出 iSCSI 虚拟磁盘快照。"
+
+msgid "### [Get-IscsiServerTarget](./Get-IscsiServerTarget.md)"
+msgstr "### [Get-IscsiServerTarget](./Get-IscsiServerTarget.md)"
+
+msgid "Obtains iSCSI targets and their associated properties."
+msgstr "获取iSCSI目标及其相关属性信息。"
+
+msgid "### [Get-IscsiTargetServerSetting](./Get-IscsiTargetServerSetting.md)"
+msgstr "### [Get-IscsiTargetServerSetting](./Get-IscsiTargetServerSetting.md)"
+
+msgid ""
+"Gets the global settings or common configurations for iSCSI target, virtual "
+"disk or snapshots."
+msgstr "用于获取iSCSI目标、虚拟磁盘或快照的全局设置或通用配置信息。"
+
+msgid "### [Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"
+msgstr "### [Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"
+
+msgid "Obtains the iSCSI virtual disks and their associated properties."
+msgstr "获取iSCSI虚拟磁盘及其相关属性。"
+
+msgid "### [Get-IscsiVirtualDiskSnapshot](./Get-IscsiVirtualDiskSnapshot.md)"
+msgstr "### [Get-IscsiVirtualDiskSnapshot](./Get-IscsiVirtualDiskSnapshot.md)"
+
+msgid "Gets the properties of the snapshots."
+msgstr "获取快照的属性信息。"
+
+msgid ""
+"### [Import-IscsiTargetServerConfiguration](./Import-"
+"IscsiTargetServerConfiguration.md)"
+msgstr ""
+"### [Import-IscsiTargetServerConfiguration](./Import-"
+"IscsiTargetServerConfiguration.md)"
+
+msgid "Imports an iSCSI Target Server configuration."
+msgstr "导入iSCSI目标服务器配置信息。"
+
+msgid "### [Import-IscsiVirtualDisk](./Import-IscsiVirtualDisk.md)"
+msgstr "### [导入 IscsiVirtualDisk](./Import-IscsiVirtualDisk.md)"
+
+msgid ""
+"Adds an iSCSI Virtual Disk object using an existing virtual hard disk (VHD) "
+"file."
+msgstr "使用现有的虚拟硬盘（VHD）文件来添加一个iSCSI虚拟磁盘对象。"
+
+msgid ""
+"### [Mount-IscsiVirtualDiskSnapshot](./Mount-IscsiVirtualDiskSnapshot.md)"
+msgstr ""
+"### [Mount-IscsiVirtualDiskSnapshot](./Mount-IscsiVirtualDiskSnapshot.md)"
+
+msgid "Mounts a snapshot locally."
+msgstr "在本地生成一个快照文件。"
+
+msgid "### [New-IscsiServerTarget](./New-IscsiServerTarget.md)"
+msgstr "### [New-IscsiServerTarget](./New-IscsiServerTarget.md)"
+
+msgid "Creates a new iSCSI Target object with the specified name."
+msgstr "创建一个新的 iSCSI 目标对象，并指定其名称。"
+
+msgid "### [New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+msgstr "### [New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+
+msgid "Creates an iSCSI virtual disk with the specified file path and size."
+msgstr "创建一个具有指定文件路径和大小的iSCSI虚拟磁盘。"
+
+msgid "### [Remove-IscsiServerTarget](./Remove-IscsiServerTarget.md)"
+msgstr "### [Remove-IscsiServerTarget](./Remove-IscsiServerTarget.md)"
+
+msgid "Deletes the specified iSCSI target."
+msgstr "删除指定的 iSCSI 目标。"
+
+msgid "### [Remove-IscsiVirtualDisk](./Remove-IscsiVirtualDisk.md)"
+msgstr "### [Remove-IscsiVirtualDisk](./Remove-IscsiVirtualDisk.md)"
+
+msgid ""
+"Deletes a virtual disk object, without deleting the virtual hard disk (VHD) "
+"file."
+msgstr "删除虚拟磁盘对象，但不会删除对应的虚拟硬盘（VHD）文件。"
+
+msgid ""
+"### [Remove-IscsiVirtualDiskSnapshot](./Remove-IscsiVirtualDiskSnapshot.md)"
+msgstr ""
+"### [Remove-IscsiVirtualDiskSnapshot](./Remove-IscsiVirtualDiskSnapshot.md)"
+
+msgid "Deletes the specified snapshot."
+msgstr "删除指定的快照。"
+
+msgid ""
+"### [Remove-IscsiVirtualDiskTargetMapping](./Remove-"
+"IscsiVirtualDiskTargetMapping.md)"
+msgstr ""
+"### [Remove-IscsiVirtualDiskTargetMapping](./Remove-"
+"IscsiVirtualDiskTargetMapping.md)"
+
+msgid ""
+"Removes the assignment between the specified iSCSI virtual disk and the "
+"specified iSCSI target."
+msgstr "删除指定的iSCSI虚拟磁盘与指定的iSCSI目标之间的关联（即解除它们之间的绑定）。"
+
+msgid "### [Resize-IscsiVirtualDisk](./Resize-IscsiVirtualDisk.md)"
+msgstr "### [Resize-IscsiVirtualDisk](./Resize-IscsiVirtualDisk.md)"
+
+msgid "Resizes an iSCSI virtual disk."
+msgstr "调整 iSCSI 虚拟磁盘的大小。"
+
+msgid "### [Restore-IscsiVirtualDisk](./Restore-IscsiVirtualDisk.md)"
+msgstr "### [ Restore-IscsiVirtualDisk](./Restore-IscsiVirtualDisk.md)"
+
+msgid "Restores a virtual disk from a snapshot."
+msgstr "从快照中恢复虚拟磁盘。"
+
+msgid "### [Set-IscsiServerTarget](./Set-IscsiServerTarget.md)"
+msgstr "### [Set-IscsiServerTarget](./Set-IscsiServerTarget.md)"
+
+msgid "Modifies settings for the specified iSCSI target."
+msgstr "修改指定iSCSI目标的设置。"
+
+msgid "### [Set-IscsiTargetServerSetting](./Set-IscsiTargetServerSetting.md)"
+msgstr "### [Set-IscsiTargetServerSetting](./Set-IscsiTargetServerSetting.md)"
+
+msgid ""
+"Sets the global settings or common configurations for an iSCSI target "
+"virtual disk."
+msgstr "用于设置iSCSI目标虚拟磁盘的全局配置或通用参数。"
+
+msgid "### [Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"
+msgstr "### [Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"
+
+msgid "Modifies the settings for the specified iSCSI virtual disk."
+msgstr "修改指定iSCSI虚拟磁盘的设置。"
+
+msgid "### [Set-IscsiVirtualDiskSnapshot](./Set-IscsiVirtualDiskSnapshot.md)"
+msgstr "### [Set-IscsiVirtualDiskSnapshot](./Set-IscsiVirtualDiskSnapshot.md)"
+
+msgid "Sets the description for a snapshot."
+msgstr "设置快照的描述信息。"
+
+msgid ""
+"### [Stop-IscsiVirtualDiskOperation](./Stop-IscsiVirtualDiskOperation.md)"
+msgstr ""
+"### [Stop-IscsiVirtualDiskOperation](./Stop-IscsiVirtualDiskOperation.md)"
+
+msgid "Stops a long-running operation in progress on an iSCSI virtual disk."
+msgstr "停止在iSCSI虚拟磁盘上正在进行的长时间运行的操作。"

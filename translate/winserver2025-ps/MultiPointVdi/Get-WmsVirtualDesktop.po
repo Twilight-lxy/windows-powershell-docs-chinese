@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:17:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WmsVirtualDesktop"
+msgstr "# Get-WmsVirtualDesktop"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets a virtual desktop."
+msgstr "会获得一个虚拟桌面。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WmsVirtualDesktop** cmdlet gets the specified virtual desktop or "
+"all virtual desktops if you don't specify the *VirtualMachineName* "
+"parameter."
+msgstr ""
+"`Get-WmsVirtualDesktop` cmdlet 可以获取指定的虚拟桌面；如果未指定 `VirtualMachineName` "
+"参数，则会获取所有虚拟桌面。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a virtual desktop by name"
+msgstr "### 示例 1：通过名称获取虚拟桌面"
+
+msgid "This command gets the virtual desktop named MyDesktop."
+msgstr "这个命令用于获取名为“MyDesktop”的虚拟桌面。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of the virtual desktop to get."
+msgstr "指定要获取的虚拟桌面的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Import-WmsVirtualDesktop](./Import-WmsVirtualDesktop.md)"
+msgstr "[Import-WmsVirtualDesktop](./Import-WmsVirtualDesktop.md)"
+
+msgid "[New-WmsVirtualDesktop](./New-WmsVirtualDesktop.md)"
+msgstr "[New-WmsVirtualDesktop](./New-WmsVirtualDesktop.md)"
+
+msgid "[Open-WmsVirtualDesktop](./Open-WmsVirtualDesktop.md)"
+msgstr "[Open-WmsVirtualDesktop](./Open-WmsVirtualDesktop.md)"

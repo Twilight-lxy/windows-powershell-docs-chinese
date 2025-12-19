@@ -1,0 +1,96 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:18:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-HgsGuardian"
+msgstr "# Export-HgsGuardian"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Exports a guardian that contains public keys."
+msgstr "导出一个包含公钥的守护者（guardian）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Export-HgsGuardian` cmdlet exports a guardian that contains public keys"
+" to an `.xml` file."
+msgstr "`Export-HgsGuardian` cmdlet 将包含公钥的守护程序（guardian）导出到一个 `.xml` 文件中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Export a guardian"
+msgstr "#### 示例 1：导出一个守护者（Guardian）"
+
+msgid ""
+"This command uses the `Get-HgsGuardian` cmdlet to get the guardian named `Guardian11`, and then\n"
+"passes the object to the current cmdlet by using the pipeline operator. That cmdlet exports the\n"
+"guardian to the specified file."
+msgstr ""
+"这个命令使用 `Get-HgsGuardian` cmdlet 来获取名为 `Guardian11` 的守护程序，然后通过管道运算符将该对象传递给当前的"
+" cmdlet。该 cmdlet 会将守护程序导出到指定的文件中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the input to this cmdlet."
+msgstr "指定该 cmdlet 的输入参数。"
+
+msgid "You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "你可以使用这个参数，也可以将输入内容通过管道传递给这个cmdlet。"
+
+msgid ""
+"Specifies the path to the file to write an XML representation of the "
+"guardian."
+msgstr "指定用于写入守护者（guardian）的XML表示形式的文件的路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+msgstr "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+
+msgid "[Import-HgsGuardian](./Import-HgsGuardian.md)"
+msgstr "[Import-HgsGuardian](./Import-HgsGuardian.md)"
+
+msgid "[New-HgsGuardian](./New-HgsGuardian.md)"
+msgstr "[New-HgsGuardian](./New-HgsGuardian.md)"
+
+msgid "[Remove-HgsGuardian](./Remove-HgsGuardian.md)"
+msgstr "[Remove-HgsGuardian](./Remove-HgsGuardian.md)"

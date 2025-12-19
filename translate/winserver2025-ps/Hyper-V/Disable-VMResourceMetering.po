@@ -1,0 +1,166 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:55:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-VMResourceMetering"
+msgstr "# 禁用虚拟机资源计量功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Disables collection of resource utilization data for a virtual machine or "
+"resource pool."
+msgstr "禁用对虚拟机或资源池的资源利用数据的收集。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourcePool"
+msgstr "### ResourcePool"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Disable-VMResourceMetering** cmdlet disables collection of resource "
+"utilization data for a virtual machine or resource pool."
+msgstr "**Disable-VMResourceMetering** 这个 cmdlet 用于禁用对虚拟机或资源池的资源使用情况数据的收集。"
+
+msgid ""
+"Calling this cmdlet stops collection of data and deletes data collected up "
+"to the point of the call."
+msgstr "调用此cmdlet会停止数据收集，并删除截至调用时的所有已收集的数据。"
+
+msgid "After the call, Measure-VM and Measure-VMResourcePool are not usable."
+msgstr "通话结束后，Measure-VM 和 Measure-VMResourcePool 将无法使用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Disables collection of resource utilization data on a virtual machine named "
+"TestVM."
+msgstr "禁用对名为TestVM的虚拟机收集资源利用数据的功能。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Disables collection of resource utilization data on a set of virtual "
+"machines whose names begin with the string Test."
+msgstr "禁用对名称以“Test”开头的虚拟机集合的资源利用数据的收集功能。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Disables collection of resource utilization data on a resource pool named "
+"TestResourcePool of type Memory."
+msgstr "禁用对名为“TestResourcePool”的内存类型资源池的资源利用数据的收集功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。您可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which resource utilization data collection is to be disabled.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个Hyper-"
+"V主机，在这些主机上将禁用资源利用率数据的收集。可以使用NetBIOS名称、IP地址或完全限定域名进行指定。默认值为本地计算机。可以使用“localhost”或点（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the friendly name of the resource pool on which resource "
+"utilization data collection is to be disabled."
+msgstr "指定资源池的友好名称，该资源池上的资源使用数据收集功能将被禁用。"
+
+msgid ""
+"Specifies the resource type of the resource pool on which resource "
+"utilization data collection is to be disabled."
+msgstr "指定要禁用资源利用率数据收集的资源池的资源类型。"
+
+msgid ""
+"Specifies the virtual machine on which resource utilization data collection "
+"is to be disabled."
+msgstr "指定要禁用资源利用率数据收集的虚拟机。"
+
+msgid ""
+"Specifies the friendly name of the virtual machine on which resource "
+"utilization data collection is to be disabled."
+msgstr "指定要禁用资源利用率数据收集的虚拟机的友好名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine[]"
+msgstr "### Microsoft.HyperV POWERShell VirtualMachine[]"
+
+msgid "### Microsoft.HyperV.PowerShell.VMResourcePoolType"
+msgstr "### Microsoft.HyperV.PowerShell.VMResourcePoolType"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Measure-VM](./Measure-VM.md)"
+msgstr "[Measure-VM](./Measure-VM.md)"
+
+msgid "[Measure-VMResourcePool](./Measure-VMResourcePool.md)"
+msgstr "[Measure-VMResourcePool](./Measure-VMResourcePool.md)"
+
+msgid "[Enable-VMResourceMetering](./Enable-VMResourceMetering.md)"
+msgstr "[Enable-VMResourceMetering](./Enable-VMResourceMetering.md)"

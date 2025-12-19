@@ -1,0 +1,151 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:13:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WmsScheduledUpdate"
+msgstr "# Set-WmsScheduledUpdate"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the schedule for Windows updates and custom maintenance scripts."
+msgstr "设置Windows更新和自定义维护脚本的调度计划。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-WmsScheduledUpdate** cmdlet sets the schedule for Windows updates "
+"and custom maintenance scripts for a computer running MultiPoint Server with"
+" disk protection enabled and configured for discard mode."
+msgstr ""
+"`Set-WmsScheduledUpdate` cmdlet 用于设置运行 MultiPoint Server 的计算机的 Windows "
+"更新和自定义维护脚本的调度安排。该计算机已启用磁盘保护功能，并且磁盘保护配置为“丢弃模式”（discard mode）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable Windows updates on MultiPoint Server"
+msgstr "### 示例 1：在多点服务器上启用 Windows 更新"
+
+msgid ""
+"This command configures the local MultiPoint Server to check for available Windows updates at 2:00 AM, apply the updates, and return the computer to the power state it was in before updates were applied.\n"
+"To update the MultiPoint Server, the command performs these operations:"
+msgstr ""
+"此命令配置本地多点服务器在凌晨2:00检查是否有可用的Windows更新，应用这些更新，并将计算机恢复到应用更新之前的状态。为了更新多点服务器，该命令会执行以下操作："
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the type of automatic updates to process.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要处理的自动更新类型。该参数的可接受值包括："
+
+msgid ""
+"Specifies the full path of a user-supplied command to run at update time."
+msgstr "指定用户在更新时需要运行的命令的完整路径。"
+
+msgid ""
+"Specifies the hour at which to run automatic updates.\n"
+"The acceptable values for this parameter are: 0-23."
+msgstr "指定自动更新应运行的时间小时。此参数的可接受值为：0-23。"
+
+msgid ""
+"Specifies the maximum amount of time that the custom script is allowed to run.\n"
+"After this amount of time expires, the process is stopped and the system is restarted to re-enable disk protection."
+msgstr "指定自定义脚本允许运行的最长时间。在此时间限制结束后，相关进程将停止，系统会重新启动以重新启用磁盘保护功能。"
+
+msgid ""
+"Specifies the state in which to place the computer after updates are complete.\n"
+"The acceptable values for this parameter are: Shutdown and PreviousState."
+msgstr "指定在更新完成后计算机应所处的状态。该参数的可接受值包括：Shutdown（关机）和PreviousState（之前的状态）。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标端——即MultiPoint Server的完全限定主机名。默认值为localhost。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid ""
+"### "
+"System.Nullable`1[[Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.EAutomaticUpdateMode,"
+" MultiPoint, Version=10.0.0.0, Culture=neutral, "
+"PublicKeyToken=31bf3856ad364e35]]"
+msgstr ""
+"### System "
+"Nullable`1[[Microsoft.WindowsServerSolutions.MultipointServer.PowerShellcommands.Library.EAutomaticUpdateMode,"
+" MultiPoint, Version=10.0.0.0, Culture=neutral, "
+"PublicKeyToken=31bf3856ad364e35]]"
+
+msgid ""
+"### System.Nullable`1[[System.UInt32, mscorlib, Version=4.0.0.0, "
+"Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+msgstr ""
+"### `SystemNullable`  \n"
+"1[[`System.UInt32`, `mscorlib`, `Version=4.0.0.0`, `Culture=neutral`, `PublicKeyToken=b77a5c561934e089`]]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"### "
+"System.Nullable`1[[Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.EScheduleUpdateReturnState,"
+" MultiPoint, Version=10.0.0.0, Culture=neutral, "
+"PublicKeyToken=31bf3856ad364e35]]"
+msgstr ""
+"### SystemNullable  \n"
+"1[[Microsoft.WindowsServerSolutions.MultipointServer.PowerShell Commands.Library.EScheduleUpdateReturnState, MultiPoint, Version=10.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.WmsScheduledUpdate"
+msgstr ""
+"### Microsoft.WindowsServerSolutions.MultipointServer.PowerShell "
+"Commands.Library.WmsScheduledUpdate"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-WmsScheduledUpdate](./Disable-WmsScheduledUpdate.md)"
+msgstr "[Disable-WmsScheduledUpdate](./Disable-WmsScheduledUpdate.md)"
+
+msgid "[Enable-WmsScheduledUpdate](./Enable-WmsScheduledUpdate.md)"
+msgstr "[Enable-WmsScheduledUpdate](./Enable-WmsScheduledUpdate.md)"
+
+msgid "[Get-WmsScheduledUpdate](./Get-WmsScheduledUpdate.md)"
+msgstr "[Get-WmsScheduledUpdate](./Get-WmsScheduledUpdate.md)"

@@ -1,0 +1,132 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:49:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-VMSavedState"
+msgstr "# 删除 VMS 保存的状态"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Deletes the saved state of a saved virtual machine."
+msgstr "删除已保存的虚拟机的状态信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-VMSavedState** cmdlet deletes the saved state of a saved virtual machine.\n"
+"Note: data contained in the memory of the virtual machine may be lost; data on its virtual hard disk drives are unaffected."
+msgstr ""
+"`Remove-VMSavedState` cmdlet "
+"用于删除已保存的虚拟机的状态信息。注意：虚拟机内存中存储的数据可能会丢失；而其虚拟硬盘上的数据则不会受到影响。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Removes the saved state from virtual machine TestVM."
+msgstr "从虚拟机 TestVM 中删除保存的状态。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Removes the saved state from all snapshots belonging to virtual machine "
+"TestVM."
+msgstr "从属于虚拟机TestVM的所有快照中删除保存的状态信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual machine saved state is to be deleted.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于删除虚拟机保存状态的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行识别。默认值为本地计算机。可以使用 `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the virtual machine whose saved state is to be deleted."
+msgstr "指定要删除其保存状态的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine whose saved state is to be "
+"deleted."
+msgstr "指定要删除其保存状态的虚拟机的名称。"
+
+msgid "Specifies the snapshot whose saved state is to be deleted."
+msgstr "指定要删除其保存状态的快照。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

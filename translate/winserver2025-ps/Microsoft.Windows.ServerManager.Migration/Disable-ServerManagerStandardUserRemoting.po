@@ -1,0 +1,153 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:22:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-ServerManagerStandardUserRemoting"
+msgstr "# 禁用 ServerManagerStandardUserRemoting 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Disables access for specified standard users to event, service, performance "
+"counter, and role and feature inventory data that is collected by Server "
+"Manager for a server."
+msgstr "禁止指定的标准用户访问由服务器管理器为某台服务器收集的事件数据、服务信息、性能计数器数据以及角色和功能清单数据。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Disable-ServerManagerStandardUserRemoting** cmdlet disables access for one or more standard, non-Administrator users to event, service, performance counter, and role and feature inventory data for a server that you are managing by using Server Manager.\n"
+"This cmdlet performs the opposite action, for specified users, of the Enable-ServerManagerStandardUserRemoting cmdlet."
+msgstr ""
+"`Disable-ServerManagerStandardUserRemoting` cmdlet 可以禁止一个或多个非管理员用户（即普通用户）通过 "
+"Server Manager 访问服务器的事件数据、服务信息、性能计数器以及角色和功能清单。该 cmdlet 对指定用户的操作效果与 `Enable-"
+"ServerManagerStandardUserRemoting` cmdlet 的作用相反（即取消之前允许的访问权限）。"
+
+msgid ""
+"The cmdlet restores the default, administrator-only access to this data, and must be run locally on the server that is being managed by using Server Manager.\n"
+"The cmdlet works by performing the following actions:"
+msgstr ""
+"该cmdlet会恢复对该数据的默认访问权限（仅限管理员使用），并且必须在使用Server "
+"Manager管理的服务器上本地运行。该cmdlet通过执行以下操作来实现其功能："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Disable access to event, performance counter, service status "
+"and role and feature inventory data for a user"
+msgstr "#### 示例 1：禁止用户访问事件数据、性能计数器信息、服务状态以及角色和功能清单数据"
+
+msgid ""
+"This command disables access to event, performance counter, service status, "
+"and role and feature inventory data for a server that is being managed by "
+"using either a local or remote Server Manager console, and for which there "
+"is a standard user named PattiFul."
+msgstr ""
+"该命令会禁用对由本地或远程服务器管理器控制的服务的事件数据、性能计数器数据、服务状态数据以及角色和功能清单数据的访问权限。该服务的标准用户名为“PattiFul”。"
+
+msgid ""
+"### Example 2: Simulate the outcome of disabling access to event, "
+"performance counter, service status and role and feature inventory data for "
+"a user"
+msgstr "### 示例 2：模拟禁用用户对事件、性能计数器、服务状态以及角色和功能清单数据的访问所带来的结果"
+
+msgid ""
+"This command views the outcome of running a command to deny a standard user named EvanNar access to event, performance counter, service status, and role and feature inventory data for a server that is being managed by using the Server Manager console running on either the local or a remote computer.\n"
+"Because the *WhatIf* parameter is used, the command actions are not carried out."
+msgstr ""
+"此命令用于查看执行相关操作的结果：该操作旨在拒绝名为 EvanNar 的普通用户访问由服务器管理器（Server "
+"Manager）控制的服务的相关数据，包括事件记录、性能计数器信息、服务状态以及角色和功能清单等。服务器管理器可以运行在本地计算机或远程计算机上。由于使用了"
+" “WhatIf” 参数，因此实际并不会执行任何操作（即不会真正拒绝 EvanNar 的访问权限）。"
+
+msgid ""
+"### Example 3: Disable access to event, performance counter, service status "
+"and role and feature inventory data for a user"
+msgstr "### 示例 3：禁止用户访问事件数据、性能计数器数据、服务状态信息以及角色和功能清单数据"
+
+msgid ""
+"This command denies a standard user named PattiFul access to event, performance counter, service status, and role and feature inventory data for a server that is being managed by using the Server Manager console running on either the local or a remote computer.\n"
+"Because the *Confirm* parameter is used, the command prompts for confirmation before performing the action."
+msgstr ""
+"此命令禁止名为 PattiFul "
+"的标准用户访问由服务器管理器控制台管理的服务器的事件、性能计数器、服务状态以及角色和功能清单数据。该控制台可以运行在本地计算机或远程计算机上。由于使用了"
+" *Confirm* 参数，因此在执行操作之前系统会提示用户进行确认。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies an array of user account names of standard users who runs Server "
+"Manager, and no longer requires access to event, performance counter, "
+"service, and role and feature inventory data for a server that is being "
+"managed by using either a local or remote Server Manager console."
+msgstr ""
+"指定一组标准用户的账户名称，这些用户正在运行 Server Manager。对于通过本地或远程 Server Manager "
+"控制台管理的服务器而言，他们不再需要访问与该服务器相关的事件数据、性能计数器数据、服务信息以及角色和功能清单数据。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WindowsFeature](./Get-WindowsFeature.md)"
+msgstr "[Get-WindowsFeature](./Get-WindowsFeature.md)"
+
+msgid "[Install-WindowsFeature](./Install-WindowsFeature.md)"
+msgstr "[Install-WindowsFeature](./Install-WindowsFeature.md)"
+
+msgid "[Uninstall-WindowsFeature](./Uninstall-WindowsFeature.md)"
+msgstr "[卸载Windows功能](./Uninstall-WindowsFeature.md)"
+
+msgid ""
+"[Enable-ServerManagerStandardUserRemoting](./Enable-"
+"ServerManagerStandardUserRemoting.md)"
+msgstr ""
+"[Enable-ServerManagerStandardUserRemoting](./Enable-"
+"ServerManagerStandardUserRemoting.md)"

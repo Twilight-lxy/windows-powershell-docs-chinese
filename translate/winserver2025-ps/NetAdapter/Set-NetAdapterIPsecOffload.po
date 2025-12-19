@@ -1,0 +1,206 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 14:04:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-NetAdapterIPsecOffload"
+msgstr "# 将 NetAdapter 的 IPsec Offload 功能设置为关闭状态"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the IPsec offload properties of a network adapter."
+msgstr "设置网络适配器的 IPsec 负载卸载属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称查找（默认方式）"
+
+msgid "### ByInstanceID"
+msgstr "### ByInstanceID"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject (cdxml)"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-NetAdapterIPsecOffload** cmdlet sets the IPsec offload properties of a network adapter.\n"
+"When IPsec offload is enabled the network adapter performs the per packet encryption operations which reduces processor utilization.\n"
+"The enabled state can be set by using the **Enable-NetAdapterIPsecOffload** or **Disable-NetAdapterIPsecOffload** cmdlet."
+msgstr ""
+"`Set-NetAdapterIPsecOffload` cmdlet 用于设置网络适配器的 IPsec offload 属性。当启用 IPsec "
+"offload 时，该网络适配器会负责执行每个数据包的加密操作，从而降低处理器的使用率。可以通过使用 `Enable-"
+"NetAdapterIPsecOffload` 或 `Disable-NetAdapterIPsecOffload` cmdlet "
+"来切换这一功能的启用状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable IPsec offload on the specified network adapter"
+msgstr "### 示例 1：在指定的网络适配器上启用 IPsec 外载功能"
+
+msgid ""
+"This command enables IPsec offload on the network adapter named MyAdapter and restarts the network adapter.\n"
+"The **Enable-NetAdapterIPsecOffload** cmdlet is the preferred cmdlet to perform this operation."
+msgstr ""
+"此命令可以在名为“MyAdapter”的网络适配器上启用IPsec卸载功能，并重新启动该网络适配器。**Enable-"
+"NetAdapterIPsecOffload** cmdlet是执行此操作的推荐命令行工具。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的形式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Specifies the state of IPsec offload.\n"
+"The acceptable values for this parameter are: $True or $False."
+msgstr "指定 IPsec 转发的状态。该参数的可接受值为：$True 或 $False。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"该参数表示该cmdlet在操作过程中会同时包含可见的网络适配器和隐藏的网络适配器。默认情况下，仅包含可见的网络适配器。如果在识别网络适配器时使用了通配符，并且指定了此参数，则该通配符字符串将用于匹配所有类型的网络适配器（无论是可见的还是隐藏的）。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此cmdlet的输入数据。你可以使用该参数，也可以将输入数据通过管道（pipe）传送到这个cmdlet。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述数组。对于物理网络适配器而言，这通常是网络适配器的供应商名称后跟部件编号和描述，例如 `Contoso 12345 "
+"千兆网络设备`。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Indicates that the cmdlet does not restart the network adapter after completing the operation.\n"
+"Many advanced properties require restarting the network adapter before the new settings take effect."
+msgstr "表示该 cmdlet 在完成操作后不会重新启动网络适配器。许多高级属性要求在新设置生效之前重新启动网络适配器。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您当前正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时建立的、用于运行该cmdlet的操作的最大数量。如果省略此参数或输入`0`，那么Windows "
+"PowerShell®会根据计算机上正在运行的CIM cmdlet的数量来计算出一个最优的速率限制（throttle "
+"limit）。该速率限制仅适用于当前正在运行的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapter"
+" IPsecOffloadV2SettingData[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapter"
+" IPsecOffloadV2SettingData[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"Management Instrumentation（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapter"
+" IPsecOffloadV2SettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapter"
+" IPsecOffloadV2SettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-NetAdapterIPsecOffload](./Disable-NetAdapterIPsecOffload.md)"
+msgstr "[Disable-NetAdapterIPsecOffload](./Disable-NetAdapterIPsecOffload.md)"
+
+msgid "[Enable-NetAdapterIPsecOffload](./Enable-NetAdapterIPsecOffload.md)"
+msgstr "[Enable-NetAdapterIPsecOffload](./Enable-NetAdapterIPsecOffload.md)"
+
+msgid "[Get-NetAdapterIPsecOffload](./Get-NetAdapterIPsecOffload.md)"
+msgstr "[Get-NetAdapterIPsecOffload](./Get-NetAdapterIPsecOffload.md)"

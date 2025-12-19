@@ -1,0 +1,87 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:43:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WinCultureFromLanguageListOptOut"
+msgstr "# Set-WinCultureFromLanguageListOptOut"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Sets the Culture from language list opt out setting for the current user "
+"account."
+msgstr "将当前用户账户的语言列表中的“退出”设置所对应的文化值进行设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-WinCultureFromLanguageListOptOut** cmdlet sets the Culture, or User Locale, opt-out setting for the current user account.\n"
+"Setting this option to $True disables the action of dynamically setting the Culture for the current user based on changes to the Windows display language.\n"
+"Setting this option to $False activates the dynamic setting behavior.\n"
+"The default setting is $False."
+msgstr ""
+"`Set-WinCultureFromLanguageListOptOut` cmdlet "
+"用于设置当前用户账户的“文化设置”（即用户区域设置）的相关选项。将此选项设置为 `$True` 可以禁用根据 Windows "
+"显示语言的变化动态调整用户文化设置的功能；将其设置为 `$False` 则会启用该动态调整功能。默认值为 `$False`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Block dynamic setting"
+msgstr "### 示例 1：块级动态设置"
+
+msgid "This command blocks the dynamic setting behavior."
+msgstr "此命令会阻止动态设置功能的执行。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the opt-out value."
+msgstr "指定退出（opt-out）操作的值。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-WinCultureFromLanguageListOptOut](./Get-"
+"WinCultureFromLanguageListOptOut.md)"
+msgstr ""
+"[Get-WinCultureFromLanguageListOptOut](./Get-"
+"WinCultureFromLanguageListOptOut.md)"

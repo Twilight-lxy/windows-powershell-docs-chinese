@@ -1,0 +1,142 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:53:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Debug-VM"
+msgstr "# 调试虚拟机"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Debugs a virtual machine."
+msgstr "调试一台虚拟机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The **Debug-VM** cmdlet debugs a virtual machine."
+msgstr "`Debug-VM` cmdlet 用于调试虚拟机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example injects a non-maskable interrupt into the virtual machine named \"VM to Debug\".\n"
+"A kernel debugger should be connected to the guest operating system before attempting to do this."
+msgstr ""
+"这个示例会在名为“VM to Debug”的虚拟机中插入一个无法被屏蔽的中断信号。在尝试执行此操作之前，应该先将该内核调试器连接到客户操作系统上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "以后台作业的形式运行该cmdlet。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies an array of Hyper-V hosts.\n"
+"The cmdlet debugs the virtual machines on the hosts you specify."
+msgstr "指定一个Hyper-V主机的数组。此cmdlet会调试您所指定的主机上的虚拟机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Indicates that the cmdlet sends a nonmaskable interrupt (NMI) to the virtual machine.\n"
+"An interrupt handler must process a nonmaskable interrupt."
+msgstr "表示该cmdlet向虚拟机发送了一个不可屏蔽中断（NMI）。中断处理程序必须处理这种不可屏蔽中断。"
+
+msgid "Specifies an array of names of virtual machines to be debugged."
+msgstr "指定一个要调试的虚拟机名称数组。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不生成任何输出。"
+
+msgid ""
+"Specifies an array of virtual machine objects that are to be debugged.\n"
+"To obtain virtual machine objects, use the **Get-VM** cmdlet."
+msgstr "指定一个需要被调试的虚拟机对象数组。要获取虚拟机对象，请使用 **Get-VM** cmdlet。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine"
+msgstr "### Microsoft.HyperV.PowerShell.VirtualMachine"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"Shielded virtual machines do not support debugging or nonmaskable interrupts.\n"
+"**Debug-VM** will return an error if you try to debug a shielded VM."
+msgstr "受保护的虚拟机不支持调试功能或不可屏蔽的中断处理。如果您尝试对受保护的虚拟机进行调试，**Debug-VM** 将会返回错误信息。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Configuring Automatic Debugging](/windows/win32/debug/configuring-"
+"automatic-debugging)"
+msgstr "[配置自动调试功能](/windows/win32/debug/configuring-automatic-debugging)"

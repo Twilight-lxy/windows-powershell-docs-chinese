@@ -1,0 +1,294 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:02:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Restore-GPO"
+msgstr "# 恢复组策略对象（GPO）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Restores one GPO or all GPOs in a domain from one or more GPO backup files."
+msgstr "从一个或多个GPO备份文件中恢复一个GPO或域中的所有GPO。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### RestoreFromBackupId (Default)"
+msgstr "### RestoreFromBackupId（默认值）"
+
+msgid "### RestoreFromGpo(GUID)"
+msgstr "###RestoreFromGpo(GUID)"
+
+msgid "### RestoreFromGpo(Name)"
+msgstr "### RestoreFromGpo(Name)"
+
+msgid "### RestoreAll"
+msgstr "### RestoreAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Restore-GPO` cmdlet restores a Group Policy Object (GPO) backup to the original domain from\n"
+"which it was saved. If the original domain is not available, or if the GPO no longer exists in the\n"
+"domain, the cmdlet fails."
+msgstr ""
+"`Restore-GPO` cmdlet 将组策略对象（GPO）的备份恢复到其最初保存的域中。如果原始域不可用，或者该 GPO 在该域中已不存在，则此 "
+"cmdlet 会失败。"
+
+msgid "You can:"
+msgstr "你可以："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Restore a GPO from a directory"
+msgstr "#### 示例 1：从目录中恢复组策略对象（GPO）"
+
+msgid ""
+"This command restores the GPO named `TestGPO` from the `\\\\Server1\\Backups` directory. The most recent\n"
+"backup is restored."
+msgstr ""
+"该命令从 `\\\\Server1\\Backups` 目录中恢复名为 `TestGPO` 的组策略对象（Group Policy Object，简称 "
+"GPO）。系统会恢复最新的备份版本。"
+
+msgid "### Example 2: Restore a GPO from a directory using the GPOs GUID"
+msgstr "### 示例 2：使用 GPO 的 GUID 从目录中恢复 GPO"
+
+msgid ""
+"This command restores the GPO with the GUID `fa4a9473-6e2a-4b87-ab78-175e68d97bde` from the\n"
+"`\\\\Server1\\Backups` directory. The most recent backup is restored."
+msgstr ""
+"此命令会从 `\\\\Server1\\Backups` 目录中恢复具有 GUID "
+"`fa4a9473-6e2a-4b87-ab78-175e68d97bde` 的 GPO。系统将恢复最新的备份版本。"
+
+msgid ""
+"### Example 3: Restore all GPOs in a domain that were previously backed up "
+"to a directory"
+msgstr "### 示例 3：恢复域中所有之前已备份到某个目录中的 GPO（组策略对象）"
+
+msgid ""
+"This command restores all of the GPOs in the `contoso.com` domain previously backed up to\n"
+"`\\\\Server1\\Backup`. Each GPO is restored using its most recent backup."
+msgstr ""
+"此命令会恢复之前备份到 `\\\\Server1\\Backup` 的 `contoso.com` 域中的所有 GPO（组策略对象）。每个 GPO "
+"都会使用其最新的备份数据进行恢复。"
+
+msgid ""
+"If the domain of user that is running the session (or, for a startup or shutdown script, the domain\n"
+"of the computer) is different from the `contoso.com` domain, a trust must exist between the two\n"
+"domains or the command fails."
+msgstr ""
+"如果运行会话的用户所在的域（或者对于启动/关闭脚本来说，是指计算机所在的域）与 `contoso.com` "
+"域不同，那么这两个域之间必须存在信任关系，否则命令将无法执行。"
+
+msgid "### Example 4: Restore a GPO using its backup ID"
+msgstr "### 示例 4：使用备份ID恢复GPO"
+
+msgid ""
+"This command restores a GPO from the backup specified by the **BackupID** parameter. The\n"
+"**BackupID** parameter can be used to restore a GPO from a backup prior to the most recent backup."
+msgstr ""
+"此命令会根据 **BackupID** 参数指定的备份文件来恢复一个组策略对象（GPO）。**BackupID** "
+"参数可用于从最近一次备份之前的任何备份文件中恢复 GPO。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet restores all GPOs in the domain that have backups in the backup directory.\n"
+"Each GPO is restored from its most recent backup in the directory."
+msgstr "这表示该cmdlet会恢复域中所有在备份目录中拥有备份的GPO（组策略对象）。每个GPO都会从其在该目录中的最新备份中恢复过来。"
+
+msgid ""
+"Specifies the backup ID of a GPO backup. The backup ID is a globally unique identifier (GUID) that\n"
+"uniquely identifies the backup. You can use this parameter to specify a particular version of a\n"
+"backed-up GPO in the backup directory."
+msgstr ""
+"用于指定 GPO 备份的备份 ID。该备份 ID "
+"是一个全局唯一的标识符（GUID），可以唯一地识别该备份文件。您可以使用此参数在备份目录中指定某个特定版本的 GPO 备份文件。"
+
+msgid ""
+"The backup ID is different from the ID of the GPO that was backed up (specified by the **Guid**\n"
+"parameter), you can find the backup ID in the backup directory."
+msgstr "备份ID与被备份的GPO的ID不同（该ID由**Guid**参数指定），你可以在备份目录中找到备份ID。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the domain for this cmdlet. You must specify the fully qualified domain name (FQDN) of the\n"
+"domain."
+msgstr "指定此 cmdlet 的域名。必须提供该域名的完全限定域名（FQDN）。"
+
+msgid ""
+"For the `Restore-GPO` cmdlet, this is the domain in which you want to restore the GPO. This must\n"
+"be the domain from which the GPO was backed up."
+msgstr "对于 `Restore-GPO` cmdlet 来说，这里指的是您希望恢复组策略对象（GPO）的域。该域必须是与备份 GPO 相同的域。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the user that is running the current\n"
+"session is used. If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used. For more information, see the Notes section in the full Help."
+msgstr ""
+"如果您不指定 **Domain** 参数，将使用运行当前会话的用户的域信息。如果该 cmdlet "
+"是通过计算机启动或关闭脚本来执行的，则会使用计算机的域信息。有关更多详细信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user that is running the current\n"
+"session (or, for a startup or shutdown script, the computer), a trust must exist between that domain\n"
+"and the domain of the user or the computer."
+msgstr ""
+"如果您指定的域名与当前会话所使用的用户的域名不同（或者对于启动或关闭脚本来说，是与计算机相关的域名不同），那么该域名与用户或计算机的域名之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to the **Domain** parameter by its built-in alias, **DomainName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用其内置别名 **DomainName** 来引用 **Domain** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the GPO to restore by its globally unique identifier (GUID). The GUID uniquely identifies\n"
+"the GPO."
+msgstr "通过其全局唯一标识符（GUID）指定要恢复的组策略对象（GPO）。该GUID能够唯一地识别该GPO。"
+
+msgid ""
+"The GPO is restored from its most recent backup in the backup directory. To specify a different\n"
+"backup than the most recent backup, use the **BackupID** parameter."
+msgstr "GPO是从备份目录中最近的备份版本恢复过来的。如果要指定非最近版本的备份，请使用**BackupID**参数。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in alias, **Id**."
+msgstr "您也可以使用其内置别名 **Id** 来引用 **Guid** 参数。"
+
+msgid ""
+"Specifies the GPO to restore by its display name. The GPO is restored from its most recent backup in\n"
+"the backup directory. To specify a different backup than the most recent backup, use the BackupId\n"
+"parameter."
+msgstr ""
+"根据显示名称指定要恢复的组策略对象（GPO）。该GPO将从备份目录中最近的备份文件中恢复。如果需要恢复的不是最近的备份文件，请使用BackupId参数。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another GPO with the same display\n"
+"name exists in the domain an error occurs. You can use the **Guid** parameter to uniquely identify a\n"
+"GPO."
+msgstr ""
+"显示名称在域内并不保证是唯一的。如果该域中存在另一个具有相同显示名称的组策略对象（GPO），则会发生错误。您可以使用 **Guid** "
+"参数来唯一标识一个 GPO。"
+
+msgid ""
+"You can also refer to the Name parameter by its built-in alias, "
+"**DisplayName**."
+msgstr "您也可以通过其内置别名 **DisplayName** 来引用 Name 参数。"
+
+msgid "Specifies the path to the backup directory."
+msgstr "指定备份目录的路径。"
+
+msgid ""
+"You can also refer to the **Path** parameter by its built-in alias, "
+"**BackupLocation**."
+msgstr "您也可以通过其内置别名**BackupLocation**来引用**Path**参数。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此cmdlet用于联系的域控制器的名称，以便完成操作。您可以指定完全合格的域名（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the primary domain controller\n"
+"(PDC) emulator is contacted."
+msgstr "如果您没有使用 **Server** 参数来指定名称，系统将会联系主域控制器（PDC）仿真器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, "
+"**DC**."
+msgstr "您也可以使用其内置别名“DC”来引用**Server**参数。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上该 cmdlet 并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.GroupPolicy.BackupGpo"
+msgstr "### Microsoft(GroupPolicy.BackupGpo)"
+
+msgid ""
+"You can pipe a GPO backup, a separate file that holds the settings of a GPO that can be imported\n"
+"elsewhere to recreate the GPO to this cmdlet."
+msgstr "你可以将 GPO 备份文件（即包含 GPO 设置的单独文件，该文件可以导入到其他位置以重新创建相应的 GPO）传递给这个 cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft(GroupPolicy.Gpo)"
+
+msgid "This cmdlet returns the restored GPO."
+msgstr "此cmdlet返回已恢复的GPO（组策略对象）。"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid ""
+"  If you do not explicitly specify the domain, the cmdlet uses a default domain. The default domain\n"
+"  is the domain that is used to access network resources by the security context under which the\n"
+"  current session is running. This domain is typically the domain of the user that is running the\n"
+"  session. For instance, the domain of the user who started the session by opening Windows\n"
+"  PowerShell from the Program Files menu, or the domain of a user that is specified in a runas\n"
+"  command. However, computer startup and shutdown scripts run under the context of the LocalSystem\n"
+"  account. The LocalSystem account is a built-in local account, and it accesses network resources\n"
+"  under the context of the computer account. Therefore, when this cmdlet is run from a startup or\n"
+"  shutdown script, the default domain is the domain to which the computer is joined."
+msgstr ""
+"如果您没有明确指定域名，该cmdlet会使用默认域名。默认域名是指当前会话运行的安全上下文用于访问网络资源的那个域名。这个域名通常就是运行该会话的用户的所在域；例如，通过“程序文件”菜单启动Windows"
+" "
+"PowerShell的用户所在的域，或者在`runas`命令中指定的用户所在的域。不过，计算机启动和关闭脚本是在`LocalSystem`账户的上下文中运行的。`LocalSystem`是一个内置的本地账户，它以计算机的身份访问网络资源。因此，当从这个启动或关闭脚本中运行该cmdlet时，默认域名就是计算机所属的域名。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Backup-GPO](./Backup-GPO.md)"
+msgstr "[备份GPO](./Backup-GPO.md)"
+
+msgid "[Copy-GPO](./Copy-GPO.md)"
+msgstr "[复制GPO](./Copy-GPO.md)"
+
+msgid "[Get-GPO](./Get-GPO.md)"
+msgstr "[Get-GPO](./Get-GPO.md)"
+
+msgid "[Import-GPO](./Import-GPO.md)"
+msgstr "[Import-GPO](./Import-GPO.md)"
+
+msgid "[New-GPO](./New-GPO.md)"
+msgstr "[New-GPO](./New-GPO.md)"
+
+msgid "[Remove-GPO](./Remove-GPO.md)"
+msgstr "[Remove-GPO](./Remove-GPO.md)"
+
+msgid "[Rename-GPO](./Rename-GPO.md)"
+msgstr "[重命名GPO](./Rename-GPO.md)"

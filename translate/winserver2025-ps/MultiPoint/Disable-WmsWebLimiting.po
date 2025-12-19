@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:05:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-WmsWebLimiting"
+msgstr "# 禁用 WMS Web 限制功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables web limiting for a session."
+msgstr "禁用该会话期间的网络限制功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### WebLimitSession"
+msgstr "### WebLimitSession"
+
+msgid "### WebLimitAll"
+msgstr "### WebLimitAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Disable-WmsWebLimiting** cmdlet disables web limiting for the "
+"specified sessions."
+msgstr "`Disable-WmsWebLimiting` cmdlet 会禁用指定会话中的网页访问限制功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable web limiting for specified sessions"
+msgstr "#### 示例 1：禁用指定会话的网页访问限制功能"
+
+msgid ""
+"This command disables web limiting for sessions 2, 4, 5, and 6 on the local "
+"computer."
+msgstr "此命令会禁用本地计算机上第2、4、5和6个会话的网页访问限制功能。"
+
+msgid "### Example 2: Disable web limiting for all sessions"
+msgstr "#### 示例 2：禁用所有会话的网络限制功能"
+
+msgid ""
+"This command disables web limiting for all sessions on the computer "
+"sampleserver.microsoft.com."
+msgstr "此命令将取消对 computersampleserver.microsoft.com 上所有会话的网络限制功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 `localhost`。"
+
+msgid "Specifies an array of MultiPoint session IDs."
+msgstr "指定一个包含多个多点（MultiPoint）会话 ID 的数组。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并未运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### uint[]"
+msgstr "### uint[]"
+
+msgid "You can pipe an array of session IDs to this cmdlet."
+msgstr "你可以将一个会话ID数组传递给这个cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-WmsWebLimiting](./Enable-WmsWebLimiting.md)"
+msgstr "[Enable-WmsWebLimiting](./Enable-WmsWebLimiting.md)"
+
+msgid "[Get-WmsWebLimiting](./Get-WmsWebLimiting.md)"
+msgstr "[Get-WmsWebLimiting](./Get-WmsWebLimiting.md)"
+
+msgid "[Set-WmsWebLimiting](./Set-WmsWebLimiting.md)"
+msgstr "[Set-WmsWebLimiting](./Set-WmsWebLimiting.md)"

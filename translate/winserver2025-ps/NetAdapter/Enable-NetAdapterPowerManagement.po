@@ -1,0 +1,292 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:34:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-NetAdapterPowerManagement"
+msgstr "# 启用网卡电源管理功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables specific power management features on the network adapter."
+msgstr "启用网络适配器上的特定电源管理功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称排序（默认值）"
+
+msgid "### ByInstanceID"
+msgstr "### ByInstanceID"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject（cdxml）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-NetAdapterPowerManagement** cmdlet enables specific power management features on the network adapter.\n"
+"If no power options are specified, then all supported power management features are enabled."
+msgstr ""
+"`Enable-NetAdapterPowerManagement` cmdlet "
+"可以启用网络适配器上的特定电源管理功能。如果没有指定任何电源管理选项，那么所有支持的电源管理功能都会被启用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Enable power management on the specified network adapter"
+msgstr "### 示例 1：为指定的网络适配器启用电源管理功能"
+
+msgid ""
+"This command enables power management on the network adapter named Ethernet "
+"1 and restarts the network adapter."
+msgstr "此命令可对名为“Ethernet 1”的网络适配器启用电源管理功能，并重启该网络适配器。"
+
+msgid ""
+"### Example 2: Enable power management on the specified network adapter"
+msgstr "### 示例 2：为指定的网络适配器启用电源管理功能"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet manages the address resolution protocol (ARP) "
+"offload capability of the network adapter."
+msgstr "表示该cmdlet用于管理网络适配器的地址解析协议（ARP）卸载功能。"
+
+msgid ""
+"The computer, when in low power mode using the ARP offload technology, is "
+"able to offload the responsibility of handling responses for incoming ARP "
+"protocol requests."
+msgstr "当计算机处于低功耗模式并使用ARP卸载技术时，它可以将处理传入的ARP协议请求的响应任务卸载给其他组件。"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此 cmdlet 作为后台作业运行。使用此参数来执行需要较长时间才能完成的命令。该 cmdlet "
+"会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理作业，请使用 `-*Job` 系列 "
+"cmdlet。要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关 Windows "
+"PowerShell® 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Indicates that the cmdlet manages the D0 packet coalescing capability of the"
+" network adapter."
+msgstr "表示该cmdlet用于管理网络适配器的D0数据包聚合功能。"
+
+msgid ""
+"This feature enables power saving on the computer by reducing the number of receive interrupts.\n"
+"This reduces the number of receive interrupts by coalescing random broadcast or multicast packets.\n"
+"The processing overhead and power consumption is significantly reduced on the computer."
+msgstr ""
+"此功能通过减少接收中断的次数来帮助计算机节省电力。它通过合并随机广播或多播数据包来实现这一目标，从而减少了接收中断的数量。这样一来，计算机的处理开销和功耗都显著降低了。"
+
+msgid ""
+"Indicates that the cmdlet manages the device sleep on disconnect capability "
+"of the network adapter."
+msgstr "表示该cmdlet用于管理网络适配器的“断开连接后设备进入睡眠状态”的功能。"
+
+msgid ""
+"This feature allows the device to stand-by in a low power mode when media is"
+" disconnected and wake when media is connected again."
+msgstr "此功能允许设备在媒体连接断开时进入低功耗待机状态，并在媒体重新连接时唤醒设备。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"该参数表示此 cmdlet "
+"在操作过程中会同时包含可见网络适配器和隐藏网络适配器。默认情况下，仅包含可见网络适配器。如果在识别网络适配器时使用了通配符，并且指定了此参数，则该通配符字符串将用于匹配所有（包括隐藏和可见的）网络适配器。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要输入到此 cmdlet 的数据。你可以使用这个参数，也可以将数据通过管道（pipe）传递给该 cmdlet。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述数组。对于物理网络适配器而言，这通常是网络适配器制造商的名称后跟型号和描述，例如“Contoso 12345 千兆网络设备”。"
+
+msgid ""
+"Indicates that the cmdlet manages the neighbor solicitation (NS) offload "
+"capability of the network adapter."
+msgstr "表示该cmdlet用于管理网络适配器的邻居请求（Neighbor Solicitation，简称NS）卸载功能。"
+
+msgid ""
+"The computer, when in low power mode using the NS offload technology, is "
+"able to offload the handling of responses for incoming NS protocol requests."
+msgstr "当计算机处于低功耗模式并使用NS卸载技术时，它能够将处理传入的NS协议请求的响应任务交给其他系统或组件来完成。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Indicates that the cmdlet does not restart the network adapter after completing the operation.\n"
+"Many advanced properties require restarting the network adapter before the new settings take effect."
+msgstr "表示该cmdlet在完成操作后不会重启网络适配器。许多高级功能需要在设置生效之前重新启动网络适配器才能正常使用。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Indicates that the cmdlet manages the Wi-Fi robust security network (RSN) "
+"rekey offload capability of the network adapter."
+msgstr "表示该cmdlet用于管理网络适配器的Wi-Fi强安全网络（RSN）密钥重加密卸载功能。"
+
+msgid ""
+"The computer, when it goes into sleep state, is able to offload the group "
+"temporal key (GTK) rekeying for wake on wireless LAN (WoWLAN)."
+msgstr "当计算机进入睡眠状态时，它可以暂停无线局域网（WoWLAN）唤醒功能所需的时间密钥（GTK）重新生成过程。"
+
+msgid ""
+"Indicates that the cmdlet manages the selective suspend capability of the "
+"network adapter."
+msgstr "表示该cmdlet用于管理网络适配器的选择性暂停功能。"
+
+msgid ""
+"The network drive interface specification (NDIS) selective suspend interface allows NDIS to suspend an idle network adapter by transitioning the adapter to a low-power state.\n"
+"This enables the computer to reduce the power overhead on the processor and network adapter."
+msgstr ""
+"网络驱动接口规范（NDIS）中的选择性暂停功能允许NDIS通过将网络适配器切换到低功耗状态来使其进入休眠模式。这样一来，计算机就可以降低处理器和网络适配器的功耗开销。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Indicates that the cmdlet manages the wake on magic packet capability of the"
+" network adapter."
+msgstr "表示该cmdlet用于管理网络适配器的“唤醒魔法数据包”（Wake-on-Magic Packet）功能。"
+
+msgid ""
+"The magic packet is a broadcast frame containing anywhere within its payload"
+" 6 bytes of all 255 (FF FF FF FF FF FF in hexadecimal), followed by sixteen "
+"repetitions of the 48-bit MAC address of the target computer, for a total of"
+" 102 bytes."
+msgstr ""
+"“魔术数据包”是一种广播帧，其有效载荷中包含6个字节的所有二进制位均为1（用十六进制表示为“FF FF FF FF FF "
+"FF”），其后是目标计算机的48位MAC地址的重复内容，共16次，因此整个数据包的总长度为102字节。"
+
+msgid ""
+"Indicates that the cmdlet manages the wake on pattern capability of the network adapter.\n"
+"A wake pattern refers to network packet filters that determine if incoming network traffic should wake the computer.\n"
+"These patterns can be enabled on the network adapter."
+msgstr ""
+"表示该cmdlet用于管理网络适配器的“唤醒模式”功能。“唤醒模式”是指那些用于判断传入的网络流量是否应触发计算机唤醒的网络数据包过滤器。这些模式可以在网络适配器上被启用。"
+
+msgid "The following wake patterns may be supported by a network adapter:"
+msgstr "以下唤醒模式可能被网络适配器支持："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterPowerManagementSettingData[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterPowerManagementSettingData[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterPowerManagementSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterPowerManagementSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Disable-NetAdapterPowerManagement](./Disable-NetAdapterPowerManagement.md)"
+msgstr "[禁用网络适配器电源管理功能](./ Disable-NetAdapterPowerManagement.md)"
+
+msgid "[Get-NetAdapter](./Get-NetAdapter.md)"
+msgstr "[Get-NetAdapter](./Get-NetAdapter.md)"
+
+msgid "[Get-NetAdapterPowerManagement](./Get-NetAdapterPowerManagement.md)"
+msgstr "[Get-NetAdapterPowerManagement](./Get-NetAdapterPowerManagement.md)"
+
+msgid "[Set-NetAdapterPowerManagement](./Set-NetAdapterPowerManagement.md)"
+msgstr "[Set-NetAdapterPowerManagement](./Set-NetAdapterPowerManagement.md)"

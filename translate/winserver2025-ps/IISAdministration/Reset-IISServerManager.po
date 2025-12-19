@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:37:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Reset-IISServerManager"
+msgstr "# 重置 IISServerManager"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Resets the IISAdministration view of the IIS ServerManager."
+msgstr "重置 IIS ServerManager 中的 IISAdministration 视图。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Reset-IISServerManager** cmdlet resets the IISAdministration view of "
+"the IIS ServerManager object and the view of .config file "
+"applicationHost.config to the current contents of the .config file."
+msgstr ""
+"`Reset-IISServerManager` cmdlet 会将 IIS ServerManager 对象的 IISAdministration "
+"视图以及 `.config` 文件（特别是 `applicationHost.config` 部分）的显示内容重置为 `.config` "
+"文件当前的实际内容。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Reset the IISServerManager view of the configuration"
+msgstr "### 示例 1：重置 IISServerManager 视图中的配置信息"
+
+msgid ""
+"This command resets the IISServerManager view of the .config file after "
+"changes are made, and then demonstrates that the changed value is restored."
+msgstr ""
+"此命令在修改配置文件（.config）后，会重置 IISServerManager 对该文件的显示设置，并随后验证修改后的值是否已被正确恢复。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。不过实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IISServerManager](./Get-IISServerManager.md)"
+msgstr "[Get-IISServerManager](./Get-IISServerManager.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

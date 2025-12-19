@@ -1,0 +1,148 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:43:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "Assigns a device to a virtual machine host."
+msgstr "将设备分配给虚拟机主机。"
+
+msgid "# Add-VMHostAssignableDevice"
+msgstr "# 添加可分配给虚拟机主机的设备"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds an assignable device to a virtual machine (VM) host."
+msgstr "向虚拟机（VM）主机添加一个可分配的设备。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Path (Default)"
+msgstr "### 路径（默认值）"
+
+msgid "### Object"
+msgstr "### 对象"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Add-VMHostAssignableDevice` cmdlet assigns a hardware device to a virtual machine host. You\n"
+"can add devices to the VM host by providing either the instance or location path of the device, or\n"
+"by specifying an existing host-assignable device object."
+msgstr ""
+"`Add-VMHost assignableDevice` cmdlet "
+"用于将硬件设备分配给虚拟机主机。您可以通过提供设备的实例路径或位置路径，或者指定一个现有的、可供主机使用的设备对象，来为虚拟机主机添加设备。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example assigns a device identified by its instance path to VM host **MyVM01** within the\n"
+"resource pool **MyResourcePool**."
+msgstr "这个例子将一个通过其实例路径识别的设备分配给资源池 **MyResourcePool** 中的虚拟机主机 **MyVM01**。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example retrieves a list of GPUs or other assignable devices and adds these devices to a\n"
+"resource pool named **GpuChildPool**, making the devices available for use by virtual machines in\n"
+"that resource pool."
+msgstr ""
+"这个示例会获取一组 GPU 或其他可分配的设备，并将这些设备添加到一个名为 **GpuChildPool** "
+"的资源池中，从而使这些设备可以被该资源池中的虚拟机使用。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession)\n"
+"or [Get-CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 `[New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession)` 或 `[Get-"
+"CimSession](/powershell/module/cimcmdlets/get-cimsession)` cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the name of the Hyper-V host to which the device is to be added. NetBIOS names, IP\n"
+"addresses, and fully qualified domain names are allowed. The default is the local computer. Use\n"
+"localhost or a dot (`.`) to specify the local computer explicitly."
+msgstr ""
+"指定要添加设备的 Hyper-V 主机的名称。允许使用 NetBIOS 名称、IP 地址和完全限定域名作为主机名称。默认值为本地计算机。可以使用 "
+"`localhost` 或点（`.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action. The default is the\n"
+"current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies the device object to be assigned to the virtual machine."
+msgstr "指定要分配给虚拟机的设备对象。"
+
+msgid "Represents the Device Instance path in the host machine."
+msgstr "表示主机机器中的设备实例路径。"
+
+msgid "Specifies the location path to the assignable device."
+msgstr "指定可分配设备的路径位置。"
+
+msgid ""
+"Specifies the name of the resource pool to which the device is assigned."
+msgstr "指定设备被分配到的资源池的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### Microsoft.HyperV.PowerShell.VMHostAssignableDevice[]"
+msgstr "### Microsoft.HyperV.PowerShell.VMHost assignableDevice[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VMHostAssignableDevice](get-vmhostassignabledevice.md)"
+msgstr "[Get-VMHost assignableDevice](get-vmhostassignabledevice.md)"
+
+msgid "[Dismount-VMHostAssignableDevice](dismount-vmhostassignabledevice.md)"
+msgstr ""
+"[Dismount-VMHost assignableDevice](dismount-vmhostassignabledevice.md)"
+
+msgid "[Mount-VMHostAssignableDevice](mount-vmhostassignabledevice.md)"
+msgstr "[Mount-VMHost assignableDevice](mount-vmhostassignabledevice.md)"
+
+msgid "[Remove-VMHostAssignableDevice](remove-vmhostassignabledevice.md)"
+msgstr "[Remove-VMHost assignableDevice](remove-vmhostassignabledevice.md)"

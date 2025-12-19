@@ -1,0 +1,238 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 14:12:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-NetAdapterVmq"
+msgstr "# Set-NetAdapterVmq"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the VMQ properties of a network adapter."
+msgstr "设置网络适配器的虚拟消息队列（VMQ）属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称排序（默认值）"
+
+msgid "### ByInstanceID"
+msgstr "### 按实例ID（ByInstanceID）"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject (cdxml)"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-NetAdapterVmq** cmdlet sets the virtual machine queue (VMQ) properties of a network adapter.\n"
+"VMQ is a scaling networking technology for Hyper-V switch that improves network throughput by distributing processing of network traffic for multiple virtual machines among multiple processors.\n"
+"A thorough familiarity with VMQ and dynamic VMQ is highly recommended before changing any default values with this cmdlet."
+msgstr ""
+"`Set-NetAdapterVmq` cmdlet 用于设置网络适配器的虚拟机队列（VMQ）属性。VMQ 是一种适用于 Hyper-V "
+"交换机的可扩展网络技术，它通过将多个虚拟机器的网络流量处理分配到多个处理器上来提升网络吞吐量。在使用此 cmdlet "
+"修改任何默认值之前，强烈建议先详细了解 VMQ 及其相关特性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable VMQ on the specified network adapter"
+msgstr "#### 示例 1：在指定的网络适配器上启用 VMQ"
+
+msgid ""
+"This command enables VMQ on the network adapter named MyAdapter.\n"
+"The **Enable-NetAdapterVmq** cmdlet is the preferred cmdlet to perform this operation."
+msgstr ""
+"此命令用于在名为“MyAdapter”的网络适配器上启用VMQ（Virtual Message Queue）功能。**Enable-"
+"NetAdapterVmq** cmdlet是执行此操作的首选工具。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此 cmdlet 作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。该 cmdlet "
+"会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用 `*-Job` 系列 "
+"cmdlet；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关 Windows "
+"PowerShell® 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Specifies the processor group to be used by VMQ.\n"
+"Support for systems that have more than 64 logical processors is based on the concept of a processor group, which is a static set of up to 64 logical processors.\n"
+"Processor groups are numbered starting with 0.\n"
+"Computers with fewer than 64 logical processors always have a single group, Group 0."
+msgstr ""
+"指定 VMQ 将使用的处理器组。对于拥有超过 64 个逻辑处理器的系统，支持是基于“处理器组”的概念实现的；处理器组是一组静态的、最多包含 64 "
+"个逻辑处理器的集合。处理器组的编号从 0 开始。拥有少于 64 个逻辑处理器的计算机总是只有一个处理器组，即第 0 组。"
+
+msgid ""
+"Specifies the starting processor to be used within the processor group for VMQ.\n"
+"Support for systems that have more than 64  logical processors is based on the concept of a processor group, which is a static set of up to 64  logical processors.\n"
+"Processor groups are numbered starting with 0.\n"
+"Computers with fewer than 64 logical processors always have a single group, Group 0.\n"
+"A logical processor is identified by a group number, using the *BaseProcessorGroup* parameter, and a group-relative processor number, using this parameter."
+msgstr ""
+"指定在虚拟机队列（VMQ）的处理器组中使用的起始处理器。对于拥有超过64个逻辑处理器的系统，支持是基于“处理器组”这一概念实现的；处理器组是一组静态设置的、最多包含64个逻辑处理器的集合。处理器组的编号从0开始。拥有少于64个逻辑处理器的计算机总是只有一个处理器组，即第0组。逻辑处理器通过`BaseProcessorGroup`参数来标识其所属的组号，并通过该参数结合组内相对编号来确定具体的处理器序号。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如，通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Indicates whether VMQ is enabled or disabled.\n"
+"The acceptable values for this parameter are: $True or $False."
+msgstr "表示是否启用了VMQ（Virtual Message Queue）。该参数的有效取值为：$True 或 $False。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"该参数表示该 cmdlet "
+"在操作中会同时包含可见的网络适配器和隐藏的网络适配器。默认情况下，仅包含可见的网络适配器。如果在识别网络适配器时使用了通配符，并且指定了此参数，则该通配符字符串将会与所有（无论是隐藏的还是可见的）网络适配器进行匹配。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定该 cmdlet 的输入内容。您可以使用此参数，也可以将输入数据通过管道（pipe）传递给该 cmdlet。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述数组。对于物理网络适配器来说，这通常是网络适配器制造商的名称后跟型号和描述，例如“Contoso 12345 千兆网络设备”。"
+
+msgid "Specifies the largest processor number in the group."
+msgstr "指定组中最大的处理器数量。"
+
+msgid ""
+"Specifies the maximum number of processors used by VMQ for load balancing "
+"network transmissions."
+msgstr "指定虚拟消息队列（VMQ）在负载均衡网络传输过程中使用的最大处理器数量。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Indicates that the cmdlet does not restart the network adapter after completing the operation.\n"
+"Many advanced properties require restarting the network adapter before the new settings take effect."
+msgstr "表示该cmdlet在完成操作后不会重新启动网络适配器。许多高级属性在新设置生效之前需要先重启网络适配器。"
+
+msgid ""
+"Specifies the preferred non-uniform memory access (NUMA) node for the "
+"affinity of the VMQs allocated on this network adapter."
+msgstr "指定优先使用的非一致性内存访问（NUMA）节点，以便分配到该网络适配器上的虚拟磁盘队列（VMQs）能够更好地利用该节点的资源。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您当前正在操作的项的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时执行的命令（cmdlet）的最大操作数量。如果省略此参数或输入值为 `0`，那么 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM 命令的数量来计算该 cmdlet 的最佳限制值。这个限制仅适用于当前正在执行的 "
+"cmdlet，而不适用于整个会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterVmqSettingData[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterVmqSettingData[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）之后的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterVmqSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterVmqSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-NetAdapterVmq](./Disable-NetAdapterVmq.md)"
+msgstr "[ Disable-NetAdapterVmq](./Disable-NetAdapterVmq.md)"
+
+msgid "[Enable-NetAdapterVmq](./Enable-NetAdapterVmq.md)"
+msgstr "[Enable-NetAdapterVmq](./Enable-NetAdapterVmq.md)"
+
+msgid "[Get-NetAdapterVmq](./Get-NetAdapterVmq.md)"
+msgstr "[Get-NetAdapterVmq](./Get-NetAdapterVmq.md)"
+
+msgid "[Get-NetAdapterVmqQueue](./Get-NetAdapterVmqQueue.md)"
+msgstr "[Get-NetAdapterVmqQueue](./Get-NetAdapterVmqQueue.md)"

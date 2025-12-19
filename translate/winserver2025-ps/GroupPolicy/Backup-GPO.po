@@ -1,0 +1,241 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:45:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Backup-GPO"
+msgstr "# 备份组策略对象（Backup-GPO）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Backs up one GPO or all the GPOs in a domain."
+msgstr "备份一个GPO或域中的所有GPO。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### BackupOne(GUID) (Default)"
+msgstr "### BackupOne（GUID）（默认设置）"
+
+msgid "### BackupOne(Name)"
+msgstr "### BackupOne（名称）"
+
+msgid "### BackupAll"
+msgstr "### BackupAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Backup-GPO` cmdlet backs up a specified Group Policy Object (GPO) or all the GPOs in a domain\n"
+"to a backup directory. The backup directory and GPO must already exist."
+msgstr ""
+"`Backup-GPO` cmdlet 可将指定的组策略对象（GPO）或域中的所有 GPO 备份到备份目录中。备份目录和 GPO 必须已经存在。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Backup a GPO to a specific directory"
+msgstr "### 示例 1：将 GPO 备份到特定目录"
+
+msgid ""
+"This command backs up the `TestGPO` GPO to the `C:\\GpoBackups` directory.\n"
+"The specified comment is included in the GPO backup."
+msgstr "该命令将 `TestGPO` GPO 备份到 `C:\\GpoBackups` 目录中。指定的注释也会被包含在 GPO 备份文件中。"
+
+msgid "### Example 2: Backup a GPO with the specified GUID to a directory"
+msgstr "### 示例 2：将具有指定 GUID 的 GPO 备份到指定的目录中"
+
+msgid ""
+"This command backs up the GPO with the specified **GUID** in the `contoso.com` domain to the\n"
+"`\\\\Server1\\GpoBackups` directory. The domain controller at `DC1` is contacted to complete\n"
+"the operation."
+msgstr ""
+"此命令会将具有指定 **GUID** 的 GPO 备份到 `contoso.com` 域中的 `\\\\Server1\\GpoBackups` "
+"目录中。操作过程中会联系位于 `DC1` 的域控制器以完成备份任务。"
+
+msgid ""
+"If the domain of the user running the session (or, for startup and shutdown scripts, the computer)\n"
+"is different from the `contoso.com` domain, a trust must exist between the two domains or the\n"
+"command fails."
+msgstr ""
+"如果运行会话的用户所在域（或者对于启动和关闭脚本来说，是计算机所在的域）与 `contoso.com` "
+"域不同，则这两个域之间必须存在信任关系，否则命令将无法执行。"
+
+msgid ""
+"### Example 3: Backup all GPOs in the domain of the user that is running the"
+" session"
+msgstr "### 示例 3：为正在运行会话的用户备份该域中的所有组策略对象（GPO）"
+
+msgid ""
+"This command backs up all the GPOs in the domain of the user that is running the session (or, for\n"
+"startup and shutdown scripts, the computer) to the `\\\\Server1\\GpoBackups` directory."
+msgstr ""
+"此命令会将运行该会话的用户所在域中的所有 GPO（对于启动和关闭脚本而言，则是相应的计算机上的 GPO）备份到 "
+"`\\\\Server1\\GpoBackups` 目录中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies that all the GPOs in the domain are backed up."
+msgstr "指定对域中的所有组策略对象（GPO）进行备份。"
+
+msgid ""
+"Specifies a comment for the backed-up GPO. The comment string must be enclosed in double-quotation\n"
+"or single-quotation marks and can contain 2,047 characters."
+msgstr "为备份的GPO指定一条注释。注释字符串必须用双引号或单引号括起来，且可以包含最多2,047个字符。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Specifies the domain for this cmdlet. You must specify the fully qualified domain name (FQDN) of the\n"
+"domain (for example: sales.contoso.com)."
+msgstr "指定此 cmdlet 所使用的域。您必须提供该域的完全限定域名（FQDN），例如：sales.contoso.com。"
+
+msgid ""
+"For the **Backup-GPO** cmdlet, the GPO to back up must exist in this domain."
+msgstr "对于 `Backup-GPO` cmdlet 来说，要备份的 GPO 必须存在于当前域中。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the user that is running the current\n"
+"session is used. (If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used.) For more information, see the Notes section in the full Help."
+msgstr ""
+"如果您没有指定 **Domain** 参数，那么将使用当前会话所运行的用户的域信息。（如果该 cmdlet "
+"是通过计算机启动或关闭脚本来执行的，那么将使用计算机的域信息。）有关更多详细信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user that is running the current\n"
+"session (or, for a startup or shutdown script, the computer), a trust must exist between that domain\n"
+"and the domain of the user (or the computer)."
+msgstr ""
+"如果您指定的域名与当前会话的用户所使用的域名不同（或者对于启动/关闭脚本来说，是与计算机所属的域名不同），那么该域名与用户所在的域名（或计算机所属的域名）之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to Domain by its built-in alias, domain name. For more information, see\n"
+"[about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)"
+msgstr ""
+"您也可以使用该域名的内置别名“domain "
+"name”来引用它。有关更多信息，请参阅[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the GPO to backup by its globally unique identifier (GUID).\n"
+"The GUID uniquely identifies the GPO."
+msgstr "通过其全局唯一标识符（GUID）指定要备份的组策略对象（GPO）。该 GUID 能唯一地识别该 GPO。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in alias, **Id**. For more information,\n"
+"see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用其内置别名 **Id** 来引用 **Guid** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid "Specifies the GPO to backup by its display name."
+msgstr "根据显示名称指定要备份的GPO（组策略对象）。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain.\n"
+"If another GPO with the same display name exists in the domain an error occurs.\n"
+"You can use the **Guid** parameter to uniquely identify a GPO."
+msgstr ""
+"显示名称在该域中不保证是唯一的。如果该域中存在另一个具有相同显示名称的组策略对象（GPO），则会发生错误。你可以使用 **Guid** "
+"参数来唯一标识一个 GPO。"
+
+msgid ""
+"You can also refer to the Name parameter by its built-in alias, **DisplayName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以通过其内置别名 **DisplayName** 来引用 Name 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the path to the backup directory; for instance, `C:\\Backups` or "
+"`\\\\MyServer\\Backups`."
+msgstr "指定备份目录的路径；例如，`C:\\Backups` 或 `\\\\MyServer\\Backups`。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation.\n"
+"You can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此cmdlet用于联系以完成操作的域控制器的名称。您可以指定完全限定域名（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the PDC "
+"emulator is contacted."
+msgstr "如果您不使用 **Server** 参数来指定名称，系统将会联系 PDC 模拟器。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft(GroupPolicy.Gpo)"
+
+msgid ""
+"A GPO to be backed up.\n"
+"Collections that contain GPOs from different domains are not supported."
+msgstr "需要备份的一个组策略对象（GPO）。不支持包含来自不同域的GPO的集合。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.GpoBackup"
+msgstr "### Microsoft.GroupPolicy.GpoBackup"
+
+msgid ""
+"This cmdlet returns an object that represents the file that holds the "
+"settings of the backed-up GPO."
+msgstr "这个cmdlet返回一个对象，该对象表示存储备份GPO设置文件的文件。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"  If you do not explicitly specify the domain, the cmdlet uses a default domain. The default domain\n"
+"  is the domain that is used to access network resources by the security context under which the\n"
+"  current session is running. This domain is typically the domain of the user that is running the\n"
+"  session. For instance, the domain of the user who started the session by opening Windows\n"
+"  PowerShell from the Program Files menu, or the domain of a user that is specified in a runas\n"
+"  command. However, computer startup and shutdown scripts run under the context of the LocalSystem\n"
+"  account. The LocalSystem account is a built-in local account, and it accesses network resources\n"
+"  under the context of the computer account. Therefore, when this cmdlet is run from a startup or\n"
+"  shutdown script, the default domain is the domain to which the computer is joined."
+msgstr ""
+"如果您没有明确指定域名，该cmdlet会使用默认域名。默认域名是指当前会话所运行的安全上下文用于访问网络资源时所使用的域名。这个域名通常是与运行该会话的用户相关的域名；例如，通过“程序文件”菜单打开Windows"
+" "
+"PowerShell来启动会话的用户的域名，或者在“runas”命令中指定的用户的域名。然而，计算机启动和关闭脚本是在LocalSystem账户的上下文中运行的。LocalSystem账户是一个内置的本地账户，它以计算机的身份访问网络资源。因此，当从这个启动或关闭脚本中运行该cmdlet时，默认域名就是计算机所属的域名。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Import-GPO](./Import-GPO.md)"
+msgstr "[导入GPO](./Import-GPO.md)"
+
+msgid "[Restore-GPO](./Restore-GPO.md)"
+msgstr "[恢复GPO](./Restore-GPO.md)"

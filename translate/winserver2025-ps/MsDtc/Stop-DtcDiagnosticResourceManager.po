@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:53:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-DtcDiagnosticResourceManager"
+msgstr "# Stop-DtcDiagnostic ResourceManager"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Stops and removes a diagnostic Resource Manager job."
+msgstr "停止并删除一个诊断性的资源管理器作业（Resource Manager job）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ParameterSetInstance (Default)"
+msgstr "### ParameterSetInstance（默认值）"
+
+msgid "### ParameterSetName"
+msgstr "### ParameterSetName"
+
+msgid "### ParameterSetInstanceId"
+msgstr "### ParameterSetInstanceId"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Stop-DtcDiagnosticResourceManager** cmdlet stops and removes a **DiagnosticResourceManagerJob** that runs as a Windows PowerShell® background job.\n"
+"To stop the default Resource Manager, you must explicitly specify the name of the default Resource Manager."
+msgstr ""
+"`Stop-DtcDiagnostic ResourceManager` cmdlet 用于停止并删除作为 Windows PowerShell® "
+"后台作业运行的 `DiagnosticResourceManagerJob`。要停止默认的 Resource Manager，必须明确指定该默认 "
+"Resource Manager 的名称。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Stop a diagnostic resource manager"
+msgstr "### 示例 1：停止一个诊断资源管理器"
+
+msgid "This command stops the DTC diagnostic resource manager named testRM."
+msgstr "此命令用于停止名为“testRM”的DTC诊断资源管理器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the **DtcDiagResourceManagerJob** instance ID to stop."
+msgstr "指定要停止的 **DtcDiag ResourceManagerJob** 实例 ID。"
+
+msgid ""
+"Specifies the **DtcDiagResourceManagerJob** instance to stop.\n"
+"This parameter accepts pipeline input."
+msgstr "指定要停止的 **DtcDiag ResourceManagerJob** 实例。此参数接受管道输入（pipeline input）。"
+
+msgid "Specifies a name of the diagnostic resource manager to stop."
+msgstr "指定要停止的诊断资源管理器的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Join-DtcDiagnosticResourceManager](./Join-DtcDiagnosticResourceManager.md)"
+msgstr ""
+"[Join-DtcDiagnostic ResourceManager](./Join-DtcDiagnosticResourceManager.md)"
+
+msgid ""
+"[Start-DtcDiagnosticResourceManager](./Start-"
+"DtcDiagnosticResourceManager.md)"
+msgstr ""
+"[Start-DtcDiagnostic ResourceManager](./Start-"
+"DtcDiagnosticResourceManager.md)"

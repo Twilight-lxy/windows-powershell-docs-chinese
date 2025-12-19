@@ -1,0 +1,142 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 14:13:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-NetConnectionProfile"
+msgstr "# Get-NetConnectionProfile"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets a connection profile."
+msgstr "获取一个连接配置文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-NetConnectionProfile** cmdlet gets a connection profile associated with one or more physical network adapters.\n"
+"A connection profile represents a network connection."
+msgstr ""
+"`Get-NetConnectionProfile` cmdlet "
+"可以获取与一个或多个物理网络适配器关联的连接配置文件。连接配置文件表示一种网络连接方式。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a connection profile"
+msgstr "#### 示例 1：获取连接配置文件"
+
+msgid ""
+"This first part of this command gets the connection profile for the network adapter named Ethernet1.\n"
+"The command passes the results to the **Set-NetConnectionProfile** cmdlet by using the pipe operator.\n"
+"The second part of the command changes the value of the network category for the connection profile."
+msgstr ""
+"这个命令的第一部分用于获取名为“Ethernet1”的网络适配器的连接配置文件。该命令通过使用管道运算符（|）将获取的结果传递给`Set-"
+"NetConnectionProfile` cmdlet。命令的第二部分则用于修改该连接配置文件中的网络类别属性值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该 cmdlet。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a N[New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如使用[NNew-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies an array of IPv4 protocol connectivity status values.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定一个包含 IPv4 协议连接状态值的数组。该参数的可接受值为："
+
+msgid "Specifies an array of names of network adapters."
+msgstr "指定一个包含网络适配器名称的数组。"
+
+msgid ""
+"Specifies an array of numerical index values associated with the network "
+"adapters."
+msgstr "指定与网络适配器相关联的一系列数字索引值。"
+
+msgid ""
+"Specifies an array of names of networks with which the connection is "
+"currently established."
+msgstr "指定一个网络名称数组，表示当前已建立连接的网络。"
+
+msgid ""
+"Specifies an array of category types of a network.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定一个网络中类别类型的数组。该参数的可接受值为："
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell&reg; calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时执行的命令操作的最大数量。如果省略此参数或输入值为 `0`，Windows PowerShell 会根据计算机上正在运行的 CIM"
+" 命令的数量来计算该命令的最佳执行限制（即并发操作的最大数量）。这个执行限制仅适用于当前正在运行的命令，而不影响整个会话或整个计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-NetConnectionProfile](./Set-NetConnectionProfile.md)"
+msgstr "[Set-NetConnectionProfile](./Set-NetConnectionProfile.md)"

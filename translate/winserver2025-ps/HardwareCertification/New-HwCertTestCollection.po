@@ -1,0 +1,126 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:12:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-HwCertTestCollection"
+msgstr "# New-HwCertTestCollection"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a test collection file from a project definition file."
+msgstr "根据项目定义文件创建一个测试集合文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-HwCertTestCollection** cmdlet creates a test collection file from a Windows Hardware Certification Kit (HCK) project definition file.\n"
+"The collection file represents the testing scope of a unique combination of test and target and version of the Windows operating system.\n"
+"For more information, see [Windows Hardware Certification Kit downloads](https://go.microsoft.com/fwlink/?LinkId=614978) in the Microsoft Developer Network (MSDN) Library."
+msgstr ""
+"`New-HwCertTestCollection` cmdlet 可以根据 Windows "
+"硬件认证套件（HCK）项目定义文件创建一个测试集合文件。该集合文件用于表示由特定测试、目标系统及 Windows "
+"操作系统版本组合而成的测试范围。有关更多信息，请参阅微软开发者网络（MSDN）库中的 [Windows "
+"硬件认证套件下载](https://go.microsoft.com/fwlink/?LinkId=614978)。"
+
+msgid ""
+"You can use this test collection file in several ways at different stages of"
+" the testing workflow, including the following:"
+msgstr "您可以在测试工作流程的不同阶段以多种方式使用这个测试集文件，包括以下几种："
+
+msgid ""
+"The cmdlet creates temporary projects and target families to enumerate all the possible tests.\n"
+"You can reuse the generated project for additional testing outside of the automation workflow by using tools from the HCK."
+msgstr ""
+"该 cmdlet 会创建临时项目和目标组件系列，以便枚举所有可能的测试用例。你可以通过使用 HCK "
+"中提供的工具，在自动化工作流程之外重新利用这些生成的项目来进行额外的测试。"
+
+msgid ""
+"Use the **New-HwCertProjectDefinitionFile** cmdlet to create a project "
+"definition file."
+msgstr "使用 **New-HwCertProjectDefinitionFile** cmdlet 来创建一个项目定义文件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a test collection"
+msgstr "### 示例 1：创建一个测试集合"
+
+msgid ""
+"This command creates a test collection based on the project definition file "
+"named ProjectDefinitionWindows8Client.xml."
+msgstr "该命令根据名为ProjectDefinitionWindows8Client.xml的项目定义文件创建一个测试集合。"
+
+msgid "### Example 2: Create a test collection and export it to a file"
+msgstr "### 示例 2：创建一个测试集合并将其导出到文件中"
+
+msgid ""
+"This command creates a test collection and then exports it to an .xml file.\n"
+"This command creates a test collection based on the project definition file named ProjectDefinitionWindows8Client.xml, and then passes the test collection to the **Export-HwCertTestCollectionToXml** cmdlet by using the pipeline operator.\n"
+"That cmdlet exports it to a file called TestCollectionWindows8Client.xml."
+msgstr ""
+"此命令会创建一个测试集合，然后将其导出到名为 `.xml` 的文件中。该命令根据名为 "
+"`ProjectDefinitionWindows8Client.xml` 的项目定义文件来生成这个测试集合，并通过管道运算符将该测试集合传递给 "
+"`Export-HwCertTestCollectionToXml` cmdlet。该 cmdlet 会将测试集合导出到一个名为 "
+"`TestCollectionWindows8Client.xml` 的文件中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the project definition file as a full path.\n"
+"To create a project definition file, use the **New-HwCertProjectDefinitionFile** cmdlet."
+msgstr ""
+"使用完整的路径指定项目定义文件。要创建项目定义文件，请使用 **New-HwCertProjectDefinitionFile** cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.Kits.Hardware.Certification.TestCollectionRecord"
+msgstr ""
+"### Microsoft.Windows.Kits.Hardware.Certification.TestCollectionRecord"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Export-HwCertTestCollectionToXml](./Export-HwCertTestCollectionToXml.md)"
+msgstr "[将硬件证书测试集合导出为XML文件](./Export-HwCertTestCollectionToXml.md)"
+
+msgid ""
+"[New-HwCertProjectDefinitionFile](./New-HwCertProjectDefinitionFile.md)"
+msgstr ""
+"[New-HwCertProjectDefinitionFile](./New-HwCertProjectDefinitionFile.md)"

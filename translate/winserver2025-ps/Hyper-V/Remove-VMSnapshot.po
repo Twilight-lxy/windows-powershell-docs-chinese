@@ -1,0 +1,181 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:50:06 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-VMSnapshot"
+msgstr "# 删除VMS快照"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Deletes a virtual machine checkpoint."
+msgstr "删除虚拟机检查点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### SnapshotName (Default)"
+msgstr "### SnapshotName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### SnapshotObject"
+msgstr "### SnapshotObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **Remove-VMSnapshot** cmdlet deletes a virtual machine checkpoint."
+msgstr "`Remove-VMSnapshot` cmdlet 用于删除虚拟机检查点（即虚拟机的某个状态快照）。"
+
+msgid ""
+"Note: In Windows Server 2012 R2, virtual machine snapshots were renamed to virtual machine checkpoints.\n"
+"For clarity, this document will refer to virtual machine snapshots as checkpoints."
+msgstr ""
+"注意：在 Windows Server 2012 R2 中，虚拟机快照被重新命名为“虚拟机检查点”。为便于理解，本文档将把虚拟机快照称为“检查点”。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Deletes all checkpoints of virtual machine TestVM whose names starts with "
+"Experiment."
+msgstr "删除所有名称以“Experiment”开头的虚拟机TestVM的所有检查点。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "Deletes all checkpoints of virtual machine TestVM older than 90 days."
+msgstr "删除虚拟机TestVM中创建时间超过90天的所有检查点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "将此cmdlet作为后台作业运行。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which this cmdlet deletes a checkpoint.\n"
+"NetBIOS names, IP addresses, and fully-qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于删除检查点的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名来进行标识。默认值是本地计算机；可以通过使用 `localhost` 或`.` 来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值是当前用户。"
+
+msgid ""
+"Specifies that the checkpoint's children are to be deleted along with the "
+"checkpoint."
+msgstr "指定在删除检查点的同时，也要删除该检查点的所有子元素（即与该检查点相关联的所有数据或资源）。"
+
+msgid "Specifies the name of the checkpoint to be deleted."
+msgstr "指定要删除的检查点的名称。"
+
+msgid ""
+"Indicates that this cmdlet returns a "
+"**Microsoft.HyperV.PowerShell.VirtualMachine** object that represents the "
+"checkpoint that it deletes."
+msgstr ""
+"这表示该 cmdlet 返回一个 **Microsoft.HyperV.PowerShell.VirtualMachine** "
+"对象，该对象代表它所删除的检查点。"
+
+msgid ""
+"Specifies the virtual machine of which the checkpoint is to be deleted."
+msgstr "指定要删除检查点的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine of which the checkpoint is to be "
+"deleted."
+msgstr "指定要删除检查点的虚拟机的名称。"
+
+msgid "Specifies the checkpoint to be deleted."
+msgstr "指定要删除的检查点。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine"
+msgstr "### Microsoft.HyperV.PowerShell.VirtualMachine"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 `-PassThru` 参数。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-VMSnapshot](./Export-VMSnapshot.md)"
+msgstr "[Export-VMSnapshot](./Export-VMSnapshot.md)"
+
+msgid "[Get-VMSnapshot](./Get-VMSnapshot.md)"
+msgstr "[Get-VMSnapshot](./Get-VMSnapshot.md)"
+
+msgid "[Rename-VMSnapshot](./Rename-VMSnapshot.md)"
+msgstr "[ Rename-VMSnapshot](./Rename-VMSnapshot.md)"
+
+msgid "[Restore-VMSnapshot](./Restore-VMSnapshot.md)"
+msgstr "[Restore-VMSnapshot](./Restore-VMSnapshot.md)"
+
+msgid "[Get-VM](./Get-VM.md)"
+msgstr "[Get-VM](./Get-VM.md)"

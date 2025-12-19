@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:01:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"The Set-SystemPreferredUILanguage cmdlet lets you set an installed language "
+"as the System Preferred UI Language in a running Windows installation"
+msgstr ""
+"`Set-SystemPreferredUILanguage` cmdlet 允许您将已安装的语言设置为正在运行的 Windows "
+"系统中的系统默认用户界面语言。"
+
+msgid "# Set-SystemPreferredUILanguage"
+msgstr "# 设置系统首选的 UI 语言"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the provided language as the System Preferred UI Language."
+msgstr "将提供的语言设置为系统首选的用户界面语言。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "Sets the provided language as the System Preferred UI Language."
+msgstr "将提供的语言设置为系统的默认用户界面语言。"
+
+msgid ""
+"After a language is set as the System Preferred UI Language, you have to "
+"restart the device or login again for changes to take effect. Additional "
+"accounts created after setting the System Preferred UI Langauge will be "
+"configured to use the new language."
+msgstr ""
+"将某种语言设置为系统首选用户界面语言后，你需要重启设备或重新登录才能使设置生效。在设置系统首选用户界面语言之后创建的新账户将会被配置为使用该新语言。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Set the System Preferred UI Language on a Windows "
+"installation"
+msgstr "#### 示例 1：在 Windows 系统中设置系统默认的用户界面语言"
+
+msgid "This command sets the System Preferred UI Language to Japanese."
+msgstr "此命令将系统默认的用户界面语言设置为日语。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"The bcp47 tag of the language to set as the System Preferred UI Language."
+msgstr "将语言的 bcp47 标签设置为系统首选的用户界面语言。"
+
+msgid ""
+"If specified, this parameter returns the bcp47 tag of the language upon "
+"successful configuration of the System Preferred UI Language."
+msgstr "如果指定了该参数，在成功配置系统首选用户界面语言后，它将返回 해당语言的 bcp47 标签。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Void"
+msgstr "### SystemVoid"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-SystemPreferredUILanguage](Set-SystemPreferredUILanguage.md)"
+msgstr "[Get-SystemPreferredUILanguage](Set-SystemPreferredUILanguage.md)"

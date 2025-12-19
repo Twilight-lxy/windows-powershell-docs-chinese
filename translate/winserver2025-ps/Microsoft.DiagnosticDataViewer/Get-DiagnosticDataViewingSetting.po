@@ -1,0 +1,72 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:08:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Get-DiagnosticDataViewingSetting"
+msgstr "# 获取诊断数据查看设置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Fetches whether diagnostic data viewing is currently enabled or disabled."
+msgstr "用于获取诊断数据查看功能当前是启用还是禁用的状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"This cmdlet returns the current state of diagnostic data viewing.\n"
+"This state indicates whether diagnostic data viewing is enabled for this device.\n"
+"If disabled, this tool will throw an error."
+msgstr "此cmdlet用于返回诊断数据查看的当前状态。该状态表明是否为该设备启用了诊断数据查看功能；如果未启用，则此工具会抛出错误。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "Checks if Diagnostic Data Viewing is enabled."
+msgstr "检查是否启用了诊断数据查看功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"about_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"Requires Windows 10 version 17134 (1803) or higher\n"
+"## RELATED LINKS"
+msgstr "需要 Windows 10 版本 17134（1803）或更高版本。## 相关链接"

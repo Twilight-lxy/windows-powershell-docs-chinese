@@ -1,0 +1,274 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:40:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IscsiSession"
+msgstr "# Get-IscsiSession"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Retrieves information about established iSCSI sessions."
+msgstr "检索有关已建立的iSCSI会话的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### BySessionIdentifier (Default)"
+msgstr "### 按会话标识符（默认值）"
+
+msgid "### ByTargetSideIdentifier"
+msgstr "### 根据目标方标识符（ByTargetSideIdentifier）"
+
+msgid "### ByInitiatorSideIdentifier"
+msgstr "### ByInitiatorSideIdentifier"
+
+msgid "### ByiSCSITarget"
+msgstr "### ByiSCSITarget"
+
+msgid "### ByInitiatorPort"
+msgstr "### ByInitiatorPort"
+
+msgid "### ByiSCSITargetPortal"
+msgstr "### ByiSCSITargetPortal"
+
+msgid "### ByDisk"
+msgstr "### 按磁盘划分"
+
+msgid "### ByiSCSIConnection"
+msgstr "### ByiSCSIConnection"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-IscsiSession** cmdlet returns information about iSCSI sessions."
+msgstr "`Get-IscsiSession` cmdlet 可以返回有关 iSCSI 会话的信息。"
+
+msgid ""
+"There is an association between the iSCSI session and the disk object.\n"
+"It is possible to return all disks connected by using a specific iSCSI session by running the following command:"
+msgstr "iSCSI会话与磁盘对象之间存在关联。可以通过运行以下命令来返回通过特定iSCSI会话连接的所有磁盘："
+
+msgid "PS C:\\\\\\> `Get-iSCSISession | Get-Disk`"
+msgstr ""
+"请帮我将以下Markdown内容转换为中文：\n"
+"\n"
+"```\n"
+"PS C:\\> `Get-iSCSISession | Get-Disk`\n"
+"```"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get information about iSCSI sessions"
+msgstr "### 示例 1：获取有关 iSCSI 会话的信息"
+
+msgid "This command returns information about iSCSI sessions."
+msgstr "此命令会返回有关 iSCSI 会话的信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将 cmdlet 作为后台作业运行。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job` "
+"cmdlets系列命令；要获取作业结果，则可以使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Accepts a MSFT disk object as an input.\n"
+"The MSFT disk object is output from the **Get-Disk** cmdlet."
+msgstr "接受一个 MSFT 磁盘对象作为输入。该 MSFT 磁盘对象是通过 **Get-Disk** cmdlet 获得的。"
+
+msgid ""
+"Accepts a MSFT initiator port object as an input.\n"
+"The MSFT initiator port object is output from the **Get-InitiatorPort** cmdlet."
+msgstr ""
+"接受一个 MSFT 发起者端口对象作为输入参数。该 MSFT 发起者端口对象是通过 **Get-InitiatorPort** cmdlet "
+"命令获取的。"
+
+msgid "Specifies the initiator side identifier."
+msgstr "指定发起方识别符。"
+
+msgid ""
+"Accepts a MSFT iSCSI connection object as an input.\n"
+"The MSFT iSCSI connection object is output from the **Get-IscsiConnection** cmdlet."
+msgstr ""
+"该函数接受一个来自 Microsoft (MSFT) 的 iSCSI 连接对象作为输入。这个 MSFT iSCSI 连接对象是通过 **Get-"
+"IscsiConnection** cmdlet 获取的。"
+
+msgid ""
+"Accepts a MSFT iSCSI target object as an input.\n"
+"The MSFT iSCSI target object is output from the **Get-IscsiTarget** cmdlet."
+msgstr ""
+"接受一个 MSFT iSCSI 目标对象作为输入。该 MSFT iSCSI 目标对象是通过 **Get-IscsiTarget** cmdlet "
+"获得的输出结果。"
+
+msgid ""
+"Accepts a MSFT iSCSI target portal object as an input.\n"
+"The MSFT iSCSI target portal object is output from the **Get-IscsiTargetPortal** cmdlet."
+msgstr ""
+"接受一个 MSFT iSCSI 目标门户对象作为输入。该 MSFT iSCSI 目标门户对象是通过 **Get-IscsiTargetPortal** "
+"cmdlet 获得的输出结果。"
+
+msgid "Specifies the number of connections."
+msgstr "指定连接的数量。"
+
+msgid "Specifies the session identifier."
+msgstr "指定会话标识符。"
+
+msgid "Specifies the target side identifier."
+msgstr "指定目标方的标识符。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大操作数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM"
+" cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance#MSFT_DISK"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance#MSFT_DISK"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）之后的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance#MSFT_InitiatorPort"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance#MSFT_InitiatorPort"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid ""
+"### Microsoft.Management.Infrastructure.CimInstance#MSFT_IscsiConnection"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance#MSFT_IscsiConnection"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance#MSFT_IscsiTarget"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance#MSFT_IscsiTarget"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）之后的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid ""
+"### Microsoft.Management.Infrastructure.CimInstance#MSFT_IscsiTargetPortal"
+msgstr ""
+"### Microsoft.ManagementInfrastructure.CimInstance#MSFT_IscsiTargetPortal"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"Management Instrumentation（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance#MSFT_IscsiSession"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance#MSFT_IscsiSession"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名称。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[iSCSI on TechNet](/previous-versions/windows/it-pro/windows-"
+"server-2008-R2-and-2008/ee338476(v=ws.10))"
+msgstr ""
+"[TechNet上的iSCSI相关内容](/previous-versions/windows/it-pro/windows-"
+"server-2008-R2-and-2008/ee338476(v=ws.10))"
+
+msgid "[Storage on TechNet](https://go.microsoft.com/fwlink/?linkid=191356)"
+msgstr "[TechNet上的存储相关内容](https://go.microsoft.com/fwlink/?linkid=191356)"
+
+msgid "[Get-IscsiConnection](./Get-IscsiConnection.md)"
+msgstr "[Get-IscsiConnection](./Get-IscsiConnection.md)"
+
+msgid "[Get-IscsiTarget](./Get-IscsiTarget.md)"
+msgstr "[Get-IscsiTarget](./Get-IscsiTarget.md)"
+
+msgid "[Get-IscsiTargetPortal](./Get-IscsiTargetPortal.md)"
+msgstr "[Get-IscsiTargetPortal](./Get-IscsiTargetPortal.md)"

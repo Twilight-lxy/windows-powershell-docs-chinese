@@ -1,0 +1,129 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:27:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-HgsKeyProtectionState"
+msgstr "# 导入 HGS 密钥保护状态相关的数据"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Imports previously exported Key Protection Service configuration and "
+"certificates."
+msgstr "导入之前导出的密钥保护服务（Key Protection Service）配置文件和证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### File"
+msgstr "### 文件"
+
+msgid "### XML"
+msgstr "### XML"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Import-HgsKeyProtectionState** cmdlet imports previously exported configuration of Key Protection Service from a file referenced by the path parameter.\n"
+"If the path parameter is not provided, the configuration state can be passed in as an XmlDocument to the *Xml* parameter.\n"
+"If the configuration contains certificates that were added to the service with pfx (containing private key), then the cmdlet also imports those certificates.\n"
+"If the configuration contains certificates that were previously added to Key Protection Certificate as pfx, then the password supplied must match the password that was provided at the time of exporting the configuration."
+msgstr ""
+"`Import-HgsKeyProtectionState` cmdlet 用于从由 `path` 参数引用的文件中导入之前导出的 Key "
+"Protection Service 配置信息。如果未提供 `path` 参数，则可以通过将配置状态作为 `XmlDocument` 对象传递给 "
+"`Xml` 参数来导入该配置。如果配置中包含以 PFX 格式添加到服务中的证书（这些证书包含私钥），那么 cmdlet "
+"也会导入这些证书；同样地，如果配置中包含之前以 PFX 格式添加到 Key Protection Service "
+"中的证书，则必须提供的密码要与导出配置时使用的密码相匹配。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import Key Protection Service state from a file"
+msgstr "### 示例 1：从文件中导入密钥保护服务的状态"
+
+msgid ""
+"This command imports configuration state to a Key Protection Service from the file referenced by the path parameter.\n"
+"If the file contains private keys for certificates, then the password must be supplied by a secure string referenced by the $Password variable."
+msgstr ""
+"此命令将配置状态从路径参数所引用的文件导入到密钥保护服务中。如果该文件包含证书的私钥，则必须通过 `$Password` "
+"变量引用一个安全的字符串来提供密码。"
+
+msgid ""
+"### Example 2: Import Key Protection Service state from an XML document"
+msgstr "### 示例 2：从 XML 文档中导入密钥保护服务的状态信息"
+
+msgid ""
+"This command imports configuration state to a Key Protection Service from an XML document referenced by the XML parameter.\n"
+"If the file contains private keys for certificates, then the password must be supplied by a secure string referenced by the $Password variable."
+msgstr ""
+"此命令从由XML参数引用的XML文档中导入配置状态到密钥保护服务（Key Protection "
+"Service）。如果该文件包含证书的私钥，则必须使用$Password变量所引用的安全字符串来提供密码。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Indicates that this cmdlet ignores import failures."
+msgstr "表示此 cmdlet 会忽略导入失败的情况。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您不能将输入内容通过管道（pipe）传递给此cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet does not generate any output."
+msgstr "这个cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-HgsKeyProtectionState](./Export-HgsKeyProtectionState.md)"
+msgstr "[Export-HgsKeyProtectionState](./Export-HgsKeyProtectionState.md)"

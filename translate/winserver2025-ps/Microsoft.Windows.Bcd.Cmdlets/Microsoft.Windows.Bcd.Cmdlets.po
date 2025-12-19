@@ -1,0 +1,211 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:18:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Microsoft.Windows.Bcd.Cmdlets Module"
+msgstr "# Microsoft.Windows.Bcd Cmdlets 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "## Microsoft.Windows.Bcd.Cmdlets Cmdlets"
+msgstr "## Microsoft.Windows.BcdCmdlets （命令集）"
+
+msgid "### [Copy-BcdEntry](Copy-BcdEntry.md)"
+msgstr "### [Copy-BcdEntry](Copy-BcdEntry.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Disable-BcdElementBootDebug](Disable-BcdElementBootDebug.md)"
+msgstr "### [ Disable-BcdElementBootDebug](Disable-BcdElementBootDebug.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Disable-BcdElementBootEms](Disable-BcdElementBootEms.md)"
+msgstr "### [ Disable-BcdElementBootEms](Disable-BcdElementBootEms.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Disable-BcdElementDebug](Disable-BcdElementDebug.md)"
+msgstr "### [Disable-BcdElementDebug](Disable-BcdElementDebug.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Disable-BcdElementEms](Disable-BcdElementEms.md)"
+msgstr "### [Disable-BcdElementEms](Disable-BcdElementEms.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Disable-BcdElementEventLogging](Disable-BcdElementEventLogging.md)"
+msgstr "### [禁用 BCD 元素事件日志记录](Disable-BcdElementEventLogging.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Disable-BcdElementHypervisorDebug](Disable-"
+"BcdElementHypervisorDebug.md)"
+msgstr "### [禁用 BCD 元素管理程序调试功能](Disable-BcdElementHypervisorDebug.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Enable-BcdElementBootDebug](Enable-BcdElementBootDebug.md)"
+msgstr "### [Enable-BcdElementBootDebug](Enable-BcdElementBootDebug.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Enable-BcdElementBootEms](Enable-BcdElementBootEms.md)"
+msgstr "### [Enable-BcdElementBootEms](Enable-BcdElementBootEms.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Enable-BcdElementDebug](Enable-BcdElementDebug.md)"
+msgstr "### [Enable-BcdElementDebug](Enable-BcdElementDebug.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Enable-BcdElementEms](Enable-BcdElementEms.md)"
+msgstr "### [Enable-BcdElementEms](Enable-BcdElementEms.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Enable-BcdElementEventLogging](Enable-BcdElementEventLogging.md)"
+msgstr "### [Enable-BcdElementEventLogging](Enable-BcdElementEventLogging.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Enable-BcdElementHypervisorDebug](Enable-BcdElementHypervisorDebug.md)"
+msgstr ""
+"### [Enable-BcdElementHypervisorDebug](Enable-BcdElementHypervisorDebug.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Export-BcdStore](Export-BcdStore.md)"
+msgstr "### [Export-BcdStore](Export-BcdStore.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-BcdEntry](Get-BcdEntry.md)"
+msgstr "### [Get-BcdEntry](Get-BcdEntry.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Get-BcdEntryDebugSettings](Get-BcdEntryDebugSettings.md)"
+msgstr "### [Get-BcdEntryDebugSettings](Get-BcdEntryDebugSettings.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid ""
+"### [Get-BcdEntryHypervisorSettings](Get-BcdEntryHypervisorSettings.md)"
+msgstr ""
+"### [Get-BcdEntryHypervisorSettings](Get-BcdEntryHypervisorSettings.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-BcdStore](Get-BcdStore.md)"
+msgstr "### [Get-BcdStore](Get-BcdStore.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Import-BcdStore](Import-BcdStore.md)"
+msgstr "### [Import-BcdStore](Import-BcdStore.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [New-BcdEntry](New-BcdEntry.md)"
+msgstr "### [New-BcdEntry](New-BcdEntry.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [New-BcdStore](New-BcdStore.md)"
+msgstr "### [New-BcdStore](New-BcdStore.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Remove-BcdElement](Remove-BcdElement.md)"
+msgstr "### [Remove-BcdElement](Remove-BcdElement.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Remove-BcdEntry](Remove-BcdEntry.md)"
+msgstr "### [Remove-BcdEntry](Remove-BcdEntry.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-BcdBootDefault](Set-BcdBootDefault.md)"
+msgstr "### [Set-BcdBootDefault](Set-BcdBootDefault.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-BcdBootDisplayOrder](Set-BcdBootDisplayOrder.md)"
+msgstr "### [Set-BcdBootDisplayOrder](Set-BcdBootDisplayOrder.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-BcdBootSequence](Set-BcdBootSequence.md)"
+msgstr "### [Set-BcdBootSequence](Set-BcdBootSequence.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Set-BcdBootTimeout](Set-BcdBootTimeout.md)"
+msgstr "### [Set-BcdBootTimeout](Set-BcdBootTimeout.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-BcdBootToolsDisplayOrder](Set-BcdBootToolsDisplayOrder.md)"
+msgstr "### [Set-BcdBootToolsDisplayOrder](Set-BcdBootToolsDisplayOrder.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-BcdDebugSettings](Set-BcdDebugSettings.md)"
+msgstr "### [Set-BcdDebugSettings](Set-BcdDebugSettings.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-BcdElement](Set-BcdElement.md)"
+msgstr "### [Set-BcdElement](Set-BcdElement.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Set-BcdHypervisorSettings](Set-BcdHypervisorSettings.md)"
+msgstr "### [Set-BcdHypervisorSettings](Set-BcdHypervisorSettings.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"

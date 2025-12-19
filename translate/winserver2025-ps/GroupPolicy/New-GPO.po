@@ -1,0 +1,297 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:57:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-GPO"
+msgstr "# 新GPO（Group Policy Object）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Creates a GPO."
+msgstr "创建一个组策略对象（GPO）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### New (Default)"
+msgstr "### 新设置（默认值）"
+
+msgid "### NewStarterGUID"
+msgstr "### NewStarterGUID"
+
+msgid "### NewStarterName"
+msgstr "### NewStarterName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `New-GPO` cmdlet creates a GPO with a specified name. By default, the newly created GPO is not\n"
+"linked to a site, domain, or organizational unit (OU)."
+msgstr ""
+"`New-GPO` cmdlet 可用于创建具有指定名称的 GPO（组策略对象）。默认情况下，新创建的 GPO "
+"不会关联到任何站点、域或组织单元（OU）。"
+
+msgid ""
+"You can use this cmdlet to create a GPO that is based on a starter GPO by specifying the GUID or the\n"
+"display name of the Starter GPO, or by piping a **StarterGpo** object into the cmdlet."
+msgstr ""
+"你可以使用这个cmdlet来创建一个基于“起始GPO”（Starter "
+"GPO）的新GPO。具体方法有两种：一种是指定该起始GPO的GUID或显示名称；另一种是将一个**StarterGpo**对象通过管道传递给该cmdlet。"
+
+msgid ""
+"The cmdlet returns a **GPO** object, which represents the created GPO that you can pipe to other\n"
+"Group Policy cmdlets."
+msgstr "该cmdlet返回一个**GPO**对象（组策略对象），代表创建的GPO，你可以将其传递给其他组策略cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a GPO in the domain of the user"
+msgstr "### 示例 1：在用户的域中创建一个组策略对象（GPO）"
+
+msgid ""
+"This command creates a GPO in the domain of the user. The GPO is created "
+"with the specified comment."
+msgstr "这个命令在用户的域中创建一个GPO（组策略对象）。该GPO会带有指定的注释信息进行创建。"
+
+msgid ""
+"### Example 2: Create a GPO in the domain of the user that is pre-populated "
+"with the settings of the Starter GPO"
+msgstr "### 示例 2：在用户的域中创建一个 GPO，并预先为其设置“Starter GPO”中的配置"
+
+msgid ""
+"This command creates a GPO named FromStarterGPO in the domain of the user. The GPO is pre-populated\n"
+"with the settings of the Starter GPO."
+msgstr ""
+"此命令在用户的域中创建一个名为“FromStarterGPO”的组策略对象（GPO）。该GPO预先设置了与“Starter GPO”相同的配置参数。"
+
+msgid ""
+"### Example 3: Create a GPO in the domain of the user and link it to an OU"
+msgstr "#### 示例 3：在用户的域中创建一个 GPO，并将其链接到一个组织单元（OU）"
+
+msgid ""
+"This command creates a GPO named `TestGPO`, links it to the `Marketing` OU in the `contoso.com`\n"
+"domain, and grants the `Marketing Admins` security group permissions to edit the GPO."
+msgstr ""
+"此命令创建一个名为 `TestGPO` 的组策略对象（Group Policy Object，简称 GPO），将其链接到 `contoso.com` "
+"域中的 `Marketing` 组织单位（Organizational Unit，简称 OU），并授予 `Marketing Admins` "
+"安全组编辑该 GPO 的权限。"
+
+msgid ""
+"A GPO object is returned by the command, so you could continue to configure the new GPO by piping\n"
+"the output to other cmdlets. For example, you could set Registry preference items or registry-based\n"
+"policy settings by piping the output to `Set-GPPrefRegistryValue` or to `Set-GPRegistryValue`."
+msgstr ""
+"该命令会返回一个 GPO（组策略对象），因此您可以通过将输出结果传递给其他 cmdlet 来继续配置这个新的 GPO。例如，您可以将输出结果传递给 "
+"`Set-GPPrefRegistryValue` 或 `Set-GPRegistryValue`，从而设置注册表偏好项或基于注册表的策略设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Includes a comment for the new GPO. The comment string must be enclosed in double- or\n"
+"single-quotation marks and can contain 2,047 characters."
+msgstr "包含一条关于新 GPO 的注释。该注释字符串必须用双引号或单引号括起来，且长度不得超过 2,047 个字符。"
+
+msgid ""
+"Use the comment to document the GPO and its implementation in your environment. Or, if you insert\n"
+"keywords in the comment, you can use the keyword filter to find GPOs that have matching keywords."
+msgstr ""
+"请使用注释来记录该组策略对象（GPO）及其在您环境中的实施情况。另外，如果您在注释中插入关键词，就可以利用关键词过滤器来查找包含这些关键词的GPO。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the domain for this cmdlet. You must specify the fully qualified domain name (FQDN) of the\n"
+"domain."
+msgstr "指定此cmdlet所使用的域名。你必须提供该域名的完全合格域名（FQDN）。"
+
+msgid "For the `New-GPO` cmdlet:"
+msgstr "对于 `New-GPO` cmdlet："
+
+msgid ""
+"If you do not specify the **Domain** parameter, then the domain of the user running the current\n"
+"session is used. If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used. For more information, see the Notes section in the full help."
+msgstr ""
+"如果您没有指定 **Domain** 参数，那么将使用当前会话所运行用户的域信息。如果该 cmdlet "
+"是从计算机启动或关闭脚本中运行的，则会使用计算机的域信息。有关更多详细信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user running the current session\n"
+"(or the computer for a startup or shutdown script), then a trust must exist between that domain and\n"
+"the domain of the user, or computer."
+msgstr ""
+"如果您指定的域与当前会话的用户所在的域不同（或者对于启动或关闭脚本来说，与运行该脚本的计算机所在的域不同），那么该域与用户所在域或计算机所在域之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to the **Domain** by its built-in alias, **DomainName**. For more information,\n"
+"see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用该 **域名** 的内置别名 **DomainName** 来引用它。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid "Specifies a display name for the new GPO."
+msgstr "为新GPO指定一个显示名称。"
+
+msgid ""
+"If another GPO with the same display name exists in the domain an error "
+"occurs."
+msgstr "如果域中存在另一个具有相同显示名称的 GPO，则会发生错误。"
+
+msgid ""
+"You can also refer to the **Name** parameter by its built-in alias, **DisplayName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以通过其内置别名 **DisplayName** 来引用 **Name** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此cmdlet用于联系的域控制器的名称，以便完成操作。您可以指定完全 Qualified Domain Name（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the primary domain controller\n"
+"(PDC) emulator is contacted."
+msgstr "如果您不使用 **Server** 参数来指定名称，系统将联系主域控制器（PDC）模拟器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, **DC**. For more information,\n"
+"see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用该参数的内置别名“DC”来引用它。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies a Starter GPO by its globally unique identifier (GUID). The GUID uniquely identifies the\n"
+"Starter GPO. If a Starter GPO is specified, the GPO is created with its settings."
+msgstr ""
+"通过其全局唯一标识符（GUID）来指定一个“启动GPO”（Starter "
+"GPO）。该GUID能够唯一地识别这个“启动GPO”。如果指定了某个“启动GPO”，那么系统就会根据该GPO的设置创建相应的组策略对象（GPO）。"
+
+msgid ""
+"You can also refer to the **StarterGpoGuid** parameter by its built-in alias, **Id**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以通过其内置别名 **Id** 来引用 **StarterGpoGuid** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies a Starter GPO by its display name. The name can contain 255 characters. If the name\n"
+"includes blank characters, enclose the name in double-quotation marks or single-quotation marks. If\n"
+"a Starter GPO is specified, the GPO is created with its settings."
+msgstr ""
+"通过显示名称来指定一个起始组策略对象（Starter "
+"GPO）。该名称最多可以包含255个字符。如果名称中包含空格，请使用双引号或单引号将其括起来。如果指定了一个起始组策略对象，系统将创建该对象并应用其设置。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another Starter GPO with the same\n"
+"display name exists in the domain, an error occurs. You can use the **StarterGpoGuid** parameter to\n"
+"uniquely identify a Starter GPO."
+msgstr ""
+"显示名称在域内并不保证是唯一的。如果该域中存在另一个具有相同显示名称的“启动GPO”（Starter GPO），将会出现错误。您可以使用 "
+"**StarterGpoGuid** 参数来唯一标识一个“启动GPO”。"
+
+msgid ""
+"You can also refer to the **Name** parameter by its built-in alias, **DisplayName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以通过其内置别名 **DisplayName** 来引用 **Name** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.GroupPolicy.StarterGpo"
+msgstr "### Microsoft(GroupPolicy.StarterGpo)"
+
+msgid ""
+"You can pipe a Starter GPO that has predefined settings to this cmdlet."
+msgstr "你可以将一个具有预定义设置的起始GPO（Starter GPO）通过管道传递给这个cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft.GroupPolicy.Gpo"
+
+msgid "This cmdlet returns the GPO that was created."
+msgstr "此cmdlet会返回创建的GPO（组策略对象）。"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid ""
+"  You can use the **Domain** parameter to explicitly specify the domain for "
+"this cmdlet."
+msgstr "你可以使用 `Domain` 参数来明确指定此 cmdlet 的域名称。"
+
+msgid ""
+"  If you do not explicitly specify the domain, the cmdlet uses a default domain. The default domain\n"
+"  is the domain that is used to access network resources by the security context under which the\n"
+"  current session is running. This domain is typically the domain of the user that is running the\n"
+"  session. For instance, the domain of the user who started the session by opening Windows\n"
+"  PowerShell from the Program Files menu, or the domain of a user that is specified in a RunAs\n"
+"  command. However, computer startup and shutdown scripts run under the context of the LocalSystem\n"
+"  account. The LocalSystem account is a built-in local account, and it accesses network resources\n"
+"  under the context of the computer account. Therefore, when this cmdlet is run from a startup or\n"
+"  shutdown script, the default domain is the domain to which the computer is joined."
+msgstr ""
+"如果您没有明确指定域名，那么该 cmdlet "
+"会使用默认域名。默认域名是指当前会话运行所使用的安全上下文用于访问网络资源的那个域名。这个域名通常就是启动该会话的用户所属的域名（例如，通过“程序文件”菜单打开"
+" Windows PowerShell 启动会话的用户所在的域，或者在 “RunAs” 命令中指定的用户所在的域）。不过，计算机启动和关闭脚本是在 "
+"LocalSystem 计户名的上下文中运行的。LocalSystem "
+"是一个内置的本地账户，它以计算机账户的权限来访问网络资源。因此，当从这个启动或关闭脚本中运行该 cmdlet 时，默认域名就是计算机所连接的那个域名。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Backup-GPO](./Backup-GPO.md)"
+msgstr "[备份GPO](./Backup-GPO.md)"
+
+msgid "[Copy-GPO](./Copy-GPO.md)"
+msgstr "[复制GPO](./Copy-GPO.md)"
+
+msgid "[Get-GPO](./Get-GPO.md)"
+msgstr "[Get-GPO](./Get-GPO.md)"
+
+msgid "[Import-GPO](./Import-GPO.md)"
+msgstr "[Import-GPO](./Import-GPO.md)"
+
+msgid "[Remove-GPO](./Remove-GPO.md)"
+msgstr "[Remove-GPO](./Remove-GPO.md)"
+
+msgid "[Rename-GPO](./Rename-GPO.md)"
+msgstr "[重命名GPO](./Rename-GPO.md)"
+
+msgid "[Restore-GPO](./Restore-GPO.md)"
+msgstr "[ Restore-GPO](./Restore-GPO.md)"

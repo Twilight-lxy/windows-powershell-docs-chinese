@@ -1,0 +1,194 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:50:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-NetAdapterSriovVf"
+msgstr "# Get-NetAdapterSriovVf"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Displays the SR-IOV virtual function settings for a network adapter."
+msgstr "显示网络适配器的 SR-IOV 虚拟功能设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称排序（默认值）"
+
+msgid "### ByInstanceID"
+msgstr "### 按实例ID（ByInstanceID）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-NetAdapterSriovVf** cmdlet displays the Single-Root I/O Virtualization (SR-IOV) virtual function settings for a network adapter.\n"
+"By default a table of virtual function settings will be displayed that includes the virtual function identifier (ID), virtual function name, network adapter ID, and the current MAC address.\n"
+"Specifying a single virtual function displays that virtual function in more detail.\n"
+"Additional displayed fields include the permanent MAC address, requester ID, and virtual port (VPort) information."
+msgstr ""
+"`Get-NetAdapterSriovVf` cmdlet 可以显示网络适配器的单根 I/O 虚拟化（SR-"
+"IOV）虚拟功能设置。默认情况下，会显示一个包含以下信息的表格：虚拟功能标识符（ID）、虚拟功能名称、网络适配器 ID 以及当前的 MAC "
+"地址。如果指定了某个特定的虚拟功能，系统会提供更多关于该功能的详细信息。其他显示的字段还包括永久 MAC 地址、请求者 ID "
+"以及虚拟端口（VPort）的相关信息。"
+
+msgid ""
+"The network adapter to use is specified by either the name of the network "
+"adapter, interface description of the network adapter, or the switch ID of "
+"the virtual switch bound to the SR-IOV network adapter."
+msgstr "要使用的网络适配器可以通过以下方式指定：网络适配器的名称、网络适配器的接口描述，或者绑定到 SR-IOV 网络适配器的虚拟交换机的 ID。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get a list of virtual functions, virtual machines, and MAC "
+"addresses for the specified network adapter"
+msgstr "### 示例 1：获取指定网络适配器的虚拟函数、虚拟机以及 MAC 地址的列表"
+
+msgid ""
+"This command gets a list of the virtual functions with the virtual machine "
+"names and MAC addresses for the network adapter named Ethernet 1."
+msgstr "这个命令会获取一个虚拟函数列表，其中包含虚拟机的名称以及名为“Ethernet 1”的网络适配器的MAC地址。"
+
+msgid ""
+"### Example 2: Get a list of virtual functions, virtual machines, and MAC "
+"addresses for a network adapter bound to a virtual switch"
+msgstr "### 示例 2：获取绑定到虚拟交换机的网络适配器的虚拟函数、虚拟机以及 MAC 地址的列表"
+
+msgid ""
+"This command gets a list of the virtual functions with the virtual machine "
+"names and MAC addresses for the network adapter bound to virtual switch 2."
+msgstr "这个命令会获取一个列表，其中包含虚拟函数的名称、以及绑定到虚拟交换机2的网络适配器的虚拟机名称和MAC地址。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将该 cmdlet 作为后台作业运行。使用此参数来执行需要较长时间才能完成的命令。该 cmdlet "
+"会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用 `*-Job` 系列 "
+"cmdlets。要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关 Windows "
+"PowerShell® 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称或会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the virtual function ID number on the indicated network adapter to"
+" return more detailed information on the virtual function."
+msgstr "指定所指示网络适配器上的虚拟函数ID编号，以获取有关该虚拟函数的更详细信息。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"该参数表示此 cmdlet "
+"在操作过程中会同时包含可见网络适配器和隐藏网络适配器。默认情况下，仅包含可见网络适配器。如果在识别网络适配器时使用了通配符，并且指定了此参数，则该通配符字符串将用于匹配所有（无论是隐藏的还是可见的）网络适配器。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述的数组。对于物理网络适配器来说，这通常是网络适配器的供应商名称后跟型号和描述，例如 `Contoso 12345 "
+"Gigabit Network Device`。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Specifies the virtual switch ID that identifies the network adapter for one "
+"or more virtual functions as an array."
+msgstr "指定虚拟交换机ID，该ID用于标识一个或多个虚拟函数所对应的网络适配器（以数组的形式提供）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大并发操作数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 数量来计算该 cmdlet 的最佳限制值（即并发操作的最大数量）。这个限制仅适用于当前执行的 "
+"cmdlet，而不影响整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterSriovVfSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterSriovVfSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-NetAdapterSriov](./Disable-NetAdapterSriov.md)"
+msgstr "[禁用网卡SRIOV功能](./Disable-NetAdapterSriov.md)"
+
+msgid "[Enable-NetAdapterSriov](./Enable-NetAdapterSriov.md)"
+msgstr "[Enable-NetAdapterSriov](./Enable-NetAdapterSriov.md)"
+
+msgid "[Get-NetAdapterSriov](./Get-NetAdapterSriov.md)"
+msgstr "[Get-NetAdapterSriov](./Get-NetAdapterSriov.md)"
+
+msgid "[Set-NetAdapterSriov](./Set-NetAdapterSriov.md)"
+msgstr "[Set-NetAdapterSriov](./Set-NetAdapterSriov.md)"

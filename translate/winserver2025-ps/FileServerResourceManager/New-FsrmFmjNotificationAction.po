@@ -1,0 +1,34 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:13:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-FsrmFmjNotificationAction"
+msgstr "# New-FsrmFmjNotificationAction"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Returns a notification action object for file management jobs."
+msgstr "返回一个用于文件管理作业的通知动作对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-FsrmFmjNotificationAction** cmdlet returns a notification action object that you can use to create file management job actions.\n"
+"You can use the **FsrmFMJNotificationAction** object as input for the following File Server Resource Manager (FSRM) cmdlets:"
+msgstr ""
+"`New-FsrmFmjNotificationAction` cmdlet 返回一个通知动作对象，您可以使用该对象来创建文件管理作业动作。您可以将 "
+"`FsrmFMJNotificationAction` 对象作为输入参数，用于以下 File Server Resource Manager "
+"(FSRM) cmdlets："

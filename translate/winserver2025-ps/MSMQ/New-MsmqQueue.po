@@ -1,0 +1,159 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:59:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-MsmqQueue"
+msgstr "# New-MsmqQueue"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates public or private queues."
+msgstr "创建公共或私有的队列。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-MsmqQueue** cmdlet creates public or private queues.\n"
+"The cmdlet returns **System.Messaging.MessageQueue** objects that represent the new queues.\n"
+"If you do not specify *QueueType* parameter, the cmdlet creates a private queue."
+msgstr ""
+"`New-MsmqQueue` cmdlet 可用于创建公共或私有队列。该 cmdlet 会返回表示新队列的 `System "
+"Messaging.MessageQueue` 对象。如果未指定 `QueueType` 参数，cmdlet 将创建一个私有队列。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a public queue"
+msgstr "### 示例 1：创建一个公共队列"
+
+msgid "This command creates a public queue named OrderStatus."
+msgstr "此命令创建了一个名为“OrderStatus”的公共队列。"
+
+msgid "### Example 2: Create a private queue for authenticated messages"
+msgstr "### 示例 2：为已认证的消息创建一个私有队列"
+
+msgid ""
+"This command creates a private queue named OrderQueue.\n"
+"The queue accepts only authenticated messages.\n"
+"The command specifies a quota size for the queue."
+msgstr ""
+"这个命令创建了一个名为 OrderQueue 的私有队列。该队列仅接受经过身份验证的消息。命令还指定了队列的容量（即允许存储的最大消息数量）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Indicates that the queue accepts only authenticated messages."
+msgstr "表示该队列仅接受已认证的消息。"
+
+msgid ""
+"Specifies the maximum size of the journal queue.\n"
+"Specify a value in kilobytes.\n"
+"If you do not specify a value, this cmdlet uses the default journal queue quota."
+msgstr "指定日志队列的最大大小。请以千字节为单位输入数值。如果未指定数值，此cmdlet将使用默认的日志队列配额。"
+
+msgid "Indicates that received messages are copied to the journal queue."
+msgstr "表示接收到的消息会被复制到日志队列中。"
+
+msgid ""
+"Specifies a label.\n"
+"The label that this parameter specifies describes the queue.\n"
+"The default value is an empty string."
+msgstr "用于指定一个标签。该参数所指定的标签用于描述相应的队列。默认值为空字符串。"
+
+msgid ""
+"Specifies the multicast address associated with the queue.\n"
+"If you do not specify a multicast address, the cmdlet does not assign a multicast address to this queue."
+msgstr "指定与队列关联的多播地址。如果您不指定多播地址，该cmdlet将不会为此队列分配多播地址。"
+
+msgid ""
+"Specifies an array of names of queues.\n"
+"This parameter specifies friendly names of queues.\n"
+"This parameter does not support wildcard characters."
+msgstr "指定一个队列名称数组。该参数用于为队列提供友好的名称（即易于理解的名称）。此参数不支持通配符字符。"
+
+msgid ""
+"Specifies the privacy level associated with the queue.\n"
+"The default value is Optional."
+msgstr "指定与队列相关的隐私级别。默认值为“可选”（Optional）。"
+
+msgid ""
+"Specifies the maximum size, in kilobytes, of the queue.\n"
+"If you do not specify a value, this cmdlet uses the default queue quota."
+msgstr "指定队列的最大大小（以千字节为单位）。如果您没有指定值，此cmdlet将使用默认的队列配额。"
+
+msgid ""
+"Specifies a queue type.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定队列类型。该参数的可接受值如下："
+
+msgid "The default value is Private."
+msgstr "默认值是“Private”（私密的）。"
+
+msgid ""
+"Indicates that the cmdlet creates a transactional queue at the specified "
+"path."
+msgstr "表示该cmdlet会在指定的路径创建一个事务性队列。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+msgstr "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+
+msgid "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+msgstr "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+
+msgid "[Receive-MsmqQueue](./Receive-MsmqQueue.md)"
+msgstr "[接收-MsmqQueue](./Receive-MsmqQueue.md)"
+
+msgid "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+msgstr "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+
+msgid "[Send-MsmqQueue](./Send-MsmqQueue.md)"
+msgstr "[Send-MsmqQueue](./Send-MsmqQueue.md)"
+
+msgid "[Set-MsmqQueue](./Set-MsmqQueue.md)"
+msgstr "[Set-MsmqQueue](./Set-MsmqQueue.md)"

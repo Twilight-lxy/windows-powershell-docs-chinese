@@ -1,0 +1,85 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:33:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-MuxEchoResponder"
+msgstr "# 禁用 MuxEchoResponder"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Disables an ICMP echo responder. This cmdlet has been deprecated."
+msgstr "禁用 ICMP 回显响应功能。此cmdlet已被弃用。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Disable-MuxEchoResponder** cmdlet disables an Internet Control Message"
+" Protocol (ICMP) echo responder in a multiplexer (MUX)."
+msgstr ""
+"` Disable-MuxEchoResponder ` 这个 cmdlet "
+"用于禁用多路复用器（MUX）中的互联网控制消息协议（ICMP）回声响应功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable an echo responder"
+msgstr "### 示例 1：禁用回显响应器"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the ICMP sequence number of the echo responder to disable."
+msgstr "指定要禁用的回显响应器的 ICMP 序列号。"
+
+msgid ""
+"Specifies the target virtual IP address of the echo responder to disable."
+msgstr "指定要禁用的 Echo 应答器的目标虚拟 IP 地址。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-MuxEchoResponder](./Enable-MuxEchoResponder.md)"
+msgstr "[Enable-MuxEchoResponder](./Enable-MuxEchoResponder.md)"

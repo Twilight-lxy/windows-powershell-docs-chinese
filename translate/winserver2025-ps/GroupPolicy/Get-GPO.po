@@ -1,0 +1,258 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:47:55 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-GPO"
+msgstr "# Get-GPO"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets one GPO or all the GPOs in a domain."
+msgstr "可以获取一个GPO或域中的所有GPO。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByGUID (Default)"
+msgstr "### ByGUID（默认值）"
+
+msgid "### ByName"
+msgstr "### 按名称查找"
+
+msgid "### GetAll"
+msgstr "### getAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-GPO` cmdlet gets one Group Policy Object (GPO) or all the GPOs in a domain. You can\n"
+"specify a GPO by its display name or by its globally unique identifier (GUID) to get a single GPO,\n"
+"or you can get all the GPOs in the domain through the **All** parameter."
+msgstr ""
+"`Get-GPO` cmdlet 可以获取一个组策略对象（GPO）或域中的所有 GPO。你可以通过 GPO "
+"的显示名称或其全局唯一标识符（GUID）来指定某个特定的 GPO；或者，你也可以使用 `All` 参数来获取域中的所有 GPO。"
+
+msgid ""
+"This cmdlet returns one or more objects that represent the requested GPOs. By default, properties of\n"
+"the requested GPOs are printed to the display; however, you can also pipe the output of the\n"
+"`Get-GPO` cmdlet to other Group Policy cmdlets."
+msgstr ""
+"此 cmdlet 返回一个或多个表示所请求的组策略对象（GPO）的实例。默认情况下，这些 GPO 的属性会显示在屏幕上；不过，您也可以将 `Get-"
+"GPO` cmdlet 的输出结果传递给其他组策略相关的 cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a single GPO from a domain"
+msgstr "### 示例 1：从域中获取一个 GPO（组策略对象）"
+
+msgid "### Example 2: Get a single GPO by GUID"
+msgstr "### 示例 2：通过 GUID 获取单个 GPO"
+
+msgid ""
+"This command gets the GPO named `Group Policy Test`. The GPO must exist in the domain of the user\n"
+"that is running the session (or, for startup and shutdown scripts, the computer). The command gets\n"
+"the GPO information by contacting the primary domain controller (PDC)."
+msgstr ""
+"这个命令用于获取名为“Group Policy "
+"Test”的GPO（组策略对象）。该GPO必须存在于运行此会话的用户所在的域中（对于启动和关闭脚本而言，则是计算机所在的域中）。该命令通过联系主域控制器（Primary"
+" Domain Controller，简称PDC）来获取GPO的相关信息。"
+
+msgid ""
+"This command gets the GPO that has the ID (GUID) `331a09564-cd4a-4520-98fa-446a2af23b4b` in the\n"
+"`sales.contoso.com` domain. If the domain of the user that is running the session (or, for startup\n"
+"and shutdown scripts, the computer) is different that `sales.contoso.com`, a trust must exist\n"
+"between the two domains. The command retrieves the GPO information by contacting the PDC (in the\n"
+"`sales.contoso.com` domain)."
+msgstr ""
+"此命令用于获取位于 `sales.contoso.com` 域中、ID（GUID）为 "
+"`331a09564-cd4a-4520-98fa-446a2af23b4b` 的 "
+"GPO。如果运行该命令的用户所在的域（或者对于启动和关闭脚本来说，是计算机所在的域）与 `sales.contoso.com` "
+"不同，则这两个域之间必须存在信任关系。该命令通过联系 `sales.contoso.com` 域中的 PDC 来检索 GPO 的相关信息。"
+
+msgid "### Example 3: Get all GPOs from a domain"
+msgstr "### 示例 3：从某个域中获取所有组策略对象（GPO）"
+
+msgid "This command get all the GPOs in the `sales.contoso.com` domain."
+msgstr "这个命令可以获取 `sales.contoso.com` 域中的所有组策略对象（GPO）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Indicates that the cmdlet gets all the GPOs in the domain."
+msgstr "表示该cmdlet会获取域中的所有GPO（组策略对象）。"
+
+msgid ""
+"Specifies the domain for this cmdlet. You must specify the fully qualified domain name (FQDN) of the\n"
+"domain."
+msgstr "指定此 cmdlet 的相关域名。您必须提供该域名的完整限定域名（FQDN）。"
+
+msgid ""
+"For the `Get-GPO` cmdlet, the GPO (or GPOs) to that this cmdlet gets must "
+"exist in this domain."
+msgstr "对于 `Get-GPO` cmdlet 来说，该 cmdlet 所获取的一个或多个 GPO 必须存在于当前域中。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the user that is running the current\n"
+"session is used. If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used. For more information, see the Notes section in the full Help."
+msgstr ""
+"如果您没有指定 **Domain** "
+"参数，那么将使用运行当前会话的用户的域信息。如果该cmdlet是从计算机启动或关闭脚本中运行的，那么将使用计算机的域信息。有关更多详细信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user that is running the current\n"
+"session (or, for a startup or shutdown script, the computer), a trust must exist between that domain\n"
+"and the domain of the user or the computer."
+msgstr ""
+"如果您指定的域与当前会话的用户所使用的域不同（或者对于启动/关闭脚本来说，是与计算机相关的域不同），那么该域与用户或计算机的所在域之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to the **Domain** parameter by its built-in alias, **DomainName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用**Domain**参数的内置别名**DomainName**来引用它。有关更多信息，请参阅[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the GPO to retrieve by its globally unique identifier (GUID). The GUID uniquely identifies\n"
+"the GPO."
+msgstr "通过其全局唯一标识符（GUID）指定要检索的组策略对象（GPO）。该 GUID 可唯一地标识该 GPO。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in alias, **Id**."
+msgstr "您也可以通过其内置别名 **Id** 来引用 **Guid** 参数。"
+
+msgid "Specifies the GPO to retrieve by its display name."
+msgstr "指定要根据其显示名称检索的组策略对象（GPO）。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another GPO with the same display\n"
+"name exists in the domain an error occurs. You can use the **Guid** parameter to uniquely identify a\n"
+"GPO."
+msgstr ""
+"显示名称在域中并不保证是唯一的。如果该域中存在另一个具有相同显示名称的组策略对象（GPO），则会出现错误。您可以使用 **Guid** "
+"参数来唯一标识一个 GPO。"
+
+msgid ""
+"You can also refer to the **Name** parameter by its built-in alias, "
+"**DisplayName**."
+msgstr "您也可以通过其内置别名 **DisplayName** 来引用 **Name** 参数。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此cmdlet用于联系以完成操作的域控制器的名称。您可以指定完全限定的域名（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the primary domain controller\n"
+"(PDC) emulator is contacted."
+msgstr ""
+"如果您不使用 **Server** 参数来指定名称，系统将会联系主域控制器（Primary Domain Controller，简称 PDC）的模拟器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, "
+"**DC**."
+msgstr "您也可以使用其内置别名“DC”来引用**Server**参数。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### MicrosoftGROUPPolicy.Gpo"
+
+msgid ""
+"You can pipe a GPO for which to get information to this cmdlet. You can pipe GPO objects into this\n"
+"cmdlet to display information about the GPOs. Collections that contain GPOs from different domains\n"
+"are not supported."
+msgstr ""
+"你可以将一个GPO（组策略对象）通过管道传递给这个cmdlet，以便获取相关信息。你也可以将多个GPO对象通过管道传递给这个cmdlet来显示这些GPO的详细信息。不过，包含来自不同域的GPO的集合是不被支持的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft.GroupPolicy.Gpo"
+
+msgid "This cmdlet returns an object that represents the requested GPO."
+msgstr "此cmdlet返回一个对象，该对象表示所请求的GPO（组策略对象）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"  If you do not explicitly specify the domain, the cmdlet uses a default domain. The default domain\n"
+"  is the domain that is used to access network resources by the security context under which the\n"
+"  current session is running. This domain is typically the domain of the user that is running the\n"
+"  session. For example, the domain of the user who started the session by opening Windows PowerShell\n"
+"  from the Program Files menu, or the domain of a user that is specified in a runas command.\n"
+"  However, computer startup and shutdown scripts run under the context of the LocalSystem account.\n"
+"  The LocalSystem account is a built-in local account, and it accesses network resources under the\n"
+"  context of the computer account. Therefore, when this cmdlet is run from a startup or shutdown\n"
+"  script, the default domain is the domain to which the computer is joined."
+msgstr ""
+"如果您没有明确指定域名，该cmdlet会使用默认域名。默认域名是指当前会话运行的安全上下文用于访问网络资源所使用的域名。这个域名通常是运行该会话的用户的域名。例如，通过“程序文件”菜单打开Windows"
+" "
+"PowerShell来启动会话的用户对应的域名，或者在runas命令中指定的用户对应的域名。然而，计算机启动和关闭脚本是在LocalSystem账户的上下文中运行的。LocalSystem账户是一个内置的本地账户，它以计算机账户的身份访问网络资源。因此，当从这个启动或关闭脚本中运行该cmdlet时，默认域名就是计算机所属的域名。"
+
+msgid ""
+"  Only one domain can be used by an instance of this cmdlet. If you pipe a collection of GPO\n"
+"  (**Microsoft.GroupPolicy.Gpo**) objects to this cmdlet, the **DomainName** property of the first\n"
+"  GPO object in the collection specifies the domain for the cmdlet. This is because **domainname**\n"
+"  is a built-in alias for the **Domain** parameter, and the **Domain** parameter can take its value\n"
+"  by property name from the pipeline. A non-terminating error occurs for any GPOs in the collection\n"
+"  that are not in this domain. If this domain is different from the domain of the user account (for\n"
+"  startup or shutdown scripts, the computer account), a trust must exist between the two domains."
+msgstr ""
+"此 cmdlet 的实例只能使用一个域。如果您将一组 GPO（**Microsoft.GroupPolicy.Gpo**）对象通过管道传递给此 "
+"cmdlet，那么集合中第一个 GPO 对象的 **DomainName** 属性将指定该 cmdlet 使用的域。这是因为 "
+"**DomainName** 是 **Domain** 参数的内置别名，而 **Domain** 参数可以从管道中通过属性名称获取其值。如果集合中的任何"
+" GPO "
+"不属于该域，则会引发错误（且此错误无法被终止）。如果该域与用户账户所属的域不同（例如在启动或关闭脚本中使用的计算机账户），则这两个域之间必须存在信任关系。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Backup-GPO](./Backup-GPO.md)"
+msgstr "[备份GPO](./Backup-GPO.md)"
+
+msgid "[Copy-GPO](./Copy-GPO.md)"
+msgstr "[复制GPO](./Copy-GPO.md)"
+
+msgid "[Import-GPO](./Import-GPO.md)"
+msgstr "[Import-GPO](./Import-GPO.md)"
+
+msgid "[New-GPO](./New-GPO.md)"
+msgstr "[New-GPO](./New-GPO.md)"
+
+msgid "[Remove-GPO](./Remove-GPO.md)"
+msgstr "[Remove-GPO](./Remove-GPO.md)"
+
+msgid "[Rename-GPO](./Rename-GPO.md)"
+msgstr "[重命名GPO](./Rename-GPO.md)"
+
+msgid "[Restore-GPO](./Restore-GPO.md)"
+msgstr "[恢复GPO](./Restore-GPO.md)"

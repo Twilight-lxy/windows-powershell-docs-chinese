@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:31:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IISConfigAttributeValue"
+msgstr "# Get-IISConfigAttributeValue"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets a configuration attribute value from an IIS configuration section or "
+"configuration element attribute."
+msgstr "从 IIS 配置部分或配置元素属性中获取一个配置属性值。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-IISConfigAttributeValue** cmdlet gets a configuration attribute value from an Internet Information Services (IIS) configuration section attribute or a configuration element attribute.\n"
+"The value returned is the value that can be extracted from the given **ConfigurationElement** and not necessarily the effective value for a given site / virtual directory / folder etc.\n"
+"To obtain the effective attribute values, always retrieve the configuration element by specifying the commit path as the deepest level possible.\n"
+"Even the configuration attribute is not defined at that level, the parent attributes are scanned and the effective configuration element is returned.\n"
+"You can then work on this **ConfigurationElement** to get/set/remove configuration attribute values."
+msgstr ""
+"`Get-IISConfigAttributeValue` cmdlet 用于从 Internet Information Services (IIS)"
+" 的配置部分属性或配置元素属性中获取配置属性值。返回的值是从指定的 `ConfigurationElement` "
+"中提取出来的值，而不一定是某个站点、虚拟目录或文件夹等的实际生效值。为了获得实际的属性值，请始终通过指定尽可能深的路径来检索相应的配置元素。即使该配置属性在当前层级没有被定义，系统也会扫描其父级属性，并返回实际的配置元素。之后您就可以对这个"
+" `ConfigurationElement` 进行操作，以获取、设置或删除配置属性值。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a configuration attribute from an IIS website"
+msgstr "### 示例 1：从 IIS 网站中获取配置属性"
+
+msgid ""
+"This command gets the configuration attribute MaxUrlSegments for the Default"
+" Web Site."
+msgstr "这个命令获取了“Default Web Site”配置属性“MaxUrl_segments”的值。"
+
+msgid ""
+"### Example 2: Get configuration attribute values from different parts of "
+"the configuration store"
+msgstr "### 示例 2：从配置存储的不同部分获取配置属性的值"
+
+msgid "This command gets the global attribute value for ScriptErrorMessage"
+msgstr "这个命令用于获取 `ScriptErrorMessage` 的全局属性值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of the attribute that will be retrieved."
+msgstr "指定将要检索的属性的名称。"
+
+msgid ""
+"Specifies the IIS ConfigurationSection or ConfigurationElement for which the"
+" attribute value will be looked up."
+msgstr "指定要查找属性值的 IIS ConfigurationSection 或 ConfigurationElement 对象。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Web.Administration.ConfigurationElement"
+msgstr "### Microsoft.Web.Administration.ConfigurationElement"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-IISConfigAttributeValue](./Set-IISConfigAttributeValue.md)"
+msgstr "[Set-IISConfigAttributeValue](./Set-IISConfigAttributeValue.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

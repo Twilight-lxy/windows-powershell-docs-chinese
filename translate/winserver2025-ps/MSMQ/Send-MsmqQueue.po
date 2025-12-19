@@ -1,0 +1,193 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:00:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Send-MsmqQueue"
+msgstr "# Send-MsmqQueue"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sends a test message to remote queues."
+msgstr "向远程队列发送一条测试消息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Send-MsmqQueue** cmdlet sends a test message to one or more remote queues.\n"
+"This cmdlet accepts values for the *Name* parameter of path names, format names, and direct format names.\n"
+"Some other Message Queuing (also known as MSMQ) cmdlets require a friendly name for the queue.\n"
+"By default, this cmdlet sends express messages.\n"
+"It returns a **System.Messaging.Message** object that represents the message sent."
+msgstr ""
+"`Send-MsmqQueue` cmdlet 可以向一个或多个远程队列发送测试消息。该 cmdlet 允许为 `Name` "
+"参数输入路径名、格式名称或直接格式名称作为值。某些其他与 Message Queuing（也称为 MSMQ）相关的 cmdlet "
+"需要为队列提供一个友好的名称。默认情况下，此 cmdlet 会发送简单类型的消息，并返回一个表示所发送消息的 "
+"`System.Messaging.Message` 对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Send a test message to a queue"
+msgstr "### 示例 1：向队列发送一条测试消息"
+
+msgid ""
+"This command gets a queue that has the specified name by using the **Get-MsmqQueue** cmdlet.\n"
+"The command passes the results to the current cmdlet by using the pipeline operator.\n"
+"The current cmdlet sends a test message to the queue.\n"
+"The cmdlet specifies properties of the message."
+msgstr ""
+"该命令使用 **Get-MsmqQueue** cmdlet 获取具有指定名称的队列。然后，通过管道运算符将结果传递给当前的 cmdlet。当前 "
+"cmdlet 会向该队列发送一条测试消息，并指定这条消息的属性。"
+
+msgid "### Example 2: Send a test message with a label to a queue"
+msgstr "### 示例 2：向队列发送一条带有标签的测试消息"
+
+msgid ""
+"This command gets a queue that has the specified name by using **Get-MsmqQueue**.\n"
+"The command passes the results to the current cmdlet by using the pipeline operator.\n"
+"The current cmdlet sends a test message to the queue.\n"
+"The test message has a label."
+msgstr ""
+"该命令使用 `Get-MsmqQueue` 获取具有指定名称的队列。命令通过管道运算符将结果传递给当前的 cmdlet（脚本片段）。当前 cmdlet "
+"会向该队列发送一条测试消息，这条测试消息包含一个标签。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the type of acknowledgement messages that can be returned by "
+"Messaging Queuing."
+msgstr "指定消息队列（Messageing Queuing）可以返回的确认消息类型。"
+
+msgid ""
+"Specifies a path.\n"
+"The queue that the path specifies receives the acknowledgement messages that Message Queuing generates."
+msgstr "指定一个路径。该路径所指向的队列会接收消息队列（Message Queuing）生成的确认消息。"
+
+msgid ""
+"Indicates that the cmdlet sends the message as an authenticated message."
+msgstr "表示该cmdlet以已认证的消息形式发送该消息。"
+
+msgid ""
+"Specifies the body of the message.\n"
+"The cmdlet sends a message that includes the body that this parameter specifies to the queue."
+msgstr "指定消息的正文内容。该 cmdlet 会将该参数所指定的正文内容包含在消息中，并将这些消息发送到队列中。"
+
+msgid ""
+"Specifies an array of **MessageQueue** objects.\n"
+"This cmdlet sends messages to the destination queues that the **MessageQueue** specify.\n"
+"This parameter accepts pipeline input."
+msgstr ""
+"指定一个 **MessageQueue** 对象数组。此 cmdlet 将消息发送到由这些 **MessageQueue** "
+"对象指定的目标队列中。该参数支持管道输入（pipeline input）。"
+
+msgid ""
+"Indicates that the originating computer keeps a copy of the message in a "
+"journal."
+msgstr "表示发送消息的计算机会在日志中保存该消息的副本。"
+
+msgid ""
+"Specifies a label.\n"
+"The label that this parameter specifies describes the message.\n"
+"The default value is an empty string."
+msgstr "用于指定一个标签。该参数所指定的标签用于描述消息的内容。默认值为空字符串。"
+
+msgid ""
+"Specifies a preconstructed message object that you can specify as pipeline "
+"input."
+msgstr "指定一个预先构建的消息对象，您可以将其作为管道输入来使用。"
+
+msgid "Specifies a name."
+msgstr "指定一个名称。"
+
+msgid "Indicates that the cmdlet sends the message as a recoverable message."
+msgstr "表示该cmdlet将消息作为可恢复的消息进行发送。"
+
+msgid ""
+"Specifies a path.\n"
+"The queue that this parameter specifies receives application-generated response messages."
+msgstr "指定一个路径。该参数所指定的队列用于接收应用程序生成的响应消息。"
+
+msgid ""
+"Specifies the maximum amount of time, in milliseconds, for the message to be received from the destination queue.\n"
+"The default value is 49.17:02:47.295."
+msgstr "指定从目标队列接收消息的最大时间长度（以毫秒为单位）。默认值为 49.17:02:47.295。"
+
+msgid ""
+"Specifies the maximum amount of time, in milliseconds, for the message to reach the queue.\n"
+"The default value is 49.17:02:47.295."
+msgstr "指定消息到达队列的最大时间长度（以毫秒为单位）。默认值为 49.17:02:47.295。"
+
+msgid ""
+"Indicates that this cmdlet sends the message as a transactional message."
+msgstr "表示此cmdlet会将该消息作为事务性消息发送。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Msmq.PowerShell.Commands.MessageQueue[]"
+msgstr "### Microsoft.Msmq POWERShellCommands.MessageQueue[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+msgstr "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+
+msgid "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+msgstr "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+
+msgid "[New-MsmqQueue](./New-MsmqQueue.md)"
+msgstr "[New-MsmqQueue](./New-MsmqQueue.md)"
+
+msgid "[Receive-MsmqQueue](./Receive-MsmqQueue.md)"
+msgstr "[接收 Msmq 队列](./Receive-MsmqQueue.md)"
+
+msgid "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+msgstr "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+
+msgid "[Set-MsmqQueue](./Set-MsmqQueue.md)"
+msgstr "[Set-MsmqQueue](./Set-MsmqQueue.md)"

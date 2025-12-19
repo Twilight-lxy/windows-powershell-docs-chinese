@@ -1,0 +1,91 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:33:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-MuxEchoResponder"
+msgstr "# Enable-MuxEchoResponder"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables an ICMP echo responder. This cmdlet has been deprecated."
+msgstr "启用 ICMP 回显响应功能。此命令已被弃用。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-MuxEchoResponder** cmdlet enables an ICMP echo responder in a "
+"multiplexer (MUX)."
+msgstr "`Enable-MuxEchoResponder` cmdlet 可以在多路复用器（MUX）中启用 ICMP 回声响应功能。"
+
+msgid ""
+"You should run this cmdlet on a MUX virtual machine, either locally or "
+"through remote PowerShell."
+msgstr "你应该在 MUX 虚拟机上运行此 cmdlet，既可以是在本地操作，也可以通过远程 PowerShell 来执行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable an echo responder"
+msgstr "### 示例 1：启用一个回显响应器"
+
+msgid "This command enables the specified echo responder."
+msgstr "此命令可启用指定的回显响应器（echo responder）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the ICMP sequence number of the echo responder to disable."
+msgstr "指定要禁用的回显响应器的 ICMP 序列号。"
+
+msgid ""
+"Specifies the target virtual IP address of the echo responder to enable."
+msgstr "指定要启用的 Echo 回应器的目标虚拟 IP 地址。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-MuxEchoResponder](./Disable-MuxEchoResponder.md)"
+msgstr "[Disable-MuxEchoResponder](./Disable-MuxEchoResponder.md)"

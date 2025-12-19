@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:17:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-WmsVirtualDesktopRole"
+msgstr "# 禁用 WMSVirtualDesktopRole 角色"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Disables a Hyper-V virtual desktop role."
+msgstr "禁用Hyper-V虚拟桌面角色。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Disable-WmsVirtualDesktopRole** cmdlet switches all stations from Virtual Desktop Infrastructure (VDI) mode to Remote Desktop Session Host (RDSH) mode, and then uninstalls the Hyper-V virtual desktop role.\n"
+"The system reboots to apply the changes if you specify the *Restart* parameter."
+msgstr ""
+"`Disable-WmsVirtualDesktopRole` cmdlet "
+"会将所有工作站从虚拟桌面基础设施（VDI）模式切换到远程桌面会话主机（RDSH）模式，然后卸载 Hyper-V 虚拟桌面相关组件。如果指定了 "
+"`Restart` 参数，系统将重新启动以应用这些更改。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable a virtual desktop"
+msgstr "### 示例 1：禁用虚拟桌面"
+
+msgid ""
+"This command switches all stations from Remote Desktop Virtualization Host "
+"(RDVH) sessions to RDSH sessions, removes the Hyper-V virtual desktop role, "
+"and automatically restarts the computer to apply the changes."
+msgstr "此命令会将所有终端从远程桌面虚拟化主机（RDVH）会话切换到RDSH会话，移除Hyper-V虚拟桌面角色，并自动重启计算机以应用这些更改。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Indicates that this operation automatically restarts the computer to apply "
+"the change."
+msgstr "表示此操作会自动重启计算机以应用所做的更改。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上该cmdlet并未被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-WmsVirtualDesktopRole](./Enable-WmsVirtualDesktopRole.md)"
+msgstr "[Enable-WmsVirtualDesktopRole](./Enable-WmsVirtualDesktopRole.md)"

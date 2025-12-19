@@ -1,0 +1,111 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:20:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMStoragePath"
+msgstr "# 获取虚拟机存储路径"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the storage paths in a storage resource pool."
+msgstr "获取存储资源池中的存储路径。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-VMStoragePath** cmdlet gets the storage paths in a storage "
+"resource pool."
+msgstr "`Get-VMStoragePath` cmdlet 可以获取存储资源池中的存储路径信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Gets the storage paths from virtual hard drive resource pool VHD1."
+msgstr "从虚拟硬盘资源池VHD1中获取存储路径。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。您可以输入一个计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which storage paths are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于获取存储路径的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行选择。默认值为本地计算机。可以通过使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the path for which matching storage paths are to be retrieved."
+msgstr "指定用于检索匹配存储路径的路径。"
+
+msgid ""
+"Specifies the name of the resource pool for which storage paths are to be "
+"retrieved."
+msgstr "指定用于获取存储路径的资源池的名称。"
+
+msgid ""
+"Specifies the type of the resource pool for which storage paths are to be retrieved.\n"
+"Valid values are:"
+msgstr "指定用于获取存储路径的资源池类型。有效值包括："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMStorageResourcePool"
+msgstr "### Microsoft.HyperV.PowerShell.VMStorageResourcePool"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

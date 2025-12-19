@@ -1,0 +1,136 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:09:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-HwCertTestCollectionToXml"
+msgstr "# 将硬件证书测试集合导出为XML格式"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Exports a test collection to an .xml file."
+msgstr "将测试集合导出为.xml文件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Export-HwCertTestCollectionToXml** cmdlet exports a test collection to an .xml file.\n"
+"For more information, see [Windows Hardware Certification Kit downloads](https://go.microsoft.com/fwlink/?LinkId=614978) in the Microsoft Developer Network (MSDN) Library."
+msgstr ""
+"`Export-HwCertTestCollectionToXml` cmdlet 将测试集合导出到 .xml "
+"文件中。有关更多信息，请参阅微软开发者网络（MSDN）库中的 [Windows "
+"硬件认证工具包下载](https://go.microsoft.com/fwlink/?LinkId=614978)。"
+
+msgid ""
+"After you export a test collection, you can use the **Merge-HwCertTestCollectionFromXml** cmdlet to merge it with other test collections.\n"
+"Use the **Import-HwCertTestCollectionFromXml** cmdlet to import test collections that you previously exported.\n"
+"After you import a test collection, you can filter it by using **TestCollectionRecord** properties, and then use this cmdlet to export the filtered test collection."
+msgstr ""
+"在导出某个测试集合后，你可以使用 `Merge-HwCertTestCollectionFromXml` cmdlet "
+"将它与其他测试集合合并。如果你之前已经导出了某些测试集合，可以使用 `Import-HwCertTestCollectionFromXml` "
+"cmdlet 将它们导入回来。导入测试集合后，可以通过 `TestCollectionRecord` 属性对其进行筛选，然后再使用该 cmdlet "
+"将筛选后的测试集合重新导出。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Filter a test collection"
+msgstr "### 示例 1：过滤一个测试集合"
+
+msgid ""
+"This command imports a test collection, finds the results that belong to a specified content level, and exports a new test collection .xml file that contains only those results.\n"
+"The command uses the **Import-HwCertTestCollectionFromXml** cmdlet to import a test collection named All.xml, as a **TestCollectionRecord** object, and then passes that object to the **Where-Object** cmdlet by using the pipeline operator.\n"
+"The **Where-Object** cmdlet filters the imported object for results belong to the Basic content level.\n"
+"For more information, type `Get-Help Where-Object`.\n"
+"The command passes those items to the **Export-HwCertTestCollectionToXml** cmdlet, which exports the test collection to the file named Basic.xml."
+msgstr ""
+"这个命令会导入一个测试集，找到属于指定内容级别的结果，然后导出一个新的 `.xml` 文件，其中仅包含这些结果。该命令使用 `Import-"
+"HwCertTestCollectionFromXml` cmdlet 将名为 `All.xml` 的测试集作为 "
+"`TestCollectionRecord` 对象导入进来，并通过管道运算符将该对象传递给 `Where-Object` cmdlet。`Where-"
+"Object` cmdlet 会过滤导入的对象，以找出属于 “Basic” 内容级别的结果。有关更多信息，请输入 `Get-Help Where-"
+"Object`。随后，这些结果会被传递给 `Export-HwCertTestCollectionToXml` cmdlet，该命令会将测试集导出到名为"
+" `Basic.xml` 的文件中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of **TestCollectionRecord** objects.\n"
+"To obtain a **TestCollectionRecord** object, use the **New-HwCertTestCollection** cmdlet.\n"
+"You can also use the **Merge-HwCertTestCollectionFromXml** cmdlet or the **Merge-HwCertTestCollectionFromPackage** cmdlet to obtain merged results, as a **TestCollectionRecord** object."
+msgstr ""
+"指定一个包含 **TestCollectionRecord** 对象的数组。要获取一个 **TestCollectionRecord** 对象，可以使用"
+" **New-HwCertTestCollection** cmdlet。您还可以使用 **Merge-"
+"HwCertTestCollectionFromXml** 或 **Merge-HwCertTestCollectionFromPackage** "
+"cmdlet 来合并结果，并将其作为 **TestCollectionRecord** 对象获取。"
+
+msgid "Specifies a full path for the exported file."
+msgstr "指定导出文件的完整路径。"
+
+msgid ""
+"Specifies a case-sensitive identifier that you assign to the exported test "
+"collection."
+msgstr "指定一个区分大小写的标识符，并将其分配给导出的测试集合。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.Kits.Hardware.Certification.TestCollectionRecord"
+msgstr ""
+"### Microsoft.Windows.Kits.Hardware.Certification.TestCollectionRecord"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Import-HwCertTestCollectionFromXml](./Import-"
+"HwCertTestCollectionFromXml.md)"
+msgstr "[从XML文件导入硬件证书测试集合](./Import-HwCertTestCollectionFromXml.md)"
+
+msgid "[New-HwCertTestCollection](./New-HwCertTestCollection.md)"
+msgstr "[New-HwCertTestCollection](./New-HwCertTestCollection.md)"
+
+msgid ""
+"[Merge-HwCertTestCollectionFromXml](./Merge-HwCertTestCollectionFromXml.md)"
+msgstr ""
+"[Merge-HwCertTestCollectionFromXml](./Merge-HwCertTestCollectionFromXml.md)"
+
+msgid ""
+"[Merge-HwCertTestCollectionFromPackage](./Merge-"
+"HwCertTestCollectionFromPackage.md)"
+msgstr ""
+"[Merge-HwCertTestCollectionFromPackage](./Merge-"
+"HwCertTestCollectionFromPackage.md)"

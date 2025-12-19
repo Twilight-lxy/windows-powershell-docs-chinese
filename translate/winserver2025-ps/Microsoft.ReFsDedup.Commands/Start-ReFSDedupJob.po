@@ -1,0 +1,132 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:12:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Start-ReFSDedupJob"
+msgstr "# 启动 ReFSDedupJob 任务"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Starts a deduplication job on the specified ReFS volume."
+msgstr "在指定的 ReFS 卷上启动一个去重任务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Start-ReFSDedupJob` cmdlet starts a deduplication job on the specified ReFS volume or to\n"
+"resume an existing job that was previously paused or stopped."
+msgstr ""
+"`Start-ReFSDedupJob` cmdlet 会在指定的 ReFS 卷上启动一个去重任务，或者恢复之前被暂停或停止的现有去重任务。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example starts a deduplication job on the `D:` drive using the default "
+"settings."
+msgstr "这个示例使用默认设置，在`D:`驱动器上启动了一个去重任务。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the chunk size to use during compression."
+msgstr "指定在压缩过程中使用的块大小。"
+
+msgid ""
+"Specifies the compression format to use during the job. Acceptable values "
+"are:"
+msgstr "指定在任务执行过程中使用的压缩格式。可接受的值包括："
+
+msgid "Specifies the compression level to use during the job."
+msgstr "指定在作业过程中使用的压缩级别。"
+
+msgid "Specifies the compression tuning to use during the job."
+msgstr "指定在作业执行过程中使用的压缩调整参数。"
+
+msgid ""
+"Specifies the maximum number of files that can be open concurrently during "
+"the job."
+msgstr "指定在任务执行过程中可以同时打开的最大文件数量。"
+
+msgid "Specifies the maximum percentage of CPU to use during the job."
+msgstr "指定在执行作业期间允许使用的最大CPU利用率（以百分比表示）。"
+
+msgid "Specifies the decompression tuning to use during the job."
+msgstr "指定在作业执行过程中使用的解压优化参数（即解压调优设置）。"
+
+msgid "Specifies the duration of the job."
+msgstr "指定作业的持续时间。"
+
+msgid "Specifies one or more file extensions to exclude from the job."
+msgstr "指定一个或多个文件扩展名，以排除在作业处理之外。"
+
+msgid "Specifies one or more folders to exclude from the job."
+msgstr "指定一个或多个要从任务中排除的文件夹。"
+
+msgid ""
+"Indicates whether to run a full deduplication job on the specified ReFS volume. If this parameter\n"
+"isn't specified, the job will run in incremental mode where only new or changed files will be\n"
+"processed."
+msgstr "该参数用于指示是否对指定的 ReFS 卷执行完整的去重操作。如果未指定此参数，作业将以增量模式运行，仅处理新文件或已更改的文件。"
+
+msgid ""
+"Specifies the minimum number of hours that must elapse before a file can be "
+"deduplicated."
+msgstr "指定文件在可以被去重之前必须经过的最短时间（以小时为单位）。"
+
+msgid "Specifies the recompression tuning to use during deduplication."
+msgstr "指定在去重过程中使用的重新压缩调整参数。"
+
+msgid ""
+"Specifies the ReFS volume on which to run the job. Enter one or more volume IDs, drive letters, or\n"
+"volume GUID paths. For drive letters, use the format `D:`. For volume GUID paths, use the format\n"
+"`\\\\?\\Volume{{GUID}}\\`. Separate multiple volumes with a comma."
+msgstr ""
+"指定用于运行任务的 ReFS 卷。可以输入一个或多个卷 ID、驱动器字母或卷 GUID 路径。对于驱动器字母，请使用格式 `D:`；对于卷 GUID "
+"路径，请使用格式 `\\\\?\\Volume{{GUID}}`。多个卷之间用逗号分隔。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Stop-ReFSDedupJob](Stop-ReFSDedupJob.md)"
+msgstr "[Stop-ReFSDedupJob](Stop-ReFSDedupJob.md)"

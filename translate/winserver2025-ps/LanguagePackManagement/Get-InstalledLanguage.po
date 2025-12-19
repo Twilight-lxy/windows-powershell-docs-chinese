@@ -1,0 +1,99 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:00:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"The Get-InstalledLanguage cmdlet lets you see which languages are installed "
+"in a running Windows installation"
+msgstr "`Get-InstalledLanguage` cmdlet 可以让你查看当前正在运行的 Windows 系统中安装了哪些语言。"
+
+msgid "# Get-InstalledLanguage"
+msgstr "# Get-InstalledLanguage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Returns information about the installed languages on a device."
+msgstr "返回有关设备上已安装语言的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"Returns a list of the installed languages and related Language features "
+"installed on the device."
+msgstr "返回一个列表，其中包含设备上安装的语言以及相关的语言功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: See what languages are installed on a device"
+msgstr "### 示例 1：查看设备上安装了哪些语言"
+
+msgid ""
+"This command will show all of the language components that are installed on "
+"a device."
+msgstr "这个命令会显示设备上安装的所有语言组件。"
+
+msgid ""
+"### Example 2: See which language components are installed for a particular "
+"language"
+msgstr "### 示例 2：查看某种特定语言安装了哪些语言组件"
+
+msgid ""
+"This command will show the language features that are installed for the en-"
+"US language."
+msgstr "这条命令会显示为“en-US”语言安装的语言特性（即该语言支持的功能或特性）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Shows the language components that are installed for the specified language."
+msgstr "显示为指定语言安装的语言相关组件。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"System.Collections.Generic.List<Microsoft.LanguagePackManagement.Powershell.Commands.InstalledLanguage>"
+msgstr ""
+"### "
+"System.Collections.Generic.List<Microsoft(LanguagePackManagement.PowershellCommands.InstalledLanguage>"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-SystemPreferredUILanguage](Set-SystemPreferredUILanguage.md)"
+msgstr "[Set-SystemPreferredUILanguage](Set-SystemPreferredUILanguage.md)"

@@ -1,0 +1,216 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:38:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-NetAdapterSriov"
+msgstr "# 启用 NetAdapter 的 Sriov 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables SR-IOV on a network adapter."
+msgstr "在网络适配器上启用SR-IOV功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称排序（默认值）"
+
+msgid "### ByInstanceID"
+msgstr "### 按实例ID（ByInstanceID）"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject (cdxml)"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-NetAdapterSriov** cmdlet enables Single-Root I/O Virtualization (SR-IOV) on a network adapter.\n"
+"SR-IOV enables network traffic to by-pass the software switch layer of the Hyper-V virtualization stack.\n"
+"As a result, the I/O overhead in the software emulation layer is diminished and can achieve network performance that is nearly the same performance as in non-virtualized environments.\n"
+"SR-IOV can only be used if enabled on the network adapter."
+msgstr ""
+"**Enable-NetAdapterSriov** cmdlet 可以在网络适配器上启用单根 I/O 虚拟化（Single-Root I/O "
+"Virtualization，简称 SR-IOV）。SR-IOV 允许网络流量直接绕过 Hyper-V 虚拟化堆栈中的软件交换层，从而减少软件仿真层面的"
+" I/O 开销，并实现接近于非虚拟化环境下的网络性能。只有当网络适配器已启用 SR-IOV 功能时，才能使用该功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable SR-IOV for the specified network adapter"
+msgstr "#### 示例 1：为指定的网络适配器启用 SR-IOV 功能"
+
+msgid ""
+"This command enables SR-IOV for the network adapter named Ethernet 1 and "
+"restarts the network adapter."
+msgstr "此命令为名为“Ethernet 1”的网络适配器启用SR-IOV（直接内存访问）功能，并重新启动该网络适配器。"
+
+msgid ""
+"### Example 2: Enable SR-IOV on a network adapter that has the specified "
+"description"
+msgstr "### 示例 2：在具有指定描述的网络适配器上启用 SR-IOV"
+
+msgid ""
+"This command enables SR-IOV for the network adapter with the description "
+"Contoso 12345 Gigabit Network Device and restarts the network adapter."
+msgstr "此命令为描述为“Contoso 12345 千兆网络设备”的网络适配器启用 SR-IOV（直接内存访问）功能，并重新启动该网络适配器。"
+
+msgid ""
+"### Example 3: Enable SRI-OV for the specified network adapter using the "
+"InputObject parameter"
+msgstr "### 示例 3：使用 InputObject 参数为指定的网络适配器启用 SRI-OV 功能"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的形式运行该cmdlet。使用此参数来执行那些需要很长时间才能完成的任务。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"该参数表示此 cmdlet "
+"在操作过程中会同时包含可见的网络适配器和隐藏的网络适配器。默认情况下，仅包含可见的网络适配器。如果在识别网络适配器时使用了通配符，并且指定了此参数，则该通配符字符串将用于匹配所有类型（包括隐藏的和可见的）的网络适配器。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此 cmdlet 的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传递给此 cmdlet。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述的数组。对于物理网络适配器来说，这通常是网络适配器的供应商名称后跟型号和描述，例如 `Contoso 12345 "
+"千兆网络设备`。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Indicates that the cmdlet does not restart the network adapter after completing the operation.\n"
+"Many advanced properties require restarting the network adapter before the new settings take effect."
+msgstr "表示该cmdlet在完成操作后不会重启网络适配器。许多高级属性要求在新设置生效之前先重启网络适配器。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令（cmdlet）的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM 命令的数量来计算该 cmdlet 的最佳限制值。这个限制仅适用于当前执行的命令，而不影响整个会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterSriovSettingData[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterSriovSettingData[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterSriovSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterSriovSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-NetAdapterSriov](./Disable-NetAdapterSriov.md)"
+msgstr "[禁用 NetAdapterSRIOV 功能](./Disable-NetAdapterSriov.md)"
+
+msgid "[Get-NetAdapter](./Get-NetAdapter.md)"
+msgstr "[Get-NetAdapter](./Get-NetAdapter.md)"
+
+msgid "[Get-NetAdapterSriov](./Get-NetAdapterSriov.md)"
+msgstr "[Get-NetAdapterSriov](./Get-NetAdapterSriov.md)"
+
+msgid "[Get-NetAdapterSriovVf](./Get-NetAdapterSriovVf.md)"
+msgstr "[Get-NetAdapterSriovVf](./Get-NetAdapterSriovVf.md)"
+
+msgid "[Get-NetAdapterSriov](./Get-NetAdapterSriov.md)"
+msgstr "[Get-NetAdapterSriov](./Get-NetAdapterSriov.md)"

@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:45:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-DtcDiagnosticTransaction"
+msgstr "# New-DtcDiagnosticTransaction"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Creates a new transaction in a Transaction Manager on the local computer."
+msgstr "在本地计算机上的事务管理器中创建一个新的事务。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-DtcDiagnosticTransaction** cmdlet creates a new transaction in a Transaction Manager (TM) on the local computer.\n"
+"By default it creates a transaction on the default transaction manager on the local computer.\n"
+"This cmdlet returns a transaction object that you can pass to other cmdlets."
+msgstr ""
+"`New-DtcDiagnosticTransaction` cmdlet 在本地计算机的事务管理器（Transaction Manager，简称 "
+"TM）中创建一个新事务。默认情况下，它会使用本地计算机上的默认事务管理器来创建事务。此 cmdlet 会返回一个事务对象，您可以将该对象传递给其他 "
+"cmdlets。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a diagnostic transaction"
+msgstr "### 示例 1：创建一个用于诊断问题的交易"
+
+msgid ""
+"This command creates a new serializable diagnostic transaction with a "
+"timeout of 60 seconds."
+msgstr "这个命令创建了一个新的、可序列化的诊断事务，其超时时间为 60 秒。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the isolation level for a transaction.The acceptable values for "
+"this parameter are:"
+msgstr "指定事务的隔离级别。该参数的可接受值为："
+
+msgid ""
+"Specifies the timeout, in seconds, for the transaction.\n"
+"If you do not specify this parameter, the cmdlet uses the default timeout value specified in the **System.Transactions.Transaction** object."
+msgstr ""
+"指定事务的超时时间（以秒为单位）。如果您不指定此参数，cmdlet 将使用 **System.Transactions(Transaction** "
+"对象中指定的默认超时值。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Complete-DtcDiagnosticTransaction](./Complete-DtcDiagnosticTransaction.md)"
+msgstr ""
+"[Complete-DtcDiagnosticTransaction](./Complete-DtcDiagnosticTransaction.md)"
+
+msgid ""
+"[Receive-DtcDiagnosticTransaction](./Receive-DtcDiagnosticTransaction.md)"
+msgstr ""
+"[Receive-DtcDiagnosticTransaction](./Receive-DtcDiagnosticTransaction.md)"
+
+msgid "[Send-DtcDiagnosticTransaction](./Send-DtcDiagnosticTransaction.md)"
+msgstr "[Send-DtcDiagnosticTransaction](./Send-DtcDiagnosticTransaction.md)"
+
+msgid "[Undo-DtcDiagnosticTransaction](./Undo-DtcDiagnosticTransaction.md)"
+msgstr "[Undo-DtcDiagnosticTransaction](./Undo-DtcDiagnosticTransaction.md)"

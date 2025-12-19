@@ -1,0 +1,123 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:18:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMReplicationAuthorizationEntry"
+msgstr "# 获取虚拟机复制授权条目"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the authorization entries of a Replica server."
+msgstr "获取副本服务器的授权信息（authorization entries）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-VMReplicationAuthorizationEntry** cmdlet gets the replication "
+"authorization entries specified for a Replica server."
+msgstr "`Get-VMReplicationAuthorizationEntry` cmdlet 用于获取为副本服务器指定的复制授权信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example gets the replication authorization entries  for the local "
+"Replica server."
+msgstr ""
+"这个示例获取了本地复制服务器（Replica server）的复制授权信息（replication authorization entries）。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example gets the replication authorization entry for an allowed primary"
+" server named server01.domain01.contoso.com."
+msgstr "这个示例获取了名为 server01.domain01.contoso.com 的允许使用的主服务器的复制授权条目。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the allowed primary server for which replication authorization "
+"entries are to be retrieved."
+msgstr "指定允许的主服务器，用于从中检索复制授权条目。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts from which replication authorization entries are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于获取复制授权条目的 Hyper-V 主机。允许使用 NetBIOS 名称、IP "
+"地址和完全限定域名作为主机标识。默认值为本地计算机。可以使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the location where virtual hard disk files are stored when an "
+"authorized primary server sends replication data to the specified Replica "
+"server."
+msgstr "当授权的主服务器将复制数据发送到指定的副本服务器时，该选项指定了虚拟硬盘文件存储的位置。"
+
+msgid ""
+"Gets the replication authorization entries that have the specified value for"
+" TrustGroup."
+msgstr "获取那些在 `TrustGroup` 字段中具有指定值的复制授权条目。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMReplicationAuthorizationEntry"
+msgstr "### Microsoft.HyperV.PowerShell.VMReplicationAuthorizationEntry"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

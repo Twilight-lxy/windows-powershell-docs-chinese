@@ -1,0 +1,99 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:38:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-MSDSMGlobalDefaultLoadBalancePolicy"
+msgstr "# 设置 MSDSMGlobalDefaultLoadBalancePolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the default load balance policy for MPIO devices."
+msgstr "为 MPIO 设备设置默认的负载均衡策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-MSDSMGlobalDefaultLoadBalancePolicy** cmdlet sets the default load balance policy for Microsoft Multipath I/O (MPIO) devices.\n"
+"Microsoft Device Specific Module (MSDSM) applies this policy only to devices that it claims after you set the policy."
+msgstr ""
+"`Set-MSDSMGlobalDefaultLoadBalancePolicy` cmdlet 用于设置 Microsoft "
+"多路径输入/输出（MPIO）设备的默认负载均衡策略。Microsoft 设备特定模块（MSDSM）仅在您设置该策略后，针对其管理的设备应用此策略。"
+
+msgid ""
+"Use the **Get-MSDSMGlobalDefaultLoadBalancePolicy** cmdlet to see the "
+"current default policy."
+msgstr "使用 `Get-MSDSMGlobalDefaultLoadBalancePolicy` cmdlet 来查看当前的默认策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set round robin as default policy"
+msgstr "### 示例 1：将轮询（round-robin）设置为默认策略"
+
+msgid "This command sets the default load balance policy to round robin."
+msgstr "此命令将默认的负载均衡策略设置为轮询（round robin）。"
+
+msgid "### Example 2: Clear default policy"
+msgstr "### 示例 2：清除默认策略"
+
+msgid ""
+"This command clears any current configured default load balance policy."
+msgstr "这个命令会清除当前配置的所有默认负载均衡策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a default value for load balance policy.\n"
+"The acceptable values for this parameter are:"
+msgstr "为负载均衡策略指定一个默认值。该参数的可接受值为："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-MSDSMGlobalDefaultLoadBalancePolicy](./Get-"
+"MSDSMGlobalDefaultLoadBalancePolicy.md)"
+msgstr ""
+"[Get-MSDSMGlobalDefaultLoadBalancePolicy](./Get-"
+"MSDSMGlobalDefaultLoadBalancePolicy.md)"

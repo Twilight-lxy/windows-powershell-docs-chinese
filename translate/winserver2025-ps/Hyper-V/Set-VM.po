@@ -1,0 +1,233 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:00:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VM"
+msgstr "# Set-VM"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Configures a virtual machine."
+msgstr "配置一台虚拟机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The **Set-VM** cmdlet configures a virtual machine."
+msgstr "**Set-VM** cmdlet 用于配置虚拟机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Configures virtual machine TestVM to shut down when the Hyper-V host shuts "
+"down."
+msgstr "配置虚拟机 TestVM，在 Hyper-V 主机关闭时也自动关闭。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Stops virtual machine TestVM, sets it to use dynamic memory, sets its "
+"maximum amount of memory to 2GB, sets it to use 2 virtual processors, and "
+"starts it."
+msgstr "停止虚拟机 TestVM，将其设置为使用动态内存，将其最大内存容量设置为 2GB，将其配置为使用 2 个虚拟处理器，然后重新启动该虚拟机。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies that no error is to be thrown if the specified path is not verified as accessible by the cluster.\n"
+"This parameter is applicable to clustered virtual machines."
+msgstr "指定即使指定的路径无法被集群访问（即验证结果为“不可访问”），也不应抛出错误。此参数适用于集群化的虚拟机。"
+
+msgid "Specifies whether automatic checkpoints are enabled."
+msgstr "指定是否启用自动检查点功能。"
+
+msgid ""
+"Specifies the action to take when the VM encounters a critical error, and exceeds the timeout duration specified by the **AutomaticCriticalErrorActionTimeout** cmdlet.\n"
+"The acceptable values for this parameter are: Pause and None."
+msgstr ""
+"该参数用于指定当虚拟机（VM）遇到严重错误且超出了由 **AutomaticCriticalErrorActionTimeout** cmdlet "
+"指定的超时时间时应执行的操作。此参数的可接受值包括：Pause 和 None。"
+
+msgid ""
+"Specifies the amount of time, in minutes, to wait in critical pause before "
+"powering off the virtual machine."
+msgstr "指定在关闭虚拟机之前需要进行关键暂停（critical pause）的时间长度（以分钟为单位）。"
+
+msgid ""
+"Specifies the action the virtual machine is to take upon start.\n"
+"Allowed values are **Nothing**, **StartIfRunning**, and **Start**."
+msgstr ""
+"指定虚拟机启动时应执行的操作。允许的值有：**Nothing**（不执行任何操作）、**StartIfRunning**（如果在运行中则启动）和**Start**（直接启动）。"
+
+msgid ""
+"Specifies the number of seconds by which the virtual machine's start should "
+"be delayed."
+msgstr "指定虚拟机启动应延迟的秒数。"
+
+msgid ""
+"Specifies the action the virtual machine is to take when the virtual machine host shuts down.\n"
+"Allowed values are **TurnOff**, **Save**, and **ShutDown**."
+msgstr ""
+"指定虚拟机在主机关闭时应执行的操作。允许的值有：**TurnOff**（关闭）、**Save**（保存）和**ShutDown**（直接关机）。"
+
+msgid ""
+"Allows you to configure the type of checkpoints created by Hyper-V.\n"
+"The acceptable values for this parameter are:"
+msgstr "允许您配置由 Hyper-V 创建的检查点的类型。该参数的可接受值包括："
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。请输入计算机名称或会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual machine is to be configured.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于配置虚拟机的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名来进行选择。默认值是本地计算机。可以使用 "
+"“localhost” 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that the virtual machine is to be configured to use dynamic "
+"memory."
+msgstr "指定要将虚拟机配置为使用动态内存。"
+
+msgid ""
+"Specifies whether this virtual machine uses guest controlled cache types."
+msgstr "指定这台虚拟机是否使用由客户操作系统控制的缓存类型。"
+
+msgid ""
+"Specifies whether virtual machine connection in basic mode locks the console"
+" after a user disconnects."
+msgstr "指定在基本模式下，当用户断开连接后，虚拟机连接是否会导致控制台被锁定。"
+
+msgid ""
+"Specifies the maximum amount of memory that the virtual machine is to be allocated.\n"
+"(Applies only to virtual machines using dynamic memory.)"
+msgstr "指定虚拟机可分配的最大内存量。（仅适用于使用动态内存的虚拟机。）"
+
+msgid ""
+"Specifies the minimum amount of memory that the virtual machine is to be allocated.\n"
+"(Applies only to virtual machines using dynamic memory.)"
+msgstr "指定应为虚拟机分配的最小内存量。（仅适用于使用动态内存的虚拟机。）"
+
+msgid ""
+"Specifies the amount of memory that the virtual machine is to be allocated upon startup.\n"
+"(If the virtual machine does not use dynamic memory, then this is the static amount of memory to be allocated.)"
+msgstr "指定虚拟机启动时所要分配的内存量。（如果虚拟机不使用动态内存，则此即为要分配的静态内存量。）"
+
+msgid "Specifies the name of the virtual machine to be configured."
+msgstr "指定要配置的虚拟机的名称。"
+
+msgid "Specifies the name to which the virtual machine is to be renamed."
+msgstr "指定用于重命名虚拟机的名称。"
+
+msgid "Specifies notes to be associated with the virtual machine."
+msgstr "指定要与虚拟机关联的备注信息。"
+
+msgid ""
+"Specifies that an object is to be passed through to the pipeline "
+"representing the virtual machine to be configured."
+msgstr "指定要将某个对象传递给表示要配置的虚拟机的管道（pipeline）。"
+
+msgid "Specifies the number of virtual processors for the virtual machine."
+msgstr "指定虚拟机的虚拟处理器数量。"
+
+msgid "Specifies the folder in which the Smart Paging file is to be stored."
+msgstr "指定用于存储“智能分页”文件的文件夹。"
+
+msgid ""
+"Specifies the folder in which the virtual machine is to store its snapshot "
+"files."
+msgstr "指定用于存储虚拟机快照文件的文件夹。"
+
+msgid ""
+"This cmdlet configures the virtual machine to use static memory.\n"
+"Specify the amount of static memory to allocate by using the **MemoryStartupBytes** parameter."
+msgstr "此cmdlet用于配置虚拟机以使用静态内存。请使用**MemoryStartupBytes**参数指定要分配的静态内存大小。"
+
+msgid "Specifies the virtual machine to be configured."
+msgstr "指定要配置的虚拟机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine"
+msgstr "### Microsoft.HyperV.PowerShell.VirtualMachine"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了**-PassThru**选项……"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

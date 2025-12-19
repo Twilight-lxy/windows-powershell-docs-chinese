@@ -1,0 +1,100 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:17:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-HgsAttestationTpmHost"
+msgstr "# 删除 HGS Attestation TpmHost"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Removes a guarded host with TPM 2.0 from the Attestation service in HGS."
+msgstr "从HGS（Hardware Security Module）的认证服务中移除使用了TPM 2.0技术的受保护主机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-HgsAttestationTpmHost** cmdlet removes a guarded host from the Attestation service in Host Guardian Service (HGS).\n"
+"Use this cmdlet for hosts that have trusted platform module (TPM) 2.0 hardware, and that were added by using the **Add-HgsAttestationTpmHost** cmdlet."
+msgstr ""
+"`Remove-HgsAttestationTpmHost` cmdlet 用于将受保护的主机从 Host Guardian Service (HGS)"
+" 的 Attestation 服务中移除。该 cmdlet 适用于那些配备了 Trusted Platform Module (TPM) 2.0 "
+"硬件，并且是通过 `Add-HgsAttestationTpmHost` cmdlet 添加到系统中的主机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a TPM host"
+msgstr "### 示例 1：移除一个 TPM 主机"
+
+msgid ""
+"This command removes a host named TpmHost21 from the Attestation service."
+msgstr "此命令会将名为 TpmHost21 的主机从认证服务中删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the friendly name of the guarded host that this cmdlet removes "
+"from the Attestation service."
+msgstr "指定该命令行参数要从认证服务中删除的保护主机的友好名称。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-HgsAttestationTpmHost](./Add-HgsAttestationTpmHost.md)"
+msgstr "[Add-HgsAttestationTpmHost](./Add-HgsAttestationTpmHost.md)"
+
+msgid "[Get-HgsAttestationTpmHost](./Get-HgsAttestationTpmHost.md)"
+msgstr "[Get-HgsAttestationTpmHost](./Get-HgsAttestationTpmHost.md)"

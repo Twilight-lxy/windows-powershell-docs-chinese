@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:19:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Open-WmsVirtualDesktop"
+msgstr "# Open-WmsVirtualDesktop"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Opens a window connected to a virtual desktop template."
+msgstr "打开一个窗口，该窗口连接到虚拟桌面模板。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Open-WmsVirtualDesktop** cmdlet opens a window connected to the specified virtual desktop template.\n"
+"This enables you to customize the virtual desktop template in order to customize virtual desktops that you create."
+msgstr ""
+"`Open-WmsVirtualDesktop` 这个 cmdlet "
+"会打开一个窗口，该窗口连接到指定的虚拟桌面模板。通过这个功能，你可以自定义该虚拟桌面模板，从而创建出符合自己需求的虚拟桌面。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Open a window to a virtual desktop template"
+msgstr "#### 示例 1：打开一个窗口，进入虚拟桌面模板"
+
+msgid ""
+"This command opens a window that is connected to the virtual desktop "
+"template with the ID 53F56307-B6BF-11D0-94F2-00A0C91EFB8B."
+msgstr "这个命令会打开一个窗口，该窗口连接到虚拟桌面模板，其ID为53F56307-B6BF-11D0-94F2-00A0C91EFB8B。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the name of the Active Directory domain that contains the virtual "
+"desktop template."
+msgstr "指定包含虚拟桌面模板的活动目录（Active Directory）域的名称。"
+
+msgid ""
+"Specifies the Hyper-V virtual machine ID of the virtual desktop template."
+msgstr "指定虚拟桌面模板的 Hyper-V 虚拟机 ID。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WmsVirtualDesktop](./Get-WmsVirtualDesktop.md)"
+msgstr "[Get-WmsVirtualDesktop](./Get-WmsVirtualDesktop.md)"
+
+msgid "[Import-WmsVirtualDesktop](./Import-WmsVirtualDesktop.md)"
+msgstr "[Import-WmsVirtualDesktop](./Import-WmsVirtualDesktop.md)"
+
+msgid "[New-WmsVirtualDesktop](./New-WmsVirtualDesktop.md)"
+msgstr "[New-WmsVirtualDesktop](./New-WmsVirtualDesktop.md)"

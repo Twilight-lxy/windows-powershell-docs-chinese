@@ -1,0 +1,236 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:44:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Set-GatewayTunnel"
+msgstr "# Set-GatewayTunnel"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "{{ Fill in the Synopsis }}"
+msgstr "{{ 填写剧情简介 }}"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "{{ Add example description here }}"
+msgstr "{{ 在这里添加示例描述 }}"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "{{ Fill AdminStatus Description }}"
+msgstr "{{ 填写管理员状态描述 }}"
+
+msgid "{{ Fill AsJob Description }}"
+msgstr "{{ 填写工作描述内容 }}"
+
+msgid "{{ Fill AutoConnectEnabled Description }}"
+msgstr "{{ Fill AutoConnectEnabled Description }}"
+
+msgid "{{ Fill CimSession Description }}"
+msgstr "{{ 填写 CimSession 的描述内容 }}"
+
+msgid "{{ Fill ConnectReason Description }}"
+msgstr "{{ 填写连接原因的描述 }}"
+
+msgid "{{ Fill Dhgroup Description }}"
+msgstr "{{ 填写 Dhgroup 描述 }}"
+
+msgid "{{ Fill DpdTimeout Description }}"
+msgstr "{{ 填写 DPDTimeout 的描述 }}"
+
+msgid "{{ Fill EncryptionType Description }}"
+msgstr "{{ 填写加密类型并描述该加密类型的用途 }}"
+
+msgid "{{ Fill IkeEncryption Description }}"
+msgstr "{{ 填写 Ike 加密描述 }}"
+
+msgid "{{ Fill IkeIntegrity Description }}"
+msgstr "{{ 填写关于IkeIntegrity完整性的描述 }}"
+
+msgid "{{ Fill IpsecEncryption Description }}"
+msgstr "{{ 填写 IPsec 加密说明 }}"
+
+msgid "{{ Fill IpsecIntegrity Description }}"
+msgstr "{{ 填写 IPsec 整合性描述 }}"
+
+msgid "{{ Fill IsConnectionNATed Description }}"
+msgstr "{{ 填写有关 ConnectionNAT 的描述 }}"
+
+msgid "{{ Fill LocalExemptRoutes Description }}"
+msgstr "{{ 填写LocalExemptRoutes的描述 }}"
+
+msgid "{{ Fill LocalIp Description }}"
+msgstr "{{ 填写本地IP地址的描述 }}"
+
+msgid "{{ Fill LocalSubnets Description }}"
+msgstr "{{ 填写本地子网的描述 }}"
+
+msgid "{{ Fill MMSALifeTimeInSeconds Description }}"
+msgstr "{{ 填写 MMSALifeTimeInSeconds 的描述 }}"
+
+msgid "{{ Fill Pfsgroup Description }}"
+msgstr "{{ 填写 Pfsgroup 描述 }}"
+
+msgid "{{ Fill ProtocolType Description }}"
+msgstr "{{ 填写协议类型描述 }}"
+
+msgid "{{ Fill RemoteExemptRoutes Description }}"
+msgstr "{{ 填写 RemoteExemptRoutes 的描述 }}"
+
+msgid "{{ Fill RemoteIp Description }}"
+msgstr "{{ 填写RemoteIp描述 }}"
+
+msgid "{{ Fill Routes Description }}"
+msgstr "{{ 填充路线描述 }}"
+
+msgid "{{ Fill RoutingDomainName Description }}"
+msgstr "{{ 填写 RoutingDomainName 的描述 }}"
+
+msgid "{{ Fill SALifeKilloBytes Description }}"
+msgstr "请帮我填写 {{ Fill SALIFEKilloBytes Description }}"
+
+msgid "{{ Fill SALifeTimeInSeconds Description }}"
+msgstr "{{ 填写 SALIFETimeInSeconds 的描述 }}"
+
+msgid "{{ Fill SharedSecret Description }}"
+msgstr "{{ 填写 SharedSecret 的描述 }}"
+
+msgid "{{ Fill Standby Description }}"
+msgstr "{{ 填充备用说明内容 }}"
+
+msgid "{{ Fill ThrottleLimit Description }}"
+msgstr "{{ 填写 ThrottleLimit 的描述内容 }}"
+
+msgid "{{ Fill TunnelId Description }}"
+msgstr "{{ 填充隧道ID及描述 }}"
+
+msgid "{{ Fill TunnelIdentity Description }}"
+msgstr "{{ 填写隧道身份描述 }}"
+
+msgid "{{ Fill TunnelName Description }}"
+msgstr "{{ 填写隧道名称及描述 }}"
+
+msgid "{{ Fill UseNarrowTrafficSelectors Description }}"
+msgstr "{{ Fill UseNarrowTrafficselectors Description }}"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Boolean"
+msgstr "### System(Boolean)"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.PS_GatewayTunnel.ProtocolType"
+msgstr ""
+"### Microsoft.PowerShell Cmdletization "
+"GeneratedTypes.PS_GatewayTunnel.ProtocolType"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.PS_GatewayTunnel.EncryptionType"
+msgstr ""
+"### Microsoft.PowShell Cmdletization "
+"GeneratedTypes.PS_GatewayTunnel.EncryptionType"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.PS_GatewayTunnel.IpsecEncryption"
+msgstr ""
+"### "
+"Microsoft.PowerShellCmdletizationGeneratedTypes.PS_GatewayTunnel.IpsecEncryption"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.PS_GatewayTunnel.IpsecIntegrity"
+msgstr ""
+"### Microsoft.PowerShell "
+"Cmdletization.GenerateTypes.PS_GatewayTunnel.IpsecIntegrity"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.PS_GatewayTunnel.Pfsgroup"
+msgstr ""
+"### Microsoft.PowerShell "
+"CmdletizationGeneratedTypes.PS_GatewayTunnel.Pfsgroup"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.PS_GatewayTunnel.IkeEncryption"
+msgstr ""
+"### Microsoft.PowerShell "
+"Cmdletization.GenerateTypes.PS_GatewayTunnel.IkeEncryption"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.PS_GatewayTunnel.IkeIntegrity"
+msgstr ""
+"### Microsoft.PowerShell Cmdletization "
+"GeneratedTypes.PS_GatewayTunnel.IkeIntegrity"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.PS_GatewayTunnel.Dhgroup"
+msgstr ""
+"### Microsoft.PowerShell Cmdletization "
+"GeneratedTypes.PS_GatewayTunnel.Dhgroup"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.PS_GatewayTunnel.ConnectReason"
+msgstr ""
+"### Microsoft.PowerShell Cmdletization "
+"GeneratedTypes.PS_GatewayTunnel.ConnectReason"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance#PS_GatewayTunnel"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance#PS_GatewayTunnel"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

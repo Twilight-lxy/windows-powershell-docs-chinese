@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:41:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WinUserLanguageList"
+msgstr "# Get-WinUserLanguageList"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the language list for the current user account."
+msgstr "获取当前用户账户的语言列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WinUserLanguageList** cmdlet returns the current user language settings.\n"
+"These settings include input method, spelling setting, text prediction setting, and handwriting input mode.\n"
+"For more information, see [CultureInfo Class](https://go.microsoft.com/fwlink/?LinkID=242306) and [Manage the input and display language settings in Windows 10](https://support.microsoft.com/help/4496404/windows-10-manage-the-input-and-display-language#input_language)."
+msgstr ""
+"`Get-WinUserLanguageList` cmdlet "
+"可以返回当前用户的语言设置。这些设置包括输入法、拼写设置、文本预测设置以及手写输入模式等信息。有关更多详细信息，请参阅 [CultureInfo "
+"类](https://go.microsoft.com/fwlink/?LinkID=242306) 和 [在 Windows 10 "
+"中管理输入和显示语言设置](https://support.microsoft.com/help/4496404/windows-10-manage-"
+"the-input-and-display-language#input_language)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get language list for the current account"
+msgstr "### 示例 1：获取当前账户的语言列表"
+
+msgid ""
+"This command returns the language list for the current user account, BCP-47 "
+"tags, and the corresponding display name."
+msgstr "此命令返回当前用户账户的语言列表、BCP-47标签以及相应的显示名称。"
+
+msgid "### Example 2: Display input methods"
+msgstr "### 示例 2：显示输入方法"
+
+msgid ""
+"This command returns the list of currently enabled input methods as a TIP "
+"string."
+msgstr "该命令以 TIP 字符串的形式返回当前已启用的输入方法列表。"
+
+msgid "### Example 3: Display an autonym property"
+msgstr "### 示例 3：显示一个自命名（autonym）属性"
+
+msgid ""
+"This command returns the autonym property of the first item in the user "
+"language list."
+msgstr "该命令返回用户语言列表中第一个项目的“autonym”属性值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"System.Collections.Generic.List<Microsoft.InternationalSettings.Commands.WinUserLanguage>"
+msgstr ""
+"### "
+"System.Collections.Generic.List<Microsoft.InternationalSettingscommands.WinUserLanguage>"
+
+msgid ""
+"This cmdlet returns a list of **WinUserLanguage** objects that contain one or more languages and associated properties from the current user account's language list.\n"
+"For information about the **Generic.List** object, see [List(Of T) Class](https://go.microsoft.com/fwlink/?LinkID=243342)."
+msgstr ""
+"此 cmdlet 返回一个 **WinUserLanguage** 对象列表，这些对象包含当前用户账户语言列表中的一个或多个语言及相关属性。有关 "
+"**Generic.List** 对象的详细信息，请参阅 [List(Of T) "
+"类](https://go.microsoft.com/fwlink/?LinkID=243342)。"
+
+msgid "The generic list object supports the following methods:"
+msgstr "通用列表对象支持以下方法："
+
+msgid "The output language object contains the following properties:"
+msgstr "`outputLanguage` 对象包含以下属性："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-WinUserLanguageList](./New-WinUserLanguageList.md)"
+msgstr "[New-WinUserLanguageList](./New-WinUserLanguageList.md)"
+
+msgid "[Set-WinUserLanguageList](./Set-WinUserLanguageList.md)"
+msgstr "[Set-WinUserLanguageList](./Set-WinUserLanguageList.md)"

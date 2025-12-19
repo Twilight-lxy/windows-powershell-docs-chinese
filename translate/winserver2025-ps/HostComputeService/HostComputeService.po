@@ -1,0 +1,40 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:37:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# HostComputeService Module"
+msgstr "# HostComputeService 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for the Host Compute "
+"Service cmdlets. This table lists the cmdlets in alphabetical order."
+msgstr ""
+"本参考资料提供了有关“Host Compute Service”命令集（cmdlets）的描述及其语法信息。下表按照字母顺序列出了这些命令集。"
+
+msgid "## HostComputeService Cmdlets"
+msgstr "## HostComputeServiceCmdlets"
+
+msgid "### [Get-ComputeProcess](./Get-ComputeProcess.md)"
+msgstr "### [Get-ComputeProcess](./Get-ComputeProcess.md)"
+
+msgid ""
+"Gets a list of running compute systems from the Hyper-V Host Compute "
+"Service."
+msgstr "从 Hyper-V 主机计算服务中获取正在运行的计算系统的列表。"
+
+msgid "### [Stop-ComputeProcess](./Stop-ComputeProcess.md)"
+msgstr "### [停止计算进程](./Stop-ComputeProcess.md)"
+
+msgid "Stops a running compute system in the Hyper-V Host Compute Service."
+msgstr "在Hyper-V主机计算服务中停止正在运行的计算系统。"

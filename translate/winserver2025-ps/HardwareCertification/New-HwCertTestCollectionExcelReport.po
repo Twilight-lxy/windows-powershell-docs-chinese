@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:13:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-HwCertTestCollectionExcelReport"
+msgstr "# New-HwCertTestCollectionExcelReport"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates an HCK test summary report."
+msgstr "生成一份HCK测试总结报告。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-HwCertTestCollectionExcelReport** cmdlet creates a Windows Hardware Certification Kit (HCK) test summary report as a Microsoft Excel workbook.\n"
+"Specify one or more merged test collection .xml files.\n"
+"The cmdlet creates a separate worksheet for each merged test collection file, aggregates results, and compares the same test target from each file in a summary report.\n"
+"The summary shows total pass, pass with filter, fail, and N-1 regression data.\n"
+"For more information, see [Windows Hardware Certification Kit downloads](https://go.microsoft.com/fwlink/?LinkId=614978) in the Microsoft Developer Network (MSDN) Library."
+msgstr ""
+"`New-HwCertTestCollectionExcelReport` cmdlet 用于将 Windows "
+"硬件认证套件（HCK）的测试汇总报告生成为 Microsoft Excel 工作簿。你需要指定一个或多个合并后的测试集合 `.xml` 文件。该 "
+"cmdlet "
+"会为每个合并后的测试集合文件创建一个单独的工作表，汇总各文件中的测试结果，并在汇总报告中对比针对同一测试目标的测试结果。汇总报告显示总通过次数、符合特定过滤条件的通过次数、失败次数以及"
+" N-1 回归数据（即与之前版本相比的变化情况）。有关更多信息，请参阅 Microsoft 开发者网络（MSDN）库中的 [Windows "
+"硬件认证套件下载](https://go.microsoft.com/fwlink/?LinkId=614978)。"
+
+msgid ""
+"You can use up to ten results per test in the test result aggregation process.\n"
+"The most recent passing result takes precedence as the aggregate."
+msgstr "在测试结果汇总过程中，每次测试最多可以使用十个测试结果。最新的通过结果将被优先作为汇总结果。"
+
+msgid ""
+"The maximum number of test collections for a summary report is eight.\n"
+"If you specify a single merged test collection, the report includes the summary for that test pass without N-1 regression comparisons."
+msgstr "摘要报告中的测试集合最大数量为八个。如果您指定了一个合并后的测试集合，那么报告将仅包含该测试通过的总结信息，而不会进行N-1次回归比较。"
+
+msgid ""
+"To create merged test result collection files, use the **Merge-"
+"HwCertTestCollectionFromPackage** and **Merge-HwCertTestCollectionFromXml** "
+"cmdlets, along with the **Export-HwCertTestCollectionToXml** cmdlet."
+msgstr ""
+"要创建合并后的测试结果收集文件，请使用 `Merge-HwCertTestCollectionFromPackage` 和 `Merge-"
+"HwCertTestCollectionFromXml` 这两个 cmdlet，以及 `Export-"
+"HwCertTestCollectionToXml` cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a report for two merged test collections"
+msgstr "#### 示例 1：为两个合并后的测试集合生成报告"
+
+msgid ""
+"This command creates an Excel report from two merged test collection .xml files from two test passes.\n"
+"The command specifies a report count value of one."
+msgstr ""
+"该命令从两个测试通过过程中生成的合并后的 `.xml` 文件中生成一份 Excel 报告。命令指定了报告的副本数量为 1（即只生成一份报告）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a full path for the new Excel report."
+msgstr "为新Excel报告指定一个完整路径。"
+
+msgid ""
+"Specifies an array of full paths.\n"
+"These are file paths to merged test collection .xml files.\n"
+"You can specify up to eight files."
+msgstr "指定一个包含完整路径的数组。这些路径指向被合并到的测试集合.xml文件。您最多可以指定8个文件。"
+
+msgid ""
+"The cmdlet uses the order of the files in this parameter to determine the order of the N-1 regression data comparison.\n"
+"For example, the second file is compared with the first file, and the third file is compared with the second file."
+msgstr ""
+"该cmdlet根据此参数中文件的顺序来确定N-1回归数据比较的顺序。例如，第二个文件会与第一个文件进行比较，第三个文件则会与第二个文件进行比较。"
+
+msgid ""
+"Specifies the number of results.\n"
+"The cmdlet reports on these results and uses these results in the result aggregate process.\n"
+"The maximum value is ten."
+msgstr "用于指定结果的数量。该cmdlet会报告这些结果，并在结果汇总过程中使用这些数据。最大值为10。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Merge-HwCertTestCollectionFromPackage](./Merge-"
+"HwCertTestCollectionFromPackage.md)"
+msgstr ""
+"[Merge-HwCertTestCollectionFromPackage](./Merge-"
+"HwCertTestCollectionFromPackage.md)"
+
+msgid ""
+"[Merge-HwCertTestCollectionFromXml](./Merge-HwCertTestCollectionFromXml.md)"
+msgstr ""
+"[Merge-HwCertTestCollectionFromXml](./Merge-HwCertTestCollectionFromXml.md)"
+
+msgid ""
+"[Export-HwCertTestCollectionToXml](./Export-HwCertTestCollectionToXml.md)"
+msgstr "[将HwCertTest集合导出为XML](./Export-HwCertTestCollectionToXml.md)"

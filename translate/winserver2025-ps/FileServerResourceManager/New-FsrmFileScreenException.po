@@ -1,0 +1,163 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:09:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-FsrmFileScreenException"
+msgstr "# New-FsrmFileScreenException"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a file screen exception."
+msgstr "创建一个文件屏幕异常处理类（或对象）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"**The New-FsrmFileScreenException** cmdlet creates a file screen exception.\n"
+"A file screen exception is a special type of file screen that overrides any file screening that would otherwise apply to a folder, and all its subfolders, in a designated exception path."
+msgstr ""
+"`New-FsrmFileScreenException` cmdlet 用于创建一个文件屏蔽异常（file screen "
+"exception）。这种特殊的文件屏蔽规则会覆盖原本应用于指定路径下的文件夹及其所有子文件夹的任何文件筛选设置。"
+
+msgid ""
+"A file screen exception creates an exception to any rules derived from a parent folder.\n"
+"To determine which file types the exception allows, you can specify file groups for a file screen exception."
+msgstr "文件筛选异常会破坏由父文件夹所制定的所有规则。要确定该异常允许哪些类型的文件，您可以为该文件筛选异常指定相应的文件组。"
+
+msgid ""
+"You cannot create a file screen exception on a folder for which you already have a file screen.\n"
+"You must assign the exception to a subfolder or make changes to the existing file screen."
+msgstr ""
+"对于已经设置了文件级保护规则的文件夹，您无法再次为其创建新的文件级保护规则。您必须将该保护规则应用到某个子文件夹上，或者对现有的文件级保护规则进行修改。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a file screen exception"
+msgstr "### 示例 1：创建一个文件屏幕异常处理规则"
+
+msgid ""
+"This command creates a file screen exception on C:\\Share1-IncludeGroup that"
+" allows users to create files that are part of the \"Text Files\" file "
+"group."
+msgstr ""
+"该命令在 C:\\Share1-IncludeGroup 上创建了一个文件屏蔽例外规则，允许用户创建属于 “文本文件”（Text Files） "
+"文件组的文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在当前会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies a description for a file screen exception."
+msgstr "为文件屏幕异常指定一个描述。"
+
+msgid ""
+"Specifies an array of names of file groups that you want to exclude from "
+"file screening."
+msgstr "指定一个文件组名称数组，这些文件组需要从文件筛选过程中被排除掉。"
+
+msgid ""
+"Specifies a valid local path to a folder.\n"
+"The exception applies to the selected folder and all of its subfolders."
+msgstr "指定一个有效的本地文件夹路径。此规则适用于所选文件夹及其所有子文件夹。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的最大操作数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 的数量来计算该 cmdlet 的最优限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-FsrmFileScreenException](./Get-FsrmFileScreenException.md)"
+msgstr "[Get-FsrmFileScreenException](./Get-FsrmFileScreenException.md)"
+
+msgid "[Remove-FsrmFileScreenException](./Remove-FsrmFileScreenException.md)"
+msgstr "[Remove-FsrmFileScreenException](./Remove-FsrmFileScreenException.md)"
+
+msgid "[Set-FsrmFileScreenException](./Set-FsrmFileScreenException.md)"
+msgstr "[Set-FsrmFileScreenException](./Set-FsrmFileScreenException.md)"

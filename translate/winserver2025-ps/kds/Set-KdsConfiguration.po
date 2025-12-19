@@ -1,0 +1,222 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:59:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-KdsConfiguration"
+msgstr "# Set-KdsConfiguration"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the configuration of Microsoft Group KdsSvc."
+msgstr "设置 Microsoft Group KdsSvc 的配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### KdsConfiguration"
+msgstr "### KdsConfiguration"
+
+msgid "### RevertToDefault"
+msgstr "### 恢复到默认设置"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-KdsConfiguration** cmdlet sets the configuration of Microsoft Group Key Distribution Service (KdsSvc).\n"
+"This cmdlet sets the following configuration data:"
+msgstr ""
+"`Set-KdsConfiguration` cmdlet 用于设置 Microsoft 组密钥分发服务（KdsSvc）的配置。该 cmdlet "
+"设置以下配置数据："
+
+msgid ""
+"This cmdlet also validates input by performing key derivation function tests"
+" and secret agreement tests."
+msgstr "此cmdlet还会通过执行密钥推导函数测试和秘密协商测试来验证输入数据的合法性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Set the configuration of Microsoft Group Key Distribution "
+"Service"
+msgstr ""
+"### 示例 1：设置 Microsoft 组密钥分发服务（Group Key Distribution Service, GKDSS）的配置"
+
+msgid ""
+"This command retrieves a server configuration object in to a variable "
+"$config using the **Get-KdsConfiguration** cmdlet, and passes the contents "
+"of the variable to this cmdlet."
+msgstr ""
+"此命令使用 **Get-KdsConfiguration** cmdlet 将服务器配置对象检索到一个名为 `$config` "
+"的变量中，并将该变量的内容传递给该 cmdlet。"
+
+msgid "### Example 2: Test the configuration on the local server"
+msgstr "### 示例 2：在本地服务器上测试配置"
+
+msgid "This command tests the local server configuration."
+msgstr "该命令用于测试本地服务器的配置。"
+
+msgid "### Example 3: Set the key derivation function algorithm"
+msgstr "### 示例 3：设置密钥派生函数算法"
+
+msgid ""
+"This command sets the key derivation function (KDF) algorithm name to SHA-1.\n"
+"This algorithm generates a private group key."
+msgstr ""
+"这个命令将密钥派生函数（Key Derivation Function，简称KDF）的算法名称设置为SHA-1。该算法用于生成一个私有的群组密钥。"
+
+msgid "### Example 4: Set the secret agreement algorithm"
+msgstr "### 示例 4：设置保密协议算法"
+
+msgid ""
+"This command sets the secret agreement algorithm name to ECDH.\n"
+"This algorithm generates a public group key."
+msgstr "这个命令将秘密协议算法的名称设置为 ECDH。该算法用于生成一个公钥群组密钥。"
+
+msgid ""
+"### Example 5: Set the Group Key Distribution Service configuration to the "
+"default configuration"
+msgstr "### 示例 5：将组密钥分发服务（Group Key Distribution Service）的配置设置为默认值"
+
+msgid ""
+"This command validates that the customized group key distribution service "
+"configurations are deleted and the SID key starts to use the default "
+"configuration."
+msgstr "该命令用于验证自定义的组密钥分发服务配置是否已被删除，并确保SID密钥开始使用默认配置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the server configuration object that contains the configuration "
+"information of the Microsoft Group KdsSvc."
+msgstr "指定用于存储 Microsoft Group KdsSvc 配置信息的服务器配置对象。"
+
+msgid ""
+"Specifies the name of the key derivation function algorithm that the key "
+"distribution server uses to generate the keys."
+msgstr "指定密钥分发服务器用于生成密钥的密钥推导函数算法的名称。"
+
+msgid ""
+"Specifies the parameters for the key derivation function used to generate the group private key.\n"
+"If this parameter is not specified or this parameter is set to $Null, then no key derivation function parameters are needed."
+msgstr "指定用于生成组私钥的密钥推导函数的参数。如果未指定此参数，或者将此参数设置为 $Null，则无需任何密钥推导函数参数。"
+
+msgid ""
+"Indicates that the cmdlet only validates the new group key distribution "
+"service configuration on the local computer, and does not store the key in "
+"Active Directory."
+msgstr "表示该cmdlet仅验证本地计算机上的新组密钥分发服务配置，并不会将密钥存储在Active Directory中。"
+
+msgid ""
+"If this parameter is specified, then the cmdlet returns a value that "
+"indicates whether the test passed."
+msgstr "如果指定了这个参数，那么该cmdlet会返回一个值，表示测试是否通过。"
+
+msgid ""
+"If this parameter is not specified, then the cmdlet returns the new server "
+"configuration object."
+msgstr "如果未指定此参数，则该cmdlet会返回新的服务器配置对象。"
+
+msgid ""
+"Indicates that the customized service configuration is reverted to the "
+"default configuration."
+msgstr "表示自定义的服务配置已恢复为默认配置。"
+
+msgid ""
+"Specifies the name of the secret agreement algorithm used to generate a "
+"group public key."
+msgstr "指定用于生成群组公钥的密钥协商算法的名称。"
+
+msgid ""
+"Specifies the parameters for the secret agreement algorithm.\n"
+"If this parameter is not specified or this parameter is set to $Null, then no secret agreement algorithm parameters are needed."
+msgstr "指定秘密协议算法所需的参数。如果未指定该参数，或者将其设置为 `$Null`，则无需任何秘密协议算法参数。"
+
+msgid ""
+"Specifies the length of the private key used in the secret agreement "
+"algorithm."
+msgstr "指定用于秘密协议算法中的私钥的长度。"
+
+msgid ""
+"Specifies the length of the public key used in the secret agreement "
+"algorithm."
+msgstr "指定用于秘密协议算法中的公钥的长度。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.KeyDistributionService.KdsServerConfiguration"
+msgstr "### Microsoft.KeyDistributionService.KdsServerConfiguration"
+
+msgid ""
+"This cmdlet returns a **KdsServerConfiguration** object that contains "
+"configuration information for the Microsoft Group KdsSvc."
+msgstr ""
+"这个cmdlet返回一个**KdsServerConfiguration**对象，其中包含Microsoft Group KdsSvc的配置信息。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.KeyDistributionService.KdsServerConfiguration"
+msgstr "### Microsoft.KeyDistributionService.KdsServerConfiguration"
+
+msgid "### System.Boolean"
+msgstr "### System.Boolean"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+msgstr "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+
+msgid "[Clear-KdsCache](./Clear-KdsCache.md)"
+msgstr "[Clear-KdsCache](./Clear-KdsCache.md)"
+
+msgid "[Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+msgstr "[Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+
+msgid "[Get-KdsRootKey](./Get-KdsRootKey.md)"
+msgstr "[Get-KdsRootKey](./Get-KdsRootKey.md)"
+
+msgid "[Test-KdsRootKey](./Test-KdsRootKey.md)"
+msgstr "[测试 KDS 根密钥](./Test-KdsRootKey.md)"

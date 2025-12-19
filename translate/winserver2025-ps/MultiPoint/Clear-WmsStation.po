@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:03:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-WmsStation"
+msgstr "# Clear-WmsStation"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Clears station mapping information for all stations."
+msgstr "清除所有车站的地图信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Clear-WmsStation** cmdlet clears station mapping information for all "
+"stations."
+msgstr "`Clear-WmsStation` cmdlet 会清除所有电台的电台映射信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Clear station mapping"
+msgstr "### 示例 1：清除车站地图数据"
+
+msgid ""
+"This command puts all MultiPoint Server stations into an unmapped state.\n"
+"All station mapping information is lost, along with any station friendly names and station autologon information."
+msgstr ""
+"此命令会将所有 MultiPoint Server 站点设置为“未映射”状态。所有的站点映射信息、站点友好名称以及站点自动登录设置都会丢失。"
+
+msgid ""
+"If you subsequently run **Get-WmsStation** it returns no station "
+"information."
+msgstr "如果你随后运行 **Get-WmsStation**，它将不会返回任何站点信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为“localhost”。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WmsStation](./Get-WmsStation.md)"
+msgstr "[Get-WmsStation](./Get-WmsStation.md)"
+
+msgid "[Join-WmsStation](./Join-WmsStation.md)"
+msgstr "[Join-WmsStation](./Join-WmsStation.md)"
+
+msgid "[Set-WmsStation](./Set-WmsStation.md)"
+msgstr "[Set-WmsStation](./Set-WmsStation.md)"
+
+msgid "[Split-WmsStation](./Split-WmsStation.md)"
+msgstr "[Split-WmsStation](./Split-WmsStation.md)"
+
+msgid "[Update-WmsStation](./Update-WmsStation.md)"
+msgstr "[更新 WMS 站点](./Update-WmsStation.md)"

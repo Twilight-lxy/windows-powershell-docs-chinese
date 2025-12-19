@@ -1,0 +1,147 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:50:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-IscsiTargetServerConfiguration"
+msgstr "# 导入IscsiTargetServerConfiguration"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Imports an iSCSI Target Server configuration."
+msgstr "导入iSCSI目标服务器配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Import-IscsiTargetServerConfiguration** cmdlet imports a Microsoft "
+"iSCSI Target Server configuration."
+msgstr ""
+"`Import-IscsiTargetServerConfiguration` cmdlet 用于导入 Microsoft iSCSI "
+"目标服务器的配置信息。"
+
+msgid "The configuration information includes the following:"
+msgstr "配置信息包括以下内容："
+
+msgid ""
+"**MigrationParentPath** and **ParentPath** always have a value of null."
+msgstr "`MigrationParentPath` 和 `ParentPath` 的值始终为 `null`。"
+
+msgid "Before you import a configuration, perform the following tasks:"
+msgstr "在导入配置之前，请执行以下任务："
+
+msgid "After you import a configuration, perform the following tasks:"
+msgstr "导入配置文件后，请执行以下操作："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Import configuration into the current computer or cluster"
+msgstr "### 示例 1：将配置导入当前计算机或集群中"
+
+msgid ""
+"This command imports the iSCSI Target Server configuration of a stand-alone iSCSI Target Server or clustered iSCSI Target Servers from a specified file.\n"
+"The cmdlet imports into the current stand-alone computer or the current clustered node."
+msgstr ""
+"该命令从指定的文件中导入单个独立iSCSI目标服务器或多个集群化iSCSI目标服务器的配置信息。这些配置会被导入到当前使用的独立计算机或集群节点中。"
+
+msgid ""
+"### Example 2: Import configuration into a specified computer or cluster"
+msgstr "### 示例 2：将配置导入指定的计算机或集群"
+
+msgid ""
+"This command imports the iSCSI Target Server configuration of a stand-alone iSCSI Target Server or clustered iSCSI Target Servers from a specified file.\n"
+"The command imports the servers into the specified remote stand-alone computer or remote clustered node."
+msgstr ""
+"该命令从指定的文件中导入单个 iSCSI 目标服务器或集群式 iSCSI "
+"目标服务器的配置信息。这些配置信息随后会被导入到指定的远程独立计算机或远程集群节点中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此 cmdlet 在远程计算机上运行，则会指定该远程计算机的名称或 IP 地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "指定集群资源组的网络名称，或者如果在此cmdlet运行于集群配置上时，指定集群节点的名称。"
+
+msgid ""
+"The cmdlet imports the iSCSI Target Server configuration to the computer or cluster that you specify.\n"
+"If you do not specify this parameter, the cmdlet imports the configuration into the iSCSI Target Server that runs on the same computer."
+msgstr ""
+"该cmdlet会将iSCSI目标服务器的配置导入到您指定的计算机或集群中。如果您未指定此参数，那么cmdlet会将该配置导入到在同一台计算机上运行的iSCSI目标服务器中。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接到远程计算机时所需的凭据信息。"
+
+msgid ""
+"Specifies a file name.\n"
+"The cmdlet imports the configuration from the file that you specify."
+msgstr "指定一个文件名。该cmdlet会从您指定的文件中导入配置信息。"
+
+msgid ""
+"Indicates that the cmdlet deletes an existing **iSCSITarget** or "
+"**iSCSIVirtualDisk** that has the same name or device path on the target "
+"node, and then imports the ones in the configuration file."
+msgstr ""
+"表示该cmdlet会删除目标节点上具有相同名称或设备路径的现有**iSCSITarget**或**iSCSIVirtualDisk**，然后导入配置文件中的相应项。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Export-IscsiTargetServerConfiguration](./Export-"
+"IscsiTargetServerConfiguration.md)"
+msgstr ""
+"[Export-IscsiTargetServerConfiguration](./Export-"
+"IscsiTargetServerConfiguration.md)"
+
+msgid "[Set-IscsiServerTarget](./Set-IscsiServerTarget.md)"
+msgstr "[Set-IscsiServerTarget](./Set-IscsiServerTarget.md)"

@@ -1,0 +1,301 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:12:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMNetworkAdapterVlan"
+msgstr "# 设置虚拟机网络适配器的 VLAN"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Configures the virtual LAN settings for the traffic through a virtual "
+"network adapter."
+msgstr "配置虚拟局域网（VLAN）设置，以便通过虚拟网络适配器传输数据流量。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-VMNetworkAdapterVlan** cmdlet configures virtual LAN settings for the traffic through a virtual network adapter.\n"
+"Access, Trunk, Private VLAN (isolated, community, or promiscuous), and untagged are mutually exclusive."
+msgstr ""
+"`Set-VMNetworkAdapterVlan` cmdlet 用于配置通过虚拟网络适配器传输数据的虚拟局域网（LAN）设置。选项包括 "
+"“Access”、“Trunk”、“Private VLAN”（隔离模式、共享模式或混杂模式）以及 "
+"“Untagged”；这些选项之间是互斥的，即只能选择其中一个选项。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Sets the virtual network adapter(s) in virtual machine Redmond to the Access mode.\n"
+"Traffic sent by this virtual machine is tagged with VLAN ID 121."
+msgstr "将虚拟机 Redmond 中的虚拟网络适配器设置为“访问”模式。该虚拟机发送的流量会被标记上 VLAN ID 121。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Sets the virtual network adapter(s) in virtual machine Redmond to the Trunk mode.\n"
+"Any traffic tagged with one of the VLAN IDs in the allowed VLAN list will be permitted to be sent or received by the VLAN.\n"
+"If traffic is untagged, it will be treated as if it were on VLAN 10."
+msgstr ""
+"将虚拟机 Redmond 中的虚拟网络适配器设置为“Trunk”模式。任何带有允许的 VLAN 列表中某个 VLAN ID "
+"标签的流量都将被允许发送或接收到该 VLAN。如果流量没有标签，则会被视为属于 VLAN 10。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Gets the virtual network adapters from virtual machine Redmond and sets them"
+" to the Private VLAN isolated mode, where primary VLAN is 10 and the "
+"secondary VLAN is 200."
+msgstr ""
+"从名为“Redmond”的虚拟机中获取虚拟网络适配器，并将它们设置为私有VLAN隔离模式。在此模式下，主VLAN的编号为10，次级VLAN的编号为200。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"Gets the virtual network adapters from virtual machine WA and sets them to "
+"the Private VLAN promiscuous mode, where primary VLAN is 10 and the "
+"secondary VLANs are 201 and 202."
+msgstr ""
+"从虚拟机WA中获取虚拟网络适配器，并将它们设置为“私有VLAN混杂模式”（private VLAN promiscuous "
+"mode）。其中，主VLAN的编号为10，次级VLAN的编号分别为201和202。"
+
+msgid "### Example 5"
+msgstr "### 示例 5"
+
+msgid ""
+"Gets virtual machine Redmond and sets the virtual network adapters in the "
+"virtual machine to the untagged mode."
+msgstr "获取名为“Redmond”的虚拟机，并将该虚拟机中的虚拟网络适配器设置为“未标记”模式（untagged mode）。"
+
+msgid "### Example 5"
+msgstr "### 示例 5"
+
+msgid ""
+"Sets the virtual switch in the management OS to the Access mode.\n"
+"Traffic sent by this virtual switch is tagged with VLAN ID 20."
+msgstr "将管理操作系统中的虚拟交换机设置为“访问模式”。通过该虚拟交换机发送的流量会被标记上VLAN ID 20。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies **Access** mode for the virtual machine network adapter. This "
+"parameter configures an untagged virtual port with the VLANId (port based "
+"VLAN), so it must be specified together with **VlanId**."
+msgstr ""
+"指定虚拟机网络适配器的访问（Access）模式。此参数用于配置一个未标记的虚拟端口，并关联相应的 VLANID（基于端口的 VLAN），因此必须与 "
+"VLANID 一起进行设置。"
+
+msgid ""
+"Specifies a list of virtual LANs allowed on a virtual machine network adapter.\n"
+"This parameter must be specified in conjunction with the switch parameter **Trunk**."
+msgstr "指定允许在虚拟机网络适配器上使用的虚拟局域网（VLAN）列表。此参数必须与 **Trunk** 参数一起使用。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies **Community** mode for the virtual machine network adapter to be configured.\n"
+"This parameter must be specified in conjunction with parameters **PrimaryVlanId** and **SecondaryVlanId**."
+msgstr ""
+"指定要配置的虚拟机网络适配器的**社区（Community）**模式。此参数必须与**PrimaryVlanId**和**SecondaryVlanId**参数一起使用。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual LAN settings on a virtual machine network adapter are to be configured.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个Hyper-"
+"V主机，在这些主机上需要配置虚拟机网络适配器的虚拟局域网（VLAN）设置。可以使用NetBIOS名称、IP地址或完全合格的域名进行指定。默认值是本地计算机。可以使用“localhost”或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies **Isolated** mode for the virtual machine network adapter to be configured.\n"
+"This parameter must be specified in conjunction with parameters **PrimaryVlanId** and **SecondaryVlanId**."
+msgstr ""
+"指定用于配置虚拟机网络适配器的“隔离（Isolated）”模式。此参数必须与 **PrimaryVlanId** 和 "
+"**SecondaryVlanId** 参数一起使用。"
+
+msgid ""
+"Specifies the management (e.g.\n"
+"parent or host) operating system."
+msgstr "指定管理系统（例如父系统或宿主操作系统）的类型。"
+
+msgid ""
+"Specifies the native virtual LAN identifier for a virtual machine network adapter.\n"
+"This parameter must be specified in conjunction with the switch parameter **Trunk**."
+msgstr "用于指定虚拟机网络适配器的本地虚拟局域网（VLAN）标识符。此参数必须与 **Trunk** 参数一起使用。"
+
+msgid ""
+"Specifies that a **Microsoft.HyperV.PowerShell.VMNetworkAdapterVlanSetting**"
+" object is to be passed through to the pipeline representing the virtual "
+"machine network adapter virtual LAN settings to be configured."
+msgstr ""
+"指定需要将一个 `Microsoft.HyperV.PowerShell.VMNetworkAdapterVlanSetting` "
+"对象传递给管道，该对象表示要配置的虚拟机网络适配器的虚拟局域网（VLAN）设置。"
+
+msgid ""
+"Specifies the primary virtual LAN identifier for a virtual network adapter "
+"in **Community**, **Isolated**, or **Promiscuous** mode."
+msgstr ""
+"用于指定处于“社区模式”（Community）、“隔离模式”（Isolated）或“混杂模式”（Promiscuous）下的虚拟网络适配器的主要虚拟局域网标识符。"
+
+msgid ""
+"This parameter must be specified in conjunction with parameter **SecondaryVlanId** if the virtual machine network adapter is in **Community** or **Isolated** mode.\n"
+"It must be used in conjunction with parameter **SecondaryVlanIdList** if the virtual machine network adapter is in **Promiscuous** mode."
+msgstr ""
+"如果虚拟机网络适配器处于“Community”或“Isolated”模式，必须结合参数**SecondaryVlanId**来指定此参数。如果虚拟机网络适配器处于“Promiscuous”模式，则必须结合参数**SecondaryVlanIdList**来使用该参数。"
+
+msgid ""
+"Specifies **Promiscuous** mode for the virtual machine network adapter."
+msgstr "为虚拟机网络适配器指定“混杂模式”（Promiscuous mode）。"
+
+msgid ""
+"This parameter must be specified in conjunction with parameters "
+"**PrimaryVlanId** and **SecondaryVlanIdList**."
+msgstr "此参数必须与参数 **PrimaryVlanId** 和 **SecondaryVlanIdList** 一起指定。"
+
+msgid ""
+"Specifies the secondary virtual LAN identifier for a virtual network adapter"
+" in **Community** or **Isolated** mode."
+msgstr "用于指定处于“社区模式”（Community）或“隔离模式”（Isolated）下的虚拟网络适配器的次级虚拟局域网标识符。"
+
+msgid ""
+"This parameter must be specified in conjunction with parameter "
+"**PrimaryVlanId**, along with switch parameter **Community** or "
+"**Isolated**."
+msgstr ""
+"此参数必须与参数 **PrimaryVlanId** 一起指定，并且还需要配合交换机参数 **Community** 或 **Isolated** "
+"使用。"
+
+msgid ""
+"Specifies a list of private virtual LAN secondary virtual LANs on a virtual "
+"machine network adapter.This parameter must be specified in conjunction with"
+" parameter **PrimaryVlanId** and switch parameter **Promiscuous**."
+msgstr ""
+"用于指定虚拟机网络适配器上的一系列私有虚拟局域网（secondary VLAN）。此参数必须与参数 **PrimaryVlanId** 以及交换机参数 "
+"**Promiscuous** 一起使用。"
+
+msgid ""
+"Specifies **Trunk** mode for the virtual machine network adapter. This parameter configures a tagged virtual port that passes all allowed VLANId tags to the VM adapter. Traffic with the NativeVLANId is passed untagged to the VM adapter.\n"
+"This parameter must be used in conjunction with parameters **AllowedVlanIdList** and **NativeVlanId**."
+msgstr ""
+"指定虚拟机网络适配器的**Trunk**模式。该参数配置了一个带标签的虚拟端口，该端口会将所有允许的VLANId标签传递给虚拟机适配器；而带有NativeVLANId的数据包则会以未标记的形式传递给虚拟机适配器。此参数必须与**AllowedVlanIdList**和**NativeVlanId**参数一起使用。"
+
+msgid "Specifies **Untagged** mode for the virtual machine network adapter."
+msgstr "为虚拟机网络适配器指定“未标记（Untagged）”模式。"
+
+msgid "Specifies the virtual machine."
+msgstr "指定虚拟机。"
+
+msgid "Specifies the name of the virtual machine."
+msgstr "指定虚拟机的名称。"
+
+msgid "Specifies the virtual machine network adapter."
+msgstr "指定虚拟机的网络适配器。"
+
+msgid "Specifies the name of the virtual machine network adapter."
+msgstr "指定虚拟机网络适配器的名称。"
+
+msgid ""
+"Specifies the virtual LAN identifier of a virtual machine network adapter.\n"
+"This parameter must be specified in conjunction with switch parameter **Access**."
+msgstr "指定虚拟机网络适配器的虚拟局域网（VLAN）标识符。此参数必须与切换参数 **Access** 一起使用。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterVlanSetting"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapterVlanSetting"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 `-PassThru` 参数的话……"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Configure and View VLAN Settings on Hyper-V Virtual Switch Ports](/windows-"
+"server/virtualization/hyper-v-virtual-switch/configure-and-view-vlan-"
+"settings-on-hyper-v-virtual-switch-ports)"
+msgstr ""
+"[配置并查看Hyper-V虚拟交换机端口的VLAN设置](/windows-server/virtualization/hyper-v-virtual-"
+"switch/configure-and-view-vlan-settings-on-hyper-v-virtual-switch-ports)"

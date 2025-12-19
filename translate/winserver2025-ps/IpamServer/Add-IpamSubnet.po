@@ -1,0 +1,258 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:52:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-IpamSubnet"
+msgstr "# Add-IpamSubnet"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds a subnet to IPAM."
+msgstr "将一个子网添加到 IPAM（IP 地址管理）系统中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-IpamSubnet** cmdlet adds an IP subnet to an IP Address Management (IPAM) server.\n"
+"Use the cmdlet to add a NonVirtualized, Provider or Customer IP subnet in IPAM.\n"
+"If the network type of the subnet to add is Provider or NonVirtualized, the cmdlet will add it to the default address space, unless you specify an address space.\n"
+"If the network type of the range to add is Customer, you must specify an address space."
+msgstr ""
+"**Add-IpamSubnet** cmdlet 可用于将 IP 子网添加到 IP 地址管理（IPAM）服务器中。使用此 cmdlet 可在 IPAM"
+" 中添加非虚拟化（NonVirtualized）、提供商（Provider）或客户（Customer）类型的 IP "
+"子网。如果要添加的子网属于提供商或非虚拟化类型，除非指定了特定的地址空间，否则该子网将被添加到默认地址空间中；如果子网属于客户类型，则必须指定相应的地址空间。"
+
+msgid ""
+"You can associate virtualized subnets, either provider or customer, with a logical network and a network site.\n"
+"These properties represent an abstraction of a physical network and are inherited by all ranges and addresses that map to this subnet."
+msgstr ""
+"您可以将虚拟化的子网（无论是供应商提供的还是客户自己的）与逻辑网络和网络站点关联起来。这些属性代表了对物理网络的抽象，并且会被所有映射到该子网的IP地址范围所继承。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a subnet"
+msgstr "### 示例 1：添加一个子网"
+
+msgid ""
+"This command adds an IPv4 subnet named Contoso_2 to the network ID "
+"10.12.0.0/16 and associates it with VLAN 13,10."
+msgstr "此命令将一个名为“Contoso_2”的IPv4子网添加到网络ID 10.12.0.0/16中，并将其与VLAN 13、10关联起来。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 2: Add a subnet to the default address space"
+msgstr "#### 示例 2：向默认地址空间中添加一个子网"
+
+msgid ""
+"This command adds an IPV4 subnet named Contoso_3 with network type provider to the default address space.\n"
+"The command also adds the IPV4 subnet to the network ID 10.13.0.0/16 and sets the NetworkSite name to Site03."
+msgstr ""
+"该命令将一个名为“Contoso_3”的IPv4子网添加到默认地址空间中，同时将该子网的类型设置为“provider”。此外，该命令还将这个IPv4子网添加到网络ID为10.13.0.0/16的范围内，并将NetworkSite名称设置为“Site03”。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 3: Add a subnet for a customer network type"
+msgstr "### 示例 3：为某种客户网络类型添加一个子网"
+
+msgid ""
+"This command adds an IPv4 subnet named Contoso_4 with the network and prefix of 10.13.0.0/16 and has the network type customer.\n"
+"The command also sets the address space as NetCat and the network site as Site03."
+msgstr ""
+"此命令添加了一个名为 Contoso_4 的 IPv4 子网，其网络地址范围为 10.13.0.0/16（前缀为 /16），网络类型为 "
+"customer。同时，该命令还将地址空间设置为 NetCat，并将网络站点指定为 Site03。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 4: Add a subnet and attach metadata"
+msgstr "### 示例 4：添加一个子网并附加元数据"
+
+msgid ""
+"This command adds physical subnets named Contosov6_10 and attaches AD Site "
+"metadata to the subnets."
+msgstr "此命令创建了名为 Contosov6_10 的物理子网，并将 Active Directory （AD）站点元数据附加到这些子网上。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an address space to which this IP address subnet belongs.\n"
+"If you do not specify an address space, the cmdlet retrieves data for all address spaces configured in IPAM."
+msgstr "指定该 IP 地址子网所属的地址空间。如果您未指定地址空间，此 cmdlet 将检索 IPAM 中配置的所有地址空间的数据。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用该参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在当前会话中执行其他操作。要管理该作业，请使用`*-Job`系列cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Specifies semicolon-separated (;) name/value pairs.\n"
+"This parameter specifies custom metadata that is associated with the address space."
+msgstr "指定用分号（;）分隔的名称/值对。此参数用于指定与地址空间关联的自定义元数据。"
+
+msgid "Specifies a description of the subnet."
+msgstr "指定子网的描述信息。"
+
+msgid "Specifies a name for the subnet."
+msgstr "为子网指定一个名称。"
+
+msgid ""
+"Specifies the network and the prefix for the given subnet.\n"
+"Specify the network ID in Classless Interdomain Routing (CIDR) notation in the format Network/Prefix."
+msgstr "指定给定子网的网络地址和前缀。请使用无类别域间路由（CIDR）表示法来指定网络ID，格式为“Network/Prefix”。"
+
+msgid ""
+"Specifies a network site that is associated with a logical network and forms an abstraction of the physical network.\n"
+"A logical network can contain many network sites.\n"
+"This property is inherited by all ranges and addresses associated with the given subnet."
+msgstr ""
+"指定一个与逻辑网络相关联的网络站点，该站点构成了物理网络的抽象表示。一个逻辑网络可以包含多个网络站点。此属性会被与该子网相关的所有地址范围继承。"
+
+msgid ""
+"Specifies an array of network types for the addresses to add.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要添加的地址所对应的网络类型数组。该参数的可接受值包括："
+
+msgid "Specifies the name of an owner for the subnet."
+msgstr "指定子网的拥有者名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Specifies a virtual subnet ID.\n"
+"When you use network virtualization, this property, along with Customer address and Provider address is used to route packets to a particular customer virtual machine."
+msgstr ""
+"指定一个虚拟子网ID。在使用网络虚拟化技术时，该属性会与客户地址（Customer Address）和提供商地址（Provider "
+"Address）一起被用来将数据包路由到特定的客户虚拟机（Customer Virtual Machine）。"
+
+msgid ""
+"Specifies an array of unique identifiers for virtual local area networks "
+"(VLAN)."
+msgstr "指定一组用于虚拟局域网（VLAN）的唯一标识符。"
+
+msgid ""
+"Specifies the abstraction of a physical network that describes a particular "
+"function in your environment such as backend or frontend."
+msgstr "用于指定物理网络的抽象层，该抽象层描述了环境中特定功能（例如后端或前端）的实现方式。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并未运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CimInstance#ROOT/microsoft/ipam/MSFT_IPAM_Subnet"
+msgstr "### CimInstance#ROOT/microsoft/ipam/MSFT_IPAM_SUBnet"
+
+msgid ""
+"This cmdlet returns an object that represents an IP Subnet in IPAM Server."
+msgstr "此cmdlet返回一个对象，该对象代表IPAM服务器中的一个IP子网。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-IpamSubnet](./Export-IpamSubnet.md)"
+msgstr "[Export-IpamSubnet](./Export-IpamSubnet.md)"
+
+msgid "[Get-IpamSubnet](./Get-IpamSubnet.md)"
+msgstr "[Get-IpamSubnet](./Get-IpamSubnet.md)"
+
+msgid "[Import-IpamSubnet](./Import-IpamSubnet.md)"
+msgstr "[Import-IpamSubnet](./Import-IpamSubnet.md)"
+
+msgid "[Remove-IpamSubnet](./Remove-IpamSubnet.md)"
+msgstr "[Remove-IpamSubnet](./Remove-IpamSubnet.md)"
+
+msgid "[Set-IpamSubnet](./Set-IpamSubnet.md)"
+msgstr "[Set-IpamSubnet](./Set-IpamSubnet.md)"

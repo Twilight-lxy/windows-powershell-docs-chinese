@@ -1,0 +1,186 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:23:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-HgsTraceTarget"
+msgstr "# 新的HGS跟踪目标"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a HGS Diagnostics target object."
+msgstr "创建一个HGS诊断目标对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### Remote (Default)"
+msgstr "### 远程（默认值）"
+
+msgid "### NoAccess"
+msgstr "### NoAccess"
+
+msgid "### Local"
+msgstr "### 本地"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-HgsTraceTarget** cmdlet creates a Host Guardian Service (HGS) Diagnostics target object.\n"
+"The **Get-HgsTrace** cmdlet can use this information to determine how to connect to a particular host as well as what aspects of the host to trace and diagnose."
+msgstr ""
+"`New-HgsTraceTarget` cmdlet 用于创建一个主机防护服务（Host Guardian Service, "
+"HGS）的诊断目标对象。`Get-HgsTrace` cmdlet 可以利用这些信息来确定如何连接到特定的主机，以及需要跟踪和诊断主机的哪些方面。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a default target object"
+msgstr "### 示例 1：创建一个默认的目标对象"
+
+msgid ""
+"This command creates a target object named localhost.\n"
+"Since this command does not specify a role, the cmdlet will use the credentials of the current session and then infers the role though the list of installed features on the target."
+msgstr ""
+"此命令创建一个名为 `localhost` 的目标对象。由于该命令没有指定角色，因此 cmdlet "
+"将使用当前会话的凭据，并通过目标系统上已安装的功能列表来推断相应的角色。"
+
+msgid ""
+"### Example 2: Create a target with different credentials and a specified "
+"role"
+msgstr "### 示例 2：创建一个具有不同凭据和指定角色的目标"
+
+msgid ""
+"This command creates a target object with hostname named hgs-01.contoso.com "
+"that uses the provided credentials and makes the target a HGS node."
+msgstr "此命令创建一个目标对象，其主机名为 hgs-01.contoso.com，并使用提供的凭据将该目标对象设置为 HGS 节点。"
+
+msgid ""
+"### Example 3: Create a target to which no access is available with a "
+"specified role"
+msgstr "### 示例 3：创建一个目标对象，使用指定的角色无法访问该目标对象"
+
+msgid ""
+"This command creates a target object with hostname named hyperv-02.contoso.com that has no credentials but is regarded as a guarded host.\n"
+"No attempt will be made to connect to a NoAccess target."
+msgstr ""
+"此命令创建一个目标对象，其主机名为hyperv-02.contoso.com。该对象没有密码设置，但被视为受保护的宿主（即不允许未经授权的连接）。系统不会尝试连接到该“禁止访问”（NoAccess）的目标对象。"
+
+msgid ""
+"### Example 4: Create a target that reuses the current session's credentials"
+" and a specified role"
+msgstr "### 示例 4：创建一个目标，该目标会重用当前会话的凭据以及指定的角色"
+
+msgid ""
+"This command creates a target object with hostname named hgs-01.contoso.com "
+"that reuses the credentials of the current session and makes the target a "
+"HGS node."
+msgstr "此命令创建一个目标对象，其主机名为 hgs-01.contoso.com。该目标对象会重用当前会话的凭据，并被设置为 HGS 节点。"
+
+msgid ""
+"### Example 5: Create a target that reuses the current session's credentials"
+" and infer the role"
+msgstr "#### 示例 5：创建一个目标，该目标重用当前会话的凭据并推断角色"
+
+msgid ""
+"This command creates a target object with hostname hyperv-02.contoso.com "
+"that reuses the credentials of the current session and then infers the role "
+"though the list of installed features on the target."
+msgstr ""
+"此命令会创建一个目标对象，其主机名为 "
+"hyperv-02.contoso.com，并重用当前会话的凭据；随后通过目标系统上已安装的功能列表来确定该对象的角色。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a **PSCredential** object under which the management group connection runs.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet.\n"
+"For more information, type `Get-Help Get-Credential`."
+msgstr ""
+"指定一个用于运行管理组连接的 **PSCredential** 对象。要获取一个 **PSCredential** 对象，可以使用 **Get-"
+"Credential** cmdlet。有关更多信息，请输入 `Get-Help Get-Credential`。"
+
+msgid ""
+"Specifies the hostname of the target.\n"
+"This parameter is used to resolve an IP address when a remote Windows PowerShell® session is opened."
+msgstr "指定目标主机名。此参数用于在打开远程 Windows PowerShell® 会话时解析 IP 地址。"
+
+msgid "Indicates that the created target is the current local host."
+msgstr "表示创建的目标是当前的本地主机。"
+
+msgid ""
+"Indicates that no access is available to the target.\n"
+"Therefore, connections will never be opened to this target."
+msgstr "表示无法访问该目标。因此，永远不会与该目标建立连接。"
+
+msgid ""
+"Specifies the remote Windows PowerShell session configuration to utilize when a remote runspace is opened.\n"
+"If you omit this parameter, the default runspace is utilized by the **Get-HgsTrace** cmdlet, or the HGS configuration for targets that have the HostGuardianService role."
+msgstr ""
+"指定在打开远程运行空间（remote runspace）时所使用的远程 Windows PowerShell 会话配置。如果省略此参数，`Get-"
+"HgsTrace` cmdlet 将使用默认的运行空间配置；或者对于具有 HostGuardianService 角色的目标对象，将使用 HGS "
+"的默认配置。"
+
+msgid ""
+"Specifies the role a particular target plays in a guarded fabric.\n"
+"This can be a HGS node (HostGuardianService) or a Guarded Host (GuardedHost).\n"
+"If you do not specify a role, it will be inferred by the open connection and the inspection of the installed Windows features."
+msgstr ""
+"指定某个目标在受保护的安全架构中所扮演的角色。该角色可以是 HGS "
+"节点（HostGuardianService），也可以是受保护的主机（GuardedHost）。如果您未指定角色，系统将根据开放的网络连接以及所安装的 "
+"Windows 功能来推断该角色的具体类型。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### Microsoft.Windows.HostGuardianService.Diagnostics.Payload.InputTarget"
+msgstr ""
+"### Microsoft.Windows.HostGuardianService.DiagnosticsPayload.InputTarget"
+
+msgid ""
+"This cmdlet returns a target object that is a collection of metadata that "
+"contains connection information of a host operating in a guarded fabric as "
+"well as its role in the fabric."
+msgstr ""
+"此 cmdlet 返回一个目标对象，该对象是一个元数据集合，其中包含了在受保护的网络环境中运行的主机操作系统的连接信息以及该主机在该网络环境中的角色。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Test-HgsTraceTarget](./Test-HgsTraceTarget.md)"
+msgstr "[Test-HgsTraceTarget](./Test-HgsTraceTarget.md)"
+
+msgid "[Get-HgsTrace](./Get-HgsTrace.md)"
+msgstr "[Get-HgsTrace](./Get-HgsTrace.md)"

@@ -1,0 +1,86 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:34:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-NetworkControllerVipResource"
+msgstr "# 获取网络控制器VIP资源"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets a VIP resource."
+msgstr "获得一份VIP资源。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-NetworkControllerVipResource** cmdlet gets information, such as "
+"the MUXes and DIP hosts, for the specified virtual IP address (VIP) "
+"resource."
+msgstr ""
+"`Get-NetworkControllerVipResource` cmdlet 可以获取指定虚拟 IP "
+"地址（VIP）资源的相关信息，例如多路复用器（MUX）和直接插入式端口（DIP）主机的详细信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a Network Controller VIP resource"
+msgstr "### 示例 1：获取网络控制器 VIP 资源"
+
+msgid ""
+"The first command gets the credentials and stores them in the $Cred "
+"variable."
+msgstr "第一个命令获取凭据，并将它们存储在 `$Cred` 变量中。"
+
+msgid ""
+"The second command gets the specified VIP resource using the credentials in "
+"$Cred."
+msgstr "第二个命令使用 `$Cred` 中存储的凭据来获取指定的 VIP 资源。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a certificate thumbprint for Network Controller.\n"
+"Specify this parameter for a certificate deployment."
+msgstr "为网络控制器指定证书指纹。在部署证书时需要设置此参数。"
+
+msgid ""
+"Specifies the credentials to use for Network Controller.\n"
+"Specify this parameter for a Kerberos deployment."
+msgstr "指定用于网络控制器（Network Controller）的身份凭证。在采用 Kerberos 部署方案时需要设置此参数。"
+
+msgid ""
+"Specifies the direction of the traffic flow.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定交通流的方向。该参数的可接受值为："
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

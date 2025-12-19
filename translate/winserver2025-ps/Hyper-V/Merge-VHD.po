@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:31:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Merge-VHD"
+msgstr "# 合并VHD文件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Merges virtual hard disks."
+msgstr "合并虚拟硬盘。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Merge-VHD** cmdlet merges virtual hard disks in a differencing virtual hard disk chain.\n"
+"The merge is from a specified source child disk to a specified destination child disk."
+msgstr "**Merge-VHD** cmdlet 用于合并差异化虚拟硬盘链中的虚拟硬盘。合并操作是从指定的源子硬盘到指定的目标子硬盘进行的。"
+
+msgid ""
+"Merge is an offline operation; the virtual hard disk chain must not be "
+"attached when merge is initiated."
+msgstr "合并操作是离线进行的；在启动合并过程时，必须确保虚拟硬盘链未被连接（即不可处于正在使用状态）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example merges the virtual hard disk from Child4 to Child2, for a virtual disk chain with Child4 as a child of Child3, Child3 as a child of Child2, Child2 as a child of Child1, and Child1 as a child of Parent, and with the virtual hard disk file for each located in c:\\test.\n"
+"This example merges all data from Child4 and Child3 up to Child2.\n"
+"Child4.vhdx and Child3.vhdx are not deleted, but are no longer valid virtual hard disk files after the operation."
+msgstr ""
+"这个示例将Child4中的虚拟硬盘合并到Child2中，从而形成一个虚拟硬盘链：Child4是Child3的子盘，Child3是Child2的子盘，Child2是Child1的子盘，而Child1则是Parent的子盘。所有相关的虚拟硬盘文件都位于c:\\test目录下。该操作会将Child4和Child3中的所有数据合并到Child2中。虽然Child4.vhdx和Child3.vhdx文件本身不会被删除，但在操作完成后，它们将不再被视为有效的虚拟硬盘文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "以后台作业的形式运行该cmdlet。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which virtual hard disks are to be merged.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于合并虚拟硬盘的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行识别。默认值是本地计算机。可以通过使用 `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the path to the child in the virtual hard disk chain that is the "
+"destination for the merge command."
+msgstr "指定虚拟硬盘链中作为合并命令目标的分区的路径。"
+
+msgid "Runs the cmdlet without prompting for confirmation."
+msgstr "直接运行该cmdlet，而不会提示用户进行确认。"
+
+msgid ""
+"Specifies that an object is to be passed through to the pipeline "
+"representing the merged virtual hard disk."
+msgstr "指定将某个对象传递给表示合并后的虚拟硬盘的流水线（pipeline）。"
+
+msgid ""
+"Specifies the path to the child in the virtual hard disk chain that is the source for the merge command.\n"
+"If a filename or relative path is specified, the virtual hard disk path will be calculated relative to the current working directory."
+msgstr "指定虚拟硬盘链中作为合并命令来源的子文件的路径。如果指定了文件名或相对路径，那么虚拟硬盘的路径将相对于当前工作目录进行计算。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### VHDObject"
+msgstr "### VHDObject"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+msgstr "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

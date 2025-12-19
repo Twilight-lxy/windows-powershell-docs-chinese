@@ -1,0 +1,155 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:29:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-IISSharedConfig"
+msgstr "# 启用 IISSharedConfig"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables shared configuration."
+msgstr "启用共享配置功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-IISSharedConfig** cmdlet enables the IIS shared configuration feature.\n"
+"Before enabling shared configuration, this operation backs up the keys."
+msgstr ""
+"`Enable-IISSharedConfig` cmdlet 可以启用 IIS "
+"的共享配置功能。在启用共享配置之前，该操作会先备份相关配置信息（即这些配置对应的键值对）。"
+
+msgid ""
+"You can disable shared configuration through IIS Manager or with the "
+"**Disable-IISSharedConfig** cmdlet."
+msgstr "您可以通过 IIS Manager 或使用 **Disable-IISSharedConfig** cmdlet 来禁用共享配置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable shared configuration"
+msgstr "#### 示例 1：启用共享配置"
+
+msgid ""
+"Passwords must be in **SecureString** format.\n"
+"The first command uses ConvertTo-SecureString to convert the specified password, and then stores it in the $KeyEncryptionPassword variable.\n"
+"Using **ConvertTo-SecureString** is useful in automation scenarios."
+msgstr ""
+"密码必须采用 **SecureString** 格式。第一个命令使用 `ConvertTo-SecureString` "
+"将指定的密码转换成该格式，然后将其存储在 `$Key Encryption Password` 变量中。在自动化场景中使用 `ConvertTo-"
+"SecureString` 非常方便。"
+
+msgid ""
+"The second command uses Read-Host to read console input for the key encryption password, and then stores it in the $KeyEncryptionPassword variable.\n"
+"Using **Read-Host** is a more secure method for UI scenarios."
+msgstr ""
+"第二个命令使用 `Read-Host` 从控制台读取用于密钥加密的密码，然后将其存储在 `$KeyEncryptionPassword` "
+"变量中。在用户界面（UI）场景中，使用 `Read-Host` 是一种更安全的方法。"
+
+msgid ""
+"The third command uses **Read-Host** to get the password for the user "
+"account that has permission to perform the operation."
+msgstr "第三个命令使用 **Read-Host** 来获取具有执行该操作权限的用户账户的密码。"
+
+msgid ""
+"The fourth command enables shared configuration using the exported "
+"configuration and keys at C:\\export."
+msgstr "第四条命令允许使用位于 C:\\export 目录下的导出配置文件和密钥来进行配置共享。"
+
+msgid "### Example 2: Enable shared configuration without importing the keys"
+msgstr "### 示例 2：在不导入密钥的情况下启用共享配置"
+
+msgid ""
+"This command enables shared configuration, but does not import the keys into"
+" the local key store."
+msgstr "此命令可以启用配置共享功能，但不会将密钥导入到本地的密钥存储库中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that IIS uses the currently active keys, and will try to use the configuration specified by the *PhysicalPath* parameter.\n"
+"If this exported configuration has secrets encrypted with a different key, IIS will now be unable to decrypt these secrets."
+msgstr ""
+"这表示 IIS 会使用当前激活的密钥，并尝试应用由 *PhysicalPath* 参数指定的配置。如果导出的配置中包含使用其他密钥加密的敏感信息，那么 "
+"IIS 将无法解密这些敏感信息。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而无需用户确认。"
+
+msgid ""
+"Specifies the key encryption password for the exported keys.\n"
+"This value is initially specified with the **Export-IISConfiguration** cmdlet or through IIS Manager."
+msgstr "指定导出密钥的加密密码。该值最初是通过 `Export-IISConfiguration` cmdlet 或 IIS 管理器设置的。"
+
+msgid ""
+"*KeyEncryptionPassword* is required if you don't specify a value for *DontCopyRemoteKeys*.\n"
+"If you specify a value for *DontCopyRemoteKeys*, you cannot use this parameter."
+msgstr ""
+"如果您没有为*DontCopyRemoteKeys*指定值，则必须设置*KeyEncryptionPassword*。如果您为*DontCopyRemoteKeys*指定了值，那么就无法使用这个参数了。"
+
+msgid ""
+"Specifies the password of the account for accessing the physical location."
+msgstr "指定用于访问该物理位置的账户的密码。"
+
+msgid "Specifies the location of the exported configuration and keys."
+msgstr "指定导出的配置文件和密钥的位置。"
+
+msgid ""
+"Specifies the user name of the account to access the physical location."
+msgstr "指定用于访问物理位置的账户的用户名。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"about_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Security.SecureString"
+msgstr "### System.security.SecureString"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-IISSharedConfig](./Disable-IISSharedConfig.md)"
+msgstr "[Disable-IISSharedConfig](./Disable-IISSharedConfig.md)"
+
+msgid "[Get-IISSharedConfig](./Get-IISSharedConfig.md)"
+msgstr "[Get-IISSharedConfig](./Get-IISSharedConfig.md)"

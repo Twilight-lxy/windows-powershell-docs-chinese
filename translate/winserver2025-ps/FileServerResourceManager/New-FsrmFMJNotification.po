@@ -1,0 +1,163 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:12:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-FsrmFMJNotification"
+msgstr "# New-FsrmFMJNotification"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Returns a notification object for file management jobs."
+msgstr "返回一个用于文件管理任务的通知对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-FsrmFMJNotification** cmdlet returns a notification object that you can use to create file management job actions.\n"
+"You can use the **FsrmFMJNotification** object as input for the **New-FsrmFileManagementJob** cmdlet and the **Set-FsrmFileManagementJob** cmdlet."
+msgstr ""
+"`New-FsrmFMJNotification` cmdlet 返回一个通知对象，您可以使用该对象来创建文件管理作业操作。您可以将 "
+"`FsrmFMJNotification` 对象作为输入参数传递给 `New-FsrmFileManagementJob` cmdlet 和 `Set-"
+"FsrmFileManagementJob` cmdlet。"
+
+msgid ""
+"The **FsrmFmjAction** object defines a notification period before a file management job acts on a file.\n"
+"This cmdlet supports the following actions:"
+msgstr "`FsrmFmjAction` 对象定义了一个通知周期，在该周期之后文件管理任务才会对文件执行相应的操作。此 cmdlet 支持以下操作："
+
+msgid ""
+"The first command returns an object that represents a notification action.\n"
+"The notification action sends the specified email message to the administrator and file owner, and specifies that the action can attach a maximum of 1000 files to the message.\n"
+"The command stores the notification action object in the $action variable."
+msgstr ""
+"第一个命令返回一个对象，该对象表示一个通知动作。这个通知动作会将指定的电子邮件消息发送给管理员和文件所有者，并规定该动作最多可以在邮件中附加1000个文件。该命令将通知动作对象存储在"
+" `$action` 变量中。"
+
+msgid ""
+"The second command returns a notification object for a file management job "
+"that runs the notification action stored in the $action variable 30 days "
+"before the file management job acts."
+msgstr ""
+"第二个命令会返回一个通知对象，该对象用于文件管理作业；这个文件管理作业会在其实际执行前的30天内运行存储在 `$action` 变量中的通知动作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of file management job actions.\n"
+"You can create a job action by using the **New-FsrmFmjAction** cmdlet."
+msgstr "指定一个文件管理作业操作的数组。你可以使用 **New-FsrmFmjAction** cmdlet 来创建一个作业操作。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该cmdlet。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业 (About "
+"Jobs)](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the number of days before a file management job acts on a file to "
+"run the notification action."
+msgstr "指定文件管理任务在对该文件执行操作之前多少天会触发通知动作。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值（即并发操作的最大数量）。这个限制仅适用于当前正在执行的 "
+"cmdlet，而不涉及整个会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance[]"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+msgstr "[New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+
+msgid "[New-FsrmFmjAction](./New-FsrmFmjAction.md)"
+msgstr "[New-FsrmFmjAction](./New-FsrmFmjAction.md)"
+
+msgid "[New-FsrmFmjNotificationAction](./New-FsrmFmjNotificationAction.md)"
+msgstr "[New-FsrmFmjNotificationAction](./New-FsrmFmjNotificationAction.md)"
+
+msgid "[Set-FsrmFileManagementJob](./Set-FsrmFileManagementJob.md)"
+msgstr "[Set-FsrmFileManagementJob](./Set-FsrmFileManagementJob.md)"

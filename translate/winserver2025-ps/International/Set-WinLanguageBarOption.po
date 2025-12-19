@@ -1,0 +1,97 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:44:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WinLanguageBarOption"
+msgstr "# Set-WinLanguageBarOption"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the language bar type and mode for the current user account."
+msgstr "为当前用户账户设置语言栏的类型和模式。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-WinLanguageBarOption** cmdlet sets the language bar type and mode by using a **LanguageBar** object.\n"
+"The values for the type and mode settings can be either true or false.\n"
+"The default value for each setting is false."
+msgstr ""
+"`Set-WinLanguageBarOption` cmdlet 使用 `LanguageBar` 对象来设置语言栏的类型和模式。类型和模式的值可以是"
+" `true` 或 `false`。每个设置的默认值为 `false`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set language bar options"
+msgstr "#### 示例 1：设置语言栏选项"
+
+msgid ""
+"This command sets the language bar mode to the legacy setting and the "
+"language bar type to the per-thread setting."
+msgstr "此命令将语言栏模式设置为旧版设置，并将语言栏类型设置为每线程独立设置。"
+
+msgid "### Example 2: Set language bar options to default values"
+msgstr "### 示例 2：将语言栏选项设置回默认值"
+
+msgid ""
+"This command sets the language bar mode and the language bar type to the "
+"default setting."
+msgstr "此命令将语言栏的模式和类型设置为默认值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet sets the language bar mode to the legacy setting.\n"
+"If you do not specify this parameter, the cmdlet sets the language bar mode to the default setting."
+msgstr "该参数表示此cmdlet会将语言栏模式设置为旧版设置。如果您未指定此参数，cmdlet会将语言栏模式设置为默认设置。"
+
+msgid ""
+"Indicates that this cmdlet sets the language bar switch mode to the legacy or per-thread setting.\n"
+"If you do not specify this parameter, the cmdlet sets the language bar switch mode to the default or per-user setting."
+msgstr ""
+"表示此cmdlet将语言栏切换模式设置为“传统模式”或“每线程模式”。如果您不指定此参数，cmdlet会将语言栏切换模式设置为默认值或“每个用户单独设置”的模式。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WinLanguageBarOption](./Get-WinLanguageBarOption.md)"
+msgstr "[Get-WinLanguageBarOption](./Get-WinLanguageBarOption.md)"

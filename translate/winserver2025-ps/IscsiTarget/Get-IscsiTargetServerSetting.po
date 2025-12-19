@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:49:49 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IscsiTargetServerSetting"
+msgstr "# 获取 iSCSI 目标服务器设置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the global settings or common configurations for iSCSI target, virtual "
+"disk or snapshots."
+msgstr "获取iSCSI目标、虚拟磁盘或快照的全局设置或通用配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-IscsiTargetServerSetting** cmdlet gets the global settings or "
+"common configurations for iSCSI targets, virtual disks or snapshots."
+msgstr ""
+"`Get-IscsiTargetServerSetting` cmdlet 可以获取 iSCSI 目标、虚拟磁盘或快照的全局设置或通用配置信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get portal entries for the local computer"
+msgstr "### 示例 1：获取本地计算机的门户条目"
+
+msgid "This example gets all of the portal entries of the local server."
+msgstr "这个示例获取了本地服务器上的所有门户条目信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此cmdlet在远程计算机上运行，则会指定远程计算机的名称或IP地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "指定集群资源组的网络名称；或者如果此cmdlet在集群配置上运行，则指定集群节点的名称。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接到远程计算机时所需的凭据信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-IscsiTargetServerSetting](./Set-IscsiTargetServerSetting.md)"
+msgstr "[Set-IscsiTargetServerSetting](./Set-IscsiTargetServerSetting.md)"

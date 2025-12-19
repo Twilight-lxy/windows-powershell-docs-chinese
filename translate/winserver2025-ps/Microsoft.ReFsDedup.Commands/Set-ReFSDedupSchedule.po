@@ -1,0 +1,149 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:11:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Set-ReFSDedupSchedule"
+msgstr "# 设置 ReFSD 的去重计划（Set-ReFSDedupSchedule）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the deduplication schedule on a specified ReFS volume."
+msgstr "为指定的 ReFS 卷设置去重计划。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Set-ReFSDedupSchedule` cmdlet sets the deduplication schedule for a specified ReFS volume. You\n"
+"can use this cmdlet to specify when and how often deduplication should run on the volume."
+msgstr ""
+"`Set-ReFSDedupSchedule` cmdlet 用于设置指定 ReFS 卷的重复数据删除（deduplication）计划。您可以使用此 "
+"cmdlet 来指定重复数据删除应在何时以及多久执行一次。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example sets the deduplication schedule for the `D:` ReFS volume to run on `Monday`, `Wednesday`,\n"
+"and `Friday` at `10:00 PM` for `4` hours."
+msgstr "这个示例将 `D:` ReFS 卷的去重计划设置为在每周一、周三和周五晚上 10 点运行，每次运行时间为 4 小时。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the chunk size to use during compression."
+msgstr "指定在压缩过程中使用的块大小。"
+
+msgid ""
+"Specifies the compression format to use during deduplication. Acceptable "
+"values are:"
+msgstr "指定在去重过程中使用的压缩格式。可接受的值有："
+
+msgid "Specifies the compression level to use during deduplication."
+msgstr "指定在去重过程中使用的压缩级别。"
+
+msgid "Specifies the compression tuning to use during deduplication."
+msgstr "指定在去重过程中使用的压缩调整参数。"
+
+msgid ""
+"Specifies the maximum number of files that can be open at the same time "
+"during deduplication."
+msgstr "指定在进行去重操作时可以同时打开的最大文件数量。"
+
+msgid ""
+"Specifies the maximum percentage of CPU usage that deduplication should "
+"consume."
+msgstr "指定去重操作所占用的CPU使用量的最大百分比。"
+
+msgid ""
+"Specifies the days of the week on which deduplication should run on the volume. Acceptable values\n"
+"are:"
+msgstr "指定每周应执行数据去重操作的日子。可接受的值包括："
+
+msgid "Specifies the decompression tuning to use during deduplication."
+msgstr "指定在去重过程中使用的解压调整参数。"
+
+msgid ""
+"Specifies the duration for which deduplication should run on the volume."
+msgstr "指定卷上的去重操作应运行的持续时间。"
+
+msgid "Specifies one or more file extensions to exclude from deduplication."
+msgstr "指定一个或多个文件扩展名，以排除在去重操作之外。"
+
+msgid "Specifies one or more folders to exclude from deduplication."
+msgstr "指定一个或多个要排除在去重操作之外的文件夹。"
+
+msgid ""
+"Specifies the minimum number of hours that must elapse before a file can be "
+"deduplicated."
+msgstr "指定文件在被去重之前必须经过的最少时间（以小时为单位）。"
+
+msgid "Specifies the recompression tuning to use during deduplication."
+msgstr "指定在去重过程中使用的重新压缩调整参数。"
+
+msgid ""
+"Specifies the date and time when deduplication should start running on the "
+"volume."
+msgstr "指定卷上应开始运行去重操作的日期和时间。"
+
+msgid ""
+"Specifies the ReFS volume for which to set the deduplication schedule. Enter one or more volume\n"
+"IDs, drive letters, or volume GUID paths. For drive letters, use the format `D:`. For volume GUID\n"
+"paths, use the format `\\\\?\\Volume{{GUID}}\\`. Separate multiple volumes with a comma."
+msgstr ""
+"指定要设置去重计划的 ReFS 卷。输入一个或多个卷 ID、驱动器字母或卷 GUID 路径。对于驱动器字母，使用格式 `D:`；对于卷 GUID "
+"路径，使用格式 `\\\\?\\Volume{{GUID}}`。多个卷之间用逗号分隔。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-ReFSDedupSchedule](Clear-ReFSDedupSchedule.md)"
+msgstr "[Clear-ReFSDedupSchedule](Clear-ReFSDedupSchedule.md)"
+
+msgid "[Get-ReFSDedupSchedule](Get-ReFSDedupSchedule.md)"
+msgstr "[Get-ReFSDedupSchedule](Get-ReFSDedupSchedule.md)"
+
+msgid "[Resume-ReFSDedupSchedule](Resume-ReFSDedupSchedule.md)"
+msgstr "[ Resume-ReFSDedupSchedule](Resume-ReFSDedupSchedule.md)"
+
+msgid "[Suspend-ReFSDedupSchedule](Suspend-ReFSDedupSchedule.md)"
+msgstr "[暂停ReFSD去重计划](Suspend-ReFSDedupSchedule.md)"

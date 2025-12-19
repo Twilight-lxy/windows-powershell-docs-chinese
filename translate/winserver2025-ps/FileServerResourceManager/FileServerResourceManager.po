@@ -1,0 +1,535 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 06:54:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# FileServerResourceManager Module"
+msgstr "# FileServer ResourceManager 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all File Server "
+"Resource Manager (FSRM) cmdlets. It lists the cmdlets in alphabetical order "
+"based on the verb at the beginning of the cmdlet."
+msgstr ""
+"此参考资料提供了所有文件服务器资源管理器（FSRM）cmdlet的描述和语法信息。这些cmdlet按照它们开头所使用的动词（即命令的动作部分）按字母顺序进行排列。"
+
+msgid "## FileServerResourceManager Cmdlets"
+msgstr "## FileServer ResourceManager 命令行工具（Cmdlets）"
+
+msgid "### [Get-FsrmAdrSetting](./Get-FsrmAdrSetting.md)"
+msgstr "### [Get-FsrmAdrSetting](./Get-FsrmAdrSetting.md)"
+
+msgid "Gets access denied remediation settings for events."
+msgstr "获取与事件相关的“访问被拒绝”问题的修复设置信息。"
+
+msgid "### [Get-FsrmAutoQuota](./Get-FsrmAutoQuota.md)"
+msgstr "### [Get-FsrmAutoQuota](./Get-FsrmAutoQuota.md)"
+
+msgid "Gets auto apply quotas on a server."
+msgstr "在服务器上自动应用配额设置。"
+
+msgid "### [Get-FsrmClassification](./Get-FsrmClassification.md)"
+msgstr "### [Get-FsrmClassification](./Get-FsrmClassification.md)"
+
+msgid "Gets the status of the running file classification."
+msgstr "获取正在运行的文件分类程序的状态。"
+
+msgid ""
+"### [Get-FsrmClassificationPropertyDefinition](./Get-"
+"FsrmClassificationPropertyDefinition.md)"
+msgstr ""
+"### [Get-FsrmClassificationPropertyDefinition](./Get-"
+"FsrmClassificationPropertyDefinition.md)"
+
+msgid "Gets definitions of classification properties."
+msgstr "获取分类属性的定义。"
+
+msgid "### [Get-FsrmClassificationRule](./Get-FsrmClassificationRule.md)"
+msgstr "### [Get-FsrmClassificationRule](./Get-FsrmClassificationRule.md)"
+
+msgid "Gets classification rules."
+msgstr "获取分类规则。"
+
+msgid "### [Get-FsrmEffectiveNamespace](./Get-FsrmEffectiveNamespace.md)"
+msgstr "### [Get-FsrmEffectiveNamespace](./Get-FsrmEffectiveNamespace.md)"
+
+msgid "Gets a list of paths that match static namespaces."
+msgstr "获取与静态命名空间匹配的路径列表。"
+
+msgid "### [Get-FsrmFileGroup](./Get-FsrmFileGroup.md)"
+msgstr "### [Get-FsrmFileGroup](./Get-FsrmFileGroup.md)"
+
+msgid "Gets file groups."
+msgstr "获取文件组。"
+
+msgid "### [Get-FsrmFileManagementJob](./Get-FsrmFileManagementJob.md)"
+msgstr "### [Get-FsrmFileManagementJob](./Get-FsrmFileManagementJob.md)"
+
+msgid "Gets file management jobs."
+msgstr "获得与文件管理相关的工作。"
+
+msgid "### [Get-FsrmFileScreen](./Get-FsrmFileScreen.md)"
+msgstr "### [Get-FsrmFileScreen](./Get-FsrmFileScreen.md)"
+
+msgid "Gets file screens."
+msgstr "获取文件屏幕截图。"
+
+msgid "### [Get-FsrmFileScreenException](./Get-FsrmFileScreenException.md)"
+msgstr "### [Get-FsrmFileScreenException](./Get-FsrmFileScreenException.md)"
+
+msgid "Gets file screen exceptions."
+msgstr "遇到文件屏幕相关的异常情况。"
+
+msgid "### [Get-FsrmFileScreenTemplate](./Get-FsrmFileScreenTemplate.md)"
+msgstr "### [Get-FsrmFileScreenTemplate](./Get-FsrmFileScreenTemplate.md)"
+
+msgid "Gets file screen templates."
+msgstr "获取文件屏幕模板。"
+
+msgid "### [Get-FsrmMacro](./Get-FsrmMacro.md)"
+msgstr "### [Get-FsrmMacro](./Get-FsrmMacro.md)"
+
+msgid "Gets FSRM-supported macros."
+msgstr "获取由 FSRM 支持的宏。"
+
+msgid "### [Get-FsrmMgmtProperty](./Get-FsrmMgmtProperty.md)"
+msgstr "### [Get-FsrmMgmtProperty](./Get-FsrmMgmtProperty.md)"
+
+msgid "Gets management properties."
+msgstr "获取管理属性。"
+
+msgid "### [Get-FsrmQuota](./Get-FsrmQuota.md)"
+msgstr "### [Get-FsrmQuota](./Get-FsrmQuota.md)"
+
+msgid "Gets FSRM quotas on the server."
+msgstr "从服务器获取FSRM配额。"
+
+msgid "### [Get-FsrmQuotaTemplate](./Get-FsrmQuotaTemplate.md)"
+msgstr "### [Get-FsrmQuotaTemplate](./Get-FsrmQuotaTemplate.md)"
+
+msgid "Gets FSRM quota templates"
+msgstr "获取FSRM配额模板"
+
+msgid "### [Get-FsrmRmsTemplate](./Get-FsrmRmsTemplate.md)"
+msgstr "### [Get-FsrmRmsTemplate](./Get-FsrmRmsTemplate.md)"
+
+msgid "Gets a list of all RMS templates on the server."
+msgstr "获取服务器上所有RMS模板的列表。"
+
+msgid "### [Get-FsrmSetting](./Get-FsrmSetting.md)"
+msgstr "### [Get-FsrmSetting](./Get-FsrmSetting.md)"
+
+msgid "Gets the current FSRM settings."
+msgstr "获取当前的FSRM设置。"
+
+msgid "### [Get-FsrmStorageReport](./Get-FsrmStorageReport.md)"
+msgstr "### [Get-FsrmStorageReport](./Get-FsrmStorageReport.md)"
+
+msgid "Gets storage reports."
+msgstr "获取存储报告。"
+
+msgid "### [New-FsrmAction](./New-FsrmAction.md)"
+msgstr "### [New-FsrmAction](./New-FsrmAction.md)"
+
+msgid "Returns an FSRM action object."
+msgstr "返回一个FSRM操作对象。"
+
+msgid "### [New-FsrmAutoQuota](./New-FsrmAutoQuota.md)"
+msgstr "### [New-FsrmAutoQuota](./New-FsrmAutoQuota.md)"
+
+msgid "Creates an auto apply quota."
+msgstr "创建一个自动应用的配额设置。"
+
+msgid ""
+"### [New-FsrmClassificationPropertyDefinition](./New-"
+"FsrmClassificationPropertyDefinition.md)"
+msgstr ""
+"### [New-FsrmClassificationPropertyDefinition](./New-"
+"FsrmClassificationPropertyDefinition.md)"
+
+msgid "Creates a classification property definition."
+msgstr "创建一个分类属性定义。"
+
+msgid ""
+"### [New-FsrmClassificationPropertyValue](./New-"
+"FsrmClassificationPropertyValue.md)"
+msgstr ""
+"### [New-FsrmClassificationPropertyValue](./New-"
+"FsrmClassificationPropertyValue.md)"
+
+msgid "Creates a classification property value."
+msgstr "创建一个分类属性值。"
+
+msgid "### [New-FsrmClassificationRule](./New-FsrmClassificationRule.md)"
+msgstr "### [New-FsrmClassificationRule](./New-FsrmClassificationRule.md)"
+
+msgid "Creates an automatic classification rule."
+msgstr "创建一条自动分类规则。"
+
+msgid "### [New-FsrmFileGroup](./New-FsrmFileGroup.md)"
+msgstr "### [New-FsrmFileGroup](./New-FsrmFileGroup.md)"
+
+msgid "Creates a file group."
+msgstr "创建一个文件组。"
+
+msgid "### [New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+msgstr "### [New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+
+msgid "Creates a file management job."
+msgstr "创建一个文件管理任务。"
+
+msgid "### [New-FsrmFileScreen](./New-FsrmFileScreen.md)"
+msgstr "### [New-FsrmFileScreen](./New-FsrmFileScreen.md)"
+
+msgid "Creates a file screen."
+msgstr "创建一个文件列表界面（即显示文件目录的界面）。"
+
+msgid "### [New-FsrmFileScreenException](./New-FsrmFileScreenException.md)"
+msgstr "### [New-FsrmFileScreenException](./New-FsrmFileScreenException.md)"
+
+msgid "Creates a file screen exception."
+msgstr "创建一个文件屏幕异常处理程序。"
+
+msgid "### [New-FsrmFileScreenTemplate](./New-FsrmFileScreenTemplate.md)"
+msgstr "### [New-FsrmFileScreenTemplate](./New-FsrmFileScreenTemplate.md)"
+
+msgid "Creates a file screen template."
+msgstr "创建一个文件屏幕模板。"
+
+msgid "### [New-FsrmFmjAction](./New-FsrmFmjAction.md)"
+msgstr "### [New-FsrmFmjAction](./New-FsrmFmjAction.md)"
+
+msgid "Returns an action object for file management jobs."
+msgstr "返回一个用于文件管理任务的行动对象（action object）。"
+
+msgid "### [New-FsrmFmjCondition](./New-FsrmFmjCondition.md)"
+msgstr "### [New-FsrmFmjCondition](./New-FsrmFmjCondition.md)"
+
+msgid "Creates a file management property condition object."
+msgstr "创建一个文件管理属性条件对象。"
+
+msgid "### [New-FsrmFMJNotification](./New-FsrmFMJNotification.md)"
+msgstr "### [New-FsrmFMJNotification](./New-FsrmFMJNotification.md)"
+
+msgid "Returns a notification object for file management jobs."
+msgstr "返回一个用于文件管理作业的通知对象。"
+
+msgid ""
+"### [New-FsrmFmjNotificationAction](./New-FsrmFmjNotificationAction.md)"
+msgstr ""
+"### [New-FsrmFmjNotificationAction](./New-FsrmFmjNotificationAction.md)"
+
+msgid "Returns a notification action object for file management jobs."
+msgstr "为文件管理作业返回一个通知动作对象。"
+
+msgid "### [New-FsrmQuota](./New-FsrmQuota.md)"
+msgstr "### [New-FsrmQuota](./New-FsrmQuota.md)"
+
+msgid "Creates a FSRM quota."
+msgstr "创建一个FSRM配额。"
+
+msgid "### [New-FsrmQuotaTemplate](./New-FsrmQuotaTemplate.md)"
+msgstr "### [New-FsrmQuotaTemplate](./New-FsrmQuotaTemplate.md)"
+
+msgid "Creates a quota template."
+msgstr "创建一个配额模板。"
+
+msgid "### [New-FsrmQuotaThreshold](./New-FsrmQuotaThreshold.md)"
+msgstr "### [New-FsrmQuotaThreshold](./New-FsrmQuotaThreshold.md)"
+
+msgid "Returns a quota threshold object."
+msgstr "返回一个配额阈值对象。"
+
+msgid "### [New-FsrmScheduledTask](./New-FsrmScheduledTask.md)"
+msgstr "### [New-FsrmScheduledTask](./New-FsrmScheduledTask.md)"
+
+msgid "Creates a scheduled task object."
+msgstr "创建一个计划任务对象。"
+
+msgid "### [New-FsrmStorageReport](./New-FsrmStorageReport.md)"
+msgstr "### [New-FsrmStorageReport](./New-FsrmStorageReport.md)"
+
+msgid "Creates a storage report on the server."
+msgstr "在服务器上创建一份存储报告。"
+
+msgid "### [Remove-FsrmAutoQuota](./Remove-FsrmAutoQuota.md)"
+msgstr "### [Remove-FsrmAutoQuota](./Remove-FsrmAutoQuota.md)"
+
+msgid "Removes an auto apply quota from a server."
+msgstr "从服务器上移除自动应用的配额设置。"
+
+msgid ""
+"### [Remove-FsrmClassificationPropertyDefinition](./Remove-"
+"FsrmClassificationPropertyDefinition.md)"
+msgstr ""
+"### [Remove-FsrmClassificationPropertyDefinition](./Remove-"
+"FsrmClassificationPropertyDefinition.md)"
+
+msgid "Removes classification property definitions."
+msgstr "删除分类属性的定义。"
+
+msgid ""
+"### [Remove-FsrmClassificationRule](./Remove-FsrmClassificationRule.md)"
+msgstr ""
+"### [Remove-FsrmClassificationRule](./Remove-FsrmClassificationRule.md)"
+
+msgid "Removes classification rules."
+msgstr "删除分类规则。"
+
+msgid "### [Remove-FsrmFileGroup](./Remove-FsrmFileGroup.md)"
+msgstr "### [Remove-FsrmFileGroup](./Remove-FsrmFileGroup.md)"
+
+msgid "Removes file groups from the server."
+msgstr "从服务器上删除文件组。"
+
+msgid "### [Remove-FsrmFileManagementJob](./Remove-FsrmFileManagementJob.md)"
+msgstr "### [Remove-FsrmFileManagementJob](./Remove-FsrmFileManagementJob.md)"
+
+msgid "Removes file management jobs."
+msgstr "删除文件管理相关任务。"
+
+msgid "### [Remove-FsrmFileScreen](./Remove-FsrmFileScreen.md)"
+msgstr "### [Remove-FsrmFileScreen](./Remove-FsrmFileScreen.md)"
+
+msgid "Removes a file screen."
+msgstr "删除一个文件屏幕（或显示该文件的界面）。"
+
+msgid ""
+"### [Remove-FsrmFileScreenException](./Remove-FsrmFileScreenException.md)"
+msgstr ""
+"### [Remove-FsrmFileScreenException](./Remove-FsrmFileScreenException.md)"
+
+msgid "Removes a file screen exception."
+msgstr "移除一个文件屏幕异常（即与文件显示或操作相关的错误）。"
+
+msgid ""
+"### [Remove-FsrmFileScreenTemplate](./Remove-FsrmFileScreenTemplate.md)"
+msgstr ""
+"### [Remove-FsrmFileScreenTemplate](./Remove-FsrmFileScreenTemplate.md)"
+
+msgid "Removes file screen templates."
+msgstr "删除文件屏幕模板。"
+
+msgid "### [Remove-FsrmMgmtProperty](./Remove-FsrmMgmtProperty.md)"
+msgstr "### [Remove-FsrmMgmtProperty](./Remove-FsrmMgmtProperty.md)"
+
+msgid "Removes a management property."
+msgstr "删除一个管理属性。"
+
+msgid "### [Remove-FsrmQuota](./Remove-FsrmQuota.md)"
+msgstr "### [Remove-FsrmQuota](./Remove-FsrmQuota.md)"
+
+msgid "Removes a FSRM quota from the server."
+msgstr "从服务器中删除一个FSRM（文件系统资源管理器）配额。"
+
+msgid "### [Remove-FsrmQuotaTemplate](./Remove-FsrmQuotaTemplate.md)"
+msgstr "### [Remove-FsrmQuotaTemplate](./Remove-FsrmQuotaTemplate.md)"
+
+msgid "Removes FSRM quota templates."
+msgstr "删除FSRM配额模板。"
+
+msgid "### [Remove-FsrmStorageReport](./Remove-FsrmStorageReport.md)"
+msgstr "### [Remove-FsrmStorageReport](./Remove-FsrmStorageReport.md)"
+
+msgid "Removes storage reports."
+msgstr "删除存储报告。"
+
+msgid "### [Reset-FsrmFileScreen](./Reset-FsrmFileScreen.md)"
+msgstr "### [Reset-FsrmFileScreen](./Reset-FsrmFileScreen.md)"
+
+msgid "Resets the default settings for all file screen parameters."
+msgstr "将所有文件显示参数的默认设置重置为初始状态。"
+
+msgid "### [Reset-FsrmQuota](./Reset-FsrmQuota.md)"
+msgstr "### [Reset-FsrmQuota](./Reset-FsrmQuota.md)"
+
+msgid "Updates configuration settings of a FSRM quota."
+msgstr "更新 FSRM 配额的配置设置。"
+
+msgid "### [Send-FsrmTestEmail](./Send-FsrmTestEmail.md)"
+msgstr "### [Send-FsrmTestEmail](./Send-FsrmTestEmail.md)"
+
+msgid "Sends a test email message."
+msgstr "发送一封测试电子邮件。"
+
+msgid "### [Set-FsrmAdrSetting](./Set-FsrmAdrSetting.md)"
+msgstr "### [Set-FsrmAdrSetting](./Set-FsrmAdrSetting.md)"
+
+msgid "Changes configuration settings for access denied remediation."
+msgstr "更改与“访问被拒绝”问题相关的配置设置。"
+
+msgid "### [Set-FsrmAutoQuota](./Set-FsrmAutoQuota.md)"
+msgstr "### [Set-FsrmAutoQuota](./Set-FsrmAutoQuota.md)"
+
+msgid "Changes configuration settings of an auto apply quota."
+msgstr "更改自动应用配额的配置设置。"
+
+msgid "### [Set-FsrmClassification](./Set-FsrmClassification.md)"
+msgstr "### [Set-FsrmClassification](./Set-FsrmClassification.md)"
+
+msgid "Changes configuration settings for classification."
+msgstr "更改分类任务的配置设置。"
+
+msgid ""
+"### [Set-FsrmClassificationPropertyDefinition](./Set-"
+"FsrmClassificationPropertyDefinition.md)"
+msgstr ""
+"### [Set-FsrmClassificationPropertyDefinition](./Set-"
+"FsrmClassificationPropertyDefinition.md)"
+
+msgid "Changes a classification property definition."
+msgstr "修改分类属性的定义。"
+
+msgid "### [Set-FsrmClassificationRule](./Set-FsrmClassificationRule.md)"
+msgstr "### [Set-FsrmClassificationRule](./Set-FsrmClassificationRule.md)"
+
+msgid "Changes configuration settings of classification rules."
+msgstr "更改分类规则的配置设置。"
+
+msgid "### [Set-FsrmFileGroup](./Set-FsrmFileGroup.md)"
+msgstr "### [Set-FsrmFileGroup](./Set-FsrmFileGroup.md)"
+
+msgid "Changes configuration settings for file groups."
+msgstr "更改文件组的配置设置。"
+
+msgid "### [Set-FsrmFileManagementJob](./Set-FsrmFileManagementJob.md)"
+msgstr "### [Set-FsrmFileManagementJob](./Set-FsrmFileManagementJob.md)"
+
+msgid "Changes configuration settings of a file management job."
+msgstr "更改文件管理任务的配置设置。"
+
+msgid "### [Set-FsrmFileScreen](./Set-FsrmFileScreen.md)"
+msgstr "### [Set-FsrmFileScreen](./Set-FsrmFileScreen.md)"
+
+msgid "Changes configuration settings of a file screen."
+msgstr "更改文件屏幕的配置设置。"
+
+msgid "### [Set-FsrmFileScreenException](./Set-FsrmFileScreenException.md)"
+msgstr "### [Set-FsrmFileScreenException](./Set-FsrmFileScreenException.md)"
+
+msgid "Changes configuration settings of a file screen exception."
+msgstr "更改文件屏幕异常的配置设置。"
+
+msgid "### [Set-FsrmFileScreenTemplate](./Set-FsrmFileScreenTemplate.md)"
+msgstr "### [Set-FsrmFileScreenTemplate](./Set-FsrmFileScreenTemplate.md)"
+
+msgid "Changes configuration settings of a file screen template."
+msgstr "修改文件屏幕模板的配置设置。"
+
+msgid "### [Set-FsrmMgmtProperty](./Set-FsrmMgmtProperty.md)"
+msgstr "### [Set-FsrmMgmtProperty](./Set-FsrmMgmtProperty.md)"
+
+msgid "Changes the setting of a management property."
+msgstr "更改管理属性的设置。"
+
+msgid "### [Set-FsrmQuota](./Set-FsrmQuota.md)"
+msgstr "### [Set-FsrmQuota](./Set-FsrmQuota.md)"
+
+msgid "Changes configuration settings for a FSRM quota."
+msgstr "更改 FSRM 配额的配置设置。"
+
+msgid "### [Set-FsrmQuotaTemplate](./Set-FsrmQuotaTemplate.md)"
+msgstr "### [Set-FsrmQuotaTemplate](./Set-FsrmQuotaTemplate.md)"
+
+msgid "Changes configuration settings for FSRM quota templates."
+msgstr "更改FSRM配额模板的配置设置。"
+
+msgid "### [Set-FsrmSetting](./Set-FsrmSetting.md)"
+msgstr "### [Set-FsrmSetting](./Set-FsrmSetting.md)"
+
+msgid "Changes global FSRM settings for the computer."
+msgstr "更改该计算机的全局FSRM（文件系统管理器）设置。"
+
+msgid "### [Set-FsrmStorageReport](./Set-FsrmStorageReport.md)"
+msgstr "### [Set-FsrmStorageReport](./Set-FsrmStorageReport.md)"
+
+msgid "Changes settings of a storage report."
+msgstr "更改存储报告的相关设置。"
+
+msgid "### [Start-FsrmClassification](./Start-FsrmClassification.md)"
+msgstr "### [Start-FsrmClassification](./Start-FsrmClassification.md)"
+
+msgid "Starts the classification process."
+msgstr "开始分类过程。"
+
+msgid "### [Start-FsrmFileManagementJob](./Start-FsrmFileManagementJob.md)"
+msgstr "### [Start-FsrmFileManagementJob](./Start-FsrmFileManagementJob.md)"
+
+msgid "Starts a file management job."
+msgstr "启动一个文件管理任务。"
+
+msgid "### [Start-FsrmStorageReport](./Start-FsrmStorageReport.md)"
+msgstr "### [Start-FsrmStorageReport](./Start-FsrmStorageReport.md)"
+
+msgid "Starts generating storage reports."
+msgstr "开始生成存储报告。"
+
+msgid "### [Stop-FsrmClassification](./Stop-FsrmClassification.md)"
+msgstr "### [Stop-FsrmClassification](./Stop-FsrmClassification.md)"
+
+msgid "Stops the running instance of a classification."
+msgstr "停止正在运行的分类任务实例。"
+
+msgid "### [Stop-FsrmFileManagementJob](./Stop-FsrmFileManagementJob.md)"
+msgstr "### [Stop-FsrmFileManagementJob](./Stop-FsrmFileManagementJob.md)"
+
+msgid "Stops the running instance of a file management job."
+msgstr "停止正在运行的文件管理作业实例。"
+
+msgid "### [Stop-FsrmStorageReport](./Stop-FsrmStorageReport.md)"
+msgstr "### [Stop-FsrmStorageReport](./Stop-FsrmStorageReport.md)"
+
+msgid "Stops the running instance of storage reports."
+msgstr "停止正在运行的存储报告生成实例。"
+
+msgid "### [Update-FsrmAutoQuota](./Update-FsrmAutoQuota.md)"
+msgstr "### [更新-FsrmAutoQuota](./Update-FsrmAutoQuota.md)"
+
+msgid "Updates the properties of an auto apply quota."
+msgstr "更新自动应用配额的相关属性。"
+
+msgid ""
+"### [Update-FsrmClassificationPropertyDefinition](./Update-"
+"FsrmClassificationPropertyDefinition.md)"
+msgstr ""
+"### [更新-FsrmClassificationPropertyDefinition](./Update-"
+"FsrmClassificationPropertyDefinition.md)"
+
+msgid "Updates the classification property definitions."
+msgstr "更新分类属性的定义。"
+
+msgid "### [Update-FsrmQuota](./Update-FsrmQuota.md)"
+msgstr "### [更新 FsrmQuota](./Update-FsrmQuota.md)"
+
+msgid "Starts a quota scan on a path."
+msgstr "在一个路径上启动配额扫描。"
+
+msgid "### [Wait-FsrmClassification](./Wait-FsrmClassification.md)"
+msgstr "### [Wait-FsrmClassification](./Wait-FsrmClassification.md)"
+
+msgid ""
+"Waits for a period of time or until classification is finished running."
+msgstr "等待一段时间，或者直到分类任务运行完成为止。"
+
+msgid "### [Wait-FsrmFileManagementJob](./Wait-FsrmFileManagementJob.md)"
+msgstr "### [Wait-FsrmFileManagementJob](./Wait-FsrmFileManagementJob.md)"
+
+msgid "Waits for file management jobs to finish running."
+msgstr "等待文件管理任务完成运行。"
+
+msgid "### [Wait-FsrmStorageReport](./Wait-FsrmStorageReport.md)"
+msgstr "### [Wait-FsrmStorageReport](./Wait-FsrmStorageReport.md)"
+
+msgid ""
+"Waits for a period of time or until storage reports is finished running."
+msgstr "等待一段时间，或者直到存储报告的运行完成。"

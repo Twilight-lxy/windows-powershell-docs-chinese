@@ -1,0 +1,206 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:34:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-VHD"
+msgstr "# 新VHD"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates one or more new virtual hard disks."
+msgstr "创建一个或多个新的虚拟硬盘。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DynamicWithoutSource (Default)"
+msgstr "### DynamicWithoutSource（默认值）"
+
+msgid "### Differencing"
+msgstr "### 区分（Differencing）"
+
+msgid "### FixedWithoutSource"
+msgstr "### FixedWithoutSource"
+
+msgid "### FixedWithSource"
+msgstr "### 使用源代码修复问题"
+
+msgid "### DynamicWithSource"
+msgstr "### DynamicWithSource"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-VHD** cmdlet creates one or more new virtual hard disks in either VHD format or the newer VHDX format.\n"
+"The file name extension you specify determines the format."
+msgstr ""
+"`New-VHD` cmdlet 可以创建一个或多个新的虚拟硬盘，这些硬盘可以是 VHD 格式，也可以是更新的 VHDX "
+"格式。您指定的文件扩展名决定了硬盘的格式。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example creates a dynamic virtual hard disk in VHDX format that is 10 GB in size.\n"
+"The file name extension determines the format and the default type of dynamic is used because no type is specified."
+msgstr ""
+"这个示例创建了一个大小为10GB的VHDX格式的动态虚拟硬盘。文件扩展名决定了硬盘的格式；由于没有指定具体的类型，因此系统会使用默认的动态硬盘类型。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example creates a VHDX-format differencing virtual hard disk with a "
+"parent path of c:\\Base.vhdx."
+msgstr "这个示例创建了一个采用VHDX格式的差异虚拟硬盘，其父路径为c:\\Base.vhdx。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example creates a 1 TB VHD-format fixed virtual hard disk at the specified path.\n"
+"The data for the virtual hard disk is populated from the disk identified in the system by the number 2.\n"
+"You can list the disks attached to the system and the number associated with each disk using the **Get-Disk** cmdlet."
+msgstr ""
+"这个示例会在指定的路径上创建一个大小为1 TB的VHD格式的固定虚拟硬盘。该虚拟硬盘的数据来源于系统中编号为2的磁盘。你可以使用`Get-Disk` "
+"cmdlet来列出连接到系统的所有磁盘以及每个磁盘的编号。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example creates a new 1 TB VHDX-format dynamic virtual hard disk at the"
+" specified path with a block size of 128 MB and a logical sector size of 4 "
+"KB."
+msgstr "这个示例会在指定的路径下创建一个新的、容量为1 TB的VHDX格式动态虚拟硬盘，该硬盘的块大小为128 MB，逻辑扇区大小为4 KB。"
+
+msgid "### Example 5"
+msgstr "### 示例 5"
+
+msgid ""
+"This example creates a new 127GB VHD and then mounts, initializes, and "
+"formats it so the drive is ready to use."
+msgstr "这个示例创建了一个新的 127GB 大小的虚拟硬盘（VHD），然后将其挂载到系统中，对其进行初始化和格式化处理，使得该磁盘可以正常使用了。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "以后台作业的方式运行该 cmdlet。"
+
+msgid ""
+"Specifies the block size, in bytes, of the virtual hard disk to be created."
+msgstr "指定要创建的虚拟硬盘的块大小（以字节为单位）。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual hard disk file(s) are to be created.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于创建虚拟硬盘文件的Hyper-"
+"V主机。可以使用NetBIOS名称、IP地址或完全限定的域名进行选择。默认值是本地计算机。可以使用`localhost`或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies that a differencing virtual hard disk is to be created."
+msgstr "指定要创建一个差异化虚拟硬盘。"
+
+msgid "Specifies that a dynamic virtual hard disk is to be created."
+msgstr "指定要创建一个动态虚拟硬盘。"
+
+msgid "Specifies that a fixed virtual hard disk is to be created."
+msgstr "指定要创建一个固定的虚拟硬盘。"
+
+msgid ""
+"Specifies the logical sector size, in bytes, of the virtual hard disk to be created.\n"
+"Valid values are 512 and 4096."
+msgstr "指定要创建的虚拟硬盘的逻辑扇区大小（以字节为单位）。有效值为 512 和 4096。"
+
+msgid ""
+"Specifies the path to the parent of the differencing disk to be created "
+"(this parameter may be specified only for the creation of a differencing "
+"disk)."
+msgstr "指定要创建的差异磁盘父目录的路径（此参数仅用于创建差异磁盘时）。"
+
+msgid ""
+"Path to the new virtual hard disk file(s) that is being created as a result of a command.\n"
+"If a filename or relative path is specified, the new virtual hard disk path is calculated relative to the current working directory."
+msgstr "这是创建新的虚拟硬盘文件时所使用的路径。如果指定了文件名或相对路径，那么新虚拟硬盘文件的路径将会相对于当前工作目录来计算。"
+
+msgid ""
+"Specifies the physical sector size, in bytes.\n"
+"Valid values are 512 and 4096."
+msgstr "指定物理扇区的大小（以字节为单位）。有效值为 512 和 4096。"
+
+msgid "The maximum size, in bytes, of the virtual hard disk to be created."
+msgstr "要创建的虚拟硬盘的最大大小（以字节为单位）。"
+
+msgid ""
+"Specifies the physical disk to be used as the source for the virtual hard "
+"disk to be created."
+msgstr "指定要用作创建的虚拟硬盘源的物理磁盘。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+msgstr "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

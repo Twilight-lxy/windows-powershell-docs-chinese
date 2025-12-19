@@ -1,0 +1,102 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:13:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Add-HgsAttestationDumpPolicy"
+msgstr "# Add-HgsAttestationDumpPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds an authorized dump encryption key to HGS."
+msgstr "将一个经过授权的转储加密密钥添加到HGS中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Console (Default)"
+msgstr "### 控制台（默认设置）"
+
+msgid "### File"
+msgstr "### 文件"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-HgsAttestationDumpPolicy** cmdlet authorizes the specified key to be used to encrypt memory dumps on a Hyper-V host.\n"
+"Only hosts that encrypt dumps using an authorized key and hosts that do not allow any memory dumps will be able to successfully attest."
+msgstr ""
+"`Add-HgsAttestationDumpPolicy` cmdlet 允许使用指定的密钥来加密 Hyper-V "
+"主机上的内存转储文件。只有那些使用授权密钥进行加密的主机，以及那些不允许任何内存转储操作的主机，才能成功完成验证（attest）过程。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Adds the dump encryption key with the specified SHA256 public key hash to "
+"HGS."
+msgstr "将转储加密密钥以及指定的SHA256公钥哈希值添加到HGS中。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Adds the dump encryption key to HGS using a TCG log (TPM baseline) obtained "
+"after a host was configured to use dump encryption."
+msgstr "在主机配置为使用转储加密功能后，通过TCG日志（TPM基线）将转储加密密钥添加到HGS中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Friendly name for the dump policy."
+msgstr "用于描述转储策略的友好名称（即易于理解的名称）。"
+
+msgid ""
+"Specifies the path of a TPM baseline file (TCG log) that contains the public key hash of a dump encryption certificate.\n"
+"The TPM baseline specified should be obtained after configuring a Hyper-V host to use dump encryption."
+msgstr ""
+"指定一个 TPM 基线文件（TCG 日志）的路径，该文件包含转储加密证书的公钥哈希值。在配置好 Hyper-V 主机以使用转储加密功能后，应获取相应的 "
+"TPM 基线文件。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid ""
+"SHA256 hash of the public key of the certificate used for dump encryption."
+msgstr "用于转储加密的证书的公钥的 SHA256 哈希值。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

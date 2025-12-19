@@ -1,0 +1,129 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:47:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Convert-IscsiVirtualDisk"
+msgstr "# 将Iscsi虚拟磁盘转换为其他格式"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Converts an iSCSI virtual disk to a 4K sector aligned advanced virtual disk "
+"1.0 format."
+msgstr "将iSCSI虚拟磁盘转换为采用4K扇区对齐的高级虚拟磁盘1.0格式。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"Note: This cmdlet is deprecated and might be removed in a future release.\n"
+"We recommend that you do not use this cmdlet."
+msgstr "注意：此cmdlet已被弃用，可能在未来的版本中被移除。我们建议您不要使用该cmdlet。"
+
+msgid ""
+"The **Convert-IscsiVirtualDisk** cmdlet converts an iSCSI virtual disk to a 4K sector aligned advanced virtual disk 1.0 format.\n"
+"If an attempt is made to load a VHD created by the iSCSI Target 3.3, the VHD must be converted by running this cmdlet.\n"
+"This cmdlet performs copy and conversion at the same time.\n"
+"A remote file share or local path for both source and destination path can be specified."
+msgstr ""
+"**Convert-IscsiVirtualDisk** cmdlet 将 iSCSI 虚拟磁盘转换为 4K 扇区对齐的高级虚拟磁盘 1.0 "
+"格式。如果尝试加载由 iSCSI Target 3.3 创建的 VHD，必须通过运行此 cmdlet 来转换该 VHD。此 cmdlet "
+"同时执行复制和转换操作。可以指定源路径和目标路径为远程文件共享或本地路径。"
+
+msgid ""
+"Note: Use this cmdlet if iSCSI Target 3.3 differencing virtual disks are "
+"migrated to Windows Server 2012 R2 differencing virtual disks."
+msgstr ""
+"注意：如果将 iSCSI 目标 3.3 中的差分虚拟磁盘迁移至 Windows Server 2012 R2 的差分虚拟磁盘，请使用此 cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Convert a VHD"
+msgstr "### 示例 1：转换 VHD 文件"
+
+msgid ""
+"This example copies and converts the VHD named test.vhdx from \\\\\\\\zamfirsvr\\VHDs\\ to \\\\\\\\win8svr\\VHDs.\n"
+"The VHD named test.vhdx can be loaded after the conversion."
+msgstr ""
+"这个示例会将名为 `test.vhdx` 的 VHD 文件从 `\\\\\\zamfirsvr\\VHDs\\` 复制并转换为 "
+"`\\\\\\win8svr\\VHDs\\`。转换完成后，就可以加载这个 `test.vhdx` 文件了。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the destination path of the iSCSI virtual disk path of which to be"
+" copied and converted."
+msgstr "指定要复制和转换的 iSCSI 虚拟磁盘的目标路径。"
+
+msgid ""
+"Specifies the path of the virtual hard disk (VHD) file that is associated with the iSCSI virtual disk.\n"
+"Filter the iSCSI Virtual Disk object by using this parameter."
+msgstr "指定与iSCSI虚拟磁盘关联的虚拟硬盘（VHD）文件的路径。可以使用此参数来过滤iSCSI虚拟磁盘对象。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Checkpoint-IscsiVirtualDisk](./Checkpoint-IscsiVirtualDisk.md)"
+msgstr "[Checkpoint-IscsiVirtualDisk](./Checkpoint-IscsiVirtualDisk.md)"
+
+msgid "[Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"
+msgstr "[Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"
+
+msgid "[Import-IscsiVirtualDisk](./Import-IscsiVirtualDisk.md)"
+msgstr "[导入 iSCSI 虚拟磁盘](./Import-IscsiVirtualDisk.md)"
+
+msgid "[New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+msgstr "[New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+
+msgid "[Remove-IscsiVirtualDisk](./Remove-IscsiVirtualDisk.md)"
+msgstr "[删除Iscsi虚拟磁盘](./Remove-IscsiVirtualDisk.md)"
+
+msgid "[Restore-IscsiVirtualDisk](./Restore-IscsiVirtualDisk.md)"
+msgstr "[Restore-IscsiVirtualDisk](./Restore-IscsiVirtualDisk.md)"
+
+msgid "[Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"
+msgstr "[Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"

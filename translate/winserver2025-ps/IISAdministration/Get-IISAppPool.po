@@ -1,0 +1,104 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:30:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IISAppPool"
+msgstr "# Get-IISAppPool"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets configuration information for an IIS Application Pool."
+msgstr "获取IIS应用程序池的配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-IISAppPool** cmdlet gets information about application pools and their current status and other key information.\n"
+"If a specific application pool or a comma delimited list of application pools are requested, only those whose names are passed as an argument are returned.\n"
+"Otherwise all the application pools are returned."
+msgstr ""
+"`Get-IISAppPool` cmdlet "
+"可以获取关于应用程序池及其当前状态等关键信息。如果请求的是某个特定的应用程序池，或者是一个用逗号分隔的应用程序池列表，那么只会返回那些名称作为参数传递的应用程序池；否则会返回所有的应用程序池。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get information about specific app pool(s)"
+msgstr "### 示例 1：获取关于特定应用池的信息"
+
+msgid ""
+"This command gets the configuration information for the pools DefaultAppPool"
+" and NewAppPool."
+msgstr "这个命令用于获取DefaultAppPool和NewAppPool这两个池的配置信息。"
+
+msgid "### Example 2: Get information about all application pools"
+msgstr "### 示例 2：获取有关所有应用程序池的信息"
+
+msgid ""
+"This command gets the configuration information for all application pools."
+msgstr "这个命令可以获取所有应用程序池的配置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the application pool(s) in which the configuration "
+"information is returned."
+msgstr "指定用于返回配置信息的应用程序池的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"
+
+msgid ""
+"[Web Administration Cmdlets for Windows "
+"PowerShell](../webadministration/WebAdministration.md)"
+msgstr ""
+"[适用于 Windows PowerShell 的 Web 管理 "
+"cmdlet](../webadministration/WebAdministration.md)"

@@ -1,0 +1,104 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:40:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WinAcceptLanguageFromLanguageListOptOut"
+msgstr "# 使用 `Get-WinAcceptLanguageFromLanguageListOptOut` 命令获取用户的语言偏好设置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the HTTP Accept Language from the Language List opt-out setting for the"
+" current user account."
+msgstr "从当前用户账户的语言列表设置中获取 HTTP Accept Language（即浏览器支持的编程语言）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WinAcceptLanguageFromLanguageListOptOut** cmdlet gets the **HTTP Accept Language from Language List opt-out** setting for the current user account.\n"
+"By default, the **HTTP Accept Language List** is automatically generated from the language list of the current user account."
+msgstr ""
+"`Get-WinAcceptLanguageFromLanguageListOptOut` cmdlet 可以获取当前用户账户的 “从语言列表中排除 "
+"HTTP 接受语言”（HTTP Accept Language from Language List opt-out）设置。默认情况下，`HTTP "
+"接受语言列表` 是根据当前用户账户的语言列表自动生成的。"
+
+msgid ""
+"When set to $True, this setting deletes the current content of the **HTTP Accept Language** registry key and prevents changes to the language list from reestablishing the key.\n"
+"When set to $False, this setting reestablishes the **HTTP Accept Language List** that is based on the language list for the current user account."
+msgstr ""
+"当该设置为 `$True` 时，会删除 **HTTP Accept Language** "
+"注册表键中的当前内容，并阻止对语言列表的任何更改重新设置该键。当该设置为 `$False` 时，会根据当前用户账户的语言列表来重新设置 **HTTP "
+"Accept Language List**。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the status of the setting"
+msgstr "### 示例 1：获取设置的状态"
+
+msgid ""
+"This command returns the status of the **HTTP Accept Language from Language "
+"List opt-out** setting for the current user account."
+msgstr "该命令返回当前用户账户的“HTTP Accept Language（来自语言列表的拒绝选项）”设置的状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Boolean"
+msgstr "### 布尔值（Boolean）"
+
+msgid ""
+"This cmdlet returns a Boolean value that reports the status of the **HTTP "
+"Accept Language from Language List opt-out** setting for the current user "
+"account."
+msgstr "此cmdlet返回一个布尔值，用于报告当前用户账户的“HTTP接受语言（来自语言列表的禁用选项）”设置的状态。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Set-WinAcceptLanguageFromLanguageListOptOut](./Set-"
+"WinAcceptLanguageFromLanguageListOptOut.md)"
+msgstr ""
+"[Set-WinAcceptLanguageFromLanguageListOptOut](./Set-"
+"WinAcceptLanguageFromLanguageListOptOut.md)"
+
+msgid "[Get-WinUserLanguageList](./Get-WinUserLanguageList.md)"
+msgstr "[Get-WinUserLanguageList](./Get-WinUserLanguageList.md)"

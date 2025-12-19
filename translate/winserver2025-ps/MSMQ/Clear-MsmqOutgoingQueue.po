@@ -1,0 +1,107 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:55:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-MsmqOutgoingQueue"
+msgstr "# 清除 MsmqOutgoingQueue 队列"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Clears outgoing queues."
+msgstr "清空出站队列（即等待发送的数据或任务）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Clear-MsmqOutgoingQueue** cmdlet clears outgoing queues.\n"
+"Specify queues to clear by using **MsmqOutgoingQueue** objects.\n"
+"This cmdlet returns an **MsmqOutgoingQueue** object that represents the cleared outgoing queue."
+msgstr ""
+"`Clear-MsmqOutgoingQueue` cmdlet 用于清空出站队列。可以通过使用 `MsmqOutgoingQueue` "
+"对象来指定需要清除的队列。此 cmdlet 会返回一个表示已清除的出站队列的 `MsmqOutgoingQueue` 对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Clear outgoing message queues based on name"
+msgstr "### 示例 1：根据名称清除外出消息队列"
+
+msgid ""
+"This command gets all the outgoing message queues that have names that start with the string Order by using the **Get-MsmqOutgoingQueue** cmdlet.\n"
+"The command passes the results to the current cmdlet by using the pipeline operator.\n"
+"The current cmdlet clears each queue."
+msgstr ""
+"这个命令使用 **Get-MsmqOutgoingQueue** cmdlet 来获取所有名称以 “Order” "
+"开头的出站消息队列。该命令通过管道运算符将结果传递给当前的 cmdlet，然后当前 cmdlet 会清空每个队列。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies an array of **MsmqOutgoingQueue** objects.\n"
+"This cmdlet clears outgoing queues that this parameter specifies.\n"
+"This parameter accepts pipeline input."
+msgstr ""
+"指定一个包含 **MsmqOutgoingQueue** 对象的数组。此 cmdlet "
+"会清除由该参数指定的出站队列。该参数支持管道输入（pipeline input）。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Msmq.PowerShell.Commands.OutgoingQueue[]"
+msgstr "### Microsoft.Msmq POWERShellCommands.OutgoingQueue[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-MsmqOutgoingQueue](./Get-MsmqOutgoingQueue.md)"
+msgstr "[Get-MsmqOutgoingQueue](./Get-MsmqOutgoingQueue.md)"
+
+msgid "[Resume-MsmqOutgoingQueue](./Resume-MsmqOutgoingQueue.md)"
+msgstr "[Resume-MsmqOutgoingQueue](./Resume-MsmqOutgoingQueue.md)"
+
+msgid "[Suspend-MsmqOutgoingQueue](./Suspend-MsmqOutgoingQueue.md)"
+msgstr "[Suspend-MsmqOutgoingQueue](./Suspend-MsmqOutgoingQueue.md)"

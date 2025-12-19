@@ -1,0 +1,162 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:04:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IpamDhcpScope"
+msgstr "# Get-IpamDhcpScope"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets information about DHCP scopes from IPAM database."
+msgstr "从 IPAM 数据库中获取有关 DHCP 范围的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-IpamDhcpScope** cmdlet retrieves information about the Dynamic Host Configuration Protocol (DHCP) scopes in the IP Address Management (IPAM) database.\n"
+"Scopes represent the IP addresses that a DHCP server can lease to clients.\n"
+"In most cases, scopes correspond to IP subnets."
+msgstr ""
+"`Get-IpamDhcpScope` cmdlet 可以检索 IP "
+"地址管理（IPAM）数据库中关于动态主机配置协议（DHCP）作用域的信息。这些作用域表示 DHCP 服务器可以租发给客户端的 IP "
+"地址。在大多数情况下，这些作用域对应于特定的 IP 子网。"
+
+msgid ""
+"As a general rule, DHCP servers can only lease addresses from a single scope.\n"
+"However, superscopes provide a mechanism that allows a DHCP server to lease addresses from multiple scopes.\n"
+"See the **Get-IpamDhcpSuperscope** cmdlet for more information."
+msgstr ""
+"一般来说，DHCP服务器只能从一个作用域中租用地址。但是，超作用域（superscopes）提供了一种机制，使DHCP服务器能够从多个作用域中租用地址。有关更多信息，请参阅**Get-"
+"IpamDhcpSuperscope** cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get information about all IPv4 scopes"
+msgstr "### 示例 1：获取有关所有 IPv4 范围的信息"
+
+msgid ""
+"This command returns all the IPv4 DHCP scopes found in the IPAM database."
+msgstr "该命令会返回在 IPAM 数据库中找到的所有 IPv4 DHCP 范围（scope）。"
+
+msgid ""
+"### Example 2: Get information about the IPv4 scopes on a specific server"
+msgstr "### 示例 2：获取特定服务器上的 IPv4 范围信息"
+
+msgid ""
+"This command also returns IPv4 DHCP scopes.\n"
+"In this case, however, the only scopes returned are the ones found on the server dhcp.contoso.com."
+msgstr ""
+"此命令还会返回 IPv4 DHCP 范围（scope）信息。不过，在这种情况下，返回的仅限于在服务器 dhcp.contoso.com 上找到的那些 "
+"DHCP 范围。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the address family for the DHCP scopes that this cmdlet gets."
+msgstr "指定此 cmdlet 获取的 DHCP 范围所使用的地址族。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个代表该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。输入计算机名称或会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Specifies the ID of the DHCP scope that this cmdlet gets."
+msgstr "指定此cmdlet所获取的DHCP作用域的ID。"
+
+msgid ""
+"Specifies the fully qualified domain name (FQDN) of the DHCP server hosting "
+"the DHCP scopes that this cmdlet gets."
+msgstr "指定托管该cmdlet获取的DHCP作用域的DHCP服务器的完全限定域名（FQDN）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前的 "
+"cmdlet，而不适用于整个会话或计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### IpamDhcpScope"
+msgstr "### IpamDhcpScope"
+
+msgid ""
+"This cmdlet returns an object that represents an **IpamDhcpScope** object."
+msgstr "此cmdlet返回一个对象，该对象代表一个**IpamDhcpScope**对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IpamDhcpServer](./Get-IpamDhcpServer.md)"
+msgstr "[Get-IpamDhcpServer](./Get-IpamDhcpServer.md)"
+
+msgid "[Get-IpamDhcpSuperscope](./Get-IpamDhcpSuperscope.md)"
+msgstr "[Get-IpamDhcpSuperscope](./Get-IpamDhcpSuperscope.md)"

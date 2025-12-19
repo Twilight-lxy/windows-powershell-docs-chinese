@@ -1,0 +1,73 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:18:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# MultiPointVdi Module"
+msgstr "#多点虚拟桌面（MultiPointVdi）模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"The MultiPoint VDI cmdlets in this module are used to manage MultiPoint VDI "
+"virtual desktops."
+msgstr "此模块中的MultiPoint VDI cmdlets用于管理MultiPoint VDI虚拟桌面。"
+
+msgid "## MultiPointVdi Cmdlets"
+msgstr "## MultiPointVdiCmdlets"
+
+msgid ""
+"### [Disable-WmsVirtualDesktopRole](./Disable-WmsVirtualDesktopRole.md)"
+msgstr ""
+"### [ Disable-WmsVirtualDesktopRole](./Disable-WmsVirtualDesktopRole.md)"
+
+msgid "Disables a Hyper-V virtual desktop role."
+msgstr "禁用Hyper-V虚拟桌面角色。"
+
+msgid "### [Enable-WmsVirtualDesktopRole](./Enable-WmsVirtualDesktopRole.md)"
+msgstr "### [Enable-WmsVirtualDesktopRole](./Enable-WmsVirtualDesktopRole.md)"
+
+msgid ""
+"Installs the Hyper-V virtual desktop role and customizes it for use with "
+"MultiPoint services."
+msgstr "安装Hyper-V虚拟桌面角色，并对其进行定制以便与MultiPoint服务一起使用。"
+
+msgid "### [Get-WmsVirtualDesktop](./Get-WmsVirtualDesktop.md)"
+msgstr "### [Get-WmsVirtualDesktop](./Get-WmsVirtualDesktop.md)"
+
+msgid "Gets a virtual desktop."
+msgstr "获得一个虚拟桌面。"
+
+msgid "### [Import-WmsVirtualDesktop](./Import-WmsVirtualDesktop.md)"
+msgstr "### [Import-WmsVirtualDesktop](./Import-WmsVirtualDesktop.md)"
+
+msgid "Creates a virtual desktop template hard disk image."
+msgstr "创建一个虚拟桌面模板硬盘镜像文件。"
+
+msgid "### [New-WmsVirtualDesktop](./New-WmsVirtualDesktop.md)"
+msgstr "### [New-WmsVirtualDesktop](./New-WmsVirtualDesktop.md)"
+
+msgid "Creates a virtual desktop."
+msgstr "创建一个虚拟桌面。"
+
+msgid ""
+"### [New-WmsVirtualDesktopTemplate](./New-WmsVirtualDesktopTemplate.md)"
+msgstr ""
+"### [New-WmsVirtualDesktopTemplate](./New-WmsVirtualDesktopTemplate.md)"
+
+msgid "Create a virtual desktop template."
+msgstr "创建一个虚拟桌面模板。"
+
+msgid "### [Open-WmsVirtualDesktop](./Open-WmsVirtualDesktop.md)"
+msgstr "### [Open-WmsVirtualDesktop](./Open-WmsVirtualDesktop.md)"
+
+msgid "Opens a window connected to a virtual desktop template."
+msgstr "打开一个窗口，该窗口连接到虚拟桌面模板。"

@@ -1,0 +1,117 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:33:06 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Debug-SlbDatapath"
+msgstr "# 调试 SlbDataPath"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Collects logs from an SLB MUX and DIP host."
+msgstr "从SLB MUX和DIP主机收集日志。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Debug-SlbDatapath** cmdlet collects logs from the Software Load "
+"Balancing (SLB) Multiplexer (MUX) and dynamic IP address (DIP) host "
+"traversed by packets in the specified flow."
+msgstr ""
+"`Debug-SlbDatapath` cmdlet 用于收集来自软件负载均衡（SLB）多路复用器（MUX）以及数据包在指定流中经过的动态 IP "
+"地址（DIP）主机的日志。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get MUX and DIP host logs"
+msgstr "### 示例 1：获取 MUX 和 DIP 主机的日志"
+
+msgid ""
+"The first command creates a **PSCredential** object containing MUX "
+"credentials, and then stores it in the $mux.Credentials variable."
+msgstr "第一个命令创建了一个包含MUX凭据的**PSCredential**对象，然后将其存储在$mux.Credentials变量中。"
+
+msgid ""
+"The second command creates a **PSCredential** object containing DIP host "
+"credentials, and then stores it in the $dip.HostInfo.Credentials variable."
+msgstr ""
+"第二个命令创建一个包含DIP主机凭据的**PSCredential**对象，然后将其存储在$dip.HostInfo.Credentials变量中。"
+
+msgid ""
+"The third command runs test traffic targeting the specified VIP endpoint from the specified source IP address.\n"
+"You can use the command `$out | Format-Custom` to display the paths of the MUX and DIP logs that were collected."
+msgstr ""
+"第三个命令会从指定的源IP地址发送测试流量，目标是与指定VIP端点进行通信。你可以使用命令 `$out | Format-Custom` "
+"来查看收集到的MUX和DIP日志的路径信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the DIPs that implement the virtual IP address (VIP) endpoint "
+"under test."
+msgstr "指定实现被测试虚拟 IP 地址（VIP）端点的设备（DIP）。"
+
+msgid "Specifies the MUXes that load balance the DIPs."
+msgstr "指定用于对DIP（数字输入端口）进行负载均衡的MUX（多路复用器）。"
+
+msgid "Specifies an operation ID."
+msgstr "指定一个操作ID。"
+
+msgid "Specifies the port number of the VIP endpoint this operation tests."
+msgstr "指定此操作所测试的VIP端点的端口号。"
+
+msgid "Specifies the IP of the source node."
+msgstr "指定源节点的IP地址。"
+
+msgid "Specifies the IP of the VIP this operation tests."
+msgstr "指定本次操作所要测试的VIP的IP地址。"
+
+msgid "Specifies the path of the trace log folder."
+msgstr "指定跟踪日志文件夹的路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

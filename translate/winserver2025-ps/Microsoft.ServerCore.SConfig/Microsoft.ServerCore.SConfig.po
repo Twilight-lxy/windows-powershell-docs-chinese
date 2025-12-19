@@ -1,0 +1,48 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:13:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Microsoft.ServerCore.SConfig Module"
+msgstr "# Microsoft.ServerCore.SConfig 模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "## Microsoft.ServerCore.SConfig Cmdlets"
+msgstr "## Microsoft.ServerCore.SConfigCmdlets"
+
+msgid "### [Get-SConfig](Get-SConfig.md)"
+msgstr "### [Get-SConfig](Get-SConfig.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Invoke-SConfig](Invoke-SConfig.md)"
+msgstr "### [Invoke-SConfig](Invoke-SConfig.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Invoke-SConfigLogon](Invoke-SConfigLogon.md)"
+msgstr "### [Invoke-SConfigLogon](Invoke-SConfigLogon.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Reset-SConfig](Reset-SConfig.md)"
+msgstr "### [Reset-SConfig](Reset-SConfig.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-SConfig](Set-SConfig.md)"
+msgstr "### [Set-SConfig](Set-SConfig.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"

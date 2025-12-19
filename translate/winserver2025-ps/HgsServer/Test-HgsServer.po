@@ -1,0 +1,130 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:32:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-HgsServer"
+msgstr "# 测试 HGS 服务器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Tests if the local computer can function as a Host Guardian Service server "
+"node."
+msgstr "测试本地计算机是否能够作为Host Guardian Service服务器节点运行。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### PrimaryServer_HgsDomain (Default)"
+msgstr "### PrimaryServer_HgsDomain（默认值）"
+
+msgid "### AdditionalServer"
+msgstr "### AdditionalServer"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Test-HgsServer** cmdlet obtains information about the features, "
+"configuration, and state of the local computer, and compares it with the "
+"recommended settings to determine whether it can function as a Host Guardian"
+" Service (HGS) server node."
+msgstr ""
+"`Test-HgsServer` cmdlet 可以获取有关本地计算机的功能、配置和状态的信息，并将其与推荐设置进行比较，以确定该计算机是否可以作为 "
+"Host Guardian Service (HGS) 服务器节点正常运行。"
+
+msgid "The following checks are performed, when applicable:"
+msgstr "在适用的情况下，会执行以下检查："
+
+msgid ""
+"For more information about the scenario terms, see [Security and "
+"Assurance](https://go.microsoft.com/fwlink/?LinkId=699209)."
+msgstr ""
+"有关场景术语的更多信息，请参阅[安全与保障](https://go.microsoft.com/fwlink/?LinkId=699209)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test the first HGS node"
+msgstr "### 示例 1：测试第一个 HGS 节点"
+
+msgid ""
+"This command tests whether the local computer can be used as the first HGS "
+"node."
+msgstr "此命令用于测试本地计算机是否可以充当第一个HGS节点。"
+
+msgid "### Example 2: Test an additional HGS node"
+msgstr "### 示例 2：测试另一个 HGS 节点"
+
+msgid ""
+"This command tests whether the local computer can be used as an additional "
+"HGS node."
+msgstr "此命令用于测试本地计算机是否可以作为额外的 HGS 节点使用。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a database path."
+msgstr "指定一个数据库路径。"
+
+msgid ""
+"Specifies the Active Directory domain administrator credentials for the "
+"primary HGS server."
+msgstr "指定用于主HGS服务器的Active Directory域管理员凭据。"
+
+msgid "Specifies the name of the Active Directory domain for the HGS server."
+msgstr "指定用于 HGS 服务器的 Active Directory 域的名称。"
+
+msgid "Specifies the network IP address for the HGS server."
+msgstr "指定 HGS 服务器的网络 IP 地址。"
+
+msgid "Specifies the output log directory."
+msgstr "指定输出日志文件的目录。"
+
+msgid ""
+"Specifies the password for the administrator account when the computer is "
+"started in Safe Mode or a variant of Safe Mode, such as Directory Services "
+"Restore Mode."
+msgstr "当计算机在安全模式（或安全模式的变体，例如目录服务恢复模式）下启动时，该设置用于指定管理员账户的密码。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.HostGuardianService.PowerShell.TestReport"
+msgstr "### Microsoft.Windows.HostGuardianService.PowerShell.TestReport"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[HGS Server Cmdlets](./hgsserver.md)"
+msgstr "[HGS 服务器 cmdlet](./hgsserver.md)"

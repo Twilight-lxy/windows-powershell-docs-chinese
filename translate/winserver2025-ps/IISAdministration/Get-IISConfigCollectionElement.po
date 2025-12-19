@@ -1,0 +1,124 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:32:06 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IISConfigCollectionElement"
+msgstr "# Get-IISConfigCollectionElement"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets a configuration element object from an IIS configuration collection."
+msgstr "从一个 IIS 配置集合中获取一个配置元素对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-IISConfigCollectionElement** cmdlet gets a **ConfigurationElement** object that is part of a given ConfigurationCollection.\n"
+"The returned element then can be used in further cmdlets that expect a **ConfigurationElement**."
+msgstr ""
+"`Get-IISConfigCollectionElement` cmdlet 可以获取一个属于指定 `ConfigurationCollection`"
+" 的 `ConfigurationElement` 对象。返回的该对象随后可以用于其他需要 `ConfigurationElement` 参数的 "
+"cmdlet 中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get a configuration element for the default web site by "
+"passing the collection through a pipeline"
+msgstr "### 示例 1：通过将集合传递给流水线（pipeline）来获取默认网站的配置元素"
+
+msgid ""
+"This command gets a configuration element for the default web site by "
+"passing the collection through a pipeline."
+msgstr "这个命令通过将集合传递给一个处理流程（pipeline），来获取默认网站的配置信息。"
+
+msgid ""
+"### Example 2: Get a configuration element using a configuration collection "
+"as a parameter"
+msgstr "### 示例 2：使用配置集合作为参数来获取一个配置元素"
+
+msgid ""
+"This command gets a configuration element for the default web site and then "
+"stores the element into variable $SiteCollection."
+msgstr "这个命令获取默认网站的配置元素，然后将该元素存储到变量 $SiteCollection 中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a hashtable of the attributes for the configuration element to be inserted.\n"
+"The cmdlet will fail if any required attributes are omitted from this table."
+msgstr "指定一个哈希表，其中包含要插入的配置元素的属性信息。如果该哈希表中缺少任何必需的属性，此cmdlet将会失败。"
+
+msgid ""
+"Specifies the **ConfigurationCollection** object for which the collection elements will be returned.\n"
+"If a ConfigurationCollection is previously obtained and assigned to a variable, you cannot pass it to this cmdlet through the pipeline because the pipeline engine will try to enumerate, passing ConfigurationElement objects instead.\n"
+"Try either passing the whole Get-IISConfigCollection cmdlet into the pipeline or use it as a parameter for correct results."
+msgstr ""
+"指定用于返回集合元素的 **ConfigurationCollection** 对象。如果之前已经获取了一个 "
+"ConfigurationCollection 并将其赋值给某个变量，那么就无法通过管道将该对象传递给此 "
+"cmdlet，因为管道引擎会尝试对其进行枚举，并传递的是 ConfigurationElement 对象。您可以尝试将整个 Get-"
+"IISConfigCollection cmdlet 传递到管道中，或者将其作为参数使用，以获得正确的结果。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.Web.Administration.ConfigurationElementCollection"
+msgstr "### Microsoft.Web.Administration.ConfigurationElementCollection"
+
+msgid "### System.Collections.Hashtable"
+msgstr "### System.Collections.Hashtable"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-IISConfigCollectionElement](./New-IISConfigCollectionElement.md)"
+msgstr "[New-IISConfigCollectionElement](./New-IISConfigCollectionElement.md)"
+
+msgid ""
+"[Remove-IISConfigCollectionElement](./Remove-IISConfigCollectionElement.md)"
+msgstr ""
+"[Remove-IISConfigCollectionElement](./Remove-IISConfigCollectionElement.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

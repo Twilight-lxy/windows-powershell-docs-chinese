@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:52:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Mount-IscsiVirtualDiskSnapshot"
+msgstr "#挂载Iscsi虚拟磁盘快照"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Mounts a snapshot locally."
+msgstr "在本地创建一个快照。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### SnapshotId (Default)"
+msgstr "### SnapshotId（默认值）"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"Note: This cmdlet is deprecated and might be removed in a future release.\n"
+"We recommend that you do not use this cmdlet."
+msgstr "注意：此cmdlet已被弃用，可能在未来的版本中被移除。我们建议您不要使用此cmdlet。"
+
+msgid ""
+"The **Mount-IscsiVirtualDiskSnapshot** cmdlet mounts a snapshot locally.\n"
+"This cmdlet operates on snapshots in the virtual disk 1.0 (VHD) format only."
+msgstr ""
+"`Mount-IscsiVirtualDiskSnapshot` 这个 cmdlet 可以在本地挂载快照。该 cmdlet 仅适用于虚拟磁盘 "
+"1.0（VHD）格式的快照。"
+
+msgid ""
+"Mounting a snapshot locally exposes the snapshot as a disk to the local computer.\n"
+"Use diskmgmt.msc or cmdlets to bring the disk online."
+msgstr ""
+"在本地挂载快照后，该快照会作为磁盘显示在本地计算机上。可以使用 `diskmgmt.msc` 或相应的 PowerShell cmdlet "
+"将该磁盘设置为可访问状态（即使其在线可用）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Mount a snapshot by using an ID"
+msgstr "### 示例 1：使用 ID 挂载快照"
+
+msgid ""
+"This example mounts the snapshot that has the ID {E9A5BA03-85B9-40CA-85DF-"
+"DC1695690B40} on the local server, which can be accessed by the backup "
+"server to perform backup."
+msgstr ""
+"这个示例将ID为{E9A5BA03-85B9-40CA-85DF-DC1695690B40}的快照 "
+"mounting（挂载）到本地服务器上，备份服务器可以访问该快照来进行数据备份。"
+
+msgid "### Example 2: Mount a snapshot by using a name"
+msgstr "### 示例 2：通过名称挂载快照"
+
+msgid ""
+"This example mounts the Snapshot object stored in a variable named "
+"$VhdSnapshot on the local server, which can be accessed by the backup server"
+" to perform backup."
+msgstr ""
+"这个示例将存储在名为 $VhdSnapshot 的变量中的 Snapshot 对象挂载到本地服务器上，备份服务器可以访问该对象以执行备份操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此cmdlet在远程计算机上运行，则指定远程计算机的名称或IP地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "指定集群资源组的网络名称，或者如果该cmdlet在集群配置上运行，则指定集群节点的名称。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接到远程计算机时所需的凭据信息。"
+
+msgid "Accepts an iSCSI Virtual Disk Snapshot object from the input pipeline."
+msgstr "从输入管道中接收一个 iSCSI 虚拟磁盘快照对象。"
+
+msgid "Specifies the identifier (ID) for the snapshot."
+msgstr "指定快照的标识符（ID）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.Iscsi.Target.Commands.IscsiVirtualDiskSnapshot"
+msgstr "### Microsoft.Iscsi TargetCommands.IscsiVirtualDiskSnapshot"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Dismount-IscsiVirtualDiskSnapshot](./Dismount-IscsiVirtualDiskSnapshot.md)"
+msgstr ""
+"[Dismount-IscsiVirtualDiskSnapshot](./Dismount-IscsiVirtualDiskSnapshot.md)"
+
+msgid ""
+"[Export-IscsiVirtualDiskSnapshot](./Export-IscsiVirtualDiskSnapshot.md)"
+msgstr ""
+"[Export-IscsiVirtualDiskSnapshot](./Export-IscsiVirtualDiskSnapshot.md)"
+
+msgid "[Get-IscsiVirtualDiskSnapshot](./Get-IscsiVirtualDiskSnapshot.md)"
+msgstr "[Get-IscsiVirtualDiskSnapshot](./Get-IscsiVirtualDiskSnapshot.md)"
+
+msgid ""
+"[Remove-IscsiVirtualDiskSnapshot](./Remove-IscsiVirtualDiskSnapshot.md)"
+msgstr "[删除Iscsi虚拟磁盘快照](./Delete-IscsiVirtualDiskSnapshot.md)"
+
+msgid "[Set-IscsiVirtualDiskSnapshot](./Set-IscsiVirtualDiskSnapshot.md)"
+msgstr "[Set-IscsiVirtualDiskSnapshot](./Set-IscsiVirtualDiskSnapshot.md)"

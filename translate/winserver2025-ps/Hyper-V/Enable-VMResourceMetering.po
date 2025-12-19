@@ -1,0 +1,186 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:01:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-VMResourceMetering"
+msgstr "# 启用虚拟机资源计量功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Collects resource utilization data for a virtual machine or resource pool."
+msgstr "收集虚拟机或资源池的资源利用数据。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourcePool"
+msgstr "### ResourcePool"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-VMResourceMetering** cmdlet starts collecting resource "
+"utilization data for a virtual machine or resource pool."
+msgstr "`Enable-VMResourceMetering` cmdlet 用于开始收集虚拟机或资源池的资源使用情况数据。"
+
+msgid ""
+"You can use the Measure-VM or Measure-VMResourcePool cmdlet to obtain this "
+"data."
+msgstr "你可以使用 `Measure-VM` 或 `Measure-VMResourcePool` cmdlet 来获取这些数据。"
+
+msgid ""
+"If resource metering is enabled but no **NetworkAdapterAcls** are configured, Hyper-V configures them to measure total network traffic.\n"
+"To measure network traffic through an IP range, configure the **NetworkAdapterAcls** for the IP range before calling this cmdlet.\n"
+"(See Add-VMNetworkAdapterAcl for more information.)"
+msgstr ""
+"如果启用了资源计量功能，但未配置任何 **NetworkAdapterAcls**，则 Hyper-V "
+"会自动配置这些规则以测量总网络流量。如果要通过某个 IP 范围来测量网络流量，请在调用此 cmdlet 之前先为该 IP 范围配置相应的 "
+"**NetworkAdapterAcls**。（有关更多信息，请参阅 Add-VMNetworkAdapterAcl。）"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example starts collecting resource utilization data on a virtual "
+"machine named TestVM."
+msgstr "这个示例开始收集名为 TestVM 的虚拟机上的资源利用数据。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example starts collecting resource utilization data on a resource pool named TestResourcePool.\n"
+"(You can determine whether resource metering is enabled for a resource pool by querying its ResourceMeteringEnabled property.)"
+msgstr ""
+"这个示例开始收集名为 TestResourcePool 的资源池的资源使用数据。（您可以通过查询其 ResourceMeteringEnabled "
+"属性来确定该资源池是否启用了资源计量功能。）"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example uses two commands that show resource metering being enabled and then obtain the data.\n"
+"The first command starts collecting resource utilization data for a memory resource pool named TestResourcePool.\n"
+"(You can determine whether resource metering is enabled for a resource pool by querying its ResourceMeteringEnabled property.) The second command retrieves the data in and formats it as a list."
+msgstr ""
+"这个示例使用了两个命令：第一个命令用于启用资源计量功能，然后开始收集名为“TestResourcePool”的内存资源池的资源使用情况数据；（你可以通过查询该资源池的“ResourceMeteringEnabled”属性来判断其是否启用了资源计量功能。）第二个命令则用于检索这些数据，并将其格式化为列表形式。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example begins collecting resource utilization data on multiple "
+"resource pools with the name TestResourcePool."
+msgstr "这个示例开始收集名为“TestResourcePool”的多个资源池的资源利用数据。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the virtual machine host or hosts on which resource utilization data collection is to be enabled.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定要启用资源利用数据收集的虚拟机主机。允许使用 NetBIOS 名称、IP 地址和完全限定域名作为主机标识。默认值是本地计算机。可以使用 "
+"`localhost` 或一个点（.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值是当前用户。"
+
+msgid ""
+"Specifies the friendly name of the resource pool for which you want to "
+"collect resource utilization data."
+msgstr "指定您希望收集资源利用率数据的资源池的友好名称。"
+
+msgid ""
+"Specifies the resource type of the resource pool for which you want to "
+"collect resource utilization data."
+msgstr "指定您希望收集资源使用数据的资源池的资源类型。"
+
+msgid ""
+"Specifies the virtual machine for which you want to collect resource "
+"utilization data."
+msgstr "指定您希望收集资源使用数据的虚拟机。"
+
+msgid ""
+"Specifies the friendly name of the virtual machine for which you want to "
+"collect resource utilization data."
+msgstr "指定您想要收集资源使用数据的虚拟机的友好名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine[]"
+msgstr "### Microsoft.HyperV.PowerShellvirtualMachine[]"
+
+msgid "### Microsoft.HyperV.PowerShell.VMResourcePoolType"
+msgstr "### Microsoft.HyperV.PowerShell.VMResourcePoolType"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Measure-VM](./Measure-VM.md)"
+msgstr "[Measure-VM](./Measure-VM.md)"
+
+msgid "[Measure-VMResourcePool](./Measure-VMResourcePool.md)"
+msgstr "[Measure-VMResourcePool](./Measure-VMResourcePool.md)"
+
+msgid "[Disable-VMResourceMetering](./Disable-VMResourceMetering.md)"
+msgstr "[禁用虚拟机资源计量功能](./ Disable-VMResourceMetering.md)"

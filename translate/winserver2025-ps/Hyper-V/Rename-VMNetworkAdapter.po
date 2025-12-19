@@ -1,0 +1,184 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:53:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Rename-VMNetworkAdapter"
+msgstr "# 重命名虚拟机网络适配器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Renames a virtual network adapter on a virtual machine or on the management "
+"operating system."
+msgstr "重命名虚拟机或管理操作系统上的虚拟网络适配器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Rename-VMNetworkAdapter** cmdlet renames a virtual network adapter on "
+"a virtual machine or on the management operating system."
+msgstr "`Rename-VMNetworkAdapter` cmdlet 可以重命名虚拟机或管理操作系统上的虚拟网络适配器。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example renames all the virtual network adapters of virtual machine "
+"Redmond to CoreNet."
+msgstr "这个示例将虚拟机Redmond的所有虚拟网络适配器的名称更改为CoreNet。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example renames the virtual network adapter Private to CoreNet in "
+"virtual machine Kirkland."
+msgstr "这个示例将虚拟机“Kirkland”中的虚拟网络适配器的名称从“Private”更改为“CoreNet”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，使用的是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual network adapter is to be renamed.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于重命名虚拟网络适配器的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行识别。默认值是本地计算机；可以通过使用 `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that you want to rename a virtual network adapter that belongs to "
+"the management operating system."
+msgstr "指定您想要重命名属于管理操作系统的虚拟网络适配器。"
+
+msgid "Specifies the existing name of the virtual network adapter."
+msgstr "指定虚拟网络适配器的现有名称。"
+
+msgid "Specifies the new name for the virtual network adapter."
+msgstr "指定虚拟网络适配器的新名称。"
+
+msgid ""
+"Specifies that an object is to be passed through to the pipeline representing the virtual network adapter to be renamed.\n"
+"This is a **Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter** object, if ManagementOS is specified; otherwise it is a **Microsoft.HyperV.PowerShell.VMNetworkAdapter** object."
+msgstr ""
+"指定要将某个对象传递给代表需要重命名的虚拟网络适配器的管道。如果指定了 `ManagementOS`，则该对象为 `Microsoft.HyperV "
+"POWERShell.VMInternalNetworkAdapter` 类型；否则，该对象为 "
+"`Microsoft.HyperV.PowerShell.VMNetworkAdapter` 类型。"
+
+msgid ""
+"Specifies the virtual machine that has the virtual network adapter you want "
+"to rename."
+msgstr "指定包含您想要重命名的虚拟网络适配器的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine that has the virtual network "
+"adapter you want to rename."
+msgstr "指定拥有您希望重命名的虚拟网络适配器的虚拟机的名称。"
+
+msgid "Specifies the virtual network adapter to be renamed."
+msgstr "指定要重命名的虚拟网络适配器。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "By default, this cmdlet doesn't return any output."
+msgstr "默认情况下，此cmdlet不会返回任何输出结果。"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapter"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapter"
+
+msgid ""
+"When you use the **PassThru** parameter, this cmdlet returns a "
+"**Microsoft.HyperV.PowerShell.VMNetworkAdapter** object."
+msgstr ""
+"当你使用 **PassThru** 参数时，此 cmdlet 会返回一个 **Microsoft.HyperV "
+"POWERShell.VMNetworkAdapter** 对象。"
+
+msgid "### Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter"
+msgstr "### Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter"
+
+msgid ""
+"When you use the **PassThru** and **-ManagementOS** parameters, this cmdlet "
+"returns a **Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter** object."
+msgstr ""
+"当您使用 **PassThru** 和 **-ManagementOS** 参数时，此 cmdlet 会返回一个 "
+"**Microsoft.HyperV.PowShell.VMInternalNetworkAdapter** 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

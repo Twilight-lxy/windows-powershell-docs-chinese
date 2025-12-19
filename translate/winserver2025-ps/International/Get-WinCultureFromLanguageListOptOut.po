@@ -1,0 +1,93 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:40:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WinCultureFromLanguageListOptOut"
+msgstr "# 使用 `Get-WinCultureFromLanguageListOptOut` 函数获取指定语言列表中的相关文化信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the Culture from the language list opt-out setting for the current user"
+" account."
+msgstr "从当前用户账户的语言列表设置中获取相应的“文化”（即与该语言相关的文化信息或偏好）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WinCultureFromLanguageListOptOut** cmdlet gets the Culture, or User Locale, override setting for the current user account.\n"
+"When set to $True, the Culture setting is not updated by changes to the Windows display language.\n"
+"When set to $False, the Culture setting can be reassigned to match the display language changes any time that the display language changes.\n"
+"The default setting is $False."
+msgstr ""
+"`Get-WinCultureFromLanguageListOptOut` cmdlet "
+"用于获取当前用户账户的“文化设置”（即用户语言环境）的配置。当该设置为 `$True` 时，Windows "
+"显示语言的更改不会影响用户的“文化设置”。而当设置为 `$False` "
+"时，每当显示语言发生变化时，“文化设置”会自动重新调整以匹配新的显示语言。默认值为 `$False`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the Culture override setting"
+msgstr "### 示例 1：获取 Culture （文化设置）的覆盖值"
+
+msgid ""
+"This command gets the Culture override setting for the current user account."
+msgstr "这个命令用于获取当前用户账户的文化设置（即语言或区域相关偏好）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Boolean"
+msgstr "### 布尔值（Boolean）"
+
+msgid ""
+"This cmdlet returns a Boolean value that reports the status of this setting."
+msgstr "此cmdlet返回一个布尔值，用于报告该设置的状态。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Set-WinCultureFromLanguageListOptOut](./Set-"
+"WinCultureFromLanguageListOptOut.md)"
+msgstr ""
+"[Set-WinCultureFromLanguageListOptOut](./Set-"
+"WinCultureFromLanguageListOptOut.md)"

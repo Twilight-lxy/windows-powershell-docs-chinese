@@ -1,0 +1,211 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:08:55 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-FsrmFileScreen"
+msgstr "# New-FsrmFileScreen"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a file screen."
+msgstr "创建一个文件屏幕（用于展示文件内容）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-FsrmFileScreen** cmdlet creates a file screen for a path on the server.\n"
+"A file screen blocks users from saving groups of files to a specified folder."
+msgstr ""
+"`New-FsrmFileScreen` cmdlet "
+"用于为服务器上的某个路径创建一个文件筛选规则。该文件筛选规则会阻止用户将多个文件同时保存到指定的文件夹中。"
+
+msgid ""
+"If you specify the *Active* parameter, the file screen prevents users from saving files that are members of blocked file groups, and generates notifications when users try to save blocked files.\n"
+"The file screen does not prevent users and applications from accessing files that were saved to the path before the file screen was created, regardless of whether the files are members of blocked file groups."
+msgstr ""
+"如果您指定了“Active”参数，文件屏蔽功能会阻止用户保存属于被阻止文件组的文件，并在用户尝试保存这些文件时生成通知。该功能不会阻止用户或应用程序访问在创建文件屏蔽功能之前已保存到该路径的文件，无论这些文件是否属于被阻止的文件组。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a passive file screen"
+msgstr "### 示例 1：创建一个被动文件扫描程序"
+
+msgid ""
+"This command creates a passive file screen on C:\\Shares that logs any files that match the \"Non-HTML text files\" file group.\n"
+"The file screen template is passive because the command specifies the `-Active:$false` parameter.\n"
+"This means that users can create non-HTML text files."
+msgstr ""
+"此命令在 C:\\Shares 目录上创建了一个被动文件筛选规则，用于记录所有属于“非 HTML "
+"文本文件”文件组的文件。该文件筛选规则的模板被设置为“被动模式”，因为命令中指定了 `-Active:$false` 参数。这意味着用户可以正常创建非 "
+"HTML 格式的文本文件。"
+
+msgid "### Example 2: Create an active file screen"
+msgstr "### 示例 2：创建一个活动文件屏幕"
+
+msgid ""
+"The first command creates a File Server Resource Manager (FSRM) action object and stores the results in the $Notification variable.\n"
+"The action sends an email notification to the file owner and administrator.\n"
+"The **RunLimitInterval** parameter specifies an interval of 2 minutes before the server can send the email notification again."
+msgstr ""
+"第一个命令创建了一个文件服务器资源管理器（File Server Resource "
+"Manager，简称FSRM）操作对象，并将结果存储在$Notification变量中。该操作会向文件的所有者和管理员发送电子邮件通知。**RunLimitInterval**参数指定了一个间隔时间，即2分钟；在这段时间内，服务器无法再次发送电子邮件通知。"
+
+msgid ""
+"This second command creates an active file screen on `C:\\Shares\\Ctrshare03` that restricts any files that match the \"Non-HTML text files\" file group.\n"
+"When a user attempts to create a non-HTML text file, the file screen performs the notification action stored in the `$Notification` variable."
+msgstr ""
+"这第二条命令会在 `C:\\Shares\\Ctrshare03` "
+"上创建一个文件筛选规则，该规则会限制所有属于“非HTML文本文件”文件组的文件。当用户尝试创建一个非HTML文本文件时，文件筛选规则会执行存储在 "
+"`$Notification` 变量中的通知操作。"
+
+msgid "### Example 3: Create a file screen from a file screen template"
+msgstr "### 示例 3：根据文件屏幕模板创建一个新的文件屏幕"
+
+msgid ""
+"This command creates a file screen on `C:\\shares\\ctrshare03` based on the "
+"settings in the \"Block Image Files\" template."
+msgstr "该命令根据“阻止图像文件”模板中的设置，在 `C:\\shares\\ctrshare03` 上创建一个文件屏幕。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the server will fail any I/O operation that violates the file"
+" screen. It is enabled by default."
+msgstr "表示服务器会拒绝执行任何违反文件系统安全规则的输入/输出（I/O）操作。该功能默认是启用的。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用此参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid "Specifies a description for the file screen."
+msgstr "为文件屏幕指定一个描述。"
+
+msgid ""
+"Specifies an array of names of file groups.\n"
+"The file groups contain the file name patterns that the server uses to specify the files that are blocked by this screen."
+msgstr "指定一个文件组名称数组。这些文件组包含了服务器用于识别被该规则阻止的文件的文件名模式。"
+
+msgid ""
+"Specifies an array of notification action objects.\n"
+"You can use the **New-FsrmFmjNotificationAction** cmdlet to create a **FsrmFmjNotificationAction** object."
+msgstr ""
+"指定一个通知操作对象的数组。你可以使用 **New-FsrmFmjNotificationAction** cmdlet 来创建一个 "
+"**FsrmFmjNotificationAction** 对象。"
+
+msgid "Specifies a valid local path to a folder."
+msgstr "指定一个有效的本地文件夹路径。"
+
+msgid "Specifies a file screen template on the server."
+msgstr "在服务器上指定一个文件屏幕模板。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，那么 Windows PowerShell® 会根据计算机上正在运行的"
+" CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前正在运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, "
+"`-ErrorVariable`, `-InformationAction`, `-InformationVariable`, "
+"`-OutVariable`, `-OutBuffer`, `-PipelineVariable`, `-Verbose`, "
+"`-WarningAction`, and `-WarningVariable`. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance[]"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-FsrmFileGroup](./Get-FsrmFileGroup.md)"
+msgstr "[Get-FsrmFileGroup](./Get-FsrmFileGroup.md)"
+
+msgid "[Get-FsrmFileScreen](./Get-FsrmFileScreen.md)"
+msgstr "[Get-FsrmFileScreen](./Get-FsrmFileScreen.md)"
+
+msgid "[New-FsrmFmjNotificationAction](./New-FsrmFmjNotificationAction.md)"
+msgstr "[New-FsrmFmjNotificationAction](./New-FsrmFmjNotificationAction.md)"
+
+msgid "[Remove-FsrmFileScreen](./Remove-FsrmFileScreen.md)"
+msgstr "[Remove-FsrmFileScreen](./Remove-FsrmFileScreen.md)"
+
+msgid "[Reset-FsrmFileScreen](./Reset-FsrmFileScreen.md)"
+msgstr "[Reset-FsrmFileScreen](./Reset-FsrmFileScreen.md)"
+
+msgid "[Set-FsrmFileScreen](./Set-FsrmFileScreen.md)"
+msgstr "[Set-FsrmFileScreen](./Set-FsrmFileScreen.md)"

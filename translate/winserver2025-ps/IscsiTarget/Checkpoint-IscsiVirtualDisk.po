@@ -1,0 +1,127 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:47:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Checkpoint-IscsiVirtualDisk"
+msgstr "# 检查点：IscsiVirtualDisk"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a virtual disk snapshot."
+msgstr "创建一个虚拟磁盘快照。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The **Checkpoint-IscsiVirtualDisk** cmdlet creates a snapshot."
+msgstr "`Checkpoint-IscsiVirtualDisk` 这个 cmdlet 用于创建快照。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a snapshot of a VHD"
+msgstr "### 示例 1：创建 VHD 的快照"
+
+msgid ""
+"This example creates a snapshot of the VHD with the path D:\\VHDs\\DB.vhdx."
+msgstr "这个示例创建了一个名为 D:\\VHDs\\db.vhdx 的 VHD 文件的快照。"
+
+msgid "### Example 2: Create a snapshot of a VHD with description"
+msgstr "### 示例 2：为 VHD 创建带有描述的快照"
+
+msgid ""
+"This example creates a snapshot of the VHD with the path D:\\VHDs\\DB.vhdx, and gives a description of the snapshot.\n"
+"The operation occurs on a remote computer that has the name fssvr.contoso.com."
+msgstr ""
+"这个示例创建了一个名为 D:\\VHDs\\db.vhdx 的 VHD 快照，并为该快照提供了描述。此操作是在一台名为 "
+"fssvr.contoso.com 的远程计算机上进行的。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此 cmdlet 在远程计算机上运行，则指定远程计算机的名称或 IP 地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "如果此 cmdlet 在集群配置上运行，则指定集群资源组的网络名称或集群节点的名称。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接到远程计算机时所需的凭据信息。"
+
+msgid "Specifies the description for the iSCSI virtual disk snapshot."
+msgstr "用于指定iSCSI虚拟磁盘快照的描述信息。"
+
+msgid ""
+"Specifies the path of the virtual hard disk (VHD) file that is associated "
+"with the iSCSI virtual disk to which the snapshot belongs."
+msgstr "指定与快照所属的iSCSI虚拟磁盘相关联的虚拟硬盘（VHD）文件的路径。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Iscsi.Target.Commands.IscsiVirtualDiskSnapshot"
+msgstr "### Microsoft.Iscsi.Target Commands.IscsiVirtualDiskSnapshot"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Convert-IscsiVirtualDisk](./Convert-IscsiVirtualDisk.md)"
+msgstr "[Convert-IscsiVirtualDisk](./Convert-IscsiVirtualDisk.md)"
+
+msgid "[Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"
+msgstr "[Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"
+
+msgid "[Import-IscsiVirtualDisk](./Import-IscsiVirtualDisk.md)"
+msgstr "[Import-IscsiVirtualDisk](./Import-IscsiVirtualDisk.md)"
+
+msgid "[New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+msgstr "[New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+
+msgid "[Remove-IscsiVirtualDisk](./Remove-IscsiVirtualDisk.md)"
+msgstr "[Remove-IscsiVirtualDisk](./Remove-IscsiVirtualDisk.md)"
+
+msgid "[Restore-IscsiVirtualDisk](./Restore-IscsiVirtualDisk.md)"
+msgstr "[恢复Iscsi虚拟磁盘](./Restore-IscsiVirtualDisk.md)"
+
+msgid "[Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"
+msgstr "[Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"

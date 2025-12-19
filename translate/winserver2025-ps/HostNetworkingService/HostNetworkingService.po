@@ -1,0 +1,78 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:39:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# HostNetworkingService Module"
+msgstr "# Host Networking Service 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "## HostNetworkingService Cmdlets"
+msgstr "## HostNetworkingServiceCmdlets"
+
+msgid "### [Get-HnsEndpoint](Get-HnsEndpoint.md)"
+msgstr "### [Get-HnsEndpoint](Get-HnsEndpoint.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-HnsEndpointAddresses](Get-HnsEndpointAddresses.md)"
+msgstr "### [Get-HnsEndpointAddresses](Get-HnsEndpointAddresses.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-HnsEndpointStats](Get-HnsEndpointStats.md)"
+msgstr "### [Get-HnsEndpointStats](Get-HnsEndpointStats.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-HnsNamespace](Get-HnsNamespace.md)"
+msgstr "### [Get-HnsNamespace](Get-HnsNamespace.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Get-HnsNetwork](Get-HnsNetwork.md)"
+msgstr "### [Get-HnsNetwork](Get-HnsNetwork.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-HnsPolicyList](Get-HnsPolicyList.md)"
+msgstr "### [Get-HnsPolicyList](Get-HnsPolicyList.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid "### [Remove-HnsEndpoint](Remove-HnsEndpoint.md)"
+msgstr "### [Remove-HnsEndpoint](Remove-HnsEndpoint.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Remove-HnsNamespace](Remove-HnsNamespace.md)"
+msgstr "### [Remove-HnsNamespace](Remove-HnsNamespace.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Remove-HnsNetwork](Remove-HnsNetwork.md)"
+msgstr "### [Remove-HnsNetwork](Remove-HnsNetwork.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Remove-HnsPolicyList](Remove-HnsPolicyList.md)"
+msgstr "### [Remove-HnsPolicyList](Remove-HnsPolicyList.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"

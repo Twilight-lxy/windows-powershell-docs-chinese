@@ -1,0 +1,148 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:36:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-VMGroup"
+msgstr "# 新虚拟机组（New-VMGroup）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a virtual machine group."
+msgstr "创建一个虚拟机组。"
+
+msgid ""
+"With Hyper-V, there are two types of VMGroups: a VMCollectionType and a ManagementCollectionType.\n"
+"A VMCollectionType VMGroup contains VMs while the ManagementCollectionType VMGroup contains VMCollectionType VMGroups.\n"
+"For example, you could have two VMCollectionType VMGroups VMG1 (containing VMs VM1 and VM2) and a second VMG2 (containing VMs VM3 and VM4).\n"
+"You could then create a ManagementCollectionType VMGroup VM-All containing the two VMCollectionType VMGroups.\n"
+"You use the [Add-VMGroupMember](./Add-VMGroupMember.md) cmdlet to add VMs to VMCollectionType VMGroups and to add VMCollectionType groups to ManagementCollectionType VMGroups."
+msgstr ""
+"使用 Hyper-V 时，有两种类型的 VMGroup：VMCollectionType 和 "
+"ManagementCollectionType。VMCollectionType 类型的 VMGroup 包含虚拟机（VM），而 "
+"ManagementCollectionType 类型的 VMGroup 则包含其他 VMCollectionType 类型的 "
+"VMGroup。例如，你可以有两个 VMCollectionType 类型的 VMGroup，分别为 VMG1（包含虚拟机 VM1 和 VM2）和 "
+"VMG2（包含虚拟机 VM3 和 VM4）。然后你可以创建一个 ManagementCollectionType 类型的 VMGroup（名为 VM-"
+"All），该 VMGroup 包含这两个 VMCollectionType 类型的 VMGroup。你可以使用 [Add-"
+"VMGroupMember](./Add-VMGroupMember.md) cmdlet 将虚拟机添加到 VMCollectionType 类型的 "
+"VMGroup 中，或将多个 VMCollectionType 类型的 VMGroup 添加到 ManagementCollectionType 类型的"
+" VMGroup 中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **New-VMGroup** cmdlet creates a virtual machine group."
+msgstr "`New-VMGroup` cmdlet 用于创建一个虚拟机组。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a group to contain virtual machines"
+msgstr "### 示例 1：创建一个用于包含虚拟机的组"
+
+msgid ""
+"This command creates a virtual machine group named CollectionGroup07 of type VMCollectionType.\n"
+"This group can contain collections of virtual machines."
+msgstr ""
+"这个命令创建了一个名为 CollectionGroup07 的虚拟机组，其类型为 "
+"VMCollectionType。该组可以包含多个虚拟机集合（即由多个虚拟机组成的集合）。"
+
+msgid "### Example 2: Create a group to contain groups of virtual machines"
+msgstr "### 示例 2：创建一个组来容纳多个虚拟机组"
+
+msgid ""
+"This command creates a virtual machine group named ManagementCollectionGroup03 of type ManagementCollectionType.\n"
+"This group can contain collections of other groups."
+msgstr ""
+"此命令创建了一个名为ManagementCollectionGroup03的虚拟机组，其类型为ManagementCollectionType。该组可以包含其他组的集合。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts that run this cmdlet.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个运行此 cmdlet 的 Hyper-V 主机。允许使用 NetBIOS 名称、IP "
+"地址和完全限定域名进行指定。默认值是本地计算机。可以使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the type of group that this cmdlet creates.\n"
+"The acceptable values for this parameter are: ManagementCollectionType and VMCollectionType."
+msgstr "指定此cmdlet创建的组类型。该参数的可接受值为：ManagementCollectionType和VMCollectionType。"
+
+msgid "Specifies the unique ID of the group that this cmdlet creates."
+msgstr "指定此cmdlet创建的组的唯一ID。"
+
+msgid "Specifies the name for the group that this cmdlet creates."
+msgstr "指定此 cmdlet 创建的组的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMGroup"
+msgstr "### Microsoft.HyperV.PowerShell.VMGroup"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VMGroup](./Get-VMGroup.md)"
+msgstr "[Get-VMGroup](./Get-VMGroup.md)"
+
+msgid "[Remove-VMGroup](./Remove-VMGroup.md)"
+msgstr "[Remove-VMGroup](./Remove-VMGroup.md)"
+
+msgid "[Rename-VMGroup](./Rename-VMGroup.md)"
+msgstr "[重命名虚拟机组](./Rename-VMGroup.md)"
+
+msgid "[Add-VMGroupMember](./Add-VMGroupMember.md)"
+msgstr "[Add-VMGroupMember](./Add-VMGroupMember.md)"

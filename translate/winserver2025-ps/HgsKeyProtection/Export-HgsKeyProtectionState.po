@@ -1,0 +1,133 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:25:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-HgsKeyProtectionState"
+msgstr "# Export-HgsKeyProtectionState"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Exports Key Protection Service configuration and certificates."
+msgstr "导出密钥保护服务的配置信息和证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Export-HgsKeyProtectionState** cmdlet exports configuration of Key Protection Service to a file referenced by the path parameter.\n"
+"If the path parameter is not provided, the cmdlet outputs the configuration state as XML.\n"
+"If the configuration contains certificates that were added to the service with pfx (containing private key), then the exported configuration also contains those private keys.\n"
+"The password parameter is used to protect the private keys that are part of the configuration.\n"
+"If the configuration contains certificates with private keys in Hardware Security Module (HSM), then the configuration only contains the public certificate."
+msgstr ""
+"`Export-HgsKeyProtectionState` cmdlet 将 Key Protection Service "
+"的配置信息导出到由路径参数指定的文件中。如果未提供路径参数，该 cmdlet 会以 XML 格式输出配置状态。如果配置中包含通过 pfx "
+"格式添加到服务中的证书（这些证书包含了私钥），那么导出的配置文件中也會包含这些私钥。`Password` "
+"参数用于保护配置文件中的私钥；如果配置中包含存储在硬件安全模块 (HSM) 中的带有私钥的证书，那么配置文件中仅会包含相应的公钥。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Export Key Protection Service state to a file"
+msgstr "### 示例 1：将密钥保护服务的状态导出到文件中"
+
+msgid ""
+"This command exports configuration state of Key Protection Service.\n"
+"All certificates that were added as a pfx are included in the output which is written to the file referenced by the path parameter.\n"
+"The private keys are protected with the password specified in the $Password secure string."
+msgstr ""
+"此命令用于导出密钥保护服务（Key Protection "
+"Service）的配置状态。所有以.pfx格式添加的证书都会被包含在输出结果中，该输出结果会被写入由路径参数指定的文件中。私钥会使用 "
+"`$Password` 安全字符串中指定的密码进行加密保护。"
+
+msgid "### Example 2: Export Key Protection Service state to Xml"
+msgstr "### 示例 2：将 Key Protection Service 的状态导出为 XML 文件"
+
+msgid ""
+"This command exports configuration state of Key Protection Service as output that can be stored in a variable.\n"
+"All certificates that were added as a pfx are included in the output.\n"
+"The private keys are protected with the password specified in the $Password secure string."
+msgstr ""
+"此命令会将密钥保护服务（Key Protection Service）的配置状态导出为可供存储在变量中的输出文件。所有以 PFX "
+"格式添加的证书都会包含在该输出文件中。私钥会使用 `$Password` 安全字符串中指定的密码进行加密保护。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the password which protects private keys contained within the "
+"exported configuration."
+msgstr "指定用于保护导出配置中包含的私钥的密码。"
+
+msgid ""
+"Specifies the path of the file to which the configuration state is written."
+msgstr "指定用于写入配置状态的文件的路径。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您不能将输入数据通过管道传递给这个cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid ""
+"This cmdlet outputs XmlDocument that contains Key Protection Service state "
+"if Path parameter is not specified."
+msgstr ""
+"如果未指定 `Path` 参数，此 cmdlet 会输出一个 `XmlDocument`，其中包含密钥保护服务（Key Protection "
+"Service）的状态信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Import-HgsKeyProtectionState](./Import-HgsKeyProtectionState.md)"
+msgstr "[Import-HgsKeyProtectionState](./Import-HgsKeyProtectionState.md)"

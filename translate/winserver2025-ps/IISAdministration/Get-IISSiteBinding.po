@@ -1,0 +1,117 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:33:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IISSiteBinding"
+msgstr "# 获取 IISSite 绑定信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets the bindings on the specified IIS site. This cmdlet has been introduced"
+" in version 1.1.0.0 of IISAdministration module."
+msgstr "获取指定 IIS 站点上的绑定信息。此 cmdlet 是从 IISAdministration 模块的 1.1.0.0 版本开始引入的。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-IISSiteBinding** cmdlet gets information about website bindings "
+"and their current status and other key information."
+msgstr ""
+"`Get-IISSiteBinding` cmdlet 可以获取有关网站绑定（website bindings）及其当前状态的其他关键信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get Information about an IIS website binding"
+msgstr "### 示例 1：获取有关 IIS 网站绑定的信息"
+
+msgid ""
+"This command gets the binding information for the \"*:80:\" binding of the "
+"Default Web Site."
+msgstr "这个命令用于获取默认网站（Default Web Site）中“*:80:”绑定相关的信息。"
+
+msgid "### Example 2: Get information about all bindings of an IIS website"
+msgstr "### 示例 2：获取有关 IIS 网站所有绑定信息的内容"
+
+msgid ""
+"This command gets all configuration information about all bindings of the "
+"Default Web Site"
+msgstr "这条命令会获取关于“默认网站”（Default Web Site）所有绑定设置的所有配置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the binding information string to use for the new site. The binding information of the form\n"
+"IP:Port:hostname such as 192.168.0.1:80:www.contoso.com and one or more of the fields can be left blank, which\n"
+"is equivalent to using a wildcard character such as \\*:443:. In this representation \\* indicates all IP\n"
+"addresses and all hostnames are indicated by leaving the corresponding field blank."
+msgstr ""
+"指定用于新站点的绑定信息字符串。绑定信息的格式为 IP:Port:hostname（例如 "
+"192.168.0.1:80:www.contoso.com），其中某个或多个字段可以留空，这相当于使用了通配符（如 *:443:）。在这种表示法中，*"
+" 表示所有 IP 地址；而通过将相应的字段留空，则表示所有主机名。"
+
+msgid "Specifies the name of the IIS website."
+msgstr "指定 IIS 网站的名称。"
+
+msgid ""
+"The protocol for which the binding is configured, usually http, https or "
+"ftp."
+msgstr "用于配置绑定的协议，通常是http、https或ftp。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-IISSiteBinding](./New-IISSiteBinding.md)"
+msgstr "[New-IISSiteBinding](./New-IISSiteBinding.md)"
+
+msgid "[Remove-IISSiteBinding](./Remove-IISSiteBinding.md)"
+msgstr "[Remove-IISSiteBinding](./Remove-IISSiteBinding.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

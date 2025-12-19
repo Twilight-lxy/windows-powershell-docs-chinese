@@ -1,0 +1,315 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:10:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# MultiPoint Module"
+msgstr "# 多点模块（MultiPoint Module）"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"The MultiPoint cmdlets in this module are used to manage Windows MultiPoint "
+"Server sessions and users."
+msgstr "此模块中的MultiPoint cmdlet用于管理Windows MultiPoint Server会话和用户。"
+
+msgid "## MultiPoint Cmdlets"
+msgstr "## MultiPointCmdlets"
+
+msgid "### [Add-WmsSystem](./Add-WmsSystem.md)"
+msgstr "### [Add-WmsSystem](./Add-WmsSystem.md)"
+
+msgid "Adds a computer that can be remotely managed."
+msgstr "添加了一台可以远程管理的计算机。"
+
+msgid "### [Clear-WmsStation](./Clear-WmsStation.md)"
+msgstr "### [Clear-WmsStation](./Clear-WmsStation.md)"
+
+msgid "Clears station mapping information for all stations."
+msgstr "清除所有车站的站点映射信息。"
+
+msgid "### [Close-WmsApp](./Close-WmsApp.md)"
+msgstr "### [Close-WmsApp](./Close-WmsApp.md)"
+
+msgid "Closes an application."
+msgstr "关闭一个应用程序。"
+
+msgid "### [Close-WmsSession](./Close-WmsSession.md)"
+msgstr "### [Close-WmsSession](./Close-WmsSession.md)"
+
+msgid "Logs the user off of the specified session."
+msgstr "将用户从指定的会话中登出。"
+
+msgid "### [Disable-WmsDiskProtection](./Disable-WmsDiskProtection.md)"
+msgstr "### [Disable-WmsDiskProtection](./Disable-WmsDiskProtection.md)"
+
+msgid "Removes the disk protection driver from the filter stack."
+msgstr "从过滤堆栈中移除磁盘保护驱动程序。"
+
+msgid "### [Disable-WmsScheduledUpdate](./Disable-WmsScheduledUpdate.md)"
+msgstr "### [ Disable-WmsScheduledUpdate](./Disable-WmsScheduledUpdate.md)"
+
+msgid ""
+"Disables scheduled updates while disk protection is enabled and in discard "
+"mode."
+msgstr "在启用磁盘保护功能且处于“丢弃”模式时，会禁用定时更新。"
+
+msgid "### [Disable-WmsWebLimiting](./Disable-WmsWebLimiting.md)"
+msgstr "### [Disable-WmsWebLimiting](./ Disable-WmsWebLimiting.md)"
+
+msgid "Disables web limiting for a session."
+msgstr "禁用某个会话期间的网络限制功能。"
+
+msgid "### [Disconnect-WmsSession](./Disconnect-WmsSession.md)"
+msgstr "### [ Disconnect-WmsSession](./Disconnect-WmsSession.md)"
+
+msgid "Disconnects a session."
+msgstr "断开会话连接。"
+
+msgid "### [Enable-WmsDiskProtection](./Enable-WmsDiskProtection.md)"
+msgstr "### [Enable-WmsDiskProtection](./Enable-WmsDiskProtection.md)"
+
+msgid "Enables disk protection."
+msgstr "启用磁盘保护功能。"
+
+msgid "### [Enable-WmsScheduledUpdate](./Enable-WmsScheduledUpdate.md)"
+msgstr "### [Enable-WmsScheduledUpdate](./Enable-WmsScheduledUpdate.md)"
+
+msgid ""
+"Enables scheduled updates while disk protection is enabled and in discard "
+"mode."
+msgstr "在启用磁盘保护功能且处于“丢弃”模式（discard mode）的情况下，该设置允许进行定时更新。"
+
+msgid "### [Enable-WmsWebLimiting](./Enable-WmsWebLimiting.md)"
+msgstr "### [Enable-WmsWebLimiting](./Enable-WmsWebLimiting.md)"
+
+msgid "Enables web limiting for a session."
+msgstr "为当前会话启用网页访问限制功能。"
+
+msgid "### [Get-WmsAlert](./Get-WmsAlert.md)"
+msgstr "### [Get-WmsAlert](./Get-WmsAlert.md)"
+
+msgid "Gets alert information."
+msgstr "获取警报信息。"
+
+msgid "### [Get-WmsApp](./Get-WmsApp.md)"
+msgstr "### [Get-WmsApp](./Get-WmsApp.md)"
+
+msgid "Gets a collection of currently running applications in a session."
+msgstr "获取当前会话中正在运行的应用程序集合。"
+
+msgid "### [Get-WmsDiskProtection](./Get-WmsDiskProtection.md)"
+msgstr "### [Get-WmsDiskProtection](./Get-WmsDiskProtection.md)"
+
+msgid ""
+"Gets the current state and configuration of the disk protection feature."
+msgstr "获取磁盘保护功能的当前状态和配置信息。"
+
+msgid "### [Get-WmsScheduledUpdate](./Get-WmsScheduledUpdate.md)"
+msgstr "### [Get-WmsScheduledUpdate](./Get-WmsScheduledUpdate.md)"
+
+msgid "Gets the scheduled update configuration."
+msgstr "获取计划好的更新配置信息。"
+
+msgid "### [Get-WmsSession](./Get-WmsSession.md)"
+msgstr "### [Get-WmsSession](./Get-WmsSession.md)"
+
+msgid "Gets session information."
+msgstr "获取会话信息。"
+
+msgid "### [Get-WmsStation](./Get-WmsStation.md)"
+msgstr "### [Get-WmsStation](./Get-WmsStation.md)"
+
+msgid "Gets station information."
+msgstr "获取车站信息。"
+
+msgid "### [Get-WmsSystem](./Get-WmsSystem.md)"
+msgstr "### [Get-WmsSystem](./Get-WmsSystem.md)"
+
+msgid "Gets MultiPoint Server system information."
+msgstr "获取多点服务器（MultiPoint Server）的系统信息。"
+
+msgid "### [Get-WmsUser](./Get-WmsUser.md)"
+msgstr "### [Get-WmsUser](./Get-WmsUser.md)"
+
+msgid "Gets local user account information."
+msgstr "获取本地用户账户信息。"
+
+msgid "### [Get-WmsVersion](./Get-WmsVersion.md)"
+msgstr "### [Get-WmsVersion](./Get-WmsVersion.md)"
+
+msgid "Gets the server version, the Connector version, and the SKU."
+msgstr "获取服务器版本、连接器版本以及SKU信息。"
+
+msgid "### [Get-WmsWebLimiting](./Get-WmsWebLimiting.md)"
+msgstr "### [Get-WmsWebLimiting](./Get-WmsWebLimiting.md)"
+
+msgid "Gets the web limiting configuration."
+msgstr "获取网络限制配置信息。"
+
+msgid "### [Hide-WmsIdentifier](./Hide-WmsIdentifier.md)"
+msgstr "### [隐藏 WMS 标识符](./Hide-WmsIdentifier.md)"
+
+msgid "Hides the identification window for a station or session."
+msgstr "隐藏车站或会话的识别窗口。"
+
+msgid "### [Join-WmsStation](./Join-WmsStation.md)"
+msgstr "### [Join-WmsStation](./Join-WmsStation.md)"
+
+msgid "Unsplits a station."
+msgstr "将一个车站拆分为多个独立的部分。"
+
+msgid "### [Lock-WmsSession](./Lock-WmsSession.md)"
+msgstr "### [Lock-WmsSession](./Lock-WmsSession.md)"
+
+msgid "Locks a session for a user."
+msgstr "为用户锁定会话。"
+
+msgid "### [Lock-WmsUsbStorage](./Lock-WmsUsbStorage.md)"
+msgstr "### [Lock-WmsUsbStorage](./Lock-WmsUsbStorage.md)"
+
+msgid "Prevents USB storage devices from being used."
+msgstr "防止使用USB存储设备。"
+
+msgid "### [New-WmsUser](./New-WmsUser.md)"
+msgstr "### [New-WmsUser](./New-WmsUser.md)"
+
+msgid "Modifies a Windows MultiPoint Server user account."
+msgstr "修改Windows多点服务器的用户账户。"
+
+msgid "### [Open-WmsApp](./Open-WmsApp.md)"
+msgstr "### [Open-WmsApp](./Open-WmsApp.md)"
+
+msgid "Launches an application in a session."
+msgstr "在某个会话中启动一个应用程序。"
+
+msgid "### [Publish-WmsDesktop](./Publish-WmsDesktop.md)"
+msgstr "### [Publish-WmsDesktop](./Publish-WmsDesktop.md)"
+
+msgid "Shares a desktop and optionally allows remote control of the desktop."
+msgstr "允许多人共享同一台桌面电脑，并可选择是否允许远程控制该桌面。"
+
+msgid "### [Remove-WmsSystem](./Remove-WmsSystem.md)"
+msgstr "### [Remove-WmsSystem](./Remove-WmsSystem.md)"
+
+msgid "Removes a computer from the list of managed systems."
+msgstr "将一台计算机从受管理的系统列表中删除。"
+
+msgid "### [Remove-WmsUser](./Remove-WmsUser.md)"
+msgstr "### [Remove-WmsUser](./Remove-WmsUser.md)"
+
+msgid "Removes a local user from the current MultiPoint Server system."
+msgstr "从当前的多点服务器系统中删除一个本地用户。"
+
+msgid "### [Restart-WmsSystem](./Restart-WmsSystem.md)"
+msgstr "### [重启 WMS 系统](./Restart-WmsSystem.md)"
+
+msgid "Restarts a computer that is running MultiPoint Server."
+msgstr "重启正在运行MultiPoint Server的计算机。"
+
+msgid "### [Resume-WmsDiskProtection](./Resume-WmsDiskProtection.md)"
+msgstr "### [ Resume-WmsDiskProtection](./Resume-WmsDiskProtection.md)"
+
+msgid "Switches disk protection to discard mode."
+msgstr "将磁盘保护模式切换到“丢弃”模式。"
+
+msgid "### [Search-WmsSystem](./Search-WmsSystem.md)"
+msgstr "### [Search-WmsSystem](./Search-WmsSystem.md)"
+
+msgid ""
+"Gets MultiPoint servers or personal computers running MultiPoint Connector "
+"in the same network."
+msgstr ""
+"获取在同一网络中运行的多点服务器（MultiPoint Servers）或安装了多点连接器（MultiPoint Connector）的个人电脑。"
+
+msgid "### [Set-WmsScheduledUpdate](./Set-WmsScheduledUpdate.md)"
+msgstr "### [Set-WmsScheduledUpdate](./Set-WmsScheduledUpdate.md)"
+
+msgid "Sets the schedule for Windows updates and custom maintenance scripts."
+msgstr "用于设置 Windows 更新以及自定义维护脚本的日程安排。"
+
+msgid "### [Set-WmsStation](./Set-WmsStation.md)"
+msgstr "### [Set-WmsStation](./Set-WmsStation.md)"
+
+msgid "Modifies station information."
+msgstr "修改站点信息。"
+
+msgid "### [Set-WmsSystem](./Set-WmsSystem.md)"
+msgstr "### [Set-WmsSystem](./Set-WmsSystem.md)"
+
+msgid "Modifies system properties."
+msgstr "修改系统属性。"
+
+msgid "### [Set-WmsUser](./Set-WmsUser.md)"
+msgstr "### [Set-WmsUser](./Set-WmsUser.md)"
+
+msgid "Modifies a Windows MultiPoint Server user account."
+msgstr "修改Windows多点服务器用户账户。"
+
+msgid "### [Set-WmsWebLimiting](./Set-WmsWebLimiting.md)"
+msgstr "### [Set-WmsWebLimiting](./Set-WmsWebLimiting.md)"
+
+msgid "Configures web limiting for standard user sessions."
+msgstr "为标准用户会话配置Web访问限制功能。"
+
+msgid "### [Show-WmsDesktop](./Show-WmsDesktop.md)"
+msgstr "### [Show-WmsDesktop](./Show-WmsDesktop.md)"
+
+msgid "Displays the currently shared desktop to the specified sessions."
+msgstr "将当前共享的桌面显示给指定的会话。"
+
+msgid "### [Show-WmsIdentifier](./Show-WmsIdentifier.md)"
+msgstr "### [显示 WMS 标识符](./Show-WmsIdentifier.md)"
+
+msgid "Displays the identification screen for a station."
+msgstr "显示车站的识别屏幕。"
+
+msgid "### [Split-WmsStation](./Split-WmsStation.md)"
+msgstr "### [Split-WmsStation](./Split-WmsStation.md)"
+
+msgid "Splits a station."
+msgstr "将一个电台节目分成多个部分（或片段）。"
+
+msgid "### [Stop-WmsSystem](./Stop-WmsSystem.md)"
+msgstr "### [Stop-WmsSystem](./Stop-WmsSystem.md)"
+
+msgid "Shuts down a computer that is running Windows MultiPoint Server."
+msgstr "关闭一台正在运行 Windows MultiPoint Server 的计算机。"
+
+msgid "### [Suspend-WmsDiskProtection](./Suspend-WmsDiskProtection.md)"
+msgstr "### [Suspend-WmsDiskProtection](./Suspend-WmsDiskProtection.md)"
+
+msgid "Suspends disk protection."
+msgstr "暂停磁盘保护功能。"
+
+msgid "### [Unlock-WmsSession](./Unlock-WmsSession.md)"
+msgstr "### [Unlock-WmsSession](./Unlock-WmsSession.md)"
+
+msgid "Unblocks a user for desktop use."
+msgstr "解除对用户的限制，使其可以在桌面设备上正常使用该服务。"
+
+msgid "### [Unlock-WmsUsbStorage](./Unlock-WmsUsbStorage.md)"
+msgstr "### [解锁 WMS USB 存储功能](./Unlock-WmsUsbStorage.md)"
+
+msgid "Unlocks USB storage."
+msgstr "解锁USB存储设备。"
+
+msgid "### [Unpublish-WmsDesktop](./Unpublish-WmsDesktop.md)"
+msgstr "### [Unpublish-WmsDesktop](./Unpublish-WmsDesktop.md)"
+
+msgid "Stops the sharing of the specified session desktop."
+msgstr "停止共享指定的会话桌面。"
+
+msgid "### [Update-WmsStation](./Update-WmsStation.md)"
+msgstr "### [Update-WmsStation](./Update-WmsStation.md)"
+
+msgid "Forces a station to reload its configuration settings."
+msgstr "强制一个站点重新加载其配置设置。"

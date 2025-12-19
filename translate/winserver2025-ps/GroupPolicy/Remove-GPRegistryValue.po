@@ -1,0 +1,269 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:01:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-GPRegistryValue"
+msgstr "# 删除GPRegistry值"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Removes one or more registry-based policy settings from either Computer "
+"Configuration or User Configuration in a GPO."
+msgstr "从GPO中的“计算机配置”或“用户配置”中删除一个或多个基于注册表的策略设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### GetByGUID (Default)"
+msgstr "### GetByGUID（默认值）"
+
+msgid "### GetByName"
+msgstr "### GetByName"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Remove-GPRegistryValue` cmdlet removes one or more registry-based policy settings from either\n"
+"Computer Configuration or User Configuration in a Group Policy Object (GPO). You can specify the GPO\n"
+"by its display name or by its GUID."
+msgstr ""
+"`Remove-GPRegistryValue` cmdlet "
+"可以从组策略对象（GPO）中的“计算机配置”或“用户配置”部分删除一个或多个基于注册表的策略设置。您可以通过显示名称或 GUID 来指定该 GPO。"
+
+msgid "You can specify either a key or a value:"
+msgstr "你可以指定键（key）或值（value）中的任意一个："
+
+msgid "This cmdlet can take input from the pipeline:"
+msgstr "这个cmdlet可以从管道中接收输入数据："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Remove a registry-based policy setting under the specified "
+"registry key"
+msgstr "### 示例 1：删除指定注册表键下的基于注册表的策略设置"
+
+msgid ""
+"This command removes the registry-based policy setting for the registry value\n"
+"`HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\Control Panel\\Desktop ScreenSaveTimeout` from\n"
+"the GPO named `TestGPO`. The registry value is no longer modified when the GPO is applied on a\n"
+"client. Removing a policy setting does not delete the registry value on a client. To delete the\n"
+"registry value when the GPO is applied on a client, you must disable the policy setting by using the\n"
+"`Set-GPRegistryValue` cmdlet."
+msgstr ""
+"此命令会从名为“TestGPO”的组策略对象（GPO）中删除与注册表值`HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\Control"
+" Panel\\Desktop "
+"ScreenSaveTimeout`相关的注册表策略设置。当该GPO应用于客户端时，该注册表值将不再被修改。不过，删除策略设置并不会从客户端上删除相应的注册表值。如果希望在GPO应用于客户端时也删除该注册表值，必须使用`Set-"
+"GPRegistryValue` cmdlet来禁用该策略设置。"
+
+msgid ""
+"### Example 2: Remove all the registry-based policy settings under the "
+"specified registry key"
+msgstr "### 示例 2：删除指定注册表键下的所有基于注册表的策略设置"
+
+msgid ""
+"This command removes all the registry-based policy settings that configure first-level registry\n"
+"values under the key `HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\ExampleKey` from `User`\n"
+"Configuration in the GPO named `TestGPO`. If there are registry-based policy settings in `User`\n"
+"Configuration that configure registry values for any subkeys of this key, an error occurs and no\n"
+"first-level policy settings are removed."
+msgstr ""
+"此命令会从名为 `TestGPO` 的组策略对象（GPO）的 “用户配置” 部分中，删除所有基于注册表的策略设置。这些策略设置用于配置位于键 "
+"`HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\ExampleKey` 下的一级注册表值。如果 "
+"“用户配置” 中存在其他基于注册表的策略设置（它们用于配置该键的子键对应的注册表值），则会导致错误发生，此时将不会有任何一级策略设置被删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the domain for this cmdlet. You must specify the fully qualified domain name (FQDN) of the\n"
+"domain."
+msgstr "指定此 cmdlet 所使用的域名。必须提供该域名的完全限定域名（FQDN）。"
+
+msgid ""
+"For the `Remove-GPRegistryValue` cmdlet, the GPO from which to remove the "
+"registry-based policy setting must exist in this domain."
+msgstr "对于 `Remove-GPRegistryValue` cmdlet 来说，要从中删除基于注册表的策略设置的 GPO 必须存在于该域中。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the user that is running the current\n"
+"session is used. If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used. For more information, see the Notes section in the full Help."
+msgstr ""
+"如果您没有指定 **Domain** 参数，将使用当前会话所运行的用户的域名。如果该 cmdlet "
+"是从计算机启动或关闭脚本中运行的，则将使用计算机的域名。有关更多信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user that is running the current\n"
+"session (or, for a startup or shutdown script, the computer), a trust must exist between that domain\n"
+"and the domain of the user or the computer."
+msgstr ""
+"如果您指定的域与当前会话所使用的用户的域不同（或者对于启动/关闭脚本来说，是与计算机所在的域不同），那么该域与用户或计算机所在域之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to the **Domain** parameter by its built-in alias, **DomainName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用其内置别名 **DomainName** 来引用 **Domain** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the GPO from which to remove the registry-based policy setting by its globally unique\n"
+"identifier (GUID). The GUID uniquely identifies the GPO."
+msgstr "通过其全局唯一标识符（GUID）指定要从其中删除基于注册表的策略设置的组策略对象（GPO）。该 GUID 可唯一地识别该 GPO。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in alias, **Id**."
+msgstr "您也可以通过其内置别名 **Id** 来引用 **Guid** 参数。"
+
+msgid ""
+"Specifies a registry key for which to remove one or more registry-based policy settings (for\n"
+"instance: `HKLM\\Software\\Policies\\Microsoft\\WindowsNT\\DNSClient\\UseDomainNameDevolution`)."
+msgstr ""
+"指定一个注册表键，以便从中删除一个或多个基于注册表的策略设置（例如：`HKLM\\Software\\Policies\\Microsoft\\WindowsNT\\DNSClient\\UseDomainNameDevolution`）。"
+
+msgid "The key must be in one of the two following registry hives:"
+msgstr "该密钥必须存在于以下两个注册表 hive 之一中："
+
+msgid ""
+"The Key parameter can be specified with or without the ValueName parameter:"
+msgstr "`Key` 参数可以单独指定，也可以与 `ValueName` 参数一起指定："
+
+msgid ""
+"You can also refer to the Key parameter by its built-in alias, FullKeyPath."
+msgstr "您也可以使用其内置别名 FullKeyPath 来引用 Key 参数。"
+
+msgid ""
+"Specifies the GPO from which to remove the registry-based policy setting by "
+"its display name."
+msgstr "根据显示名称指定要从其中删除基于注册表的策略设置的组策略对象（GPO）。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another GPO with the same display\n"
+"name exists in the domain an error occurs. You can use the **Guid** parameter to uniquely identify a\n"
+"GPO."
+msgstr ""
+"显示名称在该域中并不保证是唯一的。如果该域中存在另一个具有相同显示名称的组策略对象（GPO），则会发生错误。您可以使用 **Guid** "
+"参数来唯一标识一个 GPO。"
+
+msgid ""
+"You can also refer to the **Name** parameter by its built-in alias, "
+"**DisplayName**."
+msgstr "您也可以通过其内置别名 **DisplayName** 来引用 **Name** 参数。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此cmdlet用于联系的域控制器的名称，以便完成操作。您可以指定完整的域名（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the primary domain controller\n"
+"(PDC) emulator is contacted."
+msgstr "如果您不使用 **Server** 参数来指定名称，系统将会联系主域控制器（PDC）仿真器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, "
+"**DC**."
+msgstr "您也可以通过其内置别名“DC”来引用**Server**参数。"
+
+msgid ""
+"Specifies the name of the registry value for which to remove the registry-based policy setting. If\n"
+"you specify the **ValueName** parameter, you must also specify the **Key** parameter."
+msgstr "指定要删除基于注册表的策略设置的注册表值的名称。如果您指定了**ValueName**参数，则还必须指定**Key**参数。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft.GroupPolicy.Gpo"
+
+msgid "### Microsoft.GroupPolicy.PolicyRegistrySetting"
+msgstr "### Microsoft.GroupPolicy.PolicyRegistrySetting"
+
+msgid ""
+"You can pipe a GPO from which to remove a registry-based policy setting, or a\n"
+"**PolicyRegistrySetting** object that represents a registry-based policy setting. Collections that\n"
+"contain GPOs from different domains are not supported."
+msgstr ""
+"你可以使用管道操作（pipe）来获取一个GPO，然后从中移除基于注册表的策略设置；或者直接使用一个表示基于注册表策略设置的**PolicyRegistrySetting**对象。不支持包含来自不同域的GPO的集合。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft(GroupPolicy.Gpo)"
+
+msgid ""
+"This cmdlet returns the GPO from which the registry-based policy setting (or settings) has been\n"
+"removed."
+msgstr "此cmdlet返回了从中删除了基于注册表的策略设置（或多个设置）的GPO（组策略对象）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"  If a value for the registry key cannot be located (the registry key is not configured) or if\n"
+"  subkeys are present, an error occurs and a corresponding error message is displayed."
+msgstr "如果找不到注册表键的值（即该注册表键未被配置），或者存在子键，就会发生错误，并显示相应的错误消息。"
+
+msgid ""
+"  You can use the **Domain** parameter to explicitly specify the domain for "
+"this cmdlet."
+msgstr "你可以使用 **Domain** 参数来明确指定此 cmdlet 的域名。"
+
+msgid ""
+"  If you do not explicitly specify the domain, the cmdlet uses a default domain. The default domain\n"
+"  is the domain that is used to access network resources by the security context under which the\n"
+"  current session is running. This domain is typically the domain of the user that is running the\n"
+"  session. For instance, the domain of the user who started the session by opening Windows\n"
+"  PowerShell from the Program Files menu, or the domain of a user that is specified in a runas\n"
+"  command. However, computer startup and shutdown scripts run under the context of the LocalSystem\n"
+"  account. The LocalSystem account is a built-in local account, and it accesses network resources\n"
+"  under the context of the computer account. Therefore, when this cmdlet is run from a startup or\n"
+"  shutdown script, the default domain is the domain to which the computer is joined."
+msgstr ""
+"如果您没有明确指定域名，该 cmdlet "
+"会使用默认域名。默认域名是指当前会话所运行的安全上下文用于访问网络资源的那个域名。这个域名通常就是启动该会话的用户所在的域；例如，通过“程序文件”菜单打开"
+" Windows PowerShell 启动会话的用户所属的域，或者在 `runas` 命令中指定的用户所属的域。然而，计算机启动和关闭脚本是在 "
+"`LocalSystem` 账户的上下文中运行的。`LocalSystem` "
+"是一个内置的本地账户，它以计算机的身份来访问网络资源。因此，当从这个启动或关闭脚本中运行该 cmdlet 时，默认域名就是计算机所加入的那个域。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-GPRegistryValue](./Get-GPRegistryValue.md)"
+msgstr "[Get-GPRegistryValue](./Get-GPRegistryValue.md)"
+
+msgid "[Set-GPRegistryValue](./Set-GPRegistryValue.md)"
+msgstr "[Set-GPRegistryValue](./Set-GPRegistryValue.md)"

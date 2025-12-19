@@ -1,0 +1,82 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:16:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-HgsAttestationSignerCertificate"
+msgstr "# 获取 HGS 证书签名者的证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets the public certificates for a key pair that attestation uses to sign "
+"attestation certificates."
+msgstr ""
+"获取密钥对对应的公证书，这些公证书用于认证过程（attestation）中签署认证证书（attestation certificates）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-HgsAttestationSignerCertificate** cmdlet gets the signer certificate for Host Guardian Service (HGS) attestation.\n"
+"The Attestation Service signs attestation certificates by using a key pair.\n"
+"This cmdlet gets the public certificate that corresponds to that key pair."
+msgstr ""
+"`Get-HgsAttestationSignerCertificate` cmdlet 用于获取 Host Guardian Service "
+"(HGS) 认证所需的签名证书。认证服务使用密钥对来签署认证证书，该 cmdlet 则用于获取与该密钥对对应的公钥证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get signer certificates"
+msgstr "#### 示例 1：获取签名者证书"
+
+msgid "This command gets Attestation Service signer certificates."
+msgstr "此命令用于获取认证服务（Attestation Service）签名者的证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Security.Cryptography.X509Certificates.X509Certificate2"
+msgstr "### System SECURITY Cryptography.X509Certificates.X509Certificate2"
+
+msgid "This cmdlet returns an X.509 certificate."
+msgstr "这个cmdlet返回一个X.509证书。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

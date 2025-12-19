@@ -1,0 +1,290 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:09:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IpamRange"
+msgstr "# Get-IpamRange"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets a set of IP address ranges from an IPAM server."
+msgstr "从 IPAM 服务器获取一组 IP 地址范围。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByID"
+msgstr "### ByID"
+
+msgid "### ByAF"
+msgstr "### ByAF"
+
+msgid "### ByBlock"
+msgstr "### ByBlock"
+
+msgid "### BySubnet"
+msgstr "### 按子网划分"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-IpamRange** cmdlet gets a set of IP address ranges from IP Address Management (IPAM).\n"
+"Use this cmdlet to get IP address ranges of a particular address family or to get a particular range based on starting and ending IP addresses.\n"
+"The cmdlet includes parameter sets to get all ranges that map to a given IP address block or a subnet."
+msgstr ""
+"**Get-IpamRange** cmdlet 用于从 IP 地址管理（IPAM）系统中获取一系列 IP 地址范围。您可以使用此 cmdlet "
+"来获取特定地址族的 IP 地址范围，或者根据起始和结束 IP 地址来获取某个特定的地址范围。该 cmdlet 提供了多种参数选项，以便获取与给定 IP "
+"地址块或子网相关联的所有地址范围。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all IPv4 address ranges"
+msgstr "### 示例 1：获取所有 IPv4 地址范围"
+
+msgid ""
+"This command gets all private physical IPv4 address ranges, either provider "
+"or non virtualized."
+msgstr "此命令可以获取所有私有的物理IPv4地址范围，无论是来自服务提供商的还是未虚拟化的地址范围。"
+
+msgid "### Example 2: Get all IPv4 ranges for a network type"
+msgstr "### 示例 2：获取某种网络类型的所有 IPv4 地址范围"
+
+msgid ""
+"This command gets all private IPv4 ranges of network type provider that "
+"belong to any provider address space."
+msgstr "这个命令会获取属于任何提供商地址空间的、网络类型为“provider”的所有私有IPv4地址段。"
+
+msgid ""
+"### Example 3: Get all IPv4 ranges in the default address space for a "
+"provider network type"
+msgstr "### 示例 3：获取提供者网络类型默认地址空间中的所有 IPv4 范围"
+
+msgid ""
+"This command gets all private IPv4 ranges of network type provider that "
+"belong to the default address space."
+msgstr "这个命令可以获取属于默认地址空间的、网络类型为“provider”的所有私有IPv4地址范围。"
+
+msgid "### Example 4: Get all IPv4 ranges for a customer network type"
+msgstr "### 示例 4：获取某个客户网络类型的所有 IPv4 范围"
+
+msgid ""
+"This command gets all private IPv4 ranges of network type customer, and "
+"stores the result in the variable named $PrivateCustomerRanges."
+msgstr ""
+"该命令获取所有属于“customer”网络类型的私有IPv4地址范围，并将结果存储在名为$PrivateCustomerRanges的变量中。"
+
+msgid ""
+"### Example 5: Get all IPv4 ranges for a network type and address space"
+msgstr "### 示例 5：获取某种网络类型和地址空间下的所有 IPv4 地址范围"
+
+msgid ""
+"This command gets all private IPv4 addresses that are of network type Customer that belong to the Contoso customer address space.\n"
+"The command stores the result in the variable named $PrivateCustomerRanges."
+msgstr ""
+"这条命令会获取所有属于Contoso客户地址空间的、网络类型为“Customer”的私有IPv4地址，并将结果存储在名为$PrivateCustomerRanges的变量中。"
+
+msgid "### Example 6: Get all IPv4 ranges between two addresses"
+msgstr "### 示例 6：获取两个地址之间的所有 IPv4 地址范围"
+
+msgid ""
+"This command gets the details of a given IP address range, and stores the "
+"result in the variable named $Range."
+msgstr "这个命令会获取给定IP地址范围的详细信息，并将结果存储在名为$Range的变量中。"
+
+msgid "### Example 7: Get all overlapping ranges"
+msgstr "### 示例 7：获取所有重叠的范围"
+
+msgid ""
+"This command gets all overlapping ranges from the default address space.\n"
+"Both Provider and NonVirtualized ranges can exist in the default address space.\n"
+"In IPAM, IP ranges are marked overlapping if they belong to same address space and their start and end IP addresses overlap."
+msgstr ""
+"这个命令会获取默认地址空间中所有重叠的IP范围。默认地址空间中可以同时存在Provider类型的IP范围和非虚拟化（NonVirtualized）类型的IP范围。在IPAM系统中，如果两个IP范围属于同一个地址空间，并且它们的起始IP地址和结束IP地址有重叠，那么这两个IP范围就被标记为“重叠”的（overlapping）。"
+
+msgid "### Example 8: Get all IPv4 ranges for a subnet"
+msgstr "### 示例 8：获取子网的所有 IPv4 范围"
+
+msgid ""
+"This example gets all IP ranges which map to a given subnet.\n"
+"Since the network type of the subnet here is non-virtualized, the results contain only the physical addresses and the fabric addresses from the default address space that maps to this subnet."
+msgstr ""
+"这个示例获取了所有映射到给定子网的IP地址范围。由于该子网的网络类型是非虚拟化的，因此结果中仅包含来自默认地址空间的物理地址和与该子网关联的架构（fabric）地址。"
+
+msgid ""
+"The first command uses the **Get-IpamSubnet** cmdlet to get a subnet, and "
+"stores the result in the variable named $ContosoPhysicalSubnet."
+msgstr ""
+"第一个命令使用了 **Get-IpamSubnet** cmdlet 来获取一个子网，并将结果存储在名为 $ContosoPhysicalSubnet "
+"的变量中。"
+
+msgid ""
+"The second command gets the IP address ranges and stores the result in the "
+"$AddressMappingToSubnet variable."
+msgstr "第二个命令获取IP地址范围，并将结果存储在$AddressMappingToSubnet变量中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of address families of IP addresses.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定一个包含 IP 地址地址族的数组。此参数的可接受值为："
+
+msgid ""
+"Specifies an array of address spaces of the IP address ranges to query.\n"
+"If you do not specify a value, the cmdlet gets data for all address spaces in IPAM."
+msgstr "指定一个用于查询的 IP 地址范围地址空间数组。如果您不指定值，该 cmdlet 将获取 IPAM 中所有地址空间的数据。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此 cmdlet 作为后台作业运行。使用该参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，随后会显示命令提示符。在作业完成之前，您可以继续在该会话中执行其他操作。要管理该作业，请使用 "
+"`*-Job` 系列的 cmdlets；要获取作业的结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies an array of IP addresses.\n"
+"For this parameter, the addresses represent the high end of the ranges to get."
+msgstr "指定一个IP地址数组。对于此参数而言，这些地址表示所需范围的高端部分。"
+
+msgid "Specifies an array of services that manage the range to get."
+msgstr "指定一个服务数组，这些服务用于管理要获取的范围。"
+
+msgid "Specifies the ranges that map to an address block."
+msgstr "指定映射到地址块的范围内。"
+
+msgid "Specifies an IP range that maps to a subnet."
+msgstr "指定一个 IP 范围，该范围对应于某个子网。"
+
+msgid ""
+"Specifies an array of network types for the addresses that this cmdlet gets."
+msgstr "为该cmdlet获取的地址指定一系列网络类型。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid ""
+"If the value of the  parameter is Default, then this parameter can take the value Provider or NonVirtualized.\n"
+"If the value of the parameter is Provider, then the value of this parameter, if specified, must be Provider.\n"
+"Specifying any other value for this parameter will result in an error.\n"
+"Similarly, if the value of the parameter is Customer, then the value of this parameter, if specified, must be Customer.\n"
+"Specifying any other value for this parameter will result in an error."
+msgstr ""
+"如果该参数的值为“Default”，那么它可以选择“Provider”或“NonVirtualized”作为其值。如果该参数的值为“Provider”，则必须指定“Provider”作为其值；否则会导致错误。同样地，如果该参数的值为“Customer”，也必须指定“Customer”作为其值；否则也会导致错误。"
+
+msgid ""
+"If you specify the *NetworkType* parameter but do not specify the "
+"*AddressType* parameter, the cmdlet returns all IP address ranges of the "
+"given network type."
+msgstr "如果您指定了*NetworkType*参数，但未指定*AddressType*参数，该cmdlet将返回给定网络类型的所有IP地址范围。"
+
+msgid ""
+"Specifies an array of service instances that manage the address ranges to "
+"get."
+msgstr "指定一个服务实例数组，这些实例用于管理需要获取的地址范围。"
+
+msgid ""
+"Specifies an array of IP addresses.\n"
+"For this parameter, the addresses represent the high end of the ranges to get."
+msgstr "指定一个IP地址数组。对于此参数而言，这些地址代表所需获取的IP地址范围的高端部分。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前执行的 "
+"cmdlet，而不影响整个会话或计算机本身。"
+
+msgid "Indicates that the cmdlet gets the unmapped ranges."
+msgstr "表示该cmdlet会获取未映射的范围（即尚未被分配到任何特定值的地址范围）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CimInstance#ROOT/microsoft/ipam/MSFT_IPAM_Range"
+msgstr "### CimInstance#ROOT/microsoft/ipam/MSFT_IPAM_Range"
+
+msgid ""
+"This cmdlet returns an array of IP address ranges that are present in IPAM "
+"datastore."
+msgstr "此 cmdlet 返回一个包含 IPAM 数据库中存在的 IP 地址范围数组。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-IpamRange](./Add-IpamRange.md)"
+msgstr "[Add-IpamRange](./Add-IpamRange.md)"
+
+msgid "[Export-IpamRange](./Export-IpamRange.md)"
+msgstr "[Export-IpamRange](./Export-IpamRange.md)"
+
+msgid "[Import-IpamRange](./Import-IpamRange.md)"
+msgstr "[Import-IpamRange](./Import-IpamRange.md)"
+
+msgid "[Remove-IpamRange](./Remove-IpamRange.md)"
+msgstr "[Remove-IpamRange](./Remove-IpamRange.md)"
+
+msgid "[Set-IpamRange](./Set-IpamRange.md)"
+msgstr "[Set-IpamRange](./Set-IpamRange.md)"
+
+msgid "[Get-IpamSubnet](./Get-IpamSubnet.md)"
+msgstr "[Get-IpamSubnet](./Get-IpamSubnet.md)"

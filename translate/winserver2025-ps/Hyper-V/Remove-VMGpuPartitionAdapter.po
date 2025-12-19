@@ -1,0 +1,153 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:41:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "Removes an assigned GPU partition from a virtual machine."
+msgstr "从虚拟机中移除已分配的GPU分区。"
+
+msgid "# Remove-VMGpuPartitionAdapter"
+msgstr "# 移除 VMGpuPartitionAdapter"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes an assigned GPU partition from a virtual machine."
+msgstr "从虚拟机中删除已分配的GPU分区。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### Object"
+msgstr "### 对象"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Remove-VMGpuPartitionAdapter` cmdlet removes an assigned graphic processing unit partition from\n"
+"a virtual machine and releases that partition back to the host GPU."
+msgstr ""
+"`Remove-VMGpuPartitionAdapter` cmdlet 用于从虚拟机中移除分配的图形处理单元（GPU）分区，并将该分区释放回主机上的"
+" GPU。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example removes a partition assigned to a specific VM object."
+msgstr "这个示例用于删除分配给特定虚拟机对象的分区。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "This example removes a specific partition object from a specific VM."
+msgstr "这个示例从特定的虚拟机中删除一个特定的分区对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"This is a VM's GPU partition identification number used to remove a GPU from"
+" a VM."
+msgstr "这是一个用于识别虚拟机（VM）中GPU分区的编号，通过该编号可以将GPU从虚拟机中移除。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession)\n"
+"or [Get-CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如 `[New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession)` 或 `[Get-"
+"CimSession](/powershell.module/cimcmdlets/get-cimsession)` cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on the virtual network adapters are to be retrieved. NetBIOS\n"
+"names, IP addresses, and fully qualified domain names are allowed. The default is the local\n"
+"computer.Use localhost or a dot (`.`) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个需要在虚拟网络适配器上获取的Hyper-"
+"V主机。允许使用NetBIOS名称、IP地址和完全限定域名作为标识。默认值是本地计算机。可以使用`localhost`或点（`.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action. The default is the\n"
+"current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Returns an object for each process that the cmdlet started."
+msgstr "对于 cmdlet 启动的每个进程，都会返回一个对象。"
+
+msgid ""
+"Specifies the virtual machine whose virtual network adapters are to be retrieved. The asterisk (`*`)\n"
+"is the wildcard. If it is specified the cmdlet returns virtual network adapters from every virtual\n"
+"machine in the system."
+msgstr ""
+"指定要获取其虚拟网络适配器的虚拟机。星号（`*`）是通配符；如果指定了该虚拟机，此cmdlet将从系统中的所有虚拟机中返回相应的虚拟网络适配器。"
+
+msgid "GPU partition object obtained from `Get-VMGpuPartitionAdapter`."
+msgstr "从 `Get-VMGpuPartitionAdapter` 获取到的 GPU 分区对象。"
+
+msgid ""
+"Specifies the name of the virtual machine whose network adapters are to be "
+"removed."
+msgstr "指定要删除其网络适配器的虚拟机的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的情景。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction和-"
+"WarningVariable。有关更多信息，请参阅[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine[]"
+msgstr "### Microsoft.HyperV.PowerShell.VirtualMachine[]"
+
+msgid "### Microsoft.HyperV.PowerShell.VMGpuPartitionAdapter[]"
+msgstr "### Microsoft.HyperV.PowerShell.VMGpuPartitionAdapter[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMGpuPartitionAdapter"
+msgstr "### Microsoft.HyperV POWERShell.VMGpuPartitionAdapter"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-VMGpuPartitionAdapter](add-vmgpupartitionadapter.md)"
+msgstr "[Add-VMGpuPartitionAdapter](add-vmgpupartitionadapter.md)"
+
+msgid "[Get-VMGpuPartitionAdapter](get-vmgpupartitionadapter.md)"
+msgstr "[Get-VMGpuPartitionAdapter](get-vmgpupartitionadapter.md)"
+
+msgid "[Set-VMGpuPartitionAdapter](set-vmgpupartitionadapter.md)"
+msgstr "[Set-VMGpuPartitionAdapter](set-vmgpupartitionadapter.md)"

@@ -1,0 +1,100 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:43:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Gatewaytunnel Module"
+msgstr "# Gatewaytunnel 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "## Gatewaytunnel Cmdlets"
+msgstr "## GatewaytunnelCmdlets"
+
+msgid "### [Connect-GatewayTunnel](Connect-GatewayTunnel.md)"
+msgstr "### [Connect-GatewayTunnel](Connect-GatewayTunnel.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Disable-GatewayRoutingDomain](Disable-GatewayRoutingDomain.md)"
+msgstr "### [Disable-GatewayRoutingDomain](Disable-GatewayRoutingDomain.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid ""
+"### [Disable-GatewayTunnelPacketTrace](Disable-GatewayTunnelPacketTrace.md)"
+msgstr ""
+"### [ Disable-GatewayTunnelPacketTrace](Disable-GatewayTunnelPacketTrace.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Disconnect-GatewayTunnel](Disconnect-GatewayTunnel.md)"
+msgstr "### [Disconnect-GatewayTunnel]( Disconnect-GatewayTunnel.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Enable-GatewayRoutingDomain](Enable-GatewayRoutingDomain.md)"
+msgstr "### [Enable-GatewayRoutingDomain](Enable-GatewayRoutingDomain.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 请填写描述内容 }}"
+
+msgid ""
+"### [Enable-GatewayTunnelPacketTrace](Enable-GatewayTunnelPacketTrace.md)"
+msgstr ""
+"### [Enable-GatewayTunnelPacketTrace](Enable-GatewayTunnelPacketTrace.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-GatewayConfiguration](Get-GatewayConfiguration.md)"
+msgstr "### [Get-GatewayConfiguration](Get-GatewayConfiguration.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-GatewayRoutingDomain](Get-GatewayRoutingDomain.md)"
+msgstr "### [Get-GatewayRoutingDomain](Get-GatewayRoutingDomain.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-GatewayTunnel](Get-GatewayTunnel.md)"
+msgstr "### [Get-GatewayTunnel](Get-GatewayTunnel.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Get-GatewayTunnelStatistics](Get-GatewayTunnelStatistics.md)"
+msgstr "### [Get-GatewayTunnelStatistics](Get-GatewayTunnelStatistics.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Remove-GatewayTunnel](Remove-GatewayTunnel.md)"
+msgstr "### [Remove-GatewayTunnel](Remove-GatewayTunnel.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-GatewayConfiguration](Set-GatewayConfiguration.md)"
+msgstr "### [Set-GatewayConfiguration](Set-GatewayConfiguration.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "### [Set-GatewayTunnel](Set-GatewayTunnel.md)"
+msgstr "### [Set-GatewayTunnel](Set-GatewayTunnel.md)"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"

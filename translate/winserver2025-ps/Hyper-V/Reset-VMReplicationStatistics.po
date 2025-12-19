@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:55:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Reset-VMReplicationStatistics"
+msgstr "# 重置虚拟机复制统计信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Resets the replication statistics of a virtual machine."
+msgstr "重置虚拟机的复制统计信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMReplication"
+msgstr "### 虚拟机复制（VMReplication）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Reset-VMReplicationStatistics** cmdlet resets the replication statistics of a virtual machine.\n"
+"Statistics accumulated up to that time are deleted, and replication monitoring begins collecting a new set of statistics.\n"
+"If replication health was reported as \"Warning\", then this operation also changes the health to \"Normal\"."
+msgstr ""
+"`Reset-VMReplicationStatistics` cmdlet "
+"用于重置虚拟机的复制统计信息。在此之前累积的所有统计数据将被删除，复制监控系统会开始收集新的统计数据。如果之前的复制健康状态被报告为“警告”（Warning），那么此操作会将健康状态更改为“正常”（Normal）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Resets replication statistics for virtual machine VM01."
+msgstr "重置虚拟机VM01的复制统计信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Resets the replication statistics of all replication-enabled virtual "
+"machines on the local Hyper-V host."
+msgstr "重置本地Hyper-V主机上所有支持复制的虚拟机的复制统计信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the replication statistics of a virtual machine are to be reset.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个Hyper-"
+"V主机，以重置虚拟机的复制统计信息。可以使用NetBIOS名称、IP地址或完全限定域名进行指定。默认值为本地计算机。可以使用“localhost”或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that a **VMReplication** object is to be passed through to the "
+"pipeline representing the replication whose statistics are to be reset."
+msgstr "指定要将一个 **VMReplication** 对象传递到流水线中，该对象代表需要重置统计数据的复制过程。"
+
+msgid ""
+"Specifies the replication relationship type of the virtual machine.\n"
+"Specify whether the replication relationship is a simple primary to replica or is an extended replication chain.\n"
+"The cmdlet resets the replication statistics for the virtual machines that have the replication type that you specify."
+msgstr ""
+"用于指定虚拟机的复制关系类型。需要明确该复制关系是属于简单的主从复制模式，还是属于扩展的复制链模式。此 cmdlet "
+"会重置具有所指定复制类型的虚拟机的复制统计信息。"
+
+msgid ""
+"Specifies the virtual machine whose replication statistics are to be reset."
+msgstr "指定要重置复制统计信息的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine whose replication statistics are "
+"to be reset."
+msgstr "指定要重置复制统计数据的虚拟机的名称。"
+
+msgid ""
+"Specifies the virtual machine replication whose replication statistics are "
+"to be reset."
+msgstr "指定要重置复制统计数据的虚拟机复制任务。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### VMReplication"
+msgstr "### 虚拟机复制（VMReplication）"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 **-PassThru**，则……"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

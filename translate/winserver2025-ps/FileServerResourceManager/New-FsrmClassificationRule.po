@@ -1,0 +1,228 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:06:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-FsrmClassificationRule"
+msgstr "# New-FsrmClassificationRule"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates an automatic classification rule."
+msgstr "创建一条自动分类规则。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-FsrmClassificationRule** cmdlet creates an automatic classification rule on the server.\n"
+"Each rule sets the value for a single property.\n"
+"By default, a rule runs only once and ignores files that already have a property value assigned.\n"
+"However, you can configure a rule to evaluate files regardless of whether a value is already assigned to the property."
+msgstr ""
+"`New-FsrmClassificationRule` cmdlet "
+"用于在服务器上创建自动分类规则。每个规则都会设置一个属性的值。默认情况下，规则仅运行一次，并会忽略那些已经具有该属性值的文件。不过，您可以配置规则以便无论属性是否已赋值，都对其进行评估。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a classification rule"
+msgstr "### 示例 1：创建一个分类规则"
+
+msgid ""
+"This command creates a classification rule that marks any files as "
+"Impact=High if the files contain the word Confidential and the files do not "
+"already have an Impact property."
+msgstr ""
+"此命令创建了一条分类规则：如果某个文件包含“Confidential”（机密）这个词，并且该文件尚未具有“Impact”属性，那么该文件的“Impact”值将被标记为“High”（高）。"
+
+msgid ""
+"### Example 2: Create a classification rule and overwrite the property value"
+msgstr "### 示例 2：创建一个分类规则并覆盖属性值"
+
+msgid ""
+"This command creates a classification rule that marks any files as "
+"Impact=High if they contain the word Confidential, and overwrites any "
+"existing Impact property value."
+msgstr ""
+"此命令创建一条分类规则：如果文件中包含“Confidential”（机密）这个词，则将该文件的“Impact”属性值标记为“High”（高风险），并覆盖原有的“Impact”属性值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行那些需要很长时间才能完成的任务。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列cmdlets；要获取作业结果，则可以使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies the name of a valid classification mechanism available on the "
+"server for assigning the property value."
+msgstr "指定服务器上可用的一种有效分类机制的名称，该机制用于为属性值分配相应的值。"
+
+msgid ""
+"The classification mechanisms are provided by a series of plug-ins that are "
+"included with Windows Server® 2012 or produced by you or an ISV."
+msgstr "分类机制由一系列插件提供，这些插件要么随 Windows Server® 2012 自带，要么由您或独立软件供应商（ISV）自行开发。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行。"
+
+msgid "Specifies an array of regular expressions for pattern matching."
+msgstr "指定一个正则表达式数组，用于模式匹配。"
+
+msgid ""
+"Specifies an array of strings for the content classifier to search for."
+msgstr "指定一个字符串数组，供内容分类器进行搜索。"
+
+msgid ""
+"Specifies an array of case sensitive strings for the content classifier to "
+"search for."
+msgstr "指定一个包含大小写敏感字符串的数组，供内容分类器进行搜索。"
+
+msgid "Specifies a description for the classification rule."
+msgstr "为分类规则指定一个描述。"
+
+msgid "Indicates that the classification rule is disabled."
+msgstr "表示该分类规则已被禁用。"
+
+msgid ""
+"Specifies an array of flags that defines the possible states of the rule.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定一个标志数组，该数组定义了规则可能的状态。此参数的可接受值为："
+
+msgid "Specifies a name for the classification rule."
+msgstr "为分类规则指定一个名称。"
+
+msgid ""
+"Specifies an array of namespaces where the rule is applied.\n"
+"Each value must be either a value of the FolderType property defined on the server (using the format \"\\[Folder type property name=\\<value\\>\\]\") or a static path."
+msgstr ""
+"指定一个命名空间数组，该规则将应用于这些命名空间中的内容。每个值必须是服务器上定义的 `FolderType` 属性的值（使用格式 "
+"“\\[文件夹类型属性名称=\\<值\\>\\”)，或者是静态路径。"
+
+msgid ""
+"Specifies an array of strings using the format \\<name\\>=\\<value\\>.\n"
+"The File Classification Infrastructure and other management tools use these parameters."
+msgstr ""
+"使用格式 `<名称>\\>=<值>` 来指定一个字符串数组。文件分类基础设施（File Classification "
+"Infrastructure）和其他管理工具会使用这些参数。"
+
+msgid ""
+"Specifies the name of a classification property definition to set.\n"
+"Specify the value of the Name property in a **FsrmClassificationPropertyDefinition** object."
+msgstr ""
+"指定要设置的分类属性定义的名称。需要在 **FsrmClassificationPropertyDefinition** 对象中指定 “Name” "
+"属性的值。"
+
+msgid ""
+"Specifies the property value that the rule will assign.\n"
+"The property value that you set must be an valid value supported by the classification mechanism that you specify in the *ClassificationMechanism* parameter."
+msgstr "指定规则将赋予的属性值。您设置的属性值必须是您在 *ClassificationMechanism* 参数中指定的分类机制所支持的有效值。"
+
+msgid ""
+"Specifies the evaluation policy of the rule.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定规则的评估策略。该参数的可接受值包括："
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的最大并发操作数量。如果省略此参数或输入值 `0`，Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前执行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-FsrmClassificationPropertyDefinition](./Get-"
+"FsrmClassificationPropertyDefinition.md)"
+msgstr ""
+"[Get-FsrmClassificationPropertyDefinition](./Get-"
+"FsrmClassificationPropertyDefinition.md)"
+
+msgid "[Get-FsrmClassificationRule](./Get-FsrmClassificationRule.md)"
+msgstr "[Get-FsrmClassificationRule](./Get-FsrmClassificationRule.md)"
+
+msgid "[Remove-FsrmClassificationRule](./Remove-FsrmClassificationRule.md)"
+msgstr "[Remove-FsrmClassificationRule](./Remove-FsrmClassificationRule.md)"
+
+msgid "[Set-FsrmClassificationRule](./Set-FsrmClassificationRule.md)"
+msgstr "[Set-FsrmClassificationRule](./Set-FsrmClassificationRule.md)"

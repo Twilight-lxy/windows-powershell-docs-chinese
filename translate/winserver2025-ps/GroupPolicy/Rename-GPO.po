@@ -1,0 +1,212 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:01:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Rename-GPO"
+msgstr "# 重命名GPO"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Assigns a new display name to a GPO."
+msgstr "为组策略对象（GPO）分配一个新的显示名称。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### RenameByGUID (Default)"
+msgstr "### RenameByGUID（默认值）"
+
+msgid "### RenameByName"
+msgstr "### RenameByName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Rename-GPO` cmdlet assigns a different, non-null display name to a Group Policy Object (GPO).\n"
+"This cmdlet has no effect on the GUID of the GPO."
+msgstr ""
+"`Rename-GPO` cmdlet 为组策略对象（GPO）分配一个不同的、非空的显示名称。此 cmdlet 对 GPO 的 GUID 没有任何影响。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Rename a GPO"
+msgstr "### 示例 1：重命名一个组策略对象（GPO）"
+
+msgid "This command renames the GPO named `SampleGPO` to `SecurityGPO`."
+msgstr "这个命令将名为“SampleGPO”的GPO重命名为“SecurityGPO”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies the domain for this cmdlet. You must specify the fully qualified domain name (FQDN) of the\n"
+"domain."
+msgstr "指定此 cmdlet 所使用的域名。必须提供该域名的完全限定域名（FQDN）。"
+
+msgid ""
+"For the `Rename-GPO` cmdlet, this is the domain of the GPO that you want to "
+"rename."
+msgstr "对于 `Rename-GPO` cmdlet 来说，这里指的是您想要重命名的 GPO 所所属的域。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the user that is running the current\n"
+"session is used. If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used. For more information, see the Notes section in the full Help."
+msgstr ""
+"如果您没有指定 **Domain** 参数，将使用当前会话所运行的用户的域信息。如果该 cmdlet "
+"是从计算机启动或关闭脚本中执行的，则会使用计算机的域信息。有关更多详细信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user that is running the current\n"
+"session (or, for a startup or shutdown script, the computer), a trust must exist between that domain\n"
+"and the domain of the user or the computer."
+msgstr ""
+"如果您指定的域与当前会话所使用的用户的域不同（或者对于启动/关闭脚本来说，是与计算机相关的域不同），那么该域与用户或计算机的域之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to the **Domain** parameter by its built-in alias, **DomainName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用其内置别名 **DomainName** 来引用 **Domain** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the GPO to rename by its globally unique identifier (GUID). The GUID uniquely identifies\n"
+"the GPO."
+msgstr "通过全局唯一标识符（GUID）指定要重命名的组策略对象（GPO）。该 GUID 可唯一地识别该 GPO。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in alias, **Id**."
+msgstr "您也可以通过其内置别名**Id**来引用**Guid**参数。"
+
+msgid "Specifies the GPO to rename by its current display name."
+msgstr "指定要重命名的GPO，使用其当前的显示名称进行操作。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another GPO with the same display\n"
+"name exists in the domain, an error occurs. You can use the **Guid** parameter to uniquely identify\n"
+"a GPO."
+msgstr ""
+"显示名称在该域内并不保证是唯一的。如果该域中存在另一个具有相同显示名称的组策略对象（GPO），将会发生错误。您可以使用 **Guid** "
+"参数来唯一地标识一个 GPO。"
+
+msgid ""
+"You can also refer to the Name parameter by its built-in alias, "
+"**DisplayName**."
+msgstr "您也可以通过其内置别名 **DisplayName** 来引用 Name 参数。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此 cmdlet 用于联系以完成操作的域控制器的名称。您可以指定完全合格的域名（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the primary domain controller\n"
+"(PDC) emulator is contacted."
+msgstr ""
+"如果您不使用 **Server** 参数来指定名称，系统将会联系主域控制器（Primary Domain Controller，简称 PDC）的模拟器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, "
+"**DC**."
+msgstr "您也可以通过其内置别名“DC”来引用**Server**参数。"
+
+msgid ""
+"Specifies the new display name of the GPO. Because the display name may not be unique, an error is\n"
+"returned if another GPO in the domain has the same display name."
+msgstr "指定新的组策略对象（GPO）的显示名称。由于显示名称可能不具有唯一性，如果域中存在另一个具有相同显示名称的GPO，则会返回错误信息。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。不过实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft.GroupPolicy.Gpo"
+
+msgid ""
+"You can pipe a **GPO** object to the GPO to rename. Collections that contain GPOs from different\n"
+"domains are not supported."
+msgstr "你可以将一个 **GPO（组策略对象）** 传递给另一个 GPO 以进行重命名。但是，包含来自不同域的 GPO 的集合是不被支持的。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft(GroupPolicy.Gpo)"
+
+msgid "This cmdlet returns the GPO with the new display name."
+msgstr "此cmdlet会返回具有新显示名称的GPO（组策略对象）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"  If you do not explicitly specify the domain, the cmdlet uses a default domain. The default domain\n"
+"  is the domain that is used to access network resources by the security context under which the\n"
+"  current session is running. This domain is typically the domain of the user that is running the\n"
+"  session. For example, the domain of the user who started the session by opening Windows PowerShell\n"
+"  from the Program Files menu, or the domain of a user that is specified in a runas command.\n"
+"  However, computer startup and shutdown scripts run under the context of the LocalSystem account.\n"
+"  The LocalSystem account is a built-in local account, and it accesses network resources under the\n"
+"  context of the computer account. Therefore, when this cmdlet is run from a startup or shutdown\n"
+"  script, the default domain is the domain to which the computer is joined."
+msgstr ""
+"如果您没有明确指定域名，该 cmdlet "
+"会使用默认域名。默认域名是指当前会话运行的安全上下文用于访问网络资源时所使用的域名。这个域名通常是与运行该会话的用户相关的域名；例如，通过“程序文件”菜单启动"
+" Windows PowerShell 的用户的域名，或者在 `runas` 命令中指定的用户的域名。然而，计算机启动和关闭脚本是在 "
+"`LocalSystem` 账户的上下文中运行的。`LocalSystem` "
+"账户是一个内置的本地账户，它以计算机账户的身份访问网络资源。因此，当从这个启动或关闭脚本中运行该 cmdlet 时，默认域名就是计算机所隶属于的域名。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Backup-GPO](./Backup-GPO.md)"
+msgstr "[备份GPO](./Backup-GPO.md)"
+
+msgid "[Copy-GPO](./Copy-GPO.md)"
+msgstr "[复制GPO](./Copy-GPO.md)"
+
+msgid "[Get-GPO](./Get-GPO.md)"
+msgstr "[Get-GPO](./Get-GPO.md)"
+
+msgid "[Import-GPO](./Import-GPO.md)"
+msgstr "[导入GPO](./Import-GPO.md)"
+
+msgid "[New-GPO](./New-GPO.md)"
+msgstr "[New-GPO](./New-GPO.md)"
+
+msgid "[Remove-GPO](./Remove-GPO.md)"
+msgstr "[Remove-GPO](./Remove-GPO.md)"
+
+msgid "[Restore-GPO](./Restore-GPO.md)"
+msgstr "[恢复GPO](./Restore-GPO.md)"

@@ -1,0 +1,179 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:50:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IscsiVirtualDisk"
+msgstr "# Get-IscsiVirtualDisk"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Obtains the iSCSI virtual disks and their associated properties."
+msgstr "获取iSCSI虚拟磁盘及其相关属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Device (Default)"
+msgstr "### 设备（默认值）"
+
+msgid "### Target"
+msgstr "### 目标"
+
+msgid "### Initiator"
+msgstr "### 发起人"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-IscsiVirtualDisk** cmdlet obtains the iSCSI virtual disks and "
+"their associated properties."
+msgstr "`Get-IscsiVirtualDisk` cmdlet 可以获取 iSCSI 虚拟磁盘及其相关属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all virtual disks on the local server"
+msgstr "### 示例 1：获取本地服务器上的所有虚拟磁盘"
+
+msgid "This example gets all of the virtual disks on the local server."
+msgstr "这个示例会获取本地服务器上的所有虚拟磁盘。"
+
+msgid "### Example 2: Get virtual disk by using a path"
+msgstr "### 示例 2：通过路径获取虚拟磁盘"
+
+msgid ""
+"This example gets the virtual disk object that has the path "
+"E:\\temp\\test.vhdx on the local server."
+msgstr "这个示例获取了本地服务器上路径为 E:\\temp\\test.vhdx 的虚拟磁盘对象。"
+
+msgid "### Example 3: Get a virtual disk on a remote server"
+msgstr "### 示例 3：在远程服务器上获取一个虚拟磁盘"
+
+msgid ""
+"This example gets the virtual disk object that has the path "
+"E:\\temp\\test.vhdx in the resource group named target1Group on cluster "
+"server named fscluster.contoso.com."
+msgstr ""
+"这个示例从名为 `fscluster.contoso.com` 的集群服务器上的资源组 `target1Group` 中获取路径为 "
+"`E:\\temp\\test.vhdx` 的虚拟磁盘对象。"
+
+msgid "### Example 4: Get virtual disks associated with a target"
+msgstr "### 示例 4：获取与目标关联的虚拟磁盘"
+
+msgid ""
+"This example gets all of the virtual disks that are associated with the "
+"target named TargetOne on the local server."
+msgstr "这个示例会获取与本地服务器上名为“TargetOne”的目标相关联的所有虚拟磁盘。"
+
+msgid "### Example 5: Get virtual disks by an initial"
+msgstr "### 示例 5：通过初始值获取虚拟磁盘"
+
+msgid ""
+"This example gets all of the virtual disks on the local server that are used"
+" by the initiator with IP address 10.10.1.1."
+msgstr "这个示例获取了本地服务器上所有被IP地址为10.10.1.1的发起者使用的虚拟磁盘。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the resource group or network in the resource group on"
+" which this cmdlet runs."
+msgstr "指定此 cmdlet 运行的资源组中资源组或网络的名称。"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此cmdlet在远程计算机上运行，则指定远程计算机的名称或IP地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "如果此 cmdlet 在集群配置上运行，则指定集群资源组的网络名称或集群节点的名称。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接到远程计算机时所需的凭据信息。"
+
+msgid ""
+"Specifies the iSCSI initiator identifiers (IDs) to which the iSCSI target is assigned.\n"
+"Use this parameter to filter out the iSCSI virtual disk object that can be accessed by the given iSCSI initiator.\n"
+"The format for this parameter is IdType:Value.\n"
+"The acceptable values for this parameter are: DNSName, IPAddress, IPv6Address, IQN, or MACAddress."
+msgstr ""
+"指定用于分配 iSCSI 目标的 iSCSI 启动器标识符（ID）。使用此参数可以过滤出仅能被指定的 iSCSI 启动器访问的 iSCSI "
+"虚拟磁盘对象。该参数的格式为：IdType:Value。可接受的参数值包括：DNSName、IPAddress、IPv6Address、IQN 或 "
+"MACAddress。"
+
+msgid ""
+"Specifies the path of the virtual hard disk (VHD) file that is associated with the iSCSI virtual disk.\n"
+"Filter the iSCSI virtual disk object by using this parameter."
+msgstr "指定与iSCSI虚拟磁盘关联的虚拟硬盘（VHD）文件的路径。可以使用此参数来过滤iSCSI虚拟磁盘对象。"
+
+msgid ""
+"Specifies the name of the iSCSI target.\n"
+"Use this parameter to filter out the iSCSI virtual disk objects that are assigned to the specified iSCSI target."
+msgstr "指定 iSCSI 目标的名称。使用此参数可以过滤出被分配给该特定 iSCSI 目标的 iSCSI 虚拟磁盘对象。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Iscsi.Target.Commands.IscsiVirtualDisk"
+msgstr "### Microsoft.Iscsi.Target Commands.IscsiVirtualDisk"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Checkpoint-IscsiVirtualDisk](./Checkpoint-IscsiVirtualDisk.md)"
+msgstr "[Checkpoint-IscsiVirtualDisk](./Checkpoint-IscsiVirtualDisk.md)"
+
+msgid "[Convert-IscsiVirtualDisk](./Convert-IscsiVirtualDisk.md)"
+msgstr "[Convert-IscsiVirtualDisk](./Convert-IscsiVirtualDisk.md)"
+
+msgid "[Import-IscsiVirtualDisk](./Import-IscsiVirtualDisk.md)"
+msgstr "[Import-IscsiVirtualDisk](./Import-IscsiVirtualDisk.md)"
+
+msgid "[New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+msgstr "[New-IscsiVirtualDisk](./New-IscsiVirtualDisk.md)"
+
+msgid "[Remove-IscsiVirtualDisk](./Remove-IscsiVirtualDisk.md)"
+msgstr "[Remove-IscsiVirtualDisk](./Remove-IscsiVirtualDisk.md)"
+
+msgid "[Restore-IscsiVirtualDisk](./Restore-IscsiVirtualDisk.md)"
+msgstr "[Restore-IscsiVirtualDisk](./Restore-IscsiVirtualDisk.md)"
+
+msgid "[Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"
+msgstr "[Set-IscsiVirtualDisk](./Set-IscsiVirtualDisk.md)"

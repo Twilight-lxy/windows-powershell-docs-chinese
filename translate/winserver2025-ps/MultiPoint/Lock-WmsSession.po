@@ -1,0 +1,114 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:09:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Lock-WmsSession"
+msgstr "# Lock-WmsSession"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Locks a session for a user."
+msgstr "为用户锁定会话。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### LockById"
+msgstr "### LockById"
+
+msgid "### LockAll"
+msgstr "### LockAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Lock-WmsSession** cmdlet blocks desktop use for a specific user.\n"
+"You can specify a message to display on the user's screen."
+msgstr "`Lock-WmsSession` cmdlet 可以阻止特定用户使用桌面功能。您还可以指定一条消息，在用户的屏幕上显示该消息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Lock a session"
+msgstr "### 示例 1：锁定会话"
+
+msgid ""
+"This command locks the specified session and displays the message \"Your "
+"station is locked\" to the user."
+msgstr "此命令会锁定指定的会话，并向用户显示“您的站点已被锁定”的消息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid "Specifies the message to display."
+msgstr "指定要显示的消息。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标多点服务器（MultiPoint Server）的完全限定主机名。默认值为 localhost。"
+
+msgid "Specifies an array of session IDs."
+msgstr "指定一个会话ID数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Close-WmsSession](./Close-WmsSession.md)"
+msgstr "[Close-WmsSession](./Close-WmsSession.md)"
+
+msgid "[Disconnect-WmsSession](./Disconnect-WmsSession.md)"
+msgstr "[ Disconnect-WmsSession](./Disconnect-WmsSession.md)"
+
+msgid "[Get-WmsSession](./Get-WmsSession.md)"
+msgstr "[Get-WmsSession](./Get-WmsSession.md)"
+
+msgid "[Unlock-WmsSession](./Unlock-WmsSession.md)"
+msgstr "[解锁 WMS 会话](./Unlock-WmsSession.md)"

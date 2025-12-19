@@ -1,0 +1,74 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:07:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Disable-DiagnosticDataViewing"
+msgstr "# 禁用诊断数据查看功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables diagnostic data viewing."
+msgstr "禁用诊断数据的查看功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"This cmdlet disables diagnostic data viewing.\n"
+"Once diagnostic data viewing is disabled, this tool will throw an error.\n"
+"Note that disabling diagnostic data viewing will also delete the available history of diagnostic data on the device."
+msgstr ""
+"此 cmdlet "
+"禁用了诊断数据的查看功能。一旦禁用了诊断数据的查看功能，该工具将抛出错误。请注意，禁用诊断数据的查看功能还会删除设备上现有的诊断数据记录。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "Disable Diagnostic Data Viewing."
+msgstr "禁用诊断数据查看功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "Requires Windows 10 version 17134 (1803) or higher"
+msgstr "需要Windows 10版本17134（1803）或更高版本"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,167 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:23:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-VM"
+msgstr "# 停止虚拟机"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Shuts down, turns off, or saves a virtual machine."
+msgstr "关闭、终止或保存虚拟机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Stop-VM** cmdlet shuts down, turns off, or saves a virtual machine."
+msgstr "**Stop-VM** cmdlet 用于关闭、断开连接或保存虚拟机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Shuts down virtual machine TestVM through the guest operating system."
+msgstr "通过客户机操作系统关闭虚拟机TestVM。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Shuts down virtual machine TestVM through the guest operating system, regardless of any unsaved application data.\n"
+"Hyper-V gives the guest five minutes to save data, then forces a shutdown.\n"
+"This shutdown can result in loss of unsaved data."
+msgstr ""
+"通过客户机操作系统关闭虚拟机TestVM，无论其中是否有未保存的应用程序数据。Hyper-"
+"V会给客户机五分钟的时间来保存数据，之后强制关闭该虚拟机。这种关闭操作可能会导致未保存的数据丢失。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Turns off virtual machine TestVM.\n"
+"This operation is equivalent to disconnecting the power from the virtual machine, and can result in loss of unsaved data."
+msgstr "关闭虚拟机 TestVM。此操作相当于切断该虚拟机的电源供应，可能会导致未保存的数据丢失。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "以后台作业的形式运行该cmdlet。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者一个会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which a virtual machine is to be shut down.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于关闭虚拟机的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定的域名进行选择。默认值为本地计算机。可以使用 "
+"`localhost` 或`.` 明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that the shutdown of the virtual machine is to be forced.\n"
+"If the virtual machine has applications with unsaved data, the virtual machine has five minutes to save data and shut down.\n"
+"If the virtual machine is locked, it is shut down immediately."
+msgstr ""
+"指定必须强制关闭虚拟机。如果该虚拟机上运行有未保存数据的应用程序，系统会给予该应用程序五分钟的时间来保存数据并完成关闭操作；如果虚拟机处于锁定状态，则会立即将其关闭。"
+
+msgid "Specifies the name of the virtual machine to be shut down."
+msgstr "指定要关闭的虚拟机的名称。"
+
+msgid ""
+"Specifies that a **Microsoft.HyperV.PowerShell.VirtualMachine** object is to"
+" be passed through to the pipeline representing the virtual machine to be "
+"shut down."
+msgstr ""
+"指定要将一个 **Microsoft.HyperV.PowerShellvirtualMachine** 对象传递给管道，该对象代表需要关闭的虚拟机。"
+
+msgid "Specifies that the virtual machine is to be saved."
+msgstr "指定要保存该虚拟机。"
+
+msgid "Specifies that the virtual machine is to be turned off."
+msgstr "指定要关闭该虚拟机。"
+
+msgid "Specifies the virtual machine to be shut down."
+msgstr "指定要关闭的虚拟机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine"
+msgstr "### Microsoft.HyperV POWERShell.VirtualMachine"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 `-PassThru` 参数。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

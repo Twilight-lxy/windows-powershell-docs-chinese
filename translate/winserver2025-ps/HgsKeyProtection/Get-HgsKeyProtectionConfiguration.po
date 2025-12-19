@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:26:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-HgsKeyProtectionConfiguration"
+msgstr "# Get-HgsKeyProtectionConfiguration"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the configuration of the Key Protection Service."
+msgstr "获取密钥保护服务的配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-HgsKeyProtectionConfiguration** cmdlet gets the configuration of the Key Protection Service that runs on the local computer.\n"
+"The configuration contains the communication certificate that the Key Protection Service uses to sign the metadata provided by the service."
+msgstr ""
+"`Get-HgsKeyProtectionConfiguration` cmdlet 可以获取在本地计算机上运行的 Key Protection "
+"Service 的配置信息。该配置包括 Key Protection Service 用于签署服务提供的元数据的通信证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the configuration of the Key Protection Service"
+msgstr "### 示例 1：获取密钥保护服务的配置信息"
+
+msgid ""
+"This command gets the configuration of the Key Protection Service on the "
+"local computer."
+msgstr "这个命令用于获取本地计算机上密钥保护服务（Key Protection Service）的配置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您无法将输入内容通过管道传递给此cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.KpsServer.Common.Store.Data.ServiceConfiguration"
+msgstr ""
+"### Microsoft.Windows.KpsServer COMMON.Store.Data.ServiceConfiguration"
+
+msgid ""
+"This cmdlet returns the configuration of Key Protection Service set up on "
+"the local computer."
+msgstr "此cmdlet返回在本地计算机上设置的Key Protection Service（密钥保护服务）的配置信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Set-HgsKeyProtectionConfiguration](./Set-HgsKeyProtectionConfiguration.md)"
+msgstr ""
+"[Set-HgsKeyProtectionConfiguration](./Set-HgsKeyProtectionConfiguration.md)"

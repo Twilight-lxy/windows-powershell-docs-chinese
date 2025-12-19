@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:12:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Resume-WmsDiskProtection"
+msgstr "# WMS磁盘保护方案概述"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Switches disk protection to discard mode."
+msgstr "将磁盘保护模式切换为“丢弃”模式。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Resume-WmsDiskProtection** cmdlet switches the disk protection feature"
+" from passive mode to discard mode, and restarts the computer to apply the "
+"state change."
+msgstr ""
+"`Resume-WmsDiskProtection` cmdlet 将磁盘保护功能从被动模式切换到丢弃模式，并重新启动计算机以应用状态变化。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Switch to discard mode"
+msgstr "#### 示例 1：切换到丢弃模式"
+
+msgid ""
+"This command changes the disk protection feature configuration from passive "
+"to discard mode, and the computer is restarted to apply the state change."
+msgstr "此命令将磁盘保护功能的配置从“被动模式”更改为“丢弃模式”，然后重启计算机以应用状态变更。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行操作。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 `localhost`。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-WmsDiskProtection](./Disable-WmsDiskProtection.md)"
+msgstr "[ Disable-WmsDiskProtection](./Disable-WmsDiskProtection.md)"
+
+msgid "[Enable-WmsDiskProtection](./Enable-WmsDiskProtection.md)"
+msgstr "[Enable-WmsDiskProtection](./Enable-WmsDiskProtection.md)"
+
+msgid "[Get-WmsDiskProtection](./Get-WmsDiskProtection.md)"
+msgstr "[Get-WmsDiskProtection](./Get-WmsDiskProtection.md)"
+
+msgid "[Suspend-WmsDiskProtection](./Suspend-WmsDiskProtection.md)"
+msgstr "[暂停 WMS 磁盘保护功能](./Suspend-WmsDiskProtection.md)"

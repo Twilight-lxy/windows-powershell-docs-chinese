@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:20:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-HgsGuardian"
+msgstr "# 导入 HgsGuardian"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a guardian object from an .xml file."
+msgstr "从.xml文件中创建一个guardian对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Import-HgsGuardian** cmdlet creates a Host Guardian Service guardian object from an .xml file.\n"
+"If you specify a name for the guardian, this cmdlet also persists that object in the local guardian store."
+msgstr ""
+"`Import-HgsGuardian` 这个cmdlet可以从一个.xml文件中创建一个Host Guardian "
+"Service守护对象。如果你为该守护对象指定了一个名称，这个cmdlet还会将该对象保存到本地的守护对象存储中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import a guardian"
+msgstr "### 示例 1：导入一个守护者（Guardian）"
+
+msgid "This command imports a guardian from the specified .xml file."
+msgstr "这个命令从指定的.xml文件中导入一个守护程序（guardian）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates whether to allow guardian creation with certificates that are "
+"expired."
+msgstr "表示是否允许使用已过期的证书来创建守护者（guardian）。"
+
+msgid ""
+"Indicates whether to allow a guardian to be created using self-signed "
+"certificates."
+msgstr "指示是否允许使用自签名证书来创建守护者（guardian）。"
+
+msgid ""
+"Specifies the name to associate with this guardian when it is persisted to "
+"the local guardian store."
+msgstr "指定在将该守护者信息保存到本地守护者存储时所使用的名称。"
+
+msgid "Specifies the path to an XML file containing the Guardian information."
+msgstr "指定包含《卫报》相关信息的XML文件的路径。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"about_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CimInstance#MSFT_HgsGuardian"
+msgstr "### CimInstance#MSFT_HgsGuardian"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-HgsGuardian](./Export-HgsGuardian.md)"
+msgstr "[Export-HgsGuardian](./Export-HgsGuardian.md)"
+
+msgid "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+msgstr "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+
+msgid "[New-HgsGuardian](./New-HgsGuardian.md)"
+msgstr "[New-HgsGuardian](./New-HgsGuardian.md)"
+
+msgid "[Remove-HgsGuardian](./Remove-HgsGuardian.md)"
+msgstr "[Remove-HgsGuardian](./Remove-HgsGuardian.md)"

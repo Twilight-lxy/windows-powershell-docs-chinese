@@ -1,0 +1,220 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:33:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-NetAdapterLso"
+msgstr "# 启用 NetAdapter LSO 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Enables LSO properties, such as LSOv4 and LSOv6, of the network adapter."
+msgstr "启用网络适配器的LSO属性（如LSOv4和LSOv6）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### ByName（默认值）"
+
+msgid "### ByInstanceID"
+msgstr "### 按实例ID（ByInstanceID）"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject（cdxml）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-NetAdapterLso** cmdlet enables the state of the large send offload (LSO) settings, such as LSOv4 and LSOv6, on the network adapter.\n"
+"If LSOv4 or LSOv6 are not specified, then both LSOv4 and LSOv6 are enabled.\n"
+"LSO is a technology in which the work of segmenting data into network frames is performed by the network adapter instead of by the TCP/IP stack.\n"
+"With LSO, TCP/IP sends very large data packets down to the network adapter driver and the network adapter hardware.\n"
+"The network adapter separates the data into smaller network-sized frames.\n"
+"This increases the speed of high-end send operations and decreases the processor usage of the computer, because the work is performed on the network adapter.\n"
+"To enable just LSOv4 or LSOv6, run the **Set-NetAdapterLso** cmdlet."
+msgstr ""
+"`Enable-NetAdapterLso` cmdlet 可用于启用网络适配器上的大型数据发送卸载（Large Send Offload，简称 "
+"LSO）相关设置，例如 LSOv4 和 LSOv6。如果未指定具体的 LSO 技术（LSOv4 或 LSOv6），则两者都会被同时启用。LSO "
+"是一种技术，它允许网络适配器而不是 TCP/IP 堆栈来负责将数据分段为网络帧的工作。通过使用 LSO，TCP/IP "
+"协议会将非常大的数据包发送给网络适配器驱动程序及相应的硬件；网络适配器会将这些大数据包拆分成更小的网络帧格式。这种方式能够提升高端数据发送操作的效率，并降低计算机处理器的负担（因为相关处理工作是在网络适配器层面完成的）。若仅需要启用"
+" LSOv4 或 LSOv6 中的某一项功能，可以使用 `Set-NetAdapterLso` cmdlet 来进行相应的配置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Enable LSO for IPv4 and IPv6 on all visible network adapters"
+msgstr "### 示例 1：在所有可见的网络适配器上为 IPv4 和 IPv6 启用 LSO（链接层安全）功能"
+
+msgid ""
+"This command enables LSO for both IPv4 and IPv6 on all visible network "
+"adapters and restarts the network adapters."
+msgstr ""
+"此命令为所有可见的网络适配器启用 IPv4 和 IPv6 的 LSO（Link State Offload）功能，并重新启动这些网络适配器。"
+
+msgid ""
+"### Example 2: Enable LSO for IPv4 and IPv6 on all visible network adapters"
+msgstr "#### 示例 2：为所有可见的网络适配器启用 IPv4 和 IPv6 的 LSO（Link State Optimization）功能"
+
+msgid ""
+"This command enables LSO for both IPv4 and IPv6 on all visible network "
+"adapters by explicitly specifying the parameters and then restarts the "
+"network adapters."
+msgstr ""
+"此命令通过明确指定参数，为所有可见的网络适配器启用IPv4和IPv6的LSO（Link State "
+"Oscillation）功能，之后会重启这些网络适配器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用该参数来执行需要很长时间才能完成的命令。cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理作业，请使用`*-Job`"
+" cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid "Indicates that this cmdlet affects IPv4 traffic."
+msgstr "表示此 cmdlet 会影响 IPv4 流量。"
+
+msgid "Indicates that this cmdlet affects IPv6 traffic."
+msgstr "表示此cmdlet会影响IPv6流量。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"该参数表示该cmdlet在操作过程中会同时考虑可见的网络适配器和隐藏的网络适配器。默认情况下，只包含可见的网络适配器。如果在识别网络适配器时使用了通配符，并且指定了此参数，那么该通配符字符串将会与所有类型的网络适配器（无论是可见的还是隐藏的）进行匹配。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此cmdlet的输入数据。您可以使用这个参数，也可以将输入数据通过管道（pipe）传递给该cmdlet。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述数组。对于物理网络适配器而言，这通常是网络适配器的制造商名称后跟型号和描述，例如“Contoso 12345 千兆网络设备”。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Indicates that the cmdlet does not restart the network adapter after completing the operation.\n"
+"Many advanced properties require restarting the network adapter before the new settings take effect."
+msgstr "表示该cmdlet在完成操作后不会重新启动网络适配器。许多高级属性要求在新设置生效之前先重启网络适配器。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterLsoSettingData[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterLsoSettingData[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterLsoSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterLsoSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-NetAdapterLso](./Disable-NetAdapterLso.md)"
+msgstr "[禁用网卡LSO功能](./ Disable-NetAdapterLso.md)"
+
+msgid "[Get-NetAdapterLso](./Get-NetAdapterLso.md)"
+msgstr "[Get-NetAdapterLso](./Get-NetAdapterLso.md)"
+
+msgid "[Set-NetAdapterLso](./Set-NetAdapterLso.md)"
+msgstr "[Set-NetAdapterLso](./Set-NetAdapterLso.md)"

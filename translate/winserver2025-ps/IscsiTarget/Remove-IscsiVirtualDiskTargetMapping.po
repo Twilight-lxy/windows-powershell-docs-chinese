@@ -1,0 +1,111 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:54:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-IscsiVirtualDiskTargetMapping"
+msgstr "# 删除 IscsiVirtualDiskTargetMapping"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Removes the assignment between the specified iSCSI virtual disk and the "
+"specified iSCSI target."
+msgstr "删除指定的 iSCSI 虚拟磁盘与指定的 iSCSI 目标之间的关联（即解除它们之间的绑定）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-IscsiVirtualDiskTargetMapping** cmdlet removes the assignment between a virtual disk and an iSCSI target.\n"
+"The virtual disk is no longer accessible by an iSCSI initiator after the assignment is removed."
+msgstr ""
+"`Remove-IscsiVirtualDiskTargetMapping` cmdlet 用于移除虚拟磁盘与 iSCSI "
+"目标之间的关联。关联被移除后，该虚拟磁盘将无法再被 iSCSI 发起程序访问。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disassociates a virtual disk from a target"
+msgstr "### 示例 1：将虚拟磁盘与目标设备分离"
+
+msgid ""
+"This example un-assigns, or disassociates, the virtual disk at E:\\temp\\vhd1.vhdx from the target named TargetOne.\n"
+"Use Add-IscsiVirtualDiskTargetMapping to assign the virtual disk to an iSCSI target before it can be used by an iSCSI initiator."
+msgstr ""
+"这个示例将位于 E:\\temp\\vhd1.vhdx 的虚拟磁盘从名为 “TargetOne” "
+"的目标设备中解绑（即断开两者之间的关联）。在使用该虚拟磁盘之前，需要先使用 `Add-IscsiVirtualDiskTargetMapping` "
+"命令将其重新分配到一个 iSCSI 目标设备上，以便后续的 iSCSI 发起者能够对其进行访问。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此cmdlet在远程计算机上运行，则指定远程计算机的名称或IP地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "如果此 cmdlet 在集群配置上运行，则指定集群资源组的网络名称或集群节点的名称。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接到远程计算机时所需的凭据信息。"
+
+msgid ""
+"Specifies the path of the virtual hard disk (VHD) file that is associated with the iSCSI virtual disk.\n"
+"Filter the iSCSI Virtual Disk object by using this parameter."
+msgstr "指定与 iSCSI 虚拟磁盘关联的虚拟硬盘（VHD）文件的路径。可以使用此参数来过滤 iSCSI 虚拟磁盘对象。"
+
+msgid "Specifies the name of the iSCSI target."
+msgstr "指定 iSCSI 目标的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-IscsiVirtualDiskTargetMapping](./Add-IscsiVirtualDiskTargetMapping.md)"
+msgstr ""
+"[Add-IscsiVirtualDiskTargetMapping](./Add-IscsiVirtualDiskTargetMapping.md)"

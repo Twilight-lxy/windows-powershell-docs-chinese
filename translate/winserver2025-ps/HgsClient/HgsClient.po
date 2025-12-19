@@ -1,0 +1,102 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:19:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# HgsClient Module"
+msgstr "# HgsClient 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Host Guardian"
+" Service client cmdlets. This table lists the cmdlets in alphabetical order."
+msgstr ""
+"此参考资料提供了所有 Host Guardian Service 客户端 cmdlet 的描述和语法信息。该表格按字母顺序列出了这些 cmdlet。"
+
+msgid "## HgsClient Cmdlets"
+msgstr "## HgsClient Cmdlets"
+
+msgid "### [ConvertTo-HgsKeyProtector](ConvertTo-HgsKeyProtector.md)"
+msgstr "### [ConvertTo-HgsKeyProtector](ConvertTo-HgsKeyProtector.md)"
+
+msgid "Converts a key protector into a Host Guardian Service key protector."
+msgstr "将一个密钥保护器转换为Host Guardian Service类型的密钥保护器。"
+
+msgid "### [Export-HgsGuardian](Export-HgsGuardian.md)"
+msgstr "### [Export-HgsGuardian](Export-HgsGuardian.md)"
+
+msgid "Exports a guardian that contains public keys."
+msgstr "导出一个包含公钥的守护者（guardian）。"
+
+msgid ""
+"### [Get-HgsAttestationBaselinePolicy](Get-HgsAttestationBaselinePolicy.md)"
+msgstr ""
+"### [Get-HgsAttestationBaselinePolicy](Get-HgsAttestationBaselinePolicy.md)"
+
+msgid "Generates an attestation baseline policy."
+msgstr "生成一个认证基线策略（attestation baseline policy）。"
+
+msgid "### [Get-HgsClientConfiguration](Get-HgsClientConfiguration.md)"
+msgstr "### [Get-HgsClientConfiguration](Get-HgsClientConfiguration.md)"
+
+msgid "Gets the configuration of a Host Guardian Service client."
+msgstr "获取Host Guardian Service客户端的配置信息。"
+
+msgid "### [Get-HgsGuardian](Get-HgsGuardian.md)"
+msgstr "### [Get-HgsGuardian](Get-HgsGuardian.md)"
+
+msgid "Gets guardian objects from storage."
+msgstr "从存储中获取守护对象（guardian objects）。"
+
+msgid "### [Grant-HgsKeyProtectorAccess](Grant-HgsKeyProtectorAccess.md)"
+msgstr "### [Grant-HgsKeyProtectorAccess](Grant-HgsKeyProtectorAccess.md)"
+
+msgid "Grants access to a guardian for a key protector."
+msgstr "为关键保护者授予访问守护者的权限。"
+
+msgid "### [Import-HgsGuardian](Import-HgsGuardian.md)"
+msgstr "### [Import-HgsGuardian](Import-HgsGuardian.md)"
+
+msgid "Creates a guardian object from an .xml file."
+msgstr "从一个.xml文件创建一个守护对象。"
+
+msgid "### [New-HgsGuardian](New-HgsGuardian.md)"
+msgstr "### [New-HgsGuardian](New-HgsGuardian.md)"
+
+msgid "Creates a Host Guardian Service guardian."
+msgstr "创建一个Host Guardian服务的守护程序（guardian）。"
+
+msgid "### [New-HgsKeyProtector](New-HgsKeyProtector.md)"
+msgstr "### [New-HgsKeyProtector](New-HgsKeyProtector.md)"
+
+msgid "Creates a key protector."
+msgstr "创建一个密钥保护器。"
+
+msgid "### [Remove-HgsGuardian](Remove-HgsGuardian.md)"
+msgstr "### [Remove-HgsGuardian](Remove-HgsGuardian.md)"
+
+msgid "Removes a guardian from the guardian store."
+msgstr "从守护者商店中移除一个守护者。"
+
+msgid "### [Revoke-HgsKeyProtectorAccess](Revoke-HgsKeyProtectorAccess.md)"
+msgstr "### [Revoke-HgsKeyProtectorAccess](Revoke-HgsKeyProtectorAccess.md)"
+
+msgid "Revokes access for a guardian to a key protector."
+msgstr "撤销监护人访问“密钥保护器”的权限。"
+
+msgid "### [Set-HgsClientConfiguration](Set-HgsClientConfiguration.md)"
+msgstr "### [Set-HgsClientConfiguration](Set-HgsClientConfiguration.md)"
+
+msgid "Modifies the configuration of a Host Guardian Service client."
+msgstr "修改Host Guardian Service客户端的配置。"
+
+msgid "### [Test-HgsClientConfiguration](Test-HgsClientConfiguration.md)"
+msgstr "### [Test-HgsClientConfiguration](Test-HgsClientConfiguration.md)"
+
+msgid ""
+"Forces the HGS client to attest against the configured attestation servers."
+msgstr "强制 HGS 客户端向已配置的认证服务器进行认证（即提供身份验证信息）。"

@@ -1,0 +1,67 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:35:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-MPIOSetting"
+msgstr "# 获取 MPIO 设置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets MPIO settings."
+msgstr "获取 MPIO 设置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-MPIOSetting** cmdlet gets Microsoft Multipath I/O (MPIO) settings.\n"
+"The settings are as follows:"
+msgstr "`Get-MPIOSetting` cmdlet 用于获取 Microsoft 多路径输入/输出（MPIO）的设置。这些设置包括以下内容："
+
+msgid "This command gets the MPIO settings."
+msgstr "这个命令用于获取MPIO（多路径I/O）的相关设置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-MPIOSetting](./Set-MPIOSetting.md)"
+msgstr "[Set-MPIOSetting](./Set-MPIOSetting.md)"

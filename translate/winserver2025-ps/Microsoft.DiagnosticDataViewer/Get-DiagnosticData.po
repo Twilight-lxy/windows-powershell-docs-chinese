@@ -1,0 +1,160 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:07:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Get-DiagnosticData"
+msgstr "# 获取诊断数据"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Fetches historical Windows Diagnostic Data uploaded by this machine."
+msgstr "获取该机器上传的历史Windows诊断数据。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"This cmdlet fetches historical Windows Diagnostic Data uploaded by this machine.\n"
+"The total available historical data is limited by the diagnostic data store's configurations.\n"
+"See 'Set-DiagnosticStoreCapacity' for changes."
+msgstr ""
+"此cmdlet用于获取该机器上传的历史Windows诊断数据。可用的历史数据总量受到诊断数据存储配置的限制。如需更改相关设置，请参阅“Set-"
+"DiagnosticStoreCapacity”。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Returns first (oldest) diagnostic event since yesterday.\n"
+"Sample output below."
+msgstr "返回自昨天以来最早的（最旧的）诊断事件。以下是示例输出。"
+
+msgid "Name : Microsoft.Windows.Kernel.PnP.DeviceConfig"
+msgstr "名称：Microsoft.Windows.Kernel.PnP DeviceConfig"
+
+msgid "Timestamp : 11/8/2018 4:52:53 PM"
+msgstr "时间戳：2018年11月8日下午4:52:53"
+
+msgid "Payload : JSON PAYLOAD"
+msgstr "有效载荷（Payload）：JSON 格式的有效载荷数据"
+
+msgid "IsBasic : False"
+msgstr "IsBasic: False"
+
+msgid "DiagnosticDataTypes : {11}"
+msgstr "DiagnosticDataTypes: {11}"
+
+msgid "### EXAMPLE 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Returns all basic diagnostic events sent between 12 and 6 hours before now."
+msgstr "返回所有在12小时到6小时前之间发送的基本诊断事件。"
+
+msgid "### EXAMPLE 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Returns diagnostic events tagged with diagnostic data type ID 11.\n"
+"See Get-DiagnosticDataTypes for the list of diagnostic data types."
+msgstr "返回标记有诊断数据类型ID 11的诊断事件。有关诊断数据类型的列表，请参阅Get-DiagnosticDataTypes。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Query filter parameter.\n"
+"Specifies start time of the window for the oldest event in the fetched set."
+msgstr "查询过滤器参数：用于指定检索到的事件集中最旧事件的窗口起始时间。"
+
+msgid ""
+"Query filter parameter.\n"
+"Specifies end time of the window for the newest event in the fetched set."
+msgstr "查询过滤器参数：用于指定所获取数据集中最新事件的窗口结束时间。"
+
+msgid "Specifies maximum number of events to fetch."
+msgstr "指定要获取的最大事件数量。"
+
+msgid ""
+"Query filter parameter.\n"
+"Specifies if resultset should only include events having this diagnostic data type.\n"
+"See Get-DiagnosticDataTypes for data type IDs."
+msgstr ""
+"查询过滤器参数：用于指定结果集是否仅应包含具有该诊断数据类型的事件。有关数据类型ID的信息，请参阅Get-DiagnosticDataTypes。"
+
+msgid ""
+"Query filter parameter.\n"
+"Specifies if resultset should only include Basic diagnostic data events."
+msgstr "查询过滤器参数：用于指定结果集是否仅应包含基本诊断数据事件。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.DateTime"
+msgstr "### SystemDateTime"
+
+msgid ""
+"Query filter parameter.\n"
+"Specifies start time of the window for the oldest event in the fetched set."
+msgstr "查询过滤参数：用于指定获取的数据集中最旧事件的窗口起始时间。"
+
+msgid "### System.DateTime"
+msgstr "### System DateTime"
+
+msgid ""
+"Query filter parameter.\n"
+"Specifies end time of the window for the newest event in the fetched set."
+msgstr "查询过滤参数：用于指定获取的数据集中最新事件的窗口结束时间。"
+
+msgid "### System.Int32"
+msgstr "### System.Int32"
+
+msgid "Specifies maximum number of events to fetch."
+msgstr "指定要获取的最大事件数量。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### DDVCmdlets.Containers.EventRecord"
+msgstr "### DDVCmdlets.Containers.EventRecord"
+
+msgid "Persisted event record."
+msgstr "已保存的事件记录。"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "Requires Windows 10 version 17134 (1803) or higher"
+msgstr "需要Windows 10版本17134（1803）或更高版本"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[About Windows Diagnostic Data](/windows/privacy/windows-diagnostic-data)"
+msgstr "[关于Windows诊断数据](/windows/privacy/windows-diagnostic-data)"

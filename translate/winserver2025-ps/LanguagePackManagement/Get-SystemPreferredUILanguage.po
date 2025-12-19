@@ -1,0 +1,79 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:00:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"The Get-SystemPreferredUILanguage cmdlet lets you see which language is set "
+"as the System Preferred UI Language in a running Windows installation"
+msgstr ""
+"`Get-SystemPreferredUILanguage` cmdlet 可以让你查看在当前运行的 Windows "
+"系统中，哪种语言被设置为“系统首选用户界面语言”（System Preferred UI Language）。"
+
+msgid "# Get-SystemPreferredUILanguage"
+msgstr "# Get-SystemPreferredUILanguage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Returns the current System Preferred Language."
+msgstr "返回当前系统首选的语言设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "Returns the language that is set as the System Preferred Language"
+msgstr "返回被设置为系统首选语言的语言。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This command returns the language that's currently set as the System "
+"Preferred UI Language"
+msgstr "这个命令会返回当前设置为系统首选用户界面语言的语言。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Set-SystemPreferredUILanguage](set-systempreferreduilanguage.md)\n"
+"[InstallLanguage](install-language.md)"
+msgstr ""
+"[Set-SystemPreferredUILanguage](set-systempreferreduilanguage.md) "
+"[InstallLanguage](install-language.md)"

@@ -1,0 +1,363 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:15:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMReplication"
+msgstr "# 设置虚拟机复制（Set-VMReplication）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies the replication settings of a virtual machine."
+msgstr "修改虚拟机的复制设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMReplication"
+msgstr "### 虚拟机复制（VMReplication）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-VMReplication** cmdlet modifies the replication settings of a "
+"virtual machine."
+msgstr "`Set-VMReplication` cmdlet 用于修改虚拟机的复制设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example configures the auto-resynchronization of virtual machine VM01."
+msgstr "这个示例配置了虚拟机VM01的自动同步功能。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example configures virtual machine VM01 as a Replica virtual machine, "
+"allowing replication from primary server server01 from domain "
+"domain01.contoso.com."
+msgstr "这个示例将虚拟机VM01配置为复制虚拟机，使其能够从域domain01.contoso.com中的主服务器server01进行数据复制。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example configures the recovery history and application-consistent "
+"recovery points of the virtual machine VM01."
+msgstr "这个示例配置了虚拟机VM01的恢复历史记录以及与应用程序一致的恢复点设置。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid "This example reverses the replication of virtual machine VM01."
+msgstr "这个示例会反转虚拟机VM01的复制过程。"
+
+msgid "### Example 5"
+msgstr "### 示例 5"
+
+msgid ""
+"This example configures replication for all virtual machines on the local "
+"Hyper-V host to Replica server server01.domain01.contoso.com and port 80."
+msgstr ""
+"这个示例配置了本地 Hyper-V 主机上所有虚拟机的复制功能，将数据复制到 Replica 服务器 "
+"server01.domain01.contoso.com，并使用端口 80 进行通信。"
+
+msgid "### Example 6"
+msgstr "### 示例 6"
+
+msgid ""
+"The first command assigns the paths of the virtual hard disks vhd1 and vhd2 "
+"to the **$VHDS** variable."
+msgstr "第一个命令将虚拟硬盘 vhd1 和 vhd2 的路径赋值给 `$VHDS` 变量。"
+
+msgid ""
+"The second command specifies the two disks in **$VHDS** to be a part of the "
+"included disk set for replication of virtual machine VM01."
+msgstr "第二条命令指定了**$VHDS**中的两个磁盘，这些磁盘将被纳入用于复制虚拟机VM01的磁盘集中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"When you use the AsReplica parameter to specify a virtual machine as a Replica virtual machine, this parameter determines which primary servers can send replication to the Replica virtual machine.\n"
+"Replication is accepted only from the server specified in the chosen authentication entry, or any other authentication entry that has the same trust group."
+msgstr ""
+"当你使用 `AsReplica` "
+"参数来指定一台虚拟机作为副本虚拟机时，该参数决定了哪些主服务器可以将数据复制到这台副本虚拟机上。只有来自所选身份验证条目中指定的服务器，或者任何具有相同信任组的身份验证条目的服务器，才能接受数据复制请求。"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "以后台作业的形式运行该cmdlet。"
+
+msgid ""
+"Specifies that the virtual machine is a replica virtual machine, enabling it"
+" to be used as the source for the initial replication of the primary virtual"
+" machine."
+msgstr "指定该虚拟机为复制虚拟机（replica virtual machine），从而使其能够作为主虚拟机初始复制的源。"
+
+msgid ""
+"Specifies the authentication type to use for virtual machine replication, either Kerberos or Certificate.\n"
+"The specified Replica server must support the chosen authentication type.\n"
+"Run the **Get-VMReplicationServer** cmdlet to verify the authentication configured for the specified Replica server, or contact the administrator of the specified Replica server."
+msgstr ""
+"指定用于虚拟机复制的认证类型，可以是 Kerberos 或证书（Certificate）。所指定的复制服务器（Replica "
+"server）必须支持所选的认证类型。请运行 **Get-VMReplicationServer** cmdlet "
+"来验证该复制服务器配置的认证方式，或联系该复制服务器的管理员。"
+
+msgid ""
+"Enables replicating virtual machines that require resynchronization to be resynchronized automatically.\n"
+"(For example, a virtual machine requires resynchronization if the primary server shuts down abruptly).\n"
+"Resynchronization requires significant storage and processing resources.\n"
+"We recommended scheduling resynchronization during off-peak hours to reduce the impact to the host and other virtual machines running on the host.\n"
+"Use the AutoResynchronizeIntervalStart and AutoResynchronizeIntervalEnd parameters to specify an off-peak time to start the automatic resynchronization."
+msgstr ""
+"该功能支持自动重新同步需要再次进行数据同步的虚拟机（例如，当主服务器突然关闭时，相应的虚拟机就需要重新同步数据）。然而，重新同步过程会消耗大量的存储和处理资源。因此，我们建议在非高峰时段安排重新同步操作，以减少对主机以及主机上运行的其他虚拟机的影响。您可以使用"
+" `AutoResynchronizeIntervalStart` 和 `AutoResynchronizeIntervalEnd` "
+"参数来指定开始自动重新同步的非高峰时间。"
+
+msgid ""
+"Specifies the end of the time period in which you want resynchronization to "
+"start automatically."
+msgstr "指定您希望自动开始重新同步的时间段的结束时间。"
+
+msgid ""
+"Specifies the start of the time period in which you want resynchronization "
+"to start automatically."
+msgstr "指定您希望自动开始重新同步的时间段的起始时间。"
+
+msgid ""
+"Specifies whether to bypass a proxy server while replicating data to the "
+"Replica server."
+msgstr "指定在将数据复制到副本服务器（Replica server）时是否跳过代理服务器（proxy server）。"
+
+msgid ""
+"Specifies the certificate to use for mutual authentication of the replication data.\n"
+"This parameter is required only when \"Certificate\" is specified as the type of authentication.\n"
+"Specify the thumbprint of a valid computer certificate from the Personal store."
+msgstr ""
+"指定用于复制数据相互认证的证书。仅当将“Certificate”作为认证类型时，才需要此参数。请从个人证书存储中选择有效的计算机证书的指纹（thumbprint）进行指定。"
+
+msgid "The certificate must have all of the following properties to be valid:"
+msgstr "该证书必须具备以下所有属性才能被视为有效："
+
+msgid ""
+"To display a list of certificates in the computer's My store and the "
+"thumbprint of each certificate, type the following:"
+msgstr "要在计算机的“我的证书库”中显示证书列表以及每份证书的摘要（即“指纹”，用于验证证书的真实性），请输入以下命令："
+
+msgid "`PS C:\\\\\\> cd cert:\\LocalMachine\\My`"
+msgstr ""
+"```\n"
+"PS C:\\>\\> cd cert:\\LocalMachine\\My\n"
+"```"
+
+msgid "`PS C:\\\\\\> dir | format-list`"
+msgstr ""
+"请帮我将以下Markdown内容转换为中文：  \n"
+"\n"
+"`PS C:\\>\\dir | format-list`"
+
+msgid ""
+"For more information about certificate stores, see "
+"[http://technet.microsoft.com//library/cc757138.aspx](https://technet.microsoft.com//library/cc757138.aspx)."
+msgstr ""
+"有关证书存储的更多信息，请参阅 "
+"[http://technet.microsoft.com//library/cc757138.aspx](https://technet.microsoft.com//library/cc757138.aspx)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。您可以输入一台计算机的名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies whether replication data sent over the network is to be "
+"compressed."
+msgstr "指定通过网络发送的复制数据是否需要进行压缩。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which replication is to be enabled.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个要启用复制功能的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名来进行选择。默认值为本地计算机。可以使用 "
+"`localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies whether to replicate volume shadow copy service (VSS) snapshots."
+msgstr "指定是否复制卷影复制服务（VSS）的快照。"
+
+msgid ""
+"Determines whether all virtual hard disks selected for replication are replicated to the same point in time.\n"
+"This is useful if the virtual machine runs an application that saves data across virtual hard disks (for example, one virtual hard disk dedicated for application data, and another virtual hard disk dedicated for application log files)."
+msgstr ""
+"确定所有被选中用于复制的虚拟硬盘是否都复制到了相同的时间点。如果虚拟机运行的应用程序需要在多个虚拟硬盘上保存数据（例如，一个虚拟硬盘专门用于存储应用程序数据，另一个虚拟硬盘专门用于存储应用程序日志文件），那么这个功能就非常有用。"
+
+msgid ""
+"Specifies the time to start the initial replication, when scheduling initial replication to occur later.\n"
+"You can specify a time up to 7 days later.\n"
+"When this parameter is not specified, initial replication occurs immediately."
+msgstr ""
+"用于指定初始复制开始的时间，特别是在计划将初始复制延迟到以后执行时。您可以指定一个最多在7天后的时间点。如果未指定此参数，则初始复制会立即开始。"
+
+msgid ""
+"Specifies that a **VMReplication** object is to be passed through to the "
+"pipeline representing the replication configuration to be set."
+msgstr "指定将一个 **VMReplication** 对象传递到管道中，该对象用于表示要设置的复制配置。"
+
+msgid ""
+"Specifies whether to store additional recovery points on the Replica virtual machine.\n"
+"Storing more than the most recent recovery point of the primary virtual machine allows you to recover to an earlier point in time.\n"
+"However, storing additional recovery points requires more storage and processing resources.\n"
+"You can configure as many as 24 recovery points to be stored."
+msgstr ""
+"指定是否在副本虚拟机上存储额外的恢复点。存储主虚拟机最新的多个恢复点后，您可以恢复到之前的某个时间点。但是，存储额外的恢复点会消耗更多的存储空间和处理资源。您最多可以配置存储24个恢复点。"
+
+msgid ""
+"Specifies the name of the Replica server to which this virtual machine will "
+"be replicated."
+msgstr "指定该虚拟机将被复制到的副本服务器的名称。"
+
+msgid ""
+"Specifies the port on the Replica server to use for replication traffic.\n"
+"Make sure you specify a port that is configured on the Replica server to support the same authentication type you specify using the AuthenticationType parameter in this cmdlet.\n"
+"Run the **Get-VMReplicationServer** cmdlet on the Replica server to check the configuration of the port, or contact the administrator of the specified Replica server."
+msgstr ""
+"指定复制流量所使用的副本服务器上的端口。请确保您指定的端口号已在副本服务器上配置完毕，并且该端口支持与本cmdlet中使用的`AuthenticationType`参数所指定的相同认证类型。您可以在副本服务器上运行`Get-"
+"VMReplicationServer` cmdlet来检查端口的配置情况，或者联系相应的副本服务器管理员获取帮助。"
+
+msgid ""
+"Specifies whether to replicate host-only key value pairs (KVP) for this "
+"virtual machine."
+msgstr "指定是否为这台虚拟机复制仅主机可见（host-only）的键值对（Key-Value Pair，KVP）。"
+
+msgid ""
+"Specifies the fully qualified path names of all the virtual hard disks to include for replication.\n"
+"Be sure to include virtual hard disks that are critical to the ability of the virtual machine to start, such as the guest operating system disk.\n"
+"Excluding a critical disk from this list could prevent the replica virtual machine from starting properly."
+msgstr ""
+"指定所有用于复制的虚拟硬盘的完全限定路径名称。请确保包含对虚拟机启动至关重要的虚拟硬盘（例如客户操作系统所在的磁盘）。如果将某个关键磁盘排除在此列表之外，可能会导致复制后的虚拟机无法正常启动。"
+
+msgid ""
+"Specifies all virtual hard disks to include for replication.\n"
+"This parameter can include all the VHDs attached to the virtual machine or a subset.\n"
+"Be sure to include virtual hard disks that are critical to the ability of the virtual machine to start, such as the guest operating system disk.\n"
+"Excluding a critical disk from this list could prevent the replica virtual machine from starting properly."
+msgstr ""
+"指定所有需要包含在复制过程中的虚拟硬盘。该参数可以包括连接到虚拟机的所有VHD（虚拟硬盘），也可以仅选择其中的一部分。请确保包含对虚拟机启动至关重要的虚拟硬盘，例如宿主操作系统所在的磁盘。如果将某个关键磁盘排除在这个列表之外，可能会导致副本虚拟机无法正常启动。"
+
+msgid ""
+"Specifies the frequency, in seconds, at which Hyper-V replicates changes to "
+"the Replica server."
+msgstr "指定Hyper-V将更改复制到副本服务器的频率（以秒为单位）。"
+
+msgid ""
+"Reverses the replication of the virtual machine, switching it from a primary"
+" virtual machine to a Replica virtual machine, or from a Replica virtual "
+"machine to a primary virtual machine."
+msgstr "反转虚拟机的复制状态，将其从主虚拟机切换为副本虚拟机，或从副本虚拟机切换回主虚拟机。"
+
+msgid ""
+"Specifies that a restored copy of the virtual machine on the Replica server "
+"is to be used as the source of the initial replication."
+msgstr "指定将副本服务器上的虚拟机恢复后的副本作为初始复制的来源。"
+
+msgid ""
+"Specifies the virtual machine for which the replication configuration is to "
+"be set."
+msgstr "指定要设置复制配置的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine for which the replication "
+"configuration is to be set."
+msgstr "指定要设置复制配置的虚拟机的名称。"
+
+msgid ""
+"Specifies a virtual machine replication object for which the configuration "
+"is to be set."
+msgstr "指定一个虚拟机复制对象，将为该对象设置配置信息。"
+
+msgid ""
+"Specifies the frequency, in hours, at which Volume Shadow Copy Service (VSS) performs a snapshot backup of the virtual machines.\n"
+"Specify this parameter only if application-consistent replication is enabled for the virtual is and the value you set for the **RecoveryHistory** parameter is not zero.\n"
+"The cmdlet sets a value of zero for this parameter if application-consistent replication is disabled.\n"
+"Do not specify this parameter if you are extending replication from the Replica virtual machine."
+msgstr ""
+"该参数用于指定卷影复制服务（VSS）执行虚拟机快照备份的频率（以小时为单位）。只有在为虚拟机启用了应用程序一致性复制，并且您设置的**RecoveryHistory**参数值不为零的情况下，才需要指定此参数。如果禁用了应用程序一致性复制，该"
+" cmdlet 会将该参数的值设置为零。如果您是从副本虚拟机扩展复制功能，则不要指定此参数。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### VMReplication"
+msgstr "### 虚拟机复制（VMReplication）"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 **-PassThru** 参数的话……"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,135 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:02:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-MsmqQueueManager"
+msgstr "# Set-MsmqQueueManager"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Configures the queue manager."
+msgstr "配置队列管理器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### All (Default)"
+msgstr "### 全部（默认值）"
+
+msgid "### Connect"
+msgstr "### 连接"
+
+msgid "### Disconnect"
+msgstr "### 断开连接"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-MsmqQueueManager** cmdlet configures the properties of the Message Queuing (also known as MSMQ) queue manager.\n"
+"This cmdlet returns a **QueueManager** object that represents the modified local queue manager.\n"
+"If you specify the *RenewEncryptionKey* parameter to renew keys, you must restart the Message Queuing service for the new keys to become effective."
+msgstr ""
+"`Set-MsmqQueueManager` cmdlet 用于配置消息队列（也称为 MSMQ）队列管理器的属性。该 cmdlet 会返回一个 "
+"`QueueManager` 对象，该对象表示已修改的本地队列管理者。如果您指定了 `RenewEncryptionKey` "
+"参数来更新加密密钥，则必须重新启动消息队列服务，以便新密钥能够生效。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Configure the queue manager"
+msgstr "### 示例 1：配置队列管理器"
+
+msgid ""
+"This command configures properties of the Message Queuing queue manager."
+msgstr "此命令用于配置消息队列（Message Queuing）队列管理器的属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Indicates that this cmdlet connects the computer to the network and to the directory service.\n"
+"If you specify this parameter, you cannot specify the *Disconnect* parameter."
+msgstr "表示此 cmdlet 用于将计算机连接到网络和目录服务。如果您指定了该参数，则无法指定 *Disconnect* 参数。"
+
+msgid ""
+"Indicates that this cmdlet disconnects the computer from the network and from the directory service.\n"
+"If you specify this parameter, you cannot specify the *Connect* parameter."
+msgstr "表示此 cmdlet 会断开计算机与网络以及目录服务的连接。如果您指定了此参数，则无法指定 *Connect* 参数。"
+
+msgid "Specifies the total Journal Message Storage quota for Message Queuing."
+msgstr "指定消息队列（Message Queuing）的总日志消息存储配额。"
+
+msgid "Specifies the total Message Storage quota for Message Queuing."
+msgstr "指定消息队列（Message Queuing）的总消息存储配额。"
+
+msgid ""
+"Indicates that this cmdlet changes the message logger storage location and "
+"moves over all the message logger files to the new location."
+msgstr "这表明该 cmdlet 会更改消息记录器的存储位置，并将所有消息记录器文件移至新位置。"
+
+msgid ""
+"Specifies a new message storage location.\n"
+"The cmdlet moves all the message files to the new location."
+msgstr "指定一个新的消息存储位置。该cmdlet会将所有消息文件移至新位置。"
+
+msgid "Indicates that this cmdlet renews the public encryption key."
+msgstr "表示此cmdlet用于更新公共加密密钥。"
+
+msgid ""
+"Specifies a new transaction logger storage location.\n"
+"This cmdlet moves all the transaction logger files to the new location."
+msgstr "指定一个新的事务日志存储位置。此命令行工具会将所有事务日志文件移动到新位置。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-MsmqQueueManager](./Get-MsmqQueueManager.md)"
+msgstr "[Get-MsmqQueueManager](./Get-MsmqQueueManager.md)"

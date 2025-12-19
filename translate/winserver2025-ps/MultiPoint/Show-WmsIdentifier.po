@@ -1,0 +1,115 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:15:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Show-WmsIdentifier"
+msgstr "# 显示 WMS 标识符"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Displays the identification screen for a station."
+msgstr "显示车站的识别屏幕。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IdentifyBySession"
+msgstr "### IdentifyBySession"
+
+msgid "### IdentifyByStation"
+msgstr "### 通过站点名称进行识别（IdentifyByStation）"
+
+msgid "### IdentifyAll"
+msgstr "### IdentifyAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Show-WmsIdentifier** cmdlet displays the identification screen for the specified station.\n"
+"The top line shown is the client name.\n"
+"For a Windows MultiPoint Server station, the station-friendly name is used as the client name.\n"
+"The bottom name is the system in which this session is hosted."
+msgstr ""
+"`Show-WmsIdentifier` cmdlet 用于显示指定站点的识别信息界面。界面顶部的显示内容是客户端名称；对于 Windows "
+"MultiPoint Server 站点而言，会使用与该站点更相关的名称作为客户端名称。界面底部显示的内容则是承载该会话的系统的名称。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Display the identification screen"
+msgstr "### 示例 1：显示身份验证界面"
+
+msgid ""
+"This example displays the ID screen for the specified session.\n"
+"The first command displays the system that runs the remote desktop client."
+msgstr "这个示例显示了指定会话的 ID 界面。第一个命令用于显示运行远程桌面客户端（remote desktop client）的系统信息。"
+
+msgid "The second command displays the local server name."
+msgstr "第二个命令会显示本地服务器的名称。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 localhost。"
+
+msgid "Specifies an array of MultiPoint session IDs."
+msgstr "指定一个包含多点会议 ID 的数组。"
+
+msgid "Specifies an array of MultiPoint station IDs."
+msgstr "指定一个多点站ID数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Hide-WmsIdentifier](./Hide-WmsIdentifier.md)"
+msgstr "[隐藏WMS标识符](./Hide-WmsIdentifier.md)"

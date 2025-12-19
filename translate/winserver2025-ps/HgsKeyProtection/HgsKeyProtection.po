@@ -1,0 +1,138 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:26:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# HgsKeyProtection Module"
+msgstr "# HgsKeyProtection 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for the Key "
+"Protection Service cmdlets. This table lists the cmdlets in alphabetical "
+"order."
+msgstr ""
+"本参考资料提供了 Key Protection Service（密钥保护服务）相关 cmdlet 的描述和语法信息。下表按字母顺序列出了这些 "
+"cmdlet。"
+
+msgid "## HgsKeyProtection Cmdlets"
+msgstr "## HgsKeyProtectionCmdlets"
+
+msgid ""
+"### [Add-HgsKeyProtectionAttestationSignerCertificate](Add-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+msgstr ""
+"### [Add-HgsKeyProtectionAttestationSignerCertificate](Add-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+
+msgid ""
+"Adds an attestation signer certificate for the trusted certificates for the "
+"Key Protection Service."
+msgstr "为密钥保护服务（Key Protection Service）中的受信任证书添加一个证明签名者证书。"
+
+msgid ""
+"### [Add-HgsKeyProtectionCertificate](Add-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"### [Add-HgsKeyProtectionCertificate](Add-HgsKeyProtectionCertificate.md)"
+
+msgid "Adds a key certificate to the Key Protection Service."
+msgstr "将一个密钥证书添加到密钥保护服务中。"
+
+msgid "### [Export-HgsKeyProtectionState](Export-HgsKeyProtectionState.md)"
+msgstr "### [Export-HgsKeyProtectionState](Export-HgsKeyProtectionState.md)"
+
+msgid "Exports Key Protection Service configuration and certificates."
+msgstr "导出密钥保护服务（Key Protection Service）的配置信息和证书。"
+
+msgid ""
+"### [Get-HgsKeyProtectionAttestationSignerCertificate](Get-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+msgstr ""
+"### [Get-HgsKeyProtectionAttestationSignerCertificate](Get-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+
+msgid ""
+"Gets the attestation signer certificates that the Key Protection Service "
+"trusts."
+msgstr "获取密钥保护服务所信任的认证签名者证书。"
+
+msgid ""
+"### [Get-HgsKeyProtectionCertificate](Get-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"### [Get-HgsKeyProtectionCertificate](Get-HgsKeyProtectionCertificate.md)"
+
+msgid "Gets key certificates in the Key Protection Service."
+msgstr "在密钥保护服务中获取关键的证书。"
+
+msgid ""
+"### [Get-HgsKeyProtectionConfiguration](Get-"
+"HgsKeyProtectionConfiguration.md)"
+msgstr ""
+"### [Get-HgsKeyProtectionConfiguration](Get-"
+"HgsKeyProtectionConfiguration.md)"
+
+msgid "Gets the configuration of the Key Protection Service."
+msgstr "获取密钥保护服务的配置信息。"
+
+msgid "### [Import-HgsKeyProtectionState](Import-HgsKeyProtectionState.md)"
+msgstr "### [Import-HgsKeyProtectionState](Import-HgsKeyProtectionState.md)"
+
+msgid ""
+"Imports previously exported Key Protection Service configuration and "
+"certificates."
+msgstr "导入之前导出的密钥保护服务（Key Protection Service）配置文件和证书。"
+
+msgid ""
+"### [Remove-HgsKeyProtectionAttestationSignerCertificate](Remove-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+msgstr ""
+"### [Remove-HgsKeyProtectionAttestationSignerCertificate](Remove-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+
+msgid ""
+"Removes an attestation signer certificate from the trusted certificates in "
+"the Key Protection Service."
+msgstr "从密钥保护服务（Key Protection Service）中的受信任证书列表中移除某个认证签名者证书。"
+
+msgid ""
+"### [Remove-HgsKeyProtectionCertificate](Remove-"
+"HgsKeyProtectionCertificate.md)"
+msgstr ""
+"### [Remove-HgsKeyProtectionCertificate](Remove-"
+"HgsKeyProtectionCertificate.md)"
+
+msgid "Removes a key certificate from the Key Protection Service."
+msgstr "从密钥保护服务中移除一个密钥证书。"
+
+msgid ""
+"### [Set-HgsKeyProtectionAttestationSignerCertificatePolicy](Set-"
+"HgsKeyProtectionAttestationSignerCertificatePolicy.md)"
+msgstr ""
+"### [Set-HgsKeyProtectionAttestationSignerCertificatePolicy](Set-"
+"HgsKeyProtectionAttestationSignerCertificatePolicy.md)"
+
+msgid "Modifies the policy for an attestation signer certificates."
+msgstr "修改用于证明签名者证书的政策。"
+
+msgid ""
+"### [Set-HgsKeyProtectionCertificate](Set-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"### [Set-HgsKeyProtectionCertificate](Set-HgsKeyProtectionCertificate.md)"
+
+msgid ""
+"Modifies properties of a key certificate in the Key Protection Service."
+msgstr "修改密钥保护服务（Key Protection Service）中某个密钥证书的属性。"
+
+msgid ""
+"### [Set-HgsKeyProtectionConfiguration](Set-"
+"HgsKeyProtectionConfiguration.md)"
+msgstr ""
+"### [Set-HgsKeyProtectionConfiguration](Set-"
+"HgsKeyProtectionConfiguration.md)"
+
+msgid "Modifies the configuration of the Key Protection Service."
+msgstr "修改密钥保护服务的配置。"

@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:10:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Microsoft.ReFsDedup.Commands Module"
+msgstr "# Microsoft.ReFsDedup Commands 模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Windows Server ReFS\n"
+"Deduplication-specific cmdlets. It lists the cmdlets in alphabetical order based on the verb at the\n"
+"beginning of the cmdlet."
+msgstr ""
+"此参考文档提供了所有专门用于 Windows Server ReFS 重复数据删除功能的 cmdlet 的描述和语法。这些 cmdlet "
+"按其开头所使用的动词（即命令的操作类型）按字母顺序进行排列。"
+
+msgid "## Microsoft.ReFsDedup.Commands Cmdlets"
+msgstr "## Microsoft.RefsDedupCommandsCmdlets"
+
+msgid "### [Clear-ReFSDedupSchedule](Clear-ReFSDedupSchedule.md)"
+msgstr "### [Clear-ReFSDedupSchedule](Clear-ReFSDedupSchedule.md)"
+
+msgid ""
+"Clears the scheduled task for deduplication on a specified ReFS volume."
+msgstr "清除指定 ReFS 卷上用于去重操作的计划任务。"
+
+msgid "### [Clear-ReFSDedupScrubSchedule](Clear-ReFSDedupScrubSchedule.md)"
+msgstr "### [Clear-ReFSDedupScrubSchedule](Clear-ReFSDedupScrubSchedule.md)"
+
+msgid "Clears the deduplication scrub schedule on a specified ReFS volume."
+msgstr "清除指定 ReFS 卷上的去重清理计划。"
+
+msgid "### [Disable-ReFSDedup](Disable-ReFSDedup.md)"
+msgstr "### [禁用 ReFSD Dedup]( Disable-ReFSDedup.md)"
+
+msgid "Disables data deduplication on a specified ReFS volume."
+msgstr "禁用指定 ReFS 卷上的数据去重功能。"
+
+msgid "### [Enable-ReFSDedup](Enable-ReFSDedup.md)"
+msgstr "### [Enable-ReFSDedup](Enable-ReFSDedup.md)"
+
+msgid "Enables data deduplication on a specified ReFS volume."
+msgstr "启用对指定 ReFS 卷的数据去重功能。"
+
+msgid "### [Get-ReFSDedupSchedule](Get-ReFSDedupSchedule.md)"
+msgstr "### [Get-ReFSDedupSchedule](Get-ReFSDedupSchedule.md)"
+
+msgid "Retrieves the deduplication schedule on a specified ReFS volume."
+msgstr "检索指定 ReFS 卷上的去重计划信息。"
+
+msgid "### [Get-ReFSDedupScrubSchedule](Get-ReFSDedupScrubSchedule.md)"
+msgstr "### [Get-ReFSDedupScrubSchedule](Get-ReFSDedupScrubSchedule.md)"
+
+msgid ""
+"Retrieves the deduplication scrub schedule on the specified ReFS volume."
+msgstr "检索指定 ReFS 卷上的去重清理计划。"
+
+msgid "### [Get-ReFSDedupStatus](Get-ReFSDedupStatus.md)"
+msgstr "### [Get-ReFSDedupStatus](Get-ReFSDedupStatus.md)"
+
+msgid "Retrieves the status of data deduplication on a specified ReFS volume."
+msgstr "检索指定ReFS卷上的数据去重状态。"
+
+msgid "### [Resume-ReFSDedupSchedule](Resume-ReFSDedupSchedule.md)"
+msgstr "### [Resume-ReFSDedupSchedule](Resume-ReFSDedupSchedule.md)"
+
+msgid "Resumes the deduplication schedule on a specified ReFS volume."
+msgstr "在指定的 ReFS 卷上恢复去重任务的计划。"
+
+msgid "### [Set-ReFSDedupSchedule](Set-ReFSDedupSchedule.md)"
+msgstr "### [Set-ReFSDedupSchedule](Set-ReFSDedupSchedule.md)"
+
+msgid "Sets the deduplication schedule on a specified ReFS volume."
+msgstr "为指定的 ReFS 卷设置去重计划。"
+
+msgid "### [Set-ReFSDedupScrubSchedule](Set-ReFSDedupScrubSchedule.md)"
+msgstr "### [Set-ReFSDedupScrubSchedule](Set-ReFSDedupScrubSchedule.md)"
+
+msgid "Sets the deduplication scrub schedule on the specified ReFS volume."
+msgstr "为指定的 ReFS 卷设置去重清洗计划。"
+
+msgid "### [Start-ReFSDedupJob](Start-ReFSDedupJob.md)"
+msgstr "### [开始ReFSDedupJob任务](Start-ReFSDedupJob.md)"
+
+msgid "Starts a deduplication job on the specified ReFS volume."
+msgstr "在指定的 ReFS 卷上启动去重任务。"
+
+msgid "### [Stop-ReFSDedupJob](Stop-ReFSDedupJob.md)"
+msgstr "### [Stop-ReFSDedupJob](Stop-ReFSDedupJob.md)"
+
+msgid "Stops a running deduplication job on a specified ReFS volume."
+msgstr "停止在指定的 ReFS 卷上正在运行的去重作业。"
+
+msgid "### [Suspend-ReFSDedupSchedule](Suspend-ReFSDedupSchedule.md)"
+msgstr "### [Suspend-ReFSDedupSchedule](Suspend-ReFSDedupSchedule.md)"
+
+msgid "Suspends the deduplication schedule on a specified ReFS volume."
+msgstr "暂停指定ReFS卷上的去重操作计划。"

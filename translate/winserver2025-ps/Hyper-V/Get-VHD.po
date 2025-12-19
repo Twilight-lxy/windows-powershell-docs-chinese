@@ -1,0 +1,160 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:03:38 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VHD"
+msgstr "# Get-VHD"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the virtual hard disk object associated with a virtual hard disk."
+msgstr "获取与虚拟硬盘关联的虚拟硬盘对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Path (Default)"
+msgstr "### 路径（默认值）"
+
+msgid "### Disk"
+msgstr "### 磁盘"
+
+msgid "### VMId"
+msgstr "### VMId"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-VHD** cmdlet gets the virtual hard disk object associated with a "
+"virtual hard disk."
+msgstr "`Get-VHD` cmdlet 可以获取与虚拟硬盘相关联的虚拟硬盘对象。"
+
+msgid ""
+"> [!Note]\n"
+"> When the VHD is in use (for example by a VM or mounted in the OS) and it is on shared storage, the **Get-VHD** cmdlet can only access it from the host that is using it. Any other server trying to run the **Get-VHD** cmdlet will get an error that it is in use."
+msgstr ""
+"> [!注意] > 当 VHD 正在被使用中（例如被虚拟机占用或在操作系统中挂载），并且它位于共享存储空间上时，`Get-VHD` "
+"命令只能从正在使用它的主机上访问该 VHD。任何其他尝试运行 `Get-VHD` 命令的服务器都会收到错误提示，表示该 VHD 正在被使用中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Gets the virtual hard disk where the path to the virtual hard disk file is "
+"`C:\\test\\testvhdx.vhdx`."
+msgstr "获取该虚拟硬盘文件所在的虚拟硬盘位置，其路径为 `C:\\test\\testvhdx.vhdx`。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "Gets the virtual hard disk attached to the system with disk number 6."
+msgstr "将虚拟硬盘连接到系统中，并为其分配盘号6。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Gets the virtual hard disk objects associated with virtual machine TestVM, "
+"using the pipeline feature for the VMId parameter."
+msgstr "使用管道功能（pipeline feature）和参数 VMId，获取与虚拟机 TestVM 相关联的虚拟硬盘对象。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"Gets the virtual hard disk objects associated with virtual machine TestVM "
+"using the pipeline feature for the path parameter."
+msgstr "使用管道功能（pipeline feature）和路径参数（path parameter），获取与虚拟机TestVM相关联的虚拟硬盘对象。"
+
+msgid "### Example 5"
+msgstr "### 示例 5"
+
+msgid ""
+"Gets the virtual hard disk object for all the virtual hard disk files that "
+"are contained in the specified directory and its subdirectories."
+msgstr "获取指定目录及其子目录中包含的所有虚拟硬盘文件对应的虚拟硬盘对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which a virtual hard disk is to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于检索虚拟硬盘的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全qualified "
+"的域名进行指定。默认值为本地计算机。可以使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the disk number associated with the virtual hard disk to be "
+"retrieved."
+msgstr "指定要与要检索的虚拟硬盘相关联的磁盘编号。"
+
+msgid ""
+"Specifies the path to the virtual hard disk file of the virtual hard disk to be retrieved.\n"
+"If a filename or relative path is specified, the path is calculated relative to the current working directory."
+msgstr "指定要检索的虚拟硬盘的虚拟硬盘文件的路径。如果指定了文件名或相对路径，则该路径会相对于当前工作目录进行计算。"
+
+msgid ""
+"Specifies the virtual machine identifier of the virtual machine whose "
+"virtual hard disks are to be retrieved."
+msgstr "指定要获取其虚拟硬盘的虚拟机的标识符。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, "
+"`-ErrorVariable`, `-InformationAction`, `-InformationVariable`, "
+"`-OutVariable`, `-OutBuffer`, `-PipelineVariable`, `-Verbose`, "
+"`-WarningAction`, and `-WarningVariable`. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)"
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+msgstr "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

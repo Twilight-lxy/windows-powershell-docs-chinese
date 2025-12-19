@@ -1,0 +1,133 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:14:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-HgsAttestationTpmHost"
+msgstr "# Add-HgsAttestationTpmHost"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a guarded host with TPM 2.0 to the Attestation service in HGS."
+msgstr "在 HGS 的认证服务中添加了一个配备了 TPM 2.0 技术的安全主机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### File"
+msgstr "### 文件"
+
+msgid "### Console"
+msgstr "### 控制台"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-HgsAttestationTpmHost** cmdlet adds a guarded host to the Attestation service in Host Guardian Service (HGS).\n"
+"To use this cmdlet, this host must have trusted platform module (TPM) 2.0 hardware."
+msgstr ""
+"`Add-HgsAttestationTpmHost` cmdlet 可将受保护的主机添加到 Host Guardian Service (HGS) "
+"中的 Attestation 服务中。要使用此 cmdlet，该主机必须配备支持 Trusted Platform Module (TPM) 2.0 "
+"标准的硬件。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a TPM host"
+msgstr "### 示例 1：添加一个 TPM 主机"
+
+msgid ""
+"This command adds a TPM host to the Attestation service.\n"
+"This command uses an .xml file that is output of the **Get-PlatformIdentifier** cmdlet."
+msgstr ""
+"此命令将一个 TPM 主机添加到认证服务中。该命令使用由 **Get-PlatformIdentifier** cmdlet 生成的 `.xml` "
+"文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies a foreign key."
+msgstr "指定一个外键。"
+
+msgid ""
+"Specifies the friendly name of the guarded host that this cmdlet adds to the Attestation service.\n"
+"This host must have TPM 2.0 hardware."
+msgstr "指定该cmdlet添加到Attestation服务中的受保护主机的友好名称。此主机必须配备TPM 2.0硬件。"
+
+msgid ""
+"Specifies the full path of an .xml file.\n"
+"Create this file by using the **Get-PlatformIdentifier** cmdlet.\n"
+"For more information, type `Get-Help Get-PlatformIdentifier`."
+msgstr ""
+"指定一个.xml文件的完整路径。可以使用**Get-PlatformIdentifier** cmdlet来创建该文件。有关更多信息，请输入`Get-"
+"Help Get-PlatformIdentifier`。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid ""
+"Specifies the full path of an .xml file that contains binary data.\n"
+"Create this file by using **Get-PlatformIdentifier**."
+msgstr "指定一个包含二进制数据的.xml文件的完整路径。可以使用**Get-PlatformIdentifier**命令来创建该文件。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。不过实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "This cmdlet returns a string."
+msgstr "这个cmdlet返回一个字符串。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-HgsAttestationTpmHost](./Get-HgsAttestationTpmHost.md)"
+msgstr "[Get-HgsAttestationTpmHost](./Get-HgsAttestationTpmHost.md)"
+
+msgid "[Remove-HgsAttestationTpmHost](./Remove-HgsAttestationTpmHost.md)"
+msgstr "[Remove-HgsAttestationTpmHost](./Remove-HgsAttestationTpmHost.md)"

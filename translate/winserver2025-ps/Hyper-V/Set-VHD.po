@@ -1,0 +1,190 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:59:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VHD"
+msgstr "# Set-VHD"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets properties associated with a virtual hard disk."
+msgstr "设置与虚拟硬盘相关的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Parent (Default)"
+msgstr "### 父级（默认值）"
+
+msgid "### PhysicalSectorSize"
+msgstr "### PhysicalSectorSize"
+
+msgid "### DiskIdentifier"
+msgstr "### DiskIdentifier"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-VHD** cmdlet sets the ParentPath or PhysicalSectorSizeBytes properties of a virtual hard disk.\n"
+"The two properties must be set in separate operations."
+msgstr ""
+"`Set-VHD` cmdlet 用于设置虚拟硬盘的 `ParentPath` 或 `PhysicalSectorSizeBytes` "
+"属性。这两个属性必须通过不同的操作分别进行设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example sets the parent of the virtual hard disk associated with ParentCopy.vhd as the parent of the chained virtual hard disk associated with Child1.vhd, where the leaf of the virtual disk chain is the virtual hard disk associated with Child2.vhd.\n"
+"The operation is performed in online mode."
+msgstr ""
+"这个示例将与 ParentCopy.vhd 相关联的虚拟硬盘的父级设置为与 Child1.vhd "
+"相关联的链式虚拟硬盘的父级，而该链式虚拟硬盘的末端节点则是与 Child2.vhd 相关联的虚拟硬盘。整个操作是在在线模式下完成的。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example sets the parent of the virtual hard disk associated with ParentCopy.vhd as the parent of the chained virtual hard disk associated with Child1.vhd.\n"
+"This operation cannot be performed when the virtual disk chain is attached."
+msgstr ""
+"这个示例将与 ParentCopy.vhd 相关联的虚拟硬盘的父级设置为与 Child1.vhd "
+"相关联的链式虚拟硬盘的父级。当虚拟硬盘链已连接时，无法执行此操作。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example sets the parent of Child1.vhd to point to parentcopywithnewid.vhd, even though parentcopywithnewid.vhd has a different ID than the original parent of child1.vhd.\n"
+"The operation is performed in offline mode.\n"
+"This mode should be used with extreme caution, and only when it is certain that the block contents of the new and old parents are exactly the same.\n"
+"Otherwise data loss can occur."
+msgstr ""
+"这个示例将 Child1.vhd 的父文件设置为指向 parentcopywithnewid.vhd，尽管 "
+"parentcopywithnewid.vhd 的 ID 与 Child1.vhd 原始父文件的 ID "
+"不同。该操作是在离线模式下进行的。使用这种模式时需要格外谨慎，只有在新旧父文件的块内容完全相同时才能使用它；否则可能会导致数据丢失。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid "This example sets the physical sector size of a VHDX to 512 bytes."
+msgstr "这个示例将VHDX的物理扇区大小设置为512字节。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the parent of a virtual hard disk in a differencing hard disk chain is to be set.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个 Hyper-V 主机，用于设置差异磁盘链中虚拟硬盘的父级。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行指定。默认值是本地计算机。可以使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies that the check for identifier mismatch between the parent and "
+"child virtual hard disk is to be skipped."
+msgstr "指定应跳过对父虚拟硬盘和子虚拟硬盘之间的标识符是否不匹配的检查。"
+
+msgid ""
+"Specifies the path to the virtual hard disk file of the virtual hard disk representing the leaf node of the virtual hard disk chain.\n"
+"Required when performing the operation in online mode."
+msgstr "指定虚拟硬盘文件的路径，该文件表示虚拟硬盘链中的叶子节点。在在线模式下执行操作时此参数是必需的。"
+
+msgid ""
+"Specifies the path to the parent disk of a differencing virtual hard disk.\n"
+"Can be performed regardless of whether the disk is online or offline."
+msgstr "指定差异化虚拟硬盘父磁盘的路径。无论该磁盘是否处于在线状态，都可以执行此操作。"
+
+msgid ""
+"Specifies that an object is to be passed through to the pipeline "
+"representing the virtual hard disk whose parent is to be set."
+msgstr "指定要将某个对象传递给表示虚拟硬盘的管道，以便设置该虚拟硬盘的父级（即其所属的容器或系统层级）。"
+
+msgid ""
+"Specifies the path to the virtual hard disk file of the virtual hard disk "
+"drive whose parent in the virtual hard disk chain is to be set."
+msgstr "指定虚拟硬盘驱动器的虚拟硬盘文件的路径；该虚拟硬盘驱动器在虚拟硬盘链中的父节点需要被设置（即进行相应的配置）。"
+
+msgid ""
+"Specifies the physical sector size, in bytes.\n"
+"Valid values are 512 and 4096.\n"
+"This parameter is supported only on a VHDX-format disk that is not attached when the operation is initiated."
+msgstr "指定物理扇区的大小（以字节为单位）。有效值为 512 和 4096。此参数仅支持在操作开始时未连接的 VHDX 格式磁盘上使用。"
+
+msgid ""
+"Indicates that the cmdlet modifies the disk identifier of the virtual disk associated with the virtual hard disk file.\n"
+"The disk identifier is the SCSI Vital Product Data (VPD) Page 0x83h identifier associated with a disk.\n"
+"Use this parameter only for a VHDX-format disk."
+msgstr ""
+"该参数表示此cmdlet会修改与虚拟硬盘文件关联的虚拟磁盘的磁盘标识符。磁盘标识符是指与磁盘相关联的SCSI重要产品数据（VPD）页面0x83h中的标识符。请仅针对VHDX格式的磁盘使用此参数。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+msgstr "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

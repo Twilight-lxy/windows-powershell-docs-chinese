@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:07:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WmsDiskProtection"
+msgstr "# Get-WmsDiskProtection"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets the current state and configuration of the disk protection feature."
+msgstr "获取磁盘保护功能的当前状态和配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-WmsDiskProtection** cmdlet gets the current configuration of the disk protection feature.\n"
+"The configuration can be NotInstalled, Discard, or Passive."
+msgstr ""
+"`Get-WmsDiskProtection` cmdlet 可以获取磁盘保护功能的当前配置状态。该配置状态可以是 “Not "
+"Installed”（未安装）、”Discard”（已丢弃）或 “Passive”（被动模式）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get the disk protection configuration for the local computer"
+msgstr "### 示例 1：获取本地计算机的磁盘保护配置"
+
+msgid ""
+"This command returns the state of the disk protection feature on the local "
+"computer."
+msgstr "该命令会返回本地计算机上磁盘保护功能的当前状态。"
+
+msgid ""
+"### Example 2: Get the disk protection configuration for a specified "
+"computer"
+msgstr "### 示例 2：获取指定计算机的磁盘保护配置信息"
+
+msgid ""
+"This command returns the state of the disk protection feature on the "
+"specified computer."
+msgstr "该命令返回指定计算机上磁盘保护功能的当前状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标——即多点服务器（MultiPoint Server）的完全限定主机名。默认值为“localhost”。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.DiskProtectionMode"
+msgstr ""
+"### Microsoft.WindowsServerSolutions.MultipointServer "
+"POWERShellcommands.Library.DiskProtectionMode"
+
+msgid ""
+"The **DiskProtectionMode** object is an enumeration with one of three values that reflect the current mode of the disk protection feature.\n"
+"The possible values are NotInstalled, Discard, or Passive."
+msgstr ""
+"**DiskProtectionMode** "
+"对象是一个枚举类型，包含三个值之一，这些值反映了磁盘保护功能的当前模式。可能的值有：NotInstalled（未安装）、Discard（丢弃）和 "
+"Passive（被动模式）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-WmsDiskProtection](./Disable-WmsDiskProtection.md)"
+msgstr "[ Disable-WmsDiskProtection](./Disable-WmsDiskProtection.md)"
+
+msgid "[Enable-WmsDiskProtection](./Enable-WmsDiskProtection.md)"
+msgstr "[Enable-WmsDiskProtection](./Enable-WmsDiskProtection.md)"
+
+msgid "[Resume-WmsDiskProtection](./Resume-WmsDiskProtection.md)"
+msgstr "[ Resume-WmsDiskProtection](./Resume-WmsDiskProtection.md)"
+
+msgid "[Suspend-WmsDiskProtection](./Suspend-WmsDiskProtection.md)"
+msgstr "[暂停 WMS 磁盘保护功能](./Suspend-WmsDiskProtection.md)"

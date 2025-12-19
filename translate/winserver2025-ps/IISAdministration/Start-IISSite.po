@@ -1,0 +1,102 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:39:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-IISSite"
+msgstr "# 启动 IISSite"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Starts an existing site on the IIS server."
+msgstr "在 IIS 服务器上启动一个已存在的网站。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Start-IISSite** cmdlet starts an existing site on the Internet "
+"Information Services (IIS) server."
+msgstr ""
+"`Start-IISSite` cmdlet 用于在 Internet Information Services (IIS) "
+"服务器上启动一个已存在的网站。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Start an IIS web site"
+msgstr "### 示例 1：启动一个 IIS 网站"
+
+msgid "This command starts an IIS web site named Default Web Site"
+msgstr "这个命令用于启动一个名为“Default Web Site”的IIS网站。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of the IIS web site"
+msgstr "指定 IIS 网站的名字。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IISSite](./Get-IISSite.md)"
+msgstr "[获取 IISSite](./Get-IISSite.md)"
+
+msgid "[New-IISSite](./New-IISSite.md)"
+msgstr "[New-IISSite](./New-IISSite.md)"
+
+msgid "[Remove-IISSite](./Remove-IISSite.md)"
+msgstr "[Remove-IISSite](./Remove-IISSite.md)"
+
+msgid "[Stop-IISSite](./Stop-IISSite.md)"
+msgstr "[停止-IISSite](./Stop-IISSite.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

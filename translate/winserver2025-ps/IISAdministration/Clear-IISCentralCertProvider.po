@@ -1,0 +1,108 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:28:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-IISCentralCertProvider"
+msgstr "# 清除 IISCentralCertProvider"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Removes configuration information from the IIS central certificate store."
+msgstr "从 IIS 的中央证书存储中删除配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Clear-IISCentralCertProvider** cmdlet removes all settings for the central certificate provider.\n"
+"You must specify the *Force* parameter if the Central Certificate Store feature is enabled.\n"
+"If you specify *Force*, the feature is disabled and all the settings are cleared.\n"
+"If the Central Certificate Store feature is already disabled, you do not need to specify *Force*."
+msgstr ""
+"`Clear-IISCentralCertProvider` cmdlet "
+"会删除与中央证书提供者相关的所有设置。如果启用了“中央证书存储”功能，必须指定 `Force` 参数。一旦指定了 "
+"`Force`，该功能将被禁用，并且所有相关设置都会被清除。如果“中央证书存储”功能已经被禁用，则无需再指定 `Force` 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Clear configuration information from the IIS certificate "
+"store"
+msgstr "### 示例 1：从 IIS 证书存储中清除配置信息"
+
+msgid ""
+"This command removes all the configuration information for the IIS central "
+"certificate store without removing the provider itself."
+msgstr "此命令会删除 IIS 中央证书存储的所有配置信息，但不会删除该证书存储提供者本身。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而无需请求用户确认。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-IISCentralCertProvider](./Disable-IISCentralCertProvider.md)"
+msgstr "[禁用 IISCentralCertProvider](./ Disable-IISCentralCertProvider.md)"
+
+msgid "[Enable-IISCentralCertProvider](./Enable-IISCentralCertProvider.md)"
+msgstr "[Enable-IISCentralCertProvider](./Enable-IISCentralCertProvider.md)"
+
+msgid "[Get-IISCentralCertProvider](./Get-IISCentralCertProvider.md)"
+msgstr "[Get-IISCentralCertProvider](./Get-IISCentralCertProvider.md)"
+
+msgid "[Set-IISCentralCertProvider](./Set-IISCentralCertProvider.md)"
+msgstr "[Set-IISCentralCertProvider](./Set-IISCentralCertProvider.md)"
+
+msgid ""
+"[Set-IISCentralCertProviderCredential](./Set-"
+"IISCentralCertProviderCredential.md)"
+msgstr ""
+"[设置 IISCentralCertProviderCredential](./Set-"
+"IISCentralCertProviderCredential.md)"

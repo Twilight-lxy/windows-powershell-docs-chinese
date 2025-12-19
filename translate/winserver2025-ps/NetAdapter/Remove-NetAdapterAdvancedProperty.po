@@ -1,0 +1,212 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:55:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-NetAdapterAdvancedProperty"
+msgstr "# 删除 NetAdapter 的高级属性"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes an advanced property from the network adapter."
+msgstr "从网络适配器中删除一个高级属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称查找（默认方式）"
+
+msgid "### ByInstanceID"
+msgstr "### 按实例ID"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject (cdxml)"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-NetAdapterAdvancedProperty** cmdlet removes an advanced property from the network adapter.\n"
+"Advanced properties with a display name may not be removed.\n"
+"Removing advanced properties could cause unpredictable network behavior."
+msgstr ""
+"`Remove-NetAdapterAdvancedProperty` cmdlet "
+"用于从网络适配器中删除高级属性。某些具有显示名称的高级属性可能无法被删除；删除这些高级属性可能会导致网络行为出现不可预测的问题。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Remove an advanced property from the specified network "
+"adapter then restart it"
+msgstr "### 示例 1：从指定的网络适配器中删除某个高级属性，然后重新启动该适配器"
+
+msgid ""
+"This command removes an advanced property named myKeyword from the network adapter named MyAdapter and restarts the network adapter.\n"
+"The advanced property named myKeyword does not have a display name, therefore the *AllProperties* parameter must be used."
+msgstr ""
+"这个命令会从名为“MyAdapter”的网络适配器中删除一个名为“myKeyword”的高级属性，并重新启动该网络适配器。由于名为“myKeyword”的高级属性没有显示名称，因此必须使用“AllProperties”参数。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet gets all the advanced properties from the network adapter.\n"
+"If this parameter is not specified, then only advanced properties that have a display name, specified using the *DisplayName* parameter, are returned."
+msgstr ""
+"表示该cmdlet会从网络适配器中获取所有高级属性。如果未指定此参数，则仅返回那些具有显示名称（通过*DisplayName*参数指定）的高级属性。"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的方式运行该cmdlet。使用此参数来执行需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`"
+" cmdlets系列。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"该参数表示 cmdlet "
+"在操作过程中会同时考虑可见网络适配器和隐藏网络适配器。默认情况下，仅包含可见网络适配器。如果在识别网络适配器时使用了通配符，并且指定了此参数，则该通配符字符串将用于匹配所有类型的网络适配器（包括隐藏的和可见的）。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此 cmdlet 的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传递给此 cmdlet。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述数组。对于物理网络适配器来说，通常是由网络适配器的供应商名称后跟型号和描述组成的字符串，例如 `Contoso 12345 "
+"Gigabit Network Device`。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Indicates that the cmdlet does not restart the network adapter after completing the operation.\n"
+"Many advanced properties require restarting the network adapter before the new settings take effect."
+msgstr "表示该 cmdlet 在完成操作后不会重启网络适配器。许多高级属性在新设置生效之前需要重启网络适配器。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the name of the registry keyword to be removed as an array."
+msgstr "以数组的形式指定要删除的注册表关键字的名称。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时建立的最大并发操作数量，以便运行该cmdlet。如果省略此参数或输入值`0`，则Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最佳限制值。此限制仅适用于当前运行的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterAdvancedPropertySettingData[]"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterAdvancedPropertySettingData[]"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterAdvancedPropertySettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterAdvancedPropertySettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-NetAdapterAdvancedProperty](./Get-NetAdapterAdvancedProperty.md)"
+msgstr "[Get-NetAdapterAdvancedProperty](./Get-NetAdapterAdvancedProperty.md)"
+
+msgid "[New-NetAdapterAdvancedProperty](./New-NetAdapterAdvancedProperty.md)"
+msgstr "[New-NetAdapterAdvancedProperty](./New-NetAdapterAdvancedProperty.md)"
+
+msgid ""
+"[Reset-NetAdapterAdvancedProperty](./Reset-NetAdapterAdvancedProperty.md)"
+msgstr ""
+"[Reset-NetAdapterAdvancedProperty](./Reset-NetAdapterAdvancedProperty.md)"
+
+msgid "[Set-NetAdapterAdvancedProperty](./Set-NetAdapterAdvancedProperty.md)"
+msgstr "[Set-NetAdapterAdvancedProperty](./Set-NetAdapterAdvancedProperty.md)"

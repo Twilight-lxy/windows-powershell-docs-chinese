@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:24:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-VMReplication"
+msgstr "# 停止虚拟机复制"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Cancels an ongoing virtual machine resynchronization."
+msgstr "取消正在进行的虚拟机重新同步操作。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMReplication"
+msgstr "### 虚拟机复制（VMReplication）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Stop-VMReplication** cmdlet cancels an ongoing virtual machine "
+"resynchronization."
+msgstr "`Stop-VMReplication` cmdlet 可以取消正在进行的虚拟机同步操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Stops all ongoing replications of virtual machines on the local server that "
+"runs Hyper-V."
+msgstr "停止在运行Hyper-V的本地服务器上所有正在进行的虚拟机复制操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the ongoing virtual machine resynchronization is to be stopped.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个Hyper-"
+"V主机，以停止正在进行的虚拟机同步操作。允许使用NetBIOS名称、IP地址或完全限定的域名作为标识。默认值为本地计算机。可以使用“localhost”或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that an object is to be passed through to the pipeline "
+"representing the virtual machine on which the ongoing virtual machine "
+"resynchronization is to be stopped."
+msgstr "指定要将某个对象传递给管道，该管道代表正在停止虚拟机重新同步操作的虚拟机。"
+
+msgid ""
+"Specifies the replication relationship type of the virtual machine.\n"
+"Specify whether the replication relationship is a simple primary to replica or is an extended replication chain.\n"
+"The cmdlet cancels the ongoing resynchronization of the virtual machines that have the replication type that you specify."
+msgstr ""
+"用于指定虚拟机的复制关系类型。需要明确该复制关系是简单的主从关系，还是扩展的复制链结构。此cmdlet会取消正在进行中的、具有所指定复制类型的虚拟机之间的重新同步操作。"
+
+msgid ""
+"Specifies the virtual machine whose resynchronization is to be stopped."
+msgstr "指定需要停止重新同步操作的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine whose resynchronization is to be "
+"stopped."
+msgstr "指定要停止重新同步的虚拟机的名称。"
+
+msgid "Specifies the resynchronization to be stopped."
+msgstr "指定要停止的重同步操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的后果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine"
+msgstr "### Microsoft.HyperV.PowerShell.VirtualMachine"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 `-PassThru`。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

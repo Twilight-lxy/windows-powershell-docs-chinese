@@ -1,0 +1,206 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:22:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-VMFailover"
+msgstr "# 启动虚拟机故障转移"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Starts failover on a virtual machine."
+msgstr "在虚拟机上启动故障转移（failover）过程。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMName_Test"
+msgstr "### VMName_Test"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMObject_Test"
+msgstr "### VMObject_Test"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "### VMSnapshot_Test"
+msgstr "### VMSnapshot_Test"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The **Start-VMFailover** cmdlet can be used for the following tasks:"
+msgstr "**Start-VMFailover** cmdlet 可用于以下任务："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "#### 示例 1"
+
+msgid ""
+"This example starts failover of a virtual machine named VM01 with recovery "
+"point Snapshot01."
+msgstr "这个示例开始执行名为VM01的虚拟机的故障转移操作，并使用恢复点Snapshot01来进行恢复。"
+
+msgid ""
+"Note: Recovery points are stored as snapshots.\n"
+"To get a list of all snapshots, use the **Get-VMSnapshot** cmdlet."
+msgstr "注意：恢复点是以快照的形式存储的。要获取所有快照的列表，请使用 **Get-VMSnapshot** cmdlet。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "This example starts a test failover of a virtual machine named VM01."
+msgstr "这个示例启动了对名为VM01的虚拟机的测试故障转移（即当该虚拟机出现故障时，系统会自动切换到备用虚拟机）。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Starts a test failover of a virtual machine named VM01 with recovery point "
+"Snapshot01."
+msgstr "开始对名为VM01的虚拟机执行测试故障转移操作，并使用恢复点Snapshot01来进行处理。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example shows the cmdlets you use to perform a planned failover.\n"
+"The first command prepares for the planned failover of a primary virtual machine named VM01 by replicating any pending changes.\n"
+"The second command fails over the Replica virtual machine.\n"
+"The third command switches the Replica virtual machine to a primary virtual machine.\n"
+"The fourth command starts the virtual machine that has been switched from a Replica virtual machine to a primary virtual machine."
+msgstr ""
+"这个示例展示了用于执行计划中的故障转移（planned failover）的相关 cmdlet。第一个命令通过复制所有待处理的更改来为名为 VM01 "
+"的主虚拟机的故障转移做准备；第二个命令将备用虚拟机切换为主虚拟机；第三个命令则将备用虚拟机重新设置为主虚拟机；最后一个命令用于启动那些从备用状态被切换回主状态的虚拟机。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "以后台作业的形式运行该cmdlet。"
+
+msgid ""
+"Creates a test virtual machine using the chosen recovery point.\n"
+"You can use a test virtual machine to validate a Replica virtual machine.\n"
+"To stop a test failover, use the **Stop-VMFailover** cmdlet."
+msgstr ""
+"使用所选的恢复点创建一个测试虚拟机。您可以使用该测试虚拟机来验证副本虚拟机的运行情况。要停止测试中的故障转移操作，请使用 **Stop-"
+"VMFailover** cmdlet。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which failover is to be started.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于启动故障转移的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名进行选择。默认值是本地计算机。可以使用 "
+"`localhost` 或点号（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that a virtual machine object is to be passed through to the "
+"pipeline representing the virtual machine on which failover is to be "
+"started."
+msgstr "指定要将一个虚拟机对象传递给代表要启动故障转移操作的该虚拟机的管道（pipeline）。"
+
+msgid ""
+"Starts the planned failover on the primary virtual machine and replicates any pending changes.\n"
+"To complete the planned failover, use the **Set-VMReplication** and **Start-VM** cmdlets as shown in Example 4."
+msgstr ""
+"在主虚拟机上启动计划中的故障转移操作，并复制所有待处理的更改。要完成计划中的故障转移，请使用 **Set-VMReplication** 和 "
+"**Start-VM** cmdlet，具体操作请参见示例 4。"
+
+msgid ""
+"Note: The primary virtual machine must be shut down to prepare it for "
+"failover."
+msgstr "注意：为了准备故障转移，必须关闭主虚拟机。"
+
+msgid "Specifies the virtual machine for which failover is to be started."
+msgstr "指定要启动故障转移的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine for which failover is to be "
+"started."
+msgstr "指定要启动故障转移的虚拟机的名称。"
+
+msgid ""
+"Specifies the recovery snapshot to use during a failover.\n"
+"(This parameter is not required for a planned failover.)"
+msgstr "指定在故障转移过程中使用的恢复快照。（对于计划好的故障转移来说，此参数是可选的。）"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。不过实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine"
+msgstr "### Microsoft.HyperV.PowerShell.VirtualMachine"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 `-PassThru`。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

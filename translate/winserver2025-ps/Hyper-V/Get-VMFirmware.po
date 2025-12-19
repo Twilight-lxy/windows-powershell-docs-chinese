@@ -1,0 +1,123 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:07:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMFirmware"
+msgstr "# 获取虚拟机固件信息（Get-VMFirmware）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the firmware configuration of a virtual machine."
+msgstr "获取虚拟机的固件配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-VMFirmware** cmdlet gets the firmware configuration of a virtual machine.\n"
+"Note: This cmdlet is supported only on Generation 2 virtual machines."
+msgstr "`Get-VMFirmware` cmdlet 可用于获取虚拟机的固件配置信息。注意：此 cmdlet 仅支持第 2 代虚拟机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example returns a virtual machine firmware object for the virtual "
+"machine \"Test VM\"."
+msgstr "这个示例为名为“Test VM”的虚拟机返回一个虚拟机固件对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。请输入计算机名称或会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies an array of Hyper-V hosts.\n"
+"The cmdlet gets the virtual machine firmware from the hosts you specify."
+msgstr "指定一个包含 Hyper-V 主机的数组。此 cmdlet 会从您指定的主机中获取虚拟机的固件信息。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies an array of virtual machine objects.\n"
+"The cmdlet gets the firmware configuration for the virtual machines you specify.\n"
+"To obtain a virtual machine object, use the **Get-VM** cmdlet."
+msgstr ""
+"用于指定一个虚拟机对象数组。该cmdlet会获取您所指定的虚拟机的固件配置信息。若需获取某个虚拟机对象，请使用**Get-VM** cmdlet。"
+
+msgid ""
+"Specifies an array of names of virtual machines.\n"
+"The cmdlet gets the firmware configuration for the virtual machines you specify."
+msgstr "指定一个虚拟机名称数组。此 cmdlet 会获取所指定虚拟机的固件配置信息。"
+
+msgid ""
+"Specifies the virtual machine snapshot to be used with the VM when "
+"retrieving the firmware configuration."
+msgstr "指定在检索固件配置时将与虚拟机（VM）一起使用的虚拟机快照。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMFirmware"
+msgstr "### Microsoft.HyperV.PowerShell.VMFirmware"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-VMFirmware](./Set-VMFirmware.md)"
+msgstr "[Set-VMFirmware](./Set-VMFirmware.md)"

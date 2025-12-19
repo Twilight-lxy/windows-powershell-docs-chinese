@@ -1,0 +1,162 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:15:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMNetworkAdapterIsolation"
+msgstr "# 获取虚拟机网络适配器的隔离状态"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets isolation settings for a virtual network adapter."
+msgstr "获取虚拟网络适配器的隔离设置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-VMNetworkAdapterIsolation** cmdlet gets isolation settings for a virtual network adapter.\n"
+"The cmdlet displays the isolation method, and other information, such as the multitenancy mode and the subnet ID for traffic bound for to the default compartment if multitenancy is enabled."
+msgstr ""
+"`Get-VMNetworkAdapterIsolation` 这个 cmdlet 可以获取虚拟网络适配器的隔离设置。该 cmdlet "
+"会显示隔离方式以及其他相关信息，例如多租户模式（如果启用了多租户功能），以及发往默认隔间的流量的子网 ID。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example retrieves the isolation settings of a VM."
+msgstr "这个示例用于检索虚拟机（VM）的隔离设置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies an array of Hyper-V hosts.\n"
+"The cmdlet gets isolation settings for virtual machines hosted by the computers that you specify."
+msgstr "用于指定一个Hyper-V主机数组。该cmdlet会获取由您指定的计算机托管的虚拟机的隔离设置信息。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Indicates that the cmdlet operates on the parent or host operating system.\n"
+"If you specify this parameter, this cmdlet gets isolation settings for the parent or host operating system."
+msgstr "表示该cmdlet在父操作系统或主机操作系统上执行操作。如果您指定了此参数，该cmdlet将获取父操作系统或主机操作系统的隔离设置信息。"
+
+msgid ""
+"Specifies an array of virtual machines.\n"
+"The cmdlet gets isolation settings for adapters that belong to the virtual machines that you specify.\n"
+"To obtain a virtual machine object, use the **Get-VM** cmdlet."
+msgstr "指定一个虚拟机数组。该cmdlet会获取属于所指定虚拟机的适配器的隔离设置。若要获取虚拟机对象，请使用**Get-VM** cmdlet。"
+
+msgid ""
+"Specifies an array of names of virtual machines.\n"
+"The cmdlet gets isolation settings for adapters that belong to the virtual machines that you specify."
+msgstr "指定一个虚拟机名称数组。该cmdlet会获取属于你所指定虚拟机的适配器的隔离设置信息。"
+
+msgid ""
+"Specifies an array virtual machine network adapters as **VMNetworkAdapterBase** objects.\n"
+"The cmdlet gets isolation settings for the adapters that you specify.\n"
+"To obtain a network adapter, use the **Get-VMNetworkAdapter** cmdlet."
+msgstr ""
+"该命令用于将多个虚拟机网络适配器指定为 **VMNetworkAdapterBase** 对象。该 cmdlet "
+"会获取所指定适配器的隔离设置信息。若需获取某个网络适配器，可使用 **Get-VMNetworkAdapter** cmdlet。"
+
+msgid ""
+"Specifies the name of a virtual network adapter.\n"
+"The cmdlet gets isolation settings for the adapters that you specify."
+msgstr "用于指定虚拟网络适配器的名称。该命令行工具会获取您所指定的这些适配器的隔离设置信息。"
+
+msgid ""
+"Specifies a snapshot as a **VMSnapshot** object.\n"
+"The cmdlet gets isolation settings for network adapters that belong to the snapshot that you specify.\n"
+"To obtain a snapshot, use the **Get-VMSnapshot** cmdlet."
+msgstr ""
+"将快照指定为 **VMSnapshot** 对象。此cmdlet会获取属于所指定快照的网络适配器的隔离设置。若要获取快照，请使用 **Get-"
+"VMSnapshot** cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterIsolationSetting"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapterIsolationSetting"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-VMNetworkAdapterIsolation](./Set-VMNetworkAdapterIsolation.md)"
+msgstr "[Set-VMNetworkAdapterIsolation](./Set-VMNetworkAdapterIsolation.md)"
+
+msgid "[Get-VM](./Get-VM.md)"
+msgstr "[Get-VM](./Get-VM.md)"
+
+msgid "[Get-VMSnapshot](./Get-VMSnapshot.md)"
+msgstr "[Get-VMSnapshot](./Get-VMSnapshot.md)"
+
+msgid "[Get-VMNetworkAdapter](./Get-VMNetworkAdapter.md)"
+msgstr "[Get-VMNetworkAdapter](./Get-VMNetworkAdapter.md)"

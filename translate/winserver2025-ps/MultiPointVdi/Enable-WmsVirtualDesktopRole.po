@@ -1,0 +1,99 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:17:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-WmsVirtualDesktopRole"
+msgstr "# 启用 WMS 虚拟桌面角色"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Installs the Hyper-V virtual desktop role and customizes it for use with "
+"MultiPoint services."
+msgstr "安装Hyper-V虚拟桌面角色，并对其进行定制以便与MultiPoint服务配合使用。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Enable-WmsVirtualDesktopRole** cmdlet installs the virtual desktop "
+"Hyper-V role if it isn't already installed, and optionally restarts the "
+"computer to apply the change."
+msgstr ""
+"`Enable-WmsVirtualDesktopRole` 这个 cmdlet 会安装虚拟桌面相关的 Hyper-V "
+"角色（如果该角色尚未安装的话），并且还可以选择性地重启计算机以使更改生效。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Install the Hyper-V virtual desktop role"
+msgstr "#### 示例 1：安装 Hyper-V 虚拟桌面角色"
+
+msgid ""
+"This command installs the Hyper-V virtual desktop role and reboots the "
+"computer to apply the change."
+msgstr "此命令会安装 Hyper-V 虚拟桌面角色，并重新启动计算机以应用该更改。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Indicates that this operation automatically restarts the computer to apply "
+"the change."
+msgstr "表示此操作会自动重启计算机以应用所做的更改。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-WmsVirtualDesktopRole](./Disable-WmsVirtualDesktopRole.md)"
+msgstr "[禁用 WMS 虚拟桌面角色](./Disable-WmsVirtualDesktopRole.md)"

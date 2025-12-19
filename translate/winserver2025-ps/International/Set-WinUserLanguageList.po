@@ -1,0 +1,147 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:44:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WinUserLanguageList"
+msgstr "# Set-WinUserLanguageList"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Sets the language list and associated properties for the current user "
+"account."
+msgstr "为当前用户账户设置语言列表及相关属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-WinUserLanguageList** cmdlet sets the current user language settings.\n"
+"These settings include input method, spelling setting, text prediction setting, and handwriting input mode.\n"
+"For more information, see [CultureInfo Class](https://go.microsoft.com/fwlink/?LinkID=242306) and [Configurable Language and Cultural Settings](https://go.microsoft.com/fwlink/?LinkID=242307)."
+msgstr ""
+"`Set-WinUserLanguageList` cmdlet "
+"用于设置当前用户的语言设置。这些设置包括输入法、拼写设置、文本预测设置以及手写输入模式等。有关更多信息，请参阅 [CultureInfo "
+"类](https://go.microsoft.com/fwlink/?LinkID=242306) 和 "
+"[可配置的语言和文化设置](https://go.microsoft.com/fwlink/?LinkID=242307)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a language to an existing language list"
+msgstr "### 示例 1：向现有的语言列表中添加一种新语言"
+
+msgid ""
+"This example adds the language French (France) to the language list of the "
+"user."
+msgstr "这个示例将法语（法国）添加到用户的语言列表中。"
+
+msgid ""
+"The first command gets the user language list by using the **Get-WinUserLanguageList** cmdlet.\n"
+"The command stores the result in the $OldList variable."
+msgstr ""
+"第一个命令使用 `Get-WinUserLanguageList` cmdlet 来获取用户的语言列表，并将结果存储在 `$OldList` 变量中。"
+
+msgid "The second command adds a language to the object in $OldList."
+msgstr "第二个命令会将某种语言添加到 `$OldList` 中的对象中。"
+
+msgid ""
+"The final command sets the language list of the current user to the revised "
+"value of $OldList."
+msgstr "最后一条命令将当前用户的语言列表设置为修改后的值 `$OldList`。"
+
+msgid "### Example 2: Change a value in a language"
+msgstr "### 示例 2：修改某种语言中的某个值"
+
+msgid ""
+"This example changes the handwriting setting for a language in the user "
+"language list."
+msgstr "这个示例会更改用户语言列表中某种语言的手写输入设置。"
+
+msgid ""
+"The first command creates a language list for US English that has default "
+"values, and then stores it in the $UserLanguageList variable."
+msgstr "第一个命令为美式英语创建了一个语言列表，并为其设置了默认值，随后将该列表存储在 `$UserLanguageList` 变量中。"
+
+msgid ""
+"The second command modifies the **Handwriting** property of the first member"
+" of the language list in $UserLanguageList."
+msgstr "第二个命令会修改 `$UserLanguageList` 中的语言列表中第一个元素的 **Handwriting**（手写）属性。"
+
+msgid ""
+"The final command sets the language list of the current user to the revised "
+"value of $UserLanguageList."
+msgstr "最后一条命令将当前用户的语言列表设置为修改后的值 $UserLanguageList。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies a language list."
+msgstr "用于指定一个语言列表。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid ""
+"### "
+"System.Collections.Generic.List<Microsoft.InternationalSettings.Commands.WinUserLanguage>"
+msgstr ""
+"### "
+"System.Collections.Generic.List<Microsoft.InternationalSettingscommands.WinUserLanguage>"
+
+msgid ""
+"You can pipe a list of **WinUserLanguage** objects that contain one or more languages and associated properties from the current user account's language list.\n"
+"The language object contains the following properties:"
+msgstr ""
+"你可以将一系列 **WinUserLanguage** "
+"对象通过管道（pipe）传输过来，这些对象包含一种或多种语言以及相关属性，这些信息来源于当前用户账户的语言列表。每个语言对象都包含以下属性："
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WinUserLanguageList](./Get-WinUserLanguageList.md)"
+msgstr "[Get-WinUserLanguageList](./Get-WinUserLanguageList.md)"
+
+msgid "[New-WinUserLanguageList](./New-WinUserLanguageList.md)"
+msgstr "[New-WinUserLanguageList](./New-WinUserLanguageList.md)"

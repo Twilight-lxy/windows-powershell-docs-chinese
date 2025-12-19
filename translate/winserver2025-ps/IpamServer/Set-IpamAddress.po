@@ -1,0 +1,333 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:28:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-IpamAddress"
+msgstr "# 设置 Ipam 地址"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Modifies an IP address in IPAM."
+msgstr "在IPAM中修改一个IP地址。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByAddress"
+msgstr "### 按地址查找"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject（cdxml）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-IpamAddress** cmdlet modifies an IP address in IP Address Management (IPAM).\n"
+"Specify the IP addresses to modify or use the *InputObject* parameter to specify an *IpamAddress* object to modify."
+msgstr ""
+"`Set-IpamAddress` cmdlet 用于修改 IP 地址管理（IPAM）中的 IP 地址。您可以指定要修改的 IP 地址，或者使用 "
+"`InputObject` 参数来指定需要修改的 `IpamAddress` 对象。"
+
+msgid ""
+"You can use the cmdlet to associate the Dynamic Host Configuration Protocol (DHCP) reservation properties with the IP address.\n"
+"The cmdlet does not create a reservation on the DHCP server.\n"
+"You can use Windows PowerShell for DHCP Server to create a reservation on the DHCP server."
+msgstr ""
+"您可以使用该cmdlet将动态主机配置协议（DHCP）的预留属性与IP地址关联起来。不过，该cmdlet本身并不会在DHCP服务器上创建相应的预留记录。若需在DHCP服务器上创建预留记录，建议您使用Windows"
+" PowerShell的相关功能来完成这一操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Reassign an IP address"
+msgstr "### 示例 1：重新分配 IP 地址"
+
+msgid ""
+"This command gets an **IpamAddress** object that contains the IP address 172.16.10.10 that is managed by IPAM.\n"
+"The command passes the **IpamAddress** object to the **Set-IpamAddress** cmdlet by using the pipeline operator.\n"
+"The **Set-IpamAddress** cmdlet changes the service that manages the IP address to VMM, and changes the instance of the service that manages the IP address to vmm1.contoso.com.\n"
+"The command assigns the address to the virtual machine device type."
+msgstr ""
+"该命令获取一个名为 **IpamAddress** 的对象，其中包含由 IPAM 管理的 IP 地址 "
+"172.16.10.10。通过使用管道运算符（pipeline operator），该命令将 **IpamAddress** 对象传递给 **Set-"
+"IpamAddress** cmdlet。**Set-IpamAddress** cmdlet 将管理该 IP 地址的服务从其他服务切换到 "
+"VMM，并将负责管理该 IP 地址的服务实例更改为 vmm1.contoso.com。最后，该命令将该 IP 地址分配给相应的虚拟机设备类型。"
+
+msgid "### Example 2: Add custom metadata to an IP address"
+msgstr "### 示例 2：为 IP 地址添加自定义元数据"
+
+msgid ""
+"This command adds custom metadata to the IP address 172.16.10.10.\n"
+"The command adds the value Main to the custom field named ADSite."
+msgstr "此命令为IP地址172.16.10.10添加自定义元数据。它将值“Main”添加到名为“ADSite”的自定义字段中。"
+
+msgid ""
+"### Example 3: Convert the network type of an IP address from non-"
+"virtualized to provider"
+msgstr "### 示例 3：将 IP 地址的网络类型从非虚拟化更改为提供商虚拟化"
+
+msgid ""
+"This command converts the network type of the IP address 172.16.10.10 from non-virtualized to provider.\n"
+"The command assigns the provider address to the default provider address space."
+msgstr ""
+"这个命令将IP地址172.16.10.10的网络类型从“非虚拟化”更改为“提供商网络类型”。同时，该命令将该IP地址分配到默认的提供商地址空间中。"
+
+msgid ""
+"### Example 4: Convert the network type of an IP address from provider to "
+"non-virtualized"
+msgstr "### 示例 4：将 IP 地址的网络类型从“虚拟化”类型转换为“非虚拟化”类型"
+
+msgid ""
+"This command converts the network type of the IP address 172.16.10.10 from provider to non-virtualized.\n"
+"By default, the command assigns the non-virtualized address to the Default address space.\n"
+"The command passes the output to the **Format-List** cmdlet by using the pipeline operator, and formats the output as a table.\n"
+"For more information, type `Get-Help Format-List`."
+msgstr ""
+"此命令将 IP 地址 172.16.10.10 的网络类型从“provider”更改为“non-"
+"virtualized”。默认情况下，该命令会将这个非虚拟化地址分配到“Default address "
+"space”中。通过使用管道运算符（pipeline operator），该命令将输出结果传递给 **Format-List** "
+"cmdlet，并将其格式化为表格形式。有关更多信息，请输入 `Get-Help Format-List`。"
+
+msgid "### Example 5: Assign an IP address to a new address space"
+msgstr "### 示例 5：为新地址空间分配一个 IP 地址"
+
+msgid ""
+"This command converts the network type of the IP address 172.16.10.10 from non-virtualized to provider.\n"
+"The command assigns the IP address to the provider address space named MainDataCenter.\n"
+"The command passes the output to the **Format-List** cmdlet by using the pipeline operator, and formats the output as a table."
+msgstr ""
+"这个命令将 IP 地址 172.16.10.10 的网络类型从“非虚拟化”转换为“提供商虚拟化”。该命令将该 IP 地址分配到名为 "
+"MainDataCenter 的提供者地址空间中。接着，通过使用管道运算符（pipeline operator），该命令将输出结果传递给 "
+"**Format-List** cmdlet，并以表格的形式显示输出结果。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies semi-colon (;) separated name and value pairs of custom metadata.\n"
+"The cmdlet adds the custom configuration metadata to the IP addresses."
+msgstr "指定由分号（;）分隔的自定义元数据的名称和值对。该cmdlet会将这些自定义配置元数据添加到IP地址中。"
+
+msgid ""
+"Specifies the address space that is associated with the IP address.\n"
+"The default value is Default."
+msgstr "指定与IP地址相关联的地址空间。默认值为“Default”。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，随后再显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务 (About "
+"Jobs)](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid "Specifies the asset tag associated with the IP address."
+msgstr "指定与 IP 地址关联的资产标签。"
+
+msgid "Specifies the date on which you assigned the IP address to a device."
+msgstr "指定您将 IP 地址分配给设备的日期。"
+
+msgid ""
+"Specifies how IPAM assigns the addresses.\n"
+"The default value is Static."
+msgstr "指定 IPAM 如何分配地址。默认值为 “Static”（静态）。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "该参数的可接受值包括："
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，使用的是本地计算机上的当前会话。"
+
+msgid "Specifies the ID of the IPAM client."
+msgstr "指定 IPAM 客户端的 ID。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies a description of the IP address assignment for a device."
+msgstr "为设备的IP地址分配指定一个描述。"
+
+msgid "Specifies the name of the device to which you assigned the address."
+msgstr "指定您已分配地址的设备名称。"
+
+msgid ""
+"Specifies the type of device to which you assigned the address.\n"
+"Specify a value that exists in the built-in custom field **DeviceType**."
+msgstr "指定您为其分配了地址的设备类型。请选择一个存在于内置自定义字段 **DeviceType** 中的有效值。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值包括："
+
+msgid ""
+"Specifies the DHCP device unique identifier (DUID) for the client.\n"
+"Clients use the DUID to get an IP address from a DHCPv6 server."
+msgstr "指定客户端唯一的 DHCP 设备标识符（DUID）。客户端使用该 DUID 从 DHCPv6 服务器获取 IP 地址。"
+
+msgid ""
+"Specifies an expiry date for the address.\n"
+"IPAM alerts the administrator when the IP address expires.\n"
+"IPAM does not reclaim expired addresses automatically."
+msgstr "指定地址的有效期（即过期日期）。当 IP 地址失效时，IPAM 会向管理员发出警报。不过，IPAM 并不会自动回收已过期的地址。"
+
+msgid ""
+"Specifies the name of the Domain Name System (DNS) server that IPAM uses to "
+"resolve host names to IP addresses."
+msgstr "指定 IPAM 使用的域名系统（DNS）服务器的名称，该服务器用于将主机名解析为 IP 地址。"
+
+msgid ""
+"Specifies the name of the forward look up zone that contains mapping of host"
+" names to IP addresses."
+msgstr "指定用于将主机名映射到IP地址的前向查找区域的名称。"
+
+msgid "Specifies the identity association ID (IAID) of an IPv6 address."
+msgstr "用于指定 IPv6 地址的身份关联 ID（IAID）。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此cmdlet的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传递给此cmdlet。"
+
+msgid "Specifies an array of IP addresses."
+msgstr "指定一个IP地址数组。"
+
+msgid ""
+"Specifies the usage state of the IP address.\n"
+"By default, the cmdlet sets the address as In-Use."
+msgstr "指定 IP 地址的使用状态。默认情况下，该 cmdlet 将地址设置为“正在使用”（In-Use）状态。"
+
+msgid ""
+"You can specify a valid custom value for this parameter.\n"
+"Use the **Add-IpamCustomValue** cmdlet to add a custom value to a custom field in IPAM."
+msgstr ""
+"你可以为这个参数指定一个有效的自定义值。使用 **Add-IpamCustomValue** cmdlet 将自定义值添加到 IPAM "
+"中的自定义字段中。"
+
+msgid ""
+"Specifies the media access control (MAC) address of the device to which the "
+"address is assigned."
+msgstr "指定该地址所分配到的设备的媒体访问控制（MAC）地址。"
+
+msgid ""
+"Specifies the name of the service that manages the IP address.\n"
+"The value that you specify for this parameter must exist in the set of values that you defined for the **ManagedByService** custom field in IPAM."
+msgstr ""
+"指定用于管理 IP 地址的服务的名称。为此参数指定的值必须存在于您为 IPAM 中的 **ManagedByService** "
+"自定义字段所定义的值集合中。"
+
+msgid ""
+"You can use the **Add-IpamCustomValue** cmdlet to add a value to the **ManagedByService** custom field in IPAM.\n"
+"You can use the **Remove-IpamCustomValue** cmdlet to remove a value from the **ManagedByService** custom field in IPAM."
+msgstr ""
+"你可以使用 `Add-IpamCustomValue` cmdlet 向 IPAM 中的 `ManagedByService` "
+"自定义字段添加一个值。你也可以使用 `Remove-IpamCustomValue` cmdlet 从 IPAM 中的 "
+"`ManagedByService` 自定义字段删除一个值。"
+
+msgid "Specifies the network type of the address."
+msgstr "指定地址的网络类型。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid ""
+"Specifies an array of instances of the services that manage the IP addresses.\n"
+"Specify the instances of the services that you specified for the *ManagedByService* parameter.\n"
+"If you specify this parameter, you must specify the *IpAddress* parameter.\n"
+"The value that you specify for this parameter must exist in the set of values that you defined for the *ServiceInstance* parameter."
+msgstr ""
+"指定一组用于管理 IP 地址的服务实例。这些服务实例应该是您为 *ManagedByService* "
+"参数所指定的那些服务实例。如果您指定了这个参数，那么就必须同时指定 *IpAddress* 参数。您为该参数指定的值必须存在于您为 "
+"*ServiceInstance* 参数定义的数值集合中。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时建立的、用于执行该cmdlet的操作的最大数量。如果省略此参数或输入值为`0`，那么Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最佳限制值。此限制仅适用于当前的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### IpamAddress"
+msgstr "### IpamAddress"
+
+msgid ""
+"This cmdlet returns an object that represents an IP Address on the IPAM "
+"server."
+msgstr "这个cmdlet返回一个对象，该对象代表IPAM服务器上的一个IP地址。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IpamAddress](./Get-IpamAddress.md)"
+msgstr "[Get-IpamAddress](./Get-IpamAddress.md)"
+
+msgid "[Add-IpamAddress](./Add-IpamAddress.md)"
+msgstr "[Add-IpamAddress](./Add-IpamAddress.md)"
+
+msgid "[Remove-IpamAddress](./Remove-IpamAddress.md)"
+msgstr "[Remove-IpamAddress](./Remove-IpamAddress.md)"
+
+msgid "[Import-IpamAddress](./Import-IpamAddress.md)"
+msgstr "[Import-IpamAddress](./Import-IpamAddress.md)"
+
+msgid "[Export-IpamAddress](./Export-IpamAddress.md)"
+msgstr "[Export-IpamAddress](./Export-IpamAddress.md)"

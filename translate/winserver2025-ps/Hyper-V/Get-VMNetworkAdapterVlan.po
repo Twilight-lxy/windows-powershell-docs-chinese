@@ -1,0 +1,147 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:16:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMNetworkAdapterVlan"
+msgstr "# Get-VMNetworkAdapterVlan"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the virtual LAN settings configured on a virtual network adapter."
+msgstr "获取虚拟网络适配器上配置的虚拟局域网（VLAN）设置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-VMNetworkAdapterVlan** cmdlet gets the virtual LAN settings "
+"configured on a virtual network adapter."
+msgstr "`Get-VMNetworkAdapterVlan` cmdlet 可以获取配置在虚拟网络适配器上的虚拟局域网（LAN）设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Gets the virtual LAN settings for each virtual network adapter in all "
+"virtual machines on the system."
+msgstr "获取系统中所有虚拟机上每个虚拟网络适配器的虚拟局域网（VLAN）设置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。输入计算机名称或会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual LAN settings configured on a virtual network adapter are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个Hyper-"
+"V主机，以便从这些主机上检索在虚拟网络适配器上配置的虚拟局域网设置。允许使用NetBIOS名称、IP地址和完全限定的域名作为主机标识。默认值是本地计算机；可以使用`localhost`或点（.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that the virtual LAN settings are to be retrieved from the management (i.e.\n"
+"parent, or host) operating system."
+msgstr "指定虚拟局域网（VLAN）的设置应从管理（即父系统或主机操作系统）中获取。"
+
+msgid ""
+"Specifies the virtual machine in which the virtual LAN settings configured "
+"on a virtual network adapter are to be retrieved."
+msgstr "指定用于获取在虚拟网络适配器上配置的虚拟局域网设置的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine in which the virtual LAN settings "
+"configured on a virtual network adapter are to be retrieved."
+msgstr "指定用于检索在虚拟网络适配器上配置的虚拟局域网设置的虚拟机的名称。"
+
+msgid "Friendly name of the virtual machine"
+msgstr "虚拟机的友好名称"
+
+msgid ""
+"Specifies the virtual network adapter for which the virtual LAN settings are"
+" to be retrieved."
+msgstr "指定用于获取虚拟局域网（Virtual LAN）设置的虚拟网络适配器。"
+
+msgid ""
+"Specifies the name of the virtual network adapter for which the virtual LAN "
+"settings are to be retrieved."
+msgstr "指定要获取虚拟局域网（VLAN）设置的虚拟网络适配器的名称。"
+
+msgid ""
+"Specifies the snapshot in which the virtual LAN settings are to be "
+"retrieved."
+msgstr "指定用于获取虚拟局域网（Virtual LAN）设置信息的快照。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterVlanSetting"
+msgstr "### Microsoft.HyperV POWERShell.VMNetworkAdapterVlanSetting"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

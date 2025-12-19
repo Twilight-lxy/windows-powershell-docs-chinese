@@ -1,0 +1,97 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:22:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Test-HgsClientConfiguration"
+msgstr "# 测试 HgsClientConfiguration"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Forces the HGS client to attest against the configured attestation servers."
+msgstr "强制 HGS 客户端与配置好的认证服务器进行交互（即让客户端对这些认证服务器进行验证或确认）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Primary"
+msgstr "### 主要的；首要的"
+
+msgid "### Fallback"
+msgstr "### 备用方案（Fallback）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Test-HgsClientConfiguration** cmdlet forces the HGS client to attest against an HGS server and report back on the attestation attempt.\n"
+"Any cached attestation health certificates from recent attestation attempts will be ignored."
+msgstr ""
+"`Test-HgsClientConfiguration` cmdlet 强制 HGS 客户端向 HGS "
+"服务器进行身份验证，并将验证尝试的结果报告回来。任何来自最近身份验证尝试的缓存身份验证健康证书都会被忽略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Performs an attestation attempt using the primary HGS server.\n"
+"If the primary HGS server cannot be reached and fallback URLs are configured, the fallback HGS server will be used."
+msgstr ""
+"使用主HGS服务器尝试进行身份验证（attestation）。如果无法连接到主HGS服务器，并且配置了备用URL，则会使用备用的HGS服务器。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Performs an attestation attempt using the primary HGS server.\n"
+"If the primary HGS server cannot be reached, the cmdlet will fail."
+msgstr "尝试使用主HGS服务器进行身份验证（attestation）操作。如果无法连接到主HGS服务器，该命令将失败。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid "Performs an attestation attempt using the fallback HGS server."
+msgstr "使用备用的HGS服务器尝试进行身份验证（attestation）操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies that the HGS client should only attest against the fallback "
+"attestation server."
+msgstr "指定 HGS 客户端应仅针对备用认证服务器进行身份验证（attestation）。"
+
+msgid ""
+"Specifies that the HGS client should only attest against the primary "
+"attestation server."
+msgstr "指定 HGS 客户端应仅对主认证服务器进行认证（即仅接受来自主认证服务器的认证结果）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid ""
+"An object containing the attestation server URL used and the results of the "
+"attestation attempt."
+msgstr "一个对象，其中包含所使用的认证服务器URL以及认证尝试的结果。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

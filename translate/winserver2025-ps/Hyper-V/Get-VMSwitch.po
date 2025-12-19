@@ -1,0 +1,128 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:21:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMSwitch"
+msgstr "# Get-VMSwitch"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets virtual switches from one or more virtual Hyper-V hosts."
+msgstr "从一个或多个虚拟Hyper-V主机中获取虚拟交换机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### Id"
+msgstr "### ID"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-VMSwitch** cmdlet gets the virtual switches from a Hyper-V host.\n"
+"If you specify no parameters, this cmdlet returns all virtual switches from the local Hyper-V host."
+msgstr ""
+"`Get-VMSwitch` cmdlet 用于从 Hyper-V 主机中获取虚拟交换机。如果您不指定任何参数，该 cmdlet 将返回本地 "
+"Hyper-V 主机上所有的虚拟交换机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Gets all virtual switches from the local Hyper-V host."
+msgstr "从本地 Hyper-V 主机中获取所有虚拟交换机。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "Gets all virtual switches that connect to the external network."
+msgstr "获取所有连接到外部网络的虚拟交换机。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet将在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts from which virtual switches are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于获取虚拟交换机的 Hyper-V 主机。允许使用 NetBIOS 名称、IP "
+"地址或完全限定域名作为主机标识。默认值是本地计算机。可以使用 `localhost` 或点号（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the unique identifier of the virtual switch to be retrieved."
+msgstr "指定要检索的虚拟交换机的唯一标识符。"
+
+msgid "Specifies the name of the virtual switch to be retrieved."
+msgstr "指定要检索的虚拟交换机的名称。"
+
+msgid ""
+"Specifies the resource pool from which the virtual switches are to be "
+"retrieved."
+msgstr "指定用于获取虚拟交换机的资源池。"
+
+msgid ""
+"Specifies the type of the virtual switches to be retrieved.\n"
+"Allowed values are **External**, **Internal**, and **Private**."
+msgstr ""
+"指定要检索的虚拟交换机的类型。允许的值有 **External**（外部）、**Internal**（内部）和 **Private**（私有）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMSwitch"
+msgstr "### Microsoft.HyperV POWERShell.VMSwitch"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

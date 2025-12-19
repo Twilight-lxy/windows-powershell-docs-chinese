@@ -1,0 +1,153 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:54:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Rename-VMSnapshot"
+msgstr "# 重命名VMS快照"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Renames a virtual machine checkpoint."
+msgstr "重命名虚拟机检查点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### SnapshotName (Default)"
+msgstr "### SnapshotName（默认值）"
+
+msgid "### SnapshotObject"
+msgstr "### SnapshotObject"
+
+msgid "### VM"
+msgstr "### 虚拟机（VM）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **Rename-VMSnapshot** cmdlet renames a virtual machine checkpoint."
+msgstr "`Rename-VMSnapshot` cmdlet 用于重命名虚拟机检查点（即虚拟机的备份状态）。"
+
+msgid ""
+"Note: In Windows Server 2012 R2, virtual machine snapshots were renamed to virtual machine checkpoints.\n"
+"For clarity, this document will refer to virtual machine snapshots as checkpoints."
+msgstr ""
+"注意：在 Windows Server 2012 R2 中，虚拟机快照被重新命名为“虚拟机检查点”。为避免混淆，本文档将把虚拟机快照称为“检查点”。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Renames checkpoint Configuration 2 of virtual machine TestVM to "
+"Configuration 2: applied all updates."
+msgstr "将虚拟机 TestVM 的检查点配置 2 重命名为配置 2：已应用所有更新。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual machine checkpoint is to be renamed.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于重命名虚拟机检查点的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行标识。默认值是本地计算机；可以通过使用 `localhost` 或点号（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the name of the virtual machine checkpoint to be renamed."
+msgstr "指定要重命名的虚拟机检查点的名称。"
+
+msgid ""
+"Specifies the name to which the virtual machine checkpoint is to be renamed."
+msgstr "指定虚拟机检查点要重命名的名称。"
+
+msgid ""
+"Specifies that a **VMSnapshot** object is to be passed through to the "
+"pipeline representing the virtual machine checkpoint to be renamed."
+msgstr "指定要将一个 **VMSnapshot** 对象传递给流水线，该对象代表需要重命名的虚拟机检查点。"
+
+msgid ""
+"Specifies the virtual machine of which the checkpoint is to be renamed."
+msgstr "指定要重命名检查点的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine of which the checkpoint is to be "
+"renamed."
+msgstr "指定要重命名检查点的虚拟机的名称。"
+
+msgid "Specifies the virtual machine checkpoint to be renamed."
+msgstr "指定要重命名的虚拟机检查点。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 **-PassThru**。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

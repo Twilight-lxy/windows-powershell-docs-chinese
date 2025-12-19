@@ -1,0 +1,162 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:21:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMVideo"
+msgstr "# Set-VMVideo"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Configures video settings for virtual machines."
+msgstr "配置虚拟机的视频设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMVideo"
+msgstr "### VMVideo"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-VMVideo** cmdlet configures the video settings for virtual "
+"machines."
+msgstr "`Set-VMVideo` cmdlet 用于配置虚拟机的视频设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set resolution for a virtual machine display"
+msgstr "#### 示例 1：为虚拟机显示器设置分辨率"
+
+msgid ""
+"This command sets the video resolution for the virtual machine named VM06 to"
+" 1920x1200."
+msgstr "该命令将名为VM06的虚拟机的视频分辨率设置为1920x1200。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。您可以输入一个计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts that run this cmdlet.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个运行此 cmdlet 的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行指定。默认值为本地计算机。可以使用 “localhost” 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the horizontal resolution for the virtual machine display."
+msgstr "指定虚拟机显示器的水平分辨率。"
+
+msgid ""
+"Indicates that this cmdlet returns the "
+"**Microsoft.HyperV.PowerShell.VMVideo** object that it modifies."
+msgstr "表示该cmdlet会返回其所修改的`Microsoft.HyperV.PowerShell.VMVideo`对象。"
+
+msgid ""
+"Specifies the resolution type for the virtual machine display.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定虚拟机显示器的分辨率类型。该参数的可接受值包括："
+
+msgid ""
+"Specifies an array of virtual machines for which this cmdlet configures video settings.\n"
+"To obtain a **VirtualMachine** object, use the **Get-VM** cmdlet."
+msgstr ""
+"指定一个虚拟机数组，该cmdlet将为此数组中的虚拟机配置视频设置。要获取一个**VirtualMachine**对象，请使用**Get-VM** "
+"cmdlet。"
+
+msgid ""
+"Specifies an array of names of virtual machines for which this cmdlet "
+"configures video settings."
+msgstr "指定一个虚拟机名称数组，该cmdlet将针对这些虚拟机配置视频设置。"
+
+msgid ""
+"Specifies an array of virtual machine video settings that this cmdlet configures.\n"
+"To obtain a **VMVideo** object, use the **Get-VMVideo** cmdlet."
+msgstr ""
+"指定一个虚拟机视频设置数组，该数组将由此cmdlet进行配置。若要获取一个**VMVideo**对象，请使用**Get-VMVideo** "
+"cmdlet。"
+
+msgid "Specifies the vertical resolution for the virtual machine display."
+msgstr "指定虚拟机显示器的垂直分辨率。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMVideo"
+msgstr "### Microsoft.HyperV.PowerShell.VMVideo"
+
+msgid ""
+"This cmdlet returns a **VirtualMachine** object, if you specify the "
+"**Passthru** parameter."
+msgstr "如果指定了 **Passthru** 参数，此 cmdlet 会返回一个 **VirtualMachine** 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VMVideo](./Get-VMVideo.md)"
+msgstr "[Get-VMVideo](./Get-VMVideo.md)"
+
+msgid "[Get-VM](./Get-VM.md)"
+msgstr "[Get-VM](./Get-VM.md)"

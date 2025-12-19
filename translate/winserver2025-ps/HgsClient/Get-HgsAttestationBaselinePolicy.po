@@ -1,0 +1,109 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:18:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-HgsAttestationBaselinePolicy"
+msgstr "# Get-HgsAttestationBaselinePolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Generates an attestation baseline policy."
+msgstr "生成一个认证基线策略（attestation baseline policy）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### File (Default)"
+msgstr "### 文件（默认设置）"
+
+msgid "### Console"
+msgstr "### 控制台"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-HgsAttestationBaselinePolicy` cmdlet generates an attestation baseline policy. You can use\n"
+"the policy to configure the attestation service."
+msgstr ""
+"`Get-HgsAttestationBaselinePolicy` cmdlet 用于生成一个认证基线策略。您可以使用该策略来配置认证服务。"
+
+msgid ""
+"This cmdlet gets a byte array that represents the attestation baseline policy from the raw data of\n"
+"the last full boot from the Trusted Computing Group log of the Trusted Platform Module (TPM)."
+msgstr ""
+"这个cmdlet从受信任平台模块（TPM）的“受信任计算组”（Trusted Computing "
+"Group）日志中获取上一次完全启动时的原始数据，从而得到一个表示认证基线策略的字节数组。"
+
+msgid ""
+"Be sure to run this cmdlet on a host that is known to have good "
+"configuration."
+msgstr "请确保在配置良好的主机上运行此 cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Generate a baseline policy"
+msgstr "### 示例 1：生成一个基线策略"
+
+msgid ""
+"This command generates a byte array that represents the baseline policy in "
+"the file `C:\\Logs\\AttestationBaselinePolicy001`."
+msgstr "该命令生成一个字节数组，用于表示文件`C:\\Logs\\AttestationBaselinePolicy001`中的基线策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Indicates that this cmdlet operates in console mode."
+msgstr "表示此cmdlet在控制台模式下运行。"
+
+msgid ""
+"Indicates that this cmdlet overwrites an existing file that the **Output** "
+"object specifies."
+msgstr "表示此 cmdlet 会覆盖由 **Output** 对象指定的现有文件。"
+
+msgid ""
+"Specifies a file path.\n"
+"This cmdlet writes the policy to the file that this parameter specifies."
+msgstr "指定一个文件路径。此 cmdlet 会将策略写入该参数所指定的文件中。"
+
+msgid "Indicates that this cmdlet skips validation."
+msgstr "表示此 cmdlet 将跳过验证步骤。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Byte[]"
+msgstr "### Byte[]"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

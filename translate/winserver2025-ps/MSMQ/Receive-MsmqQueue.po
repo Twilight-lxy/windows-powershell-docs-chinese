@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:59:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Receive-MsmqQueue"
+msgstr "# 接收 MSMQ 队列消息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Does a destructive read from a queue."
+msgstr "从队列中进行破坏性读取（即修改队列中的数据）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Transactional (Default)"
+msgstr "### 事务型（默认设置）"
+
+msgid "### Peek"
+msgstr "### 快看"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Receive-MsmqQueue** cmdlet does a destructive read from a queue.\n"
+"The cmdlet returns the received **System.Messaging.Message** object.\n"
+"This cmdlet accepts values for the **Name** parameter of path names, format names, and direct format names.\n"
+"Some other Message Queuing (also known as MSMQ) cmdlets require a friendly name for the queue.\n"
+"If you specify the **Peek** parameter, the cmdlet peeks at the message instead of doing a destructive read.\n"
+"The cmdlet succeeds if it returns at least one message."
+msgstr ""
+"`Receive-MsmqQueue` cmdlet 会从队列中读取数据（这种操作属于“破坏性读取”，即数据在被读取后会被清除）。该 cmdlet "
+"会返回一个 `System.Messaging.Message` 对象。该 cmdlet 支持为 `Name` "
+"参数指定路径名、格式名称或直接格式名称等值。某些其他与消息队列（也称为 MSMQ）相关的 cmdlet 需要为队列提供一个友好的名称。如果指定了 "
+"`Peek` 参数，该 cmdlet 会仅查看队列中的消息内容而不会实际读取数据。只要返回了至少一条消息，该 cmdlet 就视为操作成功。"
+
+msgid ""
+"If you specify the **Peek** parameter, this cmdlet returns the number of "
+"messages  that is the minimum of the number supplied by the **Count** "
+"parameter and the number of messages in the queue."
+msgstr ""
+"如果您指定了 **Peek** 参数，此cmdlet将返回消息的数量，该数量是 **Count** 参数提供的数值与队列中实际消息数量的较小值。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Perform a transacted read"
+msgstr "#### 示例 1：执行带事务处理的读取操作"
+
+msgid ""
+"This command gets the specified queue by using the **Get-MsmqQueue** cmdlet.\n"
+"The command passes the result to the current cmdlet by using the pipeline operator.\n"
+"The current cmdlet performs a transacted read on the queue."
+msgstr ""
+"此命令使用 **Get-MsmqQueue** cmdlet 来获取指定的队列。该命令通过管道运算符将结果传递给当前的 cmdlet。当前 cmdlet"
+" 对该队列执行事务性读取操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the number of messages to be returned.\n"
+"The default value is 1.\n"
+"You must specify a value larger than 0."
+msgstr "指定要返回的消息数量。默认值为 1。您必须指定一个大于 0 的值。"
+
+msgid ""
+"Specifies a **MessageQueue** object.\n"
+"The cmdlet reads from the queue that the **MessageQueue** specifies.\n"
+"This parameter accepts pipeline input."
+msgstr ""
+"用于指定一个 **MessageQueue** 对象。该 cmdlet 会从该 **MessageQueue** "
+"指定的队列中读取数据。此参数支持管道输入（pipeline input）。"
+
+msgid ""
+"Indicates that this cmdlet returns a copy of the first message in the queue "
+"without removing the message from the queue."
+msgstr "表示此cmdlet会返回队列中第一条消息的副本，而不会将该消息从队列中删除。"
+
+msgid "Indicates that this cmdlet returns the body of the message."
+msgstr "表示此cmdlet会返回消息的正文内容。"
+
+msgid ""
+"Specifies the maximum time, in milliseconds, to wait for the queue to contain a message.\n"
+"The default value is 0."
+msgstr "指定等待队列中包含消息的最大时间（以毫秒为单位）。默认值为 0。"
+
+msgid "Indicates that the cmdlet performs a transacted receive."
+msgstr "表示该cmdlet执行了一个带事务处理的接收操作（即接收数据的过程会包含事务管理机制）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, "
+"`-ErrorVariable`, `-InformationAction`, `-InformationVariable`, "
+"`-OutVariable`, `-OutBuffer`, `-PipelineVariable`, `-Verbose`, "
+"`-WarningAction`, and `-WarningVariable`. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)"
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Msmq.PowerShell.Commands.MessageQueue"
+msgstr "### Microsoft.Msmq POWERShell Commands.MessageQueue"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+msgstr "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+
+msgid "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+msgstr "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+
+msgid "[New-MsmqQueue](./New-MsmqQueue.md)"
+msgstr "[New-MsmqQueue](./New-MsmqQueue.md)"
+
+msgid "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+msgstr "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+
+msgid "[Send-MsmqQueue](./Send-MsmqQueue.md)"
+msgstr "[Send-MsmqQueue](./Send-MsmqQueue.md)"
+
+msgid "[Set-MsmqQueue](./Set-MsmqQueue.md)"
+msgstr "[Set-MsmqQueue](./Set-MsmqQueue.md)"

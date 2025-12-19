@@ -1,0 +1,160 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:32:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IISConfigSection"
+msgstr "# Get-IISConfigSection"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets a configuration section object to work further with the IIS "
+"Configuration Store."
+msgstr "获取一个配置节对象，以便进一步与 IIS 配置存储进行交互。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-IISConfigSection** cmdlet gets a configuration section (Microsoft.Web.Administration.ConfigurationSection) object to work further with the Internet Information Services (IIS) Configuration Store.\n"
+"It is generally the first cmdlet to use if configuration is to be read or updated.\n"
+"The output of this cmdlet can be passed to other cmdlets in the pipeline where ConfigurationElement objects are expected, since ConfigurationSection inherits from ConfigurationElement."
+msgstr ""
+"`Get-IISConfigSection` cmdlet "
+"可以获取一个配置节（`Microsoft.Web.Administration.ConfigurationSection`）对象，以便进一步操作 "
+"Internet Information Services (IIS) 的配置存储。当需要读取或更新配置时，这通常是第一个使用的 cmdlet。该 "
+"cmdlet 的输出可以传递给管道中的其他需要 `ConfigurationElement` 对象的 cmdlet，因为 "
+"`ConfigurationSection` 继承自 `ConfigurationElement`。"
+
+msgid ""
+"If the *SectionPath* parameter is not used, the cmdlet lists all the available sections.\n"
+"The sections that can be used are either defined in the applicationHost.config (IIS Configuration) or root web.config (.NET Framework)."
+msgstr ""
+"如果未使用 *SectionPath* 参数，该 cmdlet 会列出所有可用的部分。这些部分可以在 "
+"applicationHost.config（IIS 配置）或根 web.config（.NET Framework）中定义。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a configuration section object for a section path"
+msgstr "### 示例 1：获取某个路径对应的配置部分对象"
+
+msgid ""
+"This command gets the configuration section object for the "
+"system.applicationHost/sites section."
+msgstr "这个命令用于获取系统配置中 `applicationHost/sites` 部分的配置对象。"
+
+msgid "### Example 2: Get process state information for an IIS website"
+msgstr "### 示例 2：获取 IIS 网站的进程状态信息"
+
+msgid "This command gets runtime state information for the Default Web Site."
+msgstr "这个命令用于获取默认网站的运行时状态信息。"
+
+msgid ""
+"### Example 3: Add a new default document at the global configuration level"
+msgstr "#### 示例 3：在全局配置级别添加一个新的默认文档"
+
+msgid ""
+"This command adds filename MyDefDoc.htm to the \\<files\\> collection of the"
+" \\<defaultDocument\\> section of the applicationHost.config file."
+msgstr ""
+"此命令将文件名 “MyDefDoc.htm” 添加到应用程序配置文件（applicationHost.config）中 "
+"`<defaultDocument>` 部分的 `<files>` 目录中。"
+
+msgid "### Example 4: Create an application pool"
+msgstr "### 示例 4：创建一个应用程序池"
+
+msgid ""
+"This command creates an application pool and stores the result in variable "
+"$ConfigSectionCollection."
+msgstr "这个命令创建了一个应用程序池，并将结果存储在变量 $ConfigSectionCollection 中。"
+
+msgid "### Example 5: Create a collection element and specify the CLR version"
+msgstr "### 示例 5：创建一个集合元素并指定 CLR 版本"
+
+msgid ""
+"This command creates a new collection element using the *SectionPath* \"appSettings\"; that element is stored in a variable named $collection.\n"
+"In addition, the *Clr* parameter is used to set the Common Language Runtime to version 2.0."
+msgstr ""
+"这条命令使用“appSettings”作为*SectionPath*来创建一个新的集合元素，并将该元素存储在一个名为$collection的变量中。此外，还使用了*Clr*参数将公共语言运行时（Common"
+" Language Runtime）设置为版本2.0。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the version of the root level .NET Framework Common Language Runtime (CLR) that IIS points to.\n"
+"If this parameter is omitted then the default CLR version is used.\n"
+"Note, however, that if the *CommitPath* parameter is included in the command the *Clr* parameter will be ignored and the runtime version of the corresponding application pool will be used instead."
+msgstr ""
+"指定 IIS 所引用的 .NET Framework 公共语言运行时（CLR）的版本。如果省略此参数，则会使用默认的 CLR "
+"版本。不过请注意，如果在命令中包含了 *CommitPath* 参数，那么 *Clr* 参数将被忽略，此时将使用相应应用程序池的运行时版本。"
+
+msgid ""
+"Specifies the path where the configuration will be retrieved from.\n"
+"If CommitPath is omitted, applicationHost.config or root .NET configuration (root web.config) will be used."
+msgstr ""
+"指定用于获取配置文件的路径。如果省略了 `CommitPath`，则将使用 `applicationHost.config` 或根目录下的 `.NET`"
+" 配置文件（即 `root/web.config`）。"
+
+msgid ""
+"Specifies the name of the IIS configuration location for which a configuration object is returned.\n"
+"This corresponds to the \\<location\\> tag in configuration files."
+msgstr "指定用于返回配置对象的 IIS 配置位置的名称。该名称对应于配置文件中的 `<location>` 标签。"
+
+msgid ""
+"Specifies the name of the IIS configuration section for which a "
+"configuration object is returned."
+msgstr "指定要返回配置对象的 IIS 配置节的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IISServerManager](./Get-IISServerManager.md)"
+msgstr "[获取 IISServerManager](./Get-IISServerManager.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

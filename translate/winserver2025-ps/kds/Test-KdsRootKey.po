@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:00:18 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-KdsRootKey"
+msgstr "# Test-KdsRootKey"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Tests the root key configuration."
+msgstr "测试根键配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Test-KdsRootKey** cmdlet tests that the root key with the specified key identifier (ID) uses a valid configuration.\n"
+"The test verifies generation of both new group public key and group private key."
+msgstr ""
+"`Test-KdsRootKey` cmdlet "
+"用于检测具有指定密钥标识符（ID）的根密钥是否使用有效的配置。该测试会验证新组公钥和新组私钥的生成过程。"
+
+msgid ""
+"This cmdlet is useful for analyzing failures based on invalid root key "
+"configuration failures."
+msgstr "此cmdlet有助于根据无效的根密钥配置错误来分析故障情况。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test the root key configuration"
+msgstr "### 示例 1：测试根键配置"
+
+msgid ""
+"This command tests the configuration of the root key specified by key ID."
+msgstr "此命令用于测试由键ID指定的根密钥的配置是否正确。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies the ID of the root key to test."
+msgstr "指定要测试的根密钥的ID。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet accepts no input objects."
+msgstr "此cmdlet不接受任何输入对象。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Boolean"
+msgstr "### System Boolean"
+
+msgid ""
+"This cmdlet returns whether the root key can be used to generate derived "
+"keys."
+msgstr "此cmdlet用于判断是否可以使用根密钥来生成派生密钥。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+msgstr "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+
+msgid "[Clear-KdsCache](./Clear-KdsCache.md)"
+msgstr "[Clear-KdsCache](./Clear-KdsCache.md)"
+
+msgid "[Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+msgstr "[Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+
+msgid "[Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+msgstr "[Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+
+msgid "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+msgstr "[Add-KdsRootKey](./Add-KdsRootKey.md)"

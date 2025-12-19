@@ -1,0 +1,214 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:11:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMNetworkAdapterRoutingDomainMapping"
+msgstr "# 设置虚拟机网络适配器的路由域映射"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets virtual subnets on a routing domain."
+msgstr "在路由域上设置虚拟子网。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### InputObjectParameter"
+msgstr "### InputObjectParameter"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-VMNetworkAdapterRoutingDomainMapping** cmdlet sets virtual subnets"
+" on a routing domain."
+msgstr "`Set-VMNetworkAdapterRoutingDomainMapping` cmdlet 用于在路由域中设置虚拟子网。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set a virtual subnet on a routing domain"
+msgstr "### 示例 1：在路由域上设置一个虚拟子网"
+
+msgid ""
+"This command sets the virtual subnet that has the ID 6001 for the specified routing domain.\n"
+"The command specifies that the routing domain is on the network adapter named Internal NIC that belongs to the multitenant virtual machine named Gateway01."
+msgstr ""
+"此命令将虚拟子网的ID设置为6001，并将其关联到指定的路由域。该命令还指明，该路由域位于名为“Internal "
+"NIC”的网络适配器上，而这个网络适配器属于名为“Gateway01”的多租户虚拟机。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies an array of Hyper-V hosts.\n"
+"The cmdlet adds the virtual subnets to the routing domain on the Hyper-V hosts that you specify."
+msgstr "指定一个Hyper-V主机的数组。该cmdlet会将虚拟子网添加到您指定的Hyper-V主机上的路由域中。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定要传递给此 cmdlet 的输入数据。您可以使用该参数，也可以将输入数据通过管道（pipe）传递给此 cmdlet。"
+
+msgid ""
+"Specifies an array of IDs of virtual subnets.\n"
+"The cmdlet adds the virtual subnets that you specify to the routing domain.\n"
+"The subnets use VLAN or Hyper-V Network Virtualization.\n"
+"For more information about isolation IDs, see the **Set-VMNetworkAdapterIsolation** cmdlet."
+msgstr ""
+"指定一组虚拟子网的ID。该cmdlet会将您指定的虚拟子网添加到路由域中。这些子网使用VLAN或Hyper-"
+"V网络虚拟化技术。有关隔离ID的更多信息，请参阅**Set-VMNetworkAdapterIsolation** cmdlet。"
+
+msgid ""
+"Specifies an array of names of virtual subnets.\n"
+"The cmdlet adds the virtual subnets that you specify to the routing domain.\n"
+"The subnets use VLAN or Hyper-V Network Virtualization."
+msgstr "指定一个虚拟子网名称数组。该cmdlet会将您指定的虚拟子网添加到路由域中。这些子网使用VLAN或Hyper-V网络虚拟化技术进行管理。"
+
+msgid ""
+"Indicates that the cmdlet operates on the parent partition or host operating"
+" system."
+msgstr "表示该 cmdlet 操作的是父分区或宿主操作系统。"
+
+msgid "Specifies a new name for the routing domain."
+msgstr "为路由域指定一个新的名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the ID of a routing domain.\n"
+"The ID of a routing domain is a system-assigned GUID.\n"
+"The cmdlet adds the virtual subnets to the routing domain that you specify."
+msgstr "用于指定路由域的ID。路由域的ID是由系统分配的GUID（全局唯一标识符）。该cmdlet会将指定的虚拟子网添加到该路由域中。"
+
+msgid ""
+"Specifies the name of a routing domain.\n"
+"The cmdlet adds the virtual subnets to the routing domain that you specify."
+msgstr "用于指定路由域的名称。该cmdlet会将虚拟子网添加到您指定的路由域中。"
+
+msgid ""
+"Specifies an array of virtual machine objects.\n"
+"The cmdlet adds the virtual subnets to the routing domain from the network interfaces that belong to the virtual machines that you specify.\n"
+"To obtain a virtual machine object, use the **Get-VM** cmdlet."
+msgstr ""
+"指定一个虚拟机对象数组。该cmdlet会将属于所指定虚拟机的网络接口中的虚拟子网添加到路由域中。若要获取虚拟机对象，请使用**Get-VM** "
+"cmdlet。"
+
+msgid ""
+"Specifies an array of names of virtual machines.\n"
+"The cmdlet adds the virtual subnets to the routing domain from the network interfaces that belong to the virtual machines that you specify.\n"
+"To obtain a virtual machine object, use the **Get-VM** cmdlet."
+msgstr ""
+"指定一组虚拟机的名称。该 cmdlet 会将这些虚拟机所属的网络接口中的虚拟子网添加到路由域中。若要获取虚拟机对象，请使用 **Get-VM** "
+"cmdlet。"
+
+msgid ""
+"Specifies an array of virtual network adapters as a **VMNetworkAdapterBase** object.\n"
+"The cmdlet adds the virtual subnets to the routing domain on the adapters that you specify.\n"
+"To obtain a network adapter, use the **Get-VMNetworkAdapter** cmdlet."
+msgstr ""
+"该命令将一组虚拟网络适配器指定为一个 **VMNetworkAdapterBase** "
+"对象，并将这些虚拟子网添加到所指定的适配器所属的路由域中。若需获取某个网络适配器，请使用 **Get-VMNetworkAdapter** 命令。"
+
+msgid ""
+"Specifies the name of a virtual network adapter.\n"
+"The cmdlet adds the virtual subnets to the routing domain on the adapter that you specify."
+msgstr "指定虚拟网络适配器的名称。此cmdlet会将指定的虚拟子网添加到该适配器所属的路由域中。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterRoutingDomainSetting"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapterRoutingDomainSetting"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-VMNetworkAdapterRoutingDomainMapping](./Get-"
+"VMNetworkAdapterRoutingDomainMapping.md)"
+msgstr ""
+"[Get-VMNetworkAdapterRoutingDomainMapping](./Get-"
+"VMNetworkAdapterRoutingDomainMapping.md)"
+
+msgid ""
+"[Add-VMNetworkAdapterRoutingDomainMapping](./Add-"
+"VMNetworkAdapterRoutingDomainMapping.md)"
+msgstr ""
+"[Add-VMNetworkAdapterRoutingDomainMapping](./Add-"
+"VMNetworkAdapterRoutingDomainMapping.md)"
+
+msgid ""
+"[Remove-VMNetworkAdapterRoutingDomainMapping](./Remove-"
+"VMNetworkAdapterRoutingDomainMapping.md)"
+msgstr ""
+"[Remove-VMNetworkAdapterRoutingDomainMapping](./Remove-"
+"VMNetworkAdapterRoutingDomainMapping.md)"

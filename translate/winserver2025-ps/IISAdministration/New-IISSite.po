@@ -1,0 +1,156 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:35:04 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-IISSite"
+msgstr "# 新版IISS网站"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Creates an IIS Website."
+msgstr "创建一个 IIS 网站。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-IISSite** cmdlet is used to create an Internet Information "
+"Services (IIS) website with the given physical site as the root and binding "
+"information to listen on a specific IP:Port:Hostname binding."
+msgstr ""
+"`New-IISSite` cmdlet 用于创建一个互联网信息服务（IIS）网站，该网站的根目录设置为指定的物理站点，并配置监听特定 IP "
+"地址、端口号以及主机名的绑定信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a new IIS web site"
+msgstr "### 示例 1：添加一个新的 IIS 网站"
+
+msgid "This command creates a new website named TestSite."
+msgstr "这个命令创建了一个名为 TestSite 的新网站。"
+
+msgid ""
+"### Example 2: Add a new website and set application pool of the site "
+"default application to a custom name"
+msgstr "### 示例 2：添加一个新的网站，并将该网站默认应用程序的应用程序池设置为自定义名称"
+
+msgid ""
+"This command creates a website named TestSite with default application "
+"assigned to the TestSiteAppPool application pool."
+msgstr "这个命令创建了一个名为 TestSite 的网站，并将默认应用程序分配给 TestSiteAppPool 应用程序池。"
+
+msgid "### Example 3: Add a new website of HTTPS binding"
+msgstr "### 示例 3：添加一个支持 HTTPS 协议的新网站"
+
+msgid "This command creates a website named TestSite with HTTPS binding"
+msgstr "这个命令会创建一个名为“TestSite”的网站，并为其配置HTTPS绑定。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the binding information string to use for the new site.\n"
+"The binding information of the form IP:Port:hostname such as 192.168.0.1:80:www.contoso.com and one or more of the fields can be left blank, which is equivalent to using a wildcard character such as *:443:.\n"
+"In this representation *  indicates all IP addresses and all hostnames are indicated by leaving the corresponding field blank."
+msgstr ""
+"指定用于新站点的绑定信息字符串。该绑定信息的格式为 IP:Port:hostname（例如 "
+"192.168.0.1:80:www.contoso.com），其中某个或多个字段可以留空；这相当于使用了通配符（如 *:443:）。在这种情况下，* "
+"表示所有 IP 地址；而通过将相应字段留空，则表示所有主机名。"
+
+msgid ""
+"Specifies a certificate thumbprint, which is used to add a new HTTPS binding"
+msgstr "指定一个证书指纹（certificate thumbprint），该指纹用于添加新的 HTTPS 绑定（HTTPS binding）。"
+
+msgid ""
+"Specifies the certificate store path of the certificate, which is used to "
+"add a new HTTPS binding"
+msgstr "指定证书的存储路径，该路径用于添加新的 HTTPS 绑定。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies the name of the IIS website."
+msgstr "指定 IIS 网站的名称。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the physical path to the new IIS website."
+msgstr "指定新的 IIS 网站的物理路径。"
+
+msgid ""
+"The protocol for which the binding is configured, usually http, https or "
+"ftp."
+msgstr "用于配置绑定的协议，通常是http、https或ftp。"
+
+msgid "Specifies the SSL flag settings of the new binding."
+msgstr "指定新绑定的SSL标志设置。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### Microsoft.Web.Administration.SslFlags"
+msgstr "### Microsoft.Web ADMINISTRATION.SslFlags"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IISSite](./Get-IISSite.md)"
+msgstr "[获取 IISSite](./Get-IISSite.md)"
+
+msgid "[Remove-IISSite](./Remove-IISSite.md)"
+msgstr "[Remove-IISSite](./Remove-IISSite.md)"
+
+msgid "[Start-IISSite](./Start-IISSite.md)"
+msgstr "[启动 IISS 站点](./Start-IISSite.md)"
+
+msgid "[Stop-IISSite](./Stop-IISSite.md)"
+msgstr "[停止使用 IISS 网站](./Stop-IISSite.md)"
+
+msgid "[New-IISSiteBinding](./New-IISSiteBinding.md)"
+msgstr "[New-IISSiteBinding](./New-IISSiteBinding.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

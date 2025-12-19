@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:09:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Join-WmsStation"
+msgstr "# 连接WMS站点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Unsplits a station."
+msgstr "将一个车站拆分为多个独立的站点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### JoinById"
+msgstr "### JoinById"
+
+msgid "### JoinAll"
+msgstr "### JoinAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Join-WmsStation** cmdlet causes the specified physical station "
+"displays that are currently split into two logical displays to be joined "
+"back into a single display."
+msgstr "`Join-WmsStation` cmdlet 用于将当前被分割为两个逻辑显示区的指定物理显示区重新合并为一个单一的显示区。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Join station displays"
+msgstr "### 示例 1：车站接驳信息显示"
+
+msgid ""
+"This command causes the specified physical station displays which are "
+"currently split into two logical displays to be joined back into a single "
+"display."
+msgstr "此命令会将当前被分割为两个逻辑显示器的指定物理显示器重新合并为一个单一的显示器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标（即MultiPoint Server）的完全限定主机名。默认值为localhost。"
+
+msgid ""
+"Specifies an array of station IDs.\n"
+"Valid values are 1 - the number of stations."
+msgstr "指定一个车站ID数组。有效值为1（表示车站的数量）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-WmsStation](./Clear-WmsStation.md)"
+msgstr "[Clear-WmsStation](./Clear-WmsStation.md)"
+
+msgid "[Get-WmsStation](./Get-WmsStation.md)"
+msgstr "[Get-WmsStation](./Get-WmsStation.md)"
+
+msgid "[Set-WmsStation](./Set-WmsStation.md)"
+msgstr "[Set-WmsStation](./Set-WmsStation.md)"
+
+msgid "[Split-WmsStation](./Split-WmsStation.md)"
+msgstr "[Split-WmsStation](./Split-WmsStation.md)"
+
+msgid "[Update-WmsStation](./Update-WmsStation.md)"
+msgstr "[更新 WMS 站点](./Update-WmsStation.md)"

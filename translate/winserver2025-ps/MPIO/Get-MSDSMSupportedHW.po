@@ -1,0 +1,157 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:36:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-MSDSMSupportedHW"
+msgstr "# 获取 Microsoft Distributed Systems Management Service (MSDSS) 支持的硬件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Lists hardware IDs in the MSDSM supported hardware list."
+msgstr "列出 MSDSM 支持的硬件列表中的硬件 ID。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-MSDSMSupportedHW** cmdlet lists hardware identifiers (IDs) in the "
+"Microsoft Device Specific Module (MSDSM) supported hardware list."
+msgstr ""
+"`Get-MSDSMSupportedHW` cmdlet 会列出在微软设备特定模块（Microsoft Device Specific "
+"Module，简称 MSDSM）支持的硬件列表中的硬件标识符（IDs）。"
+
+msgid ""
+"When you specify the *VendorID* and the *ProductID* parameters, you do not "
+"have to pad the parameter values with trailing spaces in the way you did for"
+" MPCLAIM.EXE."
+msgstr "当您指定 *VendorID* 和 *ProductID* 参数时，不需要像处理 MPCLAIM.EXE 时那样在参数值末尾添加空格。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get hardware IDs"
+msgstr "### 示例 1：获取硬件 ID"
+
+msgid ""
+"This example gets all of the hardware IDs from the MSDSM supported hardware "
+"list."
+msgstr "这个示例从 MSDSM 支持的硬件列表中获取所有的硬件 ID。"
+
+msgid "### Example 2: Get hardware IDs for a vendor ID"
+msgstr "### 示例 2：根据供应商 ID 获取硬件 ID"
+
+msgid ""
+"This example gets all of the hardware IDs for which the vendor ID is VendorX"
+" from the MSDSM supported hardware list."
+msgstr "这个示例会从MSDSM支持的硬件列表中获取所有厂商ID为“VendorX”的硬件的相关信息（包括这些硬件的ID）。"
+
+msgid "### Example 3: Get hardware IDs for a product ID"
+msgstr "### 示例 3：获取某个产品ID对应的硬件ID"
+
+msgid ""
+"This example gets all of the hardware IDs for which the product ID is "
+"ProductY from the MSDSM supported hardware list."
+msgstr "这个示例从 MSDSM 支持的硬件列表中获取所有产品 ID 为 “ProductY” 的硬件的 ID。"
+
+msgid "### Example 4: Get hardware IDs vendor Id and product ID"
+msgstr "### 示例 4：获取硬件ID、供应商ID和产品ID"
+
+msgid ""
+"This example gets all of the hardware IDs for which the vendor ID is VendorX"
+" and the product ID is ProductY from the MSDSM supported hardware list."
+msgstr "这个示例从MSDSM支持的硬件列表中获取所有硬件ID，这些硬件的供应商ID为VendorX、产品ID为ProductY。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中运行。"
+
+msgid "Specifies product ID for which this cmdlet gets hardware IDs."
+msgstr "指定该cmdlet用于获取硬件ID的产品ID。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时执行此 cmdlet 的最大操作数量。如果省略了此参数或输入了 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 数量来计算一个最优的操作限制值。此操作限制仅适用于当前正在执行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "Specifies vendor IDs for which this cmdlet gets hardware IDs."
+msgstr "指定此cmdlet获取硬件ID的供应商ID。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-MSDSMSupportedHW](./Clear-MSDSMSupportedHW.md)"
+msgstr "[Clear-MSDSMSSupportedHW](./Clear-MSDSMSupportedHW.md)"
+
+msgid "[New-MSDSMSupportedHW](./New-MSDSMSupportedHW.md)"
+msgstr "[新支持的硬件设备（符合 MSDSMS 标准）](./New-MSDSMSSupportedHW.md)"
+
+msgid "[Remove-MSDSMSupportedHW](./Remove-MSDSMSupportedHW.md)"
+msgstr "[Remove-MSDSMSSupportedHW](./Remove-MSDSMSSupportedHW.md)"

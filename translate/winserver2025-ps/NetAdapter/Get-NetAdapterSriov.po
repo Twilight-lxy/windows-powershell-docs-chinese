@@ -1,0 +1,200 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:49:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-NetAdapterSriov"
+msgstr "# Get-NetAdapterSriov"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the SR-IOV properties of the network adapter."
+msgstr "获取网络适配器的 SR-IOV（Software Defined I/O Virtualization）属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称排序（默认值）"
+
+msgid "### ByInstanceID"
+msgstr "### ByInstanceID"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-NetAdapterSriov** cmdlet gets the Single-Root I/O Virtualization (SR-IOV) properties of network adapters that support SR-IOV.\n"
+"SR-IOV enables network traffic to by-pass the software switch layer of the Hyper-V virtualization stack.\n"
+"As a result, the I/O overhead in the software emulation layer is diminished and can achieve network performance that is nearly the same performance as in non-virtualized environments.\n"
+"Run this cmdlet to display how the hardware is set to support SR-IOV.\n"
+"This cmdlet will display the properties of the network adapter that relate to SR-IOV, such as the number of ports, and virtual functions (VFs).\n"
+"The property **SriovSupport** indicates potential reasons for SR-IOV not functioning properly."
+msgstr ""
+"`Get-NetAdapterSriov` cmdlet 用于获取支持 Single-Root I/O Virtualization（SR-"
+"IOV）功能的网络适配器的相关属性。SR-IOV 允许网络流量直接绕过 Hyper-V 虚拟化堆栈中的软件交换层，从而减少软件仿真层的 I/O "
+"开销，并实现接近于非虚拟化环境下的网络性能。运行此 cmdlet 可以查看硬件是如何配置以支持 SR-IOV 的。该 cmdlet 会显示与 SR-"
+"IOV 相关的网络适配器属性，例如端口数量和虚拟功能（VFs）等。`SriovSupport` 属性可以提示 SR-IOV 功能可能无法正常工作的原因。"
+
+msgid "The possible values for SriovSupport include the following:"
+msgstr "SriovSupport的可能取值包括以下几种："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Display SR-IOV properties for all SR-IOV-capable network "
+"adapters"
+msgstr "### 示例 1：显示所有支持 SR-IOV 的网络适配器的 SR-IOV 属性"
+
+msgid ""
+"This command displays the SR-IOV properties for all SR-IOV-capable network "
+"adapters."
+msgstr "此命令会显示所有支持SR-IOV功能的网络适配器的SR-IOV属性。"
+
+msgid ""
+"### Example 2: Display SR-IOV properties for the specified network adapter"
+msgstr "### 示例 2：显示指定网络适配器的 SR-IOV 属性"
+
+msgid ""
+"This command displays the SR-IOV properties for network adapter named "
+"Ethernet 2."
+msgstr "此命令会显示名为“Ethernet 2”的网络适配器的SR-IOV属性。"
+
+msgid ""
+"### Example 3: Display SR-IOV properties for the network adapter with the "
+"specified interface description"
+msgstr "### 示例 3：显示具有指定接口描述的网络适配器的 SR-IOV 属性"
+
+msgid ""
+"This command displays the SR-IOV properties for the network adapter with the"
+" interface description named Contoso 12345 Gigabit Network Device."
+msgstr "此命令会显示名为“Contoso 12345 Gigabit Network Device”的网络适配器的SR-IOV属性。"
+
+msgid ""
+"### Example 4: Get all SR-IOV properties for all network adapters with SR-"
+"IOV enabled"
+msgstr "### 示例 4：获取所有启用了 SR-IOV 的网络适配器的所有 SR-IOV 属性"
+
+msgid ""
+"This command gets the SR-IOV properties for the network adapter with SR-IOV "
+"enabled."
+msgstr "该命令用于获取已启用SR-IOV功能的网络适配器的SR-IOV属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的形式运行该cmdlet。使用此参数来执行需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`"
+" cmdlets系列命令；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"If a wildcard character is used to identify a network adapter, then the wildcard character is matched against both hidden and visible adapters."
+msgstr ""
+"这表示该 cmdlet "
+"在操作过程中会同时考虑所有可见和隐藏的网络适配器。如果使用通配符来标识网络适配器，那么该通配符将会与所有可见和隐藏的适配器都进行匹配。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述数组。对于物理网络适配器来说，这通常是网络适配器的制造商名称后跟型号和描述，例如“Contoso 12345 千兆网络设备”。"
+
+msgid ""
+"Specifies an array network adapter names.\n"
+"The name of the network adapter from which this cmdlet gets the SR-IOV properties."
+msgstr "指定一个网络适配器名称数组。此cmdlet从其中获取SR-IOV属性的网络适配器的名称。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的cmdlet的最大操作数量。如果省略此参数或输入`0`，则Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最佳限制值（即并发操作的最大数量）。此限制仅适用于当前运行的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterSriovSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterSriovSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-NetAdapterSriov](./Disable-NetAdapterSriov.md)"
+msgstr "[禁用NetAdapterSriov功能](./Disable-NetAdapterSriov.md)"
+
+msgid "[Enable-NetAdapterSriov](./Enable-NetAdapterSriov.md)"
+msgstr "[Enable-NetAdapterSriov](./Enable-NetAdapterSriov.md)"
+
+msgid "[Get-NetAdapterSriovVf](./Get-NetAdapterSriovVf.md)"
+msgstr "[Get-NetAdapterSriovVf](./Get-NetAdapterSriovVf.md)"
+
+msgid "[Set-NetAdapterSriov](./Set-NetAdapterSriov.md)"
+msgstr "[Set-NetAdapterSriov](./Set-NetAdapterSriov.md)"

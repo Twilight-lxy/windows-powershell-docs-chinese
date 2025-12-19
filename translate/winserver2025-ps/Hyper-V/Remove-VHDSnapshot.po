@@ -1,0 +1,147 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:39:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-VHDSnapshot"
+msgstr "# 删除 VHDS 快照"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes a checkpoint from a VHD set file."
+msgstr "从VHD集合文件中删除一个检查点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Path (Default)"
+msgstr "### 路径（默认值）"
+
+msgid "### VHDSnapshot"
+msgstr "### VHDSnapshot"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Remove-VHDSnapshot` cmdlet removes a virtual hard disk (VHD) checkpoint"
+" from a VHD set file."
+msgstr "`Remove-VHDSnapshot` cmdlet 用于从虚拟硬盘（VHD）集文件中删除某个虚拟硬盘（VHD）的检查点。"
+
+msgid "Checkpoint replaces the previous term, snapshot."
+msgstr "“Checkpoint”取代了之前的术语“snapshot”。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a checkpoint"
+msgstr "#### 示例 1：删除检查点"
+
+msgid ""
+"This command removes the checkpoint that has the specified ID from the VHD set file named\n"
+"`Data01.vhds`."
+msgstr "此命令会从名为`Data01.vhds`的VHD集合文件中删除具有指定ID的检查点。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "将此cmdlet作为后台作业运行。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)\n"
+"or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如，使用[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts that run this cmdlet. NetBIOS names, IP addresses, and fully\n"
+"qualified domain names are allowable. The default is the local computer. Use `localhost` or a dot\n"
+"(`.`) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个运行此 cmdlet 的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全 Qualified "
+"域名来进行识别。默认值是本地计算机。可以使用 `localhost` 或点（`.`）来明确指出本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action. The default is the\n"
+"current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies an array of paths of VHD set files. This cmdlet removes a checkpoint from the files that\n"
+"this parameter specifies. If you specify a file name or relative path, the cmdlet determines the\n"
+"full path relative to the current working folder."
+msgstr ""
+"指定一组VHD设置文件的路径数组。此cmdlet会从这些参数指定的文件中删除检查点。如果您指定了一个文件名或相对路径，cmdlet会自动确定相对于当前工作文件夹的完整路径。"
+
+msgid ""
+"Indicates that this cmdlet persists an RCT-only reference point after it "
+"deletes the checkpoint."
+msgstr "表示此 cmdlet 在删除检查点后仍会保留一个仅用于 RCT（Remote Copy Test）的参考点。"
+
+msgid ""
+"Specifies an array of unique IDs of VHD checkpoint that this cmdlet removes "
+"from the VHD set file."
+msgstr "指定一个包含唯一VHD检查点ID的数组，该cmdlet会将这些检查点从VHD集合文件中删除。"
+
+msgid ""
+"Specifies an array of VHD checkpoints that this cmdlet removes from a VHD "
+"set file."
+msgstr "指定一个VHD检查点数组，该cmdlet会从VHD集合文件中删除这些检查点。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Vhd.PowerShell.VHDSnapshotInfo[]"
+msgstr "### Microsoft.Vhd.PowerShell.VHDSnapshotInfo[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Vhd.PowerShell.VHDSnapshotInfo[]"
+msgstr "### Microsoft.Vhd.PowerShell.VHDSnapshotInfo[]"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VHDSnapshot](get-vhdsnapshot.md)"
+msgstr "[Get-VHDSnapshot](get-vhdsnapshot.md)"

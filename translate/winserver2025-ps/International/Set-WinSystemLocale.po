@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:44:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WinSystemLocale"
+msgstr "# Set-WinSystemLocale"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the system locale for the current computer."
+msgstr "设置当前计算机的系统区域设置（locale）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-WinSystemLocale** cmdlet sets the system locale for the current computer.\n"
+"The System-locale setting determines which code pages, which include ANSI, DOS, and Macintosh, the computer uses by default.\n"
+"If you change the System-locale setting, the necessary bitmap font files are installed to support legacy applications in the selected language."
+msgstr ""
+"`Set-WinSystemLocale` cmdlet 用于设置当前计算机的系统区域设置（system "
+"locale）。系统区域设置决定了计算机默认使用哪些代码页，这些代码页包括 ANSI、DOS 和 Macintosh "
+"等编码格式。如果您更改了系统区域设置，系统会自动安装相应的位图字体文件，以支持使用所选语言的旧版应用程序。"
+
+msgid ""
+"This is a system setting.\n"
+"It can only be changed by a user who has Administrator permissions.\n"
+"Changes take effect after the computer is restarted."
+msgstr "这是一个系统设置。只有拥有管理员权限的用户才能更改它。更改会在计算机重新启动后生效。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the system locale"
+msgstr "#### 示例 1：设置系统区域设置"
+
+msgid "This command sets the system locale to Japanese (Japan)."
+msgstr "这个命令将系统的区域设置设置为日语（日本）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a system locale."
+msgstr "指定一个系统区域设置（locale）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### CultureInfo"
+msgstr "### CultureInfo"
+
+msgid ""
+"An object that contains a BCP-47 tag to specify the system locale for the current computer.\n"
+"For more information about the CultureInfo object, see [CultureInfo Class](https://go.microsoft.com/fwlink/?LinkID=242306)."
+msgstr ""
+"一个包含 BCP-47 标签的对象，用于指定当前计算机的系统区域设置。有关 CultureInfo 对象的更多信息，请参阅 [CultureInfo "
+"类](https://go.microsoft.com/fwlink/?LinkID=242306)。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"Please note that the System Locale setting on the computer is primarily used"
+" for legacy code page selection and font fallback. This setting is primarily"
+" used by applications that do not support Unicode. It should not be viewed "
+"from the sense of a traditional locale or culture info, and should not be "
+"confused with the user locale (Regional Format) setting."
+msgstr ""
+"请注意，计算机上的“系统区域设置”主要用于选择旧的代码页和作为字体替代方案。这个设置主要被那些不支持Unicode的应用程序所使用。它不应被视为传统的地区设置或文化信息，也不应与用户的地区设置（区域格式）混淆。"
+
+msgid ""
+"When changing the System Locale setting it is highly recommended to also "
+"change the Windows Display Language or UI language setting for the computer "
+"so that it matches the System Locale. In some cases, the UI language may "
+"depend on the code page and/or the font to render properly. Failure to do so"
+" can result in configurations where non-Unicode applications don't work as "
+"intended."
+msgstr ""
+"在更改系统区域设置时，强烈建议同时更改计算机的 Windows 显示语言或用户界面（UI）语言设置，以确保它们与系统区域设置保持一致。在某些情况下，UI"
+" 语言的正确显示可能依赖于代码页和/或字体。如果不这样做，可能会导致非 Unicode 应用程序无法正常运行。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Configurable Language and Cultural "
+"Settings](https://go.microsoft.com/fwlink/?LinkID=242307)"
+msgstr "[可配置的语言和文化设置](https://go.microsoft.com/fwlink/?LinkID=242307)"
+
+msgid "[Get-WinSystemLocale](./Get-WinSystemLocale.md)"
+msgstr "[Get-WinSystemLocale](./Get-WinSystemLocale.md)"

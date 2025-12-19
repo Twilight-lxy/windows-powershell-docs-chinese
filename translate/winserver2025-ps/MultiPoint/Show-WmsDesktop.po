@@ -1,0 +1,120 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:14:55 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Show-WmsDesktop"
+msgstr "# Show-WmsDesktop"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Displays the currently shared desktop to the specified sessions."
+msgstr "将当前共享的桌面显示给指定的会话。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ShowSessionList"
+msgstr "### 显示会话列表（ShowSessionList）"
+
+msgid "### ShowAll"
+msgstr "### ShowAll"
+
+msgid "### RemoteControl"
+msgstr "### RemoteControl"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Show-WmsDesktop** cmdlet displays the currently shared desktop to the "
+"specified sessions on the current Windows MultiPoint Server system."
+msgstr ""
+"`Show-WmsDesktop` cmdlet 用于将当前共享的桌面显示给当前 Windows MultiPoint Server 系统中指定的会话。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Show a desktop"
+msgstr "### 示例 1：展示桌面界面"
+
+msgid "This command projects the desktop to the specified session list."
+msgstr "此命令将桌面显示到指定的会话列表中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid "{{Fill Desktop Description}}"
+msgstr "{{填写桌面描述}}"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 localhost。"
+
+msgid "Specifies an array of session IDs."
+msgstr "指定一个会话ID数组。"
+
+msgid "Specifies a title."
+msgstr "指定一个标题。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.WmsDesktop"
+msgstr ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShellcommands.Library.WmsDesktop"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Unpublish-WmsDesktop](./Unpublish-WmsDesktop.md)"
+msgstr "[Unpublish-WmsDesktop](./Unpublish-WmsDesktop.md)"
+
+msgid "[Publish-WmsDesktop](./Publish-WmsDesktop.md)"
+msgstr "[发布 WMS 桌面应用](./Publish-WmsDesktop.md)"

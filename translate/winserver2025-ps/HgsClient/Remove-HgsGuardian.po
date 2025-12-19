@@ -1,0 +1,104 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:21:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-HgsGuardian"
+msgstr "# 移除 HgsGuardian"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes a guardian from the guardian store."
+msgstr "从守护者商店中移除一个守护者。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### NameViaString (Default)"
+msgstr "### NameViaString（默认值）"
+
+msgid "### NameViaGuardian"
+msgstr "### 名称：ViaGuardian"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-HgsGuardian** cmdlet removes a Host Guardian Service guardian "
+"object from the guardian store."
+msgstr ""
+"`Remove-HgsGuardian` cmdlet 用于从守护程序存储中删除一个 Host Guardian Service 的守护对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a guardian"
+msgstr "### 示例 1：移除守护者"
+
+msgid ""
+"This command removes the guardian named Guardian11 from the local store."
+msgstr "此命令会将名为 Guardian11 的守护程序从本地存储中删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "The HGS guardian object to remove."
+msgstr "需要移除的HGS守护对象。"
+
+msgid "Specifies the name of the guardian to remove."
+msgstr "指定要移除的监护人的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前，会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-HgsGuardian](./Export-HgsGuardian.md)"
+msgstr "[Export-HgsGuardian](./Export-HgsGuardian.md)"
+
+msgid "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+msgstr "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+
+msgid "[Import-HgsGuardian](./Import-HgsGuardian.md)"
+msgstr "[Import-HgsGuardian](./Import-HgsGuardian.md)"
+
+msgid "[New-HgsGuardian](./New-HgsGuardian.md)"
+msgstr "[New-HgsGuardian](./New-HgsGuardian.md)"

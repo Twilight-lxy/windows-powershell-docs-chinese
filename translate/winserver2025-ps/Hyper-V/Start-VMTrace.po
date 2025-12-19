@@ -1,0 +1,66 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:23:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-VMTrace"
+msgstr "# 启动虚拟机跟踪（Start-VMTrace）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Starts tracing to a file."
+msgstr "从某个文件开始进行跟踪。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Start-VMTrace** cmdlet starts tracing to a file.\n"
+"You can use this information for advanced debugging."
+msgstr "`Start-VMTrace` cmdlet 用于将跟踪日志写入文件中。您可以利用这些日志信息进行高级调试。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Start error tracing"
+msgstr "### 示例 1：启动错误追踪"
+
+msgid "This command starts tracing at the level of Error."
+msgstr "此命令从“Error”（错误）级别开始进行跟踪。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the level of tracing.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定跟踪的级别。此参数的可接受值为："
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Stop-VMTrace](./Stop-VMTrace.md)"
+msgstr "[Stop-VMTrace](./Stop-VMTrace.md)"

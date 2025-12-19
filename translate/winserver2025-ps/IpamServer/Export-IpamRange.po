@@ -1,0 +1,249 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:54:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-IpamRange"
+msgstr "# 导出 Ipam 范围"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Exports all of the IP address ranges as a file or as an array of objects or "
+"both."
+msgstr "将所有IP地址范围导出为一个文件、一个对象数组，或者同时以这两种形式进行导出。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Export-IpamRange** cmdlet exports all of the IP address ranges of the "
+"specified address family from the computer running the IP Address Management"
+" (IPAM) server as a comma-separated values (.csv) file or as an array of "
+"Windows PowerShell® objects or both."
+msgstr ""
+"`Export-IpamRange` cmdlet 可以将指定地址族中的所有 IP 地址范围从运行 IP "
+"地址管理（IPAM）服务器的计算机中导出为逗号分隔值（.csv）文件、Windows PowerShell® 对象数组，或者同时以这两种格式进行导出。"
+
+msgid ""
+"At least one of the *Path* or *PassThru* parameters must be specified with the cmdlet.\n"
+"The object array returned using the *PassThru* parameter can be pipelined for further filtering, if required."
+msgstr ""
+"在使用该cmdlet时，必须至少指定一个*Path*或*PassThru*参数。通过*PassThru*参数返回的对象数组可以根据需要进行进一步处理（例如使用管道操作进行过滤）。"
+
+msgid ""
+"Unlike localized object export from IPAM client user interface (UI), the field header names and the enumeration value names of IP address range objects exported by Windows PowerShell have English names and are not be localized in the language used by the computer running the IPAM server.\n"
+"The field header names must follow the Windows PowerShell property naming conventions."
+msgstr ""
+"与从 IPAM 客户端用户界面（UI）导出的本地化对象不同，Windows PowerShell 导出的 IP "
+"地址范围对象的字段标题名称和枚举值名称都是英文的，并不会根据运行 IPAM 服务器的计算机的使用语言进行本地化处理。这些字段标题名称必须遵循 "
+"Windows PowerShell 的属性命名规范。"
+
+msgid ""
+"The format of date and time values of the exported objects are in localized "
+"format of the computer running the IPAM server and not in Universal Time "
+"Coordinate (UTC)."
+msgstr "导出对象的日期和时间值的格式采用的是运行 IPAM 服务器的计算机所使用的本地化格式，而不是协调世界时（UTC）格式。"
+
+msgid ""
+"The IPAM client UI and IPAM Windows PowerShell support interoperability between import and export functionality of English and localized .csv files, provided that the language and locale of importing and exporting computers running the IPAM servers and associated UI is the same.\n"
+"In other words a localized .csv file exported from IPAM client UI can be imported using IPAM Windows PowerShell and an English .csv file exported from IPAM Windows PowerShell can be imported from IPAM client UI provided the language and locale of the computers running the IPAM client and IPAM server are the same."
+msgstr ""
+"IPAM客户端界面（UI）和IPAM Windows "
+"PowerShell支持导入/导出功能的互操作性，无论是英文版本的.csv文件还是本地化版本的.csv文件。这一互操作性的前提是：执行IPAM服务器及相关用户界面的计算机的操作系统语言和区域设置（locale）必须保持一致。换句话说，从IPAM客户端界面导出的本地化.csv文件可以使用IPAM"
+" Windows PowerShell进行导入；同样，从IPAM Windows "
+"PowerShell导出的英文.csv文件也可以使用IPAM客户端界面进行导入。总之，只要运行IPAM客户端和IPAM服务器的计算机的操作系统语言及区域设置相同，就可以实现文件之间的顺利转换。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Export IPv4 address range to a file"
+msgstr "### 示例 1：将 IPv4 地址范围导出到文件中"
+
+msgid ""
+"This command outputs all of the IPv4 address ranges to the file named "
+"Ranges_v4.csv."
+msgstr "这个命令将所有的IPv4地址范围输出到名为Ranges_v4.csv的文件中。"
+
+msgid "### Example 2: Export IPv6 address range to a file"
+msgstr "### 示例 2：将 IPv6 地址范围导出到文件"
+
+msgid ""
+"This command outputs all of the IPv6 address ranges to the file "
+"Ranges_v6.csv, and overwrites the file if it already exists."
+msgstr "该命令会将所有的IPv6地址范围输出到文件Ranges_v6.csv中；如果该文件已经存在，则会覆盖原有的文件内容。"
+
+msgid "### Example 3: Export IPv4 address range"
+msgstr "### 示例 3：导出 IPv4 地址范围"
+
+msgid "This command outputs all of the IPv4 address range objects."
+msgstr "这个命令会输出所有的 IPv4 地址范围对象。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 4: Export over-utilized IPv4 address range objects"
+msgstr "### 示例 4：导出被过度使用的 IPv4 地址范围对象"
+
+msgid ""
+"This command filters all of the over-utilized IPv4 address range objects."
+msgstr "这个命令会过滤掉所有被过度使用的 IPv4 地址范围对象。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台上。"
+
+msgid ""
+"### Example 5: Export over-utilized IPv4 address range objects to a file"
+msgstr "### 示例 5：将使用过度的 IPv4 地址范围对象导出到文件中"
+
+msgid ""
+"This command filters all of the over-utilized IPv4 address range objects and"
+" exports the objects to the specified file name."
+msgstr "该命令会过滤所有使用过度（即被过度分配或频繁使用的）IPv4地址范围对象，并将这些对象导出到指定的文件中。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 6: Export address ranges from a file"
+msgstr "### 示例 6：从文件中导出地址范围"
+
+msgid ""
+"This command outputs all of the IPv4 address ranges in the file named "
+"C:\\Ranges.csv and also displays the exported ranges."
+msgstr "该命令会输出名为 C:\\Ranges.csv 的文件中所有的 IPv4 地址范围，并同时显示这些被导出的地址范围。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the address family of IP address range objects being exported.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要导出的 IP 地址范围对象的地址族。该参数的可接受值为："
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies that new .csv file generated by export must overwrite the existing"
+" .csv file (if present), as specified in the *Path* parameter."
+msgstr "指定通过导出生成的新.csv文件必须覆盖现有的.csv文件（如果存在的话），具体覆盖路径由*Path*参数指定。"
+
+msgid "Specifies the type of network of the given IP subnet."
+msgstr "指定给定IP子网所属的网络类型。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的该项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the literal path and name of the .csv file which are created "
+"during export."
+msgstr "指定在导出过程中生成的.csv文件的路径和名称。"
+
+msgid ""
+"This parameter is used to export all of the IP address range objects in a "
+".csv file format."
+msgstr "此参数用于将所有IP地址范围对象导出为.csv文件格式。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的最大操作数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前执行的 cmdlet，不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.Ipam.Commands.IpamIPRangePSObject[]"
+msgstr "### Microsoft.Windows.IpamCommands.IpamIPRangePSObject[]"
+
+msgid ""
+"This cmdlet returns an array of objects that contain an IPAM IP address "
+"range."
+msgstr "此cmdlet返回一个对象数组，其中包含IPAM IP地址范围。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Import-IpamRange](./Import-IpamRange.md)"
+msgstr "[Import-IpamRange](./Import-IpamRange.md)"

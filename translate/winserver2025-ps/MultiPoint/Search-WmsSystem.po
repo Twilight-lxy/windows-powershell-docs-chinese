@@ -1,0 +1,114 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:12:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Search-WmsSystem"
+msgstr "# Search-WmsSystem"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets MultiPoint servers or personal computers running MultiPoint Connector "
+"in the same network."
+msgstr ""
+"获取在同一网络中运行的多点服务器（MultiPoint Servers）或安装了多点连接器（MultiPoint Connector）的个人电脑。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Search-WmsSystem** cmdlet gets other MultiPoint servers or personal computers running MultiPoint Connector in the same network.\n"
+"The operation takes 10 seconds to complete."
+msgstr ""
+"`Search-WmsSystem` cmdlet 可用于查找在同一网络中运行的其他多点服务器（MultiPoint Server）或安装了 "
+"MultiPoint Connector 的个人计算机。该操作完成所需时间为 10 秒。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Search for MultiPoint servers on a subnet"
+msgstr "#### 示例 1：在子网中搜索多点服务器"
+
+msgid ""
+"The cmdlet gets peer Windows MultiPoint servers in the same subnet.\n"
+"The query takes 10 seconds to complete and uses the Microsoft Web Services on Devices API (WSDAPI) to discover peer MultiPoint servers in the network."
+msgstr ""
+"该cmdlet用于查找位于同一子网中的Windows多点服务器。查询完成需要大约10秒的时间，并使用Microsoft Web Services on "
+"Devices API（WSDAPI）来发现网络中的其他多点服务器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the managed system type.\n"
+"The acceptable values for this parameter are: PersonalComputers, MultiPointServers."
+msgstr ""
+"指定被管理的系统类型。该参数的可接受值为：PersonalComputers（个人电脑）和MultiPointServers（多点服务器）。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 `localhost`。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WmsSystem](./Add-WmsSystem.md)"
+msgstr "[Add-WmsSystem](./Add-WmsSystem.md)"
+
+msgid "[Get-WmsSystem](./Get-WmsSystem.md)"
+msgstr "[Get-WmsSystem](./Get-WmsSystem.md)"
+
+msgid "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+msgstr "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+
+msgid "[Restart-WmsSystem](./Restart-WmsSystem.md)"
+msgstr "[重启 WMS 系统](./Restart-WmsSystem.md)"
+
+msgid "[Set-WmsSystem](./Set-WmsSystem.md)"
+msgstr "[Set-WmsSystem](./Set-WmsSystem.md)"
+
+msgid "[Stop-WmsSystem](./Stop-WmsSystem.md)"
+msgstr "[Stop-WmsSystem](./Stop-WmsSystem.md)"

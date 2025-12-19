@@ -1,0 +1,95 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:02:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-MsmqQueueManagerACL"
+msgstr "# Set-MsmqQueueManagerACL"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies the access rights of a queue manager."
+msgstr "修改队列管理器的访问权限。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-MsmqQueueManagerACL** cmdlet modifies the access rights of the local queue manager.\n"
+"This cmdlet returns the updated **MsmqQueueManagerAcl** object."
+msgstr ""
+"`Set-MsmqQueueManagerACL` cmdlet 用于修改本地队列管理器的访问权限。该 cmdlet 会返回更新后的 "
+"`MsmqQueueManagerAcl` 对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify access rights for the local queue manager"
+msgstr "### 示例 1：修改本地队列管理器的访问权限"
+
+msgid "This command modifies the access rights of the local queue manager."
+msgstr "此命令会修改本地队列管理器的访问权限。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of permissions that this cmdlet grants to a user account or group.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定此 cmdlet 授予用户账户或组的权限数组。该参数的可接受值为："
+
+msgid ""
+"Specifies the user account or group whose permissions the cmdlet changes."
+msgstr "指定该cmdlet要更改权限的用户账户或组。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上该cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-MsmqQueueManagerACL](./Get-MsmqQueueManagerACL.md)"
+msgstr "[Get-MsmqQueueManagerACL](./Get-MsmqQueueManagerACL.md)"

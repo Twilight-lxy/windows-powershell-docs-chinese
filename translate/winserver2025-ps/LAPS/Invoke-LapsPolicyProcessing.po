@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:03:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Causes Windows Local Administrator Password Solution (LAPS) to process the "
+"currently configured policy."
+msgstr "这会导致 Windows 本地管理员密码解决方案（LAPS）处理当前配置的政策。"
+
+msgid "# Invoke-LapsPolicyProcessing"
+msgstr "# 调用LapsPolicyProcessing函数"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Causes Windows Local Administrator Password Solution (LAPS) to process the currently configured\n"
+"policy."
+msgstr "这会导致 Windows 本地管理员密码解决方案（LAPS）处理当前配置的政策。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Invoke-LapsPolicyProcessing` cmdlet tells LAPS to process the currently"
+" configured policy."
+msgstr "`Invoke-LapsPolicyProcessing` cmdlet 告诉 LAPS 处理当前配置的策略。"
+
+msgid ""
+"The cmdlet doesn't return detailed information about the results of the operation. See\n"
+"[Use Windows LAPS event logs](https://go.microsoft.com/fwlink/?linkid=2234103) for more information\n"
+"on querying the resultant event log entries to get specific information on the outcome of the\n"
+"operation."
+msgstr ""
+"该cmdlet不会返回有关操作结果的详细信息。有关如何查询事件日志条目以获取操作结果的具体信息的更多内容，请参阅[使用Windows "
+"LAPS事件日志](https://go.microsoft.com/fwlink/?linkid=2234103)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example starts the processing of the configured LAPS policy."
+msgstr "这个示例启动了对已配置的LAPS策略的处理流程。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Windows LAPS Overview](https://go.microsoft.com/fwlink/?linkid=2233901)"
+msgstr "[Windows LAPS概述](https://go.microsoft.com/fwlink/?linkid=2233901)"

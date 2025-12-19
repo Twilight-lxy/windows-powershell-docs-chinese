@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:39:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-IISCommitDelay"
+msgstr "# 停止 IIS 提交延迟（Stop-IISCommitDelay）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Instructs the IIS configuration system to resume the commitment of changes."
+msgstr "指示 IIS 配置系统恢复对更改的提交（即让这些更改生效）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Stop-IISCommitDelay** cmdlet instructs the Internet Information "
+"Services (IIS) configuration system to resume the commitment of changes."
+msgstr ""
+"`Stop-IISCommitDelay` cmdlet 命令用于指示 Internet Information Services (IIS) "
+"配置系统恢复对更改的提交（即应用这些更改）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Commit configuration changes"
+msgstr "### 示例 1：提交配置更改"
+
+msgid ""
+"This command commits the configuration changes made since the **Start-"
+"IISCommitDelay** cmdlet was executed."
+msgstr "此命令会提交自从执行 **Start-IISCommitDelay** cmdlet 以来所做的配置更改。"
+
+msgid "### Example 2: Discard configuration changes"
+msgstr "### 示例 2：忽略配置更改"
+
+msgid ""
+"This command discards the configuration changes made since the **Start-"
+"IISCommitDelay** cmdlet was executed."
+msgstr "此命令会撤销自执行 **Start-IISCommitDelay** cmdlet 以来所做的配置更改。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet commits the changes if True; Otherwise, if False, "
+"the cmdlet discards the changes."
+msgstr "如果值为 `True`，则表示该cmdlet会应用这些更改；否则（如果值为 `False`），则该cmdlet会丢弃这些更改。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.Boolean"
+msgstr "### System.Boolean"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Start-IISCommitDelay](./Start-IISCommitDelay.md)"
+msgstr "[Start-IISCommitDelay](./Start-IISCommitDelay.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

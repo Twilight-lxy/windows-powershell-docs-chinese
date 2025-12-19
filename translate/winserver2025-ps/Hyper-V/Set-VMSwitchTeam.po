@@ -1,0 +1,166 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:20:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMSwitchTeam"
+msgstr "# Set-VMSwitchTeam"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Configures a virtual switch team."
+msgstr "配置一个虚拟交换机团队。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### SwitchName_NetAdapterName (Default)"
+msgstr "### SwitchName_NetAdapterName（默认值）"
+
+msgid "### SwitchName_NetAdapterInterfaceDescription"
+msgstr "### SwitchName_NetAdapterInterfaceDescription"
+
+msgid "### SwitchObject_NetAdapterInterfaceDescription"
+msgstr "### SwitchObject_NetAdapterInterfaceDescription"
+
+msgid "### SwitchObject_NetAdapterName"
+msgstr "### SwitchObject_NetAdapterName"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The **Set-VMSwitchTeam** cmdlet configures a virtual switch team."
+msgstr "`Set-VMSwitchTeam` cmdlet 用于配置虚拟交换机团队（virtual switch team）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Configure a switch team to user dynamic load balancing"
+msgstr "#### 示例 1：配置交换机团队以实现用户动态负载均衡"
+
+msgid ""
+"This command configures the switch team named SwitchTeam07 to use a dynamic "
+"load balancing algorithm."
+msgstr "此命令配置名为 SwitchTeam07 的交换机团队使用动态负载均衡算法。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts that run this cmdlet.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个运行此cmdlet的Hyper-"
+"V主机。可以使用NetBIOS名称、IP地址或完全限定的域名进行识别。默认值为本地计算机。若要明确指定本地计算机，可使用“localhost”或点（.）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the load balancing algorithm that this switch team uses.\n"
+"The acceptable values for this parameter are: Dynamic and HyperVPort.\n"
+"The default value is Dynamic."
+msgstr "指定该交换机组所使用的负载均衡算法。该参数的可接受值为：Dynamic 和 HyperVPort。默认值为 Dynamic。"
+
+msgid ""
+"Specifies an array of names of virtual switches that this cmdlet configures "
+"for teaming."
+msgstr "指定一个虚拟交换机名称数组，该cmdlet将使用这些交换机来进行组队（teaming）配置。"
+
+msgid ""
+"Specifies an array of interface descriptions of the virtual network adapters that this cmdlet includes in the switch team.\n"
+"This value replaces the existing members."
+msgstr "指定一个接口描述数组，用于描述该cmdlet将包含在交换机团队中的虚拟网络适配器。此值会替换现有的成员。"
+
+msgid ""
+"Specifies an array of names of the virtual network adapters that this cmdlet includes in the switch team.\n"
+"This value replaces the existing members."
+msgstr "指定一个虚拟网络适配器名称数组，该cmdlet会将这些适配器包含到交换机团队中。此值将替换现有的成员。"
+
+msgid ""
+"Indicates that this cmdlet returns the "
+"**Microsoft.HyperV.PowerShell.VMSwitch** object that it configures."
+msgstr "表示此cmdlet会返回它所配置的`Microsoft.HyperV.PowerShell.VMSwitch`对象。"
+
+msgid ""
+"Specifies the teaming mode.\n"
+"Currently, the only option is SwitchIndependent."
+msgstr "指定团队协作模式。目前，唯一可选的模式是 SwitchIndependent。"
+
+msgid ""
+"Specifies an array of virtual switches that this cmdlet configures for teaming.\n"
+"To obtain a **VMSwitch** object, use the **Get-VMSwitch** cmdlet."
+msgstr ""
+"指定一组虚拟交换机，该cmdlet将用于配置这些交换机的协作功能。要获取一个**VMSwitch**对象，请使用**Get-VMSwitch** "
+"cmdlet。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMSwitch"
+msgstr "### Microsoft.HyperV.PowerShell.VMSwitch"
+
+msgid ""
+"This cmdlet returns a **VMSwitch** object, if you specify the **Passthru** "
+"parameter."
+msgstr "如果你指定了 **Passthru** 参数，此 cmdlet 会返回一个 **VMSwitch** 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VMSwitchTeam](./Get-VMSwitchTeam.md)"
+msgstr "[Get-VMSwitchTeam](./Get-VMSwitchTeam.md)"
+
+msgid "[Get-VMSwitch](./Get-VMSwitch.md)"
+msgstr "[Get-VMSwitch](./Get-VMSwitch.md)"

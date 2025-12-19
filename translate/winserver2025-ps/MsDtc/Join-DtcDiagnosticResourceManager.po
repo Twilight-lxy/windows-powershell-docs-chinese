@@ -1,0 +1,115 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:44:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Join-DtcDiagnosticResourceManager"
+msgstr "# Join-DtcDiagnostic ResourceManager"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enlists a diagnostic Resource Manager for a transaction object."
+msgstr "为事务对象分配一个用于诊断的资源管理器（Diagnostic Resource Manager）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Join-DtcDiagnosticResourceManager** cmdlet enlists a diagnostic Resource Manager (RM) for a specified transaction object.\n"
+"The transaction first needs to be sent to the RM."
+msgstr ""
+"`Join-DtcDiagnostic ResourceManager` cmdlet 为指定的事务对象注册一个诊断资源管理器（Resource "
+"Manager，简称 RM）。首先需要将该事务发送到资源管理器中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enlist a new diagnostic transaction"
+msgstr "### 示例 1：创建一个新的诊断事务"
+
+msgid ""
+"The first command creates a transaction by using the **New-"
+"DtcDiagnosticTransaction** cmdlet, and then stores that transaction in the "
+"**$Transaction** variable."
+msgstr ""
+"第一个命令使用 `New-DtcDiagnosticTransaction` cmdlet 创建一个事务，然后将该事务存储在 "
+"`$Transaction` 变量中。"
+
+msgid ""
+"The second command enlists the transaction stored in **$Transaction** to a "
+"diagnostic resource manager."
+msgstr "第二个命令将存储在 `$Transaction` 变量中的交易信息提交给诊断资源管理器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the host name of the computer on which the RM runs.\n"
+"If you do not specify a host name, this cmdlet uses the name of the local computer."
+msgstr "指定运行RM（Remote Management）程序的计算机的主机名。如果您未指定主机名，此cmdlet将使用本地计算机的名称。"
+
+msgid ""
+"Specifies the listening port of the test RM.\n"
+"If you do not specify a port number, this cmdlet uses the name of the local computer."
+msgstr "指定测试RM（Remote Management）的监听端口。如果您没有指定端口号，此cmdlet会使用本地计算机的名称作为监听端口。"
+
+msgid "Specifies the transaction object on which to enlist the RM."
+msgstr "指定用于将RM（资源管理器）添加到其中的交易对象。"
+
+msgid ""
+"Indicates that this cmdlet makes a volatile enlistment.\n"
+"If you do not specify this parameter, the cmdlet makes a durable enlistment."
+msgstr "这表示该 cmdlet 会创建一个“临时的”（易变的）注册记录。如果您不指定此参数，cmdlet 将创建一个“持久的”（稳定的）注册记录。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Start-DtcDiagnosticResourceManager](./Start-"
+"DtcDiagnosticResourceManager.md)"
+msgstr ""
+"[Start-DtcDiagnostic ResourceManager](./Start-"
+"DtcDiagnosticResourceManager.md)"
+
+msgid ""
+"[Stop-DtcDiagnosticResourceManager](./Stop-DtcDiagnosticResourceManager.md)"
+msgstr ""
+"[Stop-DtcDiagnostic ResourceManager](./Stop-DtcDiagnosticResourceManager.md)"
+
+msgid "[New-DtcDiagnosticTransaction](./New-DtcDiagnosticTransaction.md)"
+msgstr "[New-DtcDiagnosticTransaction](./New-DtcDiagnosticTransaction.md)"

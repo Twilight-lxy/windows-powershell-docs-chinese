@@ -1,0 +1,146 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:43:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "Removes an assignable device from a virtual machine host."
+msgstr "从虚拟机主机中移除可分配的设备。"
+
+msgid "# Remove-VMHostAssignableDevice"
+msgstr "# 删除 VMHost 可分配的设备"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes a device assigned to a virtual machine (VM) host."
+msgstr "从分配给虚拟机（VM）主机的设备中移除该设备。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Path (Default)"
+msgstr "### 路径（默认值）"
+
+msgid "### Object"
+msgstr "### 对象"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Remove-VMHostAssignableDevice` cmdlet removes a device that is assigned to a virtual machine\n"
+"host. Depending on the parameters specified, you can remove devices by providing either the\n"
+"instance or location path of the device."
+msgstr ""
+"`Remove-VMHostAssignableDevice` cmdlet "
+"用于移除分配给虚拟机主机的设备。根据所指定的参数，您可以通过提供设备的实例路径或位置路径来删除该设备。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example removes the device with the specified instance path from the resource pool named\n"
+"**MyResourcePool**."
+msgstr "这个示例会从名为 **MyResourcePool** 的资源池中移除具有指定实例路径的设备。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession)\n"
+"or [Get-CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如 [New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-"
+"CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts from which the assignable devices are to be removed. NetBIOS\n"
+"names, IP addresses, and fully qualified domain names are allowed. The default is the local\n"
+"computer. Use localhost or a dot (`.`) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个Hyper-"
+"V主机，将从这些主机上移除可分配的设备。允许使用NetBIOS名称、IP地址和完全合格的域名作为标识。默认值是本地计算机。可以使用`localhost`或点（`.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action. The default is the\n"
+"current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the device object to be removed. You can get this object using\n"
+"`Get-VMHostAssignableDevice`."
+msgstr "指定要移除的设备对象。您可以使用 `Get-VMHostAssignableDevice` 来获取该对象。"
+
+msgid "Specifies the Device Instance path in the host machine."
+msgstr "指定主机上的设备实例路径。"
+
+msgid "Specifies the location path to the assignable device."
+msgstr "指定可分配设备的路径位置。"
+
+msgid ""
+"Specifies the name of the resource pool from which to remove an assignable "
+"device."
+msgstr "指定要从其中移除可分配设备的资源池的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.HyperV.PowerShell.VMHostAssignableDevice[]"
+msgstr "### Microsoft.HyperV POWERShell.VMHost assignableDevice[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-VMHostAssignableDevice](add-vmhostassignabledevice.md)"
+msgstr "[Add-VMHostAssignableDevice](add-vmhostassignabledevice.md)"
+
+msgid "[Get-VMHostAssignableDevice](get-vmhostassignabledevice.md)"
+msgstr "[Get-VMHostAssignableDevice](get-vmhostassignabledevice.md)"
+
+msgid "[Dismount-VMHostAssignableDevice](dismount-vmhostassignabledevice.md)"
+msgstr ""
+"[Dismount-VMHost assignableDevice](dismount-vmhostassignabledevice.md)"
+
+msgid "[Mount-VMHostAssignableDevice](mount-vmhostassignabledevice.md)"
+msgstr "[Mount-VMHost assignableDevice](mount-vmhostassignabledevice.md)"

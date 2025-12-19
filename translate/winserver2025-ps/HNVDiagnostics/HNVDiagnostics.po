@@ -1,0 +1,141 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:35:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 帮助管理 Windows 和 Windows Server 技术。"
+
+msgid "# HNVDiagnostics Module"
+msgstr "# HNVDiagnostics模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid "This table lists the Hyper-V Network Virtualization (HNV) cmdlets."
+msgstr "这个表格列出了Hyper-V网络虚拟化（HNV）相关的cmdlet命令。"
+
+msgid "## HNVDiagnostics Cmdlets"
+msgstr "## HNVDiagnosticsCmdlets"
+
+msgid "### [Debug-SlbDatapath](./Debug-SlbDatapath.md)"
+msgstr "### [Debug-SlbDatapath](./Debug-SlbDatapath.md)"
+
+msgid "Collects logs from an SLB MUX and DIP host."
+msgstr "从SLB MUX和DIP主机收集日志。"
+
+msgid ""
+"### [Debug-VirtualMachineQueueOperation](./Debug-"
+"VirtualMachineQueueOperation.md)"
+msgstr ""
+"### [Debug-VirtualMachineQueueOperation](./Debug-"
+"VirtualMachineQueueOperation.md)"
+
+msgid "Debugs VMQ/VMMQ traffic."
+msgstr "调试VMQ/VMMQ流量。"
+
+msgid "### [Disable-MuxEchoResponder](./Disable-MuxEchoResponder.md)"
+msgstr "### [Disable-MuxEchoResponder](./Disable-MuxEchoResponder.md)"
+
+msgid "Disables an ICMP echo responder."
+msgstr "禁用 ICMP 回显响应功能。"
+
+msgid "### [Enable-MuxEchoResponder](./Enable-MuxEchoResponder.md)"
+msgstr "### [Enable-MuxEchoResponder](./Enable-MuxEchoResponder.md)"
+
+msgid "Enables an ICMP echo responder."
+msgstr "启用 ICMP 回显响应功能。"
+
+msgid "### [Get-CustomerRoute](./Get-CustomerRoute.md)"
+msgstr "### [Get-CustomerRoute](./Get-CustomerRoute.md)"
+
+msgid "Gets CA routes."
+msgstr "获取CA路由信息。"
+
+msgid ""
+"### [Get-NetworkControllerVipResource](./Get-"
+"NetworkControllerVipResource.md)"
+msgstr ""
+"### [Get-NetworkControllerVipResource](./Get-"
+"NetworkControllerVipResource.md)"
+
+msgid "Gets a VIP resource."
+msgstr "获得一份VIP资源。"
+
+msgid "### [Get-PACAMapping](./Get-PACAMapping.md)"
+msgstr "### [Get-PACAMapping](./Get-PACAMapping.md)"
+
+msgid "Gets virtual network mapping."
+msgstr "获取虚拟网络映射信息。"
+
+msgid "### [Get-ProviderAddress](./Get-ProviderAddress.md)"
+msgstr "### [Get-ProviderAddress](./Get-ProviderAddress.md)"
+
+msgid "Gets the provider address for a server."
+msgstr "获取服务器的提供者地址。"
+
+msgid "### [Get-VipHostMapping](./Get-VipHostMapping.md)"
+msgstr "### [Get-VipHostMapping](./Get-VipHostMapping.md)"
+
+msgid "Gets VIP host mapping."
+msgstr "可以获得VIP主机映射功能。"
+
+msgid "### [Get-VMNetworkAdapterPortId](./Get-VMNetworkAdapterPortId.md)"
+msgstr "### [Get-VMNetworkAdapterPortId](./Get-VMNetworkAdapterPortId.md)"
+
+msgid "Gets the VFP/VSwitch port ID."
+msgstr "获取 VFP/VSwitch 端口 ID。"
+
+msgid "### [Get-VMSwitchExternalPortId](./Get-VMSwitchExternalPortId.md)"
+msgstr "### [Get-VMSwitchExternalPortId](./Get-VMSwitchExternalPortId.md)"
+
+msgid ""
+"Gets the VFP/VSwitch port ID for the external port for a virtual switch."
+msgstr "获取虚拟交换机的外部端口的VFP/VSwitch端口ID。"
+
+msgid "### [Test-DipHostReachability](./Test-DipHostReachability.md)"
+msgstr "### [Test-DipHostReachability](./Test-DipHostReachability.md)"
+
+msgid "Tests whether DIPs can be reached."
+msgstr "测试是否可以访问分布式身份证明（DIPs）。"
+
+msgid "### [Test-EncapOverheadSettings](./Test-EncapOverheadSettings.md)"
+msgstr "### [Test-EncapOverheadSettings](./Test-EncapOverheadSettings.md)"
+
+msgid "Tests whether a NIC supports encapsulation overhead."
+msgstr "测试网卡（NIC）是否支持封装开销。"
+
+msgid ""
+"### [Test-LogicalNetworkConnection](./Test-LogicalNetworkConnection.md)"
+msgstr "### [测试逻辑网络连接](./Test-LogicalNetworkConnection.md)"
+
+msgid "Tests a logical network connection."
+msgstr "测试逻辑网络连接是否正常。"
+
+msgid ""
+"### [Test-LogicalNetworkSupportsJumboPacket](./Test-"
+"LogicalNetworkSupportsJumboPacket.md)"
+msgstr ""
+"### [Test-LogicalNetworkSupportsJumboPacket](./Test-"
+"LogicalNetworkSupportsJumboPacket.md)"
+
+msgid "Tests whether a jumbo packet can be sent between two nodes."
+msgstr "测试是否可以在两个节点之间发送一个较大的数据包（即“jumbo packet”）。"
+
+msgid "### [Test-VipReachability](./Test-VipReachability.md)"
+msgstr "### [Test-VipReachability](./Test-VipReachability.md)"
+
+msgid "Tests whether DIPs are reachable."
+msgstr "测试DIP（Design Independent Packages）是否可以访问。"
+
+msgid ""
+"### [Test-VirtualNetworkConnection](./Test-VirtualNetworkConnection.md)"
+msgstr ""
+"### [Test-VirtualNetworkConnection](./Test-VirtualNetworkConnection.md)"
+
+msgid "Tests a virtual network connection."
+msgstr "测试虚拟网络连接。"

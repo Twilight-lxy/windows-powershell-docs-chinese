@@ -1,0 +1,68 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:59:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# kds module"
+msgstr "# kds模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Key Distribution Service\n"
+"(KDS)-specific cmdlets. It lists the cmdlets in alphabetical order."
+msgstr ""
+"这个参考资料提供了所有与密钥分发服务（Key Distribution "
+"Service，简称KDS）相关的cmdlet的描述和语法说明，并将这些cmdlet按字母顺序进行了排列。"
+
+msgid "## kds Cmdlets"
+msgstr "## kds Cmdlets"
+
+msgid "### [Add-KdsRootKey](./Add-KdsRootKey.md)"
+msgstr "### [Add-KdsRootKey](./Add-KdsRootKey.md)"
+
+msgid ""
+"Generates a new root key for the Microsoft Group KdsSvc within Active "
+"Directory."
+msgstr "为 Microsoft Group KdsSvc 在 Active Directory 中生成一个新的根密钥。"
+
+msgid "### [Clear-KdsCache](./Clear-KdsCache.md)"
+msgstr "### [Clear-KdsCache](./Clear-KdsCache.md)"
+
+msgid "Clears the group key cache of the local computer."
+msgstr "清除本地计算机的组键缓存。"
+
+msgid "### [Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+msgstr "### [Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+
+msgid ""
+"Retrieves the current configuration of the Microsoft Group KdsSvc from "
+"Active Directory."
+msgstr "从 Active Directory 中检索 Microsoft Group KdsSvc 的当前配置信息。"
+
+msgid "### [Get-KdsRootKey](./Get-KdsRootKey.md)"
+msgstr "### [Get-KdsRootKey](./Get-KdsRootKey.md)"
+
+msgid ""
+"Retrieves a list of root key values stored by the Microsoft Group KdsSvc."
+msgstr "检索由 Microsoft Group KdsSvc 存储的所有根键值的对列表。"
+
+msgid "### [Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+msgstr "### [Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+
+msgid "Sets the configuration of Microsoft Group KdsSvc."
+msgstr "设置 Microsoft Group KdsSvc 的配置信息。"
+
+msgid "### [Test-KdsRootKey](./Test-KdsRootKey.md)"
+msgstr "### [Test-KdsRootKey](./Test-KdsRootKey.md)"
+
+msgid "Tests the root key configuration."
+msgstr "测试根键配置。"

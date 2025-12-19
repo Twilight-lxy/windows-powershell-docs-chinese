@@ -1,0 +1,97 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:54:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-VMEventing"
+msgstr "# 禁用虚拟机事件通知（Disable-VMEventing）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables virtual machine eventing."
+msgstr "禁用虚拟机事件通知功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Disable-VMEventing** cmdlet disables virtual machine eventing on a Hyper-V host or hosts.\n"
+"Virtual machine eventing keeps Hyper-V PowerShell objects updated without polling the virtual machine host.\n"
+"Virtual machine eventing is enabled by default."
+msgstr ""
+"`Disable-VMEventing` 这个 cmdlet 用于禁用 Hyper-V "
+"主机上的虚拟机事件通知功能。虚拟机事件通知功能可以在不轮询虚拟机主机的情况下，确保 Hyper-V PowerShell "
+"对象的实时性（即保持这些对象信息的最新状态）。该功能默认是启用的。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "#### 示例 1"
+
+msgid ""
+"Disables virtual machine eventing, suppressing the confirmation prompt."
+msgstr "禁用虚拟机事件通知功能，并省略确认提示。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which virtual machine eventing is to be disabled.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个需要禁用虚拟机事件记录功能的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行配置。默认值为本地计算机。可以通过使用 `localhost` 或点号（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies that the confirmation prompt is to be suppressed.\n"
+"(This is useful in scripting the cmdlet.)"
+msgstr "指定应禁用确认提示。（这在为该 cmdlet 编写脚本时非常有用。）"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

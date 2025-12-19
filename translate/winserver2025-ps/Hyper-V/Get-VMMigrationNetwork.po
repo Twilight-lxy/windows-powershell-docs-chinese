@@ -1,0 +1,122 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:12:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMMigrationNetwork"
+msgstr "# Get-VMMigrationNetwork"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the networks added for migration to one or more virtual machine hosts."
+msgstr "获取用于迁移到一个或多个虚拟机主机的网络信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-VMMigrationNetwork** cmdlet gets the networks added for migration "
+"to one or more virtual machine hosts."
+msgstr "`Get-VMMigrationNetwork` cmdlet 可获取为迁移到一个或多个虚拟机主机而添加的网络信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Gets all networks added for migration to the local virtual machine host."
+msgstr "获取所有需要迁移到的本地虚拟机主机上的网络信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Gets all networks added for migration to the local virtual machine host "
+"having a priority of 8."
+msgstr "获取所有要迁移到本地虚拟机主机上的网络，并为这些网络设置优先级为 8。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Gets all networks added for migration having a subnet starting with 192.168."
+msgstr "获取所有用于迁移的网络信息，这些网络包含以“192.168.”开头的子网。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"获得的会话对象）。默认情况下，该 cmdlet 会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the networks added for migration are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个 Hyper-V 主机，用于从中检索用于迁移的网络信息。允许使用 NetBIOS 名称、IP "
+"地址和完全限定域名作为主机标识。默认值为本地计算机。可以使用 `localhost` 或`.` 明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the priority of the networks to be retrieved."
+msgstr "指定要检索的网络的优先级。"
+
+msgid ""
+"Specifies a string representing an IPv4 or IPv6 subnet mask which identifies"
+" the networks to be retrieved."
+msgstr "指定一个字符串，该字符串表示一个IPv4或IPv6子网掩码，用于标识需要检索的网络。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMMigrationNetwork"
+msgstr "### Microsoft.HyperV POWERShell.VMMigrationNetwork"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

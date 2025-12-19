@@ -1,0 +1,134 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:17:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMRemoteFx3dVideoAdapter"
+msgstr "# 获取-VMRemoteFx3dVideoAdapter"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the RemoteFX video adapter of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的RemoteFX视频适配器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-VMRemoteFx3dVideoAdapter** cmdlet gets the RemoteFX video adapter "
+"of a virtual machine or snapshot."
+msgstr "`Get-VMRemoteFx3dVideoAdapter` cmdlet 可用于获取虚拟机或快照的 RemoteFX 视频适配器。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Gets the RemoteFX adapter from virtual machine TestVM."
+msgstr "从虚拟机 TestVM 中获取 RemoteFX 适配器。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "Gets the RemoteFx adapter from virtual machine TestVM."
+msgstr "从虚拟机TestVM中获取RemoteFx适配器。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Gets the RemoteFx adapter from snapshot Before applying updates of virtual "
+"machine TestVM."
+msgstr "在应用虚拟机TestVM的更新之前，从快照中获取RemoteFx适配器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the RemoteFX video adapter is to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于获取 RemoteFX 视频适配器的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全 Qualified "
+"Domain Name（FQDN）来进行选择。默认值是本地计算机。可以通过使用 `localhost` 或点号（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the virtual machine whose RemoteFX video adapter is to be "
+"retrieved."
+msgstr "指定要获取其RemoteFX视频适配器的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine whose RemoteFX video adapter is to"
+" be retrieved."
+msgstr "指定要获取其RemoteFX视频适配器的虚拟机的名称。"
+
+msgid ""
+"Specifies the snapshot whose RemoteFX video adapter is to be retrieved."
+msgstr "指定要获取其RemoteFX视频适配器信息的快照。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMRemoteFx3DVideoAdapter"
+msgstr "### Microsoft.HyperV.PowerShell.VMRemoteFx3DVideoAdapter"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

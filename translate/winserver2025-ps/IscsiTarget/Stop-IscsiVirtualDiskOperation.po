@@ -1,0 +1,141 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:57:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Stop-IscsiVirtualDiskOperation"
+msgstr "# 停止 IscsiVirtualDiskOperation 操作"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Stops a long-running operation in progress on an iSCSI virtual disk."
+msgstr "停止在 iSCSI 虚拟磁盘上正在进行的长时间运行操作。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DevicePath (Default)"
+msgstr "### DevicePath（默认值）"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Stop-IscsiVirtualDiskOperation** cmdlet stops a long-running operation in progress on an iSCSI virtual disk.\n"
+"If you cancel an operation, that operation might finish before the cancellation takes effect.\n"
+"Always re-enumerate or recheck objects affected by an operation after this cmdlet finishes."
+msgstr ""
+"`Stop-IscsiVirtualDiskOperation` cmdlet 用于停止正在 iSCSI "
+"虚拟磁盘上进行的长时间运行的操作。如果您取消某个操作，该操作可能会在取消生效之前完成。在该 cmdlet 完成后，务必重新枚举或重新检查受影响的对象。"
+
+msgid ""
+"Stopping a create operation can remove a created file, or can leave the file"
+" intact but not zero it out."
+msgstr "停止创建操作可以删除已生成的文件，或者保持文件原样而不将其内容置零。"
+
+msgid ""
+"After you stop an operation, the size of an existing file to be increased can appear larger until the next time you restart the iSCSI service, restart the disk, or disable and re-enable the disk.\n"
+"Some data can be lost."
+msgstr ""
+"在您停止某个操作后，需要扩展大小的现有文件的大小可能会暂时显得更大，这种情况会持续到下一次重新启动iSCSI服务、重新启动磁盘，或者禁用并重新启用磁盘为止。在此过程中，部分数据可能会丢失。"
+
+msgid ""
+"If you stop an operation, the virtual disk may be in an inconsistent state, "
+"and require a new rollback."
+msgstr "如果您停止了一个操作，虚拟磁盘可能会处于不一致的状态，此时需要执行一次新的回滚操作。"
+
+msgid ""
+"This cmdlet accepts values for the *ComputerName* and *Path* parameters by "
+"using as pipeline input the *InputObject* parameter."
+msgstr "这个cmdlet通过使用*InputObject*参数作为管道输入，来接受*ComputerName*和*Path*参数的值。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Stop a virtual disk operation"
+msgstr "### 示例 1：停止虚拟磁盘操作"
+
+msgid ""
+"This command stops an operation in progress on the virtual disk at the "
+"specified location."
+msgstr "此命令会停止虚拟磁盘上指定位置正在进行的操作。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此cmdlet在远程计算机上运行，则指定远程计算机的名称或IP地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "如果此 cmdlet 在集群配置上运行，则指定集群资源组的网络名称或集群节点的名称。"
+
+msgid ""
+"If you do not specify a value for this parameter, the cmdlet uses the local "
+"computer."
+msgstr "如果您没有为该参数指定值，cmdlet 将使用本地计算机。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接远程计算机时所需的身份凭证（用户名和密码）。"
+
+msgid ""
+"Specifies an **IscsiVirtualDisk** object.\n"
+"You can get an **IscsiVirtualDisk** object by using the **Get-IscsiVirtualDisk** cmdlet."
+msgstr ""
+"指定一个 **IscsiVirtualDisk** 对象。您可以使用 **Get-IscsiVirtualDisk** cmdlet 来获取一个 "
+"**IscsiVirtualDisk** 对象。"
+
+msgid ""
+"Specifies the path of the virtual hard disk (VHDX) file that is associated with the iSCSI virtual disk.\n"
+"The cmdlet stops the long-running operation on the iSCSI virtual disk that you specify."
+msgstr "指定与 iSCSI 虚拟磁盘关联的虚拟硬盘（VHDX）文件的路径。此cmdlet会停止对所指定的iSCSI虚拟磁盘进行的正在运行的操作。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"
+msgstr "[Get-IscsiVirtualDisk](./Get-IscsiVirtualDisk.md)"

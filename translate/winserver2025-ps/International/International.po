@@ -1,0 +1,190 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:42:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# International Module"
+msgstr "# 国际模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"You can use the International Settings cmdlets to control the language that "
+"is used for various elements of the user interface (UI)."
+msgstr "你可以使用“国际设置”（International Settings）cmdlet来控制用户界面（UI）中各个元素所使用的语言。"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all International"
+" Settings-specific cmdlets. It lists the cmdlets in alphabetical order."
+msgstr ""
+"这个参考资料提供了所有与“国际设置”（International "
+"Settings）相关的cmdlet的描述及其语法信息，并将这些cmdlet按字母顺序进行了排列。"
+
+msgid "## International Cmdlets"
+msgstr "## 国际命令集（International Cmdlets）"
+
+msgid ""
+"### [Get-WinAcceptLanguageFromLanguageListOptOut](./Get-"
+"WinAcceptLanguageFromLanguageListOptOut.md)"
+msgstr ""
+"### [Get-WinAcceptLanguageFromLanguageListOptOut](./Get-"
+"WinAcceptLanguageFromLanguageListOptOut.md)"
+
+msgid ""
+"Gets the HTTP Accept Language from the Language List opt-out setting for the"
+" current user account."
+msgstr "从当前用户账户的语言列表设置中获取HTTP Accept Language（即用户支持的编程语言）。"
+
+msgid ""
+"### [Get-WinCultureFromLanguageListOptOut](./Get-"
+"WinCultureFromLanguageListOptOut.md)"
+msgstr ""
+"### [Get-WinCultureFromLanguageListOptOut](./Get-"
+"WinCultureFromLanguageListOptOut.md)"
+
+msgid ""
+"Gets the Culture from the language list opt-out setting for the current user"
+" account."
+msgstr "从当前用户账户的语言列表设置中获取相应的“文化信息”（即与该语言相关的文化背景或习俗等数据）。"
+
+msgid ""
+"### [Get-WinDefaultInputMethodOverride](./Get-"
+"WinDefaultInputMethodOverride.md)"
+msgstr ""
+"### [Get-WinDefaultInputMethodOverride](./Get-"
+"WinDefaultInputMethodOverride.md)"
+
+msgid ""
+"Gets the default input method override setting for the current user account."
+msgstr "获取当前用户账户的默认输入法覆盖设置。"
+
+msgid "### [Get-WinHomeLocation](./Get-WinHomeLocation.md)"
+msgstr "### [Get-WinHomeLocation](./Get-WinHomeLocation.md)"
+
+msgid ""
+"Gets the Windows GeoID home location setting for the current user account."
+msgstr "获取当前用户账户的 Windows GeoID 家庭位置设置。"
+
+msgid "### [Get-WinLanguageBarOption](./Get-WinLanguageBarOption.md)"
+msgstr "### [Get-WinLanguageBarOption](./Get-WinLanguageBarOption.md)"
+
+msgid ""
+"Gets the language bar mode and language bar type for the current user "
+"account."
+msgstr "获取当前用户账户的语言栏模式和语言栏类型。"
+
+msgid "### [Get-WinSystemLocale](./Get-WinSystemLocale.md)"
+msgstr "### [Get-WinSystemLocale](./Get-WinSystemLocale.md)"
+
+msgid "Gets the System-locale setting for the current computer."
+msgstr "获取当前计算机的系统区域设置（System-locale）。"
+
+msgid "### [Get-WinUILanguageOverride](./Get-WinUILanguageOverride.md)"
+msgstr "### [Get-WinUILanguageOverride](./Get-WinUILanguageOverride.md)"
+
+msgid ""
+"Gets the Windows UI language override setting for the current user account."
+msgstr "获取当前用户账户的 Windows 用户界面语言覆盖设置。"
+
+msgid "### [Get-WinUserLanguageList](./Get-WinUserLanguageList.md)"
+msgstr "### [Get-WinUserLanguageList](./Get-WinUserLanguageList.md)"
+
+msgid "Gets the language list for the current user account."
+msgstr "获取当前用户账户对应的语言列表。"
+
+msgid "### [New-WinUserLanguageList](./New-WinUserLanguageList.md)"
+msgstr "### [New-WinUserLanguageList](./New-WinUserLanguageList.md)"
+
+msgid "Instantiates a new language list object."
+msgstr "创建一个新的语言列表对象。"
+
+msgid "### [Set-Culture](./Set-Culture.md)"
+msgstr "### [Set-Culture](./Set-Culture.md)"
+
+msgid "Sets the user culture for the current user account."
+msgstr "设置当前用户账户的用户文化（即用户所使用的编程语言、编码规范等）。"
+
+msgid ""
+"### [Set-WinAcceptLanguageFromLanguageListOptOut](./Set-"
+"WinAcceptLanguageFromLanguageListOptOut.md)"
+msgstr ""
+"### [Set-WinAcceptLanguageFromLanguageListOptOut](./Set-"
+"WinAcceptLanguageFromLanguageListOptOut.md)"
+
+msgid ""
+"Sets the HTTP Accept Language from the Language List opt-out setting for the"
+" current user account."
+msgstr "根据当前用户账户的语言列表“退出”（opt-out）设置来设置HTTP接受语言（Accept Language）。"
+
+msgid ""
+"### [Set-WinCultureFromLanguageListOptOut](./Set-"
+"WinCultureFromLanguageListOptOut.md)"
+msgstr ""
+"### [Set-WinCultureFromLanguageListOptOut](./Set-"
+"WinCultureFromLanguageListOptOut.md)"
+
+msgid ""
+"Sets the Culture from language list opt out setting for the current user "
+"account."
+msgstr "将当前用户账户的语言列表设置中的“排除选项”设置为相应的文化值（即语言对应的文化设定）。"
+
+msgid ""
+"### [Set-WinDefaultInputMethodOverride](./Set-"
+"WinDefaultInputMethodOverride.md)"
+msgstr ""
+"### [Set-WinDefaultInputMethodOverride](./Set-"
+"WinDefaultInputMethodOverride.md)"
+
+msgid "Sets the default input method override for the current user account."
+msgstr "为当前用户账户设置默认的输入法覆盖选项。"
+
+msgid "### [Set-WinHomeLocation](./Set-WinHomeLocation.md)"
+msgstr "### [Set-WinHomeLocation](./Set-WinHomeLocation.md)"
+
+msgid "Sets the home location setting for the current user account."
+msgstr "设置当前用户账户的首选位置（即默认访问的位置）。"
+
+msgid "### [Set-WinLanguageBarOption](./Set-WinLanguageBarOption.md)"
+msgstr "### [Set-WinLanguageBarOption](./Set-WinLanguageBarOption.md)"
+
+msgid "Sets the language bar type and mode for the current user account."
+msgstr "设置当前用户账户的语言栏类型和模式。"
+
+msgid "### [Set-WinSystemLocale](./Set-WinSystemLocale.md)"
+msgstr "### [Set-WinSystemLocale](./Set-WinSystemLocale.md)"
+
+msgid "Sets the system locale for the current computer."
+msgstr "设置当前计算机的系统区域设置（locale）。"
+
+msgid "### [Set-WinUILanguageOverride](./Set-WinUILanguageOverride.md)"
+msgstr "### [Set-Win UILanguageOverride](./Set-WinUILanguageOverride.md)"
+
+msgid ""
+"Sets the Windows UI language override setting for the current user account."
+msgstr "为当前用户账户设置Windows用户界面语言覆盖选项。"
+
+msgid "### [Set-WinUserLanguageList](./Set-WinUserLanguageList.md)"
+msgstr "### [Set-WinUserLanguageList](./Set-WinUserLanguageList.md)"
+
+msgid ""
+"Sets the language list and associated properties for the current user "
+"account."
+msgstr "为当前用户账户设置语言列表及相关属性。"
+
+msgid ""
+"### [Copy-UserInternationalSettingsToSystem](./Copy-"
+"UserInternationalSettingsToSystem.md)"
+msgstr "### [将用户的国际设置复制到系统中](./Copy-UserInternationalSettingsToSystem.md)"
+
+msgid ""
+"Copies the current user's international settings to the Welcome screen and "
+"system accounts and/or new user accounts."
+msgstr "将当前用户的国际设置复制到欢迎界面以及系统账户和/或新用户账户中。"

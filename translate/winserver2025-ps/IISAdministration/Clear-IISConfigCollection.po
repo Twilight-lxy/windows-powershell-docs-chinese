@@ -1,0 +1,109 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:28:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-IISConfigCollection"
+msgstr "# 清除 IIS 配置集合"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Clears an IIS configuration collection."
+msgstr "清除一个 IIS 配置集合。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Clear-IISConfigCollection** cmdlet clears a given Internet Information Services (IIS) collection by removing all the elements and putting a clear tag, which is generally \\<clear\\>.\n"
+"This prevents from the collection to inherit collection elements from higher levels, if any."
+msgstr ""
+"`Clear-IISConfigCollection` cmdlet 用于清除指定的 Internet Information Services "
+"(IIS) 集合，方法是通过删除所有元素并添加一个 `<clear>` 标签来实现。这样做可以防止该集合从上级集合继承任何元素（如果存在的话）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Clear the defaultDocument settings for Default Web Site, "
+"which inherits from Server level and defined in applicationHost.config."
+msgstr ""
+"### 示例 1：清除默认网站的 `defaultDocument` 设置。这些设置是从服务器级别继承而来的，并在 "
+"`applicationHost.config` 文件中定义的。"
+
+msgid ""
+"This command adds lines in web.config which is the configuration file of "
+"Default Web Site."
+msgstr "这个命令会在 `web.config` 文件中添加一些行，而 `web.config` 是默认网站的配置文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the **ConfigurationCollection** object for which the collection elements will be cleared.\n"
+"If a **ConfigurationCollection** is previously obtained and assigned to a variable, you cannot pass it to this cmdlet through the pipeline because the pipeline engine will try to enumerate, passing **ConfigurationElement** objects instead.\n"
+"Try either passing the whole **Get-IISConfigCollection** cmdlet into the pipeline or use it as a parameter for correct results."
+msgstr ""
+"指定要清除其集合元素的 **ConfigurationCollection** 对象。如果事先已经获取了一个 "
+"**ConfigurationCollection** 并将其赋值给某个变量，那么就无法通过管道将该对象传递给此 "
+"cmdlet，因为管道引擎会尝试对其进行遍历，并传递出 **ConfigurationElement** 对象。请尝试将整个 **Get-"
+"IISConfigCollection** cmdlet 传递到管道中，或者将其作为参数使用，以获得正确的结果。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"about_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Web.Administration.ConfigurationElementCollection"
+msgstr "### Microsoft.Web ADMINISTRATION.ConfigurationElementCollection"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IISConfigCollection](./Get-IISConfigCollection.md)"
+msgstr "[Get-IISConfigCollection](./Get-IISConfigCollection.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

@@ -1,0 +1,83 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:57:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-MsmqQueueManager"
+msgstr "# Get-MsmqQueueManager"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets a queue manager."
+msgstr "获取一个队列管理器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-MsmqQueueManager** cmdlet gets a **QueueManager** object.\n"
+"The **QueueManager** object contains state information for the local queue manager.\n"
+"The cmdlet gets the properties of the **QueueManager** object by using native Message Queuing (also known as MSMQ) APIs."
+msgstr ""
+"`Get-MsmqQueueManager` cmdlet 可以获取一个 `QueueManager` 对象。该 `QueueManager` "
+"对象包含了本地队列管理器的状态信息。此 cmdlet 通过使用 Microsoft Message Queuing（简称 MSMQ）的原生 API "
+"来获取 `QueueManager` 对象的属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the queue manager"
+msgstr "#### 示例 1：获取队列管理器"
+
+msgid "This command gets the queue manager."
+msgstr "这个命令用于获取队列管理器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-MsmqQueueManager](./Set-MsmqQueueManager.md)"
+msgstr "[Set-MsmqQueueManager](./Set-MsmqQueueManager.md)"

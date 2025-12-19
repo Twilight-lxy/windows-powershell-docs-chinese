@@ -1,0 +1,151 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:35:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-VM"
+msgstr "# 新虚拟机"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a new virtual machine."
+msgstr "创建一个新的虚拟机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### No VHD (Default)"
+msgstr "### 无需使用 VHD（默认设置）"
+
+msgid "### New VHD"
+msgstr "### 新的VHD"
+
+msgid "### Existing VHD"
+msgstr "### 现有的VHD文件"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The `New-VM` cmdlet creates a new virtual machine."
+msgstr "`New-VM` cmdlet 用于创建一个新的虚拟机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example creates a new virtual machine named `VM01` that has 512 MB of "
+"memory."
+msgstr "这个示例创建了一台名为“VM01”的新虚拟机，该虚拟机拥有512MB的内存。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example creates a virtual machine named `VM01` that has 1 GB of memory and that is connected to\n"
+"a new 40 GB virtual hard disk that uses the `VHDX` format."
+msgstr "这个示例创建了一台名为“VM01”的虚拟机，该虚拟机拥有1GB的内存，并连接到一个新的40GB虚拟硬盘上，该硬盘使用的是“VHDX”格式。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example creates a virtual machine named `VM01` that has 1 GB of memory and connects it to an\n"
+"existing virtual hard disk that uses the `VHDX` format."
+msgstr "这个示例创建了一台名为 `VM01` 的虚拟机，该虚拟机拥有 1GB 的内存，并将其连接到一个使用 `VHDX` 格式的现有虚拟硬盘上。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example asks for credentials, then creates a virtual machine named `VM01`, which has 2 GB of\n"
+"memory, on the server named `HostServer01`."
+msgstr ""
+"这个示例会要求用户提供凭据，然后在名为 `HostServer01` 的服务器上创建一台名为 `VM01` 的虚拟机。该虚拟机拥有 2GB 的内存。"
+
+msgid "### Example 5"
+msgstr "### 示例 5"
+
+msgid ""
+"This example creates a virtual machine named `VM01`. The machine doesn't have any VHD disks and is\n"
+"set to boot from a CD."
+msgstr "这个示例创建了一台名为“VM01”的虚拟机。该虚拟机没有任何VHD磁盘，并且设置为从CD启动。"
+
+msgid "### Example 6"
+msgstr "### 示例 6"
+
+msgid ""
+"This example creates a virtual machine named `VM01`. The machine has the same generation and amount\n"
+"of assigned memory as the existing machine named `PreviousVM` and connects to the same network\n"
+"switch."
+msgstr ""
+"这个示例创建了一台名为 `VM01` 的虚拟机。这台虚拟机与现有的名为 `PreviousVM` "
+"的虚拟机属于同一代产品，分配的内存量也相同，并且连接到了同一个网络交换机上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "以后台作业的方式运行该cmdlet。"
+
+msgid ""
+"Specifies the device to use as the boot device for the new virtual machine. "
+"Acceptable values are:"
+msgstr "指定用于新虚拟机启动的设备。可选值包括："
+
+msgid "Specifies the path to a virtual hard disk file."
+msgstr "指定虚拟硬盘文件的路径。"
+
+msgid ""
+"Specifies the version during the VM creation process. See,\n"
+"[Get-VMHostSupportedVersion](/powershell/module/hyper-v/get-vmhostsupportedversion) for supported\n"
+"VM versions on a given host."
+msgstr ""
+"在创建虚拟机（VM）的过程中指定版本。有关给定主机上支持的虚拟机版本，请参阅 [Get-"
+"VMHostSupportedVersion](/powershell/module/hyper-v/get-vmhost "
+"SupportedVersion)。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine"
+msgstr "### Microsoft.HyperV.PowerShell.VirtualMachine"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

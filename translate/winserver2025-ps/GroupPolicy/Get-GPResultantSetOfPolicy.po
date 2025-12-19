@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:52:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-GPResultantSetOfPolicy"
+msgstr "# Get-GPResultantSetOfPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets and writes the RSoP information for a user, a computer, or both to a "
+"file."
+msgstr "将用户、计算机或两者的RSoP（ Responsibility Statement of Product，产品责任声明）信息读写到文件中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-GPResultantSetOfPolicy` cmdlet gets and writes the Resultant Set of Policy (RSoP)\n"
+"information for a user, a computer, or both to a file."
+msgstr ""
+"`Get-GPResultantSetOfPolicy` cmdlet 可以获取用户或计算机的策略结果集（Resultant Set of "
+"Policy，简称 RSoP）信息，并将这些信息写入文件中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Generate a report for the default user that is running on the"
+" current session"
+msgstr "### 示例 1：为当前会话中运行的默认用户生成一份报告"
+
+msgid ""
+"This command generates a report for the default user that is running on the current session. The\n"
+"report is generated in XML format, and is written to the specified file."
+msgstr "此命令为当前会话中运行的默认用户生成一份报告。该报告以XML格式生成，并被写入指定的文件中。"
+
+msgid "### Example 2: Generate a report for the specified computer"
+msgstr "### 示例 2：为指定的计算机生成报告"
+
+msgid ""
+"This command generates a report for the specified computer. The computer is specified by its fully\n"
+"qualified domain name (FQDN), `computer-08.contoso.com`. The report is generated in `XML` format,\n"
+"and is written to the specified file."
+msgstr ""
+"此命令会为指定的计算机生成一份报告。该计算机是通过其完全限定域名（FQDN）`computer-08.contoso.com`来识别的。报告以`XML`格式生成，并会被写入到指定的文件中。"
+
+msgid ""
+"### Example 3: Generate a report for the specified user in HTML format and "
+"save it to the specified file"
+msgstr "### 示例 3：为指定的用户生成一份 HTML 格式的报告，并将其保存到指定的文件中"
+
+msgid ""
+"This command generates a report for the specified user `Contoso\\PattiFul` in `HTML` format and saves\n"
+"it to the specified file."
+msgstr "该命令为指定的用户 `Contoso\\PattiFul` 生成一份报告（格式为 HTML），并将其保存到指定的文件中。"
+
+msgid ""
+"### Example 4: Generate a report for the specified computer and user in HTML"
+" format and save it to the specified file"
+msgstr "### 示例 4：为指定的计算机和用户生成一份 HTML 格式的报告，并将其保存到指定的文件中"
+
+msgid ""
+"This command generates a report for the specified computer `contoso.com\\computer-08` and user\n"
+"`SomeUser` in `HTML` format and saves it to the specified file."
+msgstr ""
+"此命令为指定的计算机 `contoso.com\\computer-08` 和用户 `SomeUser` 生成一份报告，格式为 "
+"HTML，并将其保存到指定的文件中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the computer for which to generate the report. You can specify the computer\n"
+"name in one of the following formats:"
+msgstr "指定要为其生成报告的计算机的名称。您可以使用以下格式之一来指定计算机名称："
+
+msgid ""
+"Specifies the path to the report file; for instance, "
+"`c:\\Reports\\GpRsopReport.xml`."
+msgstr "指定报告文件的路径；例如：`c:\\Reports\\GpRsopReport.xml`。"
+
+msgid ""
+"You can also refer to the **Path** parameter by its built-in alias, **FilePath**. For more information,\n"
+"see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用**Path**参数的内置别名**FilePath**来引用它。有关更多信息，请参阅[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the format of the RSoP report. You must specify either `Html` (for HTML format) or `Xml`\n"
+"(for XML format). These values are not case sensitive."
+msgstr "指定RSoP报告的格式。您必须选择`Html`（HTML格式）或`Xml`（XML格式）之一。这些选项不区分大小写。"
+
+msgid "The acceptable values for this parameter are: `Html` or `Xml`."
+msgstr "此参数的可接受值为：`Html` 或 `Xml`。"
+
+msgid ""
+"Specifies the user name of the user for which to generate the report. You can specify the user name\n"
+"in one of the following formats:"
+msgstr "指定要生成报告的用户名称。您可以使用以下格式之一来输入用户名称："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Input Data）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet does not take any object as input."
+msgstr "这个cmdlet不接受任何对象作为输入。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.GPRsop"
+msgstr "### Microsoft GROUPPolicy.GPRsop"
+
+msgid "This cmdlet returns an RSoP object."
+msgstr "此cmdlet返回一个RSoP对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

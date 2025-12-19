@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:13:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Add-HgsAttestationCIPolicy"
+msgstr "# Add-HgsAttestationCIPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Authorizes a trusted code integrity policy to be used by hosts attesting "
+"against HGS."
+msgstr "授权可信的代码完整性策略可供主机使用，以验证是否符合 HGS（Hardware Security Module）的标准。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Console"
+msgstr "### 控制台"
+
+msgid "### File"
+msgstr "### 文件"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-HgsAttestationCIPolicy** cmdlet adds an attestation policy based on a trusted code integrity policy to HGS.\n"
+"When HGS is configured to use TPM attestation, hosts will need to use one of the code integrity policies registered with HGS to successfully pass attestation.\n"
+"Use the **New-CIPolicy** and **ConvertFrom-CIPolicy** cmdlets to create a binary code integrity policy that can be passed to this cmdlet."
+msgstr ""
+"`Add-HgsAttestationCIPolicy` cmdlet 根据一个受信任的代码完整性策略，为 HGS（Health Guarantee "
+"Service）添加相应的认证策略。当 HGS 配置为使用 TPM（Trusted Platform Module）进行认证时，主机需要使用已注册在 "
+"HGS 中的代码完整性策略之一才能成功通过认证过程。可以使用 `New-CIPolicy` 和 `ConvertFrom-CIPolicy` "
+"cmdlet 来创建一个二进制格式的代码完整性策略，并将其传递给 `Add-HgsAttestationCIPolicy` cmdlet。"
+
+msgid ""
+"HGS will not know which software is allowed or disallowed by your policy, nor will it know which policy rules (e.g. enforced CI, reboot actions) are configured in the policy.\n"
+"You should choose a descriptive name for your policy to ensure you know what your policy covers for future reference when reviewing authorized policies."
+msgstr ""
+"HGS不会知道你的安全策略允许或禁止使用哪些软件，也不会了解策略中配置了哪些规则（例如强制执行的代码检查流程、重启操作等）。你应该为你的安全策略选择一个具有描述性的名称，这样在将来审查已授权的安全策略时，就能清楚地知道该策略所涵盖的范围。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Adds the binary code integrity policy file to HGS and names the policy "
+"\"Windows Server 2016 Enforced CI Policy\""
+msgstr ""
+"将二进制代码完整性策略文件添加到 HGS（Hyper Graphics Service）中，并将该策略命名为“Windows Server 2016 "
+"强制执行的配置验证（CI）策略”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Byte array containing the contents of a binary code integrity policy file."
+msgstr "字节数组，包含二进制代码完整性策略文件的内容。"
+
+msgid "Friendly name for the code integrity policy."
+msgstr "代码完整性政策的友好名称（简称）。"
+
+msgid ""
+"Specifies the path of a file that contains the code integrity policy, in binary form.\n"
+"The file typically has a .p7b or .bin extension."
+msgstr "指定包含代码完整性策略文件的路径，该文件以二进制形式存储。此类文件通常具有.p7b或.bin扩展名。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### Byte[], System.String"
+msgstr "### Byte[]，System.String"
+
+msgid ""
+"This cmdlet accepts a code integrity policy as a **Byte** array or filename."
+msgstr "此cmdlet接受一个代码完整性策略，该策略可以以**字节**数组的形式提供，也可以通过文件名传递。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### AttestationPolicyInfo"
+msgstr "### AttestationPolicyInfo"
+
+msgid "This cmdlet returns attestation policy information."
+msgstr "此cmdlet返回身份验证策略信息。"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

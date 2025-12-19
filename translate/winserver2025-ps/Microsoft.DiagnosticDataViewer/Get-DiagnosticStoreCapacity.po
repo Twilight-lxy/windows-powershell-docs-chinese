@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:08:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Get-DiagnosticStoreCapacity"
+msgstr "# 获取诊断存储容量信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Fetches the current diagnostic store capacity.\n"
+"Parameter \\[-Size\\] returns the diagnostic store size capacity in megabytes.\n"
+"Parameter \\[-Time\\] returns the diagnostic store capacity in days.\n"
+"The default diagnostic data store size capacity is 1024 MB.\n"
+"The default time capacity is 30 days."
+msgstr ""
+"获取当前的诊断数据存储容量。参数 \\[-Size\\] 返回诊断数据存储的容量（单位：兆字节）。参数 \\[-Time\\] "
+"返回诊断数据存储的容量（单位：天）。默认的诊断数据存储容量为 1024 MB，默认的时间期限为 30 天。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The amount of Diagnostic Data history that can be shown through this tool is capped based on time in days and size in megabytes.\n"
+"Once either cap is reached (whichever comes first), diagnostic data is removed based on a first in first out order.\n"
+"For example, if the size cap is 1GB and the time cap is 30 days, then once the diagnostic data store has reached 1GB of history or the oldest record is 30 days old (whichever comes first), the oldest seen event is dropped."
+msgstr ""
+"通过该工具可以显示的诊断数据历史记录的数量受到时间（以天为单位）和数据大小（以兆字节为单位）的限制。一旦达到任一限制条件（以先到达的条件为准），诊断数据将按照“先进先出”的原则被删除。例如，如果数据大小的限制是"
+" 1GB，而时间的限制是 30 天，那么当诊断数据存储量达到 1GB 时，或者最旧的记录已经存在了 30 "
+"天（以先发生的情况为准），系统就会删除该最旧的事件记录。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "Get configured size capacity (megabytes) of the Diagnostic store."
+msgstr "获取诊断存储的配置大小（以兆字节为单位）。"
+
+msgid "### EXAMPLE 2"
+msgstr "### 示例 2"
+
+msgid "Get configured time capacity (hours) of the Diagnostic store."
+msgstr "获取诊断存储的配置时间容量（以小时为单位）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Get configured size capacity (megabytes) of the Diagnostic store."
+msgstr "获取诊断存储的配置大小（以兆字节为单位）。"
+
+msgid "Get configured time capacity (hours) of the Diagnostic store."
+msgstr "获取诊断存储的配置时间容量（以小时为单位）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于通用参数（about_CommonParameters）的文档（链接：http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.ManagementAutomation.SwitchParameter"
+
+msgid "Get configured size capacity (megabytes) of the Diagnostic store."
+msgstr "获取诊断存储的配置大小（以兆字节为单位）。"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.Management.Automation.SwitchParameter"
+
+msgid "Get configured time capacity (hours) of the Diagnostic store."
+msgstr "获取诊断存储的配置时间容量（以小时为单位）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "Requires Windows 10 version 17134 (1803) or higher"
+msgstr "需要 Windows 10 版本 17134（1803）或更高版本"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

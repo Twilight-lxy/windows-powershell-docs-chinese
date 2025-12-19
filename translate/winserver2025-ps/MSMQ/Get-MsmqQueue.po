@@ -1,0 +1,164 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:56:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-MsmqQueue"
+msgstr "# Get-MsmqQueue"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets message queues."
+msgstr "获取消息队列。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### All (Default)"
+msgstr "### 全部（默认设置）"
+
+msgid "### Journal"
+msgstr "### 期刊"
+
+msgid "### SubQueue"
+msgstr "### SubQueue"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-MsmqQueue** cmdlet gets an array of **MsmqQueue** objects.\n"
+"Each **MsmqQueue** object represents an existing private, public, or system queue.\n"
+"This cmdlet gets queues that are local to the computer where you run the cmdlet.\n"
+"If you do not specify parameters, this cmdlet gets all public, private, and system queues of the host computer."
+msgstr ""
+"`Get-MsmqQueue` cmdlet 用于获取一组 `MsmqQueue` 对象。每个 `MsmqQueue` "
+"对象代表一个现有的私有队列、公共队列或系统队列。该 cmdlet 会获取运行该 cmdlet "
+"的计算机上的所有队列；如果未指定参数，它将获取主机计算机上的所有公共队列、私有队列和系统队列。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get public, private, and system queues"
+msgstr "### 示例 1：获取公共队列、私有队列和系统队列"
+
+msgid ""
+"This command gets public, private, and system queues for the host computer."
+msgstr "这个命令可以获取主机计算机上的公共队列、私有队列和系统队列信息。"
+
+msgid "### Example 2: Get private queues"
+msgstr "#### 示例 2：获取私有队列"
+
+msgid ""
+"This command gets private queues that have names that start with the string "
+"Order for the host computer."
+msgstr "此命令用于获取主机计算机上名称以“Order”开头的私有队列。"
+
+msgid "### Example 3: Get private Journal queues"
+msgstr "### 示例 3：获取私有日志队列"
+
+msgid ""
+"This command gets private Journal queues that have names that start with the"
+" string Order for the host computer."
+msgstr "这个命令用于获取主机计算机上那些名称以字符串“Order”开头的私有日志队列（Journal queues）。"
+
+msgid "### Example 4: Get system Journal queues"
+msgstr "### 示例 4：获取系统日志队列"
+
+msgid "This command gets system Journal queues for the host computer."
+msgstr "这个命令用于获取主机计算机的系统日志队列（system journal queues）。"
+
+msgid "### Example 5: Get all local queues and their message count"
+msgstr "### 示例 5：获取所有本地队列及其消息数量"
+
+msgid ""
+"This command lists the message count for all queues on the host computer."
+msgstr "此命令会列出主机计算机上所有队列的消息数量。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet retrieves the Journal queue or queues that match "
+"the *Name* parameter."
+msgstr "表示此cmdlet会检索与*Name*参数匹配的日志队列（或多个队列）。"
+
+msgid ""
+"Specifies an array of names of queues.\n"
+"This parameter accepts wildcard characters.\n"
+"The default value is *."
+msgstr "指定一个队列名称数组。该参数支持通配符；默认值为 *。"
+
+msgid ""
+"Specifies a queue type.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定队列类型。该参数的可接受值为："
+
+msgid "The default value is PrivateAndPublic."
+msgstr "默认值是 PrivateAndPublic。"
+
+msgid ""
+"Specifies a subqueue object to get for the main queue.\n"
+"If the subqueue does not exist, the cmdlet creates it implicitly.\n"
+"The question mark (?) and asterisk (*) are not interpreted as wildcard characters, but as part of the subqueue name."
+msgstr ""
+"指定一个用于从主队列中获取数据的子队列对象。如果该子队列不存在，此cmdlet会隐式地创建它。问号（?）和星号（*）并不被视为通配符，而是子队列名称的一部分。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+msgstr "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+
+msgid "[New-MsmqQueue](./New-MsmqQueue.md)"
+msgstr "[New-MsmqQueue](./New-MsmqQueue.md)"
+
+msgid "[Receive-MsmqQueue](./Receive-MsmqQueue.md)"
+msgstr "[接收-MsmqQueue](./Receive-MsmqQueue.md)"
+
+msgid "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+msgstr "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+
+msgid "[Send-MsmqQueue](./Send-MsmqQueue.md)"
+msgstr "[Send-MsmqQueue](./Send-MsmqQueue.md)"
+
+msgid "[Set-MsmqQueue](./Set-MsmqQueue.md)"
+msgstr "[Set-MsmqQueue](./Set-MsmqQueue.md)"

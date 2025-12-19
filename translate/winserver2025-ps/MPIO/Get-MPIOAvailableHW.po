@@ -1,0 +1,156 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:34:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-MPIOAvailableHW"
+msgstr "# Get-MPIOAvailableHW"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Lists devices available to the system that can be managed by the MSDSM for "
+"MPIO."
+msgstr "列出系统中可用的设备，这些设备可以通过MSDSM进行MPIO管理。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-MPIOAvailableHW** cmdlet lists available hardware devices in the "
+"system that can be managed by the Microsoft Device Specific Module (MSDSM) "
+"for Multipath I/O (MPIO)."
+msgstr ""
+"`Get-MPIOAvailableHW` cmdlet 可以列出系统中可用的硬件设备，这些设备可以通过微软的设备特定模块（Microsoft "
+"Device Specific Module，简称 MSDSM）来管理，以实现多路径输入/输出（Multipath I/O，简称 MPIO）功能。"
+
+msgid ""
+"To add one of the devices to MSDSM supported hardware list, use the vendor "
+"identifier (ID) and product ID of the device that are outputs from this "
+"cmdlet as inputs for the **New-MSDSMSupportedHW** cmdlet."
+msgstr ""
+"要将某个设备添加到 MSDSM 支持的硬件列表中，请使用此 cmdlet 输出的设备供应商标识符（ID）和产品 ID 作为 **New-"
+"MSDSMSSupportedHW** cmdlet 的输入参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get connected multipath-capable devices"
+msgstr "#### 示例 1：获取支持多路径连接的设备"
+
+msgid ""
+"This example returns a list of multipath-capable devices currently connected"
+" to the system."
+msgstr "这个示例返回一个列表，其中包含了当前连接到系统的支持多路径功能的设备。"
+
+msgid "### Example 2: Get connected multipath-capable devices for a bus type"
+msgstr "### 示例 2：为某种总线类型获取支持多路径连接的设备"
+
+msgid ""
+"This example returns a list of multipath-capable devices currently connected"
+" to the system via iSCSI."
+msgstr "这个示例返回了一个列表，其中包含了当前通过 iSCSI 连接到系统的、支持多路径功能的设备。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此 cmdlet 作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。该 cmdlet "
+"会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用 `*-Job` 系列 "
+"cmdlet；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关 Windows "
+"PowerShell® 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Specifies the bus type via which the device is connected to the system.\n"
+"The acceptable values for this parameter are: iSCSI, SAS, and FibreChannel."
+msgstr "指定设备通过哪种总线类型连接到系统。该参数的允许取值为：iSCSI、SAS 和 FibreChannel。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies that the device is currently multipath enabled by Microsoft MPIO."
+msgstr "指定该设备当前已通过 Microsoft MPIO 启用了多路径功能。"
+
+msgid ""
+"Specifies whether the supported specification of the device is T10 SPC3 or a"
+" later version."
+msgstr "指定设备的支持规范是 T10 SPC3 还是后续版本。"
+
+msgid "Specifies the product ID of the device."
+msgstr "指定设备的产品ID。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令（cmdlet）的最大数量。如果省略此参数或输入值`0`，则Windows "
+"PowerShell®会根据计算机上正在运行的CIM命令的数量来计算该命令的最佳并发限制。这个并发限制仅适用于当前执行的命令，而不适用于整个会话或整个计算机。"
+
+msgid "Specifies the vendor ID of the device."
+msgstr "指定设备的供应商ID。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-MSDSMSupportedHW](./New-MSDSMSupportedHW.md)"
+msgstr "[新支持的硬件设备（适用于MSDSMS）](./New-MSDSMSSupportedHW.md)"

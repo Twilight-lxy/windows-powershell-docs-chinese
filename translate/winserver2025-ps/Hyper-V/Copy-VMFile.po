@@ -1,0 +1,141 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:53:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Copy-VMFile"
+msgstr "# 复制虚拟机文件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Copies a file to a virtual machine."
+msgstr "将一个文件复制到虚拟机中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The **Copy-VMFile** cmdlet copies a file to a virtual machine."
+msgstr "`Copy-VMFile` cmdlet 将一个文件复制到虚拟机中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example copies the file \"test.txt\" from the host operating system into the guest operating system of the virtual machine \"Test VM\".\n"
+"It will create the directory \"C:\\Temp\" inside the guest operating system if it does not exist already."
+msgstr ""
+"这个示例将文件“test.txt”从主机操作系统复制到虚拟机“Test "
+"VM”的客户机操作系统中。如果“C:\\Temp”目录尚不存在，系统会自动创建该目录。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "将此cmdlet作为后台作业运行。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies an array of Hyper-V hosts.\n"
+"The cmdlet copies the file to the hosts you specify."
+msgstr "指定一个Hyper-V主机的数组。此cmdlet会将文件复制到您指定的这些主机上。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Indicates that when the cmdlet copies a file, it creates folders if the "
+"folder does not already exist."
+msgstr "这表示当该cmdlet复制文件时，如果目标文件夹尚不存在，它会创建相应的文件夹。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies a path.\n"
+"The cmdlet copies the file to the destination path."
+msgstr "指定一个路径。该cmdlet会将文件复制到目标路径。"
+
+msgid "Specifies the type of a file source."
+msgstr "用于指定文件源的类型。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies an array of virtual machine objects by name.\n"
+"The cmdlet copies files to the virtual machines you specify."
+msgstr "按名称指定一组虚拟机对象数组。此cmdlet会将文件复制到您指定的虚拟机上。"
+
+msgid ""
+"Specifies a path.\n"
+"The cmdlet copies the file from the source path."
+msgstr "用于指定路径。该cmdlet会从源路径复制文件。"
+
+msgid ""
+"Specifies an array of virtual machine objects.\n"
+"The cmdlet copies files to the virtual machines you specify.\n"
+"To obtain a virtual machine object, use the **Get-VM** cmdlet."
+msgstr "指定一个虚拟机对象的数组。该cmdlet会将文件复制到您指定的虚拟机上。要获取虚拟机对象，请使用**Get-VM** cmdlet。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

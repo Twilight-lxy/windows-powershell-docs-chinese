@@ -1,0 +1,240 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:03:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMFirmware"
+msgstr "# 设置虚拟机固件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the firmware configuration of a virtual machine."
+msgstr "用于设置虚拟机的固件配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMFirmware"
+msgstr "### 虚拟机固件（VM Firmware）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-VMFirmware** cmdlet sets the firmware configuration of a "
+"Generation 2 virtual machine."
+msgstr "`Set-VMFirmware` cmdlet 用于设置第 2 代虚拟机的固件配置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example enables secure boot functionality on the virtual machine \"Test"
+" VM\"."
+msgstr "这个示例使得虚拟机“Test VM”具备了安全启动（secure boot）的功能。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example sets the virtual machine \"Test VM\" to boot off of the VM network adapter object stored in $vmNetworkAdapter.\n"
+"This object was acquired using get-VMNetworkAdapter."
+msgstr ""
+"这个示例将虚拟机“Test VM”设置为从存储在 $vmNetworkAdapter 中的虚拟机网络适配器对象启动。该对象是通过使用 get-"
+"VMNetworkAdapter 命令获取的。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Sets the boot order for the virtual machine \"Test VM\".\n"
+"$vmNetworkAdapter contains a VM Network Adapter object (acquired using get-VMNetworkAdapter) and $vmHardDiskDrive contains a VM hard disk object (acquired using get-VMHardDiskDrive).\n"
+"Any existing boot entries not specified by this command will be removed from the virtual machine."
+msgstr ""
+"为虚拟机“Test VM”设置启动顺序。$vmNetworkAdapter 包含一个虚拟机网络适配器对象（通过 get-VMNetworkAdapter"
+" 获取），而 $vmHardDiskDrive 包含一个虚拟机硬盘对象（通过 get-VMHardDiskDrive "
+"获取）。此命令未指定的任何现有启动项将从虚拟机中删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of devices.\n"
+"The boot order determines the order of the devices from which to boot.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定一个设备数组。启动顺序决定了从哪些设备开始进行启动。该参数的可接受值包括："
+
+msgid "  -- VMBootSource"
+msgstr "-- VMBootSource"
+
+msgid "  -- VMNetworkAdapter"
+msgstr "-- VMNetworkAdapter"
+
+msgid "  -- HardDiskDrive"
+msgstr "-- 硬盘驱动器"
+
+msgid "  -- DVDDrive"
+msgstr "-- DVDDrive"
+
+msgid ""
+"The VMBootSource value describes a boot entry in firmware nonvolatile Random"
+" Access Memory (NVRAM)."
+msgstr "VMBootSource值描述了固件中非易失性随机存取存储器（NVRAM）中的一个启动条目。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies the names of the Hyper-V hosts whose firmware configuration you "
+"want to modify."
+msgstr "指定您想要修改其固件配置的 Hyper-V 主机的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Specifies the console mode type for the virtual machine.\n"
+"This parameter allows a virtual machine to run without graphical user interface."
+msgstr "指定虚拟机的控制台模式类型。该参数允许虚拟机在无需图形用户界面的情况下运行。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies whether to enable secure boot.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定是否启用安全启动功能。该参数的可接受值为："
+
+msgid "  -- On"
+msgstr "-- 进行中"
+
+msgid "  -- Off"
+msgstr "-- 关闭"
+
+msgid ""
+"Secure boot uses a public key infrastructure that protects the integrity of "
+"the operating system."
+msgstr "安全启动（Secure Boot）采用公钥基础设施来保护操作系统的完整性。"
+
+msgid ""
+"Specifies the device from which to attempt to boot from first.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定首先尝试从哪个设备启动。该参数的可接受值为："
+
+msgid "  -- VMBootSource"
+msgstr "-- VMBootSource"
+
+msgid "  -- VMNetworkAdapter"
+msgstr "-- VMNetworkAdapter"
+
+msgid "  -- HardDiskDrive"
+msgstr "-- 硬盘驱动器"
+
+msgid "  -- DVDDrive"
+msgstr "-- DVDDrive"
+
+msgid "The VMBootSource value describes a boot entry in firmware NVRAM."
+msgstr "VMBootSource值描述了固件NVRAM中的一个启动条目（即用于系统启动的信息）。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the behavior of the virtual machine after a start failure.\n"
+"For a value of On, if the virtual machine fails to start correctly from a device, the virtual machine is paused."
+msgstr "指定虚拟机在启动失败后的行为。当设置为“On”时，如果虚拟机无法从设备中成功启动，则该虚拟机会被暂停。"
+
+msgid "Specifies the IP protocol version to use during a network boot."
+msgstr "指定在网络启动过程中使用的 IP 协议版本。"
+
+msgid ""
+"Specifies the name of the secure boot template.\n"
+"If secure boot is enabled, you must have a valid secure boot template for the guest operating system to start."
+msgstr ""
+"指定安全启动模板（secure boot "
+"template）的名称。如果启用了安全启动功能，则必须拥有一个有效的安全启动模板，才能让客户操作系统（guest operating "
+"system）正常启动。"
+
+msgid "Specifies the ID of the secure boot template."
+msgstr "指定安全启动模板的ID。"
+
+msgid ""
+"Specifies the virtual machine objects for which want to modify the firmware configuration.\n"
+"To obtain a virtual machine object, use the **Get-VM** cmdlet."
+msgstr "指定需要修改固件配置的虚拟机对象。要获取一个虚拟机对象，请使用 **Get-VM** cmdlet。"
+
+msgid ""
+"Specifies an array of virtual machine firmware configurations.\n"
+"The cmdlet sets the firmware configurations you specify."
+msgstr "指定一个虚拟机固件配置数组。该cmdlet会设置您所指定的固件配置。"
+
+msgid ""
+"Specifies an array of names of virtual machines for which you want to modify"
+" the firmware configuration."
+msgstr "指定一个虚拟机名称数组，您希望修改这些虚拟机的固件配置。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.Powershell.VMFirmware"
+msgstr "### Microsoft.HyperV.Powershell.VMFirmware"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VMFirmware](./Get-VMFirmware.md)"
+msgstr "[Get-VMFirmware](./Get-VMFirmware.md)"

@@ -1,0 +1,114 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:32:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Uninstall-HgsServer"
+msgstr "# 卸载 HgsServer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a local node from a Host Guardian Service and from the domain."
+msgstr "从Host Guardian服务中以及该域名中删除一个本地节点。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Uninstall-HgsServer** cmdlet removes a local node from a Host Guardian"
+" Service (HGS)."
+msgstr "`Uninstall-HgsServer` cmdlet 用于从 Host Guardian Service (HGS) 中删除本地节点。"
+
+msgid ""
+"This cmdlet makes the following configuration changes in order to remove the"
+" HGS configuration from the additional HGS node:"
+msgstr "此 cmdlet 会进行以下配置更改，以便从额外的 HGS 节点中删除 HGS 配置："
+
+msgid ""
+"For more information about the scenario terms, see [Security and "
+"Assurance](https://go.microsoft.com/fwlink/?LinkId=699209)."
+msgstr ""
+"有关该场景术语的更多信息，请参阅[安全与保障](https://go.microsoft.com/fwlink/?LinkId=699209)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove the node from HGS"
+msgstr "### 示例 1：从 HGS 中删除该节点"
+
+msgid ""
+"This example removes the node from an existing HGS setup.\n"
+"If the second command removes the final node, then it also destroys the cluster."
+msgstr ""
+"这个示例用于从现有的HGS（High Availability "
+"Storage）设置中删除某个节点。如果第二个命令删除了最后一个节点，那么整个集群也会被销毁。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不会询问用户的确认。"
+
+msgid ""
+"Specifies the Active Directory domain administrator credentials for the "
+"primary HGS server."
+msgstr "指定用于主HGS服务器的Active Directory域管理员凭据。"
+
+msgid ""
+"Specifies the password for the local administrator account when the computer"
+" is no longer a domain controller."
+msgstr "当计算机不再作为域控制器时，用于指定本地管理员账户的密码。"
+
+msgid ""
+"Indicates that a reboot is initiated automatically after running this "
+"command."
+msgstr "表示在执行此命令后，系统会自动重新启动。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[HGS Server Cmdlets](./hgsserver.md)"
+msgstr "[HGS 服务器 cmdlet](./hgsserver.md)"

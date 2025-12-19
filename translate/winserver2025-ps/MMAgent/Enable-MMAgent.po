@@ -1,0 +1,206 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:32:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-MMAgent"
+msgstr "# 启用 MMAgent"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Enables application launch prefetching, operation recorder API "
+"functionality, page combining, and application prelaunch."
+msgstr "启用应用程序启动前的预加载功能、操作记录器API功能、页面合并功能以及应用程序预先启动的功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-MMAgent** cmdlet enables any or all of the following features:\n"
+"- Application launch prefetching\n"
+"- Operation recorder API functionality\n"
+"- Page combining\n"
+"- Application prelaunching"
+msgstr ""
+"`Enable-MMAgent` cmdlet 可以启用以下一个或多个功能：  \n"
+"- 应用程序启动前的预加载  \n"
+"- 操作记录器（Operation Recorder）API 功能  \n"
+"- 页面合并（Page Combining）  \n"
+"- 应用程序启动前的预处理（Application Prelaunching）"
+
+msgid ""
+"Specify the *ApplicationLaunchPrefetching* parameter to help improve application startup performance.\n"
+"Application launch prefetching causes the memory manager agent to monitor the data and code that applications access.\n"
+"The memory management agent then uses that information to preload the data and code into physical memory for subsequent startups."
+msgstr ""
+"请指定 *ApplicationLaunchPrefetching* "
+"参数，以帮助提升应用程序的启动性能。应用程序启动预加载功能会促使内存管理代理监控应用程序所访问的数据和代码。随后，内存管理代理会利用这些信息将这些数据和代码预先加载到物理内存中，以便在后续启动时能够更快地使用它们。"
+
+msgid ""
+"Specify the *ApplicationPreLaunch* parameter to help improve application startup performance.\n"
+"Application prelaunch can speculatively launch applications that the user is likely to use in the near future, thus reducing application switch time."
+msgstr ""
+"请指定 *ApplicationPreLaunch* "
+"参数，以帮助提升应用程序的启动性能。应用程序预启动功能可以预先加载用户近期可能使用到的应用程序，从而减少应用程序切换所需的时间。"
+
+msgid ""
+"Specify the *OperationAPI* parameter to help speed up operations that repeatedly access the same file data.\n"
+"Enabling this feature exposes the Windows prefetching mechanism as a public interface."
+msgstr ""
+"请指定 *OperationAPI* 参数，以帮助加速那些需要反复访问相同文件数据的操作。启用此功能后，Windows "
+"的预加载机制将以公开接口的形式被暴露出来。"
+
+msgid ""
+"Specify the *PageCombining* parameter to help reduce the physical memory that the operating system uses.\n"
+"Page combining causes the memory manager to periodically combine pages in physical memory that have identical content."
+msgstr ""
+"请指定*PageCombining*参数，以帮助减少操作系统使用的物理内存。页面合并（Page "
+"Combining）功能会使内存管理器定期将物理内存中内容相同的页面合并在一起。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable application launch prefetching"
+msgstr "### 示例 1：启用应用程序启动时的预取功能"
+
+msgid ""
+"This command enables application launch prefetching on the local computer."
+msgstr "此命令允许在本地计算机上启用应用程序启动时的预加载功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Indicates that the cmdlet enables application launch prefetching."
+msgstr "表示该cmdlet启用了应用程序启动前的预加载功能。"
+
+msgid ""
+"If you do not specify this parameter, application launch prefetching remains"
+" in its current state, either enabled or disabled."
+msgstr "如果您不指定此参数，应用程序启动时的预加载功能将保持当前状态（无论是已启用还是已禁用）。"
+
+msgid "Indicates that the cmdlet enables application prelaunch."
+msgstr "表示该 cmdlet 可以实现应用程序的预启动功能。"
+
+msgid ""
+"If you do not specify this parameter, application prelaunch remains in its "
+"current state, either enabled or disabled."
+msgstr "如果您不指定此参数，应用程序在预启动时的状态将保持不变，无论是启用还是禁用。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Indicates that this cmdlet uses memory compression."
+msgstr "表示此 cmdlet 使用了内存压缩技术。"
+
+msgid ""
+"Indicates that the cmdlet enables operation recorder API functionality."
+msgstr "表示该 cmdlet 启用了操作记录器（Operation Recorder）API 的功能。"
+
+msgid ""
+"If you do not specify this parameter, operation recorder API functionality "
+"remains in its current state, either enabled or disabled."
+msgstr "如果您不指定此参数，操作记录器（Operation Recorder）的API功能将保持当前状态，即要么处于启用状态，要么处于禁用状态。"
+
+msgid ""
+"For more information about the Operation Recorder API, see[Operation "
+"Recorder](https://msdn.microsoft.com/library/windows/desktop/hh437575.aspx) "
+"on MSDN."
+msgstr ""
+"有关操作记录器（Operation "
+"Recorder）API的更多信息，请参阅MSDN上的[操作记录器](https://msdn.microsoft.com/library/windows/desktop/hh437575.aspx)。"
+
+msgid "Indicates that the cmdlet enables page combining."
+msgstr "表示该cmdlet支持页面合并功能。"
+
+msgid ""
+"If you do not specify this parameter, page combining remains in its current "
+"state, either enabled or disabled."
+msgstr "如果您不指定此参数，页面合并功能将保持当前状态（即启用或禁用）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时建立的最大并发操作数量，以便运行该cmdlet。如果省略此参数或输入`0`值，则Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算该cmdlet的最佳限制值（即并发操作的上限）。此限制仅适用于当前运行的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Debug-MMAppPrelaunch](./Debug-MMAppPrelaunch.md)"
+msgstr "[Debug-MMAppPrelaunch](./Debug-MMAppPrelaunch.md)"
+
+msgid "[Get-MMAgent](./Get-MMAgent.md)"
+msgstr "[Get-MMAgent](./Get-MMAgent.md)"
+
+msgid "[Set-MMAgent](./Set-MMAgent.md)"
+msgstr "[Set-MMAgent](./Set-MMAgent.md)"
+
+msgid "[Disable-MMAgent](./Disable-MMAgent.md)"
+msgstr "[ Disable-MMAgent](./Disable-MMAgent.md)"

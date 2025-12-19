@@ -1,0 +1,115 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:33:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IISSite"
+msgstr "# 获取 IISSite"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets configuration information for an IIS Web site."
+msgstr "获取IIS网站的配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-IISSite** cmdlet gets information about Internet Information Services (IIS) web sites and their current status and other key information.\n"
+"If you a request a specific site or a comma delimited list of sites, only those whose names are passed as an argument are returned.\n"
+"Otherwise all the websites are returned."
+msgstr ""
+"`Get-IISSite` cmdlet 可以获取有关 Internet Information Services (IIS) "
+"网站的信息，包括它们的当前状态以及其他关键数据。如果您请求某个特定的网站或通过逗号分隔的网站列表，那么只会返回那些名称作为参数传递的网站；否则，将返回所有网站的信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get information about an IIS website"
+msgstr "#### 示例 1：获取有关 IIS 网站的信息"
+
+msgid ""
+"This command gets the configuration information for the Default Web Site."
+msgstr "这个命令用于获取默认网站（Default Web Site）的配置信息。"
+
+msgid "### Example 2: Get information about all IIS websites"
+msgstr "### 示例 2：获取所有 IIS 网站的信息"
+
+msgid "This command gets all configuration information about all IIS websites"
+msgstr "这个命令可以获取所有 IIS 网站的所有配置信息。"
+
+msgid "### Example 3: Get an attribute for an IIS website"
+msgstr "### 示例 3：获取 IIS 网站的某个属性"
+
+msgid ""
+"This command gets the ServerAutoStart attribute for the IIS Default Web "
+"Site."
+msgstr "这个命令用于获取 IIS 默认网站的 ServerAutoStart 属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the IIS website to get configuration information.\n"
+"If this parameter is not used, all sites are returned."
+msgstr "指定要获取配置信息的 IIS 网站的名称。如果未使用此参数，则会返回所有网站的信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-IISSite](./New-IISSite.md)"
+msgstr "[New-IISSite](./New-IISSite.md)"
+
+msgid "[Remove-IISSite](./Remove-IISSite.md)"
+msgstr "[删除 IISSite](./Remove-IISSite.md)"
+
+msgid "[Start-IISSite](./Start-IISSite.md)"
+msgstr "[开始使用 IISS 服务](./Start-IISSite.md)"
+
+msgid "[Stop-IISSite](./Stop-IISSite.md)"
+msgstr "[停止使用 IISS 网站](./Stop-IISSite.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

@@ -1,0 +1,119 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:05:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMBios"
+msgstr "# Get-VMBios"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the BIOS of a virtual machine or snapshot."
+msgstr "获取虚拟机或快照的BIOS信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-VMBios** cmdlet gets the BIOS of a virtual machine or snapshot.\n"
+"Note: This cmdlet does not operate with Generation 2 virtual machine.\n"
+"If attempted, the cmdlet throws an error."
+msgstr ""
+"`Get-VMBios` 这个 cmdlet 可以获取虚拟机或快照的 BIOS 配置信息。注意：该 cmdlet 不适用于第二代（Generation "
+"2）虚拟机；如果尝试对第二代虚拟机使用此 cmdlet，将会抛出错误。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Gets the BIOS object for virtual machine TestVM."
+msgstr "获取虚拟机TestVM的BIOS对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the BIOS of a virtual machine or snapshot is to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于检索虚拟机或快照的 BIOS 的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定的域名进行指定。默认值为本地计算机。可以使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值是当前用户。"
+
+msgid "Specifies the virtual machine whose BIOS is to be retrieved."
+msgstr "指定要获取其 BIOS 信息的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine whose BIOS is to be retrieved."
+msgstr "指定要获取其 BIOS 的虚拟机的名称。"
+
+msgid "Specifies the virtual machine snapshot whose BIOS is to be retrieved."
+msgstr "指定要获取其BIOS信息的虚拟机快照。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+msgstr "### Microsoft.Vhd.PowShellVirtualHardDisk"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

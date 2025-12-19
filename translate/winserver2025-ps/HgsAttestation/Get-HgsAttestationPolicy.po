@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:15:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-HgsAttestationPolicy"
+msgstr "# Get-HgsAttestationPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets HGS attestation policies."
+msgstr "获取HGS认证策略。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-HgsAttestationPolicy** cmdlet gets Host Guardian Service (HGS) "
+"attestation policies."
+msgstr ""
+"`Get-HgsAttestationPolicy` cmdlet 可用于获取 Host Guardian Service (HGS) 的认证策略。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all policies"
+msgstr "### 示例 1：获取所有策略"
+
+msgid ""
+"This command gets all policies that are currently configured for the "
+"Attestation service."
+msgstr "此命令会获取当前为认证服务（Attestation service）配置的所有策略。"
+
+msgid "### Example 2: Get a policy by name"
+msgstr "### 示例 2：通过名称获取保险单"
+
+msgid "This command gets the policy named BaselineTpmPolicy16."
+msgstr "这个命令用于获取名为 BaselineTpmPolicy16 的策略。"
+
+msgid "### Example 3: Get policies by type"
+msgstr "### 示例 3：按类型获取策略"
+
+msgid "This command gets policies that have the type Tpm."
+msgstr "此命令用于获取类型为 Tpm 的策略。"
+
+msgid "### Example 4: Get all enabled policies"
+msgstr "### 示例 4：获取所有已启用的策略"
+
+msgid "This command gets all enabled policies."
+msgstr "这个命令会获取所有已启用的策略。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name of the policy that this cmdlet gets.\n"
+"Use wildcard characters to get more than one policy."
+msgstr "指定此 cmdlet 所获取的策略的名称。可以使用通配符来获取多个策略。"
+
+msgid "Specifies the type of the policies that this cmdlet gets."
+msgstr "指定了此cmdlet获取的策略的类型。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid ""
+"Specifies the state of the policies that this cmdlet gets.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定此cmdlet获取的政策所处的状态。该参数的可接受值为："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### String"
+msgstr "### 字符串"
+
+msgid "You can pipe strings to this cmdlet."
+msgstr "你可以将字符串通过管道（pipe）传递给这个cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### AttestationPolicyInfo"
+msgstr "### AttestationPolicyInfo"
+
+msgid "This cmdlet returns attestation policy information."
+msgstr "此cmdlet返回身份验证策略信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-HgsAttestationPolicy](./Disable-HgsAttestationPolicy.md)"
+msgstr "[ Disable-HgsAttestationPolicy](./Disable-HgsAttestationPolicy.md)"
+
+msgid "[Enable-HgsAttestationPolicy](./Enable-HgsAttestationPolicy.md)"
+msgstr "[Enable-HgsAttestationPolicy](./Enable-HgsAttestationPolicy.md)"
+
+msgid "[Remove-HgsAttestationPolicy](./Remove-HgsAttestationPolicy.md)"
+msgstr "[Remove-HgsAttestationPolicy](./Remove-HgsAttestationPolicy.md)"

@@ -1,0 +1,262 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:16:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMReplicationServer"
+msgstr "# 设置虚拟机复制服务器（Set-VMReplicationServer）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Configures a host as a Replica server."
+msgstr "将一台主机配置为副本服务器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### AuthenticationPort (Default)"
+msgstr "### AuthenticationPort（默认值）"
+
+msgid "### AuthenticationPortMapping"
+msgstr "### AuthenticationPortMapping"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-VMReplicationServer** cmdlet configures a host as a Replica server"
+" and enables you to specify the types of authentication and ports to use for"
+" incoming replication traffic."
+msgstr ""
+"`Set-VMReplicationServer` cmdlet 可将一台主机配置为复制服务器，并允许你指定用于接收复制流量的身份验证类型和端口。"
+
+msgid ""
+"To restrict the replication traffic that the Replica server will accept by "
+"allowing it only from specific servers, use the **New-"
+"VMReplicationAuthorizationEntry** cmdlet."
+msgstr ""
+"要限制副本服务器接受的复制流量，仅允许来自特定服务器的请求，请使用 **New-VMReplicationAuthorizationEntry** "
+"cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example configures the local host as a Replica server and specifies "
+"Kerberos for authentication."
+msgstr "这个示例将本地主机配置为副本服务器，并指定使用Kerberos进行身份验证。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example configures a Replica server that accepts replication from all "
+"authenticated servers and uses a default storage location of "
+"d:\\DefaultReplicaStorage."
+msgstr ""
+"这个示例配置了一个副本服务器，该服务器接受来自所有已认证服务器的复制请求，并使用默认的存储位置“d:\\DefaultReplicaStorage”。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example configures the Replica server with a monitoring interval of 12 "
+"hours starting at 17:00 hours."
+msgstr "这个示例配置了副本服务器，使其从17:00开始，以12小时的间隔进行监控。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example configures the nodes of the cluster to receive replication on different ports.\n"
+"The first command declares a variable named portmapping and uses it to store the server names of the nodes and the port to use on each node.\n"
+"The second command configures each node of the cluster to use port mapping for Kerberos authentication using the values stored in the portmapping variable."
+msgstr ""
+"这个示例配置了集群中的节点，使它们能够在不同的端口上接收复制数据。第一个命令声明了一个名为 `portmapping` "
+"的变量，并使用它来存储各个节点的服务器名称以及每个节点应使用的端口信息。第二个命令则配置集群中的每个节点，在进行 Kerberos 认证时使用 "
+"`portmapping` 变量中存储的值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies which authentication types the Replica server will use.\n"
+"Allowed values are Kerberos, Certificate, or CertificateAndKerberos."
+msgstr ""
+"指定副本服务器将使用哪些认证类型。允许的值包括 Kerberos、Certificate 或 CertificateAndKerberos。"
+
+msgid ""
+"Specifies the port on which the Replica server will receive replication data using certificate-based authentication.\n"
+"This parameter can be set only when the value of the AllowedAuthType parameter is Certificate or CertificateAndKerberos."
+msgstr ""
+"指定副本服务器用于接收基于证书的身份验证的复制数据的端口。只有当 `AllowedAuthType` 参数的值为 `Certificate` 或 "
+"`CertificateAndKerberos` 时，才能设置此参数。"
+
+msgid ""
+"When using Hyper-V Replica with failover clustering and certificate-based authorization, you can use this parameter to specify a different port for each node of the cluster to receive replication.\n"
+"We recommend that you specify a unique port for each node of the cluster, and one unique port for the Hyper-V Replica Broker.\n"
+"This parameter can be set only when the Replica server is configured with an authentication type of Certificate or CertificateAndKerberos."
+msgstr ""
+"在使用基于证书授权的 Hyper-V "
+"复制功能（结合故障转移集群）时，您可以使用此参数为集群中的每个节点指定不同的端口以接收复制数据。我们建议为集群中的每个节点指定一个唯一的端口，并为 "
+"Hyper-V "
+"复制代理指定另一个唯一的端口。只有当复制服务器配置为“Certificate”或“CertificateAndKerberos”身份验证类型时，才能设置此参数。"
+
+msgid ""
+"Specifies the certificate to use for mutual authentication of the replication data.\n"
+"This parameter is required only when Certificate is specified as the type of authentication.\n"
+"Specify the thumbprint of a valid computer certificate from the Personal store."
+msgstr ""
+"指定用于复制数据相互认证的证书。仅当认证类型设置为“Certificate”时，才需要此参数。请从个人证书存储中选择有效的计算机证书，并提供该证书的指纹（thumbprint）。"
+
+msgid "The certificate must have all of the following properties to be valid:"
+msgstr "该证书必须具备以下所有属性才能被视为有效："
+
+msgid ""
+"To display a list of certificates in the computer's My store and the "
+"thumbprint of each certificate, run the following commands:"
+msgstr "要显示计算机“我的证书库”中的证书列表以及每份证书的摘要（即“指纹”），请运行以下命令："
+
+msgid "`PS C:\\\\\\> cd cert:\\LocalMachine\\My`"
+msgstr "`PS C:\\> cd cert:\\LocalMachine\\My`"
+
+msgid "`PS C:\\\\\\> dir | format-list`"
+msgstr "`PS C:\\> dir | format-list`"
+
+msgid ""
+"For more information about certificate stores, see [Certificate "
+"stores](/previous-versions/windows/it-pro/windows-"
+"server-2003/cc757138(v=ws.10))."
+msgstr ""
+"有关证书存储的更多信息，请参阅[证书存储](/previous-versions/windows/it-pro/windows-"
+"server-2003/cc757138(v=ws.10))。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](/powershell/module/cimcmdlets/new-cimsession) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Configures Replica server settings for one or more Hyper-V hosts.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"配置一个或多个 Hyper-V 主机的副本服务器设置。允许使用 NetBIOS 名称、IP "
+"地址和完全限定域名作为标识符。默认设置为“本地计算机”。可以使用 “localhost” 或句点（.）来明确指定“本地计算机”。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the default location to store the virtual hard disk files when a Replica virtual machine is created.\n"
+"You must specify this parameter when ReplicationAllowedFromAnyServer is True."
+msgstr ""
+"指定在创建副本虚拟机时用于存储虚拟硬盘文件的默认位置。当 ReplicationAllowedFromAnyServer 的值为 True "
+"时，必须设置此参数。"
+
+msgid "Specifies whether the command runs without requiring confirmation."
+msgstr "指定该命令是否可以在不需要确认的情况下直接运行。"
+
+msgid ""
+"Specifies the port that the HTTP listener uses on the Replica server host."
+msgstr "指定HTTP监听器在副本服务器主机上使用的端口。"
+
+msgid ""
+"When using Hyper-V Replica with failover clustering and Kerberos authorization, you can use this parameter to specify a different port for each node of the cluster to receive replication.\n"
+"We recommend that you specify a unique port for each node of the cluster, and one unique port for the Hyper-V Replica Broker.\n"
+"This parameter can be set only when the Replica server is configured with an authentication type of either Kerberos or CertificateAndKerberos."
+msgstr ""
+"在使用具有故障转移集群和Kerberos授权功能的Hyper-"
+"V副本时，您可以使用此参数为集群中的每个节点指定不同的端口以接收复制数据。我们建议为集群中的每个节点指定一个唯一的端口，并为Hyper-"
+"V副本代理指定另一个唯一的端口。只有当副本服务器配置的认证类型为Kerberos或CertificateAndKerberos时，才能设置此参数。"
+
+msgid ""
+"Specifies how often (the monitoring interval) replication statistics are computed.\n"
+"Valid values are: 1 hour, 2 hours, 3 hours, 4 hours, 6 hours, 8 hours, 12 hours, 24 hours, 2 days, 3 days, 4 days, 5 days, 6 days, 7 days.\n"
+"Specify in the format days:hours:minutes:seconds, such as 01:00:00 for 1 hour, or 1.00:00:00 for 1 day."
+msgstr ""
+"指定复制统计数据的计算频率（即监控间隔）。有效值包括：1小时、2小时、3小时、4小时、6小时、8小时、12小时、24小时、2天、3天、4天、5天、6天、7天。格式应为“天数:小时:分钟:秒”，例如01:00:00表示1小时，1.00:00:00表示1天。"
+
+msgid "Specifies when the monitoring interval starts."
+msgstr "指定监控间隔开始的时间。"
+
+msgid ""
+"Specifies that a **VMReplicationServer** object is to be passed through to "
+"the pipeline representing the replication settings of the Replica server."
+msgstr "指定需要将一个 **VMReplicationServer** 对象传递给流水线，该对象用于表示复制服务器的复制设置。"
+
+msgid ""
+"Specifies whether to accept replication requests from any server.\n"
+"When specified as **true**, DefaultStorageLocation must also be specified.\n"
+"The default storage location and DEFAULT trust group tag are used for virtual machine replicas."
+msgstr ""
+"指定是否接受来自任何服务器的复制请求。当该参数设置为**true**时，还必须指定**DefaultStorageLocation**。虚拟机副本将使用默认存储位置和DEFAULT信任组标签。"
+
+msgid "Specifies whether the host is enabled as a Replica server."
+msgstr "指定该主机是否被启用为副本服务器（Replica server）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### VMRecoveryServer"
+msgstr "### VMRecoveryServer"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了**-PassThru**选项的话……"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

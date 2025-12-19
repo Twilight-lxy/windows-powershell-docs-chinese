@@ -1,0 +1,177 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:14:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMNetworkAdapterExtendedAcl"
+msgstr "# Get-VMNetworkAdapterExtendedAcl"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets extended ACLs configured for a virtual network adapter."
+msgstr "为虚拟网络适配器配置扩展的访问控制列表（ACL）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-VMNetworkAdapterExtendedAcl** cmdlet gets the extended access control lists (ACLs) configured for a virtual network adapter.\n"
+"If an ACL applies to both inbound and outbound packets, it appears in both inbound and outbound lists."
+msgstr ""
+"`Get-VMNetworkAdapterExtendedAcl` cmdlet 用于获取为虚拟网络适配器配置的扩展访问控制列表（ACL）。如果某个 "
+"ACL 同时适用于传入和传出数据包，那么它将同时出现在传入和传出数据的访问控制列表中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all extended ACLs"
+msgstr "### 示例 1：获取所有扩展的访问控制列表（ACL）"
+
+msgid ""
+"This command gets all the extended ACLs for the virtual machine named "
+"TSQA01."
+msgstr "这个命令可以获取名为TSQA01的虚拟机的所有扩展访问控制列表（extended ACLs）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies an array of Hyper-V hosts.\n"
+"The cmdlet gets the ACLs associated with the virtual network adapters on the Hyper-V hosts that you specify."
+msgstr "指定一个Hyper-V主机的数组。该cmdlet会获取与您指定的Hyper-V主机上的虚拟网络适配器相关联的ACL（访问控制列表）。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Indicates that the cmdlet operates on the parent or host operating system.\n"
+"If you specify this parameter, this cmdlet gets ACLs associated with network adapters in the parent or host operating system."
+msgstr ""
+"表示该 cmdlet 在父操作系统或主机操作系统上执行操作。如果您指定了此参数，该 cmdlet 将获取与父操作系统或主机操作系统中的网络适配器相关联的"
+" ACL（访问控制列表）。"
+
+msgid ""
+"Specifies an array of virtual machines as **VirtualMachine** objects.\n"
+"The cmdlet gets ACLs for network adapters that belong to the virtual machines that you specify.\n"
+"To obtain a virtual machine object, use the **Get-VM** cmdlet."
+msgstr ""
+"指定一组虚拟机作为 **VirtualMachine** 对象。该 cmdlet "
+"会获取属于所指定虚拟机的网卡的访问控制列表（ACL）信息。若要获取虚拟机对象，请使用 **Get-VM** cmdlet。"
+
+msgid ""
+"Specifies an array of names of VMs.\n"
+"The cmdlet gets ACLs associated with network adapters that belong to the VMs that you specify."
+msgstr "指定一个虚拟机（VM）名称数组。该cmdlet会获取与您指定的虚拟机相关联的网络适配器上的访问控制列表（ACL）。"
+
+msgid ""
+"Specifies an array of virtual network adapter objects.\n"
+"The cmdlet gets ACLs associated with the adapters that you specify.\n"
+"To obtain a network adapter, use the **Get-VMNetworkAdapter** cmdlet."
+msgstr ""
+"指定一个虚拟网络适配器对象的数组。此 cmdlet 会获取与所指定的适配器关联的访问控制列表（ACL）信息。若需获取某个网络适配器，请使用 **Get-"
+"VMNetworkAdapter** cmdlet。"
+
+msgid ""
+"Specifies the name of a virtual network adapter.\n"
+"The cmdlet gets extended ACLs associated with the adapter that you specify."
+msgstr "用于指定虚拟网络适配器的名称。该cmdlet会获取与该适配器关联的扩展ACL（Access Control Lists）。"
+
+msgid ""
+"Specifies a snapshot as a **VMSnapshot** object.\n"
+"The cmdlet gets ACLs for network adapters that belong to the snapshot that you specify.\n"
+"To obtain a snapshot, use the **Get-VMSnapshot** cmdlet."
+msgstr ""
+"该命令用于将某个快照指定为一个 **VMSnapshot** 对象。此 cmdlet "
+"会获取属于所指定快照的网络适配器的访问控制列表（ACL）信息。若需获取某个快照，可以使用 **Get-VMSnapshot** cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterExtendedAclSetting"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapterExtendedAclSetting"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-VMNetworkAdapterExtendedAcl](./Add-VMNetworkAdapterExtendedAcl.md)"
+msgstr ""
+"[Add-VMNetworkAdapterExtendedAcl](./Add-VMNetworkAdapterExtendedAcl.md)"
+
+msgid ""
+"[Remove-VMNetworkAdapterExtendedAcl](./Remove-"
+"VMNetworkAdapterExtendedAcl.md)"
+msgstr ""
+"[Remove-VMNetworkAdapterExtendedAcl](./Remove-"
+"VMNetworkAdapterExtendedAcl.md)"
+
+msgid "[Get-VM](./Get-VM.md)"
+msgstr "[Get-VM](./Get-VM.md)"
+
+msgid "[Get-VMNetworkAdapter](./Get-VMNetworkAdapter.md)"
+msgstr "[Get-VMNetworkAdapter](./Get-VMNetworkAdapter.md)"
+
+msgid "[Get-VMSnapshot](./Get-VMSnapshot.md)"
+msgstr "[Get-VMSnapshot](./Get-VMSnapshot.md)"

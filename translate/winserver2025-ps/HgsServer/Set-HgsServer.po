@@ -1,0 +1,158 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:31:53 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-HgsServer"
+msgstr "# Set-HgsServer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the Host Guardian Service server configuration."
+msgstr "用于设置Host Guardian Service服务器的配置参数。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### httpAndHttpsThumbprint"
+msgstr "### httpAndHttpsThumbprint"
+
+msgid "### httpAndHttps"
+msgstr "### http 和 https"
+
+msgid "### http"
+msgstr "### http"
+
+msgid "### httpsThumbprint"
+msgstr "### httpsThumbprint"
+
+msgid "### https"
+msgstr "### https"
+
+msgid "### TrustActiveDirectory"
+msgstr "### TrustActiveDirectory"
+
+msgid "### TrustTpm"
+msgstr "### TrustTpm"
+
+msgid "### UpdateMemoryLimit"
+msgstr "### UpdateMemoryLimit"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-HgsServer** cmdlet sets the Host Guardian Service (HGS) server configuration.\n"
+"The configuration properties changed include the communication protocol, the network ports, and the HTTPS certificate for the Attestation and Key Protection services."
+msgstr ""
+"`Set-HgsServer` cmdlet 用于设置 Host Guardian Service (HGS) "
+"服务器的配置。变更的配置属性包括通信协议、网络端口以及用于身份验证和密钥保护服务的 HTTPS 证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Configure the HGS server to be accessible over HTTP"
+msgstr "### 示例 1：配置 HGS 服务器以使其可以通过 HTTP 访问"
+
+msgid ""
+"This command configures the HGS server to be exposed over HTTP on port 81."
+msgstr "此命令配置HGS服务器通过HTTP协议在81端口上对外提供服务。"
+
+msgid ""
+"### Example 2: Configure the HGS server to be accessible over HTTP and HTTPS"
+msgstr "### 示例 2：配置 HGS 服务器以便通过 HTTP 和 HTTPS 访问"
+
+msgid ""
+"This command configures the HGS server to be exposed over both HTTP and HTTPS on the default ports.\n"
+"HTTPS communication is secured with the certificate specified by $PathToPfx."
+msgstr "此命令配置HGS服务器在默认端口上同时通过HTTP和HTTPS进行访问。HTTPS通信使用由$PathToPfx指定的证书进行加密保护。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Indicates that the HGS Server is accessible over HTTP."
+msgstr "表示可以通过 HTTP 访问 HGS 服务器。"
+
+msgid "Specifies the HTTP port."
+msgstr "指定HTTP端口。"
+
+msgid "Indicates that the HGS Server is accessible over HTTPS."
+msgstr "表示可以通过 HTTPS 访问 HGS 服务器。"
+
+msgid ""
+"Specifies the password to the certificate file specified in "
+"**HttpsCertificatePath**."
+msgstr "指定用于加密 **HttpsCertificatePath** 中指定的证书文件的密码。"
+
+msgid "Specifies the path to the HTTPS certificate file (.pfx)."
+msgstr "指定HTTPS证书文件（.pfx）的路径。"
+
+msgid "Indicates the thumbprint of the HTTPS certificate."
+msgstr "表示HTTPS证书的“指纹”（即用于唯一标识该证书的特征信息）。"
+
+msgid "Specifies the HTTPS port of the HGS server."
+msgstr "指定 HGS 服务器的 HTTPS 端口。"
+
+msgid ""
+"Indicates that this cmdlet sets the Attestation service operation mode to "
+"Active Directory."
+msgstr "表示该cmdlet将认证服务（Attestation service）的操作模式设置为“Active Directory”。"
+
+msgid ""
+"Indicates that this cmdlet sets the Attestation service operation mode to "
+"trusted platform module (TPM)."
+msgstr ""
+"表示此 cmdlet 将认证服务（Attestation service）的操作模式设置为“受信任平台模块”（Trusted Platform "
+"Module，简称 TPM）。"
+
+msgid ""
+"Indicates that the application pool memory limit for the attestation service"
+" should be updated to reflect the current amount of physical memory in the "
+"system."
+msgstr "表示应该更新身份验证服务的应用程序池内存限制，以反映系统中当前的实际物理内存用量。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"about_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[HGS Server Cmdlets](./hgsserver.md)"
+msgstr "[HGS 服务器Cmdlets](./hgsserver.md)"

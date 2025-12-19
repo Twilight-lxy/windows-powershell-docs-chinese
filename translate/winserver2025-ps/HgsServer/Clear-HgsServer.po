@@ -1,0 +1,120 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:29:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-HgsServer"
+msgstr "# Clear-HgsServer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Resets the Host Guardian Service on the local node to the uninitialized "
+"state."
+msgstr "将本地节点上的Host Guardian服务重置为未初始化的状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Clear-HgsServer** cmdlet removes a local node from the Host Guardian "
+"Service (HGS)."
+msgstr "`Clear-HgsServer` 这个 cmdlet 用于将本地节点从 Host Guardian Service (HGS) 中删除。"
+
+msgid ""
+"This cmdlet makes the following infrastructure component changes on the "
+"additional HGS node:"
+msgstr "此cmdlet会在额外的HGS节点上执行以下基础设施组件更改："
+
+msgid ""
+"For more information about the scenario terms, see [Security and "
+"Assurance](https://go.microsoft.com/fwlink/?LinkId=699209)."
+msgstr ""
+"有关场景术语的更多信息，请参阅[安全性和保障措施](https://go.microsoft.com/fwlink/?LinkId=699209)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Clear all cluster initialization settings from the local node"
+msgstr "### 示例 1：清除本地节点上的所有集群初始化设置"
+
+msgid ""
+"This command returns the HGS Server on the local node to a clean state to "
+"prepare it for the **Initialize-HgsServer** command."
+msgstr ""
+"此命令会将本地节点上的HGS服务器恢复到初始状态（即“干净”状态），以便为其后续执行**Initialize-HgsServer**命令做好准备。"
+
+msgid ""
+"### Example 2: Clear all cluster initialization settings from the local node"
+" without confirmation"
+msgstr "### 示例 2：在未经确认的情况下，清除本地节点上的所有集群初始化设置"
+
+msgid ""
+"This command returns the HGS Server on the local node to a clean state to "
+"prepare it for the **Initialize-HgsServer** command and does not prompt for "
+"confirmation."
+msgstr ""
+"该命令会将本地节点上的HGS服务器恢复到初始状态（即“干净”状态），以便后续执行**Initialize-"
+"HgsServer**命令。在执行此命令时，系统不会要求用户进行确认。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a cluster name."
+msgstr "指定一个集群名称。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而不会询问用户的确认。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[HGS Server Cmdlets](./hgsserver.md)"
+msgstr "[HGS 服务器Cmdlets](./hgsserver.md)"
+
+msgid "[Initialize-HgsServer](./Initialize-HgsServer.md)"
+msgstr "[Initialize-HgsServer](./Initialize-HgsServer.md)"

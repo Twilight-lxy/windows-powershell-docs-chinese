@@ -1,0 +1,76 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:01:15 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"The LanguagePackManagement module includes cmdlets that help you easily "
+"manage languages and language settings on a running Windows installation"
+msgstr ""
+"LanguagePackManagement模块包含了一些cmdlet（命令行工具），可以帮助您轻松地管理和配置正在运行的Windows系统中的语言设置。"
+
+msgid "# LanguagePackManagement Module"
+msgstr "# 语言包管理模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This module can be used to easily [add languages](/windows-"
+"hardware/manufacture/desktop/available-language-packs-for-windows) and "
+"[related language features](/windows-hardware/manufacture/desktop/features-"
+"on-demand-language-fod) and manage settings like System Preferred UI "
+"Language, System Locale, Input method (Keyboard), Locale, Speech Recognizer,"
+" User Preferred Language List using the new cmdlets.   "
+msgstr ""
+"该模块可以轻松地用于[添加语言](/windows-hardware/manufacturedesktop/available-language-"
+"packs-for-windows)和[相关的语言功能](/windows-hardware/manufacture/desktop/features-"
+"on-demand-language-"
+"fod)，并通过新的cmdlet来管理诸如“系统首选UI语言”、“系统区域设置”、“输入法（键盘）”、“区域设置”、“语音识别器”以及“用户首选语言列表”等设置。"
+
+msgid ""
+"> [!NOTE]\n"
+"> - These cmdlets are supported on client operating system only. \n"
+"> - To run the `Install-Language` and `Set-Language` cmdlets you must run the PowerShell as an admin (right click on the icon). \n"
+"> - These cmdlets work in conjunction with the [International module](/powershell/module/international/), which allows users to control the language used for various elements of the user interface (UI).\n"
+"> - The `Install-Language` cmdlet can only install Windows display language resources for [Language Pack languages](/windows-hardware/manufacture/desktop/available-language-packs-for-windows)."
+msgstr ""
+"> [!注意] > - 这些cmdlets仅支持在客户端操作系统上使用。  \n"
+"> - 要运行`Install-Language`和`Set-Language` cmdlets，您必须以管理员身份运行PowerShell（右键点击PowerShell图标）。  \n"
+"> - 这些cmdlets与[International模块](/powershell/module/international/)配合使用，该模块允许用户控制用户界面（UI）中各种元素所用的语言。  \n"
+"> - `Install-Language` cmdlet仅能安装适用于[语言包语言](/windows-hardware/manufacture/desktop/available-language-packs-for-windows)的Windows显示语言资源。"
+
+msgid "## LanguagePackManagement Cmdlets"
+msgstr "## LanguagePackManagementCmdlets"
+
+msgid "### [Get-InstalledLanguage](Get-InstalledLanguage.md)"
+msgstr "### [Get-InstalledLanguage](Get-InstalledLanguage.md)"
+
+msgid "Returns information about the installed languages on a device."
+msgstr "返回有关设备上已安装语言的信息。"
+
+msgid "### [Get-SystemPreferredUILanguage](Get-SystemPreferredUILanguage.md)"
+msgstr "### [Get-SystemPreferredUILanguage](Get-SystemPreferredUILanguage.md)"
+
+msgid "Returns the current System Preferred Language."
+msgstr "返回当前系统的首选语言。"
+
+msgid "### [Install-Language](Install-Language.md)"
+msgstr "### [安装语言](Install-Language.md)"
+
+msgid "Installs a language onto a device."
+msgstr "将一种语言安装到设备上。"
+
+msgid "### [Set-SystemPreferredUILanguage](Set-SystemPreferredUILanguage.md)"
+msgstr "### [Set-SystemPreferredUILanguage](Set-SystemPreferredUILanguage.md)"
+
+msgid "Sets the provided language as the System Preferred UI Language."
+msgstr "将提供的语言设置为系统首选的用户界面语言。"
+
+msgid "### [Uninstall-Language](Uninstall-Language.md)"
+msgstr "### [卸载语言相关文档](Uninstall-Language.md)"
+
+msgid "Removes a language from a device."
+msgstr "从设备中移除某种语言设置（或相关功能）。"

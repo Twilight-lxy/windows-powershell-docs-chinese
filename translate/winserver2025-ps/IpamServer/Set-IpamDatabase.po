@@ -1,0 +1,201 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:33:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-IpamDatabase"
+msgstr "# 设置 Ipam 数据库"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies settings that IPAM uses to connect to the IPAM database."
+msgstr "修改 IPAM 用于连接到 IPAM 数据库的设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-IpamDatabase** cmdlet modifies settings that IP Address Management"
+" (IPAM) uses to connect to the IPAM database hosted on a computer that runs "
+"Microsoft SQL Server."
+msgstr ""
+"`Set-IpamDatabase` cmdlet 用于修改 IP 地址管理（IPAM）所使用的配置设置，这些设置决定了 IPAM 如何连接到托管在运行"
+" Microsoft SQL Server 的计算机上的 IPAM 数据库。"
+
+msgid ""
+"Verify that you can reach the database server from the IPAM server.\n"
+"Specify whether to connect to the destination server by using the account for the computer that hosts the IPAM server or by using a SQL Server database account.\n"
+"If you specify the IPAM server account, verify that account has necessary permissions."
+msgstr ""
+"请确认您可以从 IPAM 服务器访问数据库服务器。请指定是使用托管 IPAM 服务器的计算机上的账户进行连接，还是使用 SQL Server "
+"数据库账户进行连接。如果您指定了 IPAM 服务器账户，请确保该账户具有必要的权限。"
+
+msgid ""
+"Use the **Get-IpamDatabase** cmdlet to view database configuration settings."
+msgstr "使用 `Get-IpamDatabase` cmdlet 来查看数据库配置设置。"
+
+msgid ""
+"You can specify any port to connect to the database server.\n"
+"We recommend you use the default port, 1433, to connect to Microsoft SQL Serverr."
+msgstr "您可以指定任何端口来连接数据库服务器。我们建议您使用默认端口（1433）来连接 Microsoft SQL Server。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Connect to an external database"
+msgstr "### 示例 1：连接到外部数据库"
+
+msgid ""
+"This example configures the IPAM server to connect to an external database.\n"
+"The cmdlet does not move any data from the existing Windows Internal Database (WID) database or create the new database.\n"
+"Configure all access settings manually on the database server.\n"
+"The example uses Windows as the database authentication type."
+msgstr ""
+"这个示例配置了 IPAM 服务器以连接到外部数据库。该命令不会从现有的 Windows "
+"内部数据库（WID）中移动任何数据，也不会创建新的数据库。所有访问设置都需要在数据库服务器上手动进行配置。示例中使用 Windows "
+"作为数据库的身份验证类型。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将该cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job` "
+"cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies which type of authentication to use to connect to the computer that runs SQL Server.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定用于连接到运行 SQL Server 的计算机的身份验证类型。该参数的可接受值包括："
+
+msgid ""
+"Specifies credentials, as a **PSCredential** object, for the computer that runs SQL Server.\n"
+"To obtain a **PSCredential** object, use the **Get-Credential** cmdlet.\n"
+"For more information, type `Get-Help Get-Credential`."
+msgstr ""
+"用于指定运行 SQL Server 的计算机的凭据，该凭据以 **PSCredential** 对象的形式提供。要获取一个 "
+"**PSCredential** 对象，请使用 **Get-Credential** cmdlet。有关更多信息，请输入 `Get-Help Get-"
+"Credential`。"
+
+msgid ""
+"Specify this parameter if you specified a value of SQL Server for the "
+"*DatabaseAuthType* parameter."
+msgstr "如果您为 *DatabaseAuthType* 参数指定了 SQL Server 的值，请指定此参数。"
+
+msgid ""
+"Specifies the name of a SQL Serverdatabase.\n"
+"The IPAM server connects to this database."
+msgstr "指定一个 SQL Server 数据库的名称。IPAM 服务器会连接到该数据库。"
+
+msgid ""
+"Specifies the port that the IPAM server uses to connect to the database "
+"server."
+msgstr "指定 IPAM 服务器用于连接到数据库服务器的端口号。"
+
+msgid ""
+"Specifies the fully qualified domain name (FQDN) or IP address of the database server.\n"
+"The IPAM server connects to this server."
+msgstr "指定数据库服务器的完全限定域名（FQDN）或 IP 地址。IPAM 服务器将连接到该服务器。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令（cmdlet）的最大操作数量。如果省略此参数或输入值 `0`，那么 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM 命令的数量来计算该命令的最优限制值。这个限制仅适用于当前正在运行的命令，而不适用于整个会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### IpamDatabase"
+msgstr "### IpamDatabase"
+
+msgid ""
+"This cmdlet returns an object that represents the datastore for an IPAM "
+"server."
+msgstr "此 cmdlet 返回一个对象，该对象代表 IPAM 服务器的数据存储区（datastore）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IpamDatabase](./Get-IpamDatabase.md)"
+msgstr "[Get-IpamDatabase](./Get-IpamDatabase.md)"
+
+msgid "[Move-IpamDatabase](./Move-IpamDatabase.md)"
+msgstr "[Move-IpamDatabase](./Move-IpamDatabase.md)"

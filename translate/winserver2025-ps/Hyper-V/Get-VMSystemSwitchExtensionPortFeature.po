@@ -1,0 +1,119 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:24:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMSystemSwitchExtensionPortFeature"
+msgstr "# 获取 VM 系统切换扩展端口功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Gets the port-level features supported by virtual switch extensions on one "
+"or more Hyper-V hosts."
+msgstr "获取一个或多个Hyper-V主机上虚拟交换机扩展所支持的端口级功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-VMSystemSwitchExtensionPortFeature** cmdlet gets the port-level features supported by virtual switch extensions on one or more Hyper-V hosts.\n"
+"The returned feature object will contain default values for the feature.\n"
+"The object can be used to apply the configuration on specific ports using the Add-VmSwitchExtensionPortFeature command."
+msgstr ""
+"`Get-VMSystemSwitchExtensionPortFeature` cmdlet 可用于获取一个或多个 Hyper-V "
+"主机上虚拟交换机扩展所支持的端口级功能。返回的函数对象将包含这些功能的默认值。该对象可以通过 `Add-"
+"VmSwitchExtensionPortFeature` 命令应用于特定的端口上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Gets all port-level features, supported by various virtual switch extensions"
+" installed on the system, that can be configured on a virtual network "
+"adapter on Hyper-V."
+msgstr "可以获取所有端口级别的功能，这些功能由系统上安装的各种虚拟交换机扩展程序提供支持，并且可以在 Hyper-V 的虚拟网络适配器上进行配置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts from which the available port-level features are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个 Hyper-V 主机，以从中获取可用的端口级功能。允许使用 NetBIOS 名称、IP 地址和完全限定域名。默认值是本地计算机。可以使用"
+" `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies one or more extension names for which the features are to be "
+"retrieved."
+msgstr "指定一个或多个扩展名，以便从中检索所需的功能。"
+
+msgid "Specifies the unique identifier of the feature to be retrieved."
+msgstr "指定要检索的功能的唯一标识符。"
+
+msgid "Specifies the name of the feature to be retrieved."
+msgstr "指定要检索的功能的名称。"
+
+msgid ""
+"Specifies one or more system extensions for which the features are to be "
+"retrieved."
+msgstr "指定一个或多个系统扩展名，以便从中检索相关功能。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

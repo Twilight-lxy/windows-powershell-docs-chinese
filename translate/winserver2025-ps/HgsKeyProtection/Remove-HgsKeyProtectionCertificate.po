@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:27:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-HgsKeyProtectionCertificate"
+msgstr "# 移除 HGS Key Protection 证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a key certificate from the Key Protection Service."
+msgstr "从密钥保护服务中删除一个密钥证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-HgsKeyProtectionCertificate** cmdlet removes a key certificate from the Key Protection Service.\n"
+"If the certificate being removed references a certificate stored in the LocalMachine\\My certificate store, this cmdlet does not delete that certificate from the LocalMachine\\My certificate store."
+msgstr ""
+"`Remove-HgsKeyProtectionCertificate` 这个 cmdlet 用于从 Key Protection Service "
+"中删除某个密钥证书。如果被删除的证书引用了存储在 `LocalMachine\\My` 证书库中的其他证书，那么该 cmdlet 不会从 "
+"`LocalMachine\\My` 证书库中删除那些参考证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove an encryption certificate"
+msgstr "#### 示例 1：移除加密证书"
+
+msgid ""
+"This command removes an encryption certificate from the Key Protection "
+"Service."
+msgstr "此命令会从密钥保护服务中删除一个加密证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies of the type of the certificate that this cmdlet removes.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定此cmdlet要删除的证书的类型。该参数的可接受值包括："
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies the thumbprint of the certificate to remove."
+msgstr "指定要删除的证书的“指纹”（即该证书的唯一标识信息）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您无法将输入数据通过管道传递给此cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet does not generate any output."
+msgstr "此cmdlet不生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-HgsKeyProtectionCertificate](./Add-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"[Add-HgsKeyProtectionCertificate](./Add-HgsKeyProtectionCertificate.md)"
+
+msgid ""
+"[Get-HgsKeyProtectionCertificate](./Get-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"[Get-HgsKeyProtectionCertificate](./Get-HgsKeyProtectionCertificate.md)"
+
+msgid ""
+"[Set-HgsKeyProtectionCertificate](./Set-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"[Set-HgsKeyProtectionCertificate](./Set-HgsKeyProtectionCertificate.md)"

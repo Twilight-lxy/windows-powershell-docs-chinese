@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:03:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-WmsSystem"
+msgstr "# Add-WmsSystem"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds a computer that can be remotely managed."
+msgstr "添加了一台可以远程管理的计算机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-WmsSystem** cmdlet enables the local computer to remotely manage a"
+" computer with either the MultiPoint role or MultiPoint connector installed."
+msgstr ""
+"**Add-WmsSystem** cmdlet 允许本地计算机远程管理已安装了多点（MultiPoint）角色或多点连接器（MultiPoint "
+"Connector）的计算机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an array of host names of MultiPoint systems to add."
+msgstr "指定一个要添加的多点系统（MultiPoint system）主机名称数组。"
+
+msgid "Specifies the Administrator credentials for the computer to add."
+msgstr "指定要添加的计算机的管理员凭据。"
+
+msgid ""
+"Specifies the type of managed systems.\n"
+"The acceptable values for this parameter are: MultiPointServers, PersonalComputers."
+msgstr "用于指定被管理系统的类型。该参数的可接受值包括：MultiPointServers 和 PersonalComputers。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### string[]"
+msgstr "### string[]"
+
+msgid ""
+"The input is an array of fully qualified host names of the computers that "
+"should have remote management enabled."
+msgstr "输入是一个包含所有需要启用远程管理的计算机的完全限定主机名称的数组。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### WmsSystem"
+msgstr "### WmsSystem"
+
+msgid ""
+"For each computer added a **WmsSystem** object is returned which contains "
+"specific information about the configuration and state of the MultiPoint "
+"system on that computer."
+msgstr "对于每台新增的计算机，系统会返回一个 **WmsSystem** 对象，该对象包含了关于该计算机上多点系统配置和状态的具体信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WmsSystem](./Get-WmsSystem.md)"
+msgstr "[Get-WmsSystem](./Get-WmsSystem.md)"
+
+msgid "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+msgstr "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+
+msgid "[Restart-WmsSystem](./Restart-WmsSystem.md)"
+msgstr "[重启 WMS 系统](./Restart-WmsSystem.md)"
+
+msgid "[Search-WmsSystem](./Search-WmsSystem.md)"
+msgstr "[Search-WmsSystem](./Search-WmsSystem.md)"
+
+msgid "[Set-WmsSystem](./Set-WmsSystem.md)"
+msgstr "[Set-WmsSystem](./Set-WmsSystem.md)"
+
+msgid "[Stop-WmsSystem](./Stop-WmsSystem.md)"
+msgstr "[Stop-WmsSystem](./Stop-WmsSystem.md)"

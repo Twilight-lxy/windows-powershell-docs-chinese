@@ -1,0 +1,253 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:30:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Initialize-HgsServer"
+msgstr "# 初始化 HGS 服务器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Initializes the Host Guardian Service server."
+msgstr "初始化Host Guardian服务服务器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### PrimaryServer_HgsDomain (Default)"
+msgstr "### PrimaryServer_HgsDomain（默认值）"
+
+msgid "### PrimaryServer_SecureDomain"
+msgstr "### PrimaryServer_SecureDomain"
+
+msgid "### AdditionalServer"
+msgstr "### AdditionalServer"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Initialize-HgsServer** cmdlet configures the necessary infrastructure "
+"components for Host Guardian Service (HGS) after it is rebooted."
+msgstr ""
+"`Initialize-HgsServer` cmdlet 在主机保护服务（Host Guardian Service，简称 "
+"HGS）重新启动后，配置所需的基础设施组件。"
+
+msgid ""
+"This cmdlet performs the following configuration actions on infrastructure "
+"components of the first HGS node:"
+msgstr "此 cmdlet 对第一个 HGS 节点的基础设施组件执行以下配置操作："
+
+msgid ""
+"For more information about the scenario terms, see [Security and "
+"Assurance](https://go.microsoft.com/fwlink/?LinkId=699209)."
+msgstr ""
+"有关场景术语的更多信息，请参阅[安全与保障](https://go.microsoft.com/fwlink/?LinkId=699209)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Initialize the HGS on the primary node in TPM mode"
+msgstr "### 示例 1：在主节点上以 TPM 模式初始化 HGS"
+
+msgid ""
+"This command initializes the HGS server on the primary node.\n"
+"By default, the server is accessible on HTTP port 80 and the Attestation service is set to TPM mode.\n"
+"The specified certificates are used by the Key Protection service."
+msgstr ""
+"此命令用于初始化主节点上的HGS服务器。默认情况下，该服务器可通过HTTP端口80进行访问，并且认证服务被设置为TPM模式。指定的证书将由密钥保护服务使用。"
+
+msgid "### Example 2: Initialize the HGS on a secondary node in TPM mode"
+msgstr "### 示例 2：在 TPM 模式下，在辅助节点上初始化 HGS"
+
+msgid ""
+"This command initializes the HGS server on a secondary node.\n"
+"By default, the server is accessible on HTTP port 80 and the Attestation service is set to TPM mode.\n"
+"The Key Protection service uses the encryption and signing certificates set by the primary server."
+msgstr ""
+"此命令用于在辅助节点上初始化HGS服务器。默认情况下，该服务器可以通过HTTP端口80进行访问，并且认证服务（Attestation "
+"service）被设置为TPM模式。密钥保护服务（Key Protection service）使用由主服务器设置的加密和签名证书。"
+
+msgid ""
+"### Example 3: Initialize the HGS on the primary node in Active Directory "
+"mode"
+msgstr "### 示例 3：在 Active Directory 模式下初始化主节点上的 HGS"
+
+msgid ""
+"This command initializes the HGS server on the primary node and sets the Attestation service to Active Directory (AD) mode.\n"
+"By default, the server is accessible on HTTP port 80.\n"
+"The specified certificates are used by the Key Protection service."
+msgstr ""
+"此命令用于在主节点上初始化HGS服务器，并将认证服务设置为Active "
+"Directory（AD）模式。默认情况下，该服务器可通过HTTP端口80进行访问。Key Protection服务会使用指定的证书。"
+
+msgid ""
+"### Example 4: Initialize the HGS on the primary node in TPM mode and enable"
+" HTTPS"
+msgstr "### 示例 4：在主节点上以 TPM 模式初始化 HGS 并启用 HTTPS"
+
+msgid ""
+"This command initializes the HGS server on the primary node.\n"
+"The server is set to be accessible by HTTP and HTTPS on the default ports, and with the specified certificate for HTTPS.\n"
+"By default, the server is accessible on HTTP port 80 and the Attestation service is set to TPM mode.\n"
+"The specified certificates are used by the Key Protection service."
+msgstr ""
+"此命令用于初始化主节点上的HGS服务器。该服务器可以通过HTTP和HTTPS在默认端口上进行访问，并使用指定的证书进行HTTPS通信。默认情况下，服务器通过HTTP端口80提供服务，且认证服务（Attestation"
+" service）设置为TPM模式。Key Protection服务会使用这些指定的证书。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a cluster name."
+msgstr "指定一个集群名称。"
+
+msgid ""
+"Specifies the password for the certificate file specified in "
+"**EncryptionCertificatePath**."
+msgstr "指定用于 **EncryptionCertificatePath** 中指定的证书文件的密码。"
+
+msgid ""
+"Specifies the path to the encryption certificate used by the Key Protection "
+"service."
+msgstr "指定密钥保护服务所使用的加密证书的路径。"
+
+msgid ""
+"Specifies the thumbprint of the encryption certificate used by the Key "
+"Protection service."
+msgstr "指定密钥保护服务所使用的加密证书的“指纹”（即用于唯一标识该证书的信息）。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the IP address of the HGS server that is a domain controller for "
+"the specified HGS domain."
+msgstr "指定作为所选 HGS 域域名控制器的 HGS 服务器的 IP 地址。"
+
+msgid "Specifies the HGS name."
+msgstr "指定HGS名称。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Indicates that the HGS server is accessible over HTTP."
+msgstr "表示可以通过 HTTP 访问 HGS 服务器。"
+
+msgid "Specifies the HTTP port of the HGS server."
+msgstr "指定HGS服务器的HTTP端口。"
+
+msgid "Indicates that the HGS server is accessible over HTTPS."
+msgstr "表示可以通过 HTTPS 访问 HGS 服务器。"
+
+msgid ""
+"Specifies the password to the certificate file identified by "
+"**HttpsCertificatePath**."
+msgstr "指定由 **HttpsCertificatePath** 指定的证书文件对应的密码。"
+
+msgid "Specifies the path to the HTTPS certificate file (.pfx)."
+msgstr "指定 HTTPS 证书文件（.pfx）的路径。"
+
+msgid "Indicates the thumbprint of the HTTPS certificate."
+msgstr "表示HTTPS证书的“指纹”（即用于唯一标识该证书的特征信息）。"
+
+msgid "Specifies the HTTPS port of the HGS server."
+msgstr "指定 HGS 服务器的 HTTPS 端口。"
+
+msgid ""
+"Identifies the Active Directory group of users who can administer HGS "
+"through Just Enough Administration."
+msgstr "识别可以通过“Just Enough Administration”（JEA）来管理HGS的用户所属的Active Directory组。"
+
+msgid ""
+"Identifies the Active Directory group of users who can view, but not change,"
+" HGS settings through Just Enough Administration."
+msgstr ""
+"识别出那些可以通过“Just Enough Administration”（JEA）查看但不能更改HGS设置的用户所属的Active "
+"Directory组。"
+
+msgid "Specifies the directory for the output log."
+msgstr "指定输出日志文件的目录。"
+
+msgid ""
+"Identifies the Group Managed Service Account that will be used for the Key "
+"Protection Service. The specified account must already be installed and "
+"configured for use on this machine."
+msgstr ""
+"确定将用于密钥保护服务的组托管服务账户（Group Managed Service "
+"Account）。指定的账户必须已经安装并配置好，以便在此机器上使用。"
+
+msgid ""
+"Specifies the password for the certificate file identified by "
+"**SigningCertificatePath**."
+msgstr "指定由 **SigningCertificatePath** 指定的证书文件所需的密码。"
+
+msgid ""
+"Specifies the path to the signing certificate for use by the Key Protection "
+"service."
+msgstr "指定用于密钥保护服务的签名证书的路径。"
+
+msgid ""
+"Specifies the thumbprint of the signing certificate for use by the Key "
+"Protection service."
+msgstr "指定签名证书的“指纹”（即唯一标识符），供密钥保护服务使用。"
+
+msgid ""
+"Indicates that HGS was joined to an existing domain and did not establish "
+"its own domain (with Install-HgsServer). HGS must already be joined to the "
+"existing domain to continue."
+msgstr ""
+"这表示 HGS 已被添加到现有的域中，并且没有使用 `Install-HgsServer` 命令来创建自己的独立域。为了继续操作，HGS "
+"必须已经处于该现有域的范围内。"
+
+msgid ""
+"Indicates that HGS was set up with its own dedicated Active Directory forest"
+" using the Install-HgsServer cmdlet."
+msgstr ""
+"这表示使用 `Install-HgsServer` cmdlet 为 HGS 设置了专用的 Active Directory 林（即独立的 Active"
+" Directory 环境）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[HGS Server Cmdlets](./hgsserver.md)"
+msgstr "[HGS 服务器 cmdlet](./hgsserver.md)"

@@ -1,0 +1,187 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:27:14 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-VMReplicationConnection"
+msgstr "# 测试虚拟机复制连接"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Tests the connection between a primary server and a Replica server."
+msgstr "测试主服务器与副本服务器之间的连接。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Test-VMReplicationConnection** cmdlet tests the connection between a "
+"primary server and a Replica server to determine whether replication can be "
+"enabled for virtual machines on the primary server to the specified Replica "
+"server."
+msgstr ""
+"`Test-VMReplicationConnection` cmdlet "
+"用于测试主服务器与副本服务器之间的连接，以确定是否可以为主服务器上的虚拟机启用复制功能，并将这些虚拟机复制到指定的副本服务器上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example tests the connection between the local host and a Replica "
+"server named server01.domain01.contoso.com, using port 80 and Kerberos "
+"authentication."
+msgstr ""
+"这个示例测试了本地主机与名为 server01.domain01.contoso.com 的副本服务器之间的连接，使用端口 80 和 Kerberos "
+"身份验证机制。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the authentication type to use to test the connection, either \"Kerberos\" or \"Certificate\".\n"
+"The specified Replica server must support the chosen authentication type.\n"
+"Run the **Get-VMReplicationServer** cmdlet to verify the authentication configured for the specified Replica server, or contact the administrator of the specified Replica server."
+msgstr ""
+"指定用于测试连接的认证类型，可以是“Kerberos”或“Certificate”。所选的副本服务器必须支持所选择的认证类型。运行 **Get-"
+"VMReplicationServer** cmdlet 以验证为该副本服务器配置的认证方式，或者联系该副本服务器的管理员。"
+
+msgid ""
+"Specifies whether to bypass a proxy server when testing the connectivity."
+msgstr "指定在测试连接性时是否跳过代理服务器。"
+
+msgid ""
+"Specifies the certificate to use for mutual authentication of the replication data.\n"
+"This parameter is required only when \"Certificate\" is the specified as the type of authentication.\n"
+"Specify the thumbprint of a valid computer certificate from the Personal store."
+msgstr ""
+"指定用于复制数据相互认证的证书。仅当指定的认证类型为“Certificate”时，此参数才是必需的。请从个人证书存储中选择有效的计算机证书，并提供该证书的指纹信息。"
+
+msgid "The certificate must have all of the following properties to be valid:"
+msgstr "该证书必须具备以下所有属性才能被视为有效："
+
+msgid "It must not be expired."
+msgstr "它必须没有过期。"
+
+msgid ""
+"It must include both client and server authentication extensions for "
+"extended key usage (EKU), and an associated private key."
+msgstr "它必须同时包含客户端和服务器的身份验证扩展功能（用于扩展密钥使用，即Extended Key Usage，简称EKU），以及相应的私钥。"
+
+msgid "It must terminate at a valid root certificate."
+msgstr "它必须以一个有效的根证书作为终止点。"
+
+msgid ""
+"The requirement for the subject common name (CN) differs depending on whether the virtual machine belongs to a cluster.\n"
+"For virtual machines that do not belong to a cluster, the subject common name (CN) must be equal to, or subject alternative name (DNS Name) should contain, the FQDN of the host.\n"
+"For virtual machines that belong to a cluster, the subject common name (CN) must be equal to, or subject alternative name (DNS Name) must contain, the FQDN of the Hyper-V Replica Broker."
+msgstr ""
+"对于主题通用名称（Subject Common Name，简称 "
+"CN）的要求取决于虚拟机是否属于某个集群。如果虚拟机不属于集群，则其主题通用名称（CN）必须与主机的完全 Qualified Domain "
+"Name（FQDN）相同，或者其主题备用名称（Subject Alternative Name，简称 DNS Name）中必须包含该主机的 "
+"FQDN；如果虚拟机属于集群，则其主题通用名称（CN）必须与 Hyper-V 复制代理服务器的 FQDN 相同，或者其主题备用名称（DNS "
+"Name）中必须包含该 Hyper-V 复制代理服务器的 FQDN。"
+
+msgid ""
+"To display a list certificates in the computer's My store and the thumbprint"
+" of each certificate, type the following:"
+msgstr "要在计算机的“我的证书库”中显示证书列表以及每份证书的摘要（即“指纹”），请输入以下内容："
+
+msgid "`PS C:\\\\\\> cd cert:\\LocalMachine\\My`"
+msgstr ""
+"```\n"
+"PS C:\\> cd cert:\\LocalMachine\\My\n"
+"```"
+
+msgid "`PS C:\\\\\\> dir | format-list`"
+msgstr "`PS C:\\> dir | format-list`"
+
+msgid ""
+"For more information about certificate stores, see "
+"[http://technet.microsoft.com//library/cc757138.aspx](https://technet.microsoft.com//library/cc757138.aspx)."
+msgstr ""
+"有关证书存储的更多信息，请参阅 "
+"[http://technet.microsoft.com//library/cc757138.aspx](https://technet.microsoft.com//library/cc757138.aspx)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts that have the virtual machines for which you want to test the connection for replication.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names (FQDN) are allowed.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"请指定一个或多个 Hyper-V 主机，这些主机上托管着您想要测试复制连接的虚拟机。允许使用 NetBIOS 名称、IP "
+"地址或完全限定域名（FQDN）来进行指定。默认值是本地计算机；可以使用 `localhost` 或`.` 来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the name of the Replica server to test for connectivity with the "
+"virtual machine to be replicated."
+msgstr "指定用于测试与要复制的虚拟机之间连接性的副本服务器的名称。"
+
+msgid ""
+"Specifies the port on the Replica server to use to test connectivity.\n"
+"Make sure you specify a port that is configured on the Replica server to support the same authentication type you specify using the AuthenticationType parameter in this cmdlet.\n"
+"Run the **Get-VMReplicationServer** cmdlet on the Replica server to check the configuration of the port, or contact the administrator of the specified Replica server."
+msgstr ""
+"指定用于测试连接性的副本服务器上的端口。请确保选择的端口已在副本服务器上配置为支持与此cmdlet中使用的AuthenticationType参数所指定的相同身份验证类型。您可以在副本服务器上运行**Get-"
+"VMReplicationServer** cmdlet来检查端口的配置情况，或者联系该副本服务器的管理员获取相关信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

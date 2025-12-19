@@ -1,0 +1,84 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:09:27 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Disable-ReFSDedup"
+msgstr "# 禁用 ReFS SD Dedup 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables data deduplication on a specified ReFS volume."
+msgstr "禁用指定 ReFS 卷上的数据去重功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Disable-ReFSDedup` cmdlet disables data deduplication on a specified ReFS volume. This cmdlet\n"
+"does not affect existing deduplicated files or folders on the volume, but it prevents new files or\n"
+"folders from being deduplicated."
+msgstr ""
+"` Disable-ReFSDedup` cmdlet 用于禁用指定 ReFS 卷上的数据去重功能。该 cmdlet "
+"不会影响卷上已存在的去重文件或文件夹，但会阻止新文件或文件夹被进行去重处理。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example disables data deduplication on the `D:` ReFS volume."
+msgstr "这个示例禁用了`D:` ReFS卷上的数据去重功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the volume or volumes to disable ReFS data deduplication. Enter one or more volume IDs,\n"
+"drive letters, or volume GUID paths. For drive letters, use the format `D:`. For volume GUID paths,\n"
+"use the format `\\\\?\\Volume{{GUID}}\\`. Separate multiple volumes with a comma."
+msgstr ""
+"指定要禁用 ReFS 数据去重功能的卷。可以输入一个或多个卷 ID、驱动器字母或卷 GUID 路径。对于驱动器字母，请使用格式 `D:`；对于卷 "
+"GUID 路径，请使用格式 `\\\\?\\Volume{{GUID}}`。多个卷之间请用逗号分隔。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-ReFSDedup](Enable-ReFSDedup.md)"
+msgstr "[启用ReFS去重功能](Enable-ReFSDedup.md)"

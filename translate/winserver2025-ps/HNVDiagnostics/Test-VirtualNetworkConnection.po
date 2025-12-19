@@ -1,0 +1,145 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:37:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-VirtualNetworkConnection"
+msgstr "# 测试虚拟网络连接"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Tests a virtual network connection."
+msgstr "测试虚拟网络连接。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Test-VirtualNetworkConnection** cmdlet tests connectivity over a virtual network by sending Internet Control Message Protocol (ICMP) packets between two Customer Address IP addresses (CAIPs).\n"
+"The two nodes can reside on the same virtual subnet ID (VSID), or they can share a VSID."
+msgstr ""
+"`Test-VirtualNetworkConnection` cmdlet 通过在两个客户地址 "
+"IP（CAIP）之间发送互联网控制消息协议（ICMP）数据包来测试虚拟网络上的连通性。这两个节点可以位于相同的虚拟子网 "
+"ID（VSID）上，也可以共享同一个 VSID。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test a virtual network connection by sending"
+msgstr "### 示例 1：通过发送数据来测试虚拟网络连接"
+
+msgid ""
+"The first command gets the credentials for the current user, and then stores"
+" them in the $cred variable."
+msgstr "第一个命令获取当前用户的凭据信息，然后将其存储在 `$cred` 变量中。"
+
+msgid "The second command tests the specified virtual network connection."
+msgstr "第二个命令用于测试指定的虚拟网络连接。"
+
+msgid "### Example 2: Test a virtual network connection by receiving"
+msgstr "### 示例 2：通过接收数据来测试虚拟网络连接"
+
+msgid ""
+"The first command converts a plain text password to a secure string, and "
+"then stores it in the $password variable."
+msgstr "第一个命令将明文密码转换为一个安全的字符串，然后将其存储在 `$password` 变量中。"
+
+msgid ""
+"The second command creates a **PSCredential** object, and then stores it in "
+"the $cred variable."
+msgstr "第二个命令创建了一个 **PSCredential** 对象，然后将其存储在 `$cred` 变量中。"
+
+msgid "The third command tests the specified virtual network connection."
+msgstr "第三个命令用于测试指定的虚拟网络连接。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the credentials for Network Controller.\n"
+"Specify this parameter for Kerberos deployments."
+msgstr "指定网络控制器所需的凭据。在部署Kerberos系统时需要设置此参数。"
+
+msgid "Specifies the name of the host on which to run the test."
+msgstr "指定用于运行测试的主机的名称。"
+
+msgid ""
+"Indicates whether this operation is for the sender or receiver.\n"
+"One of each is required."
+msgstr "表示此操作是针对发送者还是接收者。两者中必须各选择一个。"
+
+msgid "Specifies the CAIP of the listener."
+msgstr "指定监听器的CAIP（Certification Authority Information Point）。"
+
+msgid "Specifies the VSID on which to initiate the test."
+msgstr "指定用于启动测试的VSID（虚拟站点标识符）。"
+
+msgid "Specifies the IP of the management host on which to initiate the test."
+msgstr "指定用于启动测试的管理主机的 IP 地址。"
+
+msgid "Specifies a unique ID for the test."
+msgstr "为测试指定一个唯一的ID。"
+
+msgid "Specifies the size of the payload to carry in ICMP messages."
+msgstr "指定在 ICMP 消息中传输的有效载荷（payload）的大小。"
+
+msgid "Specifies the CAIP of the sender."
+msgstr "指定发送方的CAIP（认证机构信息）。"
+
+msgid "Specifies the VSID of the sender."
+msgstr "指定发送方的 VSID（虚拟站点标识符）。"
+
+msgid "Specifies the sequence number to use in the ICMP packets."
+msgstr "指定要在 ICMP 数据包中使用的序列号。"
+
+msgid "Specifies the name of a virtual machine."
+msgstr "指定虚拟机的名称。"
+
+msgid "Specifies the name of the virtual machine with the desired CAIP."
+msgstr "指定具有所需CAIP配置的虚拟机的名称。"
+
+msgid "Specifies the name of the adapter for the desired CAIP."
+msgstr "指定所需CAIP适配器的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

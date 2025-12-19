@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:06:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Extends the Active Directory (AD) schema with the Windows Local "
+"Administrator Password Solution (LAPS) schema attributes."
+msgstr "通过添加 Windows 本地管理员密码解决方案（LAPS）相关的模式属性来扩展 Active Directory（AD）的模式结构。"
+
+msgid "# Update-LapsADSchema"
+msgstr "# 更新 LapsADSchema"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Extends the Active Directory (AD) schema with the Windows Local Administrator Password Solution\n"
+"(LAPS) schema attributes."
+msgstr "通过添加 Windows 本地管理员密码解决方案（LAPS）的架构属性来扩展 Active Directory（AD）的架构。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Update-LapsADSchema` cmdlet extends the AD schema with the LAPS schema attributes. The specific\n"
+"nature of the schema extensions is documented in\n"
+"[Windows LAPS schema extensions reference](https://go.microsoft.com/fwlink/?linkid=2233804)."
+msgstr ""
+"`Update-LapsADSchema` cmdlet 用于将 LAPS 模式属性添加到 AD（Active "
+"Directory）模式中。这些模式扩展的具体内容可以在 [Windows LAPS "
+"模式扩展参考文档](https://go.microsoft.com/fwlink/?linkid=2233804) 中找到。"
+
+msgid ""
+"The **Verbose** parameter may be used to get additional information about "
+"the cmdlet's operation."
+msgstr "可以使用 `Verbose` 参数来获取有关该 cmdlet 操作的更多信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example extends the AD schema to add the LAPS attributes."
+msgstr "这个示例扩展了AD（Active Directory）架构，以添加LAPS属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a set of credentials to use when extending the schema. If not specified, the current\n"
+"user's credentials are used."
+msgstr "指定了一组用于扩展模式时的凭据。如果未指定，则使用当前用户的凭据。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Windows LAPS Overview](https://go.microsoft.com/fwlink/?linkid=2233901)"
+msgstr "[Windows LAPS概述](https://go.microsoft.com/fwlink/?linkid=2233901)"
+
+msgid ""
+"[Windows LAPS schema extensions "
+"reference](https://go.microsoft.com/fwlink/?linkid=2233804)"
+msgstr "[Windows LAPS模式扩展参考](https://go.microsoft.com/fwlink/?linkid=2233804)"

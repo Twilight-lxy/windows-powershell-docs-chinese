@@ -1,0 +1,214 @@
+---
+description: 使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。
+external help file: Microsoft.HyperV.PowerShell.Cmdlets.dll-Help.xml
+Module Name: Hyper-V
+ms.date: 12/20/2016
+online version: https://learn.microsoft.com/powershell/module/hyper-v/mount-vhd?view=windowsserver2025-ps&wt.mc_id=ps-gethelp
+schema: 2.0.0
+title: Mount-VHD
+---
+
+# 使用Mount-VHD命令挂载VHD文件
+
+## 摘要
+安装一个或多个虚拟硬盘。
+
+## 语法
+
+```
+Mount-VHD [-Path] <String[]> [-NoDriveLetter] [-ReadOnly] [-SnapshotId <Guid>] [-Passthru]
+ [-CimSession <CimSession[]>] [-ComputerName <String[]>] [-Credential <PSCredential[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+## 描述
+`Mount-VHD` cmdlet 可以挂载一个或多个虚拟硬盘。
+
+## 示例
+
+### 示例 1
+```
+PS C:\> Mount-VHD -Path c:\test\testvhdx.vhdx
+```
+
+安装一个虚拟硬盘，该虚拟硬盘文件的路径为 c:\test\testvhdx.vhdx。
+
+### 示例 2
+```
+PS C:\> Mount-VHD -Path c:\test\testvhdx.vhdx -ReadOnly
+```
+
+以只读模式挂载一个虚拟硬盘，该虚拟硬盘文件的路径为 c:\test\testvhdx.vhdx。
+
+### 示例 3
+```
+PS C:\> Mount-VHD -Path c:\test\testvhdx -PassThru | Get-Disk | Get-Partition | Get-Volume
+```
+
+将一个虚拟硬盘连接到系统中，该虚拟硬盘文件的路径为 `c:\test\testvhdx.vhdx`，并获取与此虚拟硬盘相关联的卷信息。
+
+## 参数
+
+### -CimSession
+在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。
+
+```yaml
+Type: CimSession[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ComputerName
+指定一个或多个用于挂载虚拟硬盘的Hyper-V主机。可以使用NetBIOS名称、IP地址或完全限定域名进行指定。默认值是本地计算机。可以使用“localhost”或点（.）来明确表示本地计算机。
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Confirm
+在运行该 cmdlet 之前，会提示您进行确认。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Credential
+指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。
+
+```yaml
+Type: PSCredential[]
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NoDriveLetter
+指定虚拟硬盘应被挂载，但不为虚拟硬盘中包含的各个卷分配驱动器字母。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Passthru
+指定要将一个对象传递给表示要挂载的虚拟硬盘的管道（pipeline）。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Path
+指定要挂载的虚拟硬盘文件所在的路径。如果指定了文件名或相对路径，则虚拟硬盘的路径将相对于当前工作目录进行计算。
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: FullName
+
+Required: True
+Position: 0
+Default value: None
+Accept pipeline input: True (ByPropertyName, ByValue)
+Accept wildcard characters: False
+```
+
+### -ReadOnly
+指定虚拟硬盘应以只读模式进行挂载。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SnapshotId
+指定一个VHD集的唯一ID。
+
+```yaml
+Type: Guid
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: True (ByPropertyName)
+Accept wildcard characters: False
+```
+
+### -WhatIf
+展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被运行。
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### CommonParameters
+此 cmdlet 支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction 和 -WarningVariable。有关更多信息，请参阅 [about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。
+
+## 输入
+
+## 输出
+
+### Microsoft.Vhd POWERShell.VirtualHardDisk
+
+## 备注
+
+## 相关链接
+[Mount-DiskImage](/powershell/module/storage/mount-diskimage)

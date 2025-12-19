@@ -1,0 +1,145 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:13:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMNetworkAdapterAcl"
+msgstr "# Get-VMNetworkAdapterAcl"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the ACLs configured for a virtual machine network adapter."
+msgstr "获取为虚拟机网络适配器配置的访问控制列表（ACL）信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-VMNetworkAdapterAcl** cmdlet gets the ACLs configured for a virtual machine network adapter.\n"
+"If an ACL entry is created to be applied to both directions, it will appear under the list of entries for the inbound direction and under the list of entries for the outbound direction in the output from Get-VMNetworkAdapterAcl."
+msgstr ""
+"`Get-VMNetworkAdapterAcl` cmdlet 用于获取为虚拟机网络适配器配置的访问控制列表（ACL）信息。如果某个 ACL "
+"条目被设置为同时适用于数据传输的入站和出站方向，那么该条目会同时出现在 `Get-VMNetworkAdapterAcl` "
+"的输出结果中，分别对应于入站方向和出站方向的条目列表中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Gets all the port ACLs configured on virtual machine Redmond."
+msgstr "获取在Redmond虚拟机上配置的所有端口访问控制列表（port ACLs）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the ACLs configured for a virtual machine network adapter are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个 Hyper-V 主机，以便从中检索为虚拟机网络适配器配置的 ACL（访问控制列表）。允许使用 NetBIOS 名称、IP "
+"地址和完全限定域名。默认值是本地计算机。可以使用 `localhost` 或点号（.`）来明确指定本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that the ACLs are to be configured in the management (i.e.\n"
+"the parent, or host) operating system."
+msgstr "指定ACL（访问控制列表）应在管理操作系统（即父操作系统或宿主操作系统）中进行配置。"
+
+msgid ""
+"Specifies the virtual machine in which the ACLs configured for a virtual "
+"machine network adapter are to be retrieved."
+msgstr "指定用于检索为虚拟机网络适配器配置的访问控制列表（ACL）的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine in which the ACLs configured for a"
+" virtual machine network adapter are to be retrieved."
+msgstr "指定用于检索为虚拟机网络适配器配置的ACL（访问控制列表）的虚拟机的名称。"
+
+msgid ""
+"Specifies the virtual network adapter for which the configured ACLs are to "
+"be retrieved."
+msgstr "指定要获取已配置访问控制列表（ACL）的虚拟网络适配器。"
+
+msgid ""
+"Specifies the virtual network adapter name for which the configured ACLs are"
+" to be retrieved."
+msgstr "指定要获取已配置访问控制列表（ACL）的虚拟网络适配器名称。"
+
+msgid ""
+"Specifies the snapshot in which the ACLs configured for a virtual machine "
+"network adapter are to be retrieved."
+msgstr "指定要从中检索为虚拟机网络适配器配置的ACL（访问控制列表）的快照。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterAclSetting"
+msgstr "### Microsoft.HyperV POWERShell.VMNetworkAdapterAclSetting"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

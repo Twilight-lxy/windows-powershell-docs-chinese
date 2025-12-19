@@ -1,0 +1,171 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:47:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-NetAdapterRdma"
+msgstr "# Get-NetAdapterRdma"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the RDMA properties for a network adapter."
+msgstr "获取网络适配器的 RDMA 属性信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称排序（默认值）"
+
+msgid "### ByInstanceID"
+msgstr "### ByInstanceID"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-NetAdapterRdma** cmdlet gets the remote direct memory access (RDMA) properties of an RDMA-capable network adapter.\n"
+"RDMA is a feature that enables network adapters to transfer data directly between each other without requiring the main processor of the system to be part of that transfer.\n"
+"This results in lower latency and lower processor utilization."
+msgstr ""
+"`Get-NetAdapterRdma` cmdlet 可以获取支持远程直接内存访问（RDMA）功能的网络适配器的相关属性。RDMA "
+"是一种技术，它允许网络适配器之间直接传输数据，而无需系统的主处理器参与该传输过程。这样一来，可以降低延迟并减少处理器的使用负担。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get RDMA properties from the specified network adapter"
+msgstr "### 示例 1：从指定的网络适配器获取 RDMA 属性"
+
+msgid ""
+"This command gets the RDMA properties from the network adapter named "
+"MyAdapter."
+msgstr "这个命令从名为“MyAdapter”的网络适配器中获取RDMA属性。"
+
+msgid ""
+"### Example 2: Get all RDMA properties from the specified network adapter"
+msgstr "### 示例 2：从指定的网络适配器获取所有 RDMA 属性"
+
+msgid ""
+"This command displays all the RDMA properties from the adapter named "
+"MyAdapter."
+msgstr "这个命令会显示名为“MyAdapter”的适配器上的所有RDMA属性。"
+
+msgid ""
+"### Example 3: Get all RDMA capable network adapters that have RDMA enabled"
+msgstr "### 示例 3：获取所有支持 RDMA 且已启用 RDMA 功能的网络适配器"
+
+msgid "This command gets all RDMA capable network adapters with RDMA enabled."
+msgstr "这个命令可以获取所有支持RDMA功能且已启用RDMA的网络适配器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的形式运行该cmdlet。使用此参数来执行需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`系列的cmdlets。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"这表示该cmdlet在操作过程中会同时包含可见的网络适配器和隐藏的网络适配器。默认情况下，仅包含可见的网络适配器。如果在识别网络适配器时使用了通配符，并且指定了此参数，则该通配符字符串将匹配所有隐藏和可见的网络适配器。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述数组。对于物理网络适配器来说，这通常是网络适配器的供应商名称后跟型号和描述，例如 `Contoso 12345 "
+"千兆网络设备`。"
+
+msgid "Specifies an array network adapter names."
+msgstr "指定一个包含网络适配器名称的数组。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时进行的操作的最大数量，以便运行相应的 cmdlet。如果省略此参数或输入值为 `0`，那么 Windows PowerShell®"
+" 会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值（即并发操作的最高数量）。该限制仅适用于当前正在执行的 "
+"cmdlet，而不影响整个会话或整个计算机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterRdmaSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterRdmaSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-NetAdapterRdma](./Disable-NetAdapterRdma.md)"
+msgstr "[Disable-NetAdapterRdma](./Disable-NetAdapterRdma.md)"
+
+msgid "[Enable-NetAdapterRdma](./Enable-NetAdapterRdma.md)"
+msgstr "[Enable-NetAdapterRdma](./Enable-NetAdapterRdma.md)"
+
+msgid "[Set-NetAdapterRdma](./Set-NetAdapterRdma.md)"
+msgstr "[Set-NetAdapterRdma](./Set-NetAdapterRdma.md)"

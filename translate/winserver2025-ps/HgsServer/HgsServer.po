@@ -1,0 +1,83 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:30:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# HgsServer Module"
+msgstr "# HgsServer 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for the Host Guardian"
+" Service server cmdlets. This table lists the cmdlets in alphabetical order."
+msgstr ""
+"本参考资料提供了Host Guardian Service服务器相关cmdlet的描述和语法信息。下表按照字母顺序列出了所有这些cmdlet。"
+
+msgid "## HgsServer Cmdlets"
+msgstr "## HgsServerCmdlets"
+
+msgid "### [Clear-HgsServer](Clear-HgsServer.md)"
+msgstr "### [Clear-HgsServer](Clear-HgsServer.md)"
+
+msgid ""
+"Resets the Host Guardian Service on the local node to the uninitialized "
+"state."
+msgstr "将本地节点上的Host Guardian服务重置为未初始化的状态。"
+
+msgid "### [Export-HgsServerState](Export-HgsServerState.md)"
+msgstr "### [Export-HgsServerState](Export-HgsServerState.md)"
+
+msgid ""
+"Exports the local Host Guardian Service instance's state to enable recovery "
+"scenarios."
+msgstr "将本地Host Guardian服务实例的状态导出，以便在需要恢复的情况下使用。"
+
+msgid "### [Get-HgsServer](Get-HgsServer.md)"
+msgstr "### [Get-HgsServer](Get-HgsServer.md)"
+
+msgid "Gets the status of the Host Guardian Service server."
+msgstr "获取Host Guardian服务服务器的状态。"
+
+msgid "### [Import-HgsServerState](Import-HgsServerState.md)"
+msgstr "### [Import-HgsServerState](Import-HgsServerState.md)"
+
+msgid ""
+"Imports an exported Host Guardian Service state into a Host Guardian Service"
+" instance."
+msgstr "将导出的Host Guardian Service状态导入到一个Host Guardian Service实例中。"
+
+msgid "### [Initialize-HgsServer](Initialize-HgsServer.md)"
+msgstr "### [ Initialize-HgsServer](Initialize-HgsServer.md)"
+
+msgid "Initializes the Host Guardian Service server."
+msgstr "初始化Host Guardian服务服务器。"
+
+msgid "### [Install-HgsServer](Install-HgsServer.md)"
+msgstr "### [安装 HGS 服务器](Install-HgsServer.md)"
+
+msgid "Installs the Host Guardian Service server."
+msgstr "安装Host Guardian服务服务器。"
+
+msgid "### [Set-HgsServer](Set-HgsServer.md)"
+msgstr "### [Set-HgsServer](Set-HgsServer.md)"
+
+msgid "Sets the Host Guardian Service server configuration."
+msgstr "用于设置Host Guardian服务服务器的配置信息。"
+
+msgid "### [Test-HgsServer](Test-HgsServer.md)"
+msgstr "### [Test-HgsServer](Test-HgsServer.md)"
+
+msgid ""
+"Tests if the local computer can function as a Host Guardian Service server "
+"node."
+msgstr "测试本地计算机是否可以作为Host Guardian Service服务器节点运行。"
+
+msgid "### [Uninstall-HgsServer](Uninstall-HgsServer.md)"
+msgstr "### [卸载 HgsServer](Uninstall-HgsServer.md)"
+
+msgid "Removes a local node from a Host Guardian Service and from the domain."
+msgstr "从Host Guardian服务中以及该域名中删除一个本地节点。"

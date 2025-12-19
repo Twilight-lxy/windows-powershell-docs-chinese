@@ -1,0 +1,111 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:44:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WinUILanguageOverride"
+msgstr "# Set-WinUILanguageOverride"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Sets the Windows UI language override setting for the current user account."
+msgstr "设置当前用户账户的Windows UI语言覆盖选项。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-WinUILanguageOverride** cmdlet sets a user-preferred display language to be used for the Windows user interface (UI).\n"
+"If no override setting is used, the display language is dynamically determined from the language list of the user. Log off and loging back on is required for changes to take place."
+msgstr ""
+"`Set-WinUILanguageOverride` cmdlet 可以设置用户偏好的显示语言，用于 Windows "
+"用户界面（UI）。如果没有使用任何覆盖设置，显示语言将动态地从用户的语言列表中确定。要使更改生效，需要先注销账户再重新登录。"
+
+msgid ""
+"For more information, see the **Get-WinUserLanguageList** and **Set-"
+"WinUserLanguageList** cmdlets."
+msgstr ""
+"有关更多信息，请参阅 **Get-WinUserLanguageList** 和 **Set-WinUserLanguageList** cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set a language override"
+msgstr "### 示例 1：设置语言覆盖规则"
+
+msgid ""
+"This command sets the Windows UI language override to German (Germany) for "
+"the current user account."
+msgstr "此命令将当前用户账户的 Windows 用户界面语言设置为德语（德国）。"
+
+msgid "### Example 2: Set a language override to null"
+msgstr "### 示例 2：将语言覆盖值设置为 null"
+
+msgid ""
+"This command sets the Windows UI language override to null for the current "
+"user account."
+msgstr "该命令将当前用户账户的 Windows 用户界面语言设置重写值设置为 null（空）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a language."
+msgstr "指定一种语言。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### CultureInfo"
+msgstr "### CultureInfo"
+
+msgid ""
+"You can pipe an object that contains the Windows UI language override for the current user account.\n"
+"For more information about the **CultureInfo** object, see [CultureInfo Class](https://go.microsoft.com/fwlink/?LinkID=242306)."
+msgstr ""
+"你可以将一个包含当前用户账户的Windows "
+"UI语言设置信息的对象传递给相应的处理函数。有关`CultureInfo`对象的更多信息，请参阅[CultureInfo类](https://go.microsoft.com/fwlink/?LinkID=242306)。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WinUILanguageOverride](./Get-WinUILanguageOverride.md)"
+msgstr "[Get-Win UILanguageOverride](./Get-WinUILanguageOverride.md)"
+
+msgid "[Get-WinUserLanguageList](./Get-WinUserLanguageList.md)"
+msgstr "[Get-WinUserLanguageList](./Get-WinUserLanguageList.md)"
+
+msgid "[Set-WinUserLanguageList](./Set-WinUserLanguageList.md)"
+msgstr "[Set-WinUserLanguageList](./Set-WinUserLanguageList.md)"

@@ -1,0 +1,110 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:18:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# New-BcdEntry"
+msgstr "# New-BcdEntry"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "{{ Fill in the Synopsis }}"
+msgstr "{{ 填写剧情简介 }}"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Application"
+msgstr "### 应用程序"
+
+msgid "### Device"
+msgstr "### 设备"
+
+msgid "### Inherit"
+msgstr "### 继承"
+
+msgid "### Default"
+msgstr "### 默认值"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "{{ Fill in the Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "{{ Add example description here }}"
+msgstr "{{ 在这里添加示例描述 }}"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "{{ Fill Application Description }}"
+msgstr "{{ 填写应用程序描述 }}"
+
+msgid "{{ Fill Description Description }}"
+msgstr "{{ 填写描述内容 }}"
+
+msgid "{{ Fill Device Description }}"
+msgstr "{{ 填写设备描述 }}"
+
+msgid "{{ Fill Force Description }}"
+msgstr "{{ 填充力描述 }}"
+
+msgid "{{ Fill Id Description }}"
+msgstr "{{ 填充ID描述 }}"
+
+msgid "{{ Fill Inherit Description }}"
+msgstr "{{ 填写继承描述 }}"
+
+msgid "{{ Fill Store Description }}"
+msgstr "{{ 填写店铺描述 }}"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.Bcd.Cmdlets.BcdExtensions.BcdEntryInfo"
+msgstr "### Microsoft.Windows.Bcd Cmdlets.BcdExtensions.BcdEntryInfo"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

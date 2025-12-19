@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:43:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-VMMigrationNetwork"
+msgstr "# Add-VMMigrationNetwork"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Adds a network for virtual machine migration on one or more virtual machine "
+"hosts."
+msgstr "为一个或多个虚拟机主机添加用于虚拟机迁移的网络。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-VMMigrationNetwork** cmdlet adds a network for virtual machine "
+"migration on one or more virtual machine hosts."
+msgstr "`Add-VMMigrationNetwork` 这个 cmdlet 用于为一个或多个虚拟机主机添加一个用于虚拟机迁移的网络。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example adds an IPv4 address as a live migration network on the local "
+"Hyper-V host."
+msgstr "这个示例将一个IPv4地址添加为本地Hyper-V主机上的实时迁移网络。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example adds an IPv4 address range as possible live migration networks "
+"on the local Hyper-V host by using a subnet mask."
+msgstr "这个示例通过使用子网掩码，在本地 Hyper-V 主机上添加了一个 IPv4 地址范围，作为可能的实时迁移网络。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example adds an IPv6 address range as possible live migration networks "
+"on the local Hyper-V host by adding a subnet mask."
+msgstr "这个示例通过添加子网掩码，将一个 IPv6 地址范围添加为本地 Hyper-V 主机上可能的实时迁移网络。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example adds an IPv6 address range as possible live migration networks "
+"on the local Hyper-V host by using a subnet mask and specifying the network "
+"as lower priority."
+msgstr "此示例通过使用子网掩码，并将该网络指定为较低优先级，将一个 IPv6 地址范围添加为本地 Hyper-V 主机上可能的动态迁移网络。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the network is to be added for virtual machine migration.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于添加网络以便进行虚拟机迁移的 Hyper-V 主机。允许使用 NetBIOS 名称、IP "
+"地址和完全限定域名。默认值是本地计算机。可以使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that an **Microsoft.HyperV.PowerShell.MigrationNetwork** object is"
+" to be passed through to the pipeline representing the network added for "
+"virtual machine migration."
+msgstr ""
+"指定需要将一个 `Microsoft.HyperV.PowerShell.MigrationNetwork` "
+"对象传递给管道，该对象代表用于虚拟机迁移的网络。"
+
+msgid ""
+"Specifies the priority of the network to be added for virtual machine migration.\n"
+"Multiple networks can have the same priority."
+msgstr "指定用于虚拟机迁移的网络的优先级。多个网络可以具有相同的优先级。"
+
+msgid ""
+"Specifies a string representing an IPv4 or IPv6 subnet mask which identifies"
+" the network to be added for virtual machine migration."
+msgstr "指定一个字符串，该字符串表示IPv4或IPv6子网掩码，用于标识虚拟机迁移时要添加的网络。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.MigrationNetwork"
+msgstr "### Microsoft.HyperV.PowerShell.MigrationNetwork"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 **-PassThru**，"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

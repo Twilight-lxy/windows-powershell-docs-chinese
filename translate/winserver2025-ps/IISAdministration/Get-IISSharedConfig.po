@@ -1,0 +1,82 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:33:21 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IISSharedConfig"
+msgstr "# 获取 IISSharedConfig 配置信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets IIS shared configuration status."
+msgstr "获取 IIS 共享配置的状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-IISSharedConfig** cmdlet gets the current status of the IIS shared"
+" configuration feature."
+msgstr "`Get-IISSharedConfig` cmdlet 可以获取 IIS 共享配置功能的当前状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get shared configuration status"
+msgstr "### 示例 1：获取共享配置的状态"
+
+msgid "This command gets the status of the IIS shared configuration."
+msgstr "这个命令用于获取 IIS 共享配置的状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于(CommonParameters)（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-IISSharedConfig](./Disable-IISSharedConfig.md)"
+msgstr "[ Disable-IISSharedConfig](./Disable-IISSharedConfig.md)"
+
+msgid "[Enable-IISSharedConfig](./Enable-IISSharedConfig.md)"
+msgstr "[Enable-IISSharedConfig](./Enable-IISSharedConfig.md)"

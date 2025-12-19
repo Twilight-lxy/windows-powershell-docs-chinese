@@ -1,0 +1,185 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:23:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-IpamDhcpConfigurationEvent"
+msgstr "# 删除 IpamDhcpConfigurationEvent"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Removes configuration events for DHCP servers from the IPAM database."
+msgstr "从 IPAM 数据库中删除与 DHCP 服务器相关的配置事件。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-IpamDhcpConfigurationEvent** cmdlet removes configuration events for Dynamic Host Configuration Protocol (DHCP) servers from the IP Address Management (IPAM) database.\n"
+"The cmdlet permanently deletes configuration events through the specified end date.\n"
+"The end date uses the time zone of the IPAM server."
+msgstr ""
+"`Remove-IpamDhcpConfigurationEvent` "
+"这个cmdlet用于从IP地址管理（IPAM）数据库中删除与动态主机配置协议（DHCP）服务器相关的配置事件。该cmdlet会永久性地删除所有在指定结束日期之前的配置事件，且该结束日期采用的是IPAM服务器所在时区的时间。"
+
+msgid ""
+"Use the **Get-IpamDhcpConfigurationEvent** cmdlet to view configuration "
+"events from the IPAM database."
+msgstr "使用 **Get-IpamDhcpConfigurationEvent** cmdlet 来查看来自 IPAM 数据库的配置事件。"
+
+msgid ""
+"Do not specify the current date as the end date.\n"
+"The IPAM server collects the configuration events from DHCP servers as part of the next data gathering task, and, therefore, specifies that the current date does not result in permanent deletion of events from the current day."
+msgstr ""
+"请不要将当前日期指定为结束日期。IPAM服务器会在下一次数据收集任务中从DHCP服务器获取配置事件，因此指定当前日期并不会导致当天发生的事件被永久删除。"
+
+msgid ""
+"The cmdlet does not delete the configuration events from the DHCP servers "
+"themselves."
+msgstr "该cmdlet并不会从DHCP服务器本身删除配置事件记录。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove events through the previous day"
+msgstr "### 示例 1：删除发生在前一天之前的事件"
+
+msgid ""
+"This example removes all configuration events through the previous day."
+msgstr "这个示例会删除前一天之前的所有配置事件。"
+
+msgid ""
+"The first command creates a **DateTime** object by using the **Get-Date** cmdlet, and then stores it in the $Today variable.\n"
+"By default, **Get-Date** creates the current date.\n"
+"For more information about **Get-Date** and **DateTime** objects, type `Get-Help Get-Date`."
+msgstr ""
+"第一个命令使用 `Get-Date` cmdlet 创建一个 `DateTime` 对象，然后将其存储在 `$Today` "
+"变量中。默认情况下，`Get-Date` 会返回当前日期。有关 `Get-Date` 和 `DateTime` 对象的更多信息，请输入 `Get-"
+"Help Get-Date`。"
+
+msgid ""
+"The second command removes configuration events from the IPAM database through the previous day.\n"
+"The command subtracts one day from the **DateTime** object stored in the $Today variable, and then specifies that value for the *EndDate* parameter."
+msgstr ""
+"第二个命令用于从 IPAM 数据库中删除截至前一天为止的所有配置事件。该命令会从存储在 `$Today` 变量中的 `DateTime` "
+"对象中减去一天的时间，然后将这个时间值设置为 `endDate` 参数的值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行此cmdlet。使用此参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用 `*-Job` 类型的"
+" cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the end date as a **DateTime** object.\n"
+"The cmdlet removes events through this date from the IPAM database.\n"
+"To obtain a **DateTime** object, use the **Get-Date** cmdlet.\n"
+"For more information, type `Get-Help Get-Date`."
+msgstr ""
+"指定结束日期为一个 **DateTime** 对象。该 cmdlet 会从 IPAM 数据库中删除在该日期之后的所有事件。若要获取一个 "
+"**DateTime** 对象，可以使用 **Get-Date** cmdlet。有关更多信息，请输入 `Get-Help Get-Date`。"
+
+msgid "Do not specify the current date."
+msgstr "请不要指定当前日期。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时执行的命令（cmdlet）操作的最大数量。如果省略此参数或输入值`0`，Windows "
+"PowerShell®将根据计算机上正在运行的CIM命令（cmdlets）的数量来计算该命令的最佳限制次数。此限制仅适用于当前正在执行的命令，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上，这个 cmdlet 并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### IpamDhcpConfigurationEvent"
+msgstr "### IpamDhcpConfigurationEvent"
+
+msgid ""
+"This cmdlet returns an object that represents a DHCP server configuration "
+"event in IPAM."
+msgstr "此cmdlet返回一个对象，该对象代表IPAM中的DHCP服务器配置事件。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IpamDhcpConfigurationEvent](./Get-IpamDhcpConfigurationEvent.md)"
+msgstr "[Get-IpamDhcpConfigurationEvent](./Get-IpamDhcpConfigurationEvent.md)"

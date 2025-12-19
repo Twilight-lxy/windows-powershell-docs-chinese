@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:12:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Suspend-ReFSDedupSchedule"
+msgstr "# 暂停 ReFSDedup 计划的执行"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Suspends the deduplication schedule on a specified ReFS volume."
+msgstr "暂停指定ReFS卷上的去重操作计划。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Suspend-ReFSDedupSchedule` cmdlet suspends the deduplication schedule on the specified ReFS\n"
+"volume. When you suspend the schedule, no new deduplication jobs will be started until you resume\n"
+"the schedule."
+msgstr ""
+"`Suspend-ReFSDedupSchedule` cmdlet 用于暂停指定 ReFS "
+"卷上的去重计划。当您暂停该计划时，在恢复计划之前将不会启动新的去重任务。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example suspends the deduplication schedule on the `D:` ReFS volume."
+msgstr "这个示例会暂停`D:` ReFS卷上的去重任务调度。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the volume on which to suspend the ReFS Deduplication schedule. Enter one or more volume\n"
+"IDs, drive letters, or volume GUID paths. For drive letters, use the format `D:`. For volume GUID\n"
+"paths, use the format `\\\\?\\Volume{{GUID}}\\`. Separate multiple volumes with a comma."
+msgstr ""
+"指定要暂停 ReFS 去重计划的卷。可以输入一个或多个卷 ID、驱动器字母或卷 GUID 路径。使用驱动器字母时，格式为 `D:`；使用卷 GUID "
+"路径时，格式为 `\\\\?\\Volume{{GUID}}`。多个卷之间用逗号分隔。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-ReFSDedupSchedule](Clear-ReFSDedupSchedule.md)"
+msgstr "[Clear-ReFSDedupSchedule](Clear-ReFSDedupSchedule.md)"
+
+msgid "[Get-ReFSDedupSchedule](Get-ReFSDedupSchedule.md)"
+msgstr "[Get-ReFSDedupSchedule](Get-ReFSDedupSchedule.md)"
+
+msgid "[Resume-ReFSDedupSchedule](Resume-ReFSDedupSchedule.md)"
+msgstr "[Resume-ReFSDedupSchedule](Resume-ReFSDedupSchedule.md)"
+
+msgid "[Set-ReFSDedupSchedule](Set-ReFSDedupSchedule.md)"
+msgstr "[Set-ReFSDedupSchedule](Set-ReFSDedupSchedule.md)"

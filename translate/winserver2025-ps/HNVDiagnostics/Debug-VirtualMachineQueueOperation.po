@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:33:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Debug-VirtualMachineQueueOperation"
+msgstr "# 调试虚拟机队列操作（Debug-VirtualMachineQueueOperation）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Debugs VMQ/VMMQ traffic."
+msgstr "调试VMQ/VMMQ流量。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Debug-VirtualMachineQueueOperation** cmdlet analyzes virtual machine queue (VMQ) and VMMQ traffic.\n"
+"You can use this cmdlet to identify whether VMQ/VMMQ is degrading throughput or is contributing to high utilization on some cores."
+msgstr ""
+"`Debug-VirtualMachineQueueOperation` cmdlet 用于分析虚拟机队列（VMQ）和 VMMQ "
+"的通信流量。您可以使用此 cmdlet 来判断 VMQ/VMMQ 是否导致吞吐量下降，或者是否导致了某些核心的高利用率。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Debug VMMQ on a remote computer"
+msgstr "### 示例 1：在远程计算机上调试 VMMQ"
+
+msgid ""
+"The first command gets the credentials for the current user, and then stores"
+" them in the $Cred variable."
+msgstr "第一个命令获取当前用户的凭据信息，然后将这些信息存储在 `$Cred` 变量中。"
+
+msgid ""
+"The second command gets debug information for VMMQ on a remote computer."
+msgstr "第二个命令用于获取远程计算机上VMMQ的调试信息。"
+
+msgid "### Example 2: Debug VMMQ on the local host"
+msgstr "### 示例 2：在本地主机上调试 VMMQ"
+
+msgid ""
+"The first command gets the credentials for the current user, and then stores"
+" them in the $Cred variable."
+msgstr "第一个命令获取当前用户的凭据信息，然后将这些信息存储在 `$Cred` 变量中。"
+
+msgid "The second command gets debug information for VMMQ on the local host."
+msgstr "第二个命令用于获取本地主机上VMMQ的调试信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the credentials to use to connect to a remote host."
+msgstr "指定用于连接到远程主机的凭据。"
+
+msgid "Specifies the remote host on which to run the diagnostics."
+msgstr "指定用于运行诊断程序的远程主机。"
+
+msgid "Specifies the management IP address of the remote host."
+msgstr "指定远程主机的管理IP地址。"
+
+msgid "Specifies the number of seconds to analyze network traffic."
+msgstr "指定用于分析网络流量的秒数。"
+
+msgid "Specifies the name of the virtual machine to analyze."
+msgstr "指定要分析的虚拟机的名称。"
+
+msgid "Specifies the name of the virtual machine network adapter to analyze."
+msgstr "指定要分析的虚拟机网络适配器的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

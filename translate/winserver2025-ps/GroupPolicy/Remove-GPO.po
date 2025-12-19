@@ -1,0 +1,183 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:59:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-GPO"
+msgstr "# 删除GPO"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a GPO."
+msgstr "删除一个组策略对象（GPO）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByGUID (Default)"
+msgstr "### 使用 ByGUID（默认值）"
+
+msgid "### ByName"
+msgstr "### 按名称查找"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Remove-GPO` cmdlet removes the Group Policy Object (GPO) container and data from the\n"
+"directory service and the system volume folder (SysVol)."
+msgstr "`Remove-GPO` cmdlet 会从目录服务和系统卷文件夹（SysVol）中删除组策略对象（GPO）及其相关数据。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a GPO by GUID"
+msgstr "### 示例 1：通过 GUID 删除 GPO"
+
+msgid ""
+"This command removes the GPO that has the GUID `50cc3e45-0b14-46dd-8b4d-afa012bc331c` from the\n"
+"`contoso.com` domain. Because the **KeepLinks** parameter is specified, links between the GPO and\n"
+"all sites, and links between the GPO and all containers in the domain are preserved."
+msgstr ""
+"此命令会从 `contoso.com` 域中删除 GUID 为 `50cc3e45-0b14-46dd-8b4d-afa012bc331c` 的 "
+"GPO。由于指定了 **KeepLinks** 参数，因此该 GPO 与所有站点之间的链接以及该 GPO 与域中所有容器之间的链接都将被保留。"
+
+msgid "### Example 2: Remove a GPO by name"
+msgstr "### 示例 2：按名称删除 GPO"
+
+msgid ""
+"This command removes the GPO named `TestGPO` from the domain of the user that is running the session.\n"
+"Because the **KeepLinks** parameter is not specified, links between the GPO and all sites, and links\n"
+"between the GPO and all containers in the domain are removed."
+msgstr ""
+"该命令会从正在运行会话的用户所在的域中删除名为 `TestGPO` 的组策略对象（GPO）。由于未指定 `KeepLinks` 参数，因此 GPO "
+"与域内所有站点之间的链接以及 GPO 与域内所有容器之间的链接都会被删除。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the domain in which you want to remove a GPO. You must specify the fully qualified domain\n"
+"name (FQDN) of the domain."
+msgstr "指定您希望从中删除 GPO 的域。必须提供该域的完全限定域名（FQDN）。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the computer that you are logged on to\n"
+"is used."
+msgstr "如果您没有指定**Domain**参数，那么将使用您登录所使用的计算机的域名。"
+
+msgid ""
+"If you specify a domain that differs from the domain of your user object, a trust must exist between\n"
+"the domain from which you want to remove the GPO and the domain of your user object."
+msgstr "如果您指定的域名与用户对象的所属域名不同，则您想要从中删除 GPO 的域与用户对象的所属域之间必须存在信任关系。"
+
+msgid ""
+"Specifies the GPO to remove by its globally unique identifier (GUID). The GUID uniquely identifies\n"
+"the GPO."
+msgstr "通过全局唯一标识符（GUID）指定要删除的组策略对象（GPO）。该 GUID 可唯一地识别该 GPO。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in alias, **Id**. For more information,\n"
+"see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"你也可以使用该参数的内置别名 **Id** 来引用它。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Indicates that the cmdlet preserves the links to the GPO in the specified domain, including OUs, and\n"
+"all sites when the GPO is removed."
+msgstr "这表示当GPO被删除时，该cmdlet会保留对该GPO的链接，包括其在指定域中的组织单元（OU）以及所有站点的相关信息。"
+
+msgid "Specifies the GPO that this cmdlet removes by its display name."
+msgstr "指定此cmdlet要根据其显示名称删除的GPO（组策略对象）。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another GPO with the same display\n"
+"name exists in the domain an error occurs. You can use the **Guid** parameter to uniquely identify a\n"
+"GPO."
+msgstr ""
+"显示名称在域内并不保证是唯一的。如果该域中存在另一个具有相同显示名称的 GPO，将会出现错误。你可以使用 **Guid** 参数来唯一地标识一个 "
+"GPO。"
+
+msgid ""
+"You can also refer to the **Name** parameter by its built-in alias, **DisplayName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用其内置别名 **DisplayName** 来引用 **Name** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell.module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此 cmdlet 用于联系的域控制器的名称，以便完成操作。您可以指定完全合格的域名（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the primary domain controller\n"
+"(PDC) emulator is contacted."
+msgstr "如果您不使用 **Server** 参数来指定名称，系统会联系主域控制器（PDC）模拟器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, **DC**. For more information,\n"
+"see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以通过其内置别名“DC”来引用**Server**参数。有关更多信息，请参阅[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上该cmdlet并未被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft.GroupPolicy.Gpo"
+
+msgid ""
+"This cmdlet pipes the GPO to be removed.\n"
+"Collections that contain GPOs from different domains are not supported."
+msgstr "这个cmdlet用于将需要删除的GPO传输出去（即将其从当前环境移除）。不支持包含来自不同域的GPO的集合。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet does not generate any output."
+msgstr "此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-GPO](./Get-GPO.md)"
+msgstr "[Get-GPO](./Get-GPO.md)"
+
+msgid "[New-GPO](./New-GPO.md)"
+msgstr "[New-GPO](./New-GPO.md)"

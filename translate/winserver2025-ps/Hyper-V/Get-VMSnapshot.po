@@ -1,0 +1,174 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:20:24 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMSnapshot"
+msgstr "# Get-VMSnapshot"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the checkpoints associated with a virtual machine or checkpoint."
+msgstr "获取与虚拟机或检查点相关联的检查点信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### Id"
+msgstr "### ID"
+
+msgid "### Parent"
+msgstr "### 父级（Parent）"
+
+msgid "### Child"
+msgstr "### 子节点（Child）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-VMSnapshot** cmdlet gets the checkpoints associated with a virtual"
+" machine or checkpoint."
+msgstr "`Get-VMSnapshot` cmdlet 可以获取与虚拟机或检查点关联的所有快照（checkpoint）。"
+
+msgid ""
+"Note: In Windows Server 2012 R2, virtual machine snapshots were renamed to virtual machine checkpoints.\n"
+"For clarity, this document will refer to virtual machine snapshots as checkpoints."
+msgstr ""
+"注意：在 Windows Server 2012 R2 中，虚拟机快照被重新命名为“虚拟机检查点”。为便于理解，本文档将把虚拟机快照称为“检查点”。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Gets all checkpoints of virtual machine TestVM."
+msgstr "获取虚拟机 TestVM 的所有检查点信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "Gets all standard checkpoints of virtual machine TestVM."
+msgstr "获取虚拟机TestVM的所有标准检查点信息。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Gets the immediate parent of checkpoint Before applying updates of virtual "
+"machine TestVM."
+msgstr "在应用虚拟机TestVM的更新之前，获取该检查点的直接父级节点。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"Gets the immediate child checkpoints of checkpoint Before applying updates "
+"of virtual machine TestVM."
+msgstr "在应用对虚拟机 TestVM 的更新之前，获取该检查点（checkpoint）的直接子检查点（child checkpoints）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the checkpoint whose child checkpoints are to be retrieved.\n"
+"This retrieves immediate children only."
+msgstr "指定要获取其子检查点的检查点。这里仅获取直接的子检查点。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which checkpoints are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于检索检查点的 Hyper-V 主机。允许使用 NetBIOS 名称、IP "
+"地址或完全限定的域名作为主机标识。默认值为本地计算机；可以使用 `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值是当前用户。"
+
+msgid ""
+"Specifies the unique identifier of the virtual machine whose checkpoints are"
+" to be retrieved."
+msgstr "指定要检索其检查点的虚拟机的唯一标识符。"
+
+msgid "Specifies the name of the checkpoint to be retrieved."
+msgstr "指定要检索的检查点的名称。"
+
+msgid ""
+"Specifies the checkpoint whose immediate parent checkpoint is to be "
+"retrieved."
+msgstr "指定要检索其直接父检查点的那个检查点。"
+
+msgid ""
+"Specifies the type of the checkpoints to be retrieved.\n"
+"Allowed values are **Standard**, **Recovery**, **Planned**, **Missing**, **Replica**, **AppConsistentReplica**, and **SyncedReplica**."
+msgstr ""
+"指定要检索的检查点的类型。允许的值包括 "
+"**Standard**（标准）、**Recovery**（恢复）、**Planned**（计划中的）、**Missing**（缺失的）、**Replica**（副本）、**AppConsistentReplica**（应用程序一致性副本）和"
+" **SyncedReplica**（同步副本）。"
+
+msgid "Specifies the virtual machine whose checkpoints are to be retrieved."
+msgstr "指定要检索其检查点的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine whose checkpoints are to be "
+"retrieved."
+msgstr "指定要检索其检查点的虚拟机的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMSnapshot"
+msgstr "### Microsoft.HyperV.PowerShell.VMSnapshot"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

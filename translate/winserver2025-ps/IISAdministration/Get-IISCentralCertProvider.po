@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:31:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IISCentralCertProvider"
+msgstr "# Get-IISCentralCertProvider"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets information about the IIS central certificate store."
+msgstr "获取有关 IIS 中央证书存储的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-IISCentralCertProvider** cmdlet returns information about the IIS central certificate store.\n"
+"The central certificate store allows you to store all your IIS certificates in a centralized location (such as a file share); IIS servers then retrieve certificate from this centralized location.\n"
+"That means that you only have to install certificates in one location; there is no need to install the same certificate on each and every IIS server."
+msgstr ""
+"`Get-IISCentralCertProvider` cmdlet 可以返回有关 IIS 中心证书存储的信息。中心证书存储功能允许您将所有 IIS "
+"证书集中存储在一个位置（例如文件共享文件夹）中，IIS 服务器会从该集中位置获取所需的证书。这意味着您只需在其中一个位置安装证书即可，无需在每台 IIS"
+" 服务器上都单独安装相同的证书。"
+
+msgid ""
+"Called without any parameters, **Get-IISCentralCertProvider** returns information for all the certificate store property values.\n"
+"Alternatively, you can include one or more optional parameters in order to limit the returned data only to the specified properties.\n"
+"For example, this command limits the returned data to the **Enabled** property:"
+msgstr ""
+"当不带任何参数调用时，`Get-IISCentralCertProvider` "
+"会返回所有证书存储属性的值。或者，您可以添加一个或多个可选参数，以将返回的数据限制为仅包含指定的属性。例如，以下命令会将返回的数据限制为仅包含 "
+"`Enabled` 属性："
+
+msgid "Get-IISCentralCertProvider -Enabled"
+msgstr "`Get-IISCentralCertProvider -Enabled`"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This command returns information about the IIS central certificate store.\n"
+"Because no parameters are used when running this command **Get-IISCentralCertProvider** returns information for all the certificate store properties."
+msgstr ""
+"此命令会返回有关 IIS 中央证书存储的信息。由于在运行此命令时没有使用任何参数，因此 `Get-IISCentralCertProvider` "
+"会返回所有证书存储属性的相关信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This command returns information for two properties of the IIS central certificate store: the store location (**CertStoreLocation**) and the name of the user account used for accessing the store (**UserName**).\n"
+"Values for other properties (such as the private key password) are not returned.\n"
+"To return all the property values leave off all parameter when calling **Get-IISCentralCertProvider**."
+msgstr ""
+"此命令会返回 IIS "
+"中央证书存储库的两个属性的相关信息：存储库的位置（**CertStoreLocation**）以及用于访问该存储库的用户账户名称（**UserName**）。其他属性的值（例如私钥密码）不会被返回。如果想要获取所有属性的值，在调用"
+" **Get-IISCentralCertProvider** 时请省略所有参数。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the certificate store location will be returned when running the command.\n"
+"If no parameters are specified when calling **Get-IISCentralCertProvider** then information will be returned for all the property values."
+msgstr ""
+"这表示在运行命令时将会返回证书存储的位置。如果在调用 **Get-IISCentralCertProvider** "
+"时没有指定任何参数，那么将返回所有属性值的相应信息。"
+
+msgid ""
+"Indicates that the current state of the central store (enabled or disabled) will be returned when running the command.\n"
+"If no parameters are specified when calling **Get-IISCentralCertProvider** then information will be returned for all the property values."
+msgstr ""
+"这表示在运行命令时，会返回中央存储的当前状态（是否已启用）。如果在调用 **Get-IISCentralCertProvider** "
+"时没有指定任何参数，那么将返回所有属性值的详细信息。"
+
+msgid ""
+"Indicates that the private key password will be returned when running the command.\n"
+"If no parameters are specified when calling **Get-IISCentralCertProvider** then information will be returned for all the property values."
+msgstr ""
+"这表示在运行该命令时，会返回私钥的密码。如果在调用 **Get-IISCentralCertProvider** "
+"时没有指定任何参数，那么将会返回所有属性值的相关信息。"
+
+msgid ""
+"Note that the password itself will not be displayed on screen; instead, you will only see a series of asterisks (*******).\n"
+"While this does not tell you what the private key password is, it does let you know that a private key password has been configured for the certificate store.\n"
+"If no value is returned for the **PrivateKeyPassword** property that means that no private key password has been assigned to the certificate store."
+msgstr ""
+"请注意，密码本身不会显示在屏幕上；相反，您只会看到一串星号（*******）。虽然这无法告诉您私钥的密码是什么，但它确实表明证书存储已配置了私钥密码。如果**PrivateKeyPassword**属性没有返回任何值，那就意味着证书存储没有被分配任何私钥密码。"
+
+msgid ""
+"Indicates that the central store user account name will be returned when running the command.\n"
+"If no parameters are specified when calling **Get-IISCentralCertProvider** then information will be returned for all the property values."
+msgstr ""
+"这表示在运行命令时将会返回中央存储的用户账户名称。如果在调用 **Get-IISCentralCertProvider** "
+"时没有指定任何参数，那么将会返回所有属性值的详细信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-IISCentralCertProvider](./Clear-IISCentralCertProvider.md)"
+msgstr "[Clear-IISCentralCertProvider](./Clear-IISCentralCertProvider.md)"
+
+msgid "[Disable-IISCentralCertProvider](./Disable-IISCentralCertProvider.md)"
+msgstr "[Disable-IISCentralCertProvider](./Disable-IISCentralCertProvider.md)"
+
+msgid "[Enable-IISCentralCertProvider](./Enable-IISCentralCertProvider.md)"
+msgstr "[Enable-IISCentralCertProvider](./Enable-IISCentralCertProvider.md)"
+
+msgid "[Set-IISCentralCertProvider](./Set-IISCentralCertProvider.md)"
+msgstr "[Set-IISCentralCertProvider](./Set-IISCentralCertProvider.md)"
+
+msgid ""
+"[Set-IISCentralCertProviderCredential](./Set-"
+"IISCentralCertProviderCredential.md)"
+msgstr ""
+"[设置 IISCentralCertProvider 的凭据](./Set-IISCentralCertProviderCredential.md)"

@@ -1,0 +1,148 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:49:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-DtcLog"
+msgstr "# Set-DtcLog"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies the log file settings of a DTC instance."
+msgstr "修改 DTC 实例的日志文件设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-DtcLog** cmdlet modifies the log file settings of a Distributed Transaction Coordinator (DTC) instance.\n"
+"Use the **DtcName** parameter to specify a DTC instance.\n"
+"This cmdlet also recreates the transactions log with new settings and restarts the DTC instance."
+msgstr ""
+"`Set-DtcLog` cmdlet 用于修改分布式事务协调器（DTC）实例的日志文件设置。请使用 `DtcName` 参数来指定所需的 DTC "
+"实例。此 cmdlet 还会使用新的设置重新创建事务日志，并重启相应的 DTC 实例。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the log file path and file size"
+msgstr "### 示例 1：设置日志文件路径和文件大小"
+
+msgid ""
+"The first command sets the path for the DTC log file and specifies the file size.\n"
+"The second command confirms the change."
+msgstr "第一个命令设置了 DTC 日志文件的路径，并指定了文件的大小。第二个命令用于确认这一更改。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用 `*-Job` "
+"类型的 cmdlets；要获取作业的结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies a DTC instance.\n"
+"The cmdlet modifies the log file for this instance.\n"
+"If you do not specify this parameter, or if you specify a value of   Local, this cmdlet modifies the log file for the local DTC instance."
+msgstr ""
+"用于指定一个 "
+"DTC（分布式事务协调器）实例。该cmdlet会修改与该实例相关的日志文件。如果您未指定此参数，或者指定了“Local”值，则该cmdlet将修改本地DTC实例的日志文件。"
+
+msgid "Specifies the maximum file size of the new log file in MB."
+msgstr "指定新日志文件的最大文件大小（以MB为单位）。"
+
+msgid ""
+"Specifies the physical or network path to store the new log file.\n"
+"If a log file already exists in the specified path it is overwritten."
+msgstr "指定用于存储新日志文件的物理路径或网络路径。如果指定的路径中已经存在日志文件，则该文件将被覆盖。"
+
+msgid ""
+"Specifies the initial file allocation size of the new log file in megabytes."
+msgstr "指定新日志文件的初始文件分配大小（以兆字节为单位）。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的并发操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。这个限制仅适用于当前的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-DtcLog](./Get-DtcLog.md)"
+msgstr "[Get-DtcLog](./Get-DtcLog.md)"
+
+msgid "[Reset-DtcLog](./Reset-DtcLog.md)"
+msgstr "[Reset-DtcLog](./Reset-DtcLog.md)"

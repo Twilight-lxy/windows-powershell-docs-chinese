@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:09:55 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Get-ReFSDedupSchedule"
+msgstr "# 获取ReFS数据去重计划"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Retrieves the deduplication schedule on a specified ReFS volume."
+msgstr "检索指定ReFS卷上的去重调度计划。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-ReFSDedupSchedule` cmdlet retrieves the deduplication schedule for a specified ReFS\n"
+"volume."
+msgstr "`Get-ReFSDedupSchedule` cmdlet 可以检索指定 ReFS 卷的重复数据删除计划。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example retrieves the deduplication schedule for the `D:` ReFS volume."
+msgstr "这个示例检索了名为`D:`的ReFS卷的去重计划。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the ReFS volume for which to retrieve the deduplication schedule. Enter one or more volume\n"
+"IDs, drive letters, or volume GUID paths. For drive letters, use the format `D:`. For volume GUID\n"
+"paths, use the format `\\\\?\\Volume{{GUID}}\\`. Separate multiple volumes with a comma."
+msgstr ""
+"指定用于检索去重计划的 ReFS 卷。可以输入一个或多个卷 ID、驱动器字母或卷 GUID 路径。对于驱动器字母，请使用格式 `D:`；对于卷 GUID"
+" 路径，请使用格式 `\\\\?\\Volume{{GUID}}`。多个卷之间用逗号分隔。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-ReFSDedupSchedule](Clear-ReFSDedupSchedule.md)"
+msgstr "[Clear-ReFSDedupSchedule](Clear-ReFSDedupSchedule.md)"
+
+msgid "[Resume-ReFSDedupSchedule](Resume-ReFSDedupSchedule.md)"
+msgstr "[ Resume-ReFSDedupSchedule](Resume-ReFSDedupSchedule.md)"
+
+msgid "[Set-ReFSDedupSchedule](Set-ReFSDedupSchedule.md)"
+msgstr "[Set-ReFSDedupSchedule](Set-ReFSDedupSchedule.md)"
+
+msgid "[Suspend-ReFSDedupSchedule](Suspend-ReFSDedupSchedule.md)"
+msgstr "[暂停ReFSD去重计划](Suspend-ReFSDedupSchedule.md)"

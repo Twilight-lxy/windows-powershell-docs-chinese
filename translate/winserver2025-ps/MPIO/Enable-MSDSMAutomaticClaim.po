@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:34:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Enable-MSDSMAutomaticClaim"
+msgstr "# 启用 MSDSMAutomaticClaim 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Enables MSDSM to automatically claim SAN disks for MPIO."
+msgstr "该功能使 MSDSM 能够自动为 MPIO 拥有 SAN 磁盘。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Enable-MSDSMAutomaticClaim** cmdlet enables a Microsoft Device "
+"Specific Module (MSDSM) to automatically claim storage area network (SAN) "
+"disks for Microsoft Multipath I/O (MPIO) for a bus type."
+msgstr ""
+"`Enable-MSDSMAutomaticClaim` cmdlet 允许微软设备特定模块（Microsoft Device Specific "
+"Module，简称 MSDSM）自动为某种总线类型的磁盘申请存储区域网络（Storage Area Network，简称 "
+"SAN）资源，以便使用微软多路径 I/O（Microsoft Multipath I/O，简称 MPIO）技术。"
+
+msgid ""
+"You must specify a valid bus type, either serial attached storage (SAS) and Internet Small Computer System Interface (iSCSI).\n"
+"You can enable MSDSM to automatically claim both SAS and iSCSI disks.\n"
+"Run the cmdlet two times, one time for SAS, one time for iSCSI."
+msgstr ""
+"你必须指定一个有效的总线类型，可以是串行连接存储（SAS）或互联网小型计算机系统接口（iSCSI）。你可以启用 MSDSM 以自动识别 SAS 和 "
+"iSCSI 磁盘。运行该 cmdlet 两次，一次用于 SAS，另一次用于 iSCSI。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Enable automatic claims for iSCSI"
+msgstr "#### 示例 1：为 iSCSI 启用自动索赔功能"
+
+msgid ""
+"This command enables MSDSM to automatically claim resources with an iSCSI bus type.\n"
+"Specify SAS instead of iSCSI to enable for an SAS bus type."
+msgstr ""
+"此命令使 MSDSM 能够自动申请使用 iSCSI 总线类型的资源。如果需要使用 SAS 总线类型，请指定 “SAS” 代替 “iSCSI”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a bus type.\n"
+"The cmdlet enables MSDSM to automatically claim SAN disks for this bus type.\n"
+"The acceptable values for this parameter are: SAS and iSCSI."
+msgstr "用于指定总线类型。该cmdlet使MSDSM能够自动为该总线类型申请SAN磁盘。此参数的可接受值为：SAS和iSCSI。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-MSDSMAutomaticClaim](./Disable-MSDSMAutomaticClaim.md)"
+msgstr "[禁用-MSDSMAutomaticClaim](./Disable-MSDSMAutomaticClaim.md)"
+
+msgid ""
+"[Get-MSDSMAutomaticClaimSettings](./Get-MSDSMAutomaticClaimSettings.md)"
+msgstr ""
+"[Get-MSDSMAutomaticClaimSettings](./Get-MSDSMAutomaticClaimSettings.md)"

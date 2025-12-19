@@ -1,0 +1,123 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:55:22 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Repair-VM"
+msgstr "# 修复虚拟机"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Repairs one or more virtual machines."
+msgstr "修复一台或多台虚拟机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Repair-VM** cmdlet corrects some issues that can impact the ability to import or move a virtual machine.\n"
+"If Compare-VM determines that an import or move operation would fail for a particular VM, it returns a collection of incompatibilities that need to be fixed before the operation can succeed.\n"
+"Most of these incompatibilities can be fixed by using Set-VM.\n"
+"However, Set-VM does not modify either the path where the VM configuration is stored or the path where the snapshot files are stored.\n"
+"Repair-VM handles these two particular issues in this one specific situation."
+msgstr ""
+"`Repair-VM` cmdlet 可以修复一些可能会影响虚拟机导入或迁移操作的问题。如果 `Compare-VM` "
+"确定某个虚拟机的导入或迁移操作会失败，它会返回一系列需要解决的不兼容性问题，只有解决了这些问题后，该操作才能成功执行。大多数这类不兼容性问题可以通过使用"
+" `Set-VM` 来修复。不过，`Set-VM` 并不会修改存储虚拟机配置文件的路径或存储快照文件的路径。而 `Repair-VM` "
+"则专门用于处理这两种特定的问题。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example changes the configuration path for a virtual machine "
+"compatibility report."
+msgstr "这个示例修改了用于生成虚拟机兼容性报告的配置路径。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example adds missing snapshots to a virtual machine compatibility "
+"report."
+msgstr "这个示例用于为虚拟机兼容性报告添加缺失的快照。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a compatibility report which includes adjustments to be made "
+"during repair."
+msgstr "指定一份兼容性报告，其中包含在修复过程中需要进行的调整措施。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies that an object is to be passed through to the pipeline "
+"representing the newly modified compatibility report."
+msgstr "指定将某个对象传递给管道，该管道用于表示新修改后的兼容性报告。"
+
+msgid "Specifies the path of the virtual machine to be repaired."
+msgstr "指定需要修复的虚拟机的路径。"
+
+msgid "Specifies the path to be search for virtual machine snapshots."
+msgstr "指定用于搜索虚拟机快照的路径。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的结果。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.CompatibilityReport"
+msgstr "### Microsoft.HyperV.PowerShell.CompatibilityReport"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了**-PassThru**选项……"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

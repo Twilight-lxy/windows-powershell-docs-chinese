@@ -1,0 +1,254 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:50:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Compare-VM"
+msgstr "# 比较虚拟机"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Compares a virtual machine and a virtual machine host for compatibility, "
+"returning a compatibility report."
+msgstr "比较虚拟机与虚拟机宿主的兼容性，并生成一份兼容性报告。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### NameSingleDestination (Default)"
+msgstr "### NameSingleDestination（默认值）"
+
+msgid "### NameSingleDestinationAndCimSession"
+msgstr "### NameSingleDestinationAndCimSession"
+
+msgid "### NameMultipleDestinationsAndCimSession"
+msgstr "### NameMultipleDestinationsAndCimSession"
+
+msgid "### Register"
+msgstr "### 注册"
+
+msgid "### Copy"
+msgstr "### 复制"
+
+msgid "### NameMultipleDestinations"
+msgstr "### 名称：MultipleDestinations"
+
+msgid "### VMMultipleDestinations"
+msgstr "### VMMultipleDestinations"
+
+msgid "### VMMultipleDestinationsAndCimSession"
+msgstr "### VMMultipleDestinationsAndCimSession"
+
+msgid "### CompatibilityReport"
+msgstr "### 兼容性报告"
+
+msgid "### VMSingleDestinationAndCimSession"
+msgstr "### VMSingleDestinationAndCimSession"
+
+msgid "### VMSingleDestination"
+msgstr "### VMSingleDestination"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Compare-VM** cmdlet compares a virtual machine and a virtual machine host for compatibility, returning a compatibility report.\n"
+"This is useful when trying to import or migrate a virtual machine that is incompatible with the target server that runs Hyper-V."
+msgstr ""
+"`Compare-VM` cmdlet 用于比较两台虚拟机及其主机之间的兼容性，并生成相应的兼容性报告。当尝试导入或迁移一台与运行 Hyper-V "
+"的目标服务器不兼容的虚拟机时，该工具非常有用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Compares virtual machine TestVM and Hyper-V host TestDestinationHost for "
+"compatibility."
+msgstr "比较虚拟机 TestVM 与 Hyper-V 主机 TestDestinationHost 的兼容性。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Imports a virtual machine whose configuration is not compatible with the Hyper-V host.\n"
+"Note the use of **Compare-VM** to troubleshoot the import failure in the first step."
+msgstr "导入了一台虚拟机，但其配置与 Hyper-V 主机不兼容。请注意，在第一步中使用 **Compare-VM** 命令来排查导入失败的原因。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "将该cmdlet作为后台作业运行。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies a compatibility report which resolves any incompatibilities "
+"between the virtual machine and the virtual machine host."
+msgstr "指定一份兼容性报告，该报告用于解决虚拟机与虚拟机主机之间的任何不兼容问题。"
+
+msgid ""
+"Specifies one or more Hyper-v hosts that run this cmdlet.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个运行此 cmdlet 的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名来进行指定。默认值为本地计算机。可以使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies that the comparison should be made for a copy import operation."
+msgstr "指定应针对副本导入操作进行比较。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the **CIMSession** on the Hyper-V host to which this cmdlet "
+"compares the virtual machine for compatibility."
+msgstr ""
+"指定用于在Hyper-V主机上执行兼容性检查的**CIMSession**对象。该Cmdlet会利用这个CIMSession对象来验证虚拟机的兼容性。"
+
+msgid ""
+"Specifies a user account that has permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the Hyper-V host to which the virtual machine is to be compared "
+"for compatibility."
+msgstr "指定用于比较虚拟机兼容性的 Hyper-V 主机。"
+
+msgid ""
+"Specifies a destination storage path to which all virtual machine storage is"
+" to be moved."
+msgstr "指定一个目标存储路径，所有虚拟机的存储数据都将被移至该路径。"
+
+msgid ""
+"Specifies that the virtual machine should be copied and given a new unique "
+"identifier."
+msgstr "指定应复制该虚拟机，并为其分配一个新的唯一标识符。"
+
+msgid ""
+"Specifies that the compatibility comparison should include both the virtual "
+"machine and its storage."
+msgstr "指定兼容性比较应同时涵盖虚拟机及其存储设备。"
+
+msgid "Specifies the name of the virtual machine to be compared."
+msgstr "指定要比较的虚拟机的名称。"
+
+msgid ""
+"Specifies the path to the configuration file of the virtual machine to be "
+"compared."
+msgstr "指定要比较的虚拟机配置文件的路径。"
+
+msgid ""
+"Specifies that the comparison should be made for an in-place import "
+"operation."
+msgstr "指定比较应针对就地导入操作（in-place import operation）进行。"
+
+msgid "Specifies the friendly name of the resource pool."
+msgstr "指定资源池的友好名称。"
+
+msgid ""
+"Indicates that this cmdlet retains parent virtual hard disks on the source "
+"computer."
+msgstr "表示此 cmdlet 会保留源计算机上的父虚拟硬盘。"
+
+msgid ""
+"Specifies the new path to use for a smart paging file, if one is needed."
+msgstr "指定用于智能分页文件的新路径（如果需要的话）。"
+
+msgid ""
+"Specifies the path for any snapshot files associated with the virtual "
+"machine."
+msgstr "指定与虚拟机关联的所有快照文件的路径。"
+
+msgid "Specifies a virtual machine."
+msgstr "指定一台虚拟机。"
+
+msgid ""
+"Specifies the folder to which the virtual machine's VHD is to be copied."
+msgstr "指定用于复制虚拟机VHD文件的文件夹。"
+
+msgid ""
+"Specifies the folder from which the virtual machine's VHD files are to be "
+"copied."
+msgstr "指定用于复制虚拟机VHD文件的文件夹。"
+
+msgid ""
+"Specifies an array of hash tables that specifies a location for each individual virtual hard disk that needs to be compared.\n"
+"Each hash table has two entries.\n"
+"The first entry specifies the current location of the virtual hard disk to move, and has a key of **SourceFilePath**.\n"
+"The second entry specifies the new location for the virtual hard disk, and has a key of **DestinationFilePath**.\n"
+"The virtual hard disk names must be identical in both entries."
+msgstr ""
+"该参数用于指定一个哈希表数组，这些哈希表用于确定每个需要比较的虚拟硬盘的位置。每个哈希表包含两条记录：  \n"
+"1. 第一条记录表示虚拟硬盘当前的位置，其键值为 **SourceFilePath**；  \n"
+"2. 第二条记录表示虚拟硬盘的新位置，其键值为 **DestinationFilePath**。  \n"
+"在两条记录中，虚拟硬盘的名称必须完全相同。"
+
+msgid ""
+"Specifies the path where the resulting virtual machine configuration files "
+"are to be stored."
+msgstr "指定用于存储生成的虚拟机配置文件的路径。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMCompatibilityReport"
+msgstr "### Microsoft.HyperV.PowerShell.VMCompatibilityReport"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

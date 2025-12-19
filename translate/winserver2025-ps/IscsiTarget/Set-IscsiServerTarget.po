@@ -1,0 +1,236 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:56:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-IscsiServerTarget"
+msgstr "# 设置 IscsiServerTarget"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Modifies settings for the specified iSCSI target."
+msgstr "修改指定iSCSI目标的设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### TargetName (Default)"
+msgstr "### TargetName（默认值）"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-IscsiServerTarget** cmdlet modifies settings for the iSCSi target "
+"and returns the corresponding iSCSI Target object if the *PassThru* "
+"parameter is specified."
+msgstr ""
+"`Set-IscsiServerTarget` cmdlet 用于修改 iSCSi 目标的设置；如果指定了 `PassThru` 参数，该 cmdlet"
+" 会返回相应的 iSCSi 目标对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove all initiators associated with a target"
+msgstr "### 示例 1：移除与目标相关联的所有发起者"
+
+msgid ""
+"This example removes all of the initiators that are associated with the "
+"target named Test."
+msgstr "这个示例会删除所有与名为“Test”的目标相关联的启动器。"
+
+msgid "### Example 2: Modify a description for a target"
+msgstr "### 示例 2：修改目标的描述"
+
+msgid ""
+"This example sets the description for a target named TargetOne to Target for"
+" initiator Appsvr."
+msgstr "这个例子为名为“TargetOne”的目标设置了描述属性，该目标的发起者是Appsvr。"
+
+msgid "### Example 3: Configure forward CHAP"
+msgstr "### 示例 3：配置正向 CHAP（Challenge-Handshake Authentication）"
+
+msgid ""
+"This example enables and sets the forward CHAP on a target named T1 with the"
+" credentials user and password."
+msgstr ""
+"这个示例启用并设置了目标设备T1上的正向CHAP（Challenge-Handshake "
+"Authentication）认证机制，使用用户名“user”和密码作为认证凭据。"
+
+msgid "### Example 4: Assign initiator IDs to a target"
+msgstr "### 示例 4：为目标分配发起者 ID"
+
+msgid "This example assigns more IDs to the same target."
+msgstr "这个例子为同一个目标分配了多个ID。"
+
+msgid ""
+"### Example 5: Assigns a target to all initiators that attempt to connect to"
+" it"
+msgstr "### 示例 5：为所有尝试连接到该目标的发起者分配一个目标"
+
+msgid ""
+"This example assigns the target to all initiators that attempt to connect to it.\n"
+"Because no validation is performed the iSCSI target when an initiator makes a connection, be very cautious when you use this configuration.\n"
+"It is most useful when troubleshooting connection issues, because it removes the risk of Target-Initiator assignment errors."
+msgstr ""
+"这个示例会将目标资源分配给所有尝试连接到该目标的启动器。由于在启动器进行连接时不会对目标资源进行任何验证，因此在使用这种配置时必须非常谨慎。这种配置在排查连接问题时最为有用，因为它可以避免目标资源与启动器之间的错误匹配（即“目标-"
+"启动器分配错误”）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the settings for Challenge Handshake Authentication Protocol (CHAP) user name and secret.\n"
+"Use this parameter in combination with the *EnableChap* parameter if the CHAP is not enabled."
+msgstr ""
+"指定用于挑战握手认证协议（Challenge Handshake Authentication "
+"Protocol，简称CHAP）的用户名和密码的设置。如果尚未启用CHAP，请将该参数与*EnableChap*参数一起使用。"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此cmdlet在远程计算机上运行，则会指定该远程计算机的名称或IP地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "如果此cmdlet是在集群配置上运行的，则指定集群资源组的网络名称或集群节点的名称。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接到远程计算机时所需的凭据信息。"
+
+msgid "Specifies a description for the iSCSI target."
+msgstr "为 iSCSI 目标指定一个描述信息。"
+
+msgid "Determines whether the specified iSCSI target is enabled or disabled."
+msgstr "用于确定指定的 iSCSI 目标是否已启用或已禁用。"
+
+msgid ""
+"If you specify a value of $True, the target is enabled.\n"
+"If the target is already enabled, no action occurs."
+msgstr "如果您指定值为 `$True`，则目标会被启用。如果目标已经处于启用状态，则不会发生任何操作。"
+
+msgid ""
+"If you specify a value of $False, the target is disabled.\n"
+"If the target is already disabled, no action occurs."
+msgstr "如果您指定值为 `$False`，则该目标将被禁用。如果该目标已经被禁用了，则不会发生任何操作。"
+
+msgid "Specifies whether CHAP is enabled for the iSCSI target."
+msgstr "指定是否为iSCSI目标启用CHAP（Challenge-Handshake Authentication，挑战握手认证）功能。"
+
+msgid "Specifies whether reverse CHAP is enabled for the iSCSI target."
+msgstr "指定是否为iSCSI目标启用了反向CHAP（Reverse CHAP）功能。"
+
+msgid "Specifies whether to enforce idle time-out detection."
+msgstr "指定是否强制检测空闲时间超时情况。"
+
+msgid "Specifies the length of the first burst."
+msgstr "指定第一个数据包（或传输段）的长度。"
+
+msgid ""
+"Specifies the iSCSI initiator identifiers (IDs) to which the iSCSI target is"
+" assigned."
+msgstr "指定要分配给 iSCSI 目标的 iSCSI 启动器标识符（ID）。"
+
+msgid ""
+"To assign a LUN or VHD to an iSCSI initiator, an iSCSI target is first created.\n"
+"After the target is assigned to the initiator, a LUN is associated with the target.\n"
+"The format of this parameter is IdType:Value.\n"
+"The acceptable values for this parameter are: DNSName, IPAddress, IPv6Address, IQN, and MACAddress."
+msgstr ""
+"要将一个LUN或VHD分配给iSCSI发起器，首先需要创建一个iSCSI目标。在将目标分配给发起器之后，再将一个LUN与该目标关联起来。该参数的格式为“IdType:Value”。该参数可接受的值包括：DNSName、IPAddress、IPv6Address、IQN和MACAddress。"
+
+msgid "Accepts an iSCSI target object from the input pipeline."
+msgstr "从输入管道中接收一个 iSCSI 目标对象。"
+
+msgid "Specifies the maximum burst length."
+msgstr "指定最大突发长度（即数据包连续传输的最大长度）。"
+
+msgid "Specifies the maximum receiver data segment length."
+msgstr "指定接收方数据段的最大长度。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the receiver buffer count."
+msgstr "指定接收方缓冲区的数量。"
+
+msgid ""
+"Specifies the reverse CHAP user name and secret.\n"
+"Use this parameter in combination with the *EnableReverseChap* parameter if the Reverse CHAP is not enabled."
+msgstr "指定反向CHAP认证的用户名和密码。如果尚未启用反向CHAP功能，请将该参数与*EnableReverseChap*参数一起使用。"
+
+msgid "Specifies the target iSCSI Qualified Name (IQN)."
+msgstr "指定目标 iSCSI 合格名称（IQN）。"
+
+msgid ""
+"Specifies the name of the iSCSI target.\n"
+"The target name cannot be changed here.\n"
+"This parameter can be used to filter out the iSCSI Target objects."
+msgstr "指定iSCSI目标的名称。在此之后目标名称无法更改。该参数可用于筛选出特定的iSCSI目标对象。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Iscsi.Target.Commands.IscsiServerTarget"
+msgstr "### Microsoft.Iscsi TargetCommands.IscsiServerTarget"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Iscsi.Target.Commands.IscsiServerTarget"
+msgstr ""
+"```cpp\n"
+"### Microsoft.Iscsi.Target Commands.IscsiServerTarget\n"
+"```"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[ConvertTo-SecureString](https://go.microsoft.com/fwlink/p/?LinkId=113291)"
+msgstr ""
+"[ConvertTo-SecureString](https://go.microsoft.com/fwlink/p/?LinkId=113291)"
+
+msgid "[New-Object](https://go.microsoft.com/fwlink/p/?LinkId=113355)"
+msgstr "[新对象](https://go.microsoft.com/fwlink/p/?LinkId=113355)"
+
+msgid "[Get-IscsiServerTarget](./Get-IscsiServerTarget.md)"
+msgstr "[Get-IscsiServerTarget](./Get-IscsiServerTarget.md)"
+
+msgid "[New-IscsiServerTarget](./New-IscsiServerTarget.md)"
+msgstr "[New-IscsiServerTarget](./New-IscsiServerTarget.md)"
+
+msgid "[Remove-IscsiServerTarget](./Remove-IscsiServerTarget.md)"
+msgstr "[Remove-IscsiServerTarget](./Remove-IscsiServerTarget.md)"

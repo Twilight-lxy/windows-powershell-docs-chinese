@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:11:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Set-ReFSDedupScrubSchedule"
+msgstr "# 设置 ReFSDedupScrubSchedule 的计划"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Sets the deduplication scrub schedule on the specified ReFS volume."
+msgstr "在指定的 ReFS 卷上设置去重清理计划。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Set-ReFSDedupScrubSchedule` cmdlet sets the deduplication scrub schedule on the specified ReFS\n"
+"volume. The scrub schedule specifies when and how often scrub jobs are run on the volume."
+msgstr ""
+"`Set-ReFSDedupScrubSchedule` cmdlet 用于设置指定 ReFS "
+"卷的重复数据删除（deduplication）清理计划。该清理计划决定了在卷上运行清理任务的时间和频率。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example sets the deduplication scrub schedule on the `D:` ReFS volume to run every `Monday` and\n"
+"`Thursday` at `8:00 AM`, starting on December 1st, 2024, and running every `2` weeks."
+msgstr ""
+"这个示例将去重清理任务的调度设置为在 `D:` ReFS 卷上每逢周一和周四的早上 8:00 运行，从 2024 年 12 月 1 "
+"日开始，并且每周运行两次。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the days of the week on which to run the scrub schedule. "
+"Acceptable values are:"
+msgstr "指定每周哪些天要运行数据清洗任务。可接受的值包括："
+
+msgid ""
+"Specifies whether to include only deduplicated data in the scrub schedule."
+msgstr "指定是否仅在数据清洗计划中包含已去重的数据。"
+
+msgid "Specifies the date and time on which to start the scrub schedule."
+msgstr "指定用于开始数据清洗计划的日期和时间。"
+
+msgid ""
+"Specifies the ReFS volume on which to set the deduplication scrub schedule. Enter one or more volume\n"
+"IDs, drive letters, or volume GUID paths. For drive letters, use the format `D:`. For volume GUID\n"
+"paths, use the format `\\\\?\\Volume{{GUID}}\\`. Separate multiple volumes with a comma."
+msgstr ""
+"指定用于设置去重清理计划的 ReFS 卷。可以输入一个或多个卷 ID、驱动器字母或卷 GUID 路径。对于驱动器字母，请使用格式 `D:`；对于卷 "
+"GUID 路径，请使用格式 `\\\\?\\Volume{{GUID}}`。多个卷之间用逗号分隔。"
+
+msgid "Specifies the number of weeks between each run of the scrub schedule."
+msgstr "指定每次执行数据清洗（scrub）任务之间的时间间隔（以周为单位）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-ReFSDedupScrubSchedule](Clear-ReFSDedupScrubSchedule.md)"
+msgstr "[Clear-ReFSDedupScrubSchedule](Clear-ReFSDedupScrubSchedule.md)"
+
+msgid "[Get-ReFSDedupScrubSchedule](Get-ReFSDedupScrubSchedule.md)"
+msgstr "[Get-ReFSDedupScrubSchedule](Get-ReFSDedupScrubSchedule.md)"

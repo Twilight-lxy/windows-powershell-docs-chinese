@@ -1,0 +1,99 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:07:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WmsApp"
+msgstr "# Get-WmsApp"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets a collection of currently running applications in a session."
+msgstr "获取当前会话中正在运行的应用程序集合。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-WmsApp** cmdlet gets a collection of the currently running applications in a specified session.\n"
+"It also gets the process ID, window ID, and process creation time of the applications."
+msgstr ""
+"`Get-WmsApp` cmdlet 可以获取指定会话中当前正在运行的应用程序集合，同时还会获取这些应用程序的进程 ID、窗口 ID "
+"以及进程创建时间。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get running applications"
+msgstr "#### 示例 1：获取正在运行的应用程序"
+
+msgid "This command gets the applications that are running in session 3."
+msgstr "这个命令可以获取在会话3中运行的应用程序。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的 MultiPoint Server 的完全限定主机名。默认值为 localhost。"
+
+msgid "Specifies the ID of a Remote Desktop Session (RDS)."
+msgstr "指定远程桌面会话（Remote Desktop Session，简称RDS）的ID。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.WmsRunningApp"
+msgstr ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShellcommands.Library.WmsRunningApp"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Close-WmsApp](./Close-WmsApp.md)"
+msgstr "[Close-WmsApp](./Close-WmsApp.md)"
+
+msgid "[Open-WmsApp](./Open-WmsApp.md)"
+msgstr "[Open-WmsApp](./Open-WmsApp.md)"

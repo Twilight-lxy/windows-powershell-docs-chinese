@@ -1,0 +1,153 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:40:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "Removes a device assigned to a virtual machine."
+msgstr "删除分配给虚拟机的设备。"
+
+msgid "# Remove-VMAssignableDevice"
+msgstr "# 移除可分配VMA的设备"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Removes information about the assignable devices from a specific virtual "
+"machine."
+msgstr "从特定的虚拟机中删除有关可分配设备的信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### Object"
+msgstr "### 对象"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Remove-VMAssignableDevice` cmdlet removes an assignable device from a specified virtual\n"
+"machine (VM). This is often used in scenarios where a physical device, such as a GPU or network\n"
+"adapter, was previously assigned to a VM and needs to be unassigned."
+msgstr ""
+"`Remove-VMAssignableDevice` cmdlet "
+"用于从指定的虚拟机（VM）中移除可分配的设备。这种操作通常发生在以下情况下：某个物理设备（如 GPU "
+"或网络适配器）之前已被分配给某个虚拟机，现在需要将其重新释放出来、不再进行分配。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example removes a specific assignable device, identified by its instance path, from the\n"
+"virtual machine named **MyVM**."
+msgstr "这个示例会从名为**MyVM**的虚拟机中移除一个特定的可分配设备，该设备的标识是通过其实例路径来确定的。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example removes a specific assignable device, identified by the ResourcePoolName property\n"
+"**GpuChildPool**, from the virtual machine named **MyVM**."
+msgstr ""
+"这个示例从名为 **MyVM** 的虚拟机中移除一个特定的可分配设备，该设备的标识符是通过 **ResourcePoolName** 属性 "
+"**GpuChildPool** 来识别的。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](/powershell/module/cimcmdlets/new-cimsession)\n"
+"or [Get-CimSession](/powershell/module/cimcmdlets/get-cimsession) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如 `[New-"
+"CimSession`](/powershell/module/cimcmdlets/new-cimsession)` 或 `[Get-"
+"CimSession](/powershell/module/cimcmdlets/get-cimsession)` cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on the virtual network adapters are to be retrieved. NetBIOS\n"
+"names, IP addresses, and fully qualified domain names are allowed. The default is the local\n"
+"computer. Use localhost or a dot (`.`) to specify the local computer explicitly."
+msgstr ""
+"指定要从虚拟网络适配器中检索的一个或多个 Hyper-V 主机。允许使用 NetBIOS 名称、IP 地址和完全限定域名。默认值是本地计算机。可以使用 "
+"`localhost` 或点（`.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action. The default is the\n"
+"current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Removes the Device Instance path in the host machine."
+msgstr "从主机系统中删除设备实例路径。"
+
+msgid "Specifies the location path to the assignable device."
+msgstr "指定可分配设备的路径位置。"
+
+msgid "Returns an object for each process that the cmdlet started."
+msgstr "为cmdlet启动的每个进程返回一个对象。"
+
+msgid ""
+"Specifies the assignable device object that you want to remove from the virtual machine. This is\n"
+"usually an object retrieved from a cmdlet like `Get-VMAssignableDevice`."
+msgstr ""
+"指定您想要从虚拟机中移除的可分配设备对象。该对象通常是通过诸如 `Get-VMAssignableDevice` 之类的 cmdlet 获取的。"
+
+msgid ""
+"Specifies the name of the virtual machine from which you want to remove the "
+"assignable device."
+msgstr "指定您想要从中移除可分配设备的虚拟机的名称。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Input Data）"
+
+msgid "### Microsoft.HyperV.PowerShell.VMAssignedDevice[]"
+msgstr "### Microsoft.HyperV.PowerShell.VMAssignedDevice[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMAssignedDevice"
+msgstr "### Microsoft.HyperV.PowerShell.VMAssignedDevice"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-VMAssignableDevice](add-vmassignabledevice.md)"
+msgstr "[Add-VMAssignableDevice](add-vmassignabledevice.md)"
+
+msgid "[Get-VMAssignableDevice](get-vmassignabledevice.md)"
+msgstr "[Get-VMAssignableDevice](get-vmassignabledevice.md)"

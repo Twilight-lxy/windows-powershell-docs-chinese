@@ -1,0 +1,180 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:01:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMBios"
+msgstr "# Set-VMBios"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Configures the BIOS of a Generation 1 virtual machine."
+msgstr "配置第一代虚拟机的BIOS设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMBios"
+msgstr "### VMBios"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-VMBios** cmdlet configures the BIOS of a Generation 1 virtual machine.\n"
+"Note: This cmdlet does not operate with Generation 2 virtual machine.\n"
+"If attempted, the cmdlet throws an error."
+msgstr ""
+"`Set-VMBios` cmdlet 用于配置第 1 代虚拟机的 BIOS。注意：此 cmdlet 不适用于第 2 代虚拟机；如果尝试使用该 "
+"cmdlet，将会引发错误。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example disables the NumLock key by default on virtual machine TestVM."
+msgstr "这个示例默认会禁用虚拟机TestVM上的NumLock键。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example configures virtual machine TestVM to check for a boot device in"
+" the following order: floppy disk, network, CD drive, hard disk."
+msgstr "此示例配置虚拟机 TestVM 以以下顺序检查启动设备：软盘、网络、CD 驱动器、硬盘。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts for which the BIOS is to be configured.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个需要配置 BIOS 的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行标识。默认值为本地计算机。可以通过使用 `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that NumLock is to be disabled in the BIOS of the virtual machine "
+"to be configured."
+msgstr "指定在要配置的虚拟机的BIOS中禁用NumLock键。"
+
+msgid ""
+"Specifies that NumLock is to be enabled in the BIOS of the virtual machine "
+"to be configured."
+msgstr "指定需要在要配置的虚拟机的BIOS中启用NumLock功能。"
+
+msgid ""
+"Specifies that an **Microsoft.HyperV.PowerShell.Bios** object is to be "
+"passed through to the pipeline representing the BIOS to be configured."
+msgstr "指定需要将一个 `Microsoft.HyperV.PowerShell.Bios` 对象传递给管道，该对象代表要配置的 BIOS。"
+
+msgid ""
+"Specifies an array of boot devices representing the boot order in the BIOS of the virtual machine.\n"
+"The boot devices are specified as members of the **BootDevices** enumeration (**CD**, **IDE**, **LegacyNetworkAdapter**, **Floppy**)."
+msgstr ""
+"指定一组启动设备，这些设备代表了虚拟机BIOS中的启动顺序。启动设备作为**Boot "
+"Devices**枚举类型的成员来定义（包括**CD**、**IDE**、**LegacyNetworkAdapter**、**Floppy**）。"
+
+msgid ""
+"Note: The other BootDevices enumeration values of VHD and NetworkAdapter are"
+" for Generation 2 VMs only, and are not valid with this cmdlet."
+msgstr ""
+"注意：VHD 和 NetworkAdapter 这两个 BootDevices 枚举值仅适用于第 2 代虚拟机（Generation 2 "
+"VMs），因此使用此 cmdlet 时它们无效。"
+
+msgid "Specifies the virtual machine for which the BIOS is to be configured."
+msgstr "指定要配置 BIOS 的虚拟机。"
+
+msgid ""
+"Specifies an array of BIOS objects.\n"
+"The cmdlet configures the BIOS that you specify for the virtual machines.\n"
+"To obtain a BIOS object, use the **Get-VMBios** cmdlet."
+msgstr ""
+"指定一个包含 BIOS 对象的数组。该 cmdlet 会为指定的虚拟机配置相应的 BIOS 设置。若需获取某个 BIOS 对象，可使用 **Get-"
+"VMBios** cmdlet。"
+
+msgid ""
+"Specifies the name of the virtual machine for which the BIOS is to be "
+"configured."
+msgstr "指定要配置 BIOS 的虚拟机的名称。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.Bios"
+msgstr "### Microsoft.HyperV.PowerShell.Bios"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 **-PassThru** 参数的话……"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

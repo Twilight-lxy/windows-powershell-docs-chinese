@@ -1,0 +1,297 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:59:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-GPPrefRegistryValue"
+msgstr "# 移除 GPPREF 注册表值"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Removes one or more Registry preference items from either Computer Configuration or User\n"
+"Configuration in a GPO."
+msgstr "从组策略对象（GPO）中的“计算机配置”或“用户配置”中删除一个或多个注册表偏好设置项。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### GetByGUID (Default)"
+msgstr "### GetByGUID（默认值）"
+
+msgid "### GetByName"
+msgstr "### GetByName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Remove-GPPrefRegistryValue` cmdlet removes one or more Registry preference items from either\n"
+"Computer Configuration or User Configuration in a GPO. You must specify the **Context** parameter\n"
+"for the User or Computer to indicate whether to remove the Registry preference item from Computer\n"
+"Configuration or User Configuration. You can specify the GPO by its display name or by its GUID."
+msgstr ""
+"`Remove-GPPrefRegistryValue` cmdlet "
+"可以从组策略对象（GPO）的“计算机配置”或“用户配置”中删除一个或多个注册表首选项项。您必须指定 `Context` "
+"参数，以指明是要从“计算机配置”还是“用户配置”中删除该注册表首选项项。您可以按 GPO 的显示名称或其 GUID 来标识该 GPO。"
+
+msgid "You can specify either a key or a value:"
+msgstr "你可以指定键（key）或值（value）中的任意一个："
+
+msgid "This cmdlet can take input from the pipeline:"
+msgstr "这个cmdlet可以从管道中接收输入数据："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Remove all registry preference item under the specified "
+"registry"
+msgstr "### 示例 1：删除指定注册表项下的所有注册表偏好设置项"
+
+msgid ""
+"This command removes all Registry preference items that configure the registry value\n"
+"`HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\ExampleKey ValueOne` from User Configuration in the GPO named\n"
+"`TestGPO`."
+msgstr ""
+"此命令会从名为“TestGPO”的组策略对象（GPO）的用户配置中，删除所有用于配置注册表值 "
+"`HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\ExampleKey ValueOne` 的注册表偏好设置项。"
+
+msgid ""
+"### Example 2: Remove registry preference items that configure first-level "
+"values"
+msgstr "### 示例 2：删除用于配置一级值的注册表偏好设置项"
+
+msgid ""
+"This command removes Registry preference items that configure any first-level values under the\n"
+"registry key `HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\ExampleKey` or the key itself from `Computer`\n"
+"Configuration in the GPO named `TestGPO`."
+msgstr ""
+"此命令会删除注册表中的某些偏好设置项。这些偏好设置项用于配置位于注册表键 "
+"`HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\ExampleKey` 下的所有一级值，或者直接从名为 "
+"`TestGPO` 的组策略对象（GPO）的 “计算机配置” 设置中删除该注册表键本身。"
+
+msgid "### Example 3: Remove any registry preference items for all GPOs"
+msgstr "### 示例 3：删除所有组策略对象（GPO）中的注册表偏好设置项"
+
+msgid ""
+"This command removes any Registry preference items that configure the registry value\n"
+"`HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\ExampleKey ValueOne` from `User` Configuration for all GPOs\n"
+"in the domain. It returns each GPO from which at least one Registry preference item is removed."
+msgstr ""
+"此命令会删除所有域中GPO的“用户”配置设置中，用于配置注册表值`HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\ExampleKey"
+" ValueOne`的所有注册表偏好项。命令会返回每一个至少有一个注册表偏好项被删除的GPO。"
+
+msgid ""
+"This cmdlet returns a non-terminating error for each GPO that does not have a Registry preference\n"
+"item associated with the specified registry value. In this command, these error messages are\n"
+"suppressed by setting the **ErrorAction** parameter to `SilentlyContinue`. For more information\n"
+"about the **ErrorAction** parameter, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"对于每个没有与指定注册表值相关联的注册表偏好设置的GPO（组策略对象），此cmdlet都会返回一个非终止性的错误。在本命令中，通过将**ErrorAction**参数设置为`SilentlyContinue`来抑制这些错误消息。有关**ErrorAction**参数的更多信息，请参阅[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies whether the Registry preference item (or items) are removed from Computer Configuration or\n"
+"User Configuration in the specified GPO. You must specify either User or Computer."
+msgstr ""
+"指定是否从指定的组策略对象（GPO）中的“计算机配置”或“用户配置”中删除相应的注册表偏好设置项。必须明确选择“用户”或“计算机”其中之一作为操作目标。"
+
+msgid ""
+"Specifies the domain for which this cmdlet runs the operation. You must specify the fully qualified\n"
+"domain name (FQDN) of the domain."
+msgstr "指定此 cmdlet 执行操作的域名。您必须提供该域的完全限定域名（FQDN）。"
+
+msgid ""
+"For the `Remove-GPPrefRegistryValue` cmdlet, the GPO from which to remove the Registry preference\n"
+"item or items must exist in this domain."
+msgstr ""
+"对于 `Remove-GPPrefRegistryValue` cmdlet 来说，需要从中删除注册表首选项项的 GPO（组策略对象）必须存在于该域中。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the user that is running the current\n"
+"session is used. (If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used.) For more information, see the Notes section in the full Help."
+msgstr ""
+"如果您没有指定 **Domain** 参数，那么将使用当前会话所运行的用户的域名。（如果该 cmdlet "
+"是通过计算机启动或关闭脚本来执行的，则会使用计算机的域名。）有关更多信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user that is running the current\n"
+"session, a trust must exist between that domain and the domain of the user or the computer."
+msgstr "如果您指定的域名与当前会话所使用的用户的域名不同，则该域名与用户或计算机的域名之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to the Domain parameter by its built-in alias, **DomainName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用该参数的内置别名 **DomainName** 来引用它。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the GPO from which to remove the Registry preference item by its globally unique\n"
+"identifier (GUID). The GUID uniquely identifies the GPO."
+msgstr "通过其全局唯一标识符（GUID）指定要从其中删除注册表首选项项目的组策略对象（GPO）。该 GUID 可唯一标识该 GPO。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in alias, **Id**."
+msgstr "您也可以使用其内置别名 **Id** 来引用 **Guid** 参数。"
+
+msgid ""
+"Specifies a registry key for which to remove one or more Registry preference items; for instance,\n"
+"HKCU\\Control Panel\\Colors."
+msgstr "指定一个注册表键，以便从中删除一个或多个注册表偏好设置项；例如：HKCU\\Control Panel\\Colors。"
+
+msgid ""
+"You can specify any of the following registry hives: `HKEY_CLASSES_ROOT` (HKCR), `HKEY_CURRENT_USER`\n"
+"(HKCU), `HKEY_LOCAL_MACHINE` (HKLM), `HKEY_USERS` (HKU), and `HKEY_CURRENT_CONFIG` (HKCC). Any of\n"
+"these hives can be specified for Registry preference items in both Computer Configuration and User\n"
+"Configuration."
+msgstr ""
+"您可以指定以下注册表项中的任意一个：`HKEY_CLASSES_ROOT`（HKCR）、`HKEY_CURRENT_USER`（HKCU）、`HKEY_LOCAL_MACHINE`（HKLM）、`HKEY_USERS`（HKU）以及"
+" `HKEY_CURRENT_CONFIG`（HKCC）。在“计算机配置”和“用户配置”中，都可以使用这些注册表项来设置注册表偏好设置。"
+
+msgid ""
+"The **Key** parameter can be specified with or without the **ValueName** "
+"parameter:"
+msgstr "`Key` 参数可以单独指定，也可以与 `ValueName` 参数一起指定："
+
+msgid ""
+"You can also refer to the **Key** parameter by its built-in alias, "
+"FullKeyPath."
+msgstr "您也可以使用其内置别名 FullKeyPath 来引用 **Key** 参数。"
+
+msgid ""
+"Specifies the GPO from which to remove the Registry preference item by its "
+"display name."
+msgstr "根据显示名称指定要从其中删除注册表首选项项的 GPO（组策略对象）。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another GPO with the same display\n"
+"name exists in the domain an error occurs. You can use the Guid parameter to uniquely identify a\n"
+"GPO."
+msgstr ""
+"显示名称在域内并不保证是唯一的。如果该域中存在另一个具有相同显示名称的 GPO，将会发生错误。您可以使用 Guid 参数来唯一标识一个 GPO。"
+
+msgid ""
+"You can also refer to the **Name** parameter by its built-in alias, "
+"**DisplayName**."
+msgstr "您也可以通过其内置别名 **DisplayName** 来引用 **Name** 参数。"
+
+msgid ""
+"Specifies the order in which a Registry preference item is processed relative to other Registry\n"
+"preference items in the GPO when the GPO is applied on a client computer."
+msgstr "指定当GPO应用于客户端计算机时，某个注册表偏好设置项相对于GPO中的其他注册表偏好设置项的处理顺序。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此 cmdlet 用于联系以完成操作的域控制器的名称。您可以指定完全 Qualified Domain Name（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the primary domain controller\n"
+"(PDC) emulator is contacted."
+msgstr "如果您不使用 **Server** 参数来指定名称，系统会联系主域控制器（PDC）模拟器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, "
+"**DC**."
+msgstr "您也可以使用其内置别名**DC**来引用**Server**参数。"
+
+msgid ""
+"Specifies the name of a registry value for which to remove all Registry preference items. If you\n"
+"specify the **ValueName** parameter, you must also specify the **Key** parameter."
+msgstr "指定要删除所有注册表偏好设置的注册表值的名称。如果您指定了 **ValueName** 参数，那么还必须指定 **Key** 参数。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft(GroupPolicy.Gpo)"
+
+msgid "### Microsoft.GroupPolicy.PreferenceRegistrySetting"
+msgstr "### Microsoft.GroupPolicy PreferenceRegistrySetting"
+
+msgid ""
+"This cmdlet takes a GPO or a **PreferenceRegistrySetting** object as input. You can pipe in one or\n"
+"more **PreferenceRegistrySetting** objects to remove one or more Registry preference items from a\n"
+"specified GPO. You can pipe in one or more GPO objects, such as `Get-GPO`, to remove a specified\n"
+"Registry preference item from each GPO. Collections that contain GPOs from different domains are not\n"
+"supported."
+msgstr ""
+"此 cmdlet 接受一个 GPO 或一个 **PreferenceRegistrySetting** 对象作为输入。你可以通过管道传输一个或多个 "
+"**PreferenceRegistrySetting** 对象，从而从一个指定的 GPO "
+"中删除一个或多个注册表偏好设置项；你也可以通过管道传输一个或多个 GPO 对象（例如使用 `Get-GPO` 命令获取的 GPO），以便从每个 GPO "
+"中删除指定的注册表偏好设置项。不支持包含来自不同域的 GPO 的集合。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft(GroupPolicy.Gpo)"
+
+msgid ""
+"This cmdlet returns the GPO from which the Registry preference item or items"
+" that have been removed."
+msgstr "此cmdlet会返回从中移除了注册表首选项（一个或多个）的GPO（组策略对象）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"  If you do not explicitly specify the domain, the cmdlet uses a default domain. The default domain\n"
+"  is the domain that is used to access network resources by the security context under which the\n"
+"  current session is running. This domain is typically the domain of the user that is running the\n"
+"  session. For instance, the domain of the user who started the session by opening Windows\n"
+"  PowerShell from the Program Files menu, or the domain of a user that is specified in a runas\n"
+"  command. However, computer startup and shutdown scripts run under the context of the LocalSystem\n"
+"  account. The LocalSystem account is a built-in local account, and it accesses network resources\n"
+"  under the context of the computer account. Therefore, when this cmdlet is run from a startup or\n"
+"  shutdown script, the default domain is the domain to which the computer is joined."
+msgstr ""
+"如果您没有明确指定域名，该cmdlet会使用默认域名。默认域名是指当前会话运行的安全上下文用于访问网络资源时所使用的域名。这个域名通常就是运行该会话的用户的域名；例如，通过“Program"
+" Files”菜单打开Windows "
+"PowerShell来启动会话的用户对应的域名，或者在“runas”命令中指定的用户对应的域名。然而，计算机启动和关闭脚本是在“LocalSystem”账户的上下文中运行的。“LocalSystem”是一个内置的本地账户，它以计算机账户的权限访问网络资源。因此，当从这个启动或关闭脚本中运行该cmdlet时，默认域名就是计算机所隶属于的域名。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-GPO](./Get-GPO.md)"
+msgstr "[Get-GPO](./Get-GPO.md)"
+
+msgid "[Get-GPPrefRegistryValue](./Get-GPPrefRegistryValue.md)"
+msgstr "[Get-GPPrefRegistryValue](./Get-GPPrefRegistryValue.md)"
+
+msgid "[Set-GPPrefRegistryValue](./Set-GPPrefRegistryValue.md)"
+msgstr "[Set-GPPrefRegistryValue](./Set-GPPrefRegistryValue.md)"

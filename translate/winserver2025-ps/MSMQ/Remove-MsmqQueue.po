@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:00:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-MsmqQueue"
+msgstr "# Remove-MsmqQueue"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Deletes queues."
+msgstr "删除队列。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-MsmqQueue** cmdlet deletes queues.\n"
+"Specify queues to delete by using **MsmqQueue** objects.\n"
+"This cmdlet does not return anything."
+msgstr ""
+"`Remove-MsmqQueue` cmdlet 用于删除队列。您可以通过使用 `MsmqQueue` 对象来指定要删除的队列。此 cmdlet "
+"不会返回任何内容。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove public queues that have specified names"
+msgstr "#### 示例 1：移除具有指定名称的公共队列"
+
+msgid ""
+"This command gets public queues that have names that start with the string Order by using the **Get-MsmqQueue** cmdlet.\n"
+"The command passes the results to the current cmdlet by using the pipeline operator.\n"
+"The current cmdlet removes the queues."
+msgstr ""
+"该命令使用 **Get-MsmqQueue** cmdlet 获取名称以 “Order” 开头的公共队列。通过管道运算符，该命令将查询结果传递给当前的 "
+"cmdlet（用于删除这些队列）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies an array of **MsmqQueue** objects.\n"
+"This cmdlet deletes the queues that the **MsmqQueue** objects specify.\n"
+"This parameter accepts pipeline input."
+msgstr ""
+"指定一个包含 **MsmqQueue** 对象的数组。该cmdlet会删除这些 **MsmqQueue** "
+"对象所对应的队列。此参数支持管道输入（pipeline input）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的结果。但实际上，该cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### Microsoft.Msmq.PowerShell.Commands.MessageQueue[]"
+msgstr "### Microsoft.Msmq.PowerShell Commands.MessageQueue[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+msgstr "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+
+msgid "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+msgstr "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+
+msgid "[New-MsmqQueue](./New-MsmqQueue.md)"
+msgstr "[New-MsmqQueue](./New-MsmqQueue.md)"
+
+msgid "[Receive-MsmqQueue](./Receive-MsmqQueue.md)"
+msgstr "[接收-MsmqQueue](./Receive-MsmqQueue.md)"
+
+msgid "[Send-MsmqQueue](./Send-MsmqQueue.md)"
+msgstr "[Send-MsmqQueue](./Send-MsmqQueue.md)"
+
+msgid "[Set-MsmqQueue](./Set-MsmqQueue.md)"
+msgstr "[Set-MsmqQueue](./Set-MsmqQueue.md)"

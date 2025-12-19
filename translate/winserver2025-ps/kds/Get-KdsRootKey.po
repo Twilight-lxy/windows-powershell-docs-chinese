@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:59:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-KdsRootKey"
+msgstr "# Get-KdsRootKey"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Retrieves a list of root key values stored by the Microsoft Group KdsSvc."
+msgstr "检索由 Microsoft Group KdsSvc 存储的根键值列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-KdsRootKey** cmdlet retrieves the following information from "
+"Active Directory for each root key:"
+msgstr "`Get-KdsRootKey` cmdlet 会从 Active Directory 中检索每个根密钥的以下信息："
+
+msgid ""
+"This information is required to generate the group keys distributed by the "
+"Microsoft Group KdsSvc."
+msgstr "这些信息是生成由 Microsoft Group KdsSvc 分发的组密钥所必需的。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Retrieve a list of root key values"
+msgstr "### 示例 1：获取根键值列表"
+
+msgid ""
+"This command retrieves a list of root key values stored in Active Directory."
+msgstr "此命令用于检索存储在 Active Directory 中的所有根键值（root key values）的列表。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet accepts no input objects."
+msgstr "此cmdlet不接受任何输入对象。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Collections.Generic.List`1<KdsRootKey^>"
+msgstr "### `System.Collections.Generic.List<KdsRootKey^>`"
+
+msgid ""
+"This cmdlet returns a list of master root keys stored in Active Directory."
+msgstr "此cmdlet返回存储在Active Directory中的所有主根密钥的列表。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+msgstr "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+
+msgid "[Clear-KdsCache](./Clear-KdsCache.md)"
+msgstr "[Clear-KdsCache](./Clear-KdsCache.md)"
+
+msgid "[Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+msgstr "[Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+
+msgid "[Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+msgstr "[Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+
+msgid "[Test-KdsRootKey](./Test-KdsRootKey.md)"
+msgstr "[测试 KDS Root Key](./Test-KdsRootKey.md)"

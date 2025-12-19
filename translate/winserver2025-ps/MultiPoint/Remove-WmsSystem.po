@@ -1,0 +1,113 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:11:49 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-WmsSystem"
+msgstr "# 移除WMS系统"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a computer from the list of managed systems."
+msgstr "从受管理的系统列表中移除某台计算机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-WmsSystem** cmdlet removes the specified computer from the list"
+" of managed systems so that it is no longer remotely managed."
+msgstr "`Remove-WmsSystem` cmdlet 会将从指定计算机从受管理系统列表中删除，从而使其不再能够被远程管理。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a MultiPoint system"
+msgstr "### 示例 1：移除一个多点系统"
+
+msgid ""
+"This command removes the computer named sample.microsoft.com from the "
+"collection of computers that can be managed."
+msgstr "此命令将从可管理的计算机集合中删除名为“sample.microsoft.com”的计算机。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of computer host names from the MultiPoint system to "
+"remove."
+msgstr "指定一个包含来自多点系统（MultiPoint System）的计算机主机名称的数组，这些主机名称需要被删除。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.WmsSystem"
+msgstr ""
+"### Microsoft.WindowsServerSolutions.MultipointServer.PowerShell "
+"Commands.Library.WmsSystem"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WmsSystem](./Add-WmsSystem.md)"
+msgstr "[Add-WmsSystem](./Add-WmsSystem.md)"
+
+msgid "[Get-WmsSystem](./Get-WmsSystem.md)"
+msgstr "[Get-WmsSystem](./Get-WmsSystem.md)"
+
+msgid "[Restart-WmsSystem](./Restart-WmsSystem.md)"
+msgstr "[重启 WMS 系统](./Restart-WmsSystem.md)"
+
+msgid "[Search-WmsSystem](./Search-WmsSystem.md)"
+msgstr "[Search-WmsSystem](./Search-WmsSystem.md)"
+
+msgid "[Set-WmsSystem](./Set-WmsSystem.md)"
+msgstr "[Set-WmsSystem](./Set-WmsSystem.md)"
+
+msgid "[Stop-WmsSystem](./Stop-WmsSystem.md)"
+msgstr "[Stop-WmsSystem](./Stop-WmsSystem.md)"

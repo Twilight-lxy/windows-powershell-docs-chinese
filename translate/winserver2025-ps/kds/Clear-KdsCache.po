@@ -1,0 +1,122 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:58:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Clear-KdsCache"
+msgstr "# 清除 KDS 缓存"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Clears the group key cache of the local computer."
+msgstr "清除本地计算机的组键缓存。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Clear-KdsCache** cmdlet clears the group key cache of the local "
+"computer."
+msgstr "`Clear-KdsCache` cmdlet 会清除本地计算机的组键缓存。"
+
+msgid ""
+"The local computer can be either a domain controller running the Microsoft "
+"Group Key Distribution Service (KdsSvc) or a client of the Microsoft Group "
+"KdsSvc."
+msgstr "本地计算机可以是运行 Microsoft 组密钥分发服务（KdsSvc）的域控制器，也可以是该服务的客户端。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Clear the group key cache"
+msgstr "### 示例 1：清除群组密钥缓存"
+
+msgid "This command clears the group key cache of the local computer."
+msgstr "此命令会清除本地计算机的组密钥缓存。"
+
+msgid "### Example 2: Clear the group key cache of a specific user"
+msgstr "### 示例 2：清除特定用户的组键缓存"
+
+msgid "This command clears the group key cache of the user with SID s-1-1-0."
+msgstr "此命令会清除SID为s-1-1-0的用户对应的组键缓存。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the security identifier (SID) for the user account whose cache "
+"this cmdlet clears."
+msgstr "指定该cmdlet要清除其缓存的用户账户的安全标识符（SID）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet accepts no input objects."
+msgstr "此cmdlet不接受任何输入对象。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet produces no output."
+msgstr "这个cmdlet不产生任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+msgstr "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+
+msgid "[Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+msgstr "[Get-KdsConfiguration](./Get-KdsConfiguration.md)"
+
+msgid "[Get-KdsRootKey](./Get-KdsRootKey.md)"
+msgstr "[Get-KdsRootKey](./Get-KdsRootKey.md)"
+
+msgid "[Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+msgstr "[Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+
+msgid "[Test-KdsRootKey](./Test-KdsRootKey.md)"
+msgstr "[Test-KdsRootKey](./Test-KdsRootKey.md)"

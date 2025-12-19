@@ -1,0 +1,119 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:16:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# HgsAttestation Module"
+msgstr "# HgsAttestation模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for the Host Guardian"
+" Service (HGS) Attestation. These cmdlets belong to the HgsAttestation "
+"module."
+msgstr ""
+"此参考资料提供了Host Guardian "
+"Service（HGS）认证相关cmdlet的描述和语法信息。这些cmdlet属于HgsAttestation模块。"
+
+msgid "## HgsAttestation Cmdlets"
+msgstr "## HgsAttestationCmdlets"
+
+msgid "### [Add-HgsAttestationCIPolicy](Add-HgsAttestationCIPolicy.md)"
+msgstr "### [Add-HgsAttestationCIPolicy](Add-HgsAttestationCIPolicy.md)"
+
+msgid ""
+"Authorizes a trusted code integrity policy to be used by hosts attesting "
+"against HGS."
+msgstr "授权可信的代码完整性策略可供主机使用，以验证 HGS（硬件安全模块）的安全性。"
+
+msgid "### [Add-HgsAttestationDumpPolicy](Add-HgsAttestationDumpPolicy.md)"
+msgstr "### [Add-HgsAttestationDumpPolicy](Add-HgsAttestationDumpPolicy.md)"
+
+msgid "Adds an authorized dump encryption key to HGS."
+msgstr "将一个授权的转储加密密钥添加到HGS中。"
+
+msgid "### [Add-HgsAttestationHostGroup](add-hgsattestationhostgroup.md)"
+msgstr "### [Add-HgsAttestationHostGroup](add-hgsattestationhostgroup.md)"
+
+msgid ""
+"Adds an attestation policy for an Active Directory host group configuration."
+msgstr "为 Active Directory 主机组配置添加一个认证策略。"
+
+msgid "### [Add-HgsAttestationTpmHost](Add-HgsAttestationTpmHost.md)"
+msgstr "### [Add-HgsAttestationTpmHost](Add-HgsAttestationTpmHost.md)"
+
+msgid "Adds a guarded host with TPM 2.0 to the Attestation service in HGS."
+msgstr "将一台配备了TPM 2.0技术的受保护主机添加到HGS（Hardware Security Module）中的认证服务中。"
+
+msgid "### [Add-HgsAttestationTpmPolicy](Add-HgsAttestationTpmPolicy.md)"
+msgstr "### [Add-HgsAttestationTpmPolicy](Add-HgsAttestationTpmPolicy.md)"
+
+msgid "Adds an attestation policy based on TPM 2.0 hardware to HGS."
+msgstr "基于TPM 2.0硬件为HGS添加一个认证策略。"
+
+msgid "### [Disable-HgsAttestationPolicy](Disable-HgsAttestationPolicy.md)"
+msgstr "### [ Disable-HgsAttestationPolicy](Disable-HgsAttestationPolicy.md)"
+
+msgid "Disables an attestation policy in HGS."
+msgstr "在 HGS 中禁用某个认证策略。"
+
+msgid "### [Enable-HgsAttestationPolicy](Enable-HgsAttestationPolicy.md)"
+msgstr "### [Enable-HgsAttestationPolicy](Enable-HgsAttestationPolicy.md)"
+
+msgid "Enables an attestation policy in HGS."
+msgstr "在 HGS 中启用认证策略。"
+
+msgid "### [Get-HgsAttestationHostGroup](Get-HgsAttestationHostGroup.md)"
+msgstr "### [Get-HgsAttestationHostGroup](Get-HgsAttestationHostGroup.md)"
+
+msgid "Gets attestation policies based on host groups."
+msgstr "根据主机组获取认证策略。"
+
+msgid "### [Get-HgsAttestationPolicy](Get-HgsAttestationPolicy.md)"
+msgstr "### [Get-HgsAttestationPolicy](Get-HgsAttestationPolicy.md)"
+
+msgid "Gets HGS attestation policies."
+msgstr "获取 HGS 证明策略。"
+
+msgid ""
+"### [Get-HgsAttestationSignerCertificate](Get-"
+"HgsAttestationSignerCertificate.md)"
+msgstr ""
+"### [Get-HgsAttestationSignerCertificate](Get-"
+"HgsAttestationSignerCertificate.md)"
+
+msgid ""
+"Gets the public certificates for a key pair that attestation uses to sign "
+"attestation certificates."
+msgstr "获取用于签署认证证书的密钥对的公共证书。"
+
+msgid "### [Get-HgsAttestationTpmHost](Get-HgsAttestationTpmHost.md)"
+msgstr "### [Get-HgsAttestationTpmHost](Get-HgsAttestationTpmHost.md)"
+
+msgid "Gets guarded hosts with TPM 2.0 from the Attestation service HGS."
+msgstr "通过Attestation服务HGS来保护配备了TPM 2.0技术的主机。"
+
+msgid ""
+"### [Remove-HgsAttestationHostGroup](Remove-HgsAttestationHostGroup.md)"
+msgstr ""
+"### [Remove-HgsAttestationHostGroup](Remove-HgsAttestationHostGroup.md)"
+
+msgid "Removes an attestation policy based on a host group."
+msgstr "根据主机组删除某个认证策略。"
+
+msgid "### [Remove-HgsAttestationPolicy](Remove-HgsAttestationPolicy.md)"
+msgstr "### [Remove-HgsAttestationPolicy](Remove-HgsAttestationPolicy.md)"
+
+msgid "Removes an attestation policy from HGS."
+msgstr "从HGS中删除一个证书颁发策略（attestation policy）。"
+
+msgid "### [Remove-HgsAttestationTpmHost](Remove-HgsAttestationTpmHost.md)"
+msgstr "### [Remove-HgsAttestationTpmHost](Remove-HgsAttestationTpmHost.md)"
+
+msgid ""
+"Removes a guarded host with TPM 2.0 from the Attestation service in HGS."
+msgstr "将配备了TPM 2.0技术的受保护主机从HGS（Hardware Security Module）的认证服务中移除。"

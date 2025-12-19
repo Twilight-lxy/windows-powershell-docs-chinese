@@ -1,0 +1,164 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:13:35 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WmsStation"
+msgstr "# Set-WmsStation"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Modifies station information."
+msgstr "修改站点信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### FriendlyName"
+msgstr "### FriendlyName"
+
+msgid "### AutoLogonEnable"
+msgstr "### AutoLogonEnable"
+
+msgid "### DisableAutoLogon"
+msgstr "### 禁用自动登录功能"
+
+msgid "### RemoteConnection"
+msgstr "### RemoteConnection"
+
+msgid "### RemoteConnectionVM"
+msgstr "### RemoteConnectionVM"
+
+msgid "### DisableRemoteConnection"
+msgstr "### 禁用远程连接（DisableRemoteConnection）"
+
+msgid "### DisplayOrientation"
+msgstr "### DisplayOrientation"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-WmsStation** cmdlet modifies station information.\n"
+"You can use this cmdlet to set the automatic logon and the friendly name for the station.\n"
+"If you want to enable a user in the Administrator group to auto-logon, specify the *OverrideAdminWarning* parameter."
+msgstr ""
+"`Set-WmsStation` cmdlet 用于修改站点信息。你可以使用这个 cmdlet "
+"来设置站点的自动登录功能以及友好名称（即站点的显示名称）。如果你希望允许属于 Administrator 组的用户自动登录，请指定 "
+"`OverrideAdminWarning` 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set a station"
+msgstr "### 示例 1：设置一个电台"
+
+msgid ""
+"The first command gets the credentials for Student01, and then stores them "
+"in the $Creds variable."
+msgstr "第一个命令获取Student01的凭据信息，然后将这些信息存储在$Creds变量中。"
+
+msgid ""
+"The second command sets the friendly name of station 1 to Patti's Station.\n"
+"Station 1 is now configured to auto-logon as Student01."
+msgstr "第二个命令将站点1的友好名称设置为“Patti’s Station”。现在站点1已配置为使用用户名“Student01”自动登录。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the automatic logon credentials.\n"
+"Use Get-Credential cmdlet to get a **PSCredential** object."
+msgstr "指定自动登录所需的凭据。可以使用 `Get-Credential` cmdlet 来获取一个 `PSCredential` 对象。"
+
+msgid "Disables automatic logon for the station."
+msgstr "禁用该站点的自动登录功能。"
+
+msgid "Specifies the Display Orientation for the station."
+msgstr "指定车站的显示方向。"
+
+msgid "Specifies a friendly name for the station."
+msgstr "为该站点指定一个友好的名称。"
+
+msgid "Specifies the local session host."
+msgstr "指定本地会话主机。"
+
+msgid ""
+"Indicates that this operation overrides the Administrator warning.\n"
+"Specify this parameter to enable an Administrator to automatically log on."
+msgstr "表示此操作会忽略管理员警告。请指定该参数以允许管理员自动登录。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 localhost。"
+
+msgid "Specifies the session host."
+msgstr "指定会话主机。"
+
+msgid "Specifies an array of station IDs."
+msgstr "指定一个车站ID数组。"
+
+msgid ""
+"Specifies the virtual machine guest host name for Virtual Desktop "
+"Infrastructure (VDI) stations."
+msgstr "用于指定虚拟桌面基础设施（VDI）工作站中的虚拟机客户端的主机名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-WmsStation](./Clear-WmsStation.md)"
+msgstr "[Clear-WmsStation](./Clear-WmsStation.md)"
+
+msgid "[Get-WmsStation](./Get-WmsStation.md)"
+msgstr "[Get-WmsStation](./Get-WmsStation.md)"
+
+msgid "[Join-WmsStation](./Join-WmsStation.md)"
+msgstr "[Join-WmsStation](./Join-WmsStation.md)"
+
+msgid "[Split-WmsStation](./Split-WmsStation.md)"
+msgstr "[Split-WmsStation](./Split-WmsStation.md)"
+
+msgid "[Update-WmsStation](./Update-WmsStation.md)"
+msgstr "[更新 WMS 站点](./Update-WmsStation.md)"

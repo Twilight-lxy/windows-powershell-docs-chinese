@@ -1,0 +1,222 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:58:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-GPLink"
+msgstr "# 移除 GPL 链接"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a GPO link from a site, domain or OU."
+msgstr "从站点、域或组织单位（OU）中删除GPO链接。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### LinkbyGUID (Default)"
+msgstr "### LinkbyGUID（默认值）"
+
+msgid "### LinkbyName"
+msgstr "### LinkbyName"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Remove-GPLink` cmdlet removes the link between a Group Policy Object (GPO) and a specified\n"
+"site, domain, or OU. This cmdlet does not delete the actual GPO or any other links between the\n"
+"specified GPO and other sites, domains, or OUs."
+msgstr ""
+"`Remove-GPLink` cmdlet 用于移除组策略对象（GPO）与指定站点、域或组织单元（OU）之间的关联。该 cmdlet 不会删除实际的 "
+"GPO，也不会删除 GPO 与其他站点、域或 OU 之间的其他关联。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove the specified GPO link"
+msgstr "### 示例 1：删除指定的 GPO 链接"
+
+msgid ""
+"This command removes the link between the GPO named `MyGPO` and the `MyOU` organizational unit in\n"
+"the `contoso.com` domain."
+msgstr "此命令会删除名为 `MyGPO` 的组策略对象（GPO）与 `contoso.com` 域中的 `MyOU` 组织单元之间的关联。"
+
+msgid ""
+"### Example 2: Remove the link between the specified GPO and the default "
+"site"
+msgstr "### 示例 2：移除指定的 GPO 与默认站点之间的链接"
+
+msgid ""
+"This command removes the link between the GPO named MyGPO and the default "
+"site."
+msgstr "这个命令会删除名为“MyGPO”的组策略对象（GPO）与默认站点之间的关联。"
+
+msgid ""
+"### Example 3: Remove the links for all GPOs that are linked to the "
+"specified organizational unit"
+msgstr "### 示例 3：删除所有与指定组织单元关联的 GPO 的链接"
+
+msgid ""
+"This command removes the links for all the GPOs that are linked to the `MyOU` organizational unit in\n"
+"the `contoso.com` domain."
+msgstr "此命令会删除所有与 `contoso.com` 域中的 `MyOU` 组织单位关联的 GPO（组策略对象）所对应的链接。"
+
+msgid ""
+"This cmdlet is used to get a **Microsoft.GroupPolicy.Som** object for the OU. The GpoLinks property\n"
+"of the SOM object contains all the GPO links for GPOs that are linked to the OU. Links that are\n"
+"inherited from higher-level containers are not included. This collection is piped into\n"
+"`Remove-GPLink`. The GPOs for which links have been removed are returned."
+msgstr ""
+"这个 cmdlet 用于获取与某个组织单元（OU）相关联的 **Microsoft.GroupPolicy.Som** 对象。该 SOM 对象的 "
+"GpoLinks 属性中包含了所有与该 OU "
+"相关联的组策略对象（GPO）的链接信息；不过，从更高级别的容器继承而来的链接不会被包含在内。这些链接信息会被传递给 `Remove-GPLink` "
+"命令进行处理。最终，那些链接已被移除的 GPO 对象会返回结果。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the domain for this cmdlet. You must specify the fully qualified domain name (FQDN) of the\n"
+"domain."
+msgstr "指定此cmdlet的域名。必须提供该域名的完全限定域名（FQDN）。"
+
+msgid "For the `Remove-GPLink` cmdlet:"
+msgstr "关于 `Remove-GPLink` cmdlet："
+
+msgid "Note: To specify a domain to link to, use the **Target** parameter."
+msgstr "注意：要指定要链接到的域名，请使用 **Target** 参数。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the user that is running the current\n"
+"session is used. If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used. For more information, see the Notes section in the full Help."
+msgstr ""
+"如果您没有指定 **Domain** "
+"参数，那么将使用运行当前会话的用户所在的域。如果该cmdlet是从计算机启动或关闭脚本中执行的，那么将使用计算机所属的域。有关更多信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user that is running the current\n"
+"session (or, for a startup or shutdown script, the computer), a trust must exist between that domain\n"
+"and the domain of the user, or the computer."
+msgstr ""
+"如果您指定的域名与当前会话的用户所使用的域名不同（或者对于启动/关闭脚本来说，是与计算机相关的域名不同），那么该域名与用户所在的域名或计算机所在的域名之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to the **Domain** parameter by its built-in alias, **DomainName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用其内置别名**DomainName**来引用**Domain**参数。有关更多信息，请参阅[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the GPO for which to remove the link by its globally unique identifier (GUID).\n"
+"The `GUID` uniquely identifies the GPO."
+msgstr "通过其全局唯一标识符（GUID）指定要删除链接的组策略对象（GPO）。该 GUID 可唯一地标识该 GPO。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in aliases, **id** and **gpoid**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以通过其内置的别名 `id` 和 `gpoid` 来引用 `Guid` 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid "Specifies the GPO for which to remove the link by its display name."
+msgstr "根据显示名称指定要删除链接的GPO（组策略对象）。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another GPO with the same display\n"
+"name exists in the domain an error occurs. You can use the **Guid** parameter to uniquely identify a\n"
+"GPO."
+msgstr ""
+"显示名称在该域中并不保证是唯一的。如果该域中存在另一个具有相同显示名称的组策略对象（GPO），将会发生错误。您可以使用 **Guid** "
+"参数来唯一标识一个 GPO。"
+
+msgid ""
+"You can also refer to the **Name** parameter by its built-in alias, **DisplayName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以通过其内置别名 **DisplayName** 来引用 **Name** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此 cmdlet 用于联系以完成操作的域控制器的名称。您可以指定完全限定的域名（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name using the **Server** parameter, the primary domain controller (PDC)\n"
+"emulator is contacted."
+msgstr "如果您不使用 **Server** 参数来指定名称，系统会联系主域控制器（PDC）模拟器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, **DC**. For more information,\n"
+"see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"你也可以使用 **Server** 参数的内置别名 **DC** 来引用它。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the Lightweight Directory Access Protocol (LDAP) distinguished name of the site, domain,\n"
+"or OU from which to remove the link. For instance, for the `MyOU` organizational unit in the\n"
+"`contoso.com` domain, the LDAP distinguished name is `ou=MyOU,dc=contoso,dc=com`."
+msgstr ""
+"指定用于删除链接的站点、域或组织单元（OU）的轻量级目录访问协议（LDAP）区分名称。例如，对于 `contoso.com` 域中的 `MyOU` "
+"组织单元，其 LDAP 区分名称为 `ou=MyOU,dc=contoso,dc=com`。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction和-"
+"WarningVariable。有关更多信息，请参阅[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.GroupPolicy.GpoLink"
+msgstr "### Microsoft.GroupPolicy.GpoLink"
+
+msgid ""
+"This cmdlet accepts an object that represents the link between a GPO and a "
+"site, domain, or OU."
+msgstr "此 cmdlet 接受一个对象，该对象表示 GPO 与站点、域或组织单元（OU）之间的关联。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft.GroupPolicy.Gpo"
+
+msgid "This cmdlet returns the GPO for which the link has been removed."
+msgstr "此cmdlet返回了链接已被删除的GPO（组策略对象）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-GPLink](./New-GPLink.md)"
+msgstr "[New-GPLink](./New-GPLink.md)"
+
+msgid "[Set-GPLink](./Set-GPLink.md)"
+msgstr "[Set-GPLink](./Set-GPLink.md)"

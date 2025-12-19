@@ -1,0 +1,199 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:58:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Resume-VMReplication"
+msgstr "# 简历 - 虚拟机复制技术（Resume-VMReplication）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Resumes a virtual machine replication that is in a state of Paused, Error, "
+"Resynchronization Required, or Suspended."
+msgstr ""
+"恢复处于“暂停”（Paused）、“错误”（Error）、“需要重新同步”（Resynchronization "
+"Required）或“挂起”（Suspended）状态的虚拟机复制操作。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMReplication"
+msgstr "### 虚拟机复制（VMReplication）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Resume-VMReplication** cmdlet resumes replication of a virtual machine"
+" with a replication state of Paused, Error, Resynchronization Required, or "
+"Suspended."
+msgstr ""
+"`Resume-VMReplication` cmdlet "
+"用于恢复处于“暂停”（Paused）、“错误”（Error）、“需要重新同步”（Resynchronization "
+"Required）或“挂起”（Suspended）状态的虚拟机的复制过程。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example resumes replication of virtual machine VM01."
+msgstr "这个示例恢复了虚拟机VM01的复制过程。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid "This example resynchronizes replication of virtual machine VM01."
+msgstr "这个示例用于重新同步虚拟机VM01的复制过程。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example schedules the resynchronization of replication for virtual "
+"machine VM01 to start at 5:00 AM on August 1, 2012."
+msgstr "这个示例安排了虚拟机VM01的复制同步操作在2012年8月1日上午5:00开始执行。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example resumes replication of all virtual machines for which "
+"replication is paused."
+msgstr "这个示例会恢复所有已暂停复制的虚拟机的复制过程。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "将该cmdlet作为后台作业运行。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual machine replication is to be resumed.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于恢复虚拟机复制的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名来进行指定。默认值是本地计算机。可以使用 `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Indicates that Hyper-V Replica continues the resynchronization comparisons "
+"from where it left off when you resume the virtual machine replication."
+msgstr "这表示，在您恢复虚拟机复制时，Hyper-V Replica会从上次停止的位置继续执行同步比较操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Indicates that this cmdlet returns a **VMReplication** object."
+msgstr "表示此 cmdlet 返回一个 **VMReplication** 对象。"
+
+msgid ""
+"Specifies the replication relationship type of the virtual machine.\n"
+"Specify whether the replication relationship is a simple primary to replica or is an extended replication chain.\n"
+"The cmdlet resumes the replication of the virtual machines that have the replication type that you specify."
+msgstr ""
+"用于指定虚拟机的复制关系类型。需要明确该复制关系是简单的主从复制关系，还是扩展的复制链关系。此cmdlet会恢复那些具有所指定复制类型的虚拟机的复制过程。"
+
+msgid ""
+"Specifies that resynchronization is to be started for the virtual machine.\n"
+"Resynchronization requires significant storage, processor, and network resources.\n"
+"We recommend running this process during off-peak hours.\n"
+"Use the **Set-VMReplication** cmdlet to specify whether to automatically resynchronize the virtual machine in the future."
+msgstr ""
+"指定要为虚拟机启动重新同步操作。重新同步需要大量的存储、处理器和网络资源，因此建议在非高峰时段执行此操作。可以使用 **Set-"
+"VMReplication** cmdlet 来设置是否在未来自动重新同步该虚拟机。"
+
+msgid ""
+"Specifies when resynchronization should start.\n"
+"If not specified, resynchronization starts immediately.\n"
+"You can schedule the resynchronization to start up to 7 days later."
+msgstr "指定重新同步应开始的时间。如果未指定，则重新同步会立即启动。您可以安排重新同步在最多7天后开始。"
+
+msgid "Specifies the virtual machine whose replication is to be resumed."
+msgstr "指定要恢复复制的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine whose replication is to be "
+"resumed."
+msgstr "指定要恢复复制的虚拟机的名称。"
+
+msgid ""
+"Specifies a virtual machine replication object representing the virtual "
+"machine replication to be resumed."
+msgstr "指定一个虚拟机复制对象，该对象代表需要恢复的虚拟机复制操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### VMReplication"
+msgstr "### 虚拟机复制（VMReplication）"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 **-PassThru**。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

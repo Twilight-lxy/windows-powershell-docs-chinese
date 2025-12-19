@@ -1,0 +1,148 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:04:10 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for the Windows Local"
+" Administrator Password Solution (LAPS) module."
+msgstr "此参考资料提供了 Windows 本地管理员密码解决方案（LAPS）模块对应的cmdlet描述和语法信息。"
+
+msgid "# LAPS Module"
+msgstr "# LAPS模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for the Windows Local Administrator Password\n"
+"Solution (LAPS) module. It lists the cmdlets in alphabetical order."
+msgstr ""
+"该参考资料提供了用于 Windows 本地管理员密码解决方案（LAPS）模块的 cmdlet 描述和语法信息，并将这些 cmdlet "
+"按字母顺序进行了排列。"
+
+msgid "## LAPS Cmdlets"
+msgstr "## LAPSCmdlets"
+
+msgid "### [Find-LapsADExtendedRights](Find-LapsADExtendedRights.md)"
+msgstr "### [Find-LapsADExtendedRights](Find-LapsADExtendedRights.md)"
+
+msgid ""
+"Queries Active Directory (AD) to find principals that have been granted permission to read Windows\n"
+"Local Administrator Password Solution (LAPS) password attributes."
+msgstr "查询 Active Directory（AD），以找到被授予读取 Windows 本地管理员密码解决方案（LAPS）密码属性权限的主体。"
+
+msgid "### [Get-LapsAADPassword](Get-LapsAADPassword.md)"
+msgstr "### [Get-LapsAADPassword](Get-LapsAADPassword.md)"
+
+msgid ""
+"Queries Microsoft Entra ID for the Windows Local Administrator Password Solution (LAPS)\n"
+"credentials on a specified Microsoft Entra device."
+msgstr ""
+"在指定的 Microsoft Entra 设备上，查询用于获取 Windows 本地管理员密码解决方案（LAPS）凭据的 Microsoft Entra"
+" ID。"
+
+msgid "### [Get-LapsADPassword](Get-LapsADPassword.md)"
+msgstr "### [Get-LapsADPassword](Get-LapsADPassword.md)"
+
+msgid ""
+"Queries Windows Local Administrator Password Solution (LAPS) credentials from Active Directory (AD)\n"
+"on a specified AD computer or domain controller object."
+msgstr "从指定的 Active Directory（AD）计算机或域控制器对象中查询 Windows 本地管理员密码解决方案（LAPS）的凭据。"
+
+msgid "### [Get-LapsDiagnostics](Get-LapsDiagnostics.md)"
+msgstr "### [Get-LapsDiagnostics](Get-LapsDiagnostics.md)"
+
+msgid ""
+"Collects Windows Local Administrator Password Solution (LAPS) logs and tracing from the local\n"
+"machine."
+msgstr "从本地机器收集 Windows 本地管理员密码解决方案（LAPS）的相关日志和跟踪数据。"
+
+msgid "### [Invoke-LapsPolicyProcessing](Invoke-LapsPolicyProcessing.md)"
+msgstr "### [Invoke-LapsPolicyProcessing](Invoke-LapsPolicyProcessing.md)"
+
+msgid ""
+"Causes Windows Local Administrator Password Solution (LAPS) to process the currently configured\n"
+"policy."
+msgstr "这会导致 Windows 本地管理员密码解决方案（LAPS）处理当前配置的策略。"
+
+msgid "### [Reset-LapsPassword](Reset-LapsPassword.md)"
+msgstr "### [Reset-LapsPassword](Reset-LapsPassword.md)"
+
+msgid ""
+"Causes Windows Local Administrator Password Solution (LAPS) to immediately rotate the password for\n"
+"the currently managed local account."
+msgstr "该原因会导致 Windows 本地管理员密码解决方案（LAPS）立即为当前管理的本地账户更改其密码。"
+
+msgid "### [Set-LapsADAuditing](Set-LapsADAuditing.md)"
+msgstr "### [Set-LapsADAuditing](Set-LapsADAuditing.md)"
+
+msgid ""
+"Configures an Active Directory (AD) Organizational Unit (OU) to enable auditing on the Windows Local\n"
+"Administrator Password Solution (LAPS) password schema attributes."
+msgstr ""
+"配置 Active Directory（AD）中的组织单位（Organizational Unit，简称 OU），以启用对 Windows "
+"本地管理员密码解决方案（Windows Local Administrator Password Solution，简称 "
+"LAPS）中密码模式属性的审计功能。"
+
+msgid ""
+"### [Set-LapsADComputerSelfPermission](Set-LapsADComputerSelfPermission.md)"
+msgstr ""
+"### [Set-LapsADComputer_permissions](Set-LapsADComputer上面这段话翻译为中文如下：  \n"
+"### [Set-LapsADComputerSelfPermission](Set-LapsADComputer.Permission.md)"
+
+msgid ""
+"Configures permissions on an Active Directory (AD) Organizational Unit (OU) to enable computers in\n"
+"that OU to update their Windows Local Administrator Password Solution (LAPS) passwords."
+msgstr ""
+"配置 Active Directory（AD）组织单元（Organizational Unit，简称 OU）的权限，以使该 OU 中的计算机能够更新其 "
+"Windows 本地管理员密码解决方案（Windows Local Administrator Password Solution，简称 "
+"LAPS）的密码。"
+
+msgid ""
+"### [Set-LapsADPasswordExpirationTime](Set-LapsADPasswordExpirationTime.md)"
+msgstr ""
+"### [Set-LapsADPasswordExpirationTime](Set-LapsADPasswordExpirationTime.md)"
+
+msgid ""
+"Sets the Windows Local Administrator Password Solution (LAPS) password expiration timestamp on an\n"
+"Active Directory (AD) computer or domain controller object."
+msgstr ""
+"用于在 Active Directory（AD）计算机或域控制器对象上设置 Windows 本地管理员密码解决方案（LAPS）的密码过期时间戳。"
+
+msgid ""
+"### [Set-LapsADReadPasswordPermission](Set-LapsADReadPasswordPermission.md)"
+msgstr ""
+"### [Set-LapsADReadPasswordPermission](Set-LapsADReadPasswordPermission.md)"
+
+msgid ""
+"Configures security on an Active Directory (AD) Organizational Unit (OU) to grant specific users or\n"
+"groups permission to query Windows Local Administrator Password Solution (LAPS) passwords."
+msgstr ""
+"配置 Active Directory（AD）组织单位（OU）的安全设置，以允许特定的用户或组查询 Windows "
+"本地管理员密码解决方案（LAPS）中的密码。"
+
+msgid ""
+"### [Set-LapsADResetPasswordPermission](Set-"
+"LapsADResetPasswordPermission.md)"
+msgstr ""
+"### [Set-LapsADResetPasswordPermission](Set-"
+"LapsADResetPasswordPermission.md)"
+
+msgid ""
+"Configures security on an Active Directory (AD) Organizational Unit (OU) to grant specific users or\n"
+"groups permission to set the Windows Local Administrator Password Solution (LAPS) password\n"
+"expiration time."
+msgstr ""
+"配置 Active Directory（AD）组织单元（OU）的安全设置，以允许特定用户或组更改 Windows "
+"本地管理员密码解决方案（LAPS）的密码过期时间。"
+
+msgid "### [Update-LapsADSchema](Update-LapsADSchema.md)"
+msgstr "### [更新LapsADSchema](Update-LapsADSchema.md)"
+
+msgid ""
+"Extends the Active Directory (AD) schema with the Windows Local Administrator Password Solution\n"
+"(LAPS) schema attributes."
+msgstr "通过添加 Windows 本地管理员密码解决方案（LAPS）的架构属性来扩展 Active Directory（AD）的架构。"

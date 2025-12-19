@@ -1,0 +1,82 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:07:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Get-DiagnosticDataTypes"
+msgstr "# Get-DiagnosticDataTypes"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Fetches the mapping of diagnostic data type identifiers to their "
+"corresponding descriptions."
+msgstr "获取诊断数据类型标识符与其对应描述的映射关系。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"This cmdlet shows the mapping between diagnostic data type identifiers to their official descriptions.\n"
+"Each diagnostic data event is grouped into a Data Type based on how Microsoft uses the data.\n"
+"It may take some time for descriptions to be loaded."
+msgstr ""
+"此cmdlet显示了诊断数据类型标识符与其官方描述之间的对应关系。每个诊断数据事件都会根据微软对数据的处理方式被归类到相应的数据类型中。描述信息的加载可能需要一些时间。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "Fetches Windows Diagnostic Data diagnostic data types."
+msgstr "获取Windows诊断数据的相关类型信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### DDVCmdlets.Containers.DiagnosticDataType"
+msgstr "### DDVCmdlets.Containers.DiagnosticDataType"
+
+msgid "Diagnostic data type information."
+msgstr "诊断数据类型信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "Requires Windows 10 version 17134 (1803) or higher"
+msgstr "需要 Windows 10 的 17134（1803）版本或更高版本"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[About Windows Diagnostic Data](/windows/privacy/windows-diagnostic-data)"
+msgstr "[关于Windows诊断数据](/windows/privacy/windows-diagnostic-data)"

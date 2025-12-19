@@ -1,0 +1,126 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:39:41 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Copy-UserInternationalSettingsToSystem"
+msgstr "# 将用户国际设置复制到系统"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Copies the current user's international settings (Windows Display language, Input language, Regional Format/locale, and Location/GeoID) to one or both of the following:\n"
+"* Welcome screen and system accounts\n"
+"* New user accounts"
+msgstr ""
+"将当前用户的国际设置（Windows显示语言、输入语言、区域格式/区域设置以及位置信息/地理标识符）复制到以下一个或两个目标：  \n"
+"* 欢迎屏幕和系统账户  \n"
+"* 新用户账户"
+
+msgid ""
+"**Important:** Note that this PowerShell cmdlet is only available for "
+"Windows 11 and later."
+msgstr "**重要提示：**请注意，此 PowerShell 命令仅适用于 Windows 11 及更高版本的系统。"
+
+msgid ""
+"This is a system setting. It can only be changed by a user who has "
+"Administrator permissions. Changes take effect after the computer is "
+"restarted."
+msgstr "这是一个系统设置。只有具有管理员权限的用户才能对其进行更改。更改会在计算机重新启动后生效。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Copy-UserInternationalSettingsToSystem** cmdlet gets the **international settings** from the current user.\n"
+"You can decide whether to copy these settings into the **Welcome screen and system accounts**, the **New user accounts**, or both."
+msgstr ""
+"`Copy-UserInternationalSettingsToSystem` cmdlet "
+"用于从当前用户那里获取国际设置。你可以选择将这些设置复制到“欢迎屏幕”和系统账户中，或者复制到新用户账户中，也可以同时复制到两者中。"
+
+msgid "This cmdlet takes two parameters: **-WelcomeScreen** and **-NewUser**."
+msgstr "这个cmdlet接受两个参数：**-WelcomeScreen** 和 **-NewUser**。"
+
+msgid ""
+"When any of the parameters is set to $True, this cmdlet gets the current "
+"values from the current user and copies them to the system settings for the "
+"selected options based on the parameters that were set to $True."
+msgstr ""
+"当任何参数被设置为 `$True` 时，此 cmdlet 会从当前用户那里获取相应的值，并根据这些被设置为 `$True` "
+"的参数，将这些值复制到所选选项的系统设置中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Copy settings into both the Welcome screen and system "
+"accounts, and new user accounts"
+msgstr "### 示例 1：将设置复制到欢迎屏幕、系统账户以及新用户账户中"
+
+msgid ""
+"This example copies the Windows Display language, Input language, Regional "
+"Format/locale, and Location/GeoID into both the Welcome screen and system "
+"accounts, and new user accounts."
+msgstr ""
+"这个示例将 Windows 的显示语言、输入语言、区域设置（Regional "
+"Format/Locale）以及位置信息（Location/GeoID）复制到欢迎屏幕、系统账户和新用户账户中。"
+
+msgid ""
+"### Example 2: Copy the settings into only the Welcome screen and system "
+"accounts"
+msgstr "### 示例 2：仅将设置复制到欢迎屏幕和系统账户中"
+
+msgid ""
+"This example copies the Windows Display language, Input language, "
+"Format/locale, and Regional Location/GeoID to the Welcome screen and system "
+"accounts only."
+msgstr ""
+"这个示例仅将 Windows 的显示语言、输入语言、区域设置（Format/locale）以及地区位置/地理标识符（Regional "
+"Location/GeoID）复制到欢迎屏幕和系统账户中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Copies the settings into the Welcome screen and system accounts."
+msgstr "将这些设置复制到欢迎屏幕和系统账户中。"
+
+msgid "Copies the settings into the new user accounts."
+msgstr "将这些设置复制到新的用户账户中。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

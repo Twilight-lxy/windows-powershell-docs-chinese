@@ -1,0 +1,76 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:29:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-HgsServer"
+msgstr "# Get-HgsServer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the status of the Host Guardian Service server."
+msgstr "获取Host Guardian服务服务器的状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-HgsServer** cmdlet gets the status of the Host Guardian Service "
+"(HGS) server, including key protection URL(s), attestation URL(s), and the "
+"attestation operation mode."
+msgstr ""
+"`Get-HgsServer` cmdlet 可以获取 Host Guardian Service (HGS) 服务器的状态，包括密钥保护 URL、认证"
+" URL 以及认证操作模式。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the status of the Host Guardian Service server"
+msgstr "#### 示例 1：获取 Host Guardian 服务服务器的状态"
+
+msgid "This command gets the status of the Host Guardian Service server."
+msgstr "这个命令用于获取Host Guardian Service服务器的状态信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于(CommonParameters)（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[HGS Server Cmdlets](./hgsserver.md)"
+msgstr "[HGS 服务器 cmdlet](./hgsserver.md)"

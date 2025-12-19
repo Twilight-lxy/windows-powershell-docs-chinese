@@ -1,0 +1,102 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:03:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Suspend-MsmqOutgoingQueue"
+msgstr "# 暂停 MsMQ 出站队列（Suspend-MsmqOutgoingQueue）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Pauses outgoing queues."
+msgstr "暂停出队操作（即停止将数据从队列中移除）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Suspend-MsmqOutgoingQueue** cmdlet pauses outgoing queues.\n"
+"Specify queues to pause by using **MsmqOutgoingQueue** objects.\n"
+"This cmdlet returns the suspended queue objects."
+msgstr ""
+"`Suspend-MsmqOutgoingQueue` cmdlet 用于暂停出队的操作。可以通过使用 `MsmqOutgoingQueue` "
+"对象来指定需要暂停的队列。该 cmdlet 会返回被暂停的队列对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Suspend outgoing queues specified by name"
+msgstr "### 示例 1：按名称暂停指定的出站队列"
+
+msgid ""
+"This command gets all outgoing queues that have names hat begin with the string Order by using the **Get-MsmqOutgoingQueue** cmdlet.\n"
+"The command passes the results to the current cmdlet by using the pipeline operator.\n"
+"The current cmdlet suspends those queues."
+msgstr ""
+"该命令使用 `Get-MsmqOutgoingQueue` cmdlet 获取所有名称以 “Order” "
+"开头的出站队列。通过管道运算符（pipeline operator），该命令将结果传递给当前的 cmdlet，然后当前 cmdlet "
+"会暂停这些队列的运行。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an array of **MsmqOutgoingQueue** objects.\n"
+"This cmdlet pauses outgoing queues that this parameter specifies.\n"
+"This parameter accepts pipeline input."
+msgstr ""
+"指定一个包含 **MsmqOutgoingQueue** 对象的数组。此 cmdlet "
+"会暂停由该参数指定的出站队列的运行。该参数支持管道输入（pipeline input）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Msmq.PowerShell.Commands.OutgoingQueue[]"
+msgstr "### Microsoft.Msmq.PowerShellCommands.OutgoingQueue[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-MsmqOutgoingQueue](./Clear-MSMQOutgoingQueue.md)"
+msgstr "[Clear-MsmqOutgoingQueue](./Clear-MSMQOutgoingQueue.md)"
+
+msgid "[Get-MsmqOutgoingQueue](./Get-MSMQOutgoingQueue.md)"
+msgstr "[Get-MsmqOutgoingQueue](./Get-MSMQOutgoingQueue.md)"
+
+msgid "[Resume-MsmqOutgoingQueue](./Resume-MsmqOutgoingQueue.md)"
+msgstr "[Resume-MsmqOutgoingQueue](./Resume-MsmqOutgoingQueue.md)"

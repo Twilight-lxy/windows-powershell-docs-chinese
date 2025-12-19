@@ -1,0 +1,208 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:42:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-NetAdapterBinding"
+msgstr "# 获取网络适配器绑定信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets a list of bindings for a network adapter."
+msgstr "获取网络适配器的绑定信息列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称查找（默认方式）"
+
+msgid "### ByInstanceID"
+msgstr "### 按实例ID（ByInstanceID）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-NetAdapterBinding** cmdlet gets a list of bindings for a network adapter.\n"
+"By default only the visible bindings shown in the Networking tab under the Network Adapter properties in Windows UI is returned.\n"
+"To get all properties for a network adapter, use the *AllProperties* parameter."
+msgstr ""
+"`Get-NetAdapterBinding` cmdlet 可以获取网络适配器的绑定信息列表。默认情况下，仅会返回在 Windows "
+"用户界面中“网络适配器”属性下的“网络”选项卡中显示的可见绑定信息。如果要获取网络适配器的所有属性，请使用 `AllProperties` 参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get bindings for the specified network adapter"
+msgstr "### 示例 1：获取指定网络适配器的绑定信息"
+
+msgid ""
+"This command gets the bindings for the network adapter named MyAdapter."
+msgstr "这个命令用于获取名为“MyAdapter”的网络适配器的绑定信息。"
+
+msgid ""
+"### Example 2: Get all of the binding for the specified network adapter in "
+"an unformatted list"
+msgstr "### 示例 2：以未格式化的列表形式获取指定网络适配器的所有绑定信息"
+
+msgid ""
+"This command gets all of the bindings for the network adapter named "
+"MyAdapter as an unformatted list ."
+msgstr "这个命令会获取名为“MyAdapter”的网络适配器的所有绑定信息，并以未格式化的列表形式返回结果。"
+
+msgid ""
+"### Example 3: Get the state of TCP/IPv4 on the specified network adapter "
+"using the display name"
+msgstr "### 示例 3：使用显示名称获取指定网络适配器上的 TCP/IPv4 状态"
+
+msgid ""
+"This command gets the state of the TCP/IPv4 on the network adapter named "
+"MyAdapter using display name."
+msgstr "这个命令用于获取名为“MyAdapter”的网络适配器上TCP/IPv4协议的状态，该适配器是通过显示名称来识别的。"
+
+msgid ""
+"### Example 4: Get the state of the TCP/IPv4 transport on the specified "
+"network adapter"
+msgstr "### 示例 4：获取指定网络适配器上的 TCP/IPv4 传输状态"
+
+msgid ""
+"This command gets the state of the TCP/IPv4 transport on MyAdapter using "
+"component ID."
+msgstr "该命令使用组件ID来获取MyAdapter上TCP/IPv4传输层的状态信息。"
+
+msgid ""
+"### Example 5: Get the state of TCP/IPv4 and TCP/IPv6 on all visible network"
+" adapters using a search string"
+msgstr "### 示例 5：使用搜索字符串获取所有可见网络适配器上的 TCP/IPv4 和 TCP/IPv6 状态"
+
+msgid ""
+"This command gets the state of TCP/IPv4 and TCP/IPv6 on all visible network "
+"adapters using wildcard characters."
+msgstr "该命令使用通配符来获取所有可见网络适配器上的TCP/IPv4和TCP/IPv6协议的状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet gets all the bindings for the network adapter."
+msgstr "表示该 cmdlet 会获取网络适配器的所有绑定信息。"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此cmdlet作为后台作业运行。使用该参数来执行耗时较长的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理作业，请使用`*-Job`系列cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies an array of underlying names of the transport or filter in the "
+"following form: `ms_xxxx`, such as `ms_tcpip`."
+msgstr "以以下形式指定传输层或过滤器的基础名称数组：`ms_xxxx`（例如 `ms_tcpip`）。"
+
+msgid ""
+"Specifies an array of transport or filter names shown in the Networking tab "
+"under the network adapter properties in Windows Server® 2012 and later."
+msgstr "用于指定在 Windows Server® 2012 及更高版本中网络适配器属性的“网络”选项卡下显示的传输方式或过滤器名称数组。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"这表示该cmdlet在操作中会包含所有可见和隐藏的网络适配器。默认情况下，只包括可见的网络适配器。如果在识别网络适配器时使用了通配符，并且指定了此参数，那么该通配符字符串将会与所有隐藏和可见的网络适配器进行匹配。"
+
+msgid ""
+"Specifies the network adapter interface description.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定网络适配器接口的描述。对于物理网络适配器来说，这通常是网络适配器的供应商名称后跟型号和描述，例如“Contoso 12345 千兆网络设备”。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。此限制仅适用于当前正在运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapter"
+" BindingSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterBindingSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-NetAdapterBinding](./Disable-NetAdapterBinding.md)"
+msgstr "[Disable-NetAdapterBinding](./Disable-NetAdapterBinding.md)"
+
+msgid "[Enable-NetAdapterBinding](./Enable-NetAdapterBinding.md)"
+msgstr "[Enable-NetAdapterBinding](./Enable-NetAdapterBinding.md)"
+
+msgid "[Set-NetAdapterBinding](./Set-NetAdapterBinding.md)"
+msgstr "[Set-NetAdapterBinding](./Set-NetAdapterBinding.md)"

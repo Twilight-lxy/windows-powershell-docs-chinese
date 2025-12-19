@@ -1,0 +1,133 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:18:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMSecurity"
+msgstr "# 设置虚拟机管理系统（VMS）的安全性"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Configures security settings for a virtual machine."
+msgstr "配置虚拟机的安全设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-VMSecurity** cmdlet configures security settings for a virtual "
+"machine."
+msgstr "`Set-VMSecurity` cmdlet 用于配置虚拟机的安全设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts to run the cmdlet.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于运行该 cmdlet 的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行标识。默认值是本地计算机。可以使用 “localhost” 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies a user account that has permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个具有执行此操作权限的用户账户。默认值是当前用户。"
+
+msgid ""
+"Indicates that this cmdlet enables encryption of virtual machine state and "
+"migration traffic."
+msgstr "表示此cmdlet支持对虚拟机状态以及迁移流量进行加密处理。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此 cmdlet 不会生成任何输出。"
+
+msgid "Specifies an array of virtual machines."
+msgstr "指定一个虚拟机数组。"
+
+msgid "Specifies an array of virtual machine names."
+msgstr "指定一个虚拟机名称数组。"
+
+msgid ""
+"Specifies whether to opt the virtual machine out of virtualization-based security.\n"
+"Specify a value of $True to opt out of virtualization-based security.\n"
+"If the guest operating system supports virtualization-based security, a value of $False allows it.\n"
+"The default value is $False."
+msgstr ""
+"指定是否将虚拟机排除在基于虚拟化的安全保护机制之外。如果希望虚拟机不接受这种安全保护，可以设置值为 "
+"`$True`；如果客户操作系统支持基于虚拟化的安全机制，则可以通过设置值为 `$False` 来启用该功能。默认值为 `$False`。"
+
+msgid "To change this setting, the virtual machine must be off."
+msgstr "要更改此设置，必须关闭虚拟机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VMSecurity](./Get-VMSecurity.md)"
+msgstr "[Get-VMSecurity](./Get-VMSecurity.md)"

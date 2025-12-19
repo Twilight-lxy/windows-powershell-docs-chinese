@@ -1,0 +1,158 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:36:52 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-VMReplicationAuthorizationEntry"
+msgstr "# 新的虚拟机复制授权条目"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Creates a new authorization entry that allows one or more primary servers to"
+" replicate data to a specified Replica server."
+msgstr "创建一个新的授权条目，允许一个或多个主服务器将数据复制到指定的副本服务器上。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-VMReplicationAuthorizationEntry** cmdlet creates a new authorization entry that allows one or more primary servers to replicate data.\n"
+"To use this cmdlet, the value of the ReplicationAllowedFromAnyServer property of the Replica server must be false.\n"
+"You can use the **Get-VMReplicationServer** cmdlet to check the value of this property."
+msgstr ""
+"`New-VMReplicationAuthorizationEntry` cmdlet "
+"用于创建一个新的授权条目，该条目允许一个或多个主服务器进行数据复制。要使用此 cmdlet，必须确保 Replica 服务器的 "
+"`ReplicationAllowedFromAnyServer` 属性的值为 `False`。你可以使用 `Get-"
+"VMReplicationServer` cmdlet 来查看该属性的值。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "#### 示例 1"
+
+msgid ""
+"This example creates a replication authorization entry on the local server for a primary server named server01.domain01.contoso.com and a trust group named DEFAULT.\n"
+"It also specifies D:\\ReplicaVMStorage as the location to create replica virtual hard disks for virtual machines replicated from server01.domain01.contoso.com."
+msgstr ""
+"这个示例在本地服务器上为名为 server01.domain01.contoso.com 的主服务器以及名为 DEFAULT "
+"的信任组创建了一个复制授权条目。同时，它还指定了 D:\\ReplicaVMStorage 作为用于存储从 "
+"server01.domain01.contoso.com 复制的虚拟机所需的复制虚拟硬盘的位置。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example creates a replication authorization entry on server server02.domain01.contoso.com that allows replication from all primary servers in the domain domain01.contoso.com that also belong to the trust group MyDomain01.\n"
+"It also specifies D:\\ReplicaVMStorage as the location to create replica virtual hard disks for virtual machines replicated from these allowed primary servers."
+msgstr ""
+"这个示例在服务器 server02.domain01.contoso.com 上创建了一个复制授权条目，允许来自 "
+"domain01.contoso.com 域内所有属于信任组 MyDomain01 的主服务器的复制操作。同时，它还指定了 "
+"D:\\ReplicaVMStorage 作为存放从这些被允许的主服务器复制的虚拟机所使用的复制虚拟硬盘的位置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the server that is allowed to send replication data to the Replica server.\n"
+"Only fully-qualified domain names and fully qualified international domain names are supported.\n"
+"You can use a wildcard (for example, \"*\") in the first octect to specify a fully qualified domain name, such as *.contoso.com."
+msgstr ""
+"指定允许向副本服务器发送复制数据的服务器。仅支持完全限定的域名（fully-qualified domain "
+"names）和完全限定的国际域名（fully-qualified international domain "
+"names）。您可以在第一个八位字节中使用通配符（例如“*”）来指定一个完全限定的域名，例如 *.contoso.com。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如使用[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet生成的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the authorization entry is to be created.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于创建授权条目的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名进行选择。默认值是本地计算机。可以使用 "
+"“localhost” 或句点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the location to store the Replica virtual hard disk files sent "
+"from the allowed server when a new Replica virtual machine is created."
+msgstr "指定用于存储从允许使用的服务器发送来的副本虚拟硬盘文件的位置，这些文件是在创建新的副本虚拟机时产生的。"
+
+msgid ""
+"Identifies a group of primary servers within which a given primary virtual machine can move so replications of the primary virtual machine are accepted by the Replica server only from primary servers that belong to the trust group.\n"
+"You can use any string to create a new trust group.\n"
+"Ensure all primary servers within a specific trust group use the same string as the value you specify for this parameter."
+msgstr ""
+"该机制用于识别一组主服务器，给定的主虚拟机可以在这些主服务器之间迁移。这样，副本服务器只会接受来自属于该信任组的主服务器的复制请求。你可以使用任意字符串来创建一个新的信任组，并确保某个特定信任组内的所有主服务器都使用你为此参数指定的相同字符串作为标识符。"
+
+msgid ""
+"Use of a trust group can help you keep virtual machines isolated by "
+"maintaining control over which primary servers are trusted to provide "
+"replication, while also allowing the virtual machines to move from one "
+"primary server to another (such as through live migration or failover from a"
+" cluster node)."
+msgstr ""
+"使用信任组可以帮助您保持虚拟机的隔离状态，因为您可以控制哪些主服务器被允许执行复制操作；同时，这些虚拟机也可以在主服务器之间进行迁移（例如通过实时迁移或从集群节点中进行故障转移）。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMReplicationAuthorizationEntry"
+msgstr "### Microsoft.HyperV.PowerShell.VMReplicationAuthorizationEntry"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

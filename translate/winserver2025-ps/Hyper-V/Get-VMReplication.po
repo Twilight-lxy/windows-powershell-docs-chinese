@@ -1,0 +1,192 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:17:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMReplication"
+msgstr "# Get-VMReplication"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the replication settings for a virtual machine."
+msgstr "获取虚拟机的复制设置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-VMReplication** cmdlet gets the replication settings for a virtual"
+" machine."
+msgstr "`Get-VMReplication` cmdlet 可以获取虚拟机的复制设置信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example gets the replication settings of all replication-enabled "
+"virtual machines on the local Hyper-V host."
+msgstr "这个示例获取了本地Hyper-V主机上所有启用复制功能的虚拟机的复制设置信息。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example gets the replication settings of a virtual machine named VM01."
+msgstr "这个示例获取了名为VM01的虚拟机的复制设置信息。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example gets the replication settings of all virtual machines "
+"replicating to server server01.domain01.contoso.com."
+msgstr "这个示例获取了所有正在复制到服务器 server01.domain01.contoso.com 的虚拟机的复制设置。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example gets the replication settings of all virtual machines in the "
+"Replicating state."
+msgstr "这个示例获取了所有处于“复制中”状态的虚拟机的复制设置信息。"
+
+msgid "### Example 5"
+msgstr "### 示例 5"
+
+msgid ""
+"This example gets the replication settings of all virtual machines in a "
+"trust group named DEFAULT."
+msgstr "这个示例获取了名为 DEFAULT 的信任组中所有虚拟机的复制设置。"
+
+msgid "### Example 6"
+msgstr "### 示例 6"
+
+msgid ""
+"This example gets the replication settings of all primary virtual machines "
+"on the local host."
+msgstr "这个示例获取了本地主机上所有主虚拟机的复制设置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。您可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts from which virtual machine replication settings are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个 Hyper-V 主机，以从中检索虚拟机的复制设置。允许使用 NetBIOS 名称、IP "
+"地址和完全限定域名作为主机标识。默认值为本地计算机。可以使用 `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the primary server of the virtual machines whose replication "
+"settings are to be retrieved."
+msgstr "指定要检索其复制设置的信息的虚拟机的主要服务器。"
+
+msgid ""
+"Specifies the replica server name of the virtual machines whose replication "
+"settings are to be retrieved."
+msgstr "指定要获取复制设置的虚拟机的副本服务器名称。"
+
+msgid ""
+"Gets replication settings for virtual machines with the specified replication health state.\n"
+"Valid values are Normal, Warning, and Critical."
+msgstr "获取具有指定复制健康状态的虚拟机的复制设置。有效值为 Normal（正常）、Warning（警告）和 Critical（严重）。"
+
+msgid ""
+"Gets the replication settings for virtual machines with the specified replication mode.\n"
+"Valid values are None, Primary, Replica, and TestReplica."
+msgstr ""
+"获取具有指定复制模式的虚拟机的复制设置。有效值包括：None（无）、Primary（主节点）、Replica（副本节点）和TestReplica（测试复制节点）。"
+
+msgid ""
+"Specifies the replication relationship type of the virtual machine.\n"
+"Specify whether the replication relationship is a simple primary to replica or is an extended replication chain.\n"
+"The cmdlet gets the replication settings for the virtual machines that have the replication type that you specify."
+msgstr ""
+"指定虚拟机的复制关系类型。需要明确该复制关系是属于简单的主从结构，还是扩展的复制链结构。此cmdlet会获取具有所指定复制类型的虚拟机的相应复制设置信息。"
+
+msgid ""
+"Gets replication settings for virtual machines with the specified replication state.\n"
+"Valid values are:"
+msgstr "获取具有指定复制状态的虚拟机的复制设置。有效值包括："
+
+msgid ""
+"Specifies the trust group of the virtual machines whose replication settings"
+" you want to retrieve."
+msgstr "指定您想要检索复制设置的虚拟机的信任组。"
+
+msgid ""
+"Specifies the virtual machine whose replication settings are to be "
+"retrieved."
+msgstr "指定要获取其复制设置信息的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine whose replication settings are to "
+"be retrieved."
+msgstr "指定要获取其复制设置信息的虚拟机的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMReplication"
+msgstr "### Microsoft.HyperV.PowerShell.VMReplication"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,142 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:56:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-IscsiTargetServerSetting"
+msgstr "# 设置 IscsiTargetServer 的相关参数"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Sets the global settings or common configurations for an iSCSI target "
+"virtual disk."
+msgstr "用于设置 iSCSI 目标虚拟磁盘的全局配置或通用参数。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### IpScoped (Default)"
+msgstr "### IpScoped（默认值）"
+
+msgid "### ServerGlobal"
+msgstr "### ServerGlobal"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-IscsiTargetServerSetting** cmdlet sets the global settings or "
+"common configurations for an iSCSI target."
+msgstr "`Set-IscsiTargetServerSetting` cmdlet 用于设置 iSCSI 目标的全局配置或通用参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set target portal port number"
+msgstr "### 示例 1：设置目标门户端口号"
+
+msgid ""
+"This example sets the target portal with the IP address 10.1.1.1 to use port number 3200.\n"
+"The default is port number 3260."
+msgstr "这个示例将目标门户的IP地址设置为10.1.1.1，并指定其使用端口编号3200。默认情况下，该门户使用的端口编号是3260。"
+
+msgid "### Example 2: Disable target portal"
+msgstr "### 示例 2：禁用目标门户"
+
+msgid "This example disables the target portal with the IP address 10.1.1.1."
+msgstr "这个示例会禁用目标门户（其IP地址为10.1.1.1）。"
+
+msgid "### Example 3: Enable target portal"
+msgstr "### 示例 3：启用目标门户"
+
+msgid ""
+"This example enables the target portal with the IP address 10.1.1.1 and "
+"changes the port number to 3200."
+msgstr "这个示例使目标门户的IP地址变为10.1.1.1，并将端口号修改为3200。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此 cmdlet 在远程计算机上运行，则会指定远程计算机的名称或 IP 地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "如果此cmdlet在集群配置上运行，则指定集群资源组的网络名称，或者如果是在集群节点上运行，则指定集群节点的名称。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接到远程计算机时的凭据信息。"
+
+msgid ""
+"Indicates whether the computer that runs Microsoft iSCSI Target Server accepts any network-based management requests.\n"
+"If you specify a value of $True, iSCSI Target Server does not accept requests issued by thread tokens that contain a SECURITY_NETWORK_RID."
+msgstr ""
+"该参数用于指示运行 Microsoft iSCSI Target Server 的计算机是否接受任何基于网络的管理请求。如果您指定值为 $True，那么"
+" iSCSI Target Server 将不会接收那些由包含 SECURITYNETWORK_RID 的线程令牌发出的管理请求。"
+
+msgid ""
+"You can specify this parameter only as a local user on the computer that "
+"runs iSCSI Target Server or on the cluster node that owns the iSCSI Target "
+"Server clustered role."
+msgstr "您只能作为运行 iSCSI 目标服务器的计算机上的本地用户，或者作为拥有 iSCSI 目标服务器集群角色的集群节点来指定此参数。"
+
+msgid "Specifies the portal state as set by the user."
+msgstr "指定由用户设置的门户状态。"
+
+msgid "Specifies an IP address."
+msgstr "指定一个 IP 地址。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Specifies the port number to which the iSCSI target should listen."
+msgstr "指定 iSCSI 目标应监听的端口号。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None."
+msgstr "### 没有（需要处理的内容）。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Iscsi.Target.Commands.IscsiTargetServerSetting"
+msgstr "### Microsoft.Iscsi.Target Commands.IscsiTargetServerSetting"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-IscsiTargetServerSetting](./Set-IscsiTargetServerSetting.md)"
+msgstr "[Set-IscsiTargetServerSetting](./Set-IscsiTargetServerSetting.md)"

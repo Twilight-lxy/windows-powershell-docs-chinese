@@ -1,0 +1,119 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:14:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-HgsAttestationTpmPolicy"
+msgstr "# Add-HgsAttestationTpmPolicy"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds an attestation policy based on TPM 2.0 hardware to HGS."
+msgstr "将基于TPM 2.0硬件的认证策略添加到HGS中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Console"
+msgstr "### 控制台"
+
+msgid "### File"
+msgstr "### 文件"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-HgsAttestationTpmPolicy** cmdlet adds an attestation policy based on trusted platform module (TPM) 2.0 hardware to the Host Guardian Service (HGS).\n"
+"Specify a log, in Trusted Computing Group (TCG) format, that you obtain by using the **Get-HgsAttestationBaselinePolicy** cmdlet."
+msgstr ""
+"`Add-HgsAttestationTpmPolicy` cmdlet 可将基于可信平台模块（TPM）2.0硬件的认证策略添加到 Host "
+"Guardian Service (HGS) 中。请指定一个以 Trusted Computing Group (TCG) "
+"格式生成的日志文件，该日志文件可以通过使用 `Get-HgsAttestationBaselinePolicy` cmdlet 获取。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a policy"
+msgstr "#### 示例 1：添加策略"
+
+msgid ""
+"This command adds a policy named BaselineTpmPolicy17 to the Attestation service.\n"
+"The Path parameter specifies the TCG log that you create by using **Get-HgsAttestationBaselinePolicy** cmdlet."
+msgstr ""
+"该命令向 Attestation 服务添加一个名为 BaselineTpmPolicy17 的策略。Path 参数指定了通过使用 **Get-"
+"HgsAttestationBaselinePolicy** cmdlet 创建的 TCG 日志文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a TCG log, in binary form, on which this cmdlet bases a policy."
+msgstr "指定一个以二进制格式存储的TCG日志（Trading Card Game日志），该cmdlet会根据此日志来制定相应的策略。"
+
+msgid "Specifies the name of the policy that this cmdlet adds."
+msgstr "指定此 cmdlet 所添加的策略的名称。"
+
+msgid "Specifies the path of a file that contains a TCG log, in binary form."
+msgstr "指定一个文件的路径，该文件包含以二进制形式存储的TCG日志。"
+
+msgid "Reserved for future use."
+msgstr "预留以供将来使用。"
+
+msgid "Reserved for future use."
+msgstr "保留以供将来使用。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于常用参数（about_CommonParameters）的文档：http://go.microsoft.com/fwlink/?LinkID=113216。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容"
+
+msgid "### Byte[], String"
+msgstr "### Byte[], String"
+
+msgid "This cmdlet accepts a TCG log as a **Byte** array or a file name."
+msgstr "这个cmdlet接受一个TCG日志，该日志可以是一个**字节**数组，也可以是一个文件名。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### AttestationPolicyInfo"
+msgstr "### AttestationPolicyInfo"
+
+msgid "This cmdlet returns attestation policy information."
+msgstr "此cmdlet返回身份验证策略信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,160 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:02:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-VM"
+msgstr "# 导出虚拟机"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Exports a virtual machine to disk."
+msgstr "将虚拟机导出到磁盘上。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Export-VM** cmdlet exports a virtual machine to disk.\n"
+"This cmdlet creates a folder at a specified location having three subfolders: Snapshots, Virtual Hard Disks, and Virtual Machines.\n"
+"Each of these folders contains the associated files. The Snapshots folder contains the associated Snapshots, and the Virtual Hard Disk folder contains the specified virtual machine's virtual disks.\n"
+"The Virtual Machines folder contains the configuration XML of the specified virtual machine."
+msgstr ""
+"**Export-VM** cmdlet 将虚拟机导出到磁盘上。该 cmdlet "
+"会在指定位置创建一个文件夹，其中包含三个子文件夹：Snapshots（快照）、Virtual Hard Disks（虚拟硬盘）和 Virtual "
+"Machines（虚拟机）。每个子文件夹都存放着相应的文件。Snapshots 文件夹中存储着虚拟机的快照；Virtual Hard Disks "
+"文件夹中包含该虚拟机的虚拟硬盘数据；而 Virtual Machines 文件夹则保存着该虚拟机的配置信息（以 XML 格式呈现）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Exports virtual machine Test to the root of the D drive."
+msgstr "将虚拟机“Test”导出到D盘的根目录中。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Exports all virtual machines to the root of the D drive.\n"
+"Each virtual machine will be exported to its own folder."
+msgstr "将所有虚拟机导出到D盘的根目录下。每个虚拟机都会被导出到自己的文件夹中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "以后台作业的方式运行该cmdlet。"
+
+msgid ""
+"Specifies how Hyper-V captures the running virtual machine memory state.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定 Hyper-V 如何捕获正在运行的虚拟机的内存状态。该参数的可接受值包括："
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual machine is to be exported.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于导出虚拟机的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名来进行选择。默认值是本地计算机。可以使用 "
+"`localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the name of the virtual machine to be exported."
+msgstr "指定要导出的虚拟机的名称。"
+
+msgid ""
+"Specifies that a **Microsoft.HyperV.PowerShell.VirtualMachine** object is to"
+" be passed through to the pipeline representing the virtual machine to be "
+"exported."
+msgstr ""
+"指定需要将一个 **Microsoft.HyperV POWERShell.VirtualMachine** 对象传递给管道，该对象代表要导出的虚拟机。"
+
+msgid ""
+"Specifies the path to the folder into which the virtual machine is to be "
+"exported."
+msgstr "指定用于导出虚拟机的文件夹的路径。"
+
+msgid "Specifies the virtual machine to be exported."
+msgstr "指定要导出的虚拟机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine"
+msgstr "### Microsoft.HyperV.PowerShell.VirtualMachine"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了**-PassThru**选项的话……"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

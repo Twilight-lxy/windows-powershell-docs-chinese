@@ -1,0 +1,163 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:29:03 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-IISSharedConfig"
+msgstr "# 禁用 IISSharedConfig"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables IIS shared configuration."
+msgstr "禁用 IIS 共享配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Disable-IISSharedConfig** cmdlet disables the IIS shared configuration feature, and reverts to the keys that were backed up when shared configuration was enabled.\n"
+"IIS also reverts to the local applicationHost.config file that was used before shared configuration was enabled."
+msgstr ""
+"` Disable-IISSharedConfig` "
+"这个cmdlet会禁用IIS的共享配置功能，并恢复到启用共享配置时备份的配置设置。同时，IIS也会重新使用在启用共享配置之前使用的本地 "
+"`applicationHost.config` 文件。"
+
+msgid ""
+"You can enable shared configuration through the IIS Administration Manager "
+"UI or the **Enable-IISSharedConfig** cmdlet."
+msgstr "您可以通过 IIS 管理器用户界面或 **Enable-IISSharedConfig** cmdlet 来启用共享配置功能。"
+
+msgid ""
+"If there are no backup keys for any reason, the cmdlet fails with a warning.\n"
+"To disable shared configuration in this scenario, you can use the *DontRestoreBackedUpKeys* parameter."
+msgstr ""
+"如果由于某种原因没有备份密钥，该cmdlet会执行失败并显示警告信息。在这种情况下，如果你想禁用共享配置功能，可以使用*DontRestoreBackedUpKeys*参数。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disable shared configuration and restore keys"
+msgstr "### 示例 1：禁用共享配置并恢复密钥"
+
+msgid ""
+"This command disables shared configuration.\n"
+"IIS subsequently uses the local applicationHost.config file in %WINDIR%\\config.\n"
+"The backed up keys are restored to the local key store and deleted."
+msgstr ""
+"此命令会禁用共享配置。随后，IIS会使用位于 %WINDIR%\\config 目录下的 local applicationHost.config "
+"文件。备份的配置信息会被恢复到本地配置存储中，然后被删除。"
+
+msgid "### Example 2: Disable shared configuration without restoring keys"
+msgstr "### 示例 2：禁用共享配置（无需恢复密钥）"
+
+msgid ""
+"This command disables shared configuration.\n"
+"IIS subsequently uses the local applicationHost.config file in %WINDIR%\\config.\n"
+"The backed up keys are deleted and are not restored."
+msgstr ""
+"此命令会禁用共享配置。之后，IIS将使用位于 %WINDIR%\\config 目录下的 local applicationHost.config "
+"文件。所有被备份的配置信息都会被删除，并且不会被恢复。"
+
+msgid "### Example 3: Disable shared configuration and use it locally"
+msgstr "### 示例 3：禁用共享配置并在本地使用该配置"
+
+msgid ""
+"This command disables shared configuration.\n"
+"IIS copies the shared configuration locally and uses it.\n"
+"The backed up keys are deleted and are not restored."
+msgstr "此命令会禁用共享配置功能。IIS会将共享配置复制到本地并使用该配置；同时，备份的密钥将被删除且不会被恢复。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Copies remote configuration over the local version of applicationHost.config"
+" before disabling shared configuration."
+msgstr "在禁用共享配置之前，请将远程配置内容复制到本地版本的 `applicationHost.config` 文件中。"
+
+msgid ""
+"The version of the applicationHost.config file that was used before enabling shared configuration is overwritten.\n"
+"The backup keys are also deleted, because those keys would only work with the overwritten version of applicationHost.config."
+msgstr ""
+"在启用共享配置之前使用的 `applicationHost.config` 文件版本会被覆盖。同时，备份密钥也会被删除，因为这些密钥只能用于被覆盖后的 "
+"`applicationHost.config` 文件版本。"
+
+msgid ""
+"IIS continues to use the active keys that worked with shared configuration, "
+"which is now the local configuration."
+msgstr "IIS 仍然使用那些在共享配置模式下有效的工作键，而这些共享配置现在已被替换为本地配置。"
+
+msgid ""
+"Indicates that this operation does not restore backed up keys.\n"
+"If you do not specify the *CopyRemoteConfigToLocalFiles* parameter, IIS reverts to using its local copy of applicationHost.config, and uses the active keys for the shared configuration."
+msgstr ""
+"这表示该操作不会恢复备份的配置信息。如果您没有指定“CopyRemoteConfigToLocalFiles”参数，IIS会重新使用其本地版本的 "
+"`applicationHost.config` 文件，并使用当前有效的配置信息来进行共享配置的管理。"
+
+msgid ""
+"If the local copy of the applicationHost.config file had secrets encrypted with keys other than the currently active ones, IIS will no longer be able to decrypt those secrets.\n"
+"You must re-enter and re-encrypt these secrets for the features that depend on them."
+msgstr ""
+"如果 `applicationHost.config` 文件的本地副本中包含用当前未激活的密钥加密的敏感信息，IIS "
+"将无法解密这些信息。因此，您必须重新输入并重新加密这些敏感信息，以便依赖于它们的功能能够正常运行。"
+
+msgid ""
+"*DontRestoreBackedUpKeys* is useful in scenarios where backup keys are "
+"deleted but the IIS administrator wants to disable shared configuration."
+msgstr "*DontRestoreBackedUpKeys* 在以下场景中非常有用：备份密钥已被删除，但 IIS 管理员仍希望禁用共享配置功能。"
+
+msgid ""
+"This parameter is ignored if you specify the *CopyRemoteConfigToLocalFiles* parameter, because the backed up keys are not restored in that case.\n"
+"In any circumstance, backed up keys are deleted when a shared configuration is disabled."
+msgstr ""
+"如果您指定了“CopyRemoteConfigToLocalFiles”参数，那么这个参数将被忽略，因为在那种情况下备份的密钥不会被恢复。无论如何，当共享配置被禁用时，备份的密钥将会被删除。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Enable-IISSharedConfig](./Enable-IISSharedConfig.md)"
+msgstr "[Enable-IISSharedConfig](./Enable-IISSharedConfig.md)"
+
+msgid "[Get-IISSharedConfig](./Get-IISSharedConfig.md)"
+msgstr "[Get-IISSharedConfig](./Get-IISSharedConfig.md)"

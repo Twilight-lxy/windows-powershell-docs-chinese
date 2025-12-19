@@ -1,0 +1,126 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:36:48 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-VipReachability"
+msgstr "# 测试VIP可达性"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Tests whether DIPs are reachable."
+msgstr "测试数据接口（DIPs）是否可以被访问/使用。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Test-VipReachability** cmdlet tests whether a list of datacenter IP "
+"addresses (DIPs) can be reached through the specified multiplexers (MUXes)."
+msgstr ""
+"`Test-VipReachability` cmdlet 用于测试是否可以通过指定的复用器（MUX）访问一系列数据中心 IP 地址（DIP）。"
+
+msgid ""
+"The test covers layer-3 connectivity to the MUX nodes, and from the MUX "
+"nodes to the DIP hosts."
+msgstr "该测试涵盖了与MUX节点的第3层（数据链路层）连接，以及从MUX节点到DIP主机之间的连接。"
+
+msgid ""
+"The test first sends Internet Control Message Protocol (ICMP) echo requests to the virtual IP (VIP) address.\n"
+"The MUX intercepts the echo requests and sends responses that appear to come from the targeted VIP."
+msgstr "该测试首先向虚拟IP（VIP）地址发送互联网控制消息协议（ICMP）的回显请求。MUX拦截这些回显请求，并发送看似来自目标VIP的响应。"
+
+msgid ""
+"The test then sends ICMP echo requests from the MUX host to the DIP host on the provider network.\n"
+"The results of the test are reported in the output object."
+msgstr "然后，测试会从MUX主机向提供商网络中的DIP主机发送ICMP回显请求。测试的结果会记录在输出对象中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test VIP reachability"
+msgstr "#### 示例 1：测试 VIP 的可达性"
+
+msgid "The first command populates the credentials for the MUX nodes to test."
+msgstr "第一个命令用于设置要测试的MUX节点所需的凭据信息。"
+
+msgid "The second command populates the credentials for the DIPs to test."
+msgstr "第二个命令用于填充用于测试的DIPs的凭据信息。"
+
+msgid ""
+"The last command tests the VIP reachability for the specified MUXes and "
+"DIPs."
+msgstr "最后一个命令用于测试指定MUX和DIP的VIP是否可访问（即是否能够与它们建立通信连接）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the ID of the network compartment to use to inject ICMP echo "
+"requests."
+msgstr "指定用于发送 ICMP 回显请求的网络分区的 ID。"
+
+msgid "Specifies an array of DIPs to test."
+msgstr "指定一个用于测试的DIP（数字接口封装）数组。"
+
+msgid "Specifies an array of MUXes to load-balance the DIPs."
+msgstr "指定一个 MUX（多路复用器）数组，以实现 DIP（数字集成电路）的负载均衡。"
+
+msgid "Specifies an ID for the operation."
+msgstr "为该操作指定一个ID。"
+
+msgid "Specifies the size of the payload to carry in ICMP messages."
+msgstr "指定在 ICMP 消息中传输的有效载荷（payload）的大小。"
+
+msgid "Specifies the ICMP sequence number."
+msgstr "指定 ICMP 序列号。"
+
+msgid "Specifies the IP address of the source node."
+msgstr "指定源节点的IP地址。"
+
+msgid "Specifies the IP address of the target VIP."
+msgstr "指定目标VIP的IP地址。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

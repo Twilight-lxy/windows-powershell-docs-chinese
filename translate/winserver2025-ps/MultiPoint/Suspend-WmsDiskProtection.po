@@ -1,0 +1,103 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:15:59 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Suspend-WmsDiskProtection"
+msgstr "# 暂停 WMS 磁盘保护功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Suspends disk protection."
+msgstr "暂停磁盘保护功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Suspend-WmsDiskProtection** cmdlet suspends the MultiPoint disk "
+"protection feature."
+msgstr "`Suspend-WmsDiskProtection` cmdlet 用于暂停多点磁盘保护功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Suspend disk protection"
+msgstr "### 示例 1：暂停磁盘保护功能"
+
+msgid ""
+"This command suspends the disk protection feature.\n"
+"The cmdlet changes the configuration of the disk protection feature and restarts the computer to apply the changes."
+msgstr "这个命令会暂停磁盘保护功能。该 cmdlet 会更改磁盘保护功能的配置，并重新启动计算机以应用这些更改。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标（即MultiPoint Server）的完全限定主机名。默认值为localhost。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-WmsDiskProtection](./Disable-WmsDiskProtection.md)"
+msgstr "[Disable-WmsDiskProtection](./Disable-WmsDiskProtection.md)"
+
+msgid "[Enable-WmsDiskProtection](./Enable-WmsDiskProtection.md)"
+msgstr "[Enable-WmsDiskProtection](./Enable-WmsDiskProtection.md)"
+
+msgid "[Get-WmsDiskProtection](./Get-WmsDiskProtection.md)"
+msgstr "[Get-WmsDiskProtection](./Get-WmsDiskProtection.md)"
+
+msgid "[Resume-WmsDiskProtection](./Resume-WmsDiskProtection.md)"
+msgstr "[ Resume-WmsDiskProtection](./Resume-WmsDiskProtection.md)"

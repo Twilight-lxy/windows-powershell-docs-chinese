@@ -1,0 +1,266 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:34:07 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# IISAdministration Module"
+msgstr "# IIS管理模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all IIS "
+"Administration specific cmdlets. It lists the cmdlets in alphabetical order "
+"based on the verb at the beginning of the cmdlet."
+msgstr ""
+"这份参考资料提供了所有与 IIS 管理相关的 cmdlet 的描述和语法。这些 cmdlet "
+"按照其名称开头所使用的动词（即命令行为语）的字母顺序进行排列。"
+
+msgid "## IISAdministration Cmdlets"
+msgstr "## IIS AdministrationCmdlets"
+
+msgid "### [Clear-IISCentralCertProvider](Clear-IISCentralCertProvider.md)"
+msgstr "### [Clear-IISCentralCertProvider](Clear-IISCentralCertProvider.md)"
+
+msgid ""
+"Removes configuration information from the IIS central certificate store."
+msgstr "从 IIS 的中央证书存储中删除配置信息。"
+
+msgid "### [Clear-IISConfigCollection](Clear-IISConfigCollection.md)"
+msgstr "### [Clear-IISConfigCollection](Clear-IISConfigCollection.md)"
+
+msgid "Clears an IIS configuration collection."
+msgstr "清除一个 IIS 配置集合。"
+
+msgid ""
+"### [Disable-IISCentralCertProvider](Disable-IISCentralCertProvider.md)"
+msgstr "### [禁用 IISCentralCertProvider](Disable-IISCentralCertProvider.md)"
+
+msgid "Disables the IIS central certificate store."
+msgstr "禁用IIS中央证书存储。"
+
+msgid "### [Disable-IISSharedConfig](Disable-IISSharedConfig.md)"
+msgstr "### [禁用 IISSharedConfig](Disable-IISSharedConfig.md)"
+
+msgid "Disables IIS shared configuration."
+msgstr "禁用 IIS 共享配置。"
+
+msgid "### [Enable-IISCentralCertProvider](Enable-IISCentralCertProvider.md)"
+msgstr "### [Enable-IISCentralCertProvider](Enable-IISCentralCertProvider.md)"
+
+msgid "Enables the IIS central certificate store."
+msgstr "启用 IIS 的中央证书存储功能。"
+
+msgid "### [Enable-IISSharedConfig](Enable-IISSharedConfig.md)"
+msgstr "### [Enable-IISSharedConfig](Enable-IISSharedConfig.md)"
+
+msgid "Enables shared configuration."
+msgstr "启用共享配置功能。"
+
+msgid "### [Export-IISConfiguration](Export-IISConfiguration.md)"
+msgstr "### [Export-IISConfiguration](Export-IISConfiguration.md)"
+
+msgid "Exports the IIS configuration and machine keys."
+msgstr "导出 IIS 配置文件和机器密钥。"
+
+msgid "### [Get-IISAppPool](Get-IISAppPool.md)"
+msgstr "### [Get-IISAppPool](Get-IISAppPool.md)"
+
+msgid "Gets configuration information for an IIS Application Pool."
+msgstr "获取IIS应用程序池的配置信息。"
+
+msgid "### [Get-IISCentralCertProvider](Get-IISCentralCertProvider.md)"
+msgstr "### [Get-IISCentralCertProvider](Get-IISCentralCertProvider.md)"
+
+msgid "Gets information about the IIS central certificate store."
+msgstr "获取有关 IIS 中心证书存储的信息。"
+
+msgid "### [Get-IISConfigAttributeValue](Get-IISConfigAttributeValue.md)"
+msgstr "### [Get-IISConfigAttributeValue](Get-IISConfigAttributeValue.md)"
+
+msgid ""
+"Gets a configuration attribute value from an IIS configuration section or "
+"configuration element attribute."
+msgstr "从 IIS 配置节或配置元素属性中获取配置属性值。"
+
+msgid "### [Get-IISConfigCollection](Get-IISConfigCollection.md)"
+msgstr "### [Get-IISConfigCollection](Get-IISConfigCollection.md)"
+
+msgid ""
+"Gets a configuration collection object from an IIS configuration section or "
+"a configuration element."
+msgstr "从一个 IIS 配置节或配置元素中获取一个配置集合对象。"
+
+msgid ""
+"### [Get-IISConfigCollectionElement](Get-IISConfigCollectionElement.md)"
+msgstr ""
+"### [Get-IISConfigCollectionElement](Get-IISConfigCollectionElement.md)"
+
+msgid ""
+"Gets a configuration element object from an IIS configuration collection."
+msgstr "从 IIS 配置集合中获取一个配置元素对象。"
+
+msgid "### [Get-IISConfigElement](Get-IISConfigElement.md)"
+msgstr "### [Get-IISConfigElement](Get-IISConfigElement.md)"
+
+msgid ""
+"Gets a configuration element object from an IIS configuration section or a "
+"configuration element."
+msgstr "从一个 IIS 配置节或一个配置元素中获取一个配置元素对象。"
+
+msgid "### [Get-IISConfigSection](Get-IISConfigSection.md)"
+msgstr "### [Get-IISConfigSection](Get-IISConfigSection.md)"
+
+msgid ""
+"Gets a configuration section object to work further with the IIS "
+"Configuration Store."
+msgstr ""
+"获取一个配置部分对象（configuration section object），以便进一步使用 IIS 配置存储（IIS Configuration "
+"Store）。"
+
+msgid "### [Get-IISServerManager](Get-IISServerManager.md)"
+msgstr "### [Get-IISServerManager](Get-IISServerManager.md)"
+
+msgid "Gets the IISAdministration view of IIS ServerManager."
+msgstr "获取 IIS ServerManager 的 IISAdministration 视图。"
+
+msgid "### [Get-IISSharedConfig](Get-IISSharedConfig.md)"
+msgstr "### [Get-IISSharedConfig](Get-IISSharedConfig.md)"
+
+msgid "Gets IIS shared configuration status."
+msgstr "获取IIS共享配置的状态信息。"
+
+msgid "### [Get-IISSite](Get-IISSite.md)"
+msgstr "### [获取 IISSite](Get-IISSite.md)"
+
+msgid "Gets configuration information for an IIS website."
+msgstr "获取IIS网站的配置信息。"
+
+msgid "### [Get-IISSiteBinding](Get-IISSiteBinding.md)"
+msgstr "### [获取 IISSite 绑定信息](Get-IISSiteBinding.md)"
+
+msgid "Gets configuration information for an IIS Website binding."
+msgstr "获取与 IIS 网站绑定相关的配置信息。"
+
+msgid ""
+"### [New-IISConfigCollectionElement](New-IISConfigCollectionElement.md)"
+msgstr ""
+"### [New-IISConfigCollectionElement](New-IISConfigCollectionElement.md)"
+
+msgid ""
+"Creates a new configuration element object in an IIS configuration "
+"collection."
+msgstr "在 IIS 配置集合中创建一个新的配置元素对象。"
+
+msgid "### [New-IISSite](New-IISSite.md)"
+msgstr "### [New-IISSite](New-IISSite.md)"
+
+msgid "Creates an IIS website."
+msgstr "创建一个 IIS 网站。"
+
+msgid "### [New-IISSiteBinding](New-IISSiteBinding.md)"
+msgstr "### [New-IISSiteBinding](New-IISSiteBinding.md)"
+
+msgid "Creates an IIS website binding."
+msgstr "创建一个 IIS 网站绑定。"
+
+msgid "### [Remove-IISConfigAttribute](Remove-IISConfigAttribute.md)"
+msgstr "### [Remove-IISConfigAttribute](Remove-IISConfigAttribute.md)"
+
+msgid ""
+"Removes a configuration attribute from an IIS configuration section or "
+"configuration element attribute."
+msgstr "从 IIS 配置节或配置元素属性中删除某个配置属性。"
+
+msgid ""
+"### [Remove-IISConfigCollectionElement](Remove-"
+"IISConfigCollectionElement.md)"
+msgstr ""
+"### [Remove-IISConfigCollectionElement](Remove-"
+"IISConfigCollectionElement.md)"
+
+msgid ""
+"Removes a configuration element object from an IIS configuration collection."
+msgstr "从 IIS 配置集合中删除一个配置元素对象。"
+
+msgid "### [Remove-IISConfigElement](Remove-IISConfigElement.md)"
+msgstr "### [Remove-IISConfigElement](Remove-IISConfigElement.md)"
+
+msgid "Removes a specified configuration element."
+msgstr "删除指定的配置元素。"
+
+msgid "### [Remove-IISSite](Remove-IISSite.md)"
+msgstr "### [Remove-IISSite](Remove-IISSite.md)"
+
+msgid "Removes a website from an IIS server."
+msgstr "从 IIS 服务器中删除一个网站。"
+
+msgid "### [Remove-IISSiteBinding](Remove-IISSiteBinding.md)"
+msgstr "### [Remove-IISSiteBinding](Remove-IISSiteBinding.md)"
+
+msgid "Removes a website binding from a website."
+msgstr "从某个网站中移除对该网站的绑定信息。"
+
+msgid "### [Reset-IISServerManager](Reset-IISServerManager.md)"
+msgstr "### [Reset-IISServerManager](Reset-IISServerManager.md)"
+
+msgid "Resets the IISAdministration view of the IIS ServerManager."
+msgstr "重置 IIS ServerManager 的 IISAdministration 视图。"
+
+msgid "### [Set-IISCentralCertProvider](Set-IISCentralCertProvider.md)"
+msgstr "### [设置 IISCentralCertProvider](Set-IISCentralCertProvider.md)"
+
+msgid "Sets property values for the IIS central certificate store."
+msgstr "为 IIS 中央证书存储设置属性值。"
+
+msgid ""
+"### [Set-IISCentralCertProviderCredential](Set-"
+"IISCentralCertProviderCredential.md)"
+msgstr ""
+"### [Set-IISCentralCertProviderCredential](Set-"
+"IISCentralCertProviderCredential.md)"
+
+msgid "Modifies the user account credentials for the IIS certificate store."
+msgstr "修改用于 IIS 证书存储的用户账户凭据。"
+
+msgid "### [Set-IISConfigAttributeValue](Set-IISConfigAttributeValue.md)"
+msgstr "### [Set-IISConfigAttributeValue](Set-IISConfigAttributeValue.md)"
+
+msgid ""
+"Sets a configuration attribute value for an IIS configuration section or "
+"configuration element attribute."
+msgstr "用于为 IIS 配置节或配置元素属性设置配置属性值。"
+
+msgid "### [Start-IISCommitDelay](Start-IISCommitDelay.md)"
+msgstr "### [Start-IISCommitDelay](Start-IISCommitDelay.md)"
+
+msgid ""
+"Instructs the IIS configuration system to delay the commitment of changes."
+msgstr "指示 IIS 配置系统延迟对更改的确认（即延迟将这些更改应用到实际服务器环境中）。"
+
+msgid "### [Start-IISSite](Start-IISSite.md)"
+msgstr "### [启动 IISS 服务器](Start-IISSite.md)"
+
+msgid "Starts an existing site on the IIS server."
+msgstr "在 IIS 服务器上启动一个已存在的站点。"
+
+msgid "### [Stop-IISCommitDelay](Stop-IISCommitDelay.md)"
+msgstr "### [Stop-IISCommitDelay](Stop-IISCommitDelay.md)"
+
+msgid ""
+"Instructs the IIS configuration system to resume the commitment of changes."
+msgstr "指示 IIS 配置系统继续应用所做的更改。"
+
+msgid "### [Stop-IISSite](Stop-IISSite.md)"
+msgstr "### [停止使用 IISSite](Stop-IISSite.md)"
+
+msgid "Stops an IIS website."
+msgstr "用于停止一个 IIS 网站的服务。"

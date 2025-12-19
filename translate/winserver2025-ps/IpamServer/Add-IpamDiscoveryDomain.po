@@ -1,0 +1,195 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:49:50 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-IpamDiscoveryDomain"
+msgstr "# Add-IpamDiscoveryDomain"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Adds a new Active Directory domain to the list of domains in which IPAM "
+"discovers infrastructure servers."
+msgstr "向 IPAM 发现基础设施服务器的域名列表中添加一个新的 Active Directory 域名。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-IpamDiscoveryDomain** cmdlet adds an Active Directory discovery domain for an IP Address Management (IPAM) server.\n"
+"A discovery domain is a domain that IPAM searches to find infrastructure servers.\n"
+"An IPAM server uses the list of discovery domains to determine what type of servers to add.\n"
+"By default, IPAM discovers all domain controllers, Dynamic Host Configuration Protocol (DHCP) servers, and Domain Name System (DNS) servers.\n"
+"You can specify the type of servers discovered per domain while you are adding the domain, or you can edit the same by using the **Set-IpamDiscoveryDomain** cmdlet."
+msgstr ""
+"`Add-IpamDiscoveryDomain` cmdlet 用于为 IP 地址管理（IPAM）服务器添加一个 Active Directory "
+"发现域。发现域是 IPAM 在其中搜索基础设施服务器的域名。IPAM 服务器会使用这些发现域的列表来确定需要添加哪种类型的服务器。默认情况下，IPAM "
+"会自动发现所有的域控制器、动态主机配置协议（DHCP）服务器和域名系统（DNS）服务器。在添加发现域时，您可以指定每个域要发现的服务器类型；或者之后也可以使用"
+" `Set-IpamDiscoveryDomain` cmdlet 来修改这些设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add domains to the IPAM discovery domain"
+msgstr "### 示例 1：将域名添加到 IPAM 发现域中"
+
+msgid ""
+"This command configures IPAM to discover DHCP and DNS servers in the domain named child01.contoso.com.\n"
+"Because the default values of the *DiscoverDhcp*, *DiscoverDns*, and *DiscoverDc* parameters are True, the command sets the *DiscoverDc* parameter to False to direct IPAM not to discover domain controllers in the domain."
+msgstr ""
+"此命令配置 IPAM 在名为 child01.contoso.com 的域中查找 DHCP 服务器和 DNS 服务器。由于 "
+"*DiscoverDhcp*、*DiscoverDns* 和 *DiscoverDc* 参数的默认值为 True，因此该命令将 *DiscoverDc*"
+" 参数设置为 False，以指示 IPAM 不在該域中查找域控制器。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台中。"
+
+msgid ""
+"### Example 2: Add domain controllers, DHCP, and DNS servers to a discovery "
+"domain"
+msgstr "### 示例 2：向发现域中添加域控制器、DHCP 服务器和 DNS 服务器"
+
+msgid ""
+"This command configures IPAM to discover domain controllers, DHCP servers, "
+"and DNS servers in the child01.contoso.com domain."
+msgstr "此命令配置 IPAM 在 child01.contoso.com 域中检测域控制器、DHCP 服务器和 DNS 服务器。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用`*-Job`系列cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[关于任务](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Indicates whether IPAM discovers all domain controllers in a specified domain.\n"
+"By default, the value is True."
+msgstr "该属性用于指示 IPAM 是否能发现指定域中的所有域控制器。默认值为 True（表示可以发现所有域控制器）。"
+
+msgid ""
+"Indicates whether IPAM discovers all DHCP servers in a specified domain.\n"
+"By default, the value is True."
+msgstr "该参数用于指示 IPAM 是否能发现指定域中的所有 DHCP 服务器。默认值为 True。"
+
+msgid ""
+"Indicates whether IPAM discovers all DNS servers in a specified domain.\n"
+"By default, the value is True."
+msgstr "该属性表示IPAM是否能够发现指定域中的所有DNS服务器。默认值为True（即能够发现所有DNS服务器）。"
+
+msgid ""
+"Specifies the fully qualified domain name (FQDN) of the Active Directory "
+"domain that will be added to the list of domains in which IPAM will discover"
+" infrastructure servers."
+msgstr "指定要添加到 IPAM 发现基础设施服务器的域名列表中的 Active Directory 域的完全限定域名（FQDN）。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的cmdlet的最大操作数量。如果省略此参数或输入值`0`，则Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算出一个最优的节流限制。这个节流限制仅适用于当前的cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。不过实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### IpamDiscoveryDomain"
+msgstr "### IpamDiscoveryDomain"
+
+msgid ""
+"This cmdlet returns an object that represents an Active Directory domain in "
+"which IPAM will search for infrastructure servers."
+msgstr "此cmdlet返回一个对象，该对象代表Active Directory域，在其中IPAM将搜索基础设施服务器。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IpamDiscoveryDomain](./Get-IpamDiscoveryDomain.md)"
+msgstr "[Get-IpamDiscoveryDomain](./Get-IpamDiscoveryDomain.md)"
+
+msgid "[Remove-IpamDiscoveryDomain](./Remove-IpamDiscoveryDomain.md)"
+msgstr "[Remove-IpamDiscoveryDomain](./Remove-IpamDiscoveryDomain.md)"
+
+msgid "[Set-IpamDiscoveryDomain](./Set-IpamDiscoveryDomain.md)"
+msgstr "[Set-IpamDiscoveryDomain](./Set-IpamDiscoveryDomain.md)"

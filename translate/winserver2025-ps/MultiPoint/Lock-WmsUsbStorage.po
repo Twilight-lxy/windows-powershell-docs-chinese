@@ -1,0 +1,107 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:10:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Lock-WmsUsbStorage"
+msgstr "# Lock-WmsUsbStorage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Prevents USB storage devices from being used."
+msgstr "防止使用USB存储设备。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### LockById"
+msgstr "### LockById"
+
+msgid "### LockAll"
+msgstr "### LockAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Lock-WmsUsbStorage** cmdlet prevents the use of any station-attached USB storage devices.\n"
+"If a device is already attached when you run **Lock-WmsUsbStorage**, they are logically removed.\n"
+"Any USB devices that are subsequently added to a station are hidden."
+msgstr ""
+"`Lock-WmsUsbStorage` 这个 cmdlet 会阻止使用任何连接到工作站上的 USB 存储设备。如果在运行 `Lock-"
+"WmsUsbStorage` 时已经有设备连接到了工作站上，这些设备将会被“逻辑上”移除（即系统不再认为它们是可用的）。此后任何新添加到工作站上的 "
+"USB 设备都会被系统隐藏起来（无法被正常使用）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Lock USB storage devices"
+msgstr "#### 示例 1：锁定 USB 存储设备"
+
+msgid ""
+"This command prevents the use of all USB storage devices on the specified "
+"station."
+msgstr "此命令可阻止在指定工作站上使用所有USB存储设备。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标（即MultiPoint Server）的完整主机名。默认值为localhost。"
+
+msgid ""
+"Specifies an array MultiPoint station IDs.\n"
+"The acceptable values for this parameter are: 1 through the number of stations."
+msgstr "指定一个包含多点站ID的数组。该参数的可接受值为：1到站点总数之间的任意整数。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Unlock-WmsUsbStorage](./Unlock-WmsUsbStorage.md)"
+msgstr "[解锁 WMS USB 存储功能](./Unlock-WmsUsbStorage.md)"

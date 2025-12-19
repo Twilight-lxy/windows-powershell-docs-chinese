@@ -1,0 +1,163 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:27:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Rename-IpamCustomValue"
+msgstr "# 重命名 Ipam 自定义值"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Changes a value for a custom field."
+msgstr "修改自定义字段的值。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Rename-IpamCustomValue** cmdlet changes a value for a multivalued custom field.\n"
+"The cmdlet changes only the custom value.\n"
+"Associations between the custom field and other custom fields and assignments to other IP Address Management (IPAM) server objects remain valid.\n"
+"You cannot change built-in values of built-in custom fields.\n"
+"The cmdlet results in an error if the value that you specify does not exist for the custom field that you specify."
+msgstr ""
+"`Rename-IpamCustomValue` 这个 cmdlet 用于修改多值自定义字段的数值。该 cmdlet "
+"只会更改自定义字段的值，而不会影响该字段与其他自定义字段之间的关联关系，也不会改变该字段与其他 IP 地址管理 (IPAM) "
+"服务器对象之间的绑定关系。需要注意的是，你无法更改内置自定义字段的默认值；如果你指定的数值在该自定义字段中并不存在，使用此 cmdlet 会导致错误。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Change a value for a custom field"
+msgstr "### 示例 1：修改自定义字段的值"
+
+msgid ""
+"This command changes the value from NorthB3 to MainB3 for the custom field "
+"named Building."
+msgstr "此命令将名为“Building”的自定义字段的值从“NorthB3”更改为“MainB3”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的形式运行该cmdlet。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用 `*-Job` 系列 "
+"cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令执行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the name of a custom field.\n"
+"The cmdlet changes the value from the custom field that you specify for the *Value* parameter."
+msgstr "用于指定一个自定义字段的名称。该cmdlet会更改你为*Value*参数指定的自定义字段中的值。"
+
+msgid ""
+"Specifies a value to replace the custom field value that you specify for the"
+" *Value*  parameter."
+msgstr "指定一个值，用于替换您为“Value”参数所指定的自定义字段值。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个对象，该对象表示您正在操作的项目。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的cmdlet的最大操作数量。如果省略此参数或输入值为`0`，则Windows "
+"PowerShell®会根据计算机上正在运行的CIM "
+"cmdlet的数量来计算一个合适的限制值。此限制仅适用于当前运行的cmdlet，而不影响整个会话或计算机本身。"
+
+msgid ""
+"Specifies a custom value.\n"
+"The cmdlet changes this value to the value that you specify for the *NewValue*  parameter."
+msgstr "指定一个自定义值。此cmdlet会将该值更改为您为*NewValue*参数指定的值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的后果。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Input Parameters）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### IpamCustomField"
+msgstr "### IpamCustomField"
+
+msgid ""
+"This cmdlet returns an object that represents a custom metadata field in "
+"IPAM Server."
+msgstr "此cmdlet返回一个对象，该对象表示IPAM服务器中的自定义元数据字段。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-IpamCustomValue](./Add-IpamCustomValue.md)"
+msgstr "[Add-IpamCustomValue](./Add-IpamCustomValue.md)"
+
+msgid "[Remove-IpamCustomValue](./Remove-IpamCustomValue.md)"
+msgstr "[Remove-IpamCustomValue](./Remove-IpamCustomValue.md)"

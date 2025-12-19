@@ -1,0 +1,52 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:23:43 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# HgsDiagnostics Module"
+msgstr "# HgsDiagnostics模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Host Guardian"
+" Service Diagnostics client cmdlets. This table lists the cmdlets in "
+"alphabetical order."
+msgstr ""
+"该参考资料提供了所有Host Guardian Service "
+"Diagnostics客户端cmdlet的描述和语法信息。下表按字母顺序列出了这些cmdlet。"
+
+msgid "## HgsDiagnostics Cmdlets"
+msgstr "## HgsDiagnosticsCmdlets"
+
+msgid "### [Get-HgsTrace](Get-HgsTrace.md)"
+msgstr "### [Get-HgsTrace](Get-HgsTrace.md)"
+
+msgid ""
+"Collects and analyzes data relevant to the operation of a guarded fabric."
+msgstr "收集并分析与受保护织物的运行相关的数据。"
+
+msgid "### [Get-HgsTraceFileData](Get-HgsTraceFileData.md)"
+msgstr "### [Get-HgsTraceFileData](Get-HgsTraceFileData.md)"
+
+msgid ""
+"Gets metadata about and the contents of HGS Diagnostic trace files recorded "
+"in a trace manifest."
+msgstr "获取与HGS诊断跟踪文件相关的元数据及其内容，这些文件记录在跟踪清单（trace manifest）中。"
+
+msgid "### [New-HgsTraceTarget](New-HgsTraceTarget.md)"
+msgstr "### [New-HgsTraceTarget](New-HgsTraceTarget.md)"
+
+msgid "Creates a HGS Diagnostics target object."
+msgstr "创建一个 HGS Diagnostics 目标对象。"
+
+msgid "### [Test-HgsTraceTarget](Test-HgsTraceTarget.md)"
+msgstr "### [Test-HgsTraceTarget](Test-HgsTraceTarget.md)"
+
+msgid ""
+"Verifies that a remote Windows PowerShell® session can be opened to the "
+"provided target."
+msgstr "验证是否可以打开到指定目标的远程 Windows PowerShell® 会话。"

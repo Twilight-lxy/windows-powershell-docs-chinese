@@ -1,0 +1,129 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:21:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Revoke-HgsKeyProtectorAccess"
+msgstr "# 撤销 HGSKeyProtector 的访问权限"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Revokes access for a guardian to a key protector."
+msgstr "撤销监护人访问“密钥保护器”的权限。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "### FriendlyName"
+msgstr "### FriendlyName"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Revoke-HgsKeyProtectorAccess** cmdlet revokes access for a Host Guardian Service guardian to a key protector.\n"
+"This operation requires access to private signing key of the owner."
+msgstr ""
+"`Revoke-HgsKeyProtectorAccess` cmdlet 可以撤销主机保护服务（Host Guardian "
+"Service）守护程序对某个密钥保护器（key protector）的访问权限。执行此操作需要拥有该密钥所有者的私钥（private signing "
+"key）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Revoke access for a guardian"
+msgstr "### 示例 1：撤销监护人访问权限"
+
+msgid ""
+"The first command gets the guardian object named Guardian11 by using the "
+"**Get-HgsGuardian** cmdlet, and then stores that object in the **$Owner** "
+"variable."
+msgstr ""
+"第一个命令使用 **Get-HgsGuardian** cmdlet 获取名为 Guardian11 的守护对象，然后将该对象存储在 `$Owner` "
+"变量中。"
+
+msgid ""
+"The second and third commands get two guardians named GuardianA and GuardianB.\n"
+"These commands store the guardians in the **$GuardianA** and **$GuardianB** variables."
+msgstr ""
+"第二条和第三条命令分别创建了两个名为 GuardianA 和 GuardianB 的守护者对象。这些命令将这些守护者对象存储在 `$GuardianA`"
+" 和 `$GuardianB` 变量中。"
+
+msgid ""
+"The fifth command gets the guardian object named GuardianA, and then stores "
+"that object in the **$Guardian04** variable."
+msgstr "第五条命令获取名为 GuardianA 的守护对象，并将该对象存储在 `$Guardian04` 变量中。"
+
+msgid ""
+"The final command revokes access for the guardian stored in **$Guardian04** "
+"for the key protector."
+msgstr "最后的命令撤销了存储在 **$Guardian04** 中的守护者对密钥保护器的访问权限。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a guardian from which to revoke access to the key."
+msgstr "指定一个监护人，以便撤销该监护人对密钥的访问权限。"
+
+msgid "Specifies a friendly name for a guardian."
+msgstr "为守护者指定一个友好的名称。"
+
+msgid "Specifies the key protector for which to revoke access."
+msgstr "指定要撤销访问权限的密钥保护器。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONPARAMETERS（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CimInstance#MSFT_HgsKeyProtector"
+msgstr "### CimInstance#MSFT_HgsKeyProtector"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径提供了底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Grant-HgsKeyProtectorAccess](./Grant-HgsKeyProtectorAccess.md)"
+msgstr "[Grant-HgsKeyProtectorAccess](./Grant-HgsKeyProtectorAccess.md)"
+
+msgid "[New-HgsKeyProtector](./New-HgsKeyProtector.md)"
+msgstr "[New-HgsKeyProtector](./New-HgsKeyProtector.md)"
+
+msgid "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+msgstr "[Get-HgsGuardian](./Get-HgsGuardian.md)"

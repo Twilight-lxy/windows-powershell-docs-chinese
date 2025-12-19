@@ -1,0 +1,160 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:38:47 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Optimize-VHD"
+msgstr "# 优化VHD文件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Optimizes the allocation of space used by virtual hard disk files, except "
+"for fixed virtual hard disks."
+msgstr "优化虚拟硬盘文件所占空间的分配情况（固定大小的虚拟硬盘除外）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Optimize-VHD** cmdlet optimizes the allocation of space in one or more virtual hard disk files, except for fixed virtual hard disks.\n"
+"The **Compact** operation is used to optimize the files.\n"
+"This operation reclaims unused blocks as well as rearranges the blocks to be more efficiently packed, which reduces the size of a virtual hard disk file."
+msgstr ""
+"`Optimize-VHD` cmdlet 用于优化一个或多个虚拟硬盘文件中的空间分配（固定大小的虚拟硬盘除外）。为了实现优化，会使用 "
+"`Compact` 操作。该操作会回收未使用的磁块，并重新排列这些磁块以便更高效地存储数据，从而减小虚拟硬盘文件的大小。"
+
+msgid ""
+"To use Optimize-VHD, the virtual hard disk must not be attached or must be "
+"attached in read-only mode."
+msgstr "要使用 Optimize-VHD，虚拟硬盘不能被挂载，或者必须以只读模式进行挂载。"
+
+msgid ""
+"The compact operation can succeed without reducing the file size, if no "
+"optimization is possible."
+msgstr "如果无法进行任何优化，那么“压缩操作”仍然可以成功完成，且文件大小不会发生变化。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Runs the compact operation in Full mode.\n"
+"(If the VHDX-format file is not attached as read-only prior to the operation, it will default to Prezeroed mode.)"
+msgstr "在全模式下执行压缩操作。（如果VHDX格式文件在操作前没有以只读方式被附加，则系统会默认使用“预清零”模式。）"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Runs the compact operation in Retrim mode.\n"
+"(If the VHDX-format disk is not mounted as read-only prior to the operation, running the cmdlet returns an error.)"
+msgstr "在“Retrim”模式下执行压缩操作。（如果在操作之前没有将VHDX格式的磁盘设置为只读模式，那么运行此cmdlet会返回错误。）"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Runs the compact operation in Quick mode.\n"
+"(If the VHDX-format file is not attached as read-only prior to the operation, it defaults to Pretrimmed mode.)"
+msgstr "在快速模式下执行压缩操作。（如果VHDX格式的文件在操作之前没有以只读方式附加，则默认使用“预修剪”模式。）"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "将该cmdlet作为后台作业运行。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet将在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which a virtual machine is to be optimized.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于优化虚拟机的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全合格的域名进行指定。默认值为本地计算机。可以使用 "
+"“localhost” 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the mode in which the virtual hard disk is to be optimized.\n"
+"For a **VHD** disk, the default mode is **Full**.\n"
+"For a **VHDX** disk, the default mode is **Quick**.\n"
+"Valid modes are as follows:"
+msgstr ""
+"指定虚拟硬盘的优化模式。对于 **VHD** 磁盘，默认模式为 **Full**（完全优化）；对于 **VHDX** 磁盘，默认模式为 "
+"**Quick**（快速优化）。有效的模式如下："
+
+msgid ""
+"Specifies that an object is to be passed through to the pipeline "
+"representing the virtual hard disk to be optimized."
+msgstr "指定要将某个对象传递给用于表示待优化虚拟硬盘的处理流程（即管道）。"
+
+msgid ""
+"Specifies one or more paths to the dynamic or differencing virtual hard disk"
+" files to be optimized."
+msgstr "指定一个或多个路径，这些路径指向需要优化的动态虚拟硬盘文件或差异备份虚拟硬盘文件。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生的结果。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+msgstr "### Microsoft.Vhd.PowerShellVirtualHardDisk"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

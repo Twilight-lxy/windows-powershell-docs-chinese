@@ -1,0 +1,150 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:57:17 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disconnect-VMSan"
+msgstr "# 断开 VMSan 的连接"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a host bus adapter from a virtual storage area network (SAN)."
+msgstr "从虚拟存储区域网络（SAN）中移除一个主机总线适配器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### StringWwn (Default)"
+msgstr "### StringWwn（默认值）"
+
+msgid "### HbaObject"
+msgstr "### HbaObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Disconnect-VMSan** cmdlet removes a host bus adapter from a virtual "
+"storage area network (SAN)."
+msgstr "` Disconnect-VMSan` cmdlet 用于将主机总线适配器从虚拟存储区域网络（SAN）中移除。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Removes the host bus adapter having the specified world wide node name and "
+"world wide port name from the virtual SAN named Production on the local "
+"Hyper-V host."
+msgstr ""
+"从名为“Production”的虚拟SAN中移除具有指定全球节点名称（world wide node name）和全球端口名称（world wide "
+"port name）的主机总线适配器，该虚拟SAN位于本地Hyper-V主机上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which a host bus adapter is to be removed from a virtual storage area network (SAN).\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个Hyper-"
+"V主机，以便从虚拟存储区域网络（SAN）中移除该主机上的总线适配器。可以使用NetBIOS名称、IP地址或完全限定域名进行指定。默认值是本地计算机。可以使用“localhost”或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the host bus adapter to be removed from the virtual storage area "
+"network (SAN)."
+msgstr "指定要从虚拟存储区域网络（SAN）中移除的主机总线适配器。"
+
+msgid ""
+"Specifies the name of the virtual storage area network (SAN) from which the "
+"host bus adapter is to be removed."
+msgstr "指定要从其中移除主机总线适配器的虚拟存储区域网络（SAN）的名称。"
+
+msgid ""
+"Specifies that an object is to be passed through to the pipeline "
+"representing the virtual storage area network (SAN) from which the host bus "
+"adapter is to be removed."
+msgstr "指定要将某个对象传递到表示虚拟存储区域网络（SAN）的管道中；该SAN是用于移除主机总线适配器的网络。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid ""
+"The world wide node name of the host bus adapter to be removed from the "
+"virtual storage area network (SAN)."
+msgstr "要从虚拟存储区域网络（SAN）中移除的主机总线适配器的全球唯一节点名称。"
+
+msgid ""
+"The world wide port name of the host bus adapter to be removed from the "
+"virtual storage area network (SAN)."
+msgstr "要从虚拟存储区域网络（SAN）中移除的主机总线适配器的全球端口号。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.VMSan"
+msgstr "### Microsoft.HyperV.PowerShell.VMSan"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 `-PassThru`，"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

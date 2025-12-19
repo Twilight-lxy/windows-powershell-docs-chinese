@@ -1,0 +1,121 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:00:57 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"The Install-Language cmdlet lets you add a language to a running Windows "
+"installation"
+msgstr "`Install-Language` cmdlet 允许您向正在运行的 Windows 系统中添加一种语言支持。"
+
+msgid "# Install-Language"
+msgstr "# 安装语言插件"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Installs a language onto a device."
+msgstr "将某种语言安装到设备上。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"Downloads and installs the available language components for the specified "
+"language onto a device."
+msgstr "将指定语言的可用语言组件下载并安装到设备上。"
+
+msgid ""
+"You can also change your Display Language by using the International module "
+"commands (`Set-WinUILanguageOverride <lnstalled Language>`)"
+msgstr ""
+"您还可以通过使用“International”模块命令（`Set-Win UILanguageOverride <已安装的语言>`）来更改显示语言。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a language to a device"
+msgstr "### 示例 1：为设备添加一种语言支持"
+
+msgid "This command adds the Japanese language to a device."
+msgstr "此命令会将日语语言添加到设备中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"If specified, this parameter will execute the language installation as an "
+"[async PowerShell "
+"job](/powershell/module/microsoft.powershell.core/about/about_jobs)."
+msgstr ""
+"如果指定了该参数，语言安装过程将作为[异步PowerShell作业](/powershell/module/microsoft.powershell.core/about/about_jobs)来执行。"
+
+msgid ""
+"If specified, this parameter sets the System and Default Device Settings "
+"(Windows Display Language, regional and locale formats) to the installed "
+"language following the installation."
+msgstr "如果指定了此参数，它将在安装后将系统和默认设备设置（Windows显示语言、区域和本地化格式）设置为所安装语言对应的设置。"
+
+msgid ""
+"After a language is added with this command, you have to restart the device "
+"or login again for changes to take effect. Once you log back in, you can "
+"change your Windows Display Language in  Settings App to change the device "
+"UI language."
+msgstr ""
+"使用此命令添加语言后，你需要重新启动设备或再次登录才能使更改生效。重新登录后，你可以在“设置”应用程序中更改Windows显示语言，从而改变设备的用户界面语言。"
+
+msgid ""
+"If specified, the associated language Features on Demand won't be installed."
+msgstr "如果指定了相关语言，那么按需提供的语言功能将不会被安装。"
+
+msgid "The bcp47 tag of the language that you're installing."
+msgstr "您正在安装的语言对应的 bcp47 标签。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.LanguagePackManagement.Powershell.Commands.InstallLanguage+InstallLanguageJob"
+msgstr ""
+"### Microsoft(LanguagePackManagement.PowershellCommands.InstallLanguage + "
+"InstallLanguageJob"
+
+msgid ""
+"### "
+"System.Collections.Generic.List<Microsoft.LanguagePackManagement.Powershell.Commands.InstalledLanguage>"
+msgstr ""
+"### "
+"System.Collections.Generic.List<Microsoft(LanguagePackManagement.PowershellCommands.InstalledLanguage>"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[UninstallLanguage](uninstall-language.md)"
+msgstr "[UninstallLanguage](uninstall-language.md)"

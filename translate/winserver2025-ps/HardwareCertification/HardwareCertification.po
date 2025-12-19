@@ -1,0 +1,89 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:10:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# HardwareCertification Module"
+msgstr "# 硬件认证模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Windows "
+"Hardware Certification Kit (HCK) cmdlets. It lists the cmdlets in "
+"alphabetical order based on the verb at the beginning of the cmdlet."
+msgstr ""
+"本参考资料提供了所有 Windows 硬件认证工具包（HCK）cmdlet 的描述和语法信息。这些 cmdlet "
+"按照其名称开头所使用的动词字母顺序进行排列。"
+
+msgid "## HardwareCertification Cmdlets"
+msgstr "## HardwareCertificationCmdlets"
+
+msgid ""
+"### [Export-HwCertTestCollectionToXml](./Export-"
+"HwCertTestCollectionToXml.md)"
+msgstr ""
+"### [将HwCertTestCollection导出为XML文件](./Export-HwCertTestCollectionToXml.md)"
+
+msgid "Exports a test collection to an .xml file."
+msgstr "将测试集合导出到.xml文件中。"
+
+msgid ""
+"### [Import-HwCertTestCollectionFromXml](./Import-"
+"HwCertTestCollectionFromXml.md)"
+msgstr "### [从XML文件导入硬件证书测试集合](./Import-HwCertTestCollectionFromXml.md)"
+
+msgid "Imports a test collection from an .xml file."
+msgstr "从.xml文件中导入一个测试集合。"
+
+msgid ""
+"### [Merge-HwCertTestCollectionFromPackage](./Merge-"
+"HwCertTestCollectionFromPackage.md)"
+msgstr "### [从包中合并硬件证书测试集合](./Merge-HwCertTestCollectionFromPackage.md)"
+
+msgid ""
+"Merges test result information from several .hckx package files into a "
+"single test collection."
+msgstr "将多个.hckx包文件中的测试结果信息合并到一个单独的测试集合中。"
+
+msgid ""
+"### [Merge-HwCertTestCollectionFromXml](./Merge-"
+"HwCertTestCollectionFromXml.md)"
+msgstr "### [从XML文件合并硬件认证测试集合](./Merge-HwCertTestCollectionFromXml.md)"
+
+msgid ""
+"Merges test result information from several test collection files into a "
+"single test collection."
+msgstr "将多个测试集合文件中的测试结果信息合并到一个测试集合中。"
+
+msgid ""
+"### [New-HwCertProjectDefinitionFile](./New-HwCertProjectDefinitionFile.md)"
+msgstr ""
+"### [New-HwCertProjectDefinitionFile](./New-HwCertProjectDefinitionFile.md)"
+
+msgid "Creates an HCK project definition file."
+msgstr "创建一个HCK项目定义文件。"
+
+msgid "### [New-HwCertTestCollection](./New-HwCertTestCollection.md)"
+msgstr "### [New-HwCertTestCollection](./New-HwCertTestCollection.md)"
+
+msgid "Creates a test collection file from a project definition file."
+msgstr "根据项目定义文件创建一个测试集合文件。"
+
+msgid ""
+"### [New-HwCertTestCollectionExcelReport](./New-"
+"HwCertTestCollectionExcelReport.md)"
+msgstr ""
+"### [New-HwCertTestCollectionExcelReport](./New-"
+"HwCertTestCollectionExcelReport.md)"
+
+msgid "Creates an HCK test summary report."
+msgstr "创建一份HCK测试总结报告。"

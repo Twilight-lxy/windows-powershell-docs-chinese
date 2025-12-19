@@ -1,0 +1,101 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:46:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Receive-DtcDiagnosticTransaction"
+msgstr "# 接收 DTC 诊断交易信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Propagates a transaction from a given diagnostic Resource Manager."
+msgstr "将事务从给定的诊断资源管理器（Diagnostic Resource Manager）中传播出去。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Receive-DtcDiagnosticTransaction** cmdlet propagates a transaction from a specified diagnostic Resource Manager (RM).\n"
+"A transaction is created on the specified RM and propagated to the Windows PowerShell® client using either pull or push propagation.\n"
+"Use the **PropagationMethod** parameter to specify the propagation mechanism."
+msgstr ""
+"`Receive-DtcDiagnosticTransaction` cmdlet 用于从指定的诊断资源管理器（Resource Manager，简称 "
+"RM）中获取交易信息。该交易首先在指定的 RM 上创建，然后通过拉取（pull）或推送（push）的方式传播到 Windows PowerShell® "
+"客户端。您可以使用 `PropagationMethod` 参数来指定具体的传播机制。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Receive a diagnostic transaction"
+msgstr "### 示例 1：接收诊断交易"
+
+msgid "This command pulls a diagnostic transaction from Host1 port 17123."
+msgstr "此命令从Host1的端口17123获取一个诊断交易数据。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the host name of the computer on which the RM runs.\n"
+"If you do not specify a host name, this cmdlet uses the name of the local computer."
+msgstr "指定运行RM（Removal Manager）的计算机的主机名。如果您没有指定主机名，此cmdlet将使用本地计算机的名称。"
+
+msgid "Specifies the listening port of the test RM."
+msgstr "指定测试RM（Remote Manager）的监听端口。"
+
+msgid ""
+"Specifies the propagation mechanism, pull or push, to use.\n"
+"The default is pull."
+msgstr "指定要使用的传播机制（pull或push）。默认值为pull。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, "
+"`-ErrorVariable`, `-InformationAction`, `-InformationVariable`, "
+"`-OutVariable`, `-OutBuffer`, `-PipelineVariable`, `-Verbose`, "
+"`-WarningAction`, and `-WarningVariable`. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Complete-DtcDiagnosticTransaction](./Complete-DtcDiagnosticTransaction.md)"
+msgstr ""
+"[Complete-DtcDiagnosticTransaction](./Complete-DtcDiagnosticTransaction.md)"
+
+msgid "[New-DtcDiagnosticTransaction](./New-DtcDiagnosticTransaction.md)"
+msgstr "[New-DtcDiagnosticTransaction](./New-DtcDiagnosticTransaction.md)"
+
+msgid "[Send-DtcDiagnosticTransaction](./Send-DtcDiagnosticTransaction.md)"
+msgstr "[Send-DtcDiagnosticTransaction](./Send-DtcDiagnosticTransaction.md)"
+
+msgid "[Undo-DtcDiagnosticTransaction](./Undo-DtcDiagnosticTransaction.md)"
+msgstr "[Undo-DtcDiagnosticTransaction](./Undo-DtcDiagnosticTransaction.md)"

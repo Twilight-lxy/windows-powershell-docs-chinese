@@ -1,0 +1,151 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:30:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-HgsServerState"
+msgstr "# 导入 HgsServerState 类"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Imports an exported Host Guardian Service state into a Host Guardian Service"
+" instance."
+msgstr "将导出的Host Guardian Service状态导入到一个Host Guardian Service实例中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### XML"
+msgstr "### XML"
+
+msgid "### File"
+msgstr "### 文件"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Import-HgsServer** cmdlet imports the previously exported Host "
+"Guardian Service (HGS) state to the existing Host Guardian Service instance."
+msgstr ""
+"`Import-HgsServer` cmdlet 将之前导出的 Host Guardian Service（HGS）状态数据导入到现有的 Host "
+"Guardian Service 实例中。"
+
+msgid ""
+"The cmdlet imports the following Host Guardian Service state from the input "
+"file:"
+msgstr "该cmdlet从输入文件中导入以下Host Guardian服务的状态信息："
+
+msgid ""
+"Additionally, this cmdlet renews the attestation service signer certificate "
+"and updates the key protection service instance with this certificate."
+msgstr ""
+"此外，此cmdlet还会更新证书签名服务（attestation service）的证书，并使用该证书来更新密钥保护服务实例（key "
+"protection service）。"
+
+msgid ""
+"For more information about the scenario terms, see [Security and "
+"Assurance](https://go.microsoft.com/fwlink/?LinkId=699209)."
+msgstr ""
+"有关场景术语的更多信息，请参阅[安全与保障](https://go.microsoft.com/fwlink/?LinkId=699209)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import HGS state data"
+msgstr "#### 示例 1：导入 HGS 状态数据"
+
+msgid ""
+"This command imports previously exported state on the current HGS server.\n"
+"This command can be called on only one node.\n"
+"The state is automatically replicated to other nodes in the HGS server setup."
+msgstr ""
+"此命令用于将之前导出的状态数据导入到当前的HGS（Highly Granular "
+"Server）服务器中。该命令只能在一个节点上执行，导入的状态数据会自动复制到HGS服务器设置中的其他节点上。"
+
+msgid ""
+"The exported state is the output generated from **Export-HgsServerState** when run against an existing HGS server setup.\n"
+"The password specified must match the password that was passed to Export-HgsServerState."
+msgstr ""
+"导出的状态数据是执行 `Export-HgsServerState` 命令时针对现有 HGS 服务器设置所生成的输出结果。指定的密码必须与传递给 "
+"`Export-HgsServerState` 的密码相匹配。"
+
+msgid ""
+"Use ConvertTo-SecureString to generate a secure string that represents the "
+"password."
+msgstr "使用 `ConvertTo-SecureString` 函数生成一个表示密码的安全字符串。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet imports and updates Attestation service "
+"configuration state relevant to the Active Directory operational mode."
+msgstr "表示此cmdlet会导入并更新与Active Directory操作模式相关的认证服务配置状态。"
+
+msgid ""
+"Indicates that this cmdlet imports and updates Attestation service "
+"configuration state relevant to the trusted platform module (TPM) "
+"operational mode."
+msgstr "表示此cmdlet会导入并更新与受信任平台模块（TPM）操作模式相关的认证服务配置状态。"
+
+msgid ""
+"Specifies the password that the **Export-HgsServerState** cmdlet used to "
+"encrypt the keys."
+msgstr "指定 `Export-HgsServerState` cmdlet 用于加密密钥时使用的密码。"
+
+msgid "Specifies the path of the file that this cmdlet imports."
+msgstr "指定此 cmdlet 导入的文件的路径。"
+
+msgid "Specifies the state that this cmdlet imports as an XML document."
+msgstr "指定此cmdlet作为XML文档导入的状态。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-HgsServerState](./Export-HgsServerState.md)"
+msgstr "[Export-HgsServerState](./Export-HgsServerState.md)"
+
+msgid "[HGS Server Cmdlets](./hgsserver.md)"
+msgstr "[HGS 服务器 cmdlet](./hgsserver.md)"

@@ -1,0 +1,140 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:49:42 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-VMScsiController"
+msgstr "# 移除 VMScsiController"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Removes a SCSI controller from a virtual machine."
+msgstr "从虚拟机中移除一个SCSI控制器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### Object"
+msgstr "### 对象"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Remove-VMScsiController** cmdlet removes a SCSI controller from a "
+"virtual machine."
+msgstr "`Remove-VMScsiController` cmdlet 用于从虚拟机中删除 SCSI 控制器。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Deletes SCSI controller 0 from virtual machine TestVM."
+msgstr "从虚拟机TestVM中删除SCSI控制器0。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts from which the SCSI controller is to be removed.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个要从其中卸载 SCSI 控制器的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全 Qualified "
+"域名进行指定。默认值为本地计算机。可以使用 `localhost` 或点号（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies the number of the controller.\n"
+"The cmdlet removes the SCSI controller that you specify."
+msgstr "指定控制器的编号。该cmdlet会删除您所指定的SCSI控制器。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that a **VMScsiController** object is to be passed through to the "
+"pipeline representing the SCSI controller to be removed."
+msgstr "指定需要将一个 **VMScsiController** 对象传递给流水线，该对象代表要移除的 SCSI 控制器。"
+
+msgid ""
+"Specifies an array of names of virtual machines.\n"
+"The cmdlet removes an SCSI controller from the virtual machines that you specify."
+msgstr "指定一个虚拟机名称数组。该cmdlet会从您指定的虚拟机上删除SCSI控制器。"
+
+msgid "Specifies the SCSI controller to be removed."
+msgstr "指定要删除的 SCSI 控制器。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "By default, this cmdlet doesn't return any output."
+msgstr "默认情况下，此cmdlet不会返回任何输出结果。"
+
+msgid "### VMScsiController"
+msgstr "### VMScsiController"
+
+msgid ""
+"When you use the **PassThru** parameter, this cmdlet returns a "
+"**VMScsiController** object."
+msgstr "当你使用 **PassThru** 参数时，此 cmdlet 会返回一个 **VMScsiController** 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

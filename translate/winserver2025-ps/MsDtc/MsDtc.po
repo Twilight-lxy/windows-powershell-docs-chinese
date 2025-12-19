@@ -1,0 +1,324 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:45:05 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# MsDtc Module"
+msgstr "# MsDtc 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides information about the Windows PowerShell cmdlets "
+"provided with Microsoft Distributed Transaction Coordinator (MSDTC). The "
+"cmdlet help topics in this section are in alphabetical order."
+msgstr ""
+"本参考资料提供了关于 Microsoft 分布式事务协调器（MSDTC）所提供的 Windows PowerShell cmdlet "
+"的相关信息。本节中的 cmdlet 帮助主题按字母顺序排列。"
+
+msgid "## MsDtc Cmdlets"
+msgstr "## MsDtcCmdlets"
+
+msgid "### [Add-DtcClusterTMMapping](./Add-DtcClusterTMMapping.md)"
+msgstr "### [Add-DtcClusterTMMapping](./Add-DtcClusterTMMapping.md)"
+
+msgid "Adds a cluster DTC mapping."
+msgstr "添加一个集群DTC（诊断跟踪代码）映射关系。"
+
+msgid ""
+"### [Complete-DtcDiagnosticTransaction](./Complete-"
+"DtcDiagnosticTransaction.md)"
+msgstr ""
+"### [Complete-DtcDiagnosticTransaction](./Complete-"
+"DtcDiagnosticTransaction.md)"
+
+msgid ""
+"Invokes the Commit process if the specified transaction is the root "
+"transaction; otherwise, invokes the Complete method on a transaction object."
+msgstr "如果指定的事务是根事务，则会调用提交（Commit）过程；否则，会在事务对象上调用完成（Complete）方法。"
+
+msgid "### [Get-Dtc](./Get-Dtc.md)"
+msgstr "### [Get-Dtc](./Get-Dtc.md)"
+
+msgid "Gets DTC instances."
+msgstr "获取 DTC 实例。"
+
+msgid "### [Get-DtcAdvancedHostSetting](./Get-DtcAdvancedHostSetting.md)"
+msgstr "### [Get-DtcAdvancedHostSetting](./Get-DtcAdvancedHostSetting.md)"
+
+msgid "Queries the DTC host level properties in the registry."
+msgstr "查询注册表中DTC主机级别的属性。"
+
+msgid "### [Get-DtcAdvancedSetting](./Get-DtcAdvancedSetting.md)"
+msgstr "### [Get-DtcAdvancedSetting](./Get-DtcAdvancedSetting.md)"
+
+msgid "Queries the advanced setting for MSDTC in the registry."
+msgstr "查询注册表中关于 MSDTC（Microsoft Distributed Transaction Coordinator）的高级设置。"
+
+msgid "### [Get-DtcClusterDefault](./Get-DtcClusterDefault.md)"
+msgstr "### [Get-DtcClusterDefault](./Get-DtcClusterDefault.md)"
+
+msgid "Retrieves the default cluster server."
+msgstr "检索默认的集群服务器。"
+
+msgid "### [Get-DtcClusterTMMapping](./Get-DtcClusterTMMapping.md)"
+msgstr "### [Get-DtcClusterTMMapping](./Get-DtcClusterTMMapping.md)"
+
+msgid "Gets cluster DTC Mapping data."
+msgstr "获取集群DTC映射数据。"
+
+msgid "### [Get-DtcDefault](./Get-DtcDefault.md)"
+msgstr "### [Get-DtcDefault](./Get-DtcDefault.md)"
+
+msgid "Gets the default DTC instance."
+msgstr "获取默认的 DTC 实例。"
+
+msgid "### [Get-DtcLog](./Get-DtcLog.md)"
+msgstr "### [Get-DtcLog](./Get-DtcLog.md)"
+
+msgid "Gets DTC log file settings."
+msgstr "获取DTC日志文件设置信息。"
+
+msgid "### [Get-DtcNetworkSetting](./Get-DtcNetworkSetting.md)"
+msgstr "### [Get-DtcNetworkSetting](./Get-DtcNetworkSetting.md)"
+
+msgid "Gets DTC network and security configuration settings."
+msgstr "获取 DTC 的网络和安全配置设置。"
+
+msgid "### [Get-DtcTransaction](./Get-DtcTransaction.md)"
+msgstr "### [Get-DtcTransaction](./Get-DtcTransaction.md)"
+
+msgid "Gets information about transactions being handled by the DTC instance."
+msgstr "获取有关由DTC实例处理的交易的信息。"
+
+msgid ""
+"### [Get-DtcTransactionsStatistics](./Get-DtcTransactionsStatistics.md)"
+msgstr ""
+"### [Get-DtcTransactionsStatistics](./Get-DtcTransactionsStatistics.md)"
+
+msgid "Gets a summary of transactions."
+msgstr "获取交易摘要。"
+
+msgid ""
+"### [Get-DtcTransactionsTraceSession](./Get-DtcTransactionsTraceSession.md)"
+msgstr ""
+"### [Get-DtcTransactionsTraceSession](./Get-DtcTransactionsTraceSession.md)"
+
+msgid "Gets the DTC transactions trace session specific setting of the host."
+msgstr "获取主机特定的 DTC 事务跟踪会话设置。"
+
+msgid ""
+"### [Get-DtcTransactionsTraceSetting](./Get-DtcTransactionsTraceSetting.md)"
+msgstr ""
+"### [Get-DtcTransactionsTraceSetting](./Get-DtcTransactionsTraceSetting.md)"
+
+msgid "Gets the DTC transactions trace setting of the host."
+msgstr "获取主机的 DTC 事务跟踪设置。"
+
+msgid "### [Install-Dtc](./Install-Dtc.md)"
+msgstr "### [Install-Dtc](./Install-Dtc.md)"
+
+msgid "Installs the local transactions coordinator."
+msgstr "安装本地事务协调器。"
+
+msgid ""
+"### [Join-DtcDiagnosticResourceManager](./Join-"
+"DtcDiagnosticResourceManager.md)"
+msgstr ""
+"### [Join-DtcDiagnostic ResourceManager](./Join-"
+"DtcDiagnosticResourceManager.md)"
+
+msgid "Enlists a diagnostic Resource Manager for a transaction object."
+msgstr ""
+"为某个事务对象（transaction object）分配一个用于诊断目的的资源管理器（Diagnostic Resource Manager）。"
+
+msgid "### [New-DtcDiagnosticTransaction](./New-DtcDiagnosticTransaction.md)"
+msgstr "### [New-DtcDiagnosticTransaction](./New-DtcDiagnosticTransaction.md)"
+
+msgid ""
+"Creates a new transaction in a Transaction Manager on the local computer."
+msgstr "在本地计算机上的事务管理器中创建一个新的交易。"
+
+msgid ""
+"### [Receive-DtcDiagnosticTransaction](./Receive-"
+"DtcDiagnosticTransaction.md)"
+msgstr "### [接收 DTC 诊断交易](./Receive-DtcDiagnosticTransaction.md)"
+
+msgid "Propagates a transaction from a given diagnostic Resource Manager."
+msgstr "从给定的诊断资源管理器（Diagnostic Resource Manager）传播一笔交易。"
+
+msgid "### [Remove-DtcClusterTMMapping](./Remove-DtcClusterTMMapping.md)"
+msgstr "### [Remove-DtcClusterTMMapping](./Remove-DtcClusterTMMapping.md)"
+
+msgid "Removes a cluster DTC mapping."
+msgstr "删除一个集群的DTC（诊断 trouble code）映射关系。"
+
+msgid "### [Reset-DtcLog](./Reset-DtcLog.md)"
+msgstr "### [Reset-DtcLog](./Reset-DtcLog.md)"
+
+msgid "Resets the log file of a DTC instance."
+msgstr "重置 DTC 实例的日志文件。"
+
+msgid ""
+"### [Send-DtcDiagnosticTransaction](./Send-DtcDiagnosticTransaction.md)"
+msgstr ""
+"### [Send-DtcDiagnosticTransaction](./Send-DtcDiagnosticTransaction.md)"
+
+msgid "Propagates a transaction to a specified diagnostic Resource Manager."
+msgstr "将一笔交易传播到指定的诊断资源管理器（Diagnostic Resource Manager）。"
+
+msgid "### [Set-DtcAdvancedHostSetting](./Set-DtcAdvancedHostSetting.md)"
+msgstr "### [Set-DtcAdvancedHostSetting](./Set-DtcAdvancedHostSetting.md)"
+
+msgid "Sets the DTC host level properties in the registry."
+msgstr "在注册表中设置DTC（诊断 trouble code）主机级别的属性。"
+
+msgid "### [Set-DtcAdvancedSetting](./Set-DtcAdvancedSetting.md)"
+msgstr "### [Set-DtcAdvancedSetting](./Set-DtcAdvancedSetting.md)"
+
+msgid "Sets DTC instance specific properties in the registry."
+msgstr "在注册表中设置与DTC实例相关的特定属性。"
+
+msgid "### [Set-DtcClusterDefault](./Set-DtcClusterDefault.md)"
+msgstr "### [Set-DtcClusterDefault](./Set-DtcClusterDefault.md)"
+
+msgid "Sets the cluster default transactions coordinator."
+msgstr "设置集群的默认事务协调器。"
+
+msgid "### [Set-DtcClusterTMMapping](./Set-DtcClusterTMMapping.md)"
+msgstr "### [Set-DtcClusterTMMapping](./Set-DtcClusterTMMapping.md)"
+
+msgid "Modifies an existing cluster DTC mapping."
+msgstr "修改现有的集群DTC映射（Cluster DTC Mapping）。"
+
+msgid "### [Set-DtcDefault](./Set-DtcDefault.md)"
+msgstr "### [Set-DtcDefault](./Set-DtcDefault.md)"
+
+msgid "Sets the default transactions coordinator."
+msgstr "设置默认的交易协调器。"
+
+msgid "### [Set-DtcLog](./Set-DtcLog.md)"
+msgstr "### [Set-DtcLog](./Set-DtcLog.md)"
+
+msgid "Modifies the log file settings of a DTC instance."
+msgstr "修改DTC实例的日志文件设置。"
+
+msgid "### [Set-DtcNetworkSetting](./Set-DtcNetworkSetting.md)"
+msgstr "### [Set-DtcNetworkSetting](./Set-DtcNetworkSetting.md)"
+
+msgid "Modifies DTC network and security configuration for a DTC instance."
+msgstr "修改 DTC 实例的网络和安全配置。"
+
+msgid "### [Set-DtcTransaction](./Set-DtcTransaction.md)"
+msgstr "### [Set-DtcTransaction](./Set-DtcTransaction.md)"
+
+msgid "Modifies the state of a transaction."
+msgstr "修改事务的状态。"
+
+msgid ""
+"### [Set-DtcTransactionsTraceSession](./Set-DtcTransactionsTraceSession.md)"
+msgstr ""
+"### [Set-DtcTransactionsTraceSession](./Set-DtcTransactionsTraceSession.md)"
+
+msgid "Modifies the DTC transactions trace setting of the host."
+msgstr "修改主机的DTC事务跟踪设置。"
+
+msgid ""
+"### [Set-DtcTransactionsTraceSetting](./Set-DtcTransactionsTraceSetting.md)"
+msgstr ""
+"### [Set-DtcTransactionsTraceSetting](./Set-DtcTransactionsTraceSetting.md)"
+
+msgid "Modifies the DTC transactions trace setting of the host."
+msgstr "修改主机的DTC事务跟踪设置。"
+
+msgid "### [Start-Dtc](./Start-Dtc.md)"
+msgstr "### [Start-Dtc](./Start-Dtc.md)"
+
+msgid "Starts the DTC instance."
+msgstr "启动 DTC 实例。"
+
+msgid ""
+"### [Start-DtcDiagnosticResourceManager](./Start-"
+"DtcDiagnosticResourceManager.md)"
+msgstr ""
+"### [Start-DtcDiagnostic ResourceManager](./Start-DtcDiagnostic "
+"ResourceManager.md)"
+
+msgid "Starts a diagnostic Resource Manager."
+msgstr "启动一个用于诊断的资源管理器（Resource Manager）。"
+
+msgid ""
+"### [Start-DtcTransactionsTraceSession](./Start-"
+"DtcTransactionsTraceSession.md)"
+msgstr ""
+"### [Start-DtcTransactionsTraceSession](./Start-"
+"DtcTransactionsTraceSession.md)"
+
+msgid "Starts a new DTC transactions trace session for the host."
+msgstr "为主机启动一个新的DTC事务跟踪会话。"
+
+msgid "### [Stop-Dtc](./Stop-Dtc.md)"
+msgstr "### [Stop-Dtc](./Stop-Dtc.md)"
+
+msgid "Stops a DTC instance."
+msgstr "停止一个DTC实例。"
+
+msgid ""
+"### [Stop-DtcDiagnosticResourceManager](./Stop-"
+"DtcDiagnosticResourceManager.md)"
+msgstr ""
+"### [Stop-DtcDiagnostic ResourceManager](./Stop-"
+"DtcDiagnosticResourceManager.md)"
+
+msgid "Stops and removes a diagnostic Resource Manager job."
+msgstr "停止并移除一个诊断性的资源管理器（Resource Manager）作业。"
+
+msgid ""
+"### [Stop-DtcTransactionsTraceSession](./Stop-"
+"DtcTransactionsTraceSession.md)"
+msgstr ""
+"### [Stop-DtcTransactionsTraceSession](./Stop-"
+"DtcTransactionsTraceSession.md)"
+
+msgid "Stops the active DTC transactions trace session on the host."
+msgstr "停止主机上正在进行的DTC（Diagnostic Trouble Code）事务跟踪会话。"
+
+msgid "### [Test-Dtc](./Test-Dtc.md)"
+msgstr "### [Test-Dtc](./Test-Dtc.md)"
+
+msgid "Tests whether two computers can participate in networked transactions."
+msgstr "用于测试两台计算机是否能够参与联网交易。"
+
+msgid ""
+"### [Undo-DtcDiagnosticTransaction](./Undo-DtcDiagnosticTransaction.md)"
+msgstr ""
+"### [Undo-DtcDiagnosticTransaction](./Undo-DtcDiagnosticTransaction.md)"
+
+msgid "Invokes the Abort process on the specified transaction."
+msgstr "对指定的事务调用“Abort”流程（即终止该事务的执行）。"
+
+msgid "### [Uninstall-Dtc](./Uninstall-Dtc.md)"
+msgstr "### [Uninstall-Dtc](./Uninstall-Dtc.md)"
+
+msgid "Uninstalls the local transactions coordinator."
+msgstr "卸载本地的交易协调器程序。"
+
+msgid ""
+"### [Write-DtcTransactionsTraceSession](./Write-"
+"DtcTransactionsTraceSession.md)"
+msgstr ""
+"### [Write-DtcTransactionsTraceSession](./Write-"
+"DtcTransactionsTraceSession.md)"
+
+msgid ""
+"Writes the data from an active DTC transactions trace session into the log "
+"file."
+msgstr "将来自活动中的DTC事务跟踪会话的数据写入日志文件。"

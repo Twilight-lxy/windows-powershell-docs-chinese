@@ -1,0 +1,110 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:14:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WmsWebLimiting"
+msgstr "# Set-WmsWebLimiting"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Configures web limiting for standard user sessions."
+msgstr "为标准用户会话配置网络访问限制功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### AllowList"
+msgstr "### 允许列表（AllowList）"
+
+msgid "### BlockList"
+msgstr "### BlockList"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-WmsWebLimiting** cmdlet configures web limiting for standard user "
+"sessions on the current Windows MultiPoint Server system."
+msgstr ""
+"`Set-WmsWebLimiting` cmdlet 用于配置当前 Windows MultiPoint Server "
+"系统中标准用户会话的网页访问限制功能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Block access to web sites"
+msgstr "#### 示例 1：阻止访问某些网站"
+
+msgid "This command blocks access to the specified URLs."
+msgstr "这个命令会阻止对指定URL的访问。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Indicates that this operation allows the specified web sites."
+msgstr "表示此操作允许访问指定的网站。"
+
+msgid "Indicates that this operation blocks the specified web sites."
+msgstr "表示此操作会阻止访问指定的网站。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标多点服务器（MultiPoint Server）的完全限定主机名。默认值为“localhost”。"
+
+msgid "Specifies an array of web sites."
+msgstr "指定一个网站数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-WmsWebLimiting](./Disable-WmsWebLimiting.md)"
+msgstr "[Disable-WmsWebLimiting](./Disable-WmsWebLimiting.md)"
+
+msgid "[Enable-WmsWebLimiting](./Enable-WmsWebLimiting.md)"
+msgstr "[Enable-WmsWebLimiting](./Enable-WmsWebLimiting.md)"
+
+msgid "[Get-WmsWebLimiting](./Get-WmsWebLimiting.md)"
+msgstr "[Get-WmsWebLimiting](./Get-WmsWebLimiting.md)"

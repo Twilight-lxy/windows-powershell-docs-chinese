@@ -1,0 +1,187 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:20:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-HgsGuardian"
+msgstr "# 新版HgsGuardian"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Creates a Host Guardian Service guardian."
+msgstr "创建一个Host Guardian服务守护程序。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### AcceptCertificates"
+msgstr "### 接受证书"
+
+msgid "### ByThumbprints"
+msgstr "### 作者：ByThumbprints"
+
+msgid "### GenerateCertificates"
+msgstr "### 生成证书"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-HgsGuardian** cmdlet creates a cryptographic entity called a Host Guardian Service guardian.\n"
+"A guardian is a principal that you can grant access to the key that is contained in a key protector."
+msgstr ""
+"`New-HgsGuardian` cmdlet 创建一个称为“Host Guardian Service "
+"guardian”的加密实体。这种“guardian”是一个主体（principal），你可以授予它访问存储在密钥保护器（key "
+"protector）中的密钥的权限。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a guardian"
+msgstr "### 示例 1：创建一个守护者"
+
+msgid ""
+"This command creates a Host Guardian Service guardian named Guardian11.\n"
+"This guardian can act as owner for a key protector.\n"
+"Because this command specifies the **GenerateCertificates** parameter, it generates signing and encryption certificates."
+msgstr ""
+"这个命令创建了一个名为“Guardian11”的Host Guardian "
+"Service守护程序。该守护程序可以充当密钥保护器的所有者。由于此命令指定了“GenerateCertificates”参数，因此它会生成签名证书和加密证书。"
+
+msgid "### Example 2: Create a guardian by using existing certificates"
+msgstr "### 示例 2：使用现有的证书创建一个守护程序（guardian）"
+
+msgid ""
+"The first two commands create passwords, as secure strings, by using the **ConvertTo-SecureString** cmdlet.\n"
+"For more information, type `Get-Help ConvertTo-SecureString`.\n"
+"The commands store the passwords in two variables."
+msgstr ""
+"前两个命令使用 **ConvertTo-SecureString** cmdlet 将密码转换成安全的字符串形式。有关更多信息，请输入 `Get-"
+"Help ConvertTo-SecureString`。这些命令将生成的密码存储在两个变量中。"
+
+msgid ""
+"The final command creates a guardian named Guardian21.\n"
+"The command specifies the necessary signing and encryption certificates as password protected .pfx files.\n"
+"The passwords stored in the **$SecureStringPassword01** and **$SecureStringPassword02** must match the passwords used to generate the .pfx files."
+msgstr ""
+"最后一条命令创建了一个名为“Guardian21”的守护程序。该命令指定了所需的签名和加密证书，这些证书以受密码保护的.pfx文件形式存在。存储在**$SecureStringPassword01**和**$SecureStringPassword02**中的密码必须与用于生成这些.pfx文件的密码相匹配。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this cmdlet can create a guardian by using certificates that "
+"are expired."
+msgstr "表示该cmdlet可以使用已过期的证书来创建守护程序（guardian）。"
+
+msgid ""
+"Indicates that this cmdlet can create a guardian by using self-signed "
+"certificates."
+msgstr "表示此cmdlet可以使用自签名证书来创建守护程序（guardian）。"
+
+msgid ""
+"Specifies the path of a .pfx file that contains a password protected encryption certificate for the guardian.\n"
+"This .pfx file contains the public and private keys."
+msgstr "指定一个.pfx文件的路径，该文件包含用于保护Guardian的加密证书（该证书使用了密码进行保护）。这个.pfx文件中包含了公钥和私钥。"
+
+msgid ""
+"Specifies the password to decrypt the .pfx file that contains the encryption"
+" certificate."
+msgstr "指定用于解密包含加密证书的.pfx文件的密码。"
+
+msgid "Specifies the encryption certificate thumbprint."
+msgstr "指定加密证书的指纹（thumbprint）。"
+
+msgid ""
+"Indicates that this cmdlet generates self-signed signing and encryption certificates for the guardian.\n"
+"The certificates contain the public and private keys."
+msgstr "这表明该cmdlet会为“守护者”（guardian）生成自签名的签名和加密证书。这些证书包含公钥和私钥。"
+
+msgid ""
+"If you specify this parameter, the new guardian does not have a trusted root.\n"
+"Therefore, you must also specify the **AllowUntrustedRoot** parameter."
+msgstr ""
+"如果您指定了这个参数，那么新的守护进程将没有受信任的根节点（trusted root）。因此，您还必须指定 **AllowUntrustedRoot**"
+" 参数。"
+
+msgid "Specifies a name for the new guardian."
+msgstr "为新守护者指定一个名称。"
+
+msgid ""
+"Specifies the path of a .pfx file that contains a password protected signing certificate for the guardian.\n"
+"This .pfx file contains the public and private keys."
+msgstr "指定一个.pfx文件的路径，该文件包含用于守护者的、经过密码保护的签名证书。这个.pfx文件中包含了公钥和私钥。"
+
+msgid ""
+"Specifies the password necessary to decrypt the signing certificate .pfx "
+"file."
+msgstr "指定用于解密签名证书.pfx文件所需的密码。"
+
+msgid ""
+"Specifies the thumbprint of a signing certificate located in the local "
+"computer certificate store."
+msgstr "指定位于本地计算机证书存储库中的签名证书的“指纹”（即该证书的唯一标识信息）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CimInstance#MSFT_HgsGuardian"
+msgstr "### CimInstance#MSFT_HgsGuardian"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名称。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-HgsGuardian](./Export-HgsGuardian.md)"
+msgstr "[Export-HgsGuardian](./Export-HgsGuardian.md)"
+
+msgid "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+msgstr "[Get-HgsGuardian](./Get-HgsGuardian.md)"
+
+msgid "[Import-HgsGuardian](./Import-HgsGuardian.md)"
+msgstr "[Import-HgsGuardian](./Import-HgsGuardian.md)"
+
+msgid "[Remove-HgsGuardian](./Remove-HgsGuardian.md)"
+msgstr "[Remove-HgsGuardian](./Remove-HgsGuardian.md)"

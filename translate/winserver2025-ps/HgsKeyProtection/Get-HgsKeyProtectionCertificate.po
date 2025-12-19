@@ -1,0 +1,152 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:26:06 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-HgsKeyProtectionCertificate"
+msgstr "# 获取 HGS Key Protection 证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets key certificates in the Key Protection Service."
+msgstr "从密钥保护服务中获取关键证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### GetMultipleCerts (Default)"
+msgstr "### GetMultipleCerts（默认值）"
+
+msgid "### GetOneCert"
+msgstr "### GetOneCert"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-HgsKeyProtectionCertificate** cmdlet gets key certificates in the "
+"Key Protection Service."
+msgstr ""
+"`Get-HgsKeyProtectionCertificate` cmdlet 用于获取 Key Protection Service 中的密钥证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all key certificates"
+msgstr "#### 示例 1：获取所有密钥证书"
+
+msgid ""
+"This command gets all key certificates from the Key Protection Service."
+msgstr "这个命令可以从密钥保护服务（Key Protection Service）中获取所有的密钥证书。"
+
+msgid "### Example 2: Get a specific key certificate"
+msgstr "### 示例 2：获取特定的密钥证书"
+
+msgid ""
+"This command gets a key certificate that has the specified type and "
+"thumbprint."
+msgstr "这个命令会获取一个具有指定类型和指纹的密钥证书。"
+
+msgid "### Example 3: Get enabled non-primary key certificates"
+msgstr "### 示例 3：获取已启用的非主键证书"
+
+msgid ""
+"This command gets all key certificates that are enabled but not primary."
+msgstr "这个命令会获取所有已启用但不是主键证书的文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies of the type of the certificate that this cmdlet gets.\n"
+"The acceptable values for this parameter are:The acceptable values for this parameter are:"
+msgstr "指定此cmdlet获取的证书的类型。该参数的可接受值如下："
+
+msgid ""
+"Specifies whether to get enabled or disabled key certificates.\n"
+"Specify a value of $True to get only enabled certificates.\n"
+"Specify a value of $False to get only disabled certificates.\n"
+"If you do not specify this parameter, the cmdlet gets both enabled and disabled certificates."
+msgstr ""
+"指定是启用还是禁用密钥证书。如果指定值为 `$True`，则仅获取已启用的证书；如果指定值为 "
+"`$False`，则仅获取已被禁用的证书。如果不指定此参数，该 cmdlet 会同时获取已启用和已被禁用的证书。"
+
+msgid ""
+"Specifies whether to get the primary key certificate.\n"
+"Specify a value of $True to get only the primary certificate.\n"
+"Specify a value of $False to get only certificates that are not primary.\n"
+"If you do not specify this parameter, the cmdlet gets both primary and not primary certificates."
+msgstr ""
+"指定是否获取主键证书。如果指定值为 `$True`，则仅获取主键证书；如果指定值为 `$False`，则仅获取非主键证书。如果不指定此参数，该 "
+"cmdlet 会同时获取主键证书和非主键证书。"
+
+msgid ""
+"Specifies the thumbprint of the certificate to get.\n"
+"If you specify this parameter, you must also specify the **CertificateType** parameter."
+msgstr "指定要获取的证书的“指纹”（即证书的唯一标识符）。如果您指定了此参数，则还必须指定 **CertificateType** 参数。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您无法将输入数据通过管道（pipe）传递给此cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.KpsServer.Common.Store.Data.KeyCertificate"
+msgstr "### Microsoft.Windows.KpsServer COMMON.Store.Data.KeyCertificate"
+
+msgid ""
+"This cmdlet returns a key certificate.\n"
+"The object contains the following fields:"
+msgstr "此cmdlet返回一个密钥证书。该对象包含以下字段："
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-HgsKeyProtectionCertificate](./Add-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"[Add-HgsKeyProtectionCertificate](./Add-HgsKeyProtectionCertificate.md)"
+
+msgid ""
+"[Remove-HgsKeyProtectionCertificate](./Remove-"
+"HgsKeyProtectionCertificate.md)"
+msgstr ""
+"[Remove-HgsKeyProtectionCertificate](./Remove-"
+"HgsKeyProtectionCertificate.md)"
+
+msgid ""
+"[Set-HgsKeyProtectionCertificate](./Set-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"[Set-HgsKeyProtectionCertificate](./Set-HgsKeyProtectionCertificate.md)"

@@ -1,0 +1,211 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:44:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-VMNetworkAdapter"
+msgstr "# 添加虚拟机网络适配器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds a virtual network adapter to a virtual machine."
+msgstr "为虚拟机添加一个虚拟网络适配器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-VMNetworkAdapter** cmdlet adds a virtual network adapter to a "
+"virtual machine."
+msgstr "`Add-VMNetworkAdapter` cmdlet 用于向虚拟机添加一个虚拟网络适配器。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example adds a virtual network adapter named Redmond NIC1 to a virtual "
+"machine named Redmond."
+msgstr "这个示例为名为“Redmond”的虚拟机添加了一个名为“Redmond NIC1”的虚拟网络适配器。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example adds a virtual network adapter to a virtual machine named Test "
+"and connects it to a virtual switch named Network."
+msgstr "这个示例为名为“Test”的虚拟机添加了一个虚拟网络适配器，并将其连接到名为“Network”的虚拟交换机上。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example uses two cmdlets and the pipeline in one command to perform the"
+" operation."
+msgstr "这个示例在一个命令中使用了两个 cmdlet 和管道来执行操作。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example adds a second virtual network adapter in the management "
+"operating system."
+msgstr "这个示例在管理操作系统中添加了第二个虚拟网络适配器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual network adapter is to be added.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于添加虚拟网络适配器的 Hyper-V 主机。允许使用 NetBIOS 名称、IP "
+"地址或完全限定域名作为主机标识。默认值为本地计算机。可以使用 `localhost` 或点（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Assigns a dynamically generated MAC address to the new virtual network "
+"adapter."
+msgstr "为新虚拟网络适配器分配一个动态生成的MAC地址。"
+
+msgid "Specifies whether the virtual network adapter is the legacy type."
+msgstr "指定虚拟网络适配器是否属于旧版类型。"
+
+msgid "Specifies the management operating system."
+msgstr "指定管理操作系统。"
+
+msgid ""
+"Specifies a name for the new virtual network adapter.\n"
+"The default value is \"Network Adapter.\""
+msgstr "为新虚拟网络适配器指定一个名称。默认值为“Network Adapter”。"
+
+msgid ""
+"Specifies that an object is to be passed through to be pipeline representing the network adapter to be added.\n"
+"If you specify **-ManagementOS**, the object passed is a **Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter**; otherwise the object passed is a **Microsoft.HyperV.PowerShell.VMNetworkAdapter**."
+msgstr ""
+"指定要传递一个对象，该对象将通过管道表示要添加的网络适配器。如果您指定了 **-ManagementOS**，则传递的对象是 "
+"**Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter**；否则，传递的对象是 "
+"**Microsoft.HyperV POWERShell.VMNetworkAdapter**。"
+
+msgid "Specifies the friendly name of a resource pool."
+msgstr "指定资源池的友好名称。"
+
+msgid "Assigns a specific MAC address to the new virtual network adapter."
+msgstr "为新虚拟网络适配器分配一个特定的MAC地址。"
+
+msgid ""
+"Specifies the name of the virtual switch to connect to the new network adapter.\n"
+"If the switch name is not unique, then the operation fails."
+msgstr "指定要连接到新网络适配器的虚拟交换机的名称。如果交换机名称不唯一，则操作会失败。"
+
+msgid ""
+"Specifies the virtual machine on which the network adapter is to be added."
+msgstr "指定要添加网络适配器的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine on which the network adapter is to"
+" be added."
+msgstr "指定要添加网络适配器的虚拟机的名称。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上，这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "By default, this cmdlet doesn't return any output."
+msgstr "默认情况下，此cmdlet不会返回任何输出。"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapter"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapter"
+
+msgid ""
+"If **PassThru** is specified, a "
+"**Microsoft.HyperV.PowerShell.VMNetworkAdapter** object is output by "
+"default."
+msgstr ""
+"如果指定了 **PassThru**，则默认会输出一个 **Microsoft.HyperV.PowerShell.VMNetworkAdapter**"
+" 对象。"
+
+msgid "### Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter"
+msgstr "### Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter"
+
+msgid ""
+"If **PassThru** and **ManagementOS** is specified, then "
+"**Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter** is output."
+msgstr ""
+"如果指定了 **PassThru** 和 **ManagementOS**，那么将会输出 "
+"**Microsoft.HyperV.PowerShell.VMInternalNetworkAdapter**。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

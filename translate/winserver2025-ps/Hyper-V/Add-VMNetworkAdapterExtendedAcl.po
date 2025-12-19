@@ -1,0 +1,245 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:45:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-VMNetworkAdapterExtendedAcl"
+msgstr "# 添加扩展访问控制列表（Extended Access Control List, ACL）到虚拟机网络适配器"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates an extended ACL for a virtual network adapter."
+msgstr "为虚拟网络适配器创建一个扩展的访问控制列表（ACL）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-VMNetworkAdapterExtendedAcl** cmdlet creates an extended access control list (ACL) for a virtual network adapter.\n"
+"The ACL allows or denies access to a virtual machine network adapter for network packets based on source IP address, destination IP address, protocol, source port, and destination port."
+msgstr ""
+"`Add-VMNetworkAdapterExtendedAcl` cmdlet 用于为虚拟网络适配器创建一个扩展的访问控制列表（ACL）。该 ACL "
+"根据源 IP 地址、目标 IP 地址、协议、源端口和目标端口来允许或拒绝网络数据包对虚拟机网络适配器的访问。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create an ACL for Remote Desktop Protocol"
+msgstr "### 示例 1：为远程桌面协议（Remote Desktop Protocol）创建访问控制列表（ACL）"
+
+msgid ""
+"This command creates a stateful inbound ACL that allows a remote device to "
+"connect to the virtual machine on port 3389, which is the port for Remote "
+"Desktop Protocol."
+msgstr ""
+"这个命令创建了一个有状态的入站访问控制列表（ACL），允许远程设备通过端口3389连接到虚拟机。端口3389是用于远程桌面协议（Remote "
+"Desktop Protocol）的端口。"
+
+msgid "### Example 2: Create an ACL to initiate a connection with timeout"
+msgstr "### 示例 2：创建一个访问控制列表（ACL），以在超时情况下发起连接"
+
+msgid ""
+"This command creates a stateful ACL that allows outbound packets to a remote device by using TCP.\n"
+"If there is no activity for 3600 seconds, the connection times out."
+msgstr ""
+"该命令创建了一个有状态（stateful）的访问控制列表（ACL），允许数据包通过TCP协议发送到远程设备。如果3600秒内没有数据传输活动，连接将会超时。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the action for the ACL.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定访问控制列表（ACL）的操作类型。该参数允许的值包括："
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies an array of Hyper-V hosts.\n"
+"The cmdlet adds the ACL to the network adapters on the Hyper-V hosts that you specify."
+msgstr "指定一个Hyper-V主机的数组。该cmdlet会为您指定的Hyper-V主机上的网络适配器添加访问控制列表（ACL）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the direction of network traffic, from the perspective of the virtual machine, to which the ACL applies.\n"
+"The cmdlet adds an ACL that has the value that you specify.\n"
+"The acceptable values for this parameter are:"
+msgstr ""
+"指定网络流量的方向，这是从应用该访问控制列表（ACL）的虚拟机的角度来看的。此cmdlet会添加一个具有您所指定值的ACL。该参数的可接受值包括："
+
+msgid "Specifies a time-out period, in seconds, for idle sessions."
+msgstr "指定空闲会话的超时时间（以秒为单位）。"
+
+msgid ""
+"Specifies an ID of a virtual subnet.\n"
+"The cmdlet adds an ACL that applies to traffic on the isolated network that you specify.\n"
+"The subnet uses virtual local area network (VLAN) or Hyper-V Network Virtualization.\n"
+"For more information about isolation IDs, see the **Set-VmNetworkAdapterIsolation** cmdlet."
+msgstr ""
+"用于指定一个虚拟子网的 ID。该 cmdlet 会添加一个 ACL（访问控制列表），该 ACL "
+"适用于您所指定的隔离网络中的流量。该子网使用虚拟局域网（VLAN）或 Hyper-V 网络虚拟化技术。有关隔离 ID 的更多信息，请参阅 **Set-"
+"VmNetworkAdapterIsolation** cmdlet。"
+
+msgid ""
+"Specifies the local IP address for the ACL.\n"
+"For an inbound packet, the local address is the destination IP address.\n"
+"For an outbound packet, the local address is the source IP address.\n"
+"You can specify a host address or a subnet address, or specify a wildcard, such as 0.0.0.0/0 for all IPv4 addresses, ::/0 for all IPv6 addresses, or ANY for all IPv4 and IPv6 addresses."
+msgstr ""
+"指定用于访问控制列表（ACL）的本地IP地址。对于入站数据包，该本地地址是目的IP地址；对于出站数据包，该本地地址是源IP地址。您可以指定一个主机地址或子网地址，也可以使用通配符，例如：0.0.0.0/0"
+" 表示所有IPv4地址，::/0 表示所有IPv6地址，ANY 表示所有IPv4和IPv6地址。"
+
+msgid ""
+"Specifies the local port for the ACL. A port range format can also be used (i.e. \"49152-49182\", for example).\n"
+"For an inbound TCP or UDP packet, the local port is the destination port.\n"
+"For an outbound packet, the local port is the source port."
+msgstr ""
+"指定用于访问控制列表（ACL）的本地端口。也可以使用端口范围格式（例如：“49152-49182”）。对于入站TCP或UDP数据包，本地端口是目标端口；对于出站数据包，本地端口是源端口。"
+
+msgid ""
+"Indicates that the cmdlet operates on the parent or host operating system.\n"
+"If you specify this parameter, this cmdlet creates an ACL that applies to the parent or host operating system."
+msgstr ""
+"表示该cmdlet作用于父操作系统或主机操作系统。如果您指定了此参数，该cmdlet将创建一个适用于父操作系统或主机操作系统的ACL（访问控制列表）。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the protocol that the ACL applies to.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定ACL适用的协议。该参数的可接受值包括："
+
+msgid ""
+"Indicates whether the ACL applies to packets in both directions of the same session.\n"
+"If you specify a value of $True, the ACL applies to a return packet even though that packet has the opposite direction with respect to the ACL."
+msgstr ""
+"该属性用于指示访问控制列表（ACL）是否适用于同一会话中数据包的往返方向。如果您指定值为 "
+"`$True`，那么即使返回数据包的方向与ACL规定的方向相反，ACL仍然会对其进行应用。"
+
+msgid ""
+"Specifies an array of virtual machine objects.\n"
+"The cmdlet adds an ACL for the virtual machines that you specify.\n"
+"To obtain a virtual machine object, use the **Get-VM** cmdlet."
+msgstr ""
+"指定一个虚拟机对象的数组。该cmdlet会为您指定的虚拟机添加访问控制列表（ACL）。要获取虚拟机对象，请使用**Get-VM** cmdlet。"
+
+msgid ""
+"Specifies an array of names of virtual machines.\n"
+"The cmdlet adds an ACL for the virtual machines that you specify."
+msgstr "指定一个虚拟机名称数组。该cmdlet会为您指定的虚拟机添加访问控制列表（ACL）。"
+
+msgid ""
+"Specifies an array VM network adapters as **VMNetworkAdapterBase** objects.\n"
+"The cmdlet adds an ACL to the adapters that you specify.\n"
+"To obtain a network adapter, use the **Get-VMNetworkAdapter** cmdlet."
+msgstr ""
+"指定一个由 **VMNetworkAdapterBase** 对象组成的虚拟机（VM）网络适配器数组。该 cmdlet "
+"会为您指定的适配器添加访问控制列表（ACL）。要获取网络适配器，请使用 **Get-VMNetworkAdapter** cmdlet。"
+
+msgid ""
+"Specifies the name of a virtual network adapter.\n"
+"The cmdlet adds an ACL to the adapter that you specify."
+msgstr "用于指定虚拟网络适配器的名称。该cmdlet会为您指定的适配器添加一个访问控制列表（ACL）。"
+
+msgid ""
+"Specifies the weight of an ACL entry.\n"
+"Larger weight values apply first, and once an ACL entry applies to a packet, other entries are no longer relevant for that packet."
+msgstr ""
+"用于指定访问控制列表（ACL）条目的权重。权重值较大的条目会优先被应用；一旦某个ACL条目适用于某个数据包，其他条目对该数据包就不再具有约束作用了。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。不过实际上这个cmdlet并没有被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterExtendedAclSetting"
+msgstr "### Microsoft.HyperV POWERShell.VMNetworkAdapterExtendedAclSetting"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-VMNetworkAdapterExtendedAcl](./Get-VMNetworkAdapterExtendedAcl.md)"
+msgstr ""
+"[Get-VMNetworkAdapterExtendedAcl](./Get-VMNetworkAdapterExtendedAcl.md)"
+
+msgid ""
+"[Remove-VMNetworkAdapterExtendedAcl](./Remove-"
+"VMNetworkAdapterExtendedAcl.md)"
+msgstr ""
+"[Remove-VMNetworkAdapterExtendedAcl](./Remove-"
+"VMNetworkAdapterExtendedAcl.md)"
+
+msgid "[Get-VM](./Get-VM.md)"
+msgstr "[Get-VM](./Get-VM.md)"
+
+msgid "[Set-VmNetworkAdapterIsolation](./Set-VmNetworkAdapterIsolation.md)"
+msgstr "[Set-VmNetworkAdapterIsolation](./Set-VmNetworkAdapterIsolation.md)"

@@ -1,0 +1,120 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:07:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WmsSession"
+msgstr "# Get-WmsSession"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets session information."
+msgstr "获取会话信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "### GetById"
+msgstr "### getContent"
+
+msgid "### GetAll"
+msgstr "### GetAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-WmsSession** cmdlet gets information for a specified session or "
+"for all sessions."
+msgstr "`Get-WmsSession` cmdlet 可以获取指定会话的所有信息，或者获取所有会话的信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all sessions"
+msgstr "### 示例 1：获取所有会话"
+
+msgid ""
+"This command gets session information for all sessions.\n"
+"The session with ID 2 is a remote session, and the session with ID 3 is a session connected to a local Windows MultiPoint Server station."
+msgstr ""
+"这个命令可以获取所有会话的会话信息。ID为2的会话是一个远程会话，而ID为3的会话则连接到了一个本地的Windows MultiPoint "
+"Server站点上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 `localhost`。"
+
+msgid "Specifies an array of session IDs."
+msgstr "指定一个会话ID数组。"
+
+msgid "Specifies the Thumbnail size of the session."
+msgstr "指定会话缩略图的尺寸。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.WmsSession"
+msgstr ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShellCommands.Library.WmsSession"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Close-WmsSession](./Close-WmsSession.md)"
+msgstr "[关闭WMS会话](./Close-WmsSession.md)"
+
+msgid "[Disconnect-WmsSession](./Disconnect-WmsSession.md)"
+msgstr "[disconnect-WmsSession](./ Disconnect-WmsSession.md)"
+
+msgid "[Lock-WmsSession](./Lock-WmsSession.md)"
+msgstr "[Lock-WmsSession](./Lock-WmsSession.md)"
+
+msgid "[Unlock-WmsSession](./Unlock-WmsSession.md)"
+msgstr "[解锁 WMS 会话](./Unlock-WmsSession.md)"

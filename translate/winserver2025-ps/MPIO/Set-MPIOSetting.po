@@ -1,0 +1,67 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:38:00 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-MPIOSetting"
+msgstr "# Set-MPIOSetting"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Changes MPIO settings."
+msgstr "修改 MPIO（多路径 I/O）设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Set-MPIOSetting** cmdlet changes Microsoft Multipath I/O (MPIO) settings.\n"
+"The settings are as follows:"
+msgstr "`Set-MPIOSetting` cmdlet 用于更改 Microsoft 多路径 I/O（MPIO）的设置。这些设置包括以下内容："
+
+msgid ""
+"Specifies a retry interval, in seconds.\n"
+"This is the length of time after which the server retries a failed I/O request.\n"
+"The default value is one second."
+msgstr "指定重试间隔时间（以秒为单位）。这是服务器在失败的一次输入/输出（I/O）请求后重新尝试该请求所需的时间。默认值为1秒。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-MPIOSetting](./Get-MPIOSetting.md)"
+msgstr "[Get-MPIOSetting](./Get-MPIOSetting.md)"

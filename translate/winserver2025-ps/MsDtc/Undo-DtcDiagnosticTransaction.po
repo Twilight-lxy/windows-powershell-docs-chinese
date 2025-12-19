@@ -1,0 +1,97 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:54:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Undo-DtcDiagnosticTransaction"
+msgstr "# 撤销 DTC 诊断交易"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Invokes the Abort process on the specified transaction."
+msgstr "对指定的事务调用“Abort”（终止）过程。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Undo-DtcDiagnosticTransaction** cmdlet invokes the Abort process on "
+"the specified transaction."
+msgstr "` Undo-DtcDiagnosticTransaction` cmdlet 会调用指定事务上的 `Abort` 过程。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Undo a DTC diagnostic transaction"
+msgstr "### 示例 1：撤销 DTC（诊断故障代码）相关的诊断操作"
+
+msgid ""
+"This command creates a new diagnostic transaction and assigns it to a "
+"variable."
+msgstr "此命令创建一个新的诊断事务，并将其赋值给一个变量。"
+
+msgid "The second command undoes the transaction."
+msgstr "第二个命令会撤销该交易。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the **DtcDiagnosticTransaction** object on which to invoke the Abort process.\n"
+"You can use the pipeline operator to pass this parameter value to the cmdlet."
+msgstr ""
+"指定用于调用 `Abort` 过程的 `DtcDiagnosticTransaction` 对象。您可以使用管道运算符将此参数值传递给相应的 "
+"cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Complete-DtcDiagnosticTransaction](./Complete-DtcDiagnosticTransaction.md)"
+msgstr ""
+"[Complete-DtcDiagnosticTransaction](./Complete-DtcDiagnosticTransaction.md)"
+
+msgid "[New-DtcDiagnosticTransaction](./New-DtcDiagnosticTransaction.md)"
+msgstr "[New-DtcDiagnosticTransaction](./New-DtcDiagnosticTransaction.md)"
+
+msgid ""
+"[Receive-DtcDiagnosticTransaction](./Receive-DtcDiagnosticTransaction.md)"
+msgstr "[接收 DTC 诊断事务](./Receive-DtcDiagnosticTransaction.md)"
+
+msgid "[Send-DtcDiagnosticTransaction](./Send-DtcDiagnosticTransaction.md)"
+msgstr "[Send-DtcDiagnosticTransaction](./Send-DtcDiagnosticTransaction.md)"

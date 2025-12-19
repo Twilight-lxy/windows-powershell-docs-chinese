@@ -1,0 +1,166 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:56:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Resize-VHD"
+msgstr "# 调整VHD的大小"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Resizes a virtual hard disk."
+msgstr "调整虚拟硬盘的大小。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Size (Default)"
+msgstr "### 大小（默认值）"
+
+msgid "### MinimumSize"
+msgstr "### 最小尺寸（MinimumSize）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Resize-VHD** cmdlet changes the maximum physical size of a virtual hard disk. It can expand both VHD and VHDX files but can shrink only VHDX files.\n"
+"The shrink operation fails if it would shrink the virtual disk to less than its minimum size (available through the VHDX object's **MinimumSize** property)."
+msgstr ""
+"`Resize-VHD` cmdlet 可以更改虚拟硬盘的最大物理容量。它可以扩展 VHD 和 VHDX 文件，但只能缩小 VHDX "
+"文件。如果缩小后的虚拟硬盘容量小于其最小容量（该最小容量可通过 VHDX 对象的 `MinimumSize` 属性获取），则缩小操作会失败。"
+
+msgid ""
+"If the virtual disk file connects to a virtual machine's IDE chain, you **cannot** resize the virtual disk while the virtual machine is online.\n"
+"If the virtual disk file connects to a virtual machine's SCSI chain, you **can** resize the virtual disk while the virtual machine is online."
+msgstr ""
+"如果虚拟磁盘文件连接到虚拟机的 IDE 链接上，那么在虚拟机处于在线状态时**无法**调整虚拟磁盘的容量。如果虚拟磁盘文件连接到虚拟机的 SCSI "
+"链接上，则可以在虚拟机处于在线状态时调整其容量。"
+
+msgid ""
+"> [!NOTE]\n"
+"> Resize-VHD does not remove empty blocks from a dynamically-expanding virtual hard disk file. Use Optimize-VHD instead."
+msgstr ""
+"> [!注意] > `Resize-VHD` 不会从动态扩展的虚拟硬盘文件中删除空闲的数据块。请使用 `Optimize-VHD` 代替它。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Expands the VHD to 1 terabyte if the previous size was less than 1 terabyte."
+" If it was larger, the cmdlet will report an error because it cannot shrink "
+"a VHD."
+msgstr "如果VHD的原始大小小于1TB，该命令会将VHD扩展到1TB。如果原始大小已经大于1TB，命令将报告错误，因为无法缩小VHD的大小。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Changes the VHDX's size to 20 gigabytes (21,474,836,480 bytes). If it was "
+"larger, the cmdlet will only succeed if it had a **MinimumSize** less than "
+"or equal to 20 gigabytes."
+msgstr ""
+"将VHDX的大小更改为20吉字节（21,474,836,480字节）。如果VHDX的大小大于20吉字节，那么只有当`MinimumSize`小于或等于20吉字节时，该cmdlet才能成功执行。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Shrinks the VHDX to its minimum possible size as indicated in its "
+"**MinimumSize** property."
+msgstr "将VHDX文件压缩到其**MinimumSize**属性所指定的最小可能大小。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Runs the cmdlet as a background job."
+msgstr "以后台作业的形式运行该cmdlet。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which a virtual hard disk is to be resized.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于调整虚拟硬盘大小的 Hyper-V 主机。允许使用 NetBIOS 名称、IP "
+"地址或完全限定的域名作为主机标识。默认值是本地计算机。可以使用 `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies that an object representing the resized virtual hard disk is to be"
+" passed through to the pipeline."
+msgstr "指定需要将一个表示已调整大小虚拟硬盘的对象传递给后续处理流程（即管道）。"
+
+msgid "Specifies the path to the virtual hard disk that is to be resized."
+msgstr "指定需要调整大小的虚拟硬盘的路径。"
+
+msgid "Specifies the size to which the virtual hard disk is to be resized."
+msgstr "指定虚拟硬盘需要调整到的大小。"
+
+msgid ""
+"Specifies that the virtual hard disk is to be resized to its minimum "
+"possible size."
+msgstr "指定将虚拟硬盘的大小调整为其可能的最小值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+msgstr "### Microsoft.Vhd.PowerShell.VirtualHardDisk"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

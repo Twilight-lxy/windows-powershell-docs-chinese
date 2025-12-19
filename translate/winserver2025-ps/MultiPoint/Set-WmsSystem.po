@@ -1,0 +1,137 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:14:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-WmsSystem"
+msgstr "# Set-WmsSystem"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies system properties."
+msgstr "修改系统属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-WmsSystem** cmdlet modifies system properties for a MultiPoint "
+"Server system."
+msgstr "`Set-WmsSystem` cmdlet 用于修改多点服务器（MultiPoint Server）系统的系统属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify system settings"
+msgstr "#### 示例 1：修改系统设置"
+
+msgid ""
+"This command enables the Customer Experience Improvement Program (CEIP) for "
+"the current system and also enables the current system desktop to be "
+"monitored."
+msgstr "此命令为当前系统启用了客户体验改善计划（CEIP），同时还能对当前系统的桌面环境进行监控。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Indicates whether to allow Admin Orchestration."
+msgstr "指示是否允许管理员进行编排（Orchestration）。"
+
+msgid "Indicates whether to enable Boot to Console Mode."
+msgstr "指示是否启用“从启动状态切换到控制台模式”的功能。"
+
+msgid "Indicates whether to allow desktop monitoring."
+msgstr "表示是否允许进行桌面监控。"
+
+msgid "Indicates whether to enable the chat feature."
+msgstr "表示是否启用聊天功能。"
+
+msgid "Indicates whether to assign each session a unique IP address."
+msgstr "表示是否为每个会话分配一个唯一的IP地址。"
+
+msgid ""
+"Specifies the mode.\n"
+"The acceptable values for this parameter are: Console, MultiStation."
+msgstr "指定模式。该参数的可接受值为：Console（控制台）和MultiStation（多站点）。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定该命令的目标多点服务器（MultiPoint Server）的完整主机名。默认值为“localhost”。"
+
+msgid ""
+"Indicates whether a user can log on to multiple stations with the same user "
+"account."
+msgstr "表示用户是否可以使用相同的用户名登录多个工作站。"
+
+msgid "Indicates whether to disable privacy notificationfor standard users."
+msgstr "表示是否禁用标准用户的隐私通知功能。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid ""
+"### System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, "
+"Culture=neutral, PublicKeyToken=b77a5c561934e089]]"
+msgstr ""
+"### `SystemNullable`  \n"
+"1[[`System(Boolean`, `mscorlib`, `Version=4.0.0.0`, `Culture=neutral`, `PublicKeyToken=b77a5c561934e089`]]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-WmsSystem](./Add-WmsSystem.md)"
+msgstr "[Add-WmsSystem](./Add-WmsSystem.md)"
+
+msgid "[Get-WmsSystem](./Get-WmsSystem.md)"
+msgstr "[Get-WmsSystem](./Get-WmsSystem.md)"
+
+msgid "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+msgstr "[Remove-WmsSystem](./Remove-WmsSystem.md)"
+
+msgid "[Restart-WmsSystem](./Restart-WmsSystem.md)"
+msgstr "[重启 WMS 系统](./Restart-WmsSystem.md)"
+
+msgid "[Search-WmsSystem](./Search-WmsSystem.md)"
+msgstr "[Search-WmsSystem](./Search-WmsSystem.md)"
+
+msgid "[Stop-WmsSystem](./Stop-WmsSystem.md)"
+msgstr "[Stop-WmsSystem](./Stop-WmsSystem.md)"

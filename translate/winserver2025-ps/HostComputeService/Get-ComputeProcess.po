@@ -1,0 +1,96 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:37:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-ComputeProcess"
+msgstr "# Get-ComputeProcess"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets a list of running compute systems from the Hyper-V Host Compute "
+"Service."
+msgstr "从 Hyper-V 主机计算服务中获取正在运行的计算系统列表。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Filters (Default)"
+msgstr "### 过滤器（默认设置）"
+
+msgid "### Id"
+msgstr "### ID"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-ComputeProcess** cmdlet gets a list of running compute systems "
+"from the Hyper-V Host Compute Service, including virtual machines and "
+"containers."
+msgstr ""
+"`Get-ComputeProcess` cmdlet 从 Hyper-V 主机计算服务中获取正在运行的计算系统列表，其中包括虚拟机和容器。"
+
+msgid "You must run this cmdlet from an elevated PowerShell session."
+msgstr "你必须从提升权限的 PowerShell 会话中运行此cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies an array of IDs of compute systems that this cmdlet gets."
+msgstr "指定一个计算系统ID数组，该cmdlet将从这个数组中获取所需的信息。"
+
+msgid "Specifies the name of the compute system that this cmdlet gets."
+msgstr "指定此cmdlet获取的计算系统的名称。"
+
+msgid ""
+"Specifies the management client that owns the compute systems that this "
+"cmdlet gets."
+msgstr "指定管理客户端，该客户端拥有此cmdlet所获取的计算系统。"
+
+msgid ""
+"Specifies the type of compute systems that this cmdlet gets.\n"
+"The acceptable values for this parameter are: VirtualMachine and Container."
+msgstr "指定此cmdlet获取的计算系统类型。该参数的可接受值为：VirtualMachine和Container。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Stop-ComputeProcess](./Stop-ComputeProcess.md)"
+msgstr "[Stop-ComputeProcess](./Stop-ComputeProcess.md)"

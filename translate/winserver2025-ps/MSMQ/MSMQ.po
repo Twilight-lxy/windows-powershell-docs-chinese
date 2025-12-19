@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:58:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# MSMQ Module"
+msgstr "# MSMQ模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all MSMQ-specific"
+" cmdlets. It lists the cmdlets in alphabetical order based on the verb at "
+"the beginning of the cmdlet."
+msgstr ""
+"这个参考资料提供了所有针对 Microsoft Message Queue (MSMQ) 的 cmdlet 的描述和语法。这些 cmdlet 是按照每个"
+" cmdlet 开头处的动词（即命令操作）的字母顺序排列的。"
+
+msgid "## MSMQ Cmdlets"
+msgstr "## MSMQ Cmdlets"
+
+msgid "### [Clear-MsmqOutgoingQueue](./Clear-MsmqOutgoingQueue.md)"
+msgstr "### [Clear-MsmqOutgoingQueue](./Clear-MsmqOutgoingQueue.md)"
+
+msgid "Clears outgoing queues."
+msgstr "清空出站消息队列。"
+
+msgid "### [Clear-MsmqQueue](./Clear-MsmqQueue.md)"
+msgstr "### [Clear-MsmqQueue](./Clear-MsmqQueue.md)"
+
+msgid "Clears queues."
+msgstr "清除队列中的等待项。"
+
+msgid "### [Enable-MsmqCertificate](./Enable-MsmqCertificate.md)"
+msgstr "### [Enable-MsmqCertificate](./Enable-MsmqCertificate.md)"
+
+msgid "Registers a certificate with Active Directory Domain Services."
+msgstr "将证书注册到 Active Directory 域服务中。"
+
+msgid "### [Get-MsmqCertificate](./Get-MsmqCertificate.md)"
+msgstr "### [Get-MsmqCertificate](./Get-MsmqCertificate.md)"
+
+msgid "Gets certificates registered in Active Directory Domain Services."
+msgstr "用于将证书注册到 Active Directory 域服务中。"
+
+msgid "### [Get-MsmqOutgoingQueue](./Get-MsmqOutgoingQueue.md)"
+msgstr "### [Get-MsmqOutgoingQueue](./Get-MsmqOutgoingQueue.md)"
+
+msgid "Gets outgoing message queues."
+msgstr "获取出站消息队列。"
+
+msgid "### [Get-MsmqQueue](./Get-MsmqQueue.md)"
+msgstr "### [Get-MsmqQueue](./Get-MsmqQueue.md)"
+
+msgid "Gets message queues."
+msgstr "获取消息队列。"
+
+msgid "### [Get-MsmqQueueACL](./Get-MsmqQueueACL.md)"
+msgstr "### [Get-MsmqQueueACL](./Get-MsmqQueueACL.md)"
+
+msgid "Gets queue access control lists."
+msgstr "获取队列访问控制列表。"
+
+msgid "### [Get-MsmqQueueManager](./Get-MsmqQueueManager.md)"
+msgstr "### [Get-MsmqQueueManager](./Get-MsmqQueueManager.md)"
+
+msgid "Gets a queue manager."
+msgstr "获取一个队列管理器。"
+
+msgid "### [Get-MsmqQueueManagerACL](./Get-MsmqQueueManagerACL.md)"
+msgstr "### [Get-MsmqQueueManagerACL](./Get-MsmqQueueManagerACL.md)"
+
+msgid "Gets access control lists for the local queue manager."
+msgstr "获取本地队列管理器的访问控制列表。"
+
+msgid "### [Move-MsmqMessage](./Move-MsmqMessage.md)"
+msgstr "### [Move-MsmqMessage](./Move-MsmqMessage.md)"
+
+msgid ""
+"Moves messages between subqueues or between the main queue and a subqueue."
+msgstr "在子队列之间或主队列与子队列之间移动消息。"
+
+msgid "### [New-MsmqMessage](./New-MsmqMessage.md)"
+msgstr "### [New-MsmqMessage](./New-MsmqMessage.md)"
+
+msgid "Creates a message object."
+msgstr "创建一个消息对象。"
+
+msgid "### [New-MsmqQueue](./New-MsmqQueue.md)"
+msgstr "### [New-MsmqQueue](./New-MsmqQueue.md)"
+
+msgid "Creates public or private queues."
+msgstr "创建公共或私有队列。"
+
+msgid "### [Receive-MsmqQueue](./Receive-MsmqQueue.md)"
+msgstr "### [接收-MsmqQueue](./Receive-MsmqQueue.md)"
+
+msgid "Does a destructive read from a queue."
+msgstr "从队列中进行破坏性读取操作（即：在读取数据的同时修改或删除队列中的其他数据）。"
+
+msgid "### [Remove-MsmqCertificate](./Remove-MsmqCertificate.md)"
+msgstr "### [Remove-MsmqCertificate](./Remove-MsmqCertificate.md)"
+
+msgid "Removes personal certificates."
+msgstr "删除个人证书。"
+
+msgid "### [Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+msgstr "### [Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+
+msgid "Deletes queues."
+msgstr "删除队列。"
+
+msgid "### [Resume-MsmqOutgoingQueue](./Resume-MsmqOutgoingQueue.md)"
+msgstr "### [Resume-MsmqOutgoingQueue](./Resume-MsmqOutgoingQueue.md)"
+
+msgid "Resumes outgoing queues."
+msgstr "恢复出队的工作流程（即让那些被暂时搁置的任务重新开始执行）。"
+
+msgid "### [Send-MsmqQueue](./Send-MsmqQueue.md)"
+msgstr "### [Send-MsmqQueue](./Send-MsmqQueue.md)"
+
+msgid "Sends a test message to remote queues."
+msgstr "向远程队列发送一条测试消息。"
+
+msgid "### [Set-MsmqQueue](./Set-MsmqQueue.md)"
+msgstr "### [Set-MsmqQueue](./Set-MsmqQueue.md)"
+
+msgid "Sets properties of queues."
+msgstr "设置队列的相关属性。"
+
+msgid "### [Set-MsmqQueueACL](./Set-MsmqQueueACL.md)"
+msgstr "### [Set-MsmqQueueACL](./Set-MsmqQueueACL.md)"
+
+msgid "Modifies the access rights of queues."
+msgstr "修改队列的访问权限。"
+
+msgid "### [Set-MsmqQueueManager](./Set-MsmqQueueManager.md)"
+msgstr "### [Set-MsmqQueueManager](./Set-MsmqQueueManager.md)"
+
+msgid "Configures the queue manager."
+msgstr "配置队列管理器。"
+
+msgid "### [Set-MsmqQueueManagerACL](./Set-MsmqQueueManagerACL.md)"
+msgstr "### [Set-MsmqQueueManagerACL](./Set-MsmqQueueManagerACL.md)"
+
+msgid "Modifies the access rights of a queue manager."
+msgstr "修改队列管理器的访问权限。"
+
+msgid "### [Suspend-MsmqOutgoingQueue](./Suspend-MsmqOutgoingQueue.md)"
+msgstr "### [Suspend-MsmqOutgoingQueue](./Suspend-MsmqOutgoingQueue.md)"
+
+msgid "Pauses outgoing queues."
+msgstr "暂停出队的消息处理（即暂时不将队列中的消息发送出去）。"

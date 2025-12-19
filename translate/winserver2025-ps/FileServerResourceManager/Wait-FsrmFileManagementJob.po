@@ -1,0 +1,179 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:40:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Wait-FsrmFileManagementJob"
+msgstr "# 等待 Fsrm 文件管理作业完成"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Waits for file management jobs to finish running."
+msgstr "等待文件管理任务的执行完成。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Query (cdxml) (Default)"
+msgstr "### 查询（CDXML）（默认值）"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject（cdxml）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Wait-FsrmFileManagementJob** cmdlet waits for the specified period of "
+"time or until the server finishes running one or more file management job."
+msgstr ""
+"`Wait-FsrmFileManagementJob` cmdlet 会等待指定的时间长度，或者直到服务器完成一个或多个文件管理作业的运行。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Wait for a file management job to finish"
+msgstr "#### 示例 1：等待文件管理任务完成"
+
+msgid ""
+"This command waits for the file management job named \"Expire stale data\" "
+"to finish running."
+msgstr "这个命令会等待名为“Expire stale data”的文件管理任务完成运行。"
+
+msgid "### Example 2: Wait for and stop a file management job"
+msgstr "### 示例 2：等待并停止一个文件管理作业"
+
+msgid ""
+"This example waits for the file management job named \"Expire stale data\" "
+"to finish running and then stops the job."
+msgstr "这个示例会等待名为“Expire stale data”的文件管理作业完成运行，然后再停止该作业。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用 `*-Job` "
+"类型的 cmdlets；要获取作业的结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 [关于任务（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您确认是否继续。"
+
+msgid ""
+"Specifies the input to this cmdlet.\n"
+"You can use this parameter, or you can pipe the input to this cmdlet."
+msgstr "指定传递给此 cmdlet 的输入数据。您可以使用该参数，也可以将数据通过管道（pipe）传递给此 cmdlet。"
+
+msgid "Specifies an array of names of file management jobs."
+msgstr "指定一个文件管理作业名称的数组。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时执行的命令（cmdlet）操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM "
+"命令（cmdlets）的数量来计算相应的最佳限制值。该限制仅适用于当前正在执行的命令，而不影响整个会话或计算机本身的性能。"
+
+msgid ""
+"Specifies the number of seconds that the server waits for the file management job to complete.\n"
+"To wait indefinitely, set the value to -1.\n"
+"The value must be in the range from -1 through 2,147,483.\n"
+"If the server is not running the job or the value is set to 0, the cmdlet returns immediately."
+msgstr ""
+"指定服务器等待文件管理任务完成的秒数。如果希望无限期地等待，可以将该值设置为-1。该值的范围必须在-1到2,147,483之间。如果服务器没有运行该任务，或者该值被设置为0，则此cmdlet会立即返回结果。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance[]"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-FsrmFileManagementJob](./Get-FsrmFileManagementJob.md)"
+msgstr "[Get-FsrmFileManagementJob](./Get-FsrmFileManagementJob.md)"
+
+msgid "[New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+msgstr "[New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+
+msgid "[Remove-FsrmFileManagementJob](./Remove-FsrmFileManagementJob.md)"
+msgstr "[Remove-FsrmFileManagementJob](./Remove-FsrmFileManagementJob.md)"
+
+msgid "[Set-FsrmFileManagementJob](./Set-FsrmFileManagementJob.md)"
+msgstr "[Set-FsrmFileManagementJob](./Set-FsrmFileManagementJob.md)"
+
+msgid "[Start-FsrmFileManagementJob](./Start-FsrmFileManagementJob.md)"
+msgstr "[Start-FsrmFileManagementJob](./Start-FsrmFileManagementJob.md)"
+
+msgid "[Stop-FsrmFileManagementJob](./Stop-FsrmFileManagementJob.md)"
+msgstr "[Stop-FsrmFileManagementJob](./Stop-FsrmFileManagementJob.md)"

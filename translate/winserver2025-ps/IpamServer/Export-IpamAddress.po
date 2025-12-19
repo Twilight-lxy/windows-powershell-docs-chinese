@@ -1,0 +1,195 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:54:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Export-IpamAddress"
+msgstr "# 导出 IPAM 地址"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Exports IP addresses from IPAM."
+msgstr "从 IPAM 中导出 IP 地址。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Export-IpamAddress** cmdlet exports all of the IP addresses from an address family in IP Address Management (IPAM).\n"
+"The cmdlet exports the IP addresses as a comma-separated value (CSV) file."
+msgstr ""
+"`Export-IpamAddress` 这个 cmdlet 可以从 IP 地址管理（IPAM）系统中的某个地址族中导出所有 IP "
+"地址，并将这些地址保存为逗号分隔值（CSV）格式的文件。"
+
+msgid ""
+"The field header names and the enumerated values of IP address objects that this cmdlet exports have English names that are culture-independent (invariant) and are not in the localized language that the server uses.\n"
+"The field header names follow the Windows PowerShell property naming conventions.\n"
+"The format of date and time values of the exported objects are in the localized format of the computer that runs the IPAM server and not in Coordinated Universal Time (UTC)."
+msgstr ""
+"此 cmdlet 导出的字段标题名称以及 IP "
+"地址对象的枚举值都采用英语命名，这些英文名称与文化环境无关（即具有普适性），并且不使用服务器所使用的本地化语言。字段标题名称遵循 Windows "
+"PowerShell 的属性命名规范。导出对象的日期和时间值的格式采用的是运行 IPAM 服务器的计算机所处的本地化语言设置，而非协调世界时（UTC）。"
+
+msgid ""
+"The IPAM client console and IPAM Server cmdlets in Windows PowerShell support interoperability between import and export functionality of English and localized CSV files, provided that the language and locale of the computers that run the IPAM server that import and export IP addresses are the same.\n"
+"You can import a localized CSV file that you export from a computer that runs the IPAM client UI by using IPAM Windows PowerShell.\n"
+"You can import an English CSV file that you exported by using IPAM Windows PowerShell from a computer that runs the IPAM client provided the language and locale of the computers that run the IPAM client and IPAM server are the same."
+msgstr ""
+"Windows "
+"PowerShell中的IPAM客户端控制台及IPAM服务器cmdlets支持英语版本与本地化版本的CSV文件之间的导入/导出功能互操作性，前提是用于导入/导出IP地址的IPAM服务器所在计算机的语言和区域设置（locale）保持一致。你可以使用IPAM"
+" Windows "
+"PowerShell导入从运行IPAM客户端界面的计算机导出的本地化CSV文件；同样地，如果你使用的是从运行IPAM客户端的计算机通过IPAM "
+"Windows PowerShell导出的英语版本的CSV文件，也是可以的——前提是这两台计算机的语言和区域设置相同。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Export all IPv4 addresses"
+msgstr "#### 示例 1：导出所有 IPv4 地址"
+
+msgid ""
+"This command exports all the IPv4 addresses in the IPAM server to the "
+"specified path."
+msgstr "该命令会将IPAM服务器中的所有IPv4地址导出到指定的路径。"
+
+msgid "### Example 2: Export all IPv6 addresses"
+msgstr "### 示例 2：导出所有 IPv6 地址"
+
+msgid ""
+"This command exports all the IPv6 addresses in IPAM to the specified path.\n"
+"The command overwrites the file without prompting the user if it already exists."
+msgstr "该命令将IPAM中所有的IPv6地址导出到指定的路径。如果目标文件已经存在，该命令会直接覆盖该文件，而不会提示用户。"
+
+msgid "### Example 3: Output all IPv4 addresses"
+msgstr "### 示例 3：输出所有 IPv4 地址"
+
+msgid "This command outputs all the IPv4 address objects in IPAM."
+msgstr "这个命令会输出IPAM中的所有IPv4地址对象。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 4: Output all expired IPv4 addresses"
+msgstr "### 示例 4：输出所有已过期的 IPv4 地址"
+
+msgid ""
+"This command filters and outputs all of the expired IPv4 address in IPAM."
+msgstr "这个命令会过滤并输出IPAM中所有过期的IPv4地址。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 5: Export all IPv4 addresses that have expired"
+msgstr "### 示例 5：导出所有已过期的 IPv4 地址"
+
+msgid ""
+"This command filters and exports all the expired IPv4 addresses in IPAM to "
+"the specified path."
+msgstr "该命令会过滤并导出 IPAM 中所有已过期的 IPv4 地址到指定的路径。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 6: Export and output all IPv4 addresses that have expired"
+msgstr "### 示例 6：导出并输出所有已过期的 IPv4 地址"
+
+msgid ""
+"This command exports all of the IPv4 Addresses in IPAM to the specified path"
+" and then outputs the exported addresses."
+msgstr "此命令将IPAM中的所有IPv4地址导出到指定的路径，然后输出这些已导出的地址。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an address family of IP addresses.The acceptable values for this "
+"parameter are:"
+msgstr "指定一组IP地址所属的地址族（address family）。该参数的可接受值包括："
+
+msgid "Specifies the absolute path of the exported CSV file."
+msgstr "指定导出的 CSV 文件的绝对路径。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最优限制值。此限制仅适用于当前运行的 cmdlet，不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.Ipam.Commands.IpamIPAddressPSObject[]"
+msgstr "### Microsoft.Windows.Ipamcommands.IpamIPAddressPSObject[]"
+
+msgid ""
+"This cmdlet returns an array of objects that contain IPAM IP addresses."
+msgstr "这个cmdlet返回一个对象数组，其中包含IPAM IP地址。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Import-IpamAddress](./Import-IpamAddress.md)"
+msgstr "[Import-IpamAddress](./Import-IpamAddress.md)"
+
+msgid "[Add-IpamAddress](./Add-IpamAddress.md)"
+msgstr "[Add-IpamAddress](./Add-IpamAddress.md)"
+
+msgid "[Get-IpamAddress](./Get-IpamAddress.md)"
+msgstr "[Get-IpamAddress](./Get-IpamAddress.md)"
+
+msgid "[Set-IpamAddress](./Set-IpamAddress.md)"
+msgstr "[Set-IpamAddress](./Set-IpamAddress.md)"
+
+msgid "[Remove-IpamAddress](./Remove-IpamAddress.md)"
+msgstr "[Remove-IpamAddress](./Remove-IpamAddress.md)"
+
+msgid "[Import-IpamAddress](./Import-IpamAddress.md)"
+msgstr "[导入 Ipam 地址](./Import-IpamAddress.md)"

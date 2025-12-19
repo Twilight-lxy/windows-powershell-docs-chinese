@@ -1,0 +1,98 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:36:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-LogicalNetworkSupportsJumboPacket"
+msgstr "# 测试逻辑网络是否支持大尺寸数据包（Jumbo Packet）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Tests whether a jumbo packet can be sent between two nodes."
+msgstr "测试是否可以在两个节点之间发送一个较大的数据包（即“jumbo packet”）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Test-LogicalNetworkSupportsJumboPacket** cmdlet tests whether a jumbo "
+"packet can be sent between two nodes."
+msgstr ""
+"`Test-LogicalNetworkSupportsJumboPacket` 这个 cmdlet 用于测试两个节点之间是否可以发送 jumbo "
+"数据包。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test a jumbo packet"
+msgstr "### 示例 1：测试一个大型数据包"
+
+msgid ""
+"The first command gets the user's credentials, and then stores them in the "
+"$cred variable."
+msgstr "第一个命令获取用户的凭据信息，然后将其存储在 `$cred` 变量中。"
+
+msgid ""
+"The second command tests a jumbo packet between the specified source and "
+"destination hosts."
+msgstr "第二个命令用于测试在指定的源主机和目标主机之间传输的一个大型数据包（即“jumbo packet”）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the destination IP address or fully qualified domain name (FQDN)."
+msgstr "指定目标 IP 地址或完全限定域名（FQDN）。"
+
+msgid "Specifies the credentials to use on the destination host."
+msgstr "指定要在目标主机上使用的凭据。"
+
+msgid "Specifies the source IP address or FQDN."
+msgstr "指定源IP地址或FQDN。"
+
+msgid "Specifies the credentials to use on the source host."
+msgstr "指定要在源主机上使用的凭据。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,206 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:34:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-IpamRange"
+msgstr "# 设置 IPAM 范围"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Modifies an existing IP address range."
+msgstr "修改现有的IP地址范围。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Query (cdxml) (Default)"
+msgstr "### 查询（cdxml）（默认设置）"
+
+msgid "### InputObject (cdxml)"
+msgstr "### InputObject (cdxml)"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-IpamRange** cmdlet modifies an existing IP address range that an "
+"IP Address Management (IPAM) server manages."
+msgstr "`Set-IpamRange` cmdlet 用于修改由 IP 地址管理（IPAM）服务器管理的现有 IP 地址范围。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify an existing IP address range"
+msgstr "### 示例 1：修改现有的 IP 地址范围"
+
+msgid ""
+"This command modifies an existing IP address range that is currently managed"
+" by IPAM, to be managed by Virtual Machine Manager (VMM)."
+msgstr "此命令用于将当前由 IPAM 管理的现有 IP 地址范围更改为由虚拟机管理器（VMM）进行管理。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 2: Add custom metadata to an IP address range"
+msgstr "### 示例 2：为某个 IP 地址范围添加自定义元数据"
+
+msgid ""
+"This command adds custom metadata to an IP range by using a custom field to "
+"identify the location."
+msgstr "该命令通过使用自定义字段来标识位置，从而为某个IP范围添加自定义元数据。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 3: Modify the network type for an IP address range"
+msgstr "### 示例 3：修改某个 IP 地址范围的网络类型"
+
+msgid ""
+"This command modifies the network type of an IP address range from non-virtualized to provider.\n"
+"By default, the provider address range will be assigned to the default provider address space."
+msgstr ""
+"此命令将一个IP地址范围的网络类型从“非虚拟化”修改为“供应商（provider）”类型。默认情况下，该IP地址范围会被分配到默认的供应商地址空间中。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid ""
+"### Example 4: Modify the network type for an IP address range to its "
+"previous state"
+msgstr "### 示例 4：将某个 IP 地址范围的网络类型修改回其之前的状态"
+
+msgid ""
+"This command modifies the network type of an IP address range from provider to non-virtualized.\n"
+"The non-virtualized address range will be added to the default address space.\n"
+"You cannot specify the provider address space in this case."
+msgstr ""
+"此命令会将一个IP地址范围的网络类型从“provider”修改为“non-"
+"virtualized”。修改后的非虚拟化地址范围将被添加到默认地址空间中。在这种情况下，您无法指定相应的提供商地址空间。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid ""
+"### Example 5: Modify the network type for an IP address range and assign "
+"the IP addresses"
+msgstr "### 示例 5：修改某个 IP 地址范围的网络类型，并分配相应的 IP 地址"
+
+msgid ""
+"This command modifies the network type of an IP address from non-virtualized to provider.\n"
+"The command assigns the IP address to the provider address space ContosoDataCenter."
+msgstr ""
+"此命令将某个IP地址的网络类型从“非虚拟化”更改为“提供商网络类型”，并将该IP地址分配到ContosoDataCenter这个提供商的地址空间中。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies semi-colon (;) separated name/value pairs.\n"
+"This parameter specifies custom metadata that are associated with the address space."
+msgstr "指定用分号（;）分隔的名/值对。该参数用于定义与地址空间关联的自定义元数据。"
+
+msgid ""
+"Specifies an array of names of address spaces.\n"
+"If you do not specify a value, the cmdlet modifies matching ranges from all address spaces."
+msgstr "指定一个地址空间名称的数组。如果您没有指定值，该cmdlet将修改来自所有地址空间的匹配范围。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid "Specifies the date on which to assign addresses in this range."
+msgstr "指定用于分配此范围内地址的日期。"
+
+msgid "Specifies the address assignment type from this range."
+msgstr "指定从这个范围内选择的地址分配类型。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值包括："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CimInstance#ROOT/microsoft/ipam/MSFT_IPAM_Range"
+msgstr "### CimInstance#ROOT/microsoft/ipam/MSFT_IPAM_Range"
+
+msgid ""
+"This cmdlet returns an object that contains the modified IP address range."
+msgstr "此cmdlet返回一个对象，其中包含修改后的IP地址范围。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-IpamRange](./Add-IpamRange.md)"
+msgstr "[Add-IpamRange](./Add-IpamRange.md)"
+
+msgid "[Export-IpamRange](./Export-IpamRange.md)"
+msgstr "[Export-IpamRange](./Export-IpamRange.md)"
+
+msgid "[Get-IpamRange](./Get-IpamRange.md)"
+msgstr "[Get-IpamRange](./Get-IpamRange.md)"
+
+msgid "[Import-IpamRange](./Import-IpamRange.md)"
+msgstr "[Import-IpamRange](./Import-IpamRange.md)"
+
+msgid "[Remove-IpamRange](./Remove-IpamRange.md)"
+msgstr "[Remove-IpamRange](./Remove-IpamRange.md)"

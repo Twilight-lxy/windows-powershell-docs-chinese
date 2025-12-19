@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:05:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Configures permissions on an Active Directory (AD) Organizational Unit (OU) "
+"to enable computers in that OU to update their Windows Local Administrator "
+"Password Solution (LAPS) passwords."
+msgstr ""
+"配置 Active Directory（AD）组织单位（Organizational Unit，简称 OU）的权限，以便该 OU 中的计算机能够更新其 "
+"Windows 本地管理员密码解决方案（Local Administrator Password Solution，简称 LAPS）中的密码。"
+
+msgid "# Set-LapsADComputerSelfPermission"
+msgstr "# 设置 Set-LapsADComputerSelfPermission 的值"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Configures permissions on an Active Directory (AD) Organizational Unit (OU) to enable computers in\n"
+"that OU to update their Windows Local Administrator Password Solution (LAPS) passwords."
+msgstr ""
+"配置 Active Directory（AD）组织单位（OU）的权限，以允许该 OU 中的计算机更新其 Windows "
+"本地管理员密码解决方案（LAPS）的密码。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Set-LapsADComputerSelfPermission` cmdlet is used by administrators to configure security\n"
+"permissions on an OU to allow computers in that OU to update their LAPS passwords."
+msgstr ""
+"`Set-LapsADComputerperms` 这个 cmdlet 被管理员用来配置某个组织单元（OU）的安全权限，以允许该 OU "
+"中的计算机更新它们的 LAPS 密码。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "#### 示例 1"
+
+msgid "This example demonstrates how to run the cmdlet."
+msgstr "这个示例演示了如何运行该cmdlet。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the credentials to use when updating AD. If not specified, the current\n"
+"user's credentials are used."
+msgstr "指定在更新 Active Directory (AD) 时使用的凭据。如果未指定，则使用当前用户的凭据。"
+
+msgid "Specifies the name of the domain to connect to."
+msgstr "指定要连接的域的名称。"
+
+msgid "Specifies the name of the domain controller to connect to."
+msgstr "指定要连接的域控制器的名称。"
+
+msgid "Specifies the name of the OU to update."
+msgstr "指定要更新的OU（组织单位）的名称。"
+
+msgid ""
+"This parameter accepts several different name formats that influence the criteria used in the\n"
+"resultant AD search. The supported name formats are as follows:"
+msgstr "此参数支持几种不同的名称格式，这些格式会影响最终AD搜索中使用的标准。支持的名称格式如下："
+
+msgid ""
+"Setting permissions on the domain root is only supported using the "
+"distinguishedName input format, for example 'DC=laps,DC=com'."
+msgstr "在域根设置权限时，仅支持使用 `distinguishedName` 输入格式，例如 ‘DC=laps,DC=com’。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Windows LAPS Overview](https://go.microsoft.com/fwlink/?linkid=2233901)"
+msgstr "[Windows LAPS概述](https://go.microsoft.com/fwlink/?linkid=2233901)"

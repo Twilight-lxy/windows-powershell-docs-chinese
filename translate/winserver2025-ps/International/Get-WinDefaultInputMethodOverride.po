@@ -1,0 +1,90 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:40:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WinDefaultInputMethodOverride"
+msgstr "# Get-WinDefaultInputMethodOverride"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Gets the default input method override setting for the current user account."
+msgstr "获取当前用户账户的默认输入方法覆盖设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-WinDefaultInputMethodOverride** cmdlet retrieves the default input method override setting, which specifies a default input method for the current user account.\n"
+"If no override setting is used, the input method is dynamically determined from the language list of the current user account.\n"
+"For more information, see the **Get-WinUserLanguageList** and **Set-WinUserLanguageList** cmdlets."
+msgstr ""
+"`Get-WinDefaultInputMethodOverride` cmdlet "
+"用于检索默认的输入方法覆盖设置，该设置指定了当前用户账户的默认输入方法。如果没有使用任何覆盖设置，则输入方法会从当前用户账户的语言列表中动态确定。有关更多信息，请参阅"
+" `Get-WinUserLanguageList` 和 `Set-WinUserLanguageList` cmdlets。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Display default input method"
+msgstr "#### 示例 1：显示默认的输入方法"
+
+msgid ""
+"This command returns and displays the default input method for the current "
+"user account."
+msgstr "该命令会返回并显示当前用户账户的默认输入方法。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### WinKeyboardObject"
+msgstr "### WinKeyboardObject"
+
+msgid ""
+"This cmdlet returns the Tablet Input Panel (TIP) string for the default "
+"input method override setting."
+msgstr "这个 cmdlet 返回用于设置默认输入方法的 Tablet Input Panel（TIP）相关字符串。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Set-WinDefaultInputMethodOverride](./Set-WinDefaultInputMethodOverride.md)"
+msgstr ""
+"[Set-WinDefaultInputMethodOverride](./Set-WinDefaultInputMethodOverride.md)"

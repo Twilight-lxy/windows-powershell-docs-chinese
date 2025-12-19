@@ -1,0 +1,106 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:08:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Set-DiagnosticStoreCapacity"
+msgstr "# 设置诊断存储容量"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the diagnostic store time and size capacity."
+msgstr "设置诊断数据的存储时间和存储容量。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"This cmdlet sets the maximum amount of Diagnostic Data history (by time and by size) that can be shown through this tool.\n"
+"The size cap is measured in megabytes, and the time cap is measured in days.\n"
+"Once the either cap is reached (whichever comes first), diagnostic data history is removed based on a first in first out order."
+msgstr ""
+"此 cmdlet "
+"设置了通过该工具可以显示的诊断数据历史记录的最大数量（按时间和大小划分）。大小限制以兆字节为单位，时间限制以天为单位。一旦达到任一限制（以先到达者为准），诊断数据历史记录将按照“先进先出”的顺序被删除。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### EXAMPLE 1"
+msgstr "### 示例 1"
+
+msgid "Set store capacity (megabytes) of the diagnostic store."
+msgstr "设置诊断存储器的容量（以兆字节为单位）。"
+
+msgid "### EXAMPLE 2"
+msgstr "### 示例 2"
+
+msgid "Set time capacity (hours) of the diagnostic store."
+msgstr "设置诊断存储的时间容量（以小时为单位）。"
+
+msgid "### EXAMPLE 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Set store capacity (megabytes) and time capacity (hours) of the diagnostic "
+"store at the same time."
+msgstr "同时设置诊断存储器的容量（以兆字节为单位）和存储时间（以小时为单位）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Set size capacity of the diagnostic store."
+msgstr "设置诊断存储的大小容量。"
+
+msgid "Set time capacity of the diagnostic store."
+msgstr "设置诊断存储的时间容量。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于公有参数（about_CommonParameters）的文档（链接：http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid "Set size capacity of the diagnostic store."
+msgstr "设置诊断存储的容量大小。"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid "Set time capacity of the diagnostic store."
+msgstr "设置诊断存储的时间容量。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "Requires Windows 10 version 17134 (1803) or higher"
+msgstr "需要使用 Windows 10 的 17134（1803）版本或更高版本。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

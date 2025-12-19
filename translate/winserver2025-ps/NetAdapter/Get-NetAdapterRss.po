@@ -1,0 +1,182 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:48:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-NetAdapterRss"
+msgstr "# Get-NetAdapterRss"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets RSS properties of the network adapter."
+msgstr "获取网络适配器的RSS属性信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### ByName（默认值）"
+
+msgid "### ByInstanceID"
+msgstr "### ByInstanceID"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-NetAdapterRss** cmdlet gets receive side scaling (RSS) properties of the network adapters that support RSS.\n"
+"RSS is a scalability technology that distributes the receive network traffic among multiple processors by hashing the header of the incoming packet and using an indirection table.\n"
+"Without RSS in Windows Server® 2012 and later, network traffic is received on the first processor which can quickly reach full utilization limiting receive network throughput.\n"
+"Various properties can be configured to optimize the performance of RSS."
+msgstr ""
+"`Get-NetAdapterRss` cmdlet 可用于获取支持 RSS（接收端扩展）功能的网络适配器的相关属性。RSS "
+"是一种可扩展性技术，它通过哈希传入数据包的头部并使用间接表，将网络接收流量分配到多个处理器上。在 Windows Server® 2012 "
+"及更高版本系统中，如果没有启用 RSS "
+"功能，所有网络流量都会被发送到第一个处理器上，这可能导致该处理器迅速达到满负荷状态，从而限制了网络的接收吞吐量。可以通过配置各种属性来优化 RSS "
+"的性能。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all RSS capable network adapters"
+msgstr "### 示例 1：获取所有支持 RSS 的网络适配器"
+
+msgid "This example gets all RSS capable network adapters."
+msgstr "这个示例会获取所有支持RSS协议的网络适配器。"
+
+msgid "### Example 2: Get RSS properties for the specified network adapter"
+msgstr "### 示例 2：获取指定网络适配器的 RSS 属性"
+
+msgid ""
+"This example gets the RSS properties of the network adapter named MyAdapter."
+msgstr "这个示例获取了名为“MyAdapter”的网络适配器的RSS属性信息。"
+
+msgid ""
+"### Example 3: Display all RSS properties for the specified network adapter"
+msgstr "### 示例 3：显示指定网络适配器的所有 RSS 属性"
+
+msgid ""
+"This example displays all RSS properties of the network adapter named "
+"MyAdapter."
+msgstr "这个示例显示了名为“MyAdapter”的网络适配器的所有RSS属性。"
+
+msgid "### Example 4: Get all RSS capable network adapters with RSS enabled"
+msgstr "### 示例 4：获取所有支持 RSS 功能且已启用 RSS 的网络适配器"
+
+msgid "This example gets all RSS capable network adapters with RSS enabled."
+msgstr "这个示例会获取所有支持RSS功能的网络适配器，并确保这些适配器的RSS功能已启用。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"将此 cmdlet 作为后台作业运行。使用该参数来执行需要较长时间才能完成的命令。cmdlet "
+"会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理作业，请使用 `*-Job` 系列 "
+"cmdlets。要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关 Windows "
+"PowerShell® 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"该参数表示此cmdlet在操作过程中会同时考虑可见网络适配器和隐藏网络适配器。默认情况下，仅包含可见网络适配器。如果在识别网络适配器时使用了通配符，并且指定了该参数，则通配符字符串会与所有网络适配器（无论是可见的还是隐藏的）进行匹配。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"用于指定一组网络适配器接口的描述信息。对于物理网络适配器来说，这些描述通常包括网络适配器的制造商名称、部件编号以及产品描述，例如“Contoso "
+"12345 千兆网络设备”。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最优限制值。此限制仅适用于当前运行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterRssSettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterRssSettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个包装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）之后的路径表示底层 WMI 对象的命名空间和类名。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-NetAdapterRss](./Disable-NetAdapterRss.md)"
+msgstr "[Disable-NetAdapterRss](./Disable-NetAdapterRss.md)"
+
+msgid "[Enable-NetAdapterRss](./Enable-NetAdapterRss.md)"
+msgstr "[Enable-NetAdapterRss](./Enable-NetAdapterRss.md)"
+
+msgid "[Set-NetAdapterRss](./Set-NetAdapterRss.md)"
+msgstr "[Set-NetAdapterRss](./Set-NetAdapterRss.md)"

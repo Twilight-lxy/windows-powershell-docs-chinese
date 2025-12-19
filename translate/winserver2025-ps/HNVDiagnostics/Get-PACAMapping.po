@@ -1,0 +1,79 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:34:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您利用 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-PACAMapping"
+msgstr "# Get-PACAMapping"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets virtual network mapping."
+msgstr "获取虚拟网络映射信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-PACAMapping** cmdlet gets the virtual network mapping for virtual "
+"machines hosted on a physical server."
+msgstr "`Get-PACAMapping` cmdlet 可以获取托管在物理服务器上的虚拟机的虚拟网络映射信息。"
+
+msgid "This cmdlet displays a table with the following information:"
+msgstr "此cmdlet会显示一个包含以下信息的表格："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get virtual network mapping"
+msgstr "### 示例 1：获取虚拟网络映射信息"
+
+msgid "This command gets the mapping of the virtual network."
+msgstr "这个命令用于获取虚拟网络的映射信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

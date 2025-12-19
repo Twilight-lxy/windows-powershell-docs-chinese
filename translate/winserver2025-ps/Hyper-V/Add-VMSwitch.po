@@ -1,0 +1,132 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:48:20 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-VMSwitch"
+msgstr "# Add-VMSwitch"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Adds a virtual switch to an Ethernet resource pool."
+msgstr "向以太网资源池中添加一个虚拟交换机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### NetworkByName (Default)"
+msgstr "### NetworkByName（默认值）"
+
+msgid "### NetworkByObject"
+msgstr "### NetworkByObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-VMSwitch** cmdlet adds a virtual switch to an Ethernet resource "
+"pool."
+msgstr "`Add-VMSwitch` cmdlet 可以将一个虚拟交换机添加到以太网资源池中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Adds virtual switch Test to Ethernet resource pool Engineering Department."
+msgstr "将虚拟交换机“Test”添加到工程部门的以太网资源池中。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Adds virtual switch Test to Ethernet resource pool Engineering Department."
+msgstr "将虚拟交换机“Test”添加到工程部门的以太网资源池中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入计算机名称或会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认值为本地计算机上的当前会话。"
+
+msgid ""
+"Specifies an array of Hyper-V hosts.\n"
+"The cmdlet adds the virtual switch on the Hyper-V hosts that you specify."
+msgstr "指定一个Hyper-V主机的数组。该cmdlet会在您指定的Hyper-V主机上添加虚拟交换机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the name of the virtual switch to be added."
+msgstr "指定要添加的虚拟交换机的名称。"
+
+msgid ""
+"Specifies the name of the resource pool to which the virtual switch is to be"
+" added."
+msgstr "指定要添加虚拟交换机的资源池的名称。"
+
+msgid ""
+"Specifies the virtual switch to be added to the Ethernet resource pool."
+msgstr "指定要添加到以太网资源池中的虚拟交换机。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "By default, this cmdlet doesn't return any output."
+msgstr "默认情况下，此cmdlet不会返回任何输出结果。"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetwork"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetwork"
+
+msgid ""
+"When you use the **PassThru** parameter, this cmdlet returns a "
+"**Microsoft.HyperV.PowerShell.VMNetwork** object."
+msgstr ""
+"当你使用 **PassThru** 参数时，此 cmdlet 会返回一个 "
+"**Microsoft.HyperV.PowerShell.VMNetwork** 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

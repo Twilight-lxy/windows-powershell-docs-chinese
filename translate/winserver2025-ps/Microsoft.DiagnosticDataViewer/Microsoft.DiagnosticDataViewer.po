@@ -1,0 +1,87 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:08:30 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Microsoft.DiagnosticDataViewer Module"
+msgstr "# Microsoft.DiagnosticDataViewer 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"The Microsoft.DiagnosticDataViewer module provides commands for viewing and "
+"analyzing the Diagnostic Data sent by a Windows device."
+msgstr "Microsoft.DiagnosticDataViewer模块提供了用于查看和分析Windows设备发送的诊断数据的命令。"
+
+msgid "## Minimum Requirements"
+msgstr "## 最低要求"
+
+msgid "The module requires Windows 10 version 17134 (1803) or higher."
+msgstr "该模块需要 Windows 10 的 17134 版本（1803）或更高版本。"
+
+msgid "## Microsoft.DiagnosticDataViewer Cmdlets"
+msgstr "## Microsoft.DiagnosticDataViewerCmdlets"
+
+msgid "### [Disable-DiagnosticDataViewing](Disable-DiagnosticDataViewing.md)"
+msgstr "### [禁用诊断数据查看功能]( Disable-DiagnosticDataViewing.md)"
+
+msgid "Disables diagnostic data viewing."
+msgstr "禁用诊断数据查看功能。"
+
+msgid "### [Enable-DiagnosticDataViewing](Enable-DiagnosticDataViewing.md)"
+msgstr "### [Enable-DiagnosticDataViewing](Enable-DiagnosticDataViewing.md)"
+
+msgid "Enables diagnostic data viewing."
+msgstr "启用诊断数据查看功能。"
+
+msgid "### [Get-DiagnosticData](Get-DiagnosticData.md)"
+msgstr "### [Get-DiagnosticData](Get-DiagnosticData.md)"
+
+msgid "Fetches historical Windows Diagnostic Data uploaded by this machine."
+msgstr "获取该机器上传的历史Windows诊断数据。"
+
+msgid "### [Get-DiagnosticDataTypes](Get-DiagnosticDataTypes.md)"
+msgstr "### [Get-DiagnosticDataTypes](Get-DiagnosticDataTypes.md)"
+
+msgid ""
+"Fetches the mapping of diagnostic data type identifiers to their "
+"corresponding descriptions."
+msgstr "获取诊断数据类型标识符与其相应描述的映射关系。"
+
+msgid ""
+"### [Get-DiagnosticDataViewingSetting](Get-DiagnosticDataViewingSetting.md)"
+msgstr ""
+"### [Get-DiagnosticDataViewingSetting](Get-DiagnosticDataViewingSetting.md)"
+
+msgid ""
+"Fetches whether diagnostic data viewing is currently enabled or disabled."
+msgstr "用于获取当前是否启用了诊断数据查看功能。"
+
+msgid "### [Get-DiagnosticStoreCapacity](Get-DiagnosticStoreCapacity.md)"
+msgstr "### [Get-DiagnosticStoreCapacity](Get-DiagnosticStoreCapacity.md)"
+
+msgid ""
+"Fetches the current diagnostic store capacity.\n"
+"Parameter \\[-Size\\] returns the diagnostic store size capacity in megabytes.\n"
+"Parameter \\[-Time\\] returns the diagnostic store capacity in days.\n"
+"The default diagnostic data store size capacity is 1024 MB.\n"
+"The default time capacity is 30 days."
+msgstr ""
+"获取当前的诊断数据存储容量。参数 \\[-Size\\] 以兆字节（MB）为单位返回诊断数据存储的容量；参数 \\[-Time\\] "
+"以天为单位返回诊断数据存储的容量。默认的诊断数据存储容量为 1024 MB，默认的时间期限为 30 天。"
+
+msgid "### [Set-DiagnosticStoreCapacity](Set-DiagnosticStoreCapacity.md)"
+msgstr "### [Set-DiagnosticStoreCapacity](Set-DiagnosticStoreCapacity.md)"
+
+msgid "Sets the diagnostic store time and size capacity."
+msgstr "设置诊断存储的时间和容量。"
+
+msgid "## Related Links"
+msgstr "## 相关链接"
+
+msgid ""
+"[Microsoft Privacy Policy](https://privacy.microsoft.com/en-us/privacy)"
+msgstr "[微软隐私政策](https://privacy.microsoft.com/en-us/privacy)"

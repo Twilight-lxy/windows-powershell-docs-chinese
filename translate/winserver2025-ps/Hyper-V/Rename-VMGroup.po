@@ -1,0 +1,152 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:52:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Rename-VMGroup"
+msgstr "# 重命名 VMGroup"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Renames virtual machine groups."
+msgstr "重命名虚拟机组。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Name (Default)"
+msgstr "### 名称（默认值）"
+
+msgid "### Id"
+msgstr "### ID"
+
+msgid "### InputObject"
+msgstr "### InputObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The **Rename-VMGroup** cmdlet renames virtual machine groups."
+msgstr "`Rename-VMGroup` cmdlet 用于重命名虚拟机组。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Rename a group"
+msgstr "#### 示例 1：重命名一个群组"
+
+msgid "This command renames the group named TestGroup to be Group01."
+msgstr "这个命令将名为“TestGroup”的组重命名为“Group01”。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts that run this cmdlet.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个运行此cmdlet的Hyper-"
+"V主机。可以使用NetBIOS名称、IP地址或完全限定域名来进行标识。默认值为本地计算机。可以通过使用“localhost”或点（.）来明确指出是本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the unique ID of the virtual machine group that this cmdlet "
+"renames."
+msgstr "指定该 cmdlet 用于重命名的虚拟机组的唯一标识符。"
+
+msgid ""
+"Specifies an array of names of virtual machine groups that this cmdlet "
+"renames."
+msgstr "指定一个虚拟机组名称数组，该cmdlet将对其进行重命名。"
+
+msgid "Specifies the new name for the virtual machine group."
+msgstr "指定虚拟机组的新名称。"
+
+msgid ""
+"Indicates that this cmdlet returns the "
+"**Microsoft.HyperV.PowerShell.VMGroup** object that it renames."
+msgstr "表示该 cmdlet 返回的是它所重命名的 **Microsoft.HyperV.PowShell.VMGroup** 对象。"
+
+msgid ""
+"Specifies an array of virtual machine groups that this cmdlet renames.\n"
+"To obtain a **VMGroup** object, use the **Get-VMGroup** cmdlet."
+msgstr ""
+"指定一个虚拟机组数组，该 cmdlet 将对这些虚拟机组进行重命名。要获取一个 **VMGroup** 对象，请使用 **Get-VMGroup** "
+"cmdlet。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMGroup"
+msgstr "### Microsoft.HyperV.PowerShell.VMGroup"
+
+msgid ""
+"This cmdlet returns a **Microsoft.HyperV.PowerShell.VMGroup** object, if you"
+" specify the **Passthru** parameter."
+msgstr ""
+"如果指定了 `Passthru` 参数，此 cmdlet 会返回一个 `Microsoft.HyperV.PowerShell.VMGroup` 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-VMGroup](./Get-VMGroup.md)"
+msgstr "[Get-VMGroup](./Get-VMGroup.md)"
+
+msgid "[New-VMGroup](./New-VMGroup.md)"
+msgstr "[New-VMGroup](./New-VMGroup.md)"
+
+msgid "[Remove-VMGroup](./Remove-VMGroup.md)"
+msgstr "[Remove-VMGroup](./Remove-VMGroup.md)"

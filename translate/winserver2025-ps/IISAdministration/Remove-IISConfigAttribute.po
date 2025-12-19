@@ -1,0 +1,119 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:36:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-IISConfigAttribute"
+msgstr "# 移除 IIS 配置属性"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Removes a configuration attribute from an IIS configuration section or "
+"configuration element attribute."
+msgstr "从 IIS 配置节或配置元素属性中删除某个配置属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-IISConfigAttribute** cmdlet removes a configuration attribute from an Internet Information Services (IIS) configuration section or a configuration element.\n"
+"The value removed is the value for the given ConfigurationElement and not necessarily the effective value for a given site / virtual directory / folder etc.\n"
+"To obtain the effective attribute values, always retrieve the configuration element by specifying the commit path as the deepest level possible.\n"
+"Even the configuration attribute is not defined at that level, the parent attributes are scanned and the effective configuration element is returned.\n"
+"You can then work on this ConfigurationElement to get/set/remove configuration attribute values."
+msgstr ""
+"`Remove-IISConfigAttribute` cmdlet 用于从 Internet Information Services (IIS) "
+"的配置部分或配置元素中删除某个配置属性。被删除的值是该 `ConfigurationElement` 对应的属性值，并不一定代表 "
+"해당站点、虚拟目录或文件夹等实际应用中的有效属性值。要获取实际的属性值，务必通过指定尽可能深的路径来检索相应的配置元素。即使该配置属性在当前层级并未定义，系统也会扫描其父级属性，并返回实际的配置元素。之后你就可以对这个配置元素进行操作，以获取、设置或删除相应的属性值。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a configuration attribute from an IIS web site."
+msgstr "### 示例 1：从 IIS 网站中删除某个配置属性。"
+
+msgid ""
+"This command removes the configuration attribute value for the attribute "
+"MaxUrlSegments from the Default Web Site, defaulting to its parent or system"
+" wide defaults."
+msgstr ""
+"此命令会删除“Default Web Site”中“MaxUrlSegment”属性的配置属性值，使其恢复为父级的默认设置或系统范围内的默认设置。"
+
+msgid ""
+"### Example 2: Remove configuration attribute values from different parts of"
+" the configuration store:"
+msgstr "### 示例 2：从配置存储的不同部分中删除配置属性值："
+
+msgid ""
+"This command removes the global attribute value for ScriptErrorMessage, "
+"defaulting to the schema default."
+msgstr "此命令会删除 `ScriptErrorMessage` 的全局属性值，使其恢复为模式默认值。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of the attribute that is to be deleted."
+msgstr "指定要删除的属性的名称。"
+
+msgid ""
+"Specifies the IIS ConfigurationSection or ConfigurationElement from which "
+"the matching attribute is to be deleted."
+msgstr "指定要从其中删除匹配属性的 IIS ConfigurationSection 或 ConfigurationElement 对象。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### Microsoft.Web.Administration.ConfigurationElement"
+msgstr "### Microsoft.Web.Administration.ConfigurationElement"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IISConfigAttributeValue](./Get-IISConfigAttributeValue.md)"
+msgstr "[Get-IISConfigAttributeValue](./Get-IISConfigAttributeValue.md)"
+
+msgid "[Set-IISConfigAttributeValue](./Set-IISConfigAttributeValue.md)"
+msgstr "[Set-IISConfigAttributeValue](./Set-IISConfigAttributeValue.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

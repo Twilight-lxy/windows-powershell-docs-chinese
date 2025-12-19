@@ -1,0 +1,195 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:41:58 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-VMGroupMember"
+msgstr "# 向虚拟机组（VMGroup）中添加成员"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds group members to a virtual machine group."
+msgstr "将组成员添加到虚拟机组中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VM Using Name (Default)"
+msgstr "### 使用名称的虚拟机（默认设置）"
+
+msgid "### VMGroup Using Name"
+msgstr "### 使用名称的VMGroup"
+
+msgid "### VM Using ID"
+msgstr "### 使用ID来识别虚拟机"
+
+msgid "### VMGroup Using ID"
+msgstr "### 使用ID的VMGroup"
+
+msgid "### VMGroup Using InputObject"
+msgstr "### 使用 InputObject 的 VMGroup"
+
+msgid "### VM Using InputObject"
+msgstr "### 使用 InputObject 的虚拟机（VM）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-VMGroupMember** cmdlet adds members to a virtual machine group.\n"
+"Groups can contain either virtual machines or groups of virtual machines."
+msgstr ""
+"`Add-VMGroupMember` cmdlet 用于将成员添加到虚拟机组中。一个虚拟机组可以包含单个虚拟机，也可以包含多个虚拟机组成的子组。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add virtual machines to a group"
+msgstr "### 示例 1：将虚拟机添加到组中"
+
+msgid ""
+"The first two commands use the **Get-VM** cmdlet to get virtual machines named ContosoVirtualMachine01 and ContosoVirtualMachine02.\n"
+"The commands store these virtual machine objects in the **$VM01** and **$VM02** variables."
+msgstr ""
+"前两个命令使用了 **Get-VM** cmdlet 来获取名为 ContosoVirtualMachine01 和 "
+"ContosoVirtualMachine02 的虚拟机。这些命令将这些虚拟机对象存储在 `$VM01` 和 `$VM02` 变量中。"
+
+msgid ""
+"The final command adds the virtual machines in **$VM01** and **$VM02** to "
+"the virtual machine group named VirtualMachineGroup."
+msgstr "最后的命令将虚拟机 $VM01 和 $VM02 添加到名为 VirtualMachineGroup 的虚拟机组中。"
+
+msgid "### Example 2: Add groups to a group"
+msgstr "### 示例 2：将一个组添加到另一个组中"
+
+msgid ""
+"The first two commands use the **Get-VMGroup** cmdlet to get virtual machine groups named ContosoGroup01 and ContosoGroup02.\n"
+"The commands store these group objects in the **$VMGroup01** and **$VMGroup02** variables."
+msgstr ""
+"前两个命令使用 **Get-VMGroup** cmdlet 来获取名为 ContosoGroup01 和 ContosoGroup02 "
+"的虚拟机组。这些命令将这些组对象存储在 `$VMGroup01` 和 `$VMGroup02` 变量中。"
+
+msgid ""
+"The final commad adds the groups in **$VMGroup01** and **$VMGroup02** to the"
+" group named ContosoMainGroup."
+msgstr "最后的命令将 `$VMGroup01` 和 `$VMGroup02` 中的组添加到名为 `ContosoMainGroup` 的组中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入会话对象（例如[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies on or more Hyper-V hosts where this cmdlet adds a group member.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个Hyper-"
+"V主机，在这些主机上此cmdlet会添加某个组成员。允许使用NetBIOS名称、IP地址或完全合格的域名作为目标主机标识。默认目标是本地计算机；可以使用“localhost”或点（.）来明确指代本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the unique ID of the virtual machine group to which this cmdlet "
+"adds virtual machines or groups of virtual machines."
+msgstr "指定该虚拟机组（此cmdlet用于向其中添加虚拟机或虚拟机组）的唯一ID。"
+
+msgid ""
+"Specifies the name of the virtual machine group to which this cmdlet adds "
+"virtual machines or groups of virtual machines."
+msgstr "指定此cmdlet将虚拟机或虚拟机组添加到的虚拟机组的名称。"
+
+msgid ""
+"Indicates that this cmdlet returns the "
+"**Microsoft.HyperV.PowerShell.VMGroup** object that it configures."
+msgstr "表示此 cmdlet 会返回其配置的 **Microsoft.HyperV.PowerShell.VMGroup** 对象。"
+
+msgid ""
+"Specifies an array of virtual machines that this cmdlet adds to a virtual machine group.\n"
+"To obtain a **VirtualMachine** object, use the **Get-VM** cmdlet."
+msgstr ""
+"指定一个虚拟机数组，该cmdlet会将这些虚拟机添加到虚拟机组中。要获取一个**VirtualMachine**对象，请使用**Get-VM** "
+"cmdlet。"
+
+msgid ""
+"Specifies the virtual machine group to which this cmdlet adds virtual machines or groups of virtual machines.\n"
+"To obtain a **VMGroup** object, use the **Get-VMGroup** cmdlet."
+msgstr ""
+"指定此cmdlet要向其添加虚拟机或虚拟机组的虚拟机组。若要获取一个**VMGroup**对象，请使用**Get-VMGroup** cmdlet。"
+
+msgid ""
+"Specifies an array of virtual machine groups that this cmdlet adds to a "
+"virtual machine group."
+msgstr "指定一个虚拟机组数组，该cmdlet会将这个数组添加到一个现有的虚拟机组中。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMGroup"
+msgstr "### Microsoft.HyperV.PowerShell.VMGroup"
+
+msgid ""
+"This cmdlet returns a **VMGroup** object, if you specify the **Passthru** "
+"parameter."
+msgstr "如果你指定了 `Passthru` 参数，此 cmdlet 会返回一个 `VMGroup` 对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Remove-VMGroupMember](./Remove-VMGroupMember.md)"
+msgstr "[Remove-VMGroupMember](./Remove-VMGroupMember.md)"
+
+msgid "[Get-VM](./Get-VM.md)"
+msgstr "[Get-VM](./Get-VM.md)"
+
+msgid "[Get-VMGroup](./Get-VMGroup.md)"
+msgstr "[Get-VMGroup](./Get-VMGroup.md)"

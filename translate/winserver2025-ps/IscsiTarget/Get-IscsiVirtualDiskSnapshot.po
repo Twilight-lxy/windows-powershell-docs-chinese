@@ -1,0 +1,141 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:50:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-IscsiVirtualDiskSnapshot"
+msgstr "# 获取 iScsiVirtualDiskSnapshot"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the properties of the snapshots."
+msgstr "获取快照的属性信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### Device (Default)"
+msgstr "### 设备（默认值）"
+
+msgid "### SnapshotId"
+msgstr "### SnapshotId"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-IscsiVirtualDiskSnapshot** cmdlet gets properties of snapshots on "
+"a iSCSI virtual disk."
+msgstr "`Get-IscsiVirtualDiskSnapshot` cmdlet 可用于获取 iSCSI 虚拟磁盘上快照的属性信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get all virtual disk snapshots"
+msgstr "### 示例 1：获取所有虚拟磁盘快照"
+
+msgid ""
+"This example gets all of the virtual disk snapshots on the local server."
+msgstr "这个示例会获取本地服务器上所有的虚拟磁盘快照。"
+
+msgid "### Example 2: Get virtual disk snapshots by ID"
+msgstr "### 示例 2：通过 ID 获取虚拟磁盘快照"
+
+msgid ""
+"This example gets all of the virtual disk snapshots with the Id "
+"{E9A5BA03-85B9-40CA-85DF-DC1695690B40} on the local server."
+msgstr "这个示例从本地服务器中获取所有ID为{E9A5BA03-85B9-40CA-85DF-DC1695690B40}的虚拟磁盘快照。"
+
+msgid "### Example 3: Get snapshots for a virtual disk"
+msgstr "### 示例 3：获取虚拟磁盘的快照"
+
+msgid ""
+"This example gets the snapshots that were taken for the virtual disk "
+"E:\\temp\\test.vhdx."
+msgstr "这个示例获取了为虚拟磁盘 E:\\temp\\test.vhdx 所创建的快照。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the computer name, or IP address, of the remote computer, if this "
+"cmdlet is run on a remote computer."
+msgstr "如果此cmdlet在远程计算机上运行，则指定远程计算机的名称或IP地址。"
+
+msgid ""
+"Specifies the cluster resource group network name, or cluster node name, if "
+"this cmdlet is run on a cluster configuration."
+msgstr "如果此 cmdlet 在集群配置上运行，则会指定集群资源组的网络名称，或者集群节点的名称。"
+
+msgid "Specifies the credentials when connecting to a remote computer."
+msgstr "指定在连接到远程计算机时所需的身份凭证。"
+
+msgid ""
+"Specifies the path of the virtual hard disk (VHD) file that is associated "
+"with the iSCSI virtual disk to which the snapshot belongs."
+msgstr "指定与快照所属的iSCSI虚拟磁盘相关联的虚拟硬盘（VHD）文件的路径。"
+
+msgid "Specifies the identifier (ID) for the snapshot."
+msgstr "指定快照的标识符（ID）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Iscsi.Target.Commands.IscsiVirtualDisk"
+msgstr "### Microsoft.Iscsi.Target Commands.IscsiVirtualDisk"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Iscsi.Target.Commands.IscsiVirtualDiskSnapshot"
+msgstr "### Microsoft.Iscsi.Target Commands.IscsiVirtualDiskSnapshot"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Dismount-IscsiVirtualDiskSnapshot](./Dismount-IscsiVirtualDiskSnapshot.md)"
+msgstr ""
+"[Dismount-IscsiVirtualDiskSnapshot](./Dismount-IscsiVirtualDiskSnapshot.md)"
+
+msgid ""
+"[Export-IscsiVirtualDiskSnapshot](./Export-IscsiVirtualDiskSnapshot.md)"
+msgstr ""
+"[Export-IscsiVirtualDiskSnapshot](./Export-IscsiVirtualDiskSnapshot.md)"
+
+msgid "[Mount-IscsiVirtualDiskSnapshot](./Mount-IscsiVirtualDiskSnapshot.md)"
+msgstr "[Mount-IscsiVirtualDiskSnapshot](./Mount-IscsiVirtualDiskSnapshot.md)"
+
+msgid ""
+"[Remove-IscsiVirtualDiskSnapshot](./Remove-IscsiVirtualDiskSnapshot.md)"
+msgstr ""
+"[Remove-IscsiVirtualDiskSnapshot](./Remove-IscsiVirtualDiskSnapshot.md)"
+
+msgid "[Set-IscsiVirtualDiskSnapshot](./Set-IscsiVirtualDiskSnapshot.md)"
+msgstr "[Set-IscsiVirtualDiskSnapshot](./Set-IscsiVirtualDiskSnapshot.md)"

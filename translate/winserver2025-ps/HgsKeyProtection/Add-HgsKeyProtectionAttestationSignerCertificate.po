@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:24:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-HgsKeyProtectionAttestationSignerCertificate"
+msgstr "# 使用 `Add-HgsKeyProtectionAttestationSignerCertificate` 命令"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Adds an attestation signer certificate for the trusted certificates for the "
+"Key Protection Service."
+msgstr "为密钥保护服务（Key Protection Service）的可信证书添加一个认证签名者证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-HgsKeyProtectionAttestationSignerCertificate** cmdlet adds the signer certificate of an attestation server to the list of certificates that the Key Protection Service trusts.\n"
+"The Key Protection Service uses attestation signer certificates to verify the signatures of health certificates.\n"
+"To modify the policy for an attestation signer certificate, use the **Set-HgsKeyProtectionAttestationSignerCertificatePolicy** cmdlet."
+msgstr ""
+"`Add-HgsKeyProtectionAttestationSignerCertificate` cmdlet 将证明服务器的签名证书添加到 Key"
+" Protection Service（密钥保护服务）所信任的证书列表中。Key Protection Service "
+"使用这些签名证书来验证健康状态证书的签名。若要修改某个签名证书的相关策略，请使用 `Set-"
+"HgsKeyProtectionAttestationSignerCertificatePolicy` cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add a certificate"
+msgstr "### 示例 1：添加证书"
+
+msgid ""
+"This command adds the certificate stored in the **$Certificate** variable to"
+" the trusted attestation signer certificates."
+msgstr "此命令将存储在 `$Certificate` 变量中的证书添加到受信任的认证签名者证书列表中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an **X509Certificate2** certificate.\n"
+"This cmdlet adds the certificate that this parameter specifies to the attestation signer certificates that the Key Protection Service trusts.\n"
+"Specify a variable that stores an **X509Certificate2** object or an expression that gets the certificate."
+msgstr ""
+"用于指定一个 **X509Certificate2** 证书。此cmdlet会将该参数指定的证书添加到密钥保护服务（Key Protection "
+"Service）所信任的认证签名者证书列表中。请指定一个存储 **X509Certificate2** 对象的变量，或一个用于获取该证书的表达式。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您无法将输入数据通过管道传递给此cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet does not generate any output."
+msgstr "这个cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-HgsKeyProtectionAttestationSignerCertificate](./Get-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+msgstr ""
+"[Get-HgsKeyProtectionAttestationSignerCertificate](./Get-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+
+msgid ""
+"[Remove-HgsKeyProtectionAttestationSignerCertificate](./Remove-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+msgstr ""
+"[Remove-HgsKeyProtectionAttestationSignerCertificate](./Remove-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+
+msgid ""
+"[Set-HgsKeyProtectionAttestationSignerCertificatePolicy](./Set-"
+"HgsKeyProtectionAttestationSignerCertificatePolicy.md)"
+msgstr ""
+"[Set-HgsKeyProtectionAttestationSignerCertificatePolicy](./Set-"
+"HgsKeyProtectionAttestationSignerCertificatePolicy.md)"

@@ -1,0 +1,188 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:26:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Test-VMNetworkAdapter"
+msgstr "# 测试虚拟机网络适配器（Test-VMNetworkAdapter）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Tests connectivity between virtual machines."
+msgstr "测试虚拟机之间的连接性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Test-VMNetworkAdapter** cmdlet tests connectivity between virtual machines by using Internet Control Message Protocol (ICMP) Ping packets.\n"
+"Ping verifies IP-level connectivity to another TCP/IP computer by sending ICMP Echo Request messages."
+msgstr ""
+"`Test-VMNetworkAdapter` cmdlet 通过使用互联网控制消息协议（ICMP）Ping 数据包来测试虚拟机之间的连接性。Ping "
+"通过发送 ICMP 回显请求消息来验证与另一台 TCP/IP 计算机的 IP 级别连接性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Test connectivity"
+msgstr "### 示例 1：测试连接性"
+
+msgid ""
+"This command tests connectivity by using the virtual network adapter named ContosoNic01.\n"
+"The command targets the receiver virtual machine."
+msgstr "此命令通过使用名为 ContosoNic01 的虚拟网络适配器来测试连接性。该命令的目标是接收方虚拟机。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which this cmdlet operates.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于运行此cmdlet的Hyper-"
+"V主机。允许使用NetBIOS名称、IP地址和完全限定域名作为主机标识。默认值为本地计算机。可以使用`localhost`或点（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the ID of a virtual subnet."
+msgstr "指定一个虚拟子网的ID。"
+
+msgid "Specifies the name of the virtual machine."
+msgstr "指定虚拟机的名称。"
+
+msgid ""
+"Specified the MAC address for the next hop VM required for non-Hyper-V "
+"Network Virtualization configurations."
+msgstr "为非Hyper-V网络虚拟化配置指定了下一跳VM所需的MAC地址。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的该项的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid "Indicates that the cmdlet targets the receiver virtual machine."
+msgstr "表示该cmdlet是针对接收方虚拟机运行的。"
+
+msgid "Specifies the IP address of the receiver virtual machine."
+msgstr "指定接收方虚拟机的IP地址。"
+
+msgid "Indicates that the cmdlet targets the sender virtual machine."
+msgstr "表示该cmdlet的目标是发送邮件的虚拟机。"
+
+msgid "Specifies the IP address of the sender virtual machine."
+msgstr "指定发送方虚拟机的IP地址。"
+
+msgid ""
+"Specifies the sequence number to use to generate ICMP Ping packets.\n"
+"The default value is 100."
+msgstr "指定用于生成 ICMP Ping 数据包的序列编号。默认值为 100。"
+
+msgid ""
+"Specifies a virtual machine.\n"
+"The cmdlet tests connectivity for adapters that belong to the virtual machines that you specify."
+msgstr "用于指定一台虚拟机。该cmdlet会测试属于您所指定的这些虚拟机的适配器的连接性（即检查它们是否能够正常通信）。"
+
+msgid "Specifies the name of a virtual machine."
+msgstr "指定虚拟机的名称。"
+
+msgid ""
+"Specifies a virtual machine network adapter as a **VMNetworkAdapterBase** object.\n"
+"The cmdlet tests connectivity for the adapters that you specify.\n"
+"To obtain a network adapter, use the **Get-VMNetworkAdapter** cmdlet."
+msgstr ""
+"将虚拟机网络适配器指定为一个 **VMNetworkAdapterBase** 对象。此 cmdlet "
+"会测试您所指定的这些适配器的连接性。若要获取网络适配器，请使用 **Get-VMNetworkAdapter** cmdlet。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMNetworkAdapterConnectionTestResult"
+msgstr "### Microsoft.HyperV.PowerShell.VMNetworkAdapterConnectionTestResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-VMNetworkAdapter](./Add-VMNetworkAdapter.md)"
+msgstr "[添加虚拟机网络适配器](./Add-VMNetworkAdapter.md)"
+
+msgid "[Connect-VMNetworkAdapter](./Connect-VMNetworkAdapter.md)"
+msgstr "[Connect-VMNetworkAdapter](./Connect-VMNetworkAdapter.md)"
+
+msgid "[Disconnect-VMNetworkAdapter](./Disconnect-VMNetworkAdapter.md)"
+msgstr "[断开虚拟机网络适配器的连接](./Disconnect-VMNetworkAdapter.md)"
+
+msgid "[Get-VMNetworkAdapter](./Get-VMNetworkAdapter.md)"
+msgstr "[Get-VMNetworkAdapter](./Get-VMNetworkAdapter.md)"
+
+msgid "[Remove-VMNetworkAdapter](./Remove-VMNetworkAdapter.md)"
+msgstr "[Remove-VMNetworkAdapter](./Remove-VMNetworkAdapter.md)"
+
+msgid "[Rename-VMNetworkAdapter](./Rename-VMNetworkAdapter.md)"
+msgstr "[ Rename-VMNetworkAdapter](./Rename-VMNetworkAdapter.md)"
+
+msgid "[Set-VMNetworkAdapter](./Set-VMNetworkAdapter.md)"
+msgstr "[Set-VMNetworkAdapter](./Set-VMNetworkAdapter.md)"

@@ -1,0 +1,171 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:24:56 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-HgsKeyProtectionCertificate"
+msgstr "# Add-HgsKeyProtectionCertificate"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds a key certificate to the Key Protection Service."
+msgstr "将一个密钥证书添加到密钥保护服务中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### CertificateReference (Default)"
+msgstr "### CertificateReference（默认值）"
+
+msgid "### FullCertificate"
+msgstr "### FullCertificate"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-HgsKeyProtectionCertificate** cmdlet adds a certificate to the Key Protection Service.\n"
+"You can add a certificate as an encryption certificate or a signing certificate.\n"
+"You can add a reference to a certificate stored in the Windows certificate store.\n"
+"Before you add a certificate reference you must add the certificate to the LocalMachine\\My certificate store.\n"
+"The cmdlet looks up the certificate in the LocalMachine\\My certificate store by using its thumbprint.\n"
+"You can also add a full certificate stored in a file as a pfx.\n"
+"If the file containing the pfx is protected by a password, you must specify the pfx password."
+msgstr ""
+"`Add-HgsKeyProtectionCertificate` cmdlet 用于将证书添加到 Key Protection "
+"Service（密钥保护服务）中。您可以添加加密证书或签名证书；也可以添加存储在 Windows "
+"证书库中的证书的引用。在添加证书引用之前，必须先将该证书添加到 `LocalMachine\\My` 证书库中。该 cmdlet "
+"会通过使用证书的指纹来从 `LocalMachine\\My` 证书库中查找相应的证书。此外，您还可以直接将存储在文件中的完整证书（以 pfx "
+"格式）添加进来。如果包含 pfx 文件的文件需要密码保护，则必须指定相应的密码。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add an encryption certificate"
+msgstr "### 示例 1：添加加密证书"
+
+msgid ""
+"This command adds a certificate reference to the Key Protection Service for "
+"use as an encryption certificate."
+msgstr "此命令将一个证书引用添加到密钥保护服务中，以便用作加密证书。"
+
+msgid "### Example 2: Add an encryption certificate file with a password"
+msgstr "### 示例 2：添加一个带有密码的加密证书文件"
+
+msgid ""
+"This command adds a certificate file to the Key Protection Service as an encryption certificate.\n"
+"In this example, the certificate file is protected by a password stored as a SecureString in the variable $Password."
+msgstr ""
+"这个命令将一个证书文件添加到密钥保护服务（Key Protection "
+"Service）中，用作加密证书。在这个例子中，该证书文件受到一个密码的保护，而这个密码以 `SecureString` 的形式存储在变量 "
+"`$Password` 中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the password which protects a certificate file.\n"
+"If the certificate file is protected by a password, you must specify this value."
+msgstr "指定用于保护证书文件的密码。如果证书文件需要通过密码进行保护，那么就必须提供这个密码值。"
+
+msgid ""
+"Specifies the path to the certificate which will be added to the Key "
+"Protection Service."
+msgstr "指定要将证书添加到密钥保护服务（Key Protection Service）中的路径。"
+
+msgid ""
+"Specifies the type of the certificate that this cmdlet adds.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定此 cmdlet 所添加的证书的类型。该参数的可接受值为："
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而不需要用户确认。"
+
+msgid ""
+"This only applies when you use the `-Thumbprint` option to specify a certificate.\n"
+"It is typically used for hardware security module (HSM) backed certificates but can be used for other certificates too.\n"
+"Specifying `NoCertificateReplication` disables automatic replication of the certificate from LocalMachine\\My certificate store to the same store on all other nodes in the cluster.\n"
+"The HGS admin is then responsible for replicating that certificate manually to all other nodes in the cluster."
+msgstr ""
+"这仅适用于您使用 `-Thumbprint` 选项来指定证书的情况。该选项通常用于基于硬件安全模块（HSM）的证书，但也可以用于其他类型的证书。设置 "
+"`NoCertificateReplication` 会禁用从 `LocalMachine\\MyCertificates` "
+"存储库自动将证书复制到集群中所有其他节点的相同存储库的功能。此时，HSM 管理员需要负责手动将该证书复制到集群中的所有其他节点上。"
+
+msgid ""
+"Specifies the thumbprint of the certificate to add.\n"
+"You must add the certificate to the LocalMachine\\My certificate store before you run the current cmdlet."
+msgstr ""
+"指定要添加的证书的“指纹”（即证书的唯一标识符）。在运行当前cmdlet之前，必须先将该证书添加到LocalMachine\\My "
+"Certificate Store文件夹中。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您不能将输入数据通过管道（pipe）传递给此cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet does not generate any output."
+msgstr "这个cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-HgsKeyProtectionCertificate](./Get-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"[Get-HgsKeyProtectionCertificate](./Get-HgsKeyProtectionCertificate.md)"
+
+msgid ""
+"[Remove-HgsKeyProtectionCertificate](./Remove-"
+"HgsKeyProtectionCertificate.md)"
+msgstr ""
+"[Remove-HgsKeyProtectionCertificate](./Remove-"
+"HgsKeyProtectionCertificate.md)"
+
+msgid ""
+"[Set-HgsKeyProtectionCertificate](./Set-HgsKeyProtectionCertificate.md)"
+msgstr ""
+"[Set-HgsKeyProtectionCertificate](./Set-HgsKeyProtectionCertificate.md)"

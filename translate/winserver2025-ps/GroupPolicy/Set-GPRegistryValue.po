@@ -1,0 +1,426 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:08:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-GPRegistryValue"
+msgstr "# Set-GPRegistryValue"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid ""
+"Configures one or more registry-based policy settings under either Computer "
+"Configuration or User Configuration in a GPO."
+msgstr "在组策略对象（GPO）中，通过“计算机配置”或“用户配置”选项来设置一个或多个基于注册表的策略项。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByGUID (Default)"
+msgstr "### ByGUID（默认值）"
+
+msgid "### ByName"
+msgstr "### 按名称排序"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Set-GPRegistryValue` cmdlet configures a registry-based policy setting under either Computer\n"
+"Configuration or User Configuration in a Group Policy Object (GPO). The policy setting configures\n"
+"keys or values in the registry on the client computer when the GPO is applied."
+msgstr ""
+"`Set-GPRegistryValue` cmdlet 用于在组策略对象（GPO）的“计算机配置”或“用户配置”项下，配置基于注册表的策略设置。当该 "
+"GPO 被应用到客户端计算机时，这些策略设置会修改注册表中的相应键或值。"
+
+msgid ""
+"You can specify the GPO by name or by its GUID, or you can pipe a GPO object to the cmdlet. You can\n"
+"also pipe a PolicyRegistrySetting object to the cmdlet."
+msgstr ""
+"您可以通过名称或GUID来指定GPO，也可以将一个GPO对象通过管道（pipe）传递给该cmdlet。同样地，您也可以将一个PolicyRegistrySetting对象通过管道传递给该cmdlet。"
+
+msgid "You can configure registry-based policy settings for:"
+msgstr "您可以配置基于注册表的策略设置，用于："
+
+msgid ""
+"You can use the **Additive** parameter to ensure that existing registry values for the key are not\n"
+"overwritten by the new policy setting when the GPO is applied."
+msgstr "你可以使用 `Additive` 参数来确保在应用 GPO 时，该键的现有注册表值不会被新的策略设置覆盖。"
+
+msgid ""
+"You can also delete registry values on a client when the GPO is applied by disabling a policy\n"
+"setting with the **Disable** parameter. You can disable:"
+msgstr "当GPO应用到客户端时，您也可以通过使用“Disable”参数来禁用某个策略设置，从而删除相应的注册表值。您可以禁用的内容包括："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Configure a registry-based policy setting for a registry "
+"value"
+msgstr "#### 示例 1：为某个注册表值配置基于注册表的策略设置"
+
+msgid ""
+"This command configures a registry-based policy setting for the registry value\n"
+"`HKCU\\Software\\Policies\\Microsoft\\Windows\\Control ScreenSaverTimeOut` with a value of `900` and a\n"
+"data type of `DWord`. This policy setting sets the Screen Saver timeout to 900 seconds (15 minutes)\n"
+"when Group Policy is applied on the client."
+msgstr ""
+"此命令为注册表值 `HKCU\\Software\\Policies\\Microsoft\\Windows\\Control "
+"ScreenSaverTimeOut` 配置了一个基于注册表的策略设置。该注册表值的值为 `900`，数据类型为 "
+"`DWord`。当组策略应用于客户端时，此策略设置会将屏幕保护程序的超时时间设置为 900 秒（15 分钟）。"
+
+msgid ""
+"### Example 1: Configure a registry-based policy settings for multiple "
+"registry values"
+msgstr "### 示例 1：为多个注册表值配置基于注册表的策略设置"
+
+msgid ""
+"This command configures registry-based policy settings to set three registry values. The policy\n"
+"settings are configured in the `User` Configuration section of the GPO. When the GPO is applied on\n"
+"the client, the following registry values are set:"
+msgstr ""
+"此命令用于配置基于注册表的策略设置，以修改三个注册表值。这些策略设置在GPO的“用户”配置部分中进行配置。当GPO应用于客户端时，以下注册表值将会被修改："
+
+msgid "`HKCU\\Software\\Policies\\Microsoft\\ExampleKey ValueOne` `String 1`"
+msgstr "`HKCU\\Software\\Policies\\Microsoft\\ExampleKeyValueOne` `字符串 1`"
+
+msgid "`HKCU\\Software\\Policies\\Microsoft\\ExampleKey ValueTwo` `String 2`"
+msgstr "`HKCU\\Software\\Policies\\Microsoft\\ExampleKeyValueTwo` `String 2`"
+
+msgid "`HKCU\\Software\\Policies\\Microsoft\\ExampleKey ValueThree` `String 3`"
+msgstr "`HKCU\\Software\\Policies\\Microsoft\\ExampleKeyValueThree` `String 3`"
+
+msgid ""
+"### Example 3: Configure a registry-based policy setting to set a list of "
+"registry values"
+msgstr "### 示例 3：配置基于注册表的策略设置，以指定一组注册表值"
+
+msgid ""
+"This command configures a registry-based policy setting to set a list of three registry values. The\n"
+"policy settings are configured in the `User` Configuration section of the GPO. Because the\n"
+"**Additive** parameter is not specified, when the GPO is applied on the client any list values under\n"
+"the key are deleted -- then, the following registry values are set:"
+msgstr ""
+"此命令配置了一个基于注册表的策略设置，用于设置三个注册表值的列表。这些策略设置在 GPO 的“用户”配置部分中进行配置。由于没有指定 "
+"“Additive” 参数，因此当 GPO 应用于客户端时，该键下的所有列表值都会被删除；之后，将设置以下注册表值："
+
+msgid "`HKCU\\Software\\Policies\\Microsoft\\ExampleKey MyValue1` `String 1`"
+msgstr "`HKCU\\Software\\Policies\\Microsoft\\ExampleKey\\MyValue1` `String 1`"
+
+msgid "`HKCU\\Software\\Policies\\Microsoft\\ExampleKey MyValue2` `String 2`"
+msgstr "`HKCU\\Software\\Policies\\Microsoft\\ExampleKey“MyValue2”` `String 2`"
+
+msgid "`HKCU\\Software\\Policies\\Microsoft\\ExampleKey MyValue3` `String 3`"
+msgstr "`HKCU\\Software\\Policies\\Microsoft\\ExampleKey\\MyValue3` `字符串（长度为3）`"
+
+msgid ""
+"If you specify the **Additive** parameter, the list values are added to the existing list values on\n"
+"the client when the GPO is applied. The actual value names assigned to the list values depends on\n"
+"the number of existing list values on the client."
+msgstr ""
+"如果您指定了**Additive**参数，那么在应用GPO时，列表中的值将会被添加到客户端上已有的列表值中。分配给这些列表值的实际名称取决于客户端上现有列表值的数量。"
+
+msgid ""
+"### Example 4: Disable registry-based policy settings for specific registry "
+"values"
+msgstr "### 示例 4：禁用针对特定注册表值的基于注册表的策略设置"
+
+msgid ""
+"This command `disables` the registry-based policy settings, in the `User` Configuration section, for\n"
+"the specified registry values. When the GPO is applied on the client, the registry values are\n"
+"deleted from the registry on the client."
+msgstr ""
+"此命令会禁用“用户配置”部分中基于注册表的策略设置，针对指定的注册表值。当该组策略对象（GPO）应用于客户端时，这些注册表值将从客户端的注册表中删除。"
+
+msgid ""
+"### Example 5: Disable registry-based policy settings for a specific "
+"registry key"
+msgstr "### 示例 5：禁用针对特定注册表键的基于注册表的策略设置"
+
+msgid ""
+"This command `disables` the registry-based policy setting, in the `User` Configuration section, for\n"
+"the specified registry key. When the GPO is applied on the client, all first level values will be\n"
+"deleted from the registry key. Subkeys and their values are not modified."
+msgstr ""
+"此命令会禁用指定注册表键在“用户配置”部分中基于注册表的策略设置。当GPO应用于客户端时，该注册表键中的所有一级值都会被删除，但子键及其值不会被修改。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that registry values should be appended to existing values under the key when the GPO is\n"
+"applied on a client."
+msgstr "表示当GPO应用于客户端时，注册表值应追加到该键下已存在的值中。"
+
+msgid ""
+"By default, when Group Policy is processed on a client, existing values under a registry key are\n"
+"deleted before any new values are written to the registry. By using the **Additive** parameter for a\n"
+"registry-based policy setting, you can specify that the new value should be added to the registry\n"
+"key without deleting the existing values."
+msgstr ""
+"默认情况下，当在客户端上处理组策略时，系统会在将任何新值写入注册表之前删除该注册表键下的现有值。通过使用基于注册表的策略设置中的 "
+"**Additive** 参数，您可以指定新值应被添加到注册表键中，而不会删除现有值。"
+
+msgid "You cannot specify the **Disable** parameter with this parameter."
+msgstr "您不能使用这个参数来指定“禁用”（Disable）选项。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Indicates that the cmdlet disables the registry-based policy setting."
+msgstr "表示该 cmdlet 会禁用基于注册表的策略设置。"
+
+msgid "You can disable a policy setting for a registry key or value:"
+msgstr "您可以禁用注册表键或值的策略设置："
+
+msgid ""
+"To remove a policy setting from a GPO without affecting existing registry keys or values on a client\n"
+"when Group Policy is processed, use the `Remove-GPRegistryValue` cmdlet."
+msgstr ""
+"要从组策略对象（GPO）中删除某个策略设置，同时不影响客户端上已存在的注册表键或值，请使用 `Remove-GPRegistryValue` "
+"cmdlet。"
+
+msgid ""
+"You cannot specify the **Additive**, **Type**, **Value**, or **ValuePrefix** parameters with the\n"
+"**Disable** parameter."
+msgstr ""
+"您不能在使用 `Disable` 参数的同时指定 `Additive`、`Type`、`Value` 或 `ValuePrefix` 这些参数。"
+
+msgid ""
+"Specifies the domain for this cmdlet. You must specify the fully qualified domain name (FQDN) of the\n"
+"domain."
+msgstr "指定此cmdlet所使用的域名。必须提供该域名的完全限定域名（FQDN）。"
+
+msgid ""
+"For the `Set-GPRegistryValue` cmdlet, the GPO in which to configure the registry-based policy\n"
+"setting must exist in this domain."
+msgstr "对于 `Set-GPRegistryValue` cmdlet 来说，需要配置基于注册表策略设置的 GPO 必须存在于该域中。"
+
+msgid ""
+"If you do not specify the **Domain** parameter, the domain of the user that is running the current\n"
+"session is used. If the cmdlet is being run from a computer startup or shutdown script, the domain\n"
+"of the computer is used. For more information, see the Notes section in the full Help."
+msgstr ""
+"如果您没有指定 **Domain** 参数，那么将使用运行当前会话的用户所在的域。如果该 cmdlet "
+"是从计算机启动或关闭脚本中运行的，则将使用计算机所属的域。有关更多信息，请参阅完整帮助文档中的“备注”部分。"
+
+msgid ""
+"If you specify a domain that is different from the domain of the user that is running the current\n"
+"session (or, for a startup or shutdown script, the computer), a trust must exist between that domain\n"
+"and the domain of the user or the computer."
+msgstr ""
+"如果您指定的域名与当前会话所使用的用户的域名不同（或者对于启动/关闭脚本而言，与该计算机的域名不同），那么该域名与用户或计算机的域名之间必须存在信任关系。"
+
+msgid ""
+"You can also refer to the **Domain** parameter by its built-in alias, **DomainName**. For more\n"
+"information, see [about_Aliases](/powershell/module/microsoft.powershell.core/about/about_aliases)."
+msgstr ""
+"您也可以使用其内置别名 **DomainName** 来引用 **Domain** 参数。有关更多信息，请参阅 "
+"[关于别名](/powershell/module/microsoft.powershell.core/about/aboutaliases)。"
+
+msgid ""
+"Specifies the GPO in which to configure the registry-based policy setting by its globally unique\n"
+"identifier (GUID). The GUID uniquely identifies the GPO."
+msgstr "通过其全局唯一标识符（GUID）指定用于配置基于注册表的策略设置的组策略对象（GPO）。该 GUID 可唯一地识别该 GPO。"
+
+msgid ""
+"You can also refer to the **Guid** parameter by its built-in alias, **Id**."
+msgstr "您也可以使用其内置别名 **Id** 来引用 **Guid** 参数。"
+
+msgid ""
+"Specifies the registry key for the registry-based policy setting; for instance,\n"
+"`HKLM\\Software\\Policies\\Microsoft\\Windows NT\\DNSClient`."
+msgstr ""
+"指定基于注册表的策略设置的注册表键；例如，`HKLM\\Software\\Policies\\Microsoft\\Windows "
+"NT\\DNSClient`。"
+
+msgid "The key must be in one of the two following registry hives:"
+msgstr "该密钥必须存在于以下两个注册表项之一中："
+
+msgid ""
+"You can also refer to the Key parameter by its built-in alias, FullKeyPath."
+msgstr "您也可以使用其内置别名 FullKeyPath 来引用 Key 参数。"
+
+msgid ""
+"Specifies the GPO in which to configure the registry-based policy setting by"
+" its display name."
+msgstr "通过显示名称指定用于配置基于注册表的策略设置的组策略对象（GPO）。"
+
+msgid ""
+"The display name is not guaranteed to be unique in the domain. If another GPO with the same display\n"
+"name exists in the domain, an error occurs. You can use the **Guid** parameter to uniquely identify\n"
+"a GPO."
+msgstr ""
+"显示名称在域中并不保证是唯一的。如果域中存在另一个具有相同显示名称的 GPO，将会发生错误。您可以使用 **Guid** 参数来唯一标识一个 GPO。"
+
+msgid ""
+"You can also refer to the **Name** parameter by its built-in alias, "
+"**DisplayName**."
+msgstr "您也可以通过其内置别名 **DisplayName** 来引用 **Name** 参数。"
+
+msgid ""
+"Specifies the name of the domain controller that this cmdlet contacts to complete the operation. You\n"
+"can specify either the fully qualified domain name (FQDN) or the host name."
+msgstr "指定此cmdlet用于联系的域控制器的名称，以便完成操作。您可以指定完全限定域名（FQDN）或主机名。"
+
+msgid ""
+"If you do not specify the name by using the **Server** parameter, the primary domain controller\n"
+"(PDC) emulator is contacted."
+msgstr "如果您不使用 **Server** 参数来指定名称，系统将联系主域控制器（PDC）仿真器。"
+
+msgid ""
+"You can also refer to the **Server** parameter by its built-in alias, "
+"**DC**."
+msgstr "您也可以通过其内置别名“DC”来引用**Server**参数。"
+
+msgid "Specifies the data type for the registry-based policy setting."
+msgstr "指定基于注册表的策略设置的数据类型。"
+
+msgid "The acceptable values for this parameter are:"
+msgstr "此参数的可接受值为："
+
+msgid ""
+"Specifies the value data for the registry-based policy setting. You can specify a single value or an\n"
+"array of values. Use a comma-separated list to specify more than one value. Only the `String` and\n"
+"`ExpandString` data types are supported for an array of values."
+msgstr ""
+"用于指定基于注册表的策略设置的值数据。您可以指定一个单一的值或一组值。如果需要指定多个值，可以使用逗号分隔的列表来实现。对于值数组而言，仅支持 "
+"`String` 和 `ExpandString` 数据类型。"
+
+msgid ""
+"At a minimum, you must specify this parameter together with the *Type* and **Key** parameters to\n"
+"configure a policy setting to set a registry value. You cannot specify this parameter with the\n"
+"**Disable** parameter."
+msgstr ""
+"至少，您必须指定这个参数，同时还要指定*类型*（Type）和**键**（Key）参数，才能配置一个用于设置注册表值的策略。您不能将这个参数与**禁用**（Disable）参数一起使用。"
+
+msgid ""
+"Specifies a value name or an array of value names for the registry-based policy setting. For\n"
+"instance, the registry key `HKLM\\Software\\Policies\\Microsoft\\Windows NT\\DNSClient` can have a\n"
+"registry value with the following value name: `UseDomainNameDevolution`. Use a comma-separated list\n"
+"to specify more than one value name. Only the `String` and `ExpandString` data types are supported\n"
+"for an array of values."
+msgstr ""
+"用于为基于注册表的策略设置指定一个值名称或一组值名称。例如，注册表键 "
+"`HKLM\\Software\\Policies\\Microsoft\\Windows NT\\DNSClient` "
+"可以包含一个具有以下值名称的注册表值：`UseDomainNameDevolution`。若需指定多个值名称，请使用逗号分隔的列表。对于值数组，仅支持 "
+"`String` 和 `ExpandString` 数据类型。"
+
+msgid "You cannot specify this parameter with the **ValuePrefix** parameter."
+msgstr "您不能使用 **ValuePrefix** 参数来指定这个参数。"
+
+msgid ""
+"Specifies a value name prefix for a registry-based policy setting for a list"
+" of registry values."
+msgstr "为基于注册表的策略设置指定一个值名称前缀，该前缀用于关联一组注册表值。"
+
+msgid ""
+"Configures a policy setting that creates the following registry values when Group Policy is applied\n"
+"on the client:"
+msgstr "配置一个策略设置，当组策略应用于客户端时，该设置会创建以下注册表值："
+
+msgid "`HKLM\\SOFTWARE\\Policies\\ExampleKey ExValue1` `100`"
+msgstr "`HKLM\\SOFTWARE\\Policies\\ExampleKey\\ExValue1` `100`"
+
+msgid "`HKLM\\SOFTWARE\\Policies\\ExampleKey ExValue2` `200`"
+msgstr "`HKLM\\SOFTWARE\\Policies\\ExampleKey\\ExValue2` `200`"
+
+msgid "`HKLM\\SOFTWARE\\Policies\\ExampleKey ExValue3` `300`"
+msgstr "`HKLM\\SOFTWARE\\Policies\\ExampleKey\\ExValue3` `300`"
+
+msgid ""
+"Only the `String` and `ExpandString` data types are supported with the "
+"**ValuePrefix** parameter."
+msgstr "只有 `String` 和 `ExpandString` 数据类型支持使用 **ValuePrefix** 参数。"
+
+msgid ""
+"You cannot specify this parameter with the **ValueName** parameter or the "
+"**Disable** parameter."
+msgstr "您不能使用 **ValueName** 参数或 **Disable** 参数来指定此参数。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid ""
+"### Microsoft.GroupPolicy.Gpo or Microsoft.GroupPolicy.PolicyRegistrySetting"
+msgstr ""
+"### Microsoft.GroupPolicy.Gpo 或 Microsoft.GroupPolicy.PolicyRegistrySetting"
+
+msgid ""
+"You can pipe a GPO (in which to configure a registry-based policy setting), or a\n"
+"**PolicyRegistrySetting** object that represents a registry-based policy setting (to configure in a\n"
+"specified GPO) to this cmdlet. Collections that contain GPOs from different domains are not\n"
+"supported."
+msgstr ""
+"你可以将一个GPO（其中包含基于注册表的策略设置）或一个**PolicyRegistrySetting**对象（表示基于注册表的策略设置，用于在指定的GPO中配置）传递给此cmdlet。不支持包含来自不同域的GPO的集合。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.GroupPolicy.Gpo"
+msgstr "### Microsoft.GroupPolicy.Gpo"
+
+msgid ""
+"This cmdlet returns the GPO in which the registry-based policy setting has "
+"been configured."
+msgstr "这个 cmdlet 会返回配置了基于注册表的策略设置的组策略对象（GPO）。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid ""
+"  You can use the **Domain** parameter to explicitly specify the domain for "
+"this cmdlet."
+msgstr "您可以使用 **Domain** 参数来明确指定此 cmdlet 的域名。"
+
+msgid ""
+"  If you do not explicitly specify the domain, the cmdlet uses a default domain. The default domain\n"
+"  is the domain that is used to access network resources by the security context under which the\n"
+"  current session is running. This domain is typically the domain of the user that is running the\n"
+"  session. For instance, the domain of the user who started the session by opening Windows\n"
+"  PowerShell from the Program Files menu, or the domain of a user that is specified in a runas\n"
+"  command. However, computer startup and shutdown scripts run under the context of the LocalSystem\n"
+"  account. The LocalSystem account is a built-in local account, and it accesses network resources\n"
+"  under the context of the computer account. Therefore, when this cmdlet is run from a startup or\n"
+"  shutdown script, the default domain is the domain to which the computer is joined."
+msgstr ""
+"如果你没有明确指定域名，该 cmdlet "
+"会使用默认域名。默认域名是指当前会话所运行的安全上下文用于访问网络资源时使用的域名。这个域名通常就是启动该会话的用户所属的域名；例如，通过“程序文件”菜单打开"
+" Windows PowerShell 启动会话的用户所属的域名，或者在 “runas” 命令中指定的用户所属的域名。然而，计算机启动和关闭脚本是在 "
+"LocalSystem 计算机账户的上下文中运行的。LocalSystem "
+"是一个内置的本地账户，它以计算机账户的身份访问网络资源。因此，当从这个启动或关闭脚本中运行该 cmdlet 时，默认域名就是计算机所连接的那个域名。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-GPRegistryValue](./Get-GPRegistryValue.md)"
+msgstr "[Get-GPRegistryValue](./Get-GPRegistryValue.md)"
+
+msgid "[Remove-GPRegistryValue](./Remove-GPRegistryValue.md)"
+msgstr "[Remove-GPRegistryValue](./Remove-GPRegistryValue.md)"

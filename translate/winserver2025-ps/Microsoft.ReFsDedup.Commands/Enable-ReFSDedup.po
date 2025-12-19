@@ -1,0 +1,53 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:09:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Enable-ReFSDedup"
+msgstr "# 启用 ReFSD Dedup（重复数据删除功能）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Enables data deduplication on a specified ReFS volume."
+msgstr "启用对指定ReFS卷的数据去重功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Enable-ReFSDedup` cmdlet enables data deduplication on a specified ReFS volume. You can\n"
+"specify the type of deduplication to use with the `-Type` parameter."
+msgstr ""
+"`Enable-ReFSDedup` cmdlet 可以在指定的 ReFS 卷上启用数据去重功能。您可以使用 `-Type` "
+"参数来指定要使用的去重类型。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example enables data deduplication with compression on the `D:` ReFS "
+"volume."
+msgstr "这个示例可以在`D:` ReFS卷上同时实现数据去重和压缩功能。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example enables data deduplication with compression on both `E:` and "
+"`F:` ReFS volumes."
+msgstr "这个示例可以在`E:`和`F:`这两个ReFS卷上同时实现数据去重和压缩功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the type of deduplication to use. Acceptable values are:"
+msgstr "指定要使用的去重类型。可接受的值有："

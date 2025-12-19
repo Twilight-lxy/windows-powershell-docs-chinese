@@ -1,0 +1,156 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:01:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-MsmqQueue"
+msgstr "# Set-MsmqQueue"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets properties of queues."
+msgstr "设置队列的属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-MsmqQueue** cmdlet sets properties of queues.\n"
+"This cmdlet returns an **MsmqQueue** object that represents the modified queue.\n"
+"Specify private or public queues to modify.\n"
+"If you specify a journal queue, system journal queue, system dead-letter queue, or system transactional dead-letter queue, the cmdlet returns an error."
+msgstr ""
+"`Set-MsmqQueue` cmdlet 用于设置队列的属性。该 cmdlet 会返回一个表示已修改队列的 `MsmqQueue` "
+"对象。您可以指定要修改的私有队列或公共队列。如果您指定了日志队列、系统日志队列、系统死信队列或系统事务性死信队列，该 cmdlet 会返回错误。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Modify properties of queues"
+msgstr "### 示例 1：修改队列的属性"
+
+msgid ""
+"This command gets private queues that have names that start with Order by using the **Get-MsmqQueue** cmdlet.\n"
+"The command passes the results to the current cmdlet by using the pipeline operator.\n"
+"The current cmdlet modifies journaling and the size of the queue quota."
+msgstr ""
+"这个命令使用 **Get-MsmqQueue** cmdlet 来获取名称以 “Order” 开头的私有队列。该命令通过管道运算符将查询结果传递给当前的"
+" cmdlet。当前 cmdlet 会修改这些队列的日志记录功能以及队列配额的大小。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates whether the queue accepts only authenticated messages.\n"
+"There is no default value."
+msgstr "表示该队列是否仅接受已通过身份验证的消息。没有默认值。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies an array of **MsmqQueue** objects.\n"
+"This cmdlet modifies properties of the queues that this parameter specifies.\n"
+"This parameter accepts pipeline input."
+msgstr ""
+"指定一个包含 **MsmqQueue** 对象的数组。此 cmdlet 会修改该参数所指定的队列的属性。此参数支持管道输入（pipeline "
+"input）。"
+
+msgid ""
+"Specifies the maximum size of the journal queue.\n"
+"Specify a value in kilobytes.\n"
+"There is no default value."
+msgstr "指定日志队列的最大大小。请以千字节（KB）为单位输入数值。该参数没有默认值。"
+
+msgid ""
+"Indicates whether to copy received messages to the journal queue.\n"
+"There is no default value."
+msgstr "该参数用于指示是否将接收到的消息复制到日志队列中。默认值为空（即不执行任何操作）。"
+
+msgid ""
+"Specifies a label.\n"
+"The label that this parameter specifies describes the queue.\n"
+"There is no default value."
+msgstr "指定一个标签。该参数所指定的标签用于描述队列。没有默认值。"
+
+msgid ""
+"Specifies the multicast address associated with the queue.\n"
+"There is no default value."
+msgstr "指定与队列相关联的多播地址。该参数没有默认值。"
+
+msgid ""
+"Specifies the privacy level associated with the queue.\n"
+"There is no default value."
+msgstr "指定与队列相关的隐私级别。该字段没有默认值。"
+
+msgid ""
+"Specifies the maximum size, in kilobytes, of the queue.\n"
+"There is no default value."
+msgstr "指定队列的最大大小（以千字节为单位）。该参数没有默认值。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Msmq.PowerShell.Commands.MessageQueue[]"
+msgstr "### Microsoft.Msmq.PowerShellcommands.MessageQueue[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+msgstr "[Clear-MsmqQueue](./Clear-MSMQQueue.md)"
+
+msgid "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+msgstr "[Get-MsmqQueue](./Get-MsmqQueue.md)"
+
+msgid "[New-MsmqQueue](./New-MsmqQueue.md)"
+msgstr "[New-MsmqQueue](./New-MsmqQueue.md)"
+
+msgid "[Receive-MsmqQueue](./Receive-MsmqQueue.md)"
+msgstr "[接收-MsmqQueue](./Receive-MsmqQueue.md)"
+
+msgid "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+msgstr "[Remove-MsmqQueue](./Remove-MsmqQueue.md)"
+
+msgid "[Send-MsmqQueue](./Send-MsmqQueue.md)"
+msgstr "[Send-MsmqQueue](./Send-MsmqQueue.md)"

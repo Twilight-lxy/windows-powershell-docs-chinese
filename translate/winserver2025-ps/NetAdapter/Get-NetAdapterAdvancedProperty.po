@@ -1,0 +1,261 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:41:13 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-NetAdapterAdvancedProperty"
+msgstr "# Get-NetAdapterAdvancedProperty"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the advanced properties for a network adapter."
+msgstr "获取网络适配器的高级属性。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ByName (Default)"
+msgstr "### 按名称排序（默认设置）"
+
+msgid "### ByNameRegistryKeyword"
+msgstr "### ByNameRegistryKeyword"
+
+msgid "### ByNameDisplayName"
+msgstr "### ByNameDisplayName"
+
+msgid "### ByInstanceIDKeyword"
+msgstr "### ByInstanceIDKeyword"
+
+msgid "### ByInstanceIDDisplayName"
+msgstr "### ByInstanceIDDisplayName"
+
+msgid "### ByInstanceID"
+msgstr "### ByInstanceID"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-NetAdapterAdvancedProperty** cmdlet gets the advanced properties for a network adapter.\n"
+"By default this cmdlet returns advanced properties that have display name values, meaning that these advanced properties are visible in the Advanced pane of the Adapter Properties in the Windows UI.\n"
+"Advanced properties that do not have display names require that the *AllProperties* parameter is specified.\n"
+"Individual advanced properties can also be selected either by *DisplayName* or *RegistryKeyword* parameters.\n"
+"Both of these parameters support the use of wildcard characters.\n"
+"The advanced properties are normally found in the following location in the registry `HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4D36E972-E325-11CE-BFC1-08002BE10318}\\xxxxxxxx` where `xxxx` is a four character string representing an integer such as 0007.\n"
+"The standardized keywords have a RegistryKeyword name that begins with an asterisk \"*\".\n"
+"The valid values for these keywords are available by piping the output into the **Format-List** cmdlet with the **ValidDisplayValues** or the **ValidRegistryValues** properties specified."
+msgstr ""
+"`Get-NetAdapterAdvancedProperty` cmdlet 可用于获取网络适配器的高级属性。默认情况下，该 cmdlet 会返回那些具有显示名称（display name）的高级属性，这些属性会在 Windows 用户界面中的“适配器属性”（Adapter Properties）的“高级”（Advanced）选项卡中显示出来。对于没有显示名称的高级属性，则需要指定 `AllProperties` 参数才能将其获取到。此外，也可以通过 `DisplayName` 或 `RegistryKeyword` 参数来选择特定的高级属性。这两个参数都支持使用通配符字符。\n"
+"\n"
+"这些高级属性通常存储在注册表中的以下位置：  \n"
+"`HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4D36E972-E325-11CE-BFC1-08002BE10318}\\xxxxxxxx`  \n"
+"其中，`xxxx` 是一个四位字符的字符串，表示一个整数（例如 0007）。标准化的关键词其注册表关键字名称以星号 “*” 开头。可以通过将输出结果传递给 `Format-List` cmdlet，并指定 `ValidDisplayValues` 或 `ValidRegistryValues` 参数，来查看这些关键词的有效值。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Get all advanced properties from all visible network adapters"
+" by the specified display name"
+msgstr "### 示例 1：根据指定的显示名称，获取所有可见网络适配器的所有高级属性"
+
+msgid ""
+"This command gets all of the advanced properties that have a display name "
+"from all visible network adapters."
+msgstr "这个命令会获取所有可见网络适配器中具有显示名称的所有高级属性。"
+
+msgid ""
+"### Example 2: Get all advanced properties from all visible network adapters"
+msgstr "### 示例 2：从所有可见的网络适配器中获取所有高级属性"
+
+msgid ""
+"This command gets all of the advanced properties from all visible network "
+"adapters."
+msgstr "这个命令会获取所有可见网络适配器的所有高级属性。"
+
+msgid "### Example 3: Get all registry properties from all visible network"
+msgstr "### 示例 3：从所有可见的网络中获取所有的注册表属性"
+
+msgid ""
+"This command gets all of the registry properties from all visible network "
+"adapters."
+msgstr "这个命令会获取所有可见网络适配器的全部注册表属性。"
+
+msgid ""
+"### Example 4: Get all advanced properties from hidden and visible network "
+"adapters"
+msgstr "### 示例 4：从隐藏和可见的网络适配器中获取所有高级属性"
+
+msgid ""
+"This command gets all of the advanced properties from all visible and hidden"
+" network adapters."
+msgstr "这个命令可以获取所有可见和隐藏的网络适配器的所有高级属性信息。"
+
+msgid "### Example 5: Get all advanced properties from all network adapters"
+msgstr "### 示例 5：获取所有网络适配器的所有高级属性"
+
+msgid ""
+"This command gets all of the advanced properties from all network adapters."
+msgstr "这个命令可以获取所有网络适配器的所有高级属性。"
+
+msgid ""
+"### Example 6: Get all unformatted advanced properties from the specified "
+"network adapter"
+msgstr "### 示例 6：从指定的网络适配器中获取所有未格式化的高级属性"
+
+msgid ""
+"This command gets all of the unformatted, advanced properties from the "
+"network adapter named MyAdapter."
+msgstr "这个命令会获取名为“MyAdapter”的网络适配器上的所有未格式化的、高级属性信息。"
+
+msgid ""
+"### Example 7: Get the advanced properties for network adapters with a "
+"search string for the display name"
+msgstr "### 示例 7：使用显示名称作为搜索字符串来获取网络适配器的高级属性"
+
+msgid ""
+"This command gets the advanced properties for network adapters that have a "
+"display name that starts with TCP."
+msgstr "这个命令用于获取那些显示名称以“TCP”开头的网络适配器的高级属性。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that the cmdlet gets all the advanced properties of the network adapter.\n"
+"If this parameter is not specified, then only advanced properties that have a *DisplayName* parameter are returned."
+msgstr "表示该cmdlet会获取网络适配器的所有高级属性。如果未指定此参数，则仅返回具有“DisplayName”属性的高级属性。"
+
+msgid ""
+"Runs the cmdlet as a background job.\n"
+"Use this parameter to run commands that take a long time to complete.\n"
+" The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet.\n"
+" For more information about Windows PowerShell® background jobs, see [about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"以后台作业的方式运行该cmdlet。使用此参数来执行需要较长时间才能完成的命令。该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在当前会话中工作。要管理该作业，请使用`*-Job`"
+" cmdlets系列。要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。有关Windows "
+"PowerShell®后台作业的更多信息，请参阅[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the advanced property name, as an array, shown in the Advanced tab"
+" under the network adapter properties in Windows Server® 2012 and later."
+msgstr ""
+"指定高级属性的名称（以数组形式表示），这些属性会在 Windows Server® 2012 及更高版本中网络适配器属性下的“高级”选项卡中显示。"
+
+msgid ""
+"Indicates that the cmdlet includes both visible and hidden network adapters in the operation.\n"
+"By default only visible network adapters are included.\n"
+"If a wildcard character is used in identifying a network adapter and this parameter has been specified, then the wildcard string is matched against both hidden and visible network adapters."
+msgstr ""
+"该参数表示此 cmdlet "
+"在操作过程中会同时包含可见网络适配器和隐藏网络适配器。默认情况下，仅包含可见网络适配器。如果在识别网络适配器时使用了通配符，并且指定了该参数，则该通配符字符串会将隐藏网络适配器和可见网络适配器都包含在内。"
+
+msgid ""
+"Specifies an array of network adapter interface descriptions.\n"
+"For a physical network adapter this is typically the name of the vendor of the network adapter followed by a part number and description, such as `Contoso 12345 Gigabit Network Device`."
+msgstr ""
+"指定一个网络适配器接口描述数组。对于物理网络适配器来说，这通常是网络适配器的厂商名称后跟型号和描述，例如 `Contoso 12345 千兆网络设备`。"
+
+msgid "Specifies an array of network adapter names."
+msgstr "指定一个网络适配器名称数组。"
+
+msgid ""
+"Specifies the name of the registry value that this cmdlet reads, such as one"
+" of the registry values found in "
+"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4D36E972-E325-11CE-"
+"BFC1-08002BE10318}\\0007."
+msgstr ""
+"指定此 cmdlet 读取的注册表值的名称，例如 "
+"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Class\\{4D36E972-E325-11CE-"
+"BFC1-08002BE10318}\\0007 中找到的某个注册表值。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM cmdlet 的数量来计算该 cmdlet 的最佳限制值。这个限制仅适用于当前正在运行的 "
+"cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.Management.Infrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterAdvancedPropertySettingData"
+msgstr ""
+"### "
+"Microsoft.ManagementInfrastructure.CimInstance#ROOT/StandardCimv2/MSFT_NetAdapterAdvancedPropertySettingData"
+
+msgid ""
+"The `Microsoft.Management.Infrastructure.CimInstance` object is a wrapper class that displays Windows Management Instrumentation (WMI) objects.\n"
+"The path after the pound sign (`#`) provides the namespace and class name for the underlying WMI object."
+msgstr ""
+"`Microsoft.ManagementInfrastructure.CimInstance` 对象是一个封装类，用于显示 Windows "
+"管理规范（WMI）对象。井号（`#`）后面的路径表示底层 WMI 对象的命名空间和类名称。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-NetAdapterAdvancedProperty](./New-NetAdapterAdvancedProperty.md)"
+msgstr "[New-NetAdapterAdvancedProperty](./New-NetAdapterAdvancedProperty.md)"
+
+msgid ""
+"[Remove-NetAdapterAdvancedProperty](./Remove-NetAdapterAdvancedProperty.md)"
+msgstr ""
+"[Remove-NetAdapterAdvancedProperty](./Remove-NetAdapterAdvancedProperty.md)"
+
+msgid ""
+"[Reset-NetAdapterAdvancedProperty](./Reset-NetAdapterAdvancedProperty.md)"
+msgstr ""
+"[Reset-NetAdapterAdvancedProperty](./Reset-NetAdapterAdvancedProperty.md)"
+
+msgid "[Set-NetAdapterAdvancedProperty](./Set-NetAdapterAdvancedProperty.md)"
+msgstr "[Set-NetAdapterAdvancedProperty](./Set-NetAdapterAdvancedProperty.md)"

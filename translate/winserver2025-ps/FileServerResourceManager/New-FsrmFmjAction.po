@@ -1,0 +1,258 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:10:44 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-FsrmFmjAction"
+msgstr "# New-FsrmFmjAction"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Returns an action object for file management jobs."
+msgstr "返回一个用于文件管理作业的动作对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法（Syntax）"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **New-FsrmFmjAction** cmdlet returns an object that you can use to create file management job actions.\n"
+"You can use the **FsrmFmjAction** object as input for the **New-FsrmFileManagementJob** cmdlet and the **Set-FsrmFileManagementJob** cmdlet."
+msgstr ""
+"`New-FsrmFmjAction` cmdlet 返回一个对象，你可以使用该对象来创建文件管理作业操作。你可以在 `New-"
+"FsrmFileManagementJob` cmdlet 和 `Set-FsrmFileManagementJob` cmdlet 中将 "
+"`FsrmFmjAction` 对象作为输入参数使用。"
+
+msgid ""
+"The **FsrmFmjAction** object defines one action of the file management job when the job acts on a file.\n"
+"This cmdlet supports the following actions:"
+msgstr "`FsrmFmjAction` 对象定义了文件管理任务在处理文件时所执行的一种操作。该 cmdlet 支持以下操作："
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create an action that expires files"
+msgstr "### 示例 1：创建一个用于删除过期文件的动作"
+
+msgid ""
+"This command returns an object that expires files to the path "
+"C:\\shares\\expire01."
+msgstr "此命令返回一个对象，该对象会将文件删除到路径 C:\\shares\\expire01。"
+
+msgid ""
+"### Example 2: Create an action that encrypts files by using an RMS template"
+msgstr "### 示例 2：创建一个使用 RMS 模板对文件进行加密的操作"
+
+msgid ""
+"This command returns an action object that encrypts a file to the Contoso Confidential RMS template.\n"
+"This command requires that an RMS template is configured on the RMS server named \"Contoso Confidential\"."
+msgstr ""
+"这个命令返回一个动作对象，该对象用于将文件加密为 Contoso Confidential RMS 模板格式。执行此命令之前，需要在名为“Contoso"
+" Confidential”的 RMS 服务器上配置相应的 RMS 模板。"
+
+msgid ""
+"### Example 3: Create an action that encrypts files and assigns RMS "
+"permissions"
+msgstr "#### 示例 3：创建一个用于加密文件并设置 RMS 权限的操作"
+
+msgid ""
+"This command returns an action object that encrypts a file so that the "
+"administrator account in contoso.com has full control of the file, the "
+"ALLFTE security group has edit rights to the file, and the ALLStaff group "
+"has read rights to the file."
+msgstr ""
+"该命令返回一个操作对象，用于加密文件。这样，在 contoso.com 中的管理员账户将对该文件拥有完全控制权；ALLFTE "
+"安全组对该文件具有编辑权限；而 ALLStaff 组对该文件具有读取权限。"
+
+msgid "### Example 4: Create an action that runs a command"
+msgstr "### 示例 4：创建一个用于运行命令的操作"
+
+msgid ""
+"This command returns an action object that runs Cmd.exe and specifies the "
+"parameters for the command."
+msgstr "该命令返回一个动作对象，用于运行 Cmd.exe 并指定命令的参数。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "以后台作业的方式运行该cmdlet。使用此参数来执行那些需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用 `*-Job` "
+"cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中运行。"
+
+msgid ""
+"Specifies the command that the action runs.\n"
+"If you specify a command, you must specify Custom for the *Type* parameter."
+msgstr "指定该操作要执行的命令。如果您指定了一个命令，则必须将“Type”参数设置为“Custom”。"
+
+msgid ""
+"Specifies the parameters that the action passes to the command when the action runs.\n"
+"If you specify parameters for a command, you must specify Custom for the *Type* parameter."
+msgstr "指定当该动作运行时传递给命令的参数。如果您为某个命令指定了参数，则必须将“类型”（Type）参数设置为“自定义”（Custom）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您进行确认。"
+
+msgid ""
+"Specifies a path that the action uses to expire files.\n"
+"If you specify an expiration folder, you must specify Expiration for the *Type* parameter."
+msgstr ""
+"指定一个路径，该动作将使用此路径来删除过期的文件。如果您指定了一个用于存放过期文件的文件夹，则必须为“类型”（Type）参数设置“过期”（Expiration）属性。"
+
+msgid ""
+"Indicates that the action adds the RMS FolderOwner to the Full Control list.\n"
+"If a FolderOwner is not available for a file, this setting has no effect."
+msgstr ""
+"表示该操作会将RMS文件夹所有者（FolderOwner）添加到“完全控制”权限列表中。如果某个文件没有对应的文件夹所有者，此设置将不起作用。"
+
+msgid ""
+"If you specify an RMS folder owner, you must specify RMS for the *Type* parameter.\n"
+"If you specify this parameter, do not specify the *RMSFullControlUser*, *RMSReadUser*, or *RMSWriteUser* parameters."
+msgstr ""
+"如果您指定了一个 RMS 文件夹所有者，那么必须为 “Type” 参数指定 “RMS”。如果您指定了该参数，则不要指定 "
+"“RMSFullControlUser”、“RMSReadUser” 或 “RMSWriteUser” 参数。"
+
+msgid ""
+"Specifies an array of email addresses to provide with full control to the Active Directory Rights Management Services (AD RMS) encryption.\n"
+"If you specify this cmdlet, you must specify RMS for the *Type* parameter.\n"
+"If you specify this parameter, do not specify the *RMSTemplate* parameter."
+msgstr ""
+"用于指定一个电子邮件地址数组，以便对 Active Directory 权限管理服务（AD "
+"RMS）的加密功能进行完全控制。如果使用了此cmdlet，则必须为*Type*参数指定“RMS”；但如果指定了该参数，则不得再指定*RMSTemplate*参数。"
+
+msgid ""
+"Specifies an array of addresses to provide with read permission to the Active Directory Rights Management Services (AD RMS) encryption.\n"
+"If you specify this cmdlet, you must specify RMS for the *Type* parameter.\n"
+"If you specify this parameter, do not specify the *RMSTemplate* parameter."
+msgstr ""
+"用于指定一组地址，以授予这些地址对 Active Directory Rights Management Services (AD RMS) "
+"加密的读取权限。如果您使用了此 cmdlet，则必须为 *Type* 参数指定 “RMS”；但如果指定了该参数，则不得再指定 *RMSTemplate*"
+" 参数。"
+
+msgid ""
+"Specifies the name of the RMS template that the actions applies to files.\n"
+"If you specify an RMS template, you must specify RMS for the *Type* parameter.\n"
+"If you specify this parameter, do not specify the *RMSFullControlUser*, *RMSReadUser*, or *RMSWriteUser* parameters."
+msgstr ""
+"指定该操作应用于文件的RMS模板的名称。如果指定了RMS模板，则必须为*Type*参数指定“RMS”。如果指定了此参数，就不要再指定*RMSFullControlUser*、*RMSReadUser*或*RMSWriteUser*参数。"
+
+msgid ""
+"Specifies an array of addresses to provide with write permission to the Active Directory Rights Management Services (AD RMS) encryption.\n"
+"If you specify this cmdlet, you must specify RMS for the *Type* parameter.\n"
+"If you specify this parameter, do not specify the *RMSTemplate* parameter."
+msgstr ""
+"指定一个地址数组，以赋予这些地址对 Active Directory 权限管理服务（AD "
+"RMS）加密功能的写入权限。如果您使用了此cmdlet，则必须为*Type*参数指定“RMS”选项；如果指定了该参数，则不要再指定*RMSTemplate*参数。"
+
+msgid ""
+"Specifies the system account that the action uses to run the command that you specify in the *Command* parameter.\n"
+"If you specify this parameter, you must specify Custom for the *Type* parameter."
+msgstr "指定系统账户，该账户将用于运行您在“Command”参数中指定的命令。如果您指定了此参数，则必须将“Type”参数设置为“Custom”。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令行函数（cmdlet）的最大操作数量。如果省略此参数或输入值为`0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM "
+"命令行函数的数量来计算出一个最优的并发限制。这个并发限制仅适用于当前正在执行的命令行函数，而不影响整个会话或计算机本身。"
+
+msgid ""
+"Specifies the type of action that the file management job performs.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定文件管理作业执行的操作类型。该参数的可接受值为："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid ""
+"### Microsoft.PowerShell.Cmdletization.GeneratedTypes.FmjActionTypeEnum"
+msgstr ""
+"### Microsoft.PowerShell CmdletizationGeneratedTypes.FmjActionTypeEnum"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Management.Automation.SwitchParameter"
+msgstr "### System.Management.Automation.SwitchParameter"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid ""
+"### "
+"Microsoft.PowerShell.Cmdletization.GeneratedTypes.FmjActionSecurityLevelEnum"
+msgstr ""
+"### Microsoft.PowerShell Cmdletization "
+"GeneratedTypes.FmjActionSecurityLevelEnum"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+msgstr "[New-FsrmFileManagementJob](./New-FsrmFileManagementJob.md)"
+
+msgid "[Set-FsrmFileManagementJob](./Set-FsrmFileManagementJob.md)"
+msgstr "[Set-FsrmFileManagementJob](./Set-FsrmFileManagementJob.md)"

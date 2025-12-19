@@ -1,0 +1,91 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:52:09 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Start-DtcDiagnosticResourceManager"
+msgstr "# Start-DtcDiagnostic ResourceManager"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Starts a diagnostic Resource Manager."
+msgstr "启动一个用于诊断的资源管理器（Resource Manager）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Start-DtcDiagnosticResourceManager** cmdlet starts a diagnostic "
+"Resource Manager (RM) as a Windows PowerShell® background job."
+msgstr ""
+"`Start-DtcDiagnostic ResourceManager` cmdlet 以 Windows PowerShell® "
+"后台作业的形式启动一个诊断资源管理器（Resource Manager，简称 RM）。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Start a diagnostic resource manager"
+msgstr "### 示例 1：启动诊断资源管理器"
+
+msgid "This example starts a DTC diagnostic resource manager."
+msgstr "这个示例启动了一个DTC诊断资源管理器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the name for the diagnostic resource manager to start.\n"
+"You can later refer to the RM by using this name.\n"
+"If you do not specify a name, the RM instance ID, a GUID, is always assigned to the RM and you can refer to it by that ID."
+msgstr ""
+"指定要启动的诊断资源管理器的名称。之后您可以使用这个名称来引用该资源管理者（RM）。如果您不指定名称，系统会自动为资源管理者分配一个实例ID（通常是GUID），此时您可以凭该ID来引用它。"
+
+msgid "Specifies the listening port of the test RM."
+msgstr "指定测试RM（Real-Time Messaging）服务器的监听端口。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Join-DtcDiagnosticResourceManager](./Join-DtcDiagnosticResourceManager.md)"
+msgstr ""
+"[Join-DtcDiagnostic ResourceManager](./Join-DtcDiagnosticResourceManager.md)"
+
+msgid ""
+"[Stop-DtcDiagnosticResourceManager](./Stop-DtcDiagnosticResourceManager.md)"
+msgstr ""
+"[Stop-DtcDiagnostic ResourceManager](./Stop-DtcDiagnosticResourceManager.md)"

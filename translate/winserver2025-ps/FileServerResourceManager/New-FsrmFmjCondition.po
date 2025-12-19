@@ -1,0 +1,147 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 07:11:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-FsrmFmjCondition"
+msgstr "# New-FsrmFmjCondition"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a file management property condition object."
+msgstr "创建一个文件管理属性条件对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-FsrmFmjCondition** cmdlet creates a file management condition object.\n"
+"A file management condition object defines a condition that determines if a file management job acts on a file."
+msgstr ""
+"`New-FsrmFmjCondition` cmdlet "
+"用于创建一个文件管理条件对象。该文件管理条件对象用于定义一种规则，以确定文件管理作业是否应对某个文件执行相应的操作。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a property condition"
+msgstr "### 示例 1：创建一个属性条件"
+
+msgid ""
+"This command creates a property condition that verifies that a file has a "
+"PII classification property set to true."
+msgstr "此命令创建了一个属性条件，用于验证某个文件的 PII（个人身份信息）分类属性是否被设置为“true”（即已启用该分类）。"
+
+msgid "### Example 2: Create a condition based on a file classification"
+msgstr "### 示例 2：根据文件分类创建条件"
+
+msgid ""
+"This command creates a condition based on the file's classification.\n"
+"The command verifies that a file has a DatePublished classification property (of type DateTime) set to the file's Last Modified timestamp."
+msgstr ""
+"该命令根据文件的分类创建一个条件。该命令会检查文件是否具有 `DatePublished` 分类属性（类型为 "
+"`DateTime`），并且该属性的值设置为文件的最后修改时间戳。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用此参数来执行需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成期间，您可以继续在该会话中工作。要管理作业，请使用`*-Job` "
+"cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[关于作业](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者是一个会话对象（例如使用[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies the condition of the property that must be matched for the file management job.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定文件管理作业必须匹配的属性条件。此参数的可接受值为："
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about\tCommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid ""
+"### Microsoft.PowerShell.Cmdletization.GeneratedTypes.FmjConditionTypeEnum"
+msgstr ""
+"### Microsoft.PowerShell Cmdletization GeneratedTypes.FmjConditionTypeEnum"
+
+msgid "### System.Int32"
+msgstr "### System.Int32"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Management.Infrastructure.CimInstance"
+msgstr "### Microsoft.ManagementInfrastructure.CimInstance"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Get-FsrmClassificationPropertyDefinition](./Get-"
+"FsrmClassificationPropertyDefinition.md)"
+msgstr ""
+"[Get-FsrmClassificationPropertyDefinition](./Get-"
+"FsrmClassificationPropertyDefinition.md)"

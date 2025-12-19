@@ -1,0 +1,201 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:47:29 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-IpamBlock"
+msgstr "# Add-IpamBlock"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds an IP address block to IPAM."
+msgstr "将一个 IP 地址段添加到 IPAM（IP 管理）中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Add-IpamBlock** cmdlet adds an IP address block to IP Address Management (IPAM).\n"
+"Specify the network from which the IP address block is added by using the *NetworkID* parameter.\n"
+"If the address category of the block you add is public, you must specify the *Rir* parameter.\n"
+"The *Rir* parameter is optional for private address blocks."
+msgstr ""
+"**Add-IpamBlock** cmdlet 用于将一个 IP 地址块添加到 IP 地址管理（IPAM）系统中。请使用 *NetworkID* "
+"参数指定要从中添加该 IP 地址块的网络。如果您添加的地址块属于公共地址类别，那么必须指定 *Rir* 参数；对于私有地址块来说，*Rir* "
+"参数是可选的。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add an IPv4 private address block"
+msgstr "#### 示例 1：添加一个 IPv4 私有地址段"
+
+msgid ""
+"This command adds an IPv4 private address block to the IPAM server.\n"
+"The command uses the first address and last address of the network that has the ID 10.0.0.0/8 for the start and end addresses of the block.\n"
+"The command includes the *PassThru* parameter, so it displays results to the console."
+msgstr ""
+"此命令用于向 IPAM 服务器添加一个 IPv4 私有地址块。该命令使用网络 ID 为 10.0.0.0/8 "
+"的第一个地址和最后一个地址作为该地址块的起始地址和结束地址。同时，该命令包含了 *PassThru* 参数，因此会将执行结果显示在控制台中。"
+
+msgid "### Example 2: Add a public address block"
+msgstr "### 示例 2：添加一个公共地址块"
+
+msgid ""
+"This command adds a public address block to the IPAM server.\n"
+"You must specify the **Rir** parameter if the address category of the block you add is Public."
+msgstr "此命令用于向 IPAM 服务器添加一个公共地址段。如果您要添加的地址段的类别为“Public”，则必须指定 **Rir** 参数。"
+
+msgid "### Example 3: Add an IPv6 address block"
+msgstr "### 示例 3：添加一个 IPv6 地址块"
+
+msgid "This command adds an IPv6 address block to the IPAM server."
+msgstr "此命令向 IPAM 服务器添加一个 IPv6 地址段。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中执行其他操作。要管理该作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"获得的会话对象）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid "Specifies a description for the address block."
+msgstr "为地址块指定一个描述性文字。"
+
+msgid ""
+"Specifies the end address for the IP address block.\n"
+"If you do not specify this parameter, the cmdlet uses the last IP address of the network that you specify for the *NetworkId* parameter.\n"
+"If you specify this parameter, you must specify the *StartIPAddress* parameter."
+msgstr ""
+"用于指定 IP 地址块的结束地址。如果不指定此参数，cmdlet 将使用为 *NetworkId* 参数指定的网络的最后一个 IP "
+"地址。如果指定了此参数，则必须同时指定 *StartIpAddress* 参数。"
+
+msgid ""
+"Specifies the last date, as a **DateTime** object, on which the block was assigned to devices on a network.\n"
+"To obtain a **DateTime** object, use the **Get-Date** cmdlet.\n"
+"For more information, type `Get-Help Get-Date`."
+msgstr ""
+"指定该数据块最后一次被分配到网络中的设备的日期，该日期以 **DateTime** 对象的形式表示。要获取一个 **DateTime** 对象，可以使用"
+" **Get-Date** cmdlet。有关更多信息，请输入 `Get-Help Get-Date`。"
+
+msgid ""
+"Specifies an IP network prefix, in Classless InterDomain Routing (CIDR) notation.\n"
+"This is the network from which the IP address block is added to the IPAM server."
+msgstr "指定一个 IP 网络前缀，采用无类别域间路由（CIDR）表示法。该网络是用于将 IP 地址块添加到 IPAM 服务器中的来源网络。"
+
+msgid "Specifies the owner of the IP address block."
+msgstr "指定 IP 地址块的拥有者。"
+
+msgid ""
+"Returns an object representing the item with which you are working.\n"
+"By default, this cmdlet does not generate any output."
+msgstr "返回一个表示您正在操作的项目的对象。默认情况下，此cmdlet不会生成任何输出。"
+
+msgid ""
+"Specifies the regional internet registry (RIR) for public addresses.\n"
+"RIR is a built-in custom field in the IPAM server that contains the following built-in values:"
+msgstr "指定用于公共地址的区域互联网注册机构（RIR）。RIR是IPAM服务器中的一个内置自定义字段，其中包含以下预设值："
+
+msgid ""
+"Specifies the date, as a **DateTime** object, when you obtained the public "
+"address block from the RIR."
+msgstr "指定从区域互联网注册机构（RIR）获取公共地址块的日期，该日期以 **DateTime** 对象的形式表示。"
+
+msgid ""
+"Specifies the start address for the IP address block.\n"
+"If you do not specify this parameter, the cmdlet uses the first address of the network that you specify for the *NetworkId* parameter.\n"
+"If you specify this parameter, you must specify the *EndIPAddress* parameter."
+msgstr ""
+"指定 IP 地址块的起始地址。如果您不指定此参数，cmdlet 将使用您为 *NetworkId* "
+"参数指定的网络中的第一个地址。如果您指定了此参数，则必须同时指定 *EndIpAddress* 参数。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"该参数用于指定可以同时运行的命令（cmdlet）的最大数量。如果省略此参数或输入值为 `0`，则 Windows PowerShell® "
+"会根据计算机上正在运行的 CIM "
+"命令（cmdlets）的数量来计算一个最优的并发限制。该并发限制仅适用于当前运行的命令，而不适用于整个会话或整个计算机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IpamBlock](./Get-IpamBlock.md)"
+msgstr "[Get-IpamBlock](./Get-IpamBlock.md)"
+
+msgid "[Set-IpamBlock](./Set-IpamBlock.md)"
+msgstr "[Set-IpamBlock](./Set-IpamBlock.md)"
+
+msgid "[Remove-IpamBlock](./Remove-IpamBlock.md)"
+msgstr "[Remove-IpamBlock](./Remove-IpamBlock.md)"

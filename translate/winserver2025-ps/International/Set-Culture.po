@@ -1,0 +1,89 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:42:54 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-Culture"
+msgstr "# Set-Culture"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Sets the user culture for the current user account."
+msgstr "设置当前用户账户的用户文化（即用户所使用的地区、语言等相关信息）。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-Culture** cmdlet sets a specific culture for the current user account.\n"
+"A culture is known as a locale for unmanaged code development.\n"
+"The information includes the names for the culture, the writing system, the calendar, and formatting for dates and sort strings.\n"
+"For more information, see [CultureInfo Class](https://go.microsoft.com/fwlink/?LinkID=242306) and [Configurable Language and Cultural Settings](https://go.microsoft.com/fwlink/?LinkID=242307)."
+msgstr ""
+"**Set-Culture** cmdlet 用于为当前用户账户设置特定的文化环境。在非托管代码开发中，这种“文化环境”被称为 "
+"“locale”。相关信息包括该文化的名称、书写系统、日历以及日期和字符串的格式设置等。有关更多详细信息，请参阅 [CultureInfo "
+"类](https://go.microsoft.com/fwlink/?LinkID=242306) 和 "
+"[可配置的语言和文化设置](https://go.microsoft.com/fwlink/?LinkID=242307)。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the culture"
+msgstr "#### 示例 1：设置文化环境（即语言、地区等相关信息）"
+
+msgid ""
+"This command sets the culture for the current user account to German "
+"(Germany)."
+msgstr "此命令将当前用户账户的文化设置设置为德语（德国）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies a culture."
+msgstr "指定一种文化（即语言环境或风俗习惯）。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: `-Debug`, `-ErrorAction`, "
+"`-ErrorVariable`, `-InformationAction`, `-InformationVariable`, "
+"`-OutVariable`, `-OutBuffer`, `-PipelineVariable`, `-Verbose`, "
+"`-WarningAction`, and `-WarningVariable`. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：`-Debug`、`-ErrorAction`、`-ErrorVariable`、`-InformationAction`、`-InformationVariable`、`-OutVariable`、`-OutBuffer`、`-PipelineVariable`、`-Verbose`、`-WarningAction`"
+" 和 `-WarningVariable`。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid ""
+"Changes made by the use of this cmdlet will take effect on subsequent "
+"PowerShell sessions."
+msgstr "使用此cmdlet所做的更改将在后续的PowerShell会话中生效。"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[GetCulture Class](https://go.microsoft.com/fwlink/?LinkID=243343)"
+msgstr "[GetCulture 类](https://go.microsoft.com/fwlink/?LinkID=243343)"

@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:16:59 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-WmsStation"
+msgstr "# 更新 WMS 站点"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Forces a station to reload its configuration settings."
+msgstr "强制一个站点重新加载其配置设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### UpdateById"
+msgstr "### UpdateById"
+
+msgid "### UpdateAll"
+msgstr "### UpdateAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Update-WmsStation** cmdlet forces the specified station to reload its "
+"configuration settings."
+msgstr "`Update-WmsStation` cmdlet 会强制指定的气象站重新加载其配置设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update station settings"
+msgstr "### 示例 1：更新车站设置"
+
+msgid "This command forces station 2 to reload its configuration settings."
+msgstr "该命令强制站点2重新加载其配置设置。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的MultiPoint Server的完全限定主机名。默认值为localhost。"
+
+msgid "Specifies an array of station IDs."
+msgstr "指定一个车站ID数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-WmsStation](./Clear-WmsStation.md)"
+msgstr "[Clear-WmsStation](./Clear-WmsStation.md)"
+
+msgid "[Get-WmsStation](./Get-WmsStation.md)"
+msgstr "[Get-WmsStation](./Get-WmsStation.md)"
+
+msgid "[Join-WmsStation](./Join-WmsStation.md)"
+msgstr "[Join-WmsStation](./Join-WmsStation.md)"
+
+msgid "[Set-WmsStation](./Set-WmsStation.md)"
+msgstr "[Set-WmsStation](./Set-WmsStation.md)"
+
+msgid "[Split-WmsStation](./Split-WmsStation.md)"
+msgstr "[Split-WmsStation](./Split-WmsStation.md)"

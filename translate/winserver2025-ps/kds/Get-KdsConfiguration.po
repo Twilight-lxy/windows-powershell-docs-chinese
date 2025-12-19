@@ -1,0 +1,107 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:59:02 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-KdsConfiguration"
+msgstr "# 获取 KDS 配置信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Retrieves the current configuration of the Microsoft Group KdsSvc from "
+"Active Directory."
+msgstr "从 Active Directory 中检索 Microsoft Group KdsSvc 的当前配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-KdsConfiguration** cmdlet retrieves the current configuration of the Microsoft Group Key Distribution Service (KdsSvc) from Active Directory.\n"
+"The KDS configuration defines how keys are generated from the root keys."
+msgstr ""
+"`Get-KdsConfiguration` cmdlet 从 Active Directory 中检索 Microsoft "
+"组密钥分发服务（KdsSvc）的当前配置。KDS 配置定义了如何从根密钥生成其他密钥。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Retrieve the current KDS configuration"
+msgstr "### 示例 1：获取当前的 KDS 配置"
+
+msgid ""
+"This command retrieves the current configuration of the Microsoft Group "
+"KdsSvc from Active Directory."
+msgstr "此命令从 Active Directory 中检索 Microsoft Group KdsSvc 的当前配置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet accepts no input objects."
+msgstr "此 cmdlet 不接受任何输入对象。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.KeyDistributionService.KdsServerConfiguration"
+msgstr "### Microsoft.KeyDistributionService.KdsServerConfiguration"
+
+msgid ""
+"This cmdlet returns a **KdsServerConfiguration** object contains information"
+" such as the key derivation function (KDF) algorithm and secret agreement "
+"algorithm used in key generation."
+msgstr ""
+"此cmdlet返回一个**KdsServerConfiguration**对象，其中包含用于密钥生成的关键派生函数（KDF）算法和秘密协商算法等信息。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+msgstr "[Add-KdsRootKey](./Add-KdsRootKey.md)"
+
+msgid "[Clear-KdsCache](./Clear-KdsCache.md)"
+msgstr "[Clear-KdsCache](./Clear-KdsCache.md)"
+
+msgid "[Get-KdsRootKey](./Get-KdsRootKey.md)"
+msgstr "[Get-KdsRootKey](./Get-KdsRootKey.md)"
+
+msgid "[Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+msgstr "[Set-KdsConfiguration](./Set-KdsConfiguration.md)"
+
+msgid "[Test-KdsRootKey](./Test-KdsRootKey.md)"
+msgstr "[测试 KDS Root Key](./Test-KdsRootKey.md)"

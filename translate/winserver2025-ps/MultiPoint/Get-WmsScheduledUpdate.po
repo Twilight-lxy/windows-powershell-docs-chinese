@@ -1,0 +1,94 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:07:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WmsScheduledUpdate"
+msgstr "# Get-WmsScheduledUpdate"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the scheduled update configuration."
+msgstr "获取预定的更新配置信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-WmsScheduledUpdate** cmdlet gets the current configuration for "
+"scheduled updates while disk protection is set to discard mode."
+msgstr "`Get-WmsScheduledUpdate` cmdlet 可以获取在磁盘保护设置为“丢弃模式”时定时更新的当前配置信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get the scheduled update configuration"
+msgstr "#### 示例 1：获取计划的更新配置"
+
+msgid "This command gets the current scheduled update configuration."
+msgstr "这个命令用于获取当前的定期更新配置信息。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为“localhost”。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.WmsScheduledUpdate"
+msgstr ""
+"### Microsoft.WindowsServerSolutions.MultipointServer.PowerShell "
+"Commands.Library.WmsScheduledUpdate"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Disable-WmsScheduledUpdate](./Disable-WmsScheduledUpdate.md)"
+msgstr "[Disable-WmsScheduledUpdate](./Disable-WmsScheduledUpdate.md)"
+
+msgid "[Enable-WmsScheduledUpdate](./Enable-WmsScheduledUpdate.md)"
+msgstr "[Enable-WmsScheduledUpdate](./Enable-WmsScheduledUpdate.md)"
+
+msgid "[Set-WmsScheduledUpdate](./Set-WmsScheduledUpdate.md)"
+msgstr "[Set-WmsScheduledUpdate](./Set-WmsScheduledUpdate.md)"

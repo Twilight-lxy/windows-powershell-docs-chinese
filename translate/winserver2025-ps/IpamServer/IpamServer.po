@@ -1,0 +1,532 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:17:12 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# IpamServer Module"
+msgstr "# IpamServer 模块"
+
+msgid "## Description"
+msgstr "## 说明"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all IP Address "
+"Management (IPAM) Server-specific cmdlets. It lists the cmdlets in "
+"alphabetical order based on the verb at the beginning of the cmdlet."
+msgstr ""
+"本参考资料提供了所有与 IP 地址管理（IPAM）服务器相关的 cmdlet 的描述和语法信息。这些 cmdlet "
+"按其开头所使用的动词（即命令操作）的字母顺序进行排列。"
+
+msgid "## IpamServer Cmdlets"
+msgstr "## IpamServer Cmdlets"
+
+msgid "### [Add-IpamAddress](./Add-IpamAddress.md)"
+msgstr "### [Add-IpamAddress](./Add-IpamAddress.md)"
+
+msgid "Adds an IP address to IPAM."
+msgstr "将一个 IP 地址添加到 IPAM（IP 地址管理）系统中。"
+
+msgid "### [Add-IpamAddressSpace](./Add-IpamAddressSpace.md)"
+msgstr "### [Add-IpamAddressSpace](./Add-IpamAddressSpace.md)"
+
+msgid "Adds an address space to IPAM."
+msgstr "向 IPAM（IP Address Management）系统中添加一个地址空间。"
+
+msgid "### [Add-IpamBlock](./Add-IpamBlock.md)"
+msgstr "### [Add-IpamBlock](./Add-IpamBlock.md)"
+
+msgid "Adds an IP address block to IPAM."
+msgstr "将一个IP地址段添加到IPAM中。"
+
+msgid "### [Add-IpamCustomField](./Add-IpamCustomField.md)"
+msgstr "### [Add-IpamCustomField](./Add-IpamCustomField.md)"
+
+msgid "Adds a free-form or multivalued custom field to IPAM."
+msgstr "向 IPAM 添加一个自由格式或多值的自定义字段。"
+
+msgid ""
+"### [Add-IpamCustomFieldAssociation](./Add-IpamCustomFieldAssociation.md)"
+msgstr ""
+"### [Add-IpamCustomFieldAssociation](./Add-IpamCustomFieldAssociation.md)"
+
+msgid ""
+"Adds an association between values for custom fields that are defined in "
+"IPAM."
+msgstr "在IPAM中定义的自定义字段的值之间建立关联关系。"
+
+msgid "### [Add-IpamCustomValue](./Add-IpamCustomValue.md)"
+msgstr "### [Add-IpamCustomValue](./Add-IpamCustomValue.md)"
+
+msgid "Adds a value to a custom field in IPAM."
+msgstr "向 IPAM 中的自定义字段添加一个值。"
+
+msgid "### [Add-IpamDiscoveryDomain](./Add-IpamDiscoveryDomain.md)"
+msgstr "### [Add-IpamDiscoveryDomain](./Add-IpamDiscoveryDomain.md)"
+
+msgid ""
+"Adds a new Active Directory domain to the list of domains in which IPAM "
+"discovers infrastructure servers."
+msgstr "向用于识别IPAM基础设施服务器的域列表中添加一个新的Active Directory域。"
+
+msgid "### [Add-IpamRange](./Add-IpamRange.md)"
+msgstr "### [Add-IpamRange](./Add-IpamRange.md)"
+
+msgid "Adds an IP address range to the configuration of an IPAM server."
+msgstr "将一个 IP 地址范围添加到 IPAM 服务器的配置中。"
+
+msgid "### [Add-IpamServerInventory](./Add-IpamServerInventory.md)"
+msgstr "### [Add-IpamServerInventory](./Add-IpamServerInventory.md)"
+
+msgid "Adds an infrastructure server to an IPAM database."
+msgstr "将一台基础设施服务器添加到 IPAM 数据库中。"
+
+msgid "### [Add-IpamSubnet](./Add-IpamSubnet.md)"
+msgstr "### [Add-IpamSubnet](./Add-IpamSubnet.md)"
+
+msgid "Adds a subnet to IPAM."
+msgstr "向 IPAM（IP 地址管理）中添加一个子网。"
+
+msgid "### [Disable-IpamCapability](./Disable-IpamCapability.md)"
+msgstr "### [禁用 Ipam 功能](./Disable-Ipam Capability.md)"
+
+msgid "Disables an optional capability in IPAM."
+msgstr "禁用 IPAM 中的一项可选功能。"
+
+msgid "### [Enable-IpamCapability](./Enable-IpamCapability.md)"
+msgstr "### [Enable-IpamCapability](./Enable-IpamCapability.md)"
+
+msgid "Enables an optional capability on the IPAM server."
+msgstr "启用 IPAM 服务器上的一项可选功能。"
+
+msgid "### [Export-IpamAddress](./Export-IpamAddress.md)"
+msgstr "### [Export-IpamAddress](./Export-IpamAddress.md)"
+
+msgid "Exports IP addresses from IPAM."
+msgstr "从 IPAM 中导出 IP 地址。"
+
+msgid "### [Export-IpamRange](./Export-IpamRange.md)"
+msgstr "### [Export-IpamRange](./Export-IpamRange.md)"
+
+msgid ""
+"Exports all of the IP address ranges as a file or as an array of objects or "
+"both."
+msgstr "将所有 IP 地址范围导出为一个文件、一个对象数组，或者同时以这两种形式进行导出。"
+
+msgid "### [Export-IpamSubnet](./Export-IpamSubnet.md)"
+msgstr "### [Export-IpamSubnet](./Export-IpamSubnet.md)"
+
+msgid ""
+"Exports the IP address subnets of an address family on the computer that "
+"runs IPAM."
+msgstr "在运行 IPAM 的计算机上，导出该地址家族中的 IP 地址子网信息。"
+
+msgid "### [Find-IpamFreeAddress](./Find-IpamFreeAddress.md)"
+msgstr "### [Find-IpamFreeAddress](./Find-IpamFreeAddress.md)"
+
+msgid ""
+"Gets one or more free IP addresses from a range of IP addresses in IPAM."
+msgstr "从 IPAM 中的某个 IP 地址范围内获取一个或多个免费的 IP 地址。"
+
+msgid "### [Find-IpamFreeRange](./Find-IpamFreeRange.md)"
+msgstr "### [Find-IpamFreeRange](./Find-IpamFreeRange.md)"
+
+msgid "Finds one or more free IP ranges from a specified subnet."
+msgstr "从指定的子网中查找一个或多个可用的 IP 地址范围。"
+
+msgid "### [Find-IpamFreeSubnet](./Find-IpamFreeSubnet.md)"
+msgstr "### [Find-IpamFreeSubnet](./Find-IpamFreeSubnet.md)"
+
+msgid "Finds one or more free IP subnets in a specified IP block."
+msgstr "在指定的IP地址段中查找一个或多个空闲的IP子网。"
+
+msgid "### [Get-IpamAddress](./Get-IpamAddress.md)"
+msgstr "### [Get-IpamAddress](./Get-IpamAddress.md)"
+
+msgid "Gets IP addresses from IPAM."
+msgstr "从 IPAM 获取 IP 地址。"
+
+msgid "### [Get-IpamAddressSpace](./Get-IpamAddressSpace.md)"
+msgstr "### [Get-IpamAddressSpace](./Get-IpamAddressSpace.md)"
+
+msgid "Gets address spaces in IPAM."
+msgstr "获取IPAM中的地址空间信息。"
+
+msgid ""
+"### [Get-IpamAddressUtilizationThreshold](./Get-"
+"IpamAddressUtilizationThreshold.md)"
+msgstr ""
+"### [Get-IpamAddressUtilizationThreshold](./Get-"
+"IpamAddressUtilizationThreshold.md)"
+
+msgid "Gets the threshold configuration for address utilization alerts."
+msgstr "获取地址使用率警报的阈值配置信息。"
+
+msgid "### [Get-IpamBlock](./Get-IpamBlock.md)"
+msgstr "### [Get-IpamBlock](./Get-IpamBlock.md)"
+
+msgid "Gets a set of address blocks from IPAM."
+msgstr "从 IPAM 获取一组地址块。"
+
+msgid "### [Get-IpamCapability](./Get-IpamCapability.md)"
+msgstr "### [Get-Ipam Capability](./Get-IpamCapability.md)"
+
+msgid "Gets all optional capabilities in IPAM."
+msgstr "获取 IPAM 中的所有可选功能。"
+
+msgid "### [Get-IpamConfiguration](./Get-IpamConfiguration.md)"
+msgstr "### [Get-IpamConfiguration](./Get-IpamConfiguration.md)"
+
+msgid "Gets the configuration for the computer that runs IPAM."
+msgstr "获取运行 IPAM 的计算机的配置信息。"
+
+msgid "### [Get-IpamConfigurationEvent](./Get-IpamConfigurationEvent.md)"
+msgstr "### [Get-IpamConfigurationEvent](./Get-IpamConfigurationEvent.md)"
+
+msgid "Gets IPAM configuration events from the IPAM database."
+msgstr "从 IPAM 数据库中获取 IPAM 配置事件。"
+
+msgid "### [Get-IpamCustomField](./Get-IpamCustomField.md)"
+msgstr "### [Get-IpamCustomField](./Get-IpamCustomField.md)"
+
+msgid "Gets custom fields in IPAM."
+msgstr "从 IPAM 中获取自定义字段信息。"
+
+msgid ""
+"### [Get-IpamCustomFieldAssociation](./Get-IpamCustomFieldAssociation.md)"
+msgstr ""
+"### [Get-IpamCustomFieldAssociation](./Get-IpamCustomFieldAssociation.md)"
+
+msgid "Gets associations between two custom fields defined in IPAM."
+msgstr "获取在 IPAM 中定义的两个自定义字段之间的关联关系。"
+
+msgid "### [Get-IpamDatabase](./Get-IpamDatabase.md)"
+msgstr "### [Get-IpamDatabase](./Get-IpamDatabase.md)"
+
+msgid "Gets configuration settings for the IPAM database."
+msgstr "获取IPAM数据库的配置设置。"
+
+msgid ""
+"### [Get-IpamDhcpConfigurationEvent](./Get-IpamDhcpConfigurationEvent.md)"
+msgstr ""
+"### [Get-IpamDhcpConfigurationEvent](./Get-IpamDhcpConfigurationEvent.md)"
+
+msgid "Gets configuration events for DHCP servers from the IPAM database."
+msgstr "从 IPAM 数据库中获取 DHCP 服务器的配置事件信息。"
+
+msgid "### [Get-IpamDhcpScope](./Get-IpamDhcpScope.md)"
+msgstr "### [Get-IpamDhcpScope](./Get-IpamDhcpScope.md)"
+
+msgid "Gets information about DHCP scopes from IPAM database."
+msgstr "从 IPAM 数据库中获取有关 DHCP 范围的信息。"
+
+msgid "### [Get-IpamDhcpServer](./Get-IpamDhcpServer.md)"
+msgstr "### [Get-IpamDhcpServer](./Get-IpamDhcpServer.md)"
+
+msgid "Gets information about  DHCP servers from IPAM database."
+msgstr "从IPAM数据库中获取有关DHCP服务器的信息。"
+
+msgid "### [Get-IpamDhcpSuperscope](./Get-IpamDhcpSuperscope.md)"
+msgstr "### [Get-IpamDhcpSuperscope](./Get-IpamDhcpSuperscope.md)"
+
+msgid "Gets information about DHCP superscopes from IPAM database."
+msgstr "从 IPAM 数据库中获取有关 DHCP 超范围（superscope）的信息。"
+
+msgid "### [Get-IpamDiscoveryDomain](./Get-IpamDiscoveryDomain.md)"
+msgstr "### [Get-IpamDiscoveryDomain](./Get-IpamDiscoveryDomain.md)"
+
+msgid ""
+"Gets the list of Active Directory domains in which IPAM discovers "
+"infrastructure servers."
+msgstr "获取 Active Directory 域的列表，在这些域中，IPAM 可以发现基础设施服务器。"
+
+msgid ""
+"### [Get-IpamDnsConditionalForwarder](./Get-IpamDnsConditionalForwarder.md)"
+msgstr ""
+"### [Get-IpamDnsConditionalForwarder](./Get-IpamDnsConditionalForwarder.md)"
+
+msgid "Gets information about DNS conditional forwarders from IPAM database."
+msgstr "从 IPAM 数据库中获取有关 DNS 条件转发器的信息。"
+
+msgid "### [Get-IpamDnsResourceRecord](./Get-IpamDnsResourceRecord.md)"
+msgstr "### [Get-IpamDnsResourceRecord](./Get-IpamDnsResourceRecord.md)"
+
+msgid "Gets DNS resource records from IPAM database."
+msgstr "从 IPAM 数据库中获取 DNS 资源记录。"
+
+msgid "### [Get-IpamDnsServer](./Get-IpamDnsServer.md)"
+msgstr "### [Get-IpamDnsServer](./Get-IpamDnsServer.md)"
+
+msgid "Gets information about DNS servers from IPAM database."
+msgstr "从 IPAM 数据库中获取有关 DNS 服务器的信息。"
+
+msgid "### [Get-IpamDnsZone](./Get-IpamDnsZone.md)"
+msgstr "### [Get-IpamDnsZone](./Get-IpamDnsZone.md)"
+
+msgid "Gets information about DNS zones from IPAM database."
+msgstr "从 IPAM 数据库中获取有关 DNS 区域的信息。"
+
+msgid "### [Get-IpamIpAddressAuditEvent](./Get-IpamIpAddressAuditEvent.md)"
+msgstr "### [Get-IpamIpAddressAuditEvent](./Get-IpamIpAddressAuditEvent.md)"
+
+msgid "Gets all IP address audit events in IPAM."
+msgstr "获取 IPAM 中的所有 IP 地址审计事件。"
+
+msgid "### [Get-IpamRange](./Get-IpamRange.md)"
+msgstr "### [Get-IpamRange](./Get-IpamRange.md)"
+
+msgid "Gets a set of IP address ranges from an IPAM server."
+msgstr "从 IPAM 服务器获取一组 IP 地址范围。"
+
+msgid "### [Get-IpamServerInventory](./Get-IpamServerInventory.md)"
+msgstr "### [Get-IpamServerInventory](./Get-IpamServerInventory.md)"
+
+msgid "Gets the properties of managed servers in the IPAM server inventory."
+msgstr "获取IPAM服务器库存中托管服务器的属性信息。"
+
+msgid "### [Get-IpamSubnet](./Get-IpamSubnet.md)"
+msgstr "### [Get-IpamSubnet](./Get-IpamSubnet.md)"
+
+msgid "Gets a set of subnets from IPAM."
+msgstr "从 IPAM 中获取一组子网。"
+
+msgid "### [Import-IpamAddress](./Import-IpamAddress.md)"
+msgstr "### [Import-IpamAddress](./Import-IpamAddress.md)"
+
+msgid "Imports IP address into the IPAM server."
+msgstr "将IP地址导入到IPAM服务器中。"
+
+msgid "### [Import-IpamRange](./Import-IpamRange.md)"
+msgstr "### [Import-IpamRange](./Import-IpamRange.md)"
+
+msgid ""
+"Imports one or more IP address range objects from the specified file into "
+"the IPAM server."
+msgstr "从指定的文件中导入一个或多个IP地址范围对象到IPAM服务器中。"
+
+msgid "### [Import-IpamSubnet](./Import-IpamSubnet.md)"
+msgstr "### [Import-IpamSubnet](./Import-IpamSubnet.md)"
+
+msgid "Imports IP address subnet objects from the specified file into IPAM."
+msgstr "从指定的文件中导入IP地址子网对象到IPAM系统中。"
+
+msgid "### [Invoke-IpamGpoProvisioning](./Invoke-IpamGpoProvisioning.md)"
+msgstr "### [Invoke-IpamGpoProvisioning](./Invoke-IpamGpoProvisioning.md)"
+
+msgid ""
+"Creates and links group policies in the specified domain for provisioning "
+"required access settings on the servers managed by the computer running the "
+"IPAM server."
+msgstr "在指定的域中创建并链接组策略，以便为运行IPAM服务器的计算机管理的服务器提供所需的访问设置。"
+
+msgid ""
+"### [Invoke-IpamServerProvisioning](./Invoke-IpamServerProvisioning.md)"
+msgstr ""
+"### [Invoke-IpamServerProvisioning](./Invoke-IpamServerProvisioning.md)"
+
+msgid "Automates the provisioning of IPAM server."
+msgstr "自动化IPAM服务器的配置过程。"
+
+msgid "### [Move-IpamDatabase](./Move-IpamDatabase.md)"
+msgstr "### [Move-IpamDatabase](./Move-IpamDatabase.md)"
+
+msgid "Migrates the IPAM database to a SQL Server database."
+msgstr "将 IPAM 数据库迁移到 SQL Server 数据库中。"
+
+msgid "### [Remove-IpamAddress](./Remove-IpamAddress.md)"
+msgstr "### [Remove-IpamAddress](./Remove-IpamAddress.md)"
+
+msgid "Removes a set of addresses from IPAM."
+msgstr "从 IPAM 中删除一组地址。"
+
+msgid "### [Remove-IpamAddressSpace](./Remove-IpamAddressSpace.md)"
+msgstr "### [Remove-IpamAddressSpace](./Remove-IpamAddressSpace.md)"
+
+msgid "Removes address spaces from IPAM."
+msgstr "从 IPAM 中删除地址空格。"
+
+msgid "### [Remove-IpamBlock](./Remove-IpamBlock.md)"
+msgstr "### [Remove-IpamBlock](./Remove-IpamBlock.md)"
+
+msgid "Removes an address block from IPAM."
+msgstr "从 IPAM 中删除一个地址块。"
+
+msgid ""
+"### [Remove-IpamConfigurationEvent](./Remove-IpamConfigurationEvent.md)"
+msgstr ""
+"### [Remove-IpamConfigurationEvent](./Remove-IpamConfigurationEvent.md)"
+
+msgid "Removes IPAM server configuration events."
+msgstr "删除 IPAM 服务器配置事件。"
+
+msgid "### [Remove-IpamCustomField](./Remove-IpamCustomField.md)"
+msgstr "### [Remove-IpamCustomField](./Remove-IpamCustomField.md)"
+
+msgid "Removes a custom field from IPAM."
+msgstr "从 IPAM 中删除一个自定义字段。"
+
+msgid ""
+"### [Remove-IpamCustomFieldAssociation](./Remove-"
+"IpamCustomFieldAssociation.md)"
+msgstr ""
+"### [Remove-IpamCustomFieldAssociation](./Remove-"
+"IpamCustomFieldAssociation.md)"
+
+msgid ""
+"Removes an association between two custom fields that are defined in IPAM."
+msgstr "删除在 IPAM 中定义的两个自定义字段之间的关联关系。"
+
+msgid "### [Remove-IpamCustomValue](./Remove-IpamCustomValue.md)"
+msgstr "### [Remove-IpamCustomValue](./Remove-IpamCustomValue.md)"
+
+msgid "Removes a custom value from IPAM."
+msgstr "从 IPAM 中删除自定义值。"
+
+msgid ""
+"### [Remove-IpamDhcpConfigurationEvent](./Remove-"
+"IpamDhcpConfigurationEvent.md)"
+msgstr ""
+"### [Remove-IpamDhcpConfigurationEvent](./Remove-"
+"IpamDhcpConfigurationEvent.md)"
+
+msgid "Removes configuration events for DHCP servers from the IPAM database."
+msgstr "从 IPAM 数据库中删除与 DHCP 服务器相关的配置事件。"
+
+msgid "### [Remove-IpamDiscoveryDomain](./Remove-IpamDiscoveryDomain.md)"
+msgstr "### [Remove-IpamDiscoveryDomain](./Remove-IpamDiscoveryDomain.md)"
+
+msgid "Removes a domain from IPAM."
+msgstr "从 IPAM 中删除一个域名。"
+
+msgid ""
+"### [Remove-IpamIpAddressAuditEvent](./Remove-IpamIpAddressAuditEvent.md)"
+msgstr ""
+"### [Remove-IpamIpAddressAuditEvent](./Remove-IpamIpAddressAuditEvent.md)"
+
+msgid "Removes IP address audit events from the IPAM database."
+msgstr "从 IPAM 数据库中删除与 IP 地址相关的审计事件记录。"
+
+msgid "### [Remove-IpamRange](./Remove-IpamRange.md)"
+msgstr "### [Remove-IpamRange](./Remove-IpamRange.md)"
+
+msgid "Removes a range of IP addresses from an IPAM server configuration."
+msgstr "从 IPAM 服务器配置中删除一系列 IP 地址。"
+
+msgid "### [Remove-IpamServerInventory](./Remove-IpamServerInventory.md)"
+msgstr "### [Remove-IpamServerInventory](./Remove-IpamServerInventory.md)"
+
+msgid "Removes a server from an IPAM server inventory."
+msgstr "从 IPAM 服务器清单中删除一台服务器。"
+
+msgid "### [Remove-IpamSubnet](./Remove-IpamSubnet.md)"
+msgstr "### [Remove-IpamSubnet](./Remove-IpamSubnet.md)"
+
+msgid "Removes a subnet from IPAM."
+msgstr "从 IPAM 中删除一个子网。"
+
+msgid "### [Remove-IpamUtilizationData](./Remove-IpamUtilizationData.md)"
+msgstr "### [Remove-IpamUtilizationData](./Remove-IpamUtilizationData.md)"
+
+msgid "### [Rename-IpamCustomField](./Rename-IpamCustomField.md)"
+msgstr "### [Rename-IpamCustomField](./Rename-IpamCustomField.md)"
+
+msgid "Renames a custom field in IPAM."
+msgstr "在 IPAM 中重命名一个自定义字段。"
+
+msgid "### [Rename-IpamCustomValue](./Rename-IpamCustomValue.md)"
+msgstr "### [Rename-IpamCustomValue](./Rename-IpamCustomValue.md)"
+
+msgid "Changes a value for a custom field."
+msgstr "更改自定义字段的值。"
+
+msgid "### [Set-IpamAccessScope](./Set-IpamAccessScope.md)"
+msgstr "### [Set-IpamAccessScope](./Set-IpamAccessScope.md)"
+
+msgid "Configures an IPAM access scope."
+msgstr "配置 IPAM 访问范围。"
+
+msgid "### [Set-IpamAddress](./Set-IpamAddress.md)"
+msgstr "### [Set-IpamAddress](./Set-IpamAddress.md)"
+
+msgid "Modifies an IP address in IPAM."
+msgstr "在IPAM中修改一个IP地址。"
+
+msgid "### [Set-IpamAddressSpace](./Set-IpamAddressSpace.md)"
+msgstr "### [Set-IpamAddressSpace](./Set-IpamAddressSpace.md)"
+
+msgid "Modifies address spaces in IPAM."
+msgstr "修改 IPAM 中的地址空间。"
+
+msgid ""
+"### [Set-IpamAddressUtilizationThreshold](./Set-"
+"IpamAddressUtilizationThreshold.md)"
+msgstr ""
+"### [Set-IpamAddressUtilizationThreshold](./Set-"
+"IpamAddressUtilizationThreshold.md)"
+
+msgid "Modifies the address utilization thresholds in IPAM."
+msgstr "修改IPAM中的地址利用率阈值。"
+
+msgid "### [Set-IpamBlock](./Set-IpamBlock.md)"
+msgstr "### [Set-IpamBlock](./Set-IpamBlock.md)"
+
+msgid "Modifies an IP address block in IPAM."
+msgstr "修改 IPAM 中的 IP 地址段。"
+
+msgid "### [Set-IpamConfiguration](./Set-IpamConfiguration.md)"
+msgstr "### [Set-IpamConfiguration](./Set-IpamConfiguration.md)"
+
+msgid "Modifies the configuration for the computer that runs the IPAM server."
+msgstr "修改运行 IPAM 服务器的计算机的配置。"
+
+msgid ""
+"### [Set-IpamCustomFieldAssociation](./Set-IpamCustomFieldAssociation.md)"
+msgstr ""
+"### [Set-IpamCustomFieldAssociation](./Set-IpamCustomFieldAssociation.md)"
+
+msgid "Modifies associations of values for custom fields defined in IPAM."
+msgstr "修改在 IPAM 中定义的自定义字段的值之间的关联关系。"
+
+msgid "### [Set-IpamDatabase](./Set-IpamDatabase.md)"
+msgstr "### [Set-IpamDatabase](./Set-IpamDatabase.md)"
+
+msgid "Modifies settings that IPAM uses to connect to the IPAM database."
+msgstr "修改 IPAM 用于连接 IPAM 数据库的设置。"
+
+msgid "### [Set-IpamDiscoveryDomain](./Set-IpamDiscoveryDomain.md)"
+msgstr "### [Set-IpamDiscoveryDomain](./Set-IpamDiscoveryDomain.md)"
+
+msgid "Modifies the IPAM discovery configuration."
+msgstr "修改 IPAM 发现配置。"
+
+msgid "### [Set-IpamRange](./Set-IpamRange.md)"
+msgstr "### [Set-IpamRange](./Set-IpamRange.md)"
+
+msgid "Modifies an existing IP address range."
+msgstr "修改现有的 IP 地址范围。"
+
+msgid "### [Set-IpamServerInventory](./Set-IpamServerInventory.md)"
+msgstr "### [Set-IpamServerInventory](./Set-IpamServerInventory.md)"
+
+msgid ""
+"Modifies the properties of an infrastructure server in the IPAM server "
+"inventory."
+msgstr "修改IPAM服务器库存中某台基础设施服务器的属性。"
+
+msgid "### [Set-IpamSubnet](./Set-IpamSubnet.md)"
+msgstr "### [Set-IpamSubnet](./Set-IpamSubnet.md)"
+
+msgid "Modifies an existing IP subnet in IPAM."
+msgstr "在IPAM中修改现有的IP子网。"
+
+msgid "### [Update-IpamServer](./Update-IpamServer.md)"
+msgstr "### [更新 IpamServer](./Update-IpamServer.md)"
+
+msgid "Updates an IPAM server following an operating system upgrade."
+msgstr "在操作系统升级后，更新IPAM服务器的相关配置。"

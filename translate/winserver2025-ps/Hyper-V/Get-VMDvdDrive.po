@@ -1,0 +1,171 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:06:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMDvdDrive"
+msgstr "# Get-VMDvdDrive"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets the DVD drives attached to a virtual machine or snapshot."
+msgstr "获取连接到虚拟机或快照上的DVD驱动器。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### VMSnapshot"
+msgstr "### VMSnapshot"
+
+msgid "### VMDriveController"
+msgstr "### VMDriveController"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-VMDvdDrive** cmdlet gets the DVD drives attached to a virtual machine or snapshot.\n"
+"This cmdlet has no ControllerType parameter, as the **Get-VMHardDiskDrive** cmdlet does, because virtual DVD drives can be attached only to the IDE controller."
+msgstr ""
+"`Get-VMDvdDrive` cmdlet 用于获取连接到虚拟机或快照上的 DVD 驱动器。与 `Get-VMHardDiskDrive` "
+"cmdlet 不同，该 cmdlet 没有 `ControllerType` 参数，因为虚拟 DVD 驱动器只能连接到 IDE 控制器上。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "Gets the virtual DVD drives from virtual machine Test."
+msgstr "从虚拟机Test中获取虚拟DVD驱动器。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"Gets the virtual DVD drives from IDE controller 1 of virtual machine Test."
+msgstr "从虚拟机Test的IDE控制器1中获取虚拟DVD驱动器。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"Gets the virtual DVD drives from IDE controller 1 of virtual machine TestVM "
+"located on the server Development."
+msgstr "从位于 Development 服务器上的虚拟机 TestVM 的 IDE 控制器 1 中获取虚拟 DVD 驱动器。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"Gets the virtual DVD drives from snapshot Before applying updates of virtual"
+" machine TestVM."
+msgstr "在应用虚拟机TestVM的更新之前，从快照中获取虚拟DVD驱动器。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts from which the DVD drives are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于获取 DVD 驱动器的 Hyper-V 主机。可以使用 NetBIOS 名称、IP "
+"地址或完全合格的域名进行指定。默认值是本地计算机。可以使用 `localhost` 或点号（.）来明确表示本地计算机。"
+
+msgid ""
+"Specifies the number of the location on the controller from which the DVD "
+"drives are to be retrieved."
+msgstr "指定控制器上用于获取DVD驱动器的位置编号。"
+
+msgid ""
+"Specifies the number of the controller from which the DVD drives are to be "
+"retrieved."
+msgstr "指定用于获取DVD驱动器的控制器的编号。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the virtual machine from which the DVD drives are to be retrieved."
+msgstr "指定用于获取 DVD 驱动器的虚拟机。"
+
+msgid ""
+"Specifies the controller from which the DVD drives are to be retrieved."
+msgstr "指定用于检索DVD驱动器的控制器。"
+
+msgid ""
+"Specifies the name of the virtual machine from which the DVD drives are to "
+"be retrieved."
+msgstr "指定用于获取DVD驱动器的虚拟机的名称。"
+
+msgid ""
+"Specifies the virtual machine snapshot from which the DVD drives are to be "
+"retrieved."
+msgstr "指定要从哪个虚拟机快照中获取DVD驱动器信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### Microsoft.HyperV.PowerShell.VMDriveController[]"
+msgstr "### Microsoft.HyperV.PowerShell.VMDriveController[]"
+
+msgid "### Microsoft.HyperV.PowerShell.VMSnapshot"
+msgstr "### Microsoft.HyperV.PowerShell.VMSnapshot"
+
+msgid "### Microsoft.HyperV.PowerShell.VirtualMachine[]"
+msgstr "### Microsoft.HyperV.PowerShell.VirtualMachine[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.DvdDrive"
+msgstr "### Microsoft.HyperV.PowerShell.DvdDrive"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:28:46 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disable-IISCentralCertProvider"
+msgstr "# 禁用 IISCentralCertProvider"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Disables the IIS central certificate store."
+msgstr "禁用 IIS 的中央证书存储功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Disable-IISCentralCertProvider** cmdlet disables the IIS central certificate store.\n"
+"The central certificate store allows you to store all your IIS certificates in a centralized location (such as a file share); IIS servers then retrieve certificate from this centralized location.\n"
+"That means that you only have to install certificates in one location; there is no need to install the same certificate on each and every IIS server.\n"
+"If you disable the central certificate store then you will need to install certificates on all of your servers."
+msgstr ""
+"`Disable-IISCentralCertProvider` cmdlet 用于禁用 IIS 的中央证书存储功能。中央证书存储允许您将所有 IIS "
+"证书集中存储在一个位置（例如文件共享文件夹）中，然后 IIS 服务器可以从该集中位置获取证书。这样一来，您只需在其中一个位置安装证书即可，无需在每台 "
+"IIS 服务器上都单独安装相同的证书。如果您禁用了中央证书存储功能，则需要在所有服务器上分别安装证书。"
+
+msgid ""
+"If the certificate store has been disabled you can re-enable it at any time "
+"by running the **Enable-IISCentralCertProvider** cmdlet."
+msgstr ""
+"如果证书存储已被禁用，您可以通过运行 **Enable-IISCentralCertProvider** cmdlet 在任何时候重新启用它。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This command disables the central certificate store.\n"
+"Note that no parameters are required when calling **Disable-IISCentralCertProvider**.\n"
+"Note, too that you will not be asked to confirm whether you want to disable the central store.\n"
+"Instead, the store will automatically be disabled when you run this command."
+msgstr ""
+"此命令会禁用中央证书存储。请注意，在调用 **Disable-IISCentralCertProvider** "
+"时不需要任何参数。另外，系统也不会询问您是否确认要禁用该中央证书存储；只需运行此命令，存储就会被自动禁用。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-IISCentralCertProvider](./Clear-IISCentralCertProvider.md)"
+msgstr "[Clear-IISCentralCertProvider](./Clear-IISCentralCertProvider.md)"
+
+msgid "[Enable-IISCentralCertProvider](./Enable-IISCentralCertProvider.md)"
+msgstr "[Enable-IISCentralCertProvider](./Enable-IISCentralCertProvider.md)"
+
+msgid "[Get-IISCentralCertProvider](./Get-IISCentralCertProvider.md)"
+msgstr "[Get-IISCentralCertProvider](./Get-IISCentralCertProvider.md)"
+
+msgid "[Set-IISCentralCertProvider](./Set-IISCentralCertProvider.md)"
+msgstr "[Set-IISCentralCertProvider](./Set-IISCentralCertProvider.md)"
+
+msgid ""
+"[Set-IISCentralCertProviderCredential](./Set-"
+"IISCentralCertProviderCredential.md)"
+msgstr ""
+"[Set-IISCentralCertProviderCredential](./Set-"
+"IISCentralCertProviderCredential.md)"

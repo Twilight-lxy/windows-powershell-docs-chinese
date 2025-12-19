@@ -1,0 +1,114 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:42:51 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# iSCSI Module"
+msgstr "# iSCSI模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all iSCSI "
+"Initiator-specific cmdlets. It lists the cmdlets in alphabetical order based"
+" on the verb at the beginning of the cmdlet."
+msgstr ""
+"此参考提供了所有针对 iSCSI 启动器（iSCSI Initiator）的 cmdlet 的描述和语法。这些 cmdlet "
+"按照其开头命令动词的字母顺序进行排列。"
+
+msgid "## iSCSI Cmdlets"
+msgstr "## iSCSI cmdlet（命令行工具）"
+
+msgid "### [Connect-IscsiTarget](./Connect-IscsiTarget.md)"
+msgstr "### [Connect-IscsiTarget](./Connect-IscsiTarget.md)"
+
+msgid ""
+"Establishes a connection between the local iSCSI initiator and an iSCSI "
+"target device."
+msgstr "在本地 iSCSI 发起方和 iSCSI 目标设备之间建立连接。"
+
+msgid "### [Disconnect-IscsiTarget](./Disconnect-IscsiTarget.md)"
+msgstr "### [ Disconnect-IscsiTarget](./Disconnect-IscsiTarget.md)"
+
+msgid "Disconnects sessions to the specified iSCSI target object."
+msgstr "断开与指定iSCSI目标对象的会话连接。"
+
+msgid "### [Get-IscsiConnection](./Get-IscsiConnection.md)"
+msgstr "### [Get-IscsiConnection](./Get-IscsiConnection.md)"
+
+msgid "Gets information about connected iSCSI initiator connections."
+msgstr "获取有关已连接的 iSCSI 发起者连接的信息。"
+
+msgid "### [Get-IscsiSession](./Get-IscsiSession.md)"
+msgstr "### [Get-IscsiSession](./Get-IscsiSession.md)"
+
+msgid "Retrieves information about established iSCSI sessions."
+msgstr "检索有关已建立的iSCSI会话的信息。"
+
+msgid "### [Get-IscsiTarget](./Get-IscsiTarget.md)"
+msgstr "### [Get-IscsiTarget](./Get-IscsiTarget.md)"
+
+msgid ""
+"Returns an iSCSI target object for each iSCSI target that is registered with"
+" the iSCSI initiator."
+msgstr "为每个向 iSCSI 启动器注册的 iSCSI 目标返回一个对应的 iSCSI 目标对象。"
+
+msgid "### [Get-IscsiTargetPortal](./Get-IscsiTargetPortal.md)"
+msgstr "### [Get-IscsiTargetPortal](./Get-IscsiTargetPortal.md)"
+
+msgid "Gets iSCSI target portals."
+msgstr "获取iSCSI目标端口（target portals）。"
+
+msgid "### [New-IscsiTargetPortal](./New-IscsiTargetPortal.md)"
+msgstr "### [New-IscsiTargetPortal](./New-IscsiTargetPortal.md)"
+
+msgid "Configures an iSCSI target portal."
+msgstr "配置一个iSCSI目标端口（target portal）。"
+
+msgid "### [Register-IscsiSession](./Register-IscsiSession.md)"
+msgstr "### [注册 IscsiSession](./Register-IscsiSession.md)"
+
+msgid ""
+"Registers an active iSCSI session to be persistent using the session "
+"identifier as input."
+msgstr "使用会话标识符作为输入，注册一个活跃的iSCSI会话以使其持久化（即不会在系统重启后丢失）。"
+
+msgid "### [Remove-IscsiTargetPortal](./Remove-IscsiTargetPortal.md)"
+msgstr "### [Remove-IscsiTargetPortal](./Remove-IscsiTargetPortal.md)"
+
+msgid "Removes the specified iSCSI target portal."
+msgstr "删除指定的 iSCSI 目标端口。"
+
+msgid "### [Set-IscsiChapSecret](./Set-IscsiChapSecret.md)"
+msgstr "### [Set-IscsiChapSecret](./Set-IscsiChapSecret.md)"
+
+msgid "Sets a CHAP secret key for use with iSCSI initiator connections."
+msgstr "设置一个用于 iSCSI 启动器连接的 CHAP 密钥。"
+
+msgid "### [Unregister-IscsiSession](./Unregister-IscsiSession.md)"
+msgstr "### [Unregister-IscsiSession](./Unregister-IscsiSession.md)"
+
+msgid ""
+"Removes an active iSCSI session from being persistent using the session "
+"identifier as input."
+msgstr "使用会话标识符作为输入参数，删除一个处于活动状态的iSCSI会话，使其不再保持持久化状态（即不再被系统自动记录或保留）。"
+
+msgid "### [Update-IscsiTarget](./Update-IscsiTarget.md)"
+msgstr "### [更新-IscsiTarget](./Update-IscsiTarget.md)"
+
+msgid "Refreshes the information about connected iSCSI target objects."
+msgstr "更新有关已连接的 iSCSI 目标对象的信息。"
+
+msgid "### [Update-IscsiTargetPortal](./Update-IscsiTargetPortal.md)"
+msgstr "### [更新-IscsiTargetPortal](./Update-IscsiTargetPortal.md)"
+
+msgid "Updates information about the specified iSCSI target portal."
+msgstr "更新有关指定的iSCSI目标端口的信息。"

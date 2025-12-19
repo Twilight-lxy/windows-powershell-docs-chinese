@@ -1,0 +1,118 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 08:27:26 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-HgsKeyProtectionAttestationSignerCertificate"
+msgstr "# 移除HGS密钥保护认证签名证书"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Removes an attestation signer certificate from the trusted certificates in "
+"the Key Protection Service."
+msgstr "从密钥保护服务（Key Protection Service）中的受信任证书列表中移除某个认证签名者的证书。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-HgsKeyProtectionAttestationSignerCertificate** cmdlet removes "
+"the signer certificate of an attestation server from the attestation signer "
+"certificates that the Key Protection Service trusts."
+msgstr ""
+"`Remove-HgsKeyProtectionAttestationSignerCertificate` cmdlet 会从 Key "
+"Protection Service 所信任的认证签名证书列表中移除某个认证服务器的签名证书。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove an attestation certificate"
+msgstr "### 示例 1：删除认证证书"
+
+msgid ""
+"This command removes a trusted attestation certificate signer.\n"
+"The command looks up the certificate signer to remove by using a thumbprint."
+msgstr "此命令用于移除一个受信任的证书签名者。该命令通过使用“指纹”（即证书的独特标识信息）来查找需要移除的证书签名者。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the thumbprint of the attestation signer certificate to remove."
+msgstr "指定要删除的认证签名者证书的“指纹”（即该证书的唯一标识信息）。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前，会提示您确认是否要继续执行该操作。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上该cmdlet并未被执行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "You cannot pipe input to this cmdlet."
+msgstr "您不能将输入数据通过管道传递给此 cmdlet。"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "This cmdlet does not generate any output."
+msgstr "此cmdlet不会生成任何输出。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Add-HgsKeyProtectionAttestationSignerCertificate](./Add-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+msgstr ""
+"[Add-HgsKeyProtectionAttestationSignerCertificate](./Add-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+
+msgid ""
+"[Get-HgsKeyProtectionAttestationSignerCertificate](./Get-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"
+msgstr ""
+"[Get-HgsKeyProtectionAttestationSignerCertificate](./Get-"
+"HgsKeyProtectionAttestationSignerCertificate.md)"

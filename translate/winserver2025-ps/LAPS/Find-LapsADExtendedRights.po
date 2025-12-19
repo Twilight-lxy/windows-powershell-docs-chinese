@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:01:55 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Queries Active Directory (AD) to find principals that have been granted "
+"permission to read Windows Local Administrator Password Solution (LAPS) "
+"password attributes."
+msgstr ""
+"查询 Active Directory（AD），以找到那些被授予读取 Windows 本地管理员密码解决方案（LAPS）密码属性权限的主体。"
+
+msgid "# Find-LapsADExtendedRights"
+msgstr "# Find-LapsADExtendedRights"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Queries Active Directory (AD) to find principals that have been granted permission to read Windows\n"
+"Local Administrator Password Solution (LAPS) password attributes."
+msgstr "查询 Active Directory（AD），以找到已被授予读取 Windows 本地管理员密码解决方案（LAPS）密码属性权限的主体。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Find-LapsADExtendedRights` cmdlet is used by administrators to query which principals have\n"
+"been granted permissions to read the LAPS password attributes."
+msgstr ""
+"`Find-LapsADExtendedRights` cmdlet 由管理员使用，用于查询哪些主体被授予了读取 LAPS 密码属性的权限。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example shows how to run the cmdlet."
+msgstr "这个例子展示了如何运行该cmdlet。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the credentials to use when updating AD. If not specified, the current\n"
+"user's credentials are used."
+msgstr "指定在更新 Active Directory (AD) 时使用的凭据。如果未指定，则使用当前用户的凭据。"
+
+msgid "Specifies the name of the domain to connect to."
+msgstr "指定要连接的域的名称。"
+
+msgid "Specifies the name of the domain controller to connect to."
+msgstr "指定要连接的域控制器的名称。"
+
+msgid "Specifies the name of the OU to query."
+msgstr "指定要查询的组织单位（Organizational Unit, OU）的名称。"
+
+msgid ""
+"This parameter accepts several different name formats that influence the criteria used in the\n"
+"resultant AD search. The supported name formats are as follows:"
+msgstr "此参数支持多种不同的名称格式，这些格式会影响最终AD搜索中使用的标准。支持的名称格式如下："
+
+msgid ""
+"Querying permissions on the domain root is only supported using the "
+"distinguishedName input format, for example 'DC=laps,DC=com'."
+msgstr "仅支持使用 `distinguishedName` 输入格式来查询域根的权限，例如 ‘DC=laps,DC=com’。"
+
+msgid ""
+"Specify this parameter to also check computer objects for the permissions."
+msgstr "请指定此参数，以便同时检查计算机对象上的权限设置。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Windows LAPS Overview](https://go.microsoft.com/fwlink/?linkid=2233901)"
+msgstr "[Windows LAPS 概述](https://go.microsoft.com/fwlink/?linkid=2233901)"

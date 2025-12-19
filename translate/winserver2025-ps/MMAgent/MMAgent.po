@@ -1,0 +1,68 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:33:16 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# MMAgent Module"
+msgstr "# MMAgent 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Memory "
+"Management Agent (MMAgent) - specific cmdlets. It lists the cmdlets in "
+"alphabetical order based on the verb at the beginning of the cmdlet."
+msgstr ""
+"该参考资料提供了所有与内存管理代理（Memory Management "
+"Agent，简称MMAgent）相关的cmdlet的描述和语法。这些cmdlet按照其命令开头所使用的动词字母顺序进行排列。"
+
+msgid "## MMAgent Cmdlets"
+msgstr "## MMAgentCmdlets"
+
+msgid "### [Debug-MMAppPrelaunch](./Debug-MMAppPrelaunch.md)"
+msgstr "### [Debug-MMAppPrelaunch](./Debug-MMAppPrelaunch.md)"
+
+msgid ""
+"Debugs the application prelaunch of a specific application by triggering the"
+" prelaunch to occur and to exit debug mode for the application."
+msgstr "在特定应用程序启动之前，通过触发其预启动过程来调试该应用程序，并使该应用程序退出调试模式。"
+
+msgid "### [Disable-MMAgent](./Disable-MMAgent.md)"
+msgstr "### [ Disable-MMAgent](./Disable-MMAgent.md)"
+
+msgid ""
+"Disables application launch prefetching, operation recorder API "
+"functionality, page combining, and application prelaunch."
+msgstr "禁用应用程序启动时的预加载功能、操作记录器API功能、页面合并功能以及应用程序的预启动过程。"
+
+msgid "### [Enable-MMAgent](./Enable-MMAgent.md)"
+msgstr "### [Enable-MMAgent](./Enable-MMAgent.md)"
+
+msgid ""
+"Enables application launch prefetching, operation recorder API "
+"functionality, page combining, and application prelaunch."
+msgstr "启用应用程序启动前的预加载功能、操作记录器API功能、页面合并功能以及应用程序的预先启动功能。"
+
+msgid "### [Get-MMAgent](./Get-MMAgent.md)"
+msgstr "### [Get-MMAgent](./Get-MMAgent.md)"
+
+msgid ""
+"Gets the state of application launch prefetching, operation API prefetching "
+"functionality, page combining, and application prelaunch."
+msgstr "用于获取应用程序启动时的预加载状态、操作API的预加载功能、页面合并过程以及应用程序启动前的相关情况。"
+
+msgid "### [Set-MMAgent](./Set-MMAgent.md)"
+msgstr "### [Set-MMAgent](./Set-MMAgent.md)"
+
+msgid ""
+"Sets the maximum number of prefetch files for scenarios that the Operation "
+"Recorder API records."
+msgstr "为操作记录器（Operation Recorder）API所记录的场景设置预取文件的最大数量。"

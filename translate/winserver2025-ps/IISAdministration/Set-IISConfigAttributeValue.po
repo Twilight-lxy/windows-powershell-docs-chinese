@@ -1,0 +1,108 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:38:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来借助 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-IISConfigAttributeValue"
+msgstr "# 设置 IIS 配置属性值"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Sets a configuration attribute value for an IIS configuration section or "
+"configuration element attribute."
+msgstr "为 IIS 配置节或配置元素属性设置一个配置属性值。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-IISConfigAttributeValue** cmdlet sets a configuration attribute value from an Internet Information Services (IIS) configuration section attribute or a configuration element attribute.\n"
+"The value set is for the given ConfigurationElement and not necessarily the effective value for a given site / virtual directory / folder etc.\n"
+"To set the effective attribute values, always retrieve the configuration element by specifying the commit path as the deepest level possible."
+msgstr ""
+"`Set-IISConfigAttributeValue` cmdlet 用于从 Internet Information Services (IIS)"
+" 的配置节属性或配置元素属性中设置一个配置属性值。所设置的值仅适用于指定的 "
+"`ConfigurationElement`，而不一定代表该站点、虚拟目录或文件夹等的实际生效值。若要设置实际的属性值，请务必通过指定尽可能深的路径来检索相应的配置元素。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Set the value of a configuration attribute"
+msgstr "### 示例 1：设置配置属性的值"
+
+msgid ""
+"This command sets the value of the configuration attribute MaxUrlSegments "
+"for the IIS website named Default Web Site to 16."
+msgstr "此命令将名为“Default Web Site”的IIS网站的配置属性“MaxUrlSegmentes”的值设置为16。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Specifies the name of the attribute for which the value will be set."
+msgstr "指定将要设置值的属性的名称。"
+
+msgid "Specifies the new value of the attribute."
+msgstr "指定属性的新值。"
+
+msgid ""
+"Specifies the IIS ConfigurationSection or ConfigurationElement for which the"
+" attribute value will be looked up."
+msgstr "指定要查找属性值的 IIS ConfigurationSection 或 ConfigurationElement。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"about_CommonParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（INPUTS）"
+
+msgid "### Microsoft.Web.Administration.ConfigurationElement"
+msgstr "### Microsoft.Web.Administration.ConfigurationElement"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IISConfigAttributeValue](./Get-IISConfigAttributeValue.md)"
+msgstr "[Get-IISConfigAttributeValue](./Get-IISConfigAttributeValue.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理cmdlet](./iisadministration.md)"

@@ -1,0 +1,195 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:50:28 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Add-IpamRange"
+msgstr "# Add-IpamRange"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Adds an IP address range to the configuration of an IPAM server."
+msgstr "将一个 IP 地址范围添加到 IPAM 服务器的配置中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Add-IpamRange** cmdlet adds an IP address range to the configuration of an IP Address Management (IPAM) server.\n"
+"Use this cmdlet to add a Non-Virtualized, Provider, or a Customer IP address range in IPAM.\n"
+"If the network type is Provider or NonVirtualized, the range will be added to default address space if you do not specify an address space.\n"
+"If the network type is Customer, you must specify an address space."
+msgstr ""
+"`Add-IpamRange` cmdlet 用于将一个 IP 地址范围添加到 IP 地址管理（IPAM）服务器的配置中。您可以使用此 cmdlet 在"
+" IPAM 中添加非虚拟化、供应商或客户类型的 IP "
+"地址范围。如果网络类型为供应商或非虚拟化类型，并且未指定地址空间，则该地址范围将自动添加到默认地址空间中；如果网络类型为客户类型，则必须指定一个地址空间。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Add an IP address range"
+msgstr "### 示例 1：添加一个 IP 地址范围"
+
+msgid ""
+"This command adds an IP address range that is managed by the current instance of IPAM server.\n"
+"This range is added to the default address space."
+msgstr "此命令添加了一个由当前IPAM服务器实例管理的IP地址范围。该地址范围会被添加到默认的地址空间中。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 2: Add an IP address range by using a network ID"
+msgstr "### 示例 2：使用网络 ID 添加 IP 地址范围"
+
+msgid ""
+"This command adds an IP address range with network id 172.16.10.0/24.\n"
+"IPAM does not allow creation of a range for which a corresponding subnet does not exist."
+msgstr "该命令添加了一个IP地址范围，其网络ID为172.16.10.0/24。IPAM不允许创建一个不存在相应子网的IP地址范围。"
+
+msgid ""
+"### Example 3: Add an IP address range by using a network ID and create a "
+"subnet"
+msgstr "### 示例 3：使用网络 ID 添加 IP 地址范围并创建子网"
+
+msgid ""
+"This command adds an IP address range with network id 172.16.10.0/24.\n"
+"The command uses the *CreateSubnetIfNotFound* parameter to automatically create the corresponding subnet, and adds WINS and Gateway servers to the range.\n"
+"Gateway servers are specified in the format \\<IP Address\\>/\\<Metric\\>."
+msgstr ""
+"这个命令用于添加一个 IP 地址范围，其网络 ID 为 172.16.10.0/24。该命令使用了 *CreateSubnetIfNotFound* "
+"参数来自动创建相应的子网，并向该地址范围内添加 WINS 和网关服务器。网关服务器的格式为 \\<IP 地址\\>/\\<指标\\>。"
+
+msgid ""
+"### Example 4: Add a provider IP address range to an existing IPAM "
+"configuration"
+msgstr "### 示例 4：向现有的 IPAM 配置中添加提供商 IP 地址范围"
+
+msgid ""
+"This command adds a provider IP address range that is managed by current instance of IPAM.\n"
+"The range will be added to default address space."
+msgstr "此命令添加了一个由当前IPAM实例管理的提供商IP地址范围。该地址范围将被添加到默认地址空间中。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了 *PassThru* 参数，因此它会将结果显示在控制台上。"
+
+msgid "### Example 5: Add a range of provider IP addresses"
+msgstr "### 示例 5：添加一系列提供商的 IP 地址"
+
+msgid ""
+"This command adds a provider IP range 172.16.19.0/24 with start and end IP addresses 172.16.19.10 and 172.16.19.110.\n"
+"The command adds the range to a provider address space named ContosoDataCenter.\n"
+"Since this range is in a different address space, IPAM will not mark it as overlapping."
+msgstr ""
+"此命令添加了一个提供者IP地址范围（172.16.19.0/24），其起始地址为172.16.19.10，结束地址为172.16.19.110。该地址范围被添加到一个名为“ContosoDataCenter”的提供者地址空间中。由于这个地址范围属于不同的地址空间，IPAM系统不会将其标记为与现有地址范围重叠。"
+
+msgid ""
+"The command includes the *PassThru* parameter, so it displays results to the"
+" console."
+msgstr "该命令包含了*PassThru*参数，因此它会将结果显示在控制台上。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an address space to which this IP address range belongs.\n"
+"An address space contains IP subnets, IP ranges, and IP addresses.\n"
+"If you do not specify this parameter, the default address space is used.\n"
+"The default address space is the Provider address space."
+msgstr ""
+"指定该 IP 地址范围所属的地址空间。一个地址空间包含 IP 子网、IP 范围和 IP "
+"地址。如果未指定此参数，则使用默认地址空间。默认地址空间是提供商提供的地址空间。"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将此cmdlet作为后台作业运行。使用此参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示该作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理该作业，请使用 `*-Job` "
+"系列 cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid "Specifies a date on which to assign addresses in this range."
+msgstr "指定一个日期，在该日期将地址分配到这个范围内。"
+
+msgid ""
+"Specifies how IPAM assigns the addresses.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定 IPAM 如何分配地址。此参数的可接受值为："
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### CimInstance#ROOT/microsoft/ipam/MSFT_IPAM_Range"
+msgstr "### CimInstance#ROOT/microsoft/ipam/MSFT_IPAM_Range"
+
+msgid ""
+"This cmdlet returns the IP address range object added to the IPAM data "
+"store."
+msgstr "此cmdlet返回添加到IPAM数据存储中的IP地址范围对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Export-IpamRange](./Export-IpamRange.md)"
+msgstr "[Export-IpamRange](./Export-IpamRange.md)"
+
+msgid "[Get-IpamRange](./Get-IpamRange.md)"
+msgstr "[Get-IpamRange](./Get-IpamRange.md)"
+
+msgid "[Import-IpamRange](./Import-IpamRange.md)"
+msgstr "[Import-IpamRange](./Import-IpamRange.md)"
+
+msgid "[Remove-IpamRange](./Remove-IpamRange.md)"
+msgstr "[Remove-IpamRange](./Remove-IpamRange.md)"
+
+msgid "[Set-IpamRange](./Set-IpamRange.md)"
+msgstr "[Set-IpamRange](./Set-IpamRange.md)"

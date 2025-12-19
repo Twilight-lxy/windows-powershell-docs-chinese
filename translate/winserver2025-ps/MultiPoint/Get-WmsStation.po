@@ -1,0 +1,123 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:08:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-WmsStation"
+msgstr "# Get-WmsStation"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets station information."
+msgstr "获取车站信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### GetById"
+msgstr "### setId"
+
+msgid "### GetAll"
+msgstr "### GetAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-WmsStation** cmdlet gets information for the specified station or "
+"for all stations."
+msgstr "`Get-WmsStation` cmdlet 可以获取指定站点或所有站点的信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get information for all stations"
+msgstr "### 示例 1：获取所有车站的信息"
+
+msgid ""
+"This command gets MultiPoint Server station information, along with the "
+"remote desktop session ID, if a session is associated with it."
+msgstr ""
+"这个命令可以获取多点服务器（MultiPoint Server）的工作站信息，同时还会获取与之关联的远程桌面会话ID（如果存在该会话的话）。"
+
+msgid ""
+"If no session is associated with the station, 4294967295 is returned as the "
+"session ID."
+msgstr "如果该站点没有关联任何会话，则会返回 4294967295 作为会话 ID。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 `localhost`。"
+
+msgid "Specifies an array of station IDs."
+msgstr "指定一个车站ID数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此cmdlet支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于常用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.WmsStation"
+msgstr ""
+"### Microsoft.WindowsServerSolutions.MultipointServer POWERShell "
+"Commands.Library.WmsStation"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Clear-WmsStation](./Clear-WmsStation.md)"
+msgstr "[Clear-WmsStation](./Clear-WmsStation.md)"
+
+msgid "[Join-WmsStation](./Join-WmsStation.md)"
+msgstr "[Join-WmsStation](./Join-WmsStation.md)"
+
+msgid "[Set-WmsStation](./Set-WmsStation.md)"
+msgstr "[Set-WmsStation](./Set-WmsStation.md)"
+
+msgid "[Split-WmsStation](./Split-WmsStation.md)"
+msgstr "[Split-WmsStation](./Split-WmsStation.md)"
+
+msgid "[Update-WmsStation](./Update-WmsStation.md)"
+msgstr "[更新 WMS 站点](./Update-WmsStation.md)"

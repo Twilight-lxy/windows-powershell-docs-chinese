@@ -1,0 +1,39 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 14:13:39 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# NetConnection Module"
+msgstr "# NetConnection 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Net Connection cmdlets. It lists the\n"
+"cmdlets in alphabetical order based on the verb at the beginning of the cmdlet."
+msgstr ""
+"这个参考资料提供了所有与网络连接（Net "
+"Connection）相关的cmdlet的描述和语法信息。这些cmdlet是按照它们开头所使用的动词（即命令行为语）的字母顺序排列的。"
+
+msgid "## NetConnection Cmdlets"
+msgstr "## NetConnectionCmdlets"
+
+msgid "### [Get-NetConnectionProfile](./Get-NetConnectionProfile.md)"
+msgstr "### [Get-NetConnectionProfile](./Get-NetConnectionProfile.md)"
+
+msgid "Gets a connection profile."
+msgstr "获取一个连接配置文件。"
+
+msgid "### [Set-NetConnectionProfile](./Set-NetConnectionProfile.md)"
+msgstr "### [Set-NetConnectionProfile](./Set-NetConnectionProfile.md)"
+
+msgid "Changes the network category of a connection profile."
+msgstr "更改连接配置文件的网络类别。"

@@ -1,0 +1,102 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:16:31 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Unlock-WmsUsbStorage"
+msgstr "# 解锁 WMS USB 存储"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Unlocks USB storage."
+msgstr "解锁USB存储设备。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### UnlockById"
+msgstr "### UnlockById"
+
+msgid "### UnlockAll"
+msgstr "### 解锁全部（UnlockAll）"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Unlock-WmsUsbStorage** cmdlet enables USB storage on the specified station or stations.\n"
+"If a USB storage device is hidden, this cmdlet makes it available."
+msgstr ""
+"`Unlock-WmsUsbStorage` cmdlet 可以启用指定工作站上的 USB 存储功能。如果某个 USB 存储设备被隐藏了，这个 "
+"cmdlet 会将其重新显示出来，使其可用。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Unblock USB storage devices"
+msgstr "### 示例 1：解除对 USB 存储设备的限制（即取消对其使用的禁止）"
+
+msgid "This command unblocks USB storage devices on the specified station."
+msgstr "此命令会解封指定工作站上的USB存储设备。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 localhost。"
+
+msgid "Specifies an array of station IDs."
+msgstr "指定一个站点ID数组。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.UInt32[]"
+msgstr "### System.UInt32[]"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Lock-WmsUsbStorage](./Lock-WmsUsbStorage.md)"
+msgstr "[Lock-WmsUsbStorage](./Lock-WmsUsbStorage.md)"

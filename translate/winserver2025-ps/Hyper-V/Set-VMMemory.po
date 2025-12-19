@@ -1,0 +1,181 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:07:45 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMMemory"
+msgstr "# Set-VMMemory"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Configures the memory of a virtual machine."
+msgstr "配置虚拟机的内存。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Set-VMMemory** cmdlet configures the memory of a virtual machine."
+msgstr "**Set-VMMemory** cmdlet 用于配置虚拟机的内存。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Enables dynamic memory on virtual machine TestVM, sets its minimum, startup,"
+" and maximum memory, its memory priority, and its buffer."
+msgstr "在虚拟机TestVM上启用动态内存功能，设置其最小内存、启动内存和最大内存容量、内存优先级以及缓冲区大小。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the percentage of memory to reserve as a buffer in the virtual machine to be configured.\n"
+"Allowed values range from 5 to 2000."
+msgstr "指定要在所配置的虚拟机中预留作为缓冲区的内存百分比。允许的值范围从5到2000。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入一个会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the memory of a virtual machine is to be configured.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于配置虚拟机内存的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名进行标识。默认值为本地计算机。可以使用"
+" `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行cmdlet之前会提示您确认是否要继续。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies whether dynamic memory is to be enabled on the virtual machine to "
+"be configured."
+msgstr "指定是否要在要配置的虚拟机上启用动态内存功能。"
+
+msgid ""
+"Specifies the maximum amount of memory per NUMA node in the virtual machine "
+"to be configured."
+msgstr "指定要配置的虚拟机中每个 NUMA 节点的最大内存使用量。"
+
+msgid ""
+"Specifies the maximum amount of memory to be used by a virtual machine which"
+" has dynamic memory enabled."
+msgstr "指定启用了动态内存的虚拟机可以使用的最大内存容量。"
+
+msgid ""
+"Specifies the minimum amount of memory to be used by a virtual machine which"
+" has dynamic memory enabled."
+msgstr "指定已启用动态内存的虚拟机所需使用的最小内存容量。"
+
+msgid ""
+"Specifies that a **Microsoft.HyperV.PowerShell.Memory** object is to be "
+"passed through to the pipeline representing the virtual machine memory to be"
+" configured."
+msgstr ""
+"指定需要将一个 **Microsoft.HyperV POWERShell.Memory** 对象传递给管道，该对象代表要配置的虚拟机内存。"
+
+msgid ""
+"Sets the priority for memory availability to this virtual machine relative to other virtual machines on the virtual machine host.\n"
+"Allowed values range from 0 to 100."
+msgstr "设置该虚拟机在内存可用性方面的优先级，相对于同一虚拟机主机上的其他虚拟机而言。允许的值范围是 0 到 100。"
+
+msgid ""
+"Specifies the name of the memory resource pool for this virtual machine."
+msgstr "指定此虚拟机的内存资源池的名称。"
+
+msgid ""
+"Specifies the initial amount of memory to be assigned to a virtual machine "
+"with dynamic memory enabled, or the total amount of memory to be assigned to"
+" a virtual machine with dynamic memory disabled."
+msgstr "指定为启用了动态内存的虚拟机分配的初始内存量，或者为未启用动态内存的虚拟机分配的总内存量。"
+
+msgid "Specifies the virtual machine whose memory is to be configured."
+msgstr "指定要配置内存的虚拟机。"
+
+msgid "Specifies the virtual machine memory to be configured."
+msgstr "指定要配置的虚拟机内存。"
+
+msgid ""
+"Specifies the name of the virtual machine whose memory is to be configured."
+msgstr "指定要配置内存的虚拟机的名称。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值"
+
+msgid "### Microsoft.HyperV.PowerShell.Memory"
+msgstr "### Microsoft.HyperV.PowerShell MEMORY"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了**-PassThru**选项。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,157 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:22:25 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMSwitchExtensionPortFeature"
+msgstr "# Get-VMSwitchExtensionPortFeature"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets the features configured on a virtual network adapter."
+msgstr "获取在虚拟网络适配器上配置的功能信息。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### VMName (Default)"
+msgstr "### VMName（默认值）"
+
+msgid "### ResourceObject"
+msgstr "### ResourceObject"
+
+msgid "### ManagementOS"
+msgstr "### ManagementOS"
+
+msgid "### ExternalPort"
+msgstr "### ExternalPort"
+
+msgid "### VMObject"
+msgstr "### VMObject"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The **Get-VMSwitchExtensionPortFeature** cmdlet gets the features configured"
+" on a virtual network adapter."
+msgstr "`Get-VMSwitchExtensionPortFeature` cmdlet 可以获取虚拟网络适配器上配置的功能信息。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "#### 示例 1"
+
+msgid ""
+"Gets the feature configured on virtual machine VM2 by name Ethernet Switch "
+"Port Security Settings."
+msgstr "通过名称“Ethernet Switch Port Security Settings”来配置虚拟机VM2上的相关功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者提供一个会话对象（例如 `[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)` 或 `[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966)` cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more virtual machine hosts on which the features configured on a virtual network adapter are to be retrieved.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个虚拟机主机，以便从这些主机上获取在虚拟网络适配器上配置的功能相关信息。可以使用 NetBIOS 名称、IP "
+"地址或完全限定域名进行指定。默认值为本地计算机；可以通过使用 `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the virtual switch extension."
+msgstr "指定虚拟交换机的扩展名。"
+
+msgid "Specifies the name of the virtual switch extension."
+msgstr "指定虚拟交换机扩展程序的名称。"
+
+msgid ""
+"Specifies the virtual switch port connected to the external network adapter."
+msgstr "指定连接到外部网络适配器的虚拟交换机端口。"
+
+msgid ""
+"Specifies the unique identifier of the feature supported by the virtual "
+"switch extension."
+msgstr "指定虚拟交换机扩展所支持的该功能的唯一标识符。"
+
+msgid ""
+"Specifies the name of the feature supported by the virtual switch extension."
+msgstr "指定虚拟交换机扩展所支持的功能的名称。"
+
+msgid ""
+"Specifies that the features are to be retrieved from the management (i.e.\n"
+"parent, or host) operating system."
+msgstr "指定这些功能需要从管理级（即父级或宿主）操作系统中获取。"
+
+msgid "Specifies the name of the virtual switch."
+msgstr "指定虚拟交换机的名称。"
+
+msgid ""
+"Specifies the virtual machine on which the features configured on a virtual "
+"switch are to be retrieved."
+msgstr "指定用于获取在虚拟交换机上配置的功能的虚拟机。"
+
+msgid ""
+"Specifies the name of the virtual machine on which the features configured "
+"on a virtual switch are to be retrieved."
+msgstr "指定要从中获取在虚拟交换机上配置的功能的虚拟机名称。"
+
+msgid "Specifies the network adapter."
+msgstr "指定网络适配器。"
+
+msgid "Specifies the name of the network adapter."
+msgstr "指定网络适配器的名称。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMSwitchExtensionPortFeature"
+msgstr "### Microsoft.HyperV.PowerShell.VMSwitchExtensionPortFeature"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

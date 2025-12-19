@@ -1,0 +1,115 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:36:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Remove-IISConfigCollectionElement"
+msgstr "# 删除 IISConfigCollectionElement"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Removes a configuration element object from an IIS configuration collection."
+msgstr "从 IIS 配置集合中移除一个配置元素对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Remove-IISConfigCollectionElement** cmdlet removes a "
+"ConfigurationElement from a given Internet Information Services (IIS) "
+"ConfigurationCollection."
+msgstr ""
+"`Remove-IISConfigCollectionElement` cmdlet 用于从指定的 Internet Information "
+"Services (IIS) 配置集合中删除一个 `ConfigurationElement`。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Remove a file name from the list of default documents"
+msgstr "### 示例 1：从默认文档列表中删除一个文件名"
+
+msgid ""
+"This command removes a configuration entry from the list of default "
+"documents."
+msgstr "此命令会从默认文档列表中删除一个配置条目。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies a hashtable of the attributes to match while searching for the configuration elements to delete in the collection.\n"
+"For the configuration attributes that are not specified, no filtering will be done.\n"
+"If you omit this parameter, all the elements in the collection are deleted."
+msgstr ""
+"指定一个哈希表，其中包含在集合中查找要删除的配置元素时需要匹配的属性。对于未指定的配置属性，将不会进行任何过滤操作。如果省略此参数，则会删除集合中的所有元素。"
+
+msgid ""
+"Specifies the ConfigurationCollection from which the matching "
+"ConfigurationElements will be removed."
+msgstr "指定要从哪个 `ConfigurationCollection` 中移除匹配的 `ConfigurationElements`。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet运行会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see about_CommonParameters "
+"(http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 "
+"-WarningVariable。有关更多信息，请参阅关于COMMONParameters（http://go.microsoft.com/fwlink/?LinkID=113216）。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### Microsoft.Web.Administration.ConfigurationElementCollection"
+msgstr "### Microsoft.Web.Administration.ConfigurationElementCollection"
+
+msgid "### System.Collections.Hashtable"
+msgstr "### System.Collections.Hashtable"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-IISConfigCollectionElement](./Get-IISConfigCollectionElement.md)"
+msgstr "[Get-IISConfigCollectionElement](./Get-IISConfigCollectionElement.md)"
+
+msgid "[New-IISConfigCollectionElement](./New-IISConfigCollectionElement.md)"
+msgstr "[New-IISConfigCollectionElement](./New-IISConfigCollectionElement.md)"
+
+msgid ""
+"[IIS Administration Cmdlets for Windows PowerShell](./iisadministration.md)"
+msgstr "[适用于 Windows PowerShell 的 IIS 管理 cmdlet](./iisadministration.md)"

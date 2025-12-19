@@ -1,0 +1,519 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:53:33 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用此主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# NetAdapter Module"
+msgstr "# NetAdapter 模块"
+
+msgid "## Description"
+msgstr "## 描述"
+
+msgid ""
+"This reference provides cmdlet descriptions and syntax for all Network "
+"Adapter-specific cmdlets. It lists the cmdlets in alphabetical order based "
+"on the verb at the beginning of the cmdlet."
+msgstr ""
+"这个参考资料提供了所有针对网络适配器的cmdlet的描述和语法信息。这些cmdlet是按照它们开头所使用的动词（即命令行为词）的字母顺序排列的。"
+
+msgid "## NetAdapter Cmdlets"
+msgstr "## NetAdapterCmdlets"
+
+msgid "### [Disable-NetAdapter](./Disable-NetAdapter.md)"
+msgstr "### [ Disable-NetAdapter](./Disable-NetAdapter.md)"
+
+msgid "Disables a network adapter."
+msgstr "禁用一个网络适配器。"
+
+msgid "### [Disable-NetAdapterBinding](./Disable-NetAdapterBinding.md)"
+msgstr "### [ Disable-NetAdapterBinding](./Disable-NetAdapterBinding.md)"
+
+msgid "Disables a binding to a network adapter."
+msgstr "禁用对网络适配器的绑定。"
+
+msgid ""
+"### [Disable-NetAdapterChecksumOffload](./Disable-"
+"NetAdapterChecksumOffload.md)"
+msgstr "### [禁用网卡校验和卸载功能](./Disable-NetAdapterChecksumOffload.md)"
+
+msgid "Disables the selected checksum offloads on the network adapter."
+msgstr "禁用网络适配器上选定的校验和卸载功能。"
+
+msgid ""
+"### [Disable-NetAdapterEncapsulatedPacketTaskOffload](./Disable-"
+"NetAdapterEncapsulatedPacketTaskOffload.md)"
+msgstr ""
+"### [Disable-NetAdapterEncapsulatedPacketTaskOffload](./ Disable-"
+"NetAdapterEncapsulatedPacketTaskOffload.md)"
+
+msgid "Disables encapsulated packet task offload."
+msgstr "禁用封装数据包任务的卸载功能。"
+
+msgid ""
+"### [Disable-NetAdapterIPsecOffload](./Disable-NetAdapterIPsecOffload.md)"
+msgstr "### [禁用网络适配器IPSec卸载功能](./Disable-NetAdapterIPsecOffload.md)"
+
+msgid ""
+"Disables IPsec offload on the network adapter, so that the network adapter "
+"will not perform the per packet encryption operations."
+msgstr "禁用网络适配器上的 IPsec 卸载功能，从而使该网络适配器不再执行针对每个数据包的加密操作。"
+
+msgid "### [Disable-NetAdapterLso](./Disable-NetAdapterLso.md)"
+msgstr "### [ Disable-NetAdapterLso](./Disable-NetAdapterLso.md)"
+
+msgid ""
+"Disables all LSO properties, such as LSOv4 and LSOv6, of the network "
+"adapter."
+msgstr "禁用网络适配器的所有LSO属性（如LSOv4和LSOv6）。"
+
+msgid ""
+"### [Disable-NetAdapterPowerManagement](Disable-"
+"NetAdapterPowerManagement.md)"
+msgstr "### [禁用网卡电源管理功能](Disable-NetAdapterPowerManagement.md)"
+
+msgid "Disables specific power management features on a network adapter."
+msgstr "禁用网络适配器上的特定电源管理功能。"
+
+msgid "### [Disable-NetAdapterQos](./Disable-NetAdapterQos.md)"
+msgstr ""
+"### [禁用网络适配器质量控制（ Disable-NetAdapterQos ）](./Disable-NetAdapterQos.md)"
+
+msgid "Disables QoS on a network adapter."
+msgstr "禁用网络适配器上的QoS（服务质量）功能。"
+
+msgid "### [Disable-NetAdapterRdma](./Disable-NetAdapterRdma.md)"
+msgstr "### [禁用网卡RDMA功能](./Disable-NetAdapterRdma.md)"
+
+msgid "Disables RDMA on a network adapter."
+msgstr "禁用网络适配器上的 RDMA（远程直接内存访问）功能。"
+
+msgid "### [Disable-NetAdapterRsc](./Disable-NetAdapterRsc.md)"
+msgstr "### [Disable-NetAdapterRsc](./ Disable-NetAdapterRsc.md)"
+
+msgid "Disables RSC on a network adapter."
+msgstr "禁用网络适配器上的RSC功能。"
+
+msgid "### [Disable-NetAdapterRss](./Disable-NetAdapterRss.md)"
+msgstr "### [ Disable-NetAdapterRss ](./Disable-NetAdapterRss.md)"
+
+msgid "Disables RSS on a network adapter."
+msgstr "禁用网络适配器上的 RSS 功能。"
+
+msgid "### [Disable-NetAdapterSriov](./Disable-NetAdapterSriov.md)"
+msgstr "### [禁用 NetAdapterSriov 功能](./ Disable-NetAdapterSriov.md)"
+
+msgid "Disables SR-IOV on a network adapter."
+msgstr "禁用网络适配器上的SR-IOV功能。"
+
+msgid "### [Disable-NetAdapterUso](Disable-NetAdapterUso.md)"
+msgstr "### [ Disable-NetAdapterUso](Disable-NetAdapterUso.md)"
+
+msgid "Disables USO properties of the network adapter."
+msgstr "禁用网络适配器的 USO（User-Specific Options）属性。"
+
+msgid "### [Disable-NetAdapterVmq](Disable-NetAdapterVmq.md)"
+msgstr "### [禁用NetAdapterVmq](Disable-NetAdapterVmq.md)"
+
+msgid "Disables the VMQ feature on a network adapter."
+msgstr "禁用网络适配器上的VMQ（虚拟消息队列）功能。"
+
+msgid "### [Enable-NetAdapter](./Enable-NetAdapter.md)"
+msgstr "### [Enable-NetAdapter](./Enable-NetAdapter.md)"
+
+msgid "Enables a network adapter."
+msgstr "启用一个网络适配器。"
+
+msgid "### [Enable-NetAdapterBinding](./Enable-NetAdapterBinding.md)"
+msgstr "### [Enable-NetAdapterBinding](./Enable-NetAdapterBinding.md)"
+
+msgid "Enables binding of a protocol or filter to a network adapter."
+msgstr "允许将某个协议或过滤器绑定到网络适配器上。"
+
+msgid ""
+"### [Enable-NetAdapterChecksumOffload](./Enable-"
+"NetAdapterChecksumOffload.md)"
+msgstr ""
+"### [Enable-NetAdapterChecksumOffload](./Enable-"
+"NetAdapterChecksumOffload.md)"
+
+msgid "Enables checksum offloads on the network adapter."
+msgstr "启用网络适配器上的校验和卸载功能。"
+
+msgid ""
+"### [Enable-NetAdapterEncapsulatedPacketTaskOffload](./Enable-"
+"NetAdapterEncapsulatedPacketTaskOffload.md)"
+msgstr ""
+"### [Enable-NetAdapterEncapsulatedPacketTaskOffload](./Enable-"
+"NetAdapterEncapsulatedPacketTaskOffload.md)"
+
+msgid "Enables encapsulated packet task offload."
+msgstr "支持封装数据包任务的卸载处理（即将数据包处理任务从主机系统转移到专用硬件设备上执行）。"
+
+msgid ""
+"### [Enable-NetAdapterIPsecOffload](./Enable-NetAdapterIPsecOffload.md)"
+msgstr ""
+"### [Enable-NetAdapterIPsecOffload](./Enable-NetAdapterIPsecOffload.md)"
+
+msgid "Enables IPsec offload on the network adapter."
+msgstr "启用网络适配器上的IPsec卸载功能。"
+
+msgid "### [Enable-NetAdapterLso](./Enable-NetAdapterLso.md)"
+msgstr "### [Enable-NetAdapterLso](./Enable-NetAdapterLso.md)"
+
+msgid ""
+"Enables LSO properties, such as LSOv4 and LSOv6, of the network adapter."
+msgstr "启用网络适配器的LSO（链接共享对象）属性，例如LSOv4和LSOv6。"
+
+msgid ""
+"### [Enable-NetAdapterPowerManagement](Enable-NetAdapterPowerManagement.md)"
+msgstr ""
+"### [Enable-NetAdapterPowerManagement](Enable-NetAdapterPowerManagement.md)"
+
+msgid "Enables specific power management features on the network adapter."
+msgstr "启用网络适配器上的特定电源管理功能。"
+
+msgid "### [Enable-NetAdapterQos](./Enable-NetAdapterQos.md)"
+msgstr "### [Enable-NetAdapterQos](./Enable-NetAdapterQos.md)"
+
+msgid "Enables QoS on the network adapter, specifically DCB."
+msgstr "在网络适配器上启用服务质量（QoS），特别是DCB（Data Center Bridge）功能。"
+
+msgid "### [Enable-NetAdapterRdma](./Enable-NetAdapterRdma.md)"
+msgstr "### [Enable-NetAdapterRdma](./Enable-NetAdapterRdma.md)"
+
+msgid "Enables RDMA on a network adapter."
+msgstr "在网络适配器上启用RDMA（远程直接内存访问）功能。"
+
+msgid "### [Enable-NetAdapterRsc](./Enable-NetAdapterRsc.md)"
+msgstr "### [Enable-NetAdapterRsc](./Enable-NetAdapterRsc.md)"
+
+msgid "Enables RSC on a network adapter."
+msgstr "在网络适配器上启用RSC功能。"
+
+msgid "### [Enable-NetAdapterRss](./Enable-NetAdapterRss.md)"
+msgstr "### [Enable-NetAdapterRss](./Enable-NetAdapterRss.md)"
+
+msgid "Enables RSS on a network adapter."
+msgstr "启用网络适配器上的RSS功能。"
+
+msgid "### [Enable-NetAdapterSriov](./Enable-NetAdapterSriov.md)"
+msgstr "### [Enable-NetAdapterSriov](./Enable-NetAdapterSriov.md)"
+
+msgid "Enables SR-IOV on a network adapter."
+msgstr "在网络适配器上启用SR-IOV（直接I/O虚拟化）功能。"
+
+msgid "### [Enable-NetAdapterUso](Enable-NetAdapterUso.md)"
+msgstr "### [Enable-NetAdapterUso](Enable-NetAdapterUso.md)"
+
+msgid "Enables USO properties of the network adapter."
+msgstr "启用网络适配器的USO（使用状态）属性。"
+
+msgid "### [Enable-NetAdapterVmq](Enable-NetAdapterVmq.md)"
+msgstr "### [Enable-NetAdapterVmq](Enable-NetAdapterVmq.md)"
+
+msgid "Enables VMQ on a network adapter."
+msgstr "在网络适配器上启用虚拟消息队列（VMQ）功能。"
+
+msgid "### [Get-NetAdapter](./Get-NetAdapter.md)"
+msgstr "### [Get-NetAdapter](./Get-NetAdapter.md)"
+
+msgid "Gets the basic network adapter properties."
+msgstr "获取基本的网络适配器属性。"
+
+msgid ""
+"### [Get-NetAdapterAdvancedProperty](./Get-NetAdapterAdvancedProperty.md)"
+msgstr ""
+"### [Get-NetAdapterAdvancedProperty](./Get-NetAdapterAdvancedProperty.md)"
+
+msgid "Gets the advanced properties for a network adapter."
+msgstr "获取网络适配器的高级属性。"
+
+msgid "### [Get-NetAdapterBinding](./Get-NetAdapterBinding.md)"
+msgstr "### [Get-NetAdapterBinding](./Get-NetAdapterBinding.md)"
+
+msgid "Gets a list of bindings for a network adapter."
+msgstr "获取网络适配器的绑定信息列表。"
+
+msgid ""
+"### [Get-NetAdapterChecksumOffload](./Get-NetAdapterChecksumOffload.md)"
+msgstr ""
+"### [Get-NetAdapterChecksumOffload](./Get-NetAdapterChecksumOffload.md)"
+
+msgid ""
+"Gets the various checksum offload settings from network adapters that "
+"support these checksum offloads."
+msgstr "从支持这些校验和卸载功能的网络适配器中获取各种校验和卸载设置。"
+
+msgid ""
+"### [Get-NetAdapterDataPathConfiguration](Get-"
+"NetAdapterDataPathConfiguration.md)"
+msgstr ""
+"### [Get-NetAdapterDataPathConfiguration](Get-"
+"NetAdapterDataPathConfiguration.md)"
+
+msgid "Gets the name of the network adapter, profile, and the profile source."
+msgstr "获取网络适配器的名称、配置文件（profile）以及该配置文件的来源信息。"
+
+msgid ""
+"### [Get-NetAdapterEncapsulatedPacketTaskOffload](Get-"
+"NetAdapterEncapsulatedPacketTaskOffload.md)"
+msgstr ""
+"### [Get-NetAdapterEncapsulatedPacketTaskOffload](Get-"
+"NetAdapterEncapsulatedPacketTaskOffload.md)"
+
+msgid "Gets the network adapters that support encapsulated task offload."
+msgstr "获取支持封装任务卸载的网络适配器。"
+
+msgid "### [Get-NetAdapterHardwareInfo](./Get-NetAdapterHardwareInfo.md)"
+msgstr "### [Get-NetAdapterHardwareInfo](./Get-NetAdapterHardwareInfo.md)"
+
+msgid "Gets the hardware information of the network adapter."
+msgstr "获取网络适配器的硬件信息。"
+
+msgid "### [Get-NetAdapterIPsecOffload](./Get-NetAdapterIPsecOffload.md)"
+msgstr "### [Get-NetAdapterIPsecOffload](./Get-NetAdapterIPsecOffload.md)"
+
+msgid "Gets the IPsec offload properties of the network adapter."
+msgstr "获取网络适配器的 IPsec 负载卸载属性。"
+
+msgid "### [Get-NetAdapterLso](./Get-NetAdapterLso.md)"
+msgstr "### [Get-NetAdapterLso](./Get-NetAdapterLso.md)"
+
+msgid "Gets the LSO properties of the network adapter."
+msgstr "获取网络适配器的LSO（链接状态对象）属性。"
+
+msgid "### [Get-NetAdapterPowerManagement](Get-NetAdapterPowerManagement.md)"
+msgstr "### [Get-NetAdapterPowerManagement](Get-NetAdapterPowerManagement.md)"
+
+msgid "Gets the power management features of a network adapter."
+msgstr "获取网络适配器的电源管理功能。"
+
+msgid "### [Get-NetAdapterQos](./Get-NetAdapterQos.md)"
+msgstr "### [Get-NetAdapterQos](./Get-NetAdapterQos.md)"
+
+msgid ""
+"Gets the QoS properties of the network adapter, specifically DCB settings."
+msgstr "获取网络适配器的服务质量（QoS）属性，特别是直流电平衡（DCB）设置。"
+
+msgid "### [Get-NetAdapterRdma](./Get-NetAdapterRdma.md)"
+msgstr "### [Get-NetAdapterRdma](./Get-NetAdapterRdma.md)"
+
+msgid "Gets the RDMA properties for a network adapter."
+msgstr "获取网络适配器的 RDMA 属性信息。"
+
+msgid "### [Get-NetAdapterRsc](./Get-NetAdapterRsc.md)"
+msgstr "### [Get-NetAdapterRsc](./Get-NetAdapterRsc.md)"
+
+msgid "Gets network adapters that support RSC."
+msgstr "获取支持 RSC 的网络适配器。"
+
+msgid "### [Get-NetAdapterRss](./Get-NetAdapterRss.md)"
+msgstr "### [Get-NetAdapterRss](./Get-NetAdapterRss.md)"
+
+msgid "Gets RSS properties of the network adapter."
+msgstr "获取网络适配器的RSS属性信息。"
+
+msgid "### [Get-NetAdapterSriov](./Get-NetAdapterSriov.md)"
+msgstr "### [Get-NetAdapterSriov](./Get-NetAdapterSriov.md)"
+
+msgid "Gets the SR-IOV properties of the network adapter."
+msgstr "获取网络适配器的 SR-IOV（直接内存访问）属性。"
+
+msgid "### [Get-NetAdapterSriovVf](./Get-NetAdapterSriovVf.md)"
+msgstr "### [Get-NetAdapterSriovVf](./Get-NetAdapterSriovVf.md)"
+
+msgid "Displays the SR-IOV virtual function settings for a network adapter."
+msgstr "显示网络适配器的 SR-IOV（直接I/O虚拟化）虚拟功能设置。"
+
+msgid "### [Get-NetAdapterStatistics](./Get-NetAdapterStatistics.md)"
+msgstr "### [Get-NetAdapterStatistics](./Get-NetAdapterStatistics.md)"
+
+msgid "Gets statistics from a network adapter."
+msgstr "从网络适配器获取统计数据。"
+
+msgid "### [Get-NetAdapterUso](Get-NetAdapterUso.md)"
+msgstr "### [Get-NetAdapterUso](Get-NetAdapterUso.md)"
+
+msgid "Gets the USO properties of the network adapter."
+msgstr "获取网络适配器的 USO（Universal System Operating）属性。"
+
+msgid "### [Get-NetAdapterVmq](Get-NetAdapterVmq.md)"
+msgstr "### [Get-NetAdapterVmq](Get-NetAdapterVmq.md)"
+
+msgid "Gets the VMQ properties of a network adapter."
+msgstr "获取网络适配器的VMQ属性。"
+
+msgid "### [Get-NetAdapterVmqQueue](./Get-NetAdapterVmqQueue.md)"
+msgstr "### [Get-NetAdapterVmqQueue](./Get-NetAdapterVmqQueue.md)"
+
+msgid "Gets the VMQs allocated on a network adapter."
+msgstr "获取分配给网络适配器的虚拟消息队列（VMQ）实例。"
+
+msgid "### [Get-NetAdapterVPort](./Get-NetAdapterVPort.md)"
+msgstr "### [Get-NetAdapterVPort](./Get-NetAdapterVPort.md)"
+
+msgid "Displays the network adapter VPort settings for a SR-IOV or VMQ VPort."
+msgstr "显示SR-IOV或VMQ VPort的网络适配器VPort设置。"
+
+msgid ""
+"### [New-NetAdapterAdvancedProperty](./New-NetAdapterAdvancedProperty.md)"
+msgstr ""
+"### [New-NetAdapterAdvancedProperty](./New-NetAdapterAdvancedProperty.md)"
+
+msgid "Creates an advanced property for the network adapter."
+msgstr "为网络适配器创建一个高级属性。"
+
+msgid ""
+"### [Remove-NetAdapterAdvancedProperty](./Remove-"
+"NetAdapterAdvancedProperty.md)"
+msgstr ""
+"### [Remove-NetAdapterAdvancedProperty](./Remove-"
+"NetAdapterAdvancedProperty.md)"
+
+msgid "Removes an advanced property from the network adapter."
+msgstr "从网络适配器中移除一个高级属性。"
+
+msgid "### [Rename-NetAdapter](./Rename-NetAdapter.md)"
+msgstr "### [Rename-NetAdapter](./Rename-NetAdapter.md)"
+
+msgid "Renames a network adapter."
+msgstr "重命名网络适配器。"
+
+msgid ""
+"### [Reset-NetAdapterAdvancedProperty](./Reset-"
+"NetAdapterAdvancedProperty.md)"
+msgstr ""
+"### [Reset-NetAdapterAdvancedProperty](./Reset-"
+"NetAdapterAdvancedProperty.md)"
+
+msgid ""
+"Resets the advanced properties of a network adapter to their factory default"
+" values."
+msgstr "将网络适配器的高级属性重置为出厂默认值。"
+
+msgid "### [Restart-NetAdapter](./Restart-NetAdapter.md)"
+msgstr "### [Restart-NetAdapter](./Restart-NetAdapter.md)"
+
+msgid ""
+"Restarts a network adapter by disabling and then re-enabling the network "
+"adapter."
+msgstr "通过先禁用网络适配器，再重新启用它来重启该网络适配器。"
+
+msgid "### [Set-NetAdapter](./Set-NetAdapter.md)"
+msgstr "### [Set-NetAdapter](./Set-NetAdapter.md)"
+
+msgid "Sets the basic network adapter properties."
+msgstr "设置基本的网络适配器属性。"
+
+msgid ""
+"### [Set-NetAdapterAdvancedProperty](./Set-NetAdapterAdvancedProperty.md)"
+msgstr ""
+"### [Set-NetAdapterAdvancedProperty](./Set-NetAdapterAdvancedProperty.md)"
+
+msgid "Sets the advanced properties of a network adapter."
+msgstr "设置网络适配器的高级属性。"
+
+msgid "### [Set-NetAdapterBinding](./Set-NetAdapterBinding.md)"
+msgstr "### [Set-NetAdapterBinding](./Set-NetAdapterBinding.md)"
+
+msgid "Sets the binding state of a transport or filter on a network adapter."
+msgstr "用于设置网络适配器上某个传输组件或过滤组件的绑定状态。"
+
+msgid ""
+"### [Set-NetAdapterChecksumOffload](./Set-NetAdapterChecksumOffload.md)"
+msgstr ""
+"### [Set-NetAdapterChecksumOffload](./Set-NetAdapterChecksumOffload.md)"
+
+msgid "Sets the various checksum offload settings."
+msgstr "设置各种校验和卸载相关参数。"
+
+msgid ""
+"### [Set-NetAdapterDataPathConfiguration](Set-"
+"NetAdapterDataPathConfiguration.md)"
+msgstr ""
+"### [Set-NetAdapterDataPathConfiguration](Set-"
+"NetAdapterDataPathConfiguration.md)"
+
+msgid "Sets the name of the network adapter, profile, and the profile source."
+msgstr "设置网络适配器的名称、配置文件以及配置文件的来源。"
+
+msgid ""
+"### [Set-NetAdapterEncapsulatedPacketTaskOffload](Set-"
+"NetAdapterEncapsulatedPacketTaskOffload.md)"
+msgstr ""
+"### [Set-NetAdapterEncapsulatedPacketTaskOffload](Set-"
+"NetAdapterEncapsulatedPacketTaskOffload.md)"
+
+msgid ""
+"Sets the encapsulated packet task offload property of the network adapter."
+msgstr "设置网络适配器的封装数据包任务卸载（offload）属性。"
+
+msgid "### [Set-NetAdapterIPsecOffload](./Set-NetAdapterIPsecOffload.md)"
+msgstr "### [Set-NetAdapterIPsecOffload](./Set-NetAdapterIPsecOffload.md)"
+
+msgid "Sets the IPsec offload properties of a network adapter."
+msgstr "设置网络适配器的 IPsec 转发（offload）属性。"
+
+msgid "### [Set-NetAdapterLso](./Set-NetAdapterLso.md)"
+msgstr "### [Set-NetAdapterLso](./Set-NetAdapterLso.md)"
+
+msgid "Sets the LSO properties of a network adapter."
+msgstr "设置网络适配器的LSO（Link State Offload）属性。"
+
+msgid "### [Set-NetAdapterPowerManagement](Set-NetAdapterPowerManagement.md)"
+msgstr "### [Set-NetAdapterPowerManagement](Set-NetAdapterPowerManagement.md)"
+
+msgid "Sets the power management properties on the network adapter."
+msgstr "设置网络适配器的电源管理属性。"
+
+msgid "### [Set-NetAdapterQos](./Set-NetAdapterQos.md)"
+msgstr "### [Set-NetAdapterQos](./Set-NetAdapterQos.md)"
+
+msgid "Sets QoS properties on a network adapter."
+msgstr "为网络适配器设置服务质量（QoS）属性。"
+
+msgid "### [Set-NetAdapterRdma](./Set-NetAdapterRdma.md)"
+msgstr "### [Set-NetAdapterRdma](./Set-NetAdapterRdma.md)"
+
+msgid "Sets the RDMA properties on the network adapter."
+msgstr "设置网络适配器上的RDMA属性。"
+
+msgid "### [Set-NetAdapterRsc](./Set-NetAdapterRsc.md)"
+msgstr "### [Set-NetAdapterRsc](./Set-NetAdapterRsc.md)"
+
+msgid "Sets the enabled state of RSC."
+msgstr "设置RSC的启用状态。"
+
+msgid "### [Set-NetAdapterRss](./Set-NetAdapterRss.md)"
+msgstr "### [Set-NetAdapterRss](./Set-NetAdapterRss.md)"
+
+msgid "Sets the RSS properties on a network adapter."
+msgstr "设置网络适配器的RSS属性。"
+
+msgid "### [Set-NetAdapterSriov](./Set-NetAdapterSriov.md)"
+msgstr "### [Set-NetAdapterSriov](./Set-NetAdapterSriov.md)"
+
+msgid ""
+"Sets the SR-IOV properties of the network adapter, such as the number of "
+"virtual functions, the number of VPorts, and the number of queue pairs for "
+"default and non-default VPorts."
+msgstr "设置网络适配器的 SR-IOV 属性，例如虚拟函数的数量、VPort 的数量以及默认和非默认 VPort 的队列对数量。"
+
+msgid "### [Set-NetAdapterUso](Set-NetAdapterUso.md)"
+msgstr "### [Set-NetAdapterUso](Set-NetAdapterUso.md)"
+
+msgid "Sets the USO properties of a network adapter."
+msgstr "设置网络适配器的 USO（使用统计）属性。"
+
+msgid "### [Set-NetAdapterVmq](Set-NetAdapterVmq.md)"
+msgstr "### [Set-NetAdapterVmq](Set-NetAdapterVmq.md)"
+
+msgid "Sets the VMQ properties of a network adapter."
+msgstr "设置网络适配器的虚拟消息队列（VMQ）属性。"

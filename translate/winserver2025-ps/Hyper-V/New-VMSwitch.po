@@ -1,0 +1,178 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:38:11 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-VMSwitch"
+msgstr "# 新VMSwitch"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a new virtual switch on one or more virtual machine hosts."
+msgstr "在一个或多个虚拟机主机上创建一个新的虚拟交换机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### NetAdapterName (Default)"
+msgstr "### NetAdapterName（默认值）"
+
+msgid "### NetAdapterInterfaceDescription"
+msgstr "### NetAdapterInterfaceDescription"
+
+msgid "### SwitchType"
+msgstr "### SwitchType"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-VMSwitch** cmdlet creates a new virtual switch on one or more "
+"virtual machine hosts."
+msgstr "**New-VMSwitch** cmdlet 可以在一个或多个虚拟机主机上创建一个新的虚拟交换机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Creates a new switch QoS switch, which binds to a network adapter called "
+"Wired Ethernet Connection 3 and supports weight-based minimum bandwidth."
+msgstr ""
+"创建一个新的QoS交换机（switch），该交换机绑定到一个名为“Wired Ethernet Connection "
+"3”的网络适配器，并支持基于权重的最低带宽限制功能。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies whether the parent partition (i.e.\n"
+"the management operating system) is to have access to the physical NIC bound to the virtual switch to be created."
+msgstr "指定父分区（即管理操作系统）是否可以访问绑定到要创建的虚拟交换机的物理网卡。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该 cmdlet。可以输入计算机名称，或者输入会话对象（例如 [New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认情况下，该 cmdlet 会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual switch is to be created.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于创建虚拟交换机的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名进行选择。默认值是本地计算机。可以使用"
+" `localhost` 或点号（.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要执行该操作。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies whether this cmdlet enables teaming for the virtual switch."
+msgstr "指定此cmdlet是否为虚拟交换机启用组队功能。"
+
+msgid ""
+"Specifies that IO virtualization is to be enabled on the virtual switch to "
+"be created."
+msgstr "指定要在要创建的虚拟交换机上启用IO虚拟化功能。"
+
+msgid ""
+"Specifies whether this cmdlet enables the packet direct path through the virtual switch.\n"
+"The default value is $False."
+msgstr "该参数用于指定此cmdlet是否允许数据包通过虚拟交换机直接传输。默认值为$False。"
+
+msgid ""
+"Specifies how minimum bandwidth is to be configured on the virtual switch.\n"
+"Allowed values are **Absolute**, **Default**, **None**, or **Weight**.\n"
+"If **Absolute** is specified, minimum bandwidth is bits per second.\n"
+"If **Weight** is specified, minimum bandwidth is a value ranging from 1 to 100.\n"
+"If **None** is specified, minimum bandwidth is disabled on the switch - that is, users cannot configure it on any network adapter connected to the switch.\n"
+"If **Default** is specified, the system will set the mode to **Weight**, if the switch is not IOV-enabled, or **None** if the switch is IOV-enabled."
+msgstr ""
+"该参数用于指定如何在虚拟交换机上配置最小带宽。允许的值包括：**Absolute**（绝对值）、**Default**（默认值）、**None**（禁用）或**Weight**（基于权重的值）。  \n"
+"\n"
+"- 如果选择 **Absolute**，最小带宽将以“比特每秒”为单位进行设置。  \n"
+"- 如果选择 **Weight**，最小带宽将是一个介于 1 到 100 之间的数值。  \n"
+"- 如果选择 **None**，则虚拟交换机上的最小带宽功能将被禁用，即用户无法在连接到该交换机的任何网络适配器上配置最小带宽。  \n"
+"- 如果选择 **Default**，当交换机未启用 IOV（Input/Output Virtualization）功能时，系统会自动将最小带宽模式设置为 **Weight**；如果交换机启用了 IOV 功能，则最小带宽模式将被设置为 **None**。"
+
+msgid "Specifies the name of the switch to be created."
+msgstr "指定要创建的交换机的名称。"
+
+msgid ""
+"Specifies the interface description of the network adapter to be bound to the switch to be created.\n"
+"You can use the **Get-NetAdapter** cmdlet to get the interface description of a network adapter."
+msgstr ""
+"指定要绑定到将要创建的交换机的网络适配器的接口描述。您可以使用 **Get-NetAdapter** cmdlet 来获取网络适配器的接口描述。"
+
+msgid ""
+"Specifies the name of the network adapter to be bound to the switch to be created.\n"
+"You can use the **Get-NetAdapter** cmdlet to get the interface description of a network adapter."
+msgstr ""
+"指定要绑定到所创建交换机的网络适配器的名称。您可以使用 **Get-NetAdapter** cmdlet 来获取网络适配器的接口描述信息。"
+
+msgid "Specifies a note to be associated with the switch to be created."
+msgstr "指定一条注释，用于关联要创建的开关。"
+
+msgid ""
+"Specifies the type of the switch to be created.\n"
+"Allowed values are **Internal** and **Private**.\n"
+"To create an External virtual switch, specify either the **NetAdapterInterfaceDescription** or the **NetAdapterName** parameter, which implicitly set the type of the virtual switch to External."
+msgstr ""
+"指定要创建的交换机的类型。允许的值是 **Internal** 和 **Private**。如果要创建一个外部虚拟交换机，请指定 "
+"**NetAdapterInterfaceDescription** 或 **NetAdapterName** "
+"参数，这两个参数会隐式地将虚拟交换机的类型设置为 External。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMSwitch"
+msgstr "### Microsoft.HyperV.PowerShell.VMSwitch"
+
+msgid "## NOTES"
+msgstr "## 笔记"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

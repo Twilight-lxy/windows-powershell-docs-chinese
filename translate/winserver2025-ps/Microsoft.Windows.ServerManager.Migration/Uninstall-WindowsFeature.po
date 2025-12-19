@@ -1,0 +1,251 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:30:19 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Uninstall-WindowsFeature"
+msgstr "# 卸载 Windows 功能"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Uninstalls specified Windows Server roles, role services, and features from "
+"a computer that is running Windows Server 2012 R2."
+msgstr "从运行Windows Server 2012 R2的计算机上卸载指定的Windows Server角色、角色服务以及相关功能。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### RunningComputer (Default)"
+msgstr "### 运行计算机（默认设置）"
+
+msgid "### VhdPath"
+msgstr "### VhdPath"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Uninstall-WindowsFeature** cmdlet uninstalls and optionally removes specified roles, role services, and features from a computer that is running Windows Server 2012 R2, or from an offline virtual hard disk (VHD) on which Windows Server 2012 R2 is installed.\n"
+"By adding the *Remove* parameter, the cmdlet also uninstalls feature files, or payload, from a computer.\n"
+"This cmdlet replaces the **Remove-WindowsFeature** cmdlet that was used to uninstall roles, role services, and features in Windows Server 2008 R2.This cmdlet works similarly to the rrfw in Server Manager, with an important exception: by default, management tools are not uninstalled when you run the **Uninstall-WindowsFeature** cmdlet; you must add the *IncludeManagementTools* parameter to uninstall associated management tools."
+msgstr ""
+"`Uninstall-WindowsFeature` cmdlet 可以卸载指定的角色、角色服务及功能，这些组件可以位于运行 Windows Server 2012 R2 的计算机上，也可以位于安装了 Windows Server 2012 R2 的离线虚拟硬盘（VHD）中。通过添加 `*Remove` 参数，该 cmdlet 还会从计算机上卸载相应的功能文件或相关数据。这个 cmdlet 替代了在 Windows Server 2008 R2 中用于卸载角色、角色服务的 `Uninstall-WindowsFeature` cmdlet。\n"
+"\n"
+"该 cmdlet 的使用方式与 Server Manager 中的 rrfw 类似，但有一个重要区别：默认情况下，运行 `Uninstall-WindowsFeature` cmdlet 时不会卸载相关的管理工具；如果需要卸载这些管理工具，必须添加 `*IncludeManagementTools` 参数。"
+
+msgid ""
+"This cmdlet requires elevation; you must be running a Windows PowerShell "
+"session as an administrator to use this cmdlet."
+msgstr "此cmdlet需要提升权限；您必须以管理员身份运行Windows PowerShell会话才能使用该cmdlet。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid ""
+"### Example 1: Uninstall various roles and features installed on the target "
+"server"
+msgstr "### 示例 1：卸载目标服务器上安装的各种角色和功能"
+
+msgid ""
+"This command uninstalls any roles or features that are currently installed "
+"on the target server."
+msgstr "此命令会卸载目标服务器上当前已安装的所有角色或功能。"
+
+msgid "### Example 2: Remove all role services from the specified server"
+msgstr "### 示例 2：从指定的服务器中删除所有角色服务"
+
+msgid ""
+"This command removes Web Server (IIS) from Server1, including all role services.\n"
+"The user account specified to perform the operation is contoso\\user1."
+msgstr "此命令会从 Server1 上卸载 Web 服务器（IIS），同时移除所有相关的角色服务。执行该操作的用户名是 contoso\\user1。"
+
+msgid ""
+"### Example 3: Remove feature files for any roles or features currently not "
+"installed on the local server"
+msgstr "### 示例 3：移除本地服务器上未安装的角色或功能对应的配置文件"
+
+msgid ""
+"This command removes the feature files for any roles or features that "
+"currently are not installed on the local server."
+msgstr "此命令会删除本地服务器上尚未安装的任何角色或功能所对应的配置文件（即特征文件）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the remote computer for which this cmdlet uninstalls and optionally removes one or more rrsandf_plural.\n"
+"This parameter accepts only one computer name.\n"
+"If this parameter is not added, or no computer name is specified, the default target is the local computer."
+msgstr ""
+"指定此cmdlet要卸载程序的远程计算机，并可选地删除一个或多个rrsandfplural文件。该参数仅接受一个计算机名称。如果未添加此参数或未指定任何计算机名称，则默认目标为本地计算机。"
+
+msgid ""
+"Valid values for the parameter include a NetBIOS name, an IP address, or a "
+"fully qualified domain name of a remote computer that is running Windows "
+"Server."
+msgstr ""
+"该参数的有效值包括：运行Windows Server的远程计算机的NetBIOS名称、IP地址或完全 Qualified Domain "
+"Name（FQDN）。"
+
+msgid ""
+"To use an IP address of a remote computer as the value of this parameter, your command must include the *Credential* parameter.\n"
+"The computer must either be configured for HTTPS transport, or the IP address of the remote computer must be included in the WinRM TrustedHosts list on the local computer.\n"
+"For information about adding a computer name to the WinRM TrustedHosts list, see [How to Add a Computer to the Trusted Host List in about_Remote_Troubleshooting](https://go.microsoft.com/fwlink/p/?LinkID=135188)."
+msgstr ""
+"要将远程计算机的 IP 地址作为此参数的值，您的命令必须包含 *Credential* 参数。该计算机必须配置为使用 HTTPS "
+"协议进行通信，或者远程计算机的 IP 地址必须被添加到本地计算机的 WinRM TrustedHosts 列表中。有关如何将计算机名称添加到 WinRM"
+" TrustedHosts 列表中的信息，请参阅 [如何在 about_Remote_Troubleshooting "
+"中将计算机添加到受信任主机列表](https://go.microsoft.com/fwlink/p/?LinkID=135188)。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您确认是否要继续执行。"
+
+msgid ""
+"Specifies a user account that has access rights to perform this action.\n"
+"If the parameter is not added, or no value is specified, the default value of this parameter is the current user.\n"
+"Enter a user name in one of the following formats:"
+msgstr "指定具有执行此操作所需访问权限的用户账户。如果未添加该参数或未指定任何值，则该参数的默认值为当前用户。请以以下格式之一输入用户名："
+
+msgid ""
+"-- UserName\n"
+"-- Domain\\User\n"
+"-- User@Domain.com\n"
+"-- A Credential object returned by the Get-Credential cmdlet."
+msgstr "--用户名-- 域名用户-- User@Domain.com-- 由 Get-Credential cmdlet 返回的凭据对象。"
+
+msgid "If a user name is entered, then a prompt for a password is displayed."
+msgstr "如果用户输入了用户名，那么系统会显示一个要求输入密码的提示。"
+
+msgid ""
+"Indicates that the cmdlet uninstalls all applicable management tools along with the roles, role services, or features that are specified in the *Name* parameter.\n"
+"By default, management tools are not uninstalled when you run the **Uninstall-WindowsFeature** cmdlet; you must add this parameter to uninstall associated management tools."
+msgstr ""
+"该 cmdlet 会卸载所有适用的管理工具，以及由 *Name* 参数指定的角色、角色服务或功能。默认情况下，运行 **Uninstall-"
+"WindowsFeature** cmdlet 时不会卸载管理工具；必须添加此参数才能卸载相关的管理工具。"
+
+msgid ""
+"Specifies a name and path to a log file.\n"
+"Add this parameter if the results of this cmdlet must be stored in a log."
+msgstr "指定日志文件的名称和路径。如果此 cmdlet 的结果需要存储在日志文件中，请添加此参数。"
+
+msgid ""
+"Specifies a list of features that this cmdlet uninstalls.\n"
+"This parameter does not support wildcard characters."
+msgstr "指定此 cmdlet 将卸载的一系列功能/特性。该参数不支持通配符。"
+
+msgid ""
+"Indicates that the cmdlet deletes feature files for the specified rrsandf_plural from the side-by-side store, located at %SystemDrive%:\\Windows\\WinSxS.\n"
+"If the feature is not yet uninstalled, the command uninstalls the feature."
+msgstr ""
+"该命令表示会从位于 `%SystemDrive%:\\Windows\\WinSxS` 的并排存储（side-by-side storage）中删除指定"
+" `rrsandfplural` 类型的功能文件。如果该功能尚未被卸载，此命令将会将其卸载。"
+
+msgid ""
+"When you delete feature files, features that depend upon the files you remove are also deleted.\n"
+"When you delete feature files for a subfeature, and no other subfeatures for the parent feature are installed, then files for the entire parent role or feature are deleted."
+msgstr ""
+"当你删除功能文件时，依赖于这些文件的各个功能也会被一并删除。如果你删除了某个子功能所对应的功能文件，并且该父功能没有其他子功能被安装的话，那么整个父功能或相关角色的所有文件都会被删除。"
+
+msgid ""
+"Indicates that this cmdlet automatically restarts the target computer, if a restart is required by the uninstallation process for the specified roles or features.\n"
+"This parameter cannot be used with the *Vhd* parameter."
+msgstr "表示如果指定的角色或功能的卸载过程需要重启目标计算机，此cmdlet会自动执行重启操作。此参数不能与*Vhd*参数同时使用。"
+
+msgid ""
+"Specifies the path to an offline VHD.\n"
+"The path can either point to a VHD file, or to a location on which the VHD is already mounted by using Deployment Image Servicing and Management (DISM) tools."
+msgstr ""
+"指定离线VHD文件的路径。该路径可以指向VHD文件本身，也可以指向通过“部署映像服务与管理”（Deployment Image Servicing "
+"and Management，简称DISM）工具已挂载VHD的位置。"
+
+msgid ""
+"The VHD can be on a local disk on the target computer, or on a network shared folder.\n"
+"If the VHD is in a network shared folder, then the value of this parameter is a UNC path to the VHD.\n"
+"In this case, the computer account of the computer that you are using to mount the VHD must have read and write permissions (Read/Write permissions in the File Sharing dialog box, or Full Control on the Security tab of the folder Properties dialog box) on the shared folder, or the VHD will not be accessible.\n"
+"Local loopback Universal Naming Convention (UNC) paths are not supported.\n"
+"Use either of the following formats for the computer account:  DOMAIN\\SERVERNAME$ or SERVERNAME$."
+msgstr ""
+"VHD可以存储在目标计算机的本地磁盘上，也可以存储在网络共享文件夹中。如果VHD位于网络共享文件夹中，则该参数的值应为指向该VHD的UNC路径（Universal"
+" Naming "
+"Convention路径）。在这种情况下，用于挂载VHD的计算机的账户必须具有对该共享文件夹的读写权限（在“文件共享”对话框中选择“读取/写入”权限，或在“文件夹属性”对话框的“安全”选项卡上选择“完全控制”权限）；否则将无法访问该VHD。本地回环（Local"
+" Loopback）UNC路径是不被支持的。计算机账户可以使用以下两种格式之一：DOMAIN\\SERVERNAME$ 或 SERVERNAME$。"
+
+msgid ""
+"Use the *ComputerName* parameter to specify the target computer you want to use to mount the VHD.\n"
+"If the *ComputerName* parameter is not specified, then the local computer is used.\n"
+"The computer that you are using to mount the VHD must be running Windows Server 2012 R2.\n"
+"Any local path, such as D:\\myFolder, that is specified by using this parameter is always relative to the target computer."
+msgstr ""
+"使用 *ComputerName* 参数来指定用于挂载 VHD 的目标计算机。如果未指定 *ComputerName* "
+"参数，则会使用本地计算机。用于挂载 VHD 的计算机必须运行 Windows Server 2012 R2 操作系统。通过此参数指定的任何本地路径（例如"
+" D:\\myFolder）始终都是相对于目标计算机的。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "### Microsoft.Windows.ServerManager.Commands.Feature[]"
+msgstr "### Microsoft.Windows.ServerManager Commands.Feature[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.Windows.ServerManager.Commands.FeatureOperationResult"
+msgstr "### Microsoft.Windows.ServerManagercommands.FeatureOperationResult"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-WindowsFeature](./Get-WindowsFeature.md)"
+msgstr "[Get-WindowsFeature](./Get-WindowsFeature.md)"
+
+msgid "[Install-WindowsFeature](./Install-WindowsFeature.md)"
+msgstr "[Install-WindowsFeature](./Install-WindowsFeature.md)"
+
+msgid ""
+"[Enable-ServerManagerStandardUserRemoting](./Enable-"
+"ServerManagerStandardUserRemoting.md)"
+msgstr ""
+"[Enable-ServerManagerStandardUserRemoting](./Enable-"
+"ServerManagerStandardUserRemoting.md)"
+
+msgid ""
+"[Disable-ServerManagerStandardUserRemoting](./Disable-"
+"ServerManagerStandardUserRemoting.md)"
+msgstr ""
+"[禁用 ServerManagerStandardUserRemoting 功能](./ Disable-"
+"ServerManagerStandardUserRemoting.md)"

@@ -1,0 +1,161 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:37:49 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Update-IpamServer"
+msgstr "# 更新 IpamServer"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Updates an IPAM server following an operating system upgrade."
+msgstr "在操作系统升级后，更新相应的IPAM服务器配置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Update-IpamServer** cmdlet updates an IP Address Management (IPAM) server following an operating system upgrade.\n"
+"IPAM binaries and schema files are made available as a part of an upgrade.\n"
+"An error occurs if there is no update available."
+msgstr ""
+"`Update-IpamServer` cmdlet 用于在操作系统升级后更新 IP 地址管理（IPAM）服务器。IPAM "
+"的二进制文件和模式文件会随操作系统升级一起提供。如果没有任何可用的更新内容，将会发生错误。"
+
+msgid ""
+"As part of an IPAM server update, this cmdlet performs the following steps:"
+msgstr "作为IPAM服务器更新的一部分，此cmdlet执行以下步骤："
+
+msgid ""
+"No changes are made to any existing user configuration, such as adding users to a security group.\n"
+"Any customizations to IPAM task schedules are retained.\n"
+"In case of an error, any changes will be reverted."
+msgstr ""
+"不会对任何现有的用户配置进行更改（例如将用户添加到安全组中），也不会修改IPAM任务调度的相关设置。如果出现错误，所有所做的更改都会被恢复到原始状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Update an existing IPAM installation"
+msgstr "### 示例 1：更新现有的 IPAM 安装"
+
+msgid ""
+"This command updates an existing IPAM installation following an operating system upgrade.\n"
+"If there are system check errors, the cmdlet terminates and generates a log file in the %System Drive%\\System 32\\IPAM\\Logs folder."
+msgstr ""
+"此命令用于在操作系统升级后更新现有的 IPAM 安装。如果出现系统检查错误，该cmdlet将终止执行，并在 %System Drive%\\System"
+" 32\\IPAM\\Logs 文件夹中生成一个日志文件。"
+
+msgid ""
+"### Example 2: Update an IPAM installation and delete system check failure "
+"rows"
+msgstr "### 示例 2：更新 IPAM 安装并删除系统检查失败的相关记录"
+
+msgid ""
+"This command updates an existing IPAM installation after an operating system upgrade.\n"
+"The command does not terminate due to system check errors, and it deletes conflicting errors in the IPAM database.\n"
+"The command generates a log in the %System Drive%\\System 32\\IPAM\\Logs folder."
+msgstr ""
+"此命令用于在操作系统升级后更新现有的 IPAM（IP 地址管理）安装。即使遇到系统检查错误，该命令也不会终止执行，并会删除 IPAM "
+"数据库中的冲突信息。命令会在 `%System Drive%\\System 32\\IPAM\\Logs` 文件夹中生成日志文件。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行需要较长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该cmdlet会立即返回一个表示作业的对象，随后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用`*-Job`系列的cmdlets；要获取作业结果，请使用[Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台作业的更多信息，请参阅 [关于作业（About "
+"Jobs）](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者输入一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中运行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Indicates that the cmdlet automatically deletes errors rows when it validates data and schema for an existing IPAM database.\n"
+"An error occurs if the system check fails."
+msgstr "表示该cmdlet在验证现有IPAM数据库的数据和架构时会自动删除错误行。如果系统检查失败，则会发生错误。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的并发操作的最大数量。如果省略了这个参数或输入了 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 CIM "
+"cmdlet 的数量来计算该 cmdlet 的最佳限制值。这个限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并没有运行这个cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[IP Address Management (IPAM) Server Cmdlets in Windows "
+"PowerShell](./ipamserver.md)"
+msgstr "[Windows PowerShell中的IP地址管理（IPAM）服务器cmdlet](./ipamserver.md)"

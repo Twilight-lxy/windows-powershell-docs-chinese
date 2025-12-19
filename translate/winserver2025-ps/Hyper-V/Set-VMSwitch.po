@@ -1,0 +1,237 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 10:19:08 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Set-VMSwitch"
+msgstr "# Set-VMSwitch"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Configures a virtual switch."
+msgstr "配置一个虚拟交换机。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### SwitchName_SwitchType (Default)"
+msgstr "### SwitchName_SwitchType（默认值）"
+
+msgid "### SwitchObject_SwitchType"
+msgstr "### SwitchObject_SwitchType"
+
+msgid "### SwitchName_NetAdapterInterfaceDescription"
+msgstr "### SwitchName_NetAdapterInterfaceDescription"
+
+msgid "### SwitchName_NetAdapterName"
+msgstr "### SwitchName_NetAdapterName"
+
+msgid "### SwitchObject_NetAdapterInterfaceDescription"
+msgstr "### SwitchObject_NetAdapterInterfaceDescription"
+
+msgid "### SwitchObject_NetAdapterName"
+msgstr "### SwitchObject_NetAdapterName"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **Set-VMSwitch** cmdlet configures a virtual switch."
+msgstr "`Set-VMSwitch` cmdlet 用于配置虚拟交换机。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid "This example converts a virtual switch named WA to an Internal switch."
+msgstr "这个示例将一个名为“WA”的虚拟交换机转换为内部交换机。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example attaches a virtual switch named VMNetwork to a physical "
+"ethernet adapter named Ethernet 2. This will also implicitly convert the "
+"VMNetwork switch to an external switch."
+msgstr ""
+"这个示例将一个名为“VMNetwork”的虚拟交换机连接到名为“Ethernet "
+"2”的物理以太网适配器上。同时，这也会自动将“VMNetwork”交换机转换为外部交换机。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example sets the minimum bandwidth allocation to 500Mbps on a virtual "
+"switch named CA for all virtual machines without explicit minimum bandwidth "
+"configuration."
+msgstr "这个示例将名为“CA”的虚拟交换机上所有虚拟机的最低带宽分配设置为500 Mbps，前提是这些虚拟机没有明确配置最低带宽限制。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies whether the management operating system can use the physical "
+"network adapter that is bound to the virtual switch. Setting "
+"**AllowManagementOS** to `$true` creates management operating system virtual"
+" network adapters (VMNetworkAdapters) in the parent partition and connects "
+"it to the virtual switch. Setting **AllowManagementOS** to `$false` removes "
+"any VMNetworkAdapters connected to the virtual switch."
+msgstr ""
+"该参数用于指定管理操作系统是否可以使用绑定到虚拟交换机的物理网络适配器。将 **AllowManagementOS** 设置为 `$true` "
+"会在父分区中创建管理操作系统的虚拟网络适配器（VMNetworkAdapters），并将其连接到虚拟交换机；将 "
+"**AllowManagementOS** 设置为 `$false` 则会移除所有连接到该虚拟交换机的 VMNetworkAdapters。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。您可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more Hyper-V hosts on which the virtual switch is to be configured.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable.\n"
+"The default is the local computer.\n"
+"Use localhost or a dot (.) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于配置虚拟交换机的 Hyper-V 主机。可以使用 NetBIOS 名称、IP 地址或完全限定域名进行识别。默认值为本地计算机。可以使用"
+" `localhost` 或点（.）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid ""
+"Specifies the minimum bandwidth, in bits per second, that is allocated to a special category called \"default flow.\" Any traffic sent by a virtual network adapter that is connected to this virtual switch and does not have minimum bandwidth allocated is filtered into this category.\n"
+"Specify a value for this parameter only if the minimum bandwidth mode on this virtual switch is absolute (See the **New-VMSwitch** cmdlet).\n"
+"By default, the virtual switch allocates 10% of the total bandwidth, which depends on the physical network adapter it binds to, to this category.\n"
+"For example, if a virtual switch binds to a 1 GbE network adapter, this special category can use at least 100 Mbps.\n"
+"If the value is not a multiple of 8, the value is rounded down to the nearest number that is a multiple of 8.\n"
+"For example, a value input as 1234567 is converted to 1234560."
+msgstr ""
+"指定分配给一个名为“默认流量”（default flow）的特殊类别的最小带宽，单位为比特每秒（bits per "
+"second）。任何由连接到该虚拟交换机的虚拟网络适配器发送的、且未分配到最小带宽的数据流都会被归入这一类别。仅当该虚拟交换机处于“绝对最小带宽模式”时（请参阅**New-"
+"VMSwitch** "
+"cmdlet），才需要设置此参数的值。默认情况下，虚拟交换机会将总带宽的10%分配给这个特殊类别；具体百分比取决于它所绑定的物理网络适配器的性能。例如，如果一个虚拟交换机绑定到了一个1"
+" GbE的网络适配器，那么该特殊类别至少可以使用100 "
+"Mbps的带宽。如果输入的带宽值不是8的倍数，系统会将其向下取整为最接近的8的倍数。例如，输入的值为1234567时，实际分配的带宽将为1234560 "
+"Mbps。"
+
+msgid ""
+"Specifies the minimum bandwidth, in relative weight, that is allocated to a special category called \"default flow\".\n"
+"Any traffic sent by a virtual network adapter that is connected to this virtual switch and doesn't have minimum bandwidth allocated is filtered into this category.\n"
+"Specify a value for this parameter only if the minimum bandwidth mode on this virtual switch is weight (See the **New-VMSwitch** cmdlet).\n"
+"By default, this special category has a weight of 1."
+msgstr ""
+"指定分配给一个名为“默认流量”（default "
+"flow）的特殊类别的最小带宽（以相对权重表示）。任何由连接到该虚拟交换机的虚拟网络适配器发送的、且未分配到最小带宽的数据包都会被归入这个类别。只有当该虚拟交换机处于基于权重的最小带宽模式时，才需要设置此参数的值（请参阅**New-"
+"VMSwitch** cmdlet）。默认情况下，这个特殊类别的权重为1。"
+
+msgid ""
+"Specifies an ordered list of network extensions used to reorder the bindings"
+" on the virtual switch."
+msgstr "指定一个有序的网络扩展列表，用于重新排列虚拟交换机上的绑定关系。"
+
+msgid "Specifies the name of the virtual switch to be configured."
+msgstr "指定要配置的虚拟交换机的名称。"
+
+msgid ""
+"Specifies the interface description of the physical network adapter to which an external virtual switch should be bound.\n"
+"If you specify this parameter to convert a virtual switch, the external virtual switch is configured to allow the management operating system to share access to the physical network adapter.\n"
+"To override this behavior, include AllowManagementOs $false in the command"
+msgstr ""
+"指定外部虚拟交换机应绑定的物理网络适配器的接口描述。如果您指定此参数以转换一个虚拟交换机，那么该外部虚拟交换机将被配置为允许管理操作系统共享对物理网络适配器的访问权限。要覆盖此行为，请在命令中包含"
+" `AllowManagementOs $false`。"
+
+msgid ""
+"Specifies the name of the physical network adapter to which an external virtual switch should be bound.\n"
+"If you specify this parameter to convert a virtual switch, the external virtual switch is configured to allow the management operating system to share access to the physical network adapter.\n"
+"To override this behavior, include AllowManagementOs $false in the command"
+msgstr ""
+"指定外部虚拟交换机应绑定的物理网络适配器的名称。如果您指定此参数以转换一个虚拟交换机，则该外部虚拟交换机会被配置为允许管理操作系统共享对物理网络适配器的访问权限。要覆盖此行为，请在命令中包含"
+" `AllowManagementOs $false`。"
+
+msgid "Specifies notes to be associated with the virtual switch."
+msgstr "指定要与虚拟交换机关联的注释信息。"
+
+msgid ""
+"Specifies that a **Microsoft.HyperV.PowerShell.EthernetSwitch** object is to"
+" be passed through to the pipeline representing the virtual switch to be "
+"configured."
+msgstr ""
+"指定要将一个 **Microsoft.HyperV.PowShell.EthernetSwitch** 对象传递给管道，该对象代表需要配置的虚拟交换机。"
+
+msgid ""
+"Converts a virtual switch from one type to another.\n"
+"Allowed values are **Internal** or **Private**.\n"
+"You can convert an internal or private virtual switch to an external virtual switch, by including either the **NetAdapterInterfaceDescription** or **NetAdapterName** parameter in the command.\n"
+"If you do this, the external virtual switch is configured to allow the management operating system to share access to the physical network adapter.\n"
+"To override this behavior, include AllowManagementOs $false in the command."
+msgstr ""
+"将虚拟交换机从一种类型转换为另一种类型。允许的值有 **Internal**（内部）和 **Private**（私有）。你可以通过在命令中包含 "
+"**NetAdapterInterfaceDescription** 或 **NetAdapterName** "
+"参数，将内部或私有的虚拟交换机转换为外部虚拟交换机。这样做后，外部虚拟交换机会被配置为允许管理操作系统共享对物理网络适配器的访问权限。如果你想覆盖这一行为，可以在命令中添加"
+" `AllowManagementOs $false`。"
+
+msgid "Specifies the virtual switch to be configured."
+msgstr "指定要配置的虚拟交换机。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果运行该cmdlet会发生什么情况。但实际上并未执行该cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "Default"
+msgstr "默认值；标准设置"
+
+msgid "### Microsoft.HyperV.PowerShell.EthernetSwitch"
+msgstr "### Microsoft.HyperV.PowerShell.EthernetSwitch"
+
+msgid "If **-PassThru** is specified."
+msgstr "如果指定了 **-PassThru**。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

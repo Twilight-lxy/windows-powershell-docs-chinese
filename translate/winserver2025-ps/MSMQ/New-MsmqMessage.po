@@ -1,0 +1,131 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:58:40 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-MsmqMessage"
+msgstr "# New-MsmqMessage"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Creates a message object."
+msgstr "创建一个消息对象。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **New-MsmqMessage** cmdlet creates a **System.Messaging.Message** object"
+" that includes properties specified by parameters."
+msgstr ""
+"`New-MsmqMessage` cmdlet 创建一个 `SystemMessaging.Message` 对象，该对象包含由参数指定的属性。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Create a test message"
+msgstr "#### 示例 1：创建一条测试消息"
+
+msgid ""
+"This command creates a test message.\n"
+"The command specifies the queue that receives the acknowledgement message."
+msgstr "此命令会创建一条测试消息，并指定接收确认消息的队列。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the type of acknowledgement messages that can be returned by "
+"Messaging Queuing."
+msgstr "指定消息队列（Messaging Queueing）可以返回的确认消息类型。"
+
+msgid ""
+"Specifies a path.\n"
+"The queue that the path specifies receives the acknowledgement messages that Message Queuing generates."
+msgstr "指定一个路径。该路径所对应的队列会接收消息队列（Message Queuing）生成的确认消息。"
+
+msgid ""
+"Indicates that the cmdlet sends the message as an authenticated message."
+msgstr "表示该 cmdlet 以已认证的消息形式发送该信息。"
+
+msgid ""
+"Specifies the body of the message.\n"
+"The default value is an empty body."
+msgstr "用于指定消息的正文内容。默认值为空字符串（即没有正文）。"
+
+msgid ""
+"Indicates that the originating computer keeps a copy of the message in a "
+"journal."
+msgstr "表示发送消息的计算机会在日志中保存该消息的副本。"
+
+msgid ""
+"Specifies a label.\n"
+"The label that this parameter specifies describes the message.\n"
+"The default value is an empty string."
+msgstr "用于指定一个标签。该参数所指定的标签用于描述消息的内容。默认值为空字符串。"
+
+msgid ""
+"Indicates that the cmdlet sets the recoverable property of a message object."
+msgstr "表示该 cmdlet 设置了消息对象的可恢复（recoverable）属性。"
+
+msgid ""
+"Specifies a path.\n"
+"The queue that this parameter specifies receives application-generated response messages."
+msgstr "指定一个路径。该参数所指向的队列用于接收应用程序生成的响应消息。"
+
+msgid ""
+"Specifies the maximum amount of time, in milliseconds, for the message to be received from the destination queue.\n"
+"The default value is 49.17:02:47.295."
+msgstr "指定从目标队列接收消息的最大时间长度（以毫秒为单位）。默认值为 49.17:02:47.295。"
+
+msgid ""
+"Specifies the maximum amount of time, in milliseconds, for the message to reach the queue.\n"
+"The default value is 49.17:02:47.295."
+msgstr "指定消息到达队列的最大时间长度（以毫秒为单位）。默认值为 49.17:02:47.295。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 注释"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Move-MsmqMessage](./Move-MsmqMessage.md)"
+msgstr "[Move-MsmqMessage](./Move-MsmqMessage.md)"

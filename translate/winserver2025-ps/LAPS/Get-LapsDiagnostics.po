@@ -1,0 +1,136 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:03:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Collects Windows Local Administrator Password Solution (LAPS) logs and "
+"tracing from the local machine."
+msgstr "从本地机器收集Windows本地管理员密码解决方案（LAPS）相关的日志和追踪数据。"
+
+msgid "# Get-LapsDiagnostics"
+msgstr "# 获取圈数诊断信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid ""
+"Collects Windows Local Administrator Password Solution (LAPS) logs and tracing from the local\n"
+"machine."
+msgstr "从本地机器收集 Windows 本地管理员密码解决方案（LAPS）的相关日志和追踪数据。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The `Get-LapsDiagnostics` cmdlet collects LAPS logs and tracing from the local machine, and copies\n"
+"them into a `.zip` file. This cmdlet is primarily intended for support and testing scenarios but of\n"
+"course may be used at any time. The name of the resultant `.zip` file includes the machine name and\n"
+"current timestamp, and by default is written under the `$env:TEMP\\LapsDiagnostics` folder. The\n"
+"output folder may be customized using the **OutputFolder**."
+msgstr ""
+"`Get-LapsDiagnostics` cmdlet 从本地机器收集 LAPS 日志和跟踪数据，并将它们复制到一个 `.zip` 文件中。该 "
+"cmdlet 主要用于支持性和测试场景，但当然也可以在任何时候使用。生成的 `.zip` 文件名称中包含机器名称和当前时间戳，默认情况下会被保存在 "
+"`$env:TEMP\\LapsDiagnostics` 文件夹下。可以通过设置 `OutputFolder` 参数来自定义输出文件夹的位置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example demonstrates basic collection of LAPS diagnostic info using all"
+" default parameters."
+msgstr "这个示例展示了如何使用所有默认参数来收集LAPS诊断信息的基本内容。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example demonstrates basic collection of LAPS diagnostic info to a "
+"specific output folder."
+msgstr "这个示例演示了如何将LAPS诊断信息收集到指定的输出文件夹中。"
+
+msgid "### Example 3"
+msgstr "### 示例 3"
+
+msgid ""
+"This example demonstrates basic collection of LAPS diagnostic info across a forced password reset\n"
+"operation to a specific output folder."
+msgstr "这个示例演示了如何在强制密码重置操作过程中收集LAPS诊断信息，并将这些信息保存到指定的输出文件夹中。"
+
+msgid "### Example 4"
+msgstr "### 示例 4"
+
+msgid ""
+"This example demonstrates basic collection of LAPS diagnostic info while also collecting network\n"
+"tracing."
+msgstr "这个示例展示了如何收集基本的LAPS诊断信息，同时还进行网络追踪（network tracing）。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies that network tracing should also be collected and included in the "
+"resultant `.zip` file."
+msgstr "指定网络追踪数据也应被收集并包含在最终的`.zip`文件中。"
+
+msgid ""
+"Specifies that the resultant `.zip` file should be placed under the "
+"specified folder."
+msgstr "指定生成的`.zip`文件应放置在指定的文件夹中。"
+
+msgid ""
+"Specifies that logs and tracing should be collected across a forced password reset for the currently\n"
+"managed local account. In this mode the cmdlet collects tracing across a call to the\n"
+"`Reset-LapsPassword` cmdlet."
+msgstr ""
+"指定在强制重置当前管理的本地账户的密码时，应收集相关的日志和跟踪信息。在这种模式下，该cmdlet会在调用`Reset-LapsPassword` "
+"cmdlet的过程中收集跟踪数据。"
+
+msgid ""
+"If this parameter isn't specified, the cmdlet collects tracing across a call to the\n"
+"`Invoke-LapsProcessingCycle` cmdlet."
+msgstr "如果未指定此参数，该cmdlet将在调用`Invoke-LapsProcessingCycle` cmdlet的过程中收集跟踪信息。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid ""
+"[Windows LAPS Overview](https://go.microsoft.com/fwlink/?linkid=2233901)"
+msgstr "[Windows LAPS概述](https://go.microsoft.com/fwlink/?linkid=2233901)"

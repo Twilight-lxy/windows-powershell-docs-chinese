@@ -1,0 +1,100 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:35:36 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-MSDSMAutomaticClaimSettings"
+msgstr "# 获取 MSDSMAutomaticClaimSettings 设置"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Gets settings for MSDSM automatically claiming SAN disks for MPIO."
+msgstr "获取用于自动将SAN磁盘分配给MPIO的MSDSM设置。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Get-MSDSMAutomaticClaimSettings** cmdlet gets the settings for a "
+"Microsoft Device Specific Module (MSDSM) automatically claiming storage area"
+" network (SAN) disks for Microsoft Multipath I/O (MPIO)."
+msgstr ""
+"`Get-MSDSMAutomaticClaimSettings` cmdlet 可用于获取 Microsoft "
+"设备特定模块（MSDSM）的设置，这些设置用于自动申请存储区域网络（SAN）磁盘以支持 Microsoft 多路径输入/输出（MPIO）功能。"
+
+msgid ""
+"MSDSM can automatically claim serial attached storage (SAS) or Internet Small Computer System Interface (iSCSI) or both or neither.\n"
+"Use the **Enable-MSDSMAutomaticClaim** cmdlet or the **Disable-MSDSMAutomaticClaim** cmdlet to change the settings."
+msgstr ""
+"MSDSM可以自动选择是否支持串行连接存储（SAS）或互联网小型计算机系统接口（iSCSI），或者同时支持两者，或者两者都不支持。您可以使用 "
+"**Enable-MSDSMAutomaticClaim** 或 **Disable-MSDSMAutomaticClaim** cmdlet "
+"来更改这些设置。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get automatic claim settings"
+msgstr "#### 示例 1：获取自动理赔设置"
+
+msgid ""
+"This command gets the automatic claim settings for MSDSM.\n"
+"In this instance, MSDSM automatically claims SAS disks, but not iSCSI disks."
+msgstr ""
+"此命令用于获取MSDSM的自动资源 "
+"claiming（即自动分配存储资源的）设置。在这种情况下，MSDSM会自动为SAS磁盘分配存储空间，但不会为iSCSI磁盘进行自动资源分配。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### none"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Cim.Instance"
+msgstr "### Cim.Instance"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Get-MSDSMSupportedHW](./Get-MSDSMSupportedHW.md)"
+msgstr "[Get-MSDSMSSupportedHW](./Get-MSDSMS SupportedHW.md)"
+
+msgid "[Disable-MSDSMAutomaticClaim](./Disable-MSDSMAutomaticClaim.md)"
+msgstr "[禁用 MSDSMAutomaticClaim 功能](./ Disable-MSDSMAutomaticClaim.md)"
+
+msgid "[Enable-MSDSMAutomaticClaim](./Enable-MSDSMAutomaticClaim.md)"
+msgstr "[Enable-MSDSMAutomaticClaim](./Enable-MSDSMAutomaticClaim.md)"

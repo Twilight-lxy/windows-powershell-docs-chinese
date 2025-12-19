@@ -1,0 +1,112 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:34:34 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# New-VFD"
+msgstr "# 新型变频驱动器（New-VFD）"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Creates a virtual floppy disk."
+msgstr "创建一个虚拟软盘。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid "The `New-VFD` cmdlet creates a new virtual floppy disk."
+msgstr "`New-VFD` cmdlet 可用于创建一个新的虚拟软盘。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"Creates a new virtual floppy drive at the specified path. This can be then used in the\n"
+"`Set-VMFloppyDiskDrive` cmdlet to attach the virtual floppy disk to a virtual machine."
+msgstr ""
+"在指定路径创建一个新的虚拟软盘驱动器。然后可以使用 `Set-VMFloppyDiskDrive` cmdlet 将该虚拟软盘驱动器连接到虚拟机中。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer. Enter a computer name or a session\n"
+"object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)\n"
+"or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet. The default is the\n"
+"current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获取的会话对象）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid ""
+"Specifies one or more virtual machine hosts on which the virtual floppy disk is to be created.\n"
+"NetBIOS names, IP addresses, and fully qualified domain names are allowable. The default is the\n"
+"local computer. Use `localhost` or a dot (`.`) to specify the local computer explicitly."
+msgstr ""
+"指定一个或多个用于创建虚拟软盘（virtual floppy disk）的虚拟机主机。允许使用 NetBIOS 名称、IP "
+"地址或完全限定的域名作为主机标识。默认值是本地计算机。可以使用 `localhost` 或点号（`.`）来明确表示本地计算机。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行 cmdlet 之前会提示您进行确认。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action. The default is the\n"
+"current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "Specifies the path to the new virtual floppy disk files to be created."
+msgstr "指定要创建的新虚拟软盘文件的路径。"
+
+msgid "Shows what would happen if the cmdlet runs. The cmdlet isn't run."
+msgstr "展示了如果运行该 cmdlet 会发生什么情况。但实际上并没有运行该 cmdlet。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（INPUTS）"
+
+msgid "### System.String[]"
+msgstr "### System.String[]"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.IO.FileInfo"
+msgstr "### System.IO.FileInfo"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-VMFloppyDiskDrive](set-vmfloppydiskdrive.md)"
+msgstr "[Set-VMFloppyDiskDrive](set-vmfloppydiskdrive.md)"

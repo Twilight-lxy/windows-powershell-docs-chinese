@@ -1,0 +1,87 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 12:10:23 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid "# Get-ReFSDedupStatus"
+msgstr "# 获取ReFS去重状态信息"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Retrieves the status of data deduplication on a specified ReFS volume."
+msgstr "检索指定ReFS卷上的数据去重状态。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid ""
+"The `Get-ReFSDedupStatus` cmdlet retrieves the status of data deduplication on a specified ReFS\n"
+"volume."
+msgstr "`Get-ReFSDedupStatus` cmdlet 可以获取指定 ReFS 卷上的数据去重状态。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1"
+msgstr "### 示例 1"
+
+msgid ""
+"This example retrieves the deduplication status for the `D:` ReFS volume."
+msgstr "这个示例用于检索`D:` ReFS卷的去重状态。"
+
+msgid "### Example 2"
+msgstr "### 示例 2"
+
+msgid ""
+"This example retrieves the deduplication status for both the `E:` and `F:` "
+"ReFS volume."
+msgstr "这个示例会检索 `E:` 和 `F:` 类型的 ReFS 卷的去重状态。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies the ReFS volume for which to retrieve the deduplication status. Enter one or more volume\n"
+"IDs, drive letters, or volume GUID paths. For drive letters, use the format `D:`. For volume GUID\n"
+"paths, use the format `\\\\?\\Volume{{GUID}}\\`. Separate multiple volumes with a comma."
+msgstr ""
+"指定要获取去重状态的 ReFS 卷。可以输入一个或多个卷 ID、驱动器字母或卷 GUID 路径。对于驱动器字母，使用格式 `D:`；对于卷 GUID "
+"路径，使用格式 `\\\\?\\Volume{{GUID}}\\`。多个卷之间用逗号分隔。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable,\n"
+"-InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose,\n"
+"-WarningAction, and -WarningVariable. For more information, see\n"
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](/powershell/module/microsoft.powershell.core/about/about_commonparameters)。"
+
+msgid "## INPUTS"
+msgstr "## 输入内容（Inputs）"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### System.Object"
+msgstr "### System.Object"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"

@@ -1,0 +1,115 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:05:37 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Disconnect-WmsSession"
+msgstr "# 断开 WMS 会话连接"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Disconnects a session."
+msgstr "断开会话连接。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### DisconnectById"
+msgstr "### DisconnectById"
+
+msgid "### DisconnectAll"
+msgstr "### DisconnectAll"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Disconnect-WmsSession** cmdlet disconnects the specified session.\n"
+"You cannot disconnect the cmdlet's process."
+msgstr ""
+"` Disconnect-WmsSession` cmdlet 用于断开指定的会话连接。但是，你无法断开该 cmdlet 所运行的进程本身。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Disconnect a session"
+msgstr "### 示例 1：断开会话连接"
+
+msgid "This command disconnects the session with the ID 3."
+msgstr "这个命令会断开ID为3的会话连接。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Indicates that this operation applies to all sessions on the target host."
+msgstr "表示此操作适用于目标主机上的所有会话。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该 cmdlet 之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 localhost。"
+
+msgid "Specifies an array of session IDs."
+msgstr "指定一个会话ID数组。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[关于通用参数](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据"
+
+msgid "### WmsSession"
+msgstr "### WmsSession"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### None"
+msgstr "### 无"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Close-WmsSession](./Close-WmsSession.md)"
+msgstr "[Close-WmsSession](./Close-WmsSession.md)"
+
+msgid "[Get-WmsSession](./Get-WmsSession.md)"
+msgstr "[Get-WmsSession](./Get-WmsSession.md)"
+
+msgid "[Lock-WmsSession](./Lock-WmsSession.md)"
+msgstr "[Lock-WmsSession](./Lock-WmsSession.md)"
+
+msgid "[Unlock-WmsSession](./Unlock-WmsSession.md)"
+msgstr "[解锁WMS会话](./Unlock-WmsSession.md)"

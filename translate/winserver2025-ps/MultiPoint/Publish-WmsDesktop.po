@@ -1,0 +1,116 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 13:11:32 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Publish-WmsDesktop"
+msgstr "# 发布 WMS Desktop 版本"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Shares a desktop and optionally allows remote control of the desktop."
+msgstr "允许多人共享同一台桌面电脑，并可选择是否允许远程控制该桌面。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Publish-WmsDesktop** cmdlet shares the specified session desktop, which makes it viewable by other sessions.\n"
+"A published desktop can also optionally be remotely controlled."
+msgstr ""
+"**Publish-WmsDesktop** "
+"这个cmdlet用于共享指定的会话桌面，从而使其他会话能够查看该桌面。此外，被共享的桌面还可以选择性地进行远程控制。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Publish a desktop"
+msgstr "#### 示例 1：发布一个桌面应用程序"
+
+msgid ""
+"This command shares the desktop of session 2 for viewing by up to 10 other "
+"sessions, and permits remote control of the desktop."
+msgstr "此命令允许最多10个其他会话共享第2个会话的桌面内容进行查看，并支持对这些桌面的远程控制。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the maximum number of clients that can view the published desktop."
+msgstr "指定可以查看已发布桌面内容的最大客户端数量。"
+
+msgid "Indicates that the published desktop can be remotely controlled."
+msgstr "表示已发布的桌面版本可以远程控制。"
+
+msgid ""
+"Specifies the fully qualified host name of the MultiPoint Server that is the target of the command.\n"
+"The default is localhost."
+msgstr "指定作为该命令目标的多点服务器（MultiPoint Server）的完全限定主机名。默认值为 localhost。"
+
+msgid "Specifies the session ID of the desktop to publish."
+msgstr "指定要发布的桌面的会话 ID。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行时会发生什么情况。但实际上，这个cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "### System.UInt32"
+msgstr "### System.UInt32"
+
+msgid "### System.String"
+msgstr "### System.String"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid ""
+"### "
+"Microsoft.WindowsServerSolutions.MultipointServer.PowerShell.Commands.Library.WmsDesktop"
+msgstr ""
+"### Microsoft.WindowsServerSolutions.MultipointServer.PowerShell "
+"Commands.Library.WmsDesktop"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Show-WmsDesktop](./Show-WmsDesktop.md)"
+msgstr "[显示WMS桌面](./Show-WmsDesktop.md)"
+
+msgid "[Unpublish-WmsDesktop](./Unpublish-WmsDesktop.md)"
+msgstr "[Unpublish-WmsDesktop](./Unpublish-WmsDesktop.md)"

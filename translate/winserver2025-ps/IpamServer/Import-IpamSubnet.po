@@ -1,0 +1,175 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 11:14:01 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助您通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Import-IpamSubnet"
+msgstr "# 导入 Ipam 子网"
+
+msgid "## SYNOPSIS"
+msgstr "## 概述"
+
+msgid "Imports IP address subnet objects from the specified file into IPAM."
+msgstr "从指定的文件中导入IP地址子网对象到IPAM系统中。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "## DESCRIPTION"
+msgstr "## 描述"
+
+msgid ""
+"The **Import-IpamSubnet** cmdlet imports IP address subnet objects from the specified file into the computer that runs the IP Address Management (IPAM) server.\n"
+"The cmdlet logs objects that fail to import during the operation.\n"
+"Use this cmdlet to import both virtualized and non-virtualized subnets.\n"
+"The cmdlet adds new IP address subnet objects from the comma separated value .csv file into the computer that runs the IPAM server and edits the existing subnet objects with the updated information specified in the .csv file.\n"
+"The .csv file can contain both virtualized and non-virtualized subnets.\n"
+"If the file you import does not contain the columns NetworkType, ProviderAddressSpace and CustomerAddressSpace in the header, the cmdlet assumes all subnets are non-virtualized, and it adds them to the default address space.\n"
+"If the header contains these columns, then the cmdlet uses the network type to add the subnets to given provider or customer address space."
+msgstr ""
+"`Import-IpamSubnet` 这个 cmdlet 会将指定文件中的 IP 地址子网对象导入到运行 IP 地址管理（IPAM）服务器的计算机中。在导入过程中，如果遇到无法导入的对象，该 cmdlet 会记录相应的错误信息。您可以使用这个 cmdlet 导入无论是虚拟化还是非虚拟化的子网。该 cmdlet 会将 .csv 文件中的数据（以逗号分隔的形式）添加到运行 IPAM 服务器的计算机中，并使用 .csv 文件中指定的更新信息来修改现有的子网对象。.csv 文件可以同时包含虚拟化和非虚拟化的子网信息。\n"
+"\n"
+"如果导入的文件头部没有 `NetworkType`、`ProviderAddressSpace` 和 `CustomerAddressSpace` 这些列，那么 cmdlet 会假设所有子网都是非虚拟化的，并将它们添加到默认地址空间中。如果文件头部包含这些列，则 cmdlet 会根据网络类型将这些子网分别添加到相应的提供者或客户地址空间中。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Import IPv4 subnets"
+msgstr "### 示例 1：导入 IPv4 子网"
+
+msgid ""
+"This command imports the IPv4 subnets from the file Subnetsv4.csv into the computer that runs IPAM.\n"
+"The command adds the new subnets and modifies existing addresses.\n"
+"The command records any errors in the default folder, %windir%\\temp for the user, in .csv file format."
+msgstr ""
+"该命令将文件 `Subnetsv4.csv` 中的 IPv4 子网导入到运行 IPAM "
+"的计算机中。该命令会添加新的子网并修改现有的地址信息，同时会将任何出现的错误记录在用户所在系统的默认文件夹 `%windir%\\temp` 下，以 "
+"`.csv` 文件格式保存。"
+
+msgid "### Example 2: Import IPv4 subnets and specify the error path"
+msgstr "### 示例 2：导入 IPv4 子网并指定错误处理路径"
+
+msgid ""
+"This command imports IPv4 subnets from the file Subnetsv4.csv into the computer that runs the IPAM server.\n"
+"The command adds new subnets and modifies existing subnets."
+msgstr ""
+"该命令从文件 Subnetsv4.csv 中导入 IPv4 子网到运行 IPAM 服务器的计算机上。该命令会添加新的子网，并修改现有的子网。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Specifies an address family of IP address range objects to import.\n"
+"The acceptable values for this parameter are:"
+msgstr "指定要导入的 IP 地址范围对象的地址族。该参数的可接受值为："
+
+msgid ""
+"Runs the cmdlet as a background job. Use this parameter to run commands that"
+" take a long time to complete."
+msgstr "将cmdlet作为后台作业运行。使用此参数来执行那些需要很长时间才能完成的命令。"
+
+msgid ""
+"The cmdlet immediately returns an object that represents the job and then displays the command prompt.\n"
+"You can continue to work in the session while the job completes.\n"
+"To manage the job, use the `*-Job` cmdlets.\n"
+"To get the job results, use the [Receive-Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet."
+msgstr ""
+"该 cmdlet 会立即返回一个表示作业的对象，然后显示命令提示符。在作业完成之前，您可以继续在该会话中工作。要管理作业，请使用 `*-Job` 系列 "
+"cmdlets；要获取作业结果，请使用 [Receive-"
+"Job](https://go.microsoft.com/fwlink/?LinkID=113372) cmdlet。"
+
+msgid ""
+"For more information about Windows PowerShell background jobs, see "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)."
+msgstr ""
+"有关 Windows PowerShell 后台任务的更多信息，请参阅 "
+"[about_Jobs](https://go.microsoft.com/fwlink/?LinkID=113251)。"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。可以输入一个计算机名称，或者提供一个会话对象（例如通过[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967)或[Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) "
+"cmdlet获得的输出结果）。默认情况下，该cmdlet会在本地计算机的当前会话中执行。"
+
+msgid "Prompts you for confirmation before running the cmdlet."
+msgstr "在运行该cmdlet之前，会提示您进行确认。"
+
+msgid ""
+"Specifies the fully qualified path, but not the name, of the error files that are created if one or more records fail to import.\n"
+"The IPAM server generates file names  by prepending the string Error_ and appending the timestamp of the operation to the file name.\n"
+"The default value of this parameter is the %windir%\\temp folder."
+msgstr ""
+"该参数指定了当一个或多个记录导入失败时所生成的错误文件的全路径（包括目录和文件名），但不包括文件的实际名称。IPAM服务器会在文件名前添加 "
+"“Error_” 字符串，并在文件名后附加操作的时间戳来生成文件名。此参数的默认值为 `%windir%\\temp` 文件夹。"
+
+msgid "Forces the command to run without asking for user confirmation."
+msgstr "强制命令运行，而无需请求用户确认。"
+
+msgid "Specifies the fully qualified path and name of the file to import."
+msgstr "指定要导入的文件的完全限定路径和名称。"
+
+msgid ""
+"Specifies the maximum number of concurrent operations that can be established to run the cmdlet.\n"
+"If this parameter is omitted or a value of `0` is entered, then Windows PowerShell® calculates an optimum throttle limit for the cmdlet based on the number of CIM cmdlets that are running on the computer.\n"
+"The throttle limit applies only to the current cmdlet, not to the session or to the computer."
+msgstr ""
+"指定可以同时运行的 cmdlet 操作的最大数量。如果省略此参数或输入值 `0`，则 Windows PowerShell® 会根据计算机上正在运行的 "
+"CIM cmdlet 的数量来计算该 cmdlet 的最优限制值。此限制仅适用于当前运行的 cmdlet，而不适用于整个会话或计算机本身。"
+
+msgid ""
+"Shows what would happen if the cmdlet runs.\n"
+"The cmdlet is not run."
+msgstr "展示了如果该cmdlet被运行会发生的结果。但实际上该cmdlet并没有被运行。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常用参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-OutputVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入数据（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Add-IpamSubnet](./Add-IpamSubnet.md)"
+msgstr "[Add-IpamSubnet](./Add-IpamSubnet.md)"
+
+msgid "[Export-IpamSubnet](./Export-IpamSubnet.md)"
+msgstr "[Export-IpamSubnet](./Export-IpamSubnet.md)"
+
+msgid "[Get-IpamSubnet](./Get-IpamSubnet.md)"
+msgstr "[Get-IpamSubnet](./Get-IpamSubnet.md)"
+
+msgid "[Remove-IpamSubnet](./Remove-IpamSubnet.md)"
+msgstr "[Remove-IpamSubnet](./Remove-IpamSubnet.md)"
+
+msgid "[Set-IpamSubnet](./Set-IpamSubnet.md)"
+msgstr "[Set-IpamSubnet](./Set-IpamSubnet.md)"

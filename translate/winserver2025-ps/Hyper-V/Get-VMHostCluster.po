@@ -1,0 +1,105 @@
+#
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-19 09:09:55 +0000\n"
+"Last-Translator: Twilight-lxy\n"
+"Language: zh_CN\n"
+
+msgid ""
+"Use this topic to help manage Windows and Windows Server technologies with "
+"Windows PowerShell."
+msgstr "使用这个主题来帮助通过 Windows PowerShell 管理 Windows 和 Windows Server 技术。"
+
+msgid "# Get-VMHostCluster"
+msgstr "# Get-VMHostCluster"
+
+msgid "## SYNOPSIS"
+msgstr "## 概要"
+
+msgid "Gets virtual machine host clusters."
+msgstr "获取虚拟机主机集群。"
+
+msgid "## SYNTAX"
+msgstr "## 语法"
+
+msgid "### ClusterName (Default)"
+msgstr "### `ClusterName`（默认值）"
+
+msgid "### CimSession"
+msgstr "### CimSession"
+
+msgid "## DESCRIPTION"
+msgstr "## 说明"
+
+msgid "The **Get-VMHostCluster** cmdlet gets **VMHostCluster** objects."
+msgstr "`Get-VMHostCluster` cmdlet 用于获取 `VMHostCluster` 对象。"
+
+msgid "## EXAMPLES"
+msgstr "## 示例"
+
+msgid "### Example 1: Get a virtual machine host cluster"
+msgstr "#### 示例 1：获取虚拟机主机集群"
+
+msgid ""
+"This command gets the **VMHostCluster** object for the cluster named "
+"ContosoCluster."
+msgstr "此命令用于获取名为 ContosoCluster 的集群对应的 **VMHostCluster** 对象。"
+
+msgid "## PARAMETERS"
+msgstr "## 参数"
+
+msgid ""
+"Runs the cmdlet in a remote session or on a remote computer.\n"
+"Enter a computer name or a session object, such as the output of a [New-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) or [Get-CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet.\n"
+"The default is the current session on the local computer."
+msgstr ""
+"在远程会话或远程计算机上运行该cmdlet。请输入一个计算机名称或会话对象（例如，[New-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227967) 或 [Get-"
+"CimSession](https://go.microsoft.com/fwlink/p/?LinkId=227966) cmdlet "
+"的输出结果）。默认值是本地计算机上的当前会话。"
+
+msgid ""
+"Specifies an array of names of the virtual machine host clusters that this "
+"cmdlet gets."
+msgstr "指定一个包含虚拟机主机集群名称的数组，该数组是此 cmdlet 所获取的数据来源。"
+
+msgid ""
+"Specifies one or more user accounts that have permission to perform this action.\n"
+"The default is the current user."
+msgstr "指定一个或多个具有执行此操作权限的用户账户。默认值为当前用户。"
+
+msgid "### CommonParameters"
+msgstr "### CommonParameters"
+
+msgid ""
+"This cmdlet supports the common parameters: -Debug, -ErrorAction, "
+"-ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, "
+"-OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and "
+"-WarningVariable. For more information, see "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)."
+msgstr ""
+"此 cmdlet "
+"支持以下常见参数：-Debug、-ErrorAction、-ErrorVariable、-InformationAction、-InformationVariable、-OutVariable、-OutBuffer、-PipelineVariable、-Verbose、-WarningAction"
+" 和 -WarningVariable。有关更多信息，请参阅 "
+"[about_CommonParameters](https://go.microsoft.com/fwlink/?LinkID=113216)。"
+
+msgid "## INPUTS"
+msgstr "## 输入参数（Inputs）"
+
+msgid "## OUTPUTS"
+msgstr "## 输出结果"
+
+msgid "### Microsoft.HyperV.PowerShell.VMHostCluster"
+msgstr "### Microsoft.HyperV.PowerShell.VMHostCluster"
+
+msgid "This cmdlet returns a **VMHostCluster** object."
+msgstr "此cmdlet返回一个**VMHostCluster**对象。"
+
+msgid "## NOTES"
+msgstr "## 备注"
+
+msgid "## RELATED LINKS"
+msgstr "## 相关链接"
+
+msgid "[Set-VMHostCluster](./Set-VMHostCluster.md)"
+msgstr "[Set-VMHostCluster](./Set-VMHostCluster.md)"
